@@ -69704,5 +69704,345 @@ window.RECETTES_EN = {
     "detail": "Scatter with crushed peanuts and serve at once, nice and cold. Sweet, sour, salty and spicy — the surprising fruit salad of Indonesia."
    }
   ]
+ },
+ "tigadegena": {
+  "nom": "Tiga Dege Na",
+  "description": "Tiga dege na — the Malian peanut mafé: meat simmered in a creamy peanut-butter and tomato sauce, with vegetables (potato, carrot, cabbage). Rich, creamy and comforting, this peanut sauce is the emblematic dish of Mali, served over rice.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Brown the beef (or lamb) pieces in the oil, on all sides, then set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion and garlic, add the crushed tomato and chilli, and let it cook down."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Loosen the peanut paste in a little hot water, then stir it into the tomato base: the sauce turns creamy."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the meat, add water and simmer gently, stirring, so the peanut oil rises (without catching)."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potato, carrot and cabbage in pieces, and continue until everything is tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Let the sauce thicken and turn creamy and glossy with peanut oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over white rice. Rich, creamy and comforting — the emblematic peanut sauce of Mali."
+   }
+  ]
+ },
+ "djenkoume": {
+  "nom": "Djenkoumé",
+  "description": "Djenkoumé (amiwo) — the red corn dough of Togo: a cornmeal dough cooked in a spicy tomato sauce, which gives it its beautiful red colour and deep flavour. Served with grilled chicken (or fish) and a sauce, it's a convivial festive dish of Togo and Benin.",
+  "etapes": [
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion, garlic and ginger, add the tomato and chilli, and simmer into a thick, fragrant red sauce."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Marinate the chicken in some of the sauce, then grill or brown it until cooked and golden."
+   },
+   {
+    "titre": "The red broth",
+    "detail": "Loosen the rest of the tomato sauce with water to make a fragrant red broth."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Mix some of the cornmeal in cold water, then pour it into the simmering red broth."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Add the rest of the flour little by little, beating energetically with a spatula, until you get a smooth, red, glossy dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape the hot dough into a ball (or pour it into a mould), smooth and compact."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the red dough with the grilled chicken and a little sauce. Convivial and fragrant — the festive dish of Togo."
+   }
+  ]
+ },
+ "gbomadessi": {
+  "nom": "Gboma Dessi",
+  "description": "Gboma dessi — the spinach stew of Togo: gboma leaves (black nightshade, here spinach) simmered in a palm-oil tomato sauce with fish or meat. Creamy, briny and fragrant, it's an everyday green dish in Togo and Benin, served with dough or rice.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and chop the gboma leaves (or spinach), then briefly wilt them in boiling water."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in the palm oil, add the tomato and chilli, and let it cook down."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Add the fish (fresh or smoked) and let it cook in the sauce, flavouring the whole."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the drained green leaves and mix to coat them well in sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the leaves are tender and the sauce thick and red with palm oil."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust the heat: gboma dessi should be creamy and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with corn dough, rice or yam. Creamy, briny and fragrant — the green stew of Togo."
+   }
+  ]
+ },
+ "plasas": {
+  "nom": "Plasas",
+  "description": "Plasas — the leaf stew of Sierra Leone: sweet potato (or cassava) leaves long-simmered in palm oil with fish, smoked meat and peanut paste. Rich, tender and fragrant, this 'palava sauce' is served over rice, a pillar of West African cooking.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Very finely chop the sweet potato leaves (or spinach) and cook them in a little water to tenderise them."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion in the palm oil, add the garlic and chilli."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Add the fish (fresh and smoked) and the meat, and let them flavour the stew."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Loosen the peanut paste and stir it in, to bind and enrich the sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the leaves and simmer at length, stirring, until they are tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Let the sauce reduce, thicken and turn red with palm oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over white rice. Rich, tender and fragrant — the leaf stew of Sierra Leone."
+   }
+  ]
+ },
+ "rizgras": {
+  "nom": "Riz Gras",
+  "description": "Riz gras — the 'fatty rice' of Burkina Faso: rice cooked in a rich tomato-meat sauce, until it soaks up all the flavours. Fragrant, generous and colourful, this cousin of jollof is the great convivial festive dish of Sahelian West Africa.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Brown the beef (or mutton) pieces in the oil, then set them aside."
+   },
+   {
+    "titre": "The tomato base",
+    "detail": "Sauté the onion and garlic, add the crushed tomato (and a little paste) and chilli, and reduce into a thick sauce."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Return the meat, cover with water and simmer until the meat is tender and the broth fragrant."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrot and cabbage in pieces, and let them cook in the sauce."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice directly into the sauce, with the right volume of liquid."
+   },
+   {
+    "titre": "Cooking",
+    "detail": "Cover and cook over low heat until the rice has absorbed the sauce and is tender and coloured."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the riz gras hot, with the meat and vegetables. Fragrant, generous and colourful — the festive dish of Burkina Faso."
+   }
+  ]
+ },
+ "ekwang": {
+  "nom": "Ekwang",
+  "description": "Ekwang — the taro-and-leaf rolls of Cameroon: grated taro (macabo) wrapped in little parcels of cocoyam leaves, long-simmered in a palm-oil sauce with prawns and fish. Tender, rich and fragrant, it's a demanding, convivial festive dish of Cameroon.",
+  "etapes": [
+   {
+    "titre": "Grate the taro",
+    "detail": "Peel and finely grate the taro (macabo, or cassava or potato) into a paste."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season the taro paste with salt, a little chilli and spices."
+   },
+   {
+    "titre": "The parcels",
+    "detail": "Place a spoon of taro paste in the centre of a cocoyam leaf (or spinach or chard), and roll into tight little parcels."
+   },
+   {
+    "titre": "The sauce base",
+    "detail": "Arrange the parcels in a pot with the onion, dried prawns, smoked fish and chilli."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Pour in the palm oil and a little water, and simmer at length over low heat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook until the taro parcels are tender and the sauce thick, red and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, the little rolls coated in their palm-oil sauce. Tender, rich and fragrant — the Cameroonian festive dish."
+   }
+  ]
+ },
+ "ofada": {
+  "nom": "Ofada Rice & Ayamase",
+  "description": "Ofada rice & ayamase — the local rice and green sauce of Nigeria: local brown rice (ofada) served with ayamase, a sauce of green peppers and chillies long-confited in palm oil, with assorted meats and eggs. Rustic, smoky and fiery, it's a Yoruba festive dish served in a leaf.",
+  "etapes": [
+   {
+    "titre": "The ofada rice",
+    "detail": "Rinse the local brown rice (ofada, or a wholegrain rice) several times and cook it in salted water."
+   },
+   {
+    "titre": "The peppers",
+    "detail": "Char then coarsely blend the green peppers, chillies and onion into a punchy green purée."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Heat the palm oil (traditionally until it whitens a little), then sauté the onion in it."
+   },
+   {
+    "titre": "The ayamase sauce",
+    "detail": "Add the pepper purée and confit at length over low heat, until the oil rises and the sauce is dark and fragrant."
+   },
+   {
+    "titre": "The meats",
+    "detail": "Add the assorted pre-cooked meats (beef, tripe) and hard-boiled egg, and simmer in the sauce."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, add a little locust bean (iru) for umami, and adjust the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the ofada rice, traditionally in a leaf, coated in ayamase sauce. Rustic, smoky and fiery — the Yoruba festive dish."
+   }
+  ]
+ },
+ "banga": {
+  "nom": "Banga Soup",
+  "description": "Banga soup — the palm nut soup of Nigeria: an extract of fresh palm nuts simmered into a rich, creamy soup with fish, meat and Niger Delta spices. Deep, briny and fragrant, it's served with starch (dough) or rice, a jewel of southern Nigerian cuisine.",
+  "etapes": [
+   {
+    "titre": "The palm extract",
+    "detail": "Use a palm nut cream (banga, or red palm oil with a little tomato paste) as a rich base."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Clean the fresh fish and rehydrate the smoked fish, and season them with a little salt."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic, add the palm cream and a little water, and bring to a simmer."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the banga spices (beletientien, oburunbebe) or, failing that, coriander seeds, ginger and a little nutmeg."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the fish, meat and dried prawns, and simmer until the soup thickens and turns creamy."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the chilli and let the soup reduce, rich and fragrant with palm oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the banga soup with starch (dough, fufu) or rice. Deep, briny and fragrant — the jewel of the Niger Delta."
+   }
+  ]
+ },
+ "abacha": {
+  "nom": "Abacha",
+  "description": "Abacha (African salad) — the cassava salad of Nigeria: strips of dried cassava rehydrated, coated in a yellow palm-oil and potash sauce, lifted with chilli, fish and bitter aubergine. Fresh, umami and punchy, it's a beloved salad-snack among the Igbo of eastern Nigeria.",
+  "etapes": [
+   {
+    "titre": "The cassava",
+    "detail": "Rehydrate the dried cassava strips (abacha) in warm water until softened, then drain them."
+   },
+   {
+    "titre": "The palm sauce",
+    "detail": "Emulsify the palm oil with a little diluted potash (akanwu): it thickens and turns yellow and creamy (the heart of abacha)."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Flake smoked fish (or rehydrated stockfish) and a little ugba (fermented seeds, optional)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the chilli, sliced onion, a little stock cube and salt to the palm sauce."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Coat the cassava strips in the yellow palm sauce, until well covered."
+   },
+   {
+    "titre": "The garnishes",
+    "detail": "Add the flaked fish, chopped green leaves (ugu/spinach) and diced bitter aubergine (garden egg)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature, with a dash of lemon. Fresh, umami and punchy — the Igbo cassava salad of Nigeria."
+   }
+  ]
+ },
+ "gbegiri": {
+  "nom": "Gbegiri",
+  "description": "Gbegiri — the smooth bean soup of Nigeria: black-eyed beans cooked then puréed into a creamy velouté, enriched with palm oil and lifted with chilli. Mild and creamy, it forms, with ewedu soup and stew, the 'abula' trio served with amala, a classic of Yoruba cuisine.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the black-eyed beans, then remove the skins by rubbing them (the secret to a very smooth soup)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the peeled beans in water until very tender and falling apart."
+   },
+   {
+    "titre": "Purée",
+    "detail": "Pass the beans through a sieve (or blender) with their water, into a smooth, lump-free velouté."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Heat the palm oil and sauté the onion and chilli in it."
+   },
+   {
+    "titre": "Build",
+    "detail": "Stir the bean velouté into the palm oil, stirring, until you get a creamy, yellow-orange soup."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the ground dried prawns, a little stock and salt, and simmer."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the gbegiri with amala (yam dough) and a stew, Yoruba-style. Mild and creamy — the emblematic bean soup of Nigeria."
+   }
+  ]
  }
 };

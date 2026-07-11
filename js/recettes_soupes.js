@@ -4779,4 +4779,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Versez le bouillon aigre et le poisson sur les nouilles, garnissez de crudités et d'un peu de pâte de crevettes sucrée (hae ko). Aigre, iodée et rafraîchissante — le trésor de Penang.", badge: null }
     ]
   },
+  banga: {
+    dateAjout: "2026-07-11T14:07:00",
+    nom: "Banga Soup",
+    cat: "soupes", pays: "nigeria",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌴",
+    description: "Banga soup — la soupe au noix de palme du Nigeria : un extrait de noix de palme fraîches mijoté en une soupe riche et onctueuse avec du poisson, de la viande et des épices du delta du Niger. Profonde, iodée et parfumée, elle se sert avec de la pâte (starch) ou du riz, un joyau de la cuisine du Sud nigérian.",
+    tableauBanga: [
+      { nb: 1, huilePalme: "12 ml", poisson: "70 g", oignon: "30 g", tomates: "½", piment: "2 g", crevettes: "20 g", ail: "1", sel: "2 g" },
+      { nb: 2, huilePalme: "24 ml", poisson: "140 g", oignon: "60 g", tomates: "1", piment: "4 g", crevettes: "40 g", ail: "2", sel: "4 g" },
+      { nb: 3, huilePalme: "36 ml", poisson: "210 g", oignon: "90 g", tomates: "1½", piment: "6 g", crevettes: "60 g", ail: "3", sel: "6 g" },
+      { nb: 4, huilePalme: "48 ml", poisson: "280 g", oignon: "120 g", tomates: "2", piment: "8 g", crevettes: "80 g", ail: "4", sel: "8 g" },
+      { nb: 5, huilePalme: "60 ml", poisson: "350 g", oignon: "150 g", tomates: "2½", piment: "10 g", crevettes: "100 g", ail: "5", sel: "10 g" },
+      { nb: 6, huilePalme: "72 ml", poisson: "420 g", oignon: "180 g", tomates: "3", piment: "12 g", crevettes: "120 g", ail: "6", sel: "12 g" },
+      { nb: 7, huilePalme: "84 ml", poisson: "490 g", oignon: "210 g", tomates: "3½", piment: "14 g", crevettes: "140 g", ail: "7", sel: "14 g" },
+      { nb: 8, huilePalme: "96 ml", poisson: "560 g", oignon: "240 g", tomates: "4", piment: "16 g", crevettes: "160 g", ail: "8", sel: "16 g" },
+      { nb: 9, huilePalme: "108 ml", poisson: "630 g", oignon: "270 g", tomates: "4½", piment: "18 g", crevettes: "180 g", ail: "9", sel: "18 g" },
+      { nb: 10, huilePalme: "120 ml", poisson: "700 g", oignon: "300 g", tomates: "5", piment: "20 g", crevettes: "200 g", ail: "10", sel: "20 g" },
+      { nb: 11, huilePalme: "132 ml", poisson: "770 g", oignon: "330 g", tomates: "5½", piment: "22 g", crevettes: "220 g", ail: "11", sel: "22 g" },
+      { nb: 12, huilePalme: "144 ml", poisson: "840 g", oignon: "360 g", tomates: "6", piment: "24 g", crevettes: "240 g", ail: "12", sel: "24 g" },
+      { nb: 13, huilePalme: "156 ml", poisson: "910 g", oignon: "390 g", tomates: "6½", piment: "26 g", crevettes: "260 g", ail: "13", sel: "26 g" },
+      { nb: 14, huilePalme: "168 ml", poisson: "980 g", oignon: "420 g", tomates: "7", piment: "28 g", crevettes: "280 g", ail: "14", sel: "28 g" },
+      { nb: 15, huilePalme: "180 ml", poisson: "1050 g", oignon: "450 g", tomates: "7½", piment: "30 g", crevettes: "300 g", ail: "15", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌴", titre: "L'extrait de palme", detail: "Utilisez une crème de noix de palme (banga, à défaut de l'huile de palme rouge additionnée d'un peu de concentré de tomate) comme base riche.", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Nettoyez le poisson frais et réhydratez le poisson fumé, et parfumez-les d'un peu de sel.", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faites revenir l'oignon et l'ail, ajoutez la crème de palme et un peu d'eau, et portez à frémissement.", badge: null },
+      { icone: "🌿", titre: "Les épices", detail: "Ajoutez les épices banga (beletientien, oburunbebe) ou, à défaut, des graines de coriandre, du gingembre et un peu de muscade.", badge: null },
+      { icone: "🐟", titre: "Mijoter", detail: "Ajoutez le poisson, la viande et les crevettes séchées, et laissez mijoter jusqu'à ce que la soupe épaississe et devienne onctueuse.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajoutez le piment et laissez la soupe réduire, riche et parfumée à l'huile de palme.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la banga soup avec de la pâte (starch, fufu) ou du riz. Profonde, iodée et parfumée — le joyau du delta du Niger.", badge: null }
+    ],
+    liees: ["egusi"]
+  },
+  gbegiri: {
+    dateAjout: "2026-07-11T14:09:00",
+    nom: "Gbegiri",
+    cat: "soupes", pays: "nigeria",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "Gbegiri — la soupe de haricots lisse du Nigeria : des haricots à œil noir cuits puis passés en un velouté onctueux, monté à l'huile de palme et relevé de piment. Douce et crémeuse, elle forme, avec la soupe d'ewedu et le stew, le trio « abula » servi avec l'amala, un classique de la cuisine yoruba.",
+    tableauGbegiri: [
+      { nb: 1, haricotsblancs: "70 g", huilePalme: "10 ml", oignon: "25 g", piment: "1.5 g", crevettes: "15 g", ail: "1", sel: "2 g" },
+      { nb: 2, haricotsblancs: "140 g", huilePalme: "20 ml", oignon: "50 g", piment: "3 g", crevettes: "30 g", ail: "2", sel: "4 g" },
+      { nb: 3, haricotsblancs: "210 g", huilePalme: "30 ml", oignon: "75 g", piment: "4.5 g", crevettes: "45 g", ail: "3", sel: "6 g" },
+      { nb: 4, haricotsblancs: "280 g", huilePalme: "40 ml", oignon: "100 g", piment: "6 g", crevettes: "60 g", ail: "4", sel: "8 g" },
+      { nb: 5, haricotsblancs: "350 g", huilePalme: "50 ml", oignon: "125 g", piment: "7.5 g", crevettes: "75 g", ail: "5", sel: "10 g" },
+      { nb: 6, haricotsblancs: "420 g", huilePalme: "60 ml", oignon: "150 g", piment: "9 g", crevettes: "90 g", ail: "6", sel: "12 g" },
+      { nb: 7, haricotsblancs: "490 g", huilePalme: "70 ml", oignon: "175 g", piment: "10.5 g", crevettes: "105 g", ail: "7", sel: "14 g" },
+      { nb: 8, haricotsblancs: "560 g", huilePalme: "80 ml", oignon: "200 g", piment: "12 g", crevettes: "120 g", ail: "8", sel: "16 g" },
+      { nb: 9, haricotsblancs: "630 g", huilePalme: "90 ml", oignon: "225 g", piment: "13.5 g", crevettes: "135 g", ail: "9", sel: "18 g" },
+      { nb: 10, haricotsblancs: "700 g", huilePalme: "100 ml", oignon: "250 g", piment: "15 g", crevettes: "150 g", ail: "10", sel: "20 g" },
+      { nb: 11, haricotsblancs: "770 g", huilePalme: "110 ml", oignon: "275 g", piment: "16.5 g", crevettes: "165 g", ail: "11", sel: "22 g" },
+      { nb: 12, haricotsblancs: "840 g", huilePalme: "120 ml", oignon: "300 g", piment: "18 g", crevettes: "180 g", ail: "12", sel: "24 g" },
+      { nb: 13, haricotsblancs: "910 g", huilePalme: "130 ml", oignon: "325 g", piment: "19.5 g", crevettes: "195 g", ail: "13", sel: "26 g" },
+      { nb: 14, haricotsblancs: "980 g", huilePalme: "140 ml", oignon: "350 g", piment: "21 g", crevettes: "210 g", ail: "14", sel: "28 g" },
+      { nb: 15, haricotsblancs: "1050 g", huilePalme: "150 ml", oignon: "375 g", piment: "22.5 g", crevettes: "225 g", ail: "15", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Les haricots", detail: "Faites tremper les haricots à œil noir, puis retirez les peaux en les frottant (le secret d'une soupe bien lisse).", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Faites cuire les haricots pelés dans l'eau jusqu'à ce qu'ils soient très tendres et se défassent.", badge: null },
+      { icone: "🥣", titre: "Écraser", detail: "Passez les haricots au tamis (ou au mixeur) avec leur eau, en un velouté lisse et sans grumeaux.", badge: null },
+      { icone: "🟠", titre: "L'huile de palme", detail: "Faites chauffer l'huile de palme et faites-y revenir l'oignon et le piment.", badge: null },
+      { icone: "🍲", titre: "Monter", detail: "Incorporez le velouté de haricots à l'huile de palme, en remuant, jusqu'à obtenir une soupe onctueuse et jaune-orangée.", badge: null },
+      { icone: "🦐", titre: "Assaisonner", detail: "Ajoutez les crevettes séchées moulues, un peu de bouillon et du sel, et laissez mijoter.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la gbegiri avec de l'amala (pâte d'igname) et un stew, à la yoruba. Douce et crémeuse — la soupe de haricots emblématique du Nigeria.", badge: null }
+    ],
+    liees: ["ewaagoyin"]
+  },
 });

@@ -2782,4 +2782,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Parsemez de cacahuètes concassées et servez aussitôt, bien frais. Sucrée, acide, salée et piquante — la salade de fruits surprenante d'Indonésie.", badge: null }
     ]
   },
+  abacha: {
+    dateAjout: "2026-07-11T14:08:00",
+    nom: "Abacha",
+    cat: "salades", pays: "nigeria",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥗",
+    description: "Abacha (African salad) — la salade de manioc du Nigeria : des lanières de manioc séché réhydratées, enrobées d'une sauce jaune à l'huile de palme et à la potasse, relevée de piment, de poisson et d'aubergine amère. Fraîche, umami et relevée, c'est un en-cas-salade adoré chez les Igbo de l'est du Nigeria.",
+    tableauAbacha: [
+      { nb: 1, manioc: "70 g", huilePalme: "10 ml", poisson: "40 g", oignon: "25 g", piment: "1.5 g", citron: "¼", epinards: "20 g", sel: "2 g" },
+      { nb: 2, manioc: "140 g", huilePalme: "20 ml", poisson: "80 g", oignon: "50 g", piment: "3 g", citron: "½", epinards: "40 g", sel: "4 g" },
+      { nb: 3, manioc: "210 g", huilePalme: "30 ml", poisson: "120 g", oignon: "75 g", piment: "4.5 g", citron: "¾", epinards: "60 g", sel: "6 g" },
+      { nb: 4, manioc: "280 g", huilePalme: "40 ml", poisson: "160 g", oignon: "100 g", piment: "6 g", citron: "1", epinards: "80 g", sel: "8 g" },
+      { nb: 5, manioc: "350 g", huilePalme: "50 ml", poisson: "200 g", oignon: "125 g", piment: "7.5 g", citron: "1¼", epinards: "100 g", sel: "10 g" },
+      { nb: 6, manioc: "420 g", huilePalme: "60 ml", poisson: "240 g", oignon: "150 g", piment: "9 g", citron: "1½", epinards: "120 g", sel: "12 g" },
+      { nb: 7, manioc: "490 g", huilePalme: "70 ml", poisson: "280 g", oignon: "175 g", piment: "10.5 g", citron: "1¾", epinards: "140 g", sel: "14 g" },
+      { nb: 8, manioc: "560 g", huilePalme: "80 ml", poisson: "320 g", oignon: "200 g", piment: "12 g", citron: "2", epinards: "160 g", sel: "16 g" },
+      { nb: 9, manioc: "630 g", huilePalme: "90 ml", poisson: "360 g", oignon: "225 g", piment: "13.5 g", citron: "2¼", epinards: "180 g", sel: "18 g" },
+      { nb: 10, manioc: "700 g", huilePalme: "100 ml", poisson: "400 g", oignon: "250 g", piment: "15 g", citron: "2½", epinards: "200 g", sel: "20 g" },
+      { nb: 11, manioc: "770 g", huilePalme: "110 ml", poisson: "440 g", oignon: "275 g", piment: "16.5 g", citron: "2¾", epinards: "220 g", sel: "22 g" },
+      { nb: 12, manioc: "840 g", huilePalme: "120 ml", poisson: "480 g", oignon: "300 g", piment: "18 g", citron: "3", epinards: "240 g", sel: "24 g" },
+      { nb: 13, manioc: "910 g", huilePalme: "130 ml", poisson: "520 g", oignon: "325 g", piment: "19.5 g", citron: "3¼", epinards: "260 g", sel: "26 g" },
+      { nb: 14, manioc: "980 g", huilePalme: "140 ml", poisson: "560 g", oignon: "350 g", piment: "21 g", citron: "3½", epinards: "280 g", sel: "28 g" },
+      { nb: 15, manioc: "1050 g", huilePalme: "150 ml", poisson: "600 g", oignon: "375 g", piment: "22.5 g", citron: "3¾", epinards: "300 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Le manioc", detail: "Réhydratez les lanières de manioc séché (abacha) dans l'eau tiède jusqu'à ce qu'elles s'assouplissent, puis égouttez-les.", badge: null },
+      { icone: "🟠", titre: "La sauce palme", detail: "Émulsionnez l'huile de palme avec un peu de potasse (akanwu) diluée : elle épaissit et devient jaune et crémeuse (le cœur de l'abacha).", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Émiettez du poisson fumé (ou de la stockfish réhydratée) et un peu d'ugba (graines fermentées, facultatif).", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Ajoutez le piment, l'oignon émincé, un peu de bouillon en cube et de sel à la sauce palme.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Enrobez les lanières de manioc de la sauce palme jaune, jusqu'à ce qu'elles soient bien nappées.", badge: null },
+      { icone: "🌿", titre: "Les garnitures", detail: "Ajoutez le poisson émietté, des feuilles vertes (ugu/épinard) ciselées et de l'aubergine amère (garden egg) en dés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez à température ambiante, avec un trait de citron. Fraîche, umami et relevée — la salade de manioc igbo du Nigeria.", badge: null }
+    ]
+  },
 });
