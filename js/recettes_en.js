@@ -68684,5 +68684,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot: savoury with fried beans, eggs and cheese, or sweet with honey, jam or icing sugar. Golden, puffed and crisp — the Belizean breakfast."
    }
   ]
+ },
+ "khuushuur": {
+  "nom": "Khuushuur",
+  "description": "Khuushuur — the Mongolian fried pockets: thin dough filled with minced meat (mutton or beef), onion and garlic, flattened into a cake and fried until golden and crisp, juicy inside. Essential at Naadam (the national festival), they warm the Mongolian steppes.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water and a little salt into a soft, smooth dough. Rest 20 minutes."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced meat with finely chopped onion and garlic, cumin, salt and a little water (to keep it juicy)."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Divide the dough into balls and roll them into thin circles."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a spoon of filling on half of each circle, fold over and seal the edge by pinching (or into a half-moon)."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Lightly flatten each pocket so it cooks evenly."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the khuushuur in a pan in a little oil, flat, until golden and crisp on both sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve piping hot, to eat by hand (mind the juice!). Golden, crisp and juicy — the pockets of the Mongolian steppes."
+   }
+  ]
+ },
+ "oromo": {
+  "nom": "Oromo",
+  "description": "Oromo — the Kyrgyz steamed roll: a very thin dough rolled out, spread with filling (meat, potato, pumpkin or onion), rolled into a spiral then coiled and steamed. Cut into pieces, soft and fragrant, it's a convivial Central Asian dish, a cousin of unrolled manti.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water and salt into a firm, elastic dough. Rest it, then roll it very thin."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Finely chop the meat (mutton), onion, potato and pumpkin, and season with cumin and salt."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Roll the dough out very thin and spread the filling over it, in an even layer, leaving a border."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the filled dough into a long thin log, then coil this log onto itself into a spiral (or a serpentine in the basket)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Place the oromo in an oiled steamer and cook 40 minutes, until the dough is cooked and the filling tender."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let it cool slightly, then cut the oromo into pieces."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, drizzled with a little butter and accompanied by yogurt or a tomato sauce. Soft and fragrant — the Kyrgyz steamed roll."
+   }
+  ]
+ },
+ "tsuivan": {
+  "nom": "Tsuivan",
+  "description": "Tsuivan — the Mongolian stir-fried noodles: homemade noodles steamed then stir-fried with mutton and vegetables (cabbage, carrot, potato, onion). Nourishing, simple and comforting, it's the everyday one-pot dish of Mongolian homes.",
+  "etapes": [
+   {
+    "titre": "The noodle dough",
+    "detail": "Knead the flour with water and salt into a firm dough, roll it thin and cut long noodles."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the noodles (or briefly pre-cook them in water): they stay firm, they'll finish in the pan."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Sear the sliced meat (mutton or beef) in the hot oil, until it colours."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the onion, cabbage, carrot and potato in fine strips, and stir-fry over high heat."
+   },
+   {
+    "titre": "Steam-cook",
+    "detail": "Add a little water, cover and steam-cook until the vegetables are tender."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Add the steamed noodles and stir-fry them with the meat and vegetables, to coat them well in the juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Season and serve nice and hot. Nourishing, simple and comforting — the everyday one-pot of Mongolia."
+   }
+  ]
+ },
+ "mantuafghan": {
+  "nom": "Mantu",
+  "description": "Mantu — the Afghan steamed dumplings: thin dumplings filled with onion-rich minced beef, steamed, then topped with a garlic yogurt (chaka) and a tomato-lentil sauce. Fresh, spiced and scattered with dried mint, it's the ultimate festive and hospitality dish of Afghanistan.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water and salt into a soft dough. Rest it, then roll it very thin and cut squares."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced beef with plenty of finely chopped onion, salt and pepper (the filling is onion-scented)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Place a dot of filling in the centre of each square and close into a well-sealed pouch (or parcel)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the mantu 25 to 30 minutes, until the dough is translucent and the filling cooked."
+   },
+   {
+    "titre": "The chaka",
+    "detail": "Beat the thick yogurt with crushed garlic, salt and dried mint: the signature white sauce."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Make a tomato and red lentil (or split pea) sauce, simmered and spiced."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the mantu, top with garlic chaka then tomato-lentil sauce, and scatter with dried mint. Fresh, spiced and fragrant — the Afghan hospitality dish."
+   }
+  ]
+ },
+ "qabili": {
+  "nom": "Qabili Palaw",
+  "description": "Qabili palaw — the Afghan national dish: golden basmati rice cooked in a lamb broth, crowned with caramelised carrot strips and raisins, with the meat buried underneath. Fragrant, sweet-savoury and festive, it's the dish of weddings and big occasions in Afghanistan.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Brown the sliced onion in the oil until deeply browned (it colours the broth and rice)."
+   },
+   {
+    "titre": "The lamb",
+    "detail": "Add the lamb and colour it, then add water and simmer until tender. Set aside the meat and keep the fragrant broth."
+   },
+   {
+    "titre": "The carrots",
+    "detail": "Sauté the thinly sliced carrots with a little sugar and cardamom, until they caramelise."
+   },
+   {
+    "titre": "The raisins",
+    "detail": "Add the raisins to the carrots and let them plump up."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Half-cook the basmati rice in the fragrant broth, then drain it."
+   },
+   {
+    "titre": "The dum",
+    "detail": "Layer the rice, meat and some of the carrot-raisins in a pot, cover and let it finish cooking, sealed (dum), over very low heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the rice in a dome, topped with the caramelised carrots and raisins, the meat on the side. Fragrant, sweet-savoury and festive — the Afghan national dish."
+   }
+  ]
+ },
+ "shakriya": {
+  "nom": "Shakriya",
+  "description": "Shakriya — the Syrian lamb in cooked yogurt: pieces of lamb simmered in a smooth cooked-yogurt sauce, stabilised so it won't split, scented with garlic and mint. Mild, creamy and comforting, it's served over rice, a great classic of the Levant.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Cook the lamb pieces in water with onion and spices, until tender. Keep a little broth."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Beat the yogurt with a little cornstarch and an egg white: this stops it splitting when cooked."
+   },
+   {
+    "titre": "Cook the yogurt",
+    "detail": "Heat the yogurt over low heat, stirring constantly always in the same direction, until it simmers and thickens (never cover or stop stirring)."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the tender lamb and a little broth to the yogurt, and simmer gently to marry the flavours."
+   },
+   {
+    "titre": "The garlic-mint",
+    "detail": "Sauté crushed garlic in the butter with dried mint, until fragrant."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Pour this sizzling garlic-mint butter over the yogurt sauce: the signature aroma of shakriya."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over a vermicelli rice. Mild, creamy and comforting — the cooked-yogurt lamb of the Levant."
+   }
+  ]
+ },
+ "fahsa": {
+  "nom": "Fahsa",
+  "description": "Fahsa — the bubbling Yemeni lamb stew: lamb simmered in a spiced broth, served scalding in a stone pot (madra) and crowned with a whipped fenugreek froth (hulba) and sahawiq (chilli-coriander sauce). Intense, foamy and spectacular, it's eaten with bread.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Cook the lamb in small pieces in water with onion, until very tender and shreddable. Keep the broth."
+   },
+   {
+    "titre": "The hulba",
+    "detail": "Soak the ground fenugreek in water for several hours, then whisk it vigorously: it rises into a light, foamy froth (hulba)."
+   },
+   {
+    "titre": "The sahawiq",
+    "detail": "Blend the coriander, garlic, chilli and tomato into a punchy green-red sauce (sahawiq/zhug)."
+   },
+   {
+    "titre": "The stew",
+    "detail": "Combine the shredded lamb, its broth, tomato and spices in a stone pot, and bring to a boil."
+   },
+   {
+    "titre": "Bubble",
+    "detail": "Heat the stone pot in a very hot oven (or over fire) until the stew bubbles violently."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Pour the sahawiq then a generous layer of fenugreek froth (hulba) over the bubbling top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, bubbling, with khubz (bread) to dip. Intense, foamy and spectacular — the emblematic stew of Yemen."
+   }
+  ]
+ },
+ "bintalsahn": {
+  "nom": "Bint Al Sahn",
+  "description": "Bint al sahn — the layered honey bread of Yemen: thin layers of brioche dough brushed with clarified butter, stacked and baked, then drowned in honey and scattered with nigella. Soft, buttery and honey-soaked, it's the sweet of Yemeni festivities and hospitality, served warm.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the egg, a little sugar, yeast, warm water and a pinch of salt, into a soft, smooth dough. Let it rise."
+   },
+   {
+    "titre": "The ghee",
+    "detail": "Melt the clarified butter (samn), which will be used to brush each layer."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide the dough into several equal small balls."
+   },
+   {
+    "titre": "Roll thin",
+    "detail": "Roll each ball into a very thin, almost transparent disc."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Stack the discs on top of each other, generously brushing each layer with clarified butter."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake the layered disc in a hot oven (200°C) until golden and puffed."
+   },
+   {
+    "titre": "Honey and serve",
+    "detail": "Straight from the oven, drizzle generously with warm honey and scatter with nigella seeds (or sesame). Serve warm, cut into pieces. Soft, buttery and honey-soaked — the Yemeni festive sweet."
+   }
+  ]
+ },
+ "lobiani": {
+  "nom": "Lobiani",
+  "description": "Lobiani — the Georgian bean-filled bread: a round bread filled with a spiced red bean mash, sometimes lifted with smoked bacon, baked golden. Soft, nourishing and comforting, it's the savoury, plant-based cousin of khachapuri, much loved during Orthodox fasts.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water, a little yeast, salt and oil into a soft dough. Let it rise."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Cook (or use canned) the red beans, then mash them into a rustic purée."
+   },
+   {
+    "titre": "Season",
+    "detail": "Sauté the onion, mix it into the bean purée with the coriander, chilli and Georgian spices (khmeli suneli)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Roll out a ball of dough, fill the centre with a generous ball of bean purée, and close the dough over the top."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Turn over and gently flatten the filled bread into an even disc, without pushing the filling out."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Cook the lobiani in a pan (or hot oven), on both sides, until golden and cooked through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Brush with butter and serve hot, cut into pieces. Soft, nourishing and comforting — the bean bread of Georgia."
+   }
+  ]
+ },
+ "mashuni": {
+  "nom": "Mas Huni",
+  "description": "Mas huni — the Maldivian breakfast: flaked smoked tuna mixed with freshly grated coconut, onion, chilli and lime. Fresh, briny and lightly spicy, it's eaten in the early morning with roshi (thin flatbread) and sweet tea, on every island of the Maldives.",
+  "etapes": [
+   {
+    "titre": "The tuna",
+    "detail": "Finely flake smoked or cooked tuna (or well-drained canned tuna)."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Finely grate fresh coconut (or rehydrate grated coconut): it's the heart of mas huni."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Very finely slice the onion and chilli (dose to taste)."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead the tuna, coconut and onion-chilli by hand: the action brings out the oils and binds the mix."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the lime juice (and a little lemon), the salt, and mix well."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust: mas huni should be balanced between briny, the sweetness of coconut, acidity and heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature, with warm roshi (thin flatbread) and tea. Fresh, briny and fragrant — the breakfast of the Maldives."
+   }
+  ]
  }
 };

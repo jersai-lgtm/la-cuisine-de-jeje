@@ -2708,4 +2708,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez frais, en petite quantité, avec le griot, le poisson frit ou les bananes pesées. Croquant, acide et brûlant — le condiment indispensable d'Haïti.", badge: null }
     ]
   },
+  mashuni: {
+    dateAjout: "2026-07-11T11:09:00",
+    nom: "Mas Huni",
+    cat: "salades", pays: "maldives",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Mas huni — le petit-déjeuner maldivien : du thon fumé émietté mélangé à de la noix de coco fraîchement râpée, de l'oignon, du piment et du citron. Frais, iodé et légèrement piquant, il se déguste au petit matin avec du roshi (galette fine) et un thé sucré, sur toutes les îles des Maldives.",
+    tableauMashuni: [
+      { nb: 1, thon: "70 g", noixcoco: "30 g", oignon: "25 g", piment: "1.5 g", citronvert: "½", citron: "¼", sel: "2 g" },
+      { nb: 2, thon: "140 g", noixcoco: "60 g", oignon: "50 g", piment: "3 g", citronvert: "1", citron: "½", sel: "4 g" },
+      { nb: 3, thon: "210 g", noixcoco: "90 g", oignon: "75 g", piment: "4.5 g", citronvert: "1½", citron: "¾", sel: "6 g" },
+      { nb: 4, thon: "280 g", noixcoco: "120 g", oignon: "100 g", piment: "6 g", citronvert: "2", citron: "1", sel: "8 g" },
+      { nb: 5, thon: "350 g", noixcoco: "150 g", oignon: "125 g", piment: "7.5 g", citronvert: "2½", citron: "1¼", sel: "10 g" },
+      { nb: 6, thon: "420 g", noixcoco: "180 g", oignon: "150 g", piment: "9 g", citronvert: "3", citron: "1½", sel: "12 g" },
+      { nb: 7, thon: "490 g", noixcoco: "210 g", oignon: "175 g", piment: "10.5 g", citronvert: "3½", citron: "1¾", sel: "14 g" },
+      { nb: 8, thon: "560 g", noixcoco: "240 g", oignon: "200 g", piment: "12 g", citronvert: "4", citron: "2", sel: "16 g" },
+      { nb: 9, thon: "630 g", noixcoco: "270 g", oignon: "225 g", piment: "13.5 g", citronvert: "4½", citron: "2¼", sel: "18 g" },
+      { nb: 10, thon: "700 g", noixcoco: "300 g", oignon: "250 g", piment: "15 g", citronvert: "5", citron: "2½", sel: "20 g" },
+      { nb: 11, thon: "770 g", noixcoco: "330 g", oignon: "275 g", piment: "16.5 g", citronvert: "5½", citron: "2¾", sel: "22 g" },
+      { nb: 12, thon: "840 g", noixcoco: "360 g", oignon: "300 g", piment: "18 g", citronvert: "6", citron: "3", sel: "24 g" },
+      { nb: 13, thon: "910 g", noixcoco: "390 g", oignon: "325 g", piment: "19.5 g", citronvert: "6½", citron: "3¼", sel: "26 g" },
+      { nb: 14, thon: "980 g", noixcoco: "420 g", oignon: "350 g", piment: "21 g", citronvert: "7", citron: "3½", sel: "28 g" },
+      { nb: 15, thon: "1050 g", noixcoco: "450 g", oignon: "375 g", piment: "22.5 g", citronvert: "7½", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le thon", detail: "Émiettez finement du thon fumé ou cuit (à défaut, du thon en conserve bien égoutté).", badge: null },
+      { icone: "🥥", titre: "La noix de coco", detail: "Râpez finement de la noix de coco fraîche (ou réhydratez de la coco râpée) : c'est le cœur du mas huni.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Émincez très finement l'oignon et le piment (dosez selon votre goût).", badge: null },
+      { icone: "🖐️", titre: "Malaxer", detail: "Malaxez le thon, la coco et l'oignon-piment à la main : le geste fait ressortir les huiles et lie le mélange.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Ajoutez le jus de citron vert (et un peu de citron), le sel, et mélangez bien.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Goûtez et rectifiez : le mas huni doit être équilibré entre l'iodé, le sucré de la coco, l'acidité et le piquant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez à température ambiante, avec du roshi (galette fine) chaud et un thé. Frais, iodé et parfumé — le petit-déjeuner des Maldives.", badge: null }
+    ]
+  },
 });

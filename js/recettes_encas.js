@@ -5258,4 +5258,79 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chaudes, à tremper dans le chutney de tamarin (ou de mangue). Dorées, moelleuses et épicées — l'en-cas de rue de Trinidad.", badge: null }
     ]
   },
+  khuushuur: {
+    dateAjout: "2026-07-11T11:00:00",
+    nom: "Khuushuur",
+    cat: "encas", pays: "mongolie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥟",
+    description: "Khuushuur — les chaussons frits mongols : une fine pâte garnie de viande hachée (mouton ou bœuf), d'oignon et d'ail, aplatie en galette et frite jusqu'à être dorée et croustillante, juteuse dedans. Incontournables du Naadam (fête nationale), ils réchauffent les steppes mongoles.",
+    tableauKhuushuur: [
+      { nb: 1, farine: "65 g", boeuf: "60 g", oignon: "30 g", ail: "1", cumin: "1 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, farine: "130 g", boeuf: "120 g", oignon: "60 g", ail: "2", cumin: "2 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, farine: "195 g", boeuf: "180 g", oignon: "90 g", ail: "3", cumin: "3 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, farine: "260 g", boeuf: "240 g", oignon: "120 g", ail: "4", cumin: "4 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, farine: "325 g", boeuf: "300 g", oignon: "150 g", ail: "5", cumin: "5 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, farine: "390 g", boeuf: "360 g", oignon: "180 g", ail: "6", cumin: "6 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, farine: "455 g", boeuf: "420 g", oignon: "210 g", ail: "7", cumin: "7 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, farine: "520 g", boeuf: "480 g", oignon: "240 g", ail: "8", cumin: "8 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, farine: "585 g", boeuf: "540 g", oignon: "270 g", ail: "9", cumin: "9 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, farine: "650 g", boeuf: "600 g", oignon: "300 g", ail: "10", cumin: "10 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, farine: "715 g", boeuf: "660 g", oignon: "330 g", ail: "11", cumin: "11 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, farine: "780 g", boeuf: "720 g", oignon: "360 g", ail: "12", cumin: "12 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, farine: "845 g", boeuf: "780 g", oignon: "390 g", ail: "13", cumin: "13 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, farine: "910 g", boeuf: "840 g", oignon: "420 g", ail: "14", cumin: "14 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, farine: "975 g", boeuf: "900 g", oignon: "450 g", ail: "15", cumin: "15 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec de l'eau et un peu de sel en une pâte souple et lisse. Laissez reposer 20 min.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Mélangez la viande hachée avec l'oignon et l'ail finement hachés, le cumin, le sel et un peu d'eau (pour la garder juteuse).", badge: null },
+      { icone: "⚪", titre: "Abaisser", detail: "Divisez la pâte en boules et abaissez-les en cercles fins.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Déposez une cuillère de farce sur une moitié de chaque cercle, repliez et scellez le bord en pinçant (ou en demi-lune).", badge: null },
+      { icone: "🫓", titre: "Aplatir", detail: "Aplatissez légèrement chaque chausson pour qu'il cuise uniformément.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les khuushuur à la poêle dans un peu d'huile, à plat, jusqu'à ce qu'ils soient dorés et croustillants des deux côtés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez brûlants, à déguster à la main (attention au jus !). Dorés, croustillants et juteux — les chaussons des steppes mongoles.", badge: null }
+    ],
+    liees: ["buuz"]
+  },
+  oromo: {
+    dateAjout: "2026-07-11T11:01:00",
+    nom: "Oromo",
+    cat: "encas", pays: "kirghizistan",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌯",
+    description: "Oromo — le rouleau vapeur kirghize : une pâte très fine étalée, badigeonnée de garniture (viande, pomme de terre, courge ou oignon), roulée en spirale puis enroulée et cuite à la vapeur. Coupé en tronçons, moelleux et parfumé, c'est un plat convivial d'Asie centrale, cousin du manti déroulé.",
+    tableauOromo: [
+      { nb: 1, farine: "65 g", agneau: "50 g", pommedeterre: "30 g", oignon: "25 g", courge: "25 g", cumin: "1 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, farine: "130 g", agneau: "100 g", pommedeterre: "60 g", oignon: "50 g", courge: "50 g", cumin: "2 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, farine: "195 g", agneau: "150 g", pommedeterre: "90 g", oignon: "75 g", courge: "75 g", cumin: "3 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, farine: "260 g", agneau: "200 g", pommedeterre: "120 g", oignon: "100 g", courge: "100 g", cumin: "4 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, farine: "325 g", agneau: "250 g", pommedeterre: "150 g", oignon: "125 g", courge: "125 g", cumin: "5 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, farine: "390 g", agneau: "300 g", pommedeterre: "180 g", oignon: "150 g", courge: "150 g", cumin: "6 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, farine: "455 g", agneau: "350 g", pommedeterre: "210 g", oignon: "175 g", courge: "175 g", cumin: "7 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, farine: "520 g", agneau: "400 g", pommedeterre: "240 g", oignon: "200 g", courge: "200 g", cumin: "8 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, farine: "585 g", agneau: "450 g", pommedeterre: "270 g", oignon: "225 g", courge: "225 g", cumin: "9 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, farine: "650 g", agneau: "500 g", pommedeterre: "300 g", oignon: "250 g", courge: "250 g", cumin: "10 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, farine: "715 g", agneau: "550 g", pommedeterre: "330 g", oignon: "275 g", courge: "275 g", cumin: "11 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, farine: "780 g", agneau: "600 g", pommedeterre: "360 g", oignon: "300 g", courge: "300 g", cumin: "12 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, farine: "845 g", agneau: "650 g", pommedeterre: "390 g", oignon: "325 g", courge: "325 g", cumin: "13 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, farine: "910 g", agneau: "700 g", pommedeterre: "420 g", oignon: "350 g", courge: "350 g", cumin: "14 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, farine: "975 g", agneau: "750 g", pommedeterre: "450 g", oignon: "375 g", courge: "375 g", cumin: "15 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec de l'eau et du sel en une pâte ferme et élastique. Laissez reposer, puis abaissez-la très finement.", badge: null },
+      { icone: "🥩", titre: "La garniture", detail: "Hachez finement la viande (mouton), l'oignon, la pomme de terre et la courge, et assaisonnez de cumin et de sel.", badge: null },
+      { icone: "🖌️", titre: "Garnir", detail: "Étalez la pâte très fine et répartissez la garniture dessus, en une couche régulière, en laissant une bordure.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Roulez la pâte garnie en un long boudin fin, puis enroulez ce boudin sur lui-même en spirale (ou en serpentin dans le panier).", badge: null },
+      { icone: "♨️", titre: "Cuisson vapeur", detail: "Déposez l'oromo dans un cuit-vapeur huilé et faites cuire 40 min, jusqu'à ce que la pâte soit cuite et la garniture fondante.", badge: null },
+      { icone: "🔪", titre: "Détailler", detail: "Laissez tiédir légèrement, puis coupez l'oromo en tronçons.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, arrosé d'un peu de beurre et accompagné de yaourt ou d'une sauce tomate. Moelleux et parfumé — le rouleau vapeur kirghize.", badge: null }
+    ]
+  },
 });

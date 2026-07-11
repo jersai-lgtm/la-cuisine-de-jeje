@@ -4630,4 +4630,42 @@ Object.assign(recettes, {
     ],
     liees: ["sancocho"]
   },
+  fahsa: {
+    dateAjout: "2026-07-11T11:06:00",
+    nom: "Fahsa",
+    cat: "soupes", pays: "yemen",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Fahsa — le ragoût d'agneau bouillonnant du Yémen : de l'agneau mijoté dans un bouillon épicé, servi brûlant dans un pot de pierre (madra) et coiffé d'une écume fouettée de fenugrec (hulba) et de sahawiq (sauce piment-coriandre). Intense, mousseux et spectaculaire, il se mange avec du pain.",
+    tableauFahsa: [
+      { nb: 1, agneau: "100 g", tomates: "½", oignon: "30 g", ail: "1", fenugrec: "1.5 g", piment: "1 g", cumin: "1 g", coriandre: "4 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, agneau: "200 g", tomates: "1", oignon: "60 g", ail: "2", fenugrec: "3 g", piment: "2 g", cumin: "2 g", coriandre: "8 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, agneau: "300 g", tomates: "1½", oignon: "90 g", ail: "3", fenugrec: "4.5 g", piment: "3 g", cumin: "3 g", coriandre: "12 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, agneau: "400 g", tomates: "2", oignon: "120 g", ail: "4", fenugrec: "6 g", piment: "4 g", cumin: "4 g", coriandre: "16 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, agneau: "500 g", tomates: "2½", oignon: "150 g", ail: "5", fenugrec: "7.5 g", piment: "5 g", cumin: "5 g", coriandre: "20 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, agneau: "600 g", tomates: "3", oignon: "180 g", ail: "6", fenugrec: "9 g", piment: "6 g", cumin: "6 g", coriandre: "24 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, agneau: "700 g", tomates: "3½", oignon: "210 g", ail: "7", fenugrec: "10.5 g", piment: "7 g", cumin: "7 g", coriandre: "28 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, agneau: "800 g", tomates: "4", oignon: "240 g", ail: "8", fenugrec: "12 g", piment: "8 g", cumin: "8 g", coriandre: "32 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, agneau: "900 g", tomates: "4½", oignon: "270 g", ail: "9", fenugrec: "13.5 g", piment: "9 g", cumin: "9 g", coriandre: "36 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, agneau: "1000 g", tomates: "5", oignon: "300 g", ail: "10", fenugrec: "15 g", piment: "10 g", cumin: "10 g", coriandre: "40 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, agneau: "1100 g", tomates: "5½", oignon: "330 g", ail: "11", fenugrec: "16.5 g", piment: "11 g", cumin: "11 g", coriandre: "44 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, agneau: "1200 g", tomates: "6", oignon: "360 g", ail: "12", fenugrec: "18 g", piment: "12 g", cumin: "12 g", coriandre: "48 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, agneau: "1300 g", tomates: "6½", oignon: "390 g", ail: "13", fenugrec: "19.5 g", piment: "13 g", cumin: "13 g", coriandre: "52 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, agneau: "1400 g", tomates: "7", oignon: "420 g", ail: "14", fenugrec: "21 g", piment: "14 g", cumin: "14 g", coriandre: "56 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, agneau: "1500 g", tomates: "7½", oignon: "450 g", ail: "15", fenugrec: "22.5 g", piment: "15 g", cumin: "15 g", coriandre: "60 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "L'agneau", detail: "Faites cuire l'agneau en petits morceaux dans l'eau avec de l'oignon, jusqu'à ce qu'il soit très tendre et effilochable. Gardez le bouillon.", badge: null },
+      { icone: "🌿", titre: "La hulba", detail: "Faites tremper le fenugrec moulu dans l'eau plusieurs heures, puis fouettez-le vigoureusement : il monte en une écume légère et mousseuse (hulba).", badge: null },
+      { icone: "🌶️", titre: "Le sahawiq", detail: "Mixez la coriandre, l'ail, le piment et la tomate en une sauce verte-rouge relevée (sahawiq/zhug).", badge: null },
+      { icone: "🍲", titre: "Le ragoût", detail: "Réunissez l'agneau effiloché, son bouillon, la tomate et les épices dans un pot de pierre, et portez à ébullition.", badge: null },
+      { icone: "🔥", titre: "Bouillonner", detail: "Faites chauffer le pot de pierre au four très chaud (ou sur le feu) jusqu'à ce que le ragoût bouillonne violemment.", badge: null },
+      { icone: "☁️", titre: "Couronner", detail: "Versez le sahawiq puis une généreuse couche d'écume de fenugrec (hulba) sur le dessus bouillonnant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, bouillonnant, avec du khubz (pain) pour tremper. Intense, mousseux et spectaculaire — le ragoût emblématique du Yémen.", badge: null }
+    ],
+    liees: ["saltah"]
+  },
 });

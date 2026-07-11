@@ -1985,4 +1985,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chauds : en salé avec des haricots frits, des œufs et du fromage, ou en sucré avec du miel, de la confiture ou du sucre glace. Dorés, soufflés et croustillants — le petit-déjeuner du Belize.", badge: null }
     ]
   },
+  lobiani: {
+    dateAjout: "2026-07-11T11:08:00",
+    nom: "Lobiani",
+    cat: "boulangerie", pays: "georgie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Lobiani — le pain fourré aux haricots géorgien : un pain rond garni d'une purée de haricots rouges épicée, parfois relevée de lard fumé, cuit jusqu'à être doré. Moelleux, nourrissant et réconfortant, c'est le cousin salé et végétal du khachapuri, très apprécié pendant les jeûnes orthodoxes.",
+    tableauLobiani: [
+      { nb: 1, farine: "70 g", haricotsrouges: "50 g", oignon: "25 g", coriandre: "4 g", beurre: "8 g", piment: "0.5 g", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, farine: "140 g", haricotsrouges: "100 g", oignon: "50 g", coriandre: "8 g", beurre: "16 g", piment: "1 g", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, farine: "210 g", haricotsrouges: "150 g", oignon: "75 g", coriandre: "12 g", beurre: "24 g", piment: "1.5 g", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, farine: "280 g", haricotsrouges: "200 g", oignon: "100 g", coriandre: "16 g", beurre: "32 g", piment: "2 g", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, farine: "350 g", haricotsrouges: "250 g", oignon: "125 g", coriandre: "20 g", beurre: "40 g", piment: "2.5 g", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, farine: "420 g", haricotsrouges: "300 g", oignon: "150 g", coriandre: "24 g", beurre: "48 g", piment: "3 g", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, farine: "490 g", haricotsrouges: "350 g", oignon: "175 g", coriandre: "28 g", beurre: "56 g", piment: "3.5 g", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, farine: "560 g", haricotsrouges: "400 g", oignon: "200 g", coriandre: "32 g", beurre: "64 g", piment: "4 g", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, farine: "630 g", haricotsrouges: "450 g", oignon: "225 g", coriandre: "36 g", beurre: "72 g", piment: "4.5 g", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, farine: "700 g", haricotsrouges: "500 g", oignon: "250 g", coriandre: "40 g", beurre: "80 g", piment: "5 g", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, farine: "770 g", haricotsrouges: "550 g", oignon: "275 g", coriandre: "44 g", beurre: "88 g", piment: "5.5 g", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, farine: "840 g", haricotsrouges: "600 g", oignon: "300 g", coriandre: "48 g", beurre: "96 g", piment: "6 g", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, farine: "910 g", haricotsrouges: "650 g", oignon: "325 g", coriandre: "52 g", beurre: "104 g", piment: "6.5 g", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, farine: "980 g", haricotsrouges: "700 g", oignon: "350 g", coriandre: "56 g", beurre: "112 g", piment: "7 g", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, farine: "1050 g", haricotsrouges: "750 g", oignon: "375 g", coriandre: "60 g", beurre: "120 g", piment: "7.5 g", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec de l'eau, un peu de levure, de sel et d'huile en une pâte souple. Laissez-la lever.", badge: null },
+      { icone: "🫘", titre: "Les haricots", detail: "Faites cuire (ou utilisez en conserve) les haricots rouges, puis écrasez-les en une purée rustique.", badge: null },
+      { icone: "🧅", titre: "Assaisonner", detail: "Faites revenir l'oignon, mélangez-le à la purée de haricots avec la coriandre, le piment et les épices géorgiennes (khmeli suneli).", badge: null },
+      { icone: "⚪", titre: "Garnir", detail: "Abaissez une boule de pâte, garnissez le centre d'une généreuse boule de purée de haricots, et refermez la pâte par-dessus.", badge: null },
+      { icone: "🫓", titre: "Aplatir", detail: "Retournez et aplatissez délicatement le pain garni en un disque régulier, sans faire sortir la garniture.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire le lobiani à la poêle (ou au four chaud), des deux côtés, jusqu'à ce qu'il soit doré et cuit à cœur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Badigeonnez de beurre et servez chaud, coupé en parts. Moelleux, nourrissant et réconfortant — le pain aux haricots de Géorgie.", badge: null }
+    ],
+    liees: ["khachapuri"]
+  },
 });

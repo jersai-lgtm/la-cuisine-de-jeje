@@ -8380,4 +8380,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, saupoudrés de sucre glace et nappés de crème ou de fruits. Moelleuses et gourmandes — le goûter douillet de la Pologne.", badge: null }
     ]
   },
+  bintalsahn: {
+    dateAjout: "2026-07-11T11:07:00",
+    nom: "Bint Al Sahn",
+    cat: "desserts", pays: "yemen",
+    base: 4,
+    temps: "1h + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍯",
+    description: "Bint al sahn — le pain au miel feuilleté du Yémen : de fines couches de pâte briochée badigeonnées de beurre clarifié, empilées et cuites, puis noyées de miel et parsemées de nigelle. Moelleux, beurré et gorgé de miel, c'est la douceur des fêtes et de l'hospitalité yéménite, servie tiède.",
+    tableauBintalsahn: [
+      { nb: 1, farine: "65 g", oeufs: "½", beurre: "18 g", miel: "25 g", sucre: "6 g", levure: "2 g", sesame: "2 g" },
+      { nb: 2, farine: "130 g", oeufs: "1", beurre: "36 g", miel: "50 g", sucre: "12 g", levure: "4 g", sesame: "4 g" },
+      { nb: 3, farine: "195 g", oeufs: "1½", beurre: "54 g", miel: "75 g", sucre: "18 g", levure: "6 g", sesame: "6 g" },
+      { nb: 4, farine: "260 g", oeufs: "2", beurre: "72 g", miel: "100 g", sucre: "24 g", levure: "8 g", sesame: "8 g" },
+      { nb: 5, farine: "325 g", oeufs: "2½", beurre: "90 g", miel: "125 g", sucre: "30 g", levure: "10 g", sesame: "10 g" },
+      { nb: 6, farine: "390 g", oeufs: "3", beurre: "108 g", miel: "150 g", sucre: "36 g", levure: "12 g", sesame: "12 g" },
+      { nb: 7, farine: "455 g", oeufs: "3½", beurre: "126 g", miel: "175 g", sucre: "42 g", levure: "14 g", sesame: "14 g" },
+      { nb: 8, farine: "520 g", oeufs: "4", beurre: "144 g", miel: "200 g", sucre: "48 g", levure: "16 g", sesame: "16 g" },
+      { nb: 9, farine: "585 g", oeufs: "4½", beurre: "162 g", miel: "225 g", sucre: "54 g", levure: "18 g", sesame: "18 g" },
+      { nb: 10, farine: "650 g", oeufs: "5", beurre: "180 g", miel: "250 g", sucre: "60 g", levure: "20 g", sesame: "20 g" },
+      { nb: 11, farine: "715 g", oeufs: "5½", beurre: "198 g", miel: "275 g", sucre: "66 g", levure: "22 g", sesame: "22 g" },
+      { nb: 12, farine: "780 g", oeufs: "6", beurre: "216 g", miel: "300 g", sucre: "72 g", levure: "24 g", sesame: "24 g" },
+      { nb: 13, farine: "845 g", oeufs: "6½", beurre: "234 g", miel: "325 g", sucre: "78 g", levure: "26 g", sesame: "26 g" },
+      { nb: 14, farine: "910 g", oeufs: "7", beurre: "252 g", miel: "350 g", sucre: "84 g", levure: "28 g", sesame: "28 g" },
+      { nb: 15, farine: "975 g", oeufs: "7½", beurre: "270 g", miel: "375 g", sucre: "90 g", levure: "30 g", sesame: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec l'œuf, un peu de sucre, de levure, d'eau tiède et une pincée de sel, en une pâte souple et lisse. Laissez lever.", badge: null },
+      { icone: "🧈", titre: "Le ghee", detail: "Faites fondre le beurre clarifié (samn), qui servira à badigeonner chaque couche.", badge: null },
+      { icone: "⚪", titre: "Diviser", detail: "Divisez la pâte en plusieurs petites boules égales.", badge: null },
+      { icone: "📏", titre: "Étaler fin", detail: "Abaissez chaque boule en un disque très fin, presque transparent.", badge: null },
+      { icone: "🥞", titre: "Empiler", detail: "Empilez les disques les uns sur les autres, en badigeonnant généreusement chaque couche de beurre clarifié.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez le disque feuilleté à four chaud (200 °C) jusqu'à ce qu'il soit doré et gonflé.", badge: null },
+      { icone: "🍯", titre: "Miel et service", detail: "À la sortie du four, arrosez généreusement de miel chaud et parsemez de graines de nigelle (ou de sésame). Servez tiède, coupé en parts. Moelleux, beurré et gorgé de miel — la douceur de fête yéménite.", badge: null }
+    ]
+  },
 });
