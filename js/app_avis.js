@@ -143,35 +143,29 @@ function rendreNoteAppAccueil(tous) {
   if (!zone) return;
   const nb = tous.length;
   const dejaNote = window.currentUser && tous.some(a => a.uid === window.currentUser.uid);
-  const libelleBtn = dejaNote ? "✏️ Modifier mon avis" : "⭐ Noter l'application";
+  const cta = dejaNote ? "Modifier mon avis" : "Donner mon avis";
   zone.style.display = "block";
   if (nb === 0) {
     zone.innerHTML = `
-      <div class="note-app-card note-app-vide">
-        <div class="note-app-cta">
-          <div class="note-app-titre">⭐ Avis sur l'application</div>
-          <div class="note-app-sub">Aucun avis pour l'instant — sois le premier à noter Jéjé !</div>
-          <button class="note-app-btn" onclick="ouvrirModalAvis()">${libelleBtn}</button>
-        </div>
-      </div>`;
+      <button class="note-app-bar note-app-bar-vide" onclick="ouvrirModalAvis()" aria-label="Donner mon avis sur l'application">
+        <span class="note-app-bar-ico">⭐</span>
+        <span class="note-app-bar-txt">Avis sur l'appli · sois le premier à noter !</span>
+        <span class="note-app-bar-cta">${cta} →</span>
+      </button>`;
     return;
   }
   const moy = tous.reduce((s, a) => s + (a.etoiles || 0), 0) / nb;
   const arr = Math.round(moy);
   const etoiles = "★".repeat(arr) + "☆".repeat(5 - arr);
   zone.innerHTML = `
-    <div class="note-app-card">
-      <div class="note-app-note">
-        <div class="note-app-chiffre">${moy.toFixed(1).replace(".", ",")}<span>/5</span></div>
-        <div class="note-app-etoiles">${etoiles}</div>
-        <div class="note-app-nb">${nb} avis</div>
-      </div>
-      <div class="note-app-cta">
-        <div class="note-app-titre">⭐ Avis sur l'application</div>
-        <div class="note-app-sub">La note moyenne donnée par la communauté Jéjé</div>
-        <button class="note-app-btn" onclick="ouvrirModalAvis()">${libelleBtn}</button>
-      </div>
-    </div>`;
+    <button class="note-app-bar" onclick="ouvrirModalAvis()" aria-label="Avis sur l'application — donner mon avis">
+      <span class="note-app-bar-note">${moy.toFixed(1).replace(".", ",")}<span>/5</span></span>
+      <span class="note-app-bar-mid">
+        <span class="note-app-bar-stars">${etoiles}</span>
+        <span class="note-app-bar-sub">Avis sur l'appli · ${nb} avis</span>
+      </span>
+      <span class="note-app-bar-cta">${cta} →</span>
+    </button>`;
 }
 
 // Chargé à l'affichage de l'accueil : lit les avis et remplit la carte en évidence.
