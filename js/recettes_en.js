@@ -70724,5 +70724,345 @@ window.RECETTES_EN = {
     "detail": "Serve warm, as a side to rice and a curry. Dry, crunchy and fragrant — the vegetable stir-fry of Kerala."
    }
   ]
+ },
+ "shuizhuyu": {
+  "nom": "Shui Zhu Yu",
+  "description": "Shui zhu yu — the Sichuan boiled fish: thin slices of fish poached for seconds then drowned under a sea of scalding oil with dried chilli and Sichuan pepper, on a bed of bean sprouts. Fiery, numbing (mala) and spectacular, it's a pillar of Sichuan cuisine.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Slice the white fish into thin pieces, and briefly marinate them with starch, a little egg white and salt (they'll stay silky)."
+   },
+   {
+    "titre": "The bed",
+    "detail": "Stir-fry the bean sprouts (and napa cabbage) and lay them in the bottom of a large bowl."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Sauté the chilli bean paste (doubanjiang), garlic and ginger, then add broth."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop the fish slices into the simmering broth: they cook in a few seconds. Pour it all over the sprouts."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Spread a generous layer of dried chillies, Sichuan pepper and sliced garlic over the fish."
+   },
+   {
+    "titre": "The scalding oil",
+    "detail": "Heat the oil until it smokes, then pour it in one go over the spices: they sizzle and release all their aromas (the signature 'chhhh!')."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with spring onion and serve scalding, with rice. Fiery, numbing and spectacular — the boiled fish of Sichuan."
+   }
+  ]
+ },
+ "yuxiangqiezi": {
+  "nom": "Yu Xiang Qie Zi",
+  "description": "Yu xiang qie zi — the Sichuan 'fish-fragrant' eggplant: soft eggplant coated in a sweet-sour-spicy sauce of garlic, ginger and chilli bean paste. Despite its name, it contains no fish: 'yu xiang' refers to a flavour profile, a great Sichuan vegetable classic.",
+  "etapes": [
+   {
+    "titre": "The eggplant",
+    "detail": "Cut the eggplant into batons and fry (or roast) them until golden and soft."
+   },
+   {
+    "titre": "The pork",
+    "detail": "Sauté a little minced pork over high heat, until it colours."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the chilli bean paste (doubanjiang), chopped garlic and ginger, and sauté until the oil reddens."
+   },
+   {
+    "titre": "The yu xiang sauce",
+    "detail": "Make the sauce by mixing vinegar, sugar, soy sauce and a little broth: the signature sweet-sour-salty balance."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the soft eggplant to the wok and pour in the yu xiang sauce."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Simmer and bind with a little slaked starch, until the sauce coats the eggplant, glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with spring onion and serve with rice. Soft, sweet-sour and spicy — the Sichuan 'fish-fragrant' eggplant."
+   }
+  ]
+ },
+ "ganbiandoujiao": {
+  "nom": "Gan Bian Dou Jiao",
+  "description": "Gan bian dou jiao — the Sichuan dry-fried green beans: green beans fried until wrinkled and blistered, then stir-fried with minced pork, preserved vegetables and chilli. Crunchy, wrinkled and umami, they showcase the 'gan bian' (dry-fry) technique, for a unique texture.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Trim the green beans and dry them well (moisture stops blistering)."
+   },
+   {
+    "titre": "Dry-fry",
+    "detail": "Fry them (or stir-fry over very high heat) in a little oil, without moving them too much, until the skin wrinkles and spots brown (the 'tiger skin'). Set aside."
+   },
+   {
+    "titre": "The pork",
+    "detail": "Sauté the minced pork over high heat, until dry and crisp."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the garlic, ginger, dried chilli, Sichuan pepper and preserved vegetables (ya cai), and sauté them."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the wrinkled beans to the wok and stir-fry them with the pork and aromatics."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add a dash of soy sauce and rice wine, and stir-fry over high heat until everything is dry and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, as a side to rice. Crunchy, wrinkled and umami — the dry-fried green beans of Sichuan."
+   }
+  ]
+ },
+ "koushuiji": {
+  "nom": "Kou Shui Ji",
+  "description": "Kou shui ji — the Sichuan 'mouthwatering' chicken: chicken poached then cooled, sliced and drowned under a glossy sauce of chilli oil, Sichuan pepper, sesame and garlic. Its name ('mouth-watering chicken') says it all: fiery, numbing and irresistible, served cold as a starter.",
+  "etapes": [
+   {
+    "titre": "Poach the chicken",
+    "detail": "Gently poach the chicken in water with ginger and spring onion, until just cooked and tender."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Plunge the chicken in iced water to firm the flesh and skin (it turns silky), then cut it into pieces."
+   },
+   {
+    "titre": "The chilli oil",
+    "detail": "Make (or use) a fragrant red chilli oil, by pouring hot oil over chilli flakes."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the chilli oil, soy sauce, sugar, black vinegar, sesame paste, crushed garlic and ground Sichuan pepper."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Arrange the cold chicken in a dish and coat it generously with the glossy red sauce."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter with crushed peanuts, sesame seeds and chopped spring onion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold, as a starter. Fiery, numbing and irresistible — the Sichuan 'mouthwatering' chicken."
+   }
+  ]
+ },
+ "claypotrice": {
+  "nom": "Claypot Rice",
+  "description": "Cantonese clay pot rice (bo zai fan) — rice cooked in a clay pot with marinated chicken, Chinese sausage (lap cheong) and mushroom, until a golden crisp crust forms at the bottom (the guo ba). Coated in sweet soy sauce, it's a comforting winter dish of Hong Kong.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the chicken pieces with soy sauce, ginger, sesame oil and a little starch."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Rinse the rice and put it in a clay pot with the right volume of water. Bring to a boil then lower the heat."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "When the rice water is almost absorbed, arrange the marinated chicken, Chinese sausage (lap cheong) and rehydrated mushroom on the rice."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Cover and cook over low heat: the rice finishes steaming from the toppings and a golden crust forms at the bottom (the guo ba)."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Make a sweet soy sauce (light and dark soy, sugar, a little water)."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the sweet soy sauce over the rice and toppings, and mix at the table to coat everything."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in the pot, scraping the crisp crust from the bottom. Comforting and fragrant — the Cantonese clay pot rice."
+   }
+  ]
+ },
+ "lomaigai": {
+  "nom": "Lo Mai Gai",
+  "description": "Lo mai gai — the Cantonese lotus-leaf glutinous rice: glutinous rice filled with chicken, mushroom and Chinese sausage, wrapped in a lotus leaf and steamed until it soaks up its fragrance. Soft, umami and fragrant, it's a staple of the dim sum carts.",
+  "etapes": [
+   {
+    "titre": "The glutinous rice",
+    "detail": "Soak the glutinous rice for several hours, then steam it until tender. Season it with a little soy sauce and oil."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the marinated chicken, rehydrated mushroom and Chinese sausage (lap cheong) with soy sauce, until fragrant."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Soak the lotus leaves in hot water to soften them, then wipe them."
+   },
+   {
+    "titre": "Fill",
+    "detail": "On a lotus leaf, place a layer of glutinous rice, the filling (with a little salted egg yolk), then another layer of rice."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Fold the lotus leaf into a well-closed packet."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the packets 20 to 30 minutes, until the rice is soft and lotus-scented."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the leaf at the table: the rice is infused with the lotus fragrance. Soft, umami and fragrant — the dim sum staple."
+   }
+  ]
+ },
+ "baiqieji": {
+  "nom": "Bai Qie Ji",
+  "description": "Bai qie ji — the Cantonese white poached chicken: a gently poached chicken, with silky flesh and gelatinous skin, cooled then sliced and served with a ginger-and-scallion oil dip. Deceptively simple, it celebrates the freshness of the chicken, a pillar of Cantonese cuisine.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Submerge the whole chicken in plenty of simmering (never boiling) water with ginger and spring onion, then turn off the heat and let it poach covered in the hot water (gentle cooking)."
+   },
+   {
+    "titre": "The gentle cooking",
+    "detail": "This gentle poaching keeps the flesh silky and juicy, and the skin gelatinous (the secret of bai qie ji)."
+   },
+   {
+    "titre": "The ice bath",
+    "detail": "Plunge the cooked chicken in iced water: the skin firms and turns silky."
+   },
+   {
+    "titre": "The ginger-scallion oil",
+    "detail": "Finely chop the ginger and spring onion, salt, and pour scalding oil over them: the signature dip."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the cold chicken into even pieces (Chinese-style, bone-in), keeping the skin."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the pieces prettily on a plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with the ginger-scallion dip and a drizzle of soy sauce. Silky, fresh and delicate — the Cantonese white chicken."
+   }
+  ]
+ },
+ "shizitou": {
+  "nom": "Lion's Head Meatballs",
+  "description": "Lion's head meatballs (shizitou) — the large pork meatballs of Shanghai: enormous tender, soft minced-pork meatballs, long-simmered with napa cabbage that wraps them like a lion's mane. Melting, comforting and delicate, they're a classic of Jiangsu cuisine.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Finely chop the pork (half-fatty) and work it at length with the ginger, spring onion, egg, starch and a little water, until it turns sticky and airy."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form very large, even meatballs ('lion's head'), bigger than a tennis ball."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Gently brown the meatballs in a little oil, on all sides, without breaking them."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Lay a bed of napa cabbage in a pot and set the meatballs on it (the cabbage is the 'mane')."
+   },
+   {
+    "titre": "The braise",
+    "detail": "Add the soy sauce, a little sugar and broth, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer at length over low heat, until the meatballs are ultra-tender and the cabbage soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the meatballs on the cabbage, coated in their juices. Melting, comforting and delicate — the lion's heads of Shanghai."
+   }
+  ]
+ },
+ "oysteromelette": {
+  "nom": "Oyster Omelette",
+  "description": "Oyster omelette (o a jian) — the night-market classic of Fujian and Taiwan: small oysters coated in an egg-and-sweet-potato-starch batter, pan-fried until soft and slightly gelatinous, then topped with a sweet-spicy sauce. Briny, soft and indulgent.",
+  "etapes": [
+   {
+    "titre": "The oysters",
+    "detail": "Shuck small fresh oysters and rinse them gently."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Loosen the sweet potato starch in a little water, into a fluid batter (it gives the signature gelatinous texture)."
+   },
+   {
+    "titre": "Pan-fry",
+    "detail": "Pour the starch batter into a hot oiled pan, arrange the oysters, and let it set lightly."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Beat the eggs and pour them over, with chopped spring onion."
+   },
+   {
+    "titre": "The greens",
+    "detail": "Add green leaves (napa cabbage, lettuce) on the still-soft omelette."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook until the underside is golden and crisp, then flip to brown the other side (the centre stays soft)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with a sweet-spicy sauce (based on sweet chilli paste and soy sauce) and serve at once. Briny, soft and indulgent — the night-market omelette."
+   }
+  ]
+ },
+ "donganchicken": {
+  "nom": "Dong An Chicken",
+  "description": "Dong An chicken — the vinegar chicken of Hunan: chicken poached then stir-fried over high heat with rice vinegar, dried chilli, ginger and Sichuan pepper. Tangy, spicy and refreshing, it's one of the historic dishes of Hunan province, famous for its bold, bright cuisine.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Poach the chicken until just cooked, then cut it into strips (traditionally bone-in)."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the julienned ginger, dried chillies and Sichuan pepper in the hot oil, until fragrant."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Add the chicken strips and stir-fry them over high heat."
+   },
+   {
+    "titre": "The vinegar",
+    "detail": "Deglaze generously with rice vinegar: it's the bright acidity that defines Dong An."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little broth and reduce for a few minutes to concentrate the flavours."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Bind with a little slaked starch, so the sauce coats the chicken, glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with spring onion and serve with rice. Tangy, spicy and refreshing — the vinegar chicken of Hunan."
+   }
+  ]
  }
 };
