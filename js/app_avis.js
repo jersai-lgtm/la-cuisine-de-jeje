@@ -142,15 +142,12 @@ function rendreNoteAppAccueil(tous) {
   const zone = document.getElementById("accueil-note-app");
   if (!zone) return;
   const nb = tous.length;
-  const dejaNote = window.currentUser && tous.some(a => a.uid === window.currentUser.uid);
-  const cta = dejaNote ? "Modifier mon avis" : "Donner mon avis";
   zone.style.display = "block";
   if (nb === 0) {
     zone.innerHTML = `
-      <button class="note-app-bar note-app-bar-vide" onclick="ouvrirModalAvis()" aria-label="Donner mon avis sur l'application">
+      <button class="note-app-bar note-app-bar-vide" onclick="ouvrirModalAvis()" aria-label="Avis général de l'application">
         <span class="note-app-bar-ico">⭐</span>
-        <span class="note-app-bar-txt">Avis sur l'appli · sois le premier à noter !</span>
-        <span class="note-app-bar-cta">${cta} →</span>
+        <span class="note-app-bar-sub">Avis général de l'appli · aucun avis pour l'instant</span>
       </button>`;
     return;
   }
@@ -158,13 +155,10 @@ function rendreNoteAppAccueil(tous) {
   const arr = Math.round(moy);
   const etoiles = "★".repeat(arr) + "☆".repeat(5 - arr);
   zone.innerHTML = `
-    <button class="note-app-bar" onclick="ouvrirModalAvis()" aria-label="Avis sur l'application — donner mon avis">
+    <button class="note-app-bar" onclick="ouvrirModalAvis()" aria-label="Avis général de l'application">
       <span class="note-app-bar-note">${moy.toFixed(1).replace(".", ",")}<span>/5</span></span>
-      <span class="note-app-bar-mid">
-        <span class="note-app-bar-stars">${etoiles}</span>
-        <span class="note-app-bar-sub">Avis sur l'appli · ${nb} avis</span>
-      </span>
-      <span class="note-app-bar-cta">${cta} →</span>
+      <span class="note-app-bar-stars">${etoiles}</span>
+      <span class="note-app-bar-sub">Avis général de l'appli · ${nb} avis</span>
     </button>`;
 }
 
