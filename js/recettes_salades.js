@@ -2671,4 +2671,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez reposer 10 min pour que les saveurs se marient, et servez frais à côté du riz et des plats. Fraîche, acidulée et parfumée — la salade-condiment de Madagascar.", badge: null }
     ]
   },
+  pikliz: {
+    dateAjout: "2026-07-11T10:08:00",
+    nom: "Pikliz",
+    cat: "salades", pays: "haiti",
+    base: 4,
+    temps: "20 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Pikliz — la salade pimentée acidulée d'Haïti : du chou, des carottes et de l'oignon finement émincés, marinés dans du jus de citron vert et du vinaigre avec beaucoup de scotch bonnet. Croquante, acide et brûlante, c'est le condiment indispensable qui accompagne le griot et tous les plats frits haïtiens.",
+    tableauPikliz: [
+      { nb: 1, chou: "60 g", carotte: "30 g", oignon: "25 g", piment: "2 g", citronvert: "½", vinaigre: "8 ml", ail: "1", sel: "2 g" },
+      { nb: 2, chou: "120 g", carotte: "60 g", oignon: "50 g", piment: "4 g", citronvert: "1", vinaigre: "16 ml", ail: "2", sel: "4 g" },
+      { nb: 3, chou: "180 g", carotte: "90 g", oignon: "75 g", piment: "6 g", citronvert: "1½", vinaigre: "24 ml", ail: "3", sel: "6 g" },
+      { nb: 4, chou: "240 g", carotte: "120 g", oignon: "100 g", piment: "8 g", citronvert: "2", vinaigre: "32 ml", ail: "4", sel: "8 g" },
+      { nb: 5, chou: "300 g", carotte: "150 g", oignon: "125 g", piment: "10 g", citronvert: "2½", vinaigre: "40 ml", ail: "5", sel: "10 g" },
+      { nb: 6, chou: "360 g", carotte: "180 g", oignon: "150 g", piment: "12 g", citronvert: "3", vinaigre: "48 ml", ail: "6", sel: "12 g" },
+      { nb: 7, chou: "420 g", carotte: "210 g", oignon: "175 g", piment: "14 g", citronvert: "3½", vinaigre: "56 ml", ail: "7", sel: "14 g" },
+      { nb: 8, chou: "480 g", carotte: "240 g", oignon: "200 g", piment: "16 g", citronvert: "4", vinaigre: "64 ml", ail: "8", sel: "16 g" },
+      { nb: 9, chou: "540 g", carotte: "270 g", oignon: "225 g", piment: "18 g", citronvert: "4½", vinaigre: "72 ml", ail: "9", sel: "18 g" },
+      { nb: 10, chou: "600 g", carotte: "300 g", oignon: "250 g", piment: "20 g", citronvert: "5", vinaigre: "80 ml", ail: "10", sel: "20 g" },
+      { nb: 11, chou: "660 g", carotte: "330 g", oignon: "275 g", piment: "22 g", citronvert: "5½", vinaigre: "88 ml", ail: "11", sel: "22 g" },
+      { nb: 12, chou: "720 g", carotte: "360 g", oignon: "300 g", piment: "24 g", citronvert: "6", vinaigre: "96 ml", ail: "12", sel: "24 g" },
+      { nb: 13, chou: "780 g", carotte: "390 g", oignon: "325 g", piment: "26 g", citronvert: "6½", vinaigre: "104 ml", ail: "13", sel: "26 g" },
+      { nb: 14, chou: "840 g", carotte: "420 g", oignon: "350 g", piment: "28 g", citronvert: "7", vinaigre: "112 ml", ail: "14", sel: "28 g" },
+      { nb: 15, chou: "900 g", carotte: "450 g", oignon: "375 g", piment: "30 g", citronvert: "7½", vinaigre: "120 ml", ail: "15", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Le chou", detail: "Émincez le chou très finement (en fines lanières).", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Râpez la carotte et émincez finement l'oignon et l'échalote.", badge: null },
+      { icone: "🌶️", titre: "Le piment", detail: "Émincez le scotch bonnet (dosez selon votre tolérance — le pikliz est traditionnellement très fort).", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Réunissez le chou, la carotte, l'oignon, le piment, l'ail et quelques clous de girofle dans un bocal.", badge: null },
+      { icone: "🍋", titre: "La saumure", detail: "Arrosez de jus de citron vert et de vinaigre, salez, et tassez bien : le liquide doit presque recouvrir les légumes.", badge: null },
+      { icone: "⏲️", titre: "Mariner", detail: "Fermez le bocal et laissez mariner au moins quelques heures (idéalement 1 à 2 jours) : les saveurs se développent et le chou s'attendrit.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, en petite quantité, avec le griot, le poisson frit ou les bananes pesées. Croquant, acide et brûlant — le condiment indispensable d'Haïti.", badge: null }
+    ]
+  },
 });

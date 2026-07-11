@@ -5184,4 +5184,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlant avec du naan, de l'oignon cru, du citron et un chutney. Croustillant, juteux et parfumé — la reine de la rue de Peshawar.", badge: null }
     ]
   },
+  carimanola: {
+    dateAjout: "2026-07-11T10:04:00",
+    nom: "Carimañola",
+    cat: "encas", pays: "panama",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Carimañola — le beignet de manioc farci du Panama : une pâte de manioc bouilli et écrasé, façonnée en fuseau autour d'une farce de viande hachée épicée, puis frite jusqu'à être dorée et croustillante. Fondante dedans, croustillante dehors, c'est un en-cas de rue adoré au Panama et en Colombie.",
+    tableauCarimanola: [
+      { nb: 1, manioc: "90 g", boeuf: "45 g", oignon: "25 g", tomates: "¼", ail: "1", cumin: "1 g", oeufs: "¼", huileolive: "10 ml", sel: "2 g" },
+      { nb: 2, manioc: "180 g", boeuf: "90 g", oignon: "50 g", tomates: "½", ail: "2", cumin: "2 g", oeufs: "½", huileolive: "20 ml", sel: "4 g" },
+      { nb: 3, manioc: "270 g", boeuf: "135 g", oignon: "75 g", tomates: "¾", ail: "3", cumin: "3 g", oeufs: "¾", huileolive: "30 ml", sel: "6 g" },
+      { nb: 4, manioc: "360 g", boeuf: "180 g", oignon: "100 g", tomates: "1", ail: "4", cumin: "4 g", oeufs: "1", huileolive: "40 ml", sel: "8 g" },
+      { nb: 5, manioc: "450 g", boeuf: "225 g", oignon: "125 g", tomates: "1¼", ail: "5", cumin: "5 g", oeufs: "1¼", huileolive: "50 ml", sel: "10 g" },
+      { nb: 6, manioc: "540 g", boeuf: "270 g", oignon: "150 g", tomates: "1½", ail: "6", cumin: "6 g", oeufs: "1½", huileolive: "60 ml", sel: "12 g" },
+      { nb: 7, manioc: "630 g", boeuf: "315 g", oignon: "175 g", tomates: "1¾", ail: "7", cumin: "7 g", oeufs: "1¾", huileolive: "70 ml", sel: "14 g" },
+      { nb: 8, manioc: "720 g", boeuf: "360 g", oignon: "200 g", tomates: "2", ail: "8", cumin: "8 g", oeufs: "2", huileolive: "80 ml", sel: "16 g" },
+      { nb: 9, manioc: "810 g", boeuf: "405 g", oignon: "225 g", tomates: "2¼", ail: "9", cumin: "9 g", oeufs: "2¼", huileolive: "90 ml", sel: "18 g" },
+      { nb: 10, manioc: "900 g", boeuf: "450 g", oignon: "250 g", tomates: "2½", ail: "10", cumin: "10 g", oeufs: "2½", huileolive: "100 ml", sel: "20 g" },
+      { nb: 11, manioc: "990 g", boeuf: "495 g", oignon: "275 g", tomates: "2¾", ail: "11", cumin: "11 g", oeufs: "2¾", huileolive: "110 ml", sel: "22 g" },
+      { nb: 12, manioc: "1080 g", boeuf: "540 g", oignon: "300 g", tomates: "3", ail: "12", cumin: "12 g", oeufs: "3", huileolive: "120 ml", sel: "24 g" },
+      { nb: 13, manioc: "1170 g", boeuf: "585 g", oignon: "325 g", tomates: "3¼", ail: "13", cumin: "13 g", oeufs: "3¼", huileolive: "130 ml", sel: "26 g" },
+      { nb: 14, manioc: "1260 g", boeuf: "630 g", oignon: "350 g", tomates: "3½", ail: "14", cumin: "14 g", oeufs: "3½", huileolive: "140 ml", sel: "28 g" },
+      { nb: 15, manioc: "1350 g", boeuf: "675 g", oignon: "375 g", tomates: "3¾", ail: "15", cumin: "15 g", oeufs: "3¾", huileolive: "150 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Le manioc", detail: "Faites cuire le manioc à l'eau jusqu'à ce qu'il soit très tendre, retirez le fil central, puis écrasez-le en une pâte lisse encore chaude.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Faites revenir la viande hachée avec l'oignon, l'ail, la tomate et le cumin (un sofrito) en une farce parfumée. Laissez refroidir.", badge: null },
+      { icone: "🥚", titre: "Lier la pâte", detail: "Liez la purée de manioc avec un peu d'œuf et de sel, pour une pâte malléable qui se tient.", badge: null },
+      { icone: "🌭", titre: "Façonner", detail: "Prenez une portion de pâte, aplatissez-la, garnissez-la de farce, et refermez en fuseau (forme de petit cigare) bien scellé.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les carimañolas dans l'huile chaude, en les retournant, jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égouttez-les sur du papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaudes, avec une sauce (crème, piquante) et un café. Croustillantes dehors, fondantes dedans — l'en-cas de rue du Panama.", badge: null }
+    ]
+  },
+  pholourie: {
+    dateAjout: "2026-07-11T10:06:00",
+    nom: "Pholourie",
+    cat: "encas", pays: "trinite",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🟡",
+    description: "Pholourie — les beignets de pois cassés de Trinidad : de petites boules de pâte de farine de pois cassés, épicée au curcuma, au cumin et à l'ail, frites jusqu'à être dorées et moelleuses. Servies avec un chutney de tamarin ou de mangue, ce sont l'en-cas de rue et de fête par excellence des Antilles indo-trinidadiennes.",
+    tableauPholourie: [
+      { nb: 1, farinepoischiche: "50 g", farine: "15 g", curcuma: "1 g", cumin: "1 g", ail: "1", piment: "1 g", tamarin: "8 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, farinepoischiche: "100 g", farine: "30 g", curcuma: "2 g", cumin: "2 g", ail: "2", piment: "2 g", tamarin: "16 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, farinepoischiche: "150 g", farine: "45 g", curcuma: "3 g", cumin: "3 g", ail: "3", piment: "3 g", tamarin: "24 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, farinepoischiche: "200 g", farine: "60 g", curcuma: "4 g", cumin: "4 g", ail: "4", piment: "4 g", tamarin: "32 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, farinepoischiche: "250 g", farine: "75 g", curcuma: "5 g", cumin: "5 g", ail: "5", piment: "5 g", tamarin: "40 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, farinepoischiche: "300 g", farine: "90 g", curcuma: "6 g", cumin: "6 g", ail: "6", piment: "6 g", tamarin: "48 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, farinepoischiche: "350 g", farine: "105 g", curcuma: "7 g", cumin: "7 g", ail: "7", piment: "7 g", tamarin: "56 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, farinepoischiche: "400 g", farine: "120 g", curcuma: "8 g", cumin: "8 g", ail: "8", piment: "8 g", tamarin: "64 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, farinepoischiche: "450 g", farine: "135 g", curcuma: "9 g", cumin: "9 g", ail: "9", piment: "9 g", tamarin: "72 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, farinepoischiche: "500 g", farine: "150 g", curcuma: "10 g", cumin: "10 g", ail: "10", piment: "10 g", tamarin: "80 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, farinepoischiche: "550 g", farine: "165 g", curcuma: "11 g", cumin: "11 g", ail: "11", piment: "11 g", tamarin: "88 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, farinepoischiche: "600 g", farine: "180 g", curcuma: "12 g", cumin: "12 g", ail: "12", piment: "12 g", tamarin: "96 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, farinepoischiche: "650 g", farine: "195 g", curcuma: "13 g", cumin: "13 g", ail: "13", piment: "13 g", tamarin: "104 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, farinepoischiche: "700 g", farine: "210 g", curcuma: "14 g", cumin: "14 g", ail: "14", piment: "14 g", tamarin: "112 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, farinepoischiche: "750 g", farine: "225 g", curcuma: "15 g", cumin: "15 g", ail: "15", piment: "15 g", tamarin: "120 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine de pois cassés (ou de pois chiche) et un peu de farine avec le curcuma, le cumin, l'ail, le piment et le sel.", badge: null },
+      { icone: "💧", titre: "Détendre", detail: "Ajoutez de l'eau peu à peu et un peu de levure, en fouettant, jusqu'à obtenir une pâte lisse et épaisse (comme une pâte à beignet). Laissez reposer 20 min.", badge: null },
+      { icone: "🍯", titre: "Le chutney tamarin", detail: "Faites fondre le tamarin avec un peu de sucre, d'ail et de piment en un chutney acidulé et relevé.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile à feu moyen.", badge: null },
+      { icone: "🥄", titre: "Frire", detail: "Déposez des petites cuillerées de pâte dans l'huile chaude : elles gonflent et forment de petites boules dorées.", badge: null },
+      { icone: "🟡", titre: "Dorer", detail: "Faites frire en les retournant jusqu'à ce qu'elles soient dorées et cuites à cœur (moelleuses dedans).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chaudes, à tremper dans le chutney de tamarin (ou de mangue). Dorées, moelleuses et épicées — l'en-cas de rue de Trinidad.", badge: null }
+    ]
+  },
 });

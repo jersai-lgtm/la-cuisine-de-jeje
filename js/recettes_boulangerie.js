@@ -1948,4 +1948,41 @@ Object.assign(recettes, {
     ],
     liees: ["parippu"]
   },
+  fryjacks: {
+    dateAjout: "2026-07-11T10:09:00",
+    nom: "Fry Jacks",
+    cat: "boulangerie", pays: "belize",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Fry jacks — les triangles frits soufflés du Belize : des morceaux de pâte briochée découpés en triangles et frits, qui gonflent en oreillers dorés et croustillants. Servis au petit-déjeuner avec des haricots frits, des œufs et du fromage (salé) ou avec du miel et de la confiture (sucré), c'est le réveil gourmand du Belize.",
+    tableauFryjacks: [
+      { nb: 1, farine: "70 g", levure: "2 g", beurre: "8 g", lait: "15 ml", sucre: "4 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, farine: "140 g", levure: "4 g", beurre: "16 g", lait: "30 ml", sucre: "8 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, farine: "210 g", levure: "6 g", beurre: "24 g", lait: "45 ml", sucre: "12 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, farine: "280 g", levure: "8 g", beurre: "32 g", lait: "60 ml", sucre: "16 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, farine: "350 g", levure: "10 g", beurre: "40 g", lait: "75 ml", sucre: "20 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, farine: "420 g", levure: "12 g", beurre: "48 g", lait: "90 ml", sucre: "24 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, farine: "490 g", levure: "14 g", beurre: "56 g", lait: "105 ml", sucre: "28 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, farine: "560 g", levure: "16 g", beurre: "64 g", lait: "120 ml", sucre: "32 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, farine: "630 g", levure: "18 g", beurre: "72 g", lait: "135 ml", sucre: "36 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, farine: "700 g", levure: "20 g", beurre: "80 g", lait: "150 ml", sucre: "40 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, farine: "770 g", levure: "22 g", beurre: "88 g", lait: "165 ml", sucre: "44 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, farine: "840 g", levure: "24 g", beurre: "96 g", lait: "180 ml", sucre: "48 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, farine: "910 g", levure: "26 g", beurre: "104 g", lait: "195 ml", sucre: "52 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, farine: "980 g", levure: "28 g", beurre: "112 g", lait: "210 ml", sucre: "56 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, farine: "1050 g", levure: "30 g", beurre: "120 g", lait: "225 ml", sucre: "60 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec la levure (ou la levure chimique), le beurre, un peu de sucre, de sel, de lait et d'eau tiède, en une pâte souple et lisse.", badge: null },
+      { icone: "😴", titre: "Reposer", detail: "Couvrez et laissez reposer la pâte 15 à 20 min (elle se détend et lève un peu).", badge: null },
+      { icone: "📏", titre: "Abaisser", detail: "Abaissez la pâte finement en un cercle ou un rectangle.", badge: null },
+      { icone: "🔺", titre: "Découper", detail: "Découpez la pâte en triangles (ou en carrés), et incisez éventuellement une fente au centre.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plongez les triangles dans l'huile bien chaude : ils gonflent aussitôt en oreillers dorés.", badge: null },
+      { icone: "🔄", titre: "Dorer", detail: "Retournez-les pour qu'ils dorent des deux côtés, puis égouttez sur du papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chauds : en salé avec des haricots frits, des œufs et du fromage, ou en sucré avec du miel, de la confiture ou du sucre glace. Dorés, soufflés et croustillants — le petit-déjeuner du Belize.", badge: null }
+    ]
+  },
 });

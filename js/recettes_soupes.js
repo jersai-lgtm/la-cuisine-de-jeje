@@ -4592,4 +4592,42 @@ Object.assign(recettes, {
     ],
     liees: ["thieboudienne"]
   },
+  ollacarne: {
+    dateAjout: "2026-07-11T10:03:00",
+    nom: "Olla de Carne",
+    cat: "soupes", pays: "costarica",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Olla de carne — le pot-au-feu costaricien : un bouillon de bœuf généreux mijoté avec une profusion de légumes-racines tropicaux (manioc, plantain, maïs, chayote, pomme de terre, carotte). Réconfortant et nourrissant, c'est le grand plat familial du dimanche au Costa Rica, servi avec du riz.",
+    tableauOllacarne: [
+      { nb: 1, boeuf: "90 g", manioc: "40 g", plantain: "40 g", mais: "30 g", pommedeterre: "40 g", carotte: "30 g", oignon: "25 g", coriandre: "4 g", sel: "2 g" },
+      { nb: 2, boeuf: "180 g", manioc: "80 g", plantain: "80 g", mais: "60 g", pommedeterre: "80 g", carotte: "60 g", oignon: "50 g", coriandre: "8 g", sel: "4 g" },
+      { nb: 3, boeuf: "270 g", manioc: "120 g", plantain: "120 g", mais: "90 g", pommedeterre: "120 g", carotte: "90 g", oignon: "75 g", coriandre: "12 g", sel: "6 g" },
+      { nb: 4, boeuf: "360 g", manioc: "160 g", plantain: "160 g", mais: "120 g", pommedeterre: "160 g", carotte: "120 g", oignon: "100 g", coriandre: "16 g", sel: "8 g" },
+      { nb: 5, boeuf: "450 g", manioc: "200 g", plantain: "200 g", mais: "150 g", pommedeterre: "200 g", carotte: "150 g", oignon: "125 g", coriandre: "20 g", sel: "10 g" },
+      { nb: 6, boeuf: "540 g", manioc: "240 g", plantain: "240 g", mais: "180 g", pommedeterre: "240 g", carotte: "180 g", oignon: "150 g", coriandre: "24 g", sel: "12 g" },
+      { nb: 7, boeuf: "630 g", manioc: "280 g", plantain: "280 g", mais: "210 g", pommedeterre: "280 g", carotte: "210 g", oignon: "175 g", coriandre: "28 g", sel: "14 g" },
+      { nb: 8, boeuf: "720 g", manioc: "320 g", plantain: "320 g", mais: "240 g", pommedeterre: "320 g", carotte: "240 g", oignon: "200 g", coriandre: "32 g", sel: "16 g" },
+      { nb: 9, boeuf: "810 g", manioc: "360 g", plantain: "360 g", mais: "270 g", pommedeterre: "360 g", carotte: "270 g", oignon: "225 g", coriandre: "36 g", sel: "18 g" },
+      { nb: 10, boeuf: "900 g", manioc: "400 g", plantain: "400 g", mais: "300 g", pommedeterre: "400 g", carotte: "300 g", oignon: "250 g", coriandre: "40 g", sel: "20 g" },
+      { nb: 11, boeuf: "990 g", manioc: "440 g", plantain: "440 g", mais: "330 g", pommedeterre: "440 g", carotte: "330 g", oignon: "275 g", coriandre: "44 g", sel: "22 g" },
+      { nb: 12, boeuf: "1080 g", manioc: "480 g", plantain: "480 g", mais: "360 g", pommedeterre: "480 g", carotte: "360 g", oignon: "300 g", coriandre: "48 g", sel: "24 g" },
+      { nb: 13, boeuf: "1170 g", manioc: "520 g", plantain: "520 g", mais: "390 g", pommedeterre: "520 g", carotte: "390 g", oignon: "325 g", coriandre: "52 g", sel: "26 g" },
+      { nb: 14, boeuf: "1260 g", manioc: "560 g", plantain: "560 g", mais: "420 g", pommedeterre: "560 g", carotte: "420 g", oignon: "350 g", coriandre: "56 g", sel: "28 g" },
+      { nb: 15, boeuf: "1350 g", manioc: "600 g", plantain: "600 g", mais: "450 g", pommedeterre: "600 g", carotte: "450 g", oignon: "375 g", coriandre: "60 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Le bouillon", detail: "Faites mijoter le bœuf (avec os pour le goût) dans une grande eau avec de l'oignon, en écumant, jusqu'à ce qu'il soit tendre (1 h 30 environ).", badge: null },
+      { icone: "🌽", titre: "Les légumes durs", detail: "Ajoutez le maïs en tronçons et le manioc, qui demandent une cuisson plus longue.", badge: null },
+      { icone: "🥕", titre: "Les racines", detail: "Ajoutez la carotte, la pomme de terre et le chayote (christophine), et poursuivez la cuisson.", badge: null },
+      { icone: "🍌", titre: "Le plantain", detail: "Ajoutez le plantain (vert et/ou mûr) en fin de cuisson, pour qu'il reste tenu.", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Salez et parfumez de coriandre fraîche et d'un peu de cumin.", badge: null },
+      { icone: "🍲", titre: "Vérifier", detail: "Le bouillon doit être clair et parfumé, les légumes fondants mais entiers.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez le bouillon et les légumes dans de grands bols, avec du riz blanc et du citron vert à part. Réconfortant et nourrissant — le pot-au-feu du dimanche costaricien.", badge: null }
+    ],
+    liees: ["sancocho"]
+  },
 });

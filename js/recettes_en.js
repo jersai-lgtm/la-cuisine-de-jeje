@@ -68344,5 +68344,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot with nshima (corn paste) or rice. Creamy, plant-based and nourishing — the pillar of Zambian cooking."
    }
   ]
+ },
+ "jocon": {
+  "nom": "Jocón",
+  "description": "Jocón — the Guatemalan chicken in green sauce: chicken simmered in a bright green sauce of tomatillo, coriander and green onion, bound with toasted pumpkin and sesame seeds. Fresh, tangy and fragrant, it's one of the great recados (mother sauces) of Guatemalan Maya cuisine.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Poach the chicken in water with onion and garlic, until tender. Keep the broth."
+   },
+   {
+    "titre": "The tomatillos",
+    "detail": "Char (or poach) the tomatillos (or tangy green tomatoes) and green onion until tender."
+   },
+   {
+    "titre": "The seeds",
+    "detail": "Dry-toast the pumpkin seeds (pepitas) and sesame until golden: they'll bind and flavour the sauce."
+   },
+   {
+    "titre": "The green sauce",
+    "detail": "Blend the tomatillos, coriander, green onion, garlic, chilli and toasted seeds with a little broth, into a smooth green sauce."
+   },
+   {
+    "titre": "Cook the sauce",
+    "detail": "Sauté the green sauce in a little oil, over medium heat, until it thickens and becomes fragrant."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the chicken to the sauce and simmer so it soaks it up, adjusting with broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust with lime and serve with rice and tortillas. Fresh, tangy and fragrant — the Guatemalan chicken in green sauce."
+   }
+  ]
+ },
+ "nacatamal": {
+  "nom": "Nacatamal",
+  "description": "Nacatamal — the great tamale of Nicaragua: an enriched corn masa filled with marinated pork, rice, potato, tomato and mint, wrapped in a banana leaf and steamed for hours. Generous and fragrant, it's the Sunday morning family dish of Nicaragua.",
+  "etapes": [
+   {
+    "titre": "Marinate the pork",
+    "detail": "Marinate the pork with sour orange, garlic, onion and cumin, for several hours."
+   },
+   {
+    "titre": "The masa",
+    "detail": "Work the corn flour (masa) with broth, a little fat and achiote, into a soft, coloured dough."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Soften the banana leaves over fire or steam so they don't tear."
+   },
+   {
+    "titre": "Fill",
+    "detail": "On each leaf, spread masa, then a piece of marinated pork, rice, potato, tomato, onion and mint."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Close the leaf into a tight packet and tie it firmly."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the nacatamales 1 hour 30 to 2 hours, until the masa is set and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest, then open the leaf at the table. Serve with bread and coffee. Generous and fragrant — the great Sunday tamale of Nicaragua."
+   }
+  ]
+ },
+ "baho": {
+  "nom": "Baho",
+  "description": "Baho — the layered steamed dish of Nicaragua: beef marinated in sour orange, green and ripe plantains and cassava, layered in banana leaves and steamed for hours. Served with a tangy cabbage salad, it's a convivial weekend feast.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the beef with sour orange juice, onion, garlic, tomato and cumin, for several hours (ideally overnight)."
+   },
+   {
+    "titre": "The plantains",
+    "detail": "Peel and cut green plantains and ripe bananas into chunks."
+   },
+   {
+    "titre": "The cassava",
+    "detail": "Peel the cassava and cut it into large pieces."
+   },
+   {
+    "titre": "The layers",
+    "detail": "Line a pot with banana leaves, then layer the cassava, plantains and marinated beef with its marinade."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Cover tightly with leaves and steam, covered and over low heat, 2 to 3 hours, until the meat and cassava are tender."
+   },
+   {
+    "titre": "The salad",
+    "detail": "Make a cabbage, tomato and onion salad lifted with a little vinegar (the curtido) to accompany."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the tender baho with the tangy cabbage salad on top. Convivial and fragrant — the Nicaraguan weekend steamed feast."
+   }
+  ]
+ },
+ "ollacarne": {
+  "nom": "Olla de Carne",
+  "description": "Olla de carne — the Costa Rican pot-au-feu: a generous beef broth simmered with a profusion of tropical root vegetables (cassava, plantain, corn, chayote, potato, carrot). Comforting and nourishing, it's the great Sunday family dish of Costa Rica, served with rice.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Simmer the beef (bone-in for flavour) in plenty of water with onion, skimming, until tender (about 1 hour 30)."
+   },
+   {
+    "titre": "The hard vegetables",
+    "detail": "Add the corn in chunks and the cassava, which need longer cooking."
+   },
+   {
+    "titre": "The roots",
+    "detail": "Add the carrot, potato and chayote (christophine), and continue cooking."
+   },
+   {
+    "titre": "The plantain",
+    "detail": "Add the plantain (green and/or ripe) near the end, so it holds its shape."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and flavour with fresh coriander and a little cumin."
+   },
+   {
+    "titre": "Check",
+    "detail": "The broth should be clear and fragrant, the vegetables tender but whole."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the broth and vegetables in large bowls, with white rice and lime on the side. Comforting and nourishing — the Costa Rican Sunday pot-au-feu."
+   }
+  ]
+ },
+ "carimanola": {
+  "nom": "Carimañola",
+  "description": "Carimañola — the stuffed cassava fritter of Panama: a dough of boiled, mashed cassava, shaped into a spindle around a spiced minced-meat filling, then fried until golden and crisp. Soft inside, crisp outside, it's a beloved street snack in Panama and Colombia.",
+  "etapes": [
+   {
+    "titre": "The cassava",
+    "detail": "Boil the cassava until very tender, remove the central fibre, then mash it into a smooth dough while still warm."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the minced meat with the onion, garlic, tomato and cumin (a sofrito) into a fragrant filling. Let it cool."
+   },
+   {
+    "titre": "Bind the dough",
+    "detail": "Bind the cassava mash with a little egg and salt, for a malleable dough that holds together."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Take a portion of dough, flatten it, fill it with filling, and close into a well-sealed spindle (small cigar shape)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the carimañolas in hot oil, turning them, until golden and crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain them on paper towel."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with a sauce (cream, spicy) and a coffee. Crisp outside, soft inside — the street snack of Panama."
+   }
+  ]
+ },
+ "oxtail": {
+  "nom": "Oxtail",
+  "description": "Oxtail — the Jamaican braised oxtail: pieces of oxtail browned then long-braised with allspice, thyme, scotch bonnet and butter beans, until tender and gelatinous. Rich, spicy and comforting, a great classic of the Jamaican Sunday.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the oxtail pieces on all sides, over high heat, then set aside."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the onion, garlic, allspice (Jamaican pepper) and thyme."
+   },
+   {
+    "titre": "The browning",
+    "detail": "Add a little browning sauce (or dark soy sauce) for colour and depth, and the scotch bonnet."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Return the meat, cover with water and simmer covered, very long (2 hours 30), skimming, until the meat falls off the bone."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Add the butter beans and carrot, and continue until tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover and reduce the sauce, which turns syrupy and gelatinous thanks to the collagen of the tail."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the oxtail coated in its sauce, with rice and peas (coconut rice and beans). Rich, spicy and tender — the Jamaican Sunday classic."
+   }
+  ]
+ },
+ "pholourie": {
+  "nom": "Pholourie",
+  "description": "Pholourie — the split-pea fritters of Trinidad: little balls of split-pea flour dough, spiced with turmeric, cumin and garlic, fried until golden and soft. Served with a tamarind or mango chutney, they're the ultimate street and party snack of the Indo-Trinidadian Caribbean.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix the split-pea flour (or chickpea flour) and a little flour with the turmeric, cumin, garlic, chilli and salt."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add water little by little and a little yeast, whisking, until you get a smooth, thick batter (like a fritter batter). Rest 20 minutes."
+   },
+   {
+    "titre": "The tamarind chutney",
+    "detail": "Melt the tamarind with a little sugar, garlic and chilli into a tangy, punchy chutney."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil over medium heat."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop small spoonfuls of batter into the hot oil: they puff up and form little golden balls."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Fry, turning them, until golden and cooked through (soft inside)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, to dip in the tamarind (or mango) chutney. Golden, soft and spicy — the street snack of Trinidad."
+   }
+  ]
+ },
+ "griot": {
+  "nom": "Griot",
+  "description": "Griot — the Haitian fried pork: large pieces of pork shoulder marinated in bitter citrus and epis (aromatic blend), braised then fried until crisp outside and tender inside. Served with spicy pikliz and fried plantains, it's the iconic festive dish of Haiti.",
+  "etapes": [
+   {
+    "titre": "The marinade (epis)",
+    "detail": "Blend the garlic, onion, thyme, parsley, chilli and sour orange and lime juice into a fragrant marinade (the Haitian epis)."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Cut the pork into large cubes and marinate it in the epis for several hours (ideally overnight)."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Braise the pork in its marinade with a little water, covered, until tender and the liquid evaporates."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Then fry the pork pieces in a little hot oil, until golden and crisp at the edges."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the griot on paper towel."
+   },
+   {
+    "titre": "The pikliz",
+    "detail": "Serve with pikliz (spicy pickled cabbage salad), inseparable from griot."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Accompany with fried plantains and rice. Crisp, tender and fragrant — the iconic festive dish of Haiti."
+   }
+  ]
+ },
+ "pikliz": {
+  "nom": "Pikliz",
+  "description": "Pikliz — the spicy tangy salad of Haiti: cabbage, carrots and onion finely sliced, marinated in lime juice and vinegar with plenty of scotch bonnet. Crunchy, sour and fiery, it's the essential condiment that accompanies griot and all fried Haitian dishes.",
+  "etapes": [
+   {
+    "titre": "The cabbage",
+    "detail": "Slice the cabbage very finely (into thin strips)."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Grate the carrot and finely slice the onion and shallot."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Slice the scotch bonnet (dose to your tolerance — pikliz is traditionally very hot)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the cabbage, carrot, onion, chilli, garlic and a few cloves in a jar."
+   },
+   {
+    "titre": "The brine",
+    "detail": "Douse with lime juice and vinegar, salt, and pack well: the liquid should almost cover the vegetables."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Close the jar and marinate at least a few hours (ideally 1 to 2 days): the flavours develop and the cabbage softens."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold, in small amounts, with griot, fried fish or fried plantains. Crunchy, sour and fiery — the essential condiment of Haiti."
+   }
+  ]
+ },
+ "fryjacks": {
+  "nom": "Fry Jacks",
+  "description": "Fry jacks — the puffed fried triangles of Belize: pieces of enriched dough cut into triangles and fried, puffing into golden, crisp pillows. Served at breakfast with fried beans, eggs and cheese (savoury) or with honey and jam (sweet), it's the indulgent Belizean wake-up.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the yeast (or baking powder), butter, a little sugar, salt, milk and warm water, into a soft, smooth dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and rest the dough 15 to 20 minutes (it relaxes and rises a little)."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough out thinly into a circle or rectangle."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the dough into triangles (or squares), and optionally slit a slot in the centre."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop the triangles into hot oil: they puff up at once into golden pillows."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Turn them to brown on both sides, then drain on paper towel."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot: savoury with fried beans, eggs and cheese, or sweet with honey, jam or icing sugar. Golden, puffed and crisp — the Belizean breakfast."
+   }
+  ]
  }
 };
