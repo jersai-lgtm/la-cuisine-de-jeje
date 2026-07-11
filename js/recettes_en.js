@@ -69024,5 +69024,345 @@ window.RECETTES_EN = {
     "detail": "Serve at room temperature, with warm roshi (thin flatbread) and tea. Fresh, briny and fragrant — the breakfast of the Maldives."
    }
   ]
+ },
+ "sopaipilla": {
+  "nom": "Sopaipilla",
+  "description": "Sopaipilla — the Chilean fried pumpkin cake: a dough golden with pumpkin purée, cut into discs and fried until soft and lightly crisp. Savoury with pebre on rainy days, or sweet dipped in chancaca syrup, it's the comforting snack of Chile.",
+  "etapes": [
+   {
+    "titre": "The pumpkin",
+    "detail": "Steam the pumpkin (or squash), then mash it into a smooth purée and let it cool."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the pumpkin purée with the flour, melted butter, a little yeast and salt, into a soft dough. Let it rest."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough to about 5 mm thick."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut discs with a cutter (or glass), and prick them with a fork to stop them puffing too much."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop the discs into hot oil: they puff and brown. Turn them halfway."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the sopaipillas on paper towel."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot: savoury with pebre (salsa) and mustard, or sweet dipped in a chancaca syrup (spiced cane sugar). Golden and soft — the snack of Chile."
+   }
+  ]
+ },
+ "curanto": {
+  "nom": "Curanto",
+  "description": "Curanto — the seafood feast of Chiloé: shellfish, fish, pork, chicken and potatoes cooked together in layers, traditionally in a pit lined with hot stones and leaves. Smoky, briny and generous, it's the great convivial dish of Chiloé island, in southern Chile.",
+  "etapes": [
+   {
+    "titre": "The meats",
+    "detail": "Season the pork and chicken, and lightly colour them to add flavour."
+   },
+   {
+    "titre": "The seafood",
+    "detail": "Clean the shellfish (mussels, clams) and prawns, and keep the fish separate."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Peel the potatoes (and optionally make milcaos, potato cakes)."
+   },
+   {
+    "titre": "The layering",
+    "detail": "In a large pot, layer the meats, potatoes, then the seafood and fish, with the onion and garlic."
+   },
+   {
+    "titre": "Steam-cook",
+    "detail": "Add a little broth, cover tightly (traditionally with leaves) and steam-cook: the steam and juices cook everything together."
+   },
+   {
+    "titre": "Check",
+    "detail": "The curanto is ready when the shellfish are open, the meats tender and the potatoes soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve everything on large platters, with the briny cooking juices. Smoky, briny and generous — the convivial feast of Chiloé."
+   }
+  ]
+ },
+ "silpancho": {
+  "nom": "Silpancho",
+  "description": "Silpancho — the complete plate of Cochabamba: a bed of rice and potatoes, topped with a thin breaded and flattened beef cutlet, crowned with a fried egg and a fresh tomato-onion salsa. Generous and colourful, it's the signature dish of the city of Cochabamba, in Bolivia.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the white rice and keep it warm."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Cook the potatoes, cut them into rounds and brown them in a pan."
+   },
+   {
+    "titre": "The cutlet",
+    "detail": "Pound the beef very thin with a mallet, salt it, coat it in breadcrumbs and flatten again (the cutlet should be very wide and thin)."
+   },
+   {
+    "titre": "Fry the cutlet",
+    "detail": "Fry the breaded cutlet in hot oil, until golden and crisp."
+   },
+   {
+    "titre": "The salsa",
+    "detail": "Dice the tomato and onion small and season with a little oil, salt and parsley (the salsa cruda)."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Fry an egg, white set and yolk runny."
+   },
+   {
+    "titre": "Plate and serve",
+    "detail": "Plate the rice and potatoes, lay the cutlet, top with the egg and fresh salsa. Generous and colourful — the complete plate of Cochabamba."
+   }
+  ]
+ },
+ "piquemacho": {
+  "nom": "Pique Macho",
+  "description": "Pique macho — the Bolivian sharing dish: strips of beef and sausage sautéed, served on a bed of fries, topped with tomato, onion, hard-boiled egg and chilli (locoto). Generous, spicy and convivial, it's eaten in a group, straight from the table, with an ice-cold beer.",
+  "etapes": [
+   {
+    "titre": "The fries",
+    "detail": "Peel the potatoes, cut them into fries and fry until golden. Keep warm."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Sear the beef strips over high heat, until they colour."
+   },
+   {
+    "titre": "The sausage",
+    "detail": "Add the sliced sausage (frankfurter or chorizo type) and brown it."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the sliced onion and locoto chilli, sauté briskly, then the tomato."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Deglaze with a little broth (and mustard/sauce) to bind it all into a glossy sauce."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Hard-boil eggs and cut them into wedges."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the fries, pour the saucy meat over them, and garnish with hard-boiled egg and fresh chilli. Generous, spicy and convivial — the Bolivian sharing dish."
+   }
+  ]
+ },
+ "sopamani": {
+  "nom": "Sopa de Maní",
+  "description": "Sopa de maní — the Bolivian peanut soup: a creamy beef broth bound with freshly ground peanuts, with vegetables and pasta, crowned, surprisingly, with crisp fries. Creamy, nourishing and comforting, it's an emblematic soup of the Bolivian Andes.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Simmer the beef with the onion in plenty of water, skimming, until tender and the broth fragrant."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Grind the raw (or roasted) peanuts with a little broth into a smooth, creamy paste."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir the peanut paste into the broth and simmer gently, stirring: the soup turns smooth and creamy."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrot, potato, peas and a little rice (or fine pasta), and cook."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and flavour with cumin, oregano and fresh parsley."
+   },
+   {
+    "titre": "The fries",
+    "detail": "Make crisp fries, the signature (and surprising) topping of sopa de maní."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the creamy soup piping hot, topped with crisp fries and parsley. Creamy and nourishing — the soup of the Bolivian Andes."
+   }
+  ]
+ },
+ "bolonverde": {
+  "nom": "Bolón de Verde",
+  "description": "Bolón de verde — the Ecuadorian green plantain ball: green plantain fried then mashed, mixed with cheese (or chicharrón), shaped into a ball and browned. Crisp outside, soft inside, it's the hearty breakfast of the Ecuadorian coast, served with a coffee.",
+  "etapes": [
+   {
+    "titre": "The plantain",
+    "detail": "Peel the very green plantains and cut them into chunks."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the plantain chunks in hot oil until tender and golden."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the still-warm fried plantains into a coarse purée, with a little salt."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Stir the grated cheese (and optionally crumbled chicharrón) into the plantain mash."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape the mixture into compact balls by hand."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the balls in a pan (or re-fry) for a nice crisp crust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with an egg, coffee and optionally a sauce. Crisp outside, soft inside — the breakfast of the Ecuadorian coast."
+   }
+  ]
+ },
+ "hornado": {
+  "nom": "Hornado",
+  "description": "Hornado — the roast pork of the Ecuadorian Andes: a pork shoulder marinated in garlic, cumin and chicha (corn beer), slow-roasted until tender under a crisp crackling. Served with mote (hominy), llapingachos and a salsa, it's the festive dish of Ecuador's markets.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Pound the garlic with cumin, salt, onion and a little orange juice (and chicha or beer) into a fragrant paste."
+   },
+   {
+    "titre": "Score",
+    "detail": "Score the pork shoulder in several places and rub it generously with marinade, working it in. Marinate overnight."
+   },
+   {
+    "titre": "Roast covered",
+    "detail": "Roast the pork at low temperature, covered, for several hours until tender."
+   },
+   {
+    "titre": "The crackling",
+    "detail": "Uncover and raise the oven very hot to crisp and brown the crackling (cuero)."
+   },
+   {
+    "titre": "The mote",
+    "detail": "Prepare the mote (cooked hominy corn) that traditionally accompanies hornado."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred the tender meat, keeping shards of crisp crackling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with the mote, llapingachos, an onion salad (curtido) and a tomato salsa. Tender, crisp and fragrant — the festive dish of Ecuador's markets."
+   }
+  ]
+ },
+ "lupulu": {
+  "nom": "Lu Pulu",
+  "description": "Lu pulu — the taro leaf beef of Tonga: corned beef (or beef) and onion wrapped in taro leaves, doused in coconut cream and cooked gently until the leaves melt. Creamy, briny and comforting, it's a typical Sunday dish of Polynesia.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Flake the corned beef (or sauté minced beef) with the onion and tomato."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Wash and remove the tough stems of the taro leaves (or spinach or chard leaves)."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place a little meat and onion in the centre of a bundle of taro leaves, and close into little parcels."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Douse the parcels generously with thick coconut cream."
+   },
+   {
+    "titre": "Gentle cooking",
+    "detail": "Cook covered over low heat (or in the oven in a dish), until the leaves are tender and the coconut cream absorbed."
+   },
+   {
+    "titre": "Top",
+    "detail": "Top with a little more coconut cream at the end."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with taro, yam or bread. Creamy, briny and comforting — the Sunday dish of Tonga."
+   }
+  ]
+ },
+ "laulau": {
+  "nom": "Laulau",
+  "description": "Laulau — the steamed taro leaf pork of Hawaii: pork (and sometimes salted butterfish) wrapped in taro (lūʻau) leaves then in a ti leaf, steamed for hours until ultra-tender. Earthy, melting and fragrant, it's a pillar of the Hawaiian luau.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Cut the pork (shoulder or belly) into large pieces and salt them generously (Hawaiian sea salt)."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Add a piece of salted butterfish or oily fish, which flavours the laulau."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Wash the taro (lūʻau) leaves and remove the stems (or use plenty of spinach leaves)."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Wrap the pork and fish in several layers of taro leaves, then in a ti leaf (or baking paper) into a well-closed packet."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the laulau (traditionally in a buried oven, the imu) 2 to 4 hours, until the meat and leaves are ultra-tender."
+   },
+   {
+    "titre": "The sides",
+    "detail": "Prepare rice (or poi) and a little cabbage to accompany."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the ti leaf at the table: the taro leaves have turned tender and green around the meat. Earthy, melting and fragrant — the pillar of the Hawaiian luau."
+   }
+  ]
+ },
+ "rourou": {
+  "nom": "Rourou",
+  "description": "Rourou — the coconut taro leaves of Fiji: young taro leaves (dalo) simmered in creamy coconut with onion and garlic, sometimes enriched with corned beef. Mild, creamy and plant-based, they accompany fish and starches at every Fijian table.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash the young taro leaves (dalo) and remove the tough stems (or spinach or chard leaves)."
+   },
+   {
+    "titre": "Pre-cook",
+    "detail": "Cook the leaves in a little boiling water to tenderise them and remove the sharpness (important for taro)."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the sliced onion and garlic in a little oil until soft."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Add the drained leaves and pour in the thick coconut cream."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently (without hard boiling) until the leaves are tender and the coconut cream creamy."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and lift with a dash of lime. Optionally add crumbled corned beef."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, as a side to fish, taro or rice. Mild, creamy and plant-based — the accompaniment of Fijian tables."
+   }
+  ]
  }
 };

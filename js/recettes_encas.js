@@ -5333,4 +5333,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, arrosé d'un peu de beurre et accompagné de yaourt ou d'une sauce tomate. Moelleux et parfumé — le rouleau vapeur kirghize.", badge: null }
     ]
   },
+  bolonverde: {
+    dateAjout: "2026-07-11T12:05:00",
+    nom: "Bolón de Verde",
+    cat: "encas", pays: "equateur",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🟢",
+    description: "Bolón de verde — la boule de plantain vert équatorienne : de la banane plantain verte frite puis écrasée, mélangée à du fromage (ou du chicharrón), façonnée en boule et dorée. Croustillante dehors, fondante dedans, c'est le petit-déjeuner roboratif de la côte équatorienne, servi avec un café.",
+    tableauBolonverde: [
+      { nb: 1, plantain: "110 g", fromage: "30 g", oignon: "15 g", oeufs: "¼", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, plantain: "220 g", fromage: "60 g", oignon: "30 g", oeufs: "½", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, plantain: "330 g", fromage: "90 g", oignon: "45 g", oeufs: "¾", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, plantain: "440 g", fromage: "120 g", oignon: "60 g", oeufs: "1", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, plantain: "550 g", fromage: "150 g", oignon: "75 g", oeufs: "1¼", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, plantain: "660 g", fromage: "180 g", oignon: "90 g", oeufs: "1½", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, plantain: "770 g", fromage: "210 g", oignon: "105 g", oeufs: "1¾", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, plantain: "880 g", fromage: "240 g", oignon: "120 g", oeufs: "2", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, plantain: "990 g", fromage: "270 g", oignon: "135 g", oeufs: "2¼", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, plantain: "1100 g", fromage: "300 g", oignon: "150 g", oeufs: "2½", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, plantain: "1210 g", fromage: "330 g", oignon: "165 g", oeufs: "2¾", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, plantain: "1320 g", fromage: "360 g", oignon: "180 g", oeufs: "3", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, plantain: "1430 g", fromage: "390 g", oignon: "195 g", oeufs: "3¼", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, plantain: "1540 g", fromage: "420 g", oignon: "210 g", oeufs: "3½", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, plantain: "1650 g", fromage: "450 g", oignon: "225 g", oeufs: "3¾", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Le plantain", detail: "Épluchez les bananes plantain bien vertes et coupez-les en tronçons.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les tronçons de plantain dans l'huile chaude jusqu'à ce qu'ils soient tendres et dorés.", badge: null },
+      { icone: "🥣", titre: "Écraser", detail: "Écrasez les plantains frits encore chauds en une purée grossière, avec un peu de sel.", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Incorporez le fromage râpé (et éventuellement du chicharrón émietté) à la purée de plantain.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Façonnez le mélange en boules compactes à la main.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faites dorer les boules à la poêle (ou refrites) pour une belle croûte croustillante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, avec un œuf, du café et éventuellement une sauce. Croustillant dehors, fondant dedans — le petit-déjeuner de la côte équatorienne.", badge: null }
+    ],
+    liees: ["llapingachos"]
+  },
 });

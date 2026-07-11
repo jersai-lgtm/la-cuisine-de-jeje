@@ -4668,4 +4668,41 @@ Object.assign(recettes, {
     ],
     liees: ["saltah"]
   },
+  sopamani: {
+    dateAjout: "2026-07-11T12:04:00",
+    nom: "Sopa de Maní",
+    cat: "soupes", pays: "bolivie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🥜",
+    description: "Sopa de maní — la soupe à l'arachide bolivienne : un bouillon de bœuf onctueux lié à la cacahuète fraîchement broyée, avec des légumes et des pâtes, couronné, chose surprenante, de frites croustillantes. Crémeuse, nourrissante et réconfortante, c'est une soupe emblématique des Andes boliviennes.",
+    tableauSopamani: [
+      { nb: 1, cacahuete: "25 g", boeuf: "60 g", pommedeterre: "40 g", carotte: "25 g", petitspois: "15 g", oignon: "25 g", riz: "15 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, cacahuete: "50 g", boeuf: "120 g", pommedeterre: "80 g", carotte: "50 g", petitspois: "30 g", oignon: "50 g", riz: "30 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, cacahuete: "75 g", boeuf: "180 g", pommedeterre: "120 g", carotte: "75 g", petitspois: "45 g", oignon: "75 g", riz: "45 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, cacahuete: "100 g", boeuf: "240 g", pommedeterre: "160 g", carotte: "100 g", petitspois: "60 g", oignon: "100 g", riz: "60 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, cacahuete: "125 g", boeuf: "300 g", pommedeterre: "200 g", carotte: "125 g", petitspois: "75 g", oignon: "125 g", riz: "75 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, cacahuete: "150 g", boeuf: "360 g", pommedeterre: "240 g", carotte: "150 g", petitspois: "90 g", oignon: "150 g", riz: "90 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, cacahuete: "175 g", boeuf: "420 g", pommedeterre: "280 g", carotte: "175 g", petitspois: "105 g", oignon: "175 g", riz: "105 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, cacahuete: "200 g", boeuf: "480 g", pommedeterre: "320 g", carotte: "200 g", petitspois: "120 g", oignon: "200 g", riz: "120 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, cacahuete: "225 g", boeuf: "540 g", pommedeterre: "360 g", carotte: "225 g", petitspois: "135 g", oignon: "225 g", riz: "135 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, cacahuete: "250 g", boeuf: "600 g", pommedeterre: "400 g", carotte: "250 g", petitspois: "150 g", oignon: "250 g", riz: "150 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, cacahuete: "275 g", boeuf: "660 g", pommedeterre: "440 g", carotte: "275 g", petitspois: "165 g", oignon: "275 g", riz: "165 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, cacahuete: "300 g", boeuf: "720 g", pommedeterre: "480 g", carotte: "300 g", petitspois: "180 g", oignon: "300 g", riz: "180 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, cacahuete: "325 g", boeuf: "780 g", pommedeterre: "520 g", carotte: "325 g", petitspois: "195 g", oignon: "325 g", riz: "195 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, cacahuete: "350 g", boeuf: "840 g", pommedeterre: "560 g", carotte: "350 g", petitspois: "210 g", oignon: "350 g", riz: "210 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, cacahuete: "375 g", boeuf: "900 g", pommedeterre: "600 g", carotte: "375 g", petitspois: "225 g", oignon: "375 g", riz: "225 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Le bouillon", detail: "Faites mijoter le bœuf avec l'oignon dans une grande eau, en écumant, jusqu'à ce qu'il soit tendre et le bouillon parfumé.", badge: null },
+      { icone: "🥜", titre: "L'arachide", detail: "Broyez les cacahuètes crues (ou grillées) avec un peu de bouillon en une pâte lisse et crémeuse.", badge: null },
+      { icone: "🍲", titre: "Lier", detail: "Incorporez la pâte d'arachide au bouillon et laissez mijoter doucement, en remuant : la soupe devient onctueuse et crémeuse.", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Ajoutez la carotte, la pomme de terre, les petits pois et un peu de riz (ou de pâtes fines), et laissez cuire.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Salez et parfumez de cumin, d'origan et de persil frais.", badge: null },
+      { icone: "🍟", titre: "Les frites", detail: "Préparez des frites croustillantes, la garniture signature (et surprenante) de la sopa de maní.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la soupe crémeuse brûlante, coiffée de frites croustillantes et de persil. Crémeuse et nourrissante — la soupe des Andes boliviennes.", badge: null }
+    ]
+  },
 });

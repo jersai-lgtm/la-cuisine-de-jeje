@@ -2023,4 +2023,41 @@ Object.assign(recettes, {
     ],
     liees: ["khachapuri"]
   },
+  sopaipilla: {
+    dateAjout: "2026-07-11T12:00:00",
+    nom: "Sopaipilla",
+    cat: "boulangerie", pays: "chili",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🟠",
+    description: "Sopaipilla — la galette frite à la courge du Chili : une pâte dorée à la purée de potiron, découpée en disques et frite jusqu'à être moelleuse et légèrement croustillante. Salée avec du pebre les jours de pluie, ou sucrée trempée dans le sirop de chancaca, c'est l'en-cas réconfortant du Chili.",
+    tableauSopaipilla: [
+      { nb: 1, courge: "60 g", farine: "55 g", beurre: "8 g", huileolive: "12 ml", levure: "1 g", sel: "2 g" },
+      { nb: 2, courge: "120 g", farine: "110 g", beurre: "16 g", huileolive: "24 ml", levure: "2 g", sel: "4 g" },
+      { nb: 3, courge: "180 g", farine: "165 g", beurre: "24 g", huileolive: "36 ml", levure: "3 g", sel: "6 g" },
+      { nb: 4, courge: "240 g", farine: "220 g", beurre: "32 g", huileolive: "48 ml", levure: "4 g", sel: "8 g" },
+      { nb: 5, courge: "300 g", farine: "275 g", beurre: "40 g", huileolive: "60 ml", levure: "5 g", sel: "10 g" },
+      { nb: 6, courge: "360 g", farine: "330 g", beurre: "48 g", huileolive: "72 ml", levure: "6 g", sel: "12 g" },
+      { nb: 7, courge: "420 g", farine: "385 g", beurre: "56 g", huileolive: "84 ml", levure: "7 g", sel: "14 g" },
+      { nb: 8, courge: "480 g", farine: "440 g", beurre: "64 g", huileolive: "96 ml", levure: "8 g", sel: "16 g" },
+      { nb: 9, courge: "540 g", farine: "495 g", beurre: "72 g", huileolive: "108 ml", levure: "9 g", sel: "18 g" },
+      { nb: 10, courge: "600 g", farine: "550 g", beurre: "80 g", huileolive: "120 ml", levure: "10 g", sel: "20 g" },
+      { nb: 11, courge: "660 g", farine: "605 g", beurre: "88 g", huileolive: "132 ml", levure: "11 g", sel: "22 g" },
+      { nb: 12, courge: "720 g", farine: "660 g", beurre: "96 g", huileolive: "144 ml", levure: "12 g", sel: "24 g" },
+      { nb: 13, courge: "780 g", farine: "715 g", beurre: "104 g", huileolive: "156 ml", levure: "13 g", sel: "26 g" },
+      { nb: 14, courge: "840 g", farine: "770 g", beurre: "112 g", huileolive: "168 ml", levure: "14 g", sel: "28 g" },
+      { nb: 15, courge: "900 g", farine: "825 g", beurre: "120 g", huileolive: "180 ml", levure: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎃", titre: "La courge", detail: "Faites cuire le potiron (ou la courge) à la vapeur, puis écrasez-le en une purée lisse et laissez-la tiédir.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la purée de courge avec la farine, le beurre fondu, un peu de levure et du sel, en une pâte souple. Laissez reposer.", badge: null },
+      { icone: "📏", titre: "Abaisser", detail: "Abaissez la pâte sur environ 5 mm d'épaisseur.", badge: null },
+      { icone: "⭕", titre: "Découper", detail: "Découpez des disques à l'emporte-pièce (ou au verre), et piquez-les à la fourchette pour éviter qu'ils ne gonflent trop.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plongez les disques dans l'huile bien chaude : ils gonflent et dorent. Retournez-les à mi-cuisson.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égouttez les sopaipillas sur du papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaudes : en salé avec du pebre (salsa) et de la moutarde, ou en sucré trempées dans un sirop de chancaca (sucre de canne épicé). Dorées et moelleuses — l'en-cas du Chili.", badge: null }
+    ]
+  },
 });
