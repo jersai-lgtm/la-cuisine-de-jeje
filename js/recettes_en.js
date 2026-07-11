@@ -69364,5 +69364,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot, as a side to fish, taro or rice. Mild, creamy and plant-based — the accompaniment of Fijian tables."
    }
   ]
+ },
+ "khaomangai": {
+  "nom": "Khao Man Gai",
+  "description": "Khao man gai — the Thai chicken rice: tender poached chicken served over rice cooked in its ginger-and-garlic broth, with a spicy fermented-soy and ginger sauce. Simple, delicate and comforting, it's the Thai version of Hainanese chicken rice, a beloved street dish.",
+  "etapes": [
+   {
+    "titre": "Poach the chicken",
+    "detail": "Gently poach the chicken in water with ginger, garlic and a little salt, until just cooked and tender. Keep the broth."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Sauté the rice in a little chicken fat and garlic, then cook it in the fragrant broth: each grain soaks up flavour."
+   },
+   {
+    "titre": "Cool the chicken",
+    "detail": "Briefly plunge the chicken in iced water to firm the skin, then slice it."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Make the signature sauce: fermented soy (taochiao), crushed ginger and garlic, chilli, sugar and vinegar — punchy and umami."
+   },
+   {
+    "titre": "The sides",
+    "detail": "Slice cucumber and prepare a small bowl of clear broth (with radish) to serve on the side."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the fragrant rice, the sliced chicken on top and the cucumber beside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with the spicy sauce, coriander and broth. Simple, delicate and comforting — the Thai chicken rice."
+   }
+  ]
+ },
+ "saiua": {
+  "nom": "Sai Ua",
+  "description": "Sai ua — the grilled sausage of northern Thailand: pork mixed with a red curry paste, lemongrass, galangal, kaffir lime leaf and herbs, cased then grilled until golden and fragrant. Spicy, herbaceous and smoky, it's the speciality of Chiang Mai, served sliced as an appetiser.",
+  "etapes": [
+   {
+    "titre": "The spice paste",
+    "detail": "Pound the lemongrass, garlic, galangal, dried chilli, turmeric and shrimp paste into a fragrant curry paste."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced pork (slightly fatty) with the curry paste, chopped kaffir lime leaf and plenty of coriander and spring onion."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add fish sauce and a dash of lime, and mix at length until the filling turns sticky and fragrant."
+   },
+   {
+    "titre": "Case",
+    "detail": "Fill a casing with the mixture (or shape long logs by hand), in a spiral."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the sausage over low heat (barbecue or griddle), turning it, until golden and cooked through."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let it rest, then cut the sausage on the bias."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, with sticky rice, raw cabbage and a chilli sauce (nam prik). Spicy, herbaceous and smoky — the sausage of Chiang Mai."
+   }
+  ]
+ },
+ "boatnoodles": {
+  "nom": "Boat Noodles",
+  "description": "Boat noodles (kuaytiaw ruea) — the Thai boat noodle soup: a dark, rich, spiced beef broth (cinnamon, star anise) served over noodles with beef and bean sprouts. Once sold from the boats of Bangkok's canals, this intense, bold soup is eaten in small bowls that you stack.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Long-simmer the beef (and bones) with cinnamon, star anise, coriander seeds and a little galangal, into a dark, fragrant broth."
+   },
+   {
+    "titre": "The body",
+    "detail": "Season the broth with soy sauce, fish sauce and a little sugar: it should be intense, bold and slightly thick (traditionally thickened with blood)."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Poach thin slices of beef in the simmering broth, just seared and tender."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the rice noodles, rinse them and divide into small bowls."
+   },
+   {
+    "titre": "The sprouts",
+    "detail": "Add blanched bean sprouts and morning glory over the noodles."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the scalding broth and beef over the noodles and sprouts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with coriander, fried garlic and chilli, with a little chilli vinegar on the side. Intense and bold — the boat noodles of Bangkok, stacked bowl after bowl."
+   }
+  ]
+ },
+ "assamlaksa": {
+  "nom": "Assam Laksa",
+  "description": "Assam laksa — the sour noodle soup of Penang: a broth of flaked mackerel, soured with tamarind, lifted with lemongrass and chilli, served over thick rice noodles with pineapple, cucumber and mint. Sour, briny and refreshing, it's the treasure of Malaysian street food.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Poach the mackerel (or a sardine, tuna) in water, then flake its flesh and keep the broth."
+   },
+   {
+    "titre": "The paste",
+    "detail": "Blend the onion, chilli, lemongrass, galangal and shrimp paste (belacan) into a fragrant paste."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Sauté the paste, add the fish broth, diluted tamarind and ginger flowers: the broth turns sour and fragrant."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the flaked fish to the broth and simmer to concentrate the flavours."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the thick rice noodles (laksa) and divide into the bowls."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "Prepare the pineapple, cucumber, red onion, mint and chilli in fine strips."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the sour broth and fish over the noodles, top with the raw vegetables and a little sweet shrimp paste (hae ko). Sour, briny and refreshing — the treasure of Penang."
+   }
+  ]
+ },
+ "otakotak": {
+  "nom": "Otak-Otak",
+  "description": "Otak-otak — the grilled fish cake in banana leaf: a fish mousse mixed with coconut milk, a spice paste (lemongrass, turmeric, chilli) and herbs, wrapped in a banana leaf and grilled. Soft, fragrant and lightly smoky, it's a beloved snack in Malaysia, Singapore and Indonesia.",
+  "etapes": [
+   {
+    "titre": "The spice paste",
+    "detail": "Blend the lemongrass, chilli, turmeric, onion, garlic and galangal into a fragrant paste (rempah)."
+   },
+   {
+    "titre": "The fish mousse",
+    "detail": "Blend the white fish flesh with the spice paste, coconut milk and a little egg, until you get a smooth, sticky mousse."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Stir finely chopped kaffir lime leaf and coriander into the mousse."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Spread a portion of mousse on a piece of softened banana leaf, and fold into a closed parcel (fixed with toothpicks)."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the parcels over embers or a griddle, turning them, until the fish is set and the leaf perfumes the mousse."
+   },
+   {
+    "titre": "Check",
+    "detail": "The leaf should be charred in places and fragrant: the otak-otak is cooked when firm and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the leaf and serve hot, with a spoon or by hand. Soft, fragrant and smoky — the grilled snack of Malaysia."
+   }
+  ]
+ },
+ "apambalik": {
+  "nom": "Apam Balik",
+  "description": "Apam balik — the crispy folded pancake of Malaysia: a leavened batter cooked into a thick pancake with lacy, crisp edges, filled with crushed peanuts, sugar and sweetcorn, then folded into a half-moon. Soft in the centre, crunchy at the edges, it's a beloved street treat in Malaysia and Singapore.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour, a little sugar, the yeast (and a little baking soda) with the milk, egg and water, into a smooth, fluid batter. Rest 1 hour (it should bubble)."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Roast the peanuts and coarsely crush them. Prepare the sugar and sweetcorn."
+   },
+   {
+    "titre": "Heat the pan",
+    "detail": "Heat a buttered pan over medium heat (ideally high-sided for the thick version)."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour a ladle of batter and swirl: the centre stays thick and soft, the edges spread thin and lacy."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook covered until bubbles form and the underside browns, the edges turning crisp."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Generously scatter the centre with peanuts, sugar, corn (and a little butter) while the pancake is still on the heat."
+   },
+   {
+    "titre": "Fold and serve",
+    "detail": "Fold the pancake into a half-moon, let the filling melt, then cut into pieces. Soft in the centre, crunchy at the edges — the street treat of Malaysia."
+   }
+  ]
+ },
+ "bicolexpress": {
+  "nom": "Bicol Express",
+  "description": "Bicol express — the spicy coconut pork of the Philippines: strips of pork simmered in a creamy coconut milk with a profusion of long green chillies and fermented shrimp paste (bagoong). Creamy, salty and fiery, it's the emblematic dish of the Bicol region, famous for its love of chilli.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Sauté the pork strips (with a little fat) until they colour and render their fat."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the sliced garlic, onion and ginger, and soften them."
+   },
+   {
+    "titre": "The bagoong",
+    "detail": "Add the fermented shrimp paste (bagoong, or fish sauce) and sauté it to release its umami."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and bring gently to a simmer (without hard boiling), then let it reduce."
+   },
+   {
+    "titre": "The chillies",
+    "detail": "Add a large amount of long green chillies (siling haba) in strips — the signature of bicol express, very spicy."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the pork is tender and the coconut sauce thick and oily (the coconut fat should rise)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve nice and hot with white rice to temper the heat. Creamy, salty and fiery — the emblematic dish of Bicol."
+   }
+  ]
+ },
+ "pancitpalabok": {
+  "nom": "Pancit Palabok",
+  "description": "Pancit palabok — the Filipino rice noodles with shrimp sauce: rice noodles coated in a thick orange shrimp-and-annatto sauce, generously topped with shrimp, hard-boiled egg, pork and crisp pork rind (chicharrón). Rich, colourful and festive, it's a great celebration dish in the Philippines.",
+  "etapes": [
+   {
+    "titre": "The noodles",
+    "detail": "Soak then cook the rice noodles (bihon), rinse and drain them."
+   },
+   {
+    "titre": "The shrimp broth",
+    "detail": "Sauté the shrimp heads and shells, add water and let infuse into a bold broth, then strain."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the garlic, add annatto (or turmeric) for the orange colour, the shrimp broth, fish sauce and a little flour to thicken."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Simmer the sauce until it coats the spoon, rich and orange."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "Prepare the cooked shrimp, hard-boiled egg in rounds, sliced pork and crumbled crisp pork rind (chicharrón)."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Arrange the noodles in a dish and coat them generously with the orange sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with shrimp, egg, chicharrón, spring onion and a wedge of lime (calamansi). Rich, colourful and festive — the Filipino celebration noodles."
+   }
+  ]
+ },
+ "numbanhchok": {
+  "nom": "Num Banh Chok",
+  "description": "Num banh chok — the Khmer 'morning noodles': fine rice vermicelli topped with a green fish gravy, scented with lemongrass, turmeric and kroeung, overflowing with raw vegetables and fresh herbs. Fresh, herbaceous and fragrant, it's the emblematic breakfast of Cambodia.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Poach the fish (catfish or white fish) in water, then flake its flesh and keep the broth."
+   },
+   {
+    "titre": "The kroeung",
+    "detail": "Pound the lemongrass, galangal, turmeric, garlic and kaffir root into a green spice paste (the Khmer kroeung)."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the kroeung, add the flaked fish, broth and coconut milk, and simmer into a fragrant green sauce (samlar)."
+   },
+   {
+    "titre": "The vermicelli",
+    "detail": "Cook the fine fresh rice vermicelli (num banh chok), rinse and shape into little nests."
+   },
+   {
+    "titre": "The raw vegetables",
+    "detail": "Prepare a large plate of raw vegetables and herbs: lettuce, bean sprouts, cucumber, banana flower, mint, basil."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the vermicelli nests in the bowls, top with raw vegetables."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with the green fish sauce and mix at the table. Fresh, herbaceous and fragrant — the Khmer breakfast."
+   }
+  ]
+ },
+ "esrujak": {
+  "nom": "Rujak",
+  "description": "Rujak — the Indonesian spicy fruit salad: a mix of crunchy, tangy fruits (pineapple, green mango, cucumber, jicama) coated in a dark tamarind, palm sugar and chilli sauce, scattered with peanuts. Sweet, sour, salty and spicy all at once, it's a refreshing and surprising snack.",
+  "etapes": [
+   {
+    "titre": "The fruit",
+    "detail": "Cut crunchy, tangy fruits into pieces: pineapple, green mango, cucumber, green apple (and jicama if possible)."
+   },
+   {
+    "titre": "The peanuts",
+    "detail": "Roast the peanuts and coarsely crush them."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Melt the palm sugar (or brown sugar) with diluted tamarind and a little water, until you get a dark, syrupy sauce."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the pounded chilli, shrimp paste (optional) and salt to the sauce: it should be sweet, sour, salty and spicy."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the cut fruits in a bowl."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the tamarind sauce over the fruit and mix gently to coat well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with crushed peanuts and serve at once, nice and cold. Sweet, sour, salty and spicy — the surprising fruit salad of Indonesia."
+   }
+  ]
  }
 };

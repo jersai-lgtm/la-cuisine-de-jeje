@@ -2745,4 +2745,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez à température ambiante, avec du roshi (galette fine) chaud et un thé. Frais, iodé et parfumé — le petit-déjeuner des Maldives.", badge: null }
     ]
   },
+  esrujak: {
+    dateAjout: "2026-07-11T13:09:00",
+    nom: "Rujak",
+    cat: "salades", pays: "indonesie",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Rujak — la salade de fruits épicée indonésienne : un mélange de fruits croquants et acidulés (ananas, mangue verte, concombre, jicama) enrobé d'une sauce sombre au tamarin, au sucre de palme et au piment, parsemé de cacahuètes. Sucrée, acide, salée et piquante à la fois, c'est un en-cas rafraîchissant et surprenant.",
+    tableauEsrujak: [
+      { nb: 1, ananas: "50 g", concombre: "40 g", mangue: "40 g", tamarin: "8 g", cassonade: "10 g", piment: "1.5 g", cacahuete: "10 g", sel: "1 g" },
+      { nb: 2, ananas: "100 g", concombre: "80 g", mangue: "80 g", tamarin: "16 g", cassonade: "20 g", piment: "3 g", cacahuete: "20 g", sel: "2 g" },
+      { nb: 3, ananas: "150 g", concombre: "120 g", mangue: "120 g", tamarin: "24 g", cassonade: "30 g", piment: "4.5 g", cacahuete: "30 g", sel: "3 g" },
+      { nb: 4, ananas: "200 g", concombre: "160 g", mangue: "160 g", tamarin: "32 g", cassonade: "40 g", piment: "6 g", cacahuete: "40 g", sel: "4 g" },
+      { nb: 5, ananas: "250 g", concombre: "200 g", mangue: "200 g", tamarin: "40 g", cassonade: "50 g", piment: "7.5 g", cacahuete: "50 g", sel: "5 g" },
+      { nb: 6, ananas: "300 g", concombre: "240 g", mangue: "240 g", tamarin: "48 g", cassonade: "60 g", piment: "9 g", cacahuete: "60 g", sel: "6 g" },
+      { nb: 7, ananas: "350 g", concombre: "280 g", mangue: "280 g", tamarin: "56 g", cassonade: "70 g", piment: "10.5 g", cacahuete: "70 g", sel: "7 g" },
+      { nb: 8, ananas: "400 g", concombre: "320 g", mangue: "320 g", tamarin: "64 g", cassonade: "80 g", piment: "12 g", cacahuete: "80 g", sel: "8 g" },
+      { nb: 9, ananas: "450 g", concombre: "360 g", mangue: "360 g", tamarin: "72 g", cassonade: "90 g", piment: "13.5 g", cacahuete: "90 g", sel: "9 g" },
+      { nb: 10, ananas: "500 g", concombre: "400 g", mangue: "400 g", tamarin: "80 g", cassonade: "100 g", piment: "15 g", cacahuete: "100 g", sel: "10 g" },
+      { nb: 11, ananas: "550 g", concombre: "440 g", mangue: "440 g", tamarin: "88 g", cassonade: "110 g", piment: "16.5 g", cacahuete: "110 g", sel: "11 g" },
+      { nb: 12, ananas: "600 g", concombre: "480 g", mangue: "480 g", tamarin: "96 g", cassonade: "120 g", piment: "18 g", cacahuete: "120 g", sel: "12 g" },
+      { nb: 13, ananas: "650 g", concombre: "520 g", mangue: "520 g", tamarin: "104 g", cassonade: "130 g", piment: "19.5 g", cacahuete: "130 g", sel: "13 g" },
+      { nb: 14, ananas: "700 g", concombre: "560 g", mangue: "560 g", tamarin: "112 g", cassonade: "140 g", piment: "21 g", cacahuete: "140 g", sel: "14 g" },
+      { nb: 15, ananas: "750 g", concombre: "600 g", mangue: "600 g", tamarin: "120 g", cassonade: "150 g", piment: "22.5 g", cacahuete: "150 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍍", titre: "Les fruits", detail: "Coupez en morceaux des fruits croquants et acidulés : ananas, mangue verte, concombre, pomme verte (et jicama/pomme de terre mexicaine si possible).", badge: null },
+      { icone: "🥜", titre: "Les cacahuètes", detail: "Faites griller les cacahuètes et concassez-les grossièrement.", badge: null },
+      { icone: "🍯", titre: "La sauce", detail: "Faites fondre le sucre de palme (ou cassonade) avec le tamarin dilué et un peu d'eau, jusqu'à obtenir un sirop sombre et sirupeux.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajoutez le piment pilé, la pâte de crevettes (facultatif) et le sel à la sauce : elle doit être sucrée, acide, salée et piquante.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Réunissez les fruits coupés dans un saladier.", badge: null },
+      { icone: "🥄", titre: "Napper", detail: "Versez la sauce au tamarin sur les fruits et mélangez délicatement pour bien les enrober.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de cacahuètes concassées et servez aussitôt, bien frais. Sucrée, acide, salée et piquante — la salade de fruits surprenante d'Indonésie.", badge: null }
+    ]
+  },
 });

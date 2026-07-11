@@ -4705,4 +4705,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez la soupe crémeuse brûlante, coiffée de frites croustillantes et de persil. Crémeuse et nourrissante — la soupe des Andes boliviennes.", badge: null }
     ]
   },
+  boatnoodles: {
+    dateAjout: "2026-07-11T13:02:00",
+    nom: "Boat Noodles",
+    cat: "soupes", pays: "thailande",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍜",
+    description: "Boat noodles (kuaytiaw ruea) — la soupe de nouilles des bateaux thaïe : un bouillon de bœuf sombre, riche et épicé (cannelle, anis étoilé), servi sur des nouilles avec du bœuf et des germes. Jadis vendue depuis les barques des canaux de Bangkok, cette soupe intense et corsée se déguste en petits bols que l'on empile.",
+    tableauBoatnoodles: [
+      { nb: 1, nouilles: "80 g", boeuf: "70 g", bouillon: "300 ml", saucesoja: "10 ml", cannelle: "0.3 g", anisetoile: "0.2 g", ail: "1", germes: "25 g", coriandre: "4 g", sel: "2 g" },
+      { nb: 2, nouilles: "160 g", boeuf: "140 g", bouillon: "600 ml", saucesoja: "20 ml", cannelle: "0.6 g", anisetoile: "0.4 g", ail: "2", germes: "50 g", coriandre: "8 g", sel: "4 g" },
+      { nb: 3, nouilles: "240 g", boeuf: "210 g", bouillon: "900 ml", saucesoja: "30 ml", cannelle: "0.9 g", anisetoile: "0.6 g", ail: "3", germes: "75 g", coriandre: "12 g", sel: "6 g" },
+      { nb: 4, nouilles: "320 g", boeuf: "280 g", bouillon: "1200 ml", saucesoja: "40 ml", cannelle: "1.2 g", anisetoile: "0.8 g", ail: "4", germes: "100 g", coriandre: "16 g", sel: "8 g" },
+      { nb: 5, nouilles: "400 g", boeuf: "350 g", bouillon: "1500 ml", saucesoja: "50 ml", cannelle: "1.5 g", anisetoile: "1 g", ail: "5", germes: "125 g", coriandre: "20 g", sel: "10 g" },
+      { nb: 6, nouilles: "480 g", boeuf: "420 g", bouillon: "1800 ml", saucesoja: "60 ml", cannelle: "1.8 g", anisetoile: "1.2 g", ail: "6", germes: "150 g", coriandre: "24 g", sel: "12 g" },
+      { nb: 7, nouilles: "560 g", boeuf: "490 g", bouillon: "2100 ml", saucesoja: "70 ml", cannelle: "2.1 g", anisetoile: "1.4 g", ail: "7", germes: "175 g", coriandre: "28 g", sel: "14 g" },
+      { nb: 8, nouilles: "640 g", boeuf: "560 g", bouillon: "2400 ml", saucesoja: "80 ml", cannelle: "2.4 g", anisetoile: "1.6 g", ail: "8", germes: "200 g", coriandre: "32 g", sel: "16 g" },
+      { nb: 9, nouilles: "720 g", boeuf: "630 g", bouillon: "2700 ml", saucesoja: "90 ml", cannelle: "2.7 g", anisetoile: "1.8 g", ail: "9", germes: "225 g", coriandre: "36 g", sel: "18 g" },
+      { nb: 10, nouilles: "800 g", boeuf: "700 g", bouillon: "3000 ml", saucesoja: "100 ml", cannelle: "3 g", anisetoile: "2 g", ail: "10", germes: "250 g", coriandre: "40 g", sel: "20 g" },
+      { nb: 11, nouilles: "880 g", boeuf: "770 g", bouillon: "3300 ml", saucesoja: "110 ml", cannelle: "3.3 g", anisetoile: "2.2 g", ail: "11", germes: "275 g", coriandre: "44 g", sel: "22 g" },
+      { nb: 12, nouilles: "960 g", boeuf: "840 g", bouillon: "3600 ml", saucesoja: "120 ml", cannelle: "3.6 g", anisetoile: "2.4 g", ail: "12", germes: "300 g", coriandre: "48 g", sel: "24 g" },
+      { nb: 13, nouilles: "1040 g", boeuf: "910 g", bouillon: "3900 ml", saucesoja: "130 ml", cannelle: "3.9 g", anisetoile: "2.6 g", ail: "13", germes: "325 g", coriandre: "52 g", sel: "26 g" },
+      { nb: 14, nouilles: "1120 g", boeuf: "980 g", bouillon: "4200 ml", saucesoja: "140 ml", cannelle: "4.2 g", anisetoile: "2.8 g", ail: "14", germes: "350 g", coriandre: "56 g", sel: "28 g" },
+      { nb: 15, nouilles: "1200 g", boeuf: "1050 g", bouillon: "4500 ml", saucesoja: "150 ml", cannelle: "4.5 g", anisetoile: "3 g", ail: "15", germes: "375 g", coriandre: "60 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Le bouillon", detail: "Faites mijoter longuement le bœuf (et des os) avec de la cannelle, de l'anis étoilé, de la coriandre en grains et un peu de galanga, en un bouillon sombre et parfumé.", badge: null },
+      { icone: "🍶", titre: "Le corps", detail: "Assaisonnez le bouillon de sauce soja, de sauce poisson et d'un peu de sucre : il doit être intense, corsé et légèrement épais (traditionnellement lié au sang).", badge: null },
+      { icone: "🥩", titre: "La viande", detail: "Faites pocher de fines tranches de bœuf dans le bouillon frémissant, juste saisies et tendres.", badge: null },
+      { icone: "🍜", titre: "Les nouilles", detail: "Faites cuire les nouilles de riz, rincez-les et répartissez-les dans de petits bols.", badge: null },
+      { icone: "🌱", titre: "Les germes", detail: "Ajoutez des germes de soja et du liseron d'eau (morning glory) blanchis sur les nouilles.", badge: null },
+      { icone: "🍲", titre: "Verser", detail: "Versez le bouillon brûlant et le bœuf sur les nouilles et les germes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Garnissez de coriandre, d'ail frit et de piment, avec un peu de vinaigre au piment à côté. Intense et corsée — la soupe des bateaux de Bangkok, à empiler bol après bol.", badge: null }
+    ]
+  },
+  assamlaksa: {
+    dateAjout: "2026-07-11T13:03:00",
+    nom: "Assam Laksa",
+    cat: "soupes", pays: "malaisie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Assam laksa — la soupe de nouilles aigre de Penang : un bouillon de maquereau effiloché, acidulé au tamarin, relevé de citronnelle et de piment, servi sur d'épais vermicelles de riz avec de l'ananas, du concombre et de la menthe. Aigre, iodée et rafraîchissante, c'est le trésor de la street-food malaisienne.",
+    tableauAssamlaksa: [
+      { nb: 1, poisson: "80 g", vermicelle: "70 g", tamarin: "10 g", oignon: "30 g", piment: "2 g", citronnelle: "4 g", ananas: "30 g", menthe: "3 g", citronvert: "¼", sel: "2 g" },
+      { nb: 2, poisson: "160 g", vermicelle: "140 g", tamarin: "20 g", oignon: "60 g", piment: "4 g", citronnelle: "8 g", ananas: "60 g", menthe: "6 g", citronvert: "½", sel: "4 g" },
+      { nb: 3, poisson: "240 g", vermicelle: "210 g", tamarin: "30 g", oignon: "90 g", piment: "6 g", citronnelle: "12 g", ananas: "90 g", menthe: "9 g", citronvert: "¾", sel: "6 g" },
+      { nb: 4, poisson: "320 g", vermicelle: "280 g", tamarin: "40 g", oignon: "120 g", piment: "8 g", citronnelle: "16 g", ananas: "120 g", menthe: "12 g", citronvert: "1", sel: "8 g" },
+      { nb: 5, poisson: "400 g", vermicelle: "350 g", tamarin: "50 g", oignon: "150 g", piment: "10 g", citronnelle: "20 g", ananas: "150 g", menthe: "15 g", citronvert: "1¼", sel: "10 g" },
+      { nb: 6, poisson: "480 g", vermicelle: "420 g", tamarin: "60 g", oignon: "180 g", piment: "12 g", citronnelle: "24 g", ananas: "180 g", menthe: "18 g", citronvert: "1½", sel: "12 g" },
+      { nb: 7, poisson: "560 g", vermicelle: "490 g", tamarin: "70 g", oignon: "210 g", piment: "14 g", citronnelle: "28 g", ananas: "210 g", menthe: "21 g", citronvert: "1¾", sel: "14 g" },
+      { nb: 8, poisson: "640 g", vermicelle: "560 g", tamarin: "80 g", oignon: "240 g", piment: "16 g", citronnelle: "32 g", ananas: "240 g", menthe: "24 g", citronvert: "2", sel: "16 g" },
+      { nb: 9, poisson: "720 g", vermicelle: "630 g", tamarin: "90 g", oignon: "270 g", piment: "18 g", citronnelle: "36 g", ananas: "270 g", menthe: "27 g", citronvert: "2¼", sel: "18 g" },
+      { nb: 10, poisson: "800 g", vermicelle: "700 g", tamarin: "100 g", oignon: "300 g", piment: "20 g", citronnelle: "40 g", ananas: "300 g", menthe: "30 g", citronvert: "2½", sel: "20 g" },
+      { nb: 11, poisson: "880 g", vermicelle: "770 g", tamarin: "110 g", oignon: "330 g", piment: "22 g", citronnelle: "44 g", ananas: "330 g", menthe: "33 g", citronvert: "2¾", sel: "22 g" },
+      { nb: 12, poisson: "960 g", vermicelle: "840 g", tamarin: "120 g", oignon: "360 g", piment: "24 g", citronnelle: "48 g", ananas: "360 g", menthe: "36 g", citronvert: "3", sel: "24 g" },
+      { nb: 13, poisson: "1040 g", vermicelle: "910 g", tamarin: "130 g", oignon: "390 g", piment: "26 g", citronnelle: "52 g", ananas: "390 g", menthe: "39 g", citronvert: "3¼", sel: "26 g" },
+      { nb: 14, poisson: "1120 g", vermicelle: "980 g", tamarin: "140 g", oignon: "420 g", piment: "28 g", citronnelle: "56 g", ananas: "420 g", menthe: "42 g", citronvert: "3½", sel: "28 g" },
+      { nb: 15, poisson: "1200 g", vermicelle: "1050 g", tamarin: "150 g", oignon: "450 g", piment: "30 g", citronnelle: "60 g", ananas: "450 g", menthe: "45 g", citronvert: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le poisson", detail: "Pochez le maquereau (ou une sardine, un thon) dans l'eau, puis effilochez sa chair et gardez le bouillon.", badge: null },
+      { icone: "🌿", titre: "La pâte", detail: "Mixez l'oignon, le piment, la citronnelle, le galanga et la pâte de crevettes (belacan) en une pâte parfumée.", badge: null },
+      { icone: "🍲", titre: "Le bouillon", detail: "Faites revenir la pâte, ajoutez le bouillon de poisson, le tamarin dilué et les fleurs de gingembre : le bouillon devient aigre et parfumé.", badge: null },
+      { icone: "🐟", titre: "Réunir", detail: "Remettez le poisson effiloché dans le bouillon et laissez mijoter pour concentrer les saveurs.", badge: null },
+      { icone: "🍜", titre: "Les nouilles", detail: "Faites cuire les gros vermicelles de riz (laksa) et répartissez-les dans les bols.", badge: null },
+      { icone: "🍍", titre: "Les garnitures", detail: "Préparez l'ananas, le concombre, l'oignon rouge, la menthe et le piment en fines lanières.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Versez le bouillon aigre et le poisson sur les nouilles, garnissez de crudités et d'un peu de pâte de crevettes sucrée (hae ko). Aigre, iodée et rafraîchissante — le trésor de Penang.", badge: null }
+    ]
+  },
 });

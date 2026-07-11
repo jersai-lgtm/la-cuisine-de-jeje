@@ -8417,4 +8417,41 @@ Object.assign(recettes, {
       { icone: "🍯", titre: "Miel et service", detail: "À la sortie du four, arrosez généreusement de miel chaud et parsemez de graines de nigelle (ou de sésame). Servez tiède, coupé en parts. Moelleux, beurré et gorgé de miel — la douceur de fête yéménite.", badge: null }
     ]
   },
+  apambalik: {
+    dateAjout: "2026-07-11T13:05:00",
+    nom: "Apam Balik",
+    cat: "desserts", pays: "malaisie",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    description: "Apam balik — la crêpe pliée croustillante de Malaisie : une pâte levée cuite en épaisse crêpe aux bords dentelés et croustillants, garnie de cacahuètes concassées, de sucre et de maïs doux, puis repliée en demi-lune. Moelleuse au centre, croquante sur les bords, c'est une gourmandise de rue adorée en Malaisie et à Singapour.",
+    tableauApambalik: [
+      { nb: 1, farine: "55 g", oeufs: "½", lait: "60 ml", levure: "1 g", cacahuete: "15 g", sucre: "12 g", mais: "20 g", beurre: "8 g" },
+      { nb: 2, farine: "110 g", oeufs: "1", lait: "120 ml", levure: "2 g", cacahuete: "30 g", sucre: "24 g", mais: "40 g", beurre: "16 g" },
+      { nb: 3, farine: "165 g", oeufs: "1½", lait: "180 ml", levure: "3 g", cacahuete: "45 g", sucre: "36 g", mais: "60 g", beurre: "24 g" },
+      { nb: 4, farine: "220 g", oeufs: "2", lait: "240 ml", levure: "4 g", cacahuete: "60 g", sucre: "48 g", mais: "80 g", beurre: "32 g" },
+      { nb: 5, farine: "275 g", oeufs: "2½", lait: "300 ml", levure: "5 g", cacahuete: "75 g", sucre: "60 g", mais: "100 g", beurre: "40 g" },
+      { nb: 6, farine: "330 g", oeufs: "3", lait: "360 ml", levure: "6 g", cacahuete: "90 g", sucre: "72 g", mais: "120 g", beurre: "48 g" },
+      { nb: 7, farine: "385 g", oeufs: "3½", lait: "420 ml", levure: "7 g", cacahuete: "105 g", sucre: "84 g", mais: "140 g", beurre: "56 g" },
+      { nb: 8, farine: "440 g", oeufs: "4", lait: "480 ml", levure: "8 g", cacahuete: "120 g", sucre: "96 g", mais: "160 g", beurre: "64 g" },
+      { nb: 9, farine: "495 g", oeufs: "4½", lait: "540 ml", levure: "9 g", cacahuete: "135 g", sucre: "108 g", mais: "180 g", beurre: "72 g" },
+      { nb: 10, farine: "550 g", oeufs: "5", lait: "600 ml", levure: "10 g", cacahuete: "150 g", sucre: "120 g", mais: "200 g", beurre: "80 g" },
+      { nb: 11, farine: "605 g", oeufs: "5½", lait: "660 ml", levure: "11 g", cacahuete: "165 g", sucre: "132 g", mais: "220 g", beurre: "88 g" },
+      { nb: 12, farine: "660 g", oeufs: "6", lait: "720 ml", levure: "12 g", cacahuete: "180 g", sucre: "144 g", mais: "240 g", beurre: "96 g" },
+      { nb: 13, farine: "715 g", oeufs: "6½", lait: "780 ml", levure: "13 g", cacahuete: "195 g", sucre: "156 g", mais: "260 g", beurre: "104 g" },
+      { nb: 14, farine: "770 g", oeufs: "7", lait: "840 ml", levure: "14 g", cacahuete: "210 g", sucre: "168 g", mais: "280 g", beurre: "112 g" },
+      { nb: 15, farine: "825 g", oeufs: "7½", lait: "900 ml", levure: "15 g", cacahuete: "225 g", sucre: "180 g", mais: "300 g", beurre: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, un peu de sucre, la levure (et un peu de bicarbonate) avec le lait, l'œuf et de l'eau, en une pâte lisse et fluide. Laissez reposer 1 h (elle doit buller).", badge: null },
+      { icone: "🥜", titre: "La garniture", detail: "Faites griller les cacahuètes et concassez-les grossièrement. Préparez le sucre et le maïs doux.", badge: null },
+      { icone: "🍳", titre: "Chauffer la poêle", detail: "Faites chauffer une poêle beurrée à feu moyen (idéalement à bords hauts pour la version épaisse).", badge: null },
+      { icone: "🥞", titre: "Verser", detail: "Versez une louche de pâte et faites tourner : le centre reste épais et moelleux, les bords s'étalent fins et dentelés.", badge: null },
+      { icone: "🫧", titre: "Cuire", detail: "Laissez cuire à couvert jusqu'à ce que des bulles se forment et que le dessous dore, les bords devenant croustillants.", badge: null },
+      { icone: "🌽", titre: "Garnir", detail: "Parsemez généreusement le centre de cacahuètes, de sucre, de maïs (et d'un peu de beurre) pendant que la crêpe est encore sur le feu.", badge: null },
+      { icone: "🍽️", titre: "Plier et servir", detail: "Repliez la crêpe en demi-lune, laissez fondre la garniture, puis coupez en parts. Moelleuse au centre, croquante sur les bords — la gourmandise de rue de Malaisie.", badge: null }
+    ]
+  },
 });

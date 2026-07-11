@@ -5371,4 +5371,78 @@ Object.assign(recettes, {
     ],
     liees: ["llapingachos"]
   },
+  saiua: {
+    dateAjout: "2026-07-11T13:01:00",
+    nom: "Sai Ua",
+    cat: "encas", pays: "thailande",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌭",
+    description: "Sai ua — la saucisse grillée du nord de la Thaïlande : de la chair de porc mêlée d'une pâte de curry rouge, de citronnelle, de galanga, de feuille de kaffir et d'herbes, embossée puis grillée jusqu'à être dorée et parfumée. Relevée, herbacée et fumée, c'est la spécialité de Chiang Mai, servie en tranches à l'apéritif.",
+    tableauSaiua: [
+      { nb: 1, porc: "100 g", citronnelle: "5 g", ail: "1", piment: "2 g", curcuma: "1 g", coriandre: "5 g", citronvert: "¼", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, porc: "200 g", citronnelle: "10 g", ail: "2", piment: "4 g", curcuma: "2 g", coriandre: "10 g", citronvert: "½", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, porc: "300 g", citronnelle: "15 g", ail: "3", piment: "6 g", curcuma: "3 g", coriandre: "15 g", citronvert: "¾", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, porc: "400 g", citronnelle: "20 g", ail: "4", piment: "8 g", curcuma: "4 g", coriandre: "20 g", citronvert: "1", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, porc: "500 g", citronnelle: "25 g", ail: "5", piment: "10 g", curcuma: "5 g", coriandre: "25 g", citronvert: "1¼", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, porc: "600 g", citronnelle: "30 g", ail: "6", piment: "12 g", curcuma: "6 g", coriandre: "30 g", citronvert: "1½", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, porc: "700 g", citronnelle: "35 g", ail: "7", piment: "14 g", curcuma: "7 g", coriandre: "35 g", citronvert: "1¾", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, porc: "800 g", citronnelle: "40 g", ail: "8", piment: "16 g", curcuma: "8 g", coriandre: "40 g", citronvert: "2", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, porc: "900 g", citronnelle: "45 g", ail: "9", piment: "18 g", curcuma: "9 g", coriandre: "45 g", citronvert: "2¼", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, porc: "1000 g", citronnelle: "50 g", ail: "10", piment: "20 g", curcuma: "10 g", coriandre: "50 g", citronvert: "2½", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, porc: "1100 g", citronnelle: "55 g", ail: "11", piment: "22 g", curcuma: "11 g", coriandre: "55 g", citronvert: "2¾", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, porc: "1200 g", citronnelle: "60 g", ail: "12", piment: "24 g", curcuma: "12 g", coriandre: "60 g", citronvert: "3", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, porc: "1300 g", citronnelle: "65 g", ail: "13", piment: "26 g", curcuma: "13 g", coriandre: "65 g", citronvert: "3¼", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, porc: "1400 g", citronnelle: "70 g", ail: "14", piment: "28 g", curcuma: "14 g", coriandre: "70 g", citronvert: "3½", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, porc: "1500 g", citronnelle: "75 g", ail: "15", piment: "30 g", curcuma: "15 g", coriandre: "75 g", citronvert: "3¾", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "La pâte d'épices", detail: "Pilez la citronnelle, l'ail, le galanga, le piment séché, le curcuma et la pâte de crevettes en une pâte de curry parfumée.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Mélangez la chair de porc hachée (un peu grasse) avec la pâte de curry, la feuille de kaffir ciselée et beaucoup de coriandre et de ciboule.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Ajoutez de la sauce poisson et un trait de citron vert, et mélangez longuement jusqu'à ce que la farce devienne collante et parfumée.", badge: null },
+      { icone: "🌭", titre: "Embosser", detail: "Garnissez un boyau de la farce (ou façonnez de longs boudins à la main), en spirale.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Faites griller la saucisse à feu doux (barbecue ou plancha), en la tournant, jusqu'à ce qu'elle soit dorée et cuite à cœur.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Laissez reposer, puis coupez la saucisse en biais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède, avec du riz gluant, du chou cru et une sauce pimentée (nam prik). Relevée, herbacée et fumée — la saucisse de Chiang Mai.", badge: null }
+    ]
+  },
+  otakotak: {
+    dateAjout: "2026-07-11T13:04:00",
+    nom: "Otak-Otak",
+    cat: "encas", pays: "malaisie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Otak-otak — le gâteau de poisson grillé en feuille de bananier : une mousse de poisson mêlée de lait de coco, de pâte d'épices (citronnelle, curcuma, piment) et d'herbes, emballée dans une feuille de bananier et grillée. Fondant, parfumé et légèrement fumé, c'est un en-cas adoré en Malaisie, à Singapour et en Indonésie.",
+    tableauOtakotak: [
+      { nb: 1, poisson: "90 g", laitcoco: "30 ml", citronnelle: "4 g", piment: "2 g", curcuma: "1 g", oeufs: "¼", oignon: "20 g", coriandre: "4 g", huileolive: "4 ml", sel: "2 g" },
+      { nb: 2, poisson: "180 g", laitcoco: "60 ml", citronnelle: "8 g", piment: "4 g", curcuma: "2 g", oeufs: "½", oignon: "40 g", coriandre: "8 g", huileolive: "8 ml", sel: "4 g" },
+      { nb: 3, poisson: "270 g", laitcoco: "90 ml", citronnelle: "12 g", piment: "6 g", curcuma: "3 g", oeufs: "¾", oignon: "60 g", coriandre: "12 g", huileolive: "12 ml", sel: "6 g" },
+      { nb: 4, poisson: "360 g", laitcoco: "120 ml", citronnelle: "16 g", piment: "8 g", curcuma: "4 g", oeufs: "1", oignon: "80 g", coriandre: "16 g", huileolive: "16 ml", sel: "8 g" },
+      { nb: 5, poisson: "450 g", laitcoco: "150 ml", citronnelle: "20 g", piment: "10 g", curcuma: "5 g", oeufs: "1¼", oignon: "100 g", coriandre: "20 g", huileolive: "20 ml", sel: "10 g" },
+      { nb: 6, poisson: "540 g", laitcoco: "180 ml", citronnelle: "24 g", piment: "12 g", curcuma: "6 g", oeufs: "1½", oignon: "120 g", coriandre: "24 g", huileolive: "24 ml", sel: "12 g" },
+      { nb: 7, poisson: "630 g", laitcoco: "210 ml", citronnelle: "28 g", piment: "14 g", curcuma: "7 g", oeufs: "1¾", oignon: "140 g", coriandre: "28 g", huileolive: "28 ml", sel: "14 g" },
+      { nb: 8, poisson: "720 g", laitcoco: "240 ml", citronnelle: "32 g", piment: "16 g", curcuma: "8 g", oeufs: "2", oignon: "160 g", coriandre: "32 g", huileolive: "32 ml", sel: "16 g" },
+      { nb: 9, poisson: "810 g", laitcoco: "270 ml", citronnelle: "36 g", piment: "18 g", curcuma: "9 g", oeufs: "2¼", oignon: "180 g", coriandre: "36 g", huileolive: "36 ml", sel: "18 g" },
+      { nb: 10, poisson: "900 g", laitcoco: "300 ml", citronnelle: "40 g", piment: "20 g", curcuma: "10 g", oeufs: "2½", oignon: "200 g", coriandre: "40 g", huileolive: "40 ml", sel: "20 g" },
+      { nb: 11, poisson: "990 g", laitcoco: "330 ml", citronnelle: "44 g", piment: "22 g", curcuma: "11 g", oeufs: "2¾", oignon: "220 g", coriandre: "44 g", huileolive: "44 ml", sel: "22 g" },
+      { nb: 12, poisson: "1080 g", laitcoco: "360 ml", citronnelle: "48 g", piment: "24 g", curcuma: "12 g", oeufs: "3", oignon: "240 g", coriandre: "48 g", huileolive: "48 ml", sel: "24 g" },
+      { nb: 13, poisson: "1170 g", laitcoco: "390 ml", citronnelle: "52 g", piment: "26 g", curcuma: "13 g", oeufs: "3¼", oignon: "260 g", coriandre: "52 g", huileolive: "52 ml", sel: "26 g" },
+      { nb: 14, poisson: "1260 g", laitcoco: "420 ml", citronnelle: "56 g", piment: "28 g", curcuma: "14 g", oeufs: "3½", oignon: "280 g", coriandre: "56 g", huileolive: "56 ml", sel: "28 g" },
+      { nb: 15, poisson: "1350 g", laitcoco: "450 ml", citronnelle: "60 g", piment: "30 g", curcuma: "15 g", oeufs: "3¾", oignon: "300 g", coriandre: "60 g", huileolive: "60 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "La pâte d'épices", detail: "Mixez la citronnelle, le piment, le curcuma, l'oignon, l'ail et le galanga en une pâte parfumée (rempah).", badge: null },
+      { icone: "🐟", titre: "La mousse de poisson", detail: "Mixez la chair de poisson blanc avec la pâte d'épices, le lait de coco et un peu d'œuf, jusqu'à obtenir une mousse lisse et collante.", badge: null },
+      { icone: "🌿", titre: "Les herbes", detail: "Incorporez de la feuille de kaffir et de la coriandre finement ciselées à la mousse.", badge: null },
+      { icone: "🍃", titre: "Emballer", detail: "Étalez une portion de mousse sur un morceau de feuille de bananier assouplie, et repliez en papillote fermée (fixée par des cure-dents).", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Faites griller les papillotes sur la braise ou à la plancha, en les retournant, jusqu'à ce que le poisson soit pris et la feuille parfume la mousse.", badge: null },
+      { icone: "👃", titre: "Vérifier", detail: "La feuille doit être noircie par endroits et embaumer : l'otak-otak est cuit quand il est ferme et parfumé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Ouvrez la feuille et servez chaud, à la cuillère ou à la main. Fondant, parfumé et fumé — l'en-cas grillé de Malaisie.", badge: null }
+    ]
+  },
 });
