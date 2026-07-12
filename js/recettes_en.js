@@ -71064,5 +71064,345 @@ window.RECETTES_EN = {
     "detail": "Scatter with spring onion and serve with rice. Tangy, spicy and refreshing — the vinegar chicken of Hunan."
    }
   ]
+ },
+ "bakeandshark": {
+  "nom": "Bake and Shark",
+  "description": "Bake and shark — the star sandwich of Maracas beach in Trinidad: a piece of marinated then fried 'shark' (fish), tucked into a 'bake' (a soft, puffed fried bread), topped at will with sauces (garlic, tamarind, coriander-chilli) and crudités. Crunchy, spicy and festive, it's THE Trinidadian street food.",
+  "etapes": [
+   {
+    "titre": "Marinate the fish",
+    "detail": "Marinate the fish fillets (shark-style) with lime, garlic, turmeric, chilli and coriander, for at least 30 min."
+   },
+   {
+    "titre": "The bake dough",
+    "detail": "Make a simple leavened dough (flour, yeast, salt, a little sugar and water) and let it rest until soft and puffed."
+   },
+   {
+    "titre": "Fry the bakes",
+    "detail": "Roll the dough into discs and fry them until they puff and turn golden: the 'bake' is soft inside, crisp outside."
+   },
+   {
+    "titre": "Fry the fish",
+    "detail": "Dredge the marinated fillets in seasoned flour and fry them until golden and crisp."
+   },
+   {
+    "titre": "The sauces",
+    "detail": "Make the Trinidadian sauces: a garlic sauce, a tamarind sauce and a green coriander-chilli sauce ('chadon beni')."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Open the hot bakes, slide in the fried fish, then top at will with sauces, salad, cucumber and pineapple."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Eat at once, nice and crisp. Spicy, soft and festive — the star sandwich of Maracas beach."
+   }
+  ]
+ },
+ "oildown": {
+  "nom": "Oil Down",
+  "description": "Oil down — the national dish of Grenada: a one-pot where breadfruit, salted meat, spinach (callaloo) and dough dumplings simmer in turmeric coconut milk until the liquid is 'drunk up' and only a fragrant coconut oil is left at the bottom. Comforting, creamy and spicy with scotch bonnet pepper.",
+  "etapes": [
+   {
+    "titre": "The salted meat",
+    "detail": "Desalt the salted meat (pork, pig tail) if needed, then brown it in a large pot."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the onion, garlic, thyme and turmeric, and sauté until fragrant and deep yellow."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and a little water, and bring to a simmer."
+   },
+   {
+    "titre": "The breadfruit",
+    "detail": "Add the breadfruit (or plantain) in chunks, which will soak up the coconut milk."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Roll elongated dough dumplings (flour, water, salt) and lay them on top."
+   },
+   {
+    "titre": "'Down'",
+    "detail": "Add the spinach (callaloo) and the whole scotch bonnet, cover and simmer without stirring until the coconut milk is absorbed and only a fragrant oil remains at the bottom ('oil down')."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, mixing gently. Creamy, comforting and spicy — the national dish of Grenada."
+   }
+  ]
+ },
+ "conchfritters": {
+  "nom": "Conch Fritters",
+  "description": "Conch fritters — the conch fritters of the Bahamas: conch meat (here squid) chopped with pepper, onion and celery, coated in a spiced batter and fried into small golden balls. Crisp outside, soft inside, they're dipped in a spicy pink sauce — the islands' emblematic appetizer.",
+  "etapes": [
+   {
+    "titre": "The conch",
+    "detail": "Finely chop the conch (or squid) meat, tenderized, with a squeeze of lime."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Very finely chop the pepper, onion, celery and chilli."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix flour, egg, a little milk and baking powder into a thick batter, and season generously."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Fold the conch and vegetables into the batter: it should be well loaded."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil until a drop of batter sizzles at once."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop spoonfuls of batter into the oil and fry until golden and puffed, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a spicy pink sauce (mayo, ketchup, lime). Crisp and soft — the appetizer of the Bahamas."
+   }
+  ]
+ },
+ "keshiyena": {
+  "nom": "Keshi Yena",
+  "description": "Keshi yena — the emblematic dish of Curaçao: a shell of cheese (Edam/Gouda) filled with a chicken stew simmered with tomatoes, onions, raisins, olives and capers, then baked until the cheese melts around the filling. Sweet-savoury, melting and generous, a legacy of the households whose servants filled the hollowed cheese rinds.",
+  "etapes": [
+   {
+    "titre": "The shell",
+    "detail": "Line a mould (or ramekins) with thin slices of Edam/Gouda-style cheese (traditionally the hollowed rind)."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken pieces, then set aside."
+   },
+   {
+    "titre": "The stew",
+    "detail": "Sauté the onion, garlic, pepper and tomato, until you get a soft base."
+   },
+   {
+    "titre": "The sweet-savoury",
+    "detail": "Add the raisins, olives, capers and chilli: the signature sweet-savoury balance of keshi yena."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the chicken, simmer until the filling is fragrant, then bind with a little beaten egg."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour the filling into the cheese shell and close with cheese on top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the cheese melts and browns. Unmould: melting, sweet-savoury and generous — the dish of Curaçao."
+   }
+  ]
+ },
+ "mbeju": {
+  "nom": "Mbejú",
+  "description": "Mbejú — the cassava-starch flatbread of Paraguay: a wheat-flour-free 'pancake' made of cassava starch, cheese and milk, pan-cooked until golden outside and soft and stringy inside. Gluten-free, comforting and filling, it's a staple of the Guarani breakfast, inherited from the Jesuit missions.",
+  "etapes": [
+   {
+    "titre": "The starch",
+    "detail": "Mix the cassava starch with the salt in a bowl."
+   },
+   {
+    "titre": "The fat",
+    "detail": "Rub in the melted butter with your fingertips, until you get a sandy texture."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Add the grated fresh cheese (Paraguay-style or mozzarella) and mix."
+   },
+   {
+    "titre": "Hydrate",
+    "detail": "Add the milk (and a little egg) little by little, just enough for the mix to clump into moist crumbs, without becoming a smooth dough."
+   },
+   {
+    "titre": "Sieve into the pan",
+    "detail": "Pass the crumbly mix through a sieve straight into a hot, lightly oiled pan, to form an even flatbread."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook over medium heat until the underside is golden and set, then flip gently to brown the other side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, soft and stringy inside. Gluten-free and comforting — the flatbread of the Paraguayan breakfast."
+   }
+  ]
+ },
+ "vorivori": {
+  "nom": "Vori Vori",
+  "description": "Vori vori — the Paraguayan dumpling soup: a chicken broth coloured golden with annatto, in which small cornmeal-and-cheese dumplings cook ('vori vori' = 'dumpling dumpling' in Guarani). Comforting, golden and filling, it's a great classic of Paraguayan winters.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Brown the chicken with the onion, pepper and tomato, then add water and simmer into a fragrant broth."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Mix the fine cornmeal with the grated cheese, a little fat, the egg and a little broth."
+   },
+   {
+    "titre": "The annatto",
+    "detail": "Colour the broth with annatto (or turmeric) for its signature golden hue."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form small, even dumplings between your hands ('vori vori')."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop the dumplings into the simmering broth: they cook gently and slightly thicken the soup."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the dumplings are cooked through and soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with the chicken. Golden, comforting and filling — the dumpling soup of Paraguay."
+   }
+  ]
+ },
+ "tepsibaytinijan": {
+  "nom": "Tepsi Baytinijan",
+  "description": "Tepsi baytinijan — the great Iraqi oven dish: a 'tepsi' (tray) layered with fried eggplant, spiced meatballs, tomatoes, potatoes and peppers, all coated in a tomato sauce and baked until the vegetables melt. Generous, fragrant and convivial, it's a family feast dish in Iraq.",
+  "etapes": [
+   {
+    "titre": "The eggplant",
+    "detail": "Slice the eggplant into rounds, salt them, then fry until golden and soft."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Do the same with the potato rounds and peppers, browned in the pan."
+   },
+   {
+    "titre": "The meatballs",
+    "detail": "Mix the minced meat with grated onion, garlic, cumin and spices (baharat), and form small flat meatballs."
+   },
+   {
+    "titre": "Brown the meatballs",
+    "detail": "Brown them quickly in the pan, just to colour."
+   },
+   {
+    "titre": "Build the tepsi",
+    "detail": "In a dish, alternate the eggplant and potato rounds, the meatballs, the tomatoes and peppers, nicely layered."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Coat with a tomato sauce (paste, garlic, water) and drizzle with oil."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until everything melts and the sauce thickens. Generous and fragrant — the great Iraqi oven dish."
+   }
+  ]
+ },
+ "stewpeas": {
+  "nom": "Stew Peas",
+  "description": "Stew peas — the Jamaican red kidney bean stew: red beans and meat (beef or salted pork) simmered in coconut milk with thyme, scallion and scotch bonnet, dotted with small rolled dough dumplings ('spinners'). Creamy, spicy and comforting, it's a pillar of Jamaican home cooking.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the red kidney beans, then cook them in water until they start to soften."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Add the meat (beef or salted pork) and simmer with the beans."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk: it makes the stew creamy and slightly sweet."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the thyme, scallion, garlic and the whole scotch bonnet (unpierced, for fragrance without too much heat)."
+   },
+   {
+    "titre": "The spinners",
+    "detail": "Roll small elongated dough dumplings (flour, water, salt) between your palms and add them to the stew."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length until the beans are soft, the meat tender and the sauce thickened."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice. Creamy, spicy and comforting — the red bean stew of Jamaica."
+   }
+  ]
+ },
+ "pomsuriname": {
+  "nom": "Pom",
+  "description": "Pom — the festive dish of Suriname: a bake of grated 'pomtajer' (taro) and cassava, wrapping citrus-marinated chicken (bitter orange), tomato and onion, baked until a golden crust forms. Of Surinamese-Jewish origin, soft, tangy and comforting, it's THE dish of big occasions.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the chicken with citrus juice (bitter orange or lime), onion, garlic and nutmeg."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the marinated chicken with the onion, pepper and tomato, until you get a fragrant, tangy base."
+   },
+   {
+    "titre": "The pomtajer",
+    "detail": "Finely grate the pomtajer (taro) and cassava, and mix this purée with a little citrus juice, butter and salt."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Loosen the grated purée with a little broth, to a soft texture (neither liquid nor compact)."
+   },
+   {
+    "titre": "Build",
+    "detail": "In a buttered dish, spread a layer of purée, then the chicken in sauce, then a final layer of purée."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at length until the top is golden and slightly crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, in portions. Soft, tangy and comforting — the festive dish of Suriname."
+   }
+  ]
+ },
+ "fritadaecu": {
+  "nom": "Fritada",
+  "description": "Fritada — the braised-fried pork of Ecuador: pork pieces simmered in water scented with cumin, garlic and orange until it evaporates, then fried in their own fat until golden and crisp. Served with mote corn, plantain and potato cakes (llapingachos), it's a classic of the Andean markets.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Cut the pork (shoulder) into large cubes and season them with salt, cumin and garlic."
+   },
+   {
+    "titre": "The braise",
+    "detail": "Put the pork in a wide pan with water, onion, garlic, cumin and orange juice (or lime), and bring to a simmer."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Simmer until the water evaporates and the pork is tender: only its own fat remains."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Keep cooking in that fat, stirring, until the pieces are golden and crisp."
+   },
+   {
+    "titre": "The mote",
+    "detail": "Warm the mote corn (large cooked white corn) as a side."
+   },
+   {
+    "titre": "The sides",
+    "detail": "Brown slices of plantain and prepare small potato cakes (llapingachos)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the crisp pork with the mote, plantain and cakes. Golden, tender and crisp — the fritada of the Andean markets."
+   }
+  ]
  }
 };

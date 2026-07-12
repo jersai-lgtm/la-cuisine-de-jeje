@@ -5633,4 +5633,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Nappez d'une sauce sucrée-piquante (à base de pâte de piment doux et de sauce soja) et servez aussitôt. Iodée, moelleuse et gourmande — l'omelette des marchés de nuit.", badge: null }
     ]
   },
+  bakeandshark: {
+    dateAjout: "2026-07-12T10:00:00",
+    nom: "Bake and Shark",
+    cat: "encas", pays: "trinite",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦈",
+    description: "Bake and shark — le sandwich star de la plage de Maracas à Trinité : un morceau de « requin » (poisson) mariné puis frit, glissé dans un « bake » (pain frit moelleux et gonflé), garni à volonté de sauces (ail, tamarin, coriandre-piment) et de crudités. Croustillant, épicé et festif, c'est LE street food trinidadien.",
+    tableauBakeandshark: [
+      { nb: 1, poisson: "110 g", farine: "60 g", ail: "1", citronvert: "½", piment: "2 g", coriandre: "5 g", oignon: "20 g", huileolive: "12 ml", curcuma: "1 g", sel: "2 g" },
+      { nb: 2, poisson: "220 g", farine: "120 g", ail: "2", citronvert: "1", piment: "4 g", coriandre: "10 g", oignon: "40 g", huileolive: "24 ml", curcuma: "2 g", sel: "4 g" },
+      { nb: 3, poisson: "330 g", farine: "180 g", ail: "3", citronvert: "1½", piment: "6 g", coriandre: "15 g", oignon: "60 g", huileolive: "36 ml", curcuma: "3 g", sel: "6 g" },
+      { nb: 4, poisson: "440 g", farine: "240 g", ail: "4", citronvert: "2", piment: "8 g", coriandre: "20 g", oignon: "80 g", huileolive: "48 ml", curcuma: "4 g", sel: "8 g" },
+      { nb: 5, poisson: "550 g", farine: "300 g", ail: "5", citronvert: "2½", piment: "10 g", coriandre: "25 g", oignon: "100 g", huileolive: "60 ml", curcuma: "5 g", sel: "10 g" },
+      { nb: 6, poisson: "660 g", farine: "360 g", ail: "6", citronvert: "3", piment: "12 g", coriandre: "30 g", oignon: "120 g", huileolive: "72 ml", curcuma: "6 g", sel: "12 g" },
+      { nb: 7, poisson: "770 g", farine: "420 g", ail: "7", citronvert: "3½", piment: "14 g", coriandre: "35 g", oignon: "140 g", huileolive: "84 ml", curcuma: "7 g", sel: "14 g" },
+      { nb: 8, poisson: "880 g", farine: "480 g", ail: "8", citronvert: "4", piment: "16 g", coriandre: "40 g", oignon: "160 g", huileolive: "96 ml", curcuma: "8 g", sel: "16 g" },
+      { nb: 9, poisson: "990 g", farine: "540 g", ail: "9", citronvert: "4½", piment: "18 g", coriandre: "45 g", oignon: "180 g", huileolive: "108 ml", curcuma: "9 g", sel: "18 g" },
+      { nb: 10, poisson: "1100 g", farine: "600 g", ail: "10", citronvert: "5", piment: "20 g", coriandre: "50 g", oignon: "200 g", huileolive: "120 ml", curcuma: "10 g", sel: "20 g" },
+      { nb: 11, poisson: "1210 g", farine: "660 g", ail: "11", citronvert: "5½", piment: "22 g", coriandre: "55 g", oignon: "220 g", huileolive: "132 ml", curcuma: "11 g", sel: "22 g" },
+      { nb: 12, poisson: "1320 g", farine: "720 g", ail: "12", citronvert: "6", piment: "24 g", coriandre: "60 g", oignon: "240 g", huileolive: "144 ml", curcuma: "12 g", sel: "24 g" },
+      { nb: 13, poisson: "1430 g", farine: "780 g", ail: "13", citronvert: "6½", piment: "26 g", coriandre: "65 g", oignon: "260 g", huileolive: "156 ml", curcuma: "13 g", sel: "26 g" },
+      { nb: 14, poisson: "1540 g", farine: "840 g", ail: "14", citronvert: "7", piment: "28 g", coriandre: "70 g", oignon: "280 g", huileolive: "168 ml", curcuma: "14 g", sel: "28 g" },
+      { nb: 15, poisson: "1650 g", farine: "900 g", ail: "15", citronvert: "7½", piment: "30 g", coriandre: "75 g", oignon: "300 g", huileolive: "180 ml", curcuma: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Mariner le poisson", detail: "Marinez les filets de poisson (façon requin) avec du citron vert, de l'ail, du curcuma, du piment et de la coriandre, au moins 30 min.", badge: null },
+      { icone: "🥟", titre: "La pâte à bake", detail: "Préparez une pâte levée simple (farine, levure, sel, un peu de sucre et d'eau) et laissez-la reposer jusqu'à ce qu'elle soit souple et gonflée.", badge: null },
+      { icone: "🍩", titre: "Frire les bakes", detail: "Abaissez la pâte en disques et faites-les frire jusqu'à ce qu'ils gonflent et dorent : le « bake » est moelleux dedans, croustillant dehors.", badge: null },
+      { icone: "🍤", titre: "Frire le poisson", detail: "Passez les filets marinés dans la farine assaisonnée et faites-les frire jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🥣", titre: "Les sauces", detail: "Préparez les sauces trinidadiennes : une sauce à l'ail, une sauce au tamarin et une sauce verte coriandre-piment (« chadon beni »).", badge: null },
+      { icone: "🥪", titre: "Garnir", detail: "Ouvrez les bakes chauds, glissez le poisson frit, puis garnissez à volonté de sauces, de salade, de concombre et d'ananas.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dégustez aussitôt, bien croustillant. Épicé, moelleux et festif — le sandwich star de la plage de Maracas.", badge: null }
+    ],
+    liees: ["doubles"]
+  },
+  mbeju: {
+    dateAjout: "2026-07-12T10:04:00",
+    nom: "Mbejú",
+    cat: "encas", pays: "paraguay",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Mbejú — la galette d'amidon de manioc du Paraguay : une « crêpe » sans farine de blé, faite d'amidon de manioc, de fromage et de lait, cuite à la poêle jusqu'à être dorée dehors et moelleuse-filante dedans. Sans gluten, réconfortante et nourrissante, c'est un incontournable du petit-déjeuner guarani, hérité des missions jésuites.",
+    tableauMbeju: [
+      { nb: 1, manioc: "70 g", fromage: "40 g", lait: "30 ml", oeufs: "¼", beurre: "10 g", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, manioc: "140 g", fromage: "80 g", lait: "60 ml", oeufs: "½", beurre: "20 g", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, manioc: "210 g", fromage: "120 g", lait: "90 ml", oeufs: "¾", beurre: "30 g", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, manioc: "280 g", fromage: "160 g", lait: "120 ml", oeufs: "1", beurre: "40 g", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, manioc: "350 g", fromage: "200 g", lait: "150 ml", oeufs: "1¼", beurre: "50 g", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, manioc: "420 g", fromage: "240 g", lait: "180 ml", oeufs: "1½", beurre: "60 g", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, manioc: "490 g", fromage: "280 g", lait: "210 ml", oeufs: "1¾", beurre: "70 g", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, manioc: "560 g", fromage: "320 g", lait: "240 ml", oeufs: "2", beurre: "80 g", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, manioc: "630 g", fromage: "360 g", lait: "270 ml", oeufs: "2¼", beurre: "90 g", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, manioc: "700 g", fromage: "400 g", lait: "300 ml", oeufs: "2½", beurre: "100 g", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, manioc: "770 g", fromage: "440 g", lait: "330 ml", oeufs: "2¾", beurre: "110 g", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, manioc: "840 g", fromage: "480 g", lait: "360 ml", oeufs: "3", beurre: "120 g", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, manioc: "910 g", fromage: "520 g", lait: "390 ml", oeufs: "3¼", beurre: "130 g", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, manioc: "980 g", fromage: "560 g", lait: "420 ml", oeufs: "3½", beurre: "140 g", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, manioc: "1050 g", fromage: "600 g", lait: "450 ml", oeufs: "3¾", beurre: "150 g", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "L'amidon", detail: "Mélangez l'amidon de manioc (fécule) avec le sel dans un saladier.", badge: null },
+      { icone: "🧈", titre: "Le gras", detail: "Incorporez le beurre fondu du bout des doigts, jusqu'à obtenir une texture sableuse.", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Ajoutez le fromage frais râpé (type Paraguay ou mozzarella) et mélangez.", badge: null },
+      { icone: "🥛", titre: "Hydrater", detail: "Ajoutez le lait (et un peu d'œuf) petit à petit, juste assez pour que la pâte s'agglomère en grumeaux humides, sans devenir une pâte lisse.", badge: null },
+      { icone: "🫓", titre: "Tamiser en poêle", detail: "Passez le mélange grumeleux au tamis directement dans une poêle chaude légèrement huilée, pour former une galette régulière.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire à feu moyen jusqu'à ce que le dessous soit doré et pris, puis retournez délicatement pour dorer l'autre face.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, moelleux et filant à l'intérieur. Sans gluten et réconfortant — la galette du petit-déjeuner paraguayen.", badge: null }
+    ],
+    liees: ["vorivori"]
+  },
 });

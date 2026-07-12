@@ -4893,4 +4893,42 @@ Object.assign(recettes, {
     ],
     liees: ["soupewonton"]
   },
+  vorivori: {
+    dateAjout: "2026-07-12T10:05:00",
+    nom: "Vori Vori",
+    cat: "soupes", pays: "paraguay",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Vori vori — la soupe paraguayenne aux boulettes : un bouillon de poulet doré au rocou dans lequel cuisent de petites boulettes de semoule de maïs et de fromage (« vori vori » = « boulette boulette » en guarani). Réconfortante, dorée et nourrissante, c'est un grand classique des hivers paraguayens.",
+    tableauVorivori: [
+      { nb: 1, poulet: "90 g", farinemais: "40 g", fromage: "25 g", oignon: "25 g", poivron: "20 g", tomate: "30 g", oeufs: "¼", curcuma: "1 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, poulet: "180 g", farinemais: "80 g", fromage: "50 g", oignon: "50 g", poivron: "40 g", tomate: "60 g", oeufs: "½", curcuma: "2 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, poulet: "270 g", farinemais: "120 g", fromage: "75 g", oignon: "75 g", poivron: "60 g", tomate: "90 g", oeufs: "¾", curcuma: "3 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, poulet: "360 g", farinemais: "160 g", fromage: "100 g", oignon: "100 g", poivron: "80 g", tomate: "120 g", oeufs: "1", curcuma: "4 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, poulet: "450 g", farinemais: "200 g", fromage: "125 g", oignon: "125 g", poivron: "100 g", tomate: "150 g", oeufs: "1¼", curcuma: "5 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, poulet: "540 g", farinemais: "240 g", fromage: "150 g", oignon: "150 g", poivron: "120 g", tomate: "180 g", oeufs: "1½", curcuma: "6 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, poulet: "630 g", farinemais: "280 g", fromage: "175 g", oignon: "175 g", poivron: "140 g", tomate: "210 g", oeufs: "1¾", curcuma: "7 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, poulet: "720 g", farinemais: "320 g", fromage: "200 g", oignon: "200 g", poivron: "160 g", tomate: "240 g", oeufs: "2", curcuma: "8 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, poulet: "810 g", farinemais: "360 g", fromage: "225 g", oignon: "225 g", poivron: "180 g", tomate: "270 g", oeufs: "2¼", curcuma: "9 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, poulet: "900 g", farinemais: "400 g", fromage: "250 g", oignon: "250 g", poivron: "200 g", tomate: "300 g", oeufs: "2½", curcuma: "10 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, poulet: "990 g", farinemais: "440 g", fromage: "275 g", oignon: "275 g", poivron: "220 g", tomate: "330 g", oeufs: "2¾", curcuma: "11 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, poulet: "1080 g", farinemais: "480 g", fromage: "300 g", oignon: "300 g", poivron: "240 g", tomate: "360 g", oeufs: "3", curcuma: "12 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, poulet: "1170 g", farinemais: "520 g", fromage: "325 g", oignon: "325 g", poivron: "260 g", tomate: "390 g", oeufs: "3¼", curcuma: "13 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, poulet: "1260 g", farinemais: "560 g", fromage: "350 g", oignon: "350 g", poivron: "280 g", tomate: "420 g", oeufs: "3½", curcuma: "14 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, poulet: "1350 g", farinemais: "600 g", fromage: "375 g", oignon: "375 g", poivron: "300 g", tomate: "450 g", oeufs: "3¾", curcuma: "15 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Le bouillon", detail: "Faites revenir le poulet avec l'oignon, le poivron et la tomate, puis mouillez d'eau et laissez mijoter en un bouillon parfumé.", badge: null },
+      { icone: "🌽", titre: "Les boulettes", detail: "Mélangez la semoule (farine) de maïs fine avec le fromage râpé, un peu de graisse, l'œuf et un peu de bouillon.", badge: null },
+      { icone: "🟡", titre: "Le rocou", detail: "Colorez le bouillon au rocou (ou curcuma) pour sa belle teinte dorée signature.", badge: null },
+      { icone: "🤏", titre: "Façonner", detail: "Formez de petites boulettes régulières entre vos mains (« vori vori »).", badge: null },
+      { icone: "🍲", titre: "Pocher", detail: "Plongez les boulettes dans le bouillon frémissant : elles cuisent doucement et épaississent légèrement la soupe.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que les boulettes soient cuites à cœur et moelleuses.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, avec le poulet. Dorée, réconfortante et nourrissante — la soupe aux boulettes du Paraguay.", badge: null }
+    ],
+    liees: ["mbeju"]
+  },
 });

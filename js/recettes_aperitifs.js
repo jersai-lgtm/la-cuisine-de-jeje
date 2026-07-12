@@ -2864,5 +2864,42 @@ tapenade: {
       { icone: "🍳", titre: "Frire", detail: "Plonger dans l'huile à 180°C pendant 2 à 3 min jusqu'à ce que la pâte soit dorée et croustillante.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Égoutter sur du papier absorbant et servir aussitôt, bien chaud, le fromage filant à cœur.", badge: null }
     ]
-  }
+  },
+  conchfritters: {
+    dateAjout: "2026-07-12T10:02:00",
+    nom: "Beignets de Conque",
+    cat: "aperitifs", pays: "bahamas",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍤",
+    description: "Conch fritters — les beignets de lambi (conque) des Bahamas : de la chair de conque (ici du calamar) hachée avec poivron, oignon et céleri, enrobée d'une pâte épicée et frite en petites boules dorées. Croustillants dehors, moelleux dedans, ils se trempent dans une sauce rose piquante — l'apéritif emblématique des îles.",
+    tableauConchfritters: [
+      { nb: 1, calamars: "70 g", farine: "45 g", oeufs: "½", poivron: "25 g", oignon: "20 g", celeri: "15 g", piment: "1 g", citronvert: "¼", huileolive: "10 ml", sel: "2 g" },
+      { nb: 2, calamars: "140 g", farine: "90 g", oeufs: "1", poivron: "50 g", oignon: "40 g", celeri: "30 g", piment: "2 g", citronvert: "½", huileolive: "20 ml", sel: "4 g" },
+      { nb: 3, calamars: "210 g", farine: "135 g", oeufs: "1½", poivron: "75 g", oignon: "60 g", celeri: "45 g", piment: "3 g", citronvert: "¾", huileolive: "30 ml", sel: "6 g" },
+      { nb: 4, calamars: "280 g", farine: "180 g", oeufs: "2", poivron: "100 g", oignon: "80 g", celeri: "60 g", piment: "4 g", citronvert: "1", huileolive: "40 ml", sel: "8 g" },
+      { nb: 5, calamars: "350 g", farine: "225 g", oeufs: "2½", poivron: "125 g", oignon: "100 g", celeri: "75 g", piment: "5 g", citronvert: "1¼", huileolive: "50 ml", sel: "10 g" },
+      { nb: 6, calamars: "420 g", farine: "270 g", oeufs: "3", poivron: "150 g", oignon: "120 g", celeri: "90 g", piment: "6 g", citronvert: "1½", huileolive: "60 ml", sel: "12 g" },
+      { nb: 7, calamars: "490 g", farine: "315 g", oeufs: "3½", poivron: "175 g", oignon: "140 g", celeri: "105 g", piment: "7 g", citronvert: "1¾", huileolive: "70 ml", sel: "14 g" },
+      { nb: 8, calamars: "560 g", farine: "360 g", oeufs: "4", poivron: "200 g", oignon: "160 g", celeri: "120 g", piment: "8 g", citronvert: "2", huileolive: "80 ml", sel: "16 g" },
+      { nb: 9, calamars: "630 g", farine: "405 g", oeufs: "4½", poivron: "225 g", oignon: "180 g", celeri: "135 g", piment: "9 g", citronvert: "2¼", huileolive: "90 ml", sel: "18 g" },
+      { nb: 10, calamars: "700 g", farine: "450 g", oeufs: "5", poivron: "250 g", oignon: "200 g", celeri: "150 g", piment: "10 g", citronvert: "2½", huileolive: "100 ml", sel: "20 g" },
+      { nb: 11, calamars: "770 g", farine: "495 g", oeufs: "5½", poivron: "275 g", oignon: "220 g", celeri: "165 g", piment: "11 g", citronvert: "2¾", huileolive: "110 ml", sel: "22 g" },
+      { nb: 12, calamars: "840 g", farine: "540 g", oeufs: "6", poivron: "300 g", oignon: "240 g", celeri: "180 g", piment: "12 g", citronvert: "3", huileolive: "120 ml", sel: "24 g" },
+      { nb: 13, calamars: "910 g", farine: "585 g", oeufs: "6½", poivron: "325 g", oignon: "260 g", celeri: "195 g", piment: "13 g", citronvert: "3¼", huileolive: "130 ml", sel: "26 g" },
+      { nb: 14, calamars: "980 g", farine: "630 g", oeufs: "7", poivron: "350 g", oignon: "280 g", celeri: "210 g", piment: "14 g", citronvert: "3½", huileolive: "140 ml", sel: "28 g" },
+      { nb: 15, calamars: "1050 g", farine: "675 g", oeufs: "7½", poivron: "375 g", oignon: "300 g", celeri: "225 g", piment: "15 g", citronvert: "3¾", huileolive: "150 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐚", titre: "La conque", detail: "Hachez finement la chair de conque (ou de calamar), attendrie, avec un filet de citron vert.", badge: null },
+      { icone: "🫑", titre: "Les légumes", detail: "Hachez très finement le poivron, l'oignon, le céleri et le piment.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, l'œuf, un peu de lait et de la levure en une pâte épaisse, et assaisonnez généreusement.", badge: null },
+      { icone: "🥄", titre: "L'appareil", detail: "Incorporez la conque et les légumes à la pâte : elle doit être bien garnie.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile jusqu'à ce qu'une goutte de pâte grésille aussitôt.", badge: null },
+      { icone: "🍤", titre: "Frire", detail: "Déposez des cuillerées de pâte dans l'huile et faites-les frire jusqu'à ce qu'elles soient dorées et gonflées, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud avec une sauce rose piquante (mayo, ketchup, citron vert). Croustillants et moelleux — l'apéritif des Bahamas.", badge: null }
+    ]
+  },
 });
