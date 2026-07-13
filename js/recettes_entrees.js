@@ -2958,5 +2958,42 @@ oeufmayo: {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C pendant 35 min jusqu'à ce que la surface soit dorée et gonflée et le centre pris.", badge: null },
       { icone: "🍴", titre: "Servir", detail: "Laisser reposer 10 min hors du four pour faciliter la découpe, puis servir en parts tièdes ou froides.", badge: null }
     ]
-  }
+  },
+  yalanji: {
+    dateAjout: "2026-07-12T11:07:00",
+    nom: "Yalanji",
+    cat: "entrees", pays: "syrie",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍃",
+    description: "Yalanji — les feuilles de vigne farcies végétariennes de Syrie : des feuilles de vigne roulées autour d'un riz parfumé à la tomate, à l'oignon, au persil et à la menthe, mijotées puis servies froides avec un filet de citron et d'huile d'olive. Fraîches, acidulées et délicates, c'est un mezze incontournable du Levant (« yalanji » = « le menteur », car sans viande).",
+    tableauYalanji: [
+      { nb: 1, feuillevigne: "30 g", riz: "50 g", tomate: "40 g", oignon: "25 g", persil: "8 g", menthe: "1 g", citron: "½", concentretomate: "6 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, feuillevigne: "60 g", riz: "100 g", tomate: "80 g", oignon: "50 g", persil: "16 g", menthe: "2 g", citron: "1", concentretomate: "12 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, feuillevigne: "90 g", riz: "150 g", tomate: "120 g", oignon: "75 g", persil: "24 g", menthe: "3 g", citron: "1½", concentretomate: "18 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, feuillevigne: "120 g", riz: "200 g", tomate: "160 g", oignon: "100 g", persil: "32 g", menthe: "4 g", citron: "2", concentretomate: "24 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, feuillevigne: "150 g", riz: "250 g", tomate: "200 g", oignon: "125 g", persil: "40 g", menthe: "5 g", citron: "2½", concentretomate: "30 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, feuillevigne: "180 g", riz: "300 g", tomate: "240 g", oignon: "150 g", persil: "48 g", menthe: "6 g", citron: "3", concentretomate: "36 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, feuillevigne: "210 g", riz: "350 g", tomate: "280 g", oignon: "175 g", persil: "56 g", menthe: "7 g", citron: "3½", concentretomate: "42 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, feuillevigne: "240 g", riz: "400 g", tomate: "320 g", oignon: "200 g", persil: "64 g", menthe: "8 g", citron: "4", concentretomate: "48 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, feuillevigne: "270 g", riz: "450 g", tomate: "360 g", oignon: "225 g", persil: "72 g", menthe: "9 g", citron: "4½", concentretomate: "54 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, feuillevigne: "300 g", riz: "500 g", tomate: "400 g", oignon: "250 g", persil: "80 g", menthe: "10 g", citron: "5", concentretomate: "60 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, feuillevigne: "330 g", riz: "550 g", tomate: "440 g", oignon: "275 g", persil: "88 g", menthe: "11 g", citron: "5½", concentretomate: "66 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, feuillevigne: "360 g", riz: "600 g", tomate: "480 g", oignon: "300 g", persil: "96 g", menthe: "12 g", citron: "6", concentretomate: "72 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, feuillevigne: "390 g", riz: "650 g", tomate: "520 g", oignon: "325 g", persil: "104 g", menthe: "13 g", citron: "6½", concentretomate: "78 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, feuillevigne: "420 g", riz: "700 g", tomate: "560 g", oignon: "350 g", persil: "112 g", menthe: "14 g", citron: "7", concentretomate: "84 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, feuillevigne: "450 g", riz: "750 g", tomate: "600 g", oignon: "375 g", persil: "120 g", menthe: "15 g", citron: "7½", concentretomate: "90 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍃", titre: "Les feuilles", detail: "Blanchissez les feuilles de vigne (fraîches ou en saumure) pour les assouplir, et retirez les tiges.", badge: null },
+      { icone: "🍚", titre: "La farce", detail: "Mélangez le riz avec l'oignon, la tomate concassée, le persil, la menthe, l'huile d'olive et les épices.", badge: null },
+      { icone: "🤏", titre: "Rouler", detail: "Déposez un peu de farce sur chaque feuille et roulez-les serré en petits cigares.", badge: null },
+      { icone: "🥘", titre: "Ranger", detail: "Tapissez le fond d'une cocotte de feuilles et rangez les rouleaux bien serrés en couches.", badge: null },
+      { icone: "🍋", titre: "Le bouillon", detail: "Arrosez de jus de citron, d'huile d'olive et d'un peu d'eau, et posez une assiette dessus pour les maintenir.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez cuire doucement à couvert jusqu'à ce que le riz soit tendre et les feuilles fondantes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez refroidir et servez froid, avec du citron. Fraîches et acidulées — les feuilles de vigne farcies de Syrie.", badge: null }
+    ]
+  },
 });

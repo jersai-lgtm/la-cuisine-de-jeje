@@ -71404,5 +71404,345 @@ window.RECETTES_EN = {
     "detail": "Plate the crisp pork with the mote, plantain and cakes. Golden, tender and crisp — the fritada of the Andean markets."
    }
   ]
+ },
+ "aushak": {
+  "nom": "Aushak",
+  "description": "Aushak — the Afghan leek dumplings: thin pasta parcels filled with leek and scallion, poached then topped with a garlic yogurt and a spiced minced-meat tomato sauce, dusted with dried mint. Delicate, fresh and comforting, it's a celebration dish of Afghan cuisine.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Finely chop the leek (and scallion), salt them and let them drain, then squeeze out the water."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Roll a thin dough (flour, water, salt) and cut discs or squares."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a little leek filling on each disc and close them into well-sealed dumplings."
+   },
+   {
+    "titre": "The meat sauce",
+    "detail": "Sauté the onion, garlic and minced meat with tomato and spices, into a fragrant sauce (qeema)."
+   },
+   {
+    "titre": "The garlic yogurt",
+    "detail": "Mix the yogurt with crushed garlic, dried mint and salt."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the dumplings in simmering water until they float and are tender, then drain."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Top the dumplings with garlic yogurt, then meat sauce, and dust with dried mint. Delicate and comforting — the Afghan leek dumplings."
+   }
+  ]
+ },
+ "akohovoanio": {
+  "nom": "Akoho sy Voanio",
+  "description": "Akoho sy voanio — the Malagasy coconut chicken: chicken browned then simmered in coconut milk with tomato, ginger and garlic, until the sauce coats the meat. Sweet, fragrant and comforting, it's a great classic of Madagascar's tables, served with rice.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Brown the chicken pieces on all sides in a little oil."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the onion, garlic and ginger, and sauté until fragrant."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the chopped tomato and let it melt into a base."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk, salt and season with a little turmeric."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently until the chicken is tender and the sauce creamy."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add a squeeze of lemon at the end of cooking for freshness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, coated in coconut sauce. Sweet and fragrant — the coconut chicken of Madagascar."
+   }
+  ]
+ },
+ "sapasui": {
+  "nom": "Sapasui",
+  "description": "Sapasui — the Samoan 'chop suey': translucent glass noodles stir-fried with minced beef, ginger, garlic and soy sauce, with crunchy vegetables. Inherited from the Pacific's Chinese migrants, it's a must at celebrations (fa'alavelave) and family meals in Samoa.",
+  "etapes": [
+   {
+    "titre": "The noodles",
+    "detail": "Soak the glass noodles in hot water until soft, then drain and roughly cut them."
+   },
+   {
+    "titre": "The beef",
+    "detail": "Sauté the minced beef over high heat until it colours."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the ginger, garlic and onion, and sauté them."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the thinly sliced carrot and celery, and stir-fry keeping some crunch."
+   },
+   {
+    "titre": "Season",
+    "detail": "Pour in the soy sauce (and a little water or broth)."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the noodles and stir-fry until they soak up the sauce and turn glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, as a main or a side. Filling and convivial — the chop suey of Samoa."
+   }
+  ]
+ },
+ "charquican": {
+  "nom": "Charquicán",
+  "description": "Charquicán — the Chilean beef and vegetable hash: traditionally made with charqui (dried meat), minced beef simmered with potatoes, squash, corn and peas, mashed into a thick stew. Comforting and rustic, it's often served crowned with a fried egg.",
+  "etapes": [
+   {
+    "titre": "The beef",
+    "detail": "Sauté the minced beef (or rehydrated dried meat) with the onion and garlic."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Add the cumin and a little paprika, and sauté to season (the 'color chileno')."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the diced potatoes, squash and carrot, with a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the vegetables are tender."
+   },
+   {
+    "titre": "Corn and peas",
+    "detail": "Add the corn (and some peas), and keep cooking."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Roughly mash the vegetables into a thick, soft hash."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, crowned with a fried egg. Rustic and comforting — the Chilean hash."
+   }
+  ]
+ },
+ "indioviejo": {
+  "nom": "Indio Viejo",
+  "description": "Indio viejo — the 'old Indian' of Nicaragua: a pre-Columbian stew of shredded beef bound with corn masa, with tomato, pepper, onion and sour orange, coloured with achiote. Thick, fragrant and deeply rooted in Indigenous cuisine, it's an emblematic dish served with rice or plantain.",
+  "etapes": [
+   {
+    "titre": "The beef",
+    "detail": "Cook the beef in water until tender, then shred it (keep the broth)."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Sauté the onion, pepper, garlic and tomato into a soft base."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Add the achiote (or turmeric) for colour, and the shredded beef."
+   },
+   {
+    "titre": "The masa",
+    "detail": "Loosen the masa (corn flour) in a little broth, lump-free."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Pour the loosened masa into the stew, stirring, to thicken it."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the sour orange (or lemon) juice and simmer until thick and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice. Thick and fragrant — the 'old Indian' of Nicaragua."
+   }
+  ]
+ },
+ "shorsheilish": {
+  "nom": "Shorshe Ilish",
+  "description": "Shorshe ilish — the mustard hilsa of Bangladesh: fish steaks (ilish, the national fish) poached in a thick sauce of mustard seeds, turmeric and green chilli. Bold, pungent and scented with mustard oil, it's the king dish of Bengalis, served with white rice.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Rub the fish steaks with salt and turmeric, and let them rest."
+   },
+   {
+    "titre": "The mustard paste",
+    "detail": "Blend the mustard seeds with a little water and green chilli into a smooth paste (slightly bitter and pungent)."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Briefly sear the fish in hot (mustard) oil, then set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic, then add the turmeric and chilli."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the mustard paste and a little water, and cook to soften the bitterness."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Return the fish to the sauce and let it poach gently, without stirring too much (it's fragile)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve with white rice. Bold and pungent — the mustard hilsa of Bengal."
+   }
+  ]
+ },
+ "sopacaracol": {
+  "nom": "Sopa de Caracol",
+  "description": "Sopa de caracol — the conch soup of Honduras: a creamy coconut-milk broth in which conch meat, cassava (yuca) and plantain simmer, scented with coriander. Briny, comforting and generous, it's a pride of the Honduran Caribbean coast, immortalized by a famous song.",
+  "etapes": [
+   {
+    "titre": "The conch",
+    "detail": "Tenderize the conch (or squid) meat and cut it into pieces."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and tomato into a fragrant base."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and a little water, and bring to a simmer."
+   },
+   {
+    "titre": "The tubers",
+    "detail": "Add the cassava (yuca) and plantain in chunks, which will cook and thicken the broth."
+   },
+   {
+    "titre": "The conch at the right time",
+    "detail": "Add the conch and let it poach just enough (it toughens if overcooked)."
+   },
+   {
+    "titre": "Scent",
+    "detail": "Add the coriander and a squeeze of lemon, and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, creamy and briny. Comforting and generous — the conch soup of Honduras."
+   }
+  ]
+ },
+ "yalanji": {
+  "nom": "Yalanji",
+  "description": "Yalanji — the vegetarian stuffed vine leaves of Syria: vine leaves rolled around a rice seasoned with tomato, onion, parsley and mint, simmered then served cold with a drizzle of lemon and olive oil. Fresh, tangy and delicate, it's a must of the Levantine mezze ('yalanji' = 'the liar', because meat-free).",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Blanch the vine leaves (fresh or brined) to soften them, and remove the stems."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the rice with the onion, chopped tomato, parsley, mint, olive oil and spices."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Place a little filling on each leaf and roll them tightly into small cigars."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Line the bottom of a pot with leaves and arrange the rolls tightly in layers."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Drizzle with lemon juice, olive oil and a little water, and set a plate on top to hold them."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook gently, covered, until the rice is tender and the leaves soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool and serve cold, with lemon. Fresh and tangy — the stuffed vine leaves of Syria."
+   }
+  ]
+ },
+ "alookeema": {
+  "nom": "Aloo Keema",
+  "description": "Aloo keema — the minced meat and potato curry of Pakistan: minced meat simmered with potatoes, peas, tomato, ginger and spices, into a thick, fragrant curry. Simple, economical and comforting, it's a daily staple of Pakistani tables, served with rice or bread.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion until golden, then add the garlic and ginger."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the tomato, cumin, turmeric and chilli, and cook until the oil separates (the 'bhuna')."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Add the minced meat and sauté it, crumbling it, until it colours."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little water and simmer so the meat soaks up the spices."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the diced potatoes and let them cook in the curry."
+   },
+   {
+    "titre": "The peas",
+    "detail": "Add the peas at the end, until everything is tender and the curry thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve with rice or bread. Spicy and comforting — the keema curry of Pakistan."
+   }
+  ]
+ },
+ "sancochopanama": {
+  "nom": "Sancocho",
+  "description": "Sancocho de gallina — the comfort soup of Panama: a chicken broth simmered with ñame (yam) or cassava, corn and plenty of culantro (long coriander), until the chicken is meltingly tender and the broth fragrant. Comforting and reputedly revitalizing, it's the national comfort dish, served with white rice.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Sauté the chicken pieces with the onion and garlic, then cover generously with water."
+   },
+   {
+    "titre": "The culantro",
+    "detail": "Add plenty of coriander (culantro), which gives the broth its signature scent."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Bring to a simmer and cook until the chicken starts to tenderize."
+   },
+   {
+    "titre": "The tubers",
+    "detail": "Add the cassava (or yam) in large chunks, which will cook and lightly thicken the broth."
+   },
+   {
+    "titre": "The corn",
+    "detail": "Add the corn in pieces and the potatoes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Keep cooking until the chicken is meltingly tender and the tubers soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning, add a squeeze of lemon and serve piping hot, with white rice. Comforting and revitalizing — the sancocho of Panama."
+   }
+  ]
  }
 };

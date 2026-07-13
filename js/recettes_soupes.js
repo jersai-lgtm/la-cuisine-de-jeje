@@ -4931,4 +4931,78 @@ Object.assign(recettes, {
     ],
     liees: ["mbeju"]
   },
+  sopacaracol: {
+    dateAjout: "2026-07-12T11:06:00",
+    nom: "Sopa de Caracol",
+    cat: "soupes", pays: "honduras",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥥",
+    description: "Sopa de caracol — la soupe de lambi (conque) du Honduras : un bouillon crémeux au lait de coco où mijotent de la chair de conque, du manioc (yuca) et de la banane plantain, parfumé à la coriandre. Iodée, réconfortante et généreuse, c'est une fierté de la côte caraïbe hondurienne, immortalisée par une célèbre chanson.",
+    tableauSopacaracol: [
+      { nb: 1, calamars: "70 g", laitcoco: "70 ml", manioc: "50 g", plantain: "40 g", tomate: "30 g", oignon: "25 g", ail: "1", coriandre: "4 g", citron: "¼", sel: "2 g" },
+      { nb: 2, calamars: "140 g", laitcoco: "140 ml", manioc: "100 g", plantain: "80 g", tomate: "60 g", oignon: "50 g", ail: "2", coriandre: "8 g", citron: "½", sel: "4 g" },
+      { nb: 3, calamars: "210 g", laitcoco: "210 ml", manioc: "150 g", plantain: "120 g", tomate: "90 g", oignon: "75 g", ail: "3", coriandre: "12 g", citron: "¾", sel: "6 g" },
+      { nb: 4, calamars: "280 g", laitcoco: "280 ml", manioc: "200 g", plantain: "160 g", tomate: "120 g", oignon: "100 g", ail: "4", coriandre: "16 g", citron: "1", sel: "8 g" },
+      { nb: 5, calamars: "350 g", laitcoco: "350 ml", manioc: "250 g", plantain: "200 g", tomate: "150 g", oignon: "125 g", ail: "5", coriandre: "20 g", citron: "1¼", sel: "10 g" },
+      { nb: 6, calamars: "420 g", laitcoco: "420 ml", manioc: "300 g", plantain: "240 g", tomate: "180 g", oignon: "150 g", ail: "6", coriandre: "24 g", citron: "1½", sel: "12 g" },
+      { nb: 7, calamars: "490 g", laitcoco: "490 ml", manioc: "350 g", plantain: "280 g", tomate: "210 g", oignon: "175 g", ail: "7", coriandre: "28 g", citron: "1¾", sel: "14 g" },
+      { nb: 8, calamars: "560 g", laitcoco: "560 ml", manioc: "400 g", plantain: "320 g", tomate: "240 g", oignon: "200 g", ail: "8", coriandre: "32 g", citron: "2", sel: "16 g" },
+      { nb: 9, calamars: "630 g", laitcoco: "630 ml", manioc: "450 g", plantain: "360 g", tomate: "270 g", oignon: "225 g", ail: "9", coriandre: "36 g", citron: "2¼", sel: "18 g" },
+      { nb: 10, calamars: "700 g", laitcoco: "700 ml", manioc: "500 g", plantain: "400 g", tomate: "300 g", oignon: "250 g", ail: "10", coriandre: "40 g", citron: "2½", sel: "20 g" },
+      { nb: 11, calamars: "770 g", laitcoco: "770 ml", manioc: "550 g", plantain: "440 g", tomate: "330 g", oignon: "275 g", ail: "11", coriandre: "44 g", citron: "2¾", sel: "22 g" },
+      { nb: 12, calamars: "840 g", laitcoco: "840 ml", manioc: "600 g", plantain: "480 g", tomate: "360 g", oignon: "300 g", ail: "12", coriandre: "48 g", citron: "3", sel: "24 g" },
+      { nb: 13, calamars: "910 g", laitcoco: "910 ml", manioc: "650 g", plantain: "520 g", tomate: "390 g", oignon: "325 g", ail: "13", coriandre: "52 g", citron: "3¼", sel: "26 g" },
+      { nb: 14, calamars: "980 g", laitcoco: "980 ml", manioc: "700 g", plantain: "560 g", tomate: "420 g", oignon: "350 g", ail: "14", coriandre: "56 g", citron: "3½", sel: "28 g" },
+      { nb: 15, calamars: "1050 g", laitcoco: "1050 ml", manioc: "750 g", plantain: "600 g", tomate: "450 g", oignon: "375 g", ail: "15", coriandre: "60 g", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐚", titre: "La conque", detail: "Attendrissez la chair de conque (ou de calamar) et coupez-la en morceaux.", badge: null },
+      { icone: "🧅", titre: "Le fond", detail: "Faites revenir l'oignon, l'ail et la tomate en une base parfumée.", badge: null },
+      { icone: "🥥", titre: "Le lait de coco", detail: "Versez le lait de coco et un peu d'eau, et portez à frémissement.", badge: null },
+      { icone: "🍠", titre: "Les tubercules", detail: "Ajoutez le manioc (yuca) et la banane plantain en morceaux, qui vont cuire et épaissir le bouillon.", badge: null },
+      { icone: "🐚", titre: "La conque au bon moment", detail: "Ajoutez la conque et laissez-la pocher juste ce qu'il faut (elle durcit si trop cuite).", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ajoutez la coriandre et un filet de citron, et rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, crémeux et iodé. Réconfortante et généreuse — la soupe de lambi du Honduras.", badge: null }
+    ]
+  },
+  sancochopanama: {
+    dateAjout: "2026-07-12T11:09:00",
+    nom: "Sancocho Panaméen",
+    cat: "soupes", pays: "panama",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Sancocho de gallina — la soupe-réconfort du Panama : un bouillon de poulet mijoté avec du ñame (igname) ou du manioc, du maïs et beaucoup de culantro (coriandre longue), jusqu'à ce que le poulet soit fondant et le bouillon parfumé. Réconfortant et réputé revigorant, c'est le plat-réconfort national, servi avec du riz blanc.",
+    tableauSancochopanama: [
+      { nb: 1, poulet: "110 g", manioc: "50 g", mais: "30 g", pommedeterre: "40 g", oignon: "25 g", ail: "1", coriandre: "5 g", citron: "¼", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, poulet: "220 g", manioc: "100 g", mais: "60 g", pommedeterre: "80 g", oignon: "50 g", ail: "2", coriandre: "10 g", citron: "½", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, poulet: "330 g", manioc: "150 g", mais: "90 g", pommedeterre: "120 g", oignon: "75 g", ail: "3", coriandre: "15 g", citron: "¾", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, poulet: "440 g", manioc: "200 g", mais: "120 g", pommedeterre: "160 g", oignon: "100 g", ail: "4", coriandre: "20 g", citron: "1", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, poulet: "550 g", manioc: "250 g", mais: "150 g", pommedeterre: "200 g", oignon: "125 g", ail: "5", coriandre: "25 g", citron: "1¼", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, poulet: "660 g", manioc: "300 g", mais: "180 g", pommedeterre: "240 g", oignon: "150 g", ail: "6", coriandre: "30 g", citron: "1½", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, poulet: "770 g", manioc: "350 g", mais: "210 g", pommedeterre: "280 g", oignon: "175 g", ail: "7", coriandre: "35 g", citron: "1¾", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, poulet: "880 g", manioc: "400 g", mais: "240 g", pommedeterre: "320 g", oignon: "200 g", ail: "8", coriandre: "40 g", citron: "2", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, poulet: "990 g", manioc: "450 g", mais: "270 g", pommedeterre: "360 g", oignon: "225 g", ail: "9", coriandre: "45 g", citron: "2¼", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, poulet: "1100 g", manioc: "500 g", mais: "300 g", pommedeterre: "400 g", oignon: "250 g", ail: "10", coriandre: "50 g", citron: "2½", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, poulet: "1210 g", manioc: "550 g", mais: "330 g", pommedeterre: "440 g", oignon: "275 g", ail: "11", coriandre: "55 g", citron: "2¾", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, poulet: "1320 g", manioc: "600 g", mais: "360 g", pommedeterre: "480 g", oignon: "300 g", ail: "12", coriandre: "60 g", citron: "3", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, poulet: "1430 g", manioc: "650 g", mais: "390 g", pommedeterre: "520 g", oignon: "325 g", ail: "13", coriandre: "65 g", citron: "3¼", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, poulet: "1540 g", manioc: "700 g", mais: "420 g", pommedeterre: "560 g", oignon: "350 g", ail: "14", coriandre: "70 g", citron: "3½", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, poulet: "1650 g", manioc: "750 g", mais: "450 g", pommedeterre: "600 g", oignon: "375 g", ail: "15", coriandre: "75 g", citron: "3¾", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Le poulet", detail: "Faites revenir les morceaux de poulet avec l'oignon et l'ail, puis mouillez généreusement d'eau.", badge: null },
+      { icone: "🌿", titre: "Le culantro", detail: "Ajoutez beaucoup de coriandre (culantro), qui donne son parfum signature au bouillon.", badge: null },
+      { icone: "♨️", titre: "Le bouillon", detail: "Portez à frémissement et laissez mijoter jusqu'à ce que le poulet commence à s'attendrir.", badge: null },
+      { icone: "🍠", titre: "Les tubercules", detail: "Ajoutez le manioc (ou l'igname) en gros morceaux, qui vont cuire et lier légèrement le bouillon.", badge: null },
+      { icone: "🌽", titre: "Le maïs", detail: "Ajoutez le maïs en tronçons et les pommes de terre.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Poursuivez la cuisson jusqu'à ce que le poulet soit fondant et les tubercules tendres.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement, ajoutez un filet de citron et servez bien chaud, avec du riz blanc. Réconfortante et revigorante — la sancocho du Panama.", badge: null }
+    ]
+  },
 });
