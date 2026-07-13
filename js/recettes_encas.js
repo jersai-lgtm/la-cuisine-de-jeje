@@ -5709,4 +5709,41 @@ Object.assign(recettes, {
     ],
     liees: ["vorivori"]
   },
+  baursak: {
+    dateAjout: "2026-07-13T10:05:00",
+    nom: "Baursak",
+    cat: "encas", pays: "kazakhstan",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🍩",
+    description: "Baursak — les beignets de pâte kazakhs : de petits losanges (ou boules) de pâte levée, frits jusqu'à être dorés et gonflés, moelleux à l'intérieur. Servis en montagne dorée lors des fêtes et avec le thé, ils sont un symbole d'hospitalité des steppes d'Asie centrale, parfois saupoudrés de sucre.",
+    tableauBaursak: [
+      { nb: 1, farine: "70 g", lait: "30 ml", oeufs: "¼", beurre: "8 g", sucre: "6 g", huileolive: "12 ml", sel: "1 g" },
+      { nb: 2, farine: "140 g", lait: "60 ml", oeufs: "½", beurre: "16 g", sucre: "12 g", huileolive: "24 ml", sel: "2 g" },
+      { nb: 3, farine: "210 g", lait: "90 ml", oeufs: "¾", beurre: "24 g", sucre: "18 g", huileolive: "36 ml", sel: "3 g" },
+      { nb: 4, farine: "280 g", lait: "120 ml", oeufs: "1", beurre: "32 g", sucre: "24 g", huileolive: "48 ml", sel: "4 g" },
+      { nb: 5, farine: "350 g", lait: "150 ml", oeufs: "1¼", beurre: "40 g", sucre: "30 g", huileolive: "60 ml", sel: "5 g" },
+      { nb: 6, farine: "420 g", lait: "180 ml", oeufs: "1½", beurre: "48 g", sucre: "36 g", huileolive: "72 ml", sel: "6 g" },
+      { nb: 7, farine: "490 g", lait: "210 ml", oeufs: "1¾", beurre: "56 g", sucre: "42 g", huileolive: "84 ml", sel: "7 g" },
+      { nb: 8, farine: "560 g", lait: "240 ml", oeufs: "2", beurre: "64 g", sucre: "48 g", huileolive: "96 ml", sel: "8 g" },
+      { nb: 9, farine: "630 g", lait: "270 ml", oeufs: "2¼", beurre: "72 g", sucre: "54 g", huileolive: "108 ml", sel: "9 g" },
+      { nb: 10, farine: "700 g", lait: "300 ml", oeufs: "2½", beurre: "80 g", sucre: "60 g", huileolive: "120 ml", sel: "10 g" },
+      { nb: 11, farine: "770 g", lait: "330 ml", oeufs: "2¾", beurre: "88 g", sucre: "66 g", huileolive: "132 ml", sel: "11 g" },
+      { nb: 12, farine: "840 g", lait: "360 ml", oeufs: "3", beurre: "96 g", sucre: "72 g", huileolive: "144 ml", sel: "12 g" },
+      { nb: 13, farine: "910 g", lait: "390 ml", oeufs: "3¼", beurre: "104 g", sucre: "78 g", huileolive: "156 ml", sel: "13 g" },
+      { nb: 14, farine: "980 g", lait: "420 ml", oeufs: "3½", beurre: "112 g", sucre: "84 g", huileolive: "168 ml", sel: "14 g" },
+      { nb: 15, farine: "1050 g", lait: "450 ml", oeufs: "3¾", beurre: "120 g", sucre: "90 g", huileolive: "180 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le levain", detail: "Délayez la levure dans le lait tiède avec un peu de sucre, et laissez mousser.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, l'œuf, le beurre fondu, le sel et le levain, et pétrissez une pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Lever", detail: "Laissez la pâte lever jusqu'à ce qu'elle double de volume.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Abaissez la pâte et découpez des petits losanges (ou façonnez des boules).", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile jusqu'à ce qu'un morceau de pâte grésille et remonte aussitôt.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les baursaks jusqu'à ce qu'ils gonflent et dorent uniformément, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, en montagne dorée, avec le thé. Moelleux et dorés — les beignets d'hospitalité kazakhs.", badge: null }
+    ]
+  },
 });

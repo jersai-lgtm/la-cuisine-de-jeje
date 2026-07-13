@@ -5005,4 +5005,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement, ajoutez un filet de citron et servez bien chaud, avec du riz blanc. Réconfortante et revigorante — la sancocho du Panama.", badge: null }
     ]
   },
+  kakik: {
+    dateAjout: "2026-07-13T10:01:00",
+    nom: "Kak'ik",
+    cat: "soupes", pays: "guatemala",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦃",
+    description: "Kak'ik — le bouillon de dinde maya du Guatemala : une soupe cérémonielle au bouillon rouge vif, où mijote de la dinde avec tomate, tomatille, piments guajillo, coriandre et menthe (samat), colorée à l'achiote. Épicée, parfumée et ancestrale, c'est un plat emblématique du peuple q'eqchi', servi avec du riz et des tamales.",
+    tableauKakik: [
+      { nb: 1, dinde: "120 g", tomate: "50 g", piment: "3 g", oignon: "25 g", ail: "1", coriandre: "5 g", menthe: "1 g", curcuma: "1 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, dinde: "240 g", tomate: "100 g", piment: "6 g", oignon: "50 g", ail: "2", coriandre: "10 g", menthe: "2 g", curcuma: "2 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, dinde: "360 g", tomate: "150 g", piment: "9 g", oignon: "75 g", ail: "3", coriandre: "15 g", menthe: "3 g", curcuma: "3 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, dinde: "480 g", tomate: "200 g", piment: "12 g", oignon: "100 g", ail: "4", coriandre: "20 g", menthe: "4 g", curcuma: "4 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, dinde: "600 g", tomate: "250 g", piment: "15 g", oignon: "125 g", ail: "5", coriandre: "25 g", menthe: "5 g", curcuma: "5 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, dinde: "720 g", tomate: "300 g", piment: "18 g", oignon: "150 g", ail: "6", coriandre: "30 g", menthe: "6 g", curcuma: "6 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, dinde: "840 g", tomate: "350 g", piment: "21 g", oignon: "175 g", ail: "7", coriandre: "35 g", menthe: "7 g", curcuma: "7 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, dinde: "960 g", tomate: "400 g", piment: "24 g", oignon: "200 g", ail: "8", coriandre: "40 g", menthe: "8 g", curcuma: "8 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, dinde: "1080 g", tomate: "450 g", piment: "27 g", oignon: "225 g", ail: "9", coriandre: "45 g", menthe: "9 g", curcuma: "9 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, dinde: "1200 g", tomate: "500 g", piment: "30 g", oignon: "250 g", ail: "10", coriandre: "50 g", menthe: "10 g", curcuma: "10 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, dinde: "1320 g", tomate: "550 g", piment: "33 g", oignon: "275 g", ail: "11", coriandre: "55 g", menthe: "11 g", curcuma: "11 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, dinde: "1440 g", tomate: "600 g", piment: "36 g", oignon: "300 g", ail: "12", coriandre: "60 g", menthe: "12 g", curcuma: "12 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, dinde: "1560 g", tomate: "650 g", piment: "39 g", oignon: "325 g", ail: "13", coriandre: "65 g", menthe: "13 g", curcuma: "13 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, dinde: "1680 g", tomate: "700 g", piment: "42 g", oignon: "350 g", ail: "14", coriandre: "70 g", menthe: "14 g", curcuma: "14 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, dinde: "1800 g", tomate: "750 g", piment: "45 g", oignon: "375 g", ail: "15", coriandre: "75 g", menthe: "15 g", curcuma: "15 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦃", titre: "La dinde", detail: "Faites pocher la dinde (ou du poulet) dans l'eau jusqu'à ce qu'elle soit tendre (gardez le bouillon).", badge: null },
+      { icone: "🍅", titre: "Les légumes grillés", detail: "Grillez les tomates, les tomatilles, l'ail et l'oignon jusqu'à ce qu'ils noircissent légèrement.", badge: null },
+      { icone: "🌶️", titre: "Les piments", detail: "Réhydratez les piments guajillo, et mixez-les avec les légumes grillés en une pâte lisse.", badge: null },
+      { icone: "🥣", titre: "Le bouillon rouge", detail: "Faites revenir cette pâte, puis mouillez du bouillon de dinde et ajoutez l'achiote (couleur).", badge: null },
+      { icone: "🌿", titre: "Les herbes", detail: "Ajoutez la coriandre et la menthe (samat), qui parfument le bouillon.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Remettez la dinde et laissez mijoter pour que les saveurs se lient.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la dinde dans son bouillon rouge et parfumé, avec du riz. Épicé et ancestral — le kak'ik maya.", badge: null }
+    ]
+  },
 });

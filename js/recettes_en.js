@@ -71744,5 +71744,345 @@ window.RECETTES_EN = {
     "detail": "Adjust the seasoning, add a squeeze of lemon and serve piping hot, with white rice. Comforting and revitalizing — the sancocho of Panama."
    }
   ]
+ },
+ "majadito": {
+  "nom": "Majadito",
+  "description": "Majadito — the Bolivian simmered rice: rice cooked with charque (shredded dried beef), tomato, onion and pepper, coloured with annatto, served crowned with a fried egg and fried plantain. Comforting and tasty, it's a classic of Bolivia's eastern lowlands (Santa Cruz).",
+  "etapes": [
+   {
+    "titre": "The charque",
+    "detail": "Sauté the shredded beef (or rehydrated dried beef) until it colours."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Add the onion, pepper, garlic and tomato, and sauté into a soft base."
+   },
+   {
+    "titre": "The annatto",
+    "detail": "Add the annatto (or turmeric) for colour and the raw rice, and coat it."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Add broth and let the rice cook, absorbing the liquid, like a thick risotto."
+   },
+   {
+    "titre": "The majadito",
+    "detail": "Let the rice turn soft and slightly 'mashed' (majado), soaked in the charque juices."
+   },
+   {
+    "titre": "The garnishes",
+    "detail": "Fry slices of plantain and a fried egg."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the rice crowned with the egg and plantain. Comforting and tasty — the majadito of Santa Cruz."
+   }
+  ]
+ },
+ "kakik": {
+  "nom": "Kak'ik",
+  "description": "Kak'ik — the Mayan turkey broth of Guatemala: a ceremonial soup with a vivid red broth, where turkey simmers with tomato, tomatillo, guajillo chillies, coriander and mint (samat), coloured with achiote. Spicy, fragrant and ancestral, it's an emblematic dish of the Q'eqchi' people, served with rice and tamales.",
+  "etapes": [
+   {
+    "titre": "The turkey",
+    "detail": "Poach the turkey (or chicken) in water until tender (keep the broth)."
+   },
+   {
+    "titre": "The grilled vegetables",
+    "detail": "Grill the tomatoes, tomatillos, garlic and onion until lightly charred."
+   },
+   {
+    "titre": "The chillies",
+    "detail": "Rehydrate the guajillo chillies, and blend them with the grilled vegetables into a smooth paste."
+   },
+   {
+    "titre": "The red broth",
+    "detail": "Sauté this paste, then add the turkey broth and the achiote (colour)."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Add the coriander and mint (samat), which scent the broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the turkey and simmer so the flavours bind."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the turkey in its red, fragrant broth, with rice. Spicy and ancestral — the Mayan kak'ik."
+   }
+  ]
+ },
+ "waliwanazi": {
+  "nom": "Wali wa Nazi",
+  "description": "Wali wa nazi — the Swahili coconut rice of Tanzania: rice cooked in coconut milk scented with cardamom and cinnamon, soft and delicately sweet. A staple of the Swahili coast (Zanzibar), it accompanies fish curries, beans or meat, turning a simple rice into a feast dish.",
+  "etapes": [
+   {
+    "titre": "Rinse the rice",
+    "detail": "Rinse the rice several times until the water runs clear, for separate grains."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Prepare the coconut milk (fresh or canned), with a thick and a lighter extraction."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the onion and garlic, then add the cardamom and cinnamon."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the rice and coat it in the aromatics."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour in the light coconut milk, salt, and bring to a simmer."
+   },
+   {
+    "titre": "Covered",
+    "detail": "Lower the heat, cover and cook gently until absorbed, then add the thick coconut milk."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff with a fork and serve this creamy, fragrant rice, as a side. Soft and fragrant — the coconut rice of Zanzibar."
+   }
+  ]
+ },
+ "mufete": {
+  "nom": "Mufete",
+  "description": "Mufete — the Angolan grilled fish: a whole grilled fish, served with palm-oil beans, cassava, plantain and a spicy onion-and-lemon sauce ('gindungo'). Convivial and generous, it's the Sunday dish of Luanda's seafronts, to share with family.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Season the whole fish with salt, garlic and lemon, then grill it on both sides."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Simmer the beans with onion, tomato and a drizzle of palm oil."
+   },
+   {
+    "titre": "The starches",
+    "detail": "Cook the cassava and plantain (boiled or grilled)."
+   },
+   {
+    "titre": "The gindungo sauce",
+    "detail": "Make a lively sauce of raw onion, lemon, palm oil and chilli."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Finish the fish on the grill for a nice golden skin."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the fish, beans, cassava and plantain on a large platter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with gindungo sauce and share. Convivial and generous — the mufete of Luanda."
+   }
+  ]
+ },
+ "luwombo": {
+  "nom": "Luwombo",
+  "description": "Luwombo — the Ugandan banana-leaf stew: chicken (or beef) simmered in a sauce of groundnut paste, tomato and curry, wrapped and steamed in a banana leaf that lends it its fragrance. A royal feast dish of Buganda, tender and fragrant.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sauté the chicken pieces with the onion, garlic and pepper."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the tomato, carrot and curry, and let it melt into a base."
+   },
+   {
+    "titre": "The groundnut",
+    "detail": "Loosen the groundnut paste in a little broth and stir it into the sauce."
+   },
+   {
+    "titre": "The leaf",
+    "detail": "Pass a banana leaf over the flame to soften it."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place the chicken and its sauce in the centre of the leaf and fold it into a well-closed parcel."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the parcels at length, until the chicken is tender and scented by the leaf."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the leaf at the table, over matoke or rice. Tender and fragrant — the luwombo of Buganda."
+   }
+  ]
+ },
+ "baursak": {
+  "nom": "Baursak",
+  "description": "Baursak — the Kazakh dough fritters: small diamonds (or balls) of leavened dough, fried until golden and puffed, soft inside. Served in a golden mountain at celebrations and with tea, they're a symbol of hospitality of the Central Asian steppes, sometimes dusted with sugar.",
+  "etapes": [
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in the warm milk with a little sugar, and let it foam."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, egg, melted butter, salt and starter, and knead a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled in volume."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll out the dough and cut small diamonds (or shape balls)."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil until a piece of dough sizzles and floats up at once."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the baursaks until they puff and brown evenly, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, in a golden mountain, with tea. Soft and golden — the Kazakh hospitality fritters."
+   }
+  ]
+ },
+ "fumbwa": {
+  "nom": "Fumbwa",
+  "description": "Fumbwa — the wild-greens stew of Congo: fumbwa leaves (here spinach) simmered with smoked fish, groundnut paste and palm oil, into a rich, unctuous sauce. Deeply savoury and filling, it's a much-loved dish of both Congos, served with rice, cassava or fufu.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and shred the leaves (fumbwa or spinach), and blanch them."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Rehydrate the smoked fish and cut it into pieces."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and tomato in palm oil."
+   },
+   {
+    "titre": "The groundnut",
+    "detail": "Loosen the groundnut paste in a little water and add it to the base."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the leaves, the smoked fish and the chilli."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook gently until the sauce thickens and turns unctuous."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or cassava. Rich and filling — the fumbwa of Congo."
+   }
+  ]
+ },
+ "ohnnokhaoswe": {
+  "nom": "Ohn No Khao Swè",
+  "description": "Ohn no khao swè — the Burmese coconut noodles: wheat noodles in a creamy chicken-and-coconut broth, thickened with chickpea flour and scented with turmeric, topped with egg, fried onion and lemon. Comforting and indulgent, it's a great classic of Burmese breakfasts and meals.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Sauté the chicken with the onion, garlic, ginger and turmeric."
+   },
+   {
+    "titre": "The thickener",
+    "detail": "Loosen the chickpea flour in a little water, lump-free."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add the coconut milk, water and the loosened chickpea flour to the chicken."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Simmer, stirring, until the broth thickens and turns creamy."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the wheat noodles separately, then drain them."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Divide the noodles into bowls and pour the creamy broth over them."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add hard-boiled egg, fried onion, coriander and a squeeze of lemon. Creamy and indulgent — the Burmese coconut noodles."
+   }
+  ]
+ },
+ "oshpalov": {
+  "nom": "Oshi Palov",
+  "description": "Oshi palov — the Tajik plov: rice cooked with lamb, lots of julienned carrots, chickpeas and cumin, in a cauldron (kazan) until each grain is golden and fragrant. A national dish and symbol of hospitality, it takes centre stage on the table for big occasions in Central Asia.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Brown the lamb pieces in hot oil, in a large cauldron."
+   },
+   {
+    "titre": "The zirvak",
+    "detail": "Add the onion then the julienned carrots, and sauté them into a base (the 'zirvak')."
+   },
+   {
+    "titre": "Spices and chickpeas",
+    "detail": "Add the cumin, garlic and chickpeas, and add water."
+   },
+   {
+    "titre": "Simmer the zirvak",
+    "detail": "Simmer until the lamb is tender and the broth fragrant."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Rinse the rice and lay it in a layer over the zirvak, without mixing."
+   },
+   {
+    "titre": "Cook covered",
+    "detail": "Add water to cover, cover and let the rice steam from the zirvak."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Mix gently and plate in a dome, the lamb on top. Golden and fragrant — the Tajik plov."
+   }
+  ]
+ },
+ "tuluk": {
+  "nom": "Tuluk",
+  "description": "Tuluk — the stuffed specialty of Vanuatu: a dough of grated cassava and banana wrapping a seasoned pork (or chicken) core, rolled in a leaf and cooked until soft, drizzled with coconut milk. Rustic and filling, it's a feast dish of the Pacific islands, a cousin of laplap.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Sauté the minced pork with the onion and salt, into a fragrant filling."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Finely grate the cassava and (green) banana, and mix them into a sticky dough."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Stir a little coconut milk into the dough to bind and scent it."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the cassava-banana dough on a (banana) leaf, in a rectangle."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Place the filling in the centre and roll it all into a well-closed log in the leaf."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Steam (or bake) the rolls until the dough is firm and cooked."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice and drizzle with coconut milk. Rustic and filling — the tuluk of Vanuatu."
+   }
+  ]
  }
 };
