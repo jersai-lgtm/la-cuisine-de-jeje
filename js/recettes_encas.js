@@ -5746,4 +5746,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, en montagne dorée, avec le thé. Moelleux et dorés — les beignets d'hospitalité kazakhs.", badge: null }
     ]
   },
+  tortafrita: {
+    dateAjout: "2026-07-13T12:09:00",
+    nom: "Torta Frita",
+    cat: "encas", pays: "uruguay",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Torta frita — la galette frite uruguayenne : une pâte simple (farine, matière grasse, eau salée) abaissée, fendue au centre et frite jusqu'à être dorée et gonflée. Croustillante dehors, moelleuse dedans, c'est la gourmandise des jours de pluie en Uruguay (et en Argentine), à saupoudrer de sucre ou à tremper dans le maté.",
+    tableauTortafrita: [
+      { nb: 1, farine: "70 g", beurre: "10 g", huileolive: "12 ml", sucre: "3 g", sel: "2 g" },
+      { nb: 2, farine: "140 g", beurre: "20 g", huileolive: "24 ml", sucre: "6 g", sel: "4 g" },
+      { nb: 3, farine: "210 g", beurre: "30 g", huileolive: "36 ml", sucre: "9 g", sel: "6 g" },
+      { nb: 4, farine: "280 g", beurre: "40 g", huileolive: "48 ml", sucre: "12 g", sel: "8 g" },
+      { nb: 5, farine: "350 g", beurre: "50 g", huileolive: "60 ml", sucre: "15 g", sel: "10 g" },
+      { nb: 6, farine: "420 g", beurre: "60 g", huileolive: "72 ml", sucre: "18 g", sel: "12 g" },
+      { nb: 7, farine: "490 g", beurre: "70 g", huileolive: "84 ml", sucre: "21 g", sel: "14 g" },
+      { nb: 8, farine: "560 g", beurre: "80 g", huileolive: "96 ml", sucre: "24 g", sel: "16 g" },
+      { nb: 9, farine: "630 g", beurre: "90 g", huileolive: "108 ml", sucre: "27 g", sel: "18 g" },
+      { nb: 10, farine: "700 g", beurre: "100 g", huileolive: "120 ml", sucre: "30 g", sel: "20 g" },
+      { nb: 11, farine: "770 g", beurre: "110 g", huileolive: "132 ml", sucre: "33 g", sel: "22 g" },
+      { nb: 12, farine: "840 g", beurre: "120 g", huileolive: "144 ml", sucre: "36 g", sel: "24 g" },
+      { nb: 13, farine: "910 g", beurre: "130 g", huileolive: "156 ml", sucre: "39 g", sel: "26 g" },
+      { nb: 14, farine: "980 g", beurre: "140 g", huileolive: "168 ml", sucre: "42 g", sel: "28 g" },
+      { nb: 15, farine: "1050 g", beurre: "150 g", huileolive: "180 ml", sucre: "45 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le sel et un peu de levure, puis incorporez la matière grasse (beurre ou saindoux) fondue.", badge: null },
+      { icone: "💧", titre: "Hydrater", detail: "Ajoutez de l'eau tiède salée petit à petit, jusqu'à obtenir une pâte souple.", badge: null },
+      { icone: "🖐️", titre: "Pétrir", detail: "Pétrissez brièvement, puis laissez la pâte reposer.", badge: null },
+      { icone: "🔪", titre: "Abaisser", detail: "Abaissez la pâte et découpez des disques (ou des carrés).", badge: null },
+      { icone: "✂️", titre: "La fente", detail: "Faites une entaille au centre de chaque disque (elle empêche la torta de trop gonfler).", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire dans l'huile chaude, en les retournant, jusqu'à ce qu'elles soient dorées et gonflées.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez, saupoudrez de sucre et servez tièdes, avec un maté. Croustillantes et moelleuses — les tortas fritas des jours de pluie.", badge: null }
+    ]
+  },
 });

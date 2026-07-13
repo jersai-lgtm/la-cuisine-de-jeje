@@ -5042,4 +5042,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez la dinde dans son bouillon rouge et parfumé, avec du riz. Épicé et ancestral — le kak'ik maya.", badge: null }
     ]
   },
+  piti: {
+    dateAjout: "2026-07-13T12:01:00",
+    nom: "Piti",
+    cat: "soupes", pays: "azerbaidjan",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Piti — la soupe en cocotte d'Azerbaïdjan : de l'agneau, des pois chiches et des pommes de terre mijotés longuement dans de petites cocottes individuelles (« piti »), parfumés au safran et aux pruneaux. Traditionnellement, on boit d'abord le bouillon, puis on écrase et on mange la viande et les légumes.",
+    tableauPiti: [
+      { nb: 1, agneau: "100 g", poischiches: "25 g", pommedeterre: "60 g", oignon: "25 g", tomate: "30 g", safran: "0.1 g", pruneaux: "10 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, agneau: "200 g", poischiches: "50 g", pommedeterre: "120 g", oignon: "50 g", tomate: "60 g", safran: "0.2 g", pruneaux: "20 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, agneau: "300 g", poischiches: "75 g", pommedeterre: "180 g", oignon: "75 g", tomate: "90 g", safran: "0.3 g", pruneaux: "30 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, agneau: "400 g", poischiches: "100 g", pommedeterre: "240 g", oignon: "100 g", tomate: "120 g", safran: "0.4 g", pruneaux: "40 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, agneau: "500 g", poischiches: "125 g", pommedeterre: "300 g", oignon: "125 g", tomate: "150 g", safran: "0.5 g", pruneaux: "50 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, agneau: "600 g", poischiches: "150 g", pommedeterre: "360 g", oignon: "150 g", tomate: "180 g", safran: "0.6 g", pruneaux: "60 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, agneau: "700 g", poischiches: "175 g", pommedeterre: "420 g", oignon: "175 g", tomate: "210 g", safran: "0.7 g", pruneaux: "70 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, agneau: "800 g", poischiches: "200 g", pommedeterre: "480 g", oignon: "200 g", tomate: "240 g", safran: "0.8 g", pruneaux: "80 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, agneau: "900 g", poischiches: "225 g", pommedeterre: "540 g", oignon: "225 g", tomate: "270 g", safran: "0.9 g", pruneaux: "90 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, agneau: "1000 g", poischiches: "250 g", pommedeterre: "600 g", oignon: "250 g", tomate: "300 g", safran: "1 g", pruneaux: "100 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, agneau: "1100 g", poischiches: "275 g", pommedeterre: "660 g", oignon: "275 g", tomate: "330 g", safran: "1.1 g", pruneaux: "110 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, agneau: "1200 g", poischiches: "300 g", pommedeterre: "720 g", oignon: "300 g", tomate: "360 g", safran: "1.2 g", pruneaux: "120 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, agneau: "1300 g", poischiches: "325 g", pommedeterre: "780 g", oignon: "325 g", tomate: "390 g", safran: "1.3 g", pruneaux: "130 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, agneau: "1400 g", poischiches: "350 g", pommedeterre: "840 g", oignon: "350 g", tomate: "420 g", safran: "1.4 g", pruneaux: "140 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, agneau: "1500 g", poischiches: "375 g", pommedeterre: "900 g", oignon: "375 g", tomate: "450 g", safran: "1.5 g", pruneaux: "150 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐑", titre: "L'agneau", detail: "Disposez des morceaux d'agneau (avec un peu de gras) au fond de petites cocottes individuelles.", badge: null },
+      { icone: "🌰", titre: "Les pois chiches", detail: "Ajoutez les pois chiches préalablement trempés.", badge: null },
+      { icone: "🧅", titre: "Les aromates", detail: "Ajoutez l'oignon et la tomate, salez, et couvrez d'eau.", badge: null },
+      { icone: "♨️", titre: "Mijoter longuement", detail: "Faites mijoter très doucement (au four ou à feu très doux) longtemps, jusqu'à ce que l'agneau soit fondant.", badge: null },
+      { icone: "🌸", titre: "Le safran", detail: "En fin de cuisson, ajoutez le safran infusé et les pruneaux (pour l'acidité).", badge: null },
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Ajoutez les pommes de terre en gros morceaux et laissez-les cuire dans le bouillon.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlant : buvez d'abord le bouillon, puis écrasez et dégustez la viande et les légumes. Réconfortant et parfumé — le piti azéri.", badge: null }
+    ]
+  },
 });

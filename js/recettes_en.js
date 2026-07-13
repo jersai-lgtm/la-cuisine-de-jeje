@@ -72084,5 +72084,345 @@ window.RECETTES_EN = {
     "detail": "Slice and drizzle with coconut milk. Rustic and filling — the tuluk of Vanuatu."
    }
   ]
+ },
+ "suqaar": {
+  "nom": "Suqaar",
+  "description": "Suqaar — the Somali meat stir-fry: small cubes of beef (or lamb) sautéed over high heat with onion, pepper, tomato and spices (cumin, coriander, xawaash). Quick, fragrant and versatile, it's served with rice, canjeero (pancake) or bread, any time of day.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the beef into small, even cubes and season them with salt and cumin."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear them over high heat in a little oil, until they colour."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the onion, garlic and pepper, and sauté them."
+   },
+   {
+    "titre": "The xawaash",
+    "detail": "Add the spice mix (cumin, coriander, turmeric, cinnamon) and toast it."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and a splash of water, and reduce into a short sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer a few minutes so the meat soaks up the spices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and a squeeze of lemon, and serve with rice or canjeero. Quick and fragrant — the Somali suqaar."
+   }
+  ]
+ },
+ "piti": {
+  "nom": "Piti",
+  "description": "Piti — the crock soup of Azerbaijan: lamb, chickpeas and potatoes long-simmered in small individual crocks ('piti'), scented with saffron and prunes. Traditionally, you first drink the broth, then mash and eat the meat and vegetables.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Place pieces of lamb (with a little fat) at the bottom of small individual crocks."
+   },
+   {
+    "titre": "The chickpeas",
+    "detail": "Add the pre-soaked chickpeas."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the onion and tomato, salt, and cover with water."
+   },
+   {
+    "titre": "Simmer at length",
+    "detail": "Simmer very gently (in the oven or over very low heat) for a long time, until the lamb is meltingly tender."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "At the end, add the infused saffron and the prunes (for acidity)."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the potatoes in large chunks and let them cook in the broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding: first drink the broth, then mash and eat the meat and vegetables. Comforting and fragrant — the Azerbaijani piti."
+   }
+  ]
+ },
+ "zurbian": {
+  "nom": "Zurbian",
+  "description": "Zurbian — the spiced rice of Yemen: fragrant basmati rice cooked in layers with yogurt-and-spice-marinated lamb, potatoes and saffron, biryani-style. Rich, colourful and festive, it's a dish for big occasions and weddings in the south of the Arabian Peninsula.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the lamb with yogurt, garlic and spices (hawaij, cinnamon, cumin)."
+   },
+   {
+    "titre": "Cook the meat",
+    "detail": "Sauté the onion, then the marinated lamb and tomato, and simmer until the meat is tender."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Brown the potatoes and set aside."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Half-cook the basmati rice in spiced water, then drain it."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "Infuse the saffron in a little hot water for colour."
+   },
+   {
+    "titre": "Layer up",
+    "detail": "Layer the rice, lamb and potatoes, drizzle with saffron, cover and cook sealed (dum)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Mix gently and serve, the tender lamb over the golden rice. Rich and festive — the Yemeni zurbian."
+   }
+  ]
+ },
+ "phakshapaa": {
+  "nom": "Phaksha Paa",
+  "description": "Phaksha paa — the chilli pork of Bhutan: slices of pork belly simmered with radish (daikon), plenty of dried and fresh red chillies, ginger and garlic. Bold, comforting and generously spicy (like all Bhutanese cooking), it's served with red rice.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Cut the pork belly into thin slices and sauté them until the fat turns translucent."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the onion, garlic and ginger, and sauté them."
+   },
+   {
+    "titre": "The chillies",
+    "detail": "Add the red chillies (dried and fresh) — don't hold back, it's the heart of the dish."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add a little water and simmer to tenderize the pork."
+   },
+   {
+    "titre": "The radish",
+    "detail": "Add the radish (daikon) in chunks, which will soften and mellow the heat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the pork is tender and the radish soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with rice (red, ideally). Bold and comforting — the chilli pork of Bhutan."
+   }
+  ]
+ },
+ "saioua": {
+  "nom": "Sai Oua",
+  "description": "Sai oua — the Lao herb sausage: minced pork long-mixed with lemongrass, galangal, kaffir lime leaves, garlic, chilli and coriander, then cased and grilled. Fragrant, herby and mildly spicy, it's the star of the grills and markets of Laos.",
+  "etapes": [
+   {
+    "titre": "The herb paste",
+    "detail": "Very finely chop the lemongrass, galangal (ginger), garlic, chilli and kaffir lime leaves."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced pork (half-fatty) with the herb paste, coriander, fish sauce and a squeeze of lime."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Work the filling until it's smooth and sticky, well infused with the aromas."
+   },
+   {
+    "titre": "Case",
+    "detail": "Fill a casing with the mixture (or shape sausages by hand), packing them tightly."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the sausage rest so the flavours develop."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the sausages over low heat, turning them, until golden and cooked through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice and serve with sticky rice and a chilli sauce. Fragrant and herby — the Lao sausage."
+   }
+  ]
+ },
+ "labandera": {
+  "nom": "La Bandera",
+  "description": "La bandera — the Dominican 'flag': the emblematic everyday meal of white rice, simmered red beans (habichuelas) and a stewed meat (chicken or beef guisado), often with plantain. Its colours evoke the national flag — it's THE lunch of the Dominican Republic.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the white rice, grains separate."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Simmer the red beans with a sofrito (onion, garlic, pepper, tomato) into a creamy sauce (habichuelas)."
+   },
+   {
+    "titre": "Marinate the meat",
+    "detail": "Season the chicken (or beef) with garlic, oregano and lemon."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the meat, then set aside."
+   },
+   {
+    "titre": "The guisado sauce",
+    "detail": "Sauté a sofrito, add the tomato, then return the meat and simmer in sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let the meat turn tender and the sauce concentrate."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Serve the rice, beans and meat side by side (the 'flag'), with plantain. Complete and comforting — the Dominican bandera."
+   }
+  ]
+ },
+ "arrozgandules": {
+  "nom": "Arroz con Gandules",
+  "description": "Arroz con gandules — the pigeon-pea rice of Puerto Rico: golden rice cooked with pigeon peas (gandules), a fragrant sofrito and pork (or ham), coloured with achiote. Puerto Rico's national dish and a holiday must, it forms a lovely crust (pegao) at the bottom of the pot.",
+  "etapes": [
+   {
+    "titre": "The sofrito",
+    "detail": "Blend onion, garlic, pepper and coriander (culantro) into a sofrito paste."
+   },
+   {
+    "titre": "The pork",
+    "detail": "Sauté the pork (or ham) until it colours."
+   },
+   {
+    "titre": "Achiote and sofrito",
+    "detail": "Add the achiote (or turmeric) and the sofrito, and sauté until fragrant."
+   },
+   {
+    "titre": "The peas",
+    "detail": "Add the pigeon peas (gandules) and the tomato, and stir."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and coat it in the coloured sofrito."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add broth, bring to a simmer, then cover and cook until absorbed (the golden 'pegao' forms at the bottom)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff and serve, scraping the crisp pegao. Golden and festive — the pigeon-pea rice of Puerto Rico."
+   }
+  ]
+ },
+ "riceandbeansbelize": {
+  "nom": "Rice and Beans",
+  "description": "Rice and beans — the coconut rice and beans of Belize: rice and red beans cooked together in thyme-scented coconut milk, creamy and slightly sweet, served with a stew chicken. Not to be confused with separate 'beans and rice' — here it all cooks together, it's the Belizean Sunday dish.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Cook the red beans until they start to soften."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Add the coconut milk, thyme, garlic and onion to the beans."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice straight into the coconut beans, and stir."
+   },
+   {
+    "titre": "Cook together",
+    "detail": "Cover and cook over low heat until the rice absorbs the coconut milk and is soft."
+   },
+   {
+    "titre": "The stew chicken",
+    "detail": "Separately, simmer the marinated chicken (recado, achiote) into a savoury brown sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let the chicken turn tender and the sauce coat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the coconut rice and beans with the chicken in sauce. Creamy and comforting — the Belizean rice and beans."
+   }
+  ]
+ },
+ "cookuprice": {
+  "nom": "Cook-up Rice",
+  "description": "Cook-up rice — the one-pot rice of Guyana: a single dish where rice cooks with beans (or peas), coconut milk, meat and thyme, until everything melds together. Economical, comforting and endlessly variable, it's the Saturday-night dish of Guyanese families (and the diaspora).",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Sauté the chicken (or a mix of meats) with the onion, garlic and thyme."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Add the pre-cooked beans (or black-eyed peas)."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and a little water, and bring to a simmer."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the chilli (whole wiri wiri), thyme and spices."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and stir to coat it well."
+   },
+   {
+    "titre": "Cook in one pot",
+    "detail": "Cover and cook over low heat until the rice absorbs all the liquid and is soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff and serve this all-in-one dish. Comforting and generous — the Guyanese cook-up rice."
+   }
+  ]
+ },
+ "tortafrita": {
+  "nom": "Torta Frita",
+  "description": "Torta frita — the Uruguayan fried flatbread: a simple dough (flour, fat, salted water) rolled out, slit in the centre and fried until golden and puffed. Crisp outside, soft inside, it's the rainy-day treat of Uruguay (and Argentina), dusted with sugar or dipped in mate.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, salt and a little baking powder, then work in the melted fat (butter or lard)."
+   },
+   {
+    "titre": "Hydrate",
+    "detail": "Add warm salted water little by little, until you get a soft dough."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead briefly, then let the dough rest."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out the dough and cut discs (or squares)."
+   },
+   {
+    "titre": "The slit",
+    "detail": "Cut a slit in the centre of each disc (it stops the torta from puffing too much)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in hot oil, turning them, until golden and puffed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain, dust with sugar and serve warm, with a mate. Crisp and soft — the rainy-day tortas fritas."
+   }
+  ]
  }
 };
