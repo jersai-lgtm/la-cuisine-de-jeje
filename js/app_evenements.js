@@ -416,7 +416,36 @@
       ".lc-event-bloc .lc-event-titre{color:var(--ev-accent,#ff7518)!important}",
       ".lc-event-card{flex:0 0 auto;width:128px;cursor:pointer;border-radius:14px;overflow:hidden;background:#15121a;border:1px solid rgba(255,255,255,.07)}",
       ".lc-event-card img{width:100%;height:96px;object-fit:cover;display:block;background:#241a22}",
-      ".lc-event-card .lc-ec-nom{padding:8px 9px;font-size:12.5px;font-weight:600;color:#fff;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}"
+      ".lc-event-card .lc-ec-nom{padding:8px 9px;font-size:12.5px;font-weight:600;color:#fff;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}",
+      // --- Menu complet dépliable ---
+      ".lc-menu-voir{width:100%;margin-top:10px;background:var(--ev-accent,#ff7518);color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.25)}",
+      ".lc-menu-voir:active{transform:translateY(1px)}",
+      ".lc-menu-overlay{position:fixed;inset:0;z-index:100060;background:rgba(0,0,0,.6);display:flex;align-items:flex-end;justify-content:center;opacity:0;transition:opacity .2s}",
+      ".lc-menu-overlay.visible{opacity:1}",
+      ".lc-menu-box{background:var(--panel-solid,#1a1a2e);color:var(--text);width:100%;max-width:520px;max-height:92vh;border-radius:18px 18px 0 0;display:flex;flex-direction:column;overflow:hidden}",
+      "@media(min-width:560px){.lc-menu-overlay{align-items:center}.lc-menu-box{border-radius:18px}}",
+      ".lc-menu-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 18px;border-bottom:1px solid rgba(var(--w),.1);position:sticky;top:0;background:var(--panel-solid,#1a1a2e);z-index:1}",
+      ".lc-menu-head h2{margin:0;font-size:17px;color:var(--text)}",
+      ".lc-menu-close{width:34px;height:34px;border-radius:50%;border:none;background:rgba(var(--w),.1);color:var(--text);font-size:15px;cursor:pointer;flex:none}",
+      ".lc-menu-body{overflow-y:auto;padding:12px 14px 22px;-webkit-overflow-scrolling:touch}",
+      ".lc-menu-acc{border:1px solid rgba(var(--w),.12);border-radius:14px;margin-bottom:10px;background:rgba(var(--w),.03);overflow:hidden}",
+      ".lc-menu-acc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:11px;padding:10px 12px}",
+      ".lc-menu-acc>summary::-webkit-details-marker{display:none}",
+      ".lc-menu-acc>summary img{width:52px;height:52px;border-radius:10px;object-fit:cover;flex:none;background:rgba(var(--w),.08)}",
+      ".lc-menu-nom{flex:1;font-weight:700;font-size:14.5px;color:var(--text);line-height:1.2}",
+      ".lc-menu-meta{font-size:12px;color:var(--text-3);white-space:nowrap}",
+      ".lc-menu-chevron{color:var(--ev-accent,#ff7518);font-size:15px;transition:transform .2s;flex:none}",
+      ".lc-menu-acc[open]>summary .lc-menu-chevron{transform:rotate(180deg)}",
+      ".lc-menu-detail{padding:4px 14px 14px}",
+      ".lc-menu-detail h4{margin:12px 0 7px;font-size:13px;color:var(--ev-accent,#ff7518);text-transform:uppercase;letter-spacing:.5px}",
+      ".lc-menu-ings{display:flex;flex-direction:column;gap:2px}",
+      ".lc-menu-ing{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;color:var(--text);padding:3px 0;border-bottom:1px solid rgba(var(--w),.06)}",
+      ".lc-menu-ing b{color:var(--text);font-weight:700;white-space:nowrap}",
+      ".lc-menu-etape{display:flex;gap:10px;padding:6px 0;font-size:13.5px}",
+      ".lc-menu-etape-num{flex:none;font-size:16px;min-width:22px;text-align:center}",
+      ".lc-menu-etape b{display:block;color:var(--text);margin-bottom:2px}",
+      ".lc-menu-etape p{margin:0;color:var(--text-2);line-height:1.4}",
+      ".lc-menu-fiche{margin-top:12px;width:100%;background:rgba(var(--w),.06);color:var(--text-2);border:1px solid rgba(var(--w),.18);border-radius:11px;padding:9px;font-size:13px;font-weight:600;cursor:pointer}"
     ].join("\n");
     document.head.appendChild(st);
   }
@@ -516,6 +545,7 @@
       '<div class="accueil-bloc lc-event-bloc" id="lc-event-bloc" style="display:block">' +
         '<h2 class="lc-event-titre" style="font-size:17px;margin:0 0 10px">' + ev.titre + "</h2>" +
         '<div class="accueil-scroll-row" style="display:flex;gap:10px;overflow-x:auto;padding-bottom:4px">' + cards + "</div>" +
+        '<button type="button" class="lc-menu-voir" onclick="lcVoirMenuComplet()">📋 Voir tout le menu</button>' +
       "</div>";
     section.insertAdjacentHTML("afterbegin", html);
   }
@@ -523,6 +553,102 @@
     if (typeof ouvrirRecetteEtCategorie === "function") ouvrirRecetteEtCategorie(cle, cat);
     else if (typeof ouvrirFiche === "function" && lcRecettes()[cle]) ouvrirFiche(lcRecettes()[cle]);
   };
+
+  // --- Menu complet dépliable (voir tout le menu d'un coup) ----------------
+  // Rend, pour une recette, ses ingrédients (ligne de base du tableau) + étapes,
+  // directement depuis l'objet recette (générique, marche pour toutes).
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function lcRecetteDetailHTML(k) {
+    var R = lcRecettes(), r = R[k];
+    if (!r) return "";
+    var LAB = (typeof INGREDIENTS_LABELS !== "undefined") ? INGREDIENTS_LABELS : {};
+    // --- Ingrédients ---
+    var lignes = [];
+    var tk = Object.keys(r).find(function (x) { return /^tableau/.test(x) && Array.isArray(r[x]); });
+    if (tk) {
+      var base = r.base || 4;
+      var ligne = r[tk].find(function (l) { return l.nb === base || l.patons === base; }) || r[tk][0];
+      if (ligne) {
+        var SKIP = { nb: 1, patons: 1, total: 1, label: 1, prix: 1 };
+        Object.keys(ligne).forEach(function (c) {
+          if (SKIP[c] || /^---/.test(c)) return;
+          var v = ligne[c]; if (v && typeof v === "object") v = v.raw || v.q || "";
+          if (v === "" || v == null) return;
+          lignes.push([LAB[c] || c, v]);
+        });
+      }
+    } else if (r.fixe && Array.isArray(r.ingredientsFixes)) {
+      r.ingredientsFixes.forEach(function (p) {
+        var kk = Array.isArray(p) ? p[0] : p.k, vv = Array.isArray(p) ? p[1] : p.v;
+        if (vv != null && vv !== "") lignes.push([LAB[kk] || kk, vv]);
+      });
+    } else if (r.ingredients && typeof r.ingredients === "object") {
+      Object.keys(r.ingredients).forEach(function (kk) {
+        if (/^---/.test(kk)) return;
+        var vv = r.ingredients[kk]; if (vv && typeof vv === "object") vv = vv.raw || "";
+        lignes.push([LAB[kk] || kk, vv]);
+      });
+    }
+    var ingHTML = lignes.map(function (p) {
+      return '<div class="lc-menu-ing"><span>' + esc(p[0]) + "</span><b>" + esc(p[1]) + "</b></div>";
+    }).join("");
+    // --- Étapes ---
+    var etHTML = (r.etapes || []).map(function (e, i) {
+      return '<div class="lc-menu-etape"><span class="lc-menu-etape-num">' + esc(e.icone || (i + 1)) + "</span>" +
+        "<div>" + (e.titre ? "<b>" + esc(e.titre) + "</b>" : "") + "<p>" + esc(e.detail || "") + "</p></div></div>";
+    }).join("");
+    var cat = (r.cat || "").replace(/'/g, "\\'");
+    return '<div class="lc-menu-detail">' +
+      (ingHTML ? '<h4>🛒 Ingrédients</h4><div class="lc-menu-ings">' + ingHTML + "</div>" : "") +
+      (etHTML ? '<h4>📋 Étapes</h4><div class="lc-menu-etapes">' + etHTML + "</div>" : "") +
+      '<button type="button" class="lc-menu-fiche" onclick="lcFermerMenuComplet();lcEventOuvrir(\'' + k + "','" + cat + '\')">Ouvrir la fiche complète →</button>' +
+      "</div>";
+  }
+
+  window.lcVoirMenuComplet = function () {
+    if (!currentEv) return;
+    if (document.getElementById("lc-menu-complet")) return;
+    var ev = currentEv, R = lcRecettes();
+    var cles = (ev.recettes || []).filter(function (k) { return R[k]; });
+    if (!cles.length) return;
+    var items = cles.map(function (k) {
+      var r = R[k] || {};
+      var nom = ((ev.menuNoms && ev.menuNoms[k]) || r.nom || k);
+      var prem = (k.charAt(0) || "_").toLowerCase();
+      var imgThumb = "thumbs/" + prem + "/" + k + ".webp", imgFull = "images/" + prem + "/" + k + ".webp";
+      var onerr = "if(this.src.indexOf('thumbs/')>-1){this.src='" + imgFull + "'}else{this.style.visibility='hidden'}";
+      var meta = [r.temps, r.niveau].filter(Boolean).join(" · ");
+      return '<details class="lc-menu-acc">' +
+        '<summary><img loading="lazy" src="' + imgThumb + '" onerror="' + onerr + '" alt="">' +
+        '<span class="lc-menu-nom">' + (r.emoji ? esc(r.emoji) + " " : "") + esc(nom) + "</span>" +
+        (meta ? '<span class="lc-menu-meta">' + esc(meta) + "</span>" : "") +
+        '<span class="lc-menu-chevron">▾</span></summary>' +
+        lcRecetteDetailHTML(k) + "</details>";
+    }).join("");
+    var ov = document.createElement("div");
+    ov.id = "lc-menu-complet";
+    ov.className = "lc-menu-overlay";
+    ov.innerHTML =
+      '<div class="lc-menu-box">' +
+        '<div class="lc-menu-head"><h2>' + esc(ev.titre) + "</h2>" +
+        '<button class="lc-menu-close" aria-label="Fermer" onclick="lcFermerMenuComplet()">✕</button></div>' +
+        '<div class="lc-menu-body">' + items + "</div>" +
+      "</div>";
+    ov.addEventListener("click", function (e) { if (e.target === ov) window.lcFermerMenuComplet(); });
+    document.body.appendChild(ov);
+    requestAnimationFrame(function () { ov.classList.add("visible"); });
+    if (typeof window._backGuardPush === "function") window._backGuardPush();
+  };
+  window.lcFermerMenuComplet = function () {
+    var el = document.getElementById("lc-menu-complet");
+    if (el) { el.classList.remove("visible"); setTimeout(function () { if (el && el.parentNode) el.remove(); }, 200); }
+  };
+  // Bouton retour Android : ferme le menu complet comme un modal
+  try {
+    if (typeof _MODALS_SURVEILLEES !== "undefined" && Array.isArray(_MODALS_SURVEILLEES)) {
+      _MODALS_SURVEILLEES.push({ id: "lc-menu-complet", close: function () { if (typeof lcFermerMenuComplet === "function") lcFermerMenuComplet(); } });
+    }
+  } catch (e) {}
 
   // --- Splash plein écran -------------------------------------------------
   function clefVue(ev) {

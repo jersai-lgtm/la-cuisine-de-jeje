@@ -154,12 +154,27 @@ function rendreNoteAppAccueil(tous) {
   const moy = tous.reduce((s, a) => s + (a.etoiles || 0), 0) / nb;
   const arr = Math.round(moy);
   const etoiles = "★".repeat(arr) + "☆".repeat(5 - arr);
+  // Dernier avis avec commentaire (témoignage façon Jow), sous la barre.
+  const avecComm = tous.filter(a => a.commentaire && a.commentaire.trim());
+  avecComm.sort((a, b) => new Date(b.dateMaj || 0) - new Date(a.dateMaj || 0));
+  const last = avecComm[0];
+  let avisHTML = "";
+  if (last) {
+    const n = Math.max(0, Math.min(5, last.etoiles || 0));
+    const st = "★".repeat(n) + "☆".repeat(5 - n);
+    avisHTML = `
+      <div class="note-app-avis">
+        <span class="note-app-avis-stars">${st}</span>
+        <span class="note-app-avis-txt">« ${escapeHTML(last.commentaire.trim())} »</span>
+        <span class="note-app-avis-auteur">— ${escapeHTML(last.prenom || "Anonyme")}</span>
+      </div>`;
+  }
   zone.innerHTML = `
     <button class="note-app-bar" onclick="ouvrirModalAvis()" aria-label="Avis général de l'application">
       <span class="note-app-bar-note">${moy.toFixed(1).replace(".", ",")}<span>/5</span></span>
       <span class="note-app-bar-stars">${etoiles}</span>
       <span class="note-app-bar-sub">Avis général de l'appli · ${nb} avis</span>
-    </button>`;
+    </button>${avisHTML}`;
 }
 
 // Chargé à l'affichage de l'accueil : lit les avis et remplit la carte en évidence.
