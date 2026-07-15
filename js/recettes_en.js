@@ -72424,5 +72424,345 @@ window.RECETTES_EN = {
     "detail": "Drain, dust with sugar and serve warm, with a mate. Crisp and soft — the rainy-day tortas fritas."
    }
   ]
+ },
+ "zigni": {
+  "nom": "Zigni",
+  "description": "Zigni — the Eritrean spicy stew: beef long-simmered in a fiery red berbere sauce (chilli and spice blend), with melted onion, garlic and ginger. Rich, bold and fragrant, it's a feast dish served on injera, the large teff pancake to share.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Slowly melt a large amount of sliced onion (first dry, then with oil), into a soft base."
+   },
+   {
+    "titre": "The berbere",
+    "detail": "Add the berbere (chilli, paprika and spices), garlic and ginger, and sauté to develop the aromas."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the chopped tomato and reduce into a thick red sauce."
+   },
+   {
+    "titre": "The beef",
+    "detail": "Add the beef in pieces and coat it in the sauce."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add a little water and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length until the beef is tender and the sauce concentrated."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve on injera (or with rice). Rich and bold — the Eritrean feast stew."
+   }
+  ]
+ },
+ "skoudehkaris": {
+  "nom": "Skoudehkaris",
+  "description": "Skoudehkaris — the spiced rice of Djibouti: rice simmered with lamb, tomato, onion and a spice blend (cardamom, cumin, coriander), in the tradition of Horn of Africa cooking. Fragrant, comforting and convivial, it's the family dish par excellence.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Brown the lamb pieces with the onion."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the garlic, cardamom, cumin and coriander, and sauté."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and let it melt into a fragrant base."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water and simmer until the lamb is almost tender."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice into the spiced broth."
+   },
+   {
+    "titre": "Covered",
+    "detail": "Cover and cook gently until the rice has absorbed the liquid."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff and serve, the lamb over the fragrant rice. Comforting and convivial — the Djiboutian spiced rice."
+   }
+  ]
+ },
+ "ichlekli": {
+  "nom": "Ichlekli",
+  "description": "Ichlekli — the Turkmen meat pie: a large thin-dough pastry filled with meat (lamb or beef), onion and potato, baked until golden and crisp. Rustic, generous and nomadic, it's shared in slices all around in the steppes of Central Asia.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Make a simple dough (flour, water, salt) and let it rest."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Cut the meat, onion and potato into tiny cubes, and season with cumin, salt and pepper."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out two large thin discs of dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the raw filling over one disc, leaving a free edge."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Cover with the second disc and seal the edges well (like a large pie)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the dough is golden and crisp and the filling cooked through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into slices and serve hot. Rustic and generous — the Turkmen pie."
+   }
+  ]
+ },
+ "langoustevanille": {
+  "nom": "Vanilla Lobster",
+  "description": "Vanilla lobster — the Comoros feast dish: spiny lobster (here lobster) coated in a silky coconut-milk and vanilla sauce, brightened with garlic and onion. The fragrant archipelago elevates its lobsters in this refined dish, sweet-briny and delicately scented.",
+  "etapes": [
+   {
+    "titre": "The lobster",
+    "detail": "Cut the spiny lobster (or lobster) into pieces in its shell."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Quickly sauté it in a little oil to firm the flesh, then set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic, then add the tomato."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and bring to a simmer."
+   },
+   {
+    "titre": "The vanilla",
+    "detail": "Split the vanilla pod and scrape the seeds into the sauce (the dish's signature)."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the lobster to the sauce and cook it just enough (the flesh stays pearly)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, coated in vanilla sauce. Refined and fragrant — the vanilla lobster of the Comoros."
+   }
+  ]
+ },
+ "greenfigsaltfish": {
+  "nom": "Green Fig and Saltfish",
+  "description": "Green fig and saltfish — the national dish of Saint Lucia: boiled green banana ('green fig'), served with desalted saltfish sautéed with onion, pepper and tomato. Salty, filling and typically Caribbean, it's the island's institution breakfast, often with avocado.",
+  "etapes": [
+   {
+    "titre": "The saltfish",
+    "detail": "Desalt the saltfish (soak then poach), then flake it."
+   },
+   {
+    "titre": "The green banana",
+    "detail": "Boil the green bananas (green figs) in salted water until tender, then slice them."
+   },
+   {
+    "titre": "The sauté",
+    "detail": "Sauté the onion, pepper, tomato and garlic."
+   },
+   {
+    "titre": "Add the saltfish",
+    "detail": "Add the flaked saltfish and stir-fry it with the vegetables."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add a little chilli and a squeeze of lemon."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Add the green banana slices and mix gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with avocado. Salty and filling — the national dish of Saint Lucia."
+   }
+  ]
+ },
+ "balaleet": {
+  "nom": "Balaleet",
+  "description": "Balaleet — the Emirati sweet-savoury vermicelli: fine vermicelli cooked and sweetened, scented with cardamom, saffron and rose water, topped with a thin savoury omelette. This sweet-savoury contrast of the Emirati (and Gulf) breakfast is comforting, golden and festive.",
+  "etapes": [
+   {
+    "titre": "The vermicelli",
+    "detail": "Break the vermicelli and sauté it in a little butter until lightly golden."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add water and cook until tender."
+   },
+   {
+    "titre": "Scent",
+    "detail": "Add the sugar, cardamom, saffron (and a little rose water), and let the liquid evaporate."
+   },
+   {
+    "titre": "The omelette",
+    "detail": "Beat the eggs and make a thin savoury omelette separately."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Keep the sweet vermicelli warm, well scented."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the sweet vermicelli and top it with the omelette."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, playing on the sweet-savoury contrast. Golden and festive — the Emirati balaleet."
+   }
+  ]
+ },
+ "puddingsouse": {
+  "nom": "Pudding and Souse",
+  "description": "Pudding and souse — the Saturday dish of Barbados: the 'souse', pork simmered then refreshed in a lime pickle of cucumber, onion and chilli, served with the 'pudding', a spiced sweet-potato mash. Tangy, fresh and comforting, it's a Barbadian weekend institution.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Cook the pork in water until tender, then cut it into pieces."
+   },
+   {
+    "titre": "The pickle",
+    "detail": "Make a pickle with plenty of lime juice, finely sliced cucumber, onion and chilli."
+   },
+   {
+    "titre": "Refresh",
+    "detail": "Mix the warm pork into the pickle and let it marinate cold (the 'souse')."
+   },
+   {
+    "titre": "The sweet potato",
+    "detail": "Cook the sweet potato, then mash it."
+   },
+   {
+    "titre": "The pudding",
+    "detail": "Season the mash with spices, onion and a little chilli (the 'pudding')."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the spiced pudding next to the tangy souse."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold, the tangy-sweet contrast is everything. Tangy and comforting — the Barbadian pudding and souse."
+   }
+  ]
+ },
+ "naryn": {
+  "nom": "Naryn",
+  "description": "Naryn — the meat noodles of Uzbekistan: fine hand-cut strips of dough, mixed with boiled meat (traditionally horse, here beef) and lots of onion, all moistened with fragrant broth. Understated, comforting and emblematic, it's a feast and hospitality dish of Central Asia.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Boil the beef until tender, in a fragrant broth (keep it)."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Make a firm noodle dough (flour, water, salt), roll it thin and hand-cut fine strips."
+   },
+   {
+    "titre": "Cook the noodles",
+    "detail": "Cook the noodles in water (or broth), then drain."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Cut the tender meat into fine strips."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Sauté (or soften) plenty of sliced onion."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the noodles, meat and onion, seasoned with cumin and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in bowls, moistened with a little hot broth. Understated and comforting — the Uzbek naryn."
+   }
+  ]
+ },
+ "mokpa": {
+  "nom": "Mok Pa",
+  "description": "Mok pa — the banana-leaf steamed fish of Laos: fish mixed with lemongrass, galangal, chilli, herbs and toasted rice powder, wrapped in a banana leaf and steamed until soft and fragrant. Light, herby and citrusy, it's a delicate classic of Lao cuisine.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the fish into pieces (or mince)."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Finely chop the lemongrass, galangal, garlic, spring onion and coriander."
+   },
+   {
+    "titre": "The rice powder",
+    "detail": "Add toasted glutinous rice powder (khao khua), which binds and scents."
+   },
+   {
+    "titre": "Season",
+    "detail": "Mix the fish with the herbs, chilli, a little fish sauce and lime."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place the mixture on a banana leaf and fold it into a parcel."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the parcels until the fish is just cooked and soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the leaf at the table, over sticky rice. Light and fragrant — the steamed fish of Laos."
+   }
+  ]
+ },
+ "metemgee": {
+  "nom": "Metemgee",
+  "description": "Metemgee — the Guyanese coconut pot: a creamy dish where cassava, plantain and sweet potato (the 'ground provisions') simmer in thyme-scented coconut milk, with dough dumplings ('duff'). Filling and comforting, it's eaten alone or with fried fish, as a convivial one-pot.",
+  "etapes": [
+   {
+    "titre": "The coconut milk",
+    "detail": "Bring the coconut milk (and a little water) to a simmer with the onion, garlic and thyme."
+   },
+   {
+    "titre": "The tubers",
+    "detail": "Add the cassava, plantain and sweet potato in large chunks."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Form elongated dough dumplings (flour, water, salt) — the 'duff'."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the dumplings on top of the tubers."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the tubers are tender and the coconut milk reduced and creamy."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add a squeeze of lemon and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, alone or with fried fish. Filling and creamy — the Guyanese metemgee."
+   }
+  ]
  }
 };

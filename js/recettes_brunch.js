@@ -2185,4 +2185,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Coupez en deux et servez chaud, à manger sur le pouce. Le Rolex ougandais — rapide, complet et économique.", badge: null }
     ]
   },
+  balaleet: {
+    dateAjout: "2026-07-15T10:05:00",
+    nom: "Balaleet",
+    cat: "brunch", pays: "emiratsarabesunis",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Balaleet — le vermicelle sucré-salé émirati : des vermicelles fins cuits et sucrés, parfumés à la cardamome, au safran et à l'eau de rose, surmontés d'une fine omelette salée. Ce contraste sucré-salé du petit-déjeuner des Émirats (et du Golfe) est réconfortant, doré et festif.",
+    tableauBalaleet: [
+      { nb: 1, vermicelles: "60 g", oeufs: "½", sucre: "12 g", cardamome: "1 g", safran: "0.15 g", beurre: "10 g", huileolive: "4 ml", sel: "1 g" },
+      { nb: 2, vermicelles: "120 g", oeufs: "1", sucre: "24 g", cardamome: "2 g", safran: "0.3 g", beurre: "20 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 3, vermicelles: "180 g", oeufs: "1½", sucre: "36 g", cardamome: "3 g", safran: "0.45 g", beurre: "30 g", huileolive: "12 ml", sel: "3 g" },
+      { nb: 4, vermicelles: "240 g", oeufs: "2", sucre: "48 g", cardamome: "4 g", safran: "0.6 g", beurre: "40 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 5, vermicelles: "300 g", oeufs: "2½", sucre: "60 g", cardamome: "5 g", safran: "0.75 g", beurre: "50 g", huileolive: "20 ml", sel: "5 g" },
+      { nb: 6, vermicelles: "360 g", oeufs: "3", sucre: "72 g", cardamome: "6 g", safran: "0.9 g", beurre: "60 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 7, vermicelles: "420 g", oeufs: "3½", sucre: "84 g", cardamome: "7 g", safran: "1.05 g", beurre: "70 g", huileolive: "28 ml", sel: "7 g" },
+      { nb: 8, vermicelles: "480 g", oeufs: "4", sucre: "96 g", cardamome: "8 g", safran: "1.2 g", beurre: "80 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 9, vermicelles: "540 g", oeufs: "4½", sucre: "108 g", cardamome: "9 g", safran: "1.35 g", beurre: "90 g", huileolive: "36 ml", sel: "9 g" },
+      { nb: 10, vermicelles: "600 g", oeufs: "5", sucre: "120 g", cardamome: "10 g", safran: "1.5 g", beurre: "100 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 11, vermicelles: "660 g", oeufs: "5½", sucre: "132 g", cardamome: "11 g", safran: "1.65 g", beurre: "110 g", huileolive: "44 ml", sel: "11 g" },
+      { nb: 12, vermicelles: "720 g", oeufs: "6", sucre: "144 g", cardamome: "12 g", safran: "1.8 g", beurre: "120 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 13, vermicelles: "780 g", oeufs: "6½", sucre: "156 g", cardamome: "13 g", safran: "1.95 g", beurre: "130 g", huileolive: "52 ml", sel: "13 g" },
+      { nb: 14, vermicelles: "840 g", oeufs: "7", sucre: "168 g", cardamome: "14 g", safran: "2.1 g", beurre: "140 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 15, vermicelles: "900 g", oeufs: "7½", sucre: "180 g", cardamome: "15 g", safran: "2.25 g", beurre: "150 g", huileolive: "60 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Les vermicelles", detail: "Cassez les vermicelles et faites-les revenir dans un peu de beurre jusqu'à ce qu'ils dorent légèrement.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Ajoutez de l'eau et laissez-les cuire jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🌼", titre: "Parfumer", detail: "Ajoutez le sucre, la cardamome, le safran (et un peu d'eau de rose), et laissez le liquide s'évaporer.", badge: null },
+      { icone: "🍳", titre: "L'omelette", detail: "Battez les œufs et faites une fine omelette salée à part.", badge: null },
+      { icone: "🍜", titre: "Réserver", detail: "Gardez les vermicelles sucrés au chaud, bien parfumés.", badge: null },
+      { icone: "🥞", titre: "Dresser", detail: "Dressez les vermicelles sucrés et recouvrez-les de l'omelette.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède, en jouant sur le contraste sucré-salé. Doré et festif — le balaleet émirati.", badge: null }
+    ]
+  },
 });

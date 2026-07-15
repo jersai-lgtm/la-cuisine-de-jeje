@@ -5079,4 +5079,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlant : buvez d'abord le bouillon, puis écrasez et dégustez la viande et les légumes. Réconfortant et parfumé — le piti azéri.", badge: null }
     ]
   },
+  metemgee: {
+    dateAjout: "2026-07-15T10:09:00",
+    nom: "Metemgee",
+    cat: "soupes", pays: "guyana",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥥",
+    description: "Metemgee — le pot-au-feu coco guyanien : un plat crémeux où manioc, banane plantain et patate douce (les « ground provisions ») mijotent dans du lait de coco parfumé au thym, avec des boulettes de pâte (« duff »). Nourrissant et réconfortant, il se déguste seul ou avec du poisson frit, en plat unique convivial.",
+    tableauMetemgee: [
+      { nb: 1, laitcoco: "70 ml", manioc: "50 g", plantain: "40 g", patatedouce: "40 g", farine: "25 g", oignon: "25 g", ail: "1", thym: "1 g", citron: "¼", sel: "2 g" },
+      { nb: 2, laitcoco: "140 ml", manioc: "100 g", plantain: "80 g", patatedouce: "80 g", farine: "50 g", oignon: "50 g", ail: "2", thym: "2 g", citron: "½", sel: "4 g" },
+      { nb: 3, laitcoco: "210 ml", manioc: "150 g", plantain: "120 g", patatedouce: "120 g", farine: "75 g", oignon: "75 g", ail: "3", thym: "3 g", citron: "¾", sel: "6 g" },
+      { nb: 4, laitcoco: "280 ml", manioc: "200 g", plantain: "160 g", patatedouce: "160 g", farine: "100 g", oignon: "100 g", ail: "4", thym: "4 g", citron: "1", sel: "8 g" },
+      { nb: 5, laitcoco: "350 ml", manioc: "250 g", plantain: "200 g", patatedouce: "200 g", farine: "125 g", oignon: "125 g", ail: "5", thym: "5 g", citron: "1¼", sel: "10 g" },
+      { nb: 6, laitcoco: "420 ml", manioc: "300 g", plantain: "240 g", patatedouce: "240 g", farine: "150 g", oignon: "150 g", ail: "6", thym: "6 g", citron: "1½", sel: "12 g" },
+      { nb: 7, laitcoco: "490 ml", manioc: "350 g", plantain: "280 g", patatedouce: "280 g", farine: "175 g", oignon: "175 g", ail: "7", thym: "7 g", citron: "1¾", sel: "14 g" },
+      { nb: 8, laitcoco: "560 ml", manioc: "400 g", plantain: "320 g", patatedouce: "320 g", farine: "200 g", oignon: "200 g", ail: "8", thym: "8 g", citron: "2", sel: "16 g" },
+      { nb: 9, laitcoco: "630 ml", manioc: "450 g", plantain: "360 g", patatedouce: "360 g", farine: "225 g", oignon: "225 g", ail: "9", thym: "9 g", citron: "2¼", sel: "18 g" },
+      { nb: 10, laitcoco: "700 ml", manioc: "500 g", plantain: "400 g", patatedouce: "400 g", farine: "250 g", oignon: "250 g", ail: "10", thym: "10 g", citron: "2½", sel: "20 g" },
+      { nb: 11, laitcoco: "770 ml", manioc: "550 g", plantain: "440 g", patatedouce: "440 g", farine: "275 g", oignon: "275 g", ail: "11", thym: "11 g", citron: "2¾", sel: "22 g" },
+      { nb: 12, laitcoco: "840 ml", manioc: "600 g", plantain: "480 g", patatedouce: "480 g", farine: "300 g", oignon: "300 g", ail: "12", thym: "12 g", citron: "3", sel: "24 g" },
+      { nb: 13, laitcoco: "910 ml", manioc: "650 g", plantain: "520 g", patatedouce: "520 g", farine: "325 g", oignon: "325 g", ail: "13", thym: "13 g", citron: "3¼", sel: "26 g" },
+      { nb: 14, laitcoco: "980 ml", manioc: "700 g", plantain: "560 g", patatedouce: "560 g", farine: "350 g", oignon: "350 g", ail: "14", thym: "14 g", citron: "3½", sel: "28 g" },
+      { nb: 15, laitcoco: "1050 ml", manioc: "750 g", plantain: "600 g", patatedouce: "600 g", farine: "375 g", oignon: "375 g", ail: "15", thym: "15 g", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "Le lait de coco", detail: "Portez le lait de coco (et un peu d'eau) à frémissement avec l'oignon, l'ail et le thym.", badge: null },
+      { icone: "🍠", titre: "Les tubercules", detail: "Ajoutez le manioc, la banane plantain et la patate douce en gros morceaux.", badge: null },
+      { icone: "🥟", titre: "Les boulettes", detail: "Formez des boulettes de pâte allongées (farine, eau, sel) — les « duff ».", badge: null },
+      { icone: "🥘", titre: "Réunir", detail: "Ajoutez les boulettes sur les tubercules.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que les tubercules soient tendres et le lait de coco réduit et crémeux.", badge: null },
+      { icone: "🍋", titre: "Relever", detail: "Ajoutez un filet de citron et rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, seul ou avec du poisson frit. Nourrissant et crémeux — le metemgee guyanien.", badge: null }
+    ]
+  },
 });
