@@ -2452,8 +2452,9 @@ select, input[type="number"] {
 ========================================== */
 .stats-section {
   max-width: 900px;
-  margin: 20px auto 100px;
-  padding: 20px;
+  margin: 20px auto 40px;
+  /* padding-bottom généreux pour dégager la barre de nav fixe (jamais rogné, contrairement à une marge de fin de scroll) */
+  padding: 20px 20px calc(110px + env(safe-area-inset-bottom, 0px));
 }
 .stats-header {
   text-align: center;
@@ -2734,8 +2735,8 @@ select, input[type="number"] {
 /* Mobile */
 @media (max-width: 600px) {
   .stats-section {
-    padding: 12px;
-    margin-bottom: 90px;
+    padding: 12px 12px calc(104px + env(safe-area-inset-bottom, 0px));
+    margin-bottom: 20px;
   }
   .stats-header h2 { font-size: 22px; }
   .stats-grid {
