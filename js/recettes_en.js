@@ -72764,5 +72764,345 @@ window.RECETTES_EN = {
     "detail": "Serve piping hot, alone or with fried fish. Filling and creamy — the Guyanese metemgee."
    }
   ]
+ },
+ "nyembwe": {
+  "nom": "Nyembwe Chicken",
+  "description": "Poulet nyembwe — the national dish of Gabon: chicken simmered in a silky palm-nut pulp sauce (red palm oil), with onion, tomato, okra and chilli. Rich, red and fragrant, it's Gabon's feast dish par excellence, served with rice or cassava.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken pieces in a little oil."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the onion, garlic and tomato, and let them melt."
+   },
+   {
+    "titre": "The palm nut",
+    "detail": "Add the palm-nut pulp (or red palm oil), which gives colour and richness."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little water and simmer to bind the sauce."
+   },
+   {
+    "titre": "The okra",
+    "detail": "Add the okra (which lightly thickens) and the chilli."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Simmer until the chicken is tender and the sauce coating and red."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or cassava. Rich and fragrant — the nyembwe chicken of Gabon."
+   }
+  ]
+ },
+ "palavaliberia": {
+  "nom": "Palava Sauce",
+  "description": "Palava sauce — the leafy stew of Liberia: green leaves (spinach, potato greens) simmered with fish (or meat), palm oil and groundnut paste, into a rich, thick sauce. Filling and tasty, it's served over rice, an everyday dish in Liberia.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and shred the green leaves, and blanch them."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Sauté the fish (or meat) with the onion and tomato."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Add the red palm oil and garlic."
+   },
+   {
+    "titre": "The groundnut",
+    "detail": "Loosen the groundnut paste in a little water and stir it in."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the leaves and chilli, and mix."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the sauce thickens and turns unctuous."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over rice. Filling and tasty — the palava sauce of Liberia."
+   }
+  ]
+ },
+ "gurasa": {
+  "nom": "Gurasa",
+  "description": "Gurasa — the Sudanese flatbread and its stew: a large thick, soft pancake-like bread, served with a tomato meat sauce ('dama'). Comforting and generous, you tear it to scoop up the stew, a convivial dish of Sudanese tables.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Make a fluid batter (flour, a little yeast, salt, water) and let it rest."
+   },
+   {
+    "titre": "The flatbreads",
+    "detail": "Pour the batter into a hot pan and cook large thick, soft flatbreads."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Sauté the beef with the onion until it colours."
+   },
+   {
+    "titre": "The stew",
+    "detail": "Add the tomato, garlic and cumin, and simmer into a sauce ('dama')."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Add a little water and reduce until the meat is tender."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Set the flatbread down and coat it with the meat stew."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Tear the flatbread to scoop. Comforting — the Sudanese gurasa and its stew."
+   }
+  ]
+ },
+ "shuwaoman": {
+  "nom": "Shuwa",
+  "description": "Shuwa — the Omani feast lamb: lamb long-marinated in a spice blend (cumin, coriander, turmeric, cinnamon), wrapped and traditionally cooked a whole day in an underground oven. Ultra-tender, fragrant and ceremonial, it crowns Oman's great celebrations, served on rice.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Make a spice paste (cumin, coriander, turmeric, cinnamon, garlic) with a little oil."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the lamb in the marinade and let it rest for several hours."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Wrap the lamb in leaves (banana or palm)."
+   },
+   {
+    "titre": "Slow cooking",
+    "detail": "Cook very slowly at low temperature (oven or pot), until the meat falls apart."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Cook the rice, ideally in the fragrant cooking juices."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Pull the ultra-tender lamb off the bone."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the lamb over the spiced rice. Tender and ceremonial — the Omani feast shuwa."
+   }
+  ]
+ },
+ "madrouba": {
+  "nom": "Madrouba",
+  "description": "Madrouba — the Qatari 'beaten' rice: rice cooked with chicken, butter and spices (cardamom, turmeric), then long stirred and mashed until creamy, almost a smooth porridge. Comforting and gentle, it's a dish of sharing, especially during Ramadan.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Sauté the chicken with the onion and garlic."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the cardamom, turmeric and salt."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and water, and cook until the rice is very tender."
+   },
+   {
+    "titre": "Beat",
+    "detail": "Remove the bones, then mash and stir the rice and chicken at length."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Stir in the butter for richness."
+   },
+   {
+    "titre": "Creamy",
+    "detail": "Keep stirring until you get a creamy, smooth texture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a squeeze of lemon and serve hot. Comforting and gentle — the Qatari madrouba."
+   }
+  ]
+ },
+ "ikamata": {
+  "nom": "Ika Mata",
+  "description": "Ika mata — the coconut raw fish of the Cook Islands: fresh fish 'cooked' by lime juice, then coated in coconut cream, with onion, tomato, cucumber and pepper. Fresh, briny and creamy, it's the sunny signature dish of the Pacific, served well chilled.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the very fresh fish into small cubes."
+   },
+   {
+    "titre": "The lime",
+    "detail": "Drizzle it generously with lime juice and let it 'cook' a few minutes (the flesh whitens)."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Dice the onion, tomato, cucumber and pepper."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the excess lime juice from the fish."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Mix the fish and vegetables with the coconut cream."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Salt, mix and let it rest cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, fresh and creamy. Briny and sunny — the ika mata of the Cook Islands."
+   }
+  ]
+ },
+ "stobaaruba": {
+  "nom": "Stoba",
+  "description": "Stoba — the Aruban simmered stew: meat (goat, here lamb, or beef) long-simmered with tomato, onion, pepper and potato, into a thick, fragrant sauce. Comforting and generous, it's the family dish of the ABC islands (Aruba, Bonaire, Curaçao).",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Brown the meat pieces with the onion."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the pepper, garlic and tomato, and let them melt."
+   },
+   {
+    "titre": "The paste",
+    "detail": "Add the tomato paste and cumin for colour and base."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add water and bring to a simmer."
+   },
+   {
+    "titre": "The potato",
+    "detail": "Add the potato in chunks."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length until the meat is tender and the sauce thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or funchi (polenta). Comforting — the Aruban stoba."
+   }
+  ]
+ },
+ "stuffatfenek": {
+  "nom": "Stuffat tal-Fenek",
+  "description": "Stuffat tal-fenek — the Maltese rabbit stew: rabbit long-simmered in a red-wine, tomato, garlic and bay-leaf sauce, with potatoes and carrots. Malta's national dish, comforting and rustic, it's at the heart of the 'fenkata', the convivial rabbit feast.",
+  "etapes": [
+   {
+    "titre": "The rabbit",
+    "detail": "Brown the rabbit pieces in olive oil."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the onion and garlic, and sauté them."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Deglaze with red wine and let the alcohol evaporate."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato, bay leaf and a little water."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrots and potatoes in chunks."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length until the rabbit is tender and the sauce concentrated."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with bread (or pasta, as a first course). Rustic and comforting — the Maltese rabbit stew."
+   }
+  ]
+ },
+ "ducana": {
+  "nom": "Ducana",
+  "description": "Ducana — the steamed sweet of Antigua: a grated dough of sweet potato and coconut, sweetened and spiced (cinnamon, nutmeg), wrapped in a banana leaf and steamed. Soft, sweet and fragrant, it often accompanies saltfish and vegetables, or is enjoyed on its own.",
+  "etapes": [
+   {
+    "titre": "The sweet potato",
+    "detail": "Finely grate the raw sweet potato and the coconut."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix with a little flour, the sugar, cinnamon, nutmeg and a little water, into a thick dough."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Adjust the sugar and spices (ducana is well scented)."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place portions of dough on banana leaves and fold them into parcels."
+   },
+   {
+    "titre": "Tie",
+    "detail": "Close each parcel well."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the parcels (or boil) until the dough is firm and cooked."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the leaf: the ducana is soft and fragrant. Sweet and steamed — the Antiguan treat."
+   }
+  ]
+ },
+ "muhammar": {
+  "nom": "Muhammar",
+  "description": "Muhammar — the sweet rice of Bahrain: golden rice scented with saffron and cardamom and sweetened with dates (or brown sugar), traditionally served with fried fish. This sweet-savoury contrast, gentle and fragrant, is a classic of Bahraini and Gulf tables.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Par-cook the rice three-quarters, then drain."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "Steep the saffron and cardamom in a little hot water."
+   },
+   {
+    "titre": "The sweet",
+    "detail": "Melt the dates (or brown sugar) with a little butter into a syrup."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix the rice with the date syrup and the saffron infusion."
+   },
+   {
+    "titre": "Sealed cooking",
+    "detail": "Cover and cook sealed (dum) over low heat, until the rice is tender and golden."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Drizzle with a little melted butter for shine."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve this sweet, fragrant rice, traditionally with fried fish. Gentle and fragrant — the Bahraini muhammar."
+   }
+  ]
  }
 };

@@ -2996,4 +2996,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Laissez refroidir et servez froid, avec du citron. Fraîches et acidulées — les feuilles de vigne farcies de Syrie.", badge: null }
     ]
   },
+  ikamata: {
+    dateAjout: "2026-07-15T11:05:00",
+    nom: "Ika Mata",
+    cat: "entrees", pays: "ilescook",
+    base: 4,
+    temps: "25 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Ika mata — le poisson cru au coco des îles Cook : du poisson frais « cuit » par le jus de citron vert, puis enrobé de crème de coco, avec de l'oignon, de la tomate, du concombre et du poivron. Frais, iodé et crémeux, c'est le plat-signature ensoleillé du Pacifique, servi bien froid.",
+    tableauIkamata: [
+      { nb: 1, poisson: "110 g", laitcoco: "50 ml", citronvert: "½", oignon: "20 g", tomate: "30 g", poivron: "20 g", concombre: "25 g", coriandre: "4 g", sel: "2 g" },
+      { nb: 2, poisson: "220 g", laitcoco: "100 ml", citronvert: "1", oignon: "40 g", tomate: "60 g", poivron: "40 g", concombre: "50 g", coriandre: "8 g", sel: "4 g" },
+      { nb: 3, poisson: "330 g", laitcoco: "150 ml", citronvert: "1½", oignon: "60 g", tomate: "90 g", poivron: "60 g", concombre: "75 g", coriandre: "12 g", sel: "6 g" },
+      { nb: 4, poisson: "440 g", laitcoco: "200 ml", citronvert: "2", oignon: "80 g", tomate: "120 g", poivron: "80 g", concombre: "100 g", coriandre: "16 g", sel: "8 g" },
+      { nb: 5, poisson: "550 g", laitcoco: "250 ml", citronvert: "2½", oignon: "100 g", tomate: "150 g", poivron: "100 g", concombre: "125 g", coriandre: "20 g", sel: "10 g" },
+      { nb: 6, poisson: "660 g", laitcoco: "300 ml", citronvert: "3", oignon: "120 g", tomate: "180 g", poivron: "120 g", concombre: "150 g", coriandre: "24 g", sel: "12 g" },
+      { nb: 7, poisson: "770 g", laitcoco: "350 ml", citronvert: "3½", oignon: "140 g", tomate: "210 g", poivron: "140 g", concombre: "175 g", coriandre: "28 g", sel: "14 g" },
+      { nb: 8, poisson: "880 g", laitcoco: "400 ml", citronvert: "4", oignon: "160 g", tomate: "240 g", poivron: "160 g", concombre: "200 g", coriandre: "32 g", sel: "16 g" },
+      { nb: 9, poisson: "990 g", laitcoco: "450 ml", citronvert: "4½", oignon: "180 g", tomate: "270 g", poivron: "180 g", concombre: "225 g", coriandre: "36 g", sel: "18 g" },
+      { nb: 10, poisson: "1100 g", laitcoco: "500 ml", citronvert: "5", oignon: "200 g", tomate: "300 g", poivron: "200 g", concombre: "250 g", coriandre: "40 g", sel: "20 g" },
+      { nb: 11, poisson: "1210 g", laitcoco: "550 ml", citronvert: "5½", oignon: "220 g", tomate: "330 g", poivron: "220 g", concombre: "275 g", coriandre: "44 g", sel: "22 g" },
+      { nb: 12, poisson: "1320 g", laitcoco: "600 ml", citronvert: "6", oignon: "240 g", tomate: "360 g", poivron: "240 g", concombre: "300 g", coriandre: "48 g", sel: "24 g" },
+      { nb: 13, poisson: "1430 g", laitcoco: "650 ml", citronvert: "6½", oignon: "260 g", tomate: "390 g", poivron: "260 g", concombre: "325 g", coriandre: "52 g", sel: "26 g" },
+      { nb: 14, poisson: "1540 g", laitcoco: "700 ml", citronvert: "7", oignon: "280 g", tomate: "420 g", poivron: "280 g", concombre: "350 g", coriandre: "56 g", sel: "28 g" },
+      { nb: 15, poisson: "1650 g", laitcoco: "750 ml", citronvert: "7½", oignon: "300 g", tomate: "450 g", poivron: "300 g", concombre: "375 g", coriandre: "60 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le poisson", detail: "Détaillez le poisson très frais en petits dés.", badge: null },
+      { icone: "🍋", titre: "Le citron vert", detail: "Arrosez-le généreusement de jus de citron vert et laissez « cuire » quelques minutes (la chair blanchit).", badge: null },
+      { icone: "🧅", titre: "Les légumes", detail: "Coupez l'oignon, la tomate, le concombre et le poivron en petits dés.", badge: null },
+      { icone: "💧", titre: "Égoutter", detail: "Égouttez l'excès de jus de citron du poisson.", badge: null },
+      { icone: "🥥", titre: "Le lait de coco", detail: "Mélangez le poisson et les légumes avec la crème de coco.", badge: null },
+      { icone: "🧊", titre: "Rafraîchir", detail: "Salez, mélangez et laissez reposer au frais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien froid, frais et crémeux. Iodé et ensoleillé — l'ika mata des îles Cook.", badge: null }
+    ]
+  },
 });

@@ -5783,4 +5783,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Égouttez, saupoudrez de sucre et servez tièdes, avec un maté. Croustillantes et moelleuses — les tortas fritas des jours de pluie.", badge: null }
     ]
   },
+  ducana: {
+    dateAjout: "2026-07-15T11:08:00",
+    nom: "Ducana",
+    cat: "encas", pays: "antigua",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍠",
+    description: "Ducana — la douceur vapeur d'Antigua : une pâte râpée de patate douce et de noix de coco, sucrée et épicée (cannelle, muscade), enveloppée dans une feuille de bananier et cuite à la vapeur. Moelleuse, sucrée et parfumée, elle accompagne souvent la morue et les légumes, ou se déguste seule.",
+    tableauDucana: [
+      { nb: 1, patatedouce: "90 g", noixcoco: "20 g", farine: "20 g", sucre: "8 g", cannelle: "0.5 g", muscade: "0.3 g", sel: "1 g" },
+      { nb: 2, patatedouce: "180 g", noixcoco: "40 g", farine: "40 g", sucre: "16 g", cannelle: "1 g", muscade: "0.6 g", sel: "2 g" },
+      { nb: 3, patatedouce: "270 g", noixcoco: "60 g", farine: "60 g", sucre: "24 g", cannelle: "1.5 g", muscade: "0.9 g", sel: "3 g" },
+      { nb: 4, patatedouce: "360 g", noixcoco: "80 g", farine: "80 g", sucre: "32 g", cannelle: "2 g", muscade: "1.2 g", sel: "4 g" },
+      { nb: 5, patatedouce: "450 g", noixcoco: "100 g", farine: "100 g", sucre: "40 g", cannelle: "2.5 g", muscade: "1.5 g", sel: "5 g" },
+      { nb: 6, patatedouce: "540 g", noixcoco: "120 g", farine: "120 g", sucre: "48 g", cannelle: "3 g", muscade: "1.8 g", sel: "6 g" },
+      { nb: 7, patatedouce: "630 g", noixcoco: "140 g", farine: "140 g", sucre: "56 g", cannelle: "3.5 g", muscade: "2.1 g", sel: "7 g" },
+      { nb: 8, patatedouce: "720 g", noixcoco: "160 g", farine: "160 g", sucre: "64 g", cannelle: "4 g", muscade: "2.4 g", sel: "8 g" },
+      { nb: 9, patatedouce: "810 g", noixcoco: "180 g", farine: "180 g", sucre: "72 g", cannelle: "4.5 g", muscade: "2.7 g", sel: "9 g" },
+      { nb: 10, patatedouce: "900 g", noixcoco: "200 g", farine: "200 g", sucre: "80 g", cannelle: "5 g", muscade: "3 g", sel: "10 g" },
+      { nb: 11, patatedouce: "990 g", noixcoco: "220 g", farine: "220 g", sucre: "88 g", cannelle: "5.5 g", muscade: "3.3 g", sel: "11 g" },
+      { nb: 12, patatedouce: "1080 g", noixcoco: "240 g", farine: "240 g", sucre: "96 g", cannelle: "6 g", muscade: "3.6 g", sel: "12 g" },
+      { nb: 13, patatedouce: "1170 g", noixcoco: "260 g", farine: "260 g", sucre: "104 g", cannelle: "6.5 g", muscade: "3.9 g", sel: "13 g" },
+      { nb: 14, patatedouce: "1260 g", noixcoco: "280 g", farine: "280 g", sucre: "112 g", cannelle: "7 g", muscade: "4.2 g", sel: "14 g" },
+      { nb: 15, patatedouce: "1350 g", noixcoco: "300 g", farine: "300 g", sucre: "120 g", cannelle: "7.5 g", muscade: "4.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "La patate douce", detail: "Râpez finement la patate douce crue et la noix de coco.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez avec un peu de farine, le sucre, la cannelle, la muscade et un peu d'eau, en une pâte épaisse.", badge: null },
+      { icone: "🍬", titre: "Sucrer", detail: "Ajustez le sucre et les épices (la ducana est bien parfumée).", badge: null },
+      { icone: "🍃", titre: "Emballer", detail: "Déposez des portions de pâte sur des feuilles de bananier et repliez-les en papillotes.", badge: null },
+      { icone: "🎁", titre: "Ficeler", detail: "Fermez bien chaque paquet.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Faites cuire les paquets à la vapeur (ou à l'eau bouillante) jusqu'à ce que la pâte soit ferme et cuite.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Ouvrez la feuille : la ducana est moelleuse et parfumée. Sucrée et vapeur — la douceur d'Antigua.", badge: null }
+    ]
+  },
 });
