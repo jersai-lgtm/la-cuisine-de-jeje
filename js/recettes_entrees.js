@@ -3033,4 +3033,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien froid, frais et crémeux. Iodé et ensoleillé — l'ika mata des îles Cook.", badge: null }
     ]
   },
+  kelaguen: {
+    dateAjout: "2026-07-16T10:01:00",
+    nom: "Kelaguen",
+    cat: "entrees", pays: "micronesie",
+    base: 4,
+    temps: "30 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🐔",
+    description: "Kelaguen — le poulet au citron et coco de Micronésie : du poulet grillé puis émincé, « cuit » à froid par le jus de citron, mêlé de noix de coco râpée, d'oignon vert et de piment. Frais, acidulé et parfumé, c'est le plat-signature des Chamorros et des îles Mariannes, servi avec du riz ou des galettes.",
+    tableauKelaguen: [
+      { nb: 1, poulet: "110 g", citron: "½", noixcoco: "20 g", ciboule: "8 g", piment: "1 g", sel: "2 g" },
+      { nb: 2, poulet: "220 g", citron: "1", noixcoco: "40 g", ciboule: "16 g", piment: "2 g", sel: "4 g" },
+      { nb: 3, poulet: "330 g", citron: "1½", noixcoco: "60 g", ciboule: "24 g", piment: "3 g", sel: "6 g" },
+      { nb: 4, poulet: "440 g", citron: "2", noixcoco: "80 g", ciboule: "32 g", piment: "4 g", sel: "8 g" },
+      { nb: 5, poulet: "550 g", citron: "2½", noixcoco: "100 g", ciboule: "40 g", piment: "5 g", sel: "10 g" },
+      { nb: 6, poulet: "660 g", citron: "3", noixcoco: "120 g", ciboule: "48 g", piment: "6 g", sel: "12 g" },
+      { nb: 7, poulet: "770 g", citron: "3½", noixcoco: "140 g", ciboule: "56 g", piment: "7 g", sel: "14 g" },
+      { nb: 8, poulet: "880 g", citron: "4", noixcoco: "160 g", ciboule: "64 g", piment: "8 g", sel: "16 g" },
+      { nb: 9, poulet: "990 g", citron: "4½", noixcoco: "180 g", ciboule: "72 g", piment: "9 g", sel: "18 g" },
+      { nb: 10, poulet: "1100 g", citron: "5", noixcoco: "200 g", ciboule: "80 g", piment: "10 g", sel: "20 g" },
+      { nb: 11, poulet: "1210 g", citron: "5½", noixcoco: "220 g", ciboule: "88 g", piment: "11 g", sel: "22 g" },
+      { nb: 12, poulet: "1320 g", citron: "6", noixcoco: "240 g", ciboule: "96 g", piment: "12 g", sel: "24 g" },
+      { nb: 13, poulet: "1430 g", citron: "6½", noixcoco: "260 g", ciboule: "104 g", piment: "13 g", sel: "26 g" },
+      { nb: 14, poulet: "1540 g", citron: "7", noixcoco: "280 g", ciboule: "112 g", piment: "14 g", sel: "28 g" },
+      { nb: 15, poulet: "1650 g", citron: "7½", noixcoco: "300 g", ciboule: "120 g", piment: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Griller", detail: "Faites griller le poulet jusqu'à ce qu'il soit cuit et légèrement fumé, puis laissez-le refroidir.", badge: null },
+      { icone: "🔪", titre: "Émincer", detail: "Détaillez le poulet en tout petits morceaux (ou effilochez-le).", badge: null },
+      { icone: "🍋", titre: "Le citron", detail: "Arrosez généreusement de jus de citron : l'acidité « recuit » le poulet et le parfume.", badge: null },
+      { icone: "🥥", titre: "La noix de coco", detail: "Ajoutez la noix de coco fraîchement râpée.", badge: null },
+      { icone: "🧅", titre: "Les aromates", detail: "Ajoutez l'oignon vert émincé et le piment.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez et mélangez, puis laissez reposer au frais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, avec du riz ou des galettes. Frais et acidulé — le kelaguen de Micronésie.", badge: null }
+    ]
+  },
 });

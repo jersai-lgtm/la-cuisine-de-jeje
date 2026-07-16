@@ -5820,4 +5820,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Ouvrez la feuille : la ducana est moelleuse et parfumée. Sucrée et vapeur — la douceur d'Antigua.", badge: null }
     ]
   },
+  conkies: {
+    dateAjout: "2026-07-16T10:05:00",
+    nom: "Conkies",
+    cat: "encas", pays: "saintkitts",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌽",
+    description: "Conkies — la douceur de maïs vapeur de Saint-Kitts : une pâte de semoule de maïs, de noix de coco et de potiron, sucrée et épicée (cannelle, muscade), enrichie de raisins secs, enveloppée dans une feuille de bananier et cuite à la vapeur. Moelleuse et parfumée, elle se prépare traditionnellement pour les fêtes.",
+    tableauConkies: [
+      { nb: 1, farinemais: "50 g", noixcoco: "20 g", courge: "40 g", patatedouce: "30 g", raisinsec: "10 g", sucre: "8 g", cannelle: "0.5 g", muscade: "0.3 g", sel: "1 g" },
+      { nb: 2, farinemais: "100 g", noixcoco: "40 g", courge: "80 g", patatedouce: "60 g", raisinsec: "20 g", sucre: "16 g", cannelle: "1 g", muscade: "0.6 g", sel: "2 g" },
+      { nb: 3, farinemais: "150 g", noixcoco: "60 g", courge: "120 g", patatedouce: "90 g", raisinsec: "30 g", sucre: "24 g", cannelle: "1.5 g", muscade: "0.9 g", sel: "3 g" },
+      { nb: 4, farinemais: "200 g", noixcoco: "80 g", courge: "160 g", patatedouce: "120 g", raisinsec: "40 g", sucre: "32 g", cannelle: "2 g", muscade: "1.2 g", sel: "4 g" },
+      { nb: 5, farinemais: "250 g", noixcoco: "100 g", courge: "200 g", patatedouce: "150 g", raisinsec: "50 g", sucre: "40 g", cannelle: "2.5 g", muscade: "1.5 g", sel: "5 g" },
+      { nb: 6, farinemais: "300 g", noixcoco: "120 g", courge: "240 g", patatedouce: "180 g", raisinsec: "60 g", sucre: "48 g", cannelle: "3 g", muscade: "1.8 g", sel: "6 g" },
+      { nb: 7, farinemais: "350 g", noixcoco: "140 g", courge: "280 g", patatedouce: "210 g", raisinsec: "70 g", sucre: "56 g", cannelle: "3.5 g", muscade: "2.1 g", sel: "7 g" },
+      { nb: 8, farinemais: "400 g", noixcoco: "160 g", courge: "320 g", patatedouce: "240 g", raisinsec: "80 g", sucre: "64 g", cannelle: "4 g", muscade: "2.4 g", sel: "8 g" },
+      { nb: 9, farinemais: "450 g", noixcoco: "180 g", courge: "360 g", patatedouce: "270 g", raisinsec: "90 g", sucre: "72 g", cannelle: "4.5 g", muscade: "2.7 g", sel: "9 g" },
+      { nb: 10, farinemais: "500 g", noixcoco: "200 g", courge: "400 g", patatedouce: "300 g", raisinsec: "100 g", sucre: "80 g", cannelle: "5 g", muscade: "3 g", sel: "10 g" },
+      { nb: 11, farinemais: "550 g", noixcoco: "220 g", courge: "440 g", patatedouce: "330 g", raisinsec: "110 g", sucre: "88 g", cannelle: "5.5 g", muscade: "3.3 g", sel: "11 g" },
+      { nb: 12, farinemais: "600 g", noixcoco: "240 g", courge: "480 g", patatedouce: "360 g", raisinsec: "120 g", sucre: "96 g", cannelle: "6 g", muscade: "3.6 g", sel: "12 g" },
+      { nb: 13, farinemais: "650 g", noixcoco: "260 g", courge: "520 g", patatedouce: "390 g", raisinsec: "130 g", sucre: "104 g", cannelle: "6.5 g", muscade: "3.9 g", sel: "13 g" },
+      { nb: 14, farinemais: "700 g", noixcoco: "280 g", courge: "560 g", patatedouce: "420 g", raisinsec: "140 g", sucre: "112 g", cannelle: "7 g", muscade: "4.2 g", sel: "14 g" },
+      { nb: 15, farinemais: "750 g", noixcoco: "300 g", courge: "600 g", patatedouce: "450 g", raisinsec: "150 g", sucre: "120 g", cannelle: "7.5 g", muscade: "4.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎃", titre: "Le potiron", detail: "Râpez le potiron, la patate douce et la noix de coco, et faites-les mêler.", badge: null },
+      { icone: "🌽", titre: "La semoule", detail: "Mélangez avec la semoule de maïs, le sucre, les épices et les raisins secs.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Ajoutez un peu d'eau (ou de lait de coco) et de beurre, en une pâte épaisse.", badge: null },
+      { icone: "🍃", titre: "Emballer", detail: "Déposez des portions sur des feuilles de bananier et repliez-les en papillotes.", badge: null },
+      { icone: "🎁", titre: "Ficeler", detail: "Fermez bien chaque paquet.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Faites cuire les paquets à la vapeur jusqu'à ce que la pâte soit ferme et cuite.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Ouvrez la feuille : la conkie est moelleuse et parfumée. Sucrée et vapeur — les conkies de Saint-Kitts.", badge: null }
+    ]
+  },
 });

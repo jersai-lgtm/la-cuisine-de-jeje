@@ -2976,4 +2976,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chauds. Croquants et moelleux — les ulkoy de Palaos.", badge: null }
     ]
   },
+  calentita: {
+    dateAjout: "2026-07-16T10:00:00",
+    nom: "Calentita",
+    cat: "aperitifs", pays: "gibraltar",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Calentita — le « plat national » de Gibraltar : une galette dorée à base de farine de pois chiche, d'eau et d'huile d'olive, cuite au four jusqu'à être moelleuse dedans et croustillante dessus, bien poivrée. Héritage génois (cousine de la socca et de la farinata), elle se vend en parts, chaude, dans les rues du Rocher.",
+    tableauCalentita: [
+      { nb: 1, farinepoischiche: "70 g", huileolive: "12 ml", poivre: "1 g", sel: "2 g" },
+      { nb: 2, farinepoischiche: "140 g", huileolive: "24 ml", poivre: "2 g", sel: "4 g" },
+      { nb: 3, farinepoischiche: "210 g", huileolive: "36 ml", poivre: "3 g", sel: "6 g" },
+      { nb: 4, farinepoischiche: "280 g", huileolive: "48 ml", poivre: "4 g", sel: "8 g" },
+      { nb: 5, farinepoischiche: "350 g", huileolive: "60 ml", poivre: "5 g", sel: "10 g" },
+      { nb: 6, farinepoischiche: "420 g", huileolive: "72 ml", poivre: "6 g", sel: "12 g" },
+      { nb: 7, farinepoischiche: "490 g", huileolive: "84 ml", poivre: "7 g", sel: "14 g" },
+      { nb: 8, farinepoischiche: "560 g", huileolive: "96 ml", poivre: "8 g", sel: "16 g" },
+      { nb: 9, farinepoischiche: "630 g", huileolive: "108 ml", poivre: "9 g", sel: "18 g" },
+      { nb: 10, farinepoischiche: "700 g", huileolive: "120 ml", poivre: "10 g", sel: "20 g" },
+      { nb: 11, farinepoischiche: "770 g", huileolive: "132 ml", poivre: "11 g", sel: "22 g" },
+      { nb: 12, farinepoischiche: "840 g", huileolive: "144 ml", poivre: "12 g", sel: "24 g" },
+      { nb: 13, farinepoischiche: "910 g", huileolive: "156 ml", poivre: "13 g", sel: "26 g" },
+      { nb: 14, farinepoischiche: "980 g", huileolive: "168 ml", poivre: "14 g", sel: "28 g" },
+      { nb: 15, farinepoischiche: "1050 g", huileolive: "180 ml", poivre: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Délayez la farine de pois chiche dans l'eau, en fouettant pour éviter les grumeaux.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer la pâte (idéalement 1h) pour qu'elle s'homogénéise.", badge: null },
+      { icone: "🫒", titre: "L'huile", detail: "Ajoutez l'huile d'olive, le sel et beaucoup de poivre.", badge: null },
+      { icone: "🔥", titre: "Le plat", detail: "Huilez un plat et versez-y la pâte fluide (couche fine).", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four chaud jusqu'à ce que le dessus soit doré et le cœur pris et moelleux.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Laissez tiédir légèrement et découpez en parts.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaude, bien poivrée. Moelleuse et dorée — la calentita de Gibraltar.", badge: null }
+    ]
+  },
 });

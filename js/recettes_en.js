@@ -73444,5 +73444,345 @@ window.RECETTES_EN = {
     "detail": "Add the chilli and serve with white rice. Rich and creamy — the caldo de mancarra of Guinea-Bissau."
    }
   ]
+ },
+ "calentita": {
+  "nom": "Calentita",
+  "description": "Calentita — the 'national dish' of Gibraltar: a golden bake of chickpea flour, water and olive oil, baked until soft inside and crisp on top, well peppered. A Genoese legacy (cousin of socca and farinata), it's sold in slices, hot, in the streets of the Rock.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Loosen the chickpea flour in water, whisking to avoid lumps."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest (ideally 1h) so it settles."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Add the olive oil, salt and plenty of pepper."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Oil a dish and pour in the fluid batter (thin layer)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a hot oven until the top is golden and the centre set and soft."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let it cool slightly and cut into slices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, well peppered. Soft and golden — the calentita of Gibraltar."
+   }
+  ]
+ },
+ "kelaguen": {
+  "nom": "Kelaguen",
+  "description": "Kelaguen — the lemon-and-coconut chicken of Micronesia: grilled then chopped chicken, 'cooked' cold by lemon juice, mixed with grated coconut, green onion and chilli. Fresh, tangy and fragrant, it's the signature dish of the Chamorros and the Mariana Islands, served with rice or flatbreads.",
+  "etapes": [
+   {
+    "titre": "Grill",
+    "detail": "Grill the chicken until cooked and lightly smoky, then let it cool."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Cut the chicken into tiny pieces (or shred it)."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Drizzle generously with lemon juice: the acidity 're-cooks' and scents the chicken."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Add the freshly grated coconut."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the sliced green onion and chilli."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and mix, then let it rest cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold, with rice or flatbreads. Fresh and tangy — the kelaguen of Micronesia."
+   }
+  ]
+ },
+ "kisrasud": {
+  "nom": "Kisra",
+  "description": "Kisra — the sorghum crêpe and its stew of South Sudan: thin fermented sorghum (or millet) crêpes, served with a tomato-and-okra meat stew ('mullah'). Tangy and soft, the kisra is torn to scoop up the stew, a convivial everyday dish of South Sudan.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Loosen the sorghum (or millet) meal/flour in water and let it ferment (ideally overnight)."
+   },
+   {
+    "titre": "The crêpes",
+    "detail": "Pour thin layers onto a hot griddle and cook thin, supple crêpes."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Sauté the meat with the onion until it colours."
+   },
+   {
+    "titre": "The stew",
+    "detail": "Add the tomato, garlic and spices, and simmer."
+   },
+   {
+    "titre": "The okra",
+    "detail": "Add the okra (which lightly binds the stew)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the meat is tender and the sauce unctuous."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the kisra crêpes with the stew, to tear and scoop. Tangy and soft — the kisra of South Sudan."
+   }
+  ]
+ },
+ "dambouniger": {
+  "nom": "Dambou",
+  "description": "Dambou — the leaf couscous of Niger: semolina mixed with finely chopped green leaves (moringa, spinach), steamed, then seasoned with an onion, tomato and oil sauce. Light, green and fragrant, it's a typically Nigerien dish, healthy and filling.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and very finely chop the green leaves (moringa or spinach)."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Mix the chopped leaves with the semolina and a little oil, rubbing to coat the grains."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam this green mix (couscoussier), in several rounds, until the semolina is tender."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion, garlic and tomato into a sauce."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the chilli and a little water."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Separate the dambou grains and drizzle them with the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, green and fragrant. Light and healthy — the dambou of Niger."
+   }
+  ]
+ },
+ "sancochedominique": {
+  "nom": "Sancoche",
+  "description": "Sancoche — the meal-soup of Dominica: a thick broth where roots (yam, cassava), plantain, meat, coconut milk and dough dumplings simmer. Filling, comforting and complete, it's the Sunday dish of the Caribbean 'Nature Isle'.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Sauté the meat (or desalt salt pork) with the onion and garlic."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water and bring to a simmer."
+   },
+   {
+    "titre": "The roots",
+    "detail": "Add the roots (yam, cassava) and plantain in large chunks."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and thyme."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Add small dough dumplings (flour, water)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the roots are tender and the broth thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, as a one-pot meal. Filling and complete — the sancoche of Dominica."
+   }
+  ]
+ },
+ "conkies": {
+  "nom": "Conkies",
+  "description": "Conkies — the steamed corn sweet of Saint Kitts: a dough of cornmeal, coconut and pumpkin, sweetened and spiced (cinnamon, nutmeg), studded with raisins, wrapped in a banana leaf and steamed. Soft and fragrant, it's traditionally made for celebrations.",
+  "etapes": [
+   {
+    "titre": "The pumpkin",
+    "detail": "Grate the pumpkin, sweet potato and coconut, and combine them."
+   },
+   {
+    "titre": "The cornmeal",
+    "detail": "Mix with the cornmeal, sugar, spices and raisins."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Add a little water (or coconut milk) and butter, into a thick dough."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place portions on banana leaves and fold them into parcels."
+   },
+   {
+    "titre": "Tie",
+    "detail": "Close each parcel well."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the parcels until the dough is firm and cooked."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the leaf: the conkie is soft and fragrant. Sweet and steamed — the conkies of Saint Kitts."
+   }
+  ]
+ },
+ "mechouimaurit": {
+  "nom": "Mauritanian Mechoui",
+  "description": "Mauritanian mechoui — the roasted lamb of the desert: lamb rubbed with garlic, cumin and spices, then slow-roasted until tender and golden, the skin crisp. A dish of hospitality and celebration of the Sahara tents, it's shared by hand, often with rice or bread.",
+  "etapes": [
+   {
+    "titre": "The spices",
+    "detail": "Make a paste of garlic, cumin, coriander, turmeric and oil."
+   },
+   {
+    "titre": "Rub",
+    "detail": "Rub the lamb generously with this spice paste."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Let it marinate for several hours so the flavours penetrate."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Slow-roast the lamb, basting with its juices, until tender."
+   },
+   {
+    "titre": "The skin",
+    "detail": "Raise the temperature at the end to brown and crisp the skin."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the meat rest before carving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the tender lamb to share, with rice or bread. Tender and golden — the Mauritanian mechoui."
+   }
+  ]
+ },
+ "luwallis": {
+  "nom": "Lu",
+  "description": "Lu — the coconut taro leaves of Wallis and Futuna: taro leaves (here spinach) wrapping meat and coconut milk, cooked in a parcel until melting. Unctuous, green and creamy, it's a sharing dish of the Pacific, a cousin of palusami, traditionally cooked in a Polynesian oven (umu).",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash large taro leaves (or spinach) and remove the tough veins."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mince the meat (or crumble corned beef) with a little onion and garlic."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Mix the filling with coconut milk and salt."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place the filling in the centre of a parcel of layered taro leaves."
+   },
+   {
+    "titre": "Close",
+    "detail": "Fold the leaves into a well-closed parcel (or in paper)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook in the oven (or steam) until the leaves are soft and the cream set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the parcel: it's unctuous and creamy. Green and melting — the lu of Wallis and Futuna."
+   }
+  ]
+ },
+ "foutiguinee": {
+  "nom": "Fouti",
+  "description": "Fouti — the Guinean 'fat rice': rice cooked in an oily tomato sauce, with fish (or meat) and vegetables, until each grain is coloured and fragrant. Generous, colourful and convivial, it's Guinea's great sharing dish, a cousin of thieboudienne and jollof.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Sauté the seasoned fish (or meat), then set it aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, pepper and garlic."
+   },
+   {
+    "titre": "The tomato sauce",
+    "detail": "Add the tomato and paste, and reduce in the oil."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water, the chilli, and bring to a simmer."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice into the tomato sauce and stir to coat."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook until the rice absorbs the sauce and is coloured."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Arrange the fish over the fat rice and serve. Generous and colourful — the fouti of Guinea."
+   }
+  ]
+ },
+ "morogobotswana": {
+  "nom": "Morogo",
+  "description": "Morogo — the wild greens of Botswana: green leaves (spinach, amaranth) simmered with onion, tomato and sometimes a little groundnut, into a simple, tasty green dish. Healthy and comforting, morogo accompanies 'pap' (maize porridge) on the tables of Botswana and Southern Africa.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and shred the green leaves (spinach, amaranth)."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the onion in a little oil until tender."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and garlic, and let them melt."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the green leaves and let them wilt."
+   },
+   {
+    "titre": "The groundnut",
+    "detail": "Stir in a little groundnut paste (optional) for creaminess."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the leaves are tender and the sauce bound."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with pap (maize porridge). Healthy and tasty — the morogo of Botswana."
+   }
+  ]
  }
 };

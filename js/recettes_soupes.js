@@ -5153,4 +5153,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Ajoutez un trait de rhum en fin de cuisson et servez chaud. Épicé et profond — le goat water de Montserrat.", badge: null }
     ]
   },
+  sancochedominique: {
+    dateAjout: "2026-07-16T10:04:00",
+    nom: "Sancoche",
+    cat: "soupes", pays: "dominique",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥣",
+    description: "Sancoche — la soupe-repas de la Dominique : un bouillon épais où mijotent des racines (igname, manioc), de la banane plantain, de la viande, du lait de coco et des boulettes de pâte. Nourrissant, réconfortant et complet, c'est le plat du dimanche de l'« île nature » des Caraïbes.",
+    tableauSancochedominique: [
+      { nb: 1, boeuf: "80 g", manioc: "50 g", plantain: "40 g", igname: "40 g", laitcoco: "50 ml", farine: "20 g", oignon: "25 g", ail: "1", thym: "1 g", sel: "2 g" },
+      { nb: 2, boeuf: "160 g", manioc: "100 g", plantain: "80 g", igname: "80 g", laitcoco: "100 ml", farine: "40 g", oignon: "50 g", ail: "2", thym: "2 g", sel: "4 g" },
+      { nb: 3, boeuf: "240 g", manioc: "150 g", plantain: "120 g", igname: "120 g", laitcoco: "150 ml", farine: "60 g", oignon: "75 g", ail: "3", thym: "3 g", sel: "6 g" },
+      { nb: 4, boeuf: "320 g", manioc: "200 g", plantain: "160 g", igname: "160 g", laitcoco: "200 ml", farine: "80 g", oignon: "100 g", ail: "4", thym: "4 g", sel: "8 g" },
+      { nb: 5, boeuf: "400 g", manioc: "250 g", plantain: "200 g", igname: "200 g", laitcoco: "250 ml", farine: "100 g", oignon: "125 g", ail: "5", thym: "5 g", sel: "10 g" },
+      { nb: 6, boeuf: "480 g", manioc: "300 g", plantain: "240 g", igname: "240 g", laitcoco: "300 ml", farine: "120 g", oignon: "150 g", ail: "6", thym: "6 g", sel: "12 g" },
+      { nb: 7, boeuf: "560 g", manioc: "350 g", plantain: "280 g", igname: "280 g", laitcoco: "350 ml", farine: "140 g", oignon: "175 g", ail: "7", thym: "7 g", sel: "14 g" },
+      { nb: 8, boeuf: "640 g", manioc: "400 g", plantain: "320 g", igname: "320 g", laitcoco: "400 ml", farine: "160 g", oignon: "200 g", ail: "8", thym: "8 g", sel: "16 g" },
+      { nb: 9, boeuf: "720 g", manioc: "450 g", plantain: "360 g", igname: "360 g", laitcoco: "450 ml", farine: "180 g", oignon: "225 g", ail: "9", thym: "9 g", sel: "18 g" },
+      { nb: 10, boeuf: "800 g", manioc: "500 g", plantain: "400 g", igname: "400 g", laitcoco: "500 ml", farine: "200 g", oignon: "250 g", ail: "10", thym: "10 g", sel: "20 g" },
+      { nb: 11, boeuf: "880 g", manioc: "550 g", plantain: "440 g", igname: "440 g", laitcoco: "550 ml", farine: "220 g", oignon: "275 g", ail: "11", thym: "11 g", sel: "22 g" },
+      { nb: 12, boeuf: "960 g", manioc: "600 g", plantain: "480 g", igname: "480 g", laitcoco: "600 ml", farine: "240 g", oignon: "300 g", ail: "12", thym: "12 g", sel: "24 g" },
+      { nb: 13, boeuf: "1040 g", manioc: "650 g", plantain: "520 g", igname: "520 g", laitcoco: "650 ml", farine: "260 g", oignon: "325 g", ail: "13", thym: "13 g", sel: "26 g" },
+      { nb: 14, boeuf: "1120 g", manioc: "700 g", plantain: "560 g", igname: "560 g", laitcoco: "700 ml", farine: "280 g", oignon: "350 g", ail: "14", thym: "14 g", sel: "28 g" },
+      { nb: 15, boeuf: "1200 g", manioc: "750 g", plantain: "600 g", igname: "600 g", laitcoco: "750 ml", farine: "300 g", oignon: "375 g", ail: "15", thym: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "La viande", detail: "Faites revenir la viande (ou dessalez le porc salé) avec l'oignon et l'ail.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Mouillez d'eau et portez à frémissement.", badge: null },
+      { icone: "🍠", titre: "Les racines", detail: "Ajoutez les racines (igname, manioc) et la banane plantain en gros morceaux.", badge: null },
+      { icone: "🥥", titre: "Le lait de coco", detail: "Versez le lait de coco et le thym.", badge: null },
+      { icone: "🥟", titre: "Les boulettes", detail: "Ajoutez de petites boulettes de pâte (farine, eau).", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que les racines soient tendres et le bouillon épais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, en plat unique. Nourrissant et complet — le sancoche de la Dominique.", badge: null }
+    ]
+  },
 });
