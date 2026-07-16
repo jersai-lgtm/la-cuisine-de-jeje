@@ -5116,4 +5116,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, seul ou avec du poisson frit. Nourrissant et crémeux — le metemgee guyanien.", badge: null }
     ]
   },
+  goatwater: {
+    dateAjout: "2026-07-15T12:02:00",
+    nom: "Goat Water",
+    cat: "soupes", pays: "montserrat",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐐",
+    description: "Goat water — le ragoût national de Montserrat : un ragoût de chèvre (ici de l'agneau) mijoté longuement avec de la tomate, du thym, des clous de girofle et un trait de rhum, épaissi de boulettes de pâte et de fruit à pain. Épicé, profond et réconfortant, il est servi lors des grandes occasions sur l'île.",
+    tableauGoatwater: [
+      { nb: 1, agneau: "110 g", plantainvert: "50 g", tomate: "40 g", oignon: "25 g", ail: "1", thym: "1 g", clougirofle: "0.2 g", farine: "20 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, agneau: "220 g", plantainvert: "100 g", tomate: "80 g", oignon: "50 g", ail: "2", thym: "2 g", clougirofle: "0.4 g", farine: "40 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, agneau: "330 g", plantainvert: "150 g", tomate: "120 g", oignon: "75 g", ail: "3", thym: "3 g", clougirofle: "0.6 g", farine: "60 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, agneau: "440 g", plantainvert: "200 g", tomate: "160 g", oignon: "100 g", ail: "4", thym: "4 g", clougirofle: "0.8 g", farine: "80 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, agneau: "550 g", plantainvert: "250 g", tomate: "200 g", oignon: "125 g", ail: "5", thym: "5 g", clougirofle: "1 g", farine: "100 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, agneau: "660 g", plantainvert: "300 g", tomate: "240 g", oignon: "150 g", ail: "6", thym: "6 g", clougirofle: "1.2 g", farine: "120 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, agneau: "770 g", plantainvert: "350 g", tomate: "280 g", oignon: "175 g", ail: "7", thym: "7 g", clougirofle: "1.4 g", farine: "140 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, agneau: "880 g", plantainvert: "400 g", tomate: "320 g", oignon: "200 g", ail: "8", thym: "8 g", clougirofle: "1.6 g", farine: "160 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, agneau: "990 g", plantainvert: "450 g", tomate: "360 g", oignon: "225 g", ail: "9", thym: "9 g", clougirofle: "1.8 g", farine: "180 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, agneau: "1100 g", plantainvert: "500 g", tomate: "400 g", oignon: "250 g", ail: "10", thym: "10 g", clougirofle: "2 g", farine: "200 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, agneau: "1210 g", plantainvert: "550 g", tomate: "440 g", oignon: "275 g", ail: "11", thym: "11 g", clougirofle: "2.2 g", farine: "220 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, agneau: "1320 g", plantainvert: "600 g", tomate: "480 g", oignon: "300 g", ail: "12", thym: "12 g", clougirofle: "2.4 g", farine: "240 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, agneau: "1430 g", plantainvert: "650 g", tomate: "520 g", oignon: "325 g", ail: "13", thym: "13 g", clougirofle: "2.6 g", farine: "260 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, agneau: "1540 g", plantainvert: "700 g", tomate: "560 g", oignon: "350 g", ail: "14", thym: "14 g", clougirofle: "2.8 g", farine: "280 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, agneau: "1650 g", plantainvert: "750 g", tomate: "600 g", oignon: "375 g", ail: "15", thym: "15 g", clougirofle: "3 g", farine: "300 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐐", titre: "La viande", detail: "Faites dorer la viande de chèvre (ou d'agneau) en morceaux avec l'oignon.", badge: null },
+      { icone: "🌿", titre: "Les aromates", detail: "Ajoutez l'ail, le thym et les clous de girofle.", badge: null },
+      { icone: "🍅", titre: "Le fond", detail: "Ajoutez la tomate et mouillez d'eau, puis portez à frémissement.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter longuement jusqu'à ce que la viande commence à être tendre.", badge: null },
+      { icone: "🍠", titre: "Le fruit à pain", detail: "Ajoutez le fruit à pain (ou la banane plantain verte) en morceaux.", badge: null },
+      { icone: "🥟", titre: "Les boulettes", detail: "Ajoutez de petites boulettes de pâte (farine, eau) et laissez épaissir le bouillon.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Ajoutez un trait de rhum en fin de cuisson et servez chaud. Épicé et profond — le goat water de Montserrat.", badge: null }
+    ]
+  },
 });

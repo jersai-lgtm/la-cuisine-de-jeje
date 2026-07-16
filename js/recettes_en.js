@@ -73104,5 +73104,345 @@ window.RECETTES_EN = {
     "detail": "Serve this sweet, fragrant rice, traditionally with fried fish. Gentle and fragrant — the Bahraini muhammar."
    }
   ]
+ },
+ "barbagiuan": {
+  "nom": "Barbagiuan",
+  "description": "Barbagiuan — the stuffed fritter of Monaco: large fried ravioli filled with chard, ricotta and parmesan, golden and crisp. An emblematic specialty of the principality (the name means 'Uncle John'), they're eaten as an appetizer or starter, crisp outside and soft inside.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Sauté the chopped chard with the onion, then let it cool and squeeze out the water."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Mix the chard with the ricotta, parmesan, egg and a little nutmeg."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Make a thin dough (flour, olive oil, water, salt) and let it rest."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough thin and cut squares (or rounds)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a knob of filling on each square and close into well-sealed parcels."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the barbagiuans in hot oil until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, as an appetizer. Crisp and soft — the barbagiuans of Monaco."
+   }
+  ]
+ },
+ "trinxat": {
+  "nom": "Trinxat",
+  "description": "Trinxat — the mountain cake of Andorra: winter cabbage and potatoes mashed together with crisp bacon, then pan-fried into a golden cake. Rustic, comforting and peasant, it's the dish of the Andorran Pyrenees, perfect in cold weather.",
+  "etapes": [
+   {
+    "titre": "The vegetables",
+    "detail": "Boil the potatoes and cabbage until very tender."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Sauté the bacon with the garlic until crisp."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Roughly mash the potatoes and cabbage together ('trinxat' = 'chopped')."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold half the bacon and garlic into the mash."
+   },
+   {
+    "titre": "The cake",
+    "detail": "Spread the mash in a hot pan and brown it on one side."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip the cake to brown the other side, crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with the rest of the crisp bacon. Rustic and comforting — the Andorran trinxat."
+   }
+  ]
+ },
+ "goatwater": {
+  "nom": "Goat Water",
+  "description": "Goat water — the national stew of Montserrat: a goat (here lamb) stew long-simmered with tomato, thyme, cloves and a splash of rum, thickened with dough dumplings and breadfruit. Spicy, deep and comforting, it's served on grand occasions on the island.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Brown the goat (or lamb) pieces with the onion."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the garlic, thyme and cloves."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the tomato and cover with water, then bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length until the meat starts to be tender."
+   },
+   {
+    "titre": "The breadfruit",
+    "detail": "Add the breadfruit (or green plantain) in chunks."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Add small dough dumplings (flour, water) and let the broth thicken."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a splash of rum at the end and serve hot. Spicy and deep — the goat water of Montserrat."
+   }
+  ]
+ },
+ "likhobe": {
+  "nom": "Likhobe",
+  "description": "Likhobe — the samp and beans of Lesotho: cracked corn (samp) and beans simmered together at length until tender and creamy, brightened with onion and butter. Filling, economical and comforting, it's a staple of the Lesotho mountains, often served with a sauce or meat.",
+  "etapes": [
+   {
+    "titre": "The samp",
+    "detail": "Soak the cracked corn (samp) and beans for several hours (or overnight)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Put them to cook in plenty of water, at a gentle boil."
+   },
+   {
+    "titre": "Long cooking",
+    "detail": "Cook at length until the corn and beans are tender."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the onion and garlic, and stir them in."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Add the butter and lightly mash for a creamy texture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and simmer a little more to bind."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, alone or with a sauce/meat. Filling and comforting — the likhobe of Lesotho."
+   }
+  ]
+ },
+ "izaquente": {
+  "nom": "Izaquente",
+  "description": "Izaquente — the palm-oil chicken of São Tomé: chicken simmered in a red palm-oil sauce with green leaves, tomato, onion and okra. Rich, fragrant and island-style, it's a generous dish of the equatorial archipelago of São Tomé and Príncipe, served with rice or banana.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken pieces with the onion."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the tomato and garlic, and let them melt."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Add the red palm oil, which gives colour and richness."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little water and simmer."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add the green leaves and okra (which thickens)."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Simmer until the chicken is tender and the sauce coating."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add the chilli and serve with rice. Rich and fragrant — the izaquente of São Tomé."
+   }
+  ]
+ },
+ "ndagala": {
+  "nom": "Ndagala",
+  "description": "Ndagala — the little fried fish of Burundi: small fish from Lake Tanganyika (whitebait-style), floured and fried until crisp, served with an onion, tomato and lemon sauce. Crunchy and tasty, they're a must on the lake shores, alongside ugali.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Clean the small fish and dry them well."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Dredge them in salted flour."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry them in hot oil until golden and crisp, then drain."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion, garlic and tomato into a sauce."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the chilli and a squeeze of lemon."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the fried fish to the sauce (or serve the sauce separately)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with ugali or rice. Crunchy and tasty — the ndagala of Burundi."
+   }
+  ]
+ },
+ "ulkoy": {
+  "nom": "Ulkoy",
+  "description": "Ulkoy — the squash and shrimp fritters of Palau: grated squash mixed with shrimp and a little batter, fried into small golden crisp fritters. A Pacific-island specialty of Palau, they're eaten as a nibble or a side, crisp outside and soft inside.",
+  "etapes": [
+   {
+    "titre": "The squash",
+    "detail": "Finely grate the squash (pumpkin) and squeeze out excess water."
+   },
+   {
+    "titre": "The shrimp",
+    "detail": "Peel and roughly chop the shrimp."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix the squash, shrimp, onion, flour and egg into a thick batter."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper the batter."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop spoonfuls of batter and fry until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot. Crisp and soft — the ulkoy of Palau."
+   }
+  ]
+ },
+ "kandacentrafrique": {
+  "nom": "Kanda ti Nyma",
+  "description": "Kanda ti nyma — the Central African meatballs: beef meatballs simmered in a rich sauce of ground squash seeds (here groundnut paste), spinach and palm oil. Unctuous, filling and deeply savoury, it's a feast dish of the Central African Republic, served with cassava.",
+  "etapes": [
+   {
+    "titre": "The meatballs",
+    "detail": "Season the minced beef and shape small meatballs."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown them quickly in the pan."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and tomato in palm oil."
+   },
+   {
+    "titre": "The seeds",
+    "detail": "Loosen the groundnut paste (or ground squash seeds) in a little water and stir it in."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Add the spinach and chilli."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the meatballs and simmer until the sauce thickens."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with cassava or rice. Unctuous and filling — the Central African kanda ti nyma."
+   }
+  ]
+ },
+ "breadfruitjackfish": {
+  "nom": "Breadfruit and Jackfish",
+  "description": "Breadfruit and jackfish — the national dish of Saint Vincent: roasted breadfruit, served with fried fish ('jackfish') and an onion, pepper and tomato sauce. Salty, filling and Caribbean, it's the pride dish of the Grenadines, often at breakfast or as a full meal.",
+  "etapes": [
+   {
+    "titre": "The breadfruit",
+    "detail": "Roast (or boil) the breadfruit (or green plantain), then slice it."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Season the fish with lemon and salt, then fry it until golden."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion, pepper, tomato and garlic."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the chilli and a squeeze of lemon."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat the fried fish with the sauce (or let it simmer briefly in it)."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange the roasted breadfruit and the fish in sauce side by side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot. Salty and filling — the national dish of Saint Vincent."
+   }
+  ]
+ },
+ "caldomancarra": {
+  "nom": "Caldo de Mancarra",
+  "description": "Caldo de mancarra — the groundnut stew of Guinea-Bissau: chicken simmered in a silky sauce of groundnut paste, tomato and palm oil, brightened with chilli. Rich, creamy and fragrant, it's a great Bissau-Guinean classic, served with white rice.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken with the onion."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the tomato and garlic, and let them melt."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Add a drizzle of palm oil for colour."
+   },
+   {
+    "titre": "The groundnut",
+    "detail": "Loosen the groundnut paste in a little water and stir it into the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add liquid and simmer until the chicken is tender."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Let the sauce reduce and thicken, silky."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add the chilli and serve with white rice. Rich and creamy — the caldo de mancarra of Guinea-Bissau."
+   }
+  ]
  }
 };

@@ -2902,4 +2902,78 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud avec une sauce rose piquante (mayo, ketchup, citron vert). Croustillants et moelleux — l'apéritif des Bahamas.", badge: null }
     ]
   },
+  barbagiuan: {
+    dateAjout: "2026-07-15T12:00:00",
+    nom: "Barbagiuan",
+    cat: "aperitifs", pays: "monaco",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Barbagiuan — le beignet farci de Monaco : de grands raviolis frits garnis de blettes, de ricotta et de parmesan, dorés et croustillants. Spécialité emblématique de la principauté (le nom signifie « oncle Jean »), ils se dégustent en apéritif ou en entrée, croustillants dehors et fondants dedans.",
+    tableauBarbagiuan: [
+      { nb: 1, farine: "55 g", blettes: "50 g", ricotta: "40 g", parmesan: "12 g", oeufs: "½", oignon: "15 g", huileolive: "12 ml", sel: "1 g" },
+      { nb: 2, farine: "110 g", blettes: "100 g", ricotta: "80 g", parmesan: "24 g", oeufs: "1", oignon: "30 g", huileolive: "24 ml", sel: "2 g" },
+      { nb: 3, farine: "165 g", blettes: "150 g", ricotta: "120 g", parmesan: "36 g", oeufs: "1½", oignon: "45 g", huileolive: "36 ml", sel: "3 g" },
+      { nb: 4, farine: "220 g", blettes: "200 g", ricotta: "160 g", parmesan: "48 g", oeufs: "2", oignon: "60 g", huileolive: "48 ml", sel: "4 g" },
+      { nb: 5, farine: "275 g", blettes: "250 g", ricotta: "200 g", parmesan: "60 g", oeufs: "2½", oignon: "75 g", huileolive: "60 ml", sel: "5 g" },
+      { nb: 6, farine: "330 g", blettes: "300 g", ricotta: "240 g", parmesan: "72 g", oeufs: "3", oignon: "90 g", huileolive: "72 ml", sel: "6 g" },
+      { nb: 7, farine: "385 g", blettes: "350 g", ricotta: "280 g", parmesan: "84 g", oeufs: "3½", oignon: "105 g", huileolive: "84 ml", sel: "7 g" },
+      { nb: 8, farine: "440 g", blettes: "400 g", ricotta: "320 g", parmesan: "96 g", oeufs: "4", oignon: "120 g", huileolive: "96 ml", sel: "8 g" },
+      { nb: 9, farine: "495 g", blettes: "450 g", ricotta: "360 g", parmesan: "108 g", oeufs: "4½", oignon: "135 g", huileolive: "108 ml", sel: "9 g" },
+      { nb: 10, farine: "550 g", blettes: "500 g", ricotta: "400 g", parmesan: "120 g", oeufs: "5", oignon: "150 g", huileolive: "120 ml", sel: "10 g" },
+      { nb: 11, farine: "605 g", blettes: "550 g", ricotta: "440 g", parmesan: "132 g", oeufs: "5½", oignon: "165 g", huileolive: "132 ml", sel: "11 g" },
+      { nb: 12, farine: "660 g", blettes: "600 g", ricotta: "480 g", parmesan: "144 g", oeufs: "6", oignon: "180 g", huileolive: "144 ml", sel: "12 g" },
+      { nb: 13, farine: "715 g", blettes: "650 g", ricotta: "520 g", parmesan: "156 g", oeufs: "6½", oignon: "195 g", huileolive: "156 ml", sel: "13 g" },
+      { nb: 14, farine: "770 g", blettes: "700 g", ricotta: "560 g", parmesan: "168 g", oeufs: "7", oignon: "210 g", huileolive: "168 ml", sel: "14 g" },
+      { nb: 15, farine: "825 g", blettes: "750 g", ricotta: "600 g", parmesan: "180 g", oeufs: "7½", oignon: "225 g", huileolive: "180 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "La farce", detail: "Faites revenir les blettes hachées avec l'oignon, puis laissez tiédir et pressez pour retirer l'eau.", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Mélangez les blettes avec la ricotta, le parmesan, l'œuf et un peu de muscade.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Préparez une pâte fine (farine, huile d'olive, eau, sel) et laissez-la reposer.", badge: null },
+      { icone: "🫓", titre: "Abaisser", detail: "Abaissez la pâte finement et découpez des carrés (ou des ronds).", badge: null },
+      { icone: "🥟", titre: "Farcir", detail: "Déposez une noix de farce sur chaque carré et refermez en chaussons bien scellés.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les barbagiuans dans l'huile chaude jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chauds, en apéritif. Croustillants et fondants — les barbagiuans de Monaco.", badge: null }
+    ]
+  },
+  ulkoy: {
+    dateAjout: "2026-07-15T12:06:00",
+    nom: "Ulkoy",
+    cat: "aperitifs", pays: "palau",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🦐",
+    description: "Ulkoy — les beignets de courge et crevettes de Palaos : de la courge râpée mêlée de crevettes et d'un peu de pâte, frite en petits beignets dorés et croustillants. Spécialité des îles du Pacifique de Palaos, ils se dégustent en amuse-bouche ou en accompagnement, croquants dehors et moelleux dedans.",
+    tableauUlkoy: [
+      { nb: 1, courge: "60 g", crevette: "50 g", farine: "30 g", oeufs: "½", oignon: "15 g", huileolive: "12 ml", sel: "1 g" },
+      { nb: 2, courge: "120 g", crevette: "100 g", farine: "60 g", oeufs: "1", oignon: "30 g", huileolive: "24 ml", sel: "2 g" },
+      { nb: 3, courge: "180 g", crevette: "150 g", farine: "90 g", oeufs: "1½", oignon: "45 g", huileolive: "36 ml", sel: "3 g" },
+      { nb: 4, courge: "240 g", crevette: "200 g", farine: "120 g", oeufs: "2", oignon: "60 g", huileolive: "48 ml", sel: "4 g" },
+      { nb: 5, courge: "300 g", crevette: "250 g", farine: "150 g", oeufs: "2½", oignon: "75 g", huileolive: "60 ml", sel: "5 g" },
+      { nb: 6, courge: "360 g", crevette: "300 g", farine: "180 g", oeufs: "3", oignon: "90 g", huileolive: "72 ml", sel: "6 g" },
+      { nb: 7, courge: "420 g", crevette: "350 g", farine: "210 g", oeufs: "3½", oignon: "105 g", huileolive: "84 ml", sel: "7 g" },
+      { nb: 8, courge: "480 g", crevette: "400 g", farine: "240 g", oeufs: "4", oignon: "120 g", huileolive: "96 ml", sel: "8 g" },
+      { nb: 9, courge: "540 g", crevette: "450 g", farine: "270 g", oeufs: "4½", oignon: "135 g", huileolive: "108 ml", sel: "9 g" },
+      { nb: 10, courge: "600 g", crevette: "500 g", farine: "300 g", oeufs: "5", oignon: "150 g", huileolive: "120 ml", sel: "10 g" },
+      { nb: 11, courge: "660 g", crevette: "550 g", farine: "330 g", oeufs: "5½", oignon: "165 g", huileolive: "132 ml", sel: "11 g" },
+      { nb: 12, courge: "720 g", crevette: "600 g", farine: "360 g", oeufs: "6", oignon: "180 g", huileolive: "144 ml", sel: "12 g" },
+      { nb: 13, courge: "780 g", crevette: "650 g", farine: "390 g", oeufs: "6½", oignon: "195 g", huileolive: "156 ml", sel: "13 g" },
+      { nb: 14, courge: "840 g", crevette: "700 g", farine: "420 g", oeufs: "7", oignon: "210 g", huileolive: "168 ml", sel: "14 g" },
+      { nb: 15, courge: "900 g", crevette: "750 g", farine: "450 g", oeufs: "7½", oignon: "225 g", huileolive: "180 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎃", titre: "La courge", detail: "Râpez finement la courge (potiron) et pressez pour retirer l'excès d'eau.", badge: null },
+      { icone: "🦐", titre: "Les crevettes", detail: "Décortiquez et hachez grossièrement les crevettes.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la courge, les crevettes, l'oignon, la farine et l'œuf en une pâte épaisse.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez et poivrez la pâte.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍤", titre: "Frire", detail: "Déposez des cuillerées de pâte et faites-les frire jusqu'à ce qu'elles soient dorées.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chauds. Croquants et moelleux — les ulkoy de Palaos.", badge: null }
+    ]
+  },
 });
