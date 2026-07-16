@@ -8454,4 +8454,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Plier et servir", detail: "Repliez la crêpe en demi-lune, laissez fondre la garniture, puis coupez en parts. Moelleuse au centre, croquante sur les bords — la gourmandise de rue de Malaisie.", badge: null }
     ]
   },
+  heavycake: {
+    dateAjout: "2026-07-16T11:03:00",
+    nom: "Heavy Cake",
+    cat: "desserts", pays: "caiman",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍰",
+    description: "Heavy cake — le gâteau dense des îles Caïmans : un gâteau moelleux et fondant à base de manioc râpé et de noix de coco, sucré et épicé (cannelle, muscade), cuit longuement jusqu'à caraméliser sur les bords. Riche, dense (« heavy ») et parfumé, c'est une douceur traditionnelle des Caraïbes.",
+    tableauHeavycake: [
+      { nb: 1, manioc: "90 g", noixcoco: "25 g", sucre: "15 g", beurre: "10 g", cannelle: "0.5 g", muscade: "0.3 g", oeufs: "¼", sel: "1 g" },
+      { nb: 2, manioc: "180 g", noixcoco: "50 g", sucre: "30 g", beurre: "20 g", cannelle: "1 g", muscade: "0.6 g", oeufs: "½", sel: "2 g" },
+      { nb: 3, manioc: "270 g", noixcoco: "75 g", sucre: "45 g", beurre: "30 g", cannelle: "1.5 g", muscade: "0.9 g", oeufs: "¾", sel: "3 g" },
+      { nb: 4, manioc: "360 g", noixcoco: "100 g", sucre: "60 g", beurre: "40 g", cannelle: "2 g", muscade: "1.2 g", oeufs: "1", sel: "4 g" },
+      { nb: 5, manioc: "450 g", noixcoco: "125 g", sucre: "75 g", beurre: "50 g", cannelle: "2.5 g", muscade: "1.5 g", oeufs: "1¼", sel: "5 g" },
+      { nb: 6, manioc: "540 g", noixcoco: "150 g", sucre: "90 g", beurre: "60 g", cannelle: "3 g", muscade: "1.8 g", oeufs: "1½", sel: "6 g" },
+      { nb: 7, manioc: "630 g", noixcoco: "175 g", sucre: "105 g", beurre: "70 g", cannelle: "3.5 g", muscade: "2.1 g", oeufs: "1¾", sel: "7 g" },
+      { nb: 8, manioc: "720 g", noixcoco: "200 g", sucre: "120 g", beurre: "80 g", cannelle: "4 g", muscade: "2.4 g", oeufs: "2", sel: "8 g" },
+      { nb: 9, manioc: "810 g", noixcoco: "225 g", sucre: "135 g", beurre: "90 g", cannelle: "4.5 g", muscade: "2.7 g", oeufs: "2¼", sel: "9 g" },
+      { nb: 10, manioc: "900 g", noixcoco: "250 g", sucre: "150 g", beurre: "100 g", cannelle: "5 g", muscade: "3 g", oeufs: "2½", sel: "10 g" },
+      { nb: 11, manioc: "990 g", noixcoco: "275 g", sucre: "165 g", beurre: "110 g", cannelle: "5.5 g", muscade: "3.3 g", oeufs: "2¾", sel: "11 g" },
+      { nb: 12, manioc: "1080 g", noixcoco: "300 g", sucre: "180 g", beurre: "120 g", cannelle: "6 g", muscade: "3.6 g", oeufs: "3", sel: "12 g" },
+      { nb: 13, manioc: "1170 g", noixcoco: "325 g", sucre: "195 g", beurre: "130 g", cannelle: "6.5 g", muscade: "3.9 g", oeufs: "3¼", sel: "13 g" },
+      { nb: 14, manioc: "1260 g", noixcoco: "350 g", sucre: "210 g", beurre: "140 g", cannelle: "7 g", muscade: "4.2 g", oeufs: "3½", sel: "14 g" },
+      { nb: 15, manioc: "1350 g", noixcoco: "375 g", sucre: "225 g", beurre: "150 g", cannelle: "7.5 g", muscade: "4.5 g", oeufs: "3¾", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Le manioc", detail: "Râpez finement le manioc cru et la noix de coco.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez avec le sucre, le beurre fondu, l'œuf, la cannelle et la muscade, en une pâte épaisse.", badge: null },
+      { icone: "🥥", titre: "Le coco", detail: "Ajoutez un peu de lait de coco pour l'onctuosité, si besoin.", badge: null },
+      { icone: "🔥", titre: "Le moule", detail: "Versez la pâte dans un moule beurré.", badge: null },
+      { icone: "♨️", titre: "Cuisson lente", detail: "Faites cuire longuement à four moyen jusqu'à ce que le gâteau soit pris et doré, les bords caramélisés.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laissez refroidir : le gâteau se raffermit et devient dense.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupez en parts. Dense et parfumé — le heavy cake des Caïmans.", badge: null }
+    ]
+  },
 });

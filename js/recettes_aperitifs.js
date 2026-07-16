@@ -3013,4 +3013,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaude, bien poivrée. Moelleuse et dorée — la calentita de Gibraltar.", badge: null }
     ]
   },
+  piadinasanmarin: {
+    dateAjout: "2026-07-16T11:07:00",
+    nom: "Piadina",
+    cat: "aperitifs", pays: "saintmarin",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Piadina — la galette garnie de Saint-Marin : une fine galette de blé cuite sur une plaque, pliée et garnie de fromage frais (squacquerone), de jambon et de roquette. Simple, moelleuse et généreuse, elle est un incontournable de la République de Saint-Marin et de la Romagne voisine.",
+    tableauPiadinasanmarin: [
+      { nb: 1, farine: "60 g", fromagefrais: "35 g", jambon: "25 g", roquette: "15 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, farine: "120 g", fromagefrais: "70 g", jambon: "50 g", roquette: "30 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, farine: "180 g", fromagefrais: "105 g", jambon: "75 g", roquette: "45 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, farine: "240 g", fromagefrais: "140 g", jambon: "100 g", roquette: "60 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, farine: "300 g", fromagefrais: "175 g", jambon: "125 g", roquette: "75 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, farine: "360 g", fromagefrais: "210 g", jambon: "150 g", roquette: "90 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, farine: "420 g", fromagefrais: "245 g", jambon: "175 g", roquette: "105 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, farine: "480 g", fromagefrais: "280 g", jambon: "200 g", roquette: "120 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, farine: "540 g", fromagefrais: "315 g", jambon: "225 g", roquette: "135 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, farine: "600 g", fromagefrais: "350 g", jambon: "250 g", roquette: "150 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, farine: "660 g", fromagefrais: "385 g", jambon: "275 g", roquette: "165 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, farine: "720 g", fromagefrais: "420 g", jambon: "300 g", roquette: "180 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, farine: "780 g", fromagefrais: "455 g", jambon: "325 g", roquette: "195 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, farine: "840 g", fromagefrais: "490 g", jambon: "350 g", roquette: "210 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, farine: "900 g", fromagefrais: "525 g", jambon: "375 g", roquette: "225 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Préparez une pâte simple (farine, un peu d'huile, eau, sel) et laissez-la reposer.", badge: null },
+      { icone: "⚪", titre: "Diviser", detail: "Divisez la pâte en boules et abaissez-les en fines galettes rondes.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire les galettes sur une plaque chaude, des deux côtés, jusqu'à ce qu'elles se tachent de brun.", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Garnissez une moitié de galette chaude de fromage frais (squacquerone).", badge: null },
+      { icone: "🥓", titre: "La garniture", detail: "Ajoutez le jambon et la roquette.", badge: null },
+      { icone: "🌯", titre: "Plier", detail: "Pliez la piadina en deux sur sa garniture.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède, moelleuse et fondante. Simple et généreuse — la piadina de Saint-Marin.", badge: null }
+    ]
+  },
 });

@@ -2222,4 +2222,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tiède, en jouant sur le contraste sucré-salé. Doré et festif — le balaleet émirati.", badge: null }
     ]
   },
+  dhollpuri: {
+    dateAjout: "2026-07-16T11:00:00",
+    nom: "Dholl Puri",
+    cat: "brunch", pays: "maurice",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Dholl puri — la galette fourrée mauricienne : une fine crêpe de blé farcie de pois cassés jaunes moulus, parfumés au curcuma et au cumin, cuite sur une plaque. Servie en street food avec des curris et des chutneys, c'est LE snack-institution de l'île Maurice, moelleux et parfumé.",
+    tableauDhollpuri: [
+      { nb: 1, farine: "60 g", poiscasses: "35 g", curcuma: "1 g", cumin: "1 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, farine: "120 g", poiscasses: "70 g", curcuma: "2 g", cumin: "2 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, farine: "180 g", poiscasses: "105 g", curcuma: "3 g", cumin: "3 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, farine: "240 g", poiscasses: "140 g", curcuma: "4 g", cumin: "4 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, farine: "300 g", poiscasses: "175 g", curcuma: "5 g", cumin: "5 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, farine: "360 g", poiscasses: "210 g", curcuma: "6 g", cumin: "6 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, farine: "420 g", poiscasses: "245 g", curcuma: "7 g", cumin: "7 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, farine: "480 g", poiscasses: "280 g", curcuma: "8 g", cumin: "8 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, farine: "540 g", poiscasses: "315 g", curcuma: "9 g", cumin: "9 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, farine: "600 g", poiscasses: "350 g", curcuma: "10 g", cumin: "10 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, farine: "660 g", poiscasses: "385 g", curcuma: "11 g", cumin: "11 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, farine: "720 g", poiscasses: "420 g", curcuma: "12 g", cumin: "12 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, farine: "780 g", poiscasses: "455 g", curcuma: "13 g", cumin: "13 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, farine: "840 g", poiscasses: "490 g", curcuma: "14 g", cumin: "14 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, farine: "900 g", poiscasses: "525 g", curcuma: "15 g", cumin: "15 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Les pois cassés", detail: "Faites cuire les pois cassés jaunes jusqu'à ce qu'ils soient tendres, puis égouttez et séchez-les bien.", badge: null },
+      { icone: "🌾", titre: "La farce", detail: "Écrasez ou moulez les pois cassés avec le curcuma, le cumin et le sel, en une poudre fine et parfumée.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Préparez une pâte souple (farine, un peu d'huile, eau, sel) et laissez-la reposer.", badge: null },
+      { icone: "⚪", titre: "Farcir", detail: "Aplatissez des boules de pâte, garnissez-les de farce de pois cassés et refermez-les.", badge: null },
+      { icone: "🫓", titre: "Abaisser", detail: "Abaissez délicatement chaque boule farcie en une fine galette (sans faire sortir la farce).", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire les dholl puris sur une plaque chaude, des deux côtés, jusqu'à ce qu'ils soient souples et légèrement tachetés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, garnis de curri et de chutney, roulés. Moelleux et parfumés — les dholl puris de Maurice.", badge: null }
+    ]
+  },
 });

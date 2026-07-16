@@ -73784,5 +73784,345 @@ window.RECETTES_EN = {
     "detail": "Serve with pap (maize porridge). Healthy and tasty — the morogo of Botswana."
    }
   ]
+ },
+ "dhollpuri": {
+  "nom": "Dholl Puri",
+  "description": "Dholl puri — the Mauritian stuffed flatbread: a thin wheat crêpe filled with ground yellow split peas, scented with turmeric and cumin, cooked on a griddle. Served as street food with curries and chutneys, it's THE snack institution of Mauritius, soft and fragrant.",
+  "etapes": [
+   {
+    "titre": "The split peas",
+    "detail": "Cook the yellow split peas until tender, then drain and dry them well."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Crush or grind the split peas with the turmeric, cumin and salt, into a fine, fragrant powder."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Make a soft dough (flour, a little oil, water, salt) and let it rest."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Flatten balls of dough, fill them with split-pea filling and close them."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Gently roll each filled ball into a thin flatbread (without pushing out the filling)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the dholl puris on a hot griddle, both sides, until supple and lightly spotted."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, filled with curry and chutney, rolled. Soft and fragrant — the dholl puris of Mauritius."
+   }
+  ]
+ },
+ "carizourit": {
+  "nom": "Cari Zourit",
+  "description": "Cari zourit — the octopus curry of Seychelles: octopus long-simmered in a coconut-milk sauce with curry, ginger and tamarind, until tender and fragrant. Briny, spicy and creamy, it's a signature dish of the Indian Ocean archipelago, served with rice.",
+  "etapes": [
+   {
+    "titre": "The octopus",
+    "detail": "Clean the octopus and simmer it in water until it starts to tenderize."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and ginger."
+   },
+   {
+    "titre": "The curry",
+    "detail": "Add the curry powder and sauté it to release its aromas."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and let it melt."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and tamarind, then add the octopus."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the octopus is tender and the sauce unctuous."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a squeeze of lime and serve with rice. Briny and fragrant — the cari zourit of Seychelles."
+   }
+  ]
+ },
+ "krainkrain": {
+  "nom": "Krain Krain",
+  "description": "Krain krain — the jute-leaf sauce of Sierra Leone: jute leaves (crain crain, here spinach) simmered with fish (or meat), palm oil and onion, into a green, tasty sauce. Filling and typical of West Africa, it's served over rice.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and finely shred the jute leaves (or spinach)."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Sauté the fish (or meat) with the onion."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Add the red palm oil and the tomato."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add the shredded leaves and a little water."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the garlic and chilli."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the leaves are tender and the sauce bound."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over rice. Filling and tasty — the krain krain of Sierra Leone."
+   }
+  ]
+ },
+ "heavycake": {
+  "nom": "Heavy Cake",
+  "description": "Heavy cake — the dense cake of the Cayman Islands: a soft, melting cake of grated cassava and coconut, sweetened and spiced (cinnamon, nutmeg), baked at length until the edges caramelize. Rich, dense ('heavy') and fragrant, it's a traditional Caribbean sweet.",
+  "etapes": [
+   {
+    "titre": "The cassava",
+    "detail": "Finely grate the raw cassava and the coconut."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix with the sugar, melted butter, egg, cinnamon and nutmeg, into a thick batter."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Add a little coconut milk for richness, if needed."
+   },
+   {
+    "titre": "The mould",
+    "detail": "Pour the batter into a buttered mould."
+   },
+   {
+    "titre": "Slow bake",
+    "detail": "Bake at length in a moderate oven until set and golden, the edges caramelized."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool: the cake firms up and turns dense."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into slices. Dense and fragrant — the heavy cake of the Caymans."
+   }
+  ]
+ },
+ "pigeonpeasrice": {
+  "nom": "Pigeon Peas and Rice",
+  "description": "Pigeon peas and rice — the Anguillan rice with pigeon peas: rice cooked with pigeon peas (gandules), coconut milk, thyme and onion, until each grain is creamy and fragrant. Comforting and convivial, it's the king side (or dish) of Anguillan tables.",
+  "etapes": [
+   {
+    "titre": "The peas",
+    "detail": "Sauté the onion and garlic, then add the pigeon peas (gandules)."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and a little water."
+   },
+   {
+    "titre": "Scent",
+    "detail": "Add the thyme and a whole chilli."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice into the liquid."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Adjust the liquid, salt and bring to a simmer."
+   },
+   {
+    "titre": "Covered",
+    "detail": "Cover and cook gently until absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff with a fork and serve, creamy and fragrant. Comforting — the pigeon peas and rice of Anguilla."
+   }
+  ]
+ },
+ "funchibonaire": {
+  "nom": "Funchi",
+  "description": "Funchi — the cornmeal polenta of Bonaire: a thick cornmeal porridge, stirred until smooth, then moulded and sometimes grilled. Simple and comforting, it's the staple side of the ABC islands (Aruba, Bonaire, Curaçao), served with stews and fish.",
+  "etapes": [
+   {
+    "titre": "The water",
+    "detail": "Bring salted water to a boil with a little butter."
+   },
+   {
+    "titre": "The cornmeal",
+    "detail": "Pour in the cornmeal in a stream, stirring vigorously to avoid lumps."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir constantly over low heat until the porridge thickens and pulls from the pan."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Stir in the butter to make it smooth and glossy."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour the funchi into a mould (or bowl) and let it set."
+   },
+   {
+    "titre": "Grill (optional)",
+    "detail": "Unmould and brown the slices in a pan, if you like it crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as a side to a stew or fish. Simple and comforting — the funchi of Bonaire."
+   }
+  ]
+ },
+ "sishwala": {
+  "nom": "Sishwala",
+  "description": "Sishwala — the maize-and-bean porridge of Eswatini: a thick maize-flour porridge enriched with beans and a tomato-onion base, simmered until creamy. Filling and comforting, it's a staple dish of the Kingdom of Eswatini (former Swaziland), simple and satisfying.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Cook the beans until tender."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and tomato into a base."
+   },
+   {
+    "titre": "The water",
+    "detail": "Add water and bring to a simmer with the beans."
+   },
+   {
+    "titre": "The maize flour",
+    "detail": "Pour in the maize flour in a stream, stirring, to thicken."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir until you get a thick, creamy porridge."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently so the flavours bind."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, alone or with meat. Filling and comforting — the sishwala of Eswatini."
+   }
+  ]
+ },
+ "piadinasanmarin": {
+  "nom": "Piadina",
+  "description": "Piadina — the filled flatbread of San Marino: a thin wheat flatbread cooked on a griddle, folded and filled with fresh cheese (squacquerone), ham and rocket. Simple, soft and generous, it's a staple of the Republic of San Marino and neighbouring Romagna.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Make a simple dough (flour, a little oil, water, salt) and let it rest."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide the dough into balls and roll them into thin round flatbreads."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the flatbreads on a hot griddle, both sides, until they spot brown."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Top one half of a hot flatbread with fresh cheese (squacquerone)."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Add the ham and rocket."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the piadina in two over its filling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, soft and melting. Simple and generous — the piadina of San Marino."
+   }
+  ]
+ },
+ "pulaka": {
+  "nom": "Pulaka",
+  "description": "Pulaka — the coconut swamp taro of Tuvalu: taro ('pulaka', here cassava) cooked at length then mashed and coated in coconut cream, into a dense, creamy side. A staple of the Pacific atolls, it's grown in pits and served with fish.",
+  "etapes": [
+   {
+    "titre": "The taro",
+    "detail": "Peel and cut the taro (or cassava) into pieces."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook it at length in water until very tender."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the cooked taro into a thick purée."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Stir in the coconut cream (and a little grated coconut) for richness."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add a little onion and lime, and salt."
+   },
+   {
+    "titre": "Reheat",
+    "detail": "Gently reheat, stirring, until smooth and creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as a side, with fish. Dense and creamy — the pulaka of Tuvalu."
+   }
+  ]
+ },
+ "naurufish": {
+  "nom": "Nauruan Coconut Fish",
+  "description": "Nauruan coconut fish: fresh fish poached in a coconut-milk sauce brightened with lime, onion, tomato and chilli. Fresh, briny and creamy, it's a typical Pacific-island dish, served with rice or roots, on the small island republic of Nauru.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the fresh fish into pieces and season it with salt and lime."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and tomato into a base."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and bring to a gentle simmer."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the chilli."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Slip the fish into the coconut sauce and let it poach gently."
+   },
+   {
+    "titre": "Scent",
+    "detail": "Add the coriander and a squeeze of lime."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice. Fresh and creamy — the coconut fish of Nauru."
+   }
+  ]
  }
 };
