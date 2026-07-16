@@ -74124,5 +74124,345 @@ window.RECETTES_EN = {
     "detail": "Serve with rice. Fresh and creamy — the coconut fish of Nauru."
    }
   ]
+ },
+ "takihi": {
+  "nom": "Takihi",
+  "description": "Takihi — the papaya and taro bake of Niue: thin alternating layers of (green) papaya and taro, coated in coconut cream and baked until melting. Sweet, creamy and island-style, it's a signature dish of the small Polynesian rock of Niue, served as a side or a main.",
+  "etapes": [
+   {
+    "titre": "The papaya",
+    "detail": "Peel and thinly slice the papaya (green or barely ripe)."
+   },
+   {
+    "titre": "The taro",
+    "detail": "Peel and thinly slice the taro (or sweet potato)."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Prepare the coconut cream and season it with a little onion and salt."
+   },
+   {
+    "titre": "The layering",
+    "detail": "In a dish, alternate layers of papaya and taro."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat each layer with coconut cream."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the slices are melting and the top golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a squeeze of lime and serve. Sweet and creamy — the takihi of Niue."
+   }
+  ]
+ },
+ "fungivi": {
+  "nom": "Fungi and Fish",
+  "description": "Fungi and fish — the national dish of the British Virgin Islands: a cornmeal polenta ('fungi') served with fish simmered in a creole onion, pepper and tomato sauce. Comforting and Caribbean, it's the emblematic meal of the archipelago.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Season the fish with lemon, salt and garlic."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion, pepper and tomato into a creole sauce."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the chilli and a little water."
+   },
+   {
+    "titre": "Simmer the fish",
+    "detail": "Add the fish and let it simmer in the sauce."
+   },
+   {
+    "titre": "The fungi",
+    "detail": "Make a thick cornmeal porridge (stirring constantly), then mould it."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Unmould the fungi into a smooth dome."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the fungi with the fish in sauce. Comforting — the fungi and fish of the Virgin Islands."
+   }
+  ]
+ },
+ "patevi": {
+  "nom": "Virgin Islands Pate",
+  "description": "Pate — the fried turnover of the US Virgin Islands: a thin dough folded over a fish (or meat) filling spiced with onion and chilli, then fried until golden and crisp. A beloved island street food, it's eaten hot, by hand, as an indulgent snack.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Sauté the flaked fish with the onion, pepper, garlic and chilli."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Cook the filling until dry and fragrant, then let it cool."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Make a soft dough (flour, a little fat, water, salt)."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out the dough and cut discs."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place filling on each disc and fold into a well-sealed turnover."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pates until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot. Crisp and indulgent — the pates of the Virgin Islands."
+   }
+  ]
+ },
+ "crackedconch": {
+  "nom": "Cracked Conch",
+  "description": "Cracked conch — the fried conch of Turks and Caicos: conch meat (here squid) tenderized, breaded and fried until golden and crisp, sprinkled with lime. Crunchy outside, tender inside, it's the pride dish of the archipelago, served with a spicy sauce.",
+  "etapes": [
+   {
+    "titre": "The conch",
+    "detail": "Tenderize the conch (or squid) meat by pounding, then cut it into pieces."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Drizzle with lime, garlic and salt, and let it marinate."
+   },
+   {
+    "titre": "The breading",
+    "detail": "Dredge the pieces in flour, beaten egg, then breadcrumbs."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the breaded conch until golden and crisp, then drain."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Make a spicy sauce (mayo, ketchup, chilli, lime)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with the sauce and lime. Crunchy and tender — the cracked conch of Turks and Caicos."
+   }
+  ]
+ },
+ "johnnycakesxm": {
+  "nom": "Johnny Cakes",
+  "description": "Johnny cakes — the fried cakes of Sint Maarten: small lightly sweetened dough cakes, fried until golden and puffed, soft inside. Staples of Caribbean breakfasts and snacks, they're filled with cheese, fish brine or eaten plain.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, sugar, salt, baking powder and butter."
+   },
+   {
+    "titre": "Hydrate",
+    "detail": "Add the milk (or water) little by little, and knead a soft dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the dough rest."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Divide and shape small thick round cakes."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil (or an oiled pan)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry (or pan-fry) the johnny cakes until golden on both sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, plain or filled. Soft and golden — the johnny cakes of Sint Maarten."
+   }
+  ]
+ },
+ "faikaitokelau": {
+  "nom": "Faikai",
+  "description": "Faikai — the coconut-banana dessert of Tokelau: bananas cooked at length in thickened, sweetened coconut cream, until caramelized. Unctuous, sweet and fragrant, it's a sweet of the Pacific atolls, a cousin of poe and the faikakai of neighbouring islands.",
+  "etapes": [
+   {
+    "titre": "The bananas",
+    "detail": "Peel and cut the bananas into large pieces."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Bring the coconut cream to a simmer with the sugar."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the bananas and let them cook gently in the cream."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Add a little grated coconut and reduce until the cream coats."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Keep going until the cream lightly caramelizes and coats the bananas."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool (the cream thickens as it cools)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold. Unctuous and sweet — the faikai of Tokelau."
+   }
+  ]
+ },
+ "saleeg": {
+  "nom": "Saleeg",
+  "description": "Saleeg — the creamy Saudi rice: rice long-cooked in broth then milk, stirred until creamy like a risotto, scented with cardamom, served with roast chicken. Gentle, comforting and refined, it's a dish of the Hejaz (Mecca region), typical of Saudi tables.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Poach the chicken with the onion and cardamom for a fragrant broth."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice to the broth and cook until very tender."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Pour in the milk and stir to make the rice creamy."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir at length until you get an unctuous texture, almost a porridge."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Stir in the butter for richness."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Brown (or roast) the chicken separately."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the chicken over the creamy rice, with a squeeze of lemon. Gentle and refined — the Saudi saleeg."
+   }
+  ]
+ },
+ "tebuatoro": {
+  "nom": "Te Bua Toro",
+  "description": "Te bua toro — the coconut raw fish of Kiribati: fresh fish 'cooked' by lime juice, then coated in coconut cream, with onion and tomato. Fresh, briny and creamy, it's the signature dish of the Kiribati atolls, in the heart of the Pacific Ocean.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the very fresh fish into small cubes."
+   },
+   {
+    "titre": "The lime",
+    "detail": "Drizzle with lime juice and let it 'cook' a few minutes."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Dice the onion and tomato."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the excess juice from the fish."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Mix the fish and vegetables with the coconut cream."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Salt, add the chilli, and let it rest cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled. Fresh and creamy — the te bua toro of Kiribati."
+   }
+  ]
+ },
+ "stewsaltfishnevis": {
+  "nom": "Saltfish and Dumplings",
+  "description": "Saltfish and dumplings — the stewed saltfish of Nevis: desalted salt cod simmered in a creole onion, pepper and tomato sauce, served with dough dumplings. Salty, filling and Caribbean, it's an everyday dish of the small island of Nevis.",
+  "etapes": [
+   {
+    "titre": "The saltfish",
+    "detail": "Desalt the salt cod (soak then poach), then flake it."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion, pepper, tomato and garlic into a creole sauce."
+   },
+   {
+    "titre": "Scent",
+    "detail": "Add the thyme and chilli."
+   },
+   {
+    "titre": "The saltfish",
+    "detail": "Add the flaked cod and simmer."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Form dough dumplings (flour, water, salt) and poach them in boiling water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let the cod soak up the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the cod in sauce with the dumplings. Salty and filling — the saltfish and dumplings of Nevis."
+   }
+  ]
+ },
+ "couscoussahraoui": {
+  "nom": "Sahrawi Couscous",
+  "description": "Sahrawi couscous — the nomads' dish of Western Sahara: steamed semolina, served with a stew of lamb (or camel), carrots, squash and chickpeas, scented with cumin. Generous and convivial, it's the sharing dish of the desert tents, in the Maghreb tradition.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Brown the lamb with the onion and garlic."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the cumin and spices, and sauté."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water and bring to a simmer."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrots, squash and chickpeas."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the lamb and vegetables are tender."
+   },
+   {
+    "titre": "The semolina",
+    "detail": "Steam the semolina (couscoussier), fluffing it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the semolina, arrange the stew and vegetables on top, moisten with broth. Generous — the Sahrawi couscous."
+   }
+  ]
  }
 };

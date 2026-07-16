@@ -3050,4 +3050,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez tiède, moelleuse et fondante. Simple et généreuse — la piadina de Saint-Marin.", badge: null }
     ]
   },
+  patevi: {
+    dateAjout: "2026-07-16T12:02:00",
+    nom: "Pate des Îles Vierges",
+    cat: "aperitifs", pays: "ilesviergesamericaines",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Pate — le chausson frit des Îles Vierges américaines : une pâte fine repliée sur une farce de poisson (ou de viande) épicée à l'oignon et au piment, puis frite jusqu'à être dorée et croustillante. Street food adorée des îles, il se déguste chaud, à la main, en en-cas gourmand.",
+    tableauPatevi: [
+      { nb: 1, farine: "55 g", poisson: "70 g", oignon: "20 g", poivron: "15 g", ail: "1", piment: "1 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, farine: "110 g", poisson: "140 g", oignon: "40 g", poivron: "30 g", ail: "2", piment: "2 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, farine: "165 g", poisson: "210 g", oignon: "60 g", poivron: "45 g", ail: "3", piment: "3 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, farine: "220 g", poisson: "280 g", oignon: "80 g", poivron: "60 g", ail: "4", piment: "4 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, farine: "275 g", poisson: "350 g", oignon: "100 g", poivron: "75 g", ail: "5", piment: "5 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, farine: "330 g", poisson: "420 g", oignon: "120 g", poivron: "90 g", ail: "6", piment: "6 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, farine: "385 g", poisson: "490 g", oignon: "140 g", poivron: "105 g", ail: "7", piment: "7 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, farine: "440 g", poisson: "560 g", oignon: "160 g", poivron: "120 g", ail: "8", piment: "8 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, farine: "495 g", poisson: "630 g", oignon: "180 g", poivron: "135 g", ail: "9", piment: "9 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, farine: "550 g", poisson: "700 g", oignon: "200 g", poivron: "150 g", ail: "10", piment: "10 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, farine: "605 g", poisson: "770 g", oignon: "220 g", poivron: "165 g", ail: "11", piment: "11 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, farine: "660 g", poisson: "840 g", oignon: "240 g", poivron: "180 g", ail: "12", piment: "12 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, farine: "715 g", poisson: "910 g", oignon: "260 g", poivron: "195 g", ail: "13", piment: "13 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, farine: "770 g", poisson: "980 g", oignon: "280 g", poivron: "210 g", ail: "14", piment: "14 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, farine: "825 g", poisson: "1050 g", oignon: "300 g", poivron: "225 g", ail: "15", piment: "15 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "La farce", detail: "Faites revenir le poisson émietté avec l'oignon, le poivron, l'ail et le piment.", badge: null },
+      { icone: "💧", titre: "Réduire", detail: "Laissez la farce cuire jusqu'à ce qu'elle soit sèche et parfumée, puis laissez tiédir.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Préparez une pâte souple (farine, un peu de matière grasse, eau, sel).", badge: null },
+      { icone: "🫓", titre: "Abaisser", detail: "Abaissez la pâte et découpez des disques.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Déposez de la farce sur chaque disque et repliez en chausson bien scellé.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les pates jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chauds. Croustillants et gourmands — les pates des Îles Vierges.", badge: null }
+    ]
+  },
 });

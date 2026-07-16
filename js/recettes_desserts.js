@@ -8491,4 +8491,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Coupez en parts. Dense et parfumé — le heavy cake des Caïmans.", badge: null }
     ]
   },
+  faikaitokelau: {
+    dateAjout: "2026-07-16T12:05:00",
+    nom: "Faikai",
+    cat: "desserts", pays: "tokelau",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Faikai — le dessert coco-banane de Tokelau : des bananes cuites longuement dans de la crème de coco épaissie et sucrée, jusqu'à caraméliser. Onctueux, sucré et parfumé, c'est une douceur des atolls du Pacifique, cousine du poe et du faikakai des îles voisines.",
+    tableauFaikaitokelau: [
+      { nb: 1, banane: "90 g", laitcoco: "50 ml", noixcoco: "15 g", sucre: "8 g", sel: "1 g" },
+      { nb: 2, banane: "180 g", laitcoco: "100 ml", noixcoco: "30 g", sucre: "16 g", sel: "2 g" },
+      { nb: 3, banane: "270 g", laitcoco: "150 ml", noixcoco: "45 g", sucre: "24 g", sel: "3 g" },
+      { nb: 4, banane: "360 g", laitcoco: "200 ml", noixcoco: "60 g", sucre: "32 g", sel: "4 g" },
+      { nb: 5, banane: "450 g", laitcoco: "250 ml", noixcoco: "75 g", sucre: "40 g", sel: "5 g" },
+      { nb: 6, banane: "540 g", laitcoco: "300 ml", noixcoco: "90 g", sucre: "48 g", sel: "6 g" },
+      { nb: 7, banane: "630 g", laitcoco: "350 ml", noixcoco: "105 g", sucre: "56 g", sel: "7 g" },
+      { nb: 8, banane: "720 g", laitcoco: "400 ml", noixcoco: "120 g", sucre: "64 g", sel: "8 g" },
+      { nb: 9, banane: "810 g", laitcoco: "450 ml", noixcoco: "135 g", sucre: "72 g", sel: "9 g" },
+      { nb: 10, banane: "900 g", laitcoco: "500 ml", noixcoco: "150 g", sucre: "80 g", sel: "10 g" },
+      { nb: 11, banane: "990 g", laitcoco: "550 ml", noixcoco: "165 g", sucre: "88 g", sel: "11 g" },
+      { nb: 12, banane: "1080 g", laitcoco: "600 ml", noixcoco: "180 g", sucre: "96 g", sel: "12 g" },
+      { nb: 13, banane: "1170 g", laitcoco: "650 ml", noixcoco: "195 g", sucre: "104 g", sel: "13 g" },
+      { nb: 14, banane: "1260 g", laitcoco: "700 ml", noixcoco: "210 g", sucre: "112 g", sel: "14 g" },
+      { nb: 15, banane: "1350 g", laitcoco: "750 ml", noixcoco: "225 g", sucre: "120 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Les bananes", detail: "Épluchez et coupez les bananes en gros morceaux.", badge: null },
+      { icone: "🥥", titre: "La crème de coco", detail: "Portez la crème de coco à frémissement avec le sucre.", badge: null },
+      { icone: "🍌", titre: "Cuire", detail: "Ajoutez les bananes et laissez-les cuire doucement dans la crème.", badge: null },
+      { icone: "🥥", titre: "Épaissir", detail: "Ajoutez un peu de coco râpé et laissez réduire jusqu'à ce que la crème nappe.", badge: null },
+      { icone: "🍯", titre: "Caraméliser", detail: "Poursuivez jusqu'à ce que la crème caramélise légèrement et enrobe les bananes.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laissez tiédir (la crème épaissit en refroidissant).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède ou froid. Onctueux et sucré — le faikai de Tokelau.", badge: null }
+    ]
+  },
 });

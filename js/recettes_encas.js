@@ -5857,4 +5857,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Ouvrez la feuille : la conkie est moelleuse et parfumée. Sucrée et vapeur — les conkies de Saint-Kitts.", badge: null }
     ]
   },
+  johnnycakesxm: {
+    dateAjout: "2026-07-16T12:04:00",
+    nom: "Johnny Cakes",
+    cat: "encas", pays: "sintmaarten",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Johnny cakes — les galettes frites de Sint Maarten : de petites galettes de pâte légèrement sucrée, frites jusqu'à être dorées et gonflées, moelleuses à l'intérieur. Incontournables du petit-déjeuner et des en-cas caribéens, elles se garnissent de fromage, de saumure de poisson ou se dégustent nature.",
+    tableauJohnnycakesxm: [
+      { nb: 1, farine: "70 g", beurre: "8 g", sucre: "6 g", lait: "25 ml", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, farine: "140 g", beurre: "16 g", sucre: "12 g", lait: "50 ml", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, farine: "210 g", beurre: "24 g", sucre: "18 g", lait: "75 ml", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, farine: "280 g", beurre: "32 g", sucre: "24 g", lait: "100 ml", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, farine: "350 g", beurre: "40 g", sucre: "30 g", lait: "125 ml", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, farine: "420 g", beurre: "48 g", sucre: "36 g", lait: "150 ml", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, farine: "490 g", beurre: "56 g", sucre: "42 g", lait: "175 ml", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, farine: "560 g", beurre: "64 g", sucre: "48 g", lait: "200 ml", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, farine: "630 g", beurre: "72 g", sucre: "54 g", lait: "225 ml", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, farine: "700 g", beurre: "80 g", sucre: "60 g", lait: "250 ml", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, farine: "770 g", beurre: "88 g", sucre: "66 g", lait: "275 ml", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, farine: "840 g", beurre: "96 g", sucre: "72 g", lait: "300 ml", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, farine: "910 g", beurre: "104 g", sucre: "78 g", lait: "325 ml", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, farine: "980 g", beurre: "112 g", sucre: "84 g", lait: "350 ml", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, farine: "1050 g", beurre: "120 g", sucre: "90 g", lait: "375 ml", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le sucre, le sel, la levure et le beurre.", badge: null },
+      { icone: "💧", titre: "Hydrater", detail: "Ajoutez le lait (ou l'eau) petit à petit, et pétrissez une pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer la pâte.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Divisez et façonnez de petites galettes rondes et épaisses.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile (ou une poêle huilée).", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire (ou poêler) les johnny cakes jusqu'à ce qu'ils soient dorés des deux côtés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, nature ou garnis. Moelleux et dorés — les johnny cakes de Sint Maarten.", badge: null }
+    ]
+  },
 });
