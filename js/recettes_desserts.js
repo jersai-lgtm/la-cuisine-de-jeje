@@ -8528,4 +8528,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tiède ou froid. Onctueux et sucré — le faikai de Tokelau.", badge: null }
     ]
   },
+  panipopo: {
+    dateAjout: "2026-07-16T13:03:00",
+    nom: "Panipopo",
+    cat: "desserts", pays: "samoaamericaines",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥥",
+    description: "Panipopo — les petits pains à la coco des Samoa américaines : des brioches moelleuses cuites dans une sauce onctueuse au lait de coco sucré, qui les nappe et les imbibe. Doux, fondants et parfumés, ils se dégustent tièdes, au petit-déjeuner ou en dessert, dans tout le Pacifique samoan.",
+    tableauPanipopo: [
+      { nb: 1, farine: "80 g", sucre: "14 g", laitcoco: "60 ml", beurre: "10 g", sel: "1.5 g" },
+      { nb: 2, farine: "160 g", sucre: "28 g", laitcoco: "120 ml", beurre: "20 g", sel: "3 g" },
+      { nb: 3, farine: "240 g", sucre: "42 g", laitcoco: "180 ml", beurre: "30 g", sel: "4.5 g" },
+      { nb: 4, farine: "320 g", sucre: "56 g", laitcoco: "240 ml", beurre: "40 g", sel: "6 g" },
+      { nb: 5, farine: "400 g", sucre: "70 g", laitcoco: "300 ml", beurre: "50 g", sel: "7.5 g" },
+      { nb: 6, farine: "480 g", sucre: "84 g", laitcoco: "360 ml", beurre: "60 g", sel: "9 g" },
+      { nb: 7, farine: "560 g", sucre: "98 g", laitcoco: "420 ml", beurre: "70 g", sel: "10.5 g" },
+      { nb: 8, farine: "640 g", sucre: "112 g", laitcoco: "480 ml", beurre: "80 g", sel: "12 g" },
+      { nb: 9, farine: "720 g", sucre: "126 g", laitcoco: "540 ml", beurre: "90 g", sel: "13.5 g" },
+      { nb: 10, farine: "800 g", sucre: "140 g", laitcoco: "600 ml", beurre: "100 g", sel: "15 g" },
+      { nb: 11, farine: "880 g", sucre: "154 g", laitcoco: "660 ml", beurre: "110 g", sel: "16.5 g" },
+      { nb: 12, farine: "960 g", sucre: "168 g", laitcoco: "720 ml", beurre: "120 g", sel: "18 g" },
+      { nb: 13, farine: "1040 g", sucre: "182 g", laitcoco: "780 ml", beurre: "130 g", sel: "19.5 g" },
+      { nb: 14, farine: "1120 g", sucre: "196 g", laitcoco: "840 ml", beurre: "140 g", sel: "21 g" },
+      { nb: 15, farine: "1200 g", sucre: "210 g", laitcoco: "900 ml", beurre: "150 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le sucre, la levure et le sel, puis pétrissez avec de l'eau tiède en une pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez la pâte lever jusqu'à doubler de volume.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Façonnez de petites boules et rangez-les serrées dans un plat.", badge: null },
+      { icone: "🥥", titre: "La sauce coco", detail: "Mélangez le lait de coco, le sucre et le beurre fondu.", badge: null },
+      { icone: "🥥", titre: "Napper", detail: "Versez la sauce coco autour et sur les pains.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez jusqu'à ce que les pains soient dorés et la sauce épaissie et caramélisée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, nappés de sauce. Doux et fondants — les panipopo samoans.", badge: null }
+    ]
+  },
+  laducomores: {
+    dateAjout: "2026-07-16T13:09:00",
+    nom: "Ladu",
+    cat: "desserts", pays: "comores",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍬",
+    description: "Ladu — les douceurs frites des Comores : de petites boules de farine de riz et de coco, parfumées à la cardamome et sucrées, façonnées puis frites jusqu'à être dorées. Parfumées et fondantes, elles se dégustent avec le thé, lors des fêtes et des mariages comoriens.",
+    tableauLaducomores: [
+      { nb: 1, farineRiz: "60 g", noixcoco: "20 g", sucre: "12 g", cardamome: "1 g", huileolive: "12 ml", sel: "1 g" },
+      { nb: 2, farineRiz: "120 g", noixcoco: "40 g", sucre: "24 g", cardamome: "2 g", huileolive: "24 ml", sel: "2 g" },
+      { nb: 3, farineRiz: "180 g", noixcoco: "60 g", sucre: "36 g", cardamome: "3 g", huileolive: "36 ml", sel: "3 g" },
+      { nb: 4, farineRiz: "240 g", noixcoco: "80 g", sucre: "48 g", cardamome: "4 g", huileolive: "48 ml", sel: "4 g" },
+      { nb: 5, farineRiz: "300 g", noixcoco: "100 g", sucre: "60 g", cardamome: "5 g", huileolive: "60 ml", sel: "5 g" },
+      { nb: 6, farineRiz: "360 g", noixcoco: "120 g", sucre: "72 g", cardamome: "6 g", huileolive: "72 ml", sel: "6 g" },
+      { nb: 7, farineRiz: "420 g", noixcoco: "140 g", sucre: "84 g", cardamome: "7 g", huileolive: "84 ml", sel: "7 g" },
+      { nb: 8, farineRiz: "480 g", noixcoco: "160 g", sucre: "96 g", cardamome: "8 g", huileolive: "96 ml", sel: "8 g" },
+      { nb: 9, farineRiz: "540 g", noixcoco: "180 g", sucre: "108 g", cardamome: "9 g", huileolive: "108 ml", sel: "9 g" },
+      { nb: 10, farineRiz: "600 g", noixcoco: "200 g", sucre: "120 g", cardamome: "10 g", huileolive: "120 ml", sel: "10 g" },
+      { nb: 11, farineRiz: "660 g", noixcoco: "220 g", sucre: "132 g", cardamome: "11 g", huileolive: "132 ml", sel: "11 g" },
+      { nb: 12, farineRiz: "720 g", noixcoco: "240 g", sucre: "144 g", cardamome: "12 g", huileolive: "144 ml", sel: "12 g" },
+      { nb: 13, farineRiz: "780 g", noixcoco: "260 g", sucre: "156 g", cardamome: "13 g", huileolive: "156 ml", sel: "13 g" },
+      { nb: 14, farineRiz: "840 g", noixcoco: "280 g", sucre: "168 g", cardamome: "14 g", huileolive: "168 ml", sel: "14 g" },
+      { nb: 15, farineRiz: "900 g", noixcoco: "300 g", sucre: "180 g", cardamome: "15 g", huileolive: "180 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "La base", detail: "Mélangez la farine de riz, la noix de coco râpée et le sucre.", badge: null },
+      { icone: "🫚", titre: "Parfumer", detail: "Ajoutez la cardamome moulue.", badge: null },
+      { icone: "💧", titre: "La pâte", detail: "Incorporez un peu d'eau (ou de lait) pour former une pâte malléable.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Façonnez de petites boules régulières.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les ladu jusqu'à ce qu'ils soient dorés, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir et servez avec le thé. Parfumés et fondants — les ladu comoriens.", badge: null }
+    ]
+  },
 });

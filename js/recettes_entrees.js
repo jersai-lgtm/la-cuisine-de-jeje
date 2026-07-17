@@ -3107,4 +3107,78 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien froid. Frais et crémeux — le te bua toro de Kiribati.", badge: null }
     ]
   },
+  bouneschlupp: {
+    dateAjout: "2026-07-16T13:06:00",
+    nom: "Bouneschlupp",
+    cat: "entrees", pays: "luxembourg",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🫛",
+    description: "Bouneschlupp — la soupe nationale du Luxembourg : une soupe de haricots verts et de pommes de terre, mijotée avec de l'oignon et des lardons, liée d'un peu de crème. Réconfortante et paysanne, c'est le plat d'hiver emblématique du Grand-Duché, tout en simplicité.",
+    tableauBouneschlupp: [
+      { nb: 1, haricotsverts: "90 g", pommedeterre: "70 g", oignon: "25 g", creme: "30 ml", lardons: "25 g", sel: "2 g" },
+      { nb: 2, haricotsverts: "180 g", pommedeterre: "140 g", oignon: "50 g", creme: "60 ml", lardons: "50 g", sel: "4 g" },
+      { nb: 3, haricotsverts: "270 g", pommedeterre: "210 g", oignon: "75 g", creme: "90 ml", lardons: "75 g", sel: "6 g" },
+      { nb: 4, haricotsverts: "360 g", pommedeterre: "280 g", oignon: "100 g", creme: "120 ml", lardons: "100 g", sel: "8 g" },
+      { nb: 5, haricotsverts: "450 g", pommedeterre: "350 g", oignon: "125 g", creme: "150 ml", lardons: "125 g", sel: "10 g" },
+      { nb: 6, haricotsverts: "540 g", pommedeterre: "420 g", oignon: "150 g", creme: "180 ml", lardons: "150 g", sel: "12 g" },
+      { nb: 7, haricotsverts: "630 g", pommedeterre: "490 g", oignon: "175 g", creme: "210 ml", lardons: "175 g", sel: "14 g" },
+      { nb: 8, haricotsverts: "720 g", pommedeterre: "560 g", oignon: "200 g", creme: "240 ml", lardons: "200 g", sel: "16 g" },
+      { nb: 9, haricotsverts: "810 g", pommedeterre: "630 g", oignon: "225 g", creme: "270 ml", lardons: "225 g", sel: "18 g" },
+      { nb: 10, haricotsverts: "900 g", pommedeterre: "700 g", oignon: "250 g", creme: "300 ml", lardons: "250 g", sel: "20 g" },
+      { nb: 11, haricotsverts: "990 g", pommedeterre: "770 g", oignon: "275 g", creme: "330 ml", lardons: "275 g", sel: "22 g" },
+      { nb: 12, haricotsverts: "1080 g", pommedeterre: "840 g", oignon: "300 g", creme: "360 ml", lardons: "300 g", sel: "24 g" },
+      { nb: 13, haricotsverts: "1170 g", pommedeterre: "910 g", oignon: "325 g", creme: "390 ml", lardons: "325 g", sel: "26 g" },
+      { nb: 14, haricotsverts: "1260 g", pommedeterre: "980 g", oignon: "350 g", creme: "420 ml", lardons: "350 g", sel: "28 g" },
+      { nb: 15, haricotsverts: "1350 g", pommedeterre: "1050 g", oignon: "375 g", creme: "450 ml", lardons: "375 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫛", titre: "Les haricots", detail: "Équeutez et coupez les haricots verts en tronçons.", badge: null },
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Épluchez et coupez les pommes de terre en dés.", badge: null },
+      { icone: "🥓", titre: "Les lardons", detail: "Faites revenir les lardons et l'oignon émincé.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Mouillez d'eau, ajoutez les pommes de terre et portez à frémissement.", badge: null },
+      { icone: "🫛", titre: "Les haricots", detail: "Ajoutez les haricots verts et laissez mijoter jusqu'à ce que tout soit tendre.", badge: null },
+      { icone: "🥛", titre: "Lier", detail: "Incorporez la crème et rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la soupe bien chaude. Réconfortante — la bouneschlupp luxembourgeoise.", badge: null }
+    ]
+  },
+  aljotta: {
+    dateAjout: "2026-07-16T13:07:00",
+    nom: "Aljotta",
+    cat: "entrees", pays: "malte",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Aljotta — la soupe de poisson maltaise : un bouillon parfumé à l'ail, à la tomate et aux herbes, dans lequel mijote du poisson, épaissi d'un peu de riz et relevé de citron. Iodée et méditerranéenne, c'est l'entrée-signature de l'archipel, cousine de la bouillabaisse.",
+    tableauAljotta: [
+      { nb: 1, poisson: "110 g", tomate: "40 g", ail: "1", oignon: "20 g", riz: "20 g", huileolive: "8 ml", citron: "¼", sel: "2 g" },
+      { nb: 2, poisson: "220 g", tomate: "80 g", ail: "2", oignon: "40 g", riz: "40 g", huileolive: "16 ml", citron: "½", sel: "4 g" },
+      { nb: 3, poisson: "330 g", tomate: "120 g", ail: "3", oignon: "60 g", riz: "60 g", huileolive: "24 ml", citron: "¾", sel: "6 g" },
+      { nb: 4, poisson: "440 g", tomate: "160 g", ail: "4", oignon: "80 g", riz: "80 g", huileolive: "32 ml", citron: "1", sel: "8 g" },
+      { nb: 5, poisson: "550 g", tomate: "200 g", ail: "5", oignon: "100 g", riz: "100 g", huileolive: "40 ml", citron: "1¼", sel: "10 g" },
+      { nb: 6, poisson: "660 g", tomate: "240 g", ail: "6", oignon: "120 g", riz: "120 g", huileolive: "48 ml", citron: "1½", sel: "12 g" },
+      { nb: 7, poisson: "770 g", tomate: "280 g", ail: "7", oignon: "140 g", riz: "140 g", huileolive: "56 ml", citron: "1¾", sel: "14 g" },
+      { nb: 8, poisson: "880 g", tomate: "320 g", ail: "8", oignon: "160 g", riz: "160 g", huileolive: "64 ml", citron: "2", sel: "16 g" },
+      { nb: 9, poisson: "990 g", tomate: "360 g", ail: "9", oignon: "180 g", riz: "180 g", huileolive: "72 ml", citron: "2¼", sel: "18 g" },
+      { nb: 10, poisson: "1100 g", tomate: "400 g", ail: "10", oignon: "200 g", riz: "200 g", huileolive: "80 ml", citron: "2½", sel: "20 g" },
+      { nb: 11, poisson: "1210 g", tomate: "440 g", ail: "11", oignon: "220 g", riz: "220 g", huileolive: "88 ml", citron: "2¾", sel: "22 g" },
+      { nb: 12, poisson: "1320 g", tomate: "480 g", ail: "12", oignon: "240 g", riz: "240 g", huileolive: "96 ml", citron: "3", sel: "24 g" },
+      { nb: 13, poisson: "1430 g", tomate: "520 g", ail: "13", oignon: "260 g", riz: "260 g", huileolive: "104 ml", citron: "3¼", sel: "26 g" },
+      { nb: 14, poisson: "1540 g", tomate: "560 g", ail: "14", oignon: "280 g", riz: "280 g", huileolive: "112 ml", citron: "3½", sel: "28 g" },
+      { nb: 15, poisson: "1650 g", tomate: "600 g", ail: "15", oignon: "300 g", riz: "300 g", huileolive: "120 ml", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "La base", detail: "Faites revenir l'ail et l'oignon dans l'huile d'olive.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Ajoutez la tomate et laissez compoter.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Mouillez d'eau et portez à frémissement.", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Ajoutez le poisson et laissez-le pocher doucement.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Ajoutez le riz pour épaissir légèrement le bouillon.", badge: null },
+      { icone: "🍋", titre: "Relever", detail: "Ajoutez le jus de citron et les herbes en fin de cuisson.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la soupe fumante. Iodée et parfumée — l'aljotta maltaise.", badge: null }
+    ]
+  },
 });

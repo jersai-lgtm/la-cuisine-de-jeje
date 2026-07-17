@@ -74464,5 +74464,345 @@ window.RECETTES_EN = {
     "detail": "Plate the semolina, arrange the stew and vegetables on top, moisten with broth. Generous — the Sahrawi couscous."
    }
   ]
+ },
+ "bougna": {
+  "nom": "Bougna",
+  "description": "Bougna — the traditional Kanak dish of New Caledonia: yams, sweet potatoes and meat (or fish) coated in coconut milk, wrapped in banana leaves and slow-cooked, smothered over hot stones. Generous, melting and fragrant, it's the sharing dish of big occasions.",
+  "etapes": [
+   {
+    "titre": "The tubers",
+    "detail": "Peel and cut the yam and sweet potato into large pieces."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Cut the chicken (or fish) into pieces."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Prepare the coconut milk and season with onion and salt."
+   },
+   {
+    "titre": "The assembly",
+    "detail": "Arrange the tubers and meat on leaves (banana or baking paper)."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Drizzle generously with coconut milk and close the parcel."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Slow-cook, smothered (oven or steam), until everything is melting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the parcel and serve steaming. Generous and melting — the New Caledonian bougna."
+   }
+  ]
+ },
+ "kasknopfle": {
+  "nom": "Käsknöpfle",
+  "description": "Käsknöpfle — the cheese spätzle of Liechtenstein: little fresh poached dumpling-noodles ('knöpfle'), tossed with melted mountain cheese and crowned with golden fried onions. Comforting, stringy and generous, it's THE national dish of the principality, a cousin of Alpine käsespätzle.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour, egg, a little water and salt into a thick smooth batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest a few minutes."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Slowly brown the sliced onions in butter until caramelized."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Push the batter through a colander into boiling salted water; the knöpfle float up when cooked."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Drain and immediately toss the knöpfle with grated cheese to make it stringy."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Scatter the golden fried onions on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very hot and stringy. Comforting — the käsknöpfle of Liechtenstein."
+   }
+  ]
+ },
+ "mataba": {
+  "nom": "Mataba",
+  "description": "Mataba — the emblematic dish of Mayotte: pounded cassava leaves, long-simmered in coconut milk with fish, until they become a smooth green purée. Gentle, creamy and fragrant, it's a staple of Mahoran cuisine, served with rice.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Finely pound (or blend) the cassava leaves (here spinach)."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Cut the fish into pieces."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, tomato and garlic."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add the pounded leaves and a little water."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and simmer at length."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Add the fish and keep cooking until everything is melting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice. Gentle and creamy — the mataba of Mayotte."
+   }
+  ]
+ },
+ "panipopo": {
+  "nom": "Panipopo",
+  "description": "Panipopo — the coconut buns of American Samoa: soft rolls baked in a rich sweet coconut-milk sauce that coats and soaks them. Sweet, melting and fragrant, they're eaten warm, at breakfast or as a dessert, across the Samoan Pacific.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, sugar, yeast and salt, then knead with warm water into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape small balls and pack them snugly in a dish."
+   },
+   {
+    "titre": "The coconut sauce",
+    "detail": "Mix the coconut milk, sugar and melted butter."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the coconut sauce around and over the buns."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the buns are golden and the sauce thickened and caramelized."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, coated in sauce. Sweet and melting — the Samoan panipopo."
+   }
+  ]
+ },
+ "suaasat": {
+  "nom": "Suaasat",
+  "description": "Suaasat — the traditional soup of Greenland: a comforting broth of meat (traditionally seal, here lamb), simmered with onion, potato and a little rice, simply seasoned with bay leaf. Rustic and filling, it's the dish that warms the long Arctic winters.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the lamb into pieces."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cover with cold water, bring to a simmer and skim."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the bay leaf and salt, and simmer until the meat is tender."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the onion and potato in pieces."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice (or barley) to lightly thicken the broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Keep cooking until the vegetables and rice are tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the soup piping hot. Rustic and filling — the Greenlandic suaasat."
+   }
+  ]
+ },
+ "demok": {
+  "nom": "Demok",
+  "description": "Demok — the national dish of Palau: pounded taro leaves simmered in coconut milk with chicken (or coconut crab) and ginger, until they become a creamy green purée. Unctuous and fragrant, it's the festive dish of the Micronesian archipelago.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Finely pound (or chop) the taro leaves (here spinach)."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Cut the chicken into small pieces."
+   },
+   {
+    "titre": "The ginger",
+    "detail": "Sauté the grated ginger and onion."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the chicken and brown it."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and bring to a simmer."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add the pounded leaves and simmer until a creamy purée."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot. Unctuous and fragrant — the demok of Palau."
+   }
+  ]
+ },
+ "bouneschlupp": {
+  "nom": "Bouneschlupp",
+  "description": "Bouneschlupp — the national soup of Luxembourg: a green bean and potato soup, simmered with onion and bacon lardons, bound with a little cream. Comforting and rustic, it's the emblematic winter dish of the Grand Duchy, all in simplicity.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Top and tail the green beans and cut them into lengths."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Peel and dice the potatoes."
+   },
+   {
+    "titre": "The lardons",
+    "detail": "Sauté the lardons and sliced onion."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water and the potatoes, and bring to a simmer."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Add the green beans and simmer until everything is tender."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in the cream and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the soup piping hot. Comforting — the Luxembourg bouneschlupp."
+   }
+  ]
+ },
+ "aljotta": {
+  "nom": "Aljotta",
+  "description": "Aljotta — the Maltese fish soup: a broth scented with garlic, tomato and herbs, in which fish simmers, thickened with a little rice and brightened with lemon. Briny and Mediterranean, it's the signature starter of the archipelago, a cousin of bouillabaisse.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the garlic and onion in olive oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and let it cook down."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water and bring to a simmer."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Add the fish and let it poach gently."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice to lightly thicken the broth."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the lemon juice and herbs at the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the soup steaming. Briny and fragrant — the Maltese aljotta."
+   }
+  ]
+ },
+ "escudellaandorre": {
+  "nom": "Escudella",
+  "description": "Escudella — the national hotpot of Andorra: a hearty winter dish where meats, a big meatball ('pilota'), pasta, chickpeas, cabbage and potatoes simmer in a fragrant broth. Rustic and generous, it's the Christmas and cold-snap dish of the Andorran Pyrenees.",
+  "etapes": [
+   {
+    "titre": "The meats",
+    "detail": "Put the chicken in a large pot of cold water and bring to a simmer."
+   },
+   {
+    "titre": "The pilota",
+    "detail": "Form a large meatball with the seasoned minced beef."
+   },
+   {
+    "titre": "The chickpeas",
+    "detail": "Add the (soaked) chickpeas and simmer at length."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the cabbage and potato in pieces, and the pilota."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook until the meats and vegetables are tender."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Add the pasta and cook it in the broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the broth then the meats and vegetables. Rustic and generous — the Andorran escudella."
+   }
+  ]
+ },
+ "laducomores": {
+  "nom": "Ladu",
+  "description": "Ladu — the fried sweets of the Comoros: small balls of rice flour and coconut, scented with cardamom and sweetened, shaped then fried until golden. Fragrant and melting, they're eaten with tea, at Comorian celebrations and weddings.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Mix the rice flour, grated coconut and sugar."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the ground cardamom."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Stir in a little water (or milk) to form a malleable dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape small even balls."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the ladu until golden, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool a little and serve with tea. Fragrant and melting — the Comorian ladu."
+   }
+  ]
  }
 };
