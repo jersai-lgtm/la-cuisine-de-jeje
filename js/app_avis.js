@@ -166,7 +166,6 @@ function rendreNoteAppAccueil(tous) {
       <div class="note-app-avis">
         <span class="note-app-avis-stars">${st}</span>
         <span class="note-app-avis-txt">« ${escapeHTML(last.commentaire.trim())} »</span>
-        <span class="note-app-avis-auteur">— ${escapeHTML(last.prenom || "Anonyme")}</span>
       </div>`;
   }
   zone.innerHTML = `
