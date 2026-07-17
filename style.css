@@ -6,7 +6,7 @@
   --text-2:#dddddd;                /* texte secondaire */
   --text-3:#999999;                /* texte tertiaire */
   --text-4:#666666;                /* texte discret */
-  --body-bg:radial-gradient(140% 90% at 50% 0%, #1c1622 0%, #0d0a0f 55%);
+  --body-bg:radial-gradient(140% 90% at 50% 0%, #635d6d 0%, #494455 60%);
   --panel:10,10,10;                /* panneaux foncés translucides (barre, nav…) */
   --panel-solid:#1a1a2e;           /* panneaux/modales foncés opaques */
   --vert:#a5d6a7;                  /* texte vert (succès/positif) — pâle sur sombre */
