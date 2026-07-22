@@ -36,7 +36,7 @@ def recettes_sans_image():
     try:
         out = subprocess.run(["node", os.path.join("tools", "verifier-donnees.mjs")],
                              cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
-        return set(re.findall(r"- (\w+) : image introuvable", out.stdout))
+        return set(re.findall(r"- (\w+) : image (?:introuvable|manquante)", out.stdout))
     except Exception:
         return set()
 

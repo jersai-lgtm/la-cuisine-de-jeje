@@ -75144,5 +75144,345 @@ window.RECETTES_EN = {
     "detail": "Let it set in the fridge and serve in clean slices. Crisp and melting — the torta Tre Monti."
    }
   ]
+ },
+ "ftira": {
+  "nom": "Ftira",
+  "description": "Ftira biż-żejt — Malta's emblematic lunch: an airy leavened flatbread rubbed with tomato, filled with tuna, capers, olives and onion, all generously drizzled with olive oil. Mediterranean and sun-soaked, it's the lunch of Maltese beaches and coves.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, salt and warm water, and knead a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape a round flatbread with a hole in the centre (like a crown) and let it rise again."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the ftira is golden and sounds hollow, then let it cool a little."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Split the bread in two and rub the crumb generously with ripe tomato."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Scatter the tuna, capers, olives and sliced onion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with good olive oil, close and serve. Sun-soaked — the Maltese ftira."
+   }
+  ]
+ },
+ "pastizzi": {
+  "nom": "Pastizzi",
+  "description": "Pastizzi — Malta's ricotta pastries: diamond-shaped parcels of supremely crisp pastry, filled with seasoned creamy ricotta, baked golden. Sold piping hot in the island's pastizzeriji at all hours, they are THE Maltese national snack, addictive and cheap.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Mix the ricotta with the egg, salt and pepper into a smooth cream."
+   },
+   {
+    "titre": "The pastry",
+    "detail": "Brush the filo sheets with melted butter and layer them."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut squares of buttered pastry."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a spoonful of filling in the centre of each square."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Fold into diamonds (pinched points, centre slightly open, pastizzi-style)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until puffed, deeply golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve them piping hot, Valletta-style. Crisp and creamy — Maltese pastizzi."
+   }
+  ]
+ },
+ "chukuchuk": {
+  "nom": "Chukuchuk",
+  "description": "Chukuchuk — the coconut rice balls of the Marshall Islands: sticky-cooked rice, lightly sweetened, shaped into balls and rolled in fresh grated coconut. Simple, sweet and island-born, it's the treat of Marshallese celebrations and picnics, in the heart of the Pacific.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the rice with a little more water than usual, so it's nice and sticky."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Stir the coconut milk, sugar and salt into the hot rice."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the mass cool until you can handle it."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll even balls between damp palms."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Spread the grated coconut on a plate."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll each ball in the coconut to coat it well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature or chilled. Simple and sweet — Marshallese chukuchuk."
+   }
+  ]
+ },
+ "rostogibraltar": {
+  "nom": "Rosto",
+  "description": "Rosto — the pasta of the Rock of Gibraltar: penne simmered in a beef, garlic and onion tomato sauce, served well coated and crowned with grated cheese. A legacy of the territory's Italian and Spanish influences, it's the Gibraltarian family dish par excellence.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in olive oil."
+   },
+   {
+    "titre": "The beef",
+    "detail": "Add the beef pieces and brown them on all sides."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and a little water, season with salt."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the beef is tender and the sauce thickened."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Cook the penne al dente."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss the pasta in the sauce to coat it well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve crowned with grated cheese. Generous — Gibraltar's rosto."
+   }
+  ]
+ },
+ "panbati": {
+  "nom": "Pan Bati",
+  "description": "Pan bati — Aruba's pancake: a soft cornmeal-and-wheat-flour griddle cake, lightly sweetened, browned in a pan. Its name means 'beaten bread' in Papiamento. A staple of the Aruban table, it goes with soups, stews and fish — or is eaten on its own, warm.",
+  "etapes": [
+   {
+    "titre": "The flours",
+    "detail": "Mix the cornmeal, wheat flour, sugar, baking powder and salt."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Pour in the milk little by little, whisking, until a thick smooth batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest a few minutes."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a pan with a little butter."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour in the batter and cook the cake over low heat until bubbles appear."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip and brown the other side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pan bati warm, as a side or on its own. Soft — Aruba's pancake."
+   }
+  ]
+ },
+ "duckanoo": {
+  "nom": "Duckanoo",
+  "description": "Duckanoo — the steamed pudding of Saint Vincent and the Grenadines: grated sweet potato mixed with coconut, sugar and spices, wrapped in banana leaves and steamed into little melting parcels. Inherited from West Africa, this fragrant dessert is heady with cinnamon and nutmeg.",
+  "etapes": [
+   {
+    "titre": "The sweet potato",
+    "detail": "Peel and finely grate the sweet potato."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Add the grated coconut."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Stir in the sugar, coconut milk, cinnamon, nutmeg and salt."
+   },
+   {
+    "titre": "The parcels",
+    "detail": "Spoon the mixture onto squares of banana leaf (or baking paper) and fold them well."
+   },
+   {
+    "titre": "Tie",
+    "detail": "Close the parcels with kitchen string."
+   },
+   {
+    "titre": "The steam",
+    "detail": "Steam the parcels until the pudding is set and melting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the parcels and serve warm. Fragrant and melting — Vincentian duckanoo."
+   }
+  ]
+ },
+ "zitumbuwa": {
+  "nom": "Zitumbuwa",
+  "description": "Zitumbuwa — Malawi's banana fritters: very ripe banana mashed with a little flour, fried into golden, fluffy fritters. Sold by the roadside and in the markets of Lake Malawi, they're eaten warm, plain — the simplest, most comforting snack there is.",
+  "etapes": [
+   {
+    "titre": "The bananas",
+    "detail": "Mash the very ripe bananas with a fork."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Stir in the flour, sugar and salt into a thick batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest a few minutes."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Form",
+    "detail": "Drop spoonfuls of batter into the hot oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the fritters until golden all over, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, plain. Golden and fluffy — Malawi's zitumbuwa."
+   }
+  ]
+ },
+ "dumboy": {
+  "nom": "Dumboy",
+  "description": "Dumboy — Liberia's cassava balls: cassava boiled and pounded into an elastic dough, shaped into balls served in a chilli-and-ginger chicken broth ('pepper soup'). Hearty and fiery, it's Liberia's comfort dish — swallowed without chewing, as tradition demands!",
+  "etapes": [
+   {
+    "titre": "The cassava",
+    "detail": "Peel the cassava, cut it and boil until very tender."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound the hot cassava into a smooth, elastic dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape the dough into even balls and keep warm."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Sauté the onion, garlic and ginger, then add the chicken and brown it."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add the tomato, chilli, salt and water, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the chicken is tender and the broth fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drop the dumboy balls into the piping hot broth and serve. Hearty — Liberian dumboy."
+   }
+  ]
+ },
+ "mkatrafoutra": {
+  "nom": "Mkatra Foutra",
+  "description": "Mkatra foutra — the leavened griddle breads of the Comoros: a coconut-water dough (here coconut milk), risen then pan-cooked, soft and golden, traditionally drizzled with honey. Fragrant and sweet, they go with morning tea across the Comorian archipelago.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, salt, egg and warm coconut milk into a thick batter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise until nicely bubbly."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a lightly oiled pan."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour in a ladle of batter and cook over low heat until the surface sets."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip and brown the other side."
+   },
+   {
+    "titre": "Repeat",
+    "detail": "Continue with the remaining batter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, drizzled with honey. Soft and fragrant — Comorian mkatra foutra."
+   }
+  ]
+ },
+ "bammy": {
+  "nom": "Bammy",
+  "description": "Bammy — Jamaica's cassava flatbread: grated, pressed cassava shaped into thick rounds, soaked in coconut milk then browned in butter. Inherited from the Taínos, soft inside and golden outside, it traditionally goes with fried fish and Jamaican escovitch.",
+  "etapes": [
+   {
+    "titre": "The cassava",
+    "detail": "Peel and finely grate the cassava."
+   },
+   {
+    "titre": "Press",
+    "detail": "Squeeze the pulp in a cloth to extract as much juice as possible."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Salt, then pack the pulp into thick round cakes."
+   },
+   {
+    "titre": "Pre-cook",
+    "detail": "Cook the cakes dry in a pan, pressing them, until they hold together."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Soak the cakes in coconut milk for a few minutes: they soften and soak it up."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown them in butter on both sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with fried fish or on its own. Soft and golden — Jamaican bammy."
+   }
+  ]
  }
 };

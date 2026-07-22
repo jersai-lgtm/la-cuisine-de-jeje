@@ -3087,4 +3087,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chauds. Croustillants et gourmands — les pates des Îles Vierges.", badge: null }
     ]
   },
+  pastizzi: {
+    dateAjout: "2026-07-22T13:01:00",
+    nom: "Pastizzi",
+    cat: "aperitifs", pays: "malte",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Pastizzi — les feuilletés à la ricotta de Malte : des losanges de pâte croustillante à souhait, fourrés d'une ricotta crémeuse assaisonnée, dorés au four. Vendus brûlants dans les pastizzeriji de l'île à toute heure, ce sont LES en-cas nationaux maltais, addictifs et bon marché.",
+    tableauPastizzi: [
+      { nb: 1, pateFilo: "40 g", ricotta: "50 g", beurre: "12 g", oeufs: "¼", sel: "1 g", poivre: "1 g" },
+      { nb: 2, pateFilo: "80 g", ricotta: "100 g", beurre: "24 g", oeufs: "½", sel: "2 g", poivre: "2 g" },
+      { nb: 3, pateFilo: "120 g", ricotta: "150 g", beurre: "36 g", oeufs: "¾", sel: "3 g", poivre: "3 g" },
+      { nb: 4, pateFilo: "160 g", ricotta: "200 g", beurre: "48 g", oeufs: "1", sel: "4 g", poivre: "4 g" },
+      { nb: 5, pateFilo: "200 g", ricotta: "250 g", beurre: "60 g", oeufs: "1¼", sel: "5 g", poivre: "5 g" },
+      { nb: 6, pateFilo: "240 g", ricotta: "300 g", beurre: "72 g", oeufs: "1½", sel: "6 g", poivre: "6 g" },
+      { nb: 7, pateFilo: "280 g", ricotta: "350 g", beurre: "84 g", oeufs: "1¾", sel: "7 g", poivre: "7 g" },
+      { nb: 8, pateFilo: "320 g", ricotta: "400 g", beurre: "96 g", oeufs: "2", sel: "8 g", poivre: "8 g" },
+      { nb: 9, pateFilo: "360 g", ricotta: "450 g", beurre: "108 g", oeufs: "2¼", sel: "9 g", poivre: "9 g" },
+      { nb: 10, pateFilo: "400 g", ricotta: "500 g", beurre: "120 g", oeufs: "2½", sel: "10 g", poivre: "10 g" },
+      { nb: 11, pateFilo: "440 g", ricotta: "550 g", beurre: "132 g", oeufs: "2¾", sel: "11 g", poivre: "11 g" },
+      { nb: 12, pateFilo: "480 g", ricotta: "600 g", beurre: "144 g", oeufs: "3", sel: "12 g", poivre: "12 g" },
+      { nb: 13, pateFilo: "520 g", ricotta: "650 g", beurre: "156 g", oeufs: "3¼", sel: "13 g", poivre: "13 g" },
+      { nb: 14, pateFilo: "560 g", ricotta: "700 g", beurre: "168 g", oeufs: "3½", sel: "14 g", poivre: "14 g" },
+      { nb: 15, pateFilo: "600 g", ricotta: "750 g", beurre: "180 g", oeufs: "3¾", sel: "15 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "La farce", detail: "Mélangez la ricotta avec l'œuf, le sel et le poivre en une crème lisse.", badge: null },
+      { icone: "🧈", titre: "Le feuilletage", detail: "Badigeonnez les feuilles de pâte filo de beurre fondu et superposez-les.", badge: null },
+      { icone: "✂️", titre: "Découper", detail: "Découpez des carrés de pâte beurrée.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Déposez une cuillerée de farce au centre de chaque carré.", badge: null },
+      { icone: "📐", titre: "Façonner", detail: "Repliez en losanges (pointes pincées, centre entrouvert, façon pastizzi).", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez jusqu'à ce qu'ils soient gonflés, très dorés et croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez-les brûlants, comme à La Valette. Croustillants et crémeux — les pastizzi maltais.", badge: null }
+    ]
+  },
 });

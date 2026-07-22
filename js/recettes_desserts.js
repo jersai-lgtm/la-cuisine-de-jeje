@@ -8750,4 +8750,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Reposer et servir", detail: "Laissez prendre au frais et servez en parts nettes. Croustillant et fondant — la torta Tre Monti.", badge: null }
     ]
   },
+  chukuchuk: {
+    dateAjout: "2026-07-22T13:02:00",
+    nom: "Chukuchuk",
+    cat: "desserts", pays: "ilesmarshall",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍡",
+    description: "Chukuchuk — les boules de riz coco des Îles Marshall : du riz cuit bien collant, légèrement sucré, façonné en boules puis roulé dans la noix de coco fraîche râpée. Simple, doux et insulaire, c'est la douceur des fêtes et des pique-niques marshallais, au cœur du Pacifique.",
+    tableauChukuchuk: [
+      { nb: 1, riz: "50 g", laitcoco: "30 ml", sucre: "8 g", noixcoco: "20 g", sel: "1 g" },
+      { nb: 2, riz: "100 g", laitcoco: "60 ml", sucre: "16 g", noixcoco: "40 g", sel: "2 g" },
+      { nb: 3, riz: "150 g", laitcoco: "90 ml", sucre: "24 g", noixcoco: "60 g", sel: "3 g" },
+      { nb: 4, riz: "200 g", laitcoco: "120 ml", sucre: "32 g", noixcoco: "80 g", sel: "4 g" },
+      { nb: 5, riz: "250 g", laitcoco: "150 ml", sucre: "40 g", noixcoco: "100 g", sel: "5 g" },
+      { nb: 6, riz: "300 g", laitcoco: "180 ml", sucre: "48 g", noixcoco: "120 g", sel: "6 g" },
+      { nb: 7, riz: "350 g", laitcoco: "210 ml", sucre: "56 g", noixcoco: "140 g", sel: "7 g" },
+      { nb: 8, riz: "400 g", laitcoco: "240 ml", sucre: "64 g", noixcoco: "160 g", sel: "8 g" },
+      { nb: 9, riz: "450 g", laitcoco: "270 ml", sucre: "72 g", noixcoco: "180 g", sel: "9 g" },
+      { nb: 10, riz: "500 g", laitcoco: "300 ml", sucre: "80 g", noixcoco: "200 g", sel: "10 g" },
+      { nb: 11, riz: "550 g", laitcoco: "330 ml", sucre: "88 g", noixcoco: "220 g", sel: "11 g" },
+      { nb: 12, riz: "600 g", laitcoco: "360 ml", sucre: "96 g", noixcoco: "240 g", sel: "12 g" },
+      { nb: 13, riz: "650 g", laitcoco: "390 ml", sucre: "104 g", noixcoco: "260 g", sel: "13 g" },
+      { nb: 14, riz: "700 g", laitcoco: "420 ml", sucre: "112 g", noixcoco: "280 g", sel: "14 g" },
+      { nb: 15, riz: "750 g", laitcoco: "450 ml", sucre: "120 g", noixcoco: "300 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Le riz", detail: "Faites cuire le riz avec un peu plus d'eau que d'habitude, pour qu'il soit bien collant.", badge: null },
+      { icone: "🥥", titre: "Parfumer", detail: "Incorporez le lait de coco, le sucre et le sel au riz chaud.", badge: null },
+      { icone: "🥄", titre: "Sécher", detail: "Laissez la masse tiédir jusqu'à pouvoir la manipuler.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Roulez des boules régulières entre vos paumes humides.", badge: null },
+      { icone: "🥥", titre: "La coco", detail: "Étalez la noix de coco râpée dans une assiette.", badge: null },
+      { icone: "🍡", titre: "Enrober", detail: "Roulez chaque boule dans la coco pour bien l'enrober.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez à température ambiante ou frais. Simple et doux — le chukuchuk marshallais.", badge: null }
+    ]
+  },
+  duckanoo: {
+    dateAjout: "2026-07-22T13:05:00",
+    nom: "Duckanoo",
+    cat: "desserts", pays: "saintvincent",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍠",
+    description: "Duckanoo — le pudding vapeur de Saint-Vincent-et-les-Grenadines : de la patate douce râpée mêlée de coco, de sucre et d'épices, enveloppée dans des feuilles de bananier et cuite à la vapeur en petits paquets fondants. Hérité d'Afrique de l'Ouest, ce dessert parfumé embaume la cannelle et la muscade.",
+    tableauDuckanoo: [
+      { nb: 1, patatedouce: "80 g", noixcoco: "15 g", laitcoco: "30 ml", sucre: "12 g", cannelle: "1 g", muscade: "0.5 g", sel: "1 g" },
+      { nb: 2, patatedouce: "160 g", noixcoco: "30 g", laitcoco: "60 ml", sucre: "24 g", cannelle: "2 g", muscade: "1 g", sel: "2 g" },
+      { nb: 3, patatedouce: "240 g", noixcoco: "45 g", laitcoco: "90 ml", sucre: "36 g", cannelle: "3 g", muscade: "1.5 g", sel: "3 g" },
+      { nb: 4, patatedouce: "320 g", noixcoco: "60 g", laitcoco: "120 ml", sucre: "48 g", cannelle: "4 g", muscade: "2 g", sel: "4 g" },
+      { nb: 5, patatedouce: "400 g", noixcoco: "75 g", laitcoco: "150 ml", sucre: "60 g", cannelle: "5 g", muscade: "2.5 g", sel: "5 g" },
+      { nb: 6, patatedouce: "480 g", noixcoco: "90 g", laitcoco: "180 ml", sucre: "72 g", cannelle: "6 g", muscade: "3 g", sel: "6 g" },
+      { nb: 7, patatedouce: "560 g", noixcoco: "105 g", laitcoco: "210 ml", sucre: "84 g", cannelle: "7 g", muscade: "3.5 g", sel: "7 g" },
+      { nb: 8, patatedouce: "640 g", noixcoco: "120 g", laitcoco: "240 ml", sucre: "96 g", cannelle: "8 g", muscade: "4 g", sel: "8 g" },
+      { nb: 9, patatedouce: "720 g", noixcoco: "135 g", laitcoco: "270 ml", sucre: "108 g", cannelle: "9 g", muscade: "4.5 g", sel: "9 g" },
+      { nb: 10, patatedouce: "800 g", noixcoco: "150 g", laitcoco: "300 ml", sucre: "120 g", cannelle: "10 g", muscade: "5 g", sel: "10 g" },
+      { nb: 11, patatedouce: "880 g", noixcoco: "165 g", laitcoco: "330 ml", sucre: "132 g", cannelle: "11 g", muscade: "5.5 g", sel: "11 g" },
+      { nb: 12, patatedouce: "960 g", noixcoco: "180 g", laitcoco: "360 ml", sucre: "144 g", cannelle: "12 g", muscade: "6 g", sel: "12 g" },
+      { nb: 13, patatedouce: "1040 g", noixcoco: "195 g", laitcoco: "390 ml", sucre: "156 g", cannelle: "13 g", muscade: "6.5 g", sel: "13 g" },
+      { nb: 14, patatedouce: "1120 g", noixcoco: "210 g", laitcoco: "420 ml", sucre: "168 g", cannelle: "14 g", muscade: "7 g", sel: "14 g" },
+      { nb: 15, patatedouce: "1200 g", noixcoco: "225 g", laitcoco: "450 ml", sucre: "180 g", cannelle: "15 g", muscade: "7.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "La patate douce", detail: "Épluchez et râpez finement la patate douce.", badge: null },
+      { icone: "🥥", titre: "La coco", detail: "Ajoutez la noix de coco râpée.", badge: null },
+      { icone: "🍯", titre: "L'appareil", detail: "Incorporez le sucre, le lait de coco, la cannelle, la muscade et le sel.", badge: null },
+      { icone: "🍃", titre: "Les paquets", detail: "Déposez l'appareil sur des carrés de feuille de bananier (ou de papier cuisson) et repliez-les bien.", badge: null },
+      { icone: "🎀", titre: "Ficeler", detail: "Fermez les paquets avec de la ficelle de cuisine.", badge: null },
+      { icone: "♨️", titre: "La vapeur", detail: "Faites cuire les paquets à la vapeur jusqu'à ce que le pudding soit pris et fondant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Ouvrez les paquets et servez tiède. Parfumé et fondant — le duckanoo vincentais.", badge: null }
+    ]
+  },
 });
