@@ -74804,5 +74804,345 @@ window.RECETTES_EN = {
     "detail": "Let cool a little and serve with tea. Fragrant and melting — the Comorian ladu."
    }
   ]
+ },
+ "saksak": {
+  "nom": "Sak Sak",
+  "description": "Sak sak — the sago-banana dumplings of Papua New Guinea: sago (here tapioca) mixed with mashed banana, wrapped in banana leaves and steamed, then coated in coconut cream. Soft, sweet and fragrant, it's the emblematic treat of Papuan coastal villages.",
+  "etapes": [
+   {
+    "titre": "The bananas",
+    "detail": "Mash the very ripe bananas into a purée."
+   },
+   {
+    "titre": "The sago",
+    "detail": "Mix the tapioca (sago) into the banana purée with the sugar and salt."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Spoon the mixture onto banana leaves (or baking paper)."
+   },
+   {
+    "titre": "The parcels",
+    "detail": "Fold into small well-sealed parcels."
+   },
+   {
+    "titre": "The steam",
+    "detail": "Steam the parcels until the dough is translucent and set."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Gently heat the coconut cream with a pinch of salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the parcels, coat with coconut cream and serve warm. Soft and sweet — the Papuan sak sak."
+   }
+  ]
+ },
+ "alandspannkaka": {
+  "nom": "Ålands Pannkaka",
+  "description": "Ålands pannkaka — the oven pancake of the Åland Islands: a thick custardy pancake of semolina cooked in milk, scented with cardamom, baked until golden and served with stewed prunes and whipped cream. Cosy and Nordic, it's THE specialty of the Finnish archipelago, served in all its cafés.",
+  "etapes": [
+   {
+    "titre": "The porridge",
+    "detail": "Cook the semolina in the milk, stirring, until a thick porridge, then let it cool a little."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Stir in the eggs, sugar and cardamom."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Pour the batter into a buttered dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the pancake is set and nicely golden."
+   },
+   {
+    "titre": "The prunes",
+    "detail": "Stew the prunes with a little water and sugar."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the very cold cream."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pancake warm with the stewed prunes and whipped cream. Cosy — the Ålands pannkaka."
+   }
+  ]
+ },
+ "firifiri": {
+  "nom": "Firi Firi",
+  "description": "Firi firi — the Tahitian figure-eight doughnuts: a coconut-milk yeast dough, shaped into twists, fried until puffed and golden, then sprinkled with sugar. Soft and fragrant, they're eaten warm at breakfast, with hot chocolate, in the markets of French Polynesia.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, sugar, salt and warm coconut milk into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Knead then let rise until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Divide the dough and shape figure-eight twists."
+   },
+   {
+    "titre": "Relax",
+    "detail": "Let the firi firi relax a few minutes."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the doughnuts until puffed and golden on both sides, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with sugar and serve warm. Soft and fragrant — the Tahitian firi firi."
+   }
+  ]
+ },
+ "knettir": {
+  "nom": "Knettir",
+  "description": "Knettir — the fish dumplings of the Faroe Islands: minced fish mixed with onion and a little flour, shaped into large dumplings poached in simmering water, served with potatoes and melted butter. Simple, briny and filling, it's the everyday dish of Faroese homes.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Finely mince the raw fish."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Chop the onion and mix it into the fish."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Add the flour, salt and pepper, and work into an even mass."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape large, tightly packed dumplings."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the knettir in simmering salted water until they float and are cooked."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Boil the potatoes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the dumplings with the potatoes and melted butter. Simple and briny — the Faroese knettir."
+   }
+  ]
+ },
+ "gacheguernesey": {
+  "nom": "Gâche",
+  "description": "Gâche — the enriched bread of Guernsey: a butter-rich yeast dough, studded with raisins, baked into a handsome golden loaf served in thick, generously buttered slices. Comforting and island-born, it's Guernsey's pride, at teatime with the island's famous cows' butter.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, sugar and salt, then knead with the warm milk."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Work in the soft butter and knead to a supple, smooth dough."
+   },
+   {
+    "titre": "The raisins",
+    "detail": "Add the raisins and distribute them well."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape a loaf and place it in a tin; let it rise again."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the gâche is golden and sounds hollow."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool a little and serve in thick, buttered slices. Comforting — the Guernsey gâche."
+   }
+  ]
+ },
+ "jerseywonders": {
+  "nom": "Jersey Wonders",
+  "description": "Jersey wonders — the 'mèrvelles' of Jersey: twisted doughnuts of butter-and-egg-rich dough, fried until golden, neither glazed nor filled. Tradition says to fry them on the ebbing tide so they don't come out greasy! Golden and soft, they go with tea all across the Channel Island.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Cream the soft butter with the sugar, then add the egg."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Work in the flour and salt to form a firm dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the dough rest in the fridge."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll out, cut rectangles, slit the centre and pass one end through the slit to twist."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the wonders until puffed and golden, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, plain, with tea. Golden and soft — the Jersey wonders."
+   }
+  ]
+ },
+ "vindayemaurice": {
+  "nom": "Fish Vindaye",
+  "description": "Fish vindaye — the Mauritian pickle-dish: slices of fried fish coated in a warm marinade of mustard, turmeric, vinegar, onion and ginger. Punchy, golden and tangy, it's eaten the next day, even better, with rice or in a homemade bread roll.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the fish into thick slices, salt them and fry until golden."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Slice the onion into strips, with the chopped garlic and ginger."
+   },
+   {
+    "titre": "The spice paste",
+    "detail": "Mix the mustard and turmeric into the vinegar."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Gently sauté the onions, garlic, ginger and chilli in the oil."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Pour in the mustard-turmeric paste and let it simmer a minute."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the fried fish and gently coat it in the marinade."
+   },
+   {
+    "titre": "Rest and serve",
+    "detail": "Let it rest (ideally overnight) and serve with rice or bread. Punchy and tangy — the Mauritian vindaye."
+   }
+  ]
+ },
+ "nasikatok": {
+  "nom": "Nasi Katok",
+  "description": "Nasi katok — the people's dish of Brunei: plain rice, a piece of crispy fried chicken and a sweet-spicy onion-chilli sambal, served as a parcel. Its name ('knock rice') comes from customers knocking on vendors' windows at night. Simple, cheap and addictive.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the plain rice."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Salt the chicken and fry it until deeply golden and crispy."
+   },
+   {
+    "titre": "The sambal base",
+    "detail": "Blend (or pound) the onion, garlic and chilli."
+   },
+   {
+    "titre": "Cook the sambal",
+    "detail": "Sauté this paste in the oil until fragrant."
+   },
+   {
+    "titre": "Balance",
+    "detail": "Add the sugar and salt, and let the sambal cook down."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Plate the rice, top with the fried chicken and a good spoonful of sambal."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, mixed together with a fork. Simple and addictive — Bruneian nasi katok."
+   }
+  ]
+ },
+ "stocafi": {
+  "nom": "Stocafi",
+  "description": "Stocafi — Monaco-style stockfish: dried fish (here desalted salt cod) simmered at length in a white-wine tomato sauce with olives and herbs. Mediterranean and generous, it's THE traditional dish of the Rock, a cousin of Niçoise estocaficada, served with potatoes.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Desalt the cod (or rehydrate the stockfish), then cut it into pieces."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in olive oil."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine and let it reduce by half."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and thyme, and let it cook down."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the fish and simmer gently in the sauce."
+   },
+   {
+    "titre": "The olives",
+    "detail": "Add the olives and keep cooking until everything is melting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with steamed potatoes. Mediterranean — the Monegasque stocafi."
+   }
+  ]
+ },
+ "tortatremonti": {
+  "nom": "Torta Tre Monti",
+  "description": "Torta Tre Monti — the 'three mounts' cake of San Marino: thin wafers stacked and filled with chocolate-hazelnut cream, the whole coated in dark chocolate. Crisp and melting at once, this emblematic cake evokes the three towers perched on Mount Titano, symbol of the republic.",
+  "etapes": [
+   {
+    "titre": "The wafer batter",
+    "detail": "Mix the flour, part of the sugar, a little melted butter and the milk into a fluid batter."
+   },
+   {
+    "titre": "The wafers",
+    "detail": "Cook thin wafers (waffle iron or pan) and let them crisp up."
+   },
+   {
+    "titre": "The hazelnuts",
+    "detail": "Toast and grind the hazelnuts."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Melt half the chocolate with the butter, sugar and ground hazelnuts into a gianduja cream."
+   },
+   {
+    "titre": "The stacking",
+    "detail": "Stack the wafers, spreading each generously with chocolate-hazelnut cream."
+   },
+   {
+    "titre": "The glaze",
+    "detail": "Melt the remaining chocolate and coat the top and sides."
+   },
+   {
+    "titre": "Rest and serve",
+    "detail": "Let it set in the fridge and serve in clean slices. Crisp and melting — the torta Tre Monti."
+   }
+  ]
  }
 };

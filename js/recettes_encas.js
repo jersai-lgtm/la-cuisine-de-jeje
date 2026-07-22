@@ -5894,4 +5894,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, nature ou garnis. Moelleux et dorés — les johnny cakes de Sint Maarten.", badge: null }
     ]
   },
+  firifiri: {
+    dateAjout: "2026-07-22T12:02:00",
+    nom: "Firi Firi",
+    cat: "encas", pays: "polynesiefrancaise",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Firi firi — les beignets tahitiens en forme de 8 : une pâte levée au lait de coco, façonnée en torsades, frite jusqu'à être gonflée et dorée, puis saupoudrée de sucre. Moelleux et parfumés, ils se dégustent tièdes au petit-déjeuner, avec un chocolat chaud, sur les marchés de Polynésie française.",
+    tableauFirifiri: [
+      { nb: 1, farine: "70 g", laitcoco: "40 ml", sucre: "10 g", levureboulangere: "2 g", huileolive: "12 ml", sel: "1 g" },
+      { nb: 2, farine: "140 g", laitcoco: "80 ml", sucre: "20 g", levureboulangere: "4 g", huileolive: "24 ml", sel: "2 g" },
+      { nb: 3, farine: "210 g", laitcoco: "120 ml", sucre: "30 g", levureboulangere: "6 g", huileolive: "36 ml", sel: "3 g" },
+      { nb: 4, farine: "280 g", laitcoco: "160 ml", sucre: "40 g", levureboulangere: "8 g", huileolive: "48 ml", sel: "4 g" },
+      { nb: 5, farine: "350 g", laitcoco: "200 ml", sucre: "50 g", levureboulangere: "10 g", huileolive: "60 ml", sel: "5 g" },
+      { nb: 6, farine: "420 g", laitcoco: "240 ml", sucre: "60 g", levureboulangere: "12 g", huileolive: "72 ml", sel: "6 g" },
+      { nb: 7, farine: "490 g", laitcoco: "280 ml", sucre: "70 g", levureboulangere: "14 g", huileolive: "84 ml", sel: "7 g" },
+      { nb: 8, farine: "560 g", laitcoco: "320 ml", sucre: "80 g", levureboulangere: "16 g", huileolive: "96 ml", sel: "8 g" },
+      { nb: 9, farine: "630 g", laitcoco: "360 ml", sucre: "90 g", levureboulangere: "18 g", huileolive: "108 ml", sel: "9 g" },
+      { nb: 10, farine: "700 g", laitcoco: "400 ml", sucre: "100 g", levureboulangere: "20 g", huileolive: "120 ml", sel: "10 g" },
+      { nb: 11, farine: "770 g", laitcoco: "440 ml", sucre: "110 g", levureboulangere: "22 g", huileolive: "132 ml", sel: "11 g" },
+      { nb: 12, farine: "840 g", laitcoco: "480 ml", sucre: "120 g", levureboulangere: "24 g", huileolive: "144 ml", sel: "12 g" },
+      { nb: 13, farine: "910 g", laitcoco: "520 ml", sucre: "130 g", levureboulangere: "26 g", huileolive: "156 ml", sel: "13 g" },
+      { nb: 14, farine: "980 g", laitcoco: "560 ml", sucre: "140 g", levureboulangere: "28 g", huileolive: "168 ml", sel: "14 g" },
+      { nb: 15, farine: "1050 g", laitcoco: "600 ml", sucre: "150 g", levureboulangere: "30 g", huileolive: "180 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "La pâte", detail: "Mélangez la farine, la levure, le sucre, le sel et le lait de coco tiède en une pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Pétrissez puis laissez lever jusqu'à doubler de volume.", badge: null },
+      { icone: "🎀", titre: "Façonner", detail: "Divisez la pâte et façonnez des torsades en forme de 8.", badge: null },
+      { icone: "⏲️", titre: "Détendre", detail: "Laissez les firi firi se détendre quelques minutes.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les beignets jusqu'à ce qu'ils soient gonflés et dorés des deux côtés, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Saupoudrez de sucre et servez tièdes. Moelleux et parfumés — les firi firi tahitiens.", badge: null }
+    ]
+  },
+  jerseywonders: {
+    dateAjout: "2026-07-22T12:05:00",
+    nom: "Jersey Wonders",
+    cat: "encas", pays: "jersey",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥨",
+    description: "Jersey wonders — les « mèrvelles » de Jersey : des beignets torsadés à la pâte riche en beurre et en œufs, frits jusqu'à être dorés, ni glacés ni fourrés. La tradition veut qu'on les frie à marée descendante pour qu'ils ne soient pas gras ! Dorés et moelleux, ils accompagnent le thé dans toute l'île anglo-normande.",
+    tableauJerseywonders: [
+      { nb: 1, farine: "70 g", beurre: "12 g", sucre: "12 g", oeufs: "½", huileolive: "12 ml", sel: "1 g" },
+      { nb: 2, farine: "140 g", beurre: "24 g", sucre: "24 g", oeufs: "1", huileolive: "24 ml", sel: "2 g" },
+      { nb: 3, farine: "210 g", beurre: "36 g", sucre: "36 g", oeufs: "1½", huileolive: "36 ml", sel: "3 g" },
+      { nb: 4, farine: "280 g", beurre: "48 g", sucre: "48 g", oeufs: "2", huileolive: "48 ml", sel: "4 g" },
+      { nb: 5, farine: "350 g", beurre: "60 g", sucre: "60 g", oeufs: "2½", huileolive: "60 ml", sel: "5 g" },
+      { nb: 6, farine: "420 g", beurre: "72 g", sucre: "72 g", oeufs: "3", huileolive: "72 ml", sel: "6 g" },
+      { nb: 7, farine: "490 g", beurre: "84 g", sucre: "84 g", oeufs: "3½", huileolive: "84 ml", sel: "7 g" },
+      { nb: 8, farine: "560 g", beurre: "96 g", sucre: "96 g", oeufs: "4", huileolive: "96 ml", sel: "8 g" },
+      { nb: 9, farine: "630 g", beurre: "108 g", sucre: "108 g", oeufs: "4½", huileolive: "108 ml", sel: "9 g" },
+      { nb: 10, farine: "700 g", beurre: "120 g", sucre: "120 g", oeufs: "5", huileolive: "120 ml", sel: "10 g" },
+      { nb: 11, farine: "770 g", beurre: "132 g", sucre: "132 g", oeufs: "5½", huileolive: "132 ml", sel: "11 g" },
+      { nb: 12, farine: "840 g", beurre: "144 g", sucre: "144 g", oeufs: "6", huileolive: "144 ml", sel: "12 g" },
+      { nb: 13, farine: "910 g", beurre: "156 g", sucre: "156 g", oeufs: "6½", huileolive: "156 ml", sel: "13 g" },
+      { nb: 14, farine: "980 g", beurre: "168 g", sucre: "168 g", oeufs: "7", huileolive: "168 ml", sel: "14 g" },
+      { nb: 15, farine: "1050 g", beurre: "180 g", sucre: "180 g", oeufs: "7½", huileolive: "180 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Travaillez le beurre mou avec le sucre, puis ajoutez l'œuf.", badge: null },
+      { icone: "🌾", titre: "La farine", detail: "Incorporez la farine et le sel pour former une pâte ferme.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer la pâte au frais.", badge: null },
+      { icone: "🎀", titre: "Façonner", detail: "Abaissez, découpez des rectangles, fendez-les au centre et passez une extrémité dans la fente pour torsader.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les wonders jusqu'à ce qu'ils soient gonflés et dorés, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez-les tièdes ou froids, tels quels, avec le thé. Dorés et moelleux — les wonders de Jersey.", badge: null }
+    ]
+  },
 });
