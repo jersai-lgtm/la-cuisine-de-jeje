@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "4.5.7",
+    titre: "📅 Planifie tes recettes dans ton agenda",
+    texte: "Fini d'oublier ce que tu voulais cuisiner ! Sur chaque fiche recette, un nouveau bouton 📅 te permet de la planifier : choisis le jour et le moment (matin, midi, après-midi ou soir), et hop — l'événement s'ouvre tout prêt dans Google Agenda (ou en fichier .ics pour les autres calendriers), avec le temps de préparation et un lien qui rouvre direct la recette le jour J. 🛒 Bonus : sur la liste de courses, le bouton « 📅 Rappel courses » crée un rappel avec les recettes de ton panier. Plus aucune excuse pour le « qu'est-ce qu'on mange ce soir ? » ! 😄"
+  },
+  {
     v: "3.4.8",
     titre: "🎨 Accueil en couleurs",
     texte: "L'accueil s'harmonise ! Chaque bloc a maintenant sa propre bannière colorée : 🗓️ La recette du jour en or (clique dessus pour l'ouvrir en grand), 🎯 Objectif kcal en vert, 🎭 De quoi t'as envie en violet, 🆕 Dernières recettes ajoutées en rose, 🕐 Dernières recettes vues en bleu-sarcelle, ✨ Suggestions pour toi en corail, 📅 Dernier menu généré en indigo, et 🌱 Le top du mois change de couleur selon la saison (vert au printemps, or en été, marron en automne, bleu en hiver). Plus facile de repérer chaque section d'un coup d'œil ! 🌈"
