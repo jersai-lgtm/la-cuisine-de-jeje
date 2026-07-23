@@ -141,6 +141,7 @@ async function envoyerAvis() {
 function rendreNoteAppAccueil(tous) {
   const zone = document.getElementById("accueil-note-app");
   if (!zone) return;
+  window._avisTousPublics = tous; // réutilisé par la modal « Tous les avis »
   const nb = tous.length;
   zone.style.display = "block";
   if (nb === 0) {
@@ -163,16 +164,17 @@ function rendreNoteAppAccueil(tous) {
     const n = Math.max(0, Math.min(5, last.etoiles || 0));
     const st = "★".repeat(n) + "☆".repeat(5 - n);
     avisHTML = `
-      <div class="note-app-avis">
+      <div class="note-app-avis" onclick="ouvrirTousLesAvis()" role="button" tabindex="0" aria-label="Voir tous les avis">
         <span class="note-app-avis-stars">${st}</span>
         <span class="note-app-avis-txt">« ${escapeHTML(last.commentaire.trim())} »</span>
       </div>`;
   }
+  // v262 : toucher la barre ouvre la liste PUBLIQUE de tous les avis (anonymes)
   zone.innerHTML = `
-    <button class="note-app-bar" onclick="ouvrirModalAvis()" aria-label="Avis général de l'application">
+    <button class="note-app-bar" onclick="ouvrirTousLesAvis()" aria-label="Voir tous les avis de l'application">
       <span class="note-app-bar-note">${moy.toFixed(1).replace(".", ",")}<span>/5</span></span>
       <span class="note-app-bar-stars">${etoiles}</span>
-      <span class="note-app-bar-sub">Avis général de l'appli · ${nb} avis</span>
+      <span class="note-app-bar-sub">Avis général de l'appli · ${nb} avis · appuie pour tout lire</span>
     </button>${avisHTML}`;
 }
 
@@ -188,6 +190,85 @@ async function chargerNoteAppAccueil() {
   }
 }
 window.chargerNoteAppAccueil = chargerNoteAppAccueil;
+
+// =============================================================================
+// 📖 TOUS LES AVIS — modal PUBLIQUE (v262)
+// -----------------------------------------------------------------------------
+// Tout le monde peut consulter tous les avis de l'appli : étoiles, commentaire
+// et date, SANS jamais afficher le nom des personnes (anonyme). Les noms ne
+// restent visibles que dans la vue admin privée.
+// =============================================================================
+function _avisDateCourte(d) {
+  try {
+    const dt = new Date(d);
+    if (isNaN(dt)) return "";
+    return dt.toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
+  } catch (e) { return ""; }
+}
+
+function rendreListeTousAvis(tous) {
+  const nb = tous.length;
+  const moy = nb ? tous.reduce((s, a) => s + (a.etoiles || 0), 0) / nb : 0;
+  const arr = Math.round(moy);
+  const tries = tous.slice().sort((a, b) => new Date(b.dateMaj || 0) - new Date(a.dateMaj || 0));
+  const items = tries.map(a => {
+    const n = Math.max(0, Math.min(5, a.etoiles || 0));
+    const st = "★".repeat(n) + "☆".repeat(5 - n);
+    const comm = (a.commentaire || "").trim();
+    return `<div class="avis-public-item">
+      <div class="avis-public-tete"><span class="avis-public-stars">${st}</span><span class="avis-public-date">${_avisDateCourte(a.dateMaj)}</span></div>
+      ${comm ? `<div class="avis-public-comm">« ${escapeHTML(comm)} »</div>` : `<div class="avis-public-comm avis-public-sans">Sans commentaire</div>`}
+    </div>`;
+  }).join("");
+  return `
+    <div class="avis-public-resume">
+      <span class="avis-public-note">${moy.toFixed(1).replace(".", ",")}<span>/5</span></span>
+      <span class="avis-public-resume-stars">${"★".repeat(arr)}${"☆".repeat(5 - arr)}</span>
+      <span class="avis-public-nb">${nb} avis</span>
+    </div>
+    <div class="avis-public-liste">${items || '<p class="avis-public-sans" style="text-align:center">Aucun avis pour l\'instant.</p>'}</div>
+    <button class="avis-btn-envoyer" onclick="fermerTousLesAvis();ouvrirModalAvis()">✏️ Donner mon avis</button>`;
+}
+
+async function ouvrirTousLesAvis() {
+  // Créer la modal au premier appel (réutilise le style des modals existantes)
+  let m = document.getElementById("modal-tous-avis");
+  if (!m) {
+    m = document.createElement("div");
+    m.id = "modal-tous-avis";
+    m.className = "modal-auth-overlay";
+    m.onclick = (e) => { if (e.target === m) fermerTousLesAvis(); };
+    m.innerHTML = `<div class="modal-auth-contenu modal-avis-contenu">
+      <button class="modal-fermer" onclick="fermerTousLesAvis()">✕</button>
+      <h2>⭐ Tous les avis</h2>
+      <p class="avis-modal-subtitle">Les avis sont affichés anonymement.</p>
+      <div id="tous-avis-corps"><p style="text-align:center;opacity:.7">Chargement…</p></div>
+    </div>`;
+    document.body.appendChild(m);
+    if (typeof _MODALS_SURVEILLEES !== "undefined" && Array.isArray(_MODALS_SURVEILLEES)) {
+      _MODALS_SURVEILLEES.push({ id: "modal-tous-avis", close: function () { fermerTousLesAvis(); } });
+    }
+  }
+  m.classList.add("visible");
+  // Données : réutilise le dernier chargement de l'accueil, sinon relit Firestore
+  let tous = window._avisTousPublics;
+  if (!Array.isArray(tous)) {
+    try {
+      const snap = await _db.collection("avis").get();
+      tous = snap.docs.map(d => d.data());
+      window._avisTousPublics = tous;
+    } catch (e) { tous = []; }
+  }
+  const corps = document.getElementById("tous-avis-corps");
+  if (corps) corps.innerHTML = rendreListeTousAvis(tous);
+}
+window.ouvrirTousLesAvis = ouvrirTousLesAvis;
+
+function fermerTousLesAvis() {
+  const m = document.getElementById("modal-tous-avis");
+  if (m) m.classList.remove("visible");
+}
+window.fermerTousLesAvis = fermerTousLesAvis;
 
 // Charge le bouton perso « Mon avis » (Mes Stats), la carte accueil et la section admin.
 async function chargerStatsAvis() {

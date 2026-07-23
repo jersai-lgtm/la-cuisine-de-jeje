@@ -5164,6 +5164,30 @@ select, input[type="number"] {
 .note-app-avis-stars { color: #ffb300; font-size: 12px; letter-spacing: 1px; line-height: 1; }
 .note-app-avis-txt { font-size: 13px; color: var(--text); font-style: italic; line-height: 1.4; }
 .note-app-avis-auteur { align-self: flex-end; font-size: 12px; color: var(--text-3); font-weight: 700; }
+.note-app-avis { cursor: pointer; }
+
+/* === Tous les avis (modal publique, v262) — anonyme : étoiles + commentaire + date === */
+.avis-public-resume {
+  display: flex; align-items: baseline; justify-content: center; gap: 10px;
+  margin: 4px 0 12px; flex-wrap: wrap;
+}
+.avis-public-note { font-size: 30px; font-weight: 800; color: var(--or); line-height: 1; }
+.avis-public-note span { font-size: 14px; font-weight: 600; color: var(--text-3); }
+.avis-public-resume-stars { color: #ffb300; font-size: 16px; letter-spacing: 2px; }
+.avis-public-nb { font-size: 13px; color: var(--text-3); font-weight: 600; }
+.avis-public-liste {
+  max-height: 52vh; overflow-y: auto; display: flex; flex-direction: column;
+  gap: 8px; margin: 0 0 14px; padding-right: 4px;
+}
+.avis-public-item {
+  background: rgba(var(--w),.05); border: 1px solid rgba(var(--w),.1);
+  border-radius: 12px; padding: 9px 12px; text-align: left;
+}
+.avis-public-tete { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.avis-public-stars { color: #ffb300; font-size: 13px; letter-spacing: 1px; line-height: 1; }
+.avis-public-date { font-size: 11px; color: var(--text-4); }
+.avis-public-comm { margin-top: 4px; font-size: 13px; color: var(--text-2); font-style: italic; line-height: 1.4; }
+.avis-public-sans { color: var(--text-4); font-style: italic; }
 @media (max-width: 480px) {
   #accueil-note-app { padding: 8px 12px 0; }
   .note-app-bar { gap: 10px; padding: 9px 13px; }

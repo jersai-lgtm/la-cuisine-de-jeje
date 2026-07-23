@@ -1083,42 +1083,26 @@ function rechercherRecette(query) {
   // Construire l'index si pas encore fait
   if (!window._searchIndex) construireIndexRecherche();
   
-  // === v240 : AUTO-FILTRE sur match EXACT d'un mot-clé ===
-  // Si l'utilisateur tape "cocktail" entier, on applique direct le filtre catégorie
+  // === v262 : PLUS AUCUN saut automatique pendant la frappe ===
+  // Avant : taper « salade » vidait la barre et basculait dans la catégorie
+  // Salades — impossible de taper « salade grecque ». Désormais la saisie est
+  // conservée : la grille se filtre en direct (mot-clé de catégorie/pays inclus)
+  // et des suggestions CLASSÉES s'affichent sous la barre (recettes d'abord).
   const qNorm = normalizeText(q);
-  if (SYNONYMES_CATEGORIE[qNorm]) {
-    const cat = SYNONYMES_CATEGORIE[qNorm];
-    viderRechercheSilencieux();
-    // Petit délai pour laisser le DOM respirer
-    setTimeout(() => filtrerChipCategorieDepuisRecherche(cat), 50);
-    return;
-  }
-  if (SYNONYMES_PAYS[qNorm]) {
-    const pays = SYNONYMES_PAYS[qNorm];
-    viderRechercheSilencieux();
-    setTimeout(() => filtrerChipPaysDepuisRecherche(pays), 50);
-    return;
-  }
-  if (SYNONYMES_REGIME[qNorm]) {
-    const reg = SYNONYMES_REGIME[qNorm];
-    viderRechercheSilencieux();
-    setTimeout(() => filtrerParRegime(reg), 50);
-    return;
-  }
-  
-  // Sinon : afficher les suggestions + filtrer les cartes en mode recherche libre
+
   // Assurer que la grille est visible
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
   if (secCartes) secCartes.classList.add("visible");
-  
-  // Option 1 : pas de dropdown — la grille filtrée ci-dessous montre directement les cartes
-  cacherSuggestions();
-  
-  // Faire le filtrage des cartes en arrière-plan
-  const resultats = scorerCartes(qNorm);
-  const setMatch = new Set(resultats.map(r => r.entry.element));
+
+  // Suggestions classées sous la barre (recettes en premier)
+  afficherSuggestions(q);
+
+  // Filtrage de la grille : résultats scorés + catégorie/pays/régime si mot-clé exact
+  const setMatch = (typeof ensembleCartesPourRequete === "function")
+    ? ensembleCartesPourRequete(qNorm)
+    : new Set(scorerCartes(qNorm).map(r => r.entry.element));
   
   document.querySelectorAll(".carte").forEach(carte => {
     const etaitVisible = window._etatAvantRecherche.get(carte) !== false;

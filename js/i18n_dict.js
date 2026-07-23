@@ -128,6 +128,9 @@ window.I18N_DICT = {
   "Choisis une note": "Pick a rating",
   "Un commentaire ? Qu'est-ce qui te plaît / déplaît ? (optionnel)": "Any comment? What do you like / dislike? (optional)",
   "💌 Envoyer mon avis": "💌 Send my review",
+  "⭐ Tous les avis": "⭐ All reviews", "Les avis sont affichés anonymement.": "Reviews are shown anonymously.",
+  "✏️ Donner mon avis": "✏️ Share my review", "Sans commentaire": "No comment",
+  "Aucun avis pour l'instant.": "No reviews yet.",
 
   // --- Admin ---
   "🛡️ Espace admin": "🛡️ Admin area", "💬 Commentaires à valider": "💬 Comments to review",

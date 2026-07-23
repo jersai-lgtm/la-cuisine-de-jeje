@@ -288,36 +288,75 @@ function getCartesPourRegime(regime) {
 }
 
 // === SCORING DES CARTES POUR UNE REQUÊTE LIBRE ===
+// v262 : requête multi-mots = TOUS les mots doivent correspondre quelque part
+// (nom, ingrédient, catégorie ou pays). « salade grecque » ne noie plus la
+// Salade Grecque au milieu de toutes les salades ; « dessert japonais » marche.
 function scorerCartes(qNorm) {
   if (!window._searchIndex) return [];
   const motsQuery = qNorm.split(/\s+/).filter(Boolean);
-  
+
   return window._searchIndex.cartes.map(entry => {
     let score = 0;
     const motsNom = entry.nomNorm.split(/\s+/).filter(Boolean);
-    
+
     // 1. Match exact du nom complet : énorme bonus
     if (entry.nomNorm === qNorm) score += 1000;
     // 2. Le nom contient toute la query : grand bonus
     else if (entry.nomNorm.includes(qNorm)) score += 200;
-    
-    // 3. Pour chaque mot de la query, on cherche dans le nom et les ingrédients
+
+    // 3. Chaque mot de la query doit matcher : nom, catégorie, pays ou ingrédient
+    let tousMatchent = true;
     motsQuery.forEach(mq => {
+      let s = 0;
       // Match exact d'un mot du nom
-      if (motsNom.includes(mq)) score += 100;
+      if (motsNom.includes(mq)) s = 100;
       // Match préfixe d'un mot du nom (au moins 3 chars pour éviter "co" = "coq", "coco", "cot"...)
-      else if (mq.length >= 3 && motsNom.some(mn => mn.startsWith(mq))) score += 50;
+      else if (mq.length >= 3 && motsNom.some(mn => mn.startsWith(mq))) s = 50;
+      // Le mot désigne la catégorie de la carte ("salade" → cat salades)
+      else if (SYNONYMES_CATEGORIE[mq] && entry.cat === SYNONYMES_CATEGORIE[mq]) s = 45;
+      // Le mot désigne le pays de la carte ("grecque" → pays grece)
+      else if (SYNONYMES_PAYS[mq] && entry.pays === SYNONYMES_PAYS[mq]) s = 45;
       // Match dans les ingrédients (exact)
-      else if (mq.length >= 3 && entry.ingredientsNorm.some(i => i === mq)) score += 40;
+      else if (mq.length >= 3 && entry.ingredientsNorm.some(i => i === mq)) s = 40;
       // Match préfixe ingrédient (≥3 chars, cohérent avec le préfixe de nom)
-      else if (mq.length >= 3 && entry.ingredientsNorm.some(i => i.startsWith(mq))) score += 25;
+      else if (mq.length >= 3 && entry.ingredientsNorm.some(i => i.startsWith(mq))) s = 25;
       // Fuzzy match SUR LE NOM uniquement (faute de frappe sur nom recette)
-      else if (mq.length >= 5 && motsNom.some(mn => fuzzyMatch(mq, mn))) score += 30;
+      else if (mq.length >= 5 && motsNom.some(mn => fuzzyMatch(mq, mn))) s = 30;
+      // Un mot entamé (< 3 chars, ex. « salade g ») ne disqualifie pas la carte
+      if (s === 0 && mq.length >= 3) tousMatchent = false;
+      score += s;
     });
-    
+    if (motsQuery.length > 1 && !tousMatchent) score = 0;
+
     return { entry, score };
   }).filter(x => x.score > 0).sort((a, b) => b.score - a.score);
 }
+
+// v262 : ensemble des cartes à montrer pour une requête — résultats scorés,
+// PLUS toute la catégorie / tout le pays / tout le régime si la requête est
+// exactement ce mot-clé (taper « salade » montre les salades SANS vider la barre).
+function ensembleCartesPourRequete(qNorm) {
+  const setMatch = new Set(scorerCartes(qNorm).map(r => r.entry.element));
+  if (window._searchIndex) {
+    if (SYNONYMES_CATEGORIE[qNorm]) {
+      const cat = SYNONYMES_CATEGORIE[qNorm];
+      window._searchIndex.cartes.forEach(e => { if (e.cat === cat) setMatch.add(e.element); });
+    }
+    if (SYNONYMES_PAYS[qNorm]) {
+      const pays = SYNONYMES_PAYS[qNorm];
+      window._searchIndex.cartes.forEach(e => { if (e.pays === pays) setMatch.add(e.element); });
+    }
+    if (SYNONYMES_REGIME[qNorm] && typeof getCartesPourRegime === "function") {
+      getCartesPourRegime(SYNONYMES_REGIME[qNorm]).forEach(e => setMatch.add(e.element));
+    }
+  }
+  return setMatch;
+}
+
+// v262 : fermer le dropdown de suggestions quand on touche/clique en dehors
+document.addEventListener("click", (e) => {
+  if (!(e.target.closest && e.target.closest(".search-bar"))) cacherSuggestions();
+});
 
 // === AFFICHAGE DES SUGGESTIONS (dropdown) ===
 function afficherSuggestions(query) {
@@ -420,6 +459,9 @@ function afficherSuggestions(query) {
     });
   }
   
+  // v262 : les recettes d'abord (c'est ce qu'on cherche), les filtres ensuite
+  groupes.sort((a, b) => (b.label === "Recettes") - (a.label === "Recettes"));
+
   // Rendu
   if (groupes.length === 0) {
     dropdown.innerHTML = `<div class="suggestion-empty">Aucun résultat — essaye autre chose</div>`;
@@ -456,7 +498,7 @@ function validerRecherche() {
   if (!q) return;
   // Re-filtrer la grille sur TOUS les résultats (sécurité)
   const qNorm = normalizeText(q);
-  const setMatch = new Set(scorerCartes(qNorm).map(r => r.entry.element));
+  const setMatch = ensembleCartesPourRequete(qNorm);
   document.querySelectorAll(".carte").forEach(carte => {
     const etaitVisible = !window._etatAvantRecherche || window._etatAvantRecherche.get(carte) !== false;
     carte.style.display = (etaitVisible && setMatch.has(carte)) ? "" : "none";
