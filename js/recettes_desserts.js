@@ -8824,4 +8824,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Ouvrez les paquets et servez tiède. Parfumé et fondant — le duckanoo vincentais.", badge: null }
     ]
   },
+  japonesa: {
+    dateAjout: "2026-07-22T14:02:00",
+    nom: "Japonesa",
+    cat: "desserts", pays: "gibraltar",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Japonesa — la douceur culte de Gibraltar : un beignet briochéfrit, fourré d'une crème pâtissière vanillée, roulé dans le sucre. Vendues dans toutes les boulangeries du Rocher, les japonesas se mangent tièdes, quand la crème est encore souple — un péché mignon gibraltarien.",
+    tableauJaponesa: [
+      { nb: 1, farine: "60 g", lait: "60 ml", oeufs: "½", sucre: "15 g", beurre: "8 g", vanille: "0.5 g", levureboulangere: "2 g", huileolive: "12 ml" },
+      { nb: 2, farine: "120 g", lait: "120 ml", oeufs: "1", sucre: "30 g", beurre: "16 g", vanille: "1 g", levureboulangere: "4 g", huileolive: "24 ml" },
+      { nb: 3, farine: "180 g", lait: "180 ml", oeufs: "1½", sucre: "45 g", beurre: "24 g", vanille: "1.5 g", levureboulangere: "6 g", huileolive: "36 ml" },
+      { nb: 4, farine: "240 g", lait: "240 ml", oeufs: "2", sucre: "60 g", beurre: "32 g", vanille: "2 g", levureboulangere: "8 g", huileolive: "48 ml" },
+      { nb: 5, farine: "300 g", lait: "300 ml", oeufs: "2½", sucre: "75 g", beurre: "40 g", vanille: "2.5 g", levureboulangere: "10 g", huileolive: "60 ml" },
+      { nb: 6, farine: "360 g", lait: "360 ml", oeufs: "3", sucre: "90 g", beurre: "48 g", vanille: "3 g", levureboulangere: "12 g", huileolive: "72 ml" },
+      { nb: 7, farine: "420 g", lait: "420 ml", oeufs: "3½", sucre: "105 g", beurre: "56 g", vanille: "3.5 g", levureboulangere: "14 g", huileolive: "84 ml" },
+      { nb: 8, farine: "480 g", lait: "480 ml", oeufs: "4", sucre: "120 g", beurre: "64 g", vanille: "4 g", levureboulangere: "16 g", huileolive: "96 ml" },
+      { nb: 9, farine: "540 g", lait: "540 ml", oeufs: "4½", sucre: "135 g", beurre: "72 g", vanille: "4.5 g", levureboulangere: "18 g", huileolive: "108 ml" },
+      { nb: 10, farine: "600 g", lait: "600 ml", oeufs: "5", sucre: "150 g", beurre: "80 g", vanille: "5 g", levureboulangere: "20 g", huileolive: "120 ml" },
+      { nb: 11, farine: "660 g", lait: "660 ml", oeufs: "5½", sucre: "165 g", beurre: "88 g", vanille: "5.5 g", levureboulangere: "22 g", huileolive: "132 ml" },
+      { nb: 12, farine: "720 g", lait: "720 ml", oeufs: "6", sucre: "180 g", beurre: "96 g", vanille: "6 g", levureboulangere: "24 g", huileolive: "144 ml" },
+      { nb: 13, farine: "780 g", lait: "780 ml", oeufs: "6½", sucre: "195 g", beurre: "104 g", vanille: "6.5 g", levureboulangere: "26 g", huileolive: "156 ml" },
+      { nb: 14, farine: "840 g", lait: "840 ml", oeufs: "7", sucre: "210 g", beurre: "112 g", vanille: "7 g", levureboulangere: "28 g", huileolive: "168 ml" },
+      { nb: 15, farine: "900 g", lait: "900 ml", oeufs: "7½", sucre: "225 g", beurre: "120 g", vanille: "7.5 g", levureboulangere: "30 g", huileolive: "180 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, la levure, une partie du sucre, l'œuf et un peu de lait tiède, puis pétrissez avec le beurre.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez lever la pâte jusqu'à doubler de volume.", badge: null },
+      { icone: "🍮", titre: "La crème", detail: "Faites épaissir le reste du lait avec du sucre, un peu d'œuf et la vanille en crème pâtissière, puis laissez refroidir.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Façonnez des disques de pâte et laissez-les repousser.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les beignets jusqu'à ce qu'ils soient gonflés et dorés, puis égouttez.", badge: null },
+      { icone: "💉", titre: "Fourrer", detail: "Incisez et fourrez généreusement chaque beignet de crème pâtissière.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Roulez dans le sucre et servez tièdes. Gourmandes — les japonesas de Gibraltar.", badge: null }
+    ]
+  },
+  kokoalaisa: {
+    dateAjout: "2026-07-22T14:09:00",
+    nom: "Koko Alaisa",
+    cat: "desserts", pays: "samoa",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍫",
+    description: "Koko alaisa — le riz au cacao des Samoa : du riz mijoté dans une infusion de cacao samoan corsé, adouci de lait de coco et de sucre, servi chaud comme un porridge onctueux. Petit-déjeuner et goûter adoré des familles samoanes, il embaume le chocolat brut et la coco.",
+    tableauKokoalaisa: [
+      { nb: 1, riz: "55 g", cacao: "8 g", laitcoco: "50 ml", sucre: "12 g", sel: "1 g" },
+      { nb: 2, riz: "110 g", cacao: "16 g", laitcoco: "100 ml", sucre: "24 g", sel: "2 g" },
+      { nb: 3, riz: "165 g", cacao: "24 g", laitcoco: "150 ml", sucre: "36 g", sel: "3 g" },
+      { nb: 4, riz: "220 g", cacao: "32 g", laitcoco: "200 ml", sucre: "48 g", sel: "4 g" },
+      { nb: 5, riz: "275 g", cacao: "40 g", laitcoco: "250 ml", sucre: "60 g", sel: "5 g" },
+      { nb: 6, riz: "330 g", cacao: "48 g", laitcoco: "300 ml", sucre: "72 g", sel: "6 g" },
+      { nb: 7, riz: "385 g", cacao: "56 g", laitcoco: "350 ml", sucre: "84 g", sel: "7 g" },
+      { nb: 8, riz: "440 g", cacao: "64 g", laitcoco: "400 ml", sucre: "96 g", sel: "8 g" },
+      { nb: 9, riz: "495 g", cacao: "72 g", laitcoco: "450 ml", sucre: "108 g", sel: "9 g" },
+      { nb: 10, riz: "550 g", cacao: "80 g", laitcoco: "500 ml", sucre: "120 g", sel: "10 g" },
+      { nb: 11, riz: "605 g", cacao: "88 g", laitcoco: "550 ml", sucre: "132 g", sel: "11 g" },
+      { nb: 12, riz: "660 g", cacao: "96 g", laitcoco: "600 ml", sucre: "144 g", sel: "12 g" },
+      { nb: 13, riz: "715 g", cacao: "104 g", laitcoco: "650 ml", sucre: "156 g", sel: "13 g" },
+      { nb: 14, riz: "770 g", cacao: "112 g", laitcoco: "700 ml", sucre: "168 g", sel: "14 g" },
+      { nb: 15, riz: "825 g", cacao: "120 g", laitcoco: "750 ml", sucre: "180 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍫", titre: "Le cacao", detail: "Délayez le cacao dans de l'eau chaude en une infusion corsée.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Versez le riz dans l'infusion de cacao frémissante.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter à feu doux en remuant régulièrement.", badge: null },
+      { icone: "🥥", titre: "Le lait de coco", detail: "Ajoutez le lait de coco et poursuivez la cuisson.", badge: null },
+      { icone: "🍬", titre: "Sucrer", detail: "Incorporez le sucre et la pincée de sel.", badge: null },
+      { icone: "🥄", titre: "La texture", detail: "Laissez épaissir jusqu'à obtenir un porridge onctueux, le riz bien tendre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, dans des bols. Onctueux et chocolaté — le koko alaisa samoan.", badge: null }
+    ]
+  },
 });

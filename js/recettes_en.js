@@ -75484,5 +75484,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot, with fried fish or on its own. Soft and golden — Jamaican bammy."
    }
   ]
+ },
+ "beanjar": {
+  "nom": "Bean Jar",
+  "description": "Bean jar — Guernsey's cassoulet: white beans and pork slow-baked for hours in a jar with carrot, onion and bay, until everything is melting. A dish for big island tables, traditionally served on Saturdays with buttered gâche bread.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the white beans overnight, then drain them."
+   },
+   {
+    "titre": "The pork",
+    "detail": "Cut the pork into large pieces."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut the carrot into rounds and the onion into quarters."
+   },
+   {
+    "titre": "The jar",
+    "detail": "Combine beans, pork, vegetables and bay in a pot, season, cover with water."
+   },
+   {
+    "titre": "Slow bake",
+    "detail": "Bake covered, on low heat, for several hours of slow cooking."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Stir now and then and top up with a little water if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve steaming, with buttered bread. Melting and rustic — the Guernsey bean jar."
+   }
+  ]
+ },
+ "ribel": {
+  "nom": "Ribel",
+  "description": "Ribel — Liechtenstein's other national dish: cornmeal soaked in milk then pan-fried in butter into a golden, crisp crumble, served piping hot with apple sauce or milk. Simple and hearty, it was the daily supper of the Alpine Rhine valleys.",
+  "etapes": [
+   {
+    "titre": "The soak",
+    "detail": "Mix the cornmeal, semolina and salt with the hot milk, and let it swell (ideally overnight)."
+   },
+   {
+    "titre": "The apple sauce",
+    "detail": "Stew the apples with the sugar and a little water."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a good knob of butter in a wide pan."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Pour in the semolina mass and let it brown without touching it."
+   },
+   {
+    "titre": "Crumble",
+    "detail": "Break it up with a spatula and keep cooking, stirring."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Continue until you get golden, crisp crumbs."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the ribel piping hot with the apple sauce. Simple and golden — Liechtenstein's ribel."
+   }
+  ]
+ },
+ "japonesa": {
+  "nom": "Japonesa",
+  "description": "Japonesa — Gibraltar's cult sweet: a brioche-style fried doughnut, filled with vanilla custard and rolled in sugar. Sold in every bakery on the Rock, japonesas are eaten warm, while the custard is still soft — a Gibraltarian guilty pleasure.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, part of the sugar, the egg and a little warm milk, then knead in the butter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Thicken the remaining milk with sugar, a little egg and the vanilla into a custard, then let it cool."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape discs of dough and let them rise again."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the doughnuts until puffed and golden, then drain."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Slit and generously fill each doughnut with custard."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Roll in sugar and serve warm. Indulgent — Gibraltar's japonesas."
+   }
+  ]
+ },
+ "switcha": {
+  "nom": "Switcha",
+  "description": "Switcha — the national limeade of the Bahamas: freshly squeezed lime, sugar and ice-cold water, nothing more. Served over ice, supremely thirst-quenching, it's the archipelago's drink for every moment, from beach picnics to Sunday lunch.",
+  "etapes": [
+   {
+    "titre": "The limes",
+    "detail": "Roll the limes firmly under your palm to release the juice."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut them in half and squeeze them."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Dissolve the sugar in a little hot water with the pinch of salt."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the lime juice, syrup and very cold water."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust: neither too sweet nor too sharp."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate until ice-cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over plenty of ice, with a slice of lime. Thirst-quenching — Bahamian switcha."
+   }
+  ]
+ },
+ "hudut": {
+  "nom": "Hudut",
+  "description": "Hudut — Belize's Garifuna dish: fish simmered in a fragrant coconut-milk broth ('sere'), served with pounded plantains, half-ripe half-green. Creamy, briny and generous, it's the identity dish of the Belizean Caribbean coast, to be mashed and mixed in the bowl.",
+  "etapes": [
+   {
+    "titre": "The plantains",
+    "detail": "Boil the plantains until tender."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound them into a supple, elastic mash and keep warm."
+   },
+   {
+    "titre": "The sere",
+    "detail": "Bring the coconut milk to a simmer with the onion, garlic and chilli."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Salt the fish, add lime and lay it in the coconut broth."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach gently until the fish is just cooked."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Correct the seasoning of the broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the fish and its broth with the plantain mash alongside. Creamy and briny — Garifuna hudut."
+   }
+  ]
+ },
+ "hojaldre": {
+  "nom": "Hojaldre",
+  "description": "Hojaldre — Panama's breakfast fry bread: a simple, barely sweetened dough, rested then stretched into discs and fried until it puffs into golden cakes, crisp outside and soft inside. Served hot, with cheese, eggs or just strong coffee.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, sugar, baking powder and salt, then knead with water into a soft dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and let the dough rest (ideally overnight in the fridge)."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide the dough into even balls."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Flatten and stretch each ball into a thin disc."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the hojaldres until they puff and brown on both sides, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with cheese, eggs or coffee. Crisp and soft — Panamanian hojaldres."
+   }
+  ]
+ },
+ "bakabana": {
+  "nom": "Bakabana",
+  "description": "Bakabana — Suriname's fried plantain: slices of very ripe plantain coated in a light batter and fried until golden, served with a sweet-spicy peanut sauce. Irresistibly sweet-savoury, it's a staple of Surinamese snack bars and the Javanese tables of Paramaribo.",
+  "etapes": [
+   {
+    "titre": "The plantain",
+    "detail": "Peel the very ripe plantain and cut it into thick diagonal slices."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour, salt and water into a fluid frying batter."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Loosen the peanut paste with a little hot water, the sugar, chilli and lime into a coating sauce."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dip each plantain slice in the batter."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until the fritters are golden and crisp, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, coated with or alongside the peanut sauce. Sweet-savoury — Surinamese bakabana."
+   }
+  ]
+ },
+ "fahfah": {
+  "nom": "Fah-Fah",
+  "description": "Fah-fah — Djibouti's spicy soup: beef (or goat) simmered with potatoes, carrots and tomatoes in a broth fired up with green chilli and cumin. Served piping hot with bread, it's the comforting soup of Djiboutian evenings, spiced up to taste.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the beef into pieces and brown it with the onion and garlic."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the cumin and chilli, and let them release their aroma."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and let it melt down."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cover generously with water and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the meat turns tender."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potatoes and carrots, and continue until they're melting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the chilli and serve piping hot, with bread. Fiery and comforting — Djiboutian fah-fah."
+   }
+  ]
+ },
+ "lahpetthoke": {
+  "nom": "Lahpet Thoke",
+  "description": "Lahpet thoke — Burma's famous tea leaf salad: rehydrated, seasoned green tea leaves tossed with crunchy cabbage, tomato, golden garlic, toasted peanuts and sesame, sharpened with lime. Unique in the world, bitter-tangy-crunchy, it's a treasure of the Burmese table.",
+  "etapes": [
+   {
+    "titre": "The tea",
+    "detail": "Steep the green tea leaves, drain, rinse and soak them to mellow them."
+   },
+   {
+    "titre": "The golden garlic",
+    "detail": "Brown the sliced garlic in the oil, and keep the scented oil."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Dry-toast the peanuts and sesame."
+   },
+   {
+    "titre": "Season the tea",
+    "detail": "Squeeze the tea leaves and mix them with the garlic oil, lime and salt."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Finely shred the cabbage and cut the tomato into small wedges."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine seasoned tea, vegetables, golden garlic, peanuts and sesame."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toss at the moment of serving, with a dash of lime. Unique — Burmese lahpet thoke."
+   }
+  ]
+ },
+ "kokoalaisa": {
+  "nom": "Koko Alaisa",
+  "description": "Koko alaisa — Samoa's cocoa rice: rice simmered in a strong Samoan cocoa brew, softened with coconut milk and sugar, served hot like a silky porridge. A beloved breakfast and snack of Samoan families, heady with raw chocolate and coconut.",
+  "etapes": [
+   {
+    "titre": "The cocoa",
+    "detail": "Dissolve the cocoa in hot water into a strong brew."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Pour the rice into the simmering cocoa brew."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat, stirring regularly."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Add the coconut milk and continue cooking."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Stir in the sugar and the pinch of salt."
+   },
+   {
+    "titre": "The texture",
+    "detail": "Let it thicken into a silky porridge, the rice fully tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, in bowls. Silky and chocolatey — Samoan koko alaisa."
+   }
+  ]
  }
 };

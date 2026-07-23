@@ -2857,4 +2857,41 @@ Object.assign(recettes, {
     ],
     liees: ["avial"]
   },
+  lahpetthoke: {
+    dateAjout: "2026-07-22T14:08:00",
+    nom: "Lahpet Thoke",
+    cat: "salades", pays: "birmanie",
+    base: 4,
+    temps: "30 min + infusion",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍵",
+    description: "Lahpet thoke — la célèbre salade de thé de Birmanie : des feuilles de thé vert réhydratées et assaisonnées, mêlées de chou croquant, de tomate, d'ail doré, de cacahuètes et de sésame grillés, relevées de citron vert. Unique au monde, amère-acidulée-croquante, c'est un trésor de la table birmane.",
+    tableauLahpetthoke: [
+      { nb: 1, the: "3 g", chou: "50 g", tomate: "40 g", cacahuetes: "15 g", sesame: "3 g", ail: "1", citronvert: "½", huileolive: "10 ml", sel: "1 g" },
+      { nb: 2, the: "6 g", chou: "100 g", tomate: "80 g", cacahuetes: "30 g", sesame: "6 g", ail: "2", citronvert: "1", huileolive: "20 ml", sel: "2 g" },
+      { nb: 3, the: "9 g", chou: "150 g", tomate: "120 g", cacahuetes: "45 g", sesame: "9 g", ail: "3", citronvert: "1½", huileolive: "30 ml", sel: "3 g" },
+      { nb: 4, the: "12 g", chou: "200 g", tomate: "160 g", cacahuetes: "60 g", sesame: "12 g", ail: "4", citronvert: "2", huileolive: "40 ml", sel: "4 g" },
+      { nb: 5, the: "15 g", chou: "250 g", tomate: "200 g", cacahuetes: "75 g", sesame: "15 g", ail: "5", citronvert: "2½", huileolive: "50 ml", sel: "5 g" },
+      { nb: 6, the: "18 g", chou: "300 g", tomate: "240 g", cacahuetes: "90 g", sesame: "18 g", ail: "6", citronvert: "3", huileolive: "60 ml", sel: "6 g" },
+      { nb: 7, the: "21 g", chou: "350 g", tomate: "280 g", cacahuetes: "105 g", sesame: "21 g", ail: "7", citronvert: "3½", huileolive: "70 ml", sel: "7 g" },
+      { nb: 8, the: "24 g", chou: "400 g", tomate: "320 g", cacahuetes: "120 g", sesame: "24 g", ail: "8", citronvert: "4", huileolive: "80 ml", sel: "8 g" },
+      { nb: 9, the: "27 g", chou: "450 g", tomate: "360 g", cacahuetes: "135 g", sesame: "27 g", ail: "9", citronvert: "4½", huileolive: "90 ml", sel: "9 g" },
+      { nb: 10, the: "30 g", chou: "500 g", tomate: "400 g", cacahuetes: "150 g", sesame: "30 g", ail: "10", citronvert: "5", huileolive: "100 ml", sel: "10 g" },
+      { nb: 11, the: "33 g", chou: "550 g", tomate: "440 g", cacahuetes: "165 g", sesame: "33 g", ail: "11", citronvert: "5½", huileolive: "110 ml", sel: "11 g" },
+      { nb: 12, the: "36 g", chou: "600 g", tomate: "480 g", cacahuetes: "180 g", sesame: "36 g", ail: "12", citronvert: "6", huileolive: "120 ml", sel: "12 g" },
+      { nb: 13, the: "39 g", chou: "650 g", tomate: "520 g", cacahuetes: "195 g", sesame: "39 g", ail: "13", citronvert: "6½", huileolive: "130 ml", sel: "13 g" },
+      { nb: 14, the: "42 g", chou: "700 g", tomate: "560 g", cacahuetes: "210 g", sesame: "42 g", ail: "14", citronvert: "7", huileolive: "140 ml", sel: "14 g" },
+      { nb: 15, the: "45 g", chou: "750 g", tomate: "600 g", cacahuetes: "225 g", sesame: "45 g", ail: "15", citronvert: "7½", huileolive: "150 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍵", titre: "Le thé", detail: "Infusez les feuilles de thé vert, égouttez-les, rincez-les et laissez-les tremper pour les adoucir.", badge: null },
+      { icone: "🧄", titre: "L'ail doré", detail: "Faites dorer l'ail émincé dans l'huile, et réservez l'huile parfumée.", badge: null },
+      { icone: "🥜", titre: "Les croquants", detail: "Faites griller à sec les cacahuètes et le sésame.", badge: null },
+      { icone: "🍵", titre: "Assaisonner le thé", detail: "Pressez les feuilles de thé et mélangez-les avec l'huile d'ail, le citron vert et le sel.", badge: null },
+      { icone: "🥬", titre: "Les légumes", detail: "Émincez finement le chou et coupez la tomate en petits quartiers.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Réunissez thé assaisonné, légumes, ail doré, cacahuètes et sésame.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mélangez au moment de servir, avec un trait de citron vert. Unique — le lahpet thoke birman.", badge: null }
+    ]
+  },
 });

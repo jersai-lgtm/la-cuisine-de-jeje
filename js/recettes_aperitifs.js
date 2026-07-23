@@ -3124,4 +3124,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez-les brûlants, comme à La Valette. Croustillants et crémeux — les pastizzi maltais.", badge: null }
     ]
   },
+  bakabana: {
+    dateAjout: "2026-07-22T14:06:00",
+    nom: "Bakabana",
+    cat: "aperitifs", pays: "suriname",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Bakabana — le plantain frit du Suriname : des tranches de banane plantain bien mûre, enrobées d'une pâte légère et frites jusqu'à être dorées, servies avec une sauce cacahuète douce-relevée. Sucré-salé irrésistible, c'est un incontournable des snacks surinamais et des tables javanaises de Paramaribo.",
+    tableauBakabana: [
+      { nb: 1, plantain: "90 g", farine: "30 g", pateArachide: "15 g", sucre: "3 g", huileolive: "12 ml", citronvert: "¼", sel: "1 g", piment: "0.5 g" },
+      { nb: 2, plantain: "180 g", farine: "60 g", pateArachide: "30 g", sucre: "6 g", huileolive: "24 ml", citronvert: "½", sel: "2 g", piment: "1 g" },
+      { nb: 3, plantain: "270 g", farine: "90 g", pateArachide: "45 g", sucre: "9 g", huileolive: "36 ml", citronvert: "¾", sel: "3 g", piment: "1.5 g" },
+      { nb: 4, plantain: "360 g", farine: "120 g", pateArachide: "60 g", sucre: "12 g", huileolive: "48 ml", citronvert: "1", sel: "4 g", piment: "2 g" },
+      { nb: 5, plantain: "450 g", farine: "150 g", pateArachide: "75 g", sucre: "15 g", huileolive: "60 ml", citronvert: "1¼", sel: "5 g", piment: "2.5 g" },
+      { nb: 6, plantain: "540 g", farine: "180 g", pateArachide: "90 g", sucre: "18 g", huileolive: "72 ml", citronvert: "1½", sel: "6 g", piment: "3 g" },
+      { nb: 7, plantain: "630 g", farine: "210 g", pateArachide: "105 g", sucre: "21 g", huileolive: "84 ml", citronvert: "1¾", sel: "7 g", piment: "3.5 g" },
+      { nb: 8, plantain: "720 g", farine: "240 g", pateArachide: "120 g", sucre: "24 g", huileolive: "96 ml", citronvert: "2", sel: "8 g", piment: "4 g" },
+      { nb: 9, plantain: "810 g", farine: "270 g", pateArachide: "135 g", sucre: "27 g", huileolive: "108 ml", citronvert: "2¼", sel: "9 g", piment: "4.5 g" },
+      { nb: 10, plantain: "900 g", farine: "300 g", pateArachide: "150 g", sucre: "30 g", huileolive: "120 ml", citronvert: "2½", sel: "10 g", piment: "5 g" },
+      { nb: 11, plantain: "990 g", farine: "330 g", pateArachide: "165 g", sucre: "33 g", huileolive: "132 ml", citronvert: "2¾", sel: "11 g", piment: "5.5 g" },
+      { nb: 12, plantain: "1080 g", farine: "360 g", pateArachide: "180 g", sucre: "36 g", huileolive: "144 ml", citronvert: "3", sel: "12 g", piment: "6 g" },
+      { nb: 13, plantain: "1170 g", farine: "390 g", pateArachide: "195 g", sucre: "39 g", huileolive: "156 ml", citronvert: "3¼", sel: "13 g", piment: "6.5 g" },
+      { nb: 14, plantain: "1260 g", farine: "420 g", pateArachide: "210 g", sucre: "42 g", huileolive: "168 ml", citronvert: "3½", sel: "14 g", piment: "7 g" },
+      { nb: 15, plantain: "1350 g", farine: "450 g", pateArachide: "225 g", sucre: "45 g", huileolive: "180 ml", citronvert: "3¾", sel: "15 g", piment: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Le plantain", detail: "Épluchez le plantain bien mûr et coupez-le en tranches épaisses en biais.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le sel et de l'eau en une pâte à frire fluide.", badge: null },
+      { icone: "🥜", titre: "La sauce", detail: "Délayez la pâte d'arachide avec un peu d'eau chaude, le sucre, le piment et le citron vert en une sauce nappante.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍌", titre: "Enrober", detail: "Trempez chaque tranche de plantain dans la pâte à frire.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire jusqu'à ce que les beignets soient dorés et croustillants, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, nappé ou accompagné de sauce cacahuète. Sucré-salé — le bakabana surinamais.", badge: null }
+    ]
+  },
 });

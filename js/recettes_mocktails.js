@@ -892,4 +892,41 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Servir", detail: "Décorer de menthe et d'une fraise, servir avec une paille.", badge: null }
     ]
   },
+  switcha: {
+    dateAjout: "2026-07-22T14:03:00",
+    nom: "Switcha",
+    cat: "mocktails", pays: "bahamas",
+    base: 4,
+    temps: "15 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "🍋",
+    description: "Switcha — la citronnade nationale des Bahamas : du citron vert fraîchement pressé, du sucre et de l'eau bien froide, rien de plus. Servie sur glace, ultra-désaltérante, c'est la boisson de tous les instants de l'archipel, du pique-nique de plage au déjeuner du dimanche.",
+    tableauSwitcha: [
+      { nb: 1, citronvert: "1½", sucre: "15 g", sel: "0.5 g" },
+      { nb: 2, citronvert: "3", sucre: "30 g", sel: "1 g" },
+      { nb: 3, citronvert: "4½", sucre: "45 g", sel: "1.5 g" },
+      { nb: 4, citronvert: "6", sucre: "60 g", sel: "2 g" },
+      { nb: 5, citronvert: "7½", sucre: "75 g", sel: "2.5 g" },
+      { nb: 6, citronvert: "9", sucre: "90 g", sel: "3 g" },
+      { nb: 7, citronvert: "10½", sucre: "105 g", sel: "3.5 g" },
+      { nb: 8, citronvert: "12", sucre: "120 g", sel: "4 g" },
+      { nb: 9, citronvert: "13½", sucre: "135 g", sel: "4.5 g" },
+      { nb: 10, citronvert: "15", sucre: "150 g", sel: "5 g" },
+      { nb: 11, citronvert: "16½", sucre: "165 g", sel: "5.5 g" },
+      { nb: 12, citronvert: "18", sucre: "180 g", sel: "6 g" },
+      { nb: 13, citronvert: "19½", sucre: "195 g", sel: "6.5 g" },
+      { nb: 14, citronvert: "21", sucre: "210 g", sel: "7 g" },
+      { nb: 15, citronvert: "22½", sucre: "225 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Les citrons", detail: "Roulez fermement les citrons verts sous votre paume pour libérer le jus.", badge: null },
+      { icone: "🔪", titre: "Couper", detail: "Coupez-les en deux et pressez-les.", badge: null },
+      { icone: "🍯", titre: "Le sirop", detail: "Dissolvez le sucre dans un peu d'eau chaude avec la pincée de sel.", badge: null },
+      { icone: "🥤", titre: "Mélanger", detail: "Réunissez le jus de citron vert, le sirop et de l'eau bien froide.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Goûtez et ajustez : ni trop sucré, ni trop acide.", badge: null },
+      { icone: "🧊", titre: "Rafraîchir", detail: "Laissez au réfrigérateur jusqu'à ce que ce soit glacé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez sur beaucoup de glaçons, avec une rondelle de citron vert. Désaltérant — le switcha bahaméen.", badge: null }
+    ]
+  },
 });

@@ -5190,4 +5190,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, en plat unique. Nourrissant et complet — le sancoche de la Dominique.", badge: null }
     ]
   },
+  fahfah: {
+    dateAjout: "2026-07-22T14:07:00",
+    nom: "Fah-Fah",
+    cat: "soupes", pays: "djibouti",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "Fah-fah — la soupe pimentée de Djibouti : du bœuf (ou de la chèvre) mijoté avec pommes de terre, carottes et tomates dans un bouillon relevé au piment vert et au cumin. Servie brûlante avec du pain, c'est la soupe réconfortante des soirées djiboutiennes, qu'on aime corser à sa guise.",
+    tableauFahfah: [
+      { nb: 1, boeuf: "90 g", pommedeterre: "60 g", carotte: "30 g", tomate: "30 g", oignon: "25 g", ail: "1", piment: "1.5 g", cumin: "1 g", sel: "2 g" },
+      { nb: 2, boeuf: "180 g", pommedeterre: "120 g", carotte: "60 g", tomate: "60 g", oignon: "50 g", ail: "2", piment: "3 g", cumin: "2 g", sel: "4 g" },
+      { nb: 3, boeuf: "270 g", pommedeterre: "180 g", carotte: "90 g", tomate: "90 g", oignon: "75 g", ail: "3", piment: "4.5 g", cumin: "3 g", sel: "6 g" },
+      { nb: 4, boeuf: "360 g", pommedeterre: "240 g", carotte: "120 g", tomate: "120 g", oignon: "100 g", ail: "4", piment: "6 g", cumin: "4 g", sel: "8 g" },
+      { nb: 5, boeuf: "450 g", pommedeterre: "300 g", carotte: "150 g", tomate: "150 g", oignon: "125 g", ail: "5", piment: "7.5 g", cumin: "5 g", sel: "10 g" },
+      { nb: 6, boeuf: "540 g", pommedeterre: "360 g", carotte: "180 g", tomate: "180 g", oignon: "150 g", ail: "6", piment: "9 g", cumin: "6 g", sel: "12 g" },
+      { nb: 7, boeuf: "630 g", pommedeterre: "420 g", carotte: "210 g", tomate: "210 g", oignon: "175 g", ail: "7", piment: "10.5 g", cumin: "7 g", sel: "14 g" },
+      { nb: 8, boeuf: "720 g", pommedeterre: "480 g", carotte: "240 g", tomate: "240 g", oignon: "200 g", ail: "8", piment: "12 g", cumin: "8 g", sel: "16 g" },
+      { nb: 9, boeuf: "810 g", pommedeterre: "540 g", carotte: "270 g", tomate: "270 g", oignon: "225 g", ail: "9", piment: "13.5 g", cumin: "9 g", sel: "18 g" },
+      { nb: 10, boeuf: "900 g", pommedeterre: "600 g", carotte: "300 g", tomate: "300 g", oignon: "250 g", ail: "10", piment: "15 g", cumin: "10 g", sel: "20 g" },
+      { nb: 11, boeuf: "990 g", pommedeterre: "660 g", carotte: "330 g", tomate: "330 g", oignon: "275 g", ail: "11", piment: "16.5 g", cumin: "11 g", sel: "22 g" },
+      { nb: 12, boeuf: "1080 g", pommedeterre: "720 g", carotte: "360 g", tomate: "360 g", oignon: "300 g", ail: "12", piment: "18 g", cumin: "12 g", sel: "24 g" },
+      { nb: 13, boeuf: "1170 g", pommedeterre: "780 g", carotte: "390 g", tomate: "390 g", oignon: "325 g", ail: "13", piment: "19.5 g", cumin: "13 g", sel: "26 g" },
+      { nb: 14, boeuf: "1260 g", pommedeterre: "840 g", carotte: "420 g", tomate: "420 g", oignon: "350 g", ail: "14", piment: "21 g", cumin: "14 g", sel: "28 g" },
+      { nb: 15, boeuf: "1350 g", pommedeterre: "900 g", carotte: "450 g", tomate: "450 g", oignon: "375 g", ail: "15", piment: "22.5 g", cumin: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "La viande", detail: "Coupez le bœuf en morceaux et faites-le revenir avec l'oignon et l'ail.", badge: null },
+      { icone: "🌶️", titre: "Les épices", detail: "Ajoutez le cumin et le piment, et laissez parfumer.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Ajoutez la tomate et laissez-la fondre.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Couvrez largement d'eau et portez à frémissement.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que la viande devienne tendre.", badge: null },
+      { icone: "🥔", titre: "Les légumes", detail: "Ajoutez pommes de terre et carottes, et poursuivez jusqu'à ce qu'ils soient fondants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifiez le piment et servez brûlant, avec du pain. Relevé et réconfortant — le fah-fah djiboutien.", badge: null }
+    ]
+  },
 });

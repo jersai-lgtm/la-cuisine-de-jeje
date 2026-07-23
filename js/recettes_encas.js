@@ -6116,4 +6116,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, avec du poisson frit ou tel quel. Moelleux et doré — le bammy jamaïcain.", badge: null }
     ]
   },
+  hojaldre: {
+    dateAjout: "2026-07-22T14:05:00",
+    nom: "Hojaldre",
+    cat: "encas", pays: "panama",
+    base: 4,
+    temps: "30 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Hojaldre — le pain frit du petit-déjeuner panaméen : une pâte simple à peine sucrée, reposée puis étirée en disques et frite jusqu'à gonfler en galettes dorées, croustillantes dehors et moelleuses dedans. On les sert chaudes, avec du fromage, des œufs ou juste un café bien fort.",
+    tableauHojaldre: [
+      { nb: 1, farine: "70 g", sucre: "6 g", levurechimique: "2 g", huileolive: "12 ml", sel: "1.5 g" },
+      { nb: 2, farine: "140 g", sucre: "12 g", levurechimique: "4 g", huileolive: "24 ml", sel: "3 g" },
+      { nb: 3, farine: "210 g", sucre: "18 g", levurechimique: "6 g", huileolive: "36 ml", sel: "4.5 g" },
+      { nb: 4, farine: "280 g", sucre: "24 g", levurechimique: "8 g", huileolive: "48 ml", sel: "6 g" },
+      { nb: 5, farine: "350 g", sucre: "30 g", levurechimique: "10 g", huileolive: "60 ml", sel: "7.5 g" },
+      { nb: 6, farine: "420 g", sucre: "36 g", levurechimique: "12 g", huileolive: "72 ml", sel: "9 g" },
+      { nb: 7, farine: "490 g", sucre: "42 g", levurechimique: "14 g", huileolive: "84 ml", sel: "10.5 g" },
+      { nb: 8, farine: "560 g", sucre: "48 g", levurechimique: "16 g", huileolive: "96 ml", sel: "12 g" },
+      { nb: 9, farine: "630 g", sucre: "54 g", levurechimique: "18 g", huileolive: "108 ml", sel: "13.5 g" },
+      { nb: 10, farine: "700 g", sucre: "60 g", levurechimique: "20 g", huileolive: "120 ml", sel: "15 g" },
+      { nb: 11, farine: "770 g", sucre: "66 g", levurechimique: "22 g", huileolive: "132 ml", sel: "16.5 g" },
+      { nb: 12, farine: "840 g", sucre: "72 g", levurechimique: "24 g", huileolive: "144 ml", sel: "18 g" },
+      { nb: 13, farine: "910 g", sucre: "78 g", levurechimique: "26 g", huileolive: "156 ml", sel: "19.5 g" },
+      { nb: 14, farine: "980 g", sucre: "84 g", levurechimique: "28 g", huileolive: "168 ml", sel: "21 g" },
+      { nb: 15, farine: "1050 g", sucre: "90 g", levurechimique: "30 g", huileolive: "180 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le sucre, la levure et le sel, puis pétrissez avec de l'eau en une pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Couvrez et laissez reposer la pâte (idéalement une nuit au frais).", badge: null },
+      { icone: "⚪", titre: "Diviser", detail: "Divisez la pâte en boules régulières.", badge: null },
+      { icone: "🫓", titre: "Étirer", detail: "Aplatissez et étirez chaque boule en un disque fin.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les hojaldres jusqu'à ce qu'ils gonflent et dorent des deux côtés, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chauds, avec fromage, œufs ou café. Croustillants et moelleux — les hojaldres panaméens.", badge: null }
+    ]
+  },
 });

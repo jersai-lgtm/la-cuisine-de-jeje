@@ -40411,4 +40411,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Déposez les boules de dumboy dans le bouillon brûlant et servez. Roboratif — le dumboy libérien.", badge: null }
     ]
   },
+  beanjar: {
+    dateAjout: "2026-07-22T14:00:00",
+    nom: "Bean Jar",
+    cat: "plats", pays: "guernesey",
+    base: 4,
+    temps: "3h + trempage",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "Bean jar — le cassoulet de Guernesey : des haricots blancs et du porc mijotés très longuement au four dans une jarre, avec carotte, oignon et laurier, jusqu'à ce que tout soit fondant. Plat des grandes tablées insulaires, il se sert traditionnellement le samedi, avec du pain beurré de gâche.",
+    tableauBeanjar: [
+      { nb: 1, haricotsblancs: "50 g", porc: "80 g", carotte: "40 g", oignon: "25 g", laurier: "1", sel: "2 g", poivre: "1 g" },
+      { nb: 2, haricotsblancs: "100 g", porc: "160 g", carotte: "80 g", oignon: "50 g", laurier: "2", sel: "4 g", poivre: "2 g" },
+      { nb: 3, haricotsblancs: "150 g", porc: "240 g", carotte: "120 g", oignon: "75 g", laurier: "3", sel: "6 g", poivre: "3 g" },
+      { nb: 4, haricotsblancs: "200 g", porc: "320 g", carotte: "160 g", oignon: "100 g", laurier: "4", sel: "8 g", poivre: "4 g" },
+      { nb: 5, haricotsblancs: "250 g", porc: "400 g", carotte: "200 g", oignon: "125 g", laurier: "5", sel: "10 g", poivre: "5 g" },
+      { nb: 6, haricotsblancs: "300 g", porc: "480 g", carotte: "240 g", oignon: "150 g", laurier: "6", sel: "12 g", poivre: "6 g" },
+      { nb: 7, haricotsblancs: "350 g", porc: "560 g", carotte: "280 g", oignon: "175 g", laurier: "7", sel: "14 g", poivre: "7 g" },
+      { nb: 8, haricotsblancs: "400 g", porc: "640 g", carotte: "320 g", oignon: "200 g", laurier: "8", sel: "16 g", poivre: "8 g" },
+      { nb: 9, haricotsblancs: "450 g", porc: "720 g", carotte: "360 g", oignon: "225 g", laurier: "9", sel: "18 g", poivre: "9 g" },
+      { nb: 10, haricotsblancs: "500 g", porc: "800 g", carotte: "400 g", oignon: "250 g", laurier: "10", sel: "20 g", poivre: "10 g" },
+      { nb: 11, haricotsblancs: "550 g", porc: "880 g", carotte: "440 g", oignon: "275 g", laurier: "11", sel: "22 g", poivre: "11 g" },
+      { nb: 12, haricotsblancs: "600 g", porc: "960 g", carotte: "480 g", oignon: "300 g", laurier: "12", sel: "24 g", poivre: "12 g" },
+      { nb: 13, haricotsblancs: "650 g", porc: "1040 g", carotte: "520 g", oignon: "325 g", laurier: "13", sel: "26 g", poivre: "13 g" },
+      { nb: 14, haricotsblancs: "700 g", porc: "1120 g", carotte: "560 g", oignon: "350 g", laurier: "14", sel: "28 g", poivre: "14 g" },
+      { nb: 15, haricotsblancs: "750 g", porc: "1200 g", carotte: "600 g", oignon: "375 g", laurier: "15", sel: "30 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Les haricots", detail: "Faites tremper les haricots blancs une nuit, puis égouttez-les.", badge: null },
+      { icone: "🥩", titre: "Le porc", detail: "Coupez le porc en gros morceaux.", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Coupez la carotte en rondelles et l'oignon en quartiers.", badge: null },
+      { icone: "🏺", titre: "La jarre", detail: "Réunissez haricots, porc, légumes et laurier dans une cocotte, salez, poivrez, couvrez d'eau.", badge: null },
+      { icone: "♨️", titre: "Cuisson lente", detail: "Enfournez à couvert, à feu doux, pour plusieurs heures de cuisson lente.", badge: null },
+      { icone: "🥄", titre: "Surveiller", detail: "Remuez de temps en temps et rallongez d'un peu d'eau si besoin.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez fumant, avec du pain beurré. Fondant et rustique — le bean jar de Guernesey.", badge: null }
+    ]
+  },
+  hudut: {
+    dateAjout: "2026-07-22T14:04:00",
+    nom: "Hudut",
+    cat: "plats", pays: "belize",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥥",
+    description: "Hudut — le plat garifuna du Belize : du poisson mijoté dans un bouillon de lait de coco parfumé (« sere »), servi avec une purée de plantains pilés, mi-mûrs mi-verts. Crémeux, iodé et généreux, c'est le plat identitaire de la côte caribéenne bélizienne, à écraser et mélanger dans le bol.",
+    tableauHudut: [
+      { nb: 1, poisson: "100 g", laitcoco: "60 ml", plantain: "80 g", oignon: "20 g", ail: "1", piment: "1 g", citronvert: "¼", sel: "2 g" },
+      { nb: 2, poisson: "200 g", laitcoco: "120 ml", plantain: "160 g", oignon: "40 g", ail: "2", piment: "2 g", citronvert: "½", sel: "4 g" },
+      { nb: 3, poisson: "300 g", laitcoco: "180 ml", plantain: "240 g", oignon: "60 g", ail: "3", piment: "3 g", citronvert: "¾", sel: "6 g" },
+      { nb: 4, poisson: "400 g", laitcoco: "240 ml", plantain: "320 g", oignon: "80 g", ail: "4", piment: "4 g", citronvert: "1", sel: "8 g" },
+      { nb: 5, poisson: "500 g", laitcoco: "300 ml", plantain: "400 g", oignon: "100 g", ail: "5", piment: "5 g", citronvert: "1¼", sel: "10 g" },
+      { nb: 6, poisson: "600 g", laitcoco: "360 ml", plantain: "480 g", oignon: "120 g", ail: "6", piment: "6 g", citronvert: "1½", sel: "12 g" },
+      { nb: 7, poisson: "700 g", laitcoco: "420 ml", plantain: "560 g", oignon: "140 g", ail: "7", piment: "7 g", citronvert: "1¾", sel: "14 g" },
+      { nb: 8, poisson: "800 g", laitcoco: "480 ml", plantain: "640 g", oignon: "160 g", ail: "8", piment: "8 g", citronvert: "2", sel: "16 g" },
+      { nb: 9, poisson: "900 g", laitcoco: "540 ml", plantain: "720 g", oignon: "180 g", ail: "9", piment: "9 g", citronvert: "2¼", sel: "18 g" },
+      { nb: 10, poisson: "1000 g", laitcoco: "600 ml", plantain: "800 g", oignon: "200 g", ail: "10", piment: "10 g", citronvert: "2½", sel: "20 g" },
+      { nb: 11, poisson: "1100 g", laitcoco: "660 ml", plantain: "880 g", oignon: "220 g", ail: "11", piment: "11 g", citronvert: "2¾", sel: "22 g" },
+      { nb: 12, poisson: "1200 g", laitcoco: "720 ml", plantain: "960 g", oignon: "240 g", ail: "12", piment: "12 g", citronvert: "3", sel: "24 g" },
+      { nb: 13, poisson: "1300 g", laitcoco: "780 ml", plantain: "1040 g", oignon: "260 g", ail: "13", piment: "13 g", citronvert: "3¼", sel: "26 g" },
+      { nb: 14, poisson: "1400 g", laitcoco: "840 ml", plantain: "1120 g", oignon: "280 g", ail: "14", piment: "14 g", citronvert: "3½", sel: "28 g" },
+      { nb: 15, poisson: "1500 g", laitcoco: "900 ml", plantain: "1200 g", oignon: "300 g", ail: "15", piment: "15 g", citronvert: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Les plantains", detail: "Faites bouillir les plantains jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🥣", titre: "Piler", detail: "Pilez-les en une purée souple et élastique, et réservez au chaud.", badge: null },
+      { icone: "🥥", titre: "Le sere", detail: "Portez le lait de coco à frémissement avec l'oignon, l'ail et le piment.", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Salez le poisson, citronnez-le et déposez-le dans le bouillon coco.", badge: null },
+      { icone: "♨️", titre: "Pocher", detail: "Laissez pocher doucement jusqu'à ce que le poisson soit juste cuit.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Rectifiez l'assaisonnement du bouillon.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez le poisson et son bouillon avec la purée de plantain à côté. Crémeux et iodé — le hudut garifuna.", badge: null }
+    ]
+  },
 });

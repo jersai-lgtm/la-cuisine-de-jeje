@@ -2259,4 +2259,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, garnis de curri et de chutney, roulés. Moelleux et parfumés — les dholl puris de Maurice.", badge: null }
     ]
   },
+  ribel: {
+    dateAjout: "2026-07-22T14:01:00",
+    nom: "Ribel",
+    cat: "brunch", pays: "liechtenstein",
+    base: 4,
+    temps: "40 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🌽",
+    description: "Ribel — l'autre plat national du Liechtenstein : de la semoule de maïs trempée dans le lait puis poêlée au beurre en un crumble doré et croustillant, servi brûlant avec de la compote de pommes ou du lait. Simple et roboratif, c'était le dîner quotidien des vallées du Rhin alpin.",
+    tableauRibel: [
+      { nb: 1, farinemais: "45 g", semoule: "15 g", lait: "60 ml", beurre: "12 g", pomme: "60 g", sucre: "6 g", sel: "1.5 g" },
+      { nb: 2, farinemais: "90 g", semoule: "30 g", lait: "120 ml", beurre: "24 g", pomme: "120 g", sucre: "12 g", sel: "3 g" },
+      { nb: 3, farinemais: "135 g", semoule: "45 g", lait: "180 ml", beurre: "36 g", pomme: "180 g", sucre: "18 g", sel: "4.5 g" },
+      { nb: 4, farinemais: "180 g", semoule: "60 g", lait: "240 ml", beurre: "48 g", pomme: "240 g", sucre: "24 g", sel: "6 g" },
+      { nb: 5, farinemais: "225 g", semoule: "75 g", lait: "300 ml", beurre: "60 g", pomme: "300 g", sucre: "30 g", sel: "7.5 g" },
+      { nb: 6, farinemais: "270 g", semoule: "90 g", lait: "360 ml", beurre: "72 g", pomme: "360 g", sucre: "36 g", sel: "9 g" },
+      { nb: 7, farinemais: "315 g", semoule: "105 g", lait: "420 ml", beurre: "84 g", pomme: "420 g", sucre: "42 g", sel: "10.5 g" },
+      { nb: 8, farinemais: "360 g", semoule: "120 g", lait: "480 ml", beurre: "96 g", pomme: "480 g", sucre: "48 g", sel: "12 g" },
+      { nb: 9, farinemais: "405 g", semoule: "135 g", lait: "540 ml", beurre: "108 g", pomme: "540 g", sucre: "54 g", sel: "13.5 g" },
+      { nb: 10, farinemais: "450 g", semoule: "150 g", lait: "600 ml", beurre: "120 g", pomme: "600 g", sucre: "60 g", sel: "15 g" },
+      { nb: 11, farinemais: "495 g", semoule: "165 g", lait: "660 ml", beurre: "132 g", pomme: "660 g", sucre: "66 g", sel: "16.5 g" },
+      { nb: 12, farinemais: "540 g", semoule: "180 g", lait: "720 ml", beurre: "144 g", pomme: "720 g", sucre: "72 g", sel: "18 g" },
+      { nb: 13, farinemais: "585 g", semoule: "195 g", lait: "780 ml", beurre: "156 g", pomme: "780 g", sucre: "78 g", sel: "19.5 g" },
+      { nb: 14, farinemais: "630 g", semoule: "210 g", lait: "840 ml", beurre: "168 g", pomme: "840 g", sucre: "84 g", sel: "21 g" },
+      { nb: 15, farinemais: "675 g", semoule: "225 g", lait: "900 ml", beurre: "180 g", pomme: "900 g", sucre: "90 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le trempage", detail: "Mélangez la semoule de maïs, la semoule et le sel avec le lait chaud, et laissez gonfler (idéalement une nuit).", badge: null },
+      { icone: "🍎", titre: "La compote", detail: "Faites compoter les pommes avec le sucre et un peu d'eau.", badge: null },
+      { icone: "🧈", titre: "La poêle", detail: "Faites chauffer une bonne noix de beurre dans une large poêle.", badge: null },
+      { icone: "🌽", titre: "Saisir", detail: "Versez la masse de semoule et laissez-la dorer sans y toucher.", badge: null },
+      { icone: "🥄", titre: "Émietter", detail: "Émiettez-la à la spatule et poursuivez la cuisson en remuant.", badge: null },
+      { icone: "✨", titre: "Dorer", detail: "Continuez jusqu'à obtenir des grumeaux dorés et croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez le ribel brûlant avec la compote de pommes. Simple et doré — le ribel du Liechtenstein.", badge: null }
+    ]
+  },
 });
