@@ -77524,5 +77524,345 @@ window.RECETTES_EN = {
     "detail": "Finish with lemon and parsley, and serve at once. Black and briny — Dalmatian crni rižot."
    }
   ]
+ },
+ "akwadu": {
+  "nom": "Akwadu",
+  "description": "Akwadu — Equatorial Guinea's banana bake: split bananas doused with orange and lemon juice, scattered with coconut and sugar, baked with butter until caramelized. Simple, golden and fragrant, it's the emblematic dessert of the small Central African country.",
+  "etapes": [
+   {
+    "titre": "The bananas",
+    "detail": "Peel the bananas and split them lengthwise."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Arrange them in a buttered dish, cut side up."
+   },
+   {
+    "titre": "Douse",
+    "detail": "Pour over the orange and lemon juice."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Sprinkle with sugar and the pinch of salt, and dot with butter."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Scatter the grated coconut on top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the bananas are melting and the coconut golden-caramelized."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, plain or with a scoop of ice cream. Golden and fragrant — Equatoguinean akwadu."
+   }
+  ]
+ },
+ "saloona": {
+  "nom": "Saloona",
+  "description": "Saloona — the everyday stew of Qatar and the Gulf: chicken simmered with tomato, potatoes, carrot and courgette in a broth scented with cumin, turmeric and chilli. Homely and comforting, it's served over white rice, doused with its broth.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in the oil."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the cumin, turmeric and chilli, and let them bloom."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Add the chicken pieces and brown them."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomato and let it melt down."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cover with water, salt and bring to a simmer."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potatoes, carrot and courgette, and simmer until tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over white rice, doused with broth. Comforting — Qatari saloona."
+   }
+  ]
+ },
+ "mishkak": {
+  "nom": "Mishkak",
+  "description": "Mishkak — Oman's street skewers: beef cubes marinated with garlic, ginger, cumin and lemon, threaded on sticks and grilled over embers until caramelized. Sold at night along Omani roads, they're eaten piping hot, doused with lemon.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the beef into even cubes."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Blend the garlic, ginger, cumin, paprika, chilli, half the lemon, the oil and salt."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the meat and marinate (1 h minimum, ideally overnight)."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the cubes onto sticks (soaked if wooden)."
+   },
+   {
+    "titre": "The grill",
+    "detail": "Heat a grill or plancha over high heat."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the skewers, turning, until nicely caramelized."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Douse with the remaining lemon and serve piping hot, with flatbread. Omani mishkak!"
+   }
+  ]
+ },
+ "jota": {
+  "nom": "Jota",
+  "description": "Jota — Slovenia's peasant soup: sauerkraut, white beans, potatoes and bacon simmered together into a thick, tangy, smoky soup. A winter dish of the Alpine valleys and the Karst, it has warmed generations of Slovenians — even better reheated.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the white beans, then cook them with the bay leaf until tender."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sizzle the lardons with the onion and garlic in the oil."
+   },
+   {
+    "titre": "The sauerkraut",
+    "detail": "Add the shredded cabbage and vinegar (or sauerkraut), and let it stew down."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the diced potatoes and cover with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the beans and simmer everything together."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Crush some of the beans and potatoes to thicken the soup."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve steaming. Tangy and smoky — Slovenian jota."
+   }
+  ]
+ },
+ "kartojums": {
+  "nom": "Rupjmaizes Kārtojums",
+  "description": "Rupjmaizes kārtojums — Latvia's black-bread trifle: layers of rye breadcrumbs toasted with cinnamon and sugar, red-berry jam (lingonberry in Latvia) and whipped cream, built in glasses. Clever, (almost) no-bake and surprisingly delicious.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Grate (or blitz) stale rye bread into coarse crumbs."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast them with the sugar and cinnamon, stirring, until crisp and fragrant."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Spread the caramelized crumbs and let them cool completely."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the very cold cream with the pinch of salt."
+   },
+   {
+    "titre": "The layering",
+    "detail": "In glasses, alternate crumbs, red-berry jam and whipped cream."
+   },
+   {
+    "titre": "Repeat",
+    "detail": "Repeat the layers, finishing with cream and a shower of crumbs."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Rest in the fridge for an hour and serve. Latvian kārtojums — clever and delicious!"
+   }
+  ]
+ },
+ "moksialesi": {
+  "nom": "Moksi Alesi",
+  "description": "Moksi alesi — Suriname's 'mixed rice': rice cooked in coconut milk with chicken, smoked lardons and red beans, a complete Creole dish with African roots. Every Surinamese family has its version — the Sunday dish par excellence.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Cook the (soaked) red beans until tender."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sizzle the lardons, then the onion and garlic."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Add the chicken pieces and brown them."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and coat it in the fragrant fat."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and water, salt, add the chilli."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the beans, cover and cook over low heat until absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff with a fork and serve piping hot. Complete and fragrant — Surinamese moksi alesi."
+   }
+  ]
+ },
+ "kanda": {
+  "nom": "Kanda",
+  "description": "Kanda — Central African simmered meatballs: minced beef shaped into balls, poached in a tomato sauce bound with pounded squash seeds (egusi — or peanut paste), spiked with palm oil and chilli. Generous and deep, served with rice or gozo.",
+  "etapes": [
+   {
+    "titre": "The meatballs",
+    "detail": "Mix the minced beef with half the chopped onion and garlic, salt, and shape tight meatballs."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the remaining onion and garlic in the palm oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomato and chilli, and let it cook down."
+   },
+   {
+    "titre": "The egusi",
+    "detail": "Dissolve the pounded squash seeds (or peanut paste) in hot water and stir in."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Gently lay the meatballs in the simmering sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer without stirring (shake the pan) until the meatballs are cooked and the sauce thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or gozo. Generous and deep — Central African kanda."
+   }
+  ]
+ },
+ "dikgobe": {
+  "nom": "Dikgobe",
+  "description": "Dikgobe — Botswana's ceremonial dish: cracked corn (samp) and white beans simmered together at great length, finished with butter, simple and deeply nourishing. Served at weddings and funerals alike, it's the dish that gathers the Batswana.",
+  "etapes": [
+   {
+    "titre": "The soak",
+    "detail": "Soak the cracked corn and white beans overnight."
+   },
+   {
+    "titre": "The cooking",
+    "detail": "Drain them and cover generously with fresh water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a simmer and cook at length, covered."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Halfway through, add the sliced onion and salt."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Top up with hot water if needed: corn and beans must turn melting."
+   },
+   {
+    "titre": "The butter",
+    "detail": "When everything is tender and the water nearly absorbed, stir in the butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, alone or with braised meat. Botswana's dikgobe — simple and gathering."
+   }
+  ]
+ },
+ "faikakai": {
+  "nom": "Faikakai",
+  "description": "Faikakai — Tonga's coconut-caramel dumplings: small poached dough balls coated in 'lolo', a caramelized brown-sugar syrup mounted with coconut milk. Soft, coating and indulgent, it's the dessert of Tongan feast tables — cousin of topai.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, baking powder, pinch of salt and water into a soft dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape small dough balls."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach them in simmering water until they puff and float; drain."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Dry-caramelize the sugar in a pan until amber."
+   },
+   {
+    "titre": "The lolo",
+    "detail": "Off the heat, pour in the coconut milk (mind the sputtering) and simmer back into a coating syrup."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Drop the dumplings into the coconut syrup and coat them well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, coated in lolo. Soft and indulgent — Tongan faikakai."
+   }
+  ]
+ },
+ "simboro": {
+  "nom": "Simboro",
+  "description": "Simboro — Vanuatu's little rolls: grated cassava rolled in leaves (island or cabbage), poached in an oniony coconut milk until melting. Gentle and green, it's the lagoon dish of ni-Vanuatu villages, a bite-sized cousin of laplap.",
+  "etapes": [
+   {
+    "titre": "The cassava",
+    "detail": "Peel and finely grate the cassava, then press it lightly and salt."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Soften the cabbage leaves a few seconds in boiling water."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Place a log of grated cassava on each leaf and roll into tight little cigars."
+   },
+   {
+    "titre": "The bath",
+    "detail": "Bring the coconut milk to a simmer with the sliced onion, salt and a little water."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Lay the simboro in the simmering coconut bath."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Poach gently until the cassava is translucent and melting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the rolls coated in their coconut cream, with a dash of lime. Vanuatu's simboro!"
+   }
+  ]
  }
 };

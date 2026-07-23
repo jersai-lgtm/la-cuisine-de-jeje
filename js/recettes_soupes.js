@@ -5412,4 +5412,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, avec du pain. Onctueuse et acidulée — la begova čorba de Sarajevo.", badge: null }
     ]
   },
+  jota: {
+    dateAjout: "2026-07-23T17:03:00",
+    nom: "Jota",
+    cat: "soupes", pays: "slovenie",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Jota — la soupe paysanne de Slovénie : choucroute, haricots blancs, pommes de terre et lardons mijotés ensemble en une soupe épaisse, acidulée et fumée. Plat d'hiver des vallées alpines et du Karst, elle réchauffe des générations de Slovènes — encore meilleure réchauffée.",
+    tableauJota: [
+      { nb: 1, chou: "80 g", haricotsblancs: "40 g", pommedeterre: "70 g", lardons: "25 g", oignon: "20 g", ail: "1", laurier: "½", vinaigreBlanc: "8 ml", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, chou: "160 g", haricotsblancs: "80 g", pommedeterre: "140 g", lardons: "50 g", oignon: "40 g", ail: "2", laurier: "1", vinaigreBlanc: "16 ml", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, chou: "240 g", haricotsblancs: "120 g", pommedeterre: "210 g", lardons: "75 g", oignon: "60 g", ail: "3", laurier: "1½", vinaigreBlanc: "24 ml", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, chou: "320 g", haricotsblancs: "160 g", pommedeterre: "280 g", lardons: "100 g", oignon: "80 g", ail: "4", laurier: "2", vinaigreBlanc: "32 ml", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, chou: "400 g", haricotsblancs: "200 g", pommedeterre: "350 g", lardons: "125 g", oignon: "100 g", ail: "5", laurier: "2½", vinaigreBlanc: "40 ml", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, chou: "480 g", haricotsblancs: "240 g", pommedeterre: "420 g", lardons: "150 g", oignon: "120 g", ail: "6", laurier: "3", vinaigreBlanc: "48 ml", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, chou: "560 g", haricotsblancs: "280 g", pommedeterre: "490 g", lardons: "175 g", oignon: "140 g", ail: "7", laurier: "3½", vinaigreBlanc: "56 ml", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, chou: "640 g", haricotsblancs: "320 g", pommedeterre: "560 g", lardons: "200 g", oignon: "160 g", ail: "8", laurier: "4", vinaigreBlanc: "64 ml", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, chou: "720 g", haricotsblancs: "360 g", pommedeterre: "630 g", lardons: "225 g", oignon: "180 g", ail: "9", laurier: "4½", vinaigreBlanc: "72 ml", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, chou: "800 g", haricotsblancs: "400 g", pommedeterre: "700 g", lardons: "250 g", oignon: "200 g", ail: "10", laurier: "5", vinaigreBlanc: "80 ml", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, chou: "880 g", haricotsblancs: "440 g", pommedeterre: "770 g", lardons: "275 g", oignon: "220 g", ail: "11", laurier: "5½", vinaigreBlanc: "88 ml", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, chou: "960 g", haricotsblancs: "480 g", pommedeterre: "840 g", lardons: "300 g", oignon: "240 g", ail: "12", laurier: "6", vinaigreBlanc: "96 ml", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, chou: "1040 g", haricotsblancs: "520 g", pommedeterre: "910 g", lardons: "325 g", oignon: "260 g", ail: "13", laurier: "6½", vinaigreBlanc: "104 ml", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, chou: "1120 g", haricotsblancs: "560 g", pommedeterre: "980 g", lardons: "350 g", oignon: "280 g", ail: "14", laurier: "7", vinaigreBlanc: "112 ml", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, chou: "1200 g", haricotsblancs: "600 g", pommedeterre: "1050 g", lardons: "375 g", oignon: "300 g", ail: "15", laurier: "7½", vinaigreBlanc: "120 ml", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Les haricots", detail: "Faites tremper les haricots blancs, puis cuisez-les avec le laurier jusqu'à tendreté.", badge: null },
+      { icone: "🥓", titre: "La base", detail: "Faites rissoler les lardons avec l'oignon et l'ail dans l'huile.", badge: null },
+      { icone: "🥬", titre: "La choucroute", detail: "Ajoutez le chou émincé et le vinaigre (ou de la choucroute), et laissez compoter.", badge: null },
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Ajoutez les pommes de terre en dés et couvrez d'eau.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Ajoutez les haricots et laissez mijoter le tout ensemble.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Écrasez une partie des haricots et des pommes de terre pour épaissir la soupe.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez fumant. Acidulée et fumée — la jota slovène.", badge: null }
+    ]
+  },
 });
