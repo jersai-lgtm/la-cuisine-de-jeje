@@ -76844,5 +76844,345 @@ window.RECETTES_EN = {
     "detail": "Serve piping hot, with coffee. Golden and soft — Malagasy mofo gasy."
    }
   ]
+ },
+ "chifrijo": {
+  "nom": "Chifrijo",
+  "description": "Chifrijo — the star bowl of San José's bars: rice, stewed red beans, crispy chicharrón-style pork and a limey pico de gallo, layered in a bowl. Born in a Costa Rican cantina, its name fuses 'chicharrón' and 'frijoles' — scoop it up with corn chips.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak then simmer the red beans until melting, in their salted juices."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Cook the plain rice."
+   },
+   {
+    "titre": "The chicharrón",
+    "detail": "Dice the pork and fry until golden and crisp."
+   },
+   {
+    "titre": "The pico de gallo",
+    "detail": "Mix diced tomato and onion, chopped coriander, lime juice and salt."
+   },
+   {
+    "titre": "The layering",
+    "detail": "In a bowl: rice, then beans with a little of their juices."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Add the crispy pork then the fresh pico de gallo."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, with corn chips for scooping. Costa Rican chifrijo!"
+   }
+  ]
+ },
+ "curtido": {
+  "nom": "Curtido",
+  "description": "Curtido — El Salvador's fermented slaw: finely shredded cabbage with carrot and onion, scalded then marinated with vinegar and oregano, crunchy and tangy. The inseparable partner of pupusas, cutting through their richness — the longer it rests, the better it gets.",
+  "etapes": [
+   {
+    "titre": "The cabbage",
+    "detail": "Shred the cabbage very finely."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Grate the carrot and slice the onion into thin strips."
+   },
+   {
+    "titre": "Scald",
+    "detail": "Pour boiling water over the vegetables, leave 1 minute, then drain well."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Mix the vinegar, a little water, the sugar, salt, oregano and chilli."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the vegetables in the marinade and pack them into a jar."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it rest in the fridge, ideally a few hours (or overnight)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, alongside pupusas or grilled meats. Crunchy and tangy — curtido!"
+   }
+  ]
+ },
+ "rellenitos": {
+  "nom": "Rellenitos",
+  "description": "Rellenitos — Guatemala's surprising sweet: balls of mashed ripe plantain filled with cinnamon-sweetened black beans, pan-browned and dusted with sugar. Sweet-earthy and melting, it's Guatemala's emblematic street dessert.",
+  "etapes": [
+   {
+    "titre": "The plantains",
+    "detail": "Boil (or steam) very ripe plantains until very tender."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mash them into a smooth purée with the pinch of salt and let cool a little."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mash the cooked black beans with half the sugar and the cinnamon, and dry this paste over low heat."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Flatten a ball of plantain purée in your palm, add filling and close into an oval dumpling."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the rellenitos in an oiled pan on all sides."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Roll them in the remaining sugar."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm. Melting and sweet-earthy — Guatemalan rellenitos."
+   }
+  ]
+ },
+ "rugbraud": {
+  "nom": "Rúgbrauð",
+  "description": "Rúgbrauð — Iceland's volcanic rye bread: a dense, no-knead rye-and-honey dough, baked very long at low temperature (traditionally buried near hot springs!). Dark, moist and lightly sweet, it's sliced thin under butter, herring or salmon.",
+  "etapes": [
+   {
+    "titre": "The mix",
+    "detail": "Mix the rye flour, flour, baking powder and salt."
+   },
+   {
+    "titre": "The liquid",
+    "detail": "Dissolve the honey in the warm milk and pour over the flours."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix into a thick, sticky dough — no kneading."
+   },
+   {
+    "titre": "The tin",
+    "detail": "Pour into a well-buttered tin (or jar), two-thirds full, and cover tightly."
+   },
+   {
+    "titre": "Slow bake",
+    "detail": "Bake at a very low temperature (100-110 °C) for long hours — the secret of its moistness."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Unmould and cool completely: the crumb firms up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice thin and butter generously, with herring or salmon. Icelandic rúgbrauð!"
+   }
+  ]
+ },
+ "lapskaus": {
+  "nom": "Lapskaus",
+  "description": "Lapskaus — Norway's everyday stew: beef simmered with potatoes, carrots and leek in a broth the potatoes thicken naturally, down to the texture of a comforting stew-mash. Simple and generous, served with flatbread and butter.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Dice the beef and brown it in the butter with the onion."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cover with water, add the bay leaf, salt and pepper, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the meat grows tender."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potatoes, carrots and leek in pieces."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Keep cooking: the potatoes break down and bind the stew."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Roughly crush a few pieces, correct salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve steaming, with buttered flatbread. Comforting — Norwegian lapskaus."
+   }
+  ]
+ },
+ "habichuelasdulce": {
+  "nom": "Habichuelas con Dulce",
+  "description": "Habichuelas con dulce — the Dominican Republic's sweet cream of beans: red beans blended with coconut milk and milk, simmered with sweet potato, raisins, cinnamon and nutmeg. This Easter dessert, served well chilled with little biscuits, surprises then delights — unique in the world.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Cook the red beans until very tender."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend them finely with the milk and coconut milk, then strain for a smooth cream."
+   },
+   {
+    "titre": "The sweet potato",
+    "detail": "Dice the sweet potato and boil the cubes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer the bean cream with the sugar, cinnamon, nutmeg and salt."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add the sweet potato cubes and raisins, and let it thicken gently."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cool then refrigerate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, with little biscuits. Unique — Dominican habichuelas con dulce."
+   }
+  ]
+ },
+ "tembleque": {
+  "nom": "Tembleque",
+  "description": "Tembleque — Puerto Rico's wobbly coconut pudding: coconut milk thickened with cornstarch and sugar, set cold into a pearly dome that 'trembles' at the spoon (hence the name!), dusted with cinnamon. Four ingredients, no oven — Puerto Rico's holiday sweet.",
+  "etapes": [
+   {
+    "titre": "Dissolve",
+    "detail": "Dissolve the cornstarch in a little cold coconut milk, lump-free."
+   },
+   {
+    "titre": "The base",
+    "detail": "Heat the remaining coconut milk with the sugar, salt and lime zest."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Pour in the dissolved cornstarch and thicken over low heat, whisking constantly."
+   },
+   {
+    "titre": "The texture",
+    "detail": "Continue until the cream coats thickly and pulls from the sides."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into moulds rinsed with cold water and smooth."
+   },
+   {
+    "titre": "Set",
+    "detail": "Set in the fridge for several hours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Unmould, dust with cinnamon and watch it tremble. Puerto Rican tembleque!"
+   }
+  ]
+ },
+ "bokit": {
+  "nom": "Bokit",
+  "description": "Bokit — Guadeloupe's legendary fried sandwich: a leavened dough fried into a puffed golden bread, split and filled with salt cod (or chicken, ham and cheese) plus crunchy vegetables and sauce. Heir of the 'journey cake', sold from Pointe-à-Pitre's bokit trucks, devoured piping hot.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, salt and warm water into a soft dough, and let it rise."
+   },
+   {
+    "titre": "The cod",
+    "detail": "Desalt the cod, poach it, flake it and spike it with chilli."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Divide the dough, ball it, then flatten into thick discs; let them relax."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the bokits: they puff and brown on both sides; drain them."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split each hot bokit along the side, like a pocket."
+   },
+   {
+    "titre": "Fill and serve",
+    "detail": "Fill with salad, tomato, cod and spicy mayo. Piping hot and indulgent — the Guadeloupean bokit!"
+   }
+  ]
+ },
+ "feroce": {
+  "nom": "Avocado Féroce",
+  "description": "Féroce d'avocat — Martinique's punchy starter: avocado mashed with flaked salt cod, cassava flour, garlic, lime and chilli — 'ferocious', because it doesn't hold back. Rolled into balls or shaped into quenelles, it's the star appetizer of Creole tables.",
+  "etapes": [
+   {
+    "titre": "The cod",
+    "detail": "Desalt the cod, poach it a few minutes, then flake it finely."
+   },
+   {
+    "titre": "The avocado",
+    "detail": "Mash the ripe avocado flesh with the lime juice."
+   },
+   {
+    "titre": "The cassava flour",
+    "detail": "Add the cassava flour (or fine semolina) to bind."
+   },
+   {
+    "titre": "Spike",
+    "detail": "Work in the crushed garlic, chilli and oil."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Add the flaked cod and work into an even paste; taste before salting."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll into small balls or shape into quenelles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, with a dash of lime. It kicks — Martinican féroce!"
+   }
+  ]
+ },
+ "cullenskink": {
+  "nom": "Cullen Skink",
+  "description": "Cullen skink — Scotland's smoked haddock soup: a rustic velvety soup of potatoes, leek and onion in milk, with flaked smoked haddock, finished with a knob of butter. Born in the port of Cullen, creamy and smoky, it's one of the world's great soups.",
+  "etapes": [
+   {
+    "titre": "The haddock",
+    "detail": "Poach the smoked haddock in simmering milk, then set it aside and keep the scented milk."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften the sliced onion and leek in the butter, without colouring."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the diced potatoes and cover with water; let them cook."
+   },
+   {
+    "titre": "The smoky milk",
+    "detail": "Pour in the poaching milk and let it simmer gently."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Roughly crush some of the potatoes to velvet the soup."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Flake the haddock into the soup with the cream, and reheat without boiling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pepper, taste before salting, and serve steaming. Creamy and smoky — Scottish cullen skink."
+   }
+  ]
  }
 };

@@ -5338,4 +5338,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez fumant. Complet et convivial — le bouyon saint-lucien.", badge: null }
     ]
   },
+  cullenskink: {
+    dateAjout: "2026-07-23T15:09:00",
+    nom: "Cullen Skink",
+    cat: "soupes", pays: "ecosse",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Cullen skink — la soupe écossaise au haddock fumé : un velouté rustique de pommes de terre, poireau et oignon au lait, où s'effeuille le haddock fumé, fini d'une noix de beurre. Née dans le port de Cullen, crémeuse et fumée, c'est l'une des plus grandes soupes du monde.",
+    tableauCullenskink: [
+      { nb: 1, haddock: "80 g", pommedeterre: "100 g", poireau: "30 g", oignon: "25 g", lait: "100 ml", creme: "20 ml", beurre: "10 g", poivre: "1 g", sel: "1 g" },
+      { nb: 2, haddock: "160 g", pommedeterre: "200 g", poireau: "60 g", oignon: "50 g", lait: "200 ml", creme: "40 ml", beurre: "20 g", poivre: "2 g", sel: "2 g" },
+      { nb: 3, haddock: "240 g", pommedeterre: "300 g", poireau: "90 g", oignon: "75 g", lait: "300 ml", creme: "60 ml", beurre: "30 g", poivre: "3 g", sel: "3 g" },
+      { nb: 4, haddock: "320 g", pommedeterre: "400 g", poireau: "120 g", oignon: "100 g", lait: "400 ml", creme: "80 ml", beurre: "40 g", poivre: "4 g", sel: "4 g" },
+      { nb: 5, haddock: "400 g", pommedeterre: "500 g", poireau: "150 g", oignon: "125 g", lait: "500 ml", creme: "100 ml", beurre: "50 g", poivre: "5 g", sel: "5 g" },
+      { nb: 6, haddock: "480 g", pommedeterre: "600 g", poireau: "180 g", oignon: "150 g", lait: "600 ml", creme: "120 ml", beurre: "60 g", poivre: "6 g", sel: "6 g" },
+      { nb: 7, haddock: "560 g", pommedeterre: "700 g", poireau: "210 g", oignon: "175 g", lait: "700 ml", creme: "140 ml", beurre: "70 g", poivre: "7 g", sel: "7 g" },
+      { nb: 8, haddock: "640 g", pommedeterre: "800 g", poireau: "240 g", oignon: "200 g", lait: "800 ml", creme: "160 ml", beurre: "80 g", poivre: "8 g", sel: "8 g" },
+      { nb: 9, haddock: "720 g", pommedeterre: "900 g", poireau: "270 g", oignon: "225 g", lait: "900 ml", creme: "180 ml", beurre: "90 g", poivre: "9 g", sel: "9 g" },
+      { nb: 10, haddock: "800 g", pommedeterre: "1000 g", poireau: "300 g", oignon: "250 g", lait: "1000 ml", creme: "200 ml", beurre: "100 g", poivre: "10 g", sel: "10 g" },
+      { nb: 11, haddock: "880 g", pommedeterre: "1100 g", poireau: "330 g", oignon: "275 g", lait: "1100 ml", creme: "220 ml", beurre: "110 g", poivre: "11 g", sel: "11 g" },
+      { nb: 12, haddock: "960 g", pommedeterre: "1200 g", poireau: "360 g", oignon: "300 g", lait: "1200 ml", creme: "240 ml", beurre: "120 g", poivre: "12 g", sel: "12 g" },
+      { nb: 13, haddock: "1040 g", pommedeterre: "1300 g", poireau: "390 g", oignon: "325 g", lait: "1300 ml", creme: "260 ml", beurre: "130 g", poivre: "13 g", sel: "13 g" },
+      { nb: 14, haddock: "1120 g", pommedeterre: "1400 g", poireau: "420 g", oignon: "350 g", lait: "1400 ml", creme: "280 ml", beurre: "140 g", poivre: "14 g", sel: "14 g" },
+      { nb: 15, haddock: "1200 g", pommedeterre: "1500 g", poireau: "450 g", oignon: "375 g", lait: "1500 ml", creme: "300 ml", beurre: "150 g", poivre: "15 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le haddock", detail: "Faites pocher le haddock fumé dans le lait frémissant, puis réservez-le et gardez le lait parfumé.", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faites fondre l'oignon et le poireau émincés dans le beurre, sans coloration.", badge: null },
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Ajoutez les pommes de terre en dés et couvrez d'eau ; laissez cuire.", badge: null },
+      { icone: "🥛", titre: "Le lait fumé", detail: "Versez le lait de pochage et laissez frémir doucement.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Écrasez grossièrement une partie des pommes de terre pour velouter la soupe.", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Effeuillez le haddock dans la soupe avec la crème, et réchauffez sans bouillir.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Poivrez, goûtez avant de saler, et servez fumant. Crémeux et fumé — le cullen skink écossais.", badge: null }
+    ]
+  },
 });

@@ -40966,4 +40966,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez avec du riz ou du manioc. Envoûtant — le poulet à l'odika gabonais.", badge: null }
     ]
   },
+  chifrijo: {
+    dateAjout: "2026-07-23T15:00:00",
+    nom: "Chifrijo",
+    cat: "plats", pays: "costarica",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥣",
+    description: "Chifrijo — le bol star des bars de San José : du riz, des haricots rouges mijotés, du porc croustillant façon chicharrón et un pico de gallo citronné, empilés en couches dans un bol. Né dans une cantina costaricienne, son nom fusionne « chicharrón » et « frijoles » — à saucer avec des chips de maïs.",
+    tableauChifrijo: [
+      { nb: 1, riz: "50 g", haricotsrouges: "30 g", porc: "70 g", tomate: "30 g", oignon: "15 g", coriandre: "2 g", citronvert: "½", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, riz: "100 g", haricotsrouges: "60 g", porc: "140 g", tomate: "60 g", oignon: "30 g", coriandre: "4 g", citronvert: "1", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, riz: "150 g", haricotsrouges: "90 g", porc: "210 g", tomate: "90 g", oignon: "45 g", coriandre: "6 g", citronvert: "1½", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, riz: "200 g", haricotsrouges: "120 g", porc: "280 g", tomate: "120 g", oignon: "60 g", coriandre: "8 g", citronvert: "2", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, riz: "250 g", haricotsrouges: "150 g", porc: "350 g", tomate: "150 g", oignon: "75 g", coriandre: "10 g", citronvert: "2½", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, riz: "300 g", haricotsrouges: "180 g", porc: "420 g", tomate: "180 g", oignon: "90 g", coriandre: "12 g", citronvert: "3", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, riz: "350 g", haricotsrouges: "210 g", porc: "490 g", tomate: "210 g", oignon: "105 g", coriandre: "14 g", citronvert: "3½", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, riz: "400 g", haricotsrouges: "240 g", porc: "560 g", tomate: "240 g", oignon: "120 g", coriandre: "16 g", citronvert: "4", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, riz: "450 g", haricotsrouges: "270 g", porc: "630 g", tomate: "270 g", oignon: "135 g", coriandre: "18 g", citronvert: "4½", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, riz: "500 g", haricotsrouges: "300 g", porc: "700 g", tomate: "300 g", oignon: "150 g", coriandre: "20 g", citronvert: "5", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, riz: "550 g", haricotsrouges: "330 g", porc: "770 g", tomate: "330 g", oignon: "165 g", coriandre: "22 g", citronvert: "5½", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, riz: "600 g", haricotsrouges: "360 g", porc: "840 g", tomate: "360 g", oignon: "180 g", coriandre: "24 g", citronvert: "6", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, riz: "650 g", haricotsrouges: "390 g", porc: "910 g", tomate: "390 g", oignon: "195 g", coriandre: "26 g", citronvert: "6½", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, riz: "700 g", haricotsrouges: "420 g", porc: "980 g", tomate: "420 g", oignon: "210 g", coriandre: "28 g", citronvert: "7", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, riz: "750 g", haricotsrouges: "450 g", porc: "1050 g", tomate: "450 g", oignon: "225 g", coriandre: "30 g", citronvert: "7½", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Les haricots", detail: "Faites tremper puis mijoter les haricots rouges jusqu'à ce qu'ils soient fondants, dans leur jus salé.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Faites cuire le riz nature.", badge: null },
+      { icone: "🥩", titre: "Le chicharrón", detail: "Coupez le porc en dés et faites-les rissoler jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🍅", titre: "Le pico de gallo", detail: "Mélangez tomate et oignon en petits dés, coriandre ciselée, jus de citron vert et sel.", badge: null },
+      { icone: "🥣", titre: "Le montage", detail: "Dans un bol : riz, puis haricots avec un peu de leur jus.", badge: null },
+      { icone: "✨", titre: "Couronner", detail: "Ajoutez le porc croustillant puis le pico de gallo bien frais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, avec des chips de maïs pour saucer. Le chifrijo costaricien !", badge: null }
+    ]
+  },
+  lapskaus: {
+    dateAjout: "2026-07-23T15:04:00",
+    nom: "Lapskaus",
+    cat: "plats", pays: "norvege",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Lapskaus — le ragoût du quotidien norvégien : du bœuf mijoté avec pommes de terre, carottes et poireau dans un bouillon que les pommes de terre épaississent naturellement, jusqu'à la texture d'un ragoût-purée réconfortant. Simple et généreux, il se sert avec du pain plat et du beurre.",
+    tableauLapskaus: [
+      { nb: 1, boeuf: "90 g", pommedeterre: "120 g", carotte: "40 g", poireau: "30 g", oignon: "25 g", laurier: "½", beurre: "8 g", poivre: "1 g", sel: "2 g" },
+      { nb: 2, boeuf: "180 g", pommedeterre: "240 g", carotte: "80 g", poireau: "60 g", oignon: "50 g", laurier: "1", beurre: "16 g", poivre: "2 g", sel: "4 g" },
+      { nb: 3, boeuf: "270 g", pommedeterre: "360 g", carotte: "120 g", poireau: "90 g", oignon: "75 g", laurier: "1½", beurre: "24 g", poivre: "3 g", sel: "6 g" },
+      { nb: 4, boeuf: "360 g", pommedeterre: "480 g", carotte: "160 g", poireau: "120 g", oignon: "100 g", laurier: "2", beurre: "32 g", poivre: "4 g", sel: "8 g" },
+      { nb: 5, boeuf: "450 g", pommedeterre: "600 g", carotte: "200 g", poireau: "150 g", oignon: "125 g", laurier: "2½", beurre: "40 g", poivre: "5 g", sel: "10 g" },
+      { nb: 6, boeuf: "540 g", pommedeterre: "720 g", carotte: "240 g", poireau: "180 g", oignon: "150 g", laurier: "3", beurre: "48 g", poivre: "6 g", sel: "12 g" },
+      { nb: 7, boeuf: "630 g", pommedeterre: "840 g", carotte: "280 g", poireau: "210 g", oignon: "175 g", laurier: "3½", beurre: "56 g", poivre: "7 g", sel: "14 g" },
+      { nb: 8, boeuf: "720 g", pommedeterre: "960 g", carotte: "320 g", poireau: "240 g", oignon: "200 g", laurier: "4", beurre: "64 g", poivre: "8 g", sel: "16 g" },
+      { nb: 9, boeuf: "810 g", pommedeterre: "1080 g", carotte: "360 g", poireau: "270 g", oignon: "225 g", laurier: "4½", beurre: "72 g", poivre: "9 g", sel: "18 g" },
+      { nb: 10, boeuf: "900 g", pommedeterre: "1200 g", carotte: "400 g", poireau: "300 g", oignon: "250 g", laurier: "5", beurre: "80 g", poivre: "10 g", sel: "20 g" },
+      { nb: 11, boeuf: "990 g", pommedeterre: "1320 g", carotte: "440 g", poireau: "330 g", oignon: "275 g", laurier: "5½", beurre: "88 g", poivre: "11 g", sel: "22 g" },
+      { nb: 12, boeuf: "1080 g", pommedeterre: "1440 g", carotte: "480 g", poireau: "360 g", oignon: "300 g", laurier: "6", beurre: "96 g", poivre: "12 g", sel: "24 g" },
+      { nb: 13, boeuf: "1170 g", pommedeterre: "1560 g", carotte: "520 g", poireau: "390 g", oignon: "325 g", laurier: "6½", beurre: "104 g", poivre: "13 g", sel: "26 g" },
+      { nb: 14, boeuf: "1260 g", pommedeterre: "1680 g", carotte: "560 g", poireau: "420 g", oignon: "350 g", laurier: "7", beurre: "112 g", poivre: "14 g", sel: "28 g" },
+      { nb: 15, boeuf: "1350 g", pommedeterre: "1800 g", carotte: "600 g", poireau: "450 g", oignon: "375 g", laurier: "7½", beurre: "120 g", poivre: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "La viande", detail: "Coupez le bœuf en dés et faites-les revenir dans le beurre avec l'oignon.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Couvrez d'eau, ajoutez le laurier, salez, poivrez, et portez à frémissement.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que la viande s'attendrisse.", badge: null },
+      { icone: "🥔", titre: "Les légumes", detail: "Ajoutez pommes de terre, carottes et poireau en morceaux.", badge: null },
+      { icone: "🥄", titre: "Épaissir", detail: "Poursuivez la cuisson : les pommes de terre se défont et lient le ragoût.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Écrasez grossièrement quelques morceaux, rectifiez sel et poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez fumant, avec du pain plat beurré. Réconfortant — le lapskaus norvégien.", badge: null }
+    ]
+  },
 });

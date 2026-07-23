@@ -3218,4 +3218,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, parsemés de persil, avec le jus beurré. Nacrés et iodés — les queenies mannois.", badge: null }
     ]
   },
+  feroce: {
+    dateAjout: "2026-07-23T15:08:00",
+    nom: "Féroce d'Avocat",
+    cat: "entrees", pays: "martinique",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥑",
+    description: "Féroce d'avocat — l'entrée qui claque de Martinique : de l'avocat écrasé avec de la morue émiettée, de la farine de manioc, de l'ail, du citron vert et du piment — « féroce », car il ne fait pas semblant. Roulé en boules ou servi en quenelles, c'est l'apéritif-vedette des tables créoles.",
+    tableauFeroce: [
+      { nb: 1, avocat: "90 g", moruedessale: "50 g", semoule: "20 g", ail: "1", citronvert: "½", piment: "1 g", huileolive: "8 ml", sel: "1 g" },
+      { nb: 2, avocat: "180 g", moruedessale: "100 g", semoule: "40 g", ail: "2", citronvert: "1", piment: "2 g", huileolive: "16 ml", sel: "2 g" },
+      { nb: 3, avocat: "270 g", moruedessale: "150 g", semoule: "60 g", ail: "3", citronvert: "1½", piment: "3 g", huileolive: "24 ml", sel: "3 g" },
+      { nb: 4, avocat: "360 g", moruedessale: "200 g", semoule: "80 g", ail: "4", citronvert: "2", piment: "4 g", huileolive: "32 ml", sel: "4 g" },
+      { nb: 5, avocat: "450 g", moruedessale: "250 g", semoule: "100 g", ail: "5", citronvert: "2½", piment: "5 g", huileolive: "40 ml", sel: "5 g" },
+      { nb: 6, avocat: "540 g", moruedessale: "300 g", semoule: "120 g", ail: "6", citronvert: "3", piment: "6 g", huileolive: "48 ml", sel: "6 g" },
+      { nb: 7, avocat: "630 g", moruedessale: "350 g", semoule: "140 g", ail: "7", citronvert: "3½", piment: "7 g", huileolive: "56 ml", sel: "7 g" },
+      { nb: 8, avocat: "720 g", moruedessale: "400 g", semoule: "160 g", ail: "8", citronvert: "4", piment: "8 g", huileolive: "64 ml", sel: "8 g" },
+      { nb: 9, avocat: "810 g", moruedessale: "450 g", semoule: "180 g", ail: "9", citronvert: "4½", piment: "9 g", huileolive: "72 ml", sel: "9 g" },
+      { nb: 10, avocat: "900 g", moruedessale: "500 g", semoule: "200 g", ail: "10", citronvert: "5", piment: "10 g", huileolive: "80 ml", sel: "10 g" },
+      { nb: 11, avocat: "990 g", moruedessale: "550 g", semoule: "220 g", ail: "11", citronvert: "5½", piment: "11 g", huileolive: "88 ml", sel: "11 g" },
+      { nb: 12, avocat: "1080 g", moruedessale: "600 g", semoule: "240 g", ail: "12", citronvert: "6", piment: "12 g", huileolive: "96 ml", sel: "12 g" },
+      { nb: 13, avocat: "1170 g", moruedessale: "650 g", semoule: "260 g", ail: "13", citronvert: "6½", piment: "13 g", huileolive: "104 ml", sel: "13 g" },
+      { nb: 14, avocat: "1260 g", moruedessale: "700 g", semoule: "280 g", ail: "14", citronvert: "7", piment: "14 g", huileolive: "112 ml", sel: "14 g" },
+      { nb: 15, avocat: "1350 g", moruedessale: "750 g", semoule: "300 g", ail: "15", citronvert: "7½", piment: "15 g", huileolive: "120 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "La morue", detail: "Dessalez la morue, pochez-la quelques minutes, puis émiettez-la finement.", badge: null },
+      { icone: "🥑", titre: "L'avocat", detail: "Écrasez la chair d'avocat bien mûr avec le jus de citron vert.", badge: null },
+      { icone: "🌾", titre: "La farine de manioc", detail: "Ajoutez la farine de manioc (à défaut, de la semoule fine) pour lier.", badge: null },
+      { icone: "🧄", titre: "Relever", detail: "Incorporez l'ail pilé, le piment et l'huile.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Ajoutez la morue émiettée et travaillez en pâte homogène ; goûtez avant de saler.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Roulez en petites boules ou façonnez en quenelles.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, avec un trait de citron vert. Ça décoiffe — le féroce martiniquais !", badge: null }
+    ]
+  },
 });

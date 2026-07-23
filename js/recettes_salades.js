@@ -2894,4 +2894,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Mélangez au moment de servir, avec un trait de citron vert. Unique — le lahpet thoke birman.", badge: null }
     ]
   },
+  curtido: {
+    dateAjout: "2026-07-23T15:01:00",
+    nom: "Curtido",
+    cat: "salades", pays: "salvador",
+    base: 4,
+    temps: "20 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥬",
+    description: "Curtido — la salade fermentée du Salvador : du chou finement émincé avec carotte et oignon, ébouillanté puis mariné au vinaigre et à l'origan, croquant et acidulé. C'est l'inséparable des pupusas, dont il tranche le fondant — plus il repose, meilleur il est.",
+    tableauCurtido: [
+      { nb: 1, chou: "120 g", carotte: "40 g", oignon: "20 g", vinaigreBlanc: "15 ml", origan: "1 g", piment: "0.5 g", sucre: "3 g", sel: "2 g" },
+      { nb: 2, chou: "240 g", carotte: "80 g", oignon: "40 g", vinaigreBlanc: "30 ml", origan: "2 g", piment: "1 g", sucre: "6 g", sel: "4 g" },
+      { nb: 3, chou: "360 g", carotte: "120 g", oignon: "60 g", vinaigreBlanc: "45 ml", origan: "3 g", piment: "1.5 g", sucre: "9 g", sel: "6 g" },
+      { nb: 4, chou: "480 g", carotte: "160 g", oignon: "80 g", vinaigreBlanc: "60 ml", origan: "4 g", piment: "2 g", sucre: "12 g", sel: "8 g" },
+      { nb: 5, chou: "600 g", carotte: "200 g", oignon: "100 g", vinaigreBlanc: "75 ml", origan: "5 g", piment: "2.5 g", sucre: "15 g", sel: "10 g" },
+      { nb: 6, chou: "720 g", carotte: "240 g", oignon: "120 g", vinaigreBlanc: "90 ml", origan: "6 g", piment: "3 g", sucre: "18 g", sel: "12 g" },
+      { nb: 7, chou: "840 g", carotte: "280 g", oignon: "140 g", vinaigreBlanc: "105 ml", origan: "7 g", piment: "3.5 g", sucre: "21 g", sel: "14 g" },
+      { nb: 8, chou: "960 g", carotte: "320 g", oignon: "160 g", vinaigreBlanc: "120 ml", origan: "8 g", piment: "4 g", sucre: "24 g", sel: "16 g" },
+      { nb: 9, chou: "1080 g", carotte: "360 g", oignon: "180 g", vinaigreBlanc: "135 ml", origan: "9 g", piment: "4.5 g", sucre: "27 g", sel: "18 g" },
+      { nb: 10, chou: "1200 g", carotte: "400 g", oignon: "200 g", vinaigreBlanc: "150 ml", origan: "10 g", piment: "5 g", sucre: "30 g", sel: "20 g" },
+      { nb: 11, chou: "1320 g", carotte: "440 g", oignon: "220 g", vinaigreBlanc: "165 ml", origan: "11 g", piment: "5.5 g", sucre: "33 g", sel: "22 g" },
+      { nb: 12, chou: "1440 g", carotte: "480 g", oignon: "240 g", vinaigreBlanc: "180 ml", origan: "12 g", piment: "6 g", sucre: "36 g", sel: "24 g" },
+      { nb: 13, chou: "1560 g", carotte: "520 g", oignon: "260 g", vinaigreBlanc: "195 ml", origan: "13 g", piment: "6.5 g", sucre: "39 g", sel: "26 g" },
+      { nb: 14, chou: "1680 g", carotte: "560 g", oignon: "280 g", vinaigreBlanc: "210 ml", origan: "14 g", piment: "7 g", sucre: "42 g", sel: "28 g" },
+      { nb: 15, chou: "1800 g", carotte: "600 g", oignon: "300 g", vinaigreBlanc: "225 ml", origan: "15 g", piment: "7.5 g", sucre: "45 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Le chou", detail: "Émincez le chou très finement.", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Râpez la carotte et émincez l'oignon en fines lamelles.", badge: null },
+      { icone: "💧", titre: "Blanchir", detail: "Versez de l'eau bouillante sur les légumes, laissez 1 minute, puis égouttez bien.", badge: null },
+      { icone: "🥄", titre: "La marinade", detail: "Mélangez le vinaigre, un peu d'eau, le sucre, le sel, l'origan et le piment.", badge: null },
+      { icone: "🫙", titre: "Mariner", detail: "Enrobez les légumes de marinade et tassez-les dans un bocal.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer au frais, idéalement quelques heures (ou une nuit).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, en garniture des pupusas ou des grillades. Croquant et acidulé — le curtido !", badge: null }
+    ],
+    liees: ["pupusas"]
+  },
 });

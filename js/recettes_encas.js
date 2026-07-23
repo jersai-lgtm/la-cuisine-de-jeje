@@ -6264,4 +6264,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Refermez, pressez légèrement et servez aussitôt. Croustillant-moelleux — le fish cutter bajan.", badge: null }
     ]
   },
+  bokit: {
+    dateAjout: "2026-07-23T15:07:00",
+    nom: "Bokit",
+    cat: "encas", pays: "guadeloupe",
+    base: 4,
+    temps: "1h + pousse",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥙",
+    description: "Bokit — le sandwich frit mythique de Guadeloupe : une pâte levée frite en pain gonflé et doré, fendu puis garni de morue (ou poulet, jambon-fromage) avec crudités et sauce. Héritier du « journey cake », vendu dans les camions-bokits de Pointe-à-Pitre, il se dévore brûlant.",
+    tableauBokit: [
+      { nb: 1, farine: "90 g", levureboulangere: "2 g", moruedessale: "50 g", salade: "15 g", tomate: "30 g", mayonnaise: "10 g", piment: "0.5 g", huileolive: "15 ml", sel: "2 g" },
+      { nb: 2, farine: "180 g", levureboulangere: "4 g", moruedessale: "100 g", salade: "30 g", tomate: "60 g", mayonnaise: "20 g", piment: "1 g", huileolive: "30 ml", sel: "4 g" },
+      { nb: 3, farine: "270 g", levureboulangere: "6 g", moruedessale: "150 g", salade: "45 g", tomate: "90 g", mayonnaise: "30 g", piment: "1.5 g", huileolive: "45 ml", sel: "6 g" },
+      { nb: 4, farine: "360 g", levureboulangere: "8 g", moruedessale: "200 g", salade: "60 g", tomate: "120 g", mayonnaise: "40 g", piment: "2 g", huileolive: "60 ml", sel: "8 g" },
+      { nb: 5, farine: "450 g", levureboulangere: "10 g", moruedessale: "250 g", salade: "75 g", tomate: "150 g", mayonnaise: "50 g", piment: "2.5 g", huileolive: "75 ml", sel: "10 g" },
+      { nb: 6, farine: "540 g", levureboulangere: "12 g", moruedessale: "300 g", salade: "90 g", tomate: "180 g", mayonnaise: "60 g", piment: "3 g", huileolive: "90 ml", sel: "12 g" },
+      { nb: 7, farine: "630 g", levureboulangere: "14 g", moruedessale: "350 g", salade: "105 g", tomate: "210 g", mayonnaise: "70 g", piment: "3.5 g", huileolive: "105 ml", sel: "14 g" },
+      { nb: 8, farine: "720 g", levureboulangere: "16 g", moruedessale: "400 g", salade: "120 g", tomate: "240 g", mayonnaise: "80 g", piment: "4 g", huileolive: "120 ml", sel: "16 g" },
+      { nb: 9, farine: "810 g", levureboulangere: "18 g", moruedessale: "450 g", salade: "135 g", tomate: "270 g", mayonnaise: "90 g", piment: "4.5 g", huileolive: "135 ml", sel: "18 g" },
+      { nb: 10, farine: "900 g", levureboulangere: "20 g", moruedessale: "500 g", salade: "150 g", tomate: "300 g", mayonnaise: "100 g", piment: "5 g", huileolive: "150 ml", sel: "20 g" },
+      { nb: 11, farine: "990 g", levureboulangere: "22 g", moruedessale: "550 g", salade: "165 g", tomate: "330 g", mayonnaise: "110 g", piment: "5.5 g", huileolive: "165 ml", sel: "22 g" },
+      { nb: 12, farine: "1080 g", levureboulangere: "24 g", moruedessale: "600 g", salade: "180 g", tomate: "360 g", mayonnaise: "120 g", piment: "6 g", huileolive: "180 ml", sel: "24 g" },
+      { nb: 13, farine: "1170 g", levureboulangere: "26 g", moruedessale: "650 g", salade: "195 g", tomate: "390 g", mayonnaise: "130 g", piment: "6.5 g", huileolive: "195 ml", sel: "26 g" },
+      { nb: 14, farine: "1260 g", levureboulangere: "28 g", moruedessale: "700 g", salade: "210 g", tomate: "420 g", mayonnaise: "140 g", piment: "7 g", huileolive: "210 ml", sel: "28 g" },
+      { nb: 15, farine: "1350 g", levureboulangere: "30 g", moruedessale: "750 g", salade: "225 g", tomate: "450 g", mayonnaise: "150 g", piment: "7.5 g", huileolive: "225 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine, la levure, le sel et de l'eau tiède en une pâte souple, et laissez-la lever.", badge: null },
+      { icone: "🐟", titre: "La morue", detail: "Dessalez la morue, pochez-la, émiettez-la et relevez-la de piment.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Divisez la pâte, boulez, puis aplatissez en disques épais ; laissez détendre.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les bokits : ils gonflent et dorent des deux côtés ; égouttez-les.", badge: null },
+      { icone: "🔪", titre: "Fendre", detail: "Fendez chaque bokit chaud sur le côté, comme une poche.", badge: null },
+      { icone: "🍽️", titre: "Garnir et servir", detail: "Garnissez de salade, tomate, morue et mayonnaise pimentée. Brûlant et gourmand — le bokit guadeloupéen !", badge: null }
+    ]
+  },
 });

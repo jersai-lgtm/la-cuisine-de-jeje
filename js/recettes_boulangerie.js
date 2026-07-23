@@ -2173,4 +2173,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez refroidir, tranchez fin et beurrez. Sombre et moelleux — l'ålandslimpa.", badge: null }
     ]
   },
+  rugbraud: {
+    dateAjout: "2026-07-23T15:03:00",
+    nom: "Rúgbrauð",
+    cat: "boulangerie", pays: "islande",
+    base: 4,
+    temps: "8h (cuisson lente)",
+    niveau: "⭐ Facile",
+    emoji: "🌋",
+    description: "Rúgbrauð — le pain de seigle volcanique d'Islande : une pâte dense au seigle et au miel, sans pétrissage, cuite très longuement à basse température (traditionnellement enterrée près des sources chaudes !). Sombre, moelleux et légèrement sucré, il se tranche fin sous du beurre, du hareng ou du saumon.",
+    tableauRugbraud: [
+      { nb: 1, farineseigle: "70 g", farine: "30 g", miel: "15 g", lait: "70 ml", levurechimique: "3 g", sel: "2 g" },
+      { nb: 2, farineseigle: "140 g", farine: "60 g", miel: "30 g", lait: "140 ml", levurechimique: "6 g", sel: "4 g" },
+      { nb: 3, farineseigle: "210 g", farine: "90 g", miel: "45 g", lait: "210 ml", levurechimique: "9 g", sel: "6 g" },
+      { nb: 4, farineseigle: "280 g", farine: "120 g", miel: "60 g", lait: "280 ml", levurechimique: "12 g", sel: "8 g" },
+      { nb: 5, farineseigle: "350 g", farine: "150 g", miel: "75 g", lait: "350 ml", levurechimique: "15 g", sel: "10 g" },
+      { nb: 6, farineseigle: "420 g", farine: "180 g", miel: "90 g", lait: "420 ml", levurechimique: "18 g", sel: "12 g" },
+      { nb: 7, farineseigle: "490 g", farine: "210 g", miel: "105 g", lait: "490 ml", levurechimique: "21 g", sel: "14 g" },
+      { nb: 8, farineseigle: "560 g", farine: "240 g", miel: "120 g", lait: "560 ml", levurechimique: "24 g", sel: "16 g" },
+      { nb: 9, farineseigle: "630 g", farine: "270 g", miel: "135 g", lait: "630 ml", levurechimique: "27 g", sel: "18 g" },
+      { nb: 10, farineseigle: "700 g", farine: "300 g", miel: "150 g", lait: "700 ml", levurechimique: "30 g", sel: "20 g" },
+      { nb: 11, farineseigle: "770 g", farine: "330 g", miel: "165 g", lait: "770 ml", levurechimique: "33 g", sel: "22 g" },
+      { nb: 12, farineseigle: "840 g", farine: "360 g", miel: "180 g", lait: "840 ml", levurechimique: "36 g", sel: "24 g" },
+      { nb: 13, farineseigle: "910 g", farine: "390 g", miel: "195 g", lait: "910 ml", levurechimique: "39 g", sel: "26 g" },
+      { nb: 14, farineseigle: "980 g", farine: "420 g", miel: "210 g", lait: "980 ml", levurechimique: "42 g", sel: "28 g" },
+      { nb: 15, farineseigle: "1050 g", farine: "450 g", miel: "225 g", lait: "1050 ml", levurechimique: "45 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Le mélange", detail: "Mélangez la farine de seigle, la farine, la levure et le sel.", badge: null },
+      { icone: "🍯", titre: "Le liquide", detail: "Délayez le miel dans le lait tiède et versez sur les farines.", badge: null },
+      { icone: "🥄", titre: "La pâte", detail: "Mélangez en une pâte épaisse et collante — sans pétrir.", badge: null },
+      { icone: "🫙", titre: "Le moule", detail: "Versez dans un moule bien beurré (ou un bocal), aux deux tiers, et couvrez hermétiquement.", badge: null },
+      { icone: "♨️", titre: "Cuisson lente", detail: "Enfournez à très basse température (100-110 °C) pour de longues heures — c'est le secret du moelleux.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Démoulez, laissez complètement refroidir : la mie se raffermit.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Tranchez fin et beurrez généreusement, avec hareng ou saumon. Le rúgbrauð islandais !", badge: null }
+    ]
+  },
 });
