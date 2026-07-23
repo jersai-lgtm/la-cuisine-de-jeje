@@ -75824,5 +75824,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot, in bowls. Silky and chocolatey — Samoan koko alaisa."
    }
   ]
+ },
+ "alandslimpa": {
+  "nom": "Ålandslimpa",
+  "description": "Ålandslimpa — the sweet dark bread of the Åland Islands: a dark, soft crumb scented with honey (traditionally malt and molasses), faintly tangy, baked into a handsome round loaf. The star of Åland breakfasts, it's sliced thin and generously buttered, with cheese or herring.",
+  "etapes": [
+   {
+    "titre": "The quick sponge",
+    "detail": "Dissolve the yeast in the warm milk with the sugar, and let it foam."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Add the flour, honey, melted butter and salt, and knead a soft, slightly sticky dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape a round loaf and place it on a tray; let it rise again."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at medium heat until the loaf is deep brown and sounds hollow."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Out of the oven, brush the crust with a little loosened honey to make it shine."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool, slice thin and butter. Dark and soft — the ålandslimpa."
+   }
+  ]
+ },
+ "blackbutterjersey": {
+  "nom": "Black Butter",
+  "description": "Black butter (lé nièr beurre) — Jersey's black preserve: apples cooked at great length with sugar, lemon, cinnamon and clove, until they become a dark, thick, intensely fragrant paste. An island autumn tradition, spread on buttered bread or pancakes.",
+  "etapes": [
+   {
+    "titre": "The apples",
+    "detail": "Peel, core and cut the apples into pieces."
+   },
+   {
+    "titre": "The start",
+    "detail": "Put them in a pan with the lemon juice and a little water."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Cook over low heat until you get a thick apple sauce."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar, cinnamon, ground clove and the pinch of salt."
+   },
+   {
+    "titre": "Cook long",
+    "detail": "Continue over very low heat, stirring often: the paste darkens and thickens."
+   },
+   {
+    "titre": "The texture",
+    "detail": "Stop when the mass is dark, coating and intensely fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Jar it and let it cool. Spread on buttered bread — Jersey black butter."
+   }
+  ]
+ },
+ "pastechi": {
+  "nom": "Pastechi",
+  "description": "Pastechi — Curaçao's fried turnover: a lightly sweetened dough folded over a melting cheese filling (or tuna, chicken…), fried until golden and crisp. It's THE island's grab-and-go breakfast, bought piping hot from the corner snèk with an icy juice.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, sugar, baking powder and salt, then work in the butter and water to form a soft dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the dough rest."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Grate or cut the cheese into small pieces."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out the dough and cut discs."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill with cheese, moisten the edges and fold into well-sealed half-moons."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pastechi until golden and crisp, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, the cheese nicely melting. Crisp — Curaçao pastechi."
+   }
+  ]
+ },
+ "fishchowderbermudes": {
+  "nom": "Bermuda Fish Chowder",
+  "description": "Fish chowder — Bermuda's national soup: a deep, dark fish soup, long-simmered with tomato, vegetables, thyme and paprika, traditionally finished with a dash of dark rum and sherry pepper at serving. Rich and briny, it's the culinary pride of the Atlantic archipelago.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, celery, carrot and garlic."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato, thyme and paprika, and let it cook down."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Add the fish pieces and cover generously with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length: the fish breaks down and darkens the broth."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the diced potatoes and continue until melting."
+   },
+   {
+    "titre": "The texture",
+    "detail": "Roughly crush to bind the chowder, and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with the dash of dark rum. Deep and briny — Bermuda fish chowder."
+   }
+  ]
+ },
+ "biskeemiya": {
+  "nom": "Bis Keemiya",
+  "description": "Bis keemiya — the Maldivian crisp: a thin pastry roll filled with flaked tuna, crunchy cabbage, hard-boiled egg and curry-spiked onion, fried or baked until crackling. Between samosa and spring roll, it's the Maldives' favourite 'short eat', served with afternoon tea.",
+  "etapes": [
+   {
+    "titre": "The egg",
+    "detail": "Hard-boil the egg, peel and chop it."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the flaked tuna, finely shredded cabbage, onion, egg, curry, lime and salt."
+   },
+   {
+    "titre": "The pastry",
+    "detail": "Cut the filo into strips and brush them lightly with oil."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Add filling and fold into tight triangles or rolls."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil (or the oven)."
+   },
+   {
+    "titre": "Crisp",
+    "detail": "Fry or bake the bis keemiya until crackling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with tea. Crisp and lively — Maldivian bis keemiya."
+   }
+  ]
+ },
+ "pastrmajlija": {
+  "nom": "Pastrmajlija",
+  "description": "Pastrmajlija — the Macedonian 'pizza': an oval boat of leavened dough topped with paprika-marinated pork cubes, baked golden and often crowned with an egg at the end. Born in Štip, celebrated with an annual festival, it's the star of North Macedonian tables.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the pork into small cubes and mix with the paprika, salt and a little oil."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, salt and warm water into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Spread the dough into an oval boat with raised edges."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the marinated pork cubes over the whole surface."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a hot oven until the dough is golden and the meat roasted."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Crack the egg in the centre near the end, let it just set, and serve piping hot. The pastrmajlija!"
+   }
+  ]
+ },
+ "saltibarsciai": {
+  "nom": "Šaltibarščiai",
+  "description": "Šaltibarščiai — Lithuania's neon-pink cold soup: cooked beetroot and cucumber in kefir (or drinking yoghurt), with dill and hard-boiled egg, served ice-cold with hot potatoes. Spectacular and supremely refreshing, it's the emblem of the Lithuanian summer.",
+  "etapes": [
+   {
+    "titre": "The egg",
+    "detail": "Hard-boil the egg, peel and quarter it."
+   },
+   {
+    "titre": "The beetroot",
+    "detail": "Grate the cooked beetroot into fine sticks."
+   },
+   {
+    "titre": "The cucumber",
+    "detail": "Grate or cut the cucumber into fine julienne."
+   },
+   {
+    "titre": "The base",
+    "detail": "Loosen the yoghurt with a little very cold water, kefir-style."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Mix beetroot, cucumber, chopped dill, salt and lemon into the milky base: the soup turns bright pink."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Chill thoroughly in the fridge."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve ice-cold, with the egg and, Lithuanian-style, hot potatoes on the side. Šaltibarščiai!"
+   }
+  ]
+ },
+ "bokoboko": {
+  "nom": "Boko Boko",
+  "description": "Boko boko — the chicken bulgur porridge of Burundi (and the Swahili coast): cracked wheat simmered at length with shredded chicken, ginger and turmeric, beaten into a creamy, comforting mass, served with melted butter and lemon. A savoury treat for special days.",
+  "etapes": [
+   {
+    "titre": "The bulgur",
+    "detail": "Rinse the bulgur and let it soak."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cook the chicken with the onion, garlic, ginger and salt in simmering water."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Take out the chicken, shred it and return it to the broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the drained bulgur and simmer gently, stirring."
+   },
+   {
+    "titre": "Beat",
+    "detail": "When everything is very tender, beat the mass with a spoon until creamy."
+   },
+   {
+    "titre": "The turmeric",
+    "detail": "Stir in the turmeric and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, drizzled with melted butter and a dash of lemon. Creamy — boko boko."
+   }
+  ]
+ },
+ "shekerbura": {
+  "nom": "Shekerbura",
+  "description": "Shekerbura — Azerbaijan's festive crescent: a fine, rich dough folded over a filling of ground walnuts with sugar and cardamom, its edge pinched into a twisted braid, baked without colouring. The star of Novruz (Persian new year), its lace of pinches is a family pride.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Rub the flour with the butter, then bind with the cream, egg and yeast into a soft dough; let it rest."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Grind the walnuts and mix with the sugar and cardamom."
+   },
+   {
+    "titre": "The discs",
+    "detail": "Roll the dough thin and cut discs."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Add a good spoonful of filling and fold into a crescent."
+   },
+   {
+    "titre": "The braid",
+    "detail": "Seal the edge by pinching it into a twisted braid, Azerbaijani-style."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a gentle oven: shekerbura must cook while staying pale."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool a little and serve with tea. Melting and fragrant — Novruz shekerbura."
+   }
+  ]
+ },
+ "placinte": {
+  "nom": "Plăcinte",
+  "description": "Plăcinte — Moldova's filled flatbreads: a thin stretched dough folded over a dill-flecked fresh cheese filling (or apples, cabbage, potatoes…), browned in a pan or the oven. Sold everywhere and devoured at all hours, they're the queens of Moldovan street food.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, salt, a little oil and warm water into a soft dough; let it rest."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the fresh cheese, egg, chopped dill and a pinch of salt."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide the dough into balls and roll them out very thin."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the filling in the centre and fold the edges into a flattened parcel."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a butter-oil mix in a pan."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the plăcinte on both sides, over medium heat, until crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm. Thin, golden and melting — Moldovan plăcinte."
+   }
+  ]
  }
 };

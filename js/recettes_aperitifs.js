@@ -3161,4 +3161,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, nappé ou accompagné de sauce cacahuète. Sucré-salé — le bakabana surinamais.", badge: null }
     ]
   },
+  biskeemiya: {
+    dateAjout: "2026-07-23T09:04:00",
+    nom: "Bis Keemiya",
+    cat: "aperitifs", pays: "maldives",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌯",
+    description: "Bis keemiya — le croustillant maldivien : un rouleau de pâte fine garni de thon émietté, de chou croquant, d'œuf dur et d'oignon relevé au curry, frit ou doré jusqu'à croustiller. Entre samoussa et nem, c'est le « short eat » favori des Maldives, servi avec le thé de l'après-midi.",
+    tableauBiskeemiya: [
+      { nb: 1, pateFilo: "40 g", thon: "40 g", chou: "40 g", oeufs: "½", oignon: "20 g", curry: "1 g", citronvert: "¼", huileolive: "10 ml", sel: "1.5 g" },
+      { nb: 2, pateFilo: "80 g", thon: "80 g", chou: "80 g", oeufs: "1", oignon: "40 g", curry: "2 g", citronvert: "½", huileolive: "20 ml", sel: "3 g" },
+      { nb: 3, pateFilo: "120 g", thon: "120 g", chou: "120 g", oeufs: "1½", oignon: "60 g", curry: "3 g", citronvert: "¾", huileolive: "30 ml", sel: "4.5 g" },
+      { nb: 4, pateFilo: "160 g", thon: "160 g", chou: "160 g", oeufs: "2", oignon: "80 g", curry: "4 g", citronvert: "1", huileolive: "40 ml", sel: "6 g" },
+      { nb: 5, pateFilo: "200 g", thon: "200 g", chou: "200 g", oeufs: "2½", oignon: "100 g", curry: "5 g", citronvert: "1¼", huileolive: "50 ml", sel: "7.5 g" },
+      { nb: 6, pateFilo: "240 g", thon: "240 g", chou: "240 g", oeufs: "3", oignon: "120 g", curry: "6 g", citronvert: "1½", huileolive: "60 ml", sel: "9 g" },
+      { nb: 7, pateFilo: "280 g", thon: "280 g", chou: "280 g", oeufs: "3½", oignon: "140 g", curry: "7 g", citronvert: "1¾", huileolive: "70 ml", sel: "10.5 g" },
+      { nb: 8, pateFilo: "320 g", thon: "320 g", chou: "320 g", oeufs: "4", oignon: "160 g", curry: "8 g", citronvert: "2", huileolive: "80 ml", sel: "12 g" },
+      { nb: 9, pateFilo: "360 g", thon: "360 g", chou: "360 g", oeufs: "4½", oignon: "180 g", curry: "9 g", citronvert: "2¼", huileolive: "90 ml", sel: "13.5 g" },
+      { nb: 10, pateFilo: "400 g", thon: "400 g", chou: "400 g", oeufs: "5", oignon: "200 g", curry: "10 g", citronvert: "2½", huileolive: "100 ml", sel: "15 g" },
+      { nb: 11, pateFilo: "440 g", thon: "440 g", chou: "440 g", oeufs: "5½", oignon: "220 g", curry: "11 g", citronvert: "2¾", huileolive: "110 ml", sel: "16.5 g" },
+      { nb: 12, pateFilo: "480 g", thon: "480 g", chou: "480 g", oeufs: "6", oignon: "240 g", curry: "12 g", citronvert: "3", huileolive: "120 ml", sel: "18 g" },
+      { nb: 13, pateFilo: "520 g", thon: "520 g", chou: "520 g", oeufs: "6½", oignon: "260 g", curry: "13 g", citronvert: "3¼", huileolive: "130 ml", sel: "19.5 g" },
+      { nb: 14, pateFilo: "560 g", thon: "560 g", chou: "560 g", oeufs: "7", oignon: "280 g", curry: "14 g", citronvert: "3½", huileolive: "140 ml", sel: "21 g" },
+      { nb: 15, pateFilo: "600 g", thon: "600 g", chou: "600 g", oeufs: "7½", oignon: "300 g", curry: "15 g", citronvert: "3¾", huileolive: "150 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "L'œuf", detail: "Faites durcir l'œuf, écalez-le et hachez-le.", badge: null },
+      { icone: "🐟", titre: "La farce", detail: "Mélangez le thon émietté, le chou finement émincé, l'oignon, l'œuf, le curry, le citron vert et le sel.", badge: null },
+      { icone: "📄", titre: "La pâte", detail: "Découpez la pâte filo en bandes et badigeonnez-les légèrement d'huile.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Déposez de la farce et pliez en triangles ou en rouleaux bien fermés.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faites chauffer l'huile (ou le four).", badge: null },
+      { icone: "✨", titre: "Dorer", detail: "Faites frire ou dorer les bis keemiya jusqu'à ce qu'ils croustillent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chauds, avec le thé. Croustillants et relevés — les bis keemiya maldiviens.", badge: null }
+    ]
+  },
 });

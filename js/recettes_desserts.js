@@ -8898,4 +8898,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, dans des bols. Onctueux et chocolaté — le koko alaisa samoan.", badge: null }
     ]
   },
+  shekerbura: {
+    dateAjout: "2026-07-23T09:08:00",
+    nom: "Shekerbura",
+    cat: "desserts", pays: "azerbaidjan",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥮",
+    description: "Shekerbura — le chausson de fête d'Azerbaïdjan : une pâte fine et riche repliée en demi-lune sur une farce de noix moulues au sucre et à la cardamome, bord pincé en épi torsadé, dorée au four sans colorer. Star de Novruz (le nouvel an persan), sa dentelle de pinces est une fierté familiale.",
+    tableauShekerbura: [
+      { nb: 1, farine: "70 g", beurre: "20 g", creme: "15 ml", noix: "30 g", sucre: "20 g", cardamome: "0.5 g", levureboulangere: "1 g", oeufs: "¼" },
+      { nb: 2, farine: "140 g", beurre: "40 g", creme: "30 ml", noix: "60 g", sucre: "40 g", cardamome: "1 g", levureboulangere: "2 g", oeufs: "½" },
+      { nb: 3, farine: "210 g", beurre: "60 g", creme: "45 ml", noix: "90 g", sucre: "60 g", cardamome: "1.5 g", levureboulangere: "3 g", oeufs: "¾" },
+      { nb: 4, farine: "280 g", beurre: "80 g", creme: "60 ml", noix: "120 g", sucre: "80 g", cardamome: "2 g", levureboulangere: "4 g", oeufs: "1" },
+      { nb: 5, farine: "350 g", beurre: "100 g", creme: "75 ml", noix: "150 g", sucre: "100 g", cardamome: "2.5 g", levureboulangere: "5 g", oeufs: "1¼" },
+      { nb: 6, farine: "420 g", beurre: "120 g", creme: "90 ml", noix: "180 g", sucre: "120 g", cardamome: "3 g", levureboulangere: "6 g", oeufs: "1½" },
+      { nb: 7, farine: "490 g", beurre: "140 g", creme: "105 ml", noix: "210 g", sucre: "140 g", cardamome: "3.5 g", levureboulangere: "7 g", oeufs: "1¾" },
+      { nb: 8, farine: "560 g", beurre: "160 g", creme: "120 ml", noix: "240 g", sucre: "160 g", cardamome: "4 g", levureboulangere: "8 g", oeufs: "2" },
+      { nb: 9, farine: "630 g", beurre: "180 g", creme: "135 ml", noix: "270 g", sucre: "180 g", cardamome: "4.5 g", levureboulangere: "9 g", oeufs: "2¼" },
+      { nb: 10, farine: "700 g", beurre: "200 g", creme: "150 ml", noix: "300 g", sucre: "200 g", cardamome: "5 g", levureboulangere: "10 g", oeufs: "2½" },
+      { nb: 11, farine: "770 g", beurre: "220 g", creme: "165 ml", noix: "330 g", sucre: "220 g", cardamome: "5.5 g", levureboulangere: "11 g", oeufs: "2¾" },
+      { nb: 12, farine: "840 g", beurre: "240 g", creme: "180 ml", noix: "360 g", sucre: "240 g", cardamome: "6 g", levureboulangere: "12 g", oeufs: "3" },
+      { nb: 13, farine: "910 g", beurre: "260 g", creme: "195 ml", noix: "390 g", sucre: "260 g", cardamome: "6.5 g", levureboulangere: "13 g", oeufs: "3¼" },
+      { nb: 14, farine: "980 g", beurre: "280 g", creme: "210 ml", noix: "420 g", sucre: "280 g", cardamome: "7 g", levureboulangere: "14 g", oeufs: "3½" },
+      { nb: 15, farine: "1050 g", beurre: "300 g", creme: "225 ml", noix: "450 g", sucre: "300 g", cardamome: "7.5 g", levureboulangere: "15 g", oeufs: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Sablez la farine avec le beurre, puis liez avec la crème, l'œuf et la levure en une pâte souple ; laissez reposer.", badge: null },
+      { icone: "🌰", titre: "La farce", detail: "Moulez les noix et mélangez-les au sucre et à la cardamome.", badge: null },
+      { icone: "⚪", titre: "Les disques", detail: "Abaissez la pâte finement et découpez des disques.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Déposez une belle cuillerée de farce et repliez en demi-lune.", badge: null },
+      { icone: "🤏", titre: "L'épi", detail: "Scellez le bord en le pinçant en épi torsadé, à la manière azerbaïdjanaise.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four doux : les shekerbura doivent cuire en restant pâles.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir et servez avec le thé. Fondants et parfumés — les shekerbura de Novruz.", badge: null }
+    ]
+  },
 });

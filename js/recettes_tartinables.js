@@ -940,4 +940,41 @@ Object.assign(recettes, {
       { icone: "🫙", titre: "Mettre en pot", detail: "Verser brûlant en pots stérilisés.", badge: null }
     ]
   },
+  blackbutterjersey: {
+    dateAjout: "2026-07-23T09:01:00",
+    nom: "Black Butter",
+    cat: "tartinables", pays: "jersey",
+    base: 4,
+    temps: "2h30",
+    niveau: "⭐ Facile",
+    emoji: "🍎",
+    description: "Black butter (lé nièr beurre) — la confiture noire de Jersey : des pommes cuites très longuement avec du sucre, du citron, de la cannelle et du clou de girofle, jusqu'à devenir une pâte sombre, épaisse et intensément parfumée. Tradition d'automne de l'île, elle se tartine sur du pain beurré ou des crêpes.",
+    tableauBlackbutterjersey: [
+      { nb: 1, pomme: "180 g", sucre: "25 g", citron: "¼", cannelle: "1 g", clougirofle: "0.3 g", sel: "0.5 g" },
+      { nb: 2, pomme: "360 g", sucre: "50 g", citron: "½", cannelle: "2 g", clougirofle: "0.6 g", sel: "1 g" },
+      { nb: 3, pomme: "540 g", sucre: "75 g", citron: "¾", cannelle: "3 g", clougirofle: "0.9 g", sel: "1.5 g" },
+      { nb: 4, pomme: "720 g", sucre: "100 g", citron: "1", cannelle: "4 g", clougirofle: "1.2 g", sel: "2 g" },
+      { nb: 5, pomme: "900 g", sucre: "125 g", citron: "1¼", cannelle: "5 g", clougirofle: "1.5 g", sel: "2.5 g" },
+      { nb: 6, pomme: "1080 g", sucre: "150 g", citron: "1½", cannelle: "6 g", clougirofle: "1.8 g", sel: "3 g" },
+      { nb: 7, pomme: "1260 g", sucre: "175 g", citron: "1¾", cannelle: "7 g", clougirofle: "2.1 g", sel: "3.5 g" },
+      { nb: 8, pomme: "1440 g", sucre: "200 g", citron: "2", cannelle: "8 g", clougirofle: "2.4 g", sel: "4 g" },
+      { nb: 9, pomme: "1620 g", sucre: "225 g", citron: "2¼", cannelle: "9 g", clougirofle: "2.7 g", sel: "4.5 g" },
+      { nb: 10, pomme: "1800 g", sucre: "250 g", citron: "2½", cannelle: "10 g", clougirofle: "3 g", sel: "5 g" },
+      { nb: 11, pomme: "1980 g", sucre: "275 g", citron: "2¾", cannelle: "11 g", clougirofle: "3.3 g", sel: "5.5 g" },
+      { nb: 12, pomme: "2160 g", sucre: "300 g", citron: "3", cannelle: "12 g", clougirofle: "3.6 g", sel: "6 g" },
+      { nb: 13, pomme: "2340 g", sucre: "325 g", citron: "3¼", cannelle: "13 g", clougirofle: "3.9 g", sel: "6.5 g" },
+      { nb: 14, pomme: "2520 g", sucre: "350 g", citron: "3½", cannelle: "14 g", clougirofle: "4.2 g", sel: "7 g" },
+      { nb: 15, pomme: "2700 g", sucre: "375 g", citron: "3¾", cannelle: "15 g", clougirofle: "4.5 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍎", titre: "Les pommes", detail: "Épluchez, épépinez et coupez les pommes en morceaux.", badge: null },
+      { icone: "🍋", titre: "Le départ", detail: "Mettez-les dans une casserole avec le jus de citron et un fond d'eau.", badge: null },
+      { icone: "♨️", titre: "Compoter", detail: "Laissez cuire à feu doux jusqu'à obtenir une compote épaisse.", badge: null },
+      { icone: "🍬", titre: "Sucrer", detail: "Ajoutez le sucre, la cannelle, le clou de girofle moulu et la pincée de sel.", badge: null },
+      { icone: "🕰️", titre: "Cuire longuement", detail: "Poursuivez la cuisson à feu très doux en remuant souvent : la pâte fonce et épaissit.", badge: null },
+      { icone: "🥄", titre: "La texture", detail: "Arrêtez quand la masse est sombre, nappante et intensément parfumée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mettez en pot et laissez refroidir. Tartinez sur du pain beurré — le black butter de Jersey.", badge: null }
+    ]
+  },
 });

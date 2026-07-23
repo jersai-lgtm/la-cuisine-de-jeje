@@ -5227,4 +5227,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Rectifiez le piment et servez brûlant, avec du pain. Relevé et réconfortant — le fah-fah djiboutien.", badge: null }
     ]
   },
+  fishchowderbermudes: {
+    dateAjout: "2026-07-23T09:03:00",
+    nom: "Fish Chowder des Bermudes",
+    cat: "soupes", pays: "bermudes",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Fish chowder — la chaudrée nationale des Bermudes : une soupe de poisson sombre et profonde, mijotée longuement avec tomate, légumes, thym et paprika, traditionnellement relevée d'un trait de rhum brun et de sherry pepper au moment de servir. Riche et marine, c'est la fierté culinaire de l'archipel atlantique.",
+    tableauFishchowderbermudes: [
+      { nb: 1, poisson: "100 g", tomate: "50 g", oignon: "25 g", celeri: "20 g", carotte: "25 g", pommedeterre: "50 g", ail: "1", thym: "1 g", paprika: "1 g", rhum: "5 ml", sel: "2 g" },
+      { nb: 2, poisson: "200 g", tomate: "100 g", oignon: "50 g", celeri: "40 g", carotte: "50 g", pommedeterre: "100 g", ail: "2", thym: "2 g", paprika: "2 g", rhum: "10 ml", sel: "4 g" },
+      { nb: 3, poisson: "300 g", tomate: "150 g", oignon: "75 g", celeri: "60 g", carotte: "75 g", pommedeterre: "150 g", ail: "3", thym: "3 g", paprika: "3 g", rhum: "15 ml", sel: "6 g" },
+      { nb: 4, poisson: "400 g", tomate: "200 g", oignon: "100 g", celeri: "80 g", carotte: "100 g", pommedeterre: "200 g", ail: "4", thym: "4 g", paprika: "4 g", rhum: "20 ml", sel: "8 g" },
+      { nb: 5, poisson: "500 g", tomate: "250 g", oignon: "125 g", celeri: "100 g", carotte: "125 g", pommedeterre: "250 g", ail: "5", thym: "5 g", paprika: "5 g", rhum: "25 ml", sel: "10 g" },
+      { nb: 6, poisson: "600 g", tomate: "300 g", oignon: "150 g", celeri: "120 g", carotte: "150 g", pommedeterre: "300 g", ail: "6", thym: "6 g", paprika: "6 g", rhum: "30 ml", sel: "12 g" },
+      { nb: 7, poisson: "700 g", tomate: "350 g", oignon: "175 g", celeri: "140 g", carotte: "175 g", pommedeterre: "350 g", ail: "7", thym: "7 g", paprika: "7 g", rhum: "35 ml", sel: "14 g" },
+      { nb: 8, poisson: "800 g", tomate: "400 g", oignon: "200 g", celeri: "160 g", carotte: "200 g", pommedeterre: "400 g", ail: "8", thym: "8 g", paprika: "8 g", rhum: "40 ml", sel: "16 g" },
+      { nb: 9, poisson: "900 g", tomate: "450 g", oignon: "225 g", celeri: "180 g", carotte: "225 g", pommedeterre: "450 g", ail: "9", thym: "9 g", paprika: "9 g", rhum: "45 ml", sel: "18 g" },
+      { nb: 10, poisson: "1000 g", tomate: "500 g", oignon: "250 g", celeri: "200 g", carotte: "250 g", pommedeterre: "500 g", ail: "10", thym: "10 g", paprika: "10 g", rhum: "50 ml", sel: "20 g" },
+      { nb: 11, poisson: "1100 g", tomate: "550 g", oignon: "275 g", celeri: "220 g", carotte: "275 g", pommedeterre: "550 g", ail: "11", thym: "11 g", paprika: "11 g", rhum: "55 ml", sel: "22 g" },
+      { nb: 12, poisson: "1200 g", tomate: "600 g", oignon: "300 g", celeri: "240 g", carotte: "300 g", pommedeterre: "600 g", ail: "12", thym: "12 g", paprika: "12 g", rhum: "60 ml", sel: "24 g" },
+      { nb: 13, poisson: "1300 g", tomate: "650 g", oignon: "325 g", celeri: "260 g", carotte: "325 g", pommedeterre: "650 g", ail: "13", thym: "13 g", paprika: "13 g", rhum: "65 ml", sel: "26 g" },
+      { nb: 14, poisson: "1400 g", tomate: "700 g", oignon: "350 g", celeri: "280 g", carotte: "350 g", pommedeterre: "700 g", ail: "14", thym: "14 g", paprika: "14 g", rhum: "70 ml", sel: "28 g" },
+      { nb: 15, poisson: "1500 g", tomate: "750 g", oignon: "375 g", celeri: "300 g", carotte: "375 g", pommedeterre: "750 g", ail: "15", thym: "15 g", paprika: "15 g", rhum: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "La base", detail: "Faites revenir l'oignon, le céleri, la carotte et l'ail.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Ajoutez la tomate, le thym et le paprika, et laissez compoter.", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Ajoutez le poisson en morceaux et couvrez largement d'eau.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter longuement : le poisson se défait et fonce le bouillon.", badge: null },
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Ajoutez les pommes de terre en dés et poursuivez jusqu'à ce qu'elles soient fondantes.", badge: null },
+      { icone: "🥄", titre: "La texture", detail: "Écrasez grossièrement pour lier la chaudrée, et rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlant avec le trait de rhum brun. Profond et marin — le fish chowder bermudien.", badge: null }
+    ]
+  },
+  saltibarsciai: {
+    dateAjout: "2026-07-23T09:06:00",
+    nom: "Šaltibarščiai",
+    cat: "soupes", pays: "lituanie",
+    base: 4,
+    temps: "30 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "🩷",
+    description: "Šaltibarščiai — la soupe froide rose fluo de Lituanie : betterave cuite et concombre râpés dans du kéfir (ou yaourt à boire), avec aneth et œuf dur, servie glacée avec des pommes de terre chaudes. Spectaculaire et ultra-rafraîchissante, c'est l'emblème de l'été lituanien.",
+    tableauSaltibarsciai: [
+      { nb: 1, betterave: "80 g", yaourt: "100 g", concombre: "50 g", oeufs: "½", aneth: "2 g", citron: "¼", sel: "1.5 g" },
+      { nb: 2, betterave: "160 g", yaourt: "200 g", concombre: "100 g", oeufs: "1", aneth: "4 g", citron: "½", sel: "3 g" },
+      { nb: 3, betterave: "240 g", yaourt: "300 g", concombre: "150 g", oeufs: "1½", aneth: "6 g", citron: "¾", sel: "4.5 g" },
+      { nb: 4, betterave: "320 g", yaourt: "400 g", concombre: "200 g", oeufs: "2", aneth: "8 g", citron: "1", sel: "6 g" },
+      { nb: 5, betterave: "400 g", yaourt: "500 g", concombre: "250 g", oeufs: "2½", aneth: "10 g", citron: "1¼", sel: "7.5 g" },
+      { nb: 6, betterave: "480 g", yaourt: "600 g", concombre: "300 g", oeufs: "3", aneth: "12 g", citron: "1½", sel: "9 g" },
+      { nb: 7, betterave: "560 g", yaourt: "700 g", concombre: "350 g", oeufs: "3½", aneth: "14 g", citron: "1¾", sel: "10.5 g" },
+      { nb: 8, betterave: "640 g", yaourt: "800 g", concombre: "400 g", oeufs: "4", aneth: "16 g", citron: "2", sel: "12 g" },
+      { nb: 9, betterave: "720 g", yaourt: "900 g", concombre: "450 g", oeufs: "4½", aneth: "18 g", citron: "2¼", sel: "13.5 g" },
+      { nb: 10, betterave: "800 g", yaourt: "1000 g", concombre: "500 g", oeufs: "5", aneth: "20 g", citron: "2½", sel: "15 g" },
+      { nb: 11, betterave: "880 g", yaourt: "1100 g", concombre: "550 g", oeufs: "5½", aneth: "22 g", citron: "2¾", sel: "16.5 g" },
+      { nb: 12, betterave: "960 g", yaourt: "1200 g", concombre: "600 g", oeufs: "6", aneth: "24 g", citron: "3", sel: "18 g" },
+      { nb: 13, betterave: "1040 g", yaourt: "1300 g", concombre: "650 g", oeufs: "6½", aneth: "26 g", citron: "3¼", sel: "19.5 g" },
+      { nb: 14, betterave: "1120 g", yaourt: "1400 g", concombre: "700 g", oeufs: "7", aneth: "28 g", citron: "3½", sel: "21 g" },
+      { nb: 15, betterave: "1200 g", yaourt: "1500 g", concombre: "750 g", oeufs: "7½", aneth: "30 g", citron: "3¾", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "L'œuf", detail: "Faites durcir l'œuf, écalez-le et coupez-le en quartiers.", badge: null },
+      { icone: "🫜", titre: "La betterave", detail: "Râpez la betterave cuite en fins bâtonnets.", badge: null },
+      { icone: "🥒", titre: "Le concombre", detail: "Râpez ou coupez le concombre en fine julienne.", badge: null },
+      { icone: "🥛", titre: "La base", detail: "Détendez le yaourt avec un peu d'eau très froide, façon kéfir.", badge: null },
+      { icone: "🩷", titre: "Assembler", detail: "Mélangez betterave, concombre, aneth ciselé, sel et citron dans la base laiteuse : la soupe devient rose vif.", badge: null },
+      { icone: "🧊", titre: "Rafraîchir", detail: "Laissez bien refroidir au réfrigérateur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez glacé, avec l'œuf et, à la lituanienne, des pommes de terre chaudes à part. Le šaltibarščiai !", badge: null }
+    ]
+  },
 });

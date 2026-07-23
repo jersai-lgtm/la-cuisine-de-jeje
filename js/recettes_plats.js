@@ -40485,4 +40485,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez le poisson et son bouillon avec la purée de plantain à côté. Crémeux et iodé — le hudut garifuna.", badge: null }
     ]
   },
+  pastrmajlija: {
+    dateAjout: "2026-07-23T09:05:00",
+    nom: "Pastrmajlija",
+    cat: "plats", pays: "macedoinedunord",
+    base: 4,
+    temps: "1h45",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Pastrmajlija — la « pizza » macédonienne : une barquette de pâte levée ovale, garnie de dés de porc marinés au paprika, dorée au four et souvent couronnée d'un œuf en fin de cuisson. Née à Chtip, célébrée par un festival annuel, c'est la star des tables de Macédoine du Nord.",
+    tableauPastrmajlija: [
+      { nb: 1, farine: "90 g", porc: "90 g", levureboulangere: "2 g", huileolive: "10 ml", paprika: "1.5 g", oeufs: "½", sel: "2 g" },
+      { nb: 2, farine: "180 g", porc: "180 g", levureboulangere: "4 g", huileolive: "20 ml", paprika: "3 g", oeufs: "1", sel: "4 g" },
+      { nb: 3, farine: "270 g", porc: "270 g", levureboulangere: "6 g", huileolive: "30 ml", paprika: "4.5 g", oeufs: "1½", sel: "6 g" },
+      { nb: 4, farine: "360 g", porc: "360 g", levureboulangere: "8 g", huileolive: "40 ml", paprika: "6 g", oeufs: "2", sel: "8 g" },
+      { nb: 5, farine: "450 g", porc: "450 g", levureboulangere: "10 g", huileolive: "50 ml", paprika: "7.5 g", oeufs: "2½", sel: "10 g" },
+      { nb: 6, farine: "540 g", porc: "540 g", levureboulangere: "12 g", huileolive: "60 ml", paprika: "9 g", oeufs: "3", sel: "12 g" },
+      { nb: 7, farine: "630 g", porc: "630 g", levureboulangere: "14 g", huileolive: "70 ml", paprika: "10.5 g", oeufs: "3½", sel: "14 g" },
+      { nb: 8, farine: "720 g", porc: "720 g", levureboulangere: "16 g", huileolive: "80 ml", paprika: "12 g", oeufs: "4", sel: "16 g" },
+      { nb: 9, farine: "810 g", porc: "810 g", levureboulangere: "18 g", huileolive: "90 ml", paprika: "13.5 g", oeufs: "4½", sel: "18 g" },
+      { nb: 10, farine: "900 g", porc: "900 g", levureboulangere: "20 g", huileolive: "100 ml", paprika: "15 g", oeufs: "5", sel: "20 g" },
+      { nb: 11, farine: "990 g", porc: "990 g", levureboulangere: "22 g", huileolive: "110 ml", paprika: "16.5 g", oeufs: "5½", sel: "22 g" },
+      { nb: 12, farine: "1080 g", porc: "1080 g", levureboulangere: "24 g", huileolive: "120 ml", paprika: "18 g", oeufs: "6", sel: "24 g" },
+      { nb: 13, farine: "1170 g", porc: "1170 g", levureboulangere: "26 g", huileolive: "130 ml", paprika: "19.5 g", oeufs: "6½", sel: "26 g" },
+      { nb: 14, farine: "1260 g", porc: "1260 g", levureboulangere: "28 g", huileolive: "140 ml", paprika: "21 g", oeufs: "7", sel: "28 g" },
+      { nb: 15, farine: "1350 g", porc: "1350 g", levureboulangere: "30 g", huileolive: "150 ml", paprika: "22.5 g", oeufs: "7½", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "La viande", detail: "Coupez le porc en petits dés et mélangez-les avec le paprika, du sel et un peu d'huile.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine, la levure, le sel et de l'eau tiède en une pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez lever la pâte jusqu'à doubler de volume.", badge: null },
+      { icone: "🛶", titre: "Façonner", detail: "Étalez la pâte en barquette ovale aux bords relevés.", badge: null },
+      { icone: "🥩", titre: "Garnir", detail: "Répartissez les dés de porc marinés sur toute la surface.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four chaud jusqu'à ce que la pâte soit dorée et la viande rôtie.", badge: null },
+      { icone: "🍳", titre: "L'œuf", detail: "Cassez l'œuf au centre en fin de cuisson, laissez-le juste prendre, et servez brûlant. La pastrmajlija !", badge: null }
+    ]
+  },
+  bokoboko: {
+    dateAjout: "2026-07-23T09:07:00",
+    nom: "Boko Boko",
+    cat: "plats", pays: "burundi",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    description: "Boko boko — le porridge de boulgour au poulet du Burundi (et de la côte swahilie) : du blé concassé mijoté très longuement avec du poulet effiloché, du gingembre et du curcuma, battu en une masse crémeuse et réconfortante, servie avec du beurre fondu et du citron. Douceur salée des grands jours.",
+    tableauBokoboko: [
+      { nb: 1, boulgour: "60 g", poulet: "90 g", oignon: "25 g", ail: "1", gingembre: "½", curcuma: "1 g", beurre: "10 g", citron: "¼", sel: "2 g" },
+      { nb: 2, boulgour: "120 g", poulet: "180 g", oignon: "50 g", ail: "2", gingembre: "1", curcuma: "2 g", beurre: "20 g", citron: "½", sel: "4 g" },
+      { nb: 3, boulgour: "180 g", poulet: "270 g", oignon: "75 g", ail: "3", gingembre: "1½", curcuma: "3 g", beurre: "30 g", citron: "¾", sel: "6 g" },
+      { nb: 4, boulgour: "240 g", poulet: "360 g", oignon: "100 g", ail: "4", gingembre: "2", curcuma: "4 g", beurre: "40 g", citron: "1", sel: "8 g" },
+      { nb: 5, boulgour: "300 g", poulet: "450 g", oignon: "125 g", ail: "5", gingembre: "2½", curcuma: "5 g", beurre: "50 g", citron: "1¼", sel: "10 g" },
+      { nb: 6, boulgour: "360 g", poulet: "540 g", oignon: "150 g", ail: "6", gingembre: "3", curcuma: "6 g", beurre: "60 g", citron: "1½", sel: "12 g" },
+      { nb: 7, boulgour: "420 g", poulet: "630 g", oignon: "175 g", ail: "7", gingembre: "3½", curcuma: "7 g", beurre: "70 g", citron: "1¾", sel: "14 g" },
+      { nb: 8, boulgour: "480 g", poulet: "720 g", oignon: "200 g", ail: "8", gingembre: "4", curcuma: "8 g", beurre: "80 g", citron: "2", sel: "16 g" },
+      { nb: 9, boulgour: "540 g", poulet: "810 g", oignon: "225 g", ail: "9", gingembre: "4½", curcuma: "9 g", beurre: "90 g", citron: "2¼", sel: "18 g" },
+      { nb: 10, boulgour: "600 g", poulet: "900 g", oignon: "250 g", ail: "10", gingembre: "5", curcuma: "10 g", beurre: "100 g", citron: "2½", sel: "20 g" },
+      { nb: 11, boulgour: "660 g", poulet: "990 g", oignon: "275 g", ail: "11", gingembre: "5½", curcuma: "11 g", beurre: "110 g", citron: "2¾", sel: "22 g" },
+      { nb: 12, boulgour: "720 g", poulet: "1080 g", oignon: "300 g", ail: "12", gingembre: "6", curcuma: "12 g", beurre: "120 g", citron: "3", sel: "24 g" },
+      { nb: 13, boulgour: "780 g", poulet: "1170 g", oignon: "325 g", ail: "13", gingembre: "6½", curcuma: "13 g", beurre: "130 g", citron: "3¼", sel: "26 g" },
+      { nb: 14, boulgour: "840 g", poulet: "1260 g", oignon: "350 g", ail: "14", gingembre: "7", curcuma: "14 g", beurre: "140 g", citron: "3½", sel: "28 g" },
+      { nb: 15, boulgour: "900 g", poulet: "1350 g", oignon: "375 g", ail: "15", gingembre: "7½", curcuma: "15 g", beurre: "150 g", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Le boulgour", detail: "Rincez le boulgour et laissez-le tremper.", badge: null },
+      { icone: "🍗", titre: "Le bouillon", detail: "Faites cuire le poulet avec l'oignon, l'ail, le gingembre et le sel dans de l'eau frémissante.", badge: null },
+      { icone: "🐔", titre: "Effilocher", detail: "Sortez le poulet, effilochez-le et remettez-le dans le bouillon.", badge: null },
+      { icone: "🌾", titre: "Mijoter", detail: "Ajoutez le boulgour égoutté et laissez mijoter à feu doux en remuant.", badge: null },
+      { icone: "🥄", titre: "Battre", detail: "Quand tout est très tendre, battez la masse à la cuillère pour la rendre crémeuse.", badge: null },
+      { icone: "💛", titre: "Le curcuma", detail: "Incorporez le curcuma et rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, arrosé de beurre fondu et d'un trait de citron. Crémeux — le boko boko.", badge: null }
+    ]
+  },
 });

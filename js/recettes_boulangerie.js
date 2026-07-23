@@ -2136,4 +2136,41 @@ Object.assign(recettes, {
     ],
     liees: ["misalpav"]
   },
+  alandslimpa: {
+    dateAjout: "2026-07-23T09:00:00",
+    nom: "Ålandslimpa",
+    cat: "boulangerie", pays: "aland",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍞",
+    description: "Ålandslimpa — le pain noir sucré des îles Åland : une mie sombre et moelleuse, parfumée au miel (traditionnellement au malt et à la mélasse), à peine acidulée, cuite en beau pain rond. Star des petits-déjeuners ålandais, il se tranche fin et se beurre généreusement, avec du fromage ou du hareng.",
+    tableauAlandslimpa: [
+      { nb: 1, farine: "90 g", miel: "15 g", beurre: "8 g", lait: "50 ml", levureboulangere: "2 g", sucre: "5 g", sel: "1.5 g" },
+      { nb: 2, farine: "180 g", miel: "30 g", beurre: "16 g", lait: "100 ml", levureboulangere: "4 g", sucre: "10 g", sel: "3 g" },
+      { nb: 3, farine: "270 g", miel: "45 g", beurre: "24 g", lait: "150 ml", levureboulangere: "6 g", sucre: "15 g", sel: "4.5 g" },
+      { nb: 4, farine: "360 g", miel: "60 g", beurre: "32 g", lait: "200 ml", levureboulangere: "8 g", sucre: "20 g", sel: "6 g" },
+      { nb: 5, farine: "450 g", miel: "75 g", beurre: "40 g", lait: "250 ml", levureboulangere: "10 g", sucre: "25 g", sel: "7.5 g" },
+      { nb: 6, farine: "540 g", miel: "90 g", beurre: "48 g", lait: "300 ml", levureboulangere: "12 g", sucre: "30 g", sel: "9 g" },
+      { nb: 7, farine: "630 g", miel: "105 g", beurre: "56 g", lait: "350 ml", levureboulangere: "14 g", sucre: "35 g", sel: "10.5 g" },
+      { nb: 8, farine: "720 g", miel: "120 g", beurre: "64 g", lait: "400 ml", levureboulangere: "16 g", sucre: "40 g", sel: "12 g" },
+      { nb: 9, farine: "810 g", miel: "135 g", beurre: "72 g", lait: "450 ml", levureboulangere: "18 g", sucre: "45 g", sel: "13.5 g" },
+      { nb: 10, farine: "900 g", miel: "150 g", beurre: "80 g", lait: "500 ml", levureboulangere: "20 g", sucre: "50 g", sel: "15 g" },
+      { nb: 11, farine: "990 g", miel: "165 g", beurre: "88 g", lait: "550 ml", levureboulangere: "22 g", sucre: "55 g", sel: "16.5 g" },
+      { nb: 12, farine: "1080 g", miel: "180 g", beurre: "96 g", lait: "600 ml", levureboulangere: "24 g", sucre: "60 g", sel: "18 g" },
+      { nb: 13, farine: "1170 g", miel: "195 g", beurre: "104 g", lait: "650 ml", levureboulangere: "26 g", sucre: "65 g", sel: "19.5 g" },
+      { nb: 14, farine: "1260 g", miel: "210 g", beurre: "112 g", lait: "700 ml", levureboulangere: "28 g", sucre: "70 g", sel: "21 g" },
+      { nb: 15, farine: "1350 g", miel: "225 g", beurre: "120 g", lait: "750 ml", levureboulangere: "30 g", sucre: "75 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le levain rapide", detail: "Délayez la levure dans le lait tiède avec le sucre, et laissez mousser.", badge: null },
+      { icone: "🍯", titre: "La pâte", detail: "Ajoutez la farine, le miel, le beurre fondu et le sel, et pétrissez une pâte souple et un peu collante.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Couvrez et laissez lever jusqu'à doubler de volume.", badge: null },
+      { icone: "🍞", titre: "Façonner", detail: "Façonnez un pain rond et déposez-le sur une plaque ; laissez repousser.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four moyen jusqu'à ce que le pain soit brun foncé et sonne creux.", badge: null },
+      { icone: "🍯", titre: "Lustrer", detail: "À la sortie du four, badigeonnez la croûte d'un peu de miel délayé pour la faire briller.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez refroidir, tranchez fin et beurrez. Sombre et moelleux — l'ålandslimpa.", badge: null }
+    ]
+  },
 });

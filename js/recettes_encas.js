@@ -6153,4 +6153,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chauds, avec fromage, œufs ou café. Croustillants et moelleux — les hojaldres panaméens.", badge: null }
     ]
   },
+  pastechi: {
+    dateAjout: "2026-07-23T09:02:00",
+    nom: "Pastechi",
+    cat: "encas", pays: "curacao",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Pastechi — le chausson frit de Curaçao : une pâte légèrement sucrée repliée sur une farce au fromage fondant (ou au thon, au poulet…), frite jusqu'à être dorée et croustillante. C'est LE petit-déjeuner sur le pouce de l'île, acheté brûlant à la snèk du coin avec un jus glacé.",
+    tableauPastechi: [
+      { nb: 1, farine: "70 g", gruyere: "40 g", beurre: "10 g", sucre: "5 g", levurechimique: "2 g", huileolive: "12 ml", sel: "1.5 g" },
+      { nb: 2, farine: "140 g", gruyere: "80 g", beurre: "20 g", sucre: "10 g", levurechimique: "4 g", huileolive: "24 ml", sel: "3 g" },
+      { nb: 3, farine: "210 g", gruyere: "120 g", beurre: "30 g", sucre: "15 g", levurechimique: "6 g", huileolive: "36 ml", sel: "4.5 g" },
+      { nb: 4, farine: "280 g", gruyere: "160 g", beurre: "40 g", sucre: "20 g", levurechimique: "8 g", huileolive: "48 ml", sel: "6 g" },
+      { nb: 5, farine: "350 g", gruyere: "200 g", beurre: "50 g", sucre: "25 g", levurechimique: "10 g", huileolive: "60 ml", sel: "7.5 g" },
+      { nb: 6, farine: "420 g", gruyere: "240 g", beurre: "60 g", sucre: "30 g", levurechimique: "12 g", huileolive: "72 ml", sel: "9 g" },
+      { nb: 7, farine: "490 g", gruyere: "280 g", beurre: "70 g", sucre: "35 g", levurechimique: "14 g", huileolive: "84 ml", sel: "10.5 g" },
+      { nb: 8, farine: "560 g", gruyere: "320 g", beurre: "80 g", sucre: "40 g", levurechimique: "16 g", huileolive: "96 ml", sel: "12 g" },
+      { nb: 9, farine: "630 g", gruyere: "360 g", beurre: "90 g", sucre: "45 g", levurechimique: "18 g", huileolive: "108 ml", sel: "13.5 g" },
+      { nb: 10, farine: "700 g", gruyere: "400 g", beurre: "100 g", sucre: "50 g", levurechimique: "20 g", huileolive: "120 ml", sel: "15 g" },
+      { nb: 11, farine: "770 g", gruyere: "440 g", beurre: "110 g", sucre: "55 g", levurechimique: "22 g", huileolive: "132 ml", sel: "16.5 g" },
+      { nb: 12, farine: "840 g", gruyere: "480 g", beurre: "120 g", sucre: "60 g", levurechimique: "24 g", huileolive: "144 ml", sel: "18 g" },
+      { nb: 13, farine: "910 g", gruyere: "520 g", beurre: "130 g", sucre: "65 g", levurechimique: "26 g", huileolive: "156 ml", sel: "19.5 g" },
+      { nb: 14, farine: "980 g", gruyere: "560 g", beurre: "140 g", sucre: "70 g", levurechimique: "28 g", huileolive: "168 ml", sel: "21 g" },
+      { nb: 15, farine: "1050 g", gruyere: "600 g", beurre: "150 g", sucre: "75 g", levurechimique: "30 g", huileolive: "180 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le sucre, la levure et le sel, puis incorporez le beurre et de l'eau pour former une pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer la pâte.", badge: null },
+      { icone: "🧀", titre: "La farce", detail: "Râpez ou coupez le fromage en petits morceaux.", badge: null },
+      { icone: "⚪", titre: "Abaisser", detail: "Abaissez la pâte et découpez des disques.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Garnissez de fromage, humectez les bords et repliez en demi-lunes bien scellées.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les pastechi jusqu'à ce qu'ils soient dorés et croustillants, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, le fromage bien fondant. Croustillants — les pastechi de Curaçao.", badge: null }
+    ]
+  },
+  placinte: {
+    dateAjout: "2026-07-23T09:09:00",
+    nom: "Plăcinte",
+    cat: "encas", pays: "moldavie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "Plăcinte — les galettes fourrées de Moldavie : une pâte fine étirée, repliée sur une farce de fromage frais à l'aneth (ou pommes, chou, pommes de terre…), dorée à la poêle ou au four. Vendues partout et dévorées à toute heure, ce sont les reines de la street food moldave.",
+    tableauPlacinte: [
+      { nb: 1, farine: "80 g", fromagefrais: "60 g", aneth: "2 g", oeufs: "¼", beurre: "8 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, farine: "160 g", fromagefrais: "120 g", aneth: "4 g", oeufs: "½", beurre: "16 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, farine: "240 g", fromagefrais: "180 g", aneth: "6 g", oeufs: "¾", beurre: "24 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, farine: "320 g", fromagefrais: "240 g", aneth: "8 g", oeufs: "1", beurre: "32 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, farine: "400 g", fromagefrais: "300 g", aneth: "10 g", oeufs: "1¼", beurre: "40 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, farine: "480 g", fromagefrais: "360 g", aneth: "12 g", oeufs: "1½", beurre: "48 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, farine: "560 g", fromagefrais: "420 g", aneth: "14 g", oeufs: "1¾", beurre: "56 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, farine: "640 g", fromagefrais: "480 g", aneth: "16 g", oeufs: "2", beurre: "64 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, farine: "720 g", fromagefrais: "540 g", aneth: "18 g", oeufs: "2¼", beurre: "72 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, farine: "800 g", fromagefrais: "600 g", aneth: "20 g", oeufs: "2½", beurre: "80 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, farine: "880 g", fromagefrais: "660 g", aneth: "22 g", oeufs: "2¾", beurre: "88 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, farine: "960 g", fromagefrais: "720 g", aneth: "24 g", oeufs: "3", beurre: "96 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, farine: "1040 g", fromagefrais: "780 g", aneth: "26 g", oeufs: "3¼", beurre: "104 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, farine: "1120 g", fromagefrais: "840 g", aneth: "28 g", oeufs: "3½", beurre: "112 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, farine: "1200 g", fromagefrais: "900 g", aneth: "30 g", oeufs: "3¾", beurre: "120 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine, le sel, un peu d'huile et de l'eau tiède en une pâte souple ; laissez-la reposer.", badge: null },
+      { icone: "🧀", titre: "La farce", detail: "Mélangez le fromage frais, l'œuf, l'aneth ciselé et une pincée de sel.", badge: null },
+      { icone: "⚪", titre: "Diviser", detail: "Divisez la pâte en boules et abaissez-les très finement.", badge: null },
+      { icone: "🥧", titre: "Garnir", detail: "Déposez la farce au centre et rabattez les bords en aumônière aplatie.", badge: null },
+      { icone: "🧈", titre: "La poêle", detail: "Faites chauffer un mélange beurre-huile dans une poêle.", badge: null },
+      { icone: "✨", titre: "Dorer", detail: "Faites dorer les plăcinte des deux côtés, à feu moyen, jusqu'à ce qu'elles croustillent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes. Fines, dorées et fondantes — les plăcinte moldaves.", badge: null }
+    ]
+  },
 });
