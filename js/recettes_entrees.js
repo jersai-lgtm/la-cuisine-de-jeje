@@ -3181,4 +3181,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Servez la soupe fumante. Iodée et parfumée — l'aljotta maltaise.", badge: null }
     ]
   },
+  queenies: {
+    dateAjout: "2026-07-23T11:02:00",
+    nom: "Queenies",
+    cat: "entrees", pays: "iledeman",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐚",
+    description: "Queenies — les pétoncles de l'Île de Man : les fameuses « queen scallops » de la mer d'Irlande, juste saisies au beurre avec ail, lardons croustillants, citron et persil. Fierté maritime de l'île, célébrées chaque année par un festival, elles se servent en entrée, brûlantes, dans leur jus beurré.",
+    tableauQueenies: [
+      { nb: 1, saintjacques: "90 g", beurre: "12 g", ail: "1", lardons: "15 g", citron: "¼", persil: "2 g", sel: "1 g" },
+      { nb: 2, saintjacques: "180 g", beurre: "24 g", ail: "2", lardons: "30 g", citron: "½", persil: "4 g", sel: "2 g" },
+      { nb: 3, saintjacques: "270 g", beurre: "36 g", ail: "3", lardons: "45 g", citron: "¾", persil: "6 g", sel: "3 g" },
+      { nb: 4, saintjacques: "360 g", beurre: "48 g", ail: "4", lardons: "60 g", citron: "1", persil: "8 g", sel: "4 g" },
+      { nb: 5, saintjacques: "450 g", beurre: "60 g", ail: "5", lardons: "75 g", citron: "1¼", persil: "10 g", sel: "5 g" },
+      { nb: 6, saintjacques: "540 g", beurre: "72 g", ail: "6", lardons: "90 g", citron: "1½", persil: "12 g", sel: "6 g" },
+      { nb: 7, saintjacques: "630 g", beurre: "84 g", ail: "7", lardons: "105 g", citron: "1¾", persil: "14 g", sel: "7 g" },
+      { nb: 8, saintjacques: "720 g", beurre: "96 g", ail: "8", lardons: "120 g", citron: "2", persil: "16 g", sel: "8 g" },
+      { nb: 9, saintjacques: "810 g", beurre: "108 g", ail: "9", lardons: "135 g", citron: "2¼", persil: "18 g", sel: "9 g" },
+      { nb: 10, saintjacques: "900 g", beurre: "120 g", ail: "10", lardons: "150 g", citron: "2½", persil: "20 g", sel: "10 g" },
+      { nb: 11, saintjacques: "990 g", beurre: "132 g", ail: "11", lardons: "165 g", citron: "2¾", persil: "22 g", sel: "11 g" },
+      { nb: 12, saintjacques: "1080 g", beurre: "144 g", ail: "12", lardons: "180 g", citron: "3", persil: "24 g", sel: "12 g" },
+      { nb: 13, saintjacques: "1170 g", beurre: "156 g", ail: "13", lardons: "195 g", citron: "3¼", persil: "26 g", sel: "13 g" },
+      { nb: 14, saintjacques: "1260 g", beurre: "168 g", ail: "14", lardons: "210 g", citron: "3½", persil: "28 g", sel: "14 g" },
+      { nb: 15, saintjacques: "1350 g", beurre: "180 g", ail: "15", lardons: "225 g", citron: "3¾", persil: "30 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐚", titre: "Les pétoncles", detail: "Épongez soigneusement les noix de pétoncle (ou Saint-Jacques) et salez-les légèrement.", badge: null },
+      { icone: "🥓", titre: "Les lardons", detail: "Faites croustiller les lardons à sec, puis réservez-les.", badge: null },
+      { icone: "🧈", titre: "Le beurre", detail: "Faites mousser le beurre dans la poêle bien chaude.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisissez les pétoncles très rapidement, une minute par face : ils doivent rester nacrés.", badge: null },
+      { icone: "🧄", titre: "L'ail", detail: "Ajoutez l'ail et laissez-le juste parfumer le beurre.", badge: null },
+      { icone: "🍋", titre: "Déglacer", detail: "Pressez le citron et remettez les lardons.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, parsemés de persil, avec le jus beurré. Nacrés et iodés — les queenies mannois.", badge: null }
+    ]
+  },
 });

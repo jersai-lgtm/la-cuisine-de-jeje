@@ -2370,4 +2370,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, saupoudrés de sucre et arrosés d'un filet d'huile. Moelleux et acidulés — les canjeero somalis.", badge: null }
     ]
   },
+  sidvudvu: {
+    dateAjout: "2026-07-23T11:04:00",
+    nom: "Sidvudvu",
+    cat: "brunch", pays: "eswatini",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🎃",
+    description: "Sidvudvu — le porridge de courge d'Eswatini : de la courge fondante écrasée avec de la farine de maïs, cuite en une bouillie dorée, douce et veloutée, à peine sucrée. Petit-déjeuner traditionnel swati, il réchauffe les matins d'hiver austral avec sa couleur de soleil.",
+    tableauSidvudvu: [
+      { nb: 1, courge: "120 g", farinemais: "30 g", beurre: "5 g", sucre: "4 g", sel: "1 g" },
+      { nb: 2, courge: "240 g", farinemais: "60 g", beurre: "10 g", sucre: "8 g", sel: "2 g" },
+      { nb: 3, courge: "360 g", farinemais: "90 g", beurre: "15 g", sucre: "12 g", sel: "3 g" },
+      { nb: 4, courge: "480 g", farinemais: "120 g", beurre: "20 g", sucre: "16 g", sel: "4 g" },
+      { nb: 5, courge: "600 g", farinemais: "150 g", beurre: "25 g", sucre: "20 g", sel: "5 g" },
+      { nb: 6, courge: "720 g", farinemais: "180 g", beurre: "30 g", sucre: "24 g", sel: "6 g" },
+      { nb: 7, courge: "840 g", farinemais: "210 g", beurre: "35 g", sucre: "28 g", sel: "7 g" },
+      { nb: 8, courge: "960 g", farinemais: "240 g", beurre: "40 g", sucre: "32 g", sel: "8 g" },
+      { nb: 9, courge: "1080 g", farinemais: "270 g", beurre: "45 g", sucre: "36 g", sel: "9 g" },
+      { nb: 10, courge: "1200 g", farinemais: "300 g", beurre: "50 g", sucre: "40 g", sel: "10 g" },
+      { nb: 11, courge: "1320 g", farinemais: "330 g", beurre: "55 g", sucre: "44 g", sel: "11 g" },
+      { nb: 12, courge: "1440 g", farinemais: "360 g", beurre: "60 g", sucre: "48 g", sel: "12 g" },
+      { nb: 13, courge: "1560 g", farinemais: "390 g", beurre: "65 g", sucre: "52 g", sel: "13 g" },
+      { nb: 14, courge: "1680 g", farinemais: "420 g", beurre: "70 g", sucre: "56 g", sel: "14 g" },
+      { nb: 15, courge: "1800 g", farinemais: "450 g", beurre: "75 g", sucre: "60 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎃", titre: "La courge", detail: "Épluchez la courge, coupez-la en morceaux et faites-la cuire à l'eau.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Égouttez (en gardant l'eau) et écrasez la courge en purée.", badge: null },
+      { icone: "🌽", titre: "La farine", detail: "Remettez la purée sur feu doux et versez la farine de maïs en pluie en remuant.", badge: null },
+      { icone: "💧", titre: "Détendre", detail: "Ajoutez un peu d'eau de cuisson pour obtenir une bouillie souple.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Laissez cuire à feu doux en remuant, jusqu'à ce que la farine soit cuite et le porridge velouté.", badge: null },
+      { icone: "🍬", titre: "Adoucir", detail: "Incorporez le beurre, le sucre et le sel.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, dans des bols. Doré et velouté — le sidvudvu swati.", badge: null }
+    ]
+  },
+  mofogasy: {
+    dateAjout: "2026-07-23T11:09:00",
+    nom: "Mofo Gasy",
+    cat: "brunch", pays: "madagascar",
+    base: 4,
+    temps: "30 min + fermentation",
+    niveau: "⭐ Facile",
+    emoji: "🥮",
+    description: "Mofo gasy — les petits pains malgaches du matin : une pâte de farine de riz légèrement fermentée et sucrée, cuite dans des moules demi-sphériques jusqu'à être dorée dessous, moelleuse et alvéolée dedans. Vendus fumants au coin des rues d'Antananarivo, ils accompagnent le café du matin.",
+    tableauMofogasy: [
+      { nb: 1, farineRiz: "45 g", farine: "25 g", sucre: "12 g", levureboulangere: "2 g", laitcoco: "30 ml", huileolive: "5 ml", sel: "1 g" },
+      { nb: 2, farineRiz: "90 g", farine: "50 g", sucre: "24 g", levureboulangere: "4 g", laitcoco: "60 ml", huileolive: "10 ml", sel: "2 g" },
+      { nb: 3, farineRiz: "135 g", farine: "75 g", sucre: "36 g", levureboulangere: "6 g", laitcoco: "90 ml", huileolive: "15 ml", sel: "3 g" },
+      { nb: 4, farineRiz: "180 g", farine: "100 g", sucre: "48 g", levureboulangere: "8 g", laitcoco: "120 ml", huileolive: "20 ml", sel: "4 g" },
+      { nb: 5, farineRiz: "225 g", farine: "125 g", sucre: "60 g", levureboulangere: "10 g", laitcoco: "150 ml", huileolive: "25 ml", sel: "5 g" },
+      { nb: 6, farineRiz: "270 g", farine: "150 g", sucre: "72 g", levureboulangere: "12 g", laitcoco: "180 ml", huileolive: "30 ml", sel: "6 g" },
+      { nb: 7, farineRiz: "315 g", farine: "175 g", sucre: "84 g", levureboulangere: "14 g", laitcoco: "210 ml", huileolive: "35 ml", sel: "7 g" },
+      { nb: 8, farineRiz: "360 g", farine: "200 g", sucre: "96 g", levureboulangere: "16 g", laitcoco: "240 ml", huileolive: "40 ml", sel: "8 g" },
+      { nb: 9, farineRiz: "405 g", farine: "225 g", sucre: "108 g", levureboulangere: "18 g", laitcoco: "270 ml", huileolive: "45 ml", sel: "9 g" },
+      { nb: 10, farineRiz: "450 g", farine: "250 g", sucre: "120 g", levureboulangere: "20 g", laitcoco: "300 ml", huileolive: "50 ml", sel: "10 g" },
+      { nb: 11, farineRiz: "495 g", farine: "275 g", sucre: "132 g", levureboulangere: "22 g", laitcoco: "330 ml", huileolive: "55 ml", sel: "11 g" },
+      { nb: 12, farineRiz: "540 g", farine: "300 g", sucre: "144 g", levureboulangere: "24 g", laitcoco: "360 ml", huileolive: "60 ml", sel: "12 g" },
+      { nb: 13, farineRiz: "585 g", farine: "325 g", sucre: "156 g", levureboulangere: "26 g", laitcoco: "390 ml", huileolive: "65 ml", sel: "13 g" },
+      { nb: 14, farineRiz: "630 g", farine: "350 g", sucre: "168 g", levureboulangere: "28 g", laitcoco: "420 ml", huileolive: "70 ml", sel: "14 g" },
+      { nb: 15, farineRiz: "675 g", farine: "375 g", sucre: "180 g", levureboulangere: "30 g", laitcoco: "450 ml", huileolive: "75 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Fouettez les farines, le sucre, la levure, le sel, le lait de coco et de l'eau tiède en une pâte fluide.", badge: null },
+      { icone: "⏲️", titre: "Fermenter", detail: "Couvrez et laissez fermenter plusieurs heures : la pâte doit buller.", badge: null },
+      { icone: "🔥", titre: "Les moules", detail: "Faites chauffer un moule à empreintes demi-sphériques (ou à blinis) légèrement huilé.", badge: null },
+      { icone: "🥮", titre: "Verser", detail: "Remplissez chaque empreinte de pâte aux trois quarts.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Laissez cuire à feu doux : le dessous dore, le dessus s'alvéole.", badge: null },
+      { icone: "🔄", titre: "Finir", detail: "Couvrez (ou retournez brièvement) pour finir la cuisson du dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, avec un café. Dorés et moelleux — les mofo gasy malgaches.", badge: null }
+    ]
+  },
 });

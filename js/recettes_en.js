@@ -76504,5 +76504,345 @@ window.RECETTES_EN = {
     "detail": "Cool a little before cutting. Dense and fragrant — Haitian pain patate."
    }
   ]
+ },
+ "caymanbeef": {
+  "nom": "Cayman-Style Beef",
+  "description": "Cayman-style beef — the braised beef of the Cayman Islands: large chunks of beef slow-braised with onion, pepper, tomato, thyme and chilli, until they shred into a dark, fragrant sauce. A Sunday and holiday dish of the archipelago, served with rice and beans.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the beef into large cubes and salt them."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown them on all sides in hot oil."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the onion, garlic, pepper, thyme and chilli, and sauté."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and a little water, and scrape up the browned bits."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Cover and braise over very low heat, at length."
+   },
+   {
+    "titre": "Shred",
+    "detail": "When the beef shreds with a fork, uncover and let the sauce reduce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and beans. Melting and fragrant — Cayman-style beef."
+   }
+  ]
+ },
+ "minchi": {
+  "nom": "Minchi",
+  "description": "Minchi — Macau's comfort dish: minced beef and pork sautéed with soy sauce and crispy golden potato cubes, served over rice and crowned with a fried egg. The emblem of Macanese cuisine, a blend of China and Portugal, eaten by the spoonful.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Cut the potatoes into small cubes and fry until golden and crisp; set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in the same pan."
+   },
+   {
+    "titre": "The meats",
+    "detail": "Add the minced beef and pork and stir-fry, breaking them up."
+   },
+   {
+    "titre": "Season",
+    "detail": "Pour in the soy sauce, sugar and a little salt, and let it lightly caramelize."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the crispy potato cubes."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Fry the egg, yolk still runny."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the minchi over rice, egg on top. Comforting — Macau minchi."
+   }
+  ]
+ },
+ "queenies": {
+  "nom": "Queenies",
+  "description": "Queenies — the Isle of Man's scallops: the famous Irish Sea queen scallops, flash-seared in butter with garlic, crispy bacon, lemon and parsley. The island's maritime pride, celebrated by an annual festival, served as a starter, piping hot, in their buttery juices.",
+  "etapes": [
+   {
+    "titre": "The scallops",
+    "detail": "Pat the queen scallops (or scallops) thoroughly dry and salt them lightly."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Crisp the lardons in a dry pan, then set aside."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Let the butter foam in the very hot pan."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the scallops very quickly, one minute per side: they must stay pearly."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Add the garlic and let it just scent the butter."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Squeeze in the lemon and return the lardons."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, scattered with parsley, with the buttery juices. Pearly and briny — Manx queenies."
+   }
+  ]
+ },
+ "pasteldiabo": {
+  "nom": "Pastel com Diabo Dentro",
+  "description": "Pastel com diabo dentro — 'the pastry with the devil inside' from Cape Verde: a cornmeal dough folded over a fiery tuna-tomato-chilli filling, fried until golden. The name says it all: crisp outside, devilishly hot inside — the star nibble of Cape Verdean evenings.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, cornmeal, salt and hot water into a soft dough; let it rest."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the onion, add the tomato, flaked tuna and chilli, and let the filling dry out."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out the dough and cut discs."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the fiery filling in the centre and fold into well-sealed turnovers."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pastéis until golden and crisp, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot — and warn your guests: the devil is inside! Cape Verdean pastéis."
+   }
+  ]
+ },
+ "sidvudvu": {
+  "nom": "Sidvudvu",
+  "description": "Sidvudvu — Eswatini's pumpkin porridge: melting pumpkin mashed with maize meal, cooked into a golden, gentle, velvety porridge, barely sweetened. The traditional Swazi breakfast, it warms southern-winter mornings with its sunshine colour.",
+  "etapes": [
+   {
+    "titre": "The pumpkin",
+    "detail": "Peel the pumpkin, cut it into pieces and boil it."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Drain (keeping the water) and mash the pumpkin."
+   },
+   {
+    "titre": "The meal",
+    "detail": "Return the mash to low heat and rain in the maize meal, stirring."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add a little cooking water for a supple porridge."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook over low heat, stirring, until the meal is cooked and the porridge velvety."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Stir in the butter, sugar and salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, in bowls. Golden and velvety — Swazi sidvudvu."
+   }
+  ]
+ },
+ "bouyonsaintelucie": {
+  "nom": "Bouyon",
+  "description": "Bouyon — Saint Lucia's Saturday pot: a generous broth where beef, red beans, root vegetables and little flour dumplings simmer, scented with thyme and lifted with chilli. A complete, convivial meal-soup, cousin of one-pots across the Antilles.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the red beans, then start them in simmering water with the beef pieces."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until meat and beans grow tender."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the onion, thyme and chilli."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potatoes and carrots in pieces."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Mix the flour, a pinch of salt and a little water, roll small logs and poach them in the soup."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Cook until everything is melting and the broth lightly thickened."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve steaming. Complete and convivial — Saint Lucian bouyon."
+   }
+  ]
+ },
+ "fungee": {
+  "nom": "Fungee",
+  "description": "Fungee — Antigua's cornmeal dome: a firm polenta beaten with okra rounds, turned into a smooth, butter-glossed ball. Half of the national dish (with pepperpot), it's also served with steamed fish — the Antiguan art of 'turning fungee' is a family affair.",
+  "etapes": [
+   {
+    "titre": "The okra",
+    "detail": "Cut the okra into rounds and cook them in a pan of salted water."
+   },
+   {
+    "titre": "The cornmeal",
+    "detail": "Rain the cornmeal into the simmering water, whisking energetically."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Work with a wooden spoon, constantly, pressing against the sides."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Add hot water if needed: the mass must be smooth, firm and lump-free."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Keep cooking and turning until the fungee pulls away from the sides."
+   },
+   {
+    "titre": "The ball",
+    "detail": "Butter a bowl, drop in the fungee and roll it into a smooth, shiny ball."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Unmould the dome and serve with a stew or fish. Antiguan fungee!"
+   }
+  ]
+ },
+ "conchdumplings": {
+  "nom": "Conch and Dumplings",
+  "description": "Conch and dumplings — Sint Maarten's conch stew: conch (here squid) tenderized then simmered in a lively tomato-thyme sauce, with soft flour dumplings that soak up the juices. A grandmothers' heirloom dish, celebrated in the lolos of Philipsburg.",
+  "etapes": [
+   {
+    "titre": "The conch",
+    "detail": "Tenderize the conch (or squid) by pounding, add lime and cut into pieces."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and thyme in the oil."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the tomato, chilli and a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the conch and simmer gently until tender."
+   },
+   {
+    "titre": "The dumplings",
+    "detail": "Mix the flour, a pinch of salt and water, and shape small logs."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the dumplings in the simmering stew: they puff and soak."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, everything coated in sauce. Tender and lively — Sint Maarten conch and dumplings."
+   }
+  ]
+ },
+ "odika": {
+  "nom": "Odika Chicken",
+  "description": "Odika chicken — Gabon's 'native chocolate': chicken simmered in a dark, smoky sauce of odika powder (roasted wild mango kernel — or failing that, cocoa and peanut), with onion and tomato. Bewitching and woodsy, it's a jewel of Gabonese cooking.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Cut the chicken into pieces, salt them and brown them in the oil."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the onion and garlic, and sauté."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and let it melt down."
+   },
+   {
+    "titre": "The odika",
+    "detail": "Dissolve the odika powder (or: unsweetened cocoa + peanut paste) in hot water."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Pour this dark mixture over the chicken with the chilli."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently: the sauce thickens, darkens and smells of smoky woodland."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or cassava. Bewitching — Gabonese odika chicken."
+   }
+  ]
+ },
+ "mofogasy": {
+  "nom": "Mofo Gasy",
+  "description": "Mofo gasy — Madagascar's morning cakes: a lightly fermented, sweetened rice-flour batter cooked in half-sphere moulds until golden underneath, soft and airy inside. Sold steaming on the street corners of Antananarivo, they go with morning coffee.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the flours, sugar, yeast, salt, coconut milk and warm water into a fluid batter."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Cover and let ferment several hours: the batter must bubble."
+   },
+   {
+    "titre": "The moulds",
+    "detail": "Heat a lightly oiled half-sphere (or blini) pan."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Fill each mould three-quarters full with batter."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook over low heat: the underside browns, the top turns airy."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Cover (or flip briefly) to finish the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with coffee. Golden and soft — Malagasy mofo gasy."
+   }
+  ]
  }
 };

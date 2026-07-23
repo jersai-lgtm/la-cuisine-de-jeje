@@ -5301,4 +5301,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez glacé, avec l'œuf et, à la lituanienne, des pommes de terre chaudes à part. Le šaltibarščiai !", badge: null }
     ]
   },
+  bouyonsaintelucie: {
+    dateAjout: "2026-07-23T11:05:00",
+    nom: "Bouyon",
+    cat: "soupes", pays: "saintelucie",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Bouyon — la marmite du samedi de Sainte-Lucie : un bouillon généreux où mijotent bœuf, haricots rouges, légumes-racines et petits dumplings de farine, parfumé au thym et relevé de piment. Une soupe-repas complète et conviviale, cousine des one-pot de toutes les Antilles.",
+    tableauBouyonsaintelucie: [
+      { nb: 1, boeuf: "70 g", haricotsrouges: "25 g", pommedeterre: "60 g", carotte: "30 g", farine: "20 g", oignon: "20 g", thym: "1 g", piment: "0.5 g", sel: "2 g" },
+      { nb: 2, boeuf: "140 g", haricotsrouges: "50 g", pommedeterre: "120 g", carotte: "60 g", farine: "40 g", oignon: "40 g", thym: "2 g", piment: "1 g", sel: "4 g" },
+      { nb: 3, boeuf: "210 g", haricotsrouges: "75 g", pommedeterre: "180 g", carotte: "90 g", farine: "60 g", oignon: "60 g", thym: "3 g", piment: "1.5 g", sel: "6 g" },
+      { nb: 4, boeuf: "280 g", haricotsrouges: "100 g", pommedeterre: "240 g", carotte: "120 g", farine: "80 g", oignon: "80 g", thym: "4 g", piment: "2 g", sel: "8 g" },
+      { nb: 5, boeuf: "350 g", haricotsrouges: "125 g", pommedeterre: "300 g", carotte: "150 g", farine: "100 g", oignon: "100 g", thym: "5 g", piment: "2.5 g", sel: "10 g" },
+      { nb: 6, boeuf: "420 g", haricotsrouges: "150 g", pommedeterre: "360 g", carotte: "180 g", farine: "120 g", oignon: "120 g", thym: "6 g", piment: "3 g", sel: "12 g" },
+      { nb: 7, boeuf: "490 g", haricotsrouges: "175 g", pommedeterre: "420 g", carotte: "210 g", farine: "140 g", oignon: "140 g", thym: "7 g", piment: "3.5 g", sel: "14 g" },
+      { nb: 8, boeuf: "560 g", haricotsrouges: "200 g", pommedeterre: "480 g", carotte: "240 g", farine: "160 g", oignon: "160 g", thym: "8 g", piment: "4 g", sel: "16 g" },
+      { nb: 9, boeuf: "630 g", haricotsrouges: "225 g", pommedeterre: "540 g", carotte: "270 g", farine: "180 g", oignon: "180 g", thym: "9 g", piment: "4.5 g", sel: "18 g" },
+      { nb: 10, boeuf: "700 g", haricotsrouges: "250 g", pommedeterre: "600 g", carotte: "300 g", farine: "200 g", oignon: "200 g", thym: "10 g", piment: "5 g", sel: "20 g" },
+      { nb: 11, boeuf: "770 g", haricotsrouges: "275 g", pommedeterre: "660 g", carotte: "330 g", farine: "220 g", oignon: "220 g", thym: "11 g", piment: "5.5 g", sel: "22 g" },
+      { nb: 12, boeuf: "840 g", haricotsrouges: "300 g", pommedeterre: "720 g", carotte: "360 g", farine: "240 g", oignon: "240 g", thym: "12 g", piment: "6 g", sel: "24 g" },
+      { nb: 13, boeuf: "910 g", haricotsrouges: "325 g", pommedeterre: "780 g", carotte: "390 g", farine: "260 g", oignon: "260 g", thym: "13 g", piment: "6.5 g", sel: "26 g" },
+      { nb: 14, boeuf: "980 g", haricotsrouges: "350 g", pommedeterre: "840 g", carotte: "420 g", farine: "280 g", oignon: "280 g", thym: "14 g", piment: "7 g", sel: "28 g" },
+      { nb: 15, boeuf: "1050 g", haricotsrouges: "375 g", pommedeterre: "900 g", carotte: "450 g", farine: "300 g", oignon: "300 g", thym: "15 g", piment: "7.5 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Les haricots", detail: "Faites tremper les haricots rouges, puis lancez-les dans l'eau frémissante avec le bœuf en morceaux.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que viande et haricots s'attendrissent.", badge: null },
+      { icone: "🧅", titre: "Les aromates", detail: "Ajoutez l'oignon, le thym et le piment.", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Ajoutez pommes de terre et carottes en morceaux.", badge: null },
+      { icone: "🥟", titre: "Les dumplings", detail: "Mélangez la farine, une pincée de sel et un peu d'eau, roulez de petits boudins et pochez-les dans la soupe.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Laissez cuire jusqu'à ce que tout soit fondant et le bouillon légèrement lié.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez fumant. Complet et convivial — le bouyon saint-lucien.", badge: null }
+    ]
+  },
 });

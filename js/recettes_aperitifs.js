@@ -3198,4 +3198,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez chauds, avec le thé. Croustillants et relevés — les bis keemiya maldiviens.", badge: null }
     ]
   },
+  pasteldiabo: {
+    dateAjout: "2026-07-23T11:03:00",
+    nom: "Pastel com Diabo Dentro",
+    cat: "aperitifs", pays: "caboverde",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "😈",
+    description: "Pastel com diabo dentro — « le chausson avec le diable dedans » du Cap-Vert : une pâte à la farine de maïs repliée sur une farce de thon à la tomate et au piment ardent, frite jusqu'à être dorée. Son nom dit tout : croustillant dehors, diablement relevé dedans — l'apéritif star des soirées capverdiennes.",
+    tableauPasteldiabo: [
+      { nb: 1, farine: "50 g", farinemais: "20 g", thon: "50 g", oignon: "20 g", tomate: "20 g", piment: "1.5 g", huileolive: "12 ml", sel: "1.5 g" },
+      { nb: 2, farine: "100 g", farinemais: "40 g", thon: "100 g", oignon: "40 g", tomate: "40 g", piment: "3 g", huileolive: "24 ml", sel: "3 g" },
+      { nb: 3, farine: "150 g", farinemais: "60 g", thon: "150 g", oignon: "60 g", tomate: "60 g", piment: "4.5 g", huileolive: "36 ml", sel: "4.5 g" },
+      { nb: 4, farine: "200 g", farinemais: "80 g", thon: "200 g", oignon: "80 g", tomate: "80 g", piment: "6 g", huileolive: "48 ml", sel: "6 g" },
+      { nb: 5, farine: "250 g", farinemais: "100 g", thon: "250 g", oignon: "100 g", tomate: "100 g", piment: "7.5 g", huileolive: "60 ml", sel: "7.5 g" },
+      { nb: 6, farine: "300 g", farinemais: "120 g", thon: "300 g", oignon: "120 g", tomate: "120 g", piment: "9 g", huileolive: "72 ml", sel: "9 g" },
+      { nb: 7, farine: "350 g", farinemais: "140 g", thon: "350 g", oignon: "140 g", tomate: "140 g", piment: "10.5 g", huileolive: "84 ml", sel: "10.5 g" },
+      { nb: 8, farine: "400 g", farinemais: "160 g", thon: "400 g", oignon: "160 g", tomate: "160 g", piment: "12 g", huileolive: "96 ml", sel: "12 g" },
+      { nb: 9, farine: "450 g", farinemais: "180 g", thon: "450 g", oignon: "180 g", tomate: "180 g", piment: "13.5 g", huileolive: "108 ml", sel: "13.5 g" },
+      { nb: 10, farine: "500 g", farinemais: "200 g", thon: "500 g", oignon: "200 g", tomate: "200 g", piment: "15 g", huileolive: "120 ml", sel: "15 g" },
+      { nb: 11, farine: "550 g", farinemais: "220 g", thon: "550 g", oignon: "220 g", tomate: "220 g", piment: "16.5 g", huileolive: "132 ml", sel: "16.5 g" },
+      { nb: 12, farine: "600 g", farinemais: "240 g", thon: "600 g", oignon: "240 g", tomate: "240 g", piment: "18 g", huileolive: "144 ml", sel: "18 g" },
+      { nb: 13, farine: "650 g", farinemais: "260 g", thon: "650 g", oignon: "260 g", tomate: "260 g", piment: "19.5 g", huileolive: "156 ml", sel: "19.5 g" },
+      { nb: 14, farine: "700 g", farinemais: "280 g", thon: "700 g", oignon: "280 g", tomate: "280 g", piment: "21 g", huileolive: "168 ml", sel: "21 g" },
+      { nb: 15, farine: "750 g", farinemais: "300 g", thon: "750 g", oignon: "300 g", tomate: "300 g", piment: "22.5 g", huileolive: "180 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌽", titre: "La pâte", detail: "Mélangez la farine, la farine de maïs, le sel et de l'eau chaude en une pâte souple ; laissez reposer.", badge: null },
+      { icone: "🐟", titre: "La farce", detail: "Faites revenir l'oignon, ajoutez la tomate, le thon émietté et le piment, et laissez sécher la farce.", badge: null },
+      { icone: "⚪", titre: "Abaisser", detail: "Abaissez la pâte et découpez des disques.", badge: null },
+      { icone: "😈", titre: "Garnir", detail: "Déposez la farce ardente au centre et repliez en chaussons bien scellés.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les pastéis jusqu'à ce qu'ils soient dorés et croustillants, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chauds — et prévenez vos convives : le diable est dedans ! Les pastéis capverdiens.", badge: null }
+    ]
+  },
 });
