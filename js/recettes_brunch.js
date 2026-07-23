@@ -2296,4 +2296,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez le ribel brûlant avec la compote de pommes. Simple et doré — le ribel du Liechtenstein.", badge: null }
     ]
   },
+  gaat: {
+    dateAjout: "2026-07-23T10:05:00",
+    nom: "Ga'at",
+    cat: "brunch", pays: "erythree",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🌋",
+    description: "Ga'at — le porridge volcan d'Érythrée (et du Tigré) : une bouillie de farine très épaisse, moulée en dôme creusé d'un cratère que l'on remplit de beurre fondu au berbéré, entouré de yaourt frais. On pioche chaque bouchée dans le cratère épicé puis dans le yaourt — le petit-déjeuner des grands jours.",
+    tableauGaat: [
+      { nb: 1, farine: "70 g", beurre: "15 g", berbere: "2 g", yaourt: "80 g", miel: "5 g", sel: "1.5 g" },
+      { nb: 2, farine: "140 g", beurre: "30 g", berbere: "4 g", yaourt: "160 g", miel: "10 g", sel: "3 g" },
+      { nb: 3, farine: "210 g", beurre: "45 g", berbere: "6 g", yaourt: "240 g", miel: "15 g", sel: "4.5 g" },
+      { nb: 4, farine: "280 g", beurre: "60 g", berbere: "8 g", yaourt: "320 g", miel: "20 g", sel: "6 g" },
+      { nb: 5, farine: "350 g", beurre: "75 g", berbere: "10 g", yaourt: "400 g", miel: "25 g", sel: "7.5 g" },
+      { nb: 6, farine: "420 g", beurre: "90 g", berbere: "12 g", yaourt: "480 g", miel: "30 g", sel: "9 g" },
+      { nb: 7, farine: "490 g", beurre: "105 g", berbere: "14 g", yaourt: "560 g", miel: "35 g", sel: "10.5 g" },
+      { nb: 8, farine: "560 g", beurre: "120 g", berbere: "16 g", yaourt: "640 g", miel: "40 g", sel: "12 g" },
+      { nb: 9, farine: "630 g", beurre: "135 g", berbere: "18 g", yaourt: "720 g", miel: "45 g", sel: "13.5 g" },
+      { nb: 10, farine: "700 g", beurre: "150 g", berbere: "20 g", yaourt: "800 g", miel: "50 g", sel: "15 g" },
+      { nb: 11, farine: "770 g", beurre: "165 g", berbere: "22 g", yaourt: "880 g", miel: "55 g", sel: "16.5 g" },
+      { nb: 12, farine: "840 g", beurre: "180 g", berbere: "24 g", yaourt: "960 g", miel: "60 g", sel: "18 g" },
+      { nb: 13, farine: "910 g", beurre: "195 g", berbere: "26 g", yaourt: "1040 g", miel: "65 g", sel: "19.5 g" },
+      { nb: 14, farine: "980 g", beurre: "210 g", berbere: "28 g", yaourt: "1120 g", miel: "70 g", sel: "21 g" },
+      { nb: 15, farine: "1050 g", beurre: "225 g", berbere: "30 g", yaourt: "1200 g", miel: "75 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "La bouillie", detail: "Versez la farine en pluie dans l'eau bouillante salée en fouettant énergiquement.", badge: null },
+      { icone: "🥄", titre: "Épaissir", detail: "Faites cuire en remuant à la cuillère en bois : la pâte doit devenir très épaisse et lisse.", badge: null },
+      { icone: "🌋", titre: "Le volcan", detail: "Moulez la pâte en dôme dans un bol, et creusez un cratère au centre.", badge: null },
+      { icone: "🧈", titre: "Le beurre épicé", detail: "Faites fondre le beurre avec le berbéré.", badge: null },
+      { icone: "🌶️", titre: "Remplir", detail: "Versez le beurre au berbéré dans le cratère.", badge: null },
+      { icone: "🥛", titre: "Le yaourt", detail: "Entourez le volcan de yaourt frais, avec un filet de miel si vous aimez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Piochez chaque bouchée dans le beurre épicé puis le yaourt. Spectaculaire — le ga'at érythréen.", badge: null }
+    ]
+  },
+  canjeero: {
+    dateAjout: "2026-07-23T10:06:00",
+    nom: "Canjeero",
+    cat: "brunch", pays: "somalie",
+    base: 4,
+    temps: "30 min + fermentation",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥞",
+    description: "Canjeero — la crêpe fermentée de Somalie : une pâte de farine (et un peu de farine de riz) légèrement fermentée, cuite d'un seul côté en crêpe criblée de mille bulles, moelleuse et acidulée. Pilier du petit-déjeuner somali, il se déguste avec du sucre et de l'huile, du miel ou en sauce.",
+    tableauCanjeero: [
+      { nb: 1, farine: "55 g", farineRiz: "15 g", levureboulangere: "1.5 g", sucre: "6 g", huileolive: "6 ml", sel: "1 g" },
+      { nb: 2, farine: "110 g", farineRiz: "30 g", levureboulangere: "3 g", sucre: "12 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 3, farine: "165 g", farineRiz: "45 g", levureboulangere: "4.5 g", sucre: "18 g", huileolive: "18 ml", sel: "3 g" },
+      { nb: 4, farine: "220 g", farineRiz: "60 g", levureboulangere: "6 g", sucre: "24 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 5, farine: "275 g", farineRiz: "75 g", levureboulangere: "7.5 g", sucre: "30 g", huileolive: "30 ml", sel: "5 g" },
+      { nb: 6, farine: "330 g", farineRiz: "90 g", levureboulangere: "9 g", sucre: "36 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 7, farine: "385 g", farineRiz: "105 g", levureboulangere: "10.5 g", sucre: "42 g", huileolive: "42 ml", sel: "7 g" },
+      { nb: 8, farine: "440 g", farineRiz: "120 g", levureboulangere: "12 g", sucre: "48 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 9, farine: "495 g", farineRiz: "135 g", levureboulangere: "13.5 g", sucre: "54 g", huileolive: "54 ml", sel: "9 g" },
+      { nb: 10, farine: "550 g", farineRiz: "150 g", levureboulangere: "15 g", sucre: "60 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 11, farine: "605 g", farineRiz: "165 g", levureboulangere: "16.5 g", sucre: "66 g", huileolive: "66 ml", sel: "11 g" },
+      { nb: 12, farine: "660 g", farineRiz: "180 g", levureboulangere: "18 g", sucre: "72 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 13, farine: "715 g", farineRiz: "195 g", levureboulangere: "19.5 g", sucre: "78 g", huileolive: "78 ml", sel: "13 g" },
+      { nb: 14, farine: "770 g", farineRiz: "210 g", levureboulangere: "21 g", sucre: "84 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 15, farine: "825 g", farineRiz: "225 g", levureboulangere: "22.5 g", sucre: "90 g", huileolive: "90 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Fouettez les farines, la levure, une pincée de sucre, le sel et de l'eau tiède en une pâte fluide.", badge: null },
+      { icone: "⏲️", titre: "Fermenter", detail: "Couvrez et laissez fermenter plusieurs heures (ou une nuit) : la pâte doit buller et embaumer.", badge: null },
+      { icone: "🥄", titre: "Détendre", detail: "Refouettez la pâte en ajoutant un peu d'eau si besoin : elle doit couler du ruban.", badge: null },
+      { icone: "🔥", titre: "La poêle", detail: "Faites chauffer une poêle légèrement huilée à feu moyen.", badge: null },
+      { icone: "🥞", titre: "Cuire", detail: "Versez une louche en spirale, du centre vers le bord : des bulles criblent la surface.", badge: null },
+      { icone: "👀", titre: "Un seul côté", detail: "Laissez cuire sans retourner, jusqu'à ce que le dessus soit pris et le dessous doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, saupoudrés de sucre et arrosés d'un filet d'huile. Moelleux et acidulés — les canjeero somalis.", badge: null }
+    ]
+  },
 });

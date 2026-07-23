@@ -6227,4 +6227,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes. Fines, dorées et fondantes — les plăcinte moldaves.", badge: null }
     ]
   },
+  fishcutter: {
+    dateAjout: "2026-07-23T10:03:00",
+    nom: "Fish Cutter",
+    cat: "encas", pays: "barbade",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥪",
+    description: "Fish cutter — le sandwich culte de la Barbade : un filet de poisson mariné au citron, fariné et frit, glissé dans un pain moelleux (salt bread) avec laitue, tomate et un trait de sauce piquante-mayonnaise. Star des cabanes de plage d'Oistins, il se dévore face à la mer, encore brûlant.",
+    tableauFishcutter: [
+      { nb: 1, pain: "70 g", poisson: "90 g", farine: "15 g", citron: "¼", ail: "1", laitue: "15 g", tomate: "30 g", mayonnaise: "10 g", piment: "0.5 g", huileolive: "10 ml", sel: "1.5 g" },
+      { nb: 2, pain: "140 g", poisson: "180 g", farine: "30 g", citron: "½", ail: "2", laitue: "30 g", tomate: "60 g", mayonnaise: "20 g", piment: "1 g", huileolive: "20 ml", sel: "3 g" },
+      { nb: 3, pain: "210 g", poisson: "270 g", farine: "45 g", citron: "¾", ail: "3", laitue: "45 g", tomate: "90 g", mayonnaise: "30 g", piment: "1.5 g", huileolive: "30 ml", sel: "4.5 g" },
+      { nb: 4, pain: "280 g", poisson: "360 g", farine: "60 g", citron: "1", ail: "4", laitue: "60 g", tomate: "120 g", mayonnaise: "40 g", piment: "2 g", huileolive: "40 ml", sel: "6 g" },
+      { nb: 5, pain: "350 g", poisson: "450 g", farine: "75 g", citron: "1¼", ail: "5", laitue: "75 g", tomate: "150 g", mayonnaise: "50 g", piment: "2.5 g", huileolive: "50 ml", sel: "7.5 g" },
+      { nb: 6, pain: "420 g", poisson: "540 g", farine: "90 g", citron: "1½", ail: "6", laitue: "90 g", tomate: "180 g", mayonnaise: "60 g", piment: "3 g", huileolive: "60 ml", sel: "9 g" },
+      { nb: 7, pain: "490 g", poisson: "630 g", farine: "105 g", citron: "1¾", ail: "7", laitue: "105 g", tomate: "210 g", mayonnaise: "70 g", piment: "3.5 g", huileolive: "70 ml", sel: "10.5 g" },
+      { nb: 8, pain: "560 g", poisson: "720 g", farine: "120 g", citron: "2", ail: "8", laitue: "120 g", tomate: "240 g", mayonnaise: "80 g", piment: "4 g", huileolive: "80 ml", sel: "12 g" },
+      { nb: 9, pain: "630 g", poisson: "810 g", farine: "135 g", citron: "2¼", ail: "9", laitue: "135 g", tomate: "270 g", mayonnaise: "90 g", piment: "4.5 g", huileolive: "90 ml", sel: "13.5 g" },
+      { nb: 10, pain: "700 g", poisson: "900 g", farine: "150 g", citron: "2½", ail: "10", laitue: "150 g", tomate: "300 g", mayonnaise: "100 g", piment: "5 g", huileolive: "100 ml", sel: "15 g" },
+      { nb: 11, pain: "770 g", poisson: "990 g", farine: "165 g", citron: "2¾", ail: "11", laitue: "165 g", tomate: "330 g", mayonnaise: "110 g", piment: "5.5 g", huileolive: "110 ml", sel: "16.5 g" },
+      { nb: 12, pain: "840 g", poisson: "1080 g", farine: "180 g", citron: "3", ail: "12", laitue: "180 g", tomate: "360 g", mayonnaise: "120 g", piment: "6 g", huileolive: "120 ml", sel: "18 g" },
+      { nb: 13, pain: "910 g", poisson: "1170 g", farine: "195 g", citron: "3¼", ail: "13", laitue: "195 g", tomate: "390 g", mayonnaise: "130 g", piment: "6.5 g", huileolive: "130 ml", sel: "19.5 g" },
+      { nb: 14, pain: "980 g", poisson: "1260 g", farine: "210 g", citron: "3½", ail: "14", laitue: "210 g", tomate: "420 g", mayonnaise: "140 g", piment: "7 g", huileolive: "140 ml", sel: "21 g" },
+      { nb: 15, pain: "1050 g", poisson: "1350 g", farine: "225 g", citron: "3¾", ail: "15", laitue: "225 g", tomate: "450 g", mayonnaise: "150 g", piment: "7.5 g", huileolive: "150 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Mariner", detail: "Arrosez le poisson de citron, d'ail et de sel, et laissez mariner quelques minutes.", badge: null },
+      { icone: "🌾", titre: "Fariner", detail: "Épongez le poisson et passez-le dans la farine.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Faites frire le filet jusqu'à ce qu'il soit doré et croustillant, puis égouttez.", badge: null },
+      { icone: "🌶️", titre: "La sauce", detail: "Mélangez la mayonnaise avec le piment.", badge: null },
+      { icone: "🍞", titre: "Le pain", detail: "Ouvrez le pain moelleux et tartinez-le de sauce.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Garnissez de laitue, de tomate et du poisson frit brûlant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Refermez, pressez légèrement et servez aussitôt. Croustillant-moelleux — le fish cutter bajan.", badge: null }
+    ]
+  },
 });

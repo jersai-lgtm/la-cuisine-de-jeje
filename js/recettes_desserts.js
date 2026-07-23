@@ -8935,4 +8935,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir et servez avec le thé. Fondants et parfumés — les shekerbura de Novruz.", badge: null }
     ]
   },
+  painpatate: {
+    dateAjout: "2026-07-23T10:09:00",
+    nom: "Pain Patate",
+    cat: "desserts", pays: "haiti",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍠",
+    description: "Pain patate — le pudding fondant d'Haïti : de la patate douce râpée mêlée de banane écrasée, de lait de coco, de beurre et d'épices (cannelle, muscade, vanille), cuite au four en un gâteau dense, caramélisé et profondément parfumé. Dessert des dimanches et des fêtes, il se sert tiède ou froid.",
+    tableauPainpatate: [
+      { nb: 1, patatedouce: "100 g", banane: "40 g", laitcoco: "40 ml", beurre: "10 g", sucre: "15 g", cannelle: "1 g", muscade: "0.5 g", vanille: "0.5 g", sel: "1 g" },
+      { nb: 2, patatedouce: "200 g", banane: "80 g", laitcoco: "80 ml", beurre: "20 g", sucre: "30 g", cannelle: "2 g", muscade: "1 g", vanille: "1 g", sel: "2 g" },
+      { nb: 3, patatedouce: "300 g", banane: "120 g", laitcoco: "120 ml", beurre: "30 g", sucre: "45 g", cannelle: "3 g", muscade: "1.5 g", vanille: "1.5 g", sel: "3 g" },
+      { nb: 4, patatedouce: "400 g", banane: "160 g", laitcoco: "160 ml", beurre: "40 g", sucre: "60 g", cannelle: "4 g", muscade: "2 g", vanille: "2 g", sel: "4 g" },
+      { nb: 5, patatedouce: "500 g", banane: "200 g", laitcoco: "200 ml", beurre: "50 g", sucre: "75 g", cannelle: "5 g", muscade: "2.5 g", vanille: "2.5 g", sel: "5 g" },
+      { nb: 6, patatedouce: "600 g", banane: "240 g", laitcoco: "240 ml", beurre: "60 g", sucre: "90 g", cannelle: "6 g", muscade: "3 g", vanille: "3 g", sel: "6 g" },
+      { nb: 7, patatedouce: "700 g", banane: "280 g", laitcoco: "280 ml", beurre: "70 g", sucre: "105 g", cannelle: "7 g", muscade: "3.5 g", vanille: "3.5 g", sel: "7 g" },
+      { nb: 8, patatedouce: "800 g", banane: "320 g", laitcoco: "320 ml", beurre: "80 g", sucre: "120 g", cannelle: "8 g", muscade: "4 g", vanille: "4 g", sel: "8 g" },
+      { nb: 9, patatedouce: "900 g", banane: "360 g", laitcoco: "360 ml", beurre: "90 g", sucre: "135 g", cannelle: "9 g", muscade: "4.5 g", vanille: "4.5 g", sel: "9 g" },
+      { nb: 10, patatedouce: "1000 g", banane: "400 g", laitcoco: "400 ml", beurre: "100 g", sucre: "150 g", cannelle: "10 g", muscade: "5 g", vanille: "5 g", sel: "10 g" },
+      { nb: 11, patatedouce: "1100 g", banane: "440 g", laitcoco: "440 ml", beurre: "110 g", sucre: "165 g", cannelle: "11 g", muscade: "5.5 g", vanille: "5.5 g", sel: "11 g" },
+      { nb: 12, patatedouce: "1200 g", banane: "480 g", laitcoco: "480 ml", beurre: "120 g", sucre: "180 g", cannelle: "12 g", muscade: "6 g", vanille: "6 g", sel: "12 g" },
+      { nb: 13, patatedouce: "1300 g", banane: "520 g", laitcoco: "520 ml", beurre: "130 g", sucre: "195 g", cannelle: "13 g", muscade: "6.5 g", vanille: "6.5 g", sel: "13 g" },
+      { nb: 14, patatedouce: "1400 g", banane: "560 g", laitcoco: "560 ml", beurre: "140 g", sucre: "210 g", cannelle: "14 g", muscade: "7 g", vanille: "7 g", sel: "14 g" },
+      { nb: 15, patatedouce: "1500 g", banane: "600 g", laitcoco: "600 ml", beurre: "150 g", sucre: "225 g", cannelle: "15 g", muscade: "7.5 g", vanille: "7.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "La patate douce", detail: "Épluchez et râpez finement la patate douce.", badge: null },
+      { icone: "🍌", titre: "La banane", detail: "Écrasez la banane bien mûre et mélangez-la à la patate.", badge: null },
+      { icone: "🥥", titre: "L'appareil", detail: "Incorporez le lait de coco, le beurre fondu, le sucre, les épices, la vanille et le sel.", badge: null },
+      { icone: "🥄", titre: "Travailler", detail: "Mélangez longuement : l'appareil doit être homogène et nappant.", badge: null },
+      { icone: "🍮", titre: "Le moule", detail: "Versez dans un plat beurré.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four moyen jusqu'à ce que le dessus soit caramélisé et le centre pris.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir avant de couper. Dense et parfumé — le pain patate haïtien.", badge: null }
+    ]
+  },
 });

@@ -76164,5 +76164,345 @@ window.RECETTES_EN = {
     "detail": "Serve warm. Thin, golden and melting — Moldovan plăcinte."
    }
   ]
+ },
+ "rukau": {
+  "nom": "Rukau",
+  "description": "Rukau — the simmered taro leaves of the Cook Islands: melting leaves (here spinach) gently cooked in coconut cream with onion, often enriched with beef, until they become a silky green purée. A staple of umukai (Polynesian feasts), served with taro or rice.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and roughly chop the taro leaves (here spinach)."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Slice the onion and soften it gently."
+   },
+   {
+    "titre": "The beef",
+    "detail": "Add the beef in small pieces and brown it."
+   },
+   {
+    "titre": "Wilt",
+    "detail": "Add the leaves and let them wilt over low heat."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Pour in the coconut milk and season with salt."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently until you get a melting, creamy green purée."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with rice or taro. Silky — Cook Islands rukau."
+   }
+  ]
+ },
+ "fishcakessaintehelene": {
+  "nom": "Saint Helena Fishcakes",
+  "description": "Fishcakes — the pride of Saint Helena, Napoleon's island: patties of flaked fish and crushed potato, spiked with chilli, onion and parsley, browned in a pan. Served at breakfast as at dinner, these spicy 'Saint' fishcakes are THE identity dish of the South Atlantic island.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Boil the potatoes and roughly crush them."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Poach the fish, then flake it."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Combine fish, mash, chopped onion, parsley, chilli, salt and the egg."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape thick, even patties."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Lightly dredge each patty in flour."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Pan-fry the fishcakes on both sides until nicely crusted."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with rice or a salad. Spicy and golden — Saint Helena fishcakes."
+   }
+  ]
+ },
+ "redriceguam": {
+  "nom": "Chamorro Red Rice",
+  "description": "Chamorro red rice — Guam's emblem: rice tinted red-orange by annatto (achiote) seeds, cooked with onion, garlic and bacon bits, soft and fragrant. No Chamorro fiesta exists without it: it accompanies grilled chicken, kelaguen and barbecues across the island.",
+  "etapes": [
+   {
+    "titre": "The annatto",
+    "detail": "Steep the annatto seeds in hot water (or use the paprika) to get a deep red water."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and lardons in the oil."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and coat it in the fragrant fat."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in the red annatto water and season with salt."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook over low heat until fully absorbed."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Fluff the rice with a fork: it should be soft and richly coloured."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve alongside grilled meats. Red and fragrant — Guam's Chamorro rice."
+   }
+  ]
+ },
+ "fishcutter": {
+  "nom": "Fish Cutter",
+  "description": "Fish cutter — Barbados' cult sandwich: a lemon-marinated fish fillet, floured and fried, tucked into a soft salt bread roll with lettuce, tomato and a swipe of pepper-sauce mayo. Star of the Oistins beach shacks, devoured facing the sea, still piping hot.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Drizzle the fish with lemon, garlic and salt, and let it marinate a few minutes."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Pat the fish dry and dredge it in flour."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the fillet until golden and crisp, then drain."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the mayonnaise with the chilli."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Split the soft roll and spread it with the sauce."
+   },
+   {
+    "titre": "Build",
+    "detail": "Layer lettuce, tomato and the piping-hot fried fish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close, press lightly and serve at once. Crisp-and-soft — the Bajan fish cutter."
+   }
+  ]
+ },
+ "murabyan": {
+  "nom": "Murabyan",
+  "description": "Murabyan — Kuwait's shrimp rice: rice scented with turmeric and cumin, cooked in the juices of shrimp sautéed with onion, garlic and ginger, crowned with golden shrimp and coriander. A Gulf-sea dish, it celebrates shrimp season in Kuwaiti homes.",
+  "etapes": [
+   {
+    "titre": "The shrimp",
+    "detail": "Peel the shrimp and season them with salt and lemon."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and ginger in the oil."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the turmeric and cumin, and let them bloom."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Quickly sauté the shrimp in this base, then set half aside."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice, coat it, then pour in hot water and season."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook over low heat until absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the rice crowned with the reserved shrimp and chopped coriander. Fragrant — Kuwaiti murabyan."
+   }
+  ]
+ },
+ "gaat": {
+  "nom": "Ga'at",
+  "description": "Ga'at — the volcano porridge of Eritrea (and Tigray): a very thick flour porridge moulded into a dome with a crater filled with berbere-spiced melted butter, surrounded by fresh yoghurt. Each bite is dipped in the spicy crater then the yoghurt — the special-day breakfast.",
+  "etapes": [
+   {
+    "titre": "The porridge",
+    "detail": "Rain the flour into boiling salted water, whisking energetically."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook, stirring with a wooden spoon: the paste must become very thick and smooth."
+   },
+   {
+    "titre": "The volcano",
+    "detail": "Mould the paste into a dome in a bowl, and dig a crater in the centre."
+   },
+   {
+    "titre": "The spiced butter",
+    "detail": "Melt the butter with the berbere."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour the berbere butter into the crater."
+   },
+   {
+    "titre": "The yoghurt",
+    "detail": "Surround the volcano with fresh yoghurt, and a drizzle of honey if you like."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dip each bite in the spicy butter then the yoghurt. Spectacular — Eritrean ga'at."
+   }
+  ]
+ },
+ "canjeero": {
+  "nom": "Canjeero",
+  "description": "Canjeero — Somalia's fermented pancake: a lightly fermented batter of flour (and a little rice flour), cooked on one side only into a crêpe riddled with a thousand bubbles, soft and tangy. A pillar of the Somali breakfast, eaten with sugar and oil, honey or stew.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the flours, yeast, a pinch of sugar, the salt and warm water into a fluid batter."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Cover and let ferment several hours (or overnight): the batter must bubble and smell heady."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Re-whisk the batter, adding a little water if needed: it should flow in a ribbon."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a lightly oiled pan over medium heat."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour a ladleful in a spiral, from centre to edge: bubbles riddle the surface."
+   },
+   {
+    "titre": "One side only",
+    "detail": "Cook without flipping, until the top is set and the underside golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, sprinkled with sugar and drizzled with oil. Soft and tangy — Somali canjeero."
+   }
+  ]
+ },
+ "koklomeme": {
+  "nom": "Koklo Meme",
+  "description": "Koklo meme — Togo's grilled chicken: chicken pieces marinated in ginger, garlic, onion and chilli, grilled until caramelized, basted with marinade as they cook. Sold at night along the roads of Lomé, devoured piping hot with its fiery sauce.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Blend the ginger, garlic, half the onion, the chilli, lemon, oil and salt."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken pieces in this paste and marinate (ideally 1 h or more)."
+   },
+   {
+    "titre": "The grill",
+    "detail": "Heat a grill, plancha or the oven on grill mode."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the chicken, turning regularly."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Baste with marinade as it cooks to caramelize."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the remaining onion with the tomato and a little marinade into a small fiery sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chicken piping hot with the sauce. Caramelized and fiery — Togolese koklo meme."
+   }
+  ]
+ },
+ "babenda": {
+  "nom": "Babenda",
+  "description": "Babenda — Burkina Faso's greens rice: rice simmered with pounded green leaves (sorrel, spinach…) and peanut paste, into a creamy, deeply fragrant, plant-forward dish. A Bissa specialty, cheap and nourishing, it's a quiet treasure of Burkinabè cooking.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and finely chop the leaves (spinach, sorrel…)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic, then add the leaves and a little water."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Let the leaves melt down over low heat."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and cover with water; season with salt."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Loosen the peanut paste in a little hot water and stir it in."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer, stirring, until the rice is melting and the whole creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the chilli and serve hot. Creamy and green — Burkinabè babenda."
+   }
+  ]
+ },
+ "painpatate": {
+  "nom": "Pain Patate",
+  "description": "Pain patate — Haiti's melting pudding: grated sweet potato mixed with mashed banana, coconut milk, butter and spices (cinnamon, nutmeg, vanilla), baked into a dense, caramelized, deeply fragrant cake. A Sunday and holiday dessert, served warm or cold.",
+  "etapes": [
+   {
+    "titre": "The sweet potato",
+    "detail": "Peel and finely grate the sweet potato."
+   },
+   {
+    "titre": "The banana",
+    "detail": "Mash the very ripe banana and mix it into the potato."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Stir in the coconut milk, melted butter, sugar, spices, vanilla and salt."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Mix at length: the batter must be even and coating."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Pour into a buttered dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at medium heat until the top is caramelized and the centre set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool a little before cutting. Dense and fragrant — Haitian pain patate."
+   }
+  ]
  }
 };
