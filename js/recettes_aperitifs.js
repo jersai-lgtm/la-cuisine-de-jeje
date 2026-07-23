@@ -3235,4 +3235,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez chauds — et prévenez vos convives : le diable est dedans ! Les pastéis capverdiens.", badge: null }
     ]
   },
+  beguni: {
+    dateAjout: "2026-07-23T16:01:00",
+    nom: "Beguni",
+    cat: "aperitifs", pays: "bangladesh",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍆",
+    description: "Beguni — les beignets d'aubergine du Bangladesh : de fines tranches d'aubergine enrobées d'une pâte de farine de pois chiche au curcuma, frites jusqu'à être dorées et croustillantes. Star de l'iftar pendant le ramadan et des étals de Dacca sous la pluie, ils se dévorent brûlants.",
+    tableauBeguni: [
+      { nb: 1, aubergine: "90 g", farinepoischiche: "35 g", curcuma: "1.5 g", piment: "1 g", huileolive: "12 ml", sel: "1.5 g" },
+      { nb: 2, aubergine: "180 g", farinepoischiche: "70 g", curcuma: "3 g", piment: "2 g", huileolive: "24 ml", sel: "3 g" },
+      { nb: 3, aubergine: "270 g", farinepoischiche: "105 g", curcuma: "4.5 g", piment: "3 g", huileolive: "36 ml", sel: "4.5 g" },
+      { nb: 4, aubergine: "360 g", farinepoischiche: "140 g", curcuma: "6 g", piment: "4 g", huileolive: "48 ml", sel: "6 g" },
+      { nb: 5, aubergine: "450 g", farinepoischiche: "175 g", curcuma: "7.5 g", piment: "5 g", huileolive: "60 ml", sel: "7.5 g" },
+      { nb: 6, aubergine: "540 g", farinepoischiche: "210 g", curcuma: "9 g", piment: "6 g", huileolive: "72 ml", sel: "9 g" },
+      { nb: 7, aubergine: "630 g", farinepoischiche: "245 g", curcuma: "10.5 g", piment: "7 g", huileolive: "84 ml", sel: "10.5 g" },
+      { nb: 8, aubergine: "720 g", farinepoischiche: "280 g", curcuma: "12 g", piment: "8 g", huileolive: "96 ml", sel: "12 g" },
+      { nb: 9, aubergine: "810 g", farinepoischiche: "315 g", curcuma: "13.5 g", piment: "9 g", huileolive: "108 ml", sel: "13.5 g" },
+      { nb: 10, aubergine: "900 g", farinepoischiche: "350 g", curcuma: "15 g", piment: "10 g", huileolive: "120 ml", sel: "15 g" },
+      { nb: 11, aubergine: "990 g", farinepoischiche: "385 g", curcuma: "16.5 g", piment: "11 g", huileolive: "132 ml", sel: "16.5 g" },
+      { nb: 12, aubergine: "1080 g", farinepoischiche: "420 g", curcuma: "18 g", piment: "12 g", huileolive: "144 ml", sel: "18 g" },
+      { nb: 13, aubergine: "1170 g", farinepoischiche: "455 g", curcuma: "19.5 g", piment: "13 g", huileolive: "156 ml", sel: "19.5 g" },
+      { nb: 14, aubergine: "1260 g", farinepoischiche: "490 g", curcuma: "21 g", piment: "14 g", huileolive: "168 ml", sel: "21 g" },
+      { nb: 15, aubergine: "1350 g", farinepoischiche: "525 g", curcuma: "22.5 g", piment: "15 g", huileolive: "180 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍆", titre: "L'aubergine", detail: "Coupez l'aubergine en tranches fines (en longueur), salez-les et laissez-les dégorger.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Fouettez la farine de pois chiche avec le curcuma, le piment, le sel et de l'eau en une pâte nappante.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer la pâte quelques minutes.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍆", titre: "Enrober", detail: "Épongez les tranches et trempez-les une à une dans la pâte.", badge: null },
+      { icone: "🍤", titre: "Frire", detail: "Faites frire les beguni jusqu'à ce qu'ils soient dorés et croustillants, puis égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, tels quels ou avec un chutney. Croustillants — les beguni bangladais.", badge: null }
+    ]
+  },
 });

@@ -2210,4 +2210,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Tranchez fin et beurrez généreusement, avec hareng ou saumon. Le rúgbrauð islandais !", badge: null }
     ]
   },
+  bolobao: {
+    dateAjout: "2026-07-23T16:03:00",
+    nom: "Bolo Bao",
+    cat: "boulangerie", pays: "hongkong",
+    base: 4,
+    temps: "2h30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍍",
+    description: "Bolo bao — le « pain ananas » de Hong Kong : une brioche moelleuse coiffée d'une croûte sucrée craquelée dont le motif rappelle l'écorce d'un ananas (il n'en contient pas !). Servi tiède, traditionnellement fendu sur une épaisse tranche de beurre froid, c'est l'icône des cha chaan teng hongkongais.",
+    tableauBolobao: [
+      { nb: 1, farine: "90 g", sucre: "22 g", beurre: "18 g", lait: "40 ml", levureboulangere: "2 g", oeufs: "½", sel: "1.5 g" },
+      { nb: 2, farine: "180 g", sucre: "44 g", beurre: "36 g", lait: "80 ml", levureboulangere: "4 g", oeufs: "1", sel: "3 g" },
+      { nb: 3, farine: "270 g", sucre: "66 g", beurre: "54 g", lait: "120 ml", levureboulangere: "6 g", oeufs: "1½", sel: "4.5 g" },
+      { nb: 4, farine: "360 g", sucre: "88 g", beurre: "72 g", lait: "160 ml", levureboulangere: "8 g", oeufs: "2", sel: "6 g" },
+      { nb: 5, farine: "450 g", sucre: "110 g", beurre: "90 g", lait: "200 ml", levureboulangere: "10 g", oeufs: "2½", sel: "7.5 g" },
+      { nb: 6, farine: "540 g", sucre: "132 g", beurre: "108 g", lait: "240 ml", levureboulangere: "12 g", oeufs: "3", sel: "9 g" },
+      { nb: 7, farine: "630 g", sucre: "154 g", beurre: "126 g", lait: "280 ml", levureboulangere: "14 g", oeufs: "3½", sel: "10.5 g" },
+      { nb: 8, farine: "720 g", sucre: "176 g", beurre: "144 g", lait: "320 ml", levureboulangere: "16 g", oeufs: "4", sel: "12 g" },
+      { nb: 9, farine: "810 g", sucre: "198 g", beurre: "162 g", lait: "360 ml", levureboulangere: "18 g", oeufs: "4½", sel: "13.5 g" },
+      { nb: 10, farine: "900 g", sucre: "220 g", beurre: "180 g", lait: "400 ml", levureboulangere: "20 g", oeufs: "5", sel: "15 g" },
+      { nb: 11, farine: "990 g", sucre: "242 g", beurre: "198 g", lait: "440 ml", levureboulangere: "22 g", oeufs: "5½", sel: "16.5 g" },
+      { nb: 12, farine: "1080 g", sucre: "264 g", beurre: "216 g", lait: "480 ml", levureboulangere: "24 g", oeufs: "6", sel: "18 g" },
+      { nb: 13, farine: "1170 g", sucre: "286 g", beurre: "234 g", lait: "520 ml", levureboulangere: "26 g", oeufs: "6½", sel: "19.5 g" },
+      { nb: 14, farine: "1260 g", sucre: "308 g", beurre: "252 g", lait: "560 ml", levureboulangere: "28 g", oeufs: "7", sel: "21 g" },
+      { nb: 15, farine: "1350 g", sucre: "330 g", beurre: "270 g", lait: "600 ml", levureboulangere: "30 g", oeufs: "7½", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine, la levure, un tiers du sucre, le sel, le lait tiède et la moitié de l'œuf, puis incorporez un tiers du beurre.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez lever la pâte jusqu'à doubler de volume.", badge: null },
+      { icone: "🍪", titre: "La croûte", detail: "Travaillez le reste du beurre avec le reste du sucre, un peu d'œuf et de farine en une pâte sablée souple.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Boulez la pâte en petits pains et posez-les sur une plaque ; laissez repousser.", badge: null },
+      { icone: "🍍", titre: "Coiffer", detail: "Abaissez la pâte sablée en disques fins et drapez-en chaque pain ; striez en croisillons.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Dorez à l'œuf et enfournez jusqu'à ce que la croûte craquelle et dore — comme un ananas.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes — à la hongkongaise : fendus sur une tranche de beurre froid. Les bolo bao !", badge: null }
+    ]
+  },
 });

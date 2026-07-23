@@ -3255,4 +3255,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Servez frais, avec un trait de citron vert. Ça décoiffe — le féroce martiniquais !", badge: null }
     ]
   },
+  fergese: {
+    dateAjout: "2026-07-23T16:06:00",
+    nom: "Fërgesë",
+    cat: "entrees", pays: "albanie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🫑",
+    description: "Fërgesë — la cocotte albanaise de Tirana : des poivrons et tomates compotés, liés au fromage frais salé et au beurre, gratinés en cassolette bouillonnante. Simple, rustique et irrésistible avec du pain frais, c'est le plat-signature des tables d'été albanaises.",
+    tableauFergese: [
+      { nb: 1, poivron: "80 g", tomate: "60 g", fromagefrais: "60 g", ail: "1", beurre: "10 g", paprika: "1 g", piment: "0.5 g", sel: "1.5 g" },
+      { nb: 2, poivron: "160 g", tomate: "120 g", fromagefrais: "120 g", ail: "2", beurre: "20 g", paprika: "2 g", piment: "1 g", sel: "3 g" },
+      { nb: 3, poivron: "240 g", tomate: "180 g", fromagefrais: "180 g", ail: "3", beurre: "30 g", paprika: "3 g", piment: "1.5 g", sel: "4.5 g" },
+      { nb: 4, poivron: "320 g", tomate: "240 g", fromagefrais: "240 g", ail: "4", beurre: "40 g", paprika: "4 g", piment: "2 g", sel: "6 g" },
+      { nb: 5, poivron: "400 g", tomate: "300 g", fromagefrais: "300 g", ail: "5", beurre: "50 g", paprika: "5 g", piment: "2.5 g", sel: "7.5 g" },
+      { nb: 6, poivron: "480 g", tomate: "360 g", fromagefrais: "360 g", ail: "6", beurre: "60 g", paprika: "6 g", piment: "3 g", sel: "9 g" },
+      { nb: 7, poivron: "560 g", tomate: "420 g", fromagefrais: "420 g", ail: "7", beurre: "70 g", paprika: "7 g", piment: "3.5 g", sel: "10.5 g" },
+      { nb: 8, poivron: "640 g", tomate: "480 g", fromagefrais: "480 g", ail: "8", beurre: "80 g", paprika: "8 g", piment: "4 g", sel: "12 g" },
+      { nb: 9, poivron: "720 g", tomate: "540 g", fromagefrais: "540 g", ail: "9", beurre: "90 g", paprika: "9 g", piment: "4.5 g", sel: "13.5 g" },
+      { nb: 10, poivron: "800 g", tomate: "600 g", fromagefrais: "600 g", ail: "10", beurre: "100 g", paprika: "10 g", piment: "5 g", sel: "15 g" },
+      { nb: 11, poivron: "880 g", tomate: "660 g", fromagefrais: "660 g", ail: "11", beurre: "110 g", paprika: "11 g", piment: "5.5 g", sel: "16.5 g" },
+      { nb: 12, poivron: "960 g", tomate: "720 g", fromagefrais: "720 g", ail: "12", beurre: "120 g", paprika: "12 g", piment: "6 g", sel: "18 g" },
+      { nb: 13, poivron: "1040 g", tomate: "780 g", fromagefrais: "780 g", ail: "13", beurre: "130 g", paprika: "13 g", piment: "6.5 g", sel: "19.5 g" },
+      { nb: 14, poivron: "1120 g", tomate: "840 g", fromagefrais: "840 g", ail: "14", beurre: "140 g", paprika: "14 g", piment: "7 g", sel: "21 g" },
+      { nb: 15, poivron: "1200 g", tomate: "900 g", fromagefrais: "900 g", ail: "15", beurre: "150 g", paprika: "15 g", piment: "7.5 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫑", titre: "Les poivrons", detail: "Faites griller les poivrons, pelez-les et coupez-les en lanières.", badge: null },
+      { icone: "🍅", titre: "Les tomates", detail: "Pelez et concassez les tomates.", badge: null },
+      { icone: "🧈", titre: "Compoter", detail: "Faites fondre le beurre avec l'ail, ajoutez poivrons et tomates, et laissez compoter.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Ajoutez le paprika, le piment et le sel.", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Incorporez le fromage frais et mélangez : la sauce devient crémeuse.", badge: null },
+      { icone: "♨️", titre: "Gratiner", detail: "Versez en cassolette et passez au four jusqu'à ce que ça bouillonne.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, avec du pain frais à tremper. Irrésistible — la fërgesë de Tirana.", badge: null }
+    ]
+  },
 });

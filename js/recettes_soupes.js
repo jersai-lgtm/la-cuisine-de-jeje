@@ -5375,4 +5375,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Poivrez, goûtez avant de saler, et servez fumant. Crémeux et fumé — le cullen skink écossais.", badge: null }
     ]
   },
+  begovacorba: {
+    dateAjout: "2026-07-23T16:00:00",
+    nom: "Begova Čorba",
+    cat: "soupes", pays: "bosnie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍵",
+    description: "Begova čorba — la « soupe du bey » de Bosnie : un velouté de poulet aux gombos, carotte et céleri, lié à la farine dorée au beurre et fini au yaourt et au citron. Héritée des tables ottomanes de Sarajevo, onctueuse et légèrement acidulée, c'est la reine des čorbe bosniennes.",
+    tableauBegovacorba: [
+      { nb: 1, poulet: "80 g", gombo: "30 g", carotte: "30 g", celeri: "20 g", oignon: "20 g", farine: "8 g", beurre: "8 g", yaourt: "30 g", citron: "¼", sel: "2 g" },
+      { nb: 2, poulet: "160 g", gombo: "60 g", carotte: "60 g", celeri: "40 g", oignon: "40 g", farine: "16 g", beurre: "16 g", yaourt: "60 g", citron: "½", sel: "4 g" },
+      { nb: 3, poulet: "240 g", gombo: "90 g", carotte: "90 g", celeri: "60 g", oignon: "60 g", farine: "24 g", beurre: "24 g", yaourt: "90 g", citron: "¾", sel: "6 g" },
+      { nb: 4, poulet: "320 g", gombo: "120 g", carotte: "120 g", celeri: "80 g", oignon: "80 g", farine: "32 g", beurre: "32 g", yaourt: "120 g", citron: "1", sel: "8 g" },
+      { nb: 5, poulet: "400 g", gombo: "150 g", carotte: "150 g", celeri: "100 g", oignon: "100 g", farine: "40 g", beurre: "40 g", yaourt: "150 g", citron: "1¼", sel: "10 g" },
+      { nb: 6, poulet: "480 g", gombo: "180 g", carotte: "180 g", celeri: "120 g", oignon: "120 g", farine: "48 g", beurre: "48 g", yaourt: "180 g", citron: "1½", sel: "12 g" },
+      { nb: 7, poulet: "560 g", gombo: "210 g", carotte: "210 g", celeri: "140 g", oignon: "140 g", farine: "56 g", beurre: "56 g", yaourt: "210 g", citron: "1¾", sel: "14 g" },
+      { nb: 8, poulet: "640 g", gombo: "240 g", carotte: "240 g", celeri: "160 g", oignon: "160 g", farine: "64 g", beurre: "64 g", yaourt: "240 g", citron: "2", sel: "16 g" },
+      { nb: 9, poulet: "720 g", gombo: "270 g", carotte: "270 g", celeri: "180 g", oignon: "180 g", farine: "72 g", beurre: "72 g", yaourt: "270 g", citron: "2¼", sel: "18 g" },
+      { nb: 10, poulet: "800 g", gombo: "300 g", carotte: "300 g", celeri: "200 g", oignon: "200 g", farine: "80 g", beurre: "80 g", yaourt: "300 g", citron: "2½", sel: "20 g" },
+      { nb: 11, poulet: "880 g", gombo: "330 g", carotte: "330 g", celeri: "220 g", oignon: "220 g", farine: "88 g", beurre: "88 g", yaourt: "330 g", citron: "2¾", sel: "22 g" },
+      { nb: 12, poulet: "960 g", gombo: "360 g", carotte: "360 g", celeri: "240 g", oignon: "240 g", farine: "96 g", beurre: "96 g", yaourt: "360 g", citron: "3", sel: "24 g" },
+      { nb: 13, poulet: "1040 g", gombo: "390 g", carotte: "390 g", celeri: "260 g", oignon: "260 g", farine: "104 g", beurre: "104 g", yaourt: "390 g", citron: "3¼", sel: "26 g" },
+      { nb: 14, poulet: "1120 g", gombo: "420 g", carotte: "420 g", celeri: "280 g", oignon: "280 g", farine: "112 g", beurre: "112 g", yaourt: "420 g", citron: "3½", sel: "28 g" },
+      { nb: 15, poulet: "1200 g", gombo: "450 g", carotte: "450 g", celeri: "300 g", oignon: "300 g", farine: "120 g", beurre: "120 g", yaourt: "450 g", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Le bouillon", detail: "Faites pocher le poulet avec l'oignon dans de l'eau salée, puis effilochez-le et gardez le bouillon.", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Ajoutez la carotte et le céleri en petits dés dans le bouillon, et laissez cuire.", badge: null },
+      { icone: "🥬", titre: "Les gombos", detail: "Ajoutez les gombos en rondelles et poursuivez la cuisson doucement.", badge: null },
+      { icone: "🧈", titre: "Le roux", detail: "Faites blondir la farine dans le beurre, puis délayez avec une louche de bouillon.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Reversez ce roux dans la soupe avec le poulet effiloché, et laissez frémir : elle devient veloutée.", badge: null },
+      { icone: "🥛", titre: "Finir", detail: "Hors du feu, incorporez le yaourt détendu et le jus de citron.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, avec du pain. Onctueuse et acidulée — la begova čorba de Sarajevo.", badge: null }
+    ]
+  },
 });

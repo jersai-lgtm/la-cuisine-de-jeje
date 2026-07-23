@@ -77184,5 +77184,345 @@ window.RECETTES_EN = {
     "detail": "Pepper, taste before salting, and serve steaming. Creamy and smoky — Scottish cullen skink."
    }
   ]
+ },
+ "begovacorba": {
+  "nom": "Begova Čorba",
+  "description": "Begova čorba — Bosnia's 'bey's soup': a velvety chicken soup with okra, carrot and celery, bound with butter-blonded flour and finished with yoghurt and lemon. Inherited from Sarajevo's Ottoman tables, silky and lightly tangy, it's the queen of Bosnian čorbe.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Poach the chicken with the onion in salted water, then shred it and keep the broth."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the diced carrot and celery to the broth, and let them cook."
+   },
+   {
+    "titre": "The okra",
+    "detail": "Add the okra rounds and continue cooking gently."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Blond the flour in the butter, then loosen with a ladle of broth."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Return this roux to the soup with the shredded chicken, and simmer: it turns velvety."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, stir in the loosened yoghurt and lemon juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with bread. Silky and tangy — Sarajevo's begova čorba."
+   }
+  ]
+ },
+ "beguni": {
+  "nom": "Beguni",
+  "description": "Beguni — Bangladesh's aubergine fritters: thin slices of aubergine coated in a turmeric-spiked chickpea-flour batter, fried until golden and crackling. The star of iftar during Ramadan and of Dhaka's rainy-day stalls, devoured piping hot.",
+  "etapes": [
+   {
+    "titre": "The aubergine",
+    "detail": "Cut the aubergine into thin lengthwise slices, salt them and let them release water."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk the chickpea flour with the turmeric, chilli, salt and water into a coating batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest a few minutes."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pat the slices dry and dip them one by one in the batter."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the beguni until golden and crackling, then drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, plain or with chutney. Crackling — Bangladeshi beguni."
+   }
+  ]
+ },
+ "niuroumian": {
+  "nom": "Niu Rou Mian",
+  "description": "Niu rou mian — Taiwan's beef noodle soup: melting braised beef in a dark broth of soy sauce, tomato and five-spice, poured over noodles with its chilli oil. The island's unofficial national dish, celebrated by an annual festival in Taipei.",
+  "etapes": [
+   {
+    "titre": "The beef",
+    "detail": "Cut the beef into large cubes and blanch them 2 minutes, then drain."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the ginger, garlic, onion and chilli in the oil."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the tomato, sugar, five-spice and soy sauce."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add the beef, cover generously with water and bring to a simmer."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Braise over low heat, at length, until the beef is melting and the broth deep."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the noodles al dente."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Place the noodles in bowls, pour over the piping-hot broth and beef. Deep — Taiwanese niu rou mian."
+   }
+  ]
+ },
+ "bolobao": {
+  "nom": "Bolo Bao",
+  "description": "Bolo bao — Hong Kong's 'pineapple bun': a soft milk bun capped with a sweet crackled crust whose pattern recalls pineapple skin (there's none inside!). Served warm, traditionally split over a thick slice of cold butter, it's the icon of Hong Kong's cha chaan teng.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, a third of the sugar, the salt, warm milk and half the egg, then work in a third of the butter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Work the remaining butter with the remaining sugar, a little egg and flour into a soft shortbread paste."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Ball the dough into small buns on a tray; let them rise again."
+   },
+   {
+    "titre": "Cap",
+    "detail": "Roll the shortbread paste into thin discs and drape one over each bun; score a crosshatch."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash and bake until the crust crackles and browns — like a pineapple."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm — Hong Kong-style: split over a slice of cold butter. Bolo bao!"
+   }
+  ]
+ },
+ "bazin": {
+  "nom": "Bazin",
+  "description": "Bazin — Libya's national dish: a dome of barley-and-wheat dough boiled then beaten smooth and elastic, set in the centre of a lamb sauce with tomato, turmeric and chilli, crowned with hard-boiled eggs. You eat by digging the dome into the sauce, by hand.",
+  "etapes": [
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion and garlic, add the lamb pieces and brown them."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add tomato, turmeric, chilli, salt and water, and simmer until tender."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Hard-boil the eggs and peel them."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Boil salted water, rain in the flour and ground barley, and cook over low heat."
+   },
+   {
+    "titre": "Beat",
+    "detail": "Beat the dough vigorously with a stick (or sturdy spoon) until smooth and elastic."
+   },
+   {
+    "titre": "The dome",
+    "detail": "Shape the dough into a dome, with a wet hand, in the centre of a large shallow dish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the sauce and lamb all around, arrange the eggs and serve. Libyan bazin — by hand!"
+   }
+  ]
+ },
+ "liboke": {
+  "nom": "Liboke",
+  "description": "Liboke — the Congolese parcel: fish marinated with lemon, ginger and garlic, wrapped in banana leaves with tomato, onion and chilli, smothered over embers. The Lingala word names the parcel itself — opening your steaming liboke perfumes all of Kinshasa.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Slash the fish and rub it with lemon, garlic, ginger and salt."
+   },
+   {
+    "titre": "The garnish",
+    "detail": "Slice the tomato and onion, and mix them with the chilli."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Soften banana leaves over a flame (or use baking paper)."
+   },
+   {
+    "titre": "The parcel",
+    "detail": "Lay the fish and garnish on the leaves, drizzle with oil and close the liboke tightly."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook smothered (embers, oven or steam) without opening."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Let the parcel finish cooking in its fragrant steam."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Open the steaming liboke at the table, with rice or chikwangue. The Congolese parcel!"
+   }
+  ]
+ },
+ "fergese": {
+  "nom": "Fërgesë",
+  "description": "Fërgesë — Tirana's Albanian skillet: peppers and tomatoes cooked down, bound with salted fresh cheese and butter, baked into a bubbling casserole. Simple, rustic and irresistible with fresh bread, it's the signature dish of Albanian summer tables.",
+  "etapes": [
+   {
+    "titre": "The peppers",
+    "detail": "Grill the peppers, peel them and cut into strips."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Peel and crush the tomatoes."
+   },
+   {
+    "titre": "Cook down",
+    "detail": "Melt the butter with the garlic, add peppers and tomatoes, and let them stew down."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the paprika, chilli and salt."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Stir in the fresh cheese: the sauce turns creamy."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour into a casserole and bake until bubbling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with fresh bread for dipping. Irresistible — Tirana fërgesë."
+   }
+  ]
+ },
+ "mulgipuder": {
+  "nom": "Mulgipuder",
+  "description": "Mulgipuder — Estonia's barley mash: pearl barley and potatoes cooked together then crushed into a rustic mash, crowned with sizzled bacon and onions. A farm dish of Mulgimaa, listed in Estonia's culinary heritage, it comforts like a fireside.",
+  "etapes": [
+   {
+    "titre": "The barley",
+    "detail": "Rinse the pearl barley and soak it (ideally a few hours)."
+   },
+   {
+    "titre": "The cooking",
+    "detail": "Cook the barley in salted water, then add the potato chunks."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Continue until everything is very tender and the water nearly absorbed."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Roughly crush with a pestle, working in the hot milk and butter."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Sizzle the lardons with the sliced onion until golden."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Correct the salt of the mash."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the mash crowned with bacon-onions and their golden fat. Estonian mulgipuder!"
+   }
+  ]
+ },
+ "konkoe": {
+  "nom": "Konkoé",
+  "description": "Konkoé — Guinea's catfish sauce: fish (traditionally smoked catfish) simmered in a light tomato, okra and palm-oil sauce, spiked with chilli. Served over white rice, it's an everyday Conakry dish, deep and generous.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Add lemon and salt to the fish (smoked is even better), and cut it into chunks."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in the palm oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomato and chilli, and let it cook down."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add water and bring to a simmer."
+   },
+   {
+    "titre": "The okra",
+    "detail": "Add the okra rounds."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Lay in the fish and simmer gently until the sauce coats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over white rice. Deep and generous — Guinean konkoé."
+   }
+  ]
+ },
+ "crnirizot": {
+  "nom": "Crni Rižot",
+  "description": "Crni rižot — Dalmatia's black risotto: a squid risotto tinted with cuttlefish ink, deglazed with white wine, creamy and briny, finished with lemon and parsley. Spectacularly black, it's THE dish of Croatian coastal konobas, from Istria to Dubrovnik.",
+  "etapes": [
+   {
+    "titre": "The squid",
+    "detail": "Clean the squid and cut into rings (keep the ink, or buy a sachet of cuttlefish ink from the fishmonger)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in olive oil, then sear the squid."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and toast it, stirring, until pearly."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine and let it evaporate."
+   },
+   {
+    "titre": "The ink",
+    "detail": "Dilute the ink in a ladle of hot water and pour it in: the rice turns black."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Continue ladle by ladle, stirring, until the rice is creamy and al dente."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Finish with lemon and parsley, and serve at once. Black and briny — Dalmatian crni rižot."
+   }
+  ]
  }
 };
