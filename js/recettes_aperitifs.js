@@ -3272,4 +3272,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, tels quels ou avec un chutney. Croustillants — les beguni bangladais.", badge: null }
     ]
   },
+  titiwiakra: {
+    dateAjout: "2026-07-23T18:09:00",
+    nom: "Akra de Titiwi",
+    cat: "aperitifs", pays: "dominique",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Akra de titiwi — les accras de la Dominique : de minuscules alevins (titiwis, pêchés à l'embouchure des rivières — ici du poisson émietté) mêlés à une pâte relevée au thym et au piment, frits en beignets dorés. L'apéritif-signature de l'île nature, croustillant et iodé.",
+    tableauTitiwiakra: [
+      { nb: 1, poisson: "70 g", farine: "50 g", oignon: "20 g", ail: "1", thym: "1 g", piment: "1 g", levurechimique: "2 g", citronvert: "¼", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, poisson: "140 g", farine: "100 g", oignon: "40 g", ail: "2", thym: "2 g", piment: "2 g", levurechimique: "4 g", citronvert: "½", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, poisson: "210 g", farine: "150 g", oignon: "60 g", ail: "3", thym: "3 g", piment: "3 g", levurechimique: "6 g", citronvert: "¾", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, poisson: "280 g", farine: "200 g", oignon: "80 g", ail: "4", thym: "4 g", piment: "4 g", levurechimique: "8 g", citronvert: "1", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, poisson: "350 g", farine: "250 g", oignon: "100 g", ail: "5", thym: "5 g", piment: "5 g", levurechimique: "10 g", citronvert: "1¼", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, poisson: "420 g", farine: "300 g", oignon: "120 g", ail: "6", thym: "6 g", piment: "6 g", levurechimique: "12 g", citronvert: "1½", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, poisson: "490 g", farine: "350 g", oignon: "140 g", ail: "7", thym: "7 g", piment: "7 g", levurechimique: "14 g", citronvert: "1¾", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, poisson: "560 g", farine: "400 g", oignon: "160 g", ail: "8", thym: "8 g", piment: "8 g", levurechimique: "16 g", citronvert: "2", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, poisson: "630 g", farine: "450 g", oignon: "180 g", ail: "9", thym: "9 g", piment: "9 g", levurechimique: "18 g", citronvert: "2¼", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, poisson: "700 g", farine: "500 g", oignon: "200 g", ail: "10", thym: "10 g", piment: "10 g", levurechimique: "20 g", citronvert: "2½", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, poisson: "770 g", farine: "550 g", oignon: "220 g", ail: "11", thym: "11 g", piment: "11 g", levurechimique: "22 g", citronvert: "2¾", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, poisson: "840 g", farine: "600 g", oignon: "240 g", ail: "12", thym: "12 g", piment: "12 g", levurechimique: "24 g", citronvert: "3", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, poisson: "910 g", farine: "650 g", oignon: "260 g", ail: "13", thym: "13 g", piment: "13 g", levurechimique: "26 g", citronvert: "3¼", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, poisson: "980 g", farine: "700 g", oignon: "280 g", ail: "14", thym: "14 g", piment: "14 g", levurechimique: "28 g", citronvert: "3½", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, poisson: "1050 g", farine: "750 g", oignon: "300 g", ail: "15", thym: "15 g", piment: "15 g", levurechimique: "30 g", citronvert: "3¾", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le poisson", detail: "Émiettez finement le poisson (ou utilisez de petits alevins entiers) et citronnez-le.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, la levure, le sel, le thym et de l'eau en une pâte épaisse.", badge: null },
+      { icone: "🧅", titre: "Relever", detail: "Incorporez l'oignon et l'ail hachés, le piment et le poisson.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer la pâte quelques minutes.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍤", titre: "Frire", detail: "Déposez des cuillerées de pâte et faites frire jusqu'à ce que les akras soient dorés ; égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, avec un trait de citron vert. Croustillants et iodés — les akras de la Dominique !", badge: null }
+    ]
+  },
 });

@@ -5449,4 +5449,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez fumant. Acidulée et fumée — la jota slovène.", badge: null }
     ]
   },
+  dograma: {
+    dateAjout: "2026-07-23T18:02:00",
+    nom: "Dograma",
+    cat: "soupes", pays: "turkmenistan",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Dograma — la soupe de fête du Turkménistan : du pain plat émietté à la main avec de l'agneau bouilli effiloché et de l'oignon cru, le tout arrosé de bouillon brûlant au moment de servir. Son nom signifie « émietter » — préparée collectivement, c'est la soupe des grandes occasions turkmènes.",
+    tableauDograma: [
+      { nb: 1, agneau: "90 g", pain: "60 g", oignon: "30 g", laurier: "½", poivre: "1 g", sel: "2 g" },
+      { nb: 2, agneau: "180 g", pain: "120 g", oignon: "60 g", laurier: "1", poivre: "2 g", sel: "4 g" },
+      { nb: 3, agneau: "270 g", pain: "180 g", oignon: "90 g", laurier: "1½", poivre: "3 g", sel: "6 g" },
+      { nb: 4, agneau: "360 g", pain: "240 g", oignon: "120 g", laurier: "2", poivre: "4 g", sel: "8 g" },
+      { nb: 5, agneau: "450 g", pain: "300 g", oignon: "150 g", laurier: "2½", poivre: "5 g", sel: "10 g" },
+      { nb: 6, agneau: "540 g", pain: "360 g", oignon: "180 g", laurier: "3", poivre: "6 g", sel: "12 g" },
+      { nb: 7, agneau: "630 g", pain: "420 g", oignon: "210 g", laurier: "3½", poivre: "7 g", sel: "14 g" },
+      { nb: 8, agneau: "720 g", pain: "480 g", oignon: "240 g", laurier: "4", poivre: "8 g", sel: "16 g" },
+      { nb: 9, agneau: "810 g", pain: "540 g", oignon: "270 g", laurier: "4½", poivre: "9 g", sel: "18 g" },
+      { nb: 10, agneau: "900 g", pain: "600 g", oignon: "300 g", laurier: "5", poivre: "10 g", sel: "20 g" },
+      { nb: 11, agneau: "990 g", pain: "660 g", oignon: "330 g", laurier: "5½", poivre: "11 g", sel: "22 g" },
+      { nb: 12, agneau: "1080 g", pain: "720 g", oignon: "360 g", laurier: "6", poivre: "12 g", sel: "24 g" },
+      { nb: 13, agneau: "1170 g", pain: "780 g", oignon: "390 g", laurier: "6½", poivre: "13 g", sel: "26 g" },
+      { nb: 14, agneau: "1260 g", pain: "840 g", oignon: "420 g", laurier: "7", poivre: "14 g", sel: "28 g" },
+      { nb: 15, agneau: "1350 g", pain: "900 g", oignon: "450 g", laurier: "7½", poivre: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "L'agneau", detail: "Couvrez l'agneau d'eau froide, salez, ajoutez le laurier, et faites-le bouillir jusqu'à grande tendreté.", badge: null },
+      { icone: "🍖", titre: "Effilocher", detail: "Sortez la viande, laissez-la tiédir et effilochez-la finement ; gardez le bouillon.", badge: null },
+      { icone: "🍞", titre: "Le pain", detail: "Émiettez le pain plat (légèrement rassis) en petits morceaux, à la main.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Émincez l'oignon très finement.", badge: null },
+      { icone: "🥣", titre: "Le mélange", detail: "Mélangez pain, agneau effiloché, oignon et poivre dans les bols.", badge: null },
+      { icone: "♨️", titre: "Le bouillon", detail: "Portez le bouillon à ébullition et rectifiez son assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Versez le bouillon brûlant sur le mélange au moment de servir. La dograma turkmène !", badge: null }
+    ]
+  },
 });

@@ -77864,5 +77864,345 @@ window.RECETTES_EN = {
     "detail": "Serve the rolls coated in their coconut cream, with a dash of lime. Vanuatu's simboro!"
    }
   ]
+ },
+ "cassavapudding": {
+  "nom": "Solomon Cassava Pudding",
+  "description": "Cassava pudding — the Solomon Islands' sweet: grated cassava mixed with mashed banana and coconut milk, slow-baked (traditionally in a motu stone oven, in banana leaves) into a dense, melting, fragrant cake. The village-feast dessert of the whole Melanesian archipelago.",
+  "etapes": [
+   {
+    "titre": "The cassava",
+    "detail": "Peel and finely grate the cassava, then press it lightly."
+   },
+   {
+    "titre": "The banana",
+    "detail": "Mash the very ripe banana and mix it into the cassava."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Stir in the coconut milk, sugar and salt into an even paste."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Pour into a dish lined with banana leaves (or baking paper)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at medium heat until the pudding is set and golden."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it cool a little: it firms up and cuts better."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into squares and serve warm or cold. Dense and melting — Solomon pudding."
+   }
+  ]
+ },
+ "gromperekichelcher": {
+  "nom": "Gromperekichelcher",
+  "description": "Gromperekichelcher — Luxembourg's potato fritters: grated potatoes mixed with onion, egg and parsley, fried into lacy-edged cakes, crisp outside and soft inside. No one gets through the Schueberfouer or a Luxembourg Christmas market without their aroma!",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Peel and grate the potatoes, then squeeze them hard in a cloth."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Add the grated onion, egg, flour, chopped parsley, salt and pepper."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix into a mass that only just holds together."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a good layer of oil in a wide pan."
+   },
+   {
+    "titre": "Form",
+    "detail": "Drop mounds of batter and flatten into thin, lacy-edged cakes."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until both sides are deeply golden and crisp; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with or without apple sauce. Festival gromperekichelcher!"
+   }
+  ]
+ },
+ "dograma": {
+  "nom": "Dograma",
+  "description": "Dograma — Turkmenistan's festive soup: flatbread crumbled by hand with shredded boiled lamb and raw onion, doused with boiling broth at the moment of serving. Its name means 'to crumble' — prepared collectively, it's the soup of great Turkmen occasions.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Cover the lamb with cold water, salt, add the bay leaf, and boil until very tender."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Take out the meat, let it cool a little and shred it finely; keep the broth."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Crumble the (slightly stale) flatbread into small pieces, by hand."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Slice the onion very finely."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Combine bread, shredded lamb, onion and pepper in the bowls."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Bring the broth to a boil and correct its seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the boiling broth over the mix at the moment of serving. Turkmen dograma!"
+   }
+  ]
+ },
+ "ashlanfu": {
+  "nom": "Ashlan-Fu",
+  "description": "Ashlan-fu — Karakol's cold noodles: wheat noodles tossed with wobbly starch-jelly ribbons, bathed in a cold vinegary tomato-chilli broth. A Dungan dish turned emblem of eastern Kyrgyzstan, it wakes you up — especially in summer, especially after a hike!",
+  "etapes": [
+   {
+    "titre": "The jelly",
+    "detail": "Dissolve the starch in cold water, thicken over low heat while whisking, then set in the fridge as a block."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the noodles, rinse them cold and oil them lightly."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the garlic, add the tomato and chilli, and cook down into a lively sauce."
+   },
+   {
+    "titre": "The cold broth",
+    "detail": "Loosen the sauce with cold water, the vinegar and salt: the broth must bite."
+   },
+   {
+    "titre": "The omelette",
+    "detail": "Make a thin omelette and cut it into ribbons."
+   },
+   {
+    "titre": "The jelly ribbons",
+    "detail": "Unmould the starch jelly and cut it into wobbly ribbons."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Combine noodles, jelly and omelette, pour over the cold broth and serve chilled. Karakol ashlan-fu!"
+   }
+  ]
+ },
+ "ikansabuko": {
+  "nom": "Ikan Sabuko",
+  "description": "Ikan sabuko — East Timor's grilled mackerel: a mackerel marinated with tamarind, lime and chilli, grilled until the skin crackles, served with a Timorese sambal (budu). Briny, tangy and smoky, it's the dish of Dili's shores.",
+  "etapes": [
+   {
+    "titre": "The mackerel",
+    "detail": "Slash the mackerel diagonally on both sides and salt it."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Dissolve the tamarind in a little hot water with the garlic, half the chilli and lime."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the fish and marinate in the fridge."
+   },
+   {
+    "titre": "The budu",
+    "detail": "Mix diced tomato and onion with the remaining chilli, lime, the oil and salt."
+   },
+   {
+    "titre": "The grill",
+    "detail": "Heat a grill or grill pan over high heat."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the mackerel until the skin is crisp and the flesh just pearly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the piping-hot fish topped with budu, with rice. Timorese ikan sabuko!"
+   }
+  ]
+ },
+ "farimasa": {
+  "nom": "Fari Masa",
+  "description": "Fari masa — Niger's fritters: small balls of leavened dough fried until puffed and golden, served with a spicy tomato sauce or dusted with sugar. Sold along Niamey's roads morning and night, eaten piping hot, savoury or sweet.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, a pinch of sugar, the salt and warm water into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise until the dough bubbles."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion, add the tomato and chilli, and cook down into a lively sauce."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Form",
+    "detail": "Scoop balls of dough with a wet spoon and drop them into the oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the fari masa, turning, until puffed and golden; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with the spicy sauce (or dusted with sugar). Nigerien fari masa!"
+   }
+  ]
+ },
+ "boulemil": {
+  "nom": "Boule de Mil",
+  "description": "The boule — the heart of the Chadian table: a millet ball (here semolina) cooked in water and worked until smooth and elastic, served with a long-simmered okra-meat sauce. You pull off a bite of boule and dip it in the sauce — Chad's daily gesture.",
+  "etapes": [
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion and garlic, add the beef pieces and brown them."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the tomato, chilli, salt and water, and simmer until tender."
+   },
+   {
+    "titre": "The okra",
+    "detail": "Add the okra rounds: the sauce turns silky and binding."
+   },
+   {
+    "titre": "The boule",
+    "detail": "Boil salted water and rain in the millet (or wheat) semolina."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Work energetically with a wooden spoon until smooth and elastic."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape the dough into an even ball with a wet hand."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Set the boule in the centre, sauce around, and eat by dipping. The Chadian boule!"
+   }
+  ]
+ },
+ "agatogo": {
+  "nom": "Agatogo",
+  "description": "Agatogo — Rwanda's pot: plantains (or green bananas) simmered with spinach, tomato and peanut paste until everything melds into a creamy, comforting stew. A family dish of the thousand hills, every Rwandan home has its own — green, simple and generous.",
+  "etapes": [
+   {
+    "titre": "The plantains",
+    "detail": "Peel the plantains and cut them into large chunks."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in the oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomato and chilli, and let them melt down."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the plantains, cover with water, salt, and simmer."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Dissolve the peanut paste in a little broth and stir it in."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Add the spinach and continue until the plantains are melting and the sauce creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Roughly crush a few chunks to bind, and serve hot. Rwandan agatogo!"
+   }
+  ]
+ },
+ "makoenya": {
+  "nom": "Makoenya",
+  "description": "Makoenya — Lesotho's fat cakes: balls of barely sweetened leavened dough, fried until golden and puffed, crisp outside and cottony inside. Sold steaming along the roads of the mountain kingdom, eaten plain or with a stew.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, sugar and salt, then knead with warm water into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise until doubled."
+   },
+   {
+    "titre": "Knock back",
+    "detail": "Punch down the dough and divide into even balls."
+   },
+   {
+    "titre": "Relax",
+    "detail": "Let the balls relax a few minutes."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil over medium heat."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the makoenya, turning, until puffed and deeply golden; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, plain or with a stew. Crisp and cottony — Basotho makoenya!"
+   }
+  ]
+ },
+ "titiwiakra": {
+  "nom": "Titiwi Akra",
+  "description": "Titiwi akra — Dominica's fritters: tiny river fry (titiwis, netted at river mouths — here flaked fish) folded into a thyme-and-chilli batter, fried into golden fritters. The nature island's signature appetizer, crisp and briny.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Finely flake the fish (or use tiny whole fry) and add lime."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour, baking powder, salt, thyme and water into a thick batter."
+   },
+   {
+    "titre": "Spike",
+    "detail": "Fold in the chopped onion and garlic, the chilli and the fish."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest a few minutes."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop in spoonfuls of batter and fry until the akras are golden; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a dash of lime. Crisp and briny — Dominica's akras!"
+   }
+  ]
  }
 };

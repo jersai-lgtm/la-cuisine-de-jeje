@@ -9194,4 +9194,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tiède, nappé de lolo. Moelleux et régressif — le faikakai tongien.", badge: null }
     ]
   },
+  cassavapudding: {
+    dateAjout: "2026-07-23T18:00:00",
+    nom: "Pudding de Manioc Salomon",
+    cat: "desserts", pays: "ilessalomon",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Pudding de manioc — la douceur des Îles Salomon : du manioc râpé mêlé de banane écrasée et de lait de coco, cuit lentement (traditionnellement au four de pierres motu, en feuilles de bananier) en un gâteau dense, fondant et parfumé. Le dessert des fêtes de village de tout l'archipel mélanésien.",
+    tableauCassavapudding: [
+      { nb: 1, manioc: "110 g", banane: "50 g", laitcoco: "50 ml", sucre: "12 g", sel: "1 g" },
+      { nb: 2, manioc: "220 g", banane: "100 g", laitcoco: "100 ml", sucre: "24 g", sel: "2 g" },
+      { nb: 3, manioc: "330 g", banane: "150 g", laitcoco: "150 ml", sucre: "36 g", sel: "3 g" },
+      { nb: 4, manioc: "440 g", banane: "200 g", laitcoco: "200 ml", sucre: "48 g", sel: "4 g" },
+      { nb: 5, manioc: "550 g", banane: "250 g", laitcoco: "250 ml", sucre: "60 g", sel: "5 g" },
+      { nb: 6, manioc: "660 g", banane: "300 g", laitcoco: "300 ml", sucre: "72 g", sel: "6 g" },
+      { nb: 7, manioc: "770 g", banane: "350 g", laitcoco: "350 ml", sucre: "84 g", sel: "7 g" },
+      { nb: 8, manioc: "880 g", banane: "400 g", laitcoco: "400 ml", sucre: "96 g", sel: "8 g" },
+      { nb: 9, manioc: "990 g", banane: "450 g", laitcoco: "450 ml", sucre: "108 g", sel: "9 g" },
+      { nb: 10, manioc: "1100 g", banane: "500 g", laitcoco: "500 ml", sucre: "120 g", sel: "10 g" },
+      { nb: 11, manioc: "1210 g", banane: "550 g", laitcoco: "550 ml", sucre: "132 g", sel: "11 g" },
+      { nb: 12, manioc: "1320 g", banane: "600 g", laitcoco: "600 ml", sucre: "144 g", sel: "12 g" },
+      { nb: 13, manioc: "1430 g", banane: "650 g", laitcoco: "650 ml", sucre: "156 g", sel: "13 g" },
+      { nb: 14, manioc: "1540 g", banane: "700 g", laitcoco: "700 ml", sucre: "168 g", sel: "14 g" },
+      { nb: 15, manioc: "1650 g", banane: "750 g", laitcoco: "750 ml", sucre: "180 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Le manioc", detail: "Épluchez et râpez finement le manioc, puis pressez-le légèrement.", badge: null },
+      { icone: "🍌", titre: "La banane", detail: "Écrasez la banane bien mûre et mélangez-la au manioc.", badge: null },
+      { icone: "🥥", titre: "L'appareil", detail: "Incorporez le lait de coco, le sucre et le sel en une pâte homogène.", badge: null },
+      { icone: "🍃", titre: "Le moule", detail: "Versez dans un plat tapissé de feuilles de bananier (ou de papier cuisson).", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four moyen jusqu'à ce que le pudding soit pris et doré.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez tiédir : il se raffermit et se découpe mieux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupez en carrés et servez tiède ou froid. Dense et fondant — le pudding salomonais.", badge: null }
+    ]
+  },
 });
