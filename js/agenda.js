@@ -44,7 +44,10 @@
   // === Construire le contexte selon le type ==================================
   function construireContexte(type) {
     if (type === "recette") {
-      const cle = (typeof _recetteActuelleModal !== "undefined" && _recetteActuelleModal) || null;
+      // _ficheOuverte est posé par ouvrirFiche() ; _recetteActuelleModal en repli
+      const cle = window._ficheOuverte
+        || (typeof _recetteActuelleModal !== "undefined" && _recetteActuelleModal)
+        || null;
       if (!cle || typeof recettes === "undefined" || !recettes[cle]) return null;
       const r = recettes[cle];
       const nom = nomRecette(cle);
