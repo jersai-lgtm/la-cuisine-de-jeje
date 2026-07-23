@@ -3320,6 +3320,70 @@ select, input[type="number"] {
   border-color: rgba(255, 200, 100, 0.5);
 }
 
+/* === Bouton 📅 « Planifier dans l'agenda » (fiche recette, v263) === */
+.btn-agenda-recette {
+  background: rgba(var(--w), 0.08);
+  border: 1px solid rgba(var(--w), 0.15);
+  font-size: 17px;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 132px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .2s, background .2s, border-color .2s;
+}
+.btn-agenda-recette:hover {
+  transform: scale(1.1);
+  background: rgba(var(--accent-rgb), 0.18);
+  border-color: rgba(var(--accent-rgb), 0.5);
+}
+
+/* === Modal « Planifier » (agenda, v263) === */
+.agenda-label { display: block; text-align: left; font-size: 13px; color: var(--text-3); margin: 12px 0 6px; font-weight: 600; }
+.agenda-input {
+  width: 100%; box-sizing: border-box;
+  background: var(--surface-1); color: var(--text);
+  border: 1px solid rgba(var(--w), .15); border-radius: 12px;
+  padding: 10px 12px; font-size: 15px; font-family: inherit;
+  color-scheme: dark;
+}
+html[data-theme="light"] .agenda-input { color-scheme: light; }
+.agenda-moments { display: flex; gap: 8px; flex-wrap: wrap; }
+.agenda-moment {
+  flex: 1; min-width: 72px;
+  background: rgba(var(--w), .06); border: 1px solid rgba(var(--w), .15);
+  color: var(--text-2); border-radius: 12px; padding: 9px 6px;
+  font-size: 13px; cursor: pointer; font-family: inherit;
+}
+.agenda-moment.actif {
+  background: rgba(var(--accent-rgb), .18);
+  border-color: var(--accent);
+  color: var(--text); font-weight: 700;
+}
+.agenda-btn-ics {
+  width: 100%; margin-top: 8px;
+  background: none; border: 1px solid rgba(var(--w), .2);
+  color: var(--text-2); border-radius: 12px; padding: 11px;
+  font-size: 14px; cursor: pointer; font-family: inherit;
+}
+.agenda-btn-ics:hover { background: rgba(var(--w), .06); }
+
+/* Bouton 📅 « Rappel courses » (liste de courses, v263) */
+.lc-btn-agenda {
+  background: rgba(var(--w), .08);
+  color: var(--text);
+  border: 1px solid rgba(var(--w), .2);
+  border-radius: 50px;
+  padding: 12px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.lc-btn-agenda:hover { background: rgba(var(--w), .14); }
+
 .btn-cuisine-recette.cuisine-active {
   background: linear-gradient(135deg, #ff9c44, #ffb74d);
   border-color: #ff9c44;

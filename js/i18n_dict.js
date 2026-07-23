@@ -129,6 +129,10 @@ window.I18N_DICT = {
   "Un commentaire ? Qu'est-ce qui te plaît / déplaît ? (optionnel)": "Any comment? What do you like / dislike? (optional)",
   "💌 Envoyer mon avis": "💌 Send my review",
   "⭐ Tous les avis": "⭐ All reviews", "Les avis sont affichés anonymement.": "Reviews are shown anonymously.",
+  "📅 Planifier": "📅 Schedule", "Quel jour ?": "Which day?", "Quel moment ?": "What time of day?",
+  "Matin": "Morning", "Midi": "Lunch", "Après-midi": "Afternoon", "Soir": "Evening",
+  "📅 Ouvrir dans Google Agenda": "📅 Open in Google Calendar", "💾 Fichier .ics (autres agendas)": "💾 .ics file (other calendars)",
+  "📅 Rappel courses": "📅 Shopping reminder", "Planifier dans l'agenda": "Add to calendar",
   "✏️ Donner mon avis": "✏️ Share my review", "Sans commentaire": "No comment",
   "Aucun avis pour l'instant.": "No reviews yet.",
 
