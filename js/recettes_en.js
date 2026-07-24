@@ -78204,5 +78204,39 @@ window.RECETTES_EN = {
     "detail": "Serve piping hot, with a dash of lime. Crisp and briny — Dominica's akras!"
    }
   ]
+ },
+ "marquisette": {
+  "nom": "Marquisette",
+  "description": "Marquisette — THE punch of French village fêtes (Bresse and Ain first): dry white wine macerated overnight with lemon, orange, sugar and a dash of rum, topped with ice-cold lemonade at serving time. Sparkling, fresh and dangerously easy to drink — the drink of country balls, fairs and weddings.",
+  "etapes": [
+   {
+    "titre": "The citrus",
+    "detail": "Wash the lemon and orange, and cut them into thin rounds (with the peel)."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "In a large bowl or dispenser, mix the citrus with the sugar."
+   },
+   {
+    "titre": "The rum",
+    "detail": "Pour in the rum and let the citrus soak a few minutes."
+   },
+   {
+    "titre": "The white wine",
+    "detail": "Add the chilled dry white wine and stir to dissolve the sugar."
+   },
+   {
+    "titre": "Macerate",
+    "detail": "Cover and macerate in the fridge, ideally overnight (12 h)."
+   },
+   {
+    "titre": "The lemonade",
+    "detail": "At serving time, pour in the ice-cold lemonade and stir gently to keep the bubbles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled in glasses with ice and a citrus round. Cheers — marquisette! (Drink responsibly.)"
+   }
+  ]
  }
 };

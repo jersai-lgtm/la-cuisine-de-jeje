@@ -1601,4 +1601,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud. À consommer avec modération.", badge: null }
     ]
   },
+  marquisette: {
+    dateAjout: "2026-07-24T10:00:00",
+    nom: "Marquisette",
+    cat: "cocktails", pays: "france",
+    base: 4,
+    temps: "15 min + macération",
+    niveau: "⭐ Facile",
+    emoji: "🥂",
+    description: "Marquisette — LE punch des fêtes de village françaises (Bresse et Ain en tête) : du vin blanc sec macéré une nuit avec citron, orange, sucre et un trait de rhum, allongé de limonade bien glacée au moment de servir. Pétillante, fraîche et dangereusement facile à boire — la boisson des bals, kermesses et mariages champêtres.",
+    tableauMarquisette: [
+      { nb: 1, vinblanc: "120 ml", limonade: "80 ml", rhum: "10 ml", sucre: "10 g", citron: "¼", orange: "¼" },
+      { nb: 2, vinblanc: "240 ml", limonade: "160 ml", rhum: "20 ml", sucre: "20 g", citron: "½", orange: "½" },
+      { nb: 3, vinblanc: "360 ml", limonade: "240 ml", rhum: "30 ml", sucre: "30 g", citron: "¾", orange: "¾" },
+      { nb: 4, vinblanc: "480 ml", limonade: "320 ml", rhum: "40 ml", sucre: "40 g", citron: "1", orange: "1" },
+      { nb: 5, vinblanc: "600 ml", limonade: "400 ml", rhum: "50 ml", sucre: "50 g", citron: "1¼", orange: "1¼" },
+      { nb: 6, vinblanc: "720 ml", limonade: "480 ml", rhum: "60 ml", sucre: "60 g", citron: "1½", orange: "1½" },
+      { nb: 7, vinblanc: "840 ml", limonade: "560 ml", rhum: "70 ml", sucre: "70 g", citron: "1¾", orange: "1¾" },
+      { nb: 8, vinblanc: "960 ml", limonade: "640 ml", rhum: "80 ml", sucre: "80 g", citron: "2", orange: "2" },
+      { nb: 9, vinblanc: "1080 ml", limonade: "720 ml", rhum: "90 ml", sucre: "90 g", citron: "2¼", orange: "2¼" },
+      { nb: 10, vinblanc: "1200 ml", limonade: "800 ml", rhum: "100 ml", sucre: "100 g", citron: "2½", orange: "2½" },
+      { nb: 11, vinblanc: "1320 ml", limonade: "880 ml", rhum: "110 ml", sucre: "110 g", citron: "2¾", orange: "2¾" },
+      { nb: 12, vinblanc: "1440 ml", limonade: "960 ml", rhum: "120 ml", sucre: "120 g", citron: "3", orange: "3" },
+      { nb: 13, vinblanc: "1560 ml", limonade: "1040 ml", rhum: "130 ml", sucre: "130 g", citron: "3¼", orange: "3¼" },
+      { nb: 14, vinblanc: "1680 ml", limonade: "1120 ml", rhum: "140 ml", sucre: "140 g", citron: "3½", orange: "3½" },
+      { nb: 15, vinblanc: "1800 ml", limonade: "1200 ml", rhum: "150 ml", sucre: "150 g", citron: "3¾", orange: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Les agrumes", detail: "Lavez le citron et l'orange, et coupez-les en fines rondelles (avec la peau).", badge: null },
+      { icone: "🍬", titre: "Sucrer", detail: "Dans un grand saladier ou une bonbonne, mélangez les agrumes avec le sucre.", badge: null },
+      { icone: "🥃", titre: "Le rhum", detail: "Versez le rhum et laissez les agrumes s'imprégner quelques minutes.", badge: null },
+      { icone: "🍾", titre: "Le vin blanc", detail: "Ajoutez le vin blanc sec bien frais et remuez pour dissoudre le sucre.", badge: null },
+      { icone: "🌙", titre: "Macérer", detail: "Couvrez et laissez macérer au réfrigérateur, idéalement une nuit (12 h).", badge: null },
+      { icone: "✨", titre: "La limonade", detail: "Au moment de servir, versez la limonade glacée et remuez délicatement pour garder les bulles.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien frais dans des verres avec des glaçons et une rondelle d'agrume. Santé — la marquisette ! (À consommer avec modération.)", badge: null }
+    ]
+  },
 });
