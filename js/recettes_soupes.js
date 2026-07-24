@@ -5486,4 +5486,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Versez le bouillon brûlant sur le mélange au moment de servir. La dograma turkmène !", badge: null }
     ]
   },
+  urojo: {
+    dateAjout: "2026-07-24T11:04:00",
+    nom: "Urojo",
+    cat: "soupes", pays: "tanzanie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍋",
+    description: "Urojo — le « Zanzibar mix » : une soupe jaune curcuma-citron, épaisse et acidulée, garnie de pommes de terre, de beignets de pois chiche (bhajia) croustillants et d'un trait de coco-piment. Vendue aux Forodhani Gardens de Stone Town, c'est LA street food de Zanzibar — un feu d'artifice de textures.",
+    tableauUrojo: [
+      { nb: 1, pommedeterre: "70 g", farinepoischiche: "40 g", curcuma: "1.5 g", citron: "½", laitcoco: "30 ml", ail: "1", piment: "1 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, pommedeterre: "140 g", farinepoischiche: "80 g", curcuma: "3 g", citron: "1", laitcoco: "60 ml", ail: "2", piment: "2 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, pommedeterre: "210 g", farinepoischiche: "120 g", curcuma: "4.5 g", citron: "1½", laitcoco: "90 ml", ail: "3", piment: "3 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, pommedeterre: "280 g", farinepoischiche: "160 g", curcuma: "6 g", citron: "2", laitcoco: "120 ml", ail: "4", piment: "4 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, pommedeterre: "350 g", farinepoischiche: "200 g", curcuma: "7.5 g", citron: "2½", laitcoco: "150 ml", ail: "5", piment: "5 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, pommedeterre: "420 g", farinepoischiche: "240 g", curcuma: "9 g", citron: "3", laitcoco: "180 ml", ail: "6", piment: "6 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, pommedeterre: "490 g", farinepoischiche: "280 g", curcuma: "10.5 g", citron: "3½", laitcoco: "210 ml", ail: "7", piment: "7 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, pommedeterre: "560 g", farinepoischiche: "320 g", curcuma: "12 g", citron: "4", laitcoco: "240 ml", ail: "8", piment: "8 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, pommedeterre: "630 g", farinepoischiche: "360 g", curcuma: "13.5 g", citron: "4½", laitcoco: "270 ml", ail: "9", piment: "9 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, pommedeterre: "700 g", farinepoischiche: "400 g", curcuma: "15 g", citron: "5", laitcoco: "300 ml", ail: "10", piment: "10 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, pommedeterre: "770 g", farinepoischiche: "440 g", curcuma: "16.5 g", citron: "5½", laitcoco: "330 ml", ail: "11", piment: "11 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, pommedeterre: "840 g", farinepoischiche: "480 g", curcuma: "18 g", citron: "6", laitcoco: "360 ml", ail: "12", piment: "12 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, pommedeterre: "910 g", farinepoischiche: "520 g", curcuma: "19.5 g", citron: "6½", laitcoco: "390 ml", ail: "13", piment: "13 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, pommedeterre: "980 g", farinepoischiche: "560 g", curcuma: "21 g", citron: "7", laitcoco: "420 ml", ail: "14", piment: "14 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, pommedeterre: "1050 g", farinepoischiche: "600 g", curcuma: "22.5 g", citron: "7½", laitcoco: "450 ml", ail: "15", piment: "15 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Faites cuire les pommes de terre en dés à l'eau salée, et réservez-les.", badge: null },
+      { icone: "🍲", titre: "La base", detail: "Délayez la moitié de la farine de pois chiche dans l'eau avec curcuma, ail et sel, et faites épaissir en soupe veloutée.", badge: null },
+      { icone: "🍋", titre: "Acidulé", detail: "Ajoutez le jus de citron et le lait de coco : la soupe doit être jaune vif et acidulée.", badge: null },
+      { icone: "🥣", titre: "Les bhajia", detail: "Mélangez le reste de farine de pois chiche avec de l'eau, du sel et du piment en pâte épaisse.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire des cuillerées de pâte en petits beignets dorés ; égouttez.", badge: null },
+      { icone: "🥔", titre: "Assembler", detail: "Répartissez pommes de terre et bhajia dans les bols.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Versez la soupe brûlante par-dessus et relevez de piment. L'urojo de Zanzibar !", badge: null }
+    ]
+  },
 });

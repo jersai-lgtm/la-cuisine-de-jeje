@@ -3309,4 +3309,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, avec un trait de citron vert. Croustillants et iodés — les akras de la Dominique !", badge: null }
     ]
   },
+  cigkofte: {
+    dateAjout: "2026-07-24T11:09:00",
+    nom: "Çiğ Köfte",
+    cat: "aperitifs", pays: "turquie",
+    base: 4,
+    temps: "45 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌶️",
+    description: "Çiğ köfte — les boulettes pétries de Turquie (version végétarienne, celle des stands d'Istanbul) : du boulgour fin longuement pétri avec tomate, oignon, ail, noix et une avalanche d'épices, façonné en quenelles pressées à la main. Servies en feuille de salade avec un trait de citron — addictif !",
+    tableauCigkofte: [
+      { nb: 1, boulgour: "60 g", tomate: "25 g", concentretomate: "10 g", oignon: "20 g", ail: "1", noix: "15 g", piment: "2 g", paprika: "1.5 g", cumin: "1 g", citron: "¼", huileolive: "10 ml", salade: "15 g", sel: "2 g" },
+      { nb: 2, boulgour: "120 g", tomate: "50 g", concentretomate: "20 g", oignon: "40 g", ail: "2", noix: "30 g", piment: "4 g", paprika: "3 g", cumin: "2 g", citron: "½", huileolive: "20 ml", salade: "30 g", sel: "4 g" },
+      { nb: 3, boulgour: "180 g", tomate: "75 g", concentretomate: "30 g", oignon: "60 g", ail: "3", noix: "45 g", piment: "6 g", paprika: "4.5 g", cumin: "3 g", citron: "¾", huileolive: "30 ml", salade: "45 g", sel: "6 g" },
+      { nb: 4, boulgour: "240 g", tomate: "100 g", concentretomate: "40 g", oignon: "80 g", ail: "4", noix: "60 g", piment: "8 g", paprika: "6 g", cumin: "4 g", citron: "1", huileolive: "40 ml", salade: "60 g", sel: "8 g" },
+      { nb: 5, boulgour: "300 g", tomate: "125 g", concentretomate: "50 g", oignon: "100 g", ail: "5", noix: "75 g", piment: "10 g", paprika: "7.5 g", cumin: "5 g", citron: "1¼", huileolive: "50 ml", salade: "75 g", sel: "10 g" },
+      { nb: 6, boulgour: "360 g", tomate: "150 g", concentretomate: "60 g", oignon: "120 g", ail: "6", noix: "90 g", piment: "12 g", paprika: "9 g", cumin: "6 g", citron: "1½", huileolive: "60 ml", salade: "90 g", sel: "12 g" },
+      { nb: 7, boulgour: "420 g", tomate: "175 g", concentretomate: "70 g", oignon: "140 g", ail: "7", noix: "105 g", piment: "14 g", paprika: "10.5 g", cumin: "7 g", citron: "1¾", huileolive: "70 ml", salade: "105 g", sel: "14 g" },
+      { nb: 8, boulgour: "480 g", tomate: "200 g", concentretomate: "80 g", oignon: "160 g", ail: "8", noix: "120 g", piment: "16 g", paprika: "12 g", cumin: "8 g", citron: "2", huileolive: "80 ml", salade: "120 g", sel: "16 g" },
+      { nb: 9, boulgour: "540 g", tomate: "225 g", concentretomate: "90 g", oignon: "180 g", ail: "9", noix: "135 g", piment: "18 g", paprika: "13.5 g", cumin: "9 g", citron: "2¼", huileolive: "90 ml", salade: "135 g", sel: "18 g" },
+      { nb: 10, boulgour: "600 g", tomate: "250 g", concentretomate: "100 g", oignon: "200 g", ail: "10", noix: "150 g", piment: "20 g", paprika: "15 g", cumin: "10 g", citron: "2½", huileolive: "100 ml", salade: "150 g", sel: "20 g" },
+      { nb: 11, boulgour: "660 g", tomate: "275 g", concentretomate: "110 g", oignon: "220 g", ail: "11", noix: "165 g", piment: "22 g", paprika: "16.5 g", cumin: "11 g", citron: "2¾", huileolive: "110 ml", salade: "165 g", sel: "22 g" },
+      { nb: 12, boulgour: "720 g", tomate: "300 g", concentretomate: "120 g", oignon: "240 g", ail: "12", noix: "180 g", piment: "24 g", paprika: "18 g", cumin: "12 g", citron: "3", huileolive: "120 ml", salade: "180 g", sel: "24 g" },
+      { nb: 13, boulgour: "780 g", tomate: "325 g", concentretomate: "130 g", oignon: "260 g", ail: "13", noix: "195 g", piment: "26 g", paprika: "19.5 g", cumin: "13 g", citron: "3¼", huileolive: "130 ml", salade: "195 g", sel: "26 g" },
+      { nb: 14, boulgour: "840 g", tomate: "350 g", concentretomate: "140 g", oignon: "280 g", ail: "14", noix: "210 g", piment: "28 g", paprika: "21 g", cumin: "14 g", citron: "3½", huileolive: "140 ml", salade: "210 g", sel: "28 g" },
+      { nb: 15, boulgour: "900 g", tomate: "375 g", concentretomate: "150 g", oignon: "300 g", ail: "15", noix: "225 g", piment: "30 g", paprika: "22.5 g", cumin: "15 g", citron: "3¾", huileolive: "150 ml", salade: "225 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Le boulgour", detail: "Humectez le boulgour fin d'eau chaude et laissez-le gonfler sous un linge.", badge: null },
+      { icone: "🥣", titre: "La base", detail: "Ajoutez le concentré et la tomate râpée, l'oignon et l'ail très finement hachés.", badge: null },
+      { icone: "🌶️", titre: "Les épices", detail: "Ajoutez piment, paprika, cumin, sel, les noix hachées et l'huile.", badge: null },
+      { icone: "💪", titre: "Pétrir", detail: "Pétrissez longuement (10-15 min) en mouillant vos mains : la masse devient liée, souple et rouge sombre.", badge: null },
+      { icone: "🍋", titre: "Équilibrer", detail: "Ajoutez le jus de citron et goûtez : épicé, acidulé, profond.", badge: null },
+      { icone: "🤏", titre: "Façonner", detail: "Pressez des portions dans le poing pour former les köfte striés typiques.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez dans des feuilles de salade avec du citron. Les çiğ köfte d'Istanbul — addictifs !", badge: null }
+    ]
+  },
 });

@@ -78238,5 +78238,345 @@ window.RECETTES_EN = {
     "detail": "Serve well chilled in glasses with ice and a citrus round. Cheers — marquisette! (Drink responsibly.)"
    }
   ]
+ },
+ "shantofu": {
+  "nom": "Shan Tofu",
+  "description": "Shan tofu — Burma's soy-free tofu: a turmeric chickpea-flour cream set into a golden, silky block, served warm or cold as a salad with garlic oil, toasted sesame, lime and chilli. A Shan State specialty, a creamy, fragrant plant-based marvel.",
+  "etapes": [
+   {
+    "titre": "The cream",
+    "detail": "Whisk the chickpea flour with the turmeric, salt and cold water, lump-free."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Thicken over low heat, whisking constantly: the cream must coat very thickly and shine."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into an oiled dish, smooth and let set at room temperature then in the fridge."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Unmould the golden block and cut into cubes or slices."
+   },
+   {
+    "titre": "The garlic oil",
+    "detail": "Brown the sliced garlic in the oil, and dry-toast the sesame."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Drizzle the tofu with garlic oil, lime, chilli and sesame."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, as a salad. Silky and fragrant — Burmese Shan tofu."
+   }
+  ]
+ },
+ "katkatbanane": {
+  "nom": "Kat Kat Banane",
+  "description": "Kat kat banane — the Seychellois Creole stew: melting green bananas cooked in a gingery coconut milk with fish, until the sauce coats. Gentle, island-born and comforting, it's an everyday Seychelles dish, often made with fresh tuna.",
+  "etapes": [
+   {
+    "titre": "The bananas",
+    "detail": "Peel the green bananas (under water to avoid stains) and cut into chunks."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften the onion with the grated ginger."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and a little water, salt, add the chilli."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the bananas and simmer gently."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Lay the fish pieces over the bananas."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Continue until bananas and fish are melting and the sauce silky."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot. Gentle and creamy — Seychellois kat kat banane."
+   }
+  ]
+ },
+ "cunape": {
+  "nom": "Cuñapé",
+  "description": "Cuñapé — Bolivia's cheese buns: cassava starch kneaded with grated cheese and egg, baked into golden balls, crisp outside and soft-stringy inside. Cousins of Brazilian pão de queijo, they go with afternoon coffee in Santa Cruz.",
+  "etapes": [
+   {
+    "titre": "The cheese",
+    "detail": "Finely grate the cheese."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the cassava starch (tapioca), baking powder, sugar and salt, then add cheese, egg, soft butter and milk."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead into a soft dough that holds (adjust with a little milk or starch)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll small even balls."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a hot oven until the cuñapés are puffed and golden."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Let them cool 5 minutes: the inside stays soft and stringy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, with coffee. Crisp and stringy — Bolivian cuñapés."
+   }
+  ]
+ },
+ "fugazzeta": {
+  "nom": "Fugazzeta",
+  "description": "Fugazzeta — Buenos Aires' pizza: a thick, soft dough STUFFED with melting cheese, topped with a mountain of oregano-scented sliced onions. Born in the Italo-Argentine pizzerias of La Boca, tomato-free and utterly indulgent — the cheese pulls with every slice.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, salt, oil and warm water into a soft dough; let it rise."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Finely slice the onions, salt them lightly and let them release water."
+   },
+   {
+    "titre": "The bases",
+    "detail": "Divide the dough in two and roll out two discs."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Lay the first disc in an oiled tin, cover with mozzarella, seal with the second disc."
+   },
+   {
+    "titre": "The mountain",
+    "detail": "Cover the whole surface with drained onions, oregano and a drizzle of oil."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a very hot oven until the onions brown and the cheese melts through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut thick slices — the cheese must pull. Porteña fugazzeta!"
+   }
+  ]
+ },
+ "urojo": {
+  "nom": "Urojo",
+  "description": "Urojo — the 'Zanzibar mix': a turmeric-lemon yellow soup, thick and tangy, loaded with potatoes, crispy chickpea fritters (bhajia) and a dash of coconut and chilli. Sold at Stone Town's Forodhani Gardens, it's THE Zanzibar street food — a fireworks of textures.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Boil the diced potatoes in salted water, and set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Dissolve half the chickpea flour in water with turmeric, garlic and salt, and thicken into a velvety soup."
+   },
+   {
+    "titre": "Tangy",
+    "detail": "Add the lemon juice and coconut milk: the soup must be bright yellow and tangy."
+   },
+   {
+    "titre": "The bhajia",
+    "detail": "Mix the remaining chickpea flour with water, salt and chilli into a thick batter."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry spoonfuls of batter into small golden fritters; drain."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Divide potatoes and bhajia between bowls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the piping-hot soup over and spike with chilli. Zanzibar urojo!"
+   }
+  ]
+ },
+ "kinilaw": {
+  "nom": "Kinilaw",
+  "description": "Kinilaw — the Filipino 'ceviche', older than the Spanish: very fresh fish 'cooked' in vinegar and calamansi (here lime), spiked with ginger, onion and chilli, softened with a cloud of coconut milk. Bright, briny and pure — the taste of the Visayas in a bowl.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the very fresh fish into even cubes."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Give them a quick first rinse in vinegar, then drain (the traditional gesture)."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the fine ginger julienne, sliced onion and chilli."
+   },
+   {
+    "titre": "'Cook'",
+    "detail": "Douse with vinegar and lime juice, salt, and let it 'cook' 10-15 minutes in the fridge."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Add the coconut milk and mix gently."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: bright, tangy, barely creamy — correct salt and chilli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, at once. Bright and briny — Filipino kinilaw."
+   }
+  ]
+ },
+ "glamorgansausages": {
+  "nom": "Glamorgan Sausages",
+  "description": "Glamorgan sausages — Wales' vegetarian 'sausages': a mix of cheese (Caerphilly), softened leek and breadcrumbs, bound with egg and mustard, shaped into breaded logs and pan-browned. A Welsh institution since the 19th century — crisp outside, melting inside.",
+  "etapes": [
+   {
+    "titre": "The leek",
+    "detail": "Finely slice the leek and soften it gently without colouring."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Combine the grated cheese, two-thirds of the breadcrumbs, the leek, mustard, salt and pepper."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add half the egg and work into a mass that holds."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape small even 'sausages' and firm them up in the fridge."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Dredge in flour, the remaining egg, then the remaining breadcrumbs."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Pan-brown them on all sides over medium heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with salad or chutney. Welsh Glamorgan sausages!"
+   }
+  ]
+ },
+ "tlayuda": {
+  "nom": "Tlayuda",
+  "description": "Tlayuda — the 'Oaxacan pizza': a large corn tortilla grilled until crisp, spread with black-bean purée, covered with melting cheese, avocado, tomato and crunchy lettuce. The emblem of Oaxaca street food, folded or shared — always hot off the comal.",
+  "etapes": [
+   {
+    "titre": "The tortilla",
+    "detail": "Mix the corn flour, salt and hot water, and roll out one large thin tortilla."
+   },
+   {
+    "titre": "Pre-cook",
+    "detail": "Cook it dry on a very hot pan, both sides, without colouring."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Mash the cooked black beans with the garlic and a little oil into a spreadable purée."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "Slice the avocado, dice the tomato, shred the lettuce."
+   },
+   {
+    "titre": "Build",
+    "detail": "Spread the tortilla with bean purée and cover with grated cheese."
+   },
+   {
+    "titre": "Crisp",
+    "detail": "Return to the heat (or under the grill) until the cheese melts and the tortilla crisps."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with avocado, tomato and lettuce, and serve at once. Oaxaca tlayuda!"
+   }
+  ]
+ },
+ "pinsa": {
+  "nom": "Pinsa Romana",
+  "description": "Pinsa romana — pizza's lighter cousin: a highly hydrated dough of wheat and rice flour, long-rested, stretched into an oval with the fingertips — ultra-crisp crust, airy and digestible crumb. Topped after baking with tomato, mozzarella and rocket, it's Rome's darling.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flours, yeast, salt and plenty of cold water (very sticky dough) with a drizzle of oil."
+   },
+   {
+    "titre": "Long rest",
+    "detail": "Let it rise, then rest in the fridge for hours (ideally 24 h): the dough airs and digests better."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "On a bed of rice flour, stretch the dough into an oval with your fingertips, without crushing it."
+   },
+   {
+    "titre": "Pre-bake",
+    "detail": "Bake the oval in a very hot oven until it puffs and browns — crisp outside, airy inside."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Spread the seasoned crushed tomato and return briefly to the oven."
+   },
+   {
+    "titre": "Top",
+    "detail": "Out of the oven, scatter the torn mozzarella."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with rocket and a drizzle of olive oil, and serve at once. Pinsa romana!"
+   }
+  ]
+ },
+ "cigkofte": {
+  "nom": "Çiğ Köfte",
+  "description": "Çiğ köfte — Turkey's kneaded bulgur bites (the vegetarian version, the one of Istanbul's stands): fine bulgur long-kneaded with tomato, onion, garlic, walnuts and an avalanche of spices, pressed by hand into ridged quenelles. Served in lettuce leaves with a squeeze of lemon — addictive!",
+  "etapes": [
+   {
+    "titre": "The bulgur",
+    "detail": "Moisten the fine bulgur with hot water and let it swell under a cloth."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the tomato paste and grated tomato, the very finely chopped onion and garlic."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add chilli, paprika, cumin, salt, the chopped walnuts and the oil."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead at length (10-15 min), wetting your hands: the mass turns bound, supple and deep red."
+   },
+   {
+    "titre": "Balance",
+    "detail": "Add the lemon juice and taste: spicy, tangy, deep."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Press portions in your fist to form the typical ridged köfte."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in lettuce leaves with lemon. Istanbul çiğ köfte — addictive!"
+   }
+  ]
  }
 };

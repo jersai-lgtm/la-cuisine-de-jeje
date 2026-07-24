@@ -3292,4 +3292,78 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, avec du pain frais à tremper. Irrésistible — la fërgesë de Tirana.", badge: null }
     ]
   },
+  shantofu: {
+    dateAjout: "2026-07-24T11:00:00",
+    nom: "Tofu Shan",
+    cat: "entrees", pays: "birmanie",
+    base: 4,
+    temps: "30 min + prise",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧈",
+    description: "Tofu shan — le tofu SANS soja de Birmanie : une crème de farine de pois chiche au curcuma, prise en bloc doré et soyeux, servie tiède ou froide en salade avec huile d'ail, sésame grillé, citron vert et piment. Spécialité de l'État Shan, c'est une merveille végétale, crémeuse et parfumée.",
+    tableauShantofu: [
+      { nb: 1, farinepoischiche: "50 g", curcuma: "1 g", ail: "1", sesame: "3 g", citronvert: "¼", piment: "0.5 g", huileolive: "8 ml", sel: "1.5 g" },
+      { nb: 2, farinepoischiche: "100 g", curcuma: "2 g", ail: "2", sesame: "6 g", citronvert: "½", piment: "1 g", huileolive: "16 ml", sel: "3 g" },
+      { nb: 3, farinepoischiche: "150 g", curcuma: "3 g", ail: "3", sesame: "9 g", citronvert: "¾", piment: "1.5 g", huileolive: "24 ml", sel: "4.5 g" },
+      { nb: 4, farinepoischiche: "200 g", curcuma: "4 g", ail: "4", sesame: "12 g", citronvert: "1", piment: "2 g", huileolive: "32 ml", sel: "6 g" },
+      { nb: 5, farinepoischiche: "250 g", curcuma: "5 g", ail: "5", sesame: "15 g", citronvert: "1¼", piment: "2.5 g", huileolive: "40 ml", sel: "7.5 g" },
+      { nb: 6, farinepoischiche: "300 g", curcuma: "6 g", ail: "6", sesame: "18 g", citronvert: "1½", piment: "3 g", huileolive: "48 ml", sel: "9 g" },
+      { nb: 7, farinepoischiche: "350 g", curcuma: "7 g", ail: "7", sesame: "21 g", citronvert: "1¾", piment: "3.5 g", huileolive: "56 ml", sel: "10.5 g" },
+      { nb: 8, farinepoischiche: "400 g", curcuma: "8 g", ail: "8", sesame: "24 g", citronvert: "2", piment: "4 g", huileolive: "64 ml", sel: "12 g" },
+      { nb: 9, farinepoischiche: "450 g", curcuma: "9 g", ail: "9", sesame: "27 g", citronvert: "2¼", piment: "4.5 g", huileolive: "72 ml", sel: "13.5 g" },
+      { nb: 10, farinepoischiche: "500 g", curcuma: "10 g", ail: "10", sesame: "30 g", citronvert: "2½", piment: "5 g", huileolive: "80 ml", sel: "15 g" },
+      { nb: 11, farinepoischiche: "550 g", curcuma: "11 g", ail: "11", sesame: "33 g", citronvert: "2¾", piment: "5.5 g", huileolive: "88 ml", sel: "16.5 g" },
+      { nb: 12, farinepoischiche: "600 g", curcuma: "12 g", ail: "12", sesame: "36 g", citronvert: "3", piment: "6 g", huileolive: "96 ml", sel: "18 g" },
+      { nb: 13, farinepoischiche: "650 g", curcuma: "13 g", ail: "13", sesame: "39 g", citronvert: "3¼", piment: "6.5 g", huileolive: "104 ml", sel: "19.5 g" },
+      { nb: 14, farinepoischiche: "700 g", curcuma: "14 g", ail: "14", sesame: "42 g", citronvert: "3½", piment: "7 g", huileolive: "112 ml", sel: "21 g" },
+      { nb: 15, farinepoischiche: "750 g", curcuma: "15 g", ail: "15", sesame: "45 g", citronvert: "3¾", piment: "7.5 g", huileolive: "120 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La crème", detail: "Fouettez la farine de pois chiche avec le curcuma, le sel et de l'eau froide, sans grumeaux.", badge: null },
+      { icone: "♨️", titre: "Épaissir", detail: "Faites épaissir à feu doux en fouettant sans cesse : la crème doit napper très épais et briller.", badge: null },
+      { icone: "🍮", titre: "Mouler", detail: "Versez dans un plat huilé, lissez et laissez prendre à température ambiante puis au frais.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Démoulez le bloc doré et coupez-le en cubes ou en lamelles.", badge: null },
+      { icone: "🧄", titre: "L'huile d'ail", detail: "Faites dorer l'ail émincé dans l'huile, et grillez le sésame à sec.", badge: null },
+      { icone: "🥗", titre: "Assaisonner", detail: "Arrosez le tofu d'huile d'ail, de citron vert, de piment et de sésame.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède ou froid, en salade. Soyeux et parfumé — le tofu shan birman.", badge: null }
+    ]
+  },
+  kinilaw: {
+    dateAjout: "2026-07-24T11:05:00",
+    nom: "Kinilaw",
+    cat: "entrees", pays: "philippines",
+    base: 4,
+    temps: "25 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Kinilaw — le « ceviche » philippin, antérieur aux Espagnols : du poisson très frais « cuit » dans le vinaigre et le calamansi (ici citron vert), relevé de gingembre, d'oignon et de piment, adouci d'un nuage de lait de coco. Vif, iodé et pur — le goût des Visayas dans un bol.",
+    tableauKinilaw: [
+      { nb: 1, poisson: "110 g", vinaigreBlanc: "12 ml", citronvert: "½", gingembre: "1", oignon: "20 g", piment: "1 g", laitcoco: "30 ml", sel: "1.5 g" },
+      { nb: 2, poisson: "220 g", vinaigreBlanc: "24 ml", citronvert: "1", gingembre: "2", oignon: "40 g", piment: "2 g", laitcoco: "60 ml", sel: "3 g" },
+      { nb: 3, poisson: "330 g", vinaigreBlanc: "36 ml", citronvert: "1½", gingembre: "3", oignon: "60 g", piment: "3 g", laitcoco: "90 ml", sel: "4.5 g" },
+      { nb: 4, poisson: "440 g", vinaigreBlanc: "48 ml", citronvert: "2", gingembre: "4", oignon: "80 g", piment: "4 g", laitcoco: "120 ml", sel: "6 g" },
+      { nb: 5, poisson: "550 g", vinaigreBlanc: "60 ml", citronvert: "2½", gingembre: "5", oignon: "100 g", piment: "5 g", laitcoco: "150 ml", sel: "7.5 g" },
+      { nb: 6, poisson: "660 g", vinaigreBlanc: "72 ml", citronvert: "3", gingembre: "6", oignon: "120 g", piment: "6 g", laitcoco: "180 ml", sel: "9 g" },
+      { nb: 7, poisson: "770 g", vinaigreBlanc: "84 ml", citronvert: "3½", gingembre: "7", oignon: "140 g", piment: "7 g", laitcoco: "210 ml", sel: "10.5 g" },
+      { nb: 8, poisson: "880 g", vinaigreBlanc: "96 ml", citronvert: "4", gingembre: "8", oignon: "160 g", piment: "8 g", laitcoco: "240 ml", sel: "12 g" },
+      { nb: 9, poisson: "990 g", vinaigreBlanc: "108 ml", citronvert: "4½", gingembre: "9", oignon: "180 g", piment: "9 g", laitcoco: "270 ml", sel: "13.5 g" },
+      { nb: 10, poisson: "1100 g", vinaigreBlanc: "120 ml", citronvert: "5", gingembre: "10", oignon: "200 g", piment: "10 g", laitcoco: "300 ml", sel: "15 g" },
+      { nb: 11, poisson: "1210 g", vinaigreBlanc: "132 ml", citronvert: "5½", gingembre: "11", oignon: "220 g", piment: "11 g", laitcoco: "330 ml", sel: "16.5 g" },
+      { nb: 12, poisson: "1320 g", vinaigreBlanc: "144 ml", citronvert: "6", gingembre: "12", oignon: "240 g", piment: "12 g", laitcoco: "360 ml", sel: "18 g" },
+      { nb: 13, poisson: "1430 g", vinaigreBlanc: "156 ml", citronvert: "6½", gingembre: "13", oignon: "260 g", piment: "13 g", laitcoco: "390 ml", sel: "19.5 g" },
+      { nb: 14, poisson: "1540 g", vinaigreBlanc: "168 ml", citronvert: "7", gingembre: "14", oignon: "280 g", piment: "14 g", laitcoco: "420 ml", sel: "21 g" },
+      { nb: 15, poisson: "1650 g", vinaigreBlanc: "180 ml", citronvert: "7½", gingembre: "15", oignon: "300 g", piment: "15 g", laitcoco: "450 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le poisson", detail: "Détaillez le poisson très frais en dés réguliers.", badge: null },
+      { icone: "💧", titre: "Rincer", detail: "Rincez-les d'un premier passage express au vinaigre, puis égouttez (geste traditionnel).", badge: null },
+      { icone: "🫚", titre: "Les aromates", detail: "Ajoutez le gingembre en fine julienne, l'oignon émincé et le piment.", badge: null },
+      { icone: "🍋", titre: "« Cuire »", detail: "Arrosez de vinaigre et de jus de citron vert, salez, et laissez « cuire » 10-15 minutes au frais.", badge: null },
+      { icone: "🥥", titre: "Adoucir", detail: "Ajoutez le lait de coco et mélangez délicatement.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Goûtez : vif, acidulé, à peine crémeux — rectifiez sel et piment.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien frais, aussitôt. Vif et iodé — le kinilaw philippin.", badge: null }
+    ]
+  },
 });

@@ -1171,4 +1171,78 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Finir", detail: "Parsemez de coriandre fraîche ciselée à la sortie du four, ajoutez un filet d'huile d'olive et servez aussitôt.", badge: null }
     ]
   },
+  fugazzeta: {
+    dateAjout: "2026-07-24T11:03:00",
+    nom: "Fugazzeta",
+    cat: "pizzas", pays: "argentine",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧅",
+    description: "Fugazzeta — la pizza de Buenos Aires : une pâte épaisse et moelleuse FOURRÉE de fromage fondant, couverte d'une montagne d'oignons émincés à l'origan. Née dans les pizzerias italo-argentines du quartier de La Boca, sans tomate, elle est régressive au possible — le fromage file à chaque part.",
+    tableauFugazzeta: [
+      { nb: 1, farine: "100 g", levureboulangere: "2 g", mozzarella: "60 g", oignon: "70 g", origan: "1 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, farine: "200 g", levureboulangere: "4 g", mozzarella: "120 g", oignon: "140 g", origan: "2 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, farine: "300 g", levureboulangere: "6 g", mozzarella: "180 g", oignon: "210 g", origan: "3 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, farine: "400 g", levureboulangere: "8 g", mozzarella: "240 g", oignon: "280 g", origan: "4 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, farine: "500 g", levureboulangere: "10 g", mozzarella: "300 g", oignon: "350 g", origan: "5 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, farine: "600 g", levureboulangere: "12 g", mozzarella: "360 g", oignon: "420 g", origan: "6 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, farine: "700 g", levureboulangere: "14 g", mozzarella: "420 g", oignon: "490 g", origan: "7 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, farine: "800 g", levureboulangere: "16 g", mozzarella: "480 g", oignon: "560 g", origan: "8 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, farine: "900 g", levureboulangere: "18 g", mozzarella: "540 g", oignon: "630 g", origan: "9 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, farine: "1000 g", levureboulangere: "20 g", mozzarella: "600 g", oignon: "700 g", origan: "10 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, farine: "1100 g", levureboulangere: "22 g", mozzarella: "660 g", oignon: "770 g", origan: "11 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, farine: "1200 g", levureboulangere: "24 g", mozzarella: "720 g", oignon: "840 g", origan: "12 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, farine: "1300 g", levureboulangere: "26 g", mozzarella: "780 g", oignon: "910 g", origan: "13 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, farine: "1400 g", levureboulangere: "28 g", mozzarella: "840 g", oignon: "980 g", origan: "14 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, farine: "1500 g", levureboulangere: "30 g", mozzarella: "900 g", oignon: "1050 g", origan: "15 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine, la levure, le sel, l'huile et de l'eau tiède en une pâte souple ; laissez lever.", badge: null },
+      { icone: "🧅", titre: "Les oignons", detail: "Émincez finement les oignons, salez-les légèrement et laissez-les dégorger.", badge: null },
+      { icone: "⚪", titre: "Les abaisses", detail: "Divisez la pâte en deux et abaissez deux disques.", badge: null },
+      { icone: "🧀", titre: "Fourrer", detail: "Posez le premier disque dans un moule huilé, couvrez de mozzarella, scellez avec le second disque.", badge: null },
+      { icone: "🧅", titre: "La montagne", detail: "Recouvrez toute la surface d'oignons égouttés, d'origan et d'un filet d'huile.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four très chaud jusqu'à ce que les oignons dorent et que le fromage fonde à cœur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupez en parts épaisses — le fromage doit filer. La fugazzeta porteña !", badge: null }
+    ]
+  },
+  pinsa: {
+    dateAjout: "2026-07-24T11:08:00",
+    nom: "Pinsa Romana",
+    cat: "pizzas", pays: "italie",
+    base: 4,
+    temps: "2h + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🫓",
+    description: "Pinsa romana — la cousine légère de la pizza : une pâte très hydratée mêlant farine de blé et de riz, longuement reposée, étirée en ovale du bout des doigts — croûte ultra-croustillante, mie aérienne et digeste. Garnie après cuisson de tomate, mozzarella et roquette, c'est la coqueluche de Rome.",
+    tableauPinsa: [
+      { nb: 1, farine: "85 g", farineRiz: "15 g", levureboulangere: "1.5 g", tomate: "40 g", mozzarella: "50 g", roquette: "10 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, farine: "170 g", farineRiz: "30 g", levureboulangere: "3 g", tomate: "80 g", mozzarella: "100 g", roquette: "20 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, farine: "255 g", farineRiz: "45 g", levureboulangere: "4.5 g", tomate: "120 g", mozzarella: "150 g", roquette: "30 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, farine: "340 g", farineRiz: "60 g", levureboulangere: "6 g", tomate: "160 g", mozzarella: "200 g", roquette: "40 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, farine: "425 g", farineRiz: "75 g", levureboulangere: "7.5 g", tomate: "200 g", mozzarella: "250 g", roquette: "50 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, farine: "510 g", farineRiz: "90 g", levureboulangere: "9 g", tomate: "240 g", mozzarella: "300 g", roquette: "60 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, farine: "595 g", farineRiz: "105 g", levureboulangere: "10.5 g", tomate: "280 g", mozzarella: "350 g", roquette: "70 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, farine: "680 g", farineRiz: "120 g", levureboulangere: "12 g", tomate: "320 g", mozzarella: "400 g", roquette: "80 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, farine: "765 g", farineRiz: "135 g", levureboulangere: "13.5 g", tomate: "360 g", mozzarella: "450 g", roquette: "90 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, farine: "850 g", farineRiz: "150 g", levureboulangere: "15 g", tomate: "400 g", mozzarella: "500 g", roquette: "100 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, farine: "935 g", farineRiz: "165 g", levureboulangere: "16.5 g", tomate: "440 g", mozzarella: "550 g", roquette: "110 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, farine: "1020 g", farineRiz: "180 g", levureboulangere: "18 g", tomate: "480 g", mozzarella: "600 g", roquette: "120 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, farine: "1105 g", farineRiz: "195 g", levureboulangere: "19.5 g", tomate: "520 g", mozzarella: "650 g", roquette: "130 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, farine: "1190 g", farineRiz: "210 g", levureboulangere: "21 g", tomate: "560 g", mozzarella: "700 g", roquette: "140 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, farine: "1275 g", farineRiz: "225 g", levureboulangere: "22.5 g", tomate: "600 g", mozzarella: "750 g", roquette: "150 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez les farines, la levure, le sel et beaucoup d'eau froide (pâte très collante) avec un filet d'huile.", badge: null },
+      { icone: "⏲️", titre: "Repos long", detail: "Laissez pointer, puis reposez au frais plusieurs heures (idéalement 24 h) : la pâte s'aère et se digère mieux.", badge: null },
+      { icone: "🫓", titre: "Étirer", detail: "Sur un lit de farine de riz, étirez la pâte en ovale du bout des doigts, sans l'écraser.", badge: null },
+      { icone: "♨️", titre: "Précuire", detail: "Enfournez l'ovale à four très chaud jusqu'à ce qu'il gonfle et dore — croustillant dehors, aérien dedans.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Étalez la tomate concassée assaisonnée et remettez brièvement au four.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "À la sortie, répartissez la mozzarella en morceaux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Couronnez de roquette et d'un filet d'huile d'olive, et servez aussitôt. La pinsa romana !", badge: null }
+    ]
+  },
 });

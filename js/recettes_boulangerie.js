@@ -2247,4 +2247,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes — à la hongkongaise : fendus sur une tranche de beurre froid. Les bolo bao !", badge: null }
     ]
   },
+  cunape: {
+    dateAjout: "2026-07-24T11:02:00",
+    nom: "Cuñapé",
+    cat: "boulangerie", pays: "bolivie",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Cuñapé — les petits pains au fromage de Bolivie : de la fécule de manioc pétrie avec du fromage râpé et de l'œuf, cuite en boules dorées, croustillantes dehors et moelleuses-filantes dedans. Cousins du pão de queijo brésilien, ils accompagnent le café de l'après-midi à Santa Cruz.",
+    tableauCunape: [
+      { nb: 1, tapioca: "55 g", gruyere: "45 g", oeufs: "½", beurre: "6 g", lait: "10 ml", levurechimique: "2 g", sucre: "3 g", sel: "1 g" },
+      { nb: 2, tapioca: "110 g", gruyere: "90 g", oeufs: "1", beurre: "12 g", lait: "20 ml", levurechimique: "4 g", sucre: "6 g", sel: "2 g" },
+      { nb: 3, tapioca: "165 g", gruyere: "135 g", oeufs: "1½", beurre: "18 g", lait: "30 ml", levurechimique: "6 g", sucre: "9 g", sel: "3 g" },
+      { nb: 4, tapioca: "220 g", gruyere: "180 g", oeufs: "2", beurre: "24 g", lait: "40 ml", levurechimique: "8 g", sucre: "12 g", sel: "4 g" },
+      { nb: 5, tapioca: "275 g", gruyere: "225 g", oeufs: "2½", beurre: "30 g", lait: "50 ml", levurechimique: "10 g", sucre: "15 g", sel: "5 g" },
+      { nb: 6, tapioca: "330 g", gruyere: "270 g", oeufs: "3", beurre: "36 g", lait: "60 ml", levurechimique: "12 g", sucre: "18 g", sel: "6 g" },
+      { nb: 7, tapioca: "385 g", gruyere: "315 g", oeufs: "3½", beurre: "42 g", lait: "70 ml", levurechimique: "14 g", sucre: "21 g", sel: "7 g" },
+      { nb: 8, tapioca: "440 g", gruyere: "360 g", oeufs: "4", beurre: "48 g", lait: "80 ml", levurechimique: "16 g", sucre: "24 g", sel: "8 g" },
+      { nb: 9, tapioca: "495 g", gruyere: "405 g", oeufs: "4½", beurre: "54 g", lait: "90 ml", levurechimique: "18 g", sucre: "27 g", sel: "9 g" },
+      { nb: 10, tapioca: "550 g", gruyere: "450 g", oeufs: "5", beurre: "60 g", lait: "100 ml", levurechimique: "20 g", sucre: "30 g", sel: "10 g" },
+      { nb: 11, tapioca: "605 g", gruyere: "495 g", oeufs: "5½", beurre: "66 g", lait: "110 ml", levurechimique: "22 g", sucre: "33 g", sel: "11 g" },
+      { nb: 12, tapioca: "660 g", gruyere: "540 g", oeufs: "6", beurre: "72 g", lait: "120 ml", levurechimique: "24 g", sucre: "36 g", sel: "12 g" },
+      { nb: 13, tapioca: "715 g", gruyere: "585 g", oeufs: "6½", beurre: "78 g", lait: "130 ml", levurechimique: "26 g", sucre: "39 g", sel: "13 g" },
+      { nb: 14, tapioca: "770 g", gruyere: "630 g", oeufs: "7", beurre: "84 g", lait: "140 ml", levurechimique: "28 g", sucre: "42 g", sel: "14 g" },
+      { nb: 15, tapioca: "825 g", gruyere: "675 g", oeufs: "7½", beurre: "90 g", lait: "150 ml", levurechimique: "30 g", sucre: "45 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Le fromage", detail: "Râpez finement le fromage.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la fécule de manioc (tapioca), la levure, le sucre et le sel, puis ajoutez fromage, œuf, beurre mou et lait.", badge: null },
+      { icone: "💪", titre: "Pétrir", detail: "Pétrissez jusqu'à obtenir une pâte souple qui se tient (ajustez avec un peu de lait ou de fécule).", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Roulez de petites boules régulières.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Enfournez à four chaud jusqu'à ce que les cuñapés soient gonflés et dorés.", badge: null },
+      { icone: "⏲️", titre: "Patienter", detail: "Laissez tiédir 5 minutes : l'intérieur reste moelleux et filant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, avec un café. Croustillants et filants — les cuñapés boliviens.", badge: null }
+    ]
+  },
 });
