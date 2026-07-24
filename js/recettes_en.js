@@ -78578,5 +78578,345 @@ window.RECETTES_EN = {
     "detail": "Serve in lettuce leaves with lemon. Istanbul çiğ köfte — addictive!"
    }
   ]
+ },
+ "martabakmanis": {
+  "nom": "Martabak Manis",
+  "description": "Martabak manis — Indonesia's giant pancake: a leavened batter cooked thick in a pan until honeycombed, brushed with butter then loaded with chocolate, peanuts and sugar, and folded into a melting half-moon. The queen of Jakarta's night street food — an assumed indulgence.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the flour, half the sugar, the yeast, salt, egg and warm milk into a fluid batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it ferment until bubbly, then stir in the baking powder."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour into a hot deep pan and cover: honeycomb holes form across the surface."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "When the surface sets, sprinkle the remaining sugar and let the underside brown."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Off the heat, brush generously with butter."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Scatter grated chocolate and crushed peanuts over one half."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold into a half-moon, cut thick slices and serve warm. Jakarta martabak manis!"
+   }
+  ]
+ },
+ "bunkebab": {
+  "nom": "Bun Kebab",
+  "description": "Bun kebab — Karachi's burger: a spiced patty of blended beef and chickpeas (shami), coated in egg and seared on the griddle, tucked into a soft bun with onion, tomato and chutney. Sold at night on Karachi's crossroads, it's the most fragrant burger in the world.",
+  "etapes": [
+   {
+    "titre": "The shami",
+    "detail": "Cook the beef with the (soaked) chickpeas, garlic, cumin, chilli and salt, until the water evaporates."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend everything into a thick paste and let it cool a little."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape flat, even patties."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Beat the egg; dip each patty in it."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the egg-coated patties on the oiled griddle, both sides."
+   },
+   {
+    "titre": "The bun",
+    "detail": "Toast the split buns with a little fat."
+   },
+   {
+    "titre": "Build",
+    "detail": "Fill: patty, sliced onion, tomato, a swipe of chutney or sauce. Karachi bun kebab!"
+   }
+  ]
+ },
+ "queuedecastor": {
+  "nom": "BeaverTail",
+  "description": "BeaverTail — the treat of Canadian winters: a leavened dough hand-stretched into a long flat 'tail', fried until golden, then rolled piping hot in cinnamon sugar with a squeeze of lemon. Born in Ottawa, devoured on the frozen Rideau Canal, it warms your mittens.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, a third of the sugar, the salt, warm milk and butter into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise until doubled."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Divide, ball, then hand-stretch each ball into a long flat oval 'tail'."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the tails one by one: they puff and brown in a minute per side; drain."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll them piping hot in the cinnamon sugar."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a squeeze of lemon and serve at once. The Ottawa BeaverTail!"
+   }
+  ]
+ },
+ "topfenknoedel": {
+  "nom": "Topfenknödel",
+  "description": "Topfenknödel — Austria's fresh-cheese dumplings: a light topfen (fresh cheese) dough, poached into soft balls, rolled in golden butter-toasted crumbs with sugar and cinnamon. Served warm, often with stewed fruit — a Viennese cloud.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the well-drained fresh cheese, egg, semolina, flour, lemon zest, some sugar and the salt."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest in the fridge: the semolina swells and the dough firms."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape even balls with damp hands."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach in simmering salted water: they're done shortly after floating."
+   },
+   {
+    "titre": "The crumbs",
+    "detail": "Brown the breadcrumbs in the butter with the remaining sugar and cinnamon."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Gently roll the drained dumplings in the golden crumbs."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, with stewed fruit. Cloud-soft — topfenknödel!"
+   }
+  ]
+ },
+ "somloigaluska": {
+  "nom": "Somlói Galuska",
+  "description": "Somlói galuska — Budapest's legendary trifle: sponge pieces (plain, walnut and cocoa) soaked in rum syrup, layered with vanilla cream, walnuts and raisins, capped with whipped cream and drowned in chocolate sauce. Voted Hungarians' favourite dessert — in every cukrászda in the land.",
+  "etapes": [
+   {
+    "titre": "The sponge",
+    "detail": "Whip the egg with a third of the sugar, fold in the flour; bake a thin sponge sheet."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Thicken the milk with some sugar, vanilla and a touch of flour into a custard."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Make a light syrup with sugar, water and the rum; plump the raisins in it."
+   },
+   {
+    "titre": "The build",
+    "detail": "Cut the sponge into cubes (plain, cocoa-dusted, walnut-mixed), soak with syrup."
+   },
+   {
+    "titre": "The layers",
+    "detail": "Alternate soaked cubes, vanilla cream, chopped walnuts and raisins in glasses."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Melt the chocolate with a little milk into a glossy sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cap with whipped cream, drown in warm chocolate sauce and serve chilled. Budapest somlói!"
+   }
+  ]
+ },
+ "trdelnik": {
+  "nom": "Trdelník",
+  "description": "Trdelník — Prague's chimney cake: ribbons of leavened dough wound around a roller, spit-roasted (here oven-baked) until caramelized, then rolled in cinnamon-walnut sugar. Crisp outside, soft inside, it perfumes every lane of the Old Town.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, a third of the sugar, the salt, egg, warm milk and half the butter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise until doubled."
+   },
+   {
+    "titre": "The ribbons",
+    "detail": "Stretch the dough into long thin ribbons."
+   },
+   {
+    "titre": "Wind",
+    "detail": "Wind them in tight spirals around buttered rollers (steel cones or thick foil tubes)."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with melted butter and roll in a little sugar."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake, turning halfway, until the spirals are golden and caramelized."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Unmould hot and roll in the cinnamon-walnut sugar. Prague trdelník!"
+   }
+  ]
+ },
+ "skoleboller": {
+  "nom": "Skoleboller",
+  "description": "Skoleboller — Norway's 'school buns': cardamom brioche balls with a custard heart, iced then dipped in grated coconut. The star of Norwegian bakeries and school bags, they make break time worth it.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, a third of the sugar, the cardamom, salt, warm milk and butter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise until doubled."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Thicken the remaining milk with some sugar and egg into a custard; let it cool."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Ball even buns and let them rise again on a tray."
+   },
+   {
+    "titre": "The heart",
+    "detail": "Press a well into each bun and fill it with custard."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash and bake until the buns are golden."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Ice the rim (icing sugar + water) and dip it in grated coconut. Norwegian skoleboller!"
+   }
+  ]
+ },
+ "barmbrack": {
+  "nom": "Barmbrack",
+  "description": "Barmbrack — Ireland's fruit loaf: raisins plumped overnight in strong black tea, folded into a spiced batter, baked into a dense fragrant loaf sliced and buttered at teatime. At Halloween a ring is hidden inside — whoever finds it marries within the year!",
+  "etapes": [
+   {
+    "titre": "The tea",
+    "detail": "Brew a strong black tea and let it cool a little."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Plump the raisins in the tea, ideally overnight."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour, baking powder, sugar, spices and salt, then the egg, raisins AND their soaking tea."
+   },
+   {
+    "titre": "The tin",
+    "detail": "Pour the (thick, supple) batter into a buttered loaf tin."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at medium heat until a blade comes out clean."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it cool: barmbrack firms up and slices better the next day."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice and butter generously, with a cup of tea. Irish barmbrack!"
+   }
+  ]
+ },
+ "mekitsi": {
+  "nom": "Mekitsi",
+  "description": "Mekitsi — Bulgaria's morning fried breads: a yoghurt dough hand-stretched into rustic discs, fried until puffed and golden. Served hot, dusted with icing sugar or topped with jam and grated sirene — Sunday breakfast all over Bulgaria.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, baking powder, sugar and salt, then knead with the yoghurt and egg into a soft, sticky dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and rest about twenty minutes."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide into balls with oiled hands."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Hand-stretch each ball into a thin disc — perfection not required."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the mekitsi: they puff and brown in a minute per side; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, sugar-dusted or with jam and grated cheese. Bulgarian mekitsi!"
+   }
+  ]
+ },
+ "kompletlepinja": {
+  "nom": "Komplet Lepinja",
+  "description": "Komplet lepinja — the 'complete flatbread' of Užice, Serbia: a soft flatbread hollowed and filled with kajmak (creamy cheese) and an egg, doused with piping-hot roasting juices and finished in the oven. Hearty and indulgent, it's THE breakfast of the Serbian mountains — eaten with a spoon.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Split the flatbread (lepinja, or a soft round roll) and lightly hollow the base."
+   },
+   {
+    "titre": "The kajmak",
+    "detail": "Generously spread the inside with kajmak (or thick salted fresh cheese)."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Crack the egg over the cheese and season."
+   },
+   {
+    "titre": "The juices",
+    "detail": "Douse with piping-hot melted butter (in place of the traditional roasting juices)."
+   },
+   {
+    "titre": "To the oven",
+    "detail": "Cap with the bread lid and bake in a hot oven."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Take it out when the egg is just set and the bread golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a spoon. Užice komplet lepinja — mountain breakfast!"
+   }
+  ]
  }
 };

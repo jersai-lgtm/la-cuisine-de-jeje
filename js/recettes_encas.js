@@ -6412,4 +6412,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chauds, nature ou avec un ragoût. Croustillants et cotonneux — les makoenya basotho !", badge: null }
     ]
   },
+  bunkebab: {
+    dateAjout: "2026-07-24T13:01:00",
+    nom: "Bun Kebab",
+    cat: "encas", pays: "pakistan",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍔",
+    description: "Bun kebab — le burger de Karachi : une galette épicée de bœuf et pois chiches mixés (shami), nappée d'œuf et saisie sur la plancha, glissée dans un pain moelleux avec oignon, tomate et chutney. Vendu la nuit aux carrefours de Karachi, c'est le burger le plus parfumé du monde.",
+    tableauBunkebab: [
+      { nb: 1, pain: "70 g", boeuf: "60 g", poischiches: "30 g", oeufs: "½", oignon: "25 g", tomate: "20 g", ail: "1", cumin: "1 g", piment: "1 g", huileolive: "10 ml", sel: "2 g" },
+      { nb: 2, pain: "140 g", boeuf: "120 g", poischiches: "60 g", oeufs: "1", oignon: "50 g", tomate: "40 g", ail: "2", cumin: "2 g", piment: "2 g", huileolive: "20 ml", sel: "4 g" },
+      { nb: 3, pain: "210 g", boeuf: "180 g", poischiches: "90 g", oeufs: "1½", oignon: "75 g", tomate: "60 g", ail: "3", cumin: "3 g", piment: "3 g", huileolive: "30 ml", sel: "6 g" },
+      { nb: 4, pain: "280 g", boeuf: "240 g", poischiches: "120 g", oeufs: "2", oignon: "100 g", tomate: "80 g", ail: "4", cumin: "4 g", piment: "4 g", huileolive: "40 ml", sel: "8 g" },
+      { nb: 5, pain: "350 g", boeuf: "300 g", poischiches: "150 g", oeufs: "2½", oignon: "125 g", tomate: "100 g", ail: "5", cumin: "5 g", piment: "5 g", huileolive: "50 ml", sel: "10 g" },
+      { nb: 6, pain: "420 g", boeuf: "360 g", poischiches: "180 g", oeufs: "3", oignon: "150 g", tomate: "120 g", ail: "6", cumin: "6 g", piment: "6 g", huileolive: "60 ml", sel: "12 g" },
+      { nb: 7, pain: "490 g", boeuf: "420 g", poischiches: "210 g", oeufs: "3½", oignon: "175 g", tomate: "140 g", ail: "7", cumin: "7 g", piment: "7 g", huileolive: "70 ml", sel: "14 g" },
+      { nb: 8, pain: "560 g", boeuf: "480 g", poischiches: "240 g", oeufs: "4", oignon: "200 g", tomate: "160 g", ail: "8", cumin: "8 g", piment: "8 g", huileolive: "80 ml", sel: "16 g" },
+      { nb: 9, pain: "630 g", boeuf: "540 g", poischiches: "270 g", oeufs: "4½", oignon: "225 g", tomate: "180 g", ail: "9", cumin: "9 g", piment: "9 g", huileolive: "90 ml", sel: "18 g" },
+      { nb: 10, pain: "700 g", boeuf: "600 g", poischiches: "300 g", oeufs: "5", oignon: "250 g", tomate: "200 g", ail: "10", cumin: "10 g", piment: "10 g", huileolive: "100 ml", sel: "20 g" },
+      { nb: 11, pain: "770 g", boeuf: "660 g", poischiches: "330 g", oeufs: "5½", oignon: "275 g", tomate: "220 g", ail: "11", cumin: "11 g", piment: "11 g", huileolive: "110 ml", sel: "22 g" },
+      { nb: 12, pain: "840 g", boeuf: "720 g", poischiches: "360 g", oeufs: "6", oignon: "300 g", tomate: "240 g", ail: "12", cumin: "12 g", piment: "12 g", huileolive: "120 ml", sel: "24 g" },
+      { nb: 13, pain: "910 g", boeuf: "780 g", poischiches: "390 g", oeufs: "6½", oignon: "325 g", tomate: "260 g", ail: "13", cumin: "13 g", piment: "13 g", huileolive: "130 ml", sel: "26 g" },
+      { nb: 14, pain: "980 g", boeuf: "840 g", poischiches: "420 g", oeufs: "7", oignon: "350 g", tomate: "280 g", ail: "14", cumin: "14 g", piment: "14 g", huileolive: "140 ml", sel: "28 g" },
+      { nb: 15, pain: "1050 g", boeuf: "900 g", poischiches: "450 g", oeufs: "7½", oignon: "375 g", tomate: "300 g", ail: "15", cumin: "15 g", piment: "15 g", huileolive: "150 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Le shami", detail: "Faites cuire le bœuf avec les pois chiches (trempés), l'ail, le cumin, le piment et du sel, jusqu'à évaporation.", badge: null },
+      { icone: "🥣", titre: "Mixer", detail: "Mixez le tout en pâte épaisse et laissez tiédir.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Façonnez des galettes plates et régulières.", badge: null },
+      { icone: "🥚", titre: "L'œuf", detail: "Battez l'œuf ; trempez-y chaque galette.", badge: null },
+      { icone: "🍳", titre: "Saisir", detail: "Faites dorer les galettes nappées d'œuf sur la plancha huilée, des deux côtés.", badge: null },
+      { icone: "🍞", titre: "Le pain", detail: "Faites toaster les pains coupés en deux avec un peu de matière grasse.", badge: null },
+      { icone: "🍽️", titre: "Monter", detail: "Garnissez : galette, oignon émincé, tomate, un trait de chutney ou de sauce. Le bun kebab de Karachi !", badge: null }
+    ]
+  },
 });

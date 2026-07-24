@@ -2444,4 +2444,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, avec un café. Dorés et moelleux — les mofo gasy malgaches.", badge: null }
     ]
   },
+  mekitsi: {
+    dateAjout: "2026-07-24T13:08:00",
+    nom: "Mekitsi",
+    cat: "brunch", pays: "bulgarie",
+    base: 4,
+    temps: "40 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🍩",
+    description: "Mekitsi — les beignets plats du matin bulgare : une pâte au yaourt étirée à la main en disques irréguliers, frits jusqu'à gonfler et dorer. Servis chauds, saupoudrés de sucre glace ou couverts de confiture et de sirene râlé — le petit-déjeuner du dimanche dans toute la Bulgarie.",
+    tableauMekitsi: [
+      { nb: 1, farine: "80 g", yaourt: "50 g", oeufs: "¼", levurechimique: "2 g", sucre: "6 g", huileolive: "12 ml", sel: "1.5 g" },
+      { nb: 2, farine: "160 g", yaourt: "100 g", oeufs: "½", levurechimique: "4 g", sucre: "12 g", huileolive: "24 ml", sel: "3 g" },
+      { nb: 3, farine: "240 g", yaourt: "150 g", oeufs: "¾", levurechimique: "6 g", sucre: "18 g", huileolive: "36 ml", sel: "4.5 g" },
+      { nb: 4, farine: "320 g", yaourt: "200 g", oeufs: "1", levurechimique: "8 g", sucre: "24 g", huileolive: "48 ml", sel: "6 g" },
+      { nb: 5, farine: "400 g", yaourt: "250 g", oeufs: "1¼", levurechimique: "10 g", sucre: "30 g", huileolive: "60 ml", sel: "7.5 g" },
+      { nb: 6, farine: "480 g", yaourt: "300 g", oeufs: "1½", levurechimique: "12 g", sucre: "36 g", huileolive: "72 ml", sel: "9 g" },
+      { nb: 7, farine: "560 g", yaourt: "350 g", oeufs: "1¾", levurechimique: "14 g", sucre: "42 g", huileolive: "84 ml", sel: "10.5 g" },
+      { nb: 8, farine: "640 g", yaourt: "400 g", oeufs: "2", levurechimique: "16 g", sucre: "48 g", huileolive: "96 ml", sel: "12 g" },
+      { nb: 9, farine: "720 g", yaourt: "450 g", oeufs: "2¼", levurechimique: "18 g", sucre: "54 g", huileolive: "108 ml", sel: "13.5 g" },
+      { nb: 10, farine: "800 g", yaourt: "500 g", oeufs: "2½", levurechimique: "20 g", sucre: "60 g", huileolive: "120 ml", sel: "15 g" },
+      { nb: 11, farine: "880 g", yaourt: "550 g", oeufs: "2¾", levurechimique: "22 g", sucre: "66 g", huileolive: "132 ml", sel: "16.5 g" },
+      { nb: 12, farine: "960 g", yaourt: "600 g", oeufs: "3", levurechimique: "24 g", sucre: "72 g", huileolive: "144 ml", sel: "18 g" },
+      { nb: 13, farine: "1040 g", yaourt: "650 g", oeufs: "3¼", levurechimique: "26 g", sucre: "78 g", huileolive: "156 ml", sel: "19.5 g" },
+      { nb: 14, farine: "1120 g", yaourt: "700 g", oeufs: "3½", levurechimique: "28 g", sucre: "84 g", huileolive: "168 ml", sel: "21 g" },
+      { nb: 15, farine: "1200 g", yaourt: "750 g", oeufs: "3¾", levurechimique: "30 g", sucre: "90 g", huileolive: "180 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, la levure, le sucre et le sel, puis pétrissez avec le yaourt et l'œuf en pâte souple et collante.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Couvrez et laissez reposer une vingtaine de minutes.", badge: null },
+      { icone: "⚪", titre: "Diviser", detail: "Divisez en boules avec les mains huilées.", badge: null },
+      { icone: "🖐️", titre: "Étirer", detail: "Étirez chaque boule à la main en disque fin, sans chercher la perfection.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer un bain d'huile.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire les mekitsi : ils gonflent et dorent en une minute par face ; égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlants, saupoudrés de sucre ou avec confiture et fromage râpé. Les mekitsi bulgares !", badge: null }
+    ]
+  },
+  kompletlepinja: {
+    dateAjout: "2026-07-24T13:09:00",
+    nom: "Komplet Lepinja",
+    cat: "brunch", pays: "serbie",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Komplet lepinja — la « galette complète » d'Užice, en Serbie : un pain plat moelleux évidé, garni de kajmak (crème-fromage), d'un œuf, et arrosé de jus de rôti brûlant avant un passage au four. Roborative et régressive, c'est LE petit-déjeuner des montagnes serbes — à manger à la cuillère.",
+    tableauKompletlepinja: [
+      { nb: 1, pain: "90 g", fromagefrais: "40 g", oeufs: "1", beurre: "10 g", sel: "1.5 g", poivre: "1 g" },
+      { nb: 2, pain: "180 g", fromagefrais: "80 g", oeufs: "2", beurre: "20 g", sel: "3 g", poivre: "2 g" },
+      { nb: 3, pain: "270 g", fromagefrais: "120 g", oeufs: "3", beurre: "30 g", sel: "4.5 g", poivre: "3 g" },
+      { nb: 4, pain: "360 g", fromagefrais: "160 g", oeufs: "4", beurre: "40 g", sel: "6 g", poivre: "4 g" },
+      { nb: 5, pain: "450 g", fromagefrais: "200 g", oeufs: "5", beurre: "50 g", sel: "7.5 g", poivre: "5 g" },
+      { nb: 6, pain: "540 g", fromagefrais: "240 g", oeufs: "6", beurre: "60 g", sel: "9 g", poivre: "6 g" },
+      { nb: 7, pain: "630 g", fromagefrais: "280 g", oeufs: "7", beurre: "70 g", sel: "10.5 g", poivre: "7 g" },
+      { nb: 8, pain: "720 g", fromagefrais: "320 g", oeufs: "8", beurre: "80 g", sel: "12 g", poivre: "8 g" },
+      { nb: 9, pain: "810 g", fromagefrais: "360 g", oeufs: "9", beurre: "90 g", sel: "13.5 g", poivre: "9 g" },
+      { nb: 10, pain: "900 g", fromagefrais: "400 g", oeufs: "10", beurre: "100 g", sel: "15 g", poivre: "10 g" },
+      { nb: 11, pain: "990 g", fromagefrais: "440 g", oeufs: "11", beurre: "110 g", sel: "16.5 g", poivre: "11 g" },
+      { nb: 12, pain: "1080 g", fromagefrais: "480 g", oeufs: "12", beurre: "120 g", sel: "18 g", poivre: "12 g" },
+      { nb: 13, pain: "1170 g", fromagefrais: "520 g", oeufs: "13", beurre: "130 g", sel: "19.5 g", poivre: "13 g" },
+      { nb: 14, pain: "1260 g", fromagefrais: "560 g", oeufs: "14", beurre: "140 g", sel: "21 g", poivre: "14 g" },
+      { nb: 15, pain: "1350 g", fromagefrais: "600 g", oeufs: "15", beurre: "150 g", sel: "22.5 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Le pain", detail: "Fendez le pain plat (lepinja, ou un petit pain rond moelleux) et évidez légèrement la base.", badge: null },
+      { icone: "🧀", titre: "Le kajmak", detail: "Tartinez généreusement l'intérieur de kajmak (ou de fromage frais épais salé).", badge: null },
+      { icone: "🥚", titre: "L'œuf", detail: "Cassez l'œuf sur le fromage et salez-poivrez.", badge: null },
+      { icone: "🧈", titre: "Le jus", detail: "Arrosez de beurre fondu bien chaud (à défaut du traditionnel jus de rôti).", badge: null },
+      { icone: "♨️", titre: "Au four", detail: "Coiffez du chapeau de pain et enfournez à four chaud.", badge: null },
+      { icone: "👀", titre: "Surveiller", detail: "Sortez quand l'œuf est juste pris et le pain doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, à la cuillère. La komplet lepinja d'Užice — le petit-déj des montagnes !", badge: null }
+    ]
+  },
 });
