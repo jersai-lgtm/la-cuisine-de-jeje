@@ -80278,5 +80278,345 @@ window.RECETTES_EN = {
     "detail": "Serve piping hot — the cheese flows at the first bite. Southland cheese rolls!"
    }
   ]
+ },
+ "solterito": {
+  "nom": "Solterito",
+  "description": "Solterito — Arequipa's fresh salad: broad beans, corn, diced fresh cheese, tomato, onion and olives, sharpened with lime. Its name means 'little bachelor' — light, colourful and crunchy, it's the starter before Peru's big dishes.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Boil the broad beans, refresh and peel them if needed."
+   },
+   {
+    "titre": "The corn",
+    "detail": "Cook (or drain) the corn kernels."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Dice the fresh cheese small."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Dice the tomato, finely slice the onion and cut the olives into rounds."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine beans, corn, cheese, tomato, onion and olives."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Douse with lime and olive oil, salt, and toss gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with parsley and serve fresh. Arequipa solterito!"
+   }
+  ]
+ },
+ "pipirrana": {
+  "nom": "Pipirrana",
+  "description": "Pipirrana — the summer salad of Jaén and Andalusia: tomatoes, pepper, cucumber and onion in tiny dice, with tuna and hard-boiled egg, drowned in a generous vinaigrette you mop up with bread. Gazpacho's crunchy cousin — on every Andalusian summer table.",
+  "etapes": [
+   {
+    "titre": "The egg",
+    "detail": "Hard-boil the egg, peel and cut it into pieces."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut tomatoes, pepper, cucumber and onion into tiny even dice."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine the vegetables in a bowl with the flaked tuna."
+   },
+   {
+    "titre": "The vinaigrette",
+    "detail": "Emulsify the olive oil, vinegar and salt."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Pour the vinaigrette generously and toss."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Rest in the fridge: the juices mingle with the dressing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add the egg, and serve well chilled — with bread for mopping! Andalusian pipirrana."
+   }
+  ]
+ },
+ "gavurdagi": {
+  "nom": "Gavurdağı",
+  "description": "Gavurdağı — Gaziantep's walnut salad: tomatoes, onion and parsley knife-chopped fine, tossed with crushed walnuts and pomegranate in a tangy dressing (traditionally pomegranate molasses). The knife, never the blender — the pride of Turkey's southeast, served beside kebabs.",
+  "etapes": [
+   {
+    "titre": "The tomatoes",
+    "detail": "Deseed the tomatoes and chop them fine with a knife (never a blender!)."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Finely chop the onion and parsley."
+   },
+   {
+    "titre": "The walnuts",
+    "detail": "Roughly crush the walnuts."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Mix tomatoes, onion, parsley, walnuts and half the pomegranate seeds."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Douse with lemon (or pomegranate molasses), olive oil, chilli and salt."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest ten minutes: the juices bind into a sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter the remaining pomegranate and serve fresh, with flatbread. Gaziantep gavurdağı!"
+   }
+  ]
+ },
+ "kachumber": {
+  "nom": "Kachumber",
+  "description": "Kachumber — India's crunchy salad: cucumber, tomato and onion in small dice, lifted with lime, coriander and toasted cumin. Barely any oil — it's the freshness beside currys and biryanis on every Indian table.",
+  "etapes": [
+   {
+    "titre": "The vegetables",
+    "detail": "Cut cucumber, tomato and onion into small even dice."
+   },
+   {
+    "titre": "The coriander",
+    "detail": "Finely chop the fresh coriander."
+   },
+   {
+    "titre": "The cumin",
+    "detail": "Dry-toast the cumin for a minute, until fragrant."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine vegetables, coriander and chilli."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Douse with lime, add the toasted cumin."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt only at serving time (salt makes the vegetables weep)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve fresh, beside a curry or biryani. Indian kachumber!"
+   }
+  ]
+ },
+ "yamwunsen": {
+  "nom": "Yam Wun Sen",
+  "description": "Yam wun sen — the Thai glass noodle salad: translucent mung bean vermicelli, just-poached shrimp, tomato and onion, in the yam dressing that snaps — lime, fish sauce, sugar and chilli. Warm, bright and fragrant, crowned with peanuts.",
+  "etapes": [
+   {
+    "titre": "The noodles",
+    "detail": "Soak the vermicelli in hot water until translucent, then drain and roughly cut."
+   },
+   {
+    "titre": "The shrimp",
+    "detail": "Poach the shrimp one to two minutes in simmering water, then drain."
+   },
+   {
+    "titre": "The yam dressing",
+    "detail": "Mix lime, fish sauce, sugar and chopped chilli: taste, it must snap."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut the tomato into thin wedges and slice the onion."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss warm noodles, shrimp, vegetables and dressing."
+   },
+   {
+    "titre": "The peanuts",
+    "detail": "Crush the toasted peanuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter peanuts and coriander, and serve warm. Thai yam wun sen!"
+   }
+  ]
+ },
+ "sunomono": {
+  "nom": "Sunomono",
+  "description": "Sunomono — Japan's vinegared cucumber: ultra-thin cucumber rounds salted and squeezed, dressed in a gently sweet rice vinegar with toasted sesame. Served in tiny chilled portions, it's the palate 'reset' between dishes — crisp, clean, essential.",
+  "etapes": [
+   {
+    "titre": "The cucumber",
+    "detail": "Slice the cucumber as thin as possible (with a mandoline if you have one)."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt the rounds and let them weep ten minutes."
+   },
+   {
+    "titre": "Press",
+    "detail": "Squeeze the rounds between your hands to extract the water: they turn supple."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mix the rice vinegar, sugar and soy sauce until dissolved."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Coat the pressed cucumber in the dressing."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Rest in the fridge a few minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in small bowls, scattered with toasted sesame. Japanese sunomono!"
+   }
+  ]
+ },
+ "oimuchim": {
+  "nom": "Oi Muchim",
+  "description": "Oi muchim — Korea's spicy cucumber: thick cucumber half-moons massaged with garlic, Korean chilli, vinegar, sugar and sesame, a crunchy, spicy, faintly sweet banchan. Ready in 15 minutes, it wakes up a bowl of rice, a barbecue or noodles.",
+  "etapes": [
+   {
+    "titre": "The cucumber",
+    "detail": "Cut the cucumber into thick half-moons."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt them ten minutes, then pat dry."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mix the crushed garlic, paprika and chilli (gochugaru-style), vinegar, sugar and soy sauce."
+   },
+   {
+    "titre": "Massage",
+    "detail": "Coat the cucumber with the dressing, 'massaging' by hand (official Korean gesture)."
+   },
+   {
+    "titre": "The sesame",
+    "detail": "Add the toasted sesame and toss."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Adjust: spicy, tangy, barely sweet."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve fresh, as banchan. Korean oi muchim — the rice is waiting!"
+   }
+  ]
+ },
+ "vinegret": {
+  "nom": "Vinegret",
+  "description": "Vinegret — Russia's fuchsia salad: diced boiled beetroot, potatoes and carrots with pickles, peas and sauerkraut, glossed with oil. The beetroot dyes everything bright pink — on every Russian celebration table, and even better the next day.",
+  "etapes": [
+   {
+    "titre": "The vegetables",
+    "detail": "Boil (or steam) the beetroot, potatoes and carrots whole, then let them cool."
+   },
+   {
+    "titre": "Dice",
+    "detail": "Peel and cut all the vegetables into small even dice."
+   },
+   {
+    "titre": "The condiments",
+    "detail": "Dice the pickles, drain the peas and sauerkraut, chop the onion."
+   },
+   {
+    "titre": "The trick",
+    "detail": "Oil the beetroot dice alone first: they'll bleed less onto the rest."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine everything and toss gently."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, add the remaining oil, taste: balance of sweet, sour and salty."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Rest in the fridge and serve cold. Russian vinegret — pink and comforting!"
+   }
+  ]
+ },
+ "timatim": {
+  "nom": "Timatim Salata",
+  "description": "Timatim salata — the Ethiopian tomato salad: tomatoes and onion marinated in lemon, oil and a touch of berbere, until they release a vibrant juice you mop with injera. The freshness that balances spicy wots — three gestures, maximum effect.",
+  "etapes": [
+   {
+    "titre": "The tomatoes",
+    "detail": "Cut the tomatoes into small dice, with their juice."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Slice the onion very finely, and chop the chilli."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine tomatoes, onion and chilli."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Douse with lemon and oil, add the berbere and salt."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Toss and lightly crush a few dice to bind the juice."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate fifteen minutes at room temperature."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with injera or flatbread for mopping. Ethiopian timatim salata!"
+   }
+  ]
+ },
+ "ensaladachilena": {
+  "nom": "Ensalada Chilena",
+  "description": "Ensalada chilena — Chile's national salad: ripe tomato wedges and feather-sliced onion soaked in iced water (the anti-tears, anti-bite secret), coriander, oil and salt. Three ingredients, perfect balance — the Chilean summer beside an asado.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Slice the onion into fine feathers."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Soak it 15 minutes in salted iced water (the Chilean anti-bite secret), then drain well."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Cut the ripe tomatoes into wedges or thick half-rounds."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange tomatoes and feathered onion on a dish."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Douse with oil, a dash of vinegar, and salt."
+   },
+   {
+    "titre": "The coriander",
+    "detail": "Scatter generously with chopped coriander."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve fresh — beside grilled meat, it's the Chilean summer. Ensalada chilena!"
+   }
+  ]
  }
 };
