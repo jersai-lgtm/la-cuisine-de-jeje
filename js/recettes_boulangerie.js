@@ -2395,4 +2395,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Tranchez et beurrez généreusement, avec une tasse de thé. Le barmbrack irlandais !", badge: null }
     ]
   },
+  himbasha: {
+    dateAjout: "2026-07-24T15:02:00",
+    nom: "Himbasha",
+    cat: "boulangerie", pays: "ethiopie",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌼",
+    description: "Himbasha — le pain de fête d'Éthiopie (et d'Érythrée) : une galette briochée légèrement sucrée à la cardamome et aux raisins secs, incisée en roue solaire avant cuisson. Partagé aux mariages et aux fêtes religieuses, il se déguste avec le café de la cérémonie — moelleux et parfumé.",
+    tableauHimbasha: [
+      { nb: 1, farine: "90 g", levureboulangere: "2 g", cardamome: "1 g", raisinssecs: "15 g", sucre: "12 g", huileolive: "10 ml", sel: "1.5 g" },
+      { nb: 2, farine: "180 g", levureboulangere: "4 g", cardamome: "2 g", raisinssecs: "30 g", sucre: "24 g", huileolive: "20 ml", sel: "3 g" },
+      { nb: 3, farine: "270 g", levureboulangere: "6 g", cardamome: "3 g", raisinssecs: "45 g", sucre: "36 g", huileolive: "30 ml", sel: "4.5 g" },
+      { nb: 4, farine: "360 g", levureboulangere: "8 g", cardamome: "4 g", raisinssecs: "60 g", sucre: "48 g", huileolive: "40 ml", sel: "6 g" },
+      { nb: 5, farine: "450 g", levureboulangere: "10 g", cardamome: "5 g", raisinssecs: "75 g", sucre: "60 g", huileolive: "50 ml", sel: "7.5 g" },
+      { nb: 6, farine: "540 g", levureboulangere: "12 g", cardamome: "6 g", raisinssecs: "90 g", sucre: "72 g", huileolive: "60 ml", sel: "9 g" },
+      { nb: 7, farine: "630 g", levureboulangere: "14 g", cardamome: "7 g", raisinssecs: "105 g", sucre: "84 g", huileolive: "70 ml", sel: "10.5 g" },
+      { nb: 8, farine: "720 g", levureboulangere: "16 g", cardamome: "8 g", raisinssecs: "120 g", sucre: "96 g", huileolive: "80 ml", sel: "12 g" },
+      { nb: 9, farine: "810 g", levureboulangere: "18 g", cardamome: "9 g", raisinssecs: "135 g", sucre: "108 g", huileolive: "90 ml", sel: "13.5 g" },
+      { nb: 10, farine: "900 g", levureboulangere: "20 g", cardamome: "10 g", raisinssecs: "150 g", sucre: "120 g", huileolive: "100 ml", sel: "15 g" },
+      { nb: 11, farine: "990 g", levureboulangere: "22 g", cardamome: "11 g", raisinssecs: "165 g", sucre: "132 g", huileolive: "110 ml", sel: "16.5 g" },
+      { nb: 12, farine: "1080 g", levureboulangere: "24 g", cardamome: "12 g", raisinssecs: "180 g", sucre: "144 g", huileolive: "120 ml", sel: "18 g" },
+      { nb: 13, farine: "1170 g", levureboulangere: "26 g", cardamome: "13 g", raisinssecs: "195 g", sucre: "156 g", huileolive: "130 ml", sel: "19.5 g" },
+      { nb: 14, farine: "1260 g", levureboulangere: "28 g", cardamome: "14 g", raisinssecs: "210 g", sucre: "168 g", huileolive: "140 ml", sel: "21 g" },
+      { nb: 15, farine: "1350 g", levureboulangere: "30 g", cardamome: "15 g", raisinssecs: "225 g", sucre: "180 g", huileolive: "150 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, la levure, le sucre, la cardamome et le sel, puis pétrissez avec de l'eau tiède et l'huile.", badge: null },
+      { icone: "🍇", titre: "Les raisins", detail: "Incorporez les raisins secs et répartissez-les bien.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez lever la pâte jusqu'à doubler de volume.", badge: null },
+      { icone: "🌼", titre: "Façonner", detail: "Aplatissez en galette ronde épaisse sur une plaque.", badge: null },
+      { icone: "🎡", titre: "La roue", detail: "Incisez le dessus en roue solaire (cercle central + rayons), au couteau.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Laissez repousser un peu, puis enfournez jusqu'à ce que la galette soit dorée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir et rompez le long des rayons, avec un café. Le himbasha des fêtes !", badge: null }
+    ]
+  },
 });

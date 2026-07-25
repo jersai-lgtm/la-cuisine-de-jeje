@@ -78918,5 +78918,345 @@ window.RECETTES_EN = {
     "detail": "Serve piping hot, with a spoon. Užice komplet lepinja — mountain breakfast!"
    }
   ]
+ },
+ "portokalopita": {
+  "nom": "Portokalopita",
+  "description": "Portokalopita — Crete's orange cake: crumpled, dried filo sheets folded into a yoghurt-orange batter, baked into a soft cake then drowned in an orange-cinnamon syrup. Moist, fragrant and sun-drenched, it's the dessert that perfumes Greek tavernas.",
+  "etapes": [
+   {
+    "titre": "The filo",
+    "detail": "Crumple the filo sheets and let them air-dry (or in a low oven), then roughly crumble."
+   },
+   {
+    "titre": "The zest",
+    "detail": "Zest the orange and squeeze its juice (keep it for the syrup)."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk the egg with half the sugar, the yoghurt, oil, zest, baking powder and salt."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fold in the crumbled filo and pour into an oiled tin."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the cake is puffed and golden."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Boil the orange juice with the remaining sugar, a little water and the cinnamon."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Pour the hot syrup over the warm cake, let it drink and serve. Greek portokalopita!"
+   }
+  ]
+ },
+ "sfouf": {
+  "nom": "Sfouf",
+  "description": "Sfouf — Lebanon's golden cake: a turmeric semolina sponge, blazing yellow, barely sweet, scattered with pine nuts (or almonds). Eggless in its classic version, it goes with coffee in Beirut — its solar colour brightens every table.",
+  "etapes": [
+   {
+    "titre": "The dry mix",
+    "detail": "Combine the semolina, flour, sugar, turmeric, baking powder and salt."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Work in the milk and oil into a thick, bright-yellow batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest a few minutes: the semolina hydrates."
+   },
+   {
+    "titre": "The tin",
+    "detail": "Pour into an oiled tin and smooth the top."
+   },
+   {
+    "titre": "The pine nuts",
+    "detail": "Scatter with pine nuts (or flaked almonds)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the sfouf is puffed and a blade comes out clean."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool a little and cut into diamonds. Golden and fragrant — Lebanese sfouf."
+   }
+  ]
+ },
+ "himbasha": {
+  "nom": "Himbasha",
+  "description": "Himbasha — Ethiopia's (and Eritrea's) celebration bread: a lightly sweet cardamom-raisin brioche flatbread, scored into a sun wheel before baking. Shared at weddings and religious feasts, eaten with ceremony coffee — soft and fragrant.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, sugar, cardamom and salt, then knead with warm water and the oil."
+   },
+   {
+    "titre": "The raisins",
+    "detail": "Work in the raisins and distribute them well."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Flatten into a thick round on a tray."
+   },
+   {
+    "titre": "The wheel",
+    "detail": "Score the top into a sun wheel (central circle + rays), with a knife."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Let it rise a little more, then bake until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool a little and break along the rays, with coffee. Celebration himbasha!"
+   }
+  ]
+ },
+ "bibingka": {
+  "nom": "Bibingka",
+  "description": "Bibingka — the Filipino Christmas cake: a soft rice-flour and coconut-milk cake baked in a banana leaf, surprising with melted cheese on top and grated coconut. Sold piping hot outside dawn masses (Simbang Gabi), it IS December in Manila.",
+  "etapes": [
+   {
+    "titre": "The mould",
+    "detail": "Line a tin with a flame-softened banana leaf (or baking paper)."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk the rice flour, sugar, baking powder, salt, egg and coconut milk into a fluid batter."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the batter into the lined tin."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Lay cheese slivers on top (yes, on a sweet cake!)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the bibingka is puffed, golden and set through."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Out of the oven, brush with butter and sprinkle with grated coconut."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, in its leaf. Filipino Christmas-morning bibingka!"
+   }
+  ]
+ },
+ "khanomkrok": {
+  "nom": "Khanom Krok",
+  "description": "Khanom krok — Thai coconut pearls: half-spheres of rice-coconut batter, crisp underneath, molten and creamy on top, cooked in a dimpled pan. Served as sealed pairs, piping hot, it's the smell of Bangkok's night markets.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Whisk the rice flour, half the sugar, a pinch of salt and half the coconut milk with a little water: the crisp layer."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Mix the remaining coconut milk, sugar, the cornstarch and salt: the creamy layer."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat an oiled half-sphere pan (blini/takoyaki pan)."
+   },
+   {
+    "titre": "First layer",
+    "detail": "Fill the dimples three-quarters with base and let the edges crisp."
+   },
+   {
+    "titre": "Second layer",
+    "detail": "Spoon coconut cream into the centre of each dimple."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook: golden underneath, heart just wobbling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Gently unstick and serve as sealed pairs, piping hot. Bangkok khanom krok!"
+   }
+  ]
+ },
+ "whoopiepie": {
+  "nom": "Whoopie Pie",
+  "description": "Whoopie pie — New England's cake sandwich: two soft cocoa shells, halfway between cake and cookie, sealed with an airy vanilla cream. Maine's official dessert, born in Amish lunch boxes — named after the 'whoopie!' of the children who found it.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Cream the butter with two-thirds of the sugar, add the egg, then the flour, cocoa, baking powder, salt and milk."
+   },
+   {
+    "titre": "The shells",
+    "detail": "Pipe even, well-spaced mounds on a tray."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake: the shells puff into soft domes; cool them completely."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the very cold cream with the remaining sugar and vanilla until firm."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fill the flat side of one shell with cream and cap with a second."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill the whoopie pies a few minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cool — and shout 'whoopie!'. Maine's cake sandwich!"
+   }
+  ]
+ },
+ "pastafrola": {
+  "nom": "Pastafrola",
+  "description": "Pastafrola — Argentina's (and Paraguay's) lattice tart: a lemon shortcrust filled with quince jam (or sweet potato, or milk jam), covered with the famous woven lattice. The must of 5 pm mate — every Río de la Plata grandmother has her own.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Rub the flour, baking powder and salt with the cold butter, then bind with the sugar, egg and lemon zest."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and rest the pastry in the fridge."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll out two-thirds of the pastry and line a tart tin."
+   },
+   {
+    "titre": "The jam",
+    "detail": "Loosen the quince jam (or other) with a few drops of water and spread over the base."
+   },
+   {
+    "titre": "The lattice",
+    "detail": "Roll the remaining pastry, cut strips and weave the lattice over the jam."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash and bake until the lattice is golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool before slicing — with mate or coffee. Teatime pastafrola!"
+   }
+  ]
+ },
+ "drommekage": {
+  "nom": "Drømmekage",
+  "description": "Drømmekage — Denmark's 'dream cake': a simple vanilla sponge crowned near the end of baking with a coconut-butter-milk caramel that grills into a melting crust. Born at a village contest in 1960, the grandmother's recipe became a national treasure.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the egg with two-thirds of the sugar and the vanilla until foamy."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fold in the flour, baking powder, salt, then the warm milk with a third of the melted butter."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour into a tin and bake until the cake is nearly set."
+   },
+   {
+    "titre": "The coconut caramel",
+    "detail": "Meanwhile, melt the remaining butter with the remaining sugar, the coconut and a dash of milk."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Spread this coconut caramel over the hot cake."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Return to the oven (top position) until the coconut crust bubbles and browns."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool a little and cut into squares. Drømmekage — a Danish dream!"
+   }
+  ]
+ },
+ "kladdkaka": {
+  "nom": "Kladdkaka",
+  "description": "Kladdkaka — Sweden's 'sticky' chocolate cake: deliberately underbaked, crackled crust on top, molten heart inside, ready in 30 minutes with one bowl. The king of Swedish fika, served warm with whipped cream — kladdig means 'sticky', and it's a compliment.",
+  "etapes": [
+   {
+    "titre": "The butter",
+    "detail": "Melt the butter and let it cool a little."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk the egg with the sugar and vanilla, without overdoing it."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Stir in the melted butter, then the flour, cocoa and salt: the batter is thick and glossy."
+   },
+   {
+    "titre": "The tin",
+    "detail": "Pour into a small buttered, cocoa-dusted tin."
+   },
+   {
+    "titre": "Underbake",
+    "detail": "Bake briefly: the crust must crackle while the centre stays wobbly."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cool 10 minutes: the heart turns molten-creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, with whipped cream or ice cream. Swedish kladdkaka — sticky and perfect!"
+   }
+  ]
+ },
+ "mustikkapiirakka": {
+  "nom": "Mustikkapiirakka",
+  "description": "Mustikkapiirakka — Finland's blueberry pie: a soft shortcrust base, an avalanche of blueberries (wild ones, come summer) and a yoghurt batter that sets into a tangy cream around the fruit. The taste of Finnish cabins in August, warm with a glass of milk.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Cream the butter with half the sugar, then work in the flour, baking powder and salt into a soft dough."
+   },
+   {
+    "titre": "Line",
+    "detail": "Press the dough over the base and sides of a buttered tin, by hand."
+   },
+   {
+    "titre": "The blueberries",
+    "detail": "Scatter the blueberries generously over the base."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk the yoghurt with the egg, remaining sugar and vanilla."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the batter over the blueberries."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the cream is set and the edges golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool a little: serve with a glass of milk, Finnish-style. Mustikkapiirakka!"
+   }
+  ]
  }
 };
