@@ -10119,4 +10119,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir : la tarte au riz se mange tiède, comme à Verviers !", badge: null }
     ]
   },
+  dampfnudel: {
+    dateAjout: "2026-07-25T09:00:00",
+    nom: "Dampfnudel",
+    cat: "desserts", pays: "allemagne",
+    base: 4,
+    temps: "1h30 + pousse",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "☁️",
+    description: "Dampfnudel — la brioche vapeur du Palatinat : des boules de pâte levée cuites à couvert dans un fond de lait beurré-salé qui s'évapore en laissant une croûte caramélisée craquante sous un nuage moelleux. Servies avec une sauce vanille — et INTERDICTION d'ouvrir le couvercle en cours de route !",
+    tableauDampfnudel: [
+      { nb: 1, farine: "80 g", levureboulangere: "2 g", lait: "95 ml", beurre: "15 g", sucre: "18 g", oeufs: "¼", vanille: "0.4 g", maizena: "4 g", sel: "1.5 g" },
+      { nb: 2, farine: "160 g", levureboulangere: "4 g", lait: "190 ml", beurre: "30 g", sucre: "36 g", oeufs: "½", vanille: "0.8 g", maizena: "8 g", sel: "3 g" },
+      { nb: 3, farine: "240 g", levureboulangere: "6 g", lait: "285 ml", beurre: "45 g", sucre: "54 g", oeufs: "¾", vanille: "1.2 g", maizena: "12 g", sel: "4.5 g" },
+      { nb: 4, farine: "320 g", levureboulangere: "8 g", lait: "380 ml", beurre: "60 g", sucre: "72 g", oeufs: "1", vanille: "1.6 g", maizena: "16 g", sel: "6 g" },
+      { nb: 5, farine: "400 g", levureboulangere: "10 g", lait: "475 ml", beurre: "75 g", sucre: "90 g", oeufs: "1¼", vanille: "2 g", maizena: "20 g", sel: "7.5 g" },
+      { nb: 6, farine: "480 g", levureboulangere: "12 g", lait: "570 ml", beurre: "90 g", sucre: "108 g", oeufs: "1½", vanille: "2.4 g", maizena: "24 g", sel: "9 g" },
+      { nb: 7, farine: "560 g", levureboulangere: "14 g", lait: "665 ml", beurre: "105 g", sucre: "126 g", oeufs: "1¾", vanille: "2.8 g", maizena: "28 g", sel: "10.5 g" },
+      { nb: 8, farine: "640 g", levureboulangere: "16 g", lait: "760 ml", beurre: "120 g", sucre: "144 g", oeufs: "2", vanille: "3.2 g", maizena: "32 g", sel: "12 g" },
+      { nb: 9, farine: "720 g", levureboulangere: "18 g", lait: "855 ml", beurre: "135 g", sucre: "162 g", oeufs: "2¼", vanille: "3.6 g", maizena: "36 g", sel: "13.5 g" },
+      { nb: 10, farine: "800 g", levureboulangere: "20 g", lait: "950 ml", beurre: "150 g", sucre: "180 g", oeufs: "2½", vanille: "4 g", maizena: "40 g", sel: "15 g" },
+      { nb: 11, farine: "880 g", levureboulangere: "22 g", lait: "1045 ml", beurre: "165 g", sucre: "198 g", oeufs: "2¾", vanille: "4.4 g", maizena: "44 g", sel: "16.5 g" },
+      { nb: 12, farine: "960 g", levureboulangere: "24 g", lait: "1140 ml", beurre: "180 g", sucre: "216 g", oeufs: "3", vanille: "4.8 g", maizena: "48 g", sel: "18 g" },
+      { nb: 13, farine: "1040 g", levureboulangere: "26 g", lait: "1235 ml", beurre: "195 g", sucre: "234 g", oeufs: "3¼", vanille: "5.2 g", maizena: "52 g", sel: "19.5 g" },
+      { nb: 14, farine: "1120 g", levureboulangere: "28 g", lait: "1330 ml", beurre: "210 g", sucre: "252 g", oeufs: "3½", vanille: "5.6 g", maizena: "56 g", sel: "21 g" },
+      { nb: 15, farine: "1200 g", levureboulangere: "30 g", lait: "1425 ml", beurre: "225 g", sucre: "270 g", oeufs: "3¾", vanille: "6 g", maizena: "60 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine, la levure, un tiers du sucre, une pincée de sel, l'œuf, un peu de lait tiède et la moitié du beurre ; laissez lever.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Dégazez et façonnez des boules régulières ; laissez-les se détendre.", badge: null },
+      { icone: "🍮", titre: "La sauce vanille", detail: "Faites épaissir la moitié du lait avec un peu de sucre, la vanille et la maïzena ; réservez au chaud.", badge: null },
+      { icone: "🍳", titre: "Le fond", detail: "Dans une sauteuse à couvercle, faites chauffer le reste du beurre, du lait, une pincée de sucre ET de sel.", badge: null },
+      { icone: "☁️", titre: "Cuire", detail: "Déposez les boules, couvrez et laissez cuire à feu doux SANS JAMAIS OUVRIR.", badge: null },
+      { icone: "🔥", titre: "La croûte", detail: "C'est prêt quand le liquide a disparu et que ça grésille : le dessous est caramélisé, le dessus vapeur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, croûte vers le haut, nappées de sauce vanille. Les dampfnudeln du Palatinat !", badge: null }
+    ]
+  },
+  nusstorte: {
+    dateAjout: "2026-07-25T09:01:00",
+    nom: "Nusstorte",
+    cat: "desserts", pays: "suisse",
+    base: 4,
+    temps: "1h15 + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🌰",
+    description: "Nusstorte — la tourte aux noix de l'Engadine : un caramel à la crème truffé de noix, scellé entre deux abaisses de pâte sucrée, cuit en tourte dorée qui se bonifie des jours durant. Trésor des Grisons exporté par les confiseurs grisons dans toute l'Europe — dense, fondante, inoubliable.",
+    tableauNusstorte: [
+      { nb: 1, farine: "70 g", beurre: "32 g", sucre: "38 g", noix: "38 g", creme: "22 ml", oeufs: "¼", miel: "5 g", sel: "0.5 g" },
+      { nb: 2, farine: "140 g", beurre: "64 g", sucre: "76 g", noix: "76 g", creme: "44 ml", oeufs: "½", miel: "10 g", sel: "1 g" },
+      { nb: 3, farine: "210 g", beurre: "96 g", sucre: "114 g", noix: "114 g", creme: "66 ml", oeufs: "¾", miel: "15 g", sel: "1.5 g" },
+      { nb: 4, farine: "280 g", beurre: "128 g", sucre: "152 g", noix: "152 g", creme: "88 ml", oeufs: "1", miel: "20 g", sel: "2 g" },
+      { nb: 5, farine: "350 g", beurre: "160 g", sucre: "190 g", noix: "190 g", creme: "110 ml", oeufs: "1¼", miel: "25 g", sel: "2.5 g" },
+      { nb: 6, farine: "420 g", beurre: "192 g", sucre: "228 g", noix: "228 g", creme: "132 ml", oeufs: "1½", miel: "30 g", sel: "3 g" },
+      { nb: 7, farine: "490 g", beurre: "224 g", sucre: "266 g", noix: "266 g", creme: "154 ml", oeufs: "1¾", miel: "35 g", sel: "3.5 g" },
+      { nb: 8, farine: "560 g", beurre: "256 g", sucre: "304 g", noix: "304 g", creme: "176 ml", oeufs: "2", miel: "40 g", sel: "4 g" },
+      { nb: 9, farine: "630 g", beurre: "288 g", sucre: "342 g", noix: "342 g", creme: "198 ml", oeufs: "2¼", miel: "45 g", sel: "4.5 g" },
+      { nb: 10, farine: "700 g", beurre: "320 g", sucre: "380 g", noix: "380 g", creme: "220 ml", oeufs: "2½", miel: "50 g", sel: "5 g" },
+      { nb: 11, farine: "770 g", beurre: "352 g", sucre: "418 g", noix: "418 g", creme: "242 ml", oeufs: "2¾", miel: "55 g", sel: "5.5 g" },
+      { nb: 12, farine: "840 g", beurre: "384 g", sucre: "456 g", noix: "456 g", creme: "264 ml", oeufs: "3", miel: "60 g", sel: "6 g" },
+      { nb: 13, farine: "910 g", beurre: "416 g", sucre: "494 g", noix: "494 g", creme: "286 ml", oeufs: "3¼", miel: "65 g", sel: "6.5 g" },
+      { nb: 14, farine: "980 g", beurre: "448 g", sucre: "532 g", noix: "532 g", creme: "308 ml", oeufs: "3½", miel: "70 g", sel: "7 g" },
+      { nb: 15, farine: "1050 g", beurre: "480 g", sucre: "570 g", noix: "570 g", creme: "330 ml", oeufs: "3¾", miel: "75 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Sablez la farine et le sel avec le beurre, liez avec un tiers du sucre et l'œuf ; laissez reposer au frais.", badge: null },
+      { icone: "🍬", titre: "Le caramel", detail: "Faites caraméliser à sec le reste du sucre jusqu'à l'ambré.", badge: null },
+      { icone: "🥛", titre: "La crème", detail: "Hors du feu, versez la crème chaude et le miel (attention aux projections), et remettez à fondre en caramel lisse.", badge: null },
+      { icone: "🌰", titre: "Les noix", detail: "Incorporez les noix concassées et laissez tiédir : la garniture épaissit.", badge: null },
+      { icone: "🎂", titre: "Monter", detail: "Foncez un moule avec les deux tiers de la pâte, versez le caramel aux noix, couvrez de l'abaisse restante et soudez les bords.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Piquez le dessus, dorez et enfournez jusqu'à belle couleur dorée.", badge: null },
+      { icone: "🍽️", titre: "Patienter", detail: "Laissez COMPLÈTEMENT refroidir (une nuit) avant de trancher fin. La nusstorte de l'Engadine !", badge: null }
+    ]
+  },
 });

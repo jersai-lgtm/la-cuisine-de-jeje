@@ -79938,5 +79938,345 @@ window.RECETTES_EN = {
     "detail": "Top with fresh pico de gallo and serve at once. Mexican molletes!"
    }
   ]
+ },
+ "dampfnudel": {
+  "nom": "Dampfnudel",
+  "description": "Dampfnudel — the Palatinate's steamed bun: balls of yeast dough cooked covered in a buttery salted milk that evaporates, leaving a crackling caramelized crust under a soft cloud. Served with vanilla sauce — and NO opening the lid along the way!",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, a third of the sugar, a pinch of salt, the egg, some warm milk and half the butter; let it rise."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Knock back and shape even balls; let them relax."
+   },
+   {
+    "titre": "The vanilla sauce",
+    "detail": "Thicken half the milk with some sugar, the vanilla and cornstarch; keep warm."
+   },
+   {
+    "titre": "The base",
+    "detail": "In a lidded sauté pan, heat the remaining butter, milk, a pinch of sugar AND salt."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Set in the balls, cover and cook over low heat WITHOUT EVER OPENING."
+   },
+   {
+    "titre": "The crust",
+    "detail": "It's done when the liquid is gone and it sizzles: caramelized underneath, steamed on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, crust up, coated in vanilla sauce. Palatinate dampfnudeln!"
+   }
+  ]
+ },
+ "nusstorte": {
+  "nom": "Nusstorte",
+  "description": "Nusstorte — the Engadine walnut pie: a cream caramel packed with walnuts, sealed between two sweet pastry layers, baked into a golden pie that improves for days. The Grisons' treasure, exported by Grison confectioners across Europe — dense, melting, unforgettable.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Rub the flour and salt with the butter, bind with a third of the sugar and the egg; rest in the fridge."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Dry-caramelize the remaining sugar to amber."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Off the heat, pour in the hot cream and honey (mind the sputtering), and return to melt into a smooth caramel."
+   },
+   {
+    "titre": "The walnuts",
+    "detail": "Stir in the chopped walnuts and let it cool: the filling thickens."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Line a tin with two-thirds of the pastry, pour in the walnut caramel, cover with the remaining sheet and seal the edges."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Prick the top, egg-wash and bake until nicely golden."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Cool COMPLETELY (overnight) before slicing thin. Engadine nusstorte!"
+   }
+  ]
+ },
+ "soupeauxpois": {
+  "nom": "Canadian Pea Soup",
+  "description": "Pea soup — Quebec's 'habitant' soup: dried yellow peas long-simmered with lardons (traditionally salt pork), carrot, onion and herbs, into a thick velvety soup. Heir of the lumber-camp kitchens, it has warmed Canadian winters for 400 years.",
+  "etapes": [
+   {
+    "titre": "The soak",
+    "detail": "Soak the yellow (or split) peas overnight, then drain."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sizzle the lardons, then the sliced onion in their fat."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the diced carrot, the peas, bay leaf and thyme."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Cover generously with water and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length, skimming, until the peas break down."
+   },
+   {
+    "titre": "The texture",
+    "detail": "Roughly crush some of the peas: the soup turns thick and velvety; season."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve steaming, with crusty bread. Quebec pea soup!"
+   }
+  ]
+ },
+ "pastaefagioli": {
+  "nom": "Pasta e Fagioli",
+  "description": "Pasta e fagioli — all of Italy's soup-meal: borlotti beans simmered with soffritto and rosemary, half-blended for silkiness, with small pasta cooked right in. Finished with olive oil and parmesan — cucina povera at its greatest.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the beans overnight, then cook until tender (keep the cooking water)."
+   },
+   {
+    "titre": "The soffritto",
+    "detail": "Gently sauté diced onion, carrot and celery with the garlic in the oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and rosemary, and let it cook down."
+   },
+   {
+    "titre": "Velvet",
+    "detail": "Add the beans and their water; blend HALF the soup and return it."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Bring to a simmer and cook the small pasta right in the soup."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt, and loosen with water if needed: the soup must be creamy, not stodgy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a drizzle of olive oil and the grated parmesan. Pasta e fagioli!"
+   }
+  ]
+ },
+ "chorbafrik": {
+  "nom": "Chorba Frik",
+  "description": "Chorba frik — Algeria's Ramadan soup: a tomato-lamb broth scented with coriander and cinnamon, thickened with frik (smoky cracked green wheat — or bulgur), finished with lemon. THE fast-breaking soup from Constantine to Algiers, with a crisp bourek.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Brown the lamb in small pieces with the onion in the oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add crushed tomato, paste, garlic, paprika, cinnamon and half the coriander."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cover generously with water, salt, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the lamb is tender."
+   },
+   {
+    "titre": "The frik",
+    "detail": "Rinse the frik (or bulgur) and rain it into the simmering soup."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook, stirring now and then: the chorba thickens and blooms."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Finish with the remaining coriander and the lemon, and serve piping hot. Algerian chorba frik!"
+   }
+  ]
+ },
+ "flygandejacob": {
+  "nom": "Flygande Jacob",
+  "description": "Flygande Jacob — Sweden's 'Flying Jacob': chicken and bananas baked under a spiced ketchup whipped cream, crowned with bacon and peanuts, served over rice. Invented in 1976 by an air-freight employee (hence the name!), this improbable dish became a cult classic — taste before you judge.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the plain rice."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken pieces, salt, and lay them in a gratin dish."
+   },
+   {
+    "titre": "The bananas",
+    "detail": "Cut the bananas into thick rounds and scatter over the chicken."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Whip the very cold cream, then fold in the ketchup and chilli."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat chicken and bananas entirely with this pink cream."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the sauce is golden and bubbling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sizzle the lardons, scatter them with the peanuts, and serve over rice. Flygande Jacob!"
+   }
+  ]
+ },
+ "makaronilaatikko": {
+  "nom": "Makaronilaatikko",
+  "description": "Makaronilaatikko — Finland's macaroni casserole: pasta and minced beef set in a milk-egg custard, baked until the top browns. The childhood dish of ALL Finland, served with ketchup unapologetically — simple, cheap, unbeatable on a weeknight.",
+  "etapes": [
+   {
+    "titre": "The pasta",
+    "detail": "Cook the macaroni al dente and drain."
+   },
+   {
+    "titre": "The mince",
+    "detail": "Brown the minced beef with the onion, season."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Whisk the milk with the eggs, salt and pepper."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Mix pasta and meat in a buttered dish."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the milk-egg custard over the mix."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the custard is set and the top golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Rest 5 minutes and serve — with ketchup, Finnish-style! Makaronilaatikko."
+   }
+  ]
+ },
+ "champ": {
+  "nom": "Champ",
+  "description": "Champ — Ulster's mash: potatoes crushed with hot milk infused with spring onions, served as a mound with a well of melted butter. You eat from the outside in, each bite dipped in the molten gold — Ireland at its simplest perfection.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Boil the potato chunks in salted water, then drain and let them dry a minute."
+   },
+   {
+    "titre": "The infused milk",
+    "detail": "Simmer the milk with the sliced spring onions, one minute."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Mash the potatoes with a masher, without overworking."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Work in the oniony milk little by little: the mash must be supple and flecked green."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper generously."
+   },
+   {
+    "titre": "The well",
+    "detail": "Mound the mash and dig a well in the centre; melt the butter into it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot — every spoonful dips into the butter well. Irish champ!"
+   }
+  ]
+ },
+ "chickenwaffles": {
+  "nom": "Chicken and Waffles",
+  "description": "Chicken and waffles — the soul food brunch: ultra-crispy fried chicken on soft waffles, doused with maple syrup — the absolute sweet-salty-crunchy. Popularized by Harlem jazz clubs after the shows, between dinner and breakfast.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Season the chicken and let it soak in a little milk (ideally buttermilk)."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Mix half the flour with the paprika, salt and pepper, and roll the drained chicken in it, pressing."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the chicken until golden, crisp and cooked through; drain."
+   },
+   {
+    "titre": "The waffle batter",
+    "detail": "Whisk the remaining flour, the baking powder, egg, remaining milk, melted butter and a pinch of salt."
+   },
+   {
+    "titre": "The waffles",
+    "detail": "Cook the waffles until golden and fluffy."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Set the piping-hot fried chicken on the waffles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Douse generously with maple syrup and serve at once. Harlem chicken and waffles!"
+   }
+  ]
+ },
+ "cheeserolls": {
+  "nom": "Cheese Rolls",
+  "description": "Cheese rolls — New Zealand's 'southern sushi': slices of bread rolled around an oniony cheese cream, butter-browned until crisp outside and molten inside. The absolute pride of Southland, sold by the thousands at charity fundraisers — unfindable up north, cult down south.",
+  "etapes": [
+   {
+    "titre": "The cheese cream",
+    "detail": "Gently melt the grated cheese with the cream, very finely chopped onion and mustard into a thick paste; salt and cool a little."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Trim the crusts off the bread slices and lightly flatten them with a rolling pin."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread each slice with cheese cream to the edges."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the slices into tight cylinders, seam down."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush the rolls with melted butter on all sides."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown them in the oven (or a pan), turning, until crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot — the cheese flows at the first bite. Southland cheese rolls!"
+   }
+  ]
  }
 };

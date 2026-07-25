@@ -6449,4 +6449,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Monter", detail: "Garnissez : galette, oignon émincé, tomate, un trait de chutney ou de sauce. Le bun kebab de Karachi !", badge: null }
     ]
   },
+  cheeserolls: {
+    dateAjout: "2026-07-25T09:09:00",
+    nom: "Cheese Rolls",
+    cat: "encas", pays: "nouvellezelande",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Cheese rolls — le « sushi du Sud » néo-zélandais : des tranches de pain de mie roulées autour d'une crème de fromage à l'oignon, dorées au beurre jusqu'à croustiller dehors et fondre dedans. Fierté absolue du Southland, vendus par milliers aux ventes de charité — introuvables au nord, cultes au sud.",
+    tableauCheeserolls: [
+      { nb: 1, pain: "75 g", gruyere: "42 g", creme: "16 ml", oignon: "15 g", moutarde: "2 g", beurre: "12 g", sel: "1 g" },
+      { nb: 2, pain: "150 g", gruyere: "84 g", creme: "32 ml", oignon: "30 g", moutarde: "4 g", beurre: "24 g", sel: "2 g" },
+      { nb: 3, pain: "225 g", gruyere: "126 g", creme: "48 ml", oignon: "45 g", moutarde: "6 g", beurre: "36 g", sel: "3 g" },
+      { nb: 4, pain: "300 g", gruyere: "168 g", creme: "64 ml", oignon: "60 g", moutarde: "8 g", beurre: "48 g", sel: "4 g" },
+      { nb: 5, pain: "375 g", gruyere: "210 g", creme: "80 ml", oignon: "75 g", moutarde: "10 g", beurre: "60 g", sel: "5 g" },
+      { nb: 6, pain: "450 g", gruyere: "252 g", creme: "96 ml", oignon: "90 g", moutarde: "12 g", beurre: "72 g", sel: "6 g" },
+      { nb: 7, pain: "525 g", gruyere: "294 g", creme: "112 ml", oignon: "105 g", moutarde: "14 g", beurre: "84 g", sel: "7 g" },
+      { nb: 8, pain: "600 g", gruyere: "336 g", creme: "128 ml", oignon: "120 g", moutarde: "16 g", beurre: "96 g", sel: "8 g" },
+      { nb: 9, pain: "675 g", gruyere: "378 g", creme: "144 ml", oignon: "135 g", moutarde: "18 g", beurre: "108 g", sel: "9 g" },
+      { nb: 10, pain: "750 g", gruyere: "420 g", creme: "160 ml", oignon: "150 g", moutarde: "20 g", beurre: "120 g", sel: "10 g" },
+      { nb: 11, pain: "825 g", gruyere: "462 g", creme: "176 ml", oignon: "165 g", moutarde: "22 g", beurre: "132 g", sel: "11 g" },
+      { nb: 12, pain: "900 g", gruyere: "504 g", creme: "192 ml", oignon: "180 g", moutarde: "24 g", beurre: "144 g", sel: "12 g" },
+      { nb: 13, pain: "975 g", gruyere: "546 g", creme: "208 ml", oignon: "195 g", moutarde: "26 g", beurre: "156 g", sel: "13 g" },
+      { nb: 14, pain: "1050 g", gruyere: "588 g", creme: "224 ml", oignon: "210 g", moutarde: "28 g", beurre: "168 g", sel: "14 g" },
+      { nb: 15, pain: "1125 g", gruyere: "630 g", creme: "240 ml", oignon: "225 g", moutarde: "30 g", beurre: "180 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "La crème de fromage", detail: "Faites fondre à feu doux le fromage râpé avec la crème, l'oignon très finement haché et la moutarde, en pâte épaisse ; salez et laissez tiédir.", badge: null },
+      { icone: "🍞", titre: "Le pain", detail: "Écroûtez les tranches de pain de mie et aplatissez-les légèrement au rouleau.", badge: null },
+      { icone: "🥄", titre: "Tartiner", detail: "Tartinez chaque tranche de crème de fromage jusqu'aux bords.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Roulez les tranches en cylindres bien serrés, soudure dessous.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Badigeonnez les rouleaux de beurre fondu sur toutes leurs faces.", badge: null },
+      { icone: "♨️", titre: "Dorer", detail: "Faites-les dorer au four (ou à la poêle) en les tournant, jusqu'à ce qu'ils croustillent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlants — le fromage coule à la première bouchée. Les cheese rolls du Southland !", badge: null }
+    ]
+  },
 });

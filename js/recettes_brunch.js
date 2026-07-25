@@ -2555,4 +2555,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Coiffez de pico de gallo frais et servez aussitôt. Les molletes mexicaines !", badge: null }
     ]
   },
+  chickenwaffles: {
+    dateAjout: "2026-07-25T09:08:00",
+    nom: "Chicken and Waffles",
+    cat: "brunch", pays: "usa",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧇",
+    description: "Chicken and waffles — le brunch soul food : du poulet frit ultra-croustillant posé sur des gaufres moelleuses, le tout arrosé de sirop d'érable — le sucré-salé-croustillant absolu. Popularisé par les clubs de jazz de Harlem à la sortie des concerts, entre dîner et petit-déjeuner.",
+    tableauChickenwaffles: [
+      { nb: 1, poulet: "110 g", farine: "55 g", oeufs: "½", lait: "55 ml", beurre: "10 g", levurechimique: "2 g", paprika: "1 g", siropderable: "18 ml", huileolive: "15 ml", sel: "2 g", poivre: "1 g" },
+      { nb: 2, poulet: "220 g", farine: "110 g", oeufs: "1", lait: "110 ml", beurre: "20 g", levurechimique: "4 g", paprika: "2 g", siropderable: "36 ml", huileolive: "30 ml", sel: "4 g", poivre: "2 g" },
+      { nb: 3, poulet: "330 g", farine: "165 g", oeufs: "1½", lait: "165 ml", beurre: "30 g", levurechimique: "6 g", paprika: "3 g", siropderable: "54 ml", huileolive: "45 ml", sel: "6 g", poivre: "3 g" },
+      { nb: 4, poulet: "440 g", farine: "220 g", oeufs: "2", lait: "220 ml", beurre: "40 g", levurechimique: "8 g", paprika: "4 g", siropderable: "72 ml", huileolive: "60 ml", sel: "8 g", poivre: "4 g" },
+      { nb: 5, poulet: "550 g", farine: "275 g", oeufs: "2½", lait: "275 ml", beurre: "50 g", levurechimique: "10 g", paprika: "5 g", siropderable: "90 ml", huileolive: "75 ml", sel: "10 g", poivre: "5 g" },
+      { nb: 6, poulet: "660 g", farine: "330 g", oeufs: "3", lait: "330 ml", beurre: "60 g", levurechimique: "12 g", paprika: "6 g", siropderable: "108 ml", huileolive: "90 ml", sel: "12 g", poivre: "6 g" },
+      { nb: 7, poulet: "770 g", farine: "385 g", oeufs: "3½", lait: "385 ml", beurre: "70 g", levurechimique: "14 g", paprika: "7 g", siropderable: "126 ml", huileolive: "105 ml", sel: "14 g", poivre: "7 g" },
+      { nb: 8, poulet: "880 g", farine: "440 g", oeufs: "4", lait: "440 ml", beurre: "80 g", levurechimique: "16 g", paprika: "8 g", siropderable: "144 ml", huileolive: "120 ml", sel: "16 g", poivre: "8 g" },
+      { nb: 9, poulet: "990 g", farine: "495 g", oeufs: "4½", lait: "495 ml", beurre: "90 g", levurechimique: "18 g", paprika: "9 g", siropderable: "162 ml", huileolive: "135 ml", sel: "18 g", poivre: "9 g" },
+      { nb: 10, poulet: "1100 g", farine: "550 g", oeufs: "5", lait: "550 ml", beurre: "100 g", levurechimique: "20 g", paprika: "10 g", siropderable: "180 ml", huileolive: "150 ml", sel: "20 g", poivre: "10 g" },
+      { nb: 11, poulet: "1210 g", farine: "605 g", oeufs: "5½", lait: "605 ml", beurre: "110 g", levurechimique: "22 g", paprika: "11 g", siropderable: "198 ml", huileolive: "165 ml", sel: "22 g", poivre: "11 g" },
+      { nb: 12, poulet: "1320 g", farine: "660 g", oeufs: "6", lait: "660 ml", beurre: "120 g", levurechimique: "24 g", paprika: "12 g", siropderable: "216 ml", huileolive: "180 ml", sel: "24 g", poivre: "12 g" },
+      { nb: 13, poulet: "1430 g", farine: "715 g", oeufs: "6½", lait: "715 ml", beurre: "130 g", levurechimique: "26 g", paprika: "13 g", siropderable: "234 ml", huileolive: "195 ml", sel: "26 g", poivre: "13 g" },
+      { nb: 14, poulet: "1540 g", farine: "770 g", oeufs: "7", lait: "770 ml", beurre: "140 g", levurechimique: "28 g", paprika: "14 g", siropderable: "252 ml", huileolive: "210 ml", sel: "28 g", poivre: "14 g" },
+      { nb: 15, poulet: "1650 g", farine: "825 g", oeufs: "7½", lait: "825 ml", beurre: "150 g", levurechimique: "30 g", paprika: "15 g", siropderable: "270 ml", huileolive: "225 ml", sel: "30 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Mariner", detail: "Salez et poivrez le poulet, et laissez-le tremper dans un peu de lait (idéalement du lait ribot).", badge: null },
+      { icone: "🌾", titre: "Paner", detail: "Mélangez la moitié de la farine avec le paprika, du sel et du poivre, et roulez-y le poulet égoutté, en pressant.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Faites frire le poulet jusqu'à ce qu'il soit doré, croustillant et cuit à cœur ; égouttez.", badge: null },
+      { icone: "🥣", titre: "La pâte à gaufres", detail: "Fouettez le reste de farine, la levure, l'œuf, le reste du lait, le beurre fondu et une pincée de sel.", badge: null },
+      { icone: "🧇", titre: "Les gaufres", detail: "Faites cuire les gaufres jusqu'à ce qu'elles soient dorées et moelleuses.", badge: null },
+      { icone: "🥞", titre: "Assembler", detail: "Posez le poulet frit brûlant sur les gaufres.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arrosez généreusement de sirop d'érable et servez aussitôt. Le chicken and waffles de Harlem !", badge: null }
+    ]
+  },
 });
