@@ -79598,5 +79598,345 @@ window.RECETTES_EN = {
     "detail": "Dot the centre with melted chocolate and let it set. Romandy caracs!"
    }
   ]
+ },
+ "bakewell": {
+  "nom": "Bakewell Tart",
+  "description": "Bakewell tart — the Derbyshire tart: a shortcrust base, a thin layer of raspberry jam, a soft almond frangipane, crowned with flaked almonds (or icing and its cherry, 'cherry Bakewell' style). Born of an inn mistake in the 19th century — the happiest of English mistakes.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Rub the flour and salt with a third of the butter, bind with a little cold water, and rest."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll out and line a tart tin; prick the base and lightly pre-bake."
+   },
+   {
+    "titre": "The jam",
+    "detail": "Spread the raspberry jam over the warm base."
+   },
+   {
+    "titre": "The frangipane",
+    "detail": "Cream the remaining butter with the sugar, add the egg, vanilla and ground almonds."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour the frangipane over the jam and smooth."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Scatter flaked almonds and bake until the frangipane is puffed and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool before slicing — plain or with a spoonful of cream. The Bakewell tart!"
+   }
+  ]
+ },
+ "tompouce": {
+  "nom": "Tompouce",
+  "description": "Tompouce — the Netherlands' square millefeuille: two crisp puff pastry slabs, a thick vanilla custard, and the iconic pink icing (orange on King's Day!). The right way to eat one without crushing everything is still debated — mission impossible.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Prick the puff pastry, lay a tray on top (to keep it flat) and bake until nicely golden."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the warm slab into even rectangles, in pairs."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Thicken the milk with the sugar, cornstarch, egg yolk, vanilla and salt into a thick custard."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Film the custard against its surface and cool completely."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pipe a generous layer of custard onto half the rectangles."
+   },
+   {
+    "titre": "The icing",
+    "detail": "Ice the remaining rectangles with pink fondant (icing sugar, water, a dot of colouring) and set them on the custard."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Set in the fridge and serve — good luck with the first bite! The Dutch tompouce."
+   }
+  ]
+ },
+ "tarteauriz": {
+  "nom": "Belgian Rice Tart",
+  "description": "Rice tart — Verviers' 'vôte': a brioche-style leavened base filled with creamy vanilla rice pudding, bound with egg, baked until the top caramelizes. The pride of the Belgian wool town, eaten warm — and still debated with neighbouring Liège (with or without macaroons?).",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, a pinch of sugar, the salt, butter and a little warm milk; let it rise."
+   },
+   {
+    "titre": "The rice pudding",
+    "detail": "Cook the rice in the remaining milk with the vanilla, over very low heat, until creamy."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Stir the sugar into the rice pudding and let it cool a little."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the beaten egg to the warm (not hot) rice and mix."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll out the leavened dough and line a high-sided tart tin."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour in the rice, smooth, and bake in a hot oven until the top is deeply golden, almost caramelized."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool a little: rice tart is eaten warm, Verviers-style!"
+   }
+  ]
+ },
+ "stovies": {
+  "nom": "Stovies",
+  "description": "Stovies — Scotland's Monday pot: potatoes slowly stewed in butter with onions and beef (traditionally Sunday's leftover roast), until half-melted into a rustic, comforting stew. Served with oatcakes — Highland comfort itself.",
+  "etapes": [
+   {
+    "titre": "The onions",
+    "detail": "Soften the sliced onions in the butter, without colouring."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Add the beef pieces (or leftover roast) and brown them."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the thick-sliced potatoes and coat them in the fat."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in a little water (or stock), add the bay leaf, salt and pepper."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Cover and stew over low heat, stirring now and then."
+   },
+   {
+    "titre": "The texture",
+    "detail": "It's ready when half the potatoes have melted to mash and the rest still hold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the pepper and serve steaming. Scottish stovies — comfort itself."
+   }
+  ]
+ },
+ "espinacasgarbanzos": {
+  "nom": "Espinacas con Garbanzos",
+  "description": "Espinacas con garbanzos — Seville's legendary tapa: spinach and chickpeas bound by a picada of garlic-fried bread, cumin and paprika, sharpened with a dash of vinegar. A Moorish legacy, green and deep, it's the dish of Andalusian bodegas — mop it up shamelessly.",
+  "etapes": [
+   {
+    "titre": "The picada",
+    "detail": "Fry the diced bread with the sliced garlic in the oil until nicely golden."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound (or blend) the fried bread and garlic with the cumin, paprika and vinegar into a thick paste."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Wilt the spinach in the same pan."
+   },
+   {
+    "titre": "The chickpeas",
+    "detail": "Add the cooked chickpeas with a little of their liquid."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in the picada: the sauce turns coating and fragrant."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer a few minutes to marry everything; salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with toasted bread. Seville's tapa — green and deep!"
+   }
+  ]
+ },
+ "pastanorma": {
+  "nom": "Pasta alla Norma",
+  "description": "Pasta alla Norma — Catania's pride: pasta in tomato-basil sauce crowned with melting fried aubergine and grated salted ricotta. Named after Bellini's opera by a conquered playwright ('it's a Norma!') — Sicily on a plate.",
+  "etapes": [
+   {
+    "titre": "The aubergine",
+    "detail": "Dice the aubergine, salt it and let it release water, then pat dry."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the aubergine cubes in the oil until golden and melting; set aside."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "In the same pan, sauté the garlic, add the crushed tomato and cook down with half the basil."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Cook the pasta al dente and keep a ladle of cooking water."
+   },
+   {
+    "titre": "Marry",
+    "detail": "Toss pasta, sauce and a little cooking water, then half the aubergine."
+   },
+   {
+    "titre": "The ricotta",
+    "detail": "Plate, crown with the remaining aubergine and grate the salted ricotta over."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Finish with fresh basil and serve at once. Sicilian pasta alla Norma!"
+   }
+  ]
+ },
+ "arrozdepato": {
+  "nom": "Arroz de Pato",
+  "description": "Arroz de pato — Portugal's duck rice: a duck poached then shredded, its broth cooking the rice, the whole baked under chorizo slices that crisp on top. The Sunday dish of Portuguese families, deep and golden — every grain of rice tells of the duck.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Poach the duck with half an onion, the bay leaf, salt and pepper, until very tender; keep the broth."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Bone and shred the duck."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the remaining onion and garlic in the oil, deglaze with the white wine."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice, toast it, then add the duck broth and cook three-quarters through."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Mix rice and shredded duck in an oven dish."
+   },
+   {
+    "titre": "The chorizo",
+    "detail": "Cover with thin chorizo slices."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the top is golden and the chorizo crisp. Portuguese arroz de pato!"
+   }
+  ]
+ },
+ "napolitan": {
+  "nom": "Spaghetti Napolitan",
+  "description": "Spaghetti napolitan — Japan's most 'Italian' dish… invented in Yokohama: spaghetti stir-fried in ketchup with sausage, green pepper, onion and mushrooms, finished with butter. Born in post-war kissaten, proudly indulgent — Italians scream, Japanese adore it, so do we.",
+  "etapes": [
+   {
+    "titre": "The pasta",
+    "detail": "Cook the spaghetti ONE minute past al dente (kissaten style), drain and lightly oil."
+   },
+   {
+    "titre": "The garnish",
+    "detail": "Slice the sausage on the bias, the pepper and onion into strips, the mushrooms thin."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the garnish in a little butter until lightly coloured."
+   },
+   {
+    "titre": "The ketchup",
+    "detail": "Push the garnish aside, pour in the ketchup and let it CARAMELIZE 30 seconds (the anti-acidity secret)."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the spaghetti and toss briskly to coat everything in glossy sauce."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Finish with the remaining butter, salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot — with parmesan and a dash of Tabasco, Japanese-style. Yokohama napolitan!"
+   }
+  ]
+ },
+ "fanqiechaodan": {
+  "nom": "Tomato Egg Stir-Fry",
+  "description": "Fan qie chao dan — the tomato-egg stir-fry, THE dish every Chinese person can cook: pillowy scrambled-fried eggs, juicy barely-stewed tomatoes, a touch of sugar and soy, over a bowl of rice. Fifteen minutes, four ingredients — the taste of home, from Beijing to Canton.",
+  "etapes": [
+   {
+    "titre": "The eggs",
+    "detail": "Beat the eggs with a pinch of salt and a few drops of water."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Cut the tomatoes into medium wedges."
+   },
+   {
+    "titre": "Eggs first",
+    "detail": "Pour the eggs into the very hot oiled wok: they puff — take them out barely set, still soft."
+   },
+   {
+    "titre": "Tomatoes next",
+    "detail": "In the same wok, stir-fry the tomatoes over high heat until they release their juices."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the sugar, soy sauce and salt: the sauce turns glossy."
+   },
+   {
+    "titre": "Reunite",
+    "detail": "Return the eggs, toss ten seconds — no more, they must stay pillowy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with spring onion and serve over white rice. Fan qie chao dan — China at home!"
+   }
+  ]
+ },
+ "molletes": {
+  "nom": "Molletes",
+  "description": "Molletes — Mexico's baked open sandwiches: soft buttered bread spread with black-bean purée, covered with melted cheese and topped with fresh pico de gallo. The favourite breakfast (or lazy dinner) of Mexican students — ready in 25 minutes, maximum comfort.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Split the bread, butter it and lightly toast it."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Mash the cooked black beans with a little of their liquid and salt into a spreadable purée, and warm it."
+   },
+   {
+    "titre": "The pico",
+    "detail": "Mix diced tomato and onion, chopped coriander, lime, chilli and salt."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Generously spread the bread halves with bean purée."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Cover with grated cheese."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Pass under the grill until the cheese melts and bubbles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with fresh pico de gallo and serve at once. Mexican molletes!"
+   }
+  ]
  }
 };

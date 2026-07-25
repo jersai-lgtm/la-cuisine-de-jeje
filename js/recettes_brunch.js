@@ -2518,4 +2518,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, à la cuillère. La komplet lepinja d'Užice — le petit-déj des montagnes !", badge: null }
     ]
   },
+  molletes: {
+    dateAjout: "2026-07-24T19:09:00",
+    nom: "Molletes",
+    cat: "brunch", pays: "mexique",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Molletes — les tartines gratinées du Mexique : un pain moelleux beurré, tartiné de purée de haricots noirs, couvert de fromage fondu et coiffé de pico de gallo frais. Le petit-déjeuner (ou dîner de flemme) préféré des étudiants mexicains — prêt en 25 minutes, réconfort maximal.",
+    tableauMolletes: [
+      { nb: 1, pain: "85 g", haricotsnoirs: "45 g", gruyere: "30 g", tomate: "35 g", oignon: "15 g", coriandre: "2 g", citronvert: "¼", beurre: "8 g", piment: "0.5 g", sel: "1.5 g" },
+      { nb: 2, pain: "170 g", haricotsnoirs: "90 g", gruyere: "60 g", tomate: "70 g", oignon: "30 g", coriandre: "4 g", citronvert: "½", beurre: "16 g", piment: "1 g", sel: "3 g" },
+      { nb: 3, pain: "255 g", haricotsnoirs: "135 g", gruyere: "90 g", tomate: "105 g", oignon: "45 g", coriandre: "6 g", citronvert: "¾", beurre: "24 g", piment: "1.5 g", sel: "4.5 g" },
+      { nb: 4, pain: "340 g", haricotsnoirs: "180 g", gruyere: "120 g", tomate: "140 g", oignon: "60 g", coriandre: "8 g", citronvert: "1", beurre: "32 g", piment: "2 g", sel: "6 g" },
+      { nb: 5, pain: "425 g", haricotsnoirs: "225 g", gruyere: "150 g", tomate: "175 g", oignon: "75 g", coriandre: "10 g", citronvert: "1¼", beurre: "40 g", piment: "2.5 g", sel: "7.5 g" },
+      { nb: 6, pain: "510 g", haricotsnoirs: "270 g", gruyere: "180 g", tomate: "210 g", oignon: "90 g", coriandre: "12 g", citronvert: "1½", beurre: "48 g", piment: "3 g", sel: "9 g" },
+      { nb: 7, pain: "595 g", haricotsnoirs: "315 g", gruyere: "210 g", tomate: "245 g", oignon: "105 g", coriandre: "14 g", citronvert: "1¾", beurre: "56 g", piment: "3.5 g", sel: "10.5 g" },
+      { nb: 8, pain: "680 g", haricotsnoirs: "360 g", gruyere: "240 g", tomate: "280 g", oignon: "120 g", coriandre: "16 g", citronvert: "2", beurre: "64 g", piment: "4 g", sel: "12 g" },
+      { nb: 9, pain: "765 g", haricotsnoirs: "405 g", gruyere: "270 g", tomate: "315 g", oignon: "135 g", coriandre: "18 g", citronvert: "2¼", beurre: "72 g", piment: "4.5 g", sel: "13.5 g" },
+      { nb: 10, pain: "850 g", haricotsnoirs: "450 g", gruyere: "300 g", tomate: "350 g", oignon: "150 g", coriandre: "20 g", citronvert: "2½", beurre: "80 g", piment: "5 g", sel: "15 g" },
+      { nb: 11, pain: "935 g", haricotsnoirs: "495 g", gruyere: "330 g", tomate: "385 g", oignon: "165 g", coriandre: "22 g", citronvert: "2¾", beurre: "88 g", piment: "5.5 g", sel: "16.5 g" },
+      { nb: 12, pain: "1020 g", haricotsnoirs: "540 g", gruyere: "360 g", tomate: "420 g", oignon: "180 g", coriandre: "24 g", citronvert: "3", beurre: "96 g", piment: "6 g", sel: "18 g" },
+      { nb: 13, pain: "1105 g", haricotsnoirs: "585 g", gruyere: "390 g", tomate: "455 g", oignon: "195 g", coriandre: "26 g", citronvert: "3¼", beurre: "104 g", piment: "6.5 g", sel: "19.5 g" },
+      { nb: 14, pain: "1190 g", haricotsnoirs: "630 g", gruyere: "420 g", tomate: "490 g", oignon: "210 g", coriandre: "28 g", citronvert: "3½", beurre: "112 g", piment: "7 g", sel: "21 g" },
+      { nb: 15, pain: "1275 g", haricotsnoirs: "675 g", gruyere: "450 g", tomate: "525 g", oignon: "225 g", coriandre: "30 g", citronvert: "3¾", beurre: "120 g", piment: "7.5 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Le pain", detail: "Fendez le pain en deux, beurrez-le et faites-le légèrement griller.", badge: null },
+      { icone: "🫘", titre: "Les haricots", detail: "Écrasez les haricots noirs cuits avec un peu de leur jus et du sel en purée tartinable, et réchauffez-la.", badge: null },
+      { icone: "🍅", titre: "Le pico", detail: "Mélangez tomate et oignon en petits dés, coriandre ciselée, citron vert, piment et sel.", badge: null },
+      { icone: "🥄", titre: "Tartiner", detail: "Tartinez généreusement les demi-pains de purée de haricots.", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Couvrez de fromage râpé.", badge: null },
+      { icone: "♨️", titre: "Gratiner", detail: "Passez sous le gril jusqu'à ce que le fromage fonde et bouillonne.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coiffez de pico de gallo frais et servez aussitôt. Les molletes mexicaines !", badge: null }
+    ]
+  },
 });
