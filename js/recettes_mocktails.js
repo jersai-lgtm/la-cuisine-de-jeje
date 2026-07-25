@@ -929,4 +929,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez sur beaucoup de glaçons, avec une rondelle de citron vert. Désaltérant — le switcha bahaméen.", badge: null }
     ]
   },
+  moteconhuesillo: {
+    dateAjout: "2026-07-24T17:06:00",
+    nom: "Mote con Huesillo",
+    cat: "mocktails", pays: "chili",
+    base: 4,
+    temps: "40 min + trempage",
+    niveau: "⭐ Facile",
+    emoji: "🍑",
+    description: "Mote con huesillo — la boisson-dessert nationale du Chili : des pêches séchées (ici abricots secs) réhydratées et pochées dans un jus caramélisé à la cannelle, servies glacées dans un grand verre sur un lit de blé mote (ici orge tendre). « Plus chilien que le mote con huesillo », dit le proverbe !",
+    tableauMoteconhuesillo: [
+      { nb: 1, abricotsec: "40 g", orge: "25 g", sucre: "20 g", cannelle: "0.5 g" },
+      { nb: 2, abricotsec: "80 g", orge: "50 g", sucre: "40 g", cannelle: "1 g" },
+      { nb: 3, abricotsec: "120 g", orge: "75 g", sucre: "60 g", cannelle: "1.5 g" },
+      { nb: 4, abricotsec: "160 g", orge: "100 g", sucre: "80 g", cannelle: "2 g" },
+      { nb: 5, abricotsec: "200 g", orge: "125 g", sucre: "100 g", cannelle: "2.5 g" },
+      { nb: 6, abricotsec: "240 g", orge: "150 g", sucre: "120 g", cannelle: "3 g" },
+      { nb: 7, abricotsec: "280 g", orge: "175 g", sucre: "140 g", cannelle: "3.5 g" },
+      { nb: 8, abricotsec: "320 g", orge: "200 g", sucre: "160 g", cannelle: "4 g" },
+      { nb: 9, abricotsec: "360 g", orge: "225 g", sucre: "180 g", cannelle: "4.5 g" },
+      { nb: 10, abricotsec: "400 g", orge: "250 g", sucre: "200 g", cannelle: "5 g" },
+      { nb: 11, abricotsec: "440 g", orge: "275 g", sucre: "220 g", cannelle: "5.5 g" },
+      { nb: 12, abricotsec: "480 g", orge: "300 g", sucre: "240 g", cannelle: "6 g" },
+      { nb: 13, abricotsec: "520 g", orge: "325 g", sucre: "260 g", cannelle: "6.5 g" },
+      { nb: 14, abricotsec: "560 g", orge: "350 g", sucre: "280 g", cannelle: "7 g" },
+      { nb: 15, abricotsec: "600 g", orge: "375 g", sucre: "300 g", cannelle: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍑", titre: "Le trempage", detail: "Faites tremper les pêches séchées (ou abricots secs) une nuit dans l'eau.", badge: null },
+      { icone: "🌾", titre: "Le mote", detail: "Faites cuire l'orge (ou le blé mote) à l'eau jusqu'à ce qu'il soit tendre, puis égouttez et rafraîchissez.", badge: null },
+      { icone: "🍬", titre: "Le caramel", detail: "Faites caraméliser le sucre à sec, puis mouillez prudemment avec l'eau de trempage.", badge: null },
+      { icone: "♨️", titre: "Pocher", detail: "Pochez les fruits dans ce jus caramel avec la cannelle, jusqu'à tendreté.", badge: null },
+      { icone: "🧊", titre: "Refroidir", detail: "Laissez refroidir complètement, puis placez au réfrigérateur.", badge: null },
+      { icone: "🥤", titre: "Monter", detail: "Dans de grands verres : un lit de mote, les fruits, puis le jus glacé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez glacé, avec une cuillère ET une paille. Le mote con huesillo chilien !", badge: null }
+    ]
+  },
 });

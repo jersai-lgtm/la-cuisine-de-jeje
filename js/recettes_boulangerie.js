@@ -2432,4 +2432,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir et rompez le long des rayons, avec un café. Le himbasha des fêtes !", badge: null }
     ]
   },
+  buchteln: {
+    dateAjout: "2026-07-24T17:07:00",
+    nom: "Buchteln",
+    cat: "boulangerie", pays: "autriche",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥐",
+    description: "Buchteln — les brioches soudées d'Autriche : des boules de pâte levée fourrées de confiture (d'abricot, à la viennoise), serrées côte à côte dans le plat où elles gonflent et se soudent en cuisant, à déchirer une à une. Servies tièdes, saupoudrées de sucre glace — la Vienne des cafés en un plat.",
+    tableauBuchteln: [
+      { nb: 1, farine: "85 g", lait: "42 ml", beurre: "15 g", sucre: "14 g", levureboulangere: "2 g", oeufs: "¼", confiture: "25 g", vanille: "0.3 g", sel: "1 g" },
+      { nb: 2, farine: "170 g", lait: "84 ml", beurre: "30 g", sucre: "28 g", levureboulangere: "4 g", oeufs: "½", confiture: "50 g", vanille: "0.6 g", sel: "2 g" },
+      { nb: 3, farine: "255 g", lait: "126 ml", beurre: "45 g", sucre: "42 g", levureboulangere: "6 g", oeufs: "¾", confiture: "75 g", vanille: "0.9 g", sel: "3 g" },
+      { nb: 4, farine: "340 g", lait: "168 ml", beurre: "60 g", sucre: "56 g", levureboulangere: "8 g", oeufs: "1", confiture: "100 g", vanille: "1.2 g", sel: "4 g" },
+      { nb: 5, farine: "425 g", lait: "210 ml", beurre: "75 g", sucre: "70 g", levureboulangere: "10 g", oeufs: "1¼", confiture: "125 g", vanille: "1.5 g", sel: "5 g" },
+      { nb: 6, farine: "510 g", lait: "252 ml", beurre: "90 g", sucre: "84 g", levureboulangere: "12 g", oeufs: "1½", confiture: "150 g", vanille: "1.8 g", sel: "6 g" },
+      { nb: 7, farine: "595 g", lait: "294 ml", beurre: "105 g", sucre: "98 g", levureboulangere: "14 g", oeufs: "1¾", confiture: "175 g", vanille: "2.1 g", sel: "7 g" },
+      { nb: 8, farine: "680 g", lait: "336 ml", beurre: "120 g", sucre: "112 g", levureboulangere: "16 g", oeufs: "2", confiture: "200 g", vanille: "2.4 g", sel: "8 g" },
+      { nb: 9, farine: "765 g", lait: "378 ml", beurre: "135 g", sucre: "126 g", levureboulangere: "18 g", oeufs: "2¼", confiture: "225 g", vanille: "2.7 g", sel: "9 g" },
+      { nb: 10, farine: "850 g", lait: "420 ml", beurre: "150 g", sucre: "140 g", levureboulangere: "20 g", oeufs: "2½", confiture: "250 g", vanille: "3 g", sel: "10 g" },
+      { nb: 11, farine: "935 g", lait: "462 ml", beurre: "165 g", sucre: "154 g", levureboulangere: "22 g", oeufs: "2¾", confiture: "275 g", vanille: "3.3 g", sel: "11 g" },
+      { nb: 12, farine: "1020 g", lait: "504 ml", beurre: "180 g", sucre: "168 g", levureboulangere: "24 g", oeufs: "3", confiture: "300 g", vanille: "3.6 g", sel: "12 g" },
+      { nb: 13, farine: "1105 g", lait: "546 ml", beurre: "195 g", sucre: "182 g", levureboulangere: "26 g", oeufs: "3¼", confiture: "325 g", vanille: "3.9 g", sel: "13 g" },
+      { nb: 14, farine: "1190 g", lait: "588 ml", beurre: "210 g", sucre: "196 g", levureboulangere: "28 g", oeufs: "3½", confiture: "350 g", vanille: "4.2 g", sel: "14 g" },
+      { nb: 15, farine: "1275 g", lait: "630 ml", beurre: "225 g", sucre: "210 g", levureboulangere: "30 g", oeufs: "3¾", confiture: "375 g", vanille: "4.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine, la levure, le sucre, la vanille, le sel, l'œuf, le lait tiède et la moitié du beurre en pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez lever jusqu'à doubler de volume.", badge: null },
+      { icone: "⚪", titre: "Diviser", detail: "Dégazez et divisez en boules égales, aplaties en disques.", badge: null },
+      { icone: "🍑", titre: "Fourrer", detail: "Déposez une noisette de confiture au centre de chaque disque et refermez soigneusement en boule.", badge: null },
+      { icone: "🧈", titre: "Ranger", detail: "Trempez chaque boule dans le reste de beurre fondu et serrez-les, soudure dessous, dans un plat beurré.", badge: null },
+      { icone: "♨️", titre: "Cuisson", detail: "Laissez repousser, puis enfournez jusqu'à ce que le « pavage » soit doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Saupoudrez de sucre glace et déchirez les buchteln tièdes. Vienne à table !", badge: null }
+    ]
+  },
 });

@@ -79258,5 +79258,345 @@ window.RECETTES_EN = {
     "detail": "Cool a little: serve with a glass of milk, Finnish-style. Mustikkapiirakka!"
    }
   ]
+ },
+ "kleina": {
+  "nom": "Kleina",
+  "description": "Kleina — Iceland's twisted doughnut: a cardamom dough cut into diamonds, slit in the centre and turned through itself into a knot, fried until golden. No glaze, no filling, just perfect with coffee — every Icelandic family fries mountains of them before Christmas.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Rub the flour, baking powder, cardamom and salt with the butter, then bind with the sugar and milk."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest the dough in the fridge."
+   },
+   {
+    "titre": "The diamonds",
+    "detail": "Roll out the dough and cut even diamonds."
+   },
+   {
+    "titre": "The knot",
+    "detail": "Slit each diamond in the centre and pass one point through the slit to twist it."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the kleinur, turning, until nicely golden; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, with coffee. Icelandic kleinur!"
+   }
+  ]
+ },
+ "tanghulu": {
+  "nom": "Tanghulu",
+  "description": "Tanghulu — Beijing's candied fruit: perfectly dry fruit (traditionally hawthorn, here strawberries) skewered then dipped in hard-crack syrup that sets into a crackling glass shell. The audible 'crack' is the whole magic — star of the hutongs and of social feeds!",
+  "etapes": [
+   {
+    "titre": "The fruit",
+    "detail": "Wash the strawberries and dry them PERFECTLY (one drop of water ruins the caramel)."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread 2-3 strawberries per small skewer, snugly."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Cook the sugar with a third of its volume of water, without stirring."
+   },
+   {
+    "titre": "Hard crack",
+    "detail": "Continue to hard crack (150 °C): a drop in cold water must harden instantly and snap."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Tilt the pan and quickly roll each skewer in a thin coat of syrup."
+   },
+   {
+    "titre": "Set",
+    "detail": "Rest on baking paper (or dip 2 seconds in iced water): the shell sets at once."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Eat within the hour, while it cracks. Beijing tanghulu!"
+   }
+  ]
+ },
+ "banhbo": {
+  "nom": "Bánh Bò",
+  "description": "Bánh bò — Vietnam's 'honeycomb' cake: a coconut sponge, pandan-green (or plain), whose fermented crumb forms spectacular vertical tunnels, springy and fragrant. Nailing the 'bamboo roots' is a badge of honour — the secret: don't open the oven!",
+  "etapes": [
+   {
+    "titre": "The coconut syrup",
+    "detail": "Heat the coconut milk with the sugar and salt until dissolved, then let it cool."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Beat the eggs WITH A FORK, without foaming (bubbles ruin the tunnels)."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix tapioca, rice flour and vanilla, then work in the eggs and coconut syrup into a fluid batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Add the baking powder, mix briefly and let it rest."
+   },
+   {
+    "titre": "The hot tin",
+    "detail": "Preheat the oiled tin IN the oven: the heat shock launches the tunnels."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour the batter into the scorching tin and bake WITHOUT OPENING until set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Unmould, cool a little and cut: admire the honeycomb. Vietnamese bánh bò!"
+   }
+  ]
+ },
+ "bolodebolacha": {
+  "nom": "Bolo de Bolacha",
+  "description": "Bolo de bolacha — Portugal's biscuit cake: biscuits dipped in coffee, stacked with a light butter cream, no baking, set overnight in the fridge. The birthday cake of every Portuguese family — the biscuits melt into a soft sponge.",
+  "etapes": [
+   {
+    "titre": "The coffee",
+    "detail": "Brew a strong coffee and let it cool in a shallow dish."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the soft butter at length with the sugar, vanilla, salt and egg yolk into a light, fluffy cream."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Quickly dip each biscuit in the coffee — soaked but not soggy."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Alternate a layer of dipped biscuits and a thin layer of cream."
+   },
+   {
+    "titre": "Repeat",
+    "detail": "Repeat the storeys, finishing with cream, and mask the sides."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and leave overnight in the fridge: the biscuits melt into cake."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Decorate with crumbled biscuit and serve well chilled. Portuguese bolo de bolacha!"
+   }
+  ]
+ },
+ "mhancha": {
+  "nom": "Mhancha",
+  "description": "Mhancha — the Moroccan 'snake': a log of orange-blossom and cinnamon almond paste, rolled in thin pastry sheets and coiled into a spiral, baked golden then glossed with honey. Spectacular and melting, it's the centrepiece of Moroccan pastry platters.",
+  "etapes": [
+   {
+    "titre": "The almond paste",
+    "detail": "Blend the almonds with the sugar, cinnamon, orange blossom water and a third of the butter into a paste."
+   },
+   {
+    "titre": "The logs",
+    "detail": "Roll this paste into even logs."
+   },
+   {
+    "titre": "Roll up",
+    "detail": "Lay each log on a buttered sheet and roll into a tight cigar."
+   },
+   {
+    "titre": "The spiral",
+    "detail": "Coil the cigars end to end into a spiral in a buttered round tin."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with the remaining melted butter."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the spiral is golden and crisp."
+   },
+   {
+    "titre": "Gloss",
+    "detail": "Out of the oven, coat with warm honey. Cut into sections — Moroccan mhancha!"
+   }
+  ]
+ },
+ "suspirolimeno": {
+  "nom": "Suspiro Limeño",
+  "description": "Suspiro limeño — 'the sigh of Lima': a condensed-milk caramel cream (manjar blanco) cooked until coating, capped with a spooned port-wine meringue (here vanilla). 'Soft and sweet as a woman's sigh', said the poet who named it — Peru's icon dessert.",
+  "etapes": [
+   {
+    "titre": "The manjar",
+    "detail": "Reduce the condensed milk with the milk over low heat, stirring, into a thick caramel cream."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Off the heat, stir in the egg yolks and vanilla, and return to thicken a minute without boiling."
+   },
+   {
+    "titre": "The glasses",
+    "detail": "Divide the manjar between glasses and let it cool."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Cook the sugar with a little water into a thick syrup (soft-ball)."
+   },
+   {
+    "titre": "The meringue",
+    "detail": "Whip the whites and pour in the hot syrup in a stream, whisking until cool: a glossy, firm meringue."
+   },
+   {
+    "titre": "Cap",
+    "detail": "Spoon the meringue in generous domes over the manjar."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with a touch of cinnamon and serve chilled. Suspiro limeño — a sigh!"
+   }
+  ]
+ },
+ "moteconhuesillo": {
+  "nom": "Mote con Huesillo",
+  "description": "Mote con huesillo — Chile's national drink-dessert: dried peaches (here dried apricots) rehydrated and poached in a cinnamon caramel juice, served ice-cold in a tall glass over a bed of mote wheat (here tender barley). 'More Chilean than mote con huesillo', says the proverb!",
+  "etapes": [
+   {
+    "titre": "The soak",
+    "detail": "Soak the dried peaches (or apricots) overnight in water."
+   },
+   {
+    "titre": "The mote",
+    "detail": "Cook the barley (or mote wheat) in water until tender, then drain and refresh."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Dry-caramelize the sugar, then carefully add the soaking water."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the fruit in this caramel juice with the cinnamon, until tender."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cool completely, then refrigerate."
+   },
+   {
+    "titre": "Build",
+    "detail": "In tall glasses: a bed of mote, the fruit, then the iced juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve ice-cold, with a spoon AND a straw. Chilean mote con huesillo!"
+   }
+  ]
+ },
+ "buchteln": {
+  "nom": "Buchteln",
+  "description": "Buchteln — Austria's pull-apart buns: balls of yeast dough filled with jam (apricot, Viennese-style), packed side by side in the dish where they swell and fuse as they bake, to be torn off one by one. Served warm, dusted with icing sugar — café Vienna in one dish.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, sugar, vanilla, salt, egg, warm milk and half the butter into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise until doubled."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Knock back and divide into equal balls, flattened into discs."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a dab of jam in the centre of each disc and seal carefully into a ball."
+   },
+   {
+    "titre": "Pack",
+    "detail": "Dip each ball in the remaining melted butter and pack them, seam down, in a buttered dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Let them rise again, then bake until the 'paving' is golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with icing sugar and tear off the warm buchteln. Vienna at the table!"
+   }
+  ]
+ },
+ "bienenstich": {
+  "nom": "Bienenstich",
+  "description": "Bienenstich — Germany's 'bee sting': a flat brioche covered with honey-caramelized almonds that crisp as they bake, split and filled with a vanilla cream. Legend says baker apprentices repelled raiders by throwing beehives — hence the name!",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, a third of the sugar, the salt, egg, warm milk (keep some for the cream) and a third of the butter; let it rise."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the dough in a buttered round tin and let it rise again."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Melt the remaining butter with the honey and a third of the sugar, add the flaked almonds."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Spread this almond mixture over the dough."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the top is caramelized and golden; let it cool."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Thicken the remaining milk with the remaining sugar, the cornstarch and vanilla; cool and loosen."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Split the cake in two, fill with cream and close. German bienenstich!"
+   }
+  ]
+ },
+ "carac": {
+  "nom": "Carac",
+  "description": "Carac — French-speaking Switzerland's green tartlet: a shortcrust base filled with a dense chocolate ganache, topped with its emblematic green fondant icing and a chocolate dot in the centre. You can't walk past a Vaud bakery without spotting that inimitable green.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Rub the flour and salt with the butter, bind with a third of the sugar, the egg and vanilla; rest in the fridge."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll out and line tartlet tins; prick the bases."
+   },
+   {
+    "titre": "Blind bake",
+    "detail": "Blind-bake the shells until lightly coloured, and cool."
+   },
+   {
+    "titre": "The ganache",
+    "detail": "Bring the cream to a simmer and pour over the chopped chocolate; smooth."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the shells with ganache and set in the fridge."
+   },
+   {
+    "titre": "The icing",
+    "detail": "Mix icing sugar with a few drops of water and green colouring, and coat the tartlets."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Dot the centre with melted chocolate and let it set. Romandy caracs!"
+   }
+  ]
  }
 };
