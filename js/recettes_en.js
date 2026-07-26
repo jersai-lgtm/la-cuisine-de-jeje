@@ -80618,5 +80618,345 @@ window.RECETTES_EN = {
     "detail": "Serve fresh — beside grilled meat, it's the Chilean summer. Ensalada chilena!"
    }
   ]
+ },
+ "gilda": {
+  "nom": "Gilda",
+  "description": "Gilda — history's first pintxo, born in San Sebastián in 1946: an olive, an anchovy and a guindilla (mild pickled pepper) on a skewer, doused in olive oil. Named after Rita Hayworth in the film Gilda: 'green, salty and a little spicy' — the Basque apéritif in one bite.",
+  "etapes": [
+   {
+    "titre": "The olives",
+    "detail": "Drain fine pitted green olives (ideally manzanilla)."
+   },
+   {
+    "titre": "The anchovies",
+    "detail": "Drain the anchovy fillets and fold them in two."
+   },
+   {
+    "titre": "The guindillas",
+    "detail": "Drain the guindillas (or thin pickles / mild pickled peppers)."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "On each pick: olive, folded anchovy, folded guindilla, and a second olive."
+   },
+   {
+    "titre": "Gloss",
+    "detail": "Line up the skewers on a plate and drizzle with olive oil."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Rest in the fridge a few minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, one bite per pick — green, salty, spicy: the Basque gilda!"
+   }
+  ]
+ },
+ "taralli": {
+  "nom": "Taralli",
+  "description": "Taralli — Puglia's crunchy rings: an olive oil and white wine dough scented with fennel seeds, shaped into small rings BOILED then baked — the secret of their crumbly snap. Impossible to eat just one — the Italian apéritif par excellence.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, salt, fennel seeds, oil and white wine into a firm smooth dough; rest 30 minutes."
+   },
+   {
+    "titre": "The ropes",
+    "detail": "Pinch off pieces and roll them into pencil-thin ropes."
+   },
+   {
+    "titre": "The rings",
+    "detail": "Close each rope into a small ring, sealing the ends well."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Poach the rings in boiling water: lift them out as soon as they float."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Drain on a cloth and let them dry a few minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden and perfectly dry."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool completely: they turn crunchy. Puglian taralli — with a glass of wine!"
+   }
+  ]
+ },
+ "gnoccofritto": {
+  "nom": "Gnocco Fritto",
+  "description": "Gnocco fritto — Emilia's fried pillows: diamonds of leavened dough fried until they puff into golden hollow cushions, served scorching with ham and charcuterie slipped inside — the fat melts on contact. The apéritif of Modena and Parma, to devour without waiting.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour, yeast, salt, warm milk and a drizzle of oil into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise until doubled."
+   },
+   {
+    "titre": "The diamonds",
+    "detail": "Roll the dough fairly thin and cut diamonds with a wheel."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a good hot bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the diamonds: they puff into cushions in seconds; flip and drain."
+   },
+   {
+    "titre": "The charcuterie",
+    "detail": "Lay the ham (and other cured meats) on a board."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the gnocchi fritti SCORCHING — everyone slips in their slice of ham. Emilia's apéro!"
+   }
+  ]
+ },
+ "tirokroketes": {
+  "nom": "Tirokroketes",
+  "description": "Tirokroketes — Greek feta croquettes: a creamy heart of feta and fresh cheese with mint, breaded and fried until it flows at the first bite. Served scorching with a squeeze of lemon in every taverna — the mezze that always vanishes first.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Mash the feta with the fresh cheese, chopped mint and pepper into a creamy paste."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Firm the mass 20 minutes in the freezer (the anti-leak secret)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll even balls or quenelles."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Dredge in flour, beaten egg, then breadcrumbs — twice for a sturdy crust."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a good hot bath of oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the croquettes until golden — quickly, before the heart escapes; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scorching with a squeeze of lemon. The heart flows — Greek tirokroketes!"
+   }
+  ]
+ },
+ "sigaraborek": {
+  "nom": "Sigara Böreği",
+  "description": "Sigara böreği — Turkey's crispy cigars: thin sheets rolled tight around a feta-parsley filling, fried into crackling 'cigarettes' with a melting heart. The star mezze of Turkish tables — rolled as a family, devoured as a crowd.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Mash the feta with a fork with the chopped parsley (and a little egg to bind)."
+   },
+   {
+    "titre": "The triangles",
+    "detail": "Cut the filo (or yufka) sheets into long triangles."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay a log of filling along the wide base of each triangle."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Fold in the sides then roll tightly toward the point, cigar-style."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Stick the tip with a wet (or egg-dipped) finger."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the cigars in hot oil until golden, turning; drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, crisp outside, melting inside. Turkish sigara böreği!"
+   }
+  ]
+ },
+ "edamame": {
+  "nom": "Edamame",
+  "description": "Edamame — the izakaya's soybean pods: boiled in well-salted water, served hot or warm with coarse salt (or stir-fried garlic-chilli for the punchy version). You press the pod between your teeth, the beans pop into your mouth — the world's healthiest, most addictive apéritif.",
+  "etapes": [
+   {
+    "titre": "The pods",
+    "detail": "Rinse the edamame in pods (frozen is perfect)."
+   },
+   {
+    "titre": "Rub",
+    "detail": "Rub them with a third of the salt: it softens the pods' fuzz."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Plunge into plenty of well-salted boiling water, 4 to 5 minutes."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain WITHOUT rinsing: the salt must stay on the pods."
+   },
+   {
+    "titre": "Garlic-chilli version",
+    "detail": "(Optional) Stir-fry one minute in the oil with garlic and chilli."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Sprinkle with the remaining salt (flakes, ideally)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot or warm, with a bowl for the pods. Izakaya edamame!"
+   }
+  ]
+ },
+ "yachaejeon": {
+  "nom": "Yachaejeon",
+  "description": "Yachaejeon — the Korean vegetable pancake: a julienne of courgette, carrot and onion bound in a thin batter, pan-fried into one large crispy pancake, cut into sharing squares. Dipped in its soy-vinegar-sesame sauce — Korea's rainy-day apéritif.",
+  "etapes": [
+   {
+    "titre": "The julienne",
+    "detail": "Cut the courgette, carrot and onion into fine julienne."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour, salt, egg and VERY cold water into a fluid batter (cold water = crisp)."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Fold in the vegetables: they should be barely bound by the batter."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a generously oiled pan until hot."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Spread the mix into a thin pancake and let it brown untouched."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip in one go, press, and crisp the other side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into squares and serve with the soy-vinegar-sesame sauce. Korean yachaejeon!"
+   }
+  ]
+ },
+ "quesofundido": {
+  "nom": "Queso Fundido",
+  "description": "Queso fundido — the Mexican 'fondue': cheese melted in a cast-iron dish in the oven, crowned with sizzled chorizo, to be scraped scorching with tortillas before it sets. The countdown is part of the fun — Mexico's most convivial apéritif.",
+  "etapes": [
+   {
+    "titre": "The chorizo",
+    "detail": "Sizzle the crumbled chorizo with the chopped onion until it releases its red fat."
+   },
+   {
+    "titre": "The cheeses",
+    "detail": "Grate the mozzarella and gruyère, and mix them."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Spread the cheeses in a small cast-iron (or gratin) dish."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Bake in a hot oven until the cheese is molten and bubbling."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Scatter the sizzled chorizo and chilli over the melted cheese."
+   },
+   {
+    "titre": "The tortillas",
+    "detail": "Warm corn tortillas (with the corn flour, make quick small ones)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve IMMEDIATELY, scraping with tortillas before it sets. Queso fundido!"
+   }
+  ]
+ },
+ "deviledeggs": {
+  "nom": "Deviled Eggs",
+  "description": "Deviled eggs — America's 'devilish' eggs: hard-boiled eggs whose yolks are whipped into a creamy mousse with mayonnaise, mustard and pickles, piped back in and dusted with paprika. No barbecue, Thanksgiving or potluck escapes them — always finished first.",
+  "etapes": [
+   {
+    "titre": "The eggs",
+    "detail": "Hard-boil the eggs (9-10 minutes), then plunge into iced water and peel."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Halve them lengthwise and gently lift out the yolks."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Mash the yolks with the mayonnaise, mustard and salt into a smooth cream."
+   },
+   {
+    "titre": "Spike",
+    "detail": "Fold in the very finely chopped pickles."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pipe (or spoon) the cream into the hollowed whites, in generous domes."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Set in the fridge 15 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with paprika and serve chilled. Deviled eggs — devilishly effective!"
+   }
+  ]
+ },
+ "paodealho": {
+  "nom": "Pão de Alho",
+  "description": "Pão de alho — the Brazilian churrasco's garlic bread: small rolls slashed and generously stuffed with a garlic-mayonnaise-parsley parmesan cream, grilled until the heart melts and the crust browns. The smell that announces the barbecue is starting — it never reaches the table whole.",
+  "etapes": [
+   {
+    "titre": "The garlic cream",
+    "detail": "Crush the garlic to a paste and mix with the soft butter, mayonnaise, parmesan, parsley and salt."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Slash the rolls in a deep crosshatch, without cutting through."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Slip the garlic cream into every slit, generously."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "(On the barbecue) Wrap in foil; (in the oven) set on a tray."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill until the cream melts into the heart of the bread."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover and brown the surface a minute or two."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scorching, while waiting for the meats. Churrasco pão de alho!"
+   }
+  ]
  }
 };
