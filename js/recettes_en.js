@@ -81026,5 +81026,345 @@ window.RECETTES_EN = {
     "detail": "Out of the oven, brush with warm honey. Let cool slightly: the slice holds, the cream stays soft — serve with a scoop of vanilla ice cream."
    }
   ]
+ },
+ "htipiti": {
+  "nom": "Htipiti",
+  "description": "Htipiti — northern Greece's 'whipped' dip: feta mashed with roasted red peppers and a hint of chilli, worked with olive oil into a pink, grainy cream. The mezze that wakes up the table — scooped with pita bread, between the tzatziki and the olives.",
+  "etapes": [
+   {
+    "titre": "Roast the pepper",
+    "detail": "Blacken the red pepper in the oven (or over a flame) on all sides."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Seal it in a covered bowl for 10 minutes: the skin will slip off by itself."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel the pepper, deseed it and pat the flesh dry."
+   },
+   {
+    "titre": "Mash the feta",
+    "detail": "Mash the feta with a fork with the chilli."
+   },
+   {
+    "titre": "Coarse blend",
+    "detail": "Briefly blend feta and pepper with the lemon juice: the cream must stay grainy, not smooth."
+   },
+   {
+    "titre": "Work in the oil",
+    "detail": "Add the olive oil in a stream, taste and add chilli if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, drizzled with oil, with grilled pita bread. Greek htipiti!"
+   }
+  ]
+ },
+ "mastokhiar": {
+  "nom": "Mast-o-Khiar",
+  "description": "Mast-o-Khiar — Persian cucumber yogurt: mint, dill, crunchy walnuts and raisins in thick, ice-cold yogurt. More fragrant than its cousin tzatziki, it cools Iranian tables all summer — as a dip, a sauce or almost a cold soup.",
+  "etapes": [
+   {
+    "titre": "The cucumber",
+    "detail": "Cut the cucumber into tiny dice (or grate it coarsely)."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Salt it lightly and let it release water for 10 minutes; squeeze it."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Beat the yogurt with the pressed garlic until smooth and creamy."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Chop the mint and dill, stir them into the yogurt."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Roughly chop the walnuts; add them with the raisins and cucumber."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Mix, adjust the salt and refrigerate at least 30 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very cold, scattered with mint and walnuts. Persian mast-o-khiar!"
+   }
+  ]
+ },
+ "matboucha": {
+  "nom": "Matboucha",
+  "description": "Matboucha — Morocco's 'cooked salad': roasted tomatoes and peppers slowly candied in olive oil with garlic and paprika until they become a spicy, glossy, melting jam. The mezze of shabbat and Moroccan tables — mopped up with bread, impossible to stop.",
+  "etapes": [
+   {
+    "titre": "Roast the peppers",
+    "detail": "Blacken the peppers, let them steam under a cover, then peel and cut into strips."
+   },
+   {
+    "titre": "Peel the tomatoes",
+    "detail": "Scald the tomatoes 30 seconds, peel and roughly chop them."
+   },
+   {
+    "titre": "Start the confit",
+    "detail": "Soften the sliced garlic in the olive oil without colouring."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add paprika and chilli, then the tomatoes, sugar and salt."
+   },
+   {
+    "titre": "Cook down",
+    "detail": "Let it stew gently, stirring, until the water has evaporated."
+   },
+   {
+    "titre": "The peppers",
+    "detail": "Add the pepper strips and keep cooking: the matboucha must turn thick and glossy like a jam."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, drizzled with olive oil, with fresh bread. Moroccan matboucha!"
+   }
+  ]
+ },
+ "guasacaca": {
+  "nom": "Guasacaca",
+  "description": "Guasacaca — Venezuela's green sauce: avocado, pepper, onion, parsley and coriander blended with a dash of vinegar and worked with oil. More herbal and sharper than guacamole, it coats arepas, grilled meats and empanadas — the green bottle on every table.",
+  "etapes": [
+   {
+    "titre": "The avocado",
+    "detail": "Halve the avocado, remove the stone and scoop out the flesh."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Pick the parsley and coriander leaves; roughly chop onion, pepper and garlic."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend herbs, onion, pepper and garlic with the vinegar and lime juice."
+   },
+   {
+    "titre": "Then the avocado",
+    "detail": "Add the avocado and blend again: the sauce turns smooth and bright green."
+   },
+   {
+    "titre": "Work in the oil",
+    "detail": "Motor running, pour in the oil in a stream to emulsify."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt, taste: it must be fresh, sharp and lively. Rest in the fridge 30 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with arepas, grilled meats or chips. Venezuelan guasacaca — queen of green sauces!"
+   }
+  ]
+ },
+ "pebre": {
+  "nom": "Pebre",
+  "description": "Pebre — Chile's national condiment: tomatoes, onion, coriander, garlic and chilli finely chopped, bound with oil and vinegar. On the table as soon as the bread lands, it goes with everything — crusty marraqueta, empanadas and the Sunday asado.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Chop the onion very finely and rinse it under cold water to soften its bite."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Deseed the tomatoes and cut into tiny dice."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Finely chop the coriander, garlic and chilli."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine everything in a bowl."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the oil, vinegar, lime juice and salt; mix."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest 30 minutes: the flavours blend and the juices form."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve fresh, spooned onto crusty bread or grilled meats. Chilean pebre!"
+   }
+  ]
+ },
+ "favagrecque": {
+  "nom": "Santorini Fava",
+  "description": "Fava — Santorini's golden purée: yellow split peas melted into velvet with olive oil, served warm under a shower of capers, red onion and lemon. The gentlest mezze of the Aegean — humble, silky and sun-drenched.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the yellow split peas in cold water until it runs clear."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover with cold water with half the onion and the bay leaf; bring to a simmer."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Skim off the foam and cook gently until the peas collapse on their own."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Remove the bay leaf, salt, then blend with the olive oil and lemon juice into a smooth purée."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Adjust the texture with a little cooking water: the fava should slide slowly off a spoon."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Chop the remaining onion (red, ideally) and drain the capers."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, drizzled with oil, scattered with onion and capers. Santorini fava!"
+   }
+  ]
+ },
+ "liptauer": {
+  "nom": "Liptauer",
+  "description": "Liptauer — the whipped orange cheese of Austria's heuriger taverns: fresh cheese and butter beaten with paprika, gherkins, capers, onion and mustard. Born in Slovakia, adopted by Vienna — spread thick on country bread, with a glass of white wine from the vineyard next door.",
+  "etapes": [
+   {
+    "titre": "The butter",
+    "detail": "Take the butter out ahead: it must be very soft."
+   },
+   {
+    "titre": "The base",
+    "detail": "Whip the butter with the fresh cheese into a light cream."
+   },
+   {
+    "titre": "The condiments",
+    "detail": "Chop the gherkins, capers and onion very finely."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the paprika, mustard and caraway: the cream turns orange."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold in the chopped condiments and mix well."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill 1 hour: the flavours meld."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread thick on country or rye bread, with a few radish slices. Viennese liptauer!"
+   }
+  ]
+ },
+ "pimentocheese": {
+  "nom": "Pimento Cheese",
+  "description": "Pimento cheese — the American South's 'caviar': grated cheddar, mayonnaise and sweet red peppers chopped and beaten into a creamy spread flecked with paprika. From the Masters golf sandwiches to Carolina picnics — the orange spread that makes everything better.",
+  "etapes": [
+   {
+    "titre": "The pepper",
+    "detail": "Roast the red pepper, peel it (or drain jarred roasted peppers) and chop finely."
+   },
+   {
+    "titre": "The cheddar",
+    "detail": "Grate the cheddar — coarse holes for texture."
+   },
+   {
+    "titre": "The base",
+    "detail": "Loosen the fresh cheese with the mayonnaise."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add paprika, chilli and pepper."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fold in the cheddar and chopped pepper; mix without smoothing completely."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill 1 hour."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread on soft bread, crackers or celery — or in a grilled cheese. Southern pimento cheese!"
+   }
+  ]
+ },
+ "lutenitsa": {
+  "nom": "Lutenitsa",
+  "description": "Lutenitsa — Bulgaria's red treasure: roasted peppers, tomatoes and aubergine cooked down into a thick, gently sweet, candied purée. Every family fills its jars in autumn — spread on toasted bread with crumbled cheese, it's the taste of a Bulgarian childhood.",
+  "etapes": [
+   {
+    "titre": "Roast",
+    "detail": "Blacken the peppers and aubergine in the oven; let them steam under a cover."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel the peppers and aubergine, deseed the peppers."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Peel the tomatoes and chop them."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend peppers and aubergine coarsely — lutenitsa keeps some texture."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Cook the tomatoes down in the oil with the garlic, then add the vegetable purée."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Add sugar, cumin and salt; let it thicken over low heat, stirring: a spoon should leave a furrow."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread on toasted bread, with crumbled cheese on top. Bulgarian lutenitsa!"
+   }
+  ]
+ },
+ "fromagefort": {
+  "nom": "Fromage Fort",
+  "description": "Fromage fort — Lyon's anti-waste trick: all the fridge's leftover cheeses beaten with white wine, garlic and pepper into a sharp, punchy cream. Every house has its own, 'ripening' a few days in the fridge — spread on toast or grilled, it takes no prisoners.",
+  "etapes": [
+   {
+    "titre": "The leftovers",
+    "detail": "Gather your leftover cheeses: remove hard rinds and dry parts."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Cut the hard cheeses into small pieces, mash the soft ones."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the cheeses with the fromage blanc and garlic."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Pour in the white wine in a stream, blending, until the cream is supple."
+   },
+   {
+    "titre": "Pepper",
+    "detail": "Pepper generously — fromage fort should bite a little."
+   },
+   {
+    "titre": "Ripen",
+    "detail": "Pot it, cover and let it 'ripen' 2 to 3 days in the fridge: it gains character."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread on toasted bread — or flash under the grill. Lyonnais fromage fort!"
+   }
+  ]
  }
 };
