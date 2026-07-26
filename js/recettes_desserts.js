@@ -10193,4 +10193,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Patienter", detail: "Laissez COMPLÈTEMENT refroidir (une nuit) avant de trancher fin. La nusstorte de l'Engadine !", badge: null }
     ]
   },
+  tarteauxfigues: {
+    dateAjout: "2026-07-26T13:00:00",
+    nom: "Tarte aux Figues",
+    cat: "desserts", saisons: ["ete","automne"], pays: "france",
+    base: 8,
+    temps: "1 h + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "La tarte aux figues du marché : une pâte sablée croustillante, des quartiers de figues fraîches en rosace qui confisent au four sous un voile de cassonade, et un trait de miel pour le brillant. Simple, juteuse, de fin d'été — la cousine violette de la tarte aux abricots.",
+    tableauTarteauxfigues: [
+      { nb: 1, farine: "31 g", beurre: "16 g", sucre: "10 g", oeufs: "¼", poudreamandes: "5 g", figues: "85 g", cassonade: "8 g", miel: "4 ml", sel: "0.5 g" },
+      { nb: 2, farine: "62 g", beurre: "32 g", sucre: "20 g", oeufs: "½", poudreamandes: "10 g", figues: "170 g", cassonade: "16 g", miel: "8 ml", sel: "1 g" },
+      { nb: 3, farine: "93 g", beurre: "48 g", sucre: "30 g", oeufs: "¾", poudreamandes: "15 g", figues: "255 g", cassonade: "24 g", miel: "12 ml", sel: "1.5 g" },
+      { nb: 4, farine: "124 g", beurre: "64 g", sucre: "40 g", oeufs: "1", poudreamandes: "20 g", figues: "340 g", cassonade: "32 g", miel: "16 ml", sel: "2 g" },
+      { nb: 5, farine: "155 g", beurre: "80 g", sucre: "50 g", oeufs: "1¼", poudreamandes: "25 g", figues: "425 g", cassonade: "40 g", miel: "20 ml", sel: "2.5 g" },
+      { nb: 6, farine: "186 g", beurre: "96 g", sucre: "60 g", oeufs: "1½", poudreamandes: "30 g", figues: "510 g", cassonade: "48 g", miel: "24 ml", sel: "3 g" },
+      { nb: 7, farine: "217 g", beurre: "112 g", sucre: "70 g", oeufs: "1¾", poudreamandes: "35 g", figues: "595 g", cassonade: "56 g", miel: "28 ml", sel: "3.5 g" },
+      { nb: 8, farine: "248 g", beurre: "128 g", sucre: "80 g", oeufs: "2", poudreamandes: "40 g", figues: "680 g", cassonade: "64 g", miel: "32 ml", sel: "4 g" },
+      { nb: 9, farine: "279 g", beurre: "144 g", sucre: "90 g", oeufs: "2¼", poudreamandes: "45 g", figues: "765 g", cassonade: "72 g", miel: "36 ml", sel: "4.5 g" },
+      { nb: 10, farine: "310 g", beurre: "160 g", sucre: "100 g", oeufs: "2½", poudreamandes: "50 g", figues: "850 g", cassonade: "80 g", miel: "40 ml", sel: "5 g" },
+      { nb: 11, farine: "341 g", beurre: "176 g", sucre: "110 g", oeufs: "2¾", poudreamandes: "55 g", figues: "935 g", cassonade: "88 g", miel: "44 ml", sel: "5.5 g" },
+      { nb: 12, farine: "372 g", beurre: "192 g", sucre: "120 g", oeufs: "3", poudreamandes: "60 g", figues: "1020 g", cassonade: "96 g", miel: "48 ml", sel: "6 g" },
+      { nb: 13, farine: "403 g", beurre: "208 g", sucre: "130 g", oeufs: "3¼", poudreamandes: "65 g", figues: "1105 g", cassonade: "104 g", miel: "52 ml", sel: "6.5 g" },
+      { nb: 14, farine: "434 g", beurre: "224 g", sucre: "140 g", oeufs: "3½", poudreamandes: "70 g", figues: "1190 g", cassonade: "112 g", miel: "56 ml", sel: "7 g" },
+      { nb: 15, farine: "465 g", beurre: "240 g", sucre: "150 g", oeufs: "3¾", poudreamandes: "75 g", figues: "1275 g", cassonade: "120 g", miel: "60 ml", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Pâte sablée", detail: "Sablez la farine avec le beurre froid, ajoutez le sucre, le sel et l'œuf battu. Formez une boule, filmez et laissez reposer 30 minutes au frais.", badge: null },
+      { icone: "🥧", titre: "Foncer", detail: "Étalez la pâte et foncez un moule à tarte. Piquez le fond à la fourchette.", badge: null },
+      { icone: "🥜", titre: "Le voile d'amandes", detail: "Saupoudrez le fond d'un voile de poudre d'amandes : il boira le jus des figues et gardera la pâte croustillante.", badge: null },
+      { icone: "🍇", titre: "Les figues", detail: "Lavez les figues, ôtez le pédoncule et coupez-les en quartiers. Disposez-les en rosace serrée, pointes vers le haut.", badge: null },
+      { icone: "🟤", titre: "Sucrer", detail: "Saupoudrez les figues de cassonade.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C pour 35 à 40 minutes : la pâte est dorée et les figues confites sur les bords.", badge: null },
+      { icone: "🍯", titre: "Napper & servir", detail: "À la sortie du four, nappez d'un trait de miel tiède au pinceau pour le brillant. Laissez tiédir et servez tel quel ou avec une boule de glace vanille.", badge: null }
+    ],
+    liees: ["patesablee","glacevanille"]
+  },
+  tarteamandinefigues: {
+    dateAjout: "2026-07-26T13:01:00",
+    nom: "Tarte Amandine aux Figues",
+    cat: "desserts", saisons: ["ete","automne"], pays: "france",
+    base: 8,
+    temps: "1h15 + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "La version pâtissière : une pâte sablée garnie d'une crème d'amandes moelleuse dans laquelle plongent des quartiers de figues fraîches, le tout coiffé d'amandes effilées dorées et nappé de miel. La crème gonfle autour des fruits qui confisent — l'amandine de fin d'été des belles vitrines.",
+    tableauTarteamandinefigues: [
+      { nb: 1, farine: "31 g", beurre: "26 g", sucre: "19 g", poudreamandes: "12 g", oeufs: "¼", figues: "65 g", amandes: "4 g", miel: "4 ml", sel: "0.5 g" },
+      { nb: 2, farine: "62 g", beurre: "52 g", sucre: "38 g", poudreamandes: "24 g", oeufs: "½", figues: "130 g", amandes: "8 g", miel: "8 ml", sel: "1 g" },
+      { nb: 3, farine: "93 g", beurre: "78 g", sucre: "57 g", poudreamandes: "36 g", oeufs: "¾", figues: "195 g", amandes: "12 g", miel: "12 ml", sel: "1.5 g" },
+      { nb: 4, farine: "124 g", beurre: "104 g", sucre: "76 g", poudreamandes: "48 g", oeufs: "1", figues: "260 g", amandes: "16 g", miel: "16 ml", sel: "2 g" },
+      { nb: 5, farine: "155 g", beurre: "130 g", sucre: "95 g", poudreamandes: "60 g", oeufs: "1¼", figues: "325 g", amandes: "20 g", miel: "20 ml", sel: "2.5 g" },
+      { nb: 6, farine: "186 g", beurre: "156 g", sucre: "114 g", poudreamandes: "72 g", oeufs: "1½", figues: "390 g", amandes: "24 g", miel: "24 ml", sel: "3 g" },
+      { nb: 7, farine: "217 g", beurre: "182 g", sucre: "133 g", poudreamandes: "84 g", oeufs: "1¾", figues: "455 g", amandes: "28 g", miel: "28 ml", sel: "3.5 g" },
+      { nb: 8, farine: "248 g", beurre: "208 g", sucre: "152 g", poudreamandes: "96 g", oeufs: "2", figues: "520 g", amandes: "32 g", miel: "32 ml", sel: "4 g" },
+      { nb: 9, farine: "279 g", beurre: "234 g", sucre: "171 g", poudreamandes: "108 g", oeufs: "2¼", figues: "585 g", amandes: "36 g", miel: "36 ml", sel: "4.5 g" },
+      { nb: 10, farine: "310 g", beurre: "260 g", sucre: "190 g", poudreamandes: "120 g", oeufs: "2½", figues: "650 g", amandes: "40 g", miel: "40 ml", sel: "5 g" },
+      { nb: 11, farine: "341 g", beurre: "286 g", sucre: "209 g", poudreamandes: "132 g", oeufs: "2¾", figues: "715 g", amandes: "44 g", miel: "44 ml", sel: "5.5 g" },
+      { nb: 12, farine: "372 g", beurre: "312 g", sucre: "228 g", poudreamandes: "144 g", oeufs: "3", figues: "780 g", amandes: "48 g", miel: "48 ml", sel: "6 g" },
+      { nb: 13, farine: "403 g", beurre: "338 g", sucre: "247 g", poudreamandes: "156 g", oeufs: "3¼", figues: "845 g", amandes: "52 g", miel: "52 ml", sel: "6.5 g" },
+      { nb: 14, farine: "434 g", beurre: "364 g", sucre: "266 g", poudreamandes: "168 g", oeufs: "3½", figues: "910 g", amandes: "56 g", miel: "56 ml", sel: "7 g" },
+      { nb: 15, farine: "465 g", beurre: "390 g", sucre: "285 g", poudreamandes: "180 g", oeufs: "3¾", figues: "975 g", amandes: "60 g", miel: "60 ml", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Pâte sablée", detail: "Sablez la farine avec un peu plus de la moitié du beurre bien froid, ajoutez un tiers du sucre, le sel et la moitié de l'œuf battu. Formez une boule, filmez et laissez reposer 30 minutes au frais.", badge: null },
+      { icone: "🥧", titre: "Foncer", detail: "Étalez la pâte et foncez un moule à tarte. Piquez le fond à la fourchette et remettez au frais.", badge: null },
+      { icone: "🥜", titre: "Crème d'amandes", detail: "Fouettez le reste de beurre mou avec le reste de sucre, la poudre d'amandes et le reste d'œuf battu jusqu'à obtenir une crème lisse.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Étalez la crème d'amandes en couche régulière sur le fond de tarte.", badge: null },
+      { icone: "🍇", titre: "Les figues", detail: "Coupez les figues en quartiers et enfoncez-les légèrement dans la crème, pointes vers le haut. Parsemez d'amandes effilées.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C pour 35 à 40 minutes : la crème est gonflée et dorée, les figues confites, les amandes torréfiées.", badge: null },
+      { icone: "🍯", titre: "Napper & servir", detail: "À la sortie du four, nappez de miel tiède au pinceau. Laissez tiédir : la part se tient, la crème est fondante — servez avec une boule de glace vanille.", badge: null }
+    ],
+    liees: ["patesablee","glacevanille","tarteauxfigues"]
+  },
 });

@@ -80958,5 +80958,73 @@ window.RECETTES_EN = {
     "detail": "Serve scorching, while waiting for the meats. Churrasco pão de alho!"
    }
   ]
+ },
+ "tarteauxfigues": {
+  "nom": "Fig Tart",
+  "description": "The market fig tart: crisp shortcrust pastry, fresh fig quarters in a rosette that candy in the oven under a veil of brown sugar, and a brush of honey for shine. Simple, juicy, late-summer — the purple cousin of the apricot tart.",
+  "etapes": [
+   {
+    "titre": "Shortcrust pastry",
+    "detail": "Rub the flour with the cold butter, add the sugar, salt and beaten egg. Form a ball, wrap and rest 30 minutes in the fridge."
+   },
+   {
+    "titre": "Line the tin",
+    "detail": "Roll out the dough and line a tart tin. Prick the base with a fork."
+   },
+   {
+    "titre": "The almond veil",
+    "detail": "Dust the base with a veil of ground almonds: it will soak up the fig juices and keep the pastry crisp."
+   },
+   {
+    "titre": "The figs",
+    "detail": "Wash the figs, remove the stems and cut into quarters. Arrange in a tight rosette, points up."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Sprinkle the figs with brown sugar."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 35 to 40 minutes: the pastry is golden and the figs candied at the edges."
+   },
+   {
+    "titre": "Glaze & serve",
+    "detail": "Out of the oven, brush with a little warm honey for shine. Let cool slightly and serve as is or with a scoop of vanilla ice cream."
+   }
+  ]
+ },
+ "tarteamandinefigues": {
+  "nom": "Fig Frangipane Tart",
+  "description": "The pastry-shop version: shortcrust pastry filled with a soft almond cream into which fresh fig quarters sink, topped with golden flaked almonds and brushed with honey. The cream puffs around the candying fruit — the late-summer amandine of the finest bakery windows.",
+  "etapes": [
+   {
+    "titre": "Shortcrust pastry",
+    "detail": "Rub the flour with just over half the cold butter, add a third of the sugar, the salt and half the beaten egg. Form a ball, wrap and rest 30 minutes in the fridge."
+   },
+   {
+    "titre": "Line the tin",
+    "detail": "Roll out the dough and line a tart tin. Prick the base with a fork and chill again."
+   },
+   {
+    "titre": "Almond cream",
+    "detail": "Whisk the remaining soft butter with the remaining sugar, the ground almonds and the rest of the beaten egg into a smooth cream."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the almond cream in an even layer over the tart base."
+   },
+   {
+    "titre": "The figs",
+    "detail": "Cut the figs into quarters and press them lightly into the cream, points up. Scatter with flaked almonds."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 35 to 40 minutes: the cream is puffed and golden, the figs candied, the almonds toasted."
+   },
+   {
+    "titre": "Glaze & serve",
+    "detail": "Out of the oven, brush with warm honey. Let cool slightly: the slice holds, the cream stays soft — serve with a scoop of vanilla ice cream."
+   }
+  ]
  }
 };
