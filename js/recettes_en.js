@@ -81366,5 +81366,345 @@ window.RECETTES_EN = {
     "detail": "Spread on toasted bread — or flash under the grill. Lyonnais fromage fort!"
    }
   ]
+ },
+ "horchata": {
+  "nom": "Horchata",
+  "description": "Horchata — Mexico's iced rice milk: rice steeped with cinnamon, blended, strained and sweetened with milk and vanilla. White, silky and ultra-refreshing, it puts out the fire of spicy tacos — the queen of aguas frescas.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the rice in cold water."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Cover generously with water with the cinnamon and soak at least 4 hours (overnight, ideally)."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the rice at length with its soaking water and the cinnamon."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain through a fine cloth or very fine sieve, pressing well."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar, milk and vanilla; stir until dissolved."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate and serve over plenty of ice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with a pinch of cinnamon. Mexican horchata — the gentlest of the aguas frescas!"
+   }
+  ]
+ },
+ "tepache": {
+  "nom": "Tepache",
+  "description": "Tepache — Mexico's fermented pineapple drink: rind and flesh steep with brown sugar, cinnamon and clove, gently fermenting for 2 days with the faintest fizz. Amber, tangy and alive — the market drink, served over crushed ice.",
+  "etapes": [
+   {
+    "titre": "The pineapple",
+    "detail": "Scrub and rinse the pineapple well; cut rind and flesh into pieces (the rind carries the yeasts — keep it!)."
+   },
+   {
+    "titre": "The jar",
+    "detail": "Place everything in a large jar with the brown sugar, cinnamon and clove."
+   },
+   {
+    "titre": "Cover with water",
+    "detail": "Cover generously with water and stir to dissolve the sugar."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Cover with a cloth and ferment 2 days at room temperature: fine bubbles rise."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste: tangy and barely fizzy means ready (any longer and it turns to vinegar!)."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain and refrigerate to stop the fermentation."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very cold over crushed ice. Mexican market tepache!"
+   }
+  ]
+ },
+ "limonana": {
+  "nom": "Limonana",
+  "description": "Limonana — the Levant's frozen mint lemonade: pressed lemon, fresh mint and crushed ice blended into a pale-green, frothy slush. Born between Beirut and Tel Aviv, it is THE drink of 40° summers — sharp, icy, impossible to put down.",
+  "etapes": [
+   {
+    "titre": "Press",
+    "detail": "Juice the lemons; keep the juice."
+   },
+   {
+    "titre": "The mint",
+    "detail": "Pick the mint leaves (keep a few sprigs for garnish)."
+   },
+   {
+    "titre": "The ice",
+    "detail": "Fill the blender with ice cubes."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend ice, lemon juice, sugar and mint into a frothy slush."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: add sugar or lemon — the balance must snap."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour immediately into frosted glasses."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with a mint sprig and drink through a straw, fast, before it melts. Levantine limonana!"
+   }
+  ]
+ },
+ "sekanjabin": {
+  "nom": "Sekanjabin",
+  "description": "Sekanjabin — Persia's oldest syrup: honey and sugar reduced with vinegar and infused with mint, lengthened with iced water over grated cucumber. The most elegant sweet-and-sour there is — it has refreshed Iranian summers for millennia.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Bring the honey, sugar and half a glass of water to a simmer."
+   },
+   {
+    "titre": "The vinegar",
+    "detail": "Add the vinegar and reduce a few minutes into a light syrup."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Off the heat, add the mint and infuse until cool."
+   },
+   {
+    "titre": "The cucumber",
+    "detail": "Grate the cucumber."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Remove the mint; pour the syrup over ice, top up with very cold water."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add the grated cucumber — that is what makes sekanjabin unique."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Stir and serve at once, decorated with mint. Persian sekanjabin!"
+   }
+  ]
+ },
+ "doogh": {
+  "nom": "Doogh",
+  "description": "Doogh — Iran's salted drinking yogurt: yogurt whisked with very cold water (still or sparkling), salt and dried mint. Salty, not sweet — the reflex that surprises then converts you: nothing quenches better next to a kebab.",
+  "etapes": [
+   {
+    "titre": "The yogurt",
+    "detail": "Pour the yogurt into a tall glass or shaker."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Add the salt."
+   },
+   {
+    "titre": "The mint",
+    "detail": "Crumble the mint (dried, ideally) between your fingers."
+   },
+   {
+    "titre": "Lengthen",
+    "detail": "Add the yogurt's volume in very cold water — still, or sparkling for the fizzy version."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Whisk or shake until the doogh is smooth and frothy."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Serve over ice cubes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with a pinch of mint. Iranian doogh — the kebab's thirst-killer!"
+   }
+  ]
+ },
+ "sujeonggwa": {
+  "nom": "Sujeonggwa",
+  "description": "Sujeonggwa — Korea's iced cinnamon-ginger punch: the two infusions meet in an amber, peppery syrup, served very cold with rehydrated dried fruit and floating pine nuts. The traditional banquet digestif — without a drop of alcohol.",
+  "etapes": [
+   {
+    "titre": "The ginger",
+    "detail": "Peel and thinly slice the ginger."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Gently simmer ginger and cinnamon in a large pan of water for 30 minutes."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain the amber infusion."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Dissolve the brown sugar in the hot infusion."
+   },
+   {
+    "titre": "The fruit",
+    "detail": "Cut the dried apricots into strips and drop them into the hot punch: they plump up."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cool, then refrigerate several hours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very cold, with the fruit and a few floating pine nuts. Korean sujeonggwa!"
+   }
+  ]
+ },
+ "sikhye": {
+  "nom": "Sikhye",
+  "description": "Sikhye — Korea's sweet rice drink: malted barley water that gently 'digests' cooked rice until it floats, barely sweetened and served iced with a few grains in the glass. The drinkable dessert of Korean saunas and feasts.",
+  "etapes": [
+   {
+    "titre": "The barley water",
+    "detail": "Coarsely blend the barley (malted, ideally) and steep it 1 hour in warm water; strain finely."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Cook the rice fairly firm."
+   },
+   {
+    "titre": "Saccharify",
+    "detail": "Pour the barley water over the rice and hold barely warm (50-60°C, oven or rice cooker) several hours: grains start to float — it's ready."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Lift out the floating grains and rinse them; strain the liquid."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Boil the liquid with the sugar and ginger; skim, then cool."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate several hours with the reserved rice grains."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve iced, a few grains and pine nuts floating in the glass. Korean sikhye!"
+   }
+  ]
+ },
+ "sima": {
+  "nom": "Sima",
+  "description": "Sima — the fermented lemonade of Finland's May Day: lemon, white and brown sugar, a pinch of yeast, and a few raisins in every bottle. When the raisins rise to the surface, it's ready! Sweet, lemony and barely fizzy — spring festival in a bottle.",
+  "etapes": [
+   {
+    "titre": "The lemon",
+    "detail": "Peel the lemon zest in ribbons and squeeze the juice."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Pour boiling water over the sugars, zest and juice; stir and let cool to lukewarm."
+   },
+   {
+    "titre": "The yeast",
+    "detail": "Barely warm, add the pinch of yeast and cover with a cloth."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Ferment 24 hours at room temperature: fine bubbles appear."
+   },
+   {
+    "titre": "Bottle",
+    "detail": "Strain and bottle with a few raisins in each bottle."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Leave 2 to 3 days in the fridge: when the raisins float, the sima is ready."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled — sweet, lemony, barely sparkling. Finnish Vappu sima!"
+   }
+  ]
+ },
+ "kompot": {
+  "nom": "Kompot",
+  "description": "Kompot — Eastern Europe's simmered fruit drink: apples and berries barely simmered in lightly sweetened water, served iced with the fruit at the bottom of the jug. Neither juice nor infusion — the orchard in a carafe, on every Polish summer table.",
+  "etapes": [
+   {
+    "titre": "The apples",
+    "detail": "Wash the apples and cut into quarters, skin on."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Drop them into a large pan of water and simmer 10 minutes."
+   },
+   {
+    "titre": "The berries",
+    "detail": "Add the berries and sugar; simmer 5 more minutes without crushing the fruit."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Add a dash of lemon juice to wake up the flavour."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: kompot must stay light, barely sweet."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cool, then refrigerate, fruit included."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve iced in a jug, fruit at the bottom and a ladle to fish it out. Polish kompot!"
+   }
+  ]
+ },
+ "aguapanela": {
+  "nom": "Agua de Panela",
+  "description": "Agua de panela — Colombia's national drink: whole cane sugar melted in water, woken up with a big squeeze of lime and served over ice. Caramel, cane and citrus — three ingredients, zero fuss, and all of Colombia in a glass.",
+  "etapes": [
+   {
+    "titre": "The panela",
+    "detail": "Break the panela into pieces (or use whole cane sugar such as rapadura)."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Melt it in a pan of hot water, stirring."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely."
+   },
+   {
+    "titre": "The lime",
+    "detail": "Squeeze the limes and add the juice."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: sweet caramel up front, acidity behind — adjust lime or water."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Refrigerate and serve over plenty of ice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with a lime slice. Colombian agua de panela — con limón!"
+   }
+  ]
  }
 };
