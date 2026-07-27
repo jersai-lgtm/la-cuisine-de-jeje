@@ -82386,5 +82386,345 @@ window.RECETTES_EN = {
     "detail": "Warm rice, cool mango, coconut cream on top and toasted sesame. Khao niao mamuang!"
    }
   ]
+ },
+ "jambonbeurre": {
+  "nom": "Jambon-Beurre",
+  "description": "The jambon-beurre — THE French sandwich, a billion sold a year: a fresh crusty baguette, good butter in a generous layer, quality cooked ham and a few cornichons. Three ingredients, zero cheating — when each one is perfect, it's unbeatable.",
+  "etapes": [
+   {
+    "titre": "The baguette",
+    "detail": "Choose a crusty tradition baguette, still warm if possible."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split it lengthwise without fully separating the halves."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Spread the butter (lightly salted, softened) generously on both faces."
+   },
+   {
+    "titre": "The ham",
+    "detail": "Fold the ham slices into waves — never flat, that's the secret of the softness."
+   },
+   {
+    "titre": "The cornichons",
+    "detail": "Add the cornichons in thin slices over the ham."
+   },
+   {
+    "titre": "Close",
+    "detail": "Close and press lightly to seal."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Devour within 2 hours, while the baguette still crackles. The eternal Parisian!"
+   }
+  ]
+ },
+ "tamagosando": {
+  "nom": "Tamago Sando",
+  "description": "Tamago sando — the egg sandwich of Japanese konbini: an ultra-creamy egg salad with gentle mayonnaise, between two slices of crustless cloud-soft milk bread. So cult that starred chefs sing its praises — Japanese comfort in a perfect square.",
+  "etapes": [
+   {
+    "titre": "The eggs",
+    "detail": "Hard-boil the eggs 9 minutes; cool in iced water and peel."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Separate whites and yolks: chop the whites, mash the yolks."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Mix the yolks with mayonnaise, sugar, mustard and salt into a smooth cream."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fold in the chopped whites — creamy with pieces."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Lightly butter the milk bread (butter waterproofs it)."
+   },
+   {
+    "titre": "Build",
+    "detail": "Fill generously, close, press gently and trim the crusts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into two clean rectangles, cut side showing. Konbini tamago sando!"
+   }
+  ]
+ },
+ "tramezzino": {
+  "nom": "Tramezzini",
+  "description": "Tramezzini — the soft triangles of Venetian bacari: crustless milk bread generously domed with tuna-egg-mayonnaise, cut on the diagonal. Born in Turin in 1925, they escort the aperitivo spritz — the triangle's plump belly is a Venetian point of pride.",
+  "etapes": [
+   {
+    "titre": "The eggs",
+    "detail": "Hard-boil the eggs, cool and peel."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mash the drained tuna with the mayonnaise and chopped capers."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Slice the tomato thin and pat the slices dry."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Trim the crusts and barely flatten the slices with a rolling pin."
+   },
+   {
+    "titre": "Dome",
+    "detail": "Fill in a dome at the CENTRE: tuna, sliced egg, tomato — the middle must bulge."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Close and press the edges: the tramezzino puffs at the centre, sealed at the sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut on the diagonal and serve with a (alcohol-free!) spritz. Venice's tramezzini!"
+   }
+  ]
+ },
+ "chipbutty": {
+  "nom": "Chip Butty",
+  "description": "Chip butty — northern England's chip sandwich: scorching chips packed between two thickly buttered slices of soft bread, a dash of malt vinegar and ketchup. Carbs squared, proudly — working-class comfort from Liverpool to Sheffield.",
+  "etapes": [
+   {
+    "titre": "The chips",
+    "detail": "Make properly golden, crisp chips (oven or fryer)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt them and add a dash of (ideally malt) vinegar — the English move."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Take thick, soft white bread at room temperature."
+   },
+   {
+    "titre": "Butter HARD",
+    "detail": "Butter both slices generously — the butter must melt against the chips."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Pack the scorching chips tightly on one slice."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the ketchup (or brown sauce) and close, pressing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Eat IMMEDIATELY, while the butter melts. The northern chip butty!"
+   }
+  ]
+ },
+ "muffuletta": {
+  "nom": "Muffuletta",
+  "description": "Muffuletta — New Orleans' Sicilian giant, created in 1906 at the Central Grocery: a big round sesame loaf, a marinated 'olive salad' soaking into the crumb, and storeys of salami, mortadella, ham and cheese. It rests under a weight before being cut in wedges — better an hour later.",
+  "etapes": [
+   {
+    "titre": "The olive salad",
+    "detail": "Roughly chop olives, celery and (roasted) pepper; mix with oil, vinegar and oregano."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Let this salad marinate at least 30 minutes (overnight is ideal)."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Split a large round (ideally sesame) loaf in two."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Spread the olive salad AND its oil on both faces — it must soak the crumb."
+   },
+   {
+    "titre": "The storeys",
+    "detail": "Layer salami, mortadella, ham and cheese evenly."
+   },
+   {
+    "titre": "Press",
+    "detail": "Close, wrap tight and set a weight on top for 30 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut in wedges like a cake. The Central Grocery muffuletta!"
+   }
+  ]
+ },
+ "bocadillocalamares": {
+  "nom": "Bocadillo de Calamares",
+  "description": "Bocadillo de calamares — the legendary sandwich of Madrid's Plaza Mayor: scorching crisp fried squid rings packed into a plain baguette with a squeeze of lemon and a little mayonnaise. No frills — the fry crackles, the bread absorbs, Madrid is right there.",
+  "etapes": [
+   {
+    "titre": "The squid",
+    "detail": "Cut the cleaned squid into rings and pat very dry."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Salt, then flour the rings; shake off the excess in a sieve."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat a good hot oil bath (180°C)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the rings 2 minutes in small batches: golden, never rubbery."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper, salt on the fly."
+   },
+   {
+    "titre": "Build",
+    "detail": "Split the baguette, a veil of mayonnaise, and stuff with scorching rings."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A squeeze of lemon on top and close. The Plaza Mayor bocadillo!"
+   }
+  ]
+ },
+ "mitraillette": {
+  "nom": "Mitraillette",
+  "description": "Mitraillette — the heavy artillery of Belgian friteries: half a baguette, a beef patty (or fricadelle), a mountain of fries ON TOP of the meat, all drowned in andalouse sauce. Brussels invented it for big hungers — eaten two-handed, leaning forward.",
+  "etapes": [
+   {
+    "titre": "The fries",
+    "detail": "Make real Belgian fries: golden, crisp outside, melting inside."
+   },
+   {
+    "titre": "The andalouse sauce",
+    "detail": "Mix mayonnaise, tomato paste and a hint of chilli."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Cook the salted beef patty (or fricadelle), well seared."
+   },
+   {
+    "titre": "The baguette",
+    "detail": "Split the half-baguette without separating it, pull out some crumb."
+   },
+   {
+    "titre": "The base",
+    "detail": "A little lettuce, then the hot meat."
+   },
+   {
+    "titre": "The mountain",
+    "detail": "Pile the scorching fries ON the meat — that's the mitraillette."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat generously with andalouse sauce and close as best you can. Two hands!"
+   }
+  ]
+ },
+ "gatsby": {
+  "nom": "Gatsby",
+  "description": "Gatsby — Cape Town's giant submarine: a whole baguette stuffed with spiced steak, onions and masala chips, cut into sections to share. Born in 1976 in a Cape Town fish & chips shop, it feeds 4 — you NEVER order a gatsby just for yourself.",
+  "etapes": [
+   {
+    "titre": "The masala chips",
+    "detail": "Make the chips, then dust with paprika, curry and chilli."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Slice the beef, salt it and flash-fry with the sliced onion."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add a pinch of the spice mix to the meat at the end."
+   },
+   {
+    "titre": "The baguette",
+    "detail": "Split a WHOLE baguette lengthwise without separating the halves."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Spread ketchup and mayonnaise, the oniony meat, then ALL the chips."
+   },
+   {
+    "titre": "Press",
+    "detail": "Close, pressing hard — the gatsby must hold shut."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into sections and share by hand. The Cape Town gatsby — never solo!"
+   }
+  ]
+ },
+ "tortaahogada": {
+  "nom": "Torta Ahogada",
+  "description": "Torta ahogada — Guadalajara's 'drowned' sandwich: a crusty roll filled with slow-cooked pork, submerged in a scorching tomato-chilli sauce. Eaten with a spoon and your hands, soaked to the elbows — Jalisco's official morning-after remedy.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Slow-cook the salted pork with the bay leaf until it shreds; brown it at the end."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Blend the cooked tomatoes with garlic, oregano, vinegar and salt; keep it simmering."
+   },
+   {
+    "titre": "The fire",
+    "detail": "Add the chilli to the sauce — a real ahogada bites, dose to your courage."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Slice the onion into half-moons and marinate in a little vinegar."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Split the crusty roll and fill generously with shredded pork."
+   },
+   {
+    "titre": "Drown",
+    "detail": "Set the sandwich in a deep plate and DROWN it in scorching sauce by the ladle."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with pickled onions, spoon in hand. Guadalajara's torta ahogada!"
+   }
+  ]
+ },
+ "chacarero": {
+  "nom": "Chacarero",
+  "description": "Chacarero — Chile's 'farmer's' sandwich, ranked among the world's best: thin grilled beef, tomatoes, a generous layer of crunchy GREEN BEANS and a dash of chilli, in a soft round roll. Crisp green against hot meat — Santiago's stroke of genius.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Trim the green beans and cook al dente in salted boiling water; cool them."
+   },
+   {
+    "titre": "The beef",
+    "detail": "Slice the beef thin, salt and flash-grill over high heat."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Slice the tomato thin."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Split the round roll (frica) and lightly toast the inside."
+   },
+   {
+    "titre": "Build",
+    "detail": "Mayonnaise, hot beef slices, salted tomato rounds."
+   },
+   {
+    "titre": "The signature",
+    "detail": "Cover with a REAL layer of green beans and a touch of chilli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close and serve at once. Santiago's chacarero — crunchy, hot, brilliant!"
+   }
+  ]
  }
 };
