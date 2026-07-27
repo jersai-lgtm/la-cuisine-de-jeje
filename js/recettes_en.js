@@ -82726,5 +82726,345 @@ window.RECETTES_EN = {
     "detail": "Close and serve at once. Santiago's chacarero — crunchy, hot, brilliant!"
    }
   ]
+ },
+ "crumpets": {
+  "nom": "Crumpets",
+  "description": "Crumpets — the holey griddle cakes of English tea time: a very loose yeasted batter cooked in rings in a pan, where bubbles burst into craters. Toasted, buttered — the butter melts INTO the holes, and that is exactly the point. An English classic untouched since Victorian times.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk flour, sugar, yeast and warm milk into a thick smooth batter; cover."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise 1 hour: the surface must foam with bubbles."
+   },
+   {
+    "titre": "The bicarb",
+    "detail": "Dissolve salt and bicarbonate in a little warm water and stir in — that is what digs the holes."
+   },
+   {
+    "titre": "The rings",
+    "detail": "Heat a buttered pan over low heat with greased metal rings."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour batter halfway up: bubbles rise and burst into craters; the surface must set dry."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Remove the rings, flip for barely 1 minute to gild the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toast and butter generously: the butter melts into the holes. The tea-time crumpet!"
+   }
+  ]
+ },
+ "hotcrossbuns": {
+  "nom": "Hot Cross Buns",
+  "description": "Hot cross buns — England's Good Friday buns marked with a cross: cinnamon-spiced brioche studded with raisins, a paste cross on top and a honey glaze out of the oven. They have had their own nursery rhyme since 1798 — 'one a penny, two a penny, hot cross buns!'",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, sugar, yeast, cinnamon, warm milk, egg and soft butter into a supple dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Work in the raisins and orange zest; knead a little more."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise 1 hour, until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Knock back and form even balls, packed side by side on the tray; prove 30 minutes."
+   },
+   {
+    "titre": "The cross",
+    "detail": "Mix a little flour and water into a thick paste; pipe a cross on each bun."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 190°C until well golden and joined together."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with warm honey out of the oven. Warm or toasted with butter — hot cross buns!"
+   }
+  ]
+ },
+ "dutchbaby": {
+  "nom": "Dutch Baby",
+  "description": "Dutch baby — Seattle's giant puffed pancake: a loose crêpe batter poured into a SCORCHING cast-iron pan in the oven, ballooning into a golden crater with spectacular edges… then collapsing at the table, as intended. Lemon and icing sugar, and brunch becomes an event.",
+  "etapes": [
+   {
+    "titre": "The pan",
+    "detail": "Set a cast-iron pan in the oven and preheat to 220°C — it must be SCORCHING."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Blend eggs, milk, flour, a little sugar, vanilla and salt until very smooth and loose."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest the batter while the oven heats."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Drop the butter into the scorching pan: it foams instantly."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the batter in one go at the centre and shut the oven IMMEDIATELY."
+   },
+   {
+    "titre": "Puff",
+    "detail": "Bake 18 to 20 minutes WITHOUT opening: the edges surge into golden waves."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Bring to the table at once (it deflates, that's normal!), squeezed lemon and sugar. The dutch baby!"
+   }
+  ]
+ },
+ "bostock": {
+  "nom": "Bostock",
+  "description": "Bostock — yesterday's brioche reborn in style: thick slices soaked in orange-blossom syrup, spread with almond cream, covered with flaked almonds and baked golden. Between French toast and an almond tart — the most elegant anti-waste move in French baking.",
+  "etapes": [
+   {
+    "titre": "The brioche",
+    "detail": "Cut day-old brioche into thick (2 cm) slices."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Simmer a third of the sugar with a little water; perfume with orange blossom off the heat."
+   },
+   {
+    "titre": "The almond cream",
+    "detail": "Whisk the soft butter with the remaining sugar, the ground almonds and the egg."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Brush each slice generously with syrup on both faces."
+   },
+   {
+    "titre": "Coat",
+    "detail": "A thin layer of apricot jam, then a thick layer of almond cream."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Scatter with flaked almonds and bake at 180°C until puffed and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Warm, dusted with sugar. Bostock — yesterday's brioche turned star!"
+   }
+  ]
+ },
+ "painsuisse": {
+  "nom": "Pain Suisse",
+  "description": "Pain suisse — the favourite rectangle of the French after-school snack: a butter-laminated brioche dough, vanilla pastry cream and dark chocolate shards, folded and baked into golden parcels. The baker's dilemma-solver — the one you pick when you can't decide.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, a third of the sugar, some milk, the egg (keep some for the cream and glaze) and a third of the butter; rise 1 hour."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Make a pastry cream: hot vanilla milk over yolk-sugar-cornflour, thickened on the heat; cover and chill."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Roll the dough into a rectangle, spread the remaining soft butter, fold in three (single turn) and roll again."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the cold pastry cream over half the dough and scatter with chopped chocolate."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Fold the other half over, seal and cut into even rectangles."
+   },
+   {
+    "titre": "Prove & glaze",
+    "detail": "Prove 45 minutes, then brush with beaten egg."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until handsomely golden. Warm — the perfect goûter: pains suisses!"
+   }
+  ]
+ },
+ "melonpan": {
+  "nom": "Melon Pan",
+  "description": "Melon pan — the star of Japanese bakeries: a fluffy brioche capped with a thin crunchy cookie crust, cross-hatched like a melon's rind (hence the name — there is no melon inside!). Sweet crust that snaps, cloud crumb — the absolute icon of the Japanese snack.",
+  "etapes": [
+   {
+    "titre": "The brioche",
+    "detail": "Knead half the flour with yeast, a third of the sugar, warm milk and a little butter into a supple dough; rise 1 hour."
+   },
+   {
+    "titre": "The cookie dough",
+    "detail": "Mix the remaining butter, sugar, egg, vanilla and flour into a shortbread dough; chill."
+   },
+   {
+    "titre": "The balls",
+    "detail": "Knock back the brioche and shape even balls."
+   },
+   {
+    "titre": "The cap",
+    "detail": "Roll the cookie dough into thin discs and drape one over each ball like a beret."
+   },
+   {
+    "titre": "The lattice",
+    "detail": "Roll the tops in sugar and score a cross-hatch with a knife — the melon rind."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Prove 40 minutes: the lattice opens as it rises."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C: golden snapping crust, cloud crumb. Tokyo melon pan!"
+   }
+  ]
+ },
+ "anpan": {
+  "nom": "Anpan",
+  "description": "Anpan — the sweet red-bean-filled bun invented in 1875 by a samurai turned baker for the emperor: fluffy brioche, sweet anko heart, sesame seeds on top. It even has its own national superhero (Anpanman!) — that is its status in Japan.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, warm milk, half the egg and soft butter into a supple smooth dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise 1 hour, until doubled."
+   },
+   {
+    "titre": "The anko",
+    "detail": "Roll the red bean paste into even balls."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Flatten discs of dough, set an anko ball at the centre and seal carefully underneath."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Set seam-down and prove 40 minutes."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with the remaining beaten egg and sprinkle with sesame."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until glossily golden. Warm or cold — Japan's anpan!"
+   }
+  ]
+ },
+ "tsoureki": {
+  "nom": "Tsoureki",
+  "description": "Tsoureki — the braided Greek Easter brioche: a stringy crumb that pulls apart in long strands, perfumed with orange and orange blossom, covered with flaked almonds. Braided with three strands for the Trinity — and fought over for the end crust all year round.",
+  "etapes": [
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in warm milk with a spoon of sugar and flour; let it foam 15 minutes."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Knead with flour, sugar, egg (keep some to glaze), orange zest and orange blossom."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Work in the soft butter, kneading at length: the dough must turn silky and elastic — the secret of the stringy crumb."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Rise 1h30 somewhere warm, until doubled."
+   },
+   {
+    "titre": "Braid",
+    "detail": "Divide into three ropes and braid loosely; prove 45 minutes."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with beaten egg and scatter flaked almonds."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C to a deep golden brown. The crumb pulls into strands — Greek tsoureki!"
+   }
+  ]
+ },
+ "pulla": {
+  "nom": "Pulla",
+  "description": "Pulla — Finland's cardamom brioche: braided or rolled, golden and studded with pearl sugar, it perfumes every café in the country. Freshly ground cardamom is non-negotiable — it is the official smell of the kahvitauko, the Finnish coffee break.",
+  "etapes": [
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in the warm milk with a little sugar."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, sugar, ground cardamom, egg (keep some to glaze) and the yeasted milk."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Work in the soft butter and knead to a smooth, fragrant dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Rise 1 hour under a cloth, until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Braid into a wreath or roll into little knots; prove 30 minutes."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with egg and scatter pearl sugar and flaked almonds."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 190°C until glossily golden. With a coffee — Finnish pulla!"
+   }
+  ]
+ },
+ "paodedeus": {
+  "nom": "Pão de Deus",
+  "description": "Pão de Deus — Portugal's 'bread of God': a cloud-soft brioche capped with a moist crown of sweet coconut that caramelises in the oven. At Lisbon café counters it is split with a coffee — or, scandalously, filled with ham and cheese.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, half the sugar, warm milk, half the egg, soft butter and lemon zest into a supple dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise 1 hour, until doubled."
+   },
+   {
+    "titre": "The coconut cap",
+    "detail": "Mix the grated coconut with the remaining sugar and egg into a moist paste."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form even balls and set them on the tray."
+   },
+   {
+    "titre": "Cap",
+    "detail": "Spread the coconut cap generously over each ball."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Prove 30 minutes: the balls swell under their caps."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C: the coconut gilds, the crumb stays cloud. Dust with sugar — pão de Deus!"
+   }
+  ]
  }
 };
