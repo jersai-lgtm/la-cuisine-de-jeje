@@ -81706,5 +81706,345 @@ window.RECETTES_EN = {
     "detail": "Garnish with a lime slice. Colombian agua de panela — con limón!"
    }
   ]
+ },
+ "espetada": {
+  "nom": "Espetada",
+  "description": "Espetada — Madeira's giant skewer: beef cubes rubbed with garlic and salt, traditionally threaded onto bay laurel branches and grilled over flames, then glossed with melted butter. Hung above the table, the skewers drip onto the bread — Portuguese barbecue in all its glory.",
+  "etapes": [
+   {
+    "titre": "The beef",
+    "detail": "Cut the beef into large even cubes."
+   },
+   {
+    "titre": "Rub",
+    "detail": "Crush the garlic with the salt and pepper; rub the cubes with it, the oil and the crumbled bay."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate 1 hour (overnight is even better)."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the cubes onto long skewers — bay branches if you have them!"
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over high heat, turning: seared crust outside, pink heart inside."
+   },
+   {
+    "titre": "Gloss",
+    "detail": "Off the grill, brush with melted butter that mingles with the juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, with bread to mop the juices. Madeira's espetada!"
+   }
+  ]
+ },
+ "pinchosmorunos": {
+  "nom": "Pinchos Morunos",
+  "description": "Pinchos morunos — Andalusia's 'Moorish' skewers: pork marinated in paprika, cumin, turmeric and oregano, a legacy of Maghreb spices, grilled into small golden skewers. The feria tapas — fragrant, juicy, always served scorching with a lemon wedge.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Cut the pork (shoulder or loin) into bite-size cubes."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Mix paprika, cumin, turmeric, oregano, crushed garlic, salt, oil and lemon juice into a paste."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the cubes in the paste and marinate at least 2 hours in the fridge."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the cubes onto small skewers, not too tight."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over high heat, turning, until handsomely golden-red."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Squeeze lemon over the scorching skewers."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, as tapas or a main. Andalusian pinchos morunos!"
+   }
+  ]
+ },
+ "arrosticini": {
+  "nom": "Arrosticini",
+  "description": "Arrosticini — the thin lamb skewers of Abruzzo: tiny cubes threaded tight on slim sticks, grilled fast over embers with just salt. Nothing else — and that is the genius. You eat them by the dozen, straight off the stick, with olive-oil bread.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Cut the lamb (shoulder or leg) into tiny one-centimetre cubes."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread them tight onto thin wooden sticks — about twenty cubes per stick."
+   },
+   {
+    "titre": "The embers",
+    "detail": "Get lively embers going (or a scorching cast-iron grill)."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the arrosticini 2 to 3 minutes, rolling constantly: golden outside, juicy inside."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt generously on the fly, add pepper."
+   },
+   {
+    "titre": "Lift",
+    "detail": "A whisper of rosemary and a squeeze of lemon for those who like it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in bundles, eaten off the stick, with olive-oil rubbed bread. Abruzzo arrosticini!"
+   }
+  ]
+ },
+ "frigarui": {
+  "nom": "Frigarui",
+  "description": "Frigarui — Romania's Sunday skewers: pork marinated with paprika and bay, alternated with pepper, onion and smoked bacon that bastes the meat as it grills. On every Romanian barbecue next to the mici — summer smells of paprika and smoke.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Cut the pork into cubes; toss with paprika, crushed garlic, bay, salt and oil."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate 1 to 2 hours in the fridge."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut pepper and onion into squares the size of the cubes."
+   },
+   {
+    "titre": "Alternate",
+    "detail": "Thread, alternating pork, pepper, onion and smoked bacon."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over medium-high heat, turning: the bacon melts and bastes the meat."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt at the end, add a grind of pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scorching, with mustard and bread. Romanian frigarui!"
+   }
+  ]
+ },
+ "gaiyang": {
+  "nom": "Gai Yang",
+  "description": "Gai yang — grilled chicken from Thailand's Isan: marinated with lemongrass, coriander, garlic and fish sauce, grilled slowly until the skin lacquers. On every Thai market with sticky rice — tear, dip, repeat.",
+  "etapes": [
+   {
+    "titre": "The paste",
+    "detail": "Blend sliced lemongrass, coriander stems, garlic and pepper into a fragrant paste."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Mix the paste with fish sauce, soy sauce, brown sugar and turmeric."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Lightly score the chicken and massage in the marinade."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate at least 3 hours (overnight, ideally)."
+   },
+   {
+    "titre": "Grill gently",
+    "detail": "Grill over medium heat, often skin-side, turning: the skin lacquers without burning."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Check it is cooked through and squeeze lime over the hot chicken."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Carve and serve with rice (sticky, ideally) and the coriander leaves. Isan gai yang!"
+   }
+  ]
+ },
+ "tsukune": {
+  "nom": "Tsukune",
+  "description": "Tsukune — the izakaya chicken meatballs: minced with ginger and onion, shaped onto skewers, grilled then lacquered with a soy-honey tare that caramelises. You dip them in raw egg yolk — the ultimate yakitori move.",
+  "etapes": [
+   {
+    "titre": "The mix",
+    "detail": "Finely mince the chicken with the onion and grated ginger."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix with half the egg and the cornflour until the mixture holds."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form oval logs around skewers (wet hands!)."
+   },
+   {
+    "titre": "Pre-cook",
+    "detail": "Sear gently in a pan or on the grill until they hold together."
+   },
+   {
+    "titre": "The tare",
+    "detail": "Reduce soy sauce and honey into a syrupy lacquer."
+   },
+   {
+    "titre": "Lacquer",
+    "detail": "Brush the tsukune with tare and grill, turning, until glossily caramelised."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with sesame and serve with the remaining egg yolk as a dip. Izakaya tsukune!"
+   }
+  ]
+ },
+ "galbi": {
+  "nom": "Galbi",
+  "description": "Galbi — Korea's marinated beef ribs: a soy-pear-honey-sesame marinade that tenderises and caramelises on the tabletop grill. Grated pear is the Korean mums' secret — natural sugar and enzymes. Wrap it in a lettuce leaf, and it's heaven.",
+  "etapes": [
+   {
+    "titre": "The secret",
+    "detail": "Grate the pear and onion to a purée — galbi's natural tenderiser."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Mix pear purée, soy sauce, honey, crushed garlic, grated ginger and pepper."
+   },
+   {
+    "titre": "The beef",
+    "detail": "Slice the beef thin (or score the ribs) and immerse in the marinade."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate at least 4 hours in the fridge — overnight is better."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Drain and grill over very high heat, briefly: the marinade caramelises fast."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Wash the lettuce: every bite gets rolled in a leaf."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with sesame and serve with rice and lettuce leaves. Korean galbi!"
+   }
+  ]
+ },
+ "chickeninasal": {
+  "nom": "Chicken Inasal",
+  "description": "Chicken inasal — Bacolod's grilled chicken: marinated with lemongrass, ginger, lime and vinegar, then basted on the grill with golden annatto butter. Bronzed skin, fragrant flesh — in the Philippines you eat it with rice and the basting juices, by hand.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Blend lemongrass, ginger, garlic, lime juice, vinegar, brown sugar and salt."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Massage the chicken with the marinade and rest at least 3 hours in the fridge."
+   },
+   {
+    "titre": "The golden butter",
+    "detail": "Melt the butter with turmeric and paprika (the Filipino annatto): it turns orange."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the chicken over medium heat, turning regularly."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Brush with orange butter at every turn: the skin bronzes and perfumes."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Check it is cooked and add a last squeeze of lime."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and the remaining butter as a sauce. Bacolod chicken inasal!"
+   }
+  ]
+ },
+ "spiedies": {
+  "nom": "Spiedies",
+  "description": "Spiedies — Binghamton, New York's skewer sandwich: chicken cubes marinated at length in an Italian-American blend of vinegar, oil, oregano and mint, grilled then slid straight off the skewer into a slice of soft bread. So cult it has its own festival — Spiedie Fest!",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Cut the chicken into even cubes."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Whisk vinegar, oil, oregano, chopped mint, crushed garlic, lemon juice and salt."
+   },
+   {
+    "titre": "Marinate long",
+    "detail": "Marinate 24 hours (up to 48!) — THE spiedie secret."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the drained cubes onto skewers."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over high heat, turning, until nicely coloured."
+   },
+   {
+    "titre": "The move",
+    "detail": "Grab a slice of soft bread, wrap the skewer and pull the stick: the cubes stay in the bread."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A drizzle of fresh marinade on top, and bite. Binghamton spiedies!"
+   }
+  ]
+ },
+ "lomoaltrapo": {
+  "nom": "Lomo al Trapo",
+  "description": "Lomo al trapo — Colombia's barbecue showpiece: a beef fillet wrapped in a cotton cloth packed with coarse salt, tied and thrown STRAIGHT into the embers. The cloth chars, the salt bakes into a crust-oven, the meat comes out impossibly juicy. You crack the shell in front of your guests!",
+  "etapes": [
+   {
+    "titre": "The cloth",
+    "detail": "Wet a clean cotton cloth and lay it flat; cover with a thick layer of coarse salt."
+   },
+   {
+    "titre": "Perfume",
+    "detail": "Sprinkle the salt with oregano and pepper."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Set the beef fillet in the centre and roll the cloth tight; tie like a roast."
+   },
+   {
+    "titre": "Into the embers",
+    "detail": "Place the parcel DIRECTLY on glowing embers."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Count 8 to 10 minutes per side: the cloth blackens — normal, the salt protects."
+   },
+   {
+    "titre": "Crack",
+    "detail": "Remove the parcel, rest 5 minutes, then crack the charred salt crust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Brush off, slice thick and serve with chimichurri. Colombian lomo al trapo!"
+   }
+  ]
  }
 };
