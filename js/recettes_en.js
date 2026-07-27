@@ -82046,5 +82046,345 @@ window.RECETTES_EN = {
     "detail": "Brush off, slice thick and serve with chimichurri. Colombian lomo al trapo!"
    }
   ]
+ },
+ "halohalo": {
+  "nom": "Halo-Halo",
+  "description": "Halo-halo — 'mix-mix' in Tagalog: the Philippines' iced mountain. Shaved ice doused in condensed milk over layers of candied red beans, banana, mango and coconut, crowned with a scoop of ice cream. You stir everything before eating — that's the rule!",
+  "etapes": [
+   {
+    "titre": "The fruit",
+    "detail": "Dice the banana and mango small."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Spoon the candied red beans (anko) into the bottom of tall glasses."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Add the banana and mango dice in layers."
+   },
+   {
+    "titre": "The shaved ice",
+    "detail": "Crush the ice (blender, or cloth and rolling pin) and fill the glasses in a dome."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Pour the condensed milk over the whole icy mountain."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Top with a scoop of vanilla ice cream and shredded coconut."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a long spoon and mix EVERYTHING before eating — halo-halo! 🇵🇭"
+   }
+  ]
+ },
+ "aiskacang": {
+  "nom": "Ais Kacang",
+  "description": "Ais kacang — Malaysia's 'bean ice': an igloo of shaved ice doused with rose syrup and condensed milk, sitting on red beans, sweet corn and roasted peanuts. Sweet, salty, crunchy, melting — the hawker-centre dessert that cools all of Kuala Lumpur.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Spoon the candied red beans and drained sweet corn into bowls."
+   },
+   {
+    "titre": "The peanuts",
+    "detail": "Crush the peanuts and dry-roast them."
+   },
+   {
+    "titre": "The igloo",
+    "detail": "Shave the ice very fine and pack it in a dome over the base."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Drizzle the dome with rose syrup (grenadine) in coloured ribbons."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Zigzag the condensed milk on top."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Scatter with the roasted peanuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, long spoon mandatory. Malaysian ais kacang!"
+   }
+  ]
+ },
+ "esteler": {
+  "nom": "Es Teler",
+  "description": "Es teler — the fruit cocktail that makes you 'tipsy' (with happiness!): creamy avocado, mango and coconut shavings bathing in iced coconut milk with condensed milk. Invented in Jakarta in 1982, now the national dessert-drink — avocado for dessert, try before you judge!",
+  "etapes": [
+   {
+    "titre": "The avocado",
+    "detail": "Cut the avocado into cubes or scoop into balls."
+   },
+   {
+    "titre": "The mango",
+    "detail": "Dice the mango (it stands in for the traditional jackfruit)."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Shave the coconut into flakes."
+   },
+   {
+    "titre": "The bath",
+    "detail": "Mix the well-chilled coconut milk, condensed milk and sugar."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Divide avocado, mango and coconut into glasses and pour over the milky bath."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Add crushed ice generously."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Stir gently and serve with a spoon-straw. Jakarta's es teler!"
+   }
+  ]
+ },
+ "cholado": {
+  "nom": "Cholado",
+  "description": "Cholado — Cali's iced rainbow: shaved ice soaked with grenadine syrup and lime, buried under banana, mango and strawberries, crowned with condensed milk and a cherry. The street dessert of Valle del Cauca — eaten with a spoon while drinking the bottom through a straw.",
+  "etapes": [
+   {
+    "titre": "The fruit",
+    "detail": "Dice the banana, mango and strawberries small."
+   },
+   {
+    "titre": "The ice",
+    "detail": "Crush the ice and fill tall cups two-thirds up."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Douse the ice with grenadine and the lime juice: it blushes red."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover with tight layers of diced fruit."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Drizzle generously with condensed milk."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Finish with a cherry (and a pinch of coconut if you like)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon plus straw: eat the top, drink the bottom. Cali's cholado!"
+   }
+  ]
+ },
+ "paletas": {
+  "nom": "Strawberry-Lime Paletas",
+  "description": "Paletas — Mexico's artisan ice pops: REAL blended fruit (here strawberry-lime), barely sweetened, with pieces that crunch under your teeth. Born in Tocumbo, sold in every paletería — the ice pop with flavour, not food colouring.",
+  "etapes": [
+   {
+    "titre": "The strawberries",
+    "detail": "Hull the strawberries; keep a few in small pieces."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the rest with the sugar and lime juice."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste: cold dulls sweetness, the purée should be a touch too sweet."
+   },
+   {
+    "titre": "The pieces",
+    "detail": "Stir the reserved strawberry pieces into the purée."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into ice-pop moulds (or cups), not quite to the top."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Insert the sticks and freeze at least 4 hours."
+   },
+   {
+    "titre": "Unmould",
+    "detail": "Run the moulds under warm water 5 seconds and pull. Mexican paletas!"
+   }
+  ]
+ },
+ "granitamandes": {
+  "nom": "Almond Granita",
+  "description": "Granita di mandorla — queen of Sicilian mornings: homemade almond milk, barely sweetened, scraped with a fork into melting crystals. In Catania it is breakfast, with a warm brioche for dunking. White, fragrant, addictive.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the almonds overnight in water (or 1 hour in boiling water)."
+   },
+   {
+    "titre": "The almond milk",
+    "detail": "Blend them at length with fresh water, then strain through a cloth, pressing hard."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Dissolve the sugar and vanilla in the almond milk."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Pour into a wide dish and place in the freezer."
+   },
+   {
+    "titre": "Scrape",
+    "detail": "Every 45 minutes, scrape with a fork to break the crystals — 3 to 4 times."
+   },
+   {
+    "titre": "The texture",
+    "detail": "The granita is ready: melting snow, neither block nor smooth sorbet."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in a frosted glass — and Sicilian-style: with a warm brioche for dunking!"
+   }
+  ]
+ },
+ "spaghettieis": {
+  "nom": "Spaghettieis",
+  "description": "Spaghettieis — the cult trompe-l'oeil of German ice-cream parlours since 1969: vanilla ice cream pressed into 'spaghetti' over a nest of whipped cream, topped with strawberry coulis as tomato sauce and dusted with shredded coconut as parmesan. Kids scream with joy, grown-ups too.",
+  "etapes": [
+   {
+    "titre": "The 'tomato sauce'",
+    "detail": "Blend the strawberries with the sugar into a thick coulis."
+   },
+   {
+    "titre": "The whipped cream",
+    "detail": "Whip the very cold cream into soft peaks."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Take the vanilla ice cream out 5 minutes to soften; chill the plates in the freezer."
+   },
+   {
+    "titre": "The spaghetti",
+    "detail": "Press the ice cream through a potato ricer over the cream nest: the spaghetti falls in a heap."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the strawberry coulis in the centre, tomato-sauce style."
+   },
+   {
+    "titre": "The 'parmesan'",
+    "detail": "Dust with shredded coconut (or grated almonds)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once and enjoy the illusion. German spaghettieis!"
+   }
+  ]
+ },
+ "pechemelba": {
+  "nom": "Peach Melba",
+  "description": "Peach Melba — created by Escoffier in 1893 for the singer Nellie Melba: vanilla-poached peaches over vanilla ice cream, coated with fresh raspberry coulis and scattered with flaked almonds. Three elements, zero fuss — the most elegant summer dessert in the repertoire.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Dip the peaches 30 seconds in boiling water, peel and halve them."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Poach them 8 minutes in a light syrup (water, half the sugar, vanilla); cool them in it."
+   },
+   {
+    "titre": "The coulis",
+    "detail": "Blend the raspberries with the remaining sugar; sieve out the seeds."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Dry-toast the flaked almonds until golden."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "In coupes: vanilla ice cream, well-drained poached peach halves."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat generously with raspberry coulis."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with almonds and serve at once. Escoffier's Peach Melba!"
+   }
+  ]
+ },
+ "dameblanche": {
+  "nom": "Dame Blanche",
+  "description": "Dame blanche — the queen of Belgian brasserie coupes: vanilla ice cream, homemade whipped cream and above all THE hot dark chocolate sauce poured at the table, setting into a shell on the ice cream. The scorching-icy contrast that makes you close your eyes — simple, perfect, Belgian.",
+  "etapes": [
+   {
+    "titre": "The sauce",
+    "detail": "Melt the dark chocolate with half the cream into a glossy sauce; keep it properly HOT."
+   },
+   {
+    "titre": "The whipped cream",
+    "detail": "Whip the rest of the very cold cream with the sugar."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Dry-toast the flaked almonds until golden."
+   },
+   {
+    "titre": "The scoops",
+    "detail": "Set generous scoops of vanilla ice cream in cold coupes."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Add the whipped cream in a dome or rosette."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Scatter with golden almonds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Bring the hot chocolate sauce TO THE TABLE and pour in front of each guest: it sets on the ice. Dame blanche!"
+   }
+  ]
+ },
+ "mangostickyrice": {
+  "nom": "Mango Sticky Rice",
+  "description": "Khao niao mamuang — THE dessert of Thailand: steamed sticky rice soaked in salty-sweet coconut milk, served warm against chilled ripe mango, drizzled with coconut cream. The warm-cold, sticky-melting contrast that made this street dessert a worldwide cult.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Rinse the sticky rice then soak at least 3 hours (overnight, ideally)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam it 25 minutes: it must be translucent and sticky."
+   },
+   {
+    "titre": "The coconut syrup",
+    "detail": "Warm two-thirds of the coconut milk with the sugar and salt, without boiling."
+   },
+   {
+    "titre": "Soak in",
+    "detail": "Pour the hot syrup over the hot rice, cover and let absorb 20 minutes."
+   },
+   {
+    "titre": "The mango",
+    "detail": "Peel the very ripe mango and cut into thick slices."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Reduce the remaining coconut milk into a thick cream with a pinch of salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Warm rice, cool mango, coconut cream on top and toasted sesame. Khao niao mamuang!"
+   }
+  ]
  }
 };
