@@ -84086,5 +84086,345 @@ window.RECETTES_EN = {
     "detail": "Chopped parsley, and the pot at the centre of the table. Brazilian galinhada!"
    }
   ]
+ },
+ "pescaitofrito": {
+  "nom": "Pescaíto Frito",
+  "description": "Pescaíto frito — the Andalusian fry-up: small fish and squid rings barely floured, flash-fried in very hot olive oil, served in a paper cone with lemon. Crisp outside, pearly inside, never greasy — the apéro-dinner of the chiringuitos from Cádiz to Málaga.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the cod into goujons and the squid into rings; pat VERY dry."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt the pieces just before flouring."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Toss in flour (half chickpea flour, Andalusian style) and shake off the excess hard."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat an olive-oil bath to 180°C — properly hot is the anti-grease secret."
+   },
+   {
+    "titre": "Flash-fry",
+    "detail": "Fry in small handfuls 1 to 2 minutes: golden, not brown."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper and salt on the fly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve SCORCHING in a cone with lemon wedges. Chiringuito pescaíto!"
+   }
+  ]
+ },
+ "fishpie": {
+  "nom": "Fish Pie",
+  "description": "Fish pie — the comfort gratin of the British Isles: cod and salmon poached in a creamy leek sauce, covered with a soft mash that gratinates into golden waves. The dish of rainy Sundays — a spoon through the mash, straight into the sea.",
+  "etapes": [
+   {
+    "titre": "The mash",
+    "detail": "Cook the potatoes and mash with half the butter, a little milk and the nutmeg."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach cod and salmon 5 minutes in the remaining barely simmering milk; keep fish AND milk."
+   },
+   {
+    "titre": "The leeks",
+    "detail": "Soften the sliced leek in the remaining butter."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the poaching milk and cream; let it thicken slightly, parsley, pepper."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Flake the fish in large pieces into a dish, coat with the leek sauce."
+   },
+   {
+    "titre": "The waves",
+    "detail": "Cover with mash and draw waves with a fork — they will gratinate."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C until the crests brown and the sauce bubbles. Fish pie!"
+   }
+  ]
+ },
+ "fishmolee": {
+  "nom": "Fish Molee",
+  "description": "Fish molee — Kerala's gentle curry: white fish poached in turmeric-gilded coconut milk with ginger, green chilli and tomatoes. Inherited from Portuguese trading posts, served on the backwaters — a curry that strokes instead of stinging, liquid sunshine over rice.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Salt the cod fillets and rub with half the turmeric."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear 1 minute per side in the oil; set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion, julienned ginger, garlic and chilli in the same pan."
+   },
+   {
+    "titre": "The turmeric",
+    "detail": "Add the remaining turmeric and stir 30 seconds."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour the coconut milk and barely simmer 5 minutes — never a hard boil."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Return the fish with the tomato wedges; poach 5 minutes at a gentle tremble."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A squeeze of lime and serve over rice. Kerala fish molee!"
+   }
+  ]
+ },
+ "gravlax": {
+  "nom": "Gravlax",
+  "description": "Gravlax — the Vikings' 'buried' salmon: a raw fillet simply covered with sugar, salt, dill and pepper, curing 48 hours in the fridge under a weight. Sliced glass-thin, with its mustard-dill sauce — the jewel of Scandinavian tables, without a second of cooking.",
+  "etapes": [
+   {
+    "titre": "The fillet",
+    "detail": "Choose very fresh salmon (frozen 24 h beforehand for safety), skin on, bones out."
+   },
+   {
+    "titre": "The cure",
+    "detail": "Mix salt, sugar and crushed pepper; massage it all over the flesh."
+   },
+   {
+    "titre": "The dill",
+    "detail": "Cover with a generous coat of chopped dill."
+   },
+   {
+    "titre": "Bury",
+    "detail": "Wrap tight, set a weight on top and cure 48 h in the fridge, turning halfway."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse quickly, pat dry: the flesh is firm, translucent, fragrant."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Whisk mustard, honey, vinegar and dill (stream in oil for a coating sauce)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice THIN on the bias, sauce apart, rye bread. Scandinavian gravlax!"
+   }
+  ]
+ },
+ "mouclade": {
+  "nom": "Mouclade",
+  "description": "Mouclade — the saffron-cream mussels of Charente-Maritime: opened in white wine then coated with a gentle curry cream — the spice that arrived through the port of La Rochelle. The chic cousin of moules marinières, gilded with sunshine, endlessly moppable.",
+  "etapes": [
+   {
+    "titre": "The mussels",
+    "detail": "Scrub and wash the mussels; discard any that stay open."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion and garlic in the butter without colouring."
+   },
+   {
+    "titre": "Open",
+    "detail": "Pour the white wine, tip in the mussels, cover: 3 to 4 minutes, shaking, until open."
+   },
+   {
+    "titre": "The juices",
+    "detail": "Drain the mussels, strain the juices and remove one half-shell per mussel."
+   },
+   {
+    "titre": "The golden cream",
+    "detail": "Reduce the juices, add cream and curry: the sauce turns golden and coating."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Arrange the mussels in half-shells in a dish and coat with the curry cream."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Parsley, a grind of pepper, and bread to mop. Charentaise mouclade!"
+   }
+  ]
+ },
+ "ttoro": {
+  "nom": "Ttoro",
+  "description": "Ttoro — the Basque fishermen's pot: cod, mussels and prawns united in a tomato-white wine broth lifted with Espelette pepper, served over garlic-rubbed croutons. Born in Saint-Jean-de-Luz from the auction's leftovers — the Basque Country's bouillabaisse.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Soften onion, pepper and half the garlic in the olive oil."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add crushed tomatoes and (Espelette!) pepper; simmer 10 minutes."
+   },
+   {
+    "titre": "Wet",
+    "detail": "Pour the white wine and a big glass of water; simmer 10 minutes into an ample broth."
+   },
+   {
+    "titre": "The cod",
+    "detail": "Salt the cod pieces and poach 4 minutes in the broth."
+   },
+   {
+    "titre": "Mussels & prawns",
+    "detail": "Add mussels and prawns; cover 3 minutes, until the mussels open."
+   },
+   {
+    "titre": "The croutons",
+    "detail": "Rub toasted bread slices with the remaining garlic."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Ladle the steaming pot over the garlic croutons. Saint-Jean-de-Luz ttoro!"
+   }
+  ]
+ },
+ "psariplaki": {
+  "nom": "Psari Plaki",
+  "description": "Psari plaki — Greek oven-baked fish: fillets set on a bed of tomatoes, melting onions and potatoes, doused with olive oil and lemon, gently baked. The dish of seaside tavernas — the plate that smells of Orthodox church on Sunday and of the harbour all week.",
+  "etapes": [
+   {
+    "titre": "The bed",
+    "detail": "Slice potatoes (thin) and onions; spread in an oiled dish, salt."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Cover with tomato rounds and sliced garlic; oregano, a stream of oil."
+   },
+   {
+    "titre": "Pre-bake",
+    "detail": "Bake the vegetable bed 25 minutes at 190°C: it softens."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Salt the fillets and set them ON the vegetables."
+   },
+   {
+    "titre": "Douse",
+    "detail": "Douse with lemon and the remaining olive oil."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Return to the oven 15 minutes: the fish turns pearly, the vegetables candy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped parsley, one last stream of oil, dish at the centre. Taverna psari plaki!"
+   }
+  ]
+ },
+ "veracruzana": {
+  "nom": "Fish a la Veracruzana",
+  "description": "Pescado a la veracruzana — mestizaje on a plate: white fish simmered in a tomato sauce with olives, capers and jalapeños — Spain and Mexico reconciled in Veracruz. Served with white rice, it is the Caribbean meeting the Mediterranean.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Salt the fillets and douse with lime; leave 10 minutes."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion and garlic in the olive oil."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add crushed tomatoes and bay; simmer 10 minutes."
+   },
+   {
+    "titre": "The mestizaje",
+    "detail": "Add olives, capers and (jalapeño) chilli: the sauce turns veracruzana."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Nestle the fillets in the simmering sauce; cover 8 minutes."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: the salty (olives-capers) - spicy - sharp balance must sing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat generously and serve with white rice. Pescado a la veracruzana!"
+   }
+  ]
+ },
+ "chupedecamarones": {
+  "nom": "Chupe de Camarones",
+  "description": "Chupe de camarones — Arequipa's royal meal-soup: prawns, potatoes, corn and rice in a creamy milk broth, crowned with a poached egg and fresh cheese. Between soup and feast — the Peruvian Sunday that fills a whole family.",
+  "etapes": [
+   {
+    "titre": "The prawns",
+    "detail": "Peel the prawns; fry heads and shells in the oil, cover with water, 10 minutes of stock, strain."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion, garlic and crushed tomato with the oregano."
+   },
+   {
+    "titre": "The starches",
+    "detail": "Add the stock, potato chunks, corn and rice; simmer 15 minutes."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Pour the milk and barely simmer — the broth turns creamy."
+   },
+   {
+    "titre": "The prawns",
+    "detail": "Add the prawns: 2 minutes, they blush pink."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Crack the egg into the trembling soup and poach 3 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crumble the fresh cheese on top and serve the chupe steaming. Arequipa's Sunday!"
+   }
+  ]
+ },
+ "sabamisoni": {
+  "nom": "Saba Misoni",
+  "description": "Saba misoni — miso-lacquered mackerel: fillets simmered in a ginger miso-sake-mirin sauce that reduces to a glossy brown lacquer. The great classic of Japanese teishoku lunch sets — the fish's richness and the miso's umami, white rice non-negotiable.",
+  "etapes": [
+   {
+    "titre": "The mackerel",
+    "detail": "Score the fillets' skin in a cross (the sauce will sink in)."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Scald 10 seconds and plunge into cold water: no more bitterness."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Bring sake, mirin, sugar, a glass of water and sliced ginger to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Set the fillets skin-up; cover with a paper drop-lid and simmer 8 minutes."
+   },
+   {
+    "titre": "The miso",
+    "detail": "Dissolve the miso with a little broth and pour in; add the soy sauce."
+   },
+   {
+    "titre": "Lacquer",
+    "detail": "Reduce, basting without flipping: the sauce turns to glossy lacquer."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat, broth ginger on top, white rice alongside. Teishoku saba misoni!"
+   }
+  ]
  }
 };
