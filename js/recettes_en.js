@@ -83406,5 +83406,345 @@ window.RECETTES_EN = {
     "detail": "Snap the rings off by hand, starting at the top. The kransekake of the great Nordic feasts!"
    }
   ]
+ },
+ "celeriremoulade": {
+  "nom": "Celeriac Remoulade",
+  "description": "Céleri rémoulade — the quintessential bistro starter: raw celeriac grated fine, coated in a mustardy lemon rémoulade. Crunchy, fresh, sharp just enough — on every French bistro slate between the œuf mayo and the leeks vinaigrette.",
+  "etapes": [
+   {
+    "titre": "The celeriac",
+    "detail": "Peel the celeriac and cut into quarters."
+   },
+   {
+    "titre": "Grate",
+    "detail": "Grate into fine julienne (coarse grater or mandoline)."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Lemon it immediately so it doesn't darken; salt lightly."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Let it relax 10 minutes — still crunchy but ready to be coated."
+   },
+   {
+    "titre": "The rémoulade",
+    "detail": "Mix mayonnaise, mustard and a dash of lemon into a punchy sauce."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Squeeze the celeriac and coat generously with rémoulade."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, scattered with parsley. Bistro céleri rémoulade!"
+   }
+  ]
+ },
+ "rillettesmaquereau": {
+  "nom": "Mackerel Rillettes",
+  "description": "Mackerel rillettes — the seaside starter: smoked mackerel flaked with a fork, bound with fresh cheese, mustard, lemon and onion. Rustic, quick, spread thick on toasted bread — the taste of a Brittany holiday, no cooking involved.",
+  "etapes": [
+   {
+    "titre": "The mackerel",
+    "detail": "Skin the smoked mackerel fillets and check for bones."
+   },
+   {
+    "titre": "Flake",
+    "detail": "Flake roughly with a fork — no blender, we want texture."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Finely chop the onion (red, ideally) and parsley."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Loosen the fresh cheese with the mustard and lemon juice."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold in mackerel, onion and parsley; pepper generously (no salt, the fish brings it)."
+   },
+   {
+    "titre": "Set",
+    "detail": "Chill 30 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread thick on toasted bread, with a squeeze of lemon. Seaside rillettes!"
+   }
+  ]
+ },
+ "esqueixada": {
+  "nom": "Esqueixada",
+  "description": "Esqueixada — the Catalan raw salt-cod salad: the desalted cod is 'torn' by hand (esqueixar), never cut, then tossed with tomatoes, pepper, onion and olives under a stream of olive oil. Fresh, briny, no cooking — the Catalan summer on a plate.",
+  "etapes": [
+   {
+    "titre": "Desalt",
+    "detail": "Desalt the cod 24 to 48 h in the fridge, changing the water regularly."
+   },
+   {
+    "titre": "Tear",
+    "detail": "Pat dry and tear it BY HAND into strips — never with a knife, that is the esqueixada rule."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Dice the tomatoes (or grate some for the plate's base)."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Finely slice pepper and onion."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss cod, tomatoes, pepper, onion and black olives."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Stream over olive oil and a dash of vinegar; pepper (the salt is already there)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, after 30 minutes in the fridge. Catalan esqueixada!"
+   }
+  ]
+ },
+ "gambaspilpil": {
+  "nom": "Gambas Pil Pil",
+  "description": "Gambas pil pil — Andalusia's most famous sizzle: prawns seared in an earthenware dish of olive oil with garlic and chilli, served STILL bubbling. The 'pil pil' is the sound. You mop the fragrant oil with bread to the very last drop.",
+  "etapes": [
+   {
+    "titre": "The prawns",
+    "detail": "Peel the prawns (keep the tails) and pat dry; salt."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Slice the garlic into thin petals."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Heat the olive oil in an earthenware cazuela (or small pan) over high heat."
+   },
+   {
+    "titre": "Perfume",
+    "detail": "Turn the garlic golden with the chilli — without burning it."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Throw in the prawns: 1 to 2 minutes, stirring, until pink and the oil bubbles."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, scatter parsley — the sizzle carries on."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Bring the dish to the table STILL BUBBLING, bread in hand for the oil. Gambas pil pil!"
+   }
+  ]
+ },
+ "insalatadimare": {
+  "nom": "Insalata di Mare",
+  "description": "Insalata di mare — Italy's salad of the sea: octopus, prawns and squid gently poached, cooled, then tossed with crunchy celery, lemon, garlic and parsley under good olive oil. The antipasto of coastal trattorias — served cool, never ice-cold.",
+  "etapes": [
+   {
+    "titre": "The octopus",
+    "detail": "Simmer the octopus 30 to 40 minutes until tender; let it cool in its water."
+   },
+   {
+    "titre": "Squid & prawns",
+    "detail": "Poach squid (2 minutes) and prawns (1 minute) in the same barely simmering water; drain."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Slice the octopus and squid into even rings and pieces."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Finely slice the celery and chop garlic and parsley."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine seafood, celery and olives in a bowl."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Stream over olive oil and lemon juice; salt, pepper, toss."
+   },
+   {
+    "titre": "Rest & serve",
+    "detail": "Infuse 1 hour in the fridge and serve cool (not iced). Insalata di mare!"
+   }
+  ]
+ },
+ "burratatomates": {
+  "nom": "Burrata with Tomatoes",
+  "description": "Burrata with tomatoes — Puglia's simple luxury: a creamy burrata opened over a bed of ripe multicoloured tomatoes, basil, flaky salt and great olive oil. Three minutes of work, provided you cook NOTHING and choose everything ripe — the heart flows, the bread stands by.",
+  "etapes": [
+   {
+    "titre": "Temper",
+    "detail": "Take the burrata out 30 minutes ahead: cold, it loses all its cream."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Cut the ripe tomatoes into wedges and rounds; salt lightly."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let them release their juices 5 minutes — that is the sauce."
+   },
+   {
+    "titre": "The bed",
+    "detail": "Spread the tomatoes and juices on a platter."
+   },
+   {
+    "titre": "The burrata",
+    "detail": "Set the burrata at the centre and open it: the creamy heart flows over the tomatoes."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Torn basil, ground pepper, flaky salt and a generous stream of olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once with toasted bread. Puglian burrata — luxury in 10 minutes!"
+   }
+  ]
+ },
+ "hiyayakko": {
+  "nom": "Hiyayakko",
+  "description": "Hiyayakko — the cold tofu of Japanese summers: a block of chilled silken tofu crowned with grated ginger, spring onion and soy sauce. Zero cooking, three gestures — the dish that saves Tokyo heatwave evenings, cool as a river stone.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Chill the (ideally silken) tofu 30 minutes, properly cold."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain gently on kitchen paper without pressing."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut into large cubes or leave the block whole in a small dish."
+   },
+   {
+    "titre": "The ginger",
+    "detail": "Grate the fresh ginger into a fine mound."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Finely slice the spring onion."
+   },
+   {
+    "titre": "Top",
+    "detail": "Crown the tofu with ginger and onion, sprinkle with sesame."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the soy sauce at serving time, not before. Heatwave hiyayakko!"
+   }
+  ]
+ },
+ "oeufsthe": {
+  "nom": "Tea Eggs",
+  "description": "Tea eggs (cha ye dan) — China's marbled eggs: hard-boiled, shells crackled with the back of a spoon, then steeped in a bath of black tea, soy sauce and star anise. The kept shell draws an amber marble on the white — the most poetic street snack in Shanghai.",
+  "etapes": [
+   {
+    "titre": "Hard-boil",
+    "detail": "Boil the eggs 9 minutes; cool in iced water."
+   },
+   {
+    "titre": "Crackle",
+    "detail": "Tap the WHOLE shell with the back of a spoon: a web of fine cracks, without peeling."
+   },
+   {
+    "titre": "The bath",
+    "detail": "Bring water to a simmer with black tea, soy sauce, sugar, star anise and cinnamon."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Drop in the crackled eggs and simmer gently 30 minutes."
+   },
+   {
+    "titre": "Steep",
+    "detail": "Turn off and steep in the bath for hours (overnight in the fridge is ideal)."
+   },
+   {
+    "titre": "The marble",
+    "detail": "Peel: the tea has drawn an amber marble on each egg."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, whole or halved. Shanghai marbled eggs!"
+   }
+  ]
+ },
+ "paltareina": {
+  "nom": "Palta Reina",
+  "description": "Palta reina — Chile's 'queen avocado': an avocado half crowned with tuna-mayonnaise salad, set on lettuce leaves. The retro-chic starter of every Chilean family celebration — proudly kitsch, ruthlessly effective.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Drain the tuna and flake with the mayonnaise and very finely chopped onion."
+   },
+   {
+    "titre": "The avocado",
+    "detail": "Halve and stone the ripe avocados."
+   },
+   {
+    "titre": "Lime",
+    "detail": "Sprinkle the flesh with lime and salt lightly."
+   },
+   {
+    "titre": "The bed",
+    "detail": "Arrange the lettuce leaves on the plates."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Set the avocado halves and top with a generous dome of tuna-mayo."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate 10 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A grind of pepper and serve chilled. Palta reina — Chile's queen avocado!"
+   }
+  ]
+ },
+ "mercimekkoftesi": {
+  "nom": "Mercimek Köftesi",
+  "description": "Mercimek köftesi — Turkey's plant-based quenelles: red lentils melted with fine bulgur, kneaded with tomato-paste onions, cumin and paprika, hand-shaped and served cold in a lettuce leaf with a squeeze of lemon. The star mezze of Turkish summer tables — 100% vegetal.",
+  "etapes": [
+   {
+    "titre": "The lentils",
+    "detail": "Cook the red lentils in water until they collapse into a thick purée."
+   },
+   {
+    "titre": "The bulgur",
+    "detail": "Off the heat, pour the fine bulgur into the hot purée, cover: it swells by itself."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Soften the chopped onions in the oil with tomato paste, cumin and paprika."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix everything and knead by hand with the chopped parsley and lemon juice."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill 30 minutes."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Press the mixture into quenelles in the hollow of your hand — the finger marks are part of the charm."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold in lettuce leaves, lemon squeezed on top. Mercimek köftesi!"
+   }
+  ]
  }
 };
