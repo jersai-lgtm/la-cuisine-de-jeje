@@ -85446,5 +85446,345 @@ window.RECETTES_EN = {
     "detail": "Warm, split and buttered — or as a sweet-savoury sandwich. Azorean bolos lêvedos!"
    }
   ]
+ },
+ "chicken65": {
+  "nom": "Chicken 65",
+  "description": "Chicken 65 — Chennai's fire-red fry, born in 1965 at the Buhari hotel: chicken bites marinated in spiced yogurt, fried crisp then tossed with chilli, curry and garlic. Nobody agrees on where the '65' comes from — everybody agrees you cannot stop eating it.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Mix yogurt, chilli, curry, turmeric, crushed garlic-ginger, salt and lemon juice."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken bites and marinate 1 hour in the fridge."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the cornflour to the marinade: each bite wraps in a thick batter."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the bites in good hot oil until red-gold and crisp; drain."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "In a pan, heat a little oil with garlic, ginger and chilli."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Throw in the fried bites 1 minute, stirring: they lacquer with spices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scorching, with lemon wedges. Chennai chicken 65!"
+   }
+  ]
+ },
+ "coronationchicken": {
+  "nom": "Coronation Chicken",
+  "description": "Coronation chicken — the salad created in 1953 for Elizabeth II's coronation: poached chicken in a creamy mild-curry sauce with apricots and flaked almonds. Ever since, England slips it everywhere — sandwiches, jacket potatoes, lettuce leaves. Royal and comforting at once.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Poach the chicken 15 minutes in simmering salted water; cool it in the liquid, then shred."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Dry-warm the curry 30 seconds to wake it; mix into the mayonnaise and cream."
+   },
+   {
+    "titre": "The apricots",
+    "detail": "Chop the dried apricots and fold into the sauce with the lemon juice."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss the shredded chicken in the golden sauce — generously coated."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill 1 hour: the curry melts into the cream."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Dry-toast the flaked almonds until blond."
+   },
+   {
+    "titre": "Serve",
+    "detail": "On lettuce leaves, in a sandwich or on a baked potato, almonds on top. Coronation chicken!"
+   }
+  ]
+ },
+ "chickenkiev": {
+  "nom": "Chicken Kyiv",
+  "description": "Chicken Kyiv — the cutlet with the gushing heart: a fillet rolled around frozen garlic-parsley butter, double-breaded and fried golden. At the first cut, the melted butter GUSHES — the showpiece of Slavic tables, to be nailed once in every cook's life.",
+  "etapes": [
+   {
+    "titre": "The master butter",
+    "detail": "Work the butter with crushed garlic, chopped parsley, lemon and salt; roll into a log and FREEZE 20 minutes."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Flatten the chicken fillets between two films into thin escalopes; salt."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Set the frozen butter log at the centre and roll tight, tucking the sides — airtight."
+   },
+   {
+    "titre": "Double-bread",
+    "detail": "Flour, beaten egg, breadcrumbs… then egg and breadcrumbs a SECOND time: the anti-leak armour."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Return the rolls to the freezer 15 minutes."
+   },
+   {
+    "titre": "Fry-roast",
+    "detail": "Brown in oil on all sides then finish 12 minutes in a 180°C oven."
+   },
+   {
+    "titre": "The gush",
+    "detail": "Serve whole and cut AT THE TABLE: the green butter gushes. Chicken Kyiv!"
+   }
+  ]
+ },
+ "ayamgoreng": {
+  "nom": "Ayam Goreng",
+  "description": "Ayam goreng — Indonesian fried chicken: first simmered in a turmeric-lemongrass-garlic broth until it drinks all the spices, THEN flash-fried for the golden crust. Two cookings, zero breading — crackling skin, flesh fragrant to the bone. With rice and sambal, Java is at the table.",
+  "etapes": [
+   {
+    "titre": "The spice paste",
+    "detail": "Blend turmeric, garlic, ginger, coriander seeds and salt with a little water."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Massage the chicken pieces with the golden paste."
+   },
+   {
+    "titre": "First cooking",
+    "detail": "Set them in a pan with bruised lemongrass, bay and a glass of water; simmer 25 minutes covered."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Drain and let the pieces DRY 10 minutes — the secret of crackling frying."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in good hot oil to a deep golden brown, a few minutes per side."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With rice, sambal and cucumber. Java's ayam goreng — fragrant to the bone!"
+   }
+  ]
+ },
+ "polloalajillo": {
+  "nom": "Pollo al Ajillo",
+  "description": "Pollo al ajillo — Andalusian garlic chicken: pieces browned in olive oil with a whole HEAD of skin-on garlic, deglazed with white wine and bay. The confit garlic gets spread, the sauce gets mopped, the fingers get licked — the recipe of every Spanish abuela.",
+  "etapes": [
+   {
+    "titre": "The garlic",
+    "detail": "Crush half the cloves skin-on, slice the rest."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Salt the chicken pieces and brown in olive oil, skin-side first."
+   },
+   {
+    "titre": "The skin-on garlic",
+    "detail": "Add the crushed cloves and chilli; confit 5 minutes, stirring."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour the white wine, add the bay and scrape the sucs."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Half-cover and simmer 20 minutes: the sauce reduces, the garlic candies."
+   },
+   {
+    "titre": "The sliced garlic",
+    "detail": "Add the sliced garlic for the last 5 minutes — the double garlic storey."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Parsley, and bread for the spreadable confit garlic. The abuelas' pollo al ajillo!"
+   }
+  ]
+ },
+ "karaage": {
+  "nom": "Karaage",
+  "description": "Karaage — Japanese fried chicken: thigh bites marinated in soy-ginger-sake, rolled in starch and fried TWICE for a thin crackling crust and juicy flesh. King of izakayas and bento boxes — with Japanese mayo and a lemon wedge.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Mix soy sauce, grated ginger, garlic and sake."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken thigh bites; 30 minutes in the fridge."
+   },
+   {
+    "titre": "Starch",
+    "detail": "Barely drain and roll each bite in starch — a thin veil, not a shell."
+   },
+   {
+    "titre": "First fry",
+    "detail": "Fry 90 seconds at 170°C; lift out and rest 2 minutes (carry-over heat finishes the cooking)."
+   },
+   {
+    "titre": "Second fry",
+    "detail": "Re-fry 45 seconds at 190°C: the crust turns golden and CRACKLING."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on a rack or paper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scorching, lemon to squeeze (and Japanese mayo if you have it). Izakaya karaage!"
+   }
+  ]
+ },
+ "galinhaafricana": {
+  "nom": "Galinha à Africana",
+  "description": "Galinha à africana — Macau's 'African chicken', neither African nor Chinese but entirely Macau: marinated piri-piri style with paprika and chilli, roasted, then coated in a toasted coconut-peanut sauce. The Portuguese-Cantonese mestizaje on a plate — unique in the world.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Blend paprika, chilli, garlic, salt, lemon and oil into a red paste; massage the chicken and leave 1 hour."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast the pieces at 200°C about 30 minutes, crispy skin."
+   },
+   {
+    "titre": "The peanuts",
+    "detail": "Toast the peanuts and grind coarsely."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Heat coconut milk, peanuts, a hint of paprika and chilli; thicken 5 minutes."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat the roasted chicken with the coconut-peanut sauce."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Flash 5 minutes under the grill: the sauce chars in golden patches."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With rice, extra sauce in a jug. Macau's galinha à africana!"
+   }
+  ]
+ },
+ "hulihulichicken": {
+  "nom": "Huli Huli Chicken",
+  "description": "Huli huli chicken — Hawaii's 'turn-turn' chicken, born in 1955 at roadside barbecues: marinated in pineapple-soy-ginger, grilled while being flipped non-stop ('huli!') and basted. Lacquered, smoky, sweet-savoury — aloha on a skewer.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Blend pineapple (with juice), soy sauce, ketchup, brown sugar, ginger and garlic."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Set aside a third of the marinade; coat the chicken with the rest, 2 hours chilled."
+   },
+   {
+    "titre": "The grill",
+    "detail": "Get a grill or pan properly hot; drain the chicken."
+   },
+   {
+    "titre": "Huli!",
+    "detail": "Grill over medium heat, FLIPPING every 2 minutes — huli means 'turn'."
+   },
+   {
+    "titre": "Baste",
+    "detail": "At every turn, brush with the reserved marinade: the lacquer builds."
+   },
+   {
+    "titre": "Lacquer",
+    "detail": "In the last minutes, the glaze caramelises to glossy mahogany."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With rice (and grilled pineapple!). Hawaii's huli huli — aloha!"
+   }
+  ]
+ },
+ "chickenparm": {
+  "nom": "Chicken Parm",
+  "description": "Chicken parm — the Italian-American monument: a crispy breaded cutlet coated in basil tomato sauce, covered with mozzarella and parmesan, gratinated to golden bubbles. From New York red sauce joints to Australian pubs — comfort in molten form.",
+  "etapes": [
+   {
+    "titre": "The sauce",
+    "detail": "Reduce the crushed tomatoes with oregano, salt and a stream of oil into a thick sauce."
+   },
+   {
+    "titre": "The cutlet",
+    "detail": "Flatten the chicken into even escalopes; salt."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Flour, beaten egg, then breadcrumbs mixed with half the parmesan."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the escalopes in oil, 2 minutes per side — crisp, not cooked through."
+   },
+   {
+    "titre": "Coat",
+    "detail": "In a dish: sauce, cutlets, sauce again — WITHOUT drowning the crispy edges."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Sliced mozzarella and remaining parmesan on top."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "In a 200°C oven until golden bubbles. Basil, and to the table — chicken parm!"
+   }
+  ]
+ },
+ "ayamtaliwang": {
+  "nom": "Ayam Taliwang",
+  "description": "Ayam taliwang — Lombok's incendiary chicken: spatchcocked, coated in a pounded chilli-garlic-tomato-lime paste, grilled to caramelised edges then basted again. Bali's neighbour island eats it crying with joy — with rice and water spinach.",
+  "etapes": [
+   {
+    "titre": "The spatchcock",
+    "detail": "Open the chicken flat (or use flattened thighs) — even cooking, maximum caramelisation."
+   },
+   {
+    "titre": "The bumbu",
+    "detail": "Blend chilli, garlic, ginger, tomato, brown sugar, salt and lime into a fire-red paste."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Massage the chicken with bumbu on all sides; marinate 1 hour."
+   },
+   {
+    "titre": "Grill gently",
+    "detail": "Grill over medium heat, bone-side first, watching — the sugar burns fast."
+   },
+   {
+    "titre": "Re-baste",
+    "detail": "Turn and re-brush with bumbu at every flip: the crust thickens."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Finish over higher heat: caramelised edges, deep red."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With rice and a squeeze of lime. Lombok's ayam taliwang — it burns good!"
+   }
+  ]
  }
 };

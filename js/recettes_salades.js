@@ -3302,4 +3302,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez frais — à côté d'une grillade, c'est l'été chilien. L'ensalada chilena !", badge: null }
     ]
   },
+  coronationchicken: {
+    dateAjout: "2026-07-27T23:01:00",
+    nom: "Coronation Chicken",
+    cat: "salades", pays: "angleterre",
+    base: 4,
+    temps: "30 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "👑",
+    description: "Coronation chicken — la salade créée en 1953 pour le couronnement d'Elizabeth II : poulet poché dans une sauce crémeuse au curry doux, abricots et amandes effilées. Depuis, l'Angleterre la glisse partout — sandwichs, jacket potatoes, feuilles de laitue. Royale et régressive à la fois.",
+    tableauCoronationchicken: [
+      { nb: 1, poulet: "130 g", mayonnaise: "25 g", creme: "15 ml", curry: "2 g", abricotsec: "12 g", amandes: "8 g", citron: "¼", laitue: "25 g", sel: "1 g" },
+      { nb: 2, poulet: "260 g", mayonnaise: "50 g", creme: "30 ml", curry: "4 g", abricotsec: "24 g", amandes: "16 g", citron: "½", laitue: "50 g", sel: "2 g" },
+      { nb: 3, poulet: "390 g", mayonnaise: "75 g", creme: "45 ml", curry: "6 g", abricotsec: "36 g", amandes: "24 g", citron: "¾", laitue: "75 g", sel: "3 g" },
+      { nb: 4, poulet: "520 g", mayonnaise: "100 g", creme: "60 ml", curry: "8 g", abricotsec: "48 g", amandes: "32 g", citron: "1", laitue: "100 g", sel: "4 g" },
+      { nb: 5, poulet: "650 g", mayonnaise: "125 g", creme: "75 ml", curry: "10 g", abricotsec: "60 g", amandes: "40 g", citron: "1¼", laitue: "125 g", sel: "5 g" },
+      { nb: 6, poulet: "780 g", mayonnaise: "150 g", creme: "90 ml", curry: "12 g", abricotsec: "72 g", amandes: "48 g", citron: "1½", laitue: "150 g", sel: "6 g" },
+      { nb: 7, poulet: "910 g", mayonnaise: "175 g", creme: "105 ml", curry: "14 g", abricotsec: "84 g", amandes: "56 g", citron: "1¾", laitue: "175 g", sel: "7 g" },
+      { nb: 8, poulet: "1040 g", mayonnaise: "200 g", creme: "120 ml", curry: "16 g", abricotsec: "96 g", amandes: "64 g", citron: "2", laitue: "200 g", sel: "8 g" },
+      { nb: 9, poulet: "1170 g", mayonnaise: "225 g", creme: "135 ml", curry: "18 g", abricotsec: "108 g", amandes: "72 g", citron: "2¼", laitue: "225 g", sel: "9 g" },
+      { nb: 10, poulet: "1300 g", mayonnaise: "250 g", creme: "150 ml", curry: "20 g", abricotsec: "120 g", amandes: "80 g", citron: "2½", laitue: "250 g", sel: "10 g" },
+      { nb: 11, poulet: "1430 g", mayonnaise: "275 g", creme: "165 ml", curry: "22 g", abricotsec: "132 g", amandes: "88 g", citron: "2¾", laitue: "275 g", sel: "11 g" },
+      { nb: 12, poulet: "1560 g", mayonnaise: "300 g", creme: "180 ml", curry: "24 g", abricotsec: "144 g", amandes: "96 g", citron: "3", laitue: "300 g", sel: "12 g" },
+      { nb: 13, poulet: "1690 g", mayonnaise: "325 g", creme: "195 ml", curry: "26 g", abricotsec: "156 g", amandes: "104 g", citron: "3¼", laitue: "325 g", sel: "13 g" },
+      { nb: 14, poulet: "1820 g", mayonnaise: "350 g", creme: "210 ml", curry: "28 g", abricotsec: "168 g", amandes: "112 g", citron: "3½", laitue: "350 g", sel: "14 g" },
+      { nb: 15, poulet: "1950 g", mayonnaise: "375 g", creme: "225 ml", curry: "30 g", abricotsec: "180 g", amandes: "120 g", citron: "3¾", laitue: "375 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Pocher", detail: "Pochez le poulet 15 minutes dans l'eau frémissante salée ; laissez-le tiédir dedans, puis effilochez.", badge: null },
+      { icone: "🍛", titre: "La sauce", detail: "Chauffez le curry 30 secondes à sec pour le réveiller ; mélangez-le à la mayonnaise et à la crème.", badge: null },
+      { icone: "🍑", titre: "Les abricots", detail: "Hachez les abricots secs et incorporez-les à la sauce avec le jus de citron.", badge: null },
+      { icone: "🥄", titre: "Enrober", detail: "Mélangez le poulet effiloché à la sauce dorée — généreusement nappé.", badge: null },
+      { icone: "🧊", titre: "Reposer", detail: "Laissez infuser 1 heure au frais : le curry se fond dans la crème.", badge: null },
+      { icone: "🥜", titre: "Les amandes", detail: "Torréfiez les amandes effilées à sec jusqu'à blondir.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sur feuilles de laitue, en sandwich ou sur pomme de terre au four, amandes dessus. Le coronation chicken !", badge: null }
+    ]
+  },
 });
