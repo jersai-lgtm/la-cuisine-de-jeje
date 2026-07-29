@@ -83066,5 +83066,345 @@ window.RECETTES_EN = {
     "detail": "Bake at 180°C: the coconut gilds, the crumb stays cloud. Dust with sugar — pão de Deus!"
    }
   ]
+ },
+ "sekihan": {
+  "nom": "Sekihan",
+  "description": "Sekihan — Japan's red rice of the big days: sticky rice tinted pink by the red beans' cooking water, steamed and tender, sprinkled with salted sesame. Births, passed exams, birthdays — when sekihan is on the table, there is good news in the house.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Simmer the red beans (azuki, ideally) 20 minutes; keep the reddened cooking water."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Rinse the (ideally glutinous) rice and soak it 2 hours in the cooled bean water: it blushes pink."
+   },
+   {
+    "titre": "Measure",
+    "detail": "Drain, keeping the liquid; use it as the rice's cooking water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the rice with the beans scattered on top, steamed or in a rice cooker."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest 10 minutes covered, without peeking."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Fold gently to distribute the beans without crushing them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with salted toasted sesame (gomashio). The good-news sekihan!"
+   }
+  ]
+ },
+ "porchetta": {
+  "nom": "Porchetta",
+  "description": "Porchetta — Italy's festive roast for 2000 years: pork belly massaged with fennel, rosemary and garlic, rolled tight, tied and roasted for hours to a crackling crust. The centrepiece of Lazio's sagre — served in thick slices or in a panino, it silences the table.",
+  "etapes": [
+   {
+    "titre": "The dry filling",
+    "detail": "Crush fennel seeds, rosemary, garlic, salt, pepper and lemon zest with the oil into a fragrant paste."
+   },
+   {
+    "titre": "Massage",
+    "detail": "Score the inner face of the belly (or shoulder) and massage the paste everywhere."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the meat tight and tie like a roast at regular intervals."
+   },
+   {
+    "titre": "The skin",
+    "detail": "Dry the outside and salt it: that is what will crackle."
+   },
+   {
+    "titre": "Roast low",
+    "detail": "Roast at 160°C for 2½ hours, basting with the juices and white wine."
+   },
+   {
+    "titre": "The blast",
+    "detail": "Raise to 220°C for the last 20 minutes: the crust snaps and blisters."
+   },
+   {
+    "titre": "Rest & serve",
+    "detail": "Rest 15 minutes, slice thick. Italy's festive porchetta!"
+   }
+  ]
+ },
+ "kulich": {
+  "nom": "Kulich",
+  "description": "Kulich — Russia's tall Easter bread: a cylindrical brioche with raisins and candied fruit, capped with white icing left to drip, decorated with the letters XB ('Christ is risen'). Blessed at church on Holy Saturday, cut into rounds on Sunday — the crown of the Easter table.",
+  "etapes": [
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in the warm milk with a spoon of sugar; let it foam 15 minutes."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Knead with flour, sugar, egg yolks (keep some white for the icing), soft butter and vanilla into a rich supple dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Work in the floured raisins and candied fruit; rise 1½ hours — a rich dough takes its time."
+   },
+   {
+    "titre": "The tall tin",
+    "detail": "Half-fill TALL narrow tins (lined food cans, Russian-style); prove 45 minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C: the kulich rises into a golden mushroom; cover if the top browns too fast."
+   },
+   {
+    "titre": "The icing",
+    "detail": "Whisk the reserved white with sugar and a dash of lemon; coat the cooled top and let it drip."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Decorate (XB, sprinkles or almonds) and cut into horizontal rounds, keeping the hat. Easter kulich!"
+   }
+  ]
+ },
+ "smorgastarta": {
+  "nom": "Smörgåstårta",
+  "description": "Smörgåstårta — Sweden's festive 'sandwich cake': storeys of soft bread filled with smoked-salmon cream, eggs and dill, frosted like a layer cake and decorated with prawns, cucumber and radish. Cut into slices like a cake — except it is savoury. Christenings, birthdays: it IS the party.",
+  "etapes": [
+   {
+    "titre": "The fillings",
+    "detail": "Hard-boil the eggs; chop with half the mayonnaise and dill."
+   },
+   {
+    "titre": "The salmon cream",
+    "detail": "Blend half the salmon with fresh cheese, lemon and a little cream."
+   },
+   {
+    "titre": "The storeys",
+    "detail": "Trim the crusts; alternate bread, egg cream, bread, salmon cream, bread."
+   },
+   {
+    "titre": "Frost",
+    "detail": "Whip the remaining fresh cheese, mayonnaise and cream; frost the whole 'cake' like a layer cake."
+   },
+   {
+    "titre": "Set",
+    "detail": "Chill 2 hours — essential for clean slices."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Decorate: prawns, cucumber ribbons, radish rounds, remaining salmon and dill fronds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into slices like a cake. Smörgåstårta — the Swedish party in storeys!"
+   }
+  ]
+ },
+ "zarzuela": {
+  "nom": "Seafood Zarzuela",
+  "description": "Zarzuela — the Catalan sea 'operetta': cod, mussels, prawns and squid united in a tomato-saffron sauce bound with an almond picada. Each piece of seafood takes the stage in turn, like the singers of a zarzuela — the festive Sunday dish of the Costa Brava.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Salt and quickly sear the cod and squid in the oil; set aside."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "In the same oil, soften onion and garlic, then the grated tomatoes, down to a jam."
+   },
+   {
+    "titre": "Saffron",
+    "detail": "Add the saffron and white wine; reduce by half."
+   },
+   {
+    "titre": "The picada",
+    "detail": "Pound toasted almonds, garlic and parsley with a dash of oil — it binds the sauce."
+   },
+   {
+    "titre": "The mussels",
+    "detail": "Open the mussels in the simmering sauce; add their strained juices."
+   },
+   {
+    "titre": "Curtain up",
+    "detail": "Return cod and squid, add the prawns and the picada, and barely simmer 5 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust, scatter parsley and serve in the pot, with bread. Catalan zarzuela!"
+   }
+  ]
+ },
+ "lechonasado": {
+  "nom": "Lechón Asado",
+  "description": "Lechón asado — the roast pork of Cuban Christmases: marinated overnight in mojo criollo (bitter orange, lime, a whole head of garlic, oregano, cumin), slow-roasted until it shreds under a fork. With rice, black beans and the whole family — December 24th from Havana to Miami.",
+  "etapes": [
+   {
+    "titre": "The mojo",
+    "detail": "Blend orange and lime juice, garlic, oregano, cumin, salt and oil — mojo criollo."
+   },
+   {
+    "titre": "Pierce",
+    "detail": "Pierce the pork (shoulder) deeply all over."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Massage with mojo, cover with sliced onions and marinate overnight."
+   },
+   {
+    "titre": "Roast covered",
+    "detail": "Roast at 160°C covered for 2½ hours, basting with marinade regularly."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover and raise to 220°C to brown and crisp the surface."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Rest, then roughly shred with a fork into the juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon over the mojo juices and serve with rice and black beans. Cuban Christmas lechón!"
+   }
+  ]
+ },
+ "croquembouche": {
+  "nom": "Croquembouche",
+  "description": "Croquembouche — the towering centrepiece of French celebrations: dozens of vanilla cream puffs dipped in caramel and built into a golden cone that 'crunches in the mouth'. Weddings, christenings, communions — when it arrives, everyone stands up. The monument of French pâtisserie.",
+  "etapes": [
+   {
+    "titre": "The choux paste",
+    "detail": "Boil water, (half the) milk, butter and a pinch of salt; tip in the flour at once and dry the panade on the heat."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Off the heat, beat in the eggs one by one: the paste must ribbon."
+   },
+   {
+    "titre": "Pipe & bake",
+    "detail": "Pipe small even puffs and bake at 180°C WITHOUT opening the oven, until dry and golden."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Make a vanilla pastry cream (remaining milk, yolk, sugar, cornflour); chill covered."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pierce the puffs and fill with cream from a piping bag."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Make a blond caramel; dip the top of each puff (careful, it burns!)."
+   },
+   {
+    "titre": "Build",
+    "detail": "Stack the puffs into a cone, glued with caramel, and veil with spun caramel threads. The croquembouche — the centrepiece of the great days!"
+   }
+  ]
+ },
+ "khachapuriadjarien": {
+  "nom": "Adjarian Khachapuri",
+  "description": "Adjarian khachapuri — the golden boat of the Black Sea: a yeasted dough shaped into a gondola, filled with molten cheese, with a raw egg and a knob of butter dropped in straight from the oven. At the table you stir it all with a fork and dip the crusts — Georgia's most photogenic dish.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, salt and warm milk into a supple dough; rise 1 hour."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Crumble the feta and grate the mozzarella; mix them (the duo mimics Georgian sulguni)."
+   },
+   {
+    "titre": "The boat",
+    "detail": "Roll the dough into an oval, roll both long edges inward and pinch the points: a gondola."
+   },
+   {
+    "titre": "Fill & bake",
+    "detail": "Fill the boat with cheese and bake at 220°C until the rim is golden."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Take it out, dig a nest in the molten cheese and drop in the raw egg (mostly the yolk)."
+   },
+   {
+    "titre": "Flash",
+    "detail": "Return 2 minutes to the oven: the white barely sets, the yolk stays runny."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add the knob of butter, stir at the table with a fork and dip the crusts. The Adjarian boat!"
+   }
+  ]
+ },
+ "vasilopita": {
+  "nom": "Vasilopita",
+  "description": "Vasilopita — the Greek New Year cake: an orange-scented sponge with a COIN hidden inside before baking. At midnight the head of the family cuts the slices in ritual order — whoever finds the coin gets the year's luck. A cake, a lottery, a tradition since Saint Basil.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Whisk the soft butter with the sugar until pale."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Beat in the eggs one by one, then orange zest and juice and the vanilla."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Add sifted flour and baking powder alternating with the milk: a smooth supple batter."
+   },
+   {
+    "titre": "THE coin",
+    "detail": "Wrap a well-washed coin in baking paper and bury it in the batter in the tin."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C about 40 minutes, until a blade comes out clean."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Dust with icing sugar and write the year with flaked almonds."
+   },
+   {
+    "titre": "The ritual",
+    "detail": "Cut in order: one slice for the house, then eldest to youngest. Whoever gets the coin gets the luck — vasilopita!"
+   }
+  ]
+ },
+ "kransekake": {
+  "nom": "Kransekake",
+  "description": "Kransekake — Scandinavia's celebration tower: eighteen almond rings, crisp outside and chewy inside, stacked into a cone and welded with zigzags of royal icing. Weddings, Norway's 17th of May, New Year's Eve — you snap the rings off by hand, top to bottom. The croquembouche of the North!",
+  "etapes": [
+   {
+    "titre": "The paste",
+    "detail": "Mix ground almonds, three quarters of the sugar and the cornflour; bind with the egg whites into a firm paste."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and rest overnight in the fridge: the paste firms and deepens in flavour."
+   },
+   {
+    "titre": "The rings",
+    "detail": "Roll ropes and form rings of decreasing sizes (kransekake moulds or drawn templates)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C about 10 minutes: golden outside, still chewy inside; cool WITHOUT twisting them."
+   },
+   {
+    "titre": "The royal icing",
+    "detail": "Whisk the remaining white with the remaining sugar and lemon juice into a thick ribboning icing."
+   },
+   {
+    "titre": "Build",
+    "detail": "Stack the rings largest to smallest, welding with icing zigzags."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Snap the rings off by hand, starting at the top. The kransekake of the great Nordic feasts!"
+   }
+  ]
  }
 };

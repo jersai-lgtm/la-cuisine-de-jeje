@@ -2840,4 +2840,41 @@ Object.assign(recettes, {
       { icone: "♨️", titre: "Cuire", detail: "Enfournez à 180°C : la coco dore, la mie reste nuage. Saupoudrez de sucre — le pão de Deus !", badge: null }
     ]
   },
+  kulich: {
+    dateAjout: "2026-07-27T15:02:00",
+    nom: "Koulitch",
+    cat: "boulangerie", pays: "russie",
+    base: 4,
+    temps: "1h30 + pousses",
+    niveau: "⭐⭐ Moyen",
+    emoji: "⛪",
+    description: "Koulitch — le haut pain de Pâques russe : une brioche cylindrique aux raisins et fruits confits, coiffée d'un glaçage blanc qui dégouline, décorée des lettres XB (« Christ est ressuscité »). Bénis à l'église le samedi saint, découpés en rondelles le dimanche — la couronne de la table pascale.",
+    tableauKulich: [
+      { nb: 1, farine: "60 g", lait: "30 ml", beurre: "15 g", sucre: "20 g", levureboulangere: "2.5 g", oeufs: "½", raisinssecs: "12 g", fruitsconfits: "10 g", vanille: "0.3 g", citron: "" },
+      { nb: 2, farine: "120 g", lait: "60 ml", beurre: "30 g", sucre: "40 g", levureboulangere: "5 g", oeufs: "1", raisinssecs: "24 g", fruitsconfits: "20 g", vanille: "0.6 g", citron: "" },
+      { nb: 3, farine: "180 g", lait: "90 ml", beurre: "45 g", sucre: "60 g", levureboulangere: "7.5 g", oeufs: "1½", raisinssecs: "36 g", fruitsconfits: "30 g", vanille: "0.9 g", citron: "" },
+      { nb: 4, farine: "240 g", lait: "120 ml", beurre: "60 g", sucre: "80 g", levureboulangere: "10 g", oeufs: "2", raisinssecs: "48 g", fruitsconfits: "40 g", vanille: "1.2 g", citron: "" },
+      { nb: 5, farine: "300 g", lait: "150 ml", beurre: "75 g", sucre: "100 g", levureboulangere: "12.5 g", oeufs: "2½", raisinssecs: "60 g", fruitsconfits: "50 g", vanille: "1.5 g", citron: "½" },
+      { nb: 6, farine: "360 g", lait: "180 ml", beurre: "90 g", sucre: "120 g", levureboulangere: "15 g", oeufs: "3", raisinssecs: "72 g", fruitsconfits: "60 g", vanille: "1.8 g", citron: "" },
+      { nb: 7, farine: "420 g", lait: "210 ml", beurre: "105 g", sucre: "140 g", levureboulangere: "17.5 g", oeufs: "3½", raisinssecs: "84 g", fruitsconfits: "70 g", vanille: "2.1 g", citron: "" },
+      { nb: 8, farine: "480 g", lait: "240 ml", beurre: "120 g", sucre: "160 g", levureboulangere: "20 g", oeufs: "4", raisinssecs: "96 g", fruitsconfits: "80 g", vanille: "2.4 g", citron: "" },
+      { nb: 9, farine: "540 g", lait: "270 ml", beurre: "135 g", sucre: "180 g", levureboulangere: "22.5 g", oeufs: "4½", raisinssecs: "108 g", fruitsconfits: "90 g", vanille: "2.7 g", citron: "" },
+      { nb: 10, farine: "600 g", lait: "300 ml", beurre: "150 g", sucre: "200 g", levureboulangere: "25 g", oeufs: "5", raisinssecs: "120 g", fruitsconfits: "100 g", vanille: "3 g", citron: "1" },
+      { nb: 11, farine: "660 g", lait: "330 ml", beurre: "165 g", sucre: "220 g", levureboulangere: "27.5 g", oeufs: "5½", raisinssecs: "132 g", fruitsconfits: "110 g", vanille: "3.3 g", citron: "1" },
+      { nb: 12, farine: "720 g", lait: "360 ml", beurre: "180 g", sucre: "240 g", levureboulangere: "30 g", oeufs: "6", raisinssecs: "144 g", fruitsconfits: "120 g", vanille: "3.6 g", citron: "1" },
+      { nb: 13, farine: "780 g", lait: "390 ml", beurre: "195 g", sucre: "260 g", levureboulangere: "32.5 g", oeufs: "6½", raisinssecs: "156 g", fruitsconfits: "130 g", vanille: "3.9 g", citron: "1" },
+      { nb: 14, farine: "840 g", lait: "420 ml", beurre: "210 g", sucre: "280 g", levureboulangere: "35 g", oeufs: "7", raisinssecs: "168 g", fruitsconfits: "140 g", vanille: "4.2 g", citron: "1" },
+      { nb: 15, farine: "900 g", lait: "450 ml", beurre: "225 g", sucre: "300 g", levureboulangere: "37.5 g", oeufs: "7½", raisinssecs: "180 g", fruitsconfits: "150 g", vanille: "4.5 g", citron: "1½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le levain", detail: "Délayez la levure dans le lait tiède avec une cuillère de sucre ; laissez mousser 15 minutes.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez avec farine, sucre, jaunes d'œufs (gardez du blanc pour le glaçage), beurre mou et vanille en pâte riche et souple.", badge: null },
+      { icone: "🍇", titre: "Garnir", detail: "Incorporez raisins secs et fruits confits farinés ; laissez lever 1 h 30 — la pâte est riche, elle prend son temps.", badge: null },
+      { icone: "🗼", titre: "Le moule haut", detail: "Remplissez à mi-hauteur des moules HAUTS et étroits (boîtes de conserve chemisées, à la russe) ; laissez repousser 45 minutes.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfournez à 170°C : le koulitch monte en champignon doré ; couvrez si le sommet colore trop vite.", badge: null },
+      { icone: "🍥", titre: "Le glaçage", detail: "Fouettez le blanc réservé avec du sucre et un trait de citron ; nappez le sommet refroidi, laissez couler les coulures.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Décorez (XB, vermicelles ou amandes) et coupez en rondelles horizontales, en gardant le chapeau. Le koulitch de Pâques !", badge: null }
+    ]
+  },
 });
