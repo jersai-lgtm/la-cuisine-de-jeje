@@ -2592,4 +2592,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Arrosez généreusement de sirop d'érable et servez aussitôt. Le chicken and waffles de Harlem !", badge: null }
     ]
   },
+  tamagokakegohan: {
+    dateAjout: "2026-07-27T22:27:00",
+    nom: "Tamago Kake Gohan",
+    cat: "brunch", pays: "japon",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥚",
+    description: "Tamago kake gohan — le petit-déjeuner japonais en trois gestes : un œuf cru ULTRA-frais battu sur du riz brûlant avec un trait de sauce soja, fouetté à la baguette jusqu'à mousser. Le riz cuit à peine l'œuf, l'œuf crème le riz — le réconfort le plus rapide du Japon, dit « TKG ».",
+    tableauTamagokakegohan: [
+      { nb: 1, riz: "90 g", oeufs: "1", sauceSoja: "5 ml", sesame: "0.5 g" },
+      { nb: 2, riz: "180 g", oeufs: "2", sauceSoja: "10 ml", sesame: "1 g" },
+      { nb: 3, riz: "270 g", oeufs: "3", sauceSoja: "15 ml", sesame: "1.5 g" },
+      { nb: 4, riz: "360 g", oeufs: "4", sauceSoja: "20 ml", sesame: "2 g" },
+      { nb: 5, riz: "450 g", oeufs: "5", sauceSoja: "25 ml", sesame: "2.5 g" },
+      { nb: 6, riz: "540 g", oeufs: "6", sauceSoja: "30 ml", sesame: "3 g" },
+      { nb: 7, riz: "630 g", oeufs: "7", sauceSoja: "35 ml", sesame: "3.5 g" },
+      { nb: 8, riz: "720 g", oeufs: "8", sauceSoja: "40 ml", sesame: "4 g" },
+      { nb: 9, riz: "810 g", oeufs: "9", sauceSoja: "45 ml", sesame: "4.5 g" },
+      { nb: 10, riz: "900 g", oeufs: "10", sauceSoja: "50 ml", sesame: "5 g" },
+      { nb: 11, riz: "990 g", oeufs: "11", sauceSoja: "55 ml", sesame: "5.5 g" },
+      { nb: 12, riz: "1080 g", oeufs: "12", sauceSoja: "60 ml", sesame: "6 g" },
+      { nb: 13, riz: "1170 g", oeufs: "13", sauceSoja: "65 ml", sesame: "6.5 g" },
+      { nb: 14, riz: "1260 g", oeufs: "14", sauceSoja: "70 ml", sesame: "7 g" },
+      { nb: 15, riz: "1350 g", oeufs: "15", sauceSoja: "75 ml", sesame: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Le riz", detail: "Cuisez le riz japonais et servez-le BRÛLANT dans un bol — la chaleur est l'ingrédient secret.", badge: null },
+      { icone: "🥚", titre: "L'œuf", detail: "Choisissez un œuf extra-frais (c'est non négociable : il se mange cru).", badge: null },
+      { icone: "🕳️", titre: "Le puits", detail: "Creusez un puits au centre du riz fumant.", badge: null },
+      { icone: "💛", titre: "Casser", detail: "Cassez l'œuf entier dans le puits.", badge: null },
+      { icone: "🥢", titre: "Fouetter", detail: "Ajoutez la sauce soja et fouettez vigoureusement aux baguettes : le mélange mousse et crème le riz.", badge: null },
+      { icone: "✨", titre: "Garnir", detail: "Sésame (et algue ciselée si vous en avez).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mangez immédiatement, tant que ça fume. Le TKG — trois gestes, zéro excuse !", badge: null }
+    ]
+  },
+  huevospericos: {
+    dateAjout: "2026-07-27T22:28:00",
+    nom: "Huevos Pericos",
+    cat: "brunch", pays: "colombie",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Huevos pericos — les œufs brouillés « perruche » de Colombie : tomates et oignons nouveaux fondus au beurre, œufs brouillés dedans en rubans moelleux jaune-rouge-vert (d'où la perruche !). Le petit-déjeuner de Bogotá avec arepa et chocolat chaud — simple, coloré, parfait.",
+    tableauHuevospericos: [
+      { nb: 1, oeufs: "1½", tomate: "60 g", oignon: "30 g", beurre: "8 g", sel: "1 g" },
+      { nb: 2, oeufs: "3", tomate: "120 g", oignon: "60 g", beurre: "16 g", sel: "2 g" },
+      { nb: 3, oeufs: "4½", tomate: "180 g", oignon: "90 g", beurre: "24 g", sel: "3 g" },
+      { nb: 4, oeufs: "6", tomate: "240 g", oignon: "120 g", beurre: "32 g", sel: "4 g" },
+      { nb: 5, oeufs: "7½", tomate: "300 g", oignon: "150 g", beurre: "40 g", sel: "5 g" },
+      { nb: 6, oeufs: "9", tomate: "360 g", oignon: "180 g", beurre: "48 g", sel: "6 g" },
+      { nb: 7, oeufs: "10½", tomate: "420 g", oignon: "210 g", beurre: "56 g", sel: "7 g" },
+      { nb: 8, oeufs: "12", tomate: "480 g", oignon: "240 g", beurre: "64 g", sel: "8 g" },
+      { nb: 9, oeufs: "13½", tomate: "540 g", oignon: "270 g", beurre: "72 g", sel: "9 g" },
+      { nb: 10, oeufs: "15", tomate: "600 g", oignon: "300 g", beurre: "80 g", sel: "10 g" },
+      { nb: 11, oeufs: "16½", tomate: "660 g", oignon: "330 g", beurre: "88 g", sel: "11 g" },
+      { nb: 12, oeufs: "18", tomate: "720 g", oignon: "360 g", beurre: "96 g", sel: "12 g" },
+      { nb: 13, oeufs: "19½", tomate: "780 g", oignon: "390 g", beurre: "104 g", sel: "13 g" },
+      { nb: 14, oeufs: "21", tomate: "840 g", oignon: "420 g", beurre: "112 g", sel: "14 g" },
+      { nb: 15, oeufs: "22½", tomate: "900 g", oignon: "450 g", beurre: "120 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Le sofrito", detail: "Ciselez finement l'oignon (nouveau, avec le vert, idéalement) et faites-le fondre au beurre.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Ajoutez la tomate en petits dés ; laissez compoter 3 minutes.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Battez les œufs à la fourchette, salez.", badge: null },
+      { icone: "🍳", titre: "Verser", detail: "Versez sur le sofrito à feu MOYEN-DOUX.", badge: null },
+      { icone: "🥄", titre: "Brouiller", detail: "Brouillez en rubans larges et paresseux — moelleux, jamais secs.", badge: null },
+      { icone: "🌈", titre: "La perruche", detail: "Stoppez encore brillants : jaune, rouge, vert — les couleurs du perico.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Avec pain grillé ou arepa, et un chocolat chaud à la colombienne. Les huevos pericos !", badge: null }
+    ]
+  },
 });

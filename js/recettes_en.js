@@ -84426,5 +84426,1025 @@ window.RECETTES_EN = {
     "detail": "Coat, broth ginger on top, white rice alongside. Teishoku saba misoni!"
    }
   ]
+ },
+ "birria": {
+  "nom": "Birria",
+  "description": "Birria — the red braise of Jalisco turned worldwide phenomenon: beef marinated with dried chillies, vinegar and spices, slow-cooked for hours until it shreds into a scarlet consommé. Served in a bowl with onion and coriander, or as tacos dipped in the consommé — birria brings tears of joy.",
+  "etapes": [
+   {
+    "titre": "The adobo",
+    "detail": "Rehydrate the dried chillies in hot water, then blend with tomatoes, garlic, vinegar, cumin, oregano, cinnamon and clove."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the beef chunks in this red adobo; marinate 2 hours (overnight, ideally)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Set meat, marinade, onion and bay in a pot; cover with water."
+   },
+   {
+    "titre": "Slow-cook",
+    "detail": "Simmer 3 hours over very low heat (covered): the meat must shred at a spoon's touch."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Lift out the meat, shred it; lightly skim the consommé and adjust."
+   },
+   {
+    "titre": "The garnish",
+    "detail": "Chop onion and coriander if you have it — the ritual duo."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In a bowl: meat, scorching consommé over. Or as tacos dipped in the consommé — Jalisco birria!"
+   }
+  ]
+ },
+ "carbonnade": {
+  "nom": "Flemish Carbonnade",
+  "description": "Carbonnade flamande — the estaminets' beef in dark beer: melting chunks simmered with onions, brown sugar and a mustard-spread slice of bread that dissolves into the sauce, binding it. Sweet-sour, dark and glossy — the dish that reconciles all of Belgium, with fries of course.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Salt the beef cubes and sear in butter on all sides; set aside."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Soften the sliced onions in the same pot."
+   },
+   {
+    "titre": "The beer",
+    "detail": "Return the meat, pour the dark beer and scrape the sucs."
+   },
+   {
+    "titre": "The sweet-sour",
+    "detail": "Add brown sugar, vinegar and bay."
+   },
+   {
+    "titre": "The tartine",
+    "detail": "Spread the bread with mustard and lay it mustard-side down on the stew: it will melt and bind the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 2½ hours over very low heat: the meat melts, the sauce turns brown and coating."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the sweet-sour and serve with fries. Estaminet carbonnade!"
+   }
+  ]
+ },
+ "kalops": {
+  "nom": "Kalops",
+  "description": "Kalops — the Swedish grandmothers' beef stew: gently simmered with onions, carrots, bay and a shower of whole peppercorns, served with potatoes and pickled beetroot. Simple, amber, deep — the dish that fogs the windows when the Swedish winter settles in.",
+  "etapes": [
+   {
+    "titre": "Flour",
+    "detail": "Salt the beef cubes and roll them in flour."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown in butter on all sides."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add quartered onions and carrot chunks; stir 3 minutes."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add bay and whole peppercorns, cover with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 1¾ hours over low heat: melting meat, amber sauce."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and salt; the sauce must coat the spoon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With steamed potatoes and pickled beetroot — the Swedish mormors' kalops!"
+   }
+  ]
+ },
+ "khoreshgheymeh": {
+  "nom": "Khoresh Gheymeh",
+  "description": "Khoresh gheymeh — the Persian split-pea stew: lamb or beef simmered with turmeric and tomato paste, yellow split peas and lemon, CROWNED with thin crispy fries. The melting-crunchy contrast is the signature — over white rice, this is Iran's big-table classic.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Brown the sliced onion in half the oil; add the turmeric."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Add the beef cubes and sear in the golden onion."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the tomato paste, stir 2 minutes, then cover with water."
+   },
+   {
+    "titre": "The split peas",
+    "detail": "Add the rinsed yellow split peas, cinnamon and saffron; simmer 1¼ hours over low heat."
+   },
+   {
+    "titre": "The sharpness",
+    "detail": "Add the lemon juice (true gheymeh uses dried limes); adjust."
+   },
+   {
+    "titre": "The fries",
+    "detail": "Cut the potato into thin matchsticks and fry golden in the remaining oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Ladle the khoresh over rice and CROWN with crispy fries. Persian gheymeh!"
+   }
+  ]
+ },
+ "secodecarne": {
+  "nom": "Seco de Carne",
+  "description": "Seco de carne — northern Peru's GREEN braise: beef stewed in a sauce of blended coriander and beer, with peas and carrots. The 'dry' is ironic — it is a marvel of deep green juices, served with rice and beans. The coriander doesn't garnish: it IS the dish.",
+  "etapes": [
+   {
+    "titre": "The green",
+    "detail": "Blend the coriander (leaves AND stems) with the beer into a green purée."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Salt the beef cubes and sear in the oil; set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion, garlic and chilli in the same pot."
+   },
+   {
+    "titre": "The green sauce",
+    "detail": "Pour the coriander-beer purée, return the meat and top up with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 1½ hours: deep green sauce, melting meat."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add carrots and peas for the last 20 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A squeeze of lime, and serve with white rice (and Peruvian beans). Seco norteño!"
+   }
+  ]
+ },
+ "carbonadacriolla": {
+  "nom": "Carbonada Criolla",
+  "description": "Carbonada criolla — the sweet-savoury stew of the pampas: beef, squash, sweet potato, corn and dried apricots in a tomato broth — traditionally served IN the hollowed, roasted squash. The gaucho dish that dares fruit in the stew, and wins every time.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Salt the beef cubes and sear in the oil; set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften the onion, add the crushed tomatoes and white wine."
+   },
+   {
+    "titre": "Start",
+    "detail": "Return the meat, cover with water and simmer 40 minutes."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add squash, sweet potato and potato in large cubes."
+   },
+   {
+    "titre": "The sweet",
+    "detail": "Add corn and dried apricots; carry on 25 minutes — the vegetables candy without collapsing."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "The sauce must be ample, faintly sweet; salt, pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In the pot — or, for the show, in a hollowed roasted squash. Pampas carbonada!"
+   }
+  ]
+ },
+ "mechado": {
+  "nom": "Mechado",
+  "description": "Mechado — the Hispano-Filipino braised beef: simmered in a soy-calamansi-tomato blend with potatoes and carrots, bay and pepper. The Spanish heritage filtered through the Philippines — the dark, tangy sauce demands a mountain of rice.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the beef cubes 30 minutes in soy sauce and lime juice."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Drain (keep the marinade) and sear the meat in the oil."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add onion and garlic; soften."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add crushed tomatoes, marinade, bay, pepper and a glass of water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 1¼ hours over low heat."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add potatoes and carrots in large chunks; carry on 25 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dark sauce, melting meat, white rice non-negotiable. Filipino mechado!"
+   }
+  ]
+ },
+ "tavas": {
+  "nom": "Tavas",
+  "description": "Tavas — Cyprus's pot braise: lamb, tomatoes, onions and potatoes layered in an earthenware dish with PLENTY of cumin, oven-cooked without stirring until candied. The Sunday dish of Lefkara — you lift the lid at the table and cumin fills the room.",
+  "etapes": [
+   {
+    "titre": "The pot",
+    "detail": "Take out a lidded earthenware dish (or casserole) — that is the 'tava'."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut lamb, tomatoes, onions and potatoes into large pieces."
+   },
+   {
+    "titre": "Season",
+    "detail": "Toss everything with cumin, salt, bay and olive oil — don't skimp on the cumin."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Arrange in layers in the pot, tomatoes on top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Cover and bake at 160°C for 2¼ hours — WITHOUT stirring, that's the rule."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover for the last 15 minutes to brown the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Bring the pot to the table and lift the lid in front of everyone. Cypriot tavas!"
+   }
+  ]
+ },
+ "hachee": {
+  "nom": "Hachee",
+  "description": "Hachee — the Netherlands' sweet-sour braise: as much onion as beef, melted together for hours with vinegar, cloves and bay, into a brown, almost candied sauce. Served with mash and red cabbage — the taste of the Dutch winter since the Golden Age.",
+  "etapes": [
+   {
+    "titre": "Flour",
+    "detail": "Salt the beef cubes and roll in flour."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown in butter; set aside."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Melt the MOUNTAIN of sliced onions in the same pot, a good 10 minutes."
+   },
+   {
+    "titre": "The sweet-sour",
+    "detail": "Return the meat; add vinegar, brown sugar, bay and cloves."
+   },
+   {
+    "titre": "Wet",
+    "detail": "Cover with water and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 2½ hours: the onions dissolve into a glossy brown sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With mash and red cabbage, Dutch-style. Golden Age hachee!"
+   }
+  ]
+ },
+ "pouletpaprikash": {
+  "nom": "Chicken Paprikash",
+  "description": "Paprikás csirke — Hungary's paprika chicken: golden pieces simmered in an onion-paprika-tomato sauce, finished with cream into a brick-pink velvet. Sweet Hungarian paprika reigns absolute — with nokedli (little dumplings), it is Budapest at the table.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Salt the chicken pieces and brown in butter; set aside."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Soften onion and garlic in the same pot."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "OFF THE HEAT, add the paprika (it burns fast) and stir 30 seconds."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add diced tomato and pepper, return the chicken, add a glass of water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 35 minutes over low heat."
+   },
+   {
+    "titre": "The velvet",
+    "detail": "Whisk the flour into the cream, pour and thicken 5 minutes without boiling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Brick-pink coating sauce, with pasta or spätzle. Budapest paprikás!"
+   }
+  ]
+ },
+ "fasolakia": {
+  "nom": "Fasolakia",
+  "description": "Fasolakia — Greece's 'ladera' green beans: long-simmered in tomato and plenty of olive oil with potatoes and onions, until melting and candied. An 'oil dish' served warm with feta and bread — Greek proof that a vegetable can be a feast.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Trim the green beans and leave them whole."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion and garlic in good olive oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomatoes and sugar; melt 5 minutes."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Add beans and potato wedges; salt, add half a glass of water."
+   },
+   {
+    "titre": "Slow-cook",
+    "detail": "Cover and simmer 40 minutes over low heat — the beans must be MELTING, not crunchy (the Greek rule)."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Uncover, reduce the excess: only tomato and glossy oil should remain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Warm, parsley, with feta and bread. Fasolakia ladera!"
+   }
+  ]
+ },
+ "kolokithokeftedes": {
+  "nom": "Kolokithokeftedes",
+  "description": "Kolokithokeftedes — the courgette-feta fritters of the Greek islands: grated and well-pressed courgette, crumbled feta, mint and onion, fried into golden crisp-melting patties. The Santorini mezze you dip in tzatziki while watching the sea.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the courgettes, salt them and let them release water 20 minutes."
+   },
+   {
+    "titre": "PRESS",
+    "detail": "Squeeze them with all your strength in a cloth: the absolute anti-soggy secret."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Combine courgettes, crumbled feta, chopped onion, mint, egg, flour and breadcrumbs."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form small thick patties; if too sticky, a little more breadcrumbs."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Pan-fry golden in hot oil, 3 minutes per side."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper and barely salt (the feta is there)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scorching, with well-chilled tzatziki. Santorini kolokithokeftedes!"
+   }
+  ]
+ },
+ "ciambotta": {
+  "nom": "Ciambotta",
+  "description": "Ciambotta — southern Italy's ratatouille: aubergines, peppers, potatoes, courgettes and tomatoes melted together in olive oil, basil thrown in at the last moment. More rustic than its Niçoise cousin, served warm with bread — the Calabrian summer in a pot.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut all the vegetables into large rustic dice."
+   },
+   {
+    "titre": "The aubergine",
+    "detail": "Brown the aubergine in oil; set aside (it keeps its shape)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion and garlic, then peppers and potatoes, 5 minutes."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add crushed tomatoes and half a glass of water; salt."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 25 minutes; add courgettes and aubergines halfway."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Uncover and reduce: the vegetables candy without boiling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Torn basil, raw oil stream, country bread. Southern ciambotta!"
+   }
+  ]
+ },
+ "risiebisi": {
+  "nom": "Risi e Bisi",
+  "description": "Risi e bisi — Venice's rice and peas: between risotto and soup ('all'onda', it makes the wave), cooked in a broth where the pods infuse, finished with butter and parmesan. The doge demanded it every 25th of April for Saint Mark's — the Venetian spring in a shallow bowl.",
+  "etapes": [
+   {
+    "titre": "The peas",
+    "detail": "Shell the peas (fresh, ideally); infuse the pods 15 minutes in simmering salted water, then strain: that is the broth."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften the chopped onion in half the butter."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the rice and toast 2 minutes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add broth ladle by ladle, stirring, like a LOOSE risotto."
+   },
+   {
+    "titre": "The peas",
+    "detail": "Add the peas two-thirds through."
+   },
+   {
+    "titre": "Manteca",
+    "detail": "Off the heat, remaining butter and parmesan; risi e bisi must 'wave' on the plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In a shallow bowl, parsley, a grind of pepper. The doge's dish — risi e bisi!"
+   }
+  ]
+ },
+ "tianlegumes": {
+  "nom": "Vegetable Tian",
+  "description": "Tian de légumes — the Provençal stained glass: courgettes, aubergines and tomatoes in thin rounds standing packed in a tight rosette, olive oil, thyme and garlic, slow-roasted until candied. As beautiful raw as cooked — the dish that draws applause before the first bite.",
+  "etapes": [
+   {
+    "titre": "The rounds",
+    "detail": "Cut courgettes, aubergines and tomatoes into THIN, even rounds (mandoline ideal)."
+   },
+   {
+    "titre": "The bed",
+    "detail": "Spread the sliced onion and garlic in an oiled dish — it will candy underneath."
+   },
+   {
+    "titre": "The rosette",
+    "detail": "Stand the rounds UPRIGHT, alternating colours, tightly packed in a spiral."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, thyme, and a generous stream of olive oil."
+   },
+   {
+    "titre": "Covered bake",
+    "detail": "Cover with baking paper and bake at 180°C for 45 minutes."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover and carry on 20 minutes: the crests brown, the vegetables candy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Hot, warm or cold — alone, with rice or as a side. The Provençal tian!"
+   }
+  ]
+ },
+ "carpacciocourgettes": {
+  "nom": "Courgette Carpaccio",
+  "description": "Courgette carpaccio — the zero-cooking summer starter: raw courgette ribbons marinated in lemon and olive oil, 'cooking' in the acidity, under a shower of parmesan, mint and toasted pine nuts. Ten minutes of mandoline for a restaurant plate.",
+  "etapes": [
+   {
+    "titre": "The ribbons",
+    "detail": "Slice the (young, firm) courgettes into very thin ribbons with a mandoline or peeler."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Whisk lemon juice, olive oil and salt."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Fan the ribbons in a rosette on the plates and coat with marinade."
+   },
+   {
+    "titre": "'Cook'",
+    "detail": "Marinate 15 minutes: the acidity tenderises and 'cooks' the courgette."
+   },
+   {
+    "titre": "The pine nuts",
+    "detail": "Dry-toast the pine nuts until blond."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Parmesan shavings, chopped mint, golden pine nuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "One last stream of oil, a grind of pepper. The summer carpaccio — zero cooking, one hundred percent chic!"
+   }
+  ]
+ },
+ "turlu": {
+  "nom": "Türlü",
+  "description": "Türlü — the Turkish 'medley': aubergines, courgettes, peppers, potatoes and tomatoes candied together in the oven in olive oil, each vegetable keeping its voice in the choir. The summer dish of Turkish homes — served warm with yogurt and bread, it needs nothing else.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut all the vegetables into large even pieces."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss them in a dish with olive oil, crushed garlic, salt and chilli."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Cover with crushed tomatoes and half a glass of water."
+   },
+   {
+    "titre": "Candy",
+    "detail": "Cover and bake at 180°C for 40 minutes."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover and carry on 15 minutes: the edges caramelise."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it cool 10 minutes — türlü is served warm, never scorching."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With a spoon of yogurt and bread. Turkish summer türlü!"
+   }
+  ]
+ },
+ "ghiveci": {
+  "nom": "Ghiveci",
+  "description": "Ghiveci — the Romanian vegetable pot: up to ten garden vegetables (aubergine, pepper, carrot, potatoes, peas…) candied together in the oven in tomato and oil. The late-summer dish of Wallachia, when the garden overflows — every family has its secret combination.",
+  "etapes": [
+   {
+    "titre": "The garden",
+    "detail": "Cut all the vegetables into even pieces — the more variety, the more ghiveci."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften onion and garlic in the oil, in an ovenproof pot."
+   },
+   {
+    "titre": "The hard ones",
+    "detail": "Add carrots and potatoes; stir 5 minutes."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the remaining vegetables, crushed tomatoes, bay, salt and half a glass of water."
+   },
+   {
+    "titre": "In the oven",
+    "detail": "Cover and bake at 180°C for 40 minutes."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover 15 minutes: the juices reduce to a glossy sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Warm or hot, with country bread (and a fried egg for the greedy). Romanian ghiveci!"
+   }
+  ]
+ },
+ "gomenwot": {
+  "nom": "Gomen Wat",
+  "description": "Gomen wat — Ethiopia's braised greens: cabbage and spinach slowly melted with onion, garlic, ginger and a hint of chilli, until silky. The vegetal companion of any self-respecting injera — humble, deep, and surprisingly addictive.",
+  "etapes": [
+   {
+    "titre": "The greens",
+    "detail": "Slice the (ideally curly) cabbage into ribbons and stem the spinach."
+   },
+   {
+    "titre": "The base",
+    "detail": "Melt the sliced onion in the oil, unhurried — a good 8 minutes."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add garlic, grated ginger and chilli; 1 fragrant minute."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Add the cabbage with half a glass of water; cover and melt 15 minutes."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Add the spinach and carry on 5 minutes uncovered."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt: the greens must be silky, almost candied."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With injera, rice or flatbread. Ethiopian gomen wat!"
+   }
+  ]
+ },
+ "luohanzhai": {
+  "nom": "Buddha's Delight",
+  "description": "Luohan zhai — 'Buddha's delight': the vegetarian stir-fry of Chinese monasteries, served at New Year to purify the year. Tofu, mushrooms, cabbage, bamboo, carrots and slippery rice vermicelli in a soy-sesame sauce — eighteen treasures in the wok, zero meat, one hundred percent serenity.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Rehydrate the mushrooms (dried shiitake, ideally) 20 minutes; keep the water. Soak the vermicelli too."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cube the tofu, ribbon the cabbage, bias-slice the carrot, drain the bamboo."
+   },
+   {
+    "titre": "The tofu",
+    "detail": "Brown the tofu in oil; set aside."
+   },
+   {
+    "titre": "The wok",
+    "detail": "Stir-fry ginger, carrots and mushrooms 2 minutes over high heat."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add cabbage and bamboo; stir-fry 3 minutes."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Add drained vermicelli, tofu, soy sauce and a little mushroom water; toss 2 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A stream of sesame oil (or seeds), and serve steaming. Buddha's delight!"
+   }
+  ]
+ },
+ "blt": {
+  "nom": "BLT",
+  "description": "BLT — Bacon, Lettuce, Tomato: the holy trinity of the American sandwich. Crispy bacon still warm, ice-cold lettuce, salted ripe tomatoes and mayonnaise on toasted bread. Three letters, a perfect hot-cold-crisp-melting balance — king of the diners since 1920.",
+  "etapes": [
+   {
+    "titre": "The bacon",
+    "detail": "Grill the bacon slices to perfect crispness; drain on paper."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast the bread slices — golden, still soft at the centre."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Cut the tomatoes into thick rounds; salt and pepper them directly."
+   },
+   {
+    "titre": "The lettuce",
+    "detail": "Pick the lettuce leaves (iceberg for the icy crunch)."
+   },
+   {
+    "titre": "Build",
+    "detail": "Mayonnaise on both toasts, then lettuce, tomatoes, and the WARM bacon."
+   },
+   {
+    "titre": "Close",
+    "detail": "Close, press gently and cut on the diagonal."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Immediately: the warm bacon / icy lettuce contrast IS the BLT."
+   }
+  ]
+ },
+ "bauru": {
+  "nom": "Bauru",
+  "description": "Bauru — São Paulo's legendary hot sandwich, invented in 1934 by a student nicknamed Bauru: thin roast beef, tomato, pickle and an avalanche of BAIN-MARIE MELTED cheese poured into a hollowed crusty roll. The flowing cheese is non-negotiable.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Split the crusty roll and pull out some crumb — the cheese's nest."
+   },
+   {
+    "titre": "The roast beef",
+    "detail": "Slice the roast beef very thin; salt lightly."
+   },
+   {
+    "titre": "The garnish",
+    "detail": "Slice the tomato into rounds and the pickles into strips."
+   },
+   {
+    "titre": "The bain-marie",
+    "detail": "Melt the mozzarella in a bain-marie, stirring — creamy and flowing, never grilled."
+   },
+   {
+    "titre": "Build",
+    "detail": "Roast beef, tomatoes and pickles into the bread."
+   },
+   {
+    "titre": "The avalanche",
+    "detail": "Pour the SCORCHING melted cheese over the filling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Barely close and eat at once, cheese pulling. São Paulo's bauru!"
+   }
+  ]
+ },
+ "pambtomaquet": {
+  "nom": "Pa amb Tomàquet",
+  "description": "Pa amb tomàquet — the Catalan ritual: grilled bread rubbed with garlic then with a ripe halved tomato, salt and great olive oil. Four gestures, no cooking, and yet the whole identity of Catalonia — served with everything, breakfast to dinner.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Cut handsome slices of country bread and grill them — well marked."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Rub each hot slice with the cut garlic clove (one light pass is enough)."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Halve the RIPE tomatoes and rub them cut-side against the bread, pressing: the pulp settles in."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt in a fine rain."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Pour olive oil generously — the best you have."
+   },
+   {
+    "titre": "At once",
+    "detail": "Serve without waiting: the bread must stay crisp under the pulp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "As is, or under ham and cheese. Catalan pa amb tomàquet!"
+   }
+  ]
+ },
+ "gyrospita": {
+  "nom": "Gyros Pita",
+  "description": "Gyros pita — Greece's national wrap: pork marinated with oregano, lemon and paprika, flash-fried, rolled in a soft pita with tzatziki, tomatoes, onion and… fries INSIDE the wrap — that's the rule. Greece's best-loved fast food, two-handed by the Aegean.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Slice the pork thin; marinate 1 hour with oregano, paprika, lemon and oil."
+   },
+   {
+    "titre": "The fries",
+    "detail": "Make the fries — yes, they go INSIDE the gyros."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Fry the pork over very high heat to crispy edges."
+   },
+   {
+    "titre": "The pita",
+    "detail": "Warm the pitas in a pan with a veil of oil — soft and warm."
+   },
+   {
+    "titre": "The base",
+    "detail": "Spread each pita with tzatziki (or salted lemony yogurt)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pork, tomatoes, sliced onion and the fries, in a line at the centre."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Roll tight in paper, fries poking out. Greek gyros — two hands!"
+   }
+  ]
+ },
+ "stollen": {
+  "nom": "Stollen",
+  "description": "Stollen — Dresden's Christmas bread: a rich dough studded with rum-soaked raisins, candied fruit and almonds, folded like a swaddled child, drowned in melted butter and icing sugar out of the oven. It IMPROVES for weeks — the cake that waits for Christmas with you.",
+  "etapes": [
+   {
+    "titre": "Macerate",
+    "detail": "Soak raisins and candied fruit in the rum (overnight, ideally)."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, warm milk, cinnamon and half the butter into a rich dough; rise 1 hour."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Work in the drained soaked fruit and chopped almonds, flouring the fruit."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Roll into an oval and fold a third over itself — the stollen's 'swaddled' shape."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Prove 45 minutes then bake at 170°C about 35 minutes."
+   },
+   {
+    "titre": "Drown",
+    "detail": "While SCORCHING, brush with all the remaining melted butter: it drinks it all."
+   },
+   {
+    "titre": "Snow",
+    "detail": "Roll in sugar (then icing sugar): the white shell preserves it. Keeps for weeks — Dresden stollen!"
+   }
+  ]
+ },
+ "vanocka": {
+  "nom": "Vánočka",
+  "description": "Vánočka — the Czech Christmas braid: a lemon-nutmeg brioche braided with EIGHT strands on three storeys, studded with almonds and raisins. Braiding it without accident brings luck for the year — Czech grandmothers do it with their eyes closed; your turn.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, warm milk, egg (keep some to glaze), butter, lemon zest and nutmeg into a supple dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Work in the floured raisins; rise 1½ hours."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide into 8 ropes: 4 large, 3 medium, 1 small... or simplify into 2 storeys of 3-strand braids."
+   },
+   {
+    "titre": "Braid",
+    "detail": "Braid the large storey, set the medium braid on top, and the small rolled rope at the summit; pin with skewers."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Prove 45 minutes; glaze with egg."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Scatter flaked almonds and bake at 165°C about 40 minutes (cover if it browns fast)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In slices, plain or toasted with butter. Christmas vánočka — and good luck for the year!"
+   }
+  ]
+ },
+ "boquerones": {
+  "nom": "Boquerones en Vinagre",
+  "description": "Boquerones en vinagre — Spain's fresh marinated anchovies: filleted, blanched white by vinegar then coated with olive oil, garlic and parsley. White, melting, lively — nothing like the salted anchovy. THE tapas of Spanish bars, on a crisp or a slice of bread.",
+  "etapes": [
+   {
+    "titre": "The anchovies",
+    "detail": "Fillet the FRESH anchovies, headed and gutted (freeze 48 h beforehand, for safety)."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the fillets in iced water until it runs clear; pat dry."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Lay them side by side, skin down; cover with vinegar and salt."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Marinate 4 to 8 hours in the fridge: the flesh turns WHITE and firm."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Delicately drain the pearly fillets."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Cover with olive oil, finely sliced garlic and chopped parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chilled, on bread or crisps, with a cold beer. The boquerones of Spain's bars!"
+   }
+  ]
+ },
+ "tamagokakegohan": {
+  "nom": "Tamago Kake Gohan",
+  "description": "Tamago kake gohan — the Japanese breakfast in three gestures: an ULTRA-fresh raw egg beaten over scorching rice with a dash of soy sauce, whisked with chopsticks until frothy. The rice barely cooks the egg, the egg creams the rice — Japan's fastest comfort, aka 'TKG'.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook Japanese rice and serve it SCORCHING in a bowl — heat is the secret ingredient."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Choose an extra-fresh egg (non-negotiable: it is eaten raw)."
+   },
+   {
+    "titre": "The well",
+    "detail": "Dig a well at the centre of the steaming rice."
+   },
+   {
+    "titre": "Crack",
+    "detail": "Crack the whole egg into the well."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Add the soy sauce and whisk vigorously with chopsticks: it froths and creams the rice."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Sesame (and shredded seaweed if you have it)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Eat immediately, while it steams. TKG — three gestures, zero excuses!"
+   }
+  ]
+ },
+ "huevospericos": {
+  "nom": "Huevos Pericos",
+  "description": "Huevos pericos — Colombia's 'parakeet' scrambled eggs: tomatoes and spring onions melted in butter, eggs scrambled in as soft yellow-red-green ribbons (hence the parakeet!). Bogotá's breakfast with arepa and hot chocolate — simple, colourful, perfect.",
+  "etapes": [
+   {
+    "titre": "The sofrito",
+    "detail": "Finely chop the onion (spring, with the green, ideally) and melt in butter."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the diced tomato; stew 3 minutes."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Beat the eggs with a fork, salt."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour over the sofrito over MEDIUM-LOW heat."
+   },
+   {
+    "titre": "Scramble",
+    "detail": "Scramble in wide lazy ribbons — soft, never dry."
+   },
+   {
+    "titre": "The parakeet",
+    "detail": "Stop while still glossy: yellow, red, green — the perico's colours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With toast or arepa, and Colombian-style hot chocolate. Huevos pericos!"
+   }
+  ]
+ },
+ "bololevedo": {
+  "nom": "Bolo Lêvedo",
+  "description": "Bolo lêvedo — the Azores' sweet muffin: a lightly sweetened brioche dough cooked IN A PAN like a big soft English muffin. Born in Furnas, on São Miguel island — split and buttered or filled, it is the bread-cake bridging breakfast and teatime.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, salt, warm milk, egg and soft butter into a supple, barely sticky dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it rise 1 hour, until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Divide into balls, flatten into thick pucks and flour lightly."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Relax 30 minutes under a cloth."
+   },
+   {
+    "titre": "IN THE PAN",
+    "detail": "Cook in a DRY pan over low heat, 6 to 8 minutes per side: they puff and gild."
+   },
+   {
+    "titre": "The test",
+    "detail": "Tap: a hollow sound = cooked through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Warm, split and buttered — or as a sweet-savoury sandwich. Azorean bolos lêvedos!"
+   }
+  ]
  }
 };

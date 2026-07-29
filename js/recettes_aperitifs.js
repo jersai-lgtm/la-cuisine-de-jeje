@@ -3938,4 +3938,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servez tiède, arrosé d'huile, parsemé d'oignon et de câpres. La fava de Santorin !", badge: null }
     ]
   },
+  boquerones: {
+    dateAjout: "2026-07-27T22:26:00",
+    nom: "Boquerones en Vinagre",
+    cat: "aperitifs", pays: "espagne",
+    base: 4,
+    temps: "30 min + marinade",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Boquerones en vinagre — les anchois frais marinés d'Espagne : levés en filets, blanchis par le vinaigre puis nappés d'huile d'olive, d'ail et de persil. Blancs, fondants, vifs — rien à voir avec l'anchois salé. LE tapas des bars espagnols, sur une chips ou une tranche de pain.",
+    tableauBoquerones: [
+      { nb: 1, anchois: "100 g", vinaigre: "25 ml", huileolive: "12 ml", ail: "½", persil: "2 g", sel: "1.5 g" },
+      { nb: 2, anchois: "200 g", vinaigre: "50 ml", huileolive: "24 ml", ail: "1", persil: "4 g", sel: "3 g" },
+      { nb: 3, anchois: "300 g", vinaigre: "75 ml", huileolive: "36 ml", ail: "1½", persil: "6 g", sel: "4.5 g" },
+      { nb: 4, anchois: "400 g", vinaigre: "100 ml", huileolive: "48 ml", ail: "2", persil: "8 g", sel: "6 g" },
+      { nb: 5, anchois: "500 g", vinaigre: "125 ml", huileolive: "60 ml", ail: "2½", persil: "10 g", sel: "7.5 g" },
+      { nb: 6, anchois: "600 g", vinaigre: "150 ml", huileolive: "72 ml", ail: "3", persil: "12 g", sel: "9 g" },
+      { nb: 7, anchois: "700 g", vinaigre: "175 ml", huileolive: "84 ml", ail: "3½", persil: "14 g", sel: "10.5 g" },
+      { nb: 8, anchois: "800 g", vinaigre: "200 ml", huileolive: "96 ml", ail: "4", persil: "16 g", sel: "12 g" },
+      { nb: 9, anchois: "900 g", vinaigre: "225 ml", huileolive: "108 ml", ail: "4½", persil: "18 g", sel: "13.5 g" },
+      { nb: 10, anchois: "1000 g", vinaigre: "250 ml", huileolive: "120 ml", ail: "5", persil: "20 g", sel: "15 g" },
+      { nb: 11, anchois: "1100 g", vinaigre: "275 ml", huileolive: "132 ml", ail: "5½", persil: "22 g", sel: "16.5 g" },
+      { nb: 12, anchois: "1200 g", vinaigre: "300 ml", huileolive: "144 ml", ail: "6", persil: "24 g", sel: "18 g" },
+      { nb: 13, anchois: "1300 g", vinaigre: "325 ml", huileolive: "156 ml", ail: "6½", persil: "26 g", sel: "19.5 g" },
+      { nb: 14, anchois: "1400 g", vinaigre: "350 ml", huileolive: "168 ml", ail: "7", persil: "28 g", sel: "21 g" },
+      { nb: 15, anchois: "1500 g", vinaigre: "375 ml", huileolive: "180 ml", ail: "7½", persil: "30 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Les anchois", detail: "Levez les anchois FRAIS en filets, étêtés et vidés (congelez-les 48 h au préalable, par sécurité).", badge: null },
+      { icone: "💧", titre: "Rincer", detail: "Rincez les filets à l'eau glacée jusqu'à ce qu'elle soit claire ; épongez.", badge: null },
+      { icone: "🫙", titre: "Mariner", detail: "Rangez-les côte à côte, peau dessous ; couvrez de vinaigre et salez.", badge: null },
+      { icone: "⏲️", titre: "Blanchir", detail: "Laissez mariner 4 à 8 heures au frais : la chair devient BLANCHE et ferme.", badge: null },
+      { icone: "🫗", titre: "Égoutter", detail: "Égouttez délicatement les filets nacrés.", badge: null },
+      { icone: "🫒", titre: "Napper", detail: "Couvrez d'huile d'olive avec ail émincé fin et persil ciselé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Frais, sur pain ou chips, avec une bière fraîche. Les boquerones des bars d'Espagne !", badge: null }
+    ]
+  },
 });

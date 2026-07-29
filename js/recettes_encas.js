@@ -6634,4 +6634,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Mangez IMMÉDIATEMENT, pendant que le beurre fond. Le chip butty du Nord !", badge: null }
     ]
   },
+  blt: {
+    dateAjout: "2026-07-27T22:20:00",
+    nom: "BLT",
+    cat: "encas", pays: "usa",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥓",
+    description: "BLT — Bacon, Lettuce, Tomato : la sainte trinité du sandwich américain. Bacon croustillant encore tiède, laitue glacée, tomates mûres salées et mayonnaise sur pain de mie toasté. Trois lettres, un équilibre parfait chaud-froid-croquant-fondant — le roi des diners depuis 1920.",
+    tableauBlt: [
+      { nb: 1, painmie: "70 g", bacon: "50 g", laitue: "25 g", tomate: "60 g", mayonnaise: "15 g", poivre: "0.5 g" },
+      { nb: 2, painmie: "140 g", bacon: "100 g", laitue: "50 g", tomate: "120 g", mayonnaise: "30 g", poivre: "1 g" },
+      { nb: 3, painmie: "210 g", bacon: "150 g", laitue: "75 g", tomate: "180 g", mayonnaise: "45 g", poivre: "1.5 g" },
+      { nb: 4, painmie: "280 g", bacon: "200 g", laitue: "100 g", tomate: "240 g", mayonnaise: "60 g", poivre: "2 g" },
+      { nb: 5, painmie: "350 g", bacon: "250 g", laitue: "125 g", tomate: "300 g", mayonnaise: "75 g", poivre: "2.5 g" },
+      { nb: 6, painmie: "420 g", bacon: "300 g", laitue: "150 g", tomate: "360 g", mayonnaise: "90 g", poivre: "3 g" },
+      { nb: 7, painmie: "490 g", bacon: "350 g", laitue: "175 g", tomate: "420 g", mayonnaise: "105 g", poivre: "3.5 g" },
+      { nb: 8, painmie: "560 g", bacon: "400 g", laitue: "200 g", tomate: "480 g", mayonnaise: "120 g", poivre: "4 g" },
+      { nb: 9, painmie: "630 g", bacon: "450 g", laitue: "225 g", tomate: "540 g", mayonnaise: "135 g", poivre: "4.5 g" },
+      { nb: 10, painmie: "700 g", bacon: "500 g", laitue: "250 g", tomate: "600 g", mayonnaise: "150 g", poivre: "5 g" },
+      { nb: 11, painmie: "770 g", bacon: "550 g", laitue: "275 g", tomate: "660 g", mayonnaise: "165 g", poivre: "5.5 g" },
+      { nb: 12, painmie: "840 g", bacon: "600 g", laitue: "300 g", tomate: "720 g", mayonnaise: "180 g", poivre: "6 g" },
+      { nb: 13, painmie: "910 g", bacon: "650 g", laitue: "325 g", tomate: "780 g", mayonnaise: "195 g", poivre: "6.5 g" },
+      { nb: 14, painmie: "980 g", bacon: "700 g", laitue: "350 g", tomate: "840 g", mayonnaise: "210 g", poivre: "7 g" },
+      { nb: 15, painmie: "1050 g", bacon: "750 g", laitue: "375 g", tomate: "900 g", mayonnaise: "225 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥓", titre: "Le bacon", detail: "Faites griller les tranches de bacon jusqu'à croustillance parfaite ; égouttez sur papier.", badge: null },
+      { icone: "🍞", titre: "Toaster", detail: "Toastez les tranches de pain de mie — dorées, encore souples au centre.", badge: null },
+      { icone: "🍅", titre: "Les tomates", detail: "Coupez les tomates en rondelles épaisses ; salez et poivrez-les directement.", badge: null },
+      { icone: "🥬", titre: "La laitue", detail: "Effeuillez la laitue (iceberg pour le croquant glacé).", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Mayonnaise sur les deux toasts, puis laitue, tomates, et le bacon TIÈDE.", badge: null },
+      { icone: "🔺", titre: "Fermer", detail: "Refermez, pressez doucement et coupez en diagonale.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Immédiatement : le contraste bacon tiède / laitue glacée EST le BLT.", badge: null }
+    ]
+  },
 });
