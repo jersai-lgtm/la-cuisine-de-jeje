@@ -85786,5 +85786,345 @@ window.RECETTES_EN = {
     "detail": "With rice and a squeeze of lime. Lombok's ayam taliwang — it burns good!"
    }
   ]
+ },
+ "muhallebi": {
+  "nom": "Muhallebi",
+  "description": "Muhallebi — Turkey's silken milk cream: milk thickened with rice flour, barely sweetened, served ice-cold under a rain of pistachios and a veil of cinnamon. The dessert of Istanbul's pudding shops since the sultans — so gentle it's eaten at breakfast too.",
+  "etapes": [
+   {
+    "titre": "Dissolve",
+    "detail": "Dissolve the rice flour in a little cold milk, lump-free."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the remaining milk with the sugar and vanilla."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Pour in the dissolved mix, whisking; cook over low heat, stirring NON-STOP, until a coating cream."
+   },
+   {
+    "titre": "Insist",
+    "detail": "Carry on 3 minutes after thickening: the rice flour must cook for perfect silk."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour into small bowls and let cool."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate at least 3 hours: the muhallebi sets, trembling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crushed pistachios and a veil of cinnamon. Istanbul muhallebi!"
+   }
+  ]
+ },
+ "tocinodecielo": {
+  "nom": "Tocino de Cielo",
+  "description": "Tocino de cielo — Andalusia's 'bacon from heaven': a flan of PURE egg yolks and syrup, invented by the nuns of Jerez with the yolks the winemakers left them. Denser, more golden, more intense than a classic flan — one bite and the name explains itself.",
+  "etapes": [
+   {
+    "titre": "The caramel",
+    "detail": "Coat the bottom of small moulds with caramel."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Simmer the sugar with half a glass of water, lemon zest and vanilla 5 minutes into a light syrup; cool slightly."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Beat the egg YOLKS (keep one whole egg for structure) without foaming."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Pour the warm syrup in a stream over the yolks, stirring gently."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Strain and pour into the caramel moulds."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "Cook in a covered bain-marie at 150°C, 25 minutes: the heart barely trembles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chill 4 hours, unmould: golden, dense, glossy. Jerez tocino de cielo!"
+   }
+  ]
+ },
+ "papodeanjo": {
+  "nom": "Papo de Anjo",
+  "description": "Papo de anjo — Portugal's 'angel's chins': egg yolks whipped to a mousse, baked into little golden domes then plunged into a vanilla syrup that gorges them with sweetness. Born in 18th-century convents — airy outside, melting inside, heavenly throughout.",
+  "etapes": [
+   {
+    "titre": "The yolks",
+    "detail": "Whip the yolks with an electric whisk a good 10 minutes: pale, thick, tripled mousse."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Divide into small buttered (muffin) moulds, two-thirds full."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a bain-marie at 180°C about 12 minutes: the domes puff and gild."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Meanwhile simmer sugar, a glass of water, vanilla and lemon zest 8 minutes."
+   },
+   {
+    "titre": "Plunge",
+    "detail": "Unmould the warm domes and plunge into the hot syrup."
+   },
+   {
+    "titre": "Gorge",
+    "detail": "Let them drink the syrup 15 minutes, turning halfway."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chilled, in a little of their syrup. The convents' papos de anjo!"
+   }
+  ]
+ },
+ "serabi": {
+  "nom": "Serabi",
+  "description": "Serabi — Indonesia's little coconut pancakes: a rice-flour and coconut-milk batter cooked into domed cups with lacy edges in earthen pans, coated with kinca — the palm-sugar coconut syrup. The market snack of Solo and Bandung, tender and fragrant.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk rice flour, yeast, sugar, salt and half the coconut milk into a smooth batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Ferment 1 hour: small bubbles rise — the crumb will be honeycombed."
+   },
+   {
+    "titre": "The kinca",
+    "detail": "Melt the brown sugar with the remaining coconut milk into an amber syrup; set aside."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a small (ideally earthen) pan over medium heat, barely greased."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour a ladle: the centre domes, the edges lace golden; cover 2 minutes WITHOUT flipping."
+   },
+   {
+    "titre": "Perfume",
+    "detail": "Scatter grated coconut at the end."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Warm, generously coated with kinca. The serabi of Java's markets!"
+   }
+  ]
+ },
+ "palatschinken": {
+  "nom": "Palatschinken",
+  "description": "Palatschinken — Vienna's thin crêpes: rolled tight around apricot jam (the sacred Marillenmarmelade), dusted with icing sugar. Thinner than a pancake, more golden than a crêpe — the dessert of Viennese cafés and Central European grandmothers.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk flour, eggs, milk, sugar and salt into a smooth fluid batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest 15 minutes — the crêpes will be supple."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Heat a buttered pan over medium-high heat."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour a thin ladle, tilting the pan; gild 1 minute per side."
+   },
+   {
+    "titre": "The jam",
+    "detail": "Spread each warm crêpe with apricot jam to the edges."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll tight into cigars and line them up side by side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust generously with icing sugar. Vienna's Palatschinken!"
+   }
+  ]
+ },
+ "granitasicilienne": {
+  "nom": "Coffee Granita",
+  "description": "Granita al caffè — the Sicilian summer breakfast: strong, barely sweetened coffee scraped with a fork into melting crystals every 45 minutes, served under a cloud of whipped cream… with a brioche to dunk. Yes, in Catania it replaces the morning coffee — and it is genius.",
+  "etapes": [
+   {
+    "titre": "The coffee",
+    "detail": "Brew a STRONG coffee (double dose) and dissolve the sugar while hot."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cool completely, then pour into a wide dish (2 cm of liquid)."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Freeze 45 minutes: the edges crystallise."
+   },
+   {
+    "titre": "Scrape",
+    "detail": "Scrape EVERYTHING with a fork, pulling the edges to the centre; repeat every 45 minutes, 3 to 4 times."
+   },
+   {
+    "titre": "The texture",
+    "detail": "You want glossy, melting crystals — never a block."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the very cold cream into a soft, barely sweet chantilly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Granita in a glass, cloud of cream, brioche for dunking. The Sicilian morning!"
+   }
+  ]
+ },
+ "raspado": {
+  "nom": "Raspado",
+  "description": "Raspado — Mexico's street shaved ice: hand-scraped ice drowned in a syrup of fresh strawberries simmered with their pulp, and a drizzle of condensed milk for the 'raspado con crema' version. The cart bell ringing down the street, the Mexican summer in a cup.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Simmer the chopped strawberries with the sugar and half a glass of water 10 minutes."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Crush roughly: a thick syrup WITH pulp pieces — that is the signature."
+   },
+   {
+    "titre": "Sharpness",
+    "detail": "Add the lime juice and cool completely."
+   },
+   {
+    "titre": "The ice",
+    "detail": "Crush ice finely (blender, cloth and rolling pin, or scraper on a block)."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pack the shaved ice into a dome in cups."
+   },
+   {
+    "titre": "Drown",
+    "detail": "Pour the strawberry syrup until it stains all the ice."
+   },
+   {
+    "titre": "The crema",
+    "detail": "Stripe with condensed milk and plant a spoon-straw. The Mexican cart raspado!"
+   }
+  ]
+ },
+ "chelseabun": {
+  "nom": "Chelsea Buns",
+  "description": "Chelsea buns — London's sticky swirls, born around 1700 at the Chelsea Bun House where royals queued: brioche dough rolled around butter, brown sugar and raisins, packed in the tin for soft sides, glossed with honey. The English ancestor of the cinnamon roll.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, warm milk, egg and half the butter into a supple dough; rise 1 hour."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll into a large rectangle."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Soft butter, brown sugar, cinnamon and raisins over the whole surface."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll tight from the long side and cut into thick sections."
+   },
+   {
+    "titre": "Pack",
+    "detail": "Set them side by side in a buttered tin, almost touching: they will weld as they prove."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Prove 30 minutes then bake at 180°C until golden."
+   },
+   {
+    "titre": "Gloss",
+    "detail": "Brush with honey out of the oven and pull apart by hand — soft sides, sticky tops. Chelsea buns!"
+   }
+  ]
+ },
+ "gibassier": {
+  "nom": "Gibassier",
+  "description": "Gibassier — Provence's sweet fougasse: an olive-oil dough with orange blossom and anise, slashed into a leaf and baked golden, rubbed with sugar out of the oven. Cousin of the pompe à l'huile of the 13 Christmas desserts — but this one is eaten all year, with the morning coffee.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, egg, olive oil, orange blossom, orange zest and anise into a supple, fragrant dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Rise 1½ hours — oil doughs take their time."
+   },
+   {
+    "titre": "The leaf",
+    "detail": "Roll into a thick oval and slash wide leaf-vein cuts, opening the slits."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Relax 30 minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C to a light gold — it must stay tender."
+   },
+   {
+    "titre": "Gloss",
+    "detail": "Out of the oven, brush with a veil of olive oil."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Rub generously with sugar while still warm. Provence's gibassier — with coffee!"
+   }
+  ]
+ },
+ "zimtsterne": {
+  "nom": "Zimtsterne",
+  "description": "Zimtsterne — Germany's cinnamon stars: almonds, cinnamon and egg whites, NO flour, capped with snow-white royal icing before baking. Chewy inside, crackly on top — the stars of Swabian Christmas markets, which shine just as well in July.",
+  "etapes": [
+   {
+    "titre": "The meringue",
+    "detail": "Whip the egg white stiff with the lemon juice; tighten with half the sugar."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Take out 2 spoonfuls of this meringue: that is the icing."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Fold ground almonds, remaining sugar and cinnamon into the remaining meringue: a dense fragrant paste."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and firm up 1 hour in the fridge."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll between two sheets (1 cm) and cut stars with a wet-bladed cutter."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Coat each star with the reserved meringue, to the points."
+   },
+   {
+    "titre": "Bake low",
+    "detail": "Bake at 140°C about 15 minutes: the icing stays WHITE, the heart chewy. Zimtsterne!"
+   }
+  ]
  }
 };

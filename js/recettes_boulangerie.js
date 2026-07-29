@@ -2988,4 +2988,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Tièdes, coupés en deux et beurrés — ou en sandwich sucré-salé. Les bolos lêvedos des Açores !", badge: null }
     ]
   },
+  chelseabun: {
+    dateAjout: "2026-07-27T23:37:00",
+    nom: "Chelsea Buns",
+    cat: "boulangerie", pays: "angleterre",
+    base: 4,
+    temps: "1h15 + pousses",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌀",
+    description: "Chelsea buns — les escargots collants de Londres, nés vers 1700 à la Bun House de Chelsea où la famille royale faisait la queue : pâte briochée roulée autour de beurre-cassonade-raisins, serrés au moule pour des flancs moelleux, lustrés au miel. L'ancêtre anglais du cinnamon roll.",
+    tableauChelseabun: [
+      { nb: 1, farine: "65 g", lait: "30 ml", beurre: "15 g", sucre: "12 g", levureboulangere: "2 g", raisinssecs: "15 g", cassonade: "8 g", cannelle: "0.8 g", oeufs: "¼", miel: "4 ml" },
+      { nb: 2, farine: "130 g", lait: "60 ml", beurre: "30 g", sucre: "24 g", levureboulangere: "4 g", raisinssecs: "30 g", cassonade: "16 g", cannelle: "1.6 g", oeufs: "½", miel: "8 ml" },
+      { nb: 3, farine: "195 g", lait: "90 ml", beurre: "45 g", sucre: "36 g", levureboulangere: "6 g", raisinssecs: "45 g", cassonade: "24 g", cannelle: "2.4 g", oeufs: "¾", miel: "12 ml" },
+      { nb: 4, farine: "260 g", lait: "120 ml", beurre: "60 g", sucre: "48 g", levureboulangere: "8 g", raisinssecs: "60 g", cassonade: "32 g", cannelle: "3.2 g", oeufs: "1", miel: "16 ml" },
+      { nb: 5, farine: "325 g", lait: "150 ml", beurre: "75 g", sucre: "60 g", levureboulangere: "10 g", raisinssecs: "75 g", cassonade: "40 g", cannelle: "4 g", oeufs: "1¼", miel: "20 ml" },
+      { nb: 6, farine: "390 g", lait: "180 ml", beurre: "90 g", sucre: "72 g", levureboulangere: "12 g", raisinssecs: "90 g", cassonade: "48 g", cannelle: "4.8 g", oeufs: "1½", miel: "24 ml" },
+      { nb: 7, farine: "455 g", lait: "210 ml", beurre: "105 g", sucre: "84 g", levureboulangere: "14 g", raisinssecs: "105 g", cassonade: "56 g", cannelle: "5.6 g", oeufs: "1¾", miel: "28 ml" },
+      { nb: 8, farine: "520 g", lait: "240 ml", beurre: "120 g", sucre: "96 g", levureboulangere: "16 g", raisinssecs: "120 g", cassonade: "64 g", cannelle: "6.4 g", oeufs: "2", miel: "32 ml" },
+      { nb: 9, farine: "585 g", lait: "270 ml", beurre: "135 g", sucre: "108 g", levureboulangere: "18 g", raisinssecs: "135 g", cassonade: "72 g", cannelle: "7.2 g", oeufs: "2¼", miel: "36 ml" },
+      { nb: 10, farine: "650 g", lait: "300 ml", beurre: "150 g", sucre: "120 g", levureboulangere: "20 g", raisinssecs: "150 g", cassonade: "80 g", cannelle: "8 g", oeufs: "2½", miel: "40 ml" },
+      { nb: 11, farine: "715 g", lait: "330 ml", beurre: "165 g", sucre: "132 g", levureboulangere: "22 g", raisinssecs: "165 g", cassonade: "88 g", cannelle: "8.8 g", oeufs: "2¾", miel: "44 ml" },
+      { nb: 12, farine: "780 g", lait: "360 ml", beurre: "180 g", sucre: "144 g", levureboulangere: "24 g", raisinssecs: "180 g", cassonade: "96 g", cannelle: "9.6 g", oeufs: "3", miel: "48 ml" },
+      { nb: 13, farine: "845 g", lait: "390 ml", beurre: "195 g", sucre: "156 g", levureboulangere: "26 g", raisinssecs: "195 g", cassonade: "104 g", cannelle: "10.4 g", oeufs: "3¼", miel: "52 ml" },
+      { nb: 14, farine: "910 g", lait: "420 ml", beurre: "210 g", sucre: "168 g", levureboulangere: "28 g", raisinssecs: "210 g", cassonade: "112 g", cannelle: "11.2 g", oeufs: "3½", miel: "56 ml" },
+      { nb: 15, farine: "975 g", lait: "450 ml", beurre: "225 g", sucre: "180 g", levureboulangere: "30 g", raisinssecs: "225 g", cassonade: "120 g", cannelle: "12 g", oeufs: "3¾", miel: "60 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez farine, levure, sucre, lait tiède, œuf et la moitié du beurre en pâte souple ; laissez lever 1 heure.", badge: null },
+      { icone: "📏", titre: "Étaler", detail: "Étalez en grand rectangle.", badge: null },
+      { icone: "🧈", titre: "Garnir", detail: "Beurre mou, cassonade, cannelle et raisins sur toute la surface.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Roulez serré par le grand côté et détaillez en tronçons épais.", badge: null },
+      { icone: "🤝", titre: "Serrer", detail: "Rangez-les côte à côte dans un moule beurré, presque collés : ils se souderont en poussant.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Laissez repousser 30 minutes puis cuisez à 180°C jusqu'à dorure.", badge: null },
+      { icone: "🍯", titre: "Lustrer", detail: "Badigeonnez de miel à la sortie et séparez à la main — flancs moelleux, dessus collant. Les Chelsea buns !", badge: null }
+    ]
+  },
+  gibassier: {
+    dateAjout: "2026-07-27T23:38:00",
+    nom: "Gibassier",
+    cat: "boulangerie", pays: "france",
+    base: 4,
+    temps: "1 h + pousses",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫒",
+    description: "Gibassier — la fougasse sucrée de Provence : une pâte à l'huile d'olive, fleur d'oranger et anis, incisée en feuille et cuite dorée, frottée de sucre à la sortie. Cousin de la pompe à l'huile des 13 desserts de Noël — mais lui se déguste toute l'année, avec le café du matin.",
+    tableauGibassier: [
+      { nb: 1, farine: "60 g", huileolive: "12 ml", sucre: "12 g", fleuroranger: "3 ml", oeufs: "¼", levureboulangere: "2 g", anis: "0.5 g", orange: "" },
+      { nb: 2, farine: "120 g", huileolive: "24 ml", sucre: "24 g", fleuroranger: "6 ml", oeufs: "½", levureboulangere: "4 g", anis: "1 g", orange: "" },
+      { nb: 3, farine: "180 g", huileolive: "36 ml", sucre: "36 g", fleuroranger: "9 ml", oeufs: "¾", levureboulangere: "6 g", anis: "1.5 g", orange: "" },
+      { nb: 4, farine: "240 g", huileolive: "48 ml", sucre: "48 g", fleuroranger: "12 ml", oeufs: "1", levureboulangere: "8 g", anis: "2 g", orange: "" },
+      { nb: 5, farine: "300 g", huileolive: "60 ml", sucre: "60 g", fleuroranger: "15 ml", oeufs: "1¼", levureboulangere: "10 g", anis: "2.5 g", orange: "½" },
+      { nb: 6, farine: "360 g", huileolive: "72 ml", sucre: "72 g", fleuroranger: "18 ml", oeufs: "1½", levureboulangere: "12 g", anis: "3 g", orange: "" },
+      { nb: 7, farine: "420 g", huileolive: "84 ml", sucre: "84 g", fleuroranger: "21 ml", oeufs: "1¾", levureboulangere: "14 g", anis: "3.5 g", orange: "" },
+      { nb: 8, farine: "480 g", huileolive: "96 ml", sucre: "96 g", fleuroranger: "24 ml", oeufs: "2", levureboulangere: "16 g", anis: "4 g", orange: "" },
+      { nb: 9, farine: "540 g", huileolive: "108 ml", sucre: "108 g", fleuroranger: "27 ml", oeufs: "2¼", levureboulangere: "18 g", anis: "4.5 g", orange: "" },
+      { nb: 10, farine: "600 g", huileolive: "120 ml", sucre: "120 g", fleuroranger: "30 ml", oeufs: "2½", levureboulangere: "20 g", anis: "5 g", orange: "1" },
+      { nb: 11, farine: "660 g", huileolive: "132 ml", sucre: "132 g", fleuroranger: "33 ml", oeufs: "2¾", levureboulangere: "22 g", anis: "5.5 g", orange: "1" },
+      { nb: 12, farine: "720 g", huileolive: "144 ml", sucre: "144 g", fleuroranger: "36 ml", oeufs: "3", levureboulangere: "24 g", anis: "6 g", orange: "1" },
+      { nb: 13, farine: "780 g", huileolive: "156 ml", sucre: "156 g", fleuroranger: "39 ml", oeufs: "3¼", levureboulangere: "26 g", anis: "6.5 g", orange: "1" },
+      { nb: 14, farine: "840 g", huileolive: "168 ml", sucre: "168 g", fleuroranger: "42 ml", oeufs: "3½", levureboulangere: "28 g", anis: "7 g", orange: "1" },
+      { nb: 15, farine: "900 g", huileolive: "180 ml", sucre: "180 g", fleuroranger: "45 ml", oeufs: "3¾", levureboulangere: "30 g", anis: "7.5 g", orange: "1½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez farine, levure, sucre, œuf, huile d'olive, fleur d'oranger, zeste d'orange et anis en pâte souple et parfumée.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez lever 1 h 30 — la pâte à l'huile prend son temps.", badge: null },
+      { icone: "🍃", titre: "La feuille", detail: "Étalez en ovale épais et incisez de larges entailles en feuille, en écartant les fentes.", badge: null },
+      { icone: "⏲️", titre: "Repousser", detail: "Laissez détendre 30 minutes.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfournez à 180°C jusqu'à doré clair — il doit rester tendre.", badge: null },
+      { icone: "🫒", titre: "Lustrer", detail: "À la sortie, badigeonnez d'un voile d'huile d'olive.", badge: null },
+      { icone: "✨", titre: "Sucrer", detail: "Frottez-le généreusement de sucre encore tiède. Le gibassier de Provence — avec le café !", badge: null }
+    ]
+  },
 });
