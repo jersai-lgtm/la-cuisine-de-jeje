@@ -83746,5 +83746,345 @@ window.RECETTES_EN = {
     "detail": "Serve cold in lettuce leaves, lemon squeezed on top. Mercimek köftesi!"
    }
   ]
+ },
+ "pastitsada": {
+  "nom": "Pastitsada",
+  "description": "Pastitsada — Corfu's Sunday: beef simmered for hours in a tomato-red wine sauce perfumed with cinnamon and clove (the famous 'spetseriko' mix), served over thick pasta with a snow of cheese. The island's Venetian heritage — the dish you smell from the alley.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Salt the beef in large pieces and sear in olive oil on all sides."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add sliced onions and garlic; soften them in the juices."
+   },
+   {
+    "titre": "The spetseriko",
+    "detail": "Add cinnamon and clove: Corfu's signature perfume rises."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour the red wine, scrape the sucs and reduce by half."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the crushed tomatoes; cover and simmer 2 hours over low heat, until melting meat and thick sauce."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Cook the thick pasta al dente and toss with a ladle of sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate pasta, meat and sauce, cover with grated cheese. Corfu pastitsada!"
+   }
+  ]
+ },
+ "yakiudon": {
+  "nom": "Yaki Udon",
+  "description": "Yaki udon — Japan's comfort stir-fried noodles: thick chewy udon tossed in a wok with pork, cabbage and carrots, lacquered with a soy-mirin sauce that caramelises at the edges. Born in post-war Kitakyushu — the Japanese canteen in 20 minutes flat.",
+  "etapes": [
+   {
+    "titre": "The udon",
+    "detail": "Cook the (thick) udon noodles al dente; drain and lightly oil."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Slice pork, cabbage, carrot and onion into thin strips."
+   },
+   {
+    "titre": "The wok",
+    "detail": "Heat the oil over high heat; sear the pork until coloured."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add cabbage, carrot and onion; stir-fry 3 minutes — crisp inside, charred outside."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Add the udon and toss, lifting."
+   },
+   {
+    "titre": "Lacquer",
+    "detail": "Pour soy sauce and mirin down the hot sides of the wok: the sauce caramelises as it coats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter sesame and serve scorching. Kitakyushu yaki udon!"
+   }
+  ]
+ },
+ "laghman": {
+  "nom": "Laghman",
+  "description": "Laghman — the Silk Road noodles: long hand-pulled noodles covered with a beef stew of peppers, celery and tomatoes lifted by cumin and vinegar. From Uyghur tables to Uzbek chaikhanas — the dish that links Beijing to Samarkand.",
+  "etapes": [
+   {
+    "titre": "The beef",
+    "detail": "Slice the beef thin; sear over high heat in the oil."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add onion, garlic and cumin; fry until fragrant."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add bias-cut pepper and celery; stir-fry 3 minutes."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the crushed tomatoes and a glass of water; simmer 15 minutes into a short stew."
+   },
+   {
+    "titre": "Lift",
+    "detail": "Chilli, vinegar, salt: the sauce must be ample, fragrant, faintly sharp."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the long (hand-pulled if you dare!) noodles and drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Noodles in the bowl, stew on top, coriander. Silk Road laghman!"
+   }
+  ]
+ },
+ "hainanchickenrice": {
+  "nom": "Hainanese Chicken Rice",
+  "description": "Hainanese chicken rice — Singapore's national dish: ginger-poached chicken of unreal tenderness, rice cooked in the chicken's rich broth, fresh cucumber and a ginger-soy sauce. So simple in looks, so perfect in balance — the ultimate hawker-centre test.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Slip the chicken into barely simmering water with half the ginger and the onion; poach at the gentlest simmer 30 minutes."
+   },
+   {
+    "titre": "The shock",
+    "detail": "Plunge 5 minutes into iced water: the skin firms, the flesh stays silky. Keep ALL the broth."
+   },
+   {
+    "titre": "The rich rice",
+    "detail": "Fry the rice with chopped garlic and ginger in a little chicken fat skimmed from the broth."
+   },
+   {
+    "titre": "Cook in broth",
+    "detail": "Add broth (1.5 volumes) and cook covered: the rice drinks all the perfume."
+   },
+   {
+    "titre": "The cucumber",
+    "detail": "Slice the cucumber thin."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix soy sauce, grated ginger and a spoon of hot broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice the chicken, plate on the rice with cucumber and sauce, a bowl of broth alongside. Singapore chicken rice!"
+   }
+  ]
+ },
+ "kimchibokkeumbap": {
+  "nom": "Kimchi Bokkeumbap",
+  "description": "Kimchi bokkeumbap — kimchi fried rice, Korea's favourite anti-waste dish: day-old rice stir-fried with well-aged kimchi and its juice, pork, and the essential fried egg on top, yolk runny. The older the kimchi, the better — the magic of Korean leftovers.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Use COOLED cooked rice (yesterday's is perfect): it separates grain by grain."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Cut the kimchi into pieces (keep its juice!) and slice pork and onion."
+   },
+   {
+    "titre": "The pork",
+    "detail": "Sear the pork in good hot oil; add the onion."
+   },
+   {
+    "titre": "The kimchi",
+    "detail": "Add the kimchi and its juice; stir-fry 2 minutes — it lightly caramelises."
+   },
+   {
+    "titre": "Fry the rice",
+    "detail": "Add the cold rice, crushing the clumps; soy sauce down the wok's sides, toss over high heat."
+   },
+   {
+    "titre": "The egg",
+    "detail": "In a separate pan, fry an egg, yolk properly runny."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the rice, set the egg on top, sesame. Burst the yolk and stir — bokkeumbap!"
+   }
+  ]
+ },
+ "bigolinsalsa": {
+  "nom": "Bigoli in Salsa",
+  "description": "Bigoli in salsa — the lean dish turned cult in Venice: thick rustic spaghetti in a 'salsa' of onions melted very slowly with anchovies until they become a blond umami cream. Two ingredients, one patience — the dish of Venetian Fridays and bacari.",
+  "etapes": [
+   {
+    "titre": "The onions",
+    "detail": "Slice the onions VERY thin (mandoline ideal)."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Melt them over very low heat in the oil with a splash of water, 20 minutes, WITHOUT colouring: transparent, then creamy."
+   },
+   {
+    "titre": "The anchovies",
+    "detail": "Add the anchovies and crush with a fork: they dissolve into the onions."
+   },
+   {
+    "titre": "The salsa",
+    "detail": "Carry on 5 minutes: the salsa becomes a blond cream — loosen with pasta water if needed."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Cook the bigoli (or thick spaghetti) al dente; keep a ladle of water."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Toss the pasta in the salsa with a little cooking water until glossily coated."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Generous pepper, parsley, NO cheese (that's the rule). Venice's bigoli in salsa!"
+   }
+  ]
+ },
+ "picialaglione": {
+  "nom": "Pici all'Aglione",
+  "description": "Pici all'aglione — the hand-rolled thick spaghetti of the Val di Chiana, in a tomato sauce with 'aglione', the giant Tuscan garlic gentle as a secret: the garlic melts into the oil without bite, the tomato wraps it. Tuscan grandmothers' Sunday — mighty and tender at once.",
+  "etapes": [
+   {
+    "titre": "The aglione",
+    "detail": "Peel the garlic cloves, remove the germ and crush flat."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Melt them over VERY low heat in the oil 8 minutes without colouring — the garlic must turn to cream, never bitter."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Add a hint of chilli to the fragrant oil."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomatoes, salt, and mash the garlic into the sauce; simmer 15 minutes."
+   },
+   {
+    "titre": "The pici",
+    "detail": "Cook the pici (or thick spaghetti) al dente; keep a ladle of water."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Toss the pasta in the sauce with a little cooking water until thickly coated."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Torn basil and a stream of raw oil. Val di Chiana pici all'aglione!"
+   }
+  ]
+ },
+ "kedgeree": {
+  "nom": "Kedgeree",
+  "description": "Kedgeree — the curried rice of the Victorian breakfast: smoked haddock flaked into golden curry-buttered rice, soft-boiled egg quarters, parsley and lemon. Brought back from India by the Empire — served at the breakfast of great English houses, divine at dinner too.",
+  "etapes": [
+   {
+    "titre": "The haddock",
+    "detail": "Poach the haddock 8 minutes in simmering water (or milk); keep the liquid and flake."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Soft-boil the eggs (7 minutes), refresh and peel."
+   },
+   {
+    "titre": "The base",
+    "detail": "Melt the onion in the butter, add the curry: 1 fragrant minute."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice, coat it, then pour the poaching liquid; cook covered."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Gently fold flaked haddock and cream into the golden rice."
+   },
+   {
+    "titre": "Wake up",
+    "detail": "Lemon juice, chopped parsley, pepper — barely adjust the salt (the haddock brings it)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with egg quarters, yolks soft. Kedgeree — England out of India!"
+   }
+  ]
+ },
+ "dirtyrice": {
+  "nom": "Dirty Rice",
+  "description": "Dirty rice — Louisiana's 'dirtied' rice: the Cajun holy trinity (onion-celery-pepper) fried with finely crumbled sausage and beef, spices and rice — the brown sucs 'dirty' every grain, and that is exactly the point. Baton Rouge soul food, generous and devilishly fragrant.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the rice and let it cool slightly (loose grains)."
+   },
+   {
+    "titre": "The meats",
+    "detail": "Fry crumbled sausage and minced beef over high heat to brown crusts — the sucs make the 'dirty'."
+   },
+   {
+    "titre": "The trinity",
+    "detail": "Add chopped onion, celery and pepper: the Cajun holy trinity melts into the sucs."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Garlic, paprika, cayenne: 1 fragrant minute."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Half a glass of water (or stock), scraping the brown bottom well."
+   },
+   {
+    "titre": "Dirty the rice",
+    "detail": "Add the rice and toss: every grain takes on the brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped parsley and a grind of pepper. Louisiana dirty rice — let the jazz play!"
+   }
+  ]
+ },
+ "galinhada": {
+  "nom": "Galinhada",
+  "description": "Galinhada — Brazil's golden chicken rice: chicken pieces browned then simmered IN the rice with turmeric and saffron, tomatoes and peas, until everything turns gold. The family-lunch dish of Minas Gerais and Goiás — one pot, one table, zero fuss.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Salt the chicken pieces and brown in the oil on all sides; set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "In the same pot, soften onion and garlic in the juices."
+   },
+   {
+    "titre": "The gold",
+    "detail": "Add turmeric and saffron; stir 30 seconds — the pot turns golden."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the rice and coat it in the spices, then the crushed tomatoes."
+   },
+   {
+    "titre": "Simmer together",
+    "detail": "Set the chicken ON the rice, add hot water (1.5 volumes), cover and cook 20 minutes over low heat."
+   },
+   {
+    "titre": "The peas",
+    "detail": "Add the peas 5 minutes from the end, without stirring the bottom."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped parsley, and the pot at the centre of the table. Brazilian galinhada!"
+   }
+  ]
  }
 };
