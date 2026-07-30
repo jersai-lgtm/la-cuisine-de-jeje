@@ -88846,5 +88846,345 @@ window.RECETTES_EN = {
     "detail": "1 hour chilled minimum, then serve with grilled meats and bread. Serbian urnebes — delicious chaos!"
    }
   ]
+ },
+ "empanadagallega": {
+  "nom": "Empanada Gallega",
+  "description": "Empanada gallega — Galicia's big flat pie, nothing like the little turnovers: a thin olive-oil dough filled with a sofrito of slow-cooked onions and peppers with tuna (or cod). Cut into squares, warm or cold — it travels everywhere, from romerías to picnics.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, salt, a third of the oil and warm water into a supple dough; rise 45 minutes."
+   },
+   {
+    "titre": "THE SOFRITO",
+    "detail": "Melt onions and peppers VERY slowly in the remaining oil — 25 minutes, until confit and sweet. All the flavour is there."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Add the paprika off the heat, then the tomatoes; reduce until no water remains."
+   },
+   {
+    "titre": "The tuna",
+    "detail": "Fold in the drained flaked tuna; let it COOL completely (a hot filling would sog the pastry)."
+   },
+   {
+    "titre": "Line",
+    "detail": "Halve the dough and roll it VERY thin; line a flat tin with the first sheet."
+   },
+   {
+    "titre": "Close",
+    "detail": "Spread the filling, cover with the second sheet and seal the edges by rolling them; make a chimney at the centre."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash and bake 40 minutes at 190°C. Cut into squares, warm or cold. Empanada gallega!"
+   }
+  ]
+ },
+ "scotchpie": {
+  "nom": "Scotch Pie",
+  "description": "Scotch pie — the pie of Scottish football grounds: a HOT water crust moulded by hand into a small cylinder, filled with nutmeg-spiced lamb, with a raised rim to hold gravy or mash. Sold by the million in the stands on Saturday afternoons.",
+  "etapes": [
+   {
+    "titre": "THE HOT DOUGH",
+    "detail": "Boil the lard with half a glass of water and pour it SCORCHING over the salted flour; mix quickly with a spoon."
+   },
+   {
+    "titre": "Work it warm",
+    "detail": "Knead as soon as it can be handled: this dough is worked HOT, it hardens as it cools."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Keep a third for the lids; mould the rest around a floured glass into cylinders, with a rim standing 1 cm PROUD."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill the cases 30 minutes: they harden and hold their own shape."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced lamb with very fine onion, breadcrumbs, nutmeg, plenty of pepper and salt; add 2 spoons of water (the filling must stay juicy)."
+   },
+   {
+    "titre": "Close",
+    "detail": "Fill three quarters full, set the lids BELOW the rim and seal; pierce a hole at the centre."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash and bake 45 minutes at 190°C. The rim fills with gravy or mash. Saturday scotch pie!"
+   }
+  ]
+ },
+ "coulibiac": {
+  "nom": "Coulibiac",
+  "description": "Coulibiac — the grand Russian pie of imperial tables: salmon, rice, mushrooms and hard-boiled eggs layered in clean strata inside golden puff pastry. Escoffier brought it into French cuisine. At the cut, the layers appear — that is the whole show.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the rice, drain and cool completely — EVERY layer must be cold."
+   },
+   {
+    "titre": "The duxelles",
+    "detail": "Chop the mushrooms very fine and dry them out in butter with the shallot, until not a drop remains."
+   },
+   {
+    "titre": "The salmon",
+    "detail": "Cut the salmon into thick pieces; salt, pepper, lemon and scatter with dill."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Hard-boil the eggs and slice into rounds."
+   },
+   {
+    "titre": "THE LAYERS",
+    "detail": "On one pastry sheet: rice, duxelles, salmon, egg slices, then rice again — well packed, in a neat rectangle."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Cover with the second sheet, seal, turn seam-down and decorate with trimmings; make TWO chimneys."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash, rest 20 minutes chilled, then 45 minutes at 190°C. Rest before slicing. Imperial coulibiac!"
+   }
+  ]
+ },
+ "steakandale": {
+  "nom": "Steak and Ale Pie",
+  "description": "Steak and ale pie — the English pub pie: beef simmered for three hours in dark ale into a dark syrupy gravy, sealed under a puff pastry lid. The absolute rule: the filling must be COLD before it is covered, or the pastry collapses.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Salt the beef cubes, flour them and brown in butter in small batches — otherwise it boils instead of colouring."
+   },
+   {
+    "titre": "The base",
+    "detail": "Fry onion and carrot in the sucs, then the mushrooms."
+   },
+   {
+    "titre": "The ale",
+    "detail": "Deglaze with the dark ale, scraping well, add thyme, bay and mustard."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 2½ hours over very low heat: the meat shreds and the gravy coats."
+   },
+   {
+    "titre": "COOL",
+    "detail": "Pour the filling into the dish and let it cool COMPLETELY — the non-negotiable rule."
+   },
+   {
+    "titre": "The lid",
+    "detail": "Lay the puff pastry over the dish, seal the edges, decorate and pierce a chimney."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash and bake 30 minutes at 200°C, until the lid is puffed and golden brown. Pub steak and ale pie!"
+   }
+  ]
+ },
+ "tortapasqualina": {
+  "nom": "Torta Pasqualina",
+  "description": "Torta pasqualina — the Genoese Easter pie: spinach and ricotta sealed between ultra-thin pastry sheets (33 in the historic version, one per year of Christ's life), with WHOLE EGGS nested inside. At the cut, every slice reveals a perfectly round yolk.",
+  "etapes": [
+   {
+    "titre": "The spinach",
+    "detail": "Wilt the spinach with the onion, then SQUEEZE it thoroughly and chop."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix spinach, ricotta, parmesan, one beaten egg, nutmeg, marjoram, salt and pepper."
+   },
+   {
+    "titre": "The sheets",
+    "detail": "Layer 4 to 5 pastry sheets in a round tin, brushing EACH one with oil and letting them overhang."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the filling and smooth it."
+   },
+   {
+    "titre": "THE NESTS",
+    "detail": "Hollow even wells in the filling with the back of a spoon and crack a WHOLE egg into each; salt the yolks."
+   },
+   {
+    "titre": "Close",
+    "detail": "Cover with 4 to 5 oiled sheets, roll the overhanging edges into a rim and brush the top with oil."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 180°C to crisp golden. Cool slightly and cut into wedges: each has its yolk. Torta pasqualina!"
+   }
+  ]
+ },
+ "zwiebelkuchen": {
+  "nom": "Zwiebelkuchen",
+  "description": "Zwiebelkuchen — the German harvest onion tart: a mountain of onions melted with cream and caraway on a yeasted base, with bacon. Eaten warm with new wine (Federweisser) in September — tradition says they belong together, and tradition is right.",
+  "etapes": [
+   {
+    "titre": "The yeasted dough",
+    "detail": "Knead flour, yeast, warm milk, soft butter and salt; rise 1 hour (this is a bread dough, not a shortcrust)."
+   },
+   {
+    "titre": "THE MOUNTAIN",
+    "detail": "Slice the onions thinly — you need MANY, they halve in volume."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Fry the bacon, then add the onions and let them melt 20 minutes covered, without colouring."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the mixture cool — hot, it would cook the eggs in the custard."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Mix cream, eggs, caraway, nutmeg, salt and pepper, then fold in the oniony bacon."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll the yeasted dough into a tin, bringing it up the sides; pour in the filling."
+   },
+   {
+    "titre": "Bake",
+    "detail": "40 minutes at 190°C until the top is set and golden. Warm, with a glass of white wine. Harvest Zwiebelkuchen!"
+   }
+  ]
+ },
+ "patelorrain": {
+  "nom": "Pâté Lorrain",
+  "description": "Pâté lorrain — the charcutier's pastry from Nancy: pork and veal marinated overnight in white wine and shallot, sealed in a rectangle of puff pastry and baked until it puffs. Eaten warm, cut into thick slices, with a salad — that is all it asks for.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut pork and veal into small DICE with a knife — never minced, the texture makes all the difference."
+   },
+   {
+    "titre": "THE MARINADE",
+    "detail": "Mix the meat with white wine, chopped shallot, garlic, parsley, thyme, salt and plenty of pepper; leave OVERNIGHT in the fridge."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Next day, drain the meat carefully — excess liquid would sog the pastry."
+   },
+   {
+    "titre": "The base",
+    "detail": "Roll out the puff pastry and cut two rectangles, the second slightly larger."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay the meat in a log at the centre of the first rectangle, leaving a 2 cm margin."
+   },
+   {
+    "titre": "Close",
+    "detail": "Cover with the second rectangle, seal the edges with egg and press with a fork; pierce two chimneys."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash, score the top with a knife tip and bake 40 minutes at 190°C. Warm, with a salad. Pâté lorrain!"
+   }
+  ]
+ },
+ "tourtemilanaise": {
+  "nom": "Tourte Milanaise",
+  "description": "Tourte milanaise — the cake-pie of the cold buffet: alternating layers of thin omelettes, spinach, ham and roasted peppers, stacked inside brioche or pastry, then PRESSED overnight. At the cut you would think it a layer cake — except it is savoury, and spectacular.",
+  "etapes": [
+   {
+    "titre": "The peppers",
+    "detail": "Roast the peppers until the skin blackens, peel and cut into wide strips; pat dry."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Wilt with garlic, SQUEEZE thoroughly, add nutmeg."
+   },
+   {
+    "titre": "The omelettes",
+    "detail": "Cook 2 or 3 VERY thin flat omelettes the size of your tin; cool them flat."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line a springform tin with pastry, bringing it up the sides."
+   },
+   {
+    "titre": "STACK",
+    "detail": "Alternate the layers, pressing well each time: omelette, spinach, ham, peppers, cheese, omelette… to the top."
+   },
+   {
+    "titre": "Close",
+    "detail": "Seal with the remaining pastry, egg-wash and pierce a chimney; bake 45 minutes at 180°C."
+   },
+   {
+    "titre": "PRESS",
+    "detail": "Cool then set a weight on top OVERNIGHT in the fridge. Turn out and cut into wedges — the layer-cake effect!"
+   }
+  ]
+ },
+ "sausageroll": {
+  "nom": "Sausage Rolls",
+  "description": "Sausage rolls — the British pastry par excellence: sausage meat scented with sage and mustard, rolled in puff pastry and cut into lengths. Sold in every London bakery, devoured hot at the eleven o'clock break — the best snack in the UK.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Mix the sausage meat with VERY finely grated onion, breadcrumbs, mustard, sage and plenty of pepper."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Rest the filling 15 minutes in the fridge: cold, it rolls far better."
+   },
+   {
+    "titre": "The pastry",
+    "detail": "Roll out the puff pastry and cut it into two long strips."
+   },
+   {
+    "titre": "The log",
+    "detail": "Lay the filling in an even log along each strip, slightly off-centre."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Brush the edge with egg and roll the pastry over; seal with a fork, seam UNDERNEATH."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut into 5 cm lengths and slash the tops 2 or 3 times (the steam must escape)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash, sprinkle with sesame and bake 25 minutes at 200°C. Hot, with ketchup. Sausage rolls!"
+   }
+  ]
+ },
+ "tourtepoireaux": {
+  "nom": "Leek Pie",
+  "description": "Tourte aux poireaux — the pie of the north and winter evenings: leeks melted in butter, bound with cream and eggs, sealed between two sheets of shortcrust. Rustic, comforting, cheap — the pie you made when the garden was all you had.",
+  "etapes": [
+   {
+    "titre": "The leeks",
+    "detail": "Split the leeks lengthwise into quarters and wash under plenty of water — grit hides deep in the leaves."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut into thin rounds, white AND tender green."
+   },
+   {
+    "titre": "MELT",
+    "detail": "Melt them in butter, covered, 20 minutes over low heat, WITHOUT colouring: they must turn creamy."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Fry the bacon separately and add to the leeks; let it COOL."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Mix cream, eggs, nutmeg, salt and pepper, then fold in the warm leeks."
+   },
+   {
+    "titre": "Build",
+    "detail": "Line a tin with the first sheet, fill, cover with the second and seal; pierce a chimney."
+   },
+   {
+    "titre": "Bake",
+    "detail": "40 minutes at 190°C to golden. Rest 10 minutes before cutting. Leek pie!"
+   }
+  ]
  }
 };

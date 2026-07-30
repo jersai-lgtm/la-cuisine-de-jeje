@@ -6967,4 +6967,41 @@ Object.assign(recettes, {
       { icone: "♨️", titre: "Cuire", detail: "40 minutes à 190°C jusqu'à doré profond. Laissez reposer 10 minutes et coupez en parts. La zeljanica bosnienne !", badge: null }
     ]
   },
+  sausageroll: {
+    dateAjout: "2026-07-28T23:08:00",
+    nom: "Sausage Rolls",
+    cat: "encas", pays: "angleterre",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🌭",
+    description: "Sausage rolls — le friand britannique par excellence : de la chair à saucisse parfumée à la sauge et à la moutarde, roulée dans du feuilleté et coupée en tronçons. Vendus dans toutes les boulangeries de Londres, dévorés chauds à la pause de 11 heures — le meilleur snack du Royaume-Uni.",
+    tableauSausageroll: [
+      { nb: 1, saucisse: "150 g", pateFeuilletee: "110 g", oignon: "30 g", chapelure: "15 g", moutarde: "8 g", sauge: "1 g", oeufs: "¼", poivre: "1 g", sesame: "2 g" },
+      { nb: 2, saucisse: "300 g", pateFeuilletee: "220 g", oignon: "60 g", chapelure: "30 g", moutarde: "16 g", sauge: "2 g", oeufs: "½", poivre: "2 g", sesame: "4 g" },
+      { nb: 3, saucisse: "450 g", pateFeuilletee: "330 g", oignon: "90 g", chapelure: "45 g", moutarde: "24 g", sauge: "3 g", oeufs: "¾", poivre: "3 g", sesame: "6 g" },
+      { nb: 4, saucisse: "600 g", pateFeuilletee: "440 g", oignon: "120 g", chapelure: "60 g", moutarde: "32 g", sauge: "4 g", oeufs: "1", poivre: "4 g", sesame: "8 g" },
+      { nb: 5, saucisse: "750 g", pateFeuilletee: "550 g", oignon: "150 g", chapelure: "75 g", moutarde: "40 g", sauge: "5 g", oeufs: "1¼", poivre: "5 g", sesame: "10 g" },
+      { nb: 6, saucisse: "900 g", pateFeuilletee: "660 g", oignon: "180 g", chapelure: "90 g", moutarde: "48 g", sauge: "6 g", oeufs: "1½", poivre: "6 g", sesame: "12 g" },
+      { nb: 7, saucisse: "1050 g", pateFeuilletee: "770 g", oignon: "210 g", chapelure: "105 g", moutarde: "56 g", sauge: "7 g", oeufs: "1¾", poivre: "7 g", sesame: "14 g" },
+      { nb: 8, saucisse: "1200 g", pateFeuilletee: "880 g", oignon: "240 g", chapelure: "120 g", moutarde: "64 g", sauge: "8 g", oeufs: "2", poivre: "8 g", sesame: "16 g" },
+      { nb: 9, saucisse: "1350 g", pateFeuilletee: "990 g", oignon: "270 g", chapelure: "135 g", moutarde: "72 g", sauge: "9 g", oeufs: "2¼", poivre: "9 g", sesame: "18 g" },
+      { nb: 10, saucisse: "1500 g", pateFeuilletee: "1100 g", oignon: "300 g", chapelure: "150 g", moutarde: "80 g", sauge: "10 g", oeufs: "2½", poivre: "10 g", sesame: "20 g" },
+      { nb: 11, saucisse: "1650 g", pateFeuilletee: "1210 g", oignon: "330 g", chapelure: "165 g", moutarde: "88 g", sauge: "11 g", oeufs: "2¾", poivre: "11 g", sesame: "22 g" },
+      { nb: 12, saucisse: "1800 g", pateFeuilletee: "1320 g", oignon: "360 g", chapelure: "180 g", moutarde: "96 g", sauge: "12 g", oeufs: "3", poivre: "12 g", sesame: "24 g" },
+      { nb: 13, saucisse: "1950 g", pateFeuilletee: "1430 g", oignon: "390 g", chapelure: "195 g", moutarde: "104 g", sauge: "13 g", oeufs: "3¼", poivre: "13 g", sesame: "26 g" },
+      { nb: 14, saucisse: "2100 g", pateFeuilletee: "1540 g", oignon: "420 g", chapelure: "210 g", moutarde: "112 g", sauge: "14 g", oeufs: "3½", poivre: "14 g", sesame: "28 g" },
+      { nb: 15, saucisse: "2250 g", pateFeuilletee: "1650 g", oignon: "450 g", chapelure: "225 g", moutarde: "120 g", sauge: "15 g", oeufs: "3¾", poivre: "15 g", sesame: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌭", titre: "La farce", detail: "Mélangez la chair à saucisse avec l'oignon TRÈS finement râpé, la chapelure, la moutarde, la sauge et beaucoup de poivre.", badge: null },
+      { icone: "🧊", titre: "Refroidir", detail: "Laissez la farce 15 minutes au frais : froide, elle se roule bien mieux.", badge: null },
+      { icone: "📏", titre: "La pâte", detail: "Étalez la pâte feuilletée et coupez-la en deux bandes dans la longueur.", badge: null },
+      { icone: "🐍", titre: "Le boudin", detail: "Déposez la farce en boudin régulier le long de chaque bande, légèrement décentré.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Badigeonnez le bord d'œuf et roulez la pâte par-dessus ; soudez à la fourchette, soudure EN DESSOUS.", badge: null },
+      { icone: "✂️", titre: "Détailler", detail: "Coupez en tronçons de 5 cm et incisez le dessus de 2 ou 3 traits (la vapeur doit s'échapper).", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Dorez à l'œuf, parsemez de sésame et enfournez 25 minutes à 200°C. Chauds, avec du ketchup. Les sausage rolls !", badge: null }
+    ]
+  },
 });
