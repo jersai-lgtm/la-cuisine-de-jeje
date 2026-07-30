@@ -45224,4 +45224,41 @@ Object.assign(recettes, {
       { icone: "♨️", titre: "Gratiner", detail: "Couvrez de gruyère râpé et enfournez 25 minutes à 200°C, jusqu'aux cloques dorées. Le gratin de mamie !", badge: null }
     ]
   },
+  brisket: {
+    dateAjout: "2026-07-28T11:07:00",
+    nom: "Brisket Fumé",
+    cat: "plats", pays: "usa",
+    base: 4,
+    temps: "8 h + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🔥",
+    description: "Brisket — le monument du barbecue texan : une poitrine de bœuf frottée de sel et poivre grossier, fumée 8 heures à basse température jusqu'à former une « bark » noire et un anneau de fumée rose. Pas de sauce, pas de marinade : du sel, du poivre, du bois et beaucoup de patience.",
+    tableauBrisket: [
+      { nb: 1, boeuf: "250 g", poivre: "6 g", sel: "6 g", paprika: "2 g", ail: "1", moutarde: "5 g" },
+      { nb: 2, boeuf: "500 g", poivre: "12 g", sel: "12 g", paprika: "4 g", ail: "2", moutarde: "10 g" },
+      { nb: 3, boeuf: "750 g", poivre: "18 g", sel: "18 g", paprika: "6 g", ail: "3", moutarde: "15 g" },
+      { nb: 4, boeuf: "1000 g", poivre: "24 g", sel: "24 g", paprika: "8 g", ail: "4", moutarde: "20 g" },
+      { nb: 5, boeuf: "1250 g", poivre: "30 g", sel: "30 g", paprika: "10 g", ail: "5", moutarde: "25 g" },
+      { nb: 6, boeuf: "1500 g", poivre: "36 g", sel: "36 g", paprika: "12 g", ail: "6", moutarde: "30 g" },
+      { nb: 7, boeuf: "1750 g", poivre: "42 g", sel: "42 g", paprika: "14 g", ail: "7", moutarde: "35 g" },
+      { nb: 8, boeuf: "2000 g", poivre: "48 g", sel: "48 g", paprika: "16 g", ail: "8", moutarde: "40 g" },
+      { nb: 9, boeuf: "2250 g", poivre: "54 g", sel: "54 g", paprika: "18 g", ail: "9", moutarde: "45 g" },
+      { nb: 10, boeuf: "2500 g", poivre: "60 g", sel: "60 g", paprika: "20 g", ail: "10", moutarde: "50 g" },
+      { nb: 11, boeuf: "2750 g", poivre: "66 g", sel: "66 g", paprika: "22 g", ail: "11", moutarde: "55 g" },
+      { nb: 12, boeuf: "3000 g", poivre: "72 g", sel: "72 g", paprika: "24 g", ail: "12", moutarde: "60 g" },
+      { nb: 13, boeuf: "3250 g", poivre: "78 g", sel: "78 g", paprika: "26 g", ail: "13", moutarde: "65 g" },
+      { nb: 14, boeuf: "3500 g", poivre: "84 g", sel: "84 g", paprika: "28 g", ail: "14", moutarde: "70 g" },
+      { nb: 15, boeuf: "3750 g", poivre: "90 g", sel: "90 g", paprika: "30 g", ail: "15", moutarde: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Parer", detail: "Parez la poitrine en laissant une couche de gras d'un demi-centimètre : elle arrosera la viande pendant 8 heures.", badge: null },
+      { icone: "🌶️", titre: "Le rub", detail: "Mélangez sel et poivre GROSSIÈREMENT concassés à parts égales, plus le paprika et l'ail en poudre — c'est le rub texan, rien d'autre.", badge: null },
+      { icone: "🖌️", titre: "Enrober", detail: "Badigeonnez d'un voile de moutarde (le liant, on ne la goûtera pas) et couvrez généreusement du rub ; laissez 1 heure à température ambiante.", badge: null },
+      { icone: "💨", titre: "Fumer bas", detail: "Fumez à 110°C, gras vers le haut : comptez 6 heures jusqu'à ce que la bark soit bien noire.", badge: null },
+      { icone: "📉", titre: "Le palier", detail: "Vers 70°C à cœur, la température STAGNE (le « stall ») pendant des heures — c'est normal, ne montez pas le feu.", badge: null },
+      { icone: "🎁", titre: "Le Texas crutch", detail: "Emballez serré dans du papier boucher et poursuivez jusqu'à 95°C à cœur : la sonde doit entrer comme dans du beurre.", badge: null },
+      { icone: "⏳", titre: "Le repos", detail: "Laissez reposer 1 HEURE emballé avant de trancher DANS le sens contraire des fibres. Le brisket texan !", badge: null }
+    ]
+  },
 });

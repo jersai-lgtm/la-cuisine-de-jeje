@@ -3339,4 +3339,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Sur feuilles de laitue, en sandwich ou sur pomme de terre au four, amandes dessus. Le coronation chicken !", badge: null }
     ]
   },
+  macaronisalad: {
+    dateAjout: "2026-07-28T11:09:00",
+    nom: "Salade de Macaronis",
+    cat: "salades", pays: "usa",
+    base: 4,
+    temps: "25 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Macaroni salad — l'incontournable des barbecues américains : des coudes de pâtes bien cuits (oui, bien cuits !) enrobés d'une mayonnaise vinaigrée avec céleri, oignon et œuf dur. À côté du brisket, elle rafraîchit tout — et elle est TOUJOURS meilleure le lendemain, sortie du frigo.",
+    tableauMacaronisalad: [
+      { nb: 1, pates: "80 g", mayonnaise: "35 g", celeri: "30 g", oignon: "20 g", oeufs: "½", moutarde: "6 g", vinaigre: "8 ml", sucre: "3 g", persil: "1 g", poivre: "0.5 g" },
+      { nb: 2, pates: "160 g", mayonnaise: "70 g", celeri: "60 g", oignon: "40 g", oeufs: "1", moutarde: "12 g", vinaigre: "16 ml", sucre: "6 g", persil: "2 g", poivre: "1 g" },
+      { nb: 3, pates: "240 g", mayonnaise: "105 g", celeri: "90 g", oignon: "60 g", oeufs: "1½", moutarde: "18 g", vinaigre: "24 ml", sucre: "9 g", persil: "3 g", poivre: "1.5 g" },
+      { nb: 4, pates: "320 g", mayonnaise: "140 g", celeri: "120 g", oignon: "80 g", oeufs: "2", moutarde: "24 g", vinaigre: "32 ml", sucre: "12 g", persil: "4 g", poivre: "2 g" },
+      { nb: 5, pates: "400 g", mayonnaise: "175 g", celeri: "150 g", oignon: "100 g", oeufs: "2½", moutarde: "30 g", vinaigre: "40 ml", sucre: "15 g", persil: "5 g", poivre: "2.5 g" },
+      { nb: 6, pates: "480 g", mayonnaise: "210 g", celeri: "180 g", oignon: "120 g", oeufs: "3", moutarde: "36 g", vinaigre: "48 ml", sucre: "18 g", persil: "6 g", poivre: "3 g" },
+      { nb: 7, pates: "560 g", mayonnaise: "245 g", celeri: "210 g", oignon: "140 g", oeufs: "3½", moutarde: "42 g", vinaigre: "56 ml", sucre: "21 g", persil: "7 g", poivre: "3.5 g" },
+      { nb: 8, pates: "640 g", mayonnaise: "280 g", celeri: "240 g", oignon: "160 g", oeufs: "4", moutarde: "48 g", vinaigre: "64 ml", sucre: "24 g", persil: "8 g", poivre: "4 g" },
+      { nb: 9, pates: "720 g", mayonnaise: "315 g", celeri: "270 g", oignon: "180 g", oeufs: "4½", moutarde: "54 g", vinaigre: "72 ml", sucre: "27 g", persil: "9 g", poivre: "4.5 g" },
+      { nb: 10, pates: "800 g", mayonnaise: "350 g", celeri: "300 g", oignon: "200 g", oeufs: "5", moutarde: "60 g", vinaigre: "80 ml", sucre: "30 g", persil: "10 g", poivre: "5 g" },
+      { nb: 11, pates: "880 g", mayonnaise: "385 g", celeri: "330 g", oignon: "220 g", oeufs: "5½", moutarde: "66 g", vinaigre: "88 ml", sucre: "33 g", persil: "11 g", poivre: "5.5 g" },
+      { nb: 12, pates: "960 g", mayonnaise: "420 g", celeri: "360 g", oignon: "240 g", oeufs: "6", moutarde: "72 g", vinaigre: "96 ml", sucre: "36 g", persil: "12 g", poivre: "6 g" },
+      { nb: 13, pates: "1040 g", mayonnaise: "455 g", celeri: "390 g", oignon: "260 g", oeufs: "6½", moutarde: "78 g", vinaigre: "104 ml", sucre: "39 g", persil: "13 g", poivre: "6.5 g" },
+      { nb: 14, pates: "1120 g", mayonnaise: "490 g", celeri: "420 g", oignon: "280 g", oeufs: "7", moutarde: "84 g", vinaigre: "112 ml", sucre: "42 g", persil: "14 g", poivre: "7 g" },
+      { nb: 15, pates: "1200 g", mayonnaise: "525 g", celeri: "450 g", oignon: "300 g", oeufs: "7½", moutarde: "90 g", vinaigre: "120 ml", sucre: "45 g", persil: "15 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Les pâtes", detail: "Cuisez les coudes 2 minutes DE PLUS que le temps indiqué — une salade de macaronis al dente n'existe pas.", badge: null },
+      { icone: "💧", titre: "Rincer", detail: "Rincez-les à l'eau froide et égouttez-les parfaitement.", badge: null },
+      { icone: "🫗", titre: "Le premier assaisonnement", detail: "Arrosez les pâtes encore tièdes de vinaigre : elles l'absorbent, c'est le secret du goût.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Cuisez les œufs durs, écalez-les et coupez-les en petits morceaux.", badge: null },
+      { icone: "🔪", titre: "Le croquant", detail: "Émincez très finement céleri et oignon — ils apportent le crunch.", badge: null },
+      { icone: "🥣", titre: "La sauce", detail: "Mélangez mayonnaise, moutarde, sucre et poivre ; incorporez-la aux pâtes avec les légumes et l'œuf.", badge: null },
+      { icone: "🧊", titre: "Reposer", detail: "3 heures au frais MINIMUM (une nuit, c'est mieux) : la sauce s'assagit et enrobe. La macaroni salad du BBQ !", badge: null }
+    ]
+  },
 });

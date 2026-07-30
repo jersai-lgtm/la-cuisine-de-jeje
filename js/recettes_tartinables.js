@@ -1125,4 +1125,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Tartinez sur du pain grillé — ou passez sous le gril pour gratiner. Le fromage fort lyonnais !", badge: null }
     ]
   },
+  rillettesporc: {
+    dateAjout: "2026-07-28T11:00:00",
+    nom: "Rillettes de Porc",
+    cat: "tartinables", pays: "france",
+    base: 4,
+    temps: "4 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥓",
+    description: "Rillettes de porc — la patience en pot : de l'épaule confite 4 heures dans sa propre graisse avec thym et laurier, puis effilochée à la fourchette et tassée sous une couche de gras. Du Mans à Tours, chaque ville défend les siennes — sur du pain de campagne, avec un cornichon, c'est tout.",
+    tableauRillettesporc: [
+      { nb: 1, porc: "180 g", saindoux: "20 g", thym: "0.5 g", laurier: "0.3 g", ail: "½", vinblanc: "20 ml", sel: "3 g", poivre: "1 g" },
+      { nb: 2, porc: "360 g", saindoux: "40 g", thym: "1 g", laurier: "0.6 g", ail: "1", vinblanc: "40 ml", sel: "6 g", poivre: "2 g" },
+      { nb: 3, porc: "540 g", saindoux: "60 g", thym: "1.5 g", laurier: "0.9 g", ail: "1½", vinblanc: "60 ml", sel: "9 g", poivre: "3 g" },
+      { nb: 4, porc: "720 g", saindoux: "80 g", thym: "2 g", laurier: "1.2 g", ail: "2", vinblanc: "80 ml", sel: "12 g", poivre: "4 g" },
+      { nb: 5, porc: "900 g", saindoux: "100 g", thym: "2.5 g", laurier: "1.5 g", ail: "2½", vinblanc: "100 ml", sel: "15 g", poivre: "5 g" },
+      { nb: 6, porc: "1080 g", saindoux: "120 g", thym: "3 g", laurier: "1.8 g", ail: "3", vinblanc: "120 ml", sel: "18 g", poivre: "6 g" },
+      { nb: 7, porc: "1260 g", saindoux: "140 g", thym: "3.5 g", laurier: "2.1 g", ail: "3½", vinblanc: "140 ml", sel: "21 g", poivre: "7 g" },
+      { nb: 8, porc: "1440 g", saindoux: "160 g", thym: "4 g", laurier: "2.4 g", ail: "4", vinblanc: "160 ml", sel: "24 g", poivre: "8 g" },
+      { nb: 9, porc: "1620 g", saindoux: "180 g", thym: "4.5 g", laurier: "2.7 g", ail: "4½", vinblanc: "180 ml", sel: "27 g", poivre: "9 g" },
+      { nb: 10, porc: "1800 g", saindoux: "200 g", thym: "5 g", laurier: "3 g", ail: "5", vinblanc: "200 ml", sel: "30 g", poivre: "10 g" },
+      { nb: 11, porc: "1980 g", saindoux: "220 g", thym: "5.5 g", laurier: "3.3 g", ail: "5½", vinblanc: "220 ml", sel: "33 g", poivre: "11 g" },
+      { nb: 12, porc: "2160 g", saindoux: "240 g", thym: "6 g", laurier: "3.6 g", ail: "6", vinblanc: "240 ml", sel: "36 g", poivre: "12 g" },
+      { nb: 13, porc: "2340 g", saindoux: "260 g", thym: "6.5 g", laurier: "3.9 g", ail: "6½", vinblanc: "260 ml", sel: "39 g", poivre: "13 g" },
+      { nb: 14, porc: "2520 g", saindoux: "280 g", thym: "7 g", laurier: "4.2 g", ail: "7", vinblanc: "280 ml", sel: "42 g", poivre: "14 g" },
+      { nb: 15, porc: "2700 g", saindoux: "300 g", thym: "7.5 g", laurier: "4.5 g", ail: "7½", vinblanc: "300 ml", sel: "45 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "La viande", detail: "Coupez l'épaule (et un peu de poitrine grasse) en gros cubes ; salez-les généreusement.", badge: null },
+      { icone: "🥘", titre: "Démarrer", detail: "Placez-les dans une cocotte avec le saindoux, l'ail, thym, laurier et le vin blanc.", badge: null },
+      { icone: "⏳", titre: "Confire", detail: "Couvrez et laissez confire 3 h 30 à feu TRÈS doux (ou 140°C au four) : la viande ne doit jamais frire, juste fondre.", badge: null },
+      { icone: "🍴", titre: "Effilocher", detail: "Retirez les herbes, égouttez la viande en gardant la graisse, et effilochez-la à DEUX fourchettes — jamais au mixeur.", badge: null },
+      { icone: "🥣", titre: "Lier", detail: "Remettez un tiers de la graisse tiède dans la viande et mélangez : la texture doit rester filandreuse.", badge: null },
+      { icone: "🫙", titre: "Mettre en pot", detail: "Tassez dans des pots et couvrez d'une fine couche de graisse fondue — c'est elle qui conserve.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "48 h de frais minimum, puis sortez-les 20 minutes avant. Pain de campagne, cornichons. Les vraies rillettes !", badge: null }
+    ]
+  },
 });

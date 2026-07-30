@@ -86806,5 +86806,345 @@ window.RECETTES_EN = {
     "detail": "Cover with grated gruyère and bake 25 minutes at 200°C, to golden blisters. Grandma's gratin!"
    }
   ]
+ },
+ "rillettesporc": {
+  "nom": "Pork Rillettes",
+  "description": "Pork rillettes — patience in a jar: shoulder confited for 4 hours in its own fat with thyme and bay, then shredded with a fork and packed under a layer of fat. From Le Mans to Tours, every town defends its own — on country bread, with a cornichon, that's all.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the shoulder (and some fatty belly) into large cubes; salt generously."
+   },
+   {
+    "titre": "Start",
+    "detail": "Place in a pot with the lard, garlic, thyme, bay and white wine."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Cover and confit 3½ hours over VERY low heat (or 140°C in the oven): the meat must never fry, only melt."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Remove the herbs, drain the meat keeping the fat, and shred with TWO forks — never a blender."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Return a third of the warm fat to the meat and mix: the texture must stay stringy."
+   },
+   {
+    "titre": "Pot",
+    "detail": "Pack into jars and cover with a thin layer of melted fat — that is what preserves them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "48 hours chilled minimum, then take out 20 minutes ahead. Country bread, cornichons. Real rillettes!"
+   }
+  ]
+ },
+ "jambonpersille": {
+  "nom": "Jambon Persillé",
+  "description": "Jambon persillé — the Burgundian Easter terrine: chunks of ham set in an Aligoté white-wine jelly, overrun with chopped parsley. Cut into thick slices, the green and pink form a mosaic — Burgundy's spring on a plate.",
+  "etapes": [
+   {
+    "titre": "The ham",
+    "detail": "Cut the (cooked, bone-in) ham into large irregular pieces — never neat dice."
+   },
+   {
+    "titre": "The stock",
+    "detail": "Simmer white wine, shallot, bay and a glass of water 20 minutes; strain and salt lightly (the ham is already salty)."
+   },
+   {
+    "titre": "The parsley",
+    "detail": "Chop the parsley VERY finely with the garlic — it must be vivid green and abundant."
+   },
+   {
+    "titre": "The jelly",
+    "detail": "Soften the gelatine in cold water, squeeze and dissolve in the hot stock; add the vinegar."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Mix ham and parsley, then pour in the warm jellied stock: the parsley must stay suspended."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pack into a terrine and set 12 hours in the fridge, with a light weight on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Turn out and cut thick slices: the green-pink mosaic appears. Burgundy's jambon persillé!"
+   }
+  ]
+ },
+ "giardiniera": {
+  "nom": "Giardiniera",
+  "description": "Giardiniera — Italy's 'garden' in a jar: cauliflower, carrots, celery and peppers blanched then marinated in vinegar and olive oil with oregano and chilli. On the antipasti, in an Italian-American sandwich or with a fork in front of the fridge — the condiment that wakes everything up.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Break the cauliflower into small florets, slice carrots, cut celery into lengths, pepper into strips."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Toss with the salt in a bowl and drain 4 hours (or overnight): they will stay CRUNCHY."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse thoroughly in cold water and pat dry."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch 2 minutes in simmering vinegar, then drain — no longer, or goodbye crunch."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pack the vegetables into a jar with sliced garlic, oregano and chilli."
+   },
+   {
+    "titre": "Cover with oil",
+    "detail": "Cover completely with olive oil: no vegetable may poke out."
+   },
+   {
+    "titre": "Wait",
+    "detail": "48 hours in the fridge before opening. On antipasti or in a sandwich. Giardiniera!"
+   }
+  ]
+ },
+ "gremolata": {
+  "nom": "Gremolata",
+  "description": "Gremolata — the Milanese condiment in three ingredients: lemon zest, garlic and parsley chopped together, thrown RAW over a braise just before serving. Nothing is cooked, everything is bright — it is what keeps osso buco from being heavy. The smallest recipe with the biggest effect.",
+  "etapes": [
+   {
+    "titre": "The zest",
+    "detail": "Zest the lemons FINELY, never touching the white pith (it turns everything bitter)."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Peel and degerm the garlic — the germ is aggressive raw."
+   },
+   {
+    "titre": "The parsley",
+    "detail": "Wash and dry the flat parsley PERFECTLY: moisture makes the knife slip and bruise."
+   },
+   {
+    "titre": "Chop together",
+    "detail": "Chop all three together on the board with a knife — never separately, never in a blender."
+   },
+   {
+    "titre": "The test",
+    "detail": "The heap must smell of lemon before garlic: adjust the zest if needed."
+   },
+   {
+    "titre": "At the last moment",
+    "detail": "Make it 10 minutes before serving at most: it oxidises and loses its brightness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A generous shower over osso buco, roast fish or braised vegetables. Milanese gremolata!"
+   }
+  ]
+ },
+ "achards": {
+  "nom": "Vegetable Achards",
+  "description": "Achards de légumes — Réunion's crunchy condiment: carrots, cabbage and green beans cut into fine julienne, flashed in turmeric-gilded oil with ginger and chilli. Neither cooked nor raw — just softened, golden yellow, bright. On a rougail, a cari or a sandwich, it makes everything better.",
+  "etapes": [
+   {
+    "titre": "The julienne",
+    "detail": "Cut carrots, cabbage and green beans into VERY fine julienne — the fineness is everything."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Salt and let drain 1 hour, then squeeze hard and pat dry."
+   },
+   {
+    "titre": "The golden oil",
+    "detail": "Heat the oil with the turmeric, grated ginger and garlic: it turns golden yellow and fragrant."
+   },
+   {
+    "titre": "Flash",
+    "detail": "Throw the vegetables into the scorching oil and toss barely 2 minutes — they must stay CRUNCHY."
+   },
+   {
+    "titre": "Lift",
+    "detail": "Add the chilli and the raw sliced onion off the heat."
+   },
+   {
+    "titre": "The vinegar",
+    "detail": "Pour in the vinegar and mix: it locks the colour and the freshness."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cool and rest 4 hours before serving. Achards péi — on everything, all the time!"
+   }
+  ]
+ },
+ "chutneymangue": {
+  "nom": "Mango Chutney",
+  "description": "Mango chutney — India's spiced jam: mango cubes simmered with sugar, vinegar, ginger and a handful of whole spices until amber and syrupy. Sweet, sharp, hot, all at once — essential beside a curry, a revelation on cheese.",
+  "etapes": [
+   {
+    "titre": "The mango",
+    "detail": "Peel still-FIRM mangoes (not too ripe) and cut into even cubes."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Bring vinegar, brown sugar and salt to a simmer until fully dissolved."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add grated ginger, garlic, cumin, cinnamon and chilli."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the mango and raisins; simmer 40 minutes uncovered, stirring occasionally."
+   },
+   {
+    "titre": "The test",
+    "detail": "The spoon should leave a furrow for a moment: it is ready (it thickens further as it cools)."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour scorching into a scalded jar and seal at once."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Wait 3 days — then with a curry, cheese or cold ham. Mango chutney!"
+   }
+  ]
+ },
+ "sambaloelek": {
+  "nom": "Sambal Oelek",
+  "description": "Sambal oelek — Indonesian fire in its purest form: fresh red chillies pounded in a mortar (oelek = to pound) with salt and a dash of lime, barely cooked to lock the colour. No garlic, no sugar, nothing to hide behind — the base of all Indonesian cooking.",
+  "etapes": [
+   {
+    "titre": "The chillies",
+    "detail": "Stem the fresh red chillies; keep the seeds for fire, remove them for a milder sambal."
+   },
+   {
+    "titre": "Protection",
+    "detail": "Wear gloves — really. Chilli juice stays on your fingers for hours."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Blanch 3 minutes in simmering water: the colour locks and the harshness drops."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound in a mortar with the salt into a coarse paste — a mortar crushes the fibres, a blender cuts them (not the same thing)."
+   },
+   {
+    "titre": "Cook in oil",
+    "detail": "Fry the paste 5 minutes in hot oil: it darkens and loses its raw edge."
+   },
+   {
+    "titre": "Lock",
+    "detail": "Off the heat, add the vinegar and lime juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In a pot, a spoon beside every dish. Sambal oelek — the base of everything!"
+   }
+  ]
+ },
+ "brisket": {
+  "nom": "Smoked Brisket",
+  "description": "Brisket — the monument of Texas barbecue: a beef breast rubbed with coarse salt and pepper, smoked for 8 hours at low temperature until it forms a black 'bark' and a pink smoke ring. No sauce, no marinade: salt, pepper, wood and a great deal of patience.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Trim the brisket leaving a half-centimetre fat cap: it will baste the meat for 8 hours."
+   },
+   {
+    "titre": "The rub",
+    "detail": "Mix COARSELY cracked salt and pepper in equal parts, plus paprika and garlic powder — that is the Texas rub, nothing else."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Brush with a veil of mustard (a binder, you won't taste it) and coat generously with the rub; rest 1 hour at room temperature."
+   },
+   {
+    "titre": "Smoke low",
+    "detail": "Smoke at 110°C, fat side up: count 6 hours until the bark is properly black."
+   },
+   {
+    "titre": "The stall",
+    "detail": "Around 70°C internal, the temperature STALLS for hours — this is normal, do not raise the heat."
+   },
+   {
+    "titre": "The Texas crutch",
+    "detail": "Wrap tightly in butcher paper and continue to 95°C internal: the probe must slide in like butter."
+   },
+   {
+    "titre": "The rest",
+    "detail": "Rest 1 HOUR wrapped before slicing AGAINST the grain. Texas brisket!"
+   }
+  ]
+ },
+ "hushpuppies": {
+  "nom": "Hush Puppies",
+  "description": "Hush puppies — the corn fritters of the American South: a batter of cornmeal and onion dropped by the spoonful into hot oil where it puffs into golden balls. Legend says fishermen threw them to the dogs to quiet them — 'hush, puppy!'. Served with fried fish, always.",
+  "etapes": [
+   {
+    "titre": "The dry mix",
+    "detail": "Combine cornmeal, flour, baking powder, sugar and salt."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Grate or chop the onion VERY finely — in chunks it would burn in the fryer."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Add egg, milk and onion; mix just enough — a thick batter that holds on the spoon."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest 10 minutes: the cornmeal drinks the milk and the batter thickens further."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat the oil to 180°C — too cool and the fritters drink the fat."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop spoonfuls into the oil: they puff and almost turn themselves; 3 minutes to golden brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain, salt and serve SCORCHING with fried fish or pulled pork. Hush, puppy!"
+   }
+  ]
+ },
+ "macaronisalad": {
+  "nom": "Macaroni Salad",
+  "description": "Macaroni salad — the American barbecue essential: well-cooked elbow pasta (yes, well cooked!) coated in vinegared mayonnaise with celery, onion and hard-boiled egg. Next to the brisket it refreshes everything — and it is ALWAYS better the next day, straight from the fridge.",
+  "etapes": [
+   {
+    "titre": "The pasta",
+    "detail": "Cook the elbows 2 minutes LONGER than stated — an al dente macaroni salad does not exist."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse in cold water and drain perfectly."
+   },
+   {
+    "titre": "The first seasoning",
+    "detail": "Douse the still-warm pasta with vinegar: it soaks it up, the secret of the flavour."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Hard-boil the eggs, peel and chop small."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Very finely slice celery and onion — they bring the crunch."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mix mayonnaise, mustard, sugar and pepper; fold into the pasta with the vegetables and egg."
+   },
+   {
+    "titre": "Rest",
+    "detail": "3 hours chilled MINIMUM (overnight is better): the dressing settles and coats. BBQ macaroni salad!"
+   }
+  ]
  }
 };

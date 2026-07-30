@@ -3975,4 +3975,41 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Frais, sur pain ou chips, avec une bière fraîche. Les boquerones des bars d'Espagne !", badge: null }
     ]
   },
+  giardiniera: {
+    dateAjout: "2026-07-28T11:02:00",
+    nom: "Giardiniera",
+    cat: "aperitifs", pays: "italie",
+    base: 4,
+    temps: "30 min + 48 h",
+    niveau: "⭐ Facile",
+    emoji: "🫙",
+    description: "Giardiniera — le « jardin » en bocal italien : chou-fleur, carottes, céleri et poivrons blanchis puis marinés dans vinaigre et huile d'olive avec origan et piment. Sur l'antipasti, dans un sandwich italo-américain ou à la fourchette devant le frigo — le condiment qui réveille tout.",
+    tableauGiardiniera: [
+      { nb: 1, choufleur: "90 g", carotte: "50 g", celeri: "40 g", poivron: "40 g", vinaigreBlanc: "60 ml", huileolive: "25 ml", origan: "1 g", piment: "0.5 g", ail: "1", sel: "6 g" },
+      { nb: 2, choufleur: "180 g", carotte: "100 g", celeri: "80 g", poivron: "80 g", vinaigreBlanc: "120 ml", huileolive: "50 ml", origan: "2 g", piment: "1 g", ail: "2", sel: "12 g" },
+      { nb: 3, choufleur: "270 g", carotte: "150 g", celeri: "120 g", poivron: "120 g", vinaigreBlanc: "180 ml", huileolive: "75 ml", origan: "3 g", piment: "1.5 g", ail: "3", sel: "18 g" },
+      { nb: 4, choufleur: "360 g", carotte: "200 g", celeri: "160 g", poivron: "160 g", vinaigreBlanc: "240 ml", huileolive: "100 ml", origan: "4 g", piment: "2 g", ail: "4", sel: "24 g" },
+      { nb: 5, choufleur: "450 g", carotte: "250 g", celeri: "200 g", poivron: "200 g", vinaigreBlanc: "300 ml", huileolive: "125 ml", origan: "5 g", piment: "2.5 g", ail: "5", sel: "30 g" },
+      { nb: 6, choufleur: "540 g", carotte: "300 g", celeri: "240 g", poivron: "240 g", vinaigreBlanc: "360 ml", huileolive: "150 ml", origan: "6 g", piment: "3 g", ail: "6", sel: "36 g" },
+      { nb: 7, choufleur: "630 g", carotte: "350 g", celeri: "280 g", poivron: "280 g", vinaigreBlanc: "420 ml", huileolive: "175 ml", origan: "7 g", piment: "3.5 g", ail: "7", sel: "42 g" },
+      { nb: 8, choufleur: "720 g", carotte: "400 g", celeri: "320 g", poivron: "320 g", vinaigreBlanc: "480 ml", huileolive: "200 ml", origan: "8 g", piment: "4 g", ail: "8", sel: "48 g" },
+      { nb: 9, choufleur: "810 g", carotte: "450 g", celeri: "360 g", poivron: "360 g", vinaigreBlanc: "540 ml", huileolive: "225 ml", origan: "9 g", piment: "4.5 g", ail: "9", sel: "54 g" },
+      { nb: 10, choufleur: "900 g", carotte: "500 g", celeri: "400 g", poivron: "400 g", vinaigreBlanc: "600 ml", huileolive: "250 ml", origan: "10 g", piment: "5 g", ail: "10", sel: "60 g" },
+      { nb: 11, choufleur: "990 g", carotte: "550 g", celeri: "440 g", poivron: "440 g", vinaigreBlanc: "660 ml", huileolive: "275 ml", origan: "11 g", piment: "5.5 g", ail: "11", sel: "66 g" },
+      { nb: 12, choufleur: "1080 g", carotte: "600 g", celeri: "480 g", poivron: "480 g", vinaigreBlanc: "720 ml", huileolive: "300 ml", origan: "12 g", piment: "6 g", ail: "12", sel: "72 g" },
+      { nb: 13, choufleur: "1170 g", carotte: "650 g", celeri: "520 g", poivron: "520 g", vinaigreBlanc: "780 ml", huileolive: "325 ml", origan: "13 g", piment: "6.5 g", ail: "13", sel: "78 g" },
+      { nb: 14, choufleur: "1260 g", carotte: "700 g", celeri: "560 g", poivron: "560 g", vinaigreBlanc: "840 ml", huileolive: "350 ml", origan: "14 g", piment: "7 g", ail: "14", sel: "84 g" },
+      { nb: 15, choufleur: "1350 g", carotte: "750 g", celeri: "600 g", poivron: "600 g", vinaigreBlanc: "900 ml", huileolive: "375 ml", origan: "15 g", piment: "7.5 g", ail: "15", sel: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Tailler", detail: "Détaillez chou-fleur en petits bouquets, carottes en rondelles, céleri en tronçons, poivron en lanières.", badge: null },
+      { icone: "🧂", titre: "Saler", detail: "Mélangez-les avec le sel dans un saladier et laissez dégorger 4 heures (ou une nuit) : ils resteront CROQUANTS.", badge: null },
+      { icone: "💧", titre: "Rincer", detail: "Rincez abondamment à l'eau froide et épongez soigneusement.", badge: null },
+      { icone: "♨️", titre: "Blanchir", detail: "Blanchissez 2 minutes dans le vinaigre porté à frémissement, puis égouttez — pas plus, sinon adieu le croquant.", badge: null },
+      { icone: "🫙", titre: "En bocal", detail: "Rangez les légumes en bocal avec ail émincé, origan et piment.", badge: null },
+      { icone: "🫒", titre: "Couvrir d'huile", detail: "Couvrez entièrement d'huile d'olive : plus un légume ne doit dépasser.", badge: null },
+      { icone: "🍽️", titre: "Patienter", detail: "48 heures au frais avant d'ouvrir. Sur l'antipasti ou dans un sandwich. La giardiniera !", badge: null }
+    ]
+  },
 });

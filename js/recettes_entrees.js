@@ -3848,4 +3848,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Tel quel, ou sous jambon et fromage. Le pa amb tomàquet catalan !", badge: null }
     ]
   },
+  jambonpersille: {
+    dateAjout: "2026-07-28T11:01:00",
+    nom: "Jambon Persillé",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "3 h + prise",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "💚",
+    description: "Jambon persillé — la terrine de Pâques bourguignonne : des morceaux de jambon pris dans une gelée au vin blanc d'Aligoté, envahie de persil haché. Coupé en tranches épaisses, le vert et le rose forment une mosaïque — c'est le printemps de Bourgogne dans une assiette.",
+    tableauJambonpersille: [
+      { nb: 1, jambon: "160 g", vinblanc: "60 ml", persil: "12 g", gelatine: "4 g", echalote: "20 g", ail: "½", vinaigre: "5 ml", laurier: "0.2 g", poivre: "1 g" },
+      { nb: 2, jambon: "320 g", vinblanc: "120 ml", persil: "24 g", gelatine: "8 g", echalote: "40 g", ail: "1", vinaigre: "10 ml", laurier: "0.4 g", poivre: "2 g" },
+      { nb: 3, jambon: "480 g", vinblanc: "180 ml", persil: "36 g", gelatine: "12 g", echalote: "60 g", ail: "1½", vinaigre: "15 ml", laurier: "0.6 g", poivre: "3 g" },
+      { nb: 4, jambon: "640 g", vinblanc: "240 ml", persil: "48 g", gelatine: "16 g", echalote: "80 g", ail: "2", vinaigre: "20 ml", laurier: "0.8 g", poivre: "4 g" },
+      { nb: 5, jambon: "800 g", vinblanc: "300 ml", persil: "60 g", gelatine: "20 g", echalote: "100 g", ail: "2½", vinaigre: "25 ml", laurier: "1 g", poivre: "5 g" },
+      { nb: 6, jambon: "960 g", vinblanc: "360 ml", persil: "72 g", gelatine: "24 g", echalote: "120 g", ail: "3", vinaigre: "30 ml", laurier: "1.2 g", poivre: "6 g" },
+      { nb: 7, jambon: "1120 g", vinblanc: "420 ml", persil: "84 g", gelatine: "28 g", echalote: "140 g", ail: "3½", vinaigre: "35 ml", laurier: "1.4 g", poivre: "7 g" },
+      { nb: 8, jambon: "1280 g", vinblanc: "480 ml", persil: "96 g", gelatine: "32 g", echalote: "160 g", ail: "4", vinaigre: "40 ml", laurier: "1.6 g", poivre: "8 g" },
+      { nb: 9, jambon: "1440 g", vinblanc: "540 ml", persil: "108 g", gelatine: "36 g", echalote: "180 g", ail: "4½", vinaigre: "45 ml", laurier: "1.8 g", poivre: "9 g" },
+      { nb: 10, jambon: "1600 g", vinblanc: "600 ml", persil: "120 g", gelatine: "40 g", echalote: "200 g", ail: "5", vinaigre: "50 ml", laurier: "2 g", poivre: "10 g" },
+      { nb: 11, jambon: "1760 g", vinblanc: "660 ml", persil: "132 g", gelatine: "44 g", echalote: "220 g", ail: "5½", vinaigre: "55 ml", laurier: "2.2 g", poivre: "11 g" },
+      { nb: 12, jambon: "1920 g", vinblanc: "720 ml", persil: "144 g", gelatine: "48 g", echalote: "240 g", ail: "6", vinaigre: "60 ml", laurier: "2.4 g", poivre: "12 g" },
+      { nb: 13, jambon: "2080 g", vinblanc: "780 ml", persil: "156 g", gelatine: "52 g", echalote: "260 g", ail: "6½", vinaigre: "65 ml", laurier: "2.6 g", poivre: "13 g" },
+      { nb: 14, jambon: "2240 g", vinblanc: "840 ml", persil: "168 g", gelatine: "56 g", echalote: "280 g", ail: "7", vinaigre: "70 ml", laurier: "2.8 g", poivre: "14 g" },
+      { nb: 15, jambon: "2400 g", vinblanc: "900 ml", persil: "180 g", gelatine: "60 g", echalote: "300 g", ail: "7½", vinaigre: "75 ml", laurier: "3 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍖", titre: "Le jambon", detail: "Coupez le jambon (à l'os, cuit) en gros morceaux irréguliers — jamais en dés réguliers.", badge: null },
+      { icone: "🍷", titre: "Le bouillon", detail: "Faites frémir vin blanc, échalote, laurier et un verre d'eau 20 minutes ; filtrez et salez peu (le jambon sale déjà).", badge: null },
+      { icone: "🌿", titre: "Le persil", detail: "Hachez le persil TRÈS finement avec l'ail — il doit être vert vif et abondant.", badge: null },
+      { icone: "🧊", titre: "La gelée", detail: "Faites ramollir la gélatine à l'eau froide, essorez-la et dissolvez-la dans le bouillon chaud ; ajoutez le vinaigre.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Mélangez jambon et persil, puis versez le bouillon gélifié tiède : le persil doit rester en suspension.", badge: null },
+      { icone: "🏗️", titre: "Mouler", detail: "Tassez dans une terrine et laissez prendre 12 heures au frais, avec un poids léger dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Démoulez et coupez des tranches épaisses : la mosaïque vert-rose apparaît. Le jambon persillé de Bourgogne !", badge: null }
+    ]
+  },
 });

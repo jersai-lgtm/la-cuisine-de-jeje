@@ -6745,4 +6745,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Brûlantes, avec du yaourt battu et de la coriandre. L'aloo tikki de Delhi !", badge: null }
     ]
   },
+  hushpuppies: {
+    dateAjout: "2026-07-28T11:08:00",
+    nom: "Hush Puppies",
+    cat: "encas", pays: "usa",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🌽",
+    description: "Hush puppies — les beignets de maïs du Sud américain : une pâte de farine de maïs et d'oignon, jetée à la cuillère dans l'huile chaude où elle gonfle en boules dorées. La légende dit que les pêcheurs en jetaient aux chiens pour les faire taire — « hush, puppy ! ». Servis avec le poisson frit, toujours.",
+    tableauHushpuppies: [
+      { nb: 1, farinemais: "60 g", farine: "25 g", oignon: "35 g", oeufs: "½", lait: "45 ml", levurechimique: "3 g", sucre: "4 g", huileolive: "15 ml", sel: "1.5 g" },
+      { nb: 2, farinemais: "120 g", farine: "50 g", oignon: "70 g", oeufs: "1", lait: "90 ml", levurechimique: "6 g", sucre: "8 g", huileolive: "30 ml", sel: "3 g" },
+      { nb: 3, farinemais: "180 g", farine: "75 g", oignon: "105 g", oeufs: "1½", lait: "135 ml", levurechimique: "9 g", sucre: "12 g", huileolive: "45 ml", sel: "4.5 g" },
+      { nb: 4, farinemais: "240 g", farine: "100 g", oignon: "140 g", oeufs: "2", lait: "180 ml", levurechimique: "12 g", sucre: "16 g", huileolive: "60 ml", sel: "6 g" },
+      { nb: 5, farinemais: "300 g", farine: "125 g", oignon: "175 g", oeufs: "2½", lait: "225 ml", levurechimique: "15 g", sucre: "20 g", huileolive: "75 ml", sel: "7.5 g" },
+      { nb: 6, farinemais: "360 g", farine: "150 g", oignon: "210 g", oeufs: "3", lait: "270 ml", levurechimique: "18 g", sucre: "24 g", huileolive: "90 ml", sel: "9 g" },
+      { nb: 7, farinemais: "420 g", farine: "175 g", oignon: "245 g", oeufs: "3½", lait: "315 ml", levurechimique: "21 g", sucre: "28 g", huileolive: "105 ml", sel: "10.5 g" },
+      { nb: 8, farinemais: "480 g", farine: "200 g", oignon: "280 g", oeufs: "4", lait: "360 ml", levurechimique: "24 g", sucre: "32 g", huileolive: "120 ml", sel: "12 g" },
+      { nb: 9, farinemais: "540 g", farine: "225 g", oignon: "315 g", oeufs: "4½", lait: "405 ml", levurechimique: "27 g", sucre: "36 g", huileolive: "135 ml", sel: "13.5 g" },
+      { nb: 10, farinemais: "600 g", farine: "250 g", oignon: "350 g", oeufs: "5", lait: "450 ml", levurechimique: "30 g", sucre: "40 g", huileolive: "150 ml", sel: "15 g" },
+      { nb: 11, farinemais: "660 g", farine: "275 g", oignon: "385 g", oeufs: "5½", lait: "495 ml", levurechimique: "33 g", sucre: "44 g", huileolive: "165 ml", sel: "16.5 g" },
+      { nb: 12, farinemais: "720 g", farine: "300 g", oignon: "420 g", oeufs: "6", lait: "540 ml", levurechimique: "36 g", sucre: "48 g", huileolive: "180 ml", sel: "18 g" },
+      { nb: 13, farinemais: "780 g", farine: "325 g", oignon: "455 g", oeufs: "6½", lait: "585 ml", levurechimique: "39 g", sucre: "52 g", huileolive: "195 ml", sel: "19.5 g" },
+      { nb: 14, farinemais: "840 g", farine: "350 g", oignon: "490 g", oeufs: "7", lait: "630 ml", levurechimique: "42 g", sucre: "56 g", huileolive: "210 ml", sel: "21 g" },
+      { nb: 15, farinemais: "900 g", farine: "375 g", oignon: "525 g", oeufs: "7½", lait: "675 ml", levurechimique: "45 g", sucre: "60 g", huileolive: "225 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌽", titre: "Les secs", detail: "Mélangez farine de maïs, farine, levure, sucre et sel.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Râpez ou hachez TRÈS finement l'oignon — en morceaux, il brûlerait dans la friture.", badge: null },
+      { icone: "🥛", titre: "La pâte", detail: "Ajoutez œuf, lait et oignon ; mélangez juste ce qu'il faut — une pâte épaisse qui tient à la cuillère.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer 10 minutes : la farine de maïs boit le lait et la pâte s'épaissit encore.", badge: null },
+      { icone: "🔥", titre: "L'huile", detail: "Chauffez l'huile à 180°C — trop froide, les beignets boivent le gras.", badge: null },
+      { icone: "🥄", titre: "Frire", detail: "Déposez des cuillerées dans l'huile : elles gonflent et se retournent presque seules ; 3 minutes jusqu'à brun doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez, salez et servez BRÛLANTS avec du poisson frit ou du pulled pork. Hush, puppy !", badge: null }
+    ]
+  },
 });
