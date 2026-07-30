@@ -87146,5 +87146,345 @@ window.RECETTES_EN = {
     "detail": "3 hours chilled MINIMUM (overnight is better): the dressing settles and coats. BBQ macaroni salad!"
    }
   ]
+ },
+ "adjika": {
+  "nom": "Adjika",
+  "description": "Adjika — Georgia's red paste: chillies, peppers, garlic and walnuts pounded with coriander and blue fenugreek, without a drop of water. Every Abkhazian family has its secret recipe — it goes into soups, on grills, into bread. Powerful, fragrant, never brutal.",
+  "etapes": [
+   {
+    "titre": "The chillies",
+    "detail": "Stem the red chillies and peppers; remove some seeds depending on the heat you want."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Air-dry them 2 hours on a cloth: adjika cannot take water, it is a PASTE, not a sauce."
+   },
+   {
+    "titre": "The walnuts",
+    "detail": "Lightly toast the walnuts — they bring body and roundness."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound or chop chillies, peppers, garlic, walnuts and coriander together into a thick paste."
+   },
+   {
+    "titre": "The fenugreek",
+    "detail": "Work in the fenugreek (blue, if you can find it) and the salt — the aroma becomes inimitable."
+   },
+   {
+    "titre": "The vinegar",
+    "detail": "Add the vinegar: it preserves and locks the scarlet colour."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Pack into a jar and mature 3 days in the fridge before using. Georgian adjika!"
+   }
+  ]
+ },
+ "pestorosso": {
+  "nom": "Pesto Rosso",
+  "description": "Pesto rosso — Sicily's red pesto: sun-dried tomatoes, almonds, garlic and basil pounded with olive oil and just enough pecorino. Softer and rounder than its Genovese cousin — on pasta, bruschetta or fish, it brings the southern sun in one spoonful.",
+  "etapes": [
+   {
+    "titre": "The tomatoes",
+    "detail": "If your sun-dried tomatoes are very dry, rehydrate 10 minutes in warm water then squeeze."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Dry-toast the almonds until fragrant — that is what gives the depth."
+   },
+   {
+    "titre": "The start",
+    "detail": "Pound (or pulse) garlic, almonds and chilli into a coarse powder."
+   },
+   {
+    "titre": "Tomatoes & basil",
+    "detail": "Add sun-dried tomatoes and basil; work into a thick but still textured paste."
+   },
+   {
+    "titre": "Work in the oil",
+    "detail": "Stream in the olive oil, mixing: the pesto turns glossy and supple."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Fold in the grated cheese BY HAND, out of the blender (it would heat and turn pasty)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "On pasta loosened with a little cooking water, or on toasted bread. Pesto rosso!"
+   }
+  ]
+ },
+ "ajiverde": {
+  "nom": "Ají Verde",
+  "description": "Ají verde — the green sauce of Peruvian rotisserie chicken: coriander, green chilli, garlic and fresh cheese blended into a neon-green cream with a squeeze of lime. On every table in Lima's pollerías — on the chicken, the fries, the rice… and you always want more.",
+  "etapes": [
+   {
+    "titre": "The coriander",
+    "detail": "Use the WHOLE coriander, stems included: they have more flavour than the leaves."
+   },
+   {
+    "titre": "The chillies",
+    "detail": "Deseed the green chillies to control the heat (true ají amarillo is mild and fruity)."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Degerm the garlic — raw, the germ turns aggressive in a cold sauce."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend coriander, chillies, garlic and lime into a smooth, very green purée."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add fresh cheese and mayonnaise; blend again — the sauce turns creamy and bright pale green."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Motor running, stream in the oil: the texture becomes coating."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Salt, taste, and serve with grilled chicken, fries or vegetables. Ají verde from the pollerías!"
+   }
+  ]
+ },
+ "xosauce": {
+  "nom": "XO Sauce",
+  "description": "XO sauce — Hong Kong's luxury in a jar, created in the 1980s at the Peninsula: dried shrimp, ham and shallots slowly fried in oil until crisp and extremely umami. The name comes from XO cognac — no alcohol inside, just the prestige. One spoonful is enough.",
+  "etapes": [
+   {
+    "titre": "The shrimp",
+    "detail": "Rehydrate the dried shrimp 30 minutes in warm water, drain and chop finely."
+   },
+   {
+    "titre": "The ham",
+    "detail": "Chop the (cured or smoked, jinhua-style) ham very fine — it brings the salty backbone."
+   },
+   {
+    "titre": "The shallots",
+    "detail": "Slice shallots and garlic as finely as possible: this sauce is a matter of patience."
+   },
+   {
+    "titre": "Fry gently",
+    "detail": "Fry shallots and garlic over LOW heat in the oil, 15 minutes, to pale gold — if they burn, everything is bitter."
+   },
+   {
+    "titre": "The proteins",
+    "detail": "Add shrimp, ham and chilli; continue 20 minutes over low heat, stirring."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add soy sauce and sugar; 5 more minutes: everything turns dark and crisp."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour into a jar, the oil must cover. A spoonful on rice, noodles or steamed fish. XO sauce!"
+   }
+  ]
+ },
+ "tahinisauce": {
+  "nom": "Tahini Sauce",
+  "description": "Tahini sauce (tarator) — the white sauce of the Levant: sesame paste loosened with ICED water and lemon, whitening and lightening under the whisk. The secret everyone misses: tahini thickens before it loosens — you must persist. On falafel, shawarma, roasted vegetables.",
+  "etapes": [
+   {
+    "titre": "The tahini",
+    "detail": "Stir the tahini jar right to the bottom: the oil always rises to the top."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Crush the garlic with the salt into a fine paste — never in pieces in a smooth sauce."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Mix tahini, garlic and lemon juice: the paste will SEIZE and harden. That is normal, carry on."
+   },
+   {
+    "titre": "The iced water",
+    "detail": "Add iced water spoon by spoon while whisking: the sauce suddenly whitens and turns creamy."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Continue to the texture you want — coating for falafel, looser for drizzling."
+   },
+   {
+    "titre": "Perfume",
+    "detail": "Add the cumin and chopped parsley; adjust salt and lemon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A stream of olive oil and a dusting of paprika. Levantine tahini sauce!"
+   }
+  ]
+ },
+ "rouille": {
+  "nom": "Rouille",
+  "description": "Rouille — Marseille's orange sauce: garlic, saffron and chilli worked with olive oil, an egg yolk and a crushed potato for body. Spread on croutons that dive into the bouillabaisse — without it, fish soup is just soup.",
+  "etapes": [
+   {
+    "titre": "The potato",
+    "detail": "Boil the potato and mash it finely: your insurance against a split sauce."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "Infuse the saffron in a spoonful of hot water (or fish stock) for 5 minutes."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Pound the degermed garlic with the salt and chilli into a paste."
+   },
+   {
+    "titre": "The yolk",
+    "detail": "Add the egg yolk and the mashed potato; mix well."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour the olive oil in a very thin STREAM, whisking non-stop, like a mayonnaise."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "Fold in the saffron infusion: the sauce turns deep orange."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Lemon, adjust the salt, and spread on garlic-rubbed croutons. Bouillabaisse rouille!"
+   }
+  ]
+ },
+ "ranchsauce": {
+  "nom": "Ranch Dressing",
+  "description": "Ranch — America's most consumed sauce, born on a Californian ranch in 1954: buttermilk, mayonnaise and cream whisked with dill, chives, garlic and onion. On a salad, chicken wings, a pizza (yes, a pizza) — Americans put it on everything.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Whisk mayonnaise and yogurt until perfectly smooth."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add the milk and lemon juice: they mimic the tangy buttermilk of the original."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Chop dill and chives VERY finely — fresh herbs, never dried, that is where it is won."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Grate the garlic and onion on a microplane (or use powder) so they melt into the sauce."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold everything together, pepper generously and salt."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour chilled MINIMUM: without that rest, it tastes like herby mayonnaise, not ranch."
+   },
+   {
+    "titre": "Serve",
+    "detail": "On salad, crudités or chicken wings. Ranch — the taste of America!"
+   }
+  ]
+ },
+ "salsacriolla": {
+  "nom": "Salsa Criolla",
+  "description": "Salsa criolla — the raw salsa of the Argentine asado: red onion, pepper and tomato cut into tiny dice, marinated in vinegar and oil. Neither cooked nor blended: just bright, crunchy and sharp. Beside the chimichurri on every South American barbecue table.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Cut the red onion into VERY SMALL even dice — the evenness makes the salsa."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Rinse in cold water and pat dry: it loses its bite but keeps its crunch."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut pepper and deseeded tomato to the same size as the onion."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine in a bowl with the oregano and chopped parsley."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Add vinegar, olive oil and salt; toss gently."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Rest 30 minutes at room temperature: the vegetables release juices that become the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spooned over grilled meats, choripanes or bread. Asado salsa criolla!"
+   }
+  ]
+ },
+ "namjimjaew": {
+  "nom": "Nam Jim Jaew",
+  "description": "Nam jim jaew — the grilling sauce of Isan: fish sauce, tamarind and roasted chilli, with pounded TOASTED RICE (khao khua) bringing a nutty aroma and unique texture. Without it, a moo ping or Thai grilled chicken is not complete.",
+  "etapes": [
+   {
+    "titre": "The toasted rice",
+    "detail": "Toast the raw rice DRY in a pan for 8 minutes, stirring, until golden brown and fragrant."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound it in a mortar into a coarse powder: this is khao khua, the soul of the sauce."
+   },
+   {
+    "titre": "The chillies",
+    "detail": "Toast the dried chillies a few seconds in the pan, then pound them."
+   },
+   {
+    "titre": "The base",
+    "detail": "Mix fish sauce, dissolved tamarind pulp, brown sugar and lime juice."
+   },
+   {
+    "titre": "Balance",
+    "detail": "Taste: salty, sour, sweet, hot must answer each other — the Thai rule of four flavours."
+   },
+   {
+    "titre": "The fresh part",
+    "detail": "Add the finely sliced shallot and chopped coriander."
+   },
+   {
+    "titre": "The toasted rice",
+    "detail": "Fold in the khao khua just before serving (it softens fast). With grilled meats. Nam jim jaew!"
+   }
+  ]
+ },
+ "ssamjang": {
+  "nom": "Ssamjang",
+  "description": "Ssamjang — the Korean wrap paste: gochujang and soybean paste mixed with garlic, spring onion and sesame. 'Ssam' means wrapped — it is THE sauce you dab on the lettuce leaf with grilled meat before rolling it all up and eating it in one bite.",
+  "etapes": [
+   {
+    "titre": "The two pastes",
+    "detail": "Mix the gochujang (chilli paste) and the miso (or doenjang): roughly half and half, adjust to your taste for heat."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Grate the garlic finely — raw, it carries the sauce."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Chop the onion very fine (spring onion, with the green, ideally)."
+   },
+   {
+    "titre": "The sesame",
+    "detail": "Dry-toast the sesame seeds then crush half of them to release the aroma."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add brown sugar, soy sauce and sesame oil; mix into a supple glossy paste."
+   },
+   {
+    "titre": "Taste",
+    "detail": "It must be salty-spicy-slightly sweet, thick but spreadable."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In a bowl, with lettuce leaves and grilled meat: fill, roll, swallow. Ssamjang!"
+   }
+  ]
  }
 };
