@@ -2777,4 +2777,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Aneth ciselé, pain grillé, et la cuillère qui prend tout à la fois. Le çılbır ottoman !", badge: null }
     ]
   },
+  blintzes: {
+    dateAjout: "2026-07-28T17:06:00",
+    nom: "Blintzes",
+    cat: "brunch", pays: "russie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥞",
+    description: "Blintzes — les crêpes farcies ashkénazes : des crêpes fines pliées en enveloppes autour d'un fromage frais sucré-vanillé, puis DORÉES AU BEURRE à la poêle. Servies avec crème aigre et confiture — la fête de Chavouot dans une assiette, et le meilleur brunch d'Europe de l'Est.",
+    tableauBlintzes: [
+      { nb: 1, farine: "40 g", lait: "90 ml", oeufs: "¾", fromageblanc: "90 g", sucre: "20 g", beurre: "20 g", vanille: "0.3 g", citron: "", cremefraiche: "30 g", confiture: "25 g" },
+      { nb: 2, farine: "80 g", lait: "180 ml", oeufs: "1½", fromageblanc: "180 g", sucre: "40 g", beurre: "40 g", vanille: "0.6 g", citron: "", cremefraiche: "60 g", confiture: "50 g" },
+      { nb: 3, farine: "120 g", lait: "270 ml", oeufs: "2¼", fromageblanc: "270 g", sucre: "60 g", beurre: "60 g", vanille: "0.9 g", citron: "", cremefraiche: "90 g", confiture: "75 g" },
+      { nb: 4, farine: "160 g", lait: "360 ml", oeufs: "3", fromageblanc: "360 g", sucre: "80 g", beurre: "80 g", vanille: "1.2 g", citron: "", cremefraiche: "120 g", confiture: "100 g" },
+      { nb: 5, farine: "200 g", lait: "450 ml", oeufs: "3¾", fromageblanc: "450 g", sucre: "100 g", beurre: "100 g", vanille: "1.5 g", citron: "½", cremefraiche: "150 g", confiture: "125 g" },
+      { nb: 6, farine: "240 g", lait: "540 ml", oeufs: "4½", fromageblanc: "540 g", sucre: "120 g", beurre: "120 g", vanille: "1.8 g", citron: "", cremefraiche: "180 g", confiture: "150 g" },
+      { nb: 7, farine: "280 g", lait: "630 ml", oeufs: "5¼", fromageblanc: "630 g", sucre: "140 g", beurre: "140 g", vanille: "2.1 g", citron: "", cremefraiche: "210 g", confiture: "175 g" },
+      { nb: 8, farine: "320 g", lait: "720 ml", oeufs: "6", fromageblanc: "720 g", sucre: "160 g", beurre: "160 g", vanille: "2.4 g", citron: "", cremefraiche: "240 g", confiture: "200 g" },
+      { nb: 9, farine: "360 g", lait: "810 ml", oeufs: "6¾", fromageblanc: "810 g", sucre: "180 g", beurre: "180 g", vanille: "2.7 g", citron: "", cremefraiche: "270 g", confiture: "225 g" },
+      { nb: 10, farine: "400 g", lait: "900 ml", oeufs: "7½", fromageblanc: "900 g", sucre: "200 g", beurre: "200 g", vanille: "3 g", citron: "1", cremefraiche: "300 g", confiture: "250 g" },
+      { nb: 11, farine: "440 g", lait: "990 ml", oeufs: "8¼", fromageblanc: "990 g", sucre: "220 g", beurre: "220 g", vanille: "3.3 g", citron: "1", cremefraiche: "330 g", confiture: "275 g" },
+      { nb: 12, farine: "480 g", lait: "1080 ml", oeufs: "9", fromageblanc: "1080 g", sucre: "240 g", beurre: "240 g", vanille: "3.6 g", citron: "1", cremefraiche: "360 g", confiture: "300 g" },
+      { nb: 13, farine: "520 g", lait: "1170 ml", oeufs: "9¾", fromageblanc: "1170 g", sucre: "260 g", beurre: "260 g", vanille: "3.9 g", citron: "1", cremefraiche: "390 g", confiture: "325 g" },
+      { nb: 14, farine: "560 g", lait: "1260 ml", oeufs: "10½", fromageblanc: "1260 g", sucre: "280 g", beurre: "280 g", vanille: "4.2 g", citron: "1", cremefraiche: "420 g", confiture: "350 g" },
+      { nb: 15, farine: "600 g", lait: "1350 ml", oeufs: "11¼", fromageblanc: "1350 g", sucre: "300 g", beurre: "300 g", vanille: "4.5 g", citron: "1½", cremefraiche: "450 g", confiture: "375 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Fouettez farine, lait, œufs et une pincée de sel en pâte très fluide ; laissez reposer 20 minutes.", badge: null },
+      { icone: "🥞", titre: "Les crêpes", detail: "Cuisez des crêpes fines D'UN SEUL CÔTÉ (la face non cuite sera à l'intérieur) et empilez-les.", badge: null },
+      { icone: "🧀", titre: "La farce", detail: "Mélangez fromage blanc bien égoutté, sucre, vanille et zeste de citron : la farce doit être ferme, pas liquide.", badge: null },
+      { icone: "📦", titre: "Plier", detail: "Déposez la farce sur le côté cuit, rabattez les côtés puis roulez en petite enveloppe rectangulaire.", badge: null },
+      { icone: "🧈", titre: "Le beurre", detail: "Faites mousser le beurre dans une poêle à feu moyen.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faites dorer les blintzes 2-3 minutes par face — la surface devient croustillante et le cœur chaud et fondant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Crème aigre d'un côté, confiture de l'autre, sucre glace dessus. Les blintzes de Chavouot !", badge: null }
+    ]
+  },
 });

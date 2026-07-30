@@ -3885,4 +3885,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Démoulez et coupez des tranches épaisses : la mosaïque vert-rose apparaît. Le jambon persillé de Bourgogne !", badge: null }
     ]
   },
+  gefiltefish: {
+    dateAjout: "2026-07-28T17:02:00",
+    nom: "Gefilte Fish",
+    cat: "entrees", pays: "pologne",
+    base: 4,
+    temps: "1h30 + frais",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🐟",
+    description: "Gefilte fish — les quenelles de poisson du chabbat, nées dans les shtetls de Pologne : de la carpe (ou du cabillaud) hachée avec oignon et matzo, pochée dans un fumet sucré aux carottes. Servi FROID avec une rondelle de carotte et du raifort — l'entrée qui divise et qu'on adore.",
+    tableauGefiltefish: [
+      { nb: 1, cabillaud: "160 g", oignon: "50 g", chapelure: "25 g", oeufs: "½", carotte: "70 g", sucre: "8 g", persil: "2 g", poivre: "1 g", sel: "3 g" },
+      { nb: 2, cabillaud: "320 g", oignon: "100 g", chapelure: "50 g", oeufs: "1", carotte: "140 g", sucre: "16 g", persil: "4 g", poivre: "2 g", sel: "6 g" },
+      { nb: 3, cabillaud: "480 g", oignon: "150 g", chapelure: "75 g", oeufs: "1½", carotte: "210 g", sucre: "24 g", persil: "6 g", poivre: "3 g", sel: "9 g" },
+      { nb: 4, cabillaud: "640 g", oignon: "200 g", chapelure: "100 g", oeufs: "2", carotte: "280 g", sucre: "32 g", persil: "8 g", poivre: "4 g", sel: "12 g" },
+      { nb: 5, cabillaud: "800 g", oignon: "250 g", chapelure: "125 g", oeufs: "2½", carotte: "350 g", sucre: "40 g", persil: "10 g", poivre: "5 g", sel: "15 g" },
+      { nb: 6, cabillaud: "960 g", oignon: "300 g", chapelure: "150 g", oeufs: "3", carotte: "420 g", sucre: "48 g", persil: "12 g", poivre: "6 g", sel: "18 g" },
+      { nb: 7, cabillaud: "1120 g", oignon: "350 g", chapelure: "175 g", oeufs: "3½", carotte: "490 g", sucre: "56 g", persil: "14 g", poivre: "7 g", sel: "21 g" },
+      { nb: 8, cabillaud: "1280 g", oignon: "400 g", chapelure: "200 g", oeufs: "4", carotte: "560 g", sucre: "64 g", persil: "16 g", poivre: "8 g", sel: "24 g" },
+      { nb: 9, cabillaud: "1440 g", oignon: "450 g", chapelure: "225 g", oeufs: "4½", carotte: "630 g", sucre: "72 g", persil: "18 g", poivre: "9 g", sel: "27 g" },
+      { nb: 10, cabillaud: "1600 g", oignon: "500 g", chapelure: "250 g", oeufs: "5", carotte: "700 g", sucre: "80 g", persil: "20 g", poivre: "10 g", sel: "30 g" },
+      { nb: 11, cabillaud: "1760 g", oignon: "550 g", chapelure: "275 g", oeufs: "5½", carotte: "770 g", sucre: "88 g", persil: "22 g", poivre: "11 g", sel: "33 g" },
+      { nb: 12, cabillaud: "1920 g", oignon: "600 g", chapelure: "300 g", oeufs: "6", carotte: "840 g", sucre: "96 g", persil: "24 g", poivre: "12 g", sel: "36 g" },
+      { nb: 13, cabillaud: "2080 g", oignon: "650 g", chapelure: "325 g", oeufs: "6½", carotte: "910 g", sucre: "104 g", persil: "26 g", poivre: "13 g", sel: "39 g" },
+      { nb: 14, cabillaud: "2240 g", oignon: "700 g", chapelure: "350 g", oeufs: "7", carotte: "980 g", sucre: "112 g", persil: "28 g", poivre: "14 g", sel: "42 g" },
+      { nb: 15, cabillaud: "2400 g", oignon: "750 g", chapelure: "375 g", oeufs: "7½", carotte: "1050 g", sucre: "120 g", persil: "30 g", poivre: "15 g", sel: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le poisson", detail: "Hachez le poisson au couteau ou au hachoir gros — surtout PAS au mixeur (la chair devient élastique).", badge: null },
+      { icone: "🧅", titre: "La farce", detail: "Mélangez avec l'oignon râpé, la farine de matzo, l'œuf, sel, poivre et sucre ; travaillez jusqu'à ce que ça se tienne.", badge: null },
+      { icone: "🧊", titre: "Raffermir", detail: "Laissez reposer 30 minutes au frais : la matzo absorbe l'humidité.", badge: null },
+      { icone: "🫗", titre: "Le fumet", detail: "Faites frémir les parures (ou têtes) de poisson avec oignon, carottes en rondelles et un peu de sucre 20 minutes ; filtrez en gardant les carottes.", badge: null },
+      { icone: "🥚", titre: "Façonner", detail: "Formez des quenelles ovales, mains mouillées.", badge: null },
+      { icone: "♨️", titre: "Pocher", detail: "Pochez-les 45 minutes dans le fumet à tout petit frémissement, à couvert.", badge: null },
+      { icone: "🍽️", titre: "Refroidir & servir", detail: "Laissez refroidir DANS le fumet (il gélifie), puis servez froid, une rondelle de carotte sur chaque quenelle, raifort à côté. Le gefilte fish du chabbat !", badge: null }
+    ]
+  },
 });

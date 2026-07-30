@@ -3062,4 +3062,41 @@ Object.assign(recettes, {
       { icone: "✨", titre: "Sucrer", detail: "Frottez-le généreusement de sucre encore tiède. Le gibassier de Provence — avec le café !", badge: null }
     ]
   },
+  sufganiyot: {
+    dateAjout: "2026-07-28T17:09:00",
+    nom: "Sufganiyot",
+    cat: "boulangerie", pays: "israel",
+    base: 4,
+    temps: "1 h + pousses",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Sufganiyot — les beignets de Hanouka : des boules de pâte briochée frites dans l'huile (le symbole de la fête), garnies à la seringue de confiture de fraise et saupoudrées de sucre glace. En Israël, les boulangeries en vendent des millions pendant les huit jours de fête.",
+    tableauSufganiyot: [
+      { nb: 1, farine: "70 g", lait: "35 ml", beurre: "12 g", sucre: "15 g", levureboulangere: "2.5 g", oeufs: "½", confiture: "30 g", huileolive: "25 ml", sucreglace: "10 g" },
+      { nb: 2, farine: "140 g", lait: "70 ml", beurre: "24 g", sucre: "30 g", levureboulangere: "5 g", oeufs: "1", confiture: "60 g", huileolive: "50 ml", sucreglace: "20 g" },
+      { nb: 3, farine: "210 g", lait: "105 ml", beurre: "36 g", sucre: "45 g", levureboulangere: "7.5 g", oeufs: "1½", confiture: "90 g", huileolive: "75 ml", sucreglace: "30 g" },
+      { nb: 4, farine: "280 g", lait: "140 ml", beurre: "48 g", sucre: "60 g", levureboulangere: "10 g", oeufs: "2", confiture: "120 g", huileolive: "100 ml", sucreglace: "40 g" },
+      { nb: 5, farine: "350 g", lait: "175 ml", beurre: "60 g", sucre: "75 g", levureboulangere: "12.5 g", oeufs: "2½", confiture: "150 g", huileolive: "125 ml", sucreglace: "50 g" },
+      { nb: 6, farine: "420 g", lait: "210 ml", beurre: "72 g", sucre: "90 g", levureboulangere: "15 g", oeufs: "3", confiture: "180 g", huileolive: "150 ml", sucreglace: "60 g" },
+      { nb: 7, farine: "490 g", lait: "245 ml", beurre: "84 g", sucre: "105 g", levureboulangere: "17.5 g", oeufs: "3½", confiture: "210 g", huileolive: "175 ml", sucreglace: "70 g" },
+      { nb: 8, farine: "560 g", lait: "280 ml", beurre: "96 g", sucre: "120 g", levureboulangere: "20 g", oeufs: "4", confiture: "240 g", huileolive: "200 ml", sucreglace: "80 g" },
+      { nb: 9, farine: "630 g", lait: "315 ml", beurre: "108 g", sucre: "135 g", levureboulangere: "22.5 g", oeufs: "4½", confiture: "270 g", huileolive: "225 ml", sucreglace: "90 g" },
+      { nb: 10, farine: "700 g", lait: "350 ml", beurre: "120 g", sucre: "150 g", levureboulangere: "25 g", oeufs: "5", confiture: "300 g", huileolive: "250 ml", sucreglace: "100 g" },
+      { nb: 11, farine: "770 g", lait: "385 ml", beurre: "132 g", sucre: "165 g", levureboulangere: "27.5 g", oeufs: "5½", confiture: "330 g", huileolive: "275 ml", sucreglace: "110 g" },
+      { nb: 12, farine: "840 g", lait: "420 ml", beurre: "144 g", sucre: "180 g", levureboulangere: "30 g", oeufs: "6", confiture: "360 g", huileolive: "300 ml", sucreglace: "120 g" },
+      { nb: 13, farine: "910 g", lait: "455 ml", beurre: "156 g", sucre: "195 g", levureboulangere: "32.5 g", oeufs: "6½", confiture: "390 g", huileolive: "325 ml", sucreglace: "130 g" },
+      { nb: 14, farine: "980 g", lait: "490 ml", beurre: "168 g", sucre: "210 g", levureboulangere: "35 g", oeufs: "7", confiture: "420 g", huileolive: "350 ml", sucreglace: "140 g" },
+      { nb: 15, farine: "1050 g", lait: "525 ml", beurre: "180 g", sucre: "225 g", levureboulangere: "37.5 g", oeufs: "7½", confiture: "450 g", huileolive: "375 ml", sucreglace: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez farine, levure, sucre, lait tiède, œuf, beurre mou et une pincée de sel jusqu'à une pâte souple et élastique.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laissez lever 1 heure au chaud, jusqu'au doublement.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Dégazez et formez des boules régulières (60 g environ) ; posez-les sur du papier fariné.", badge: null },
+      { icone: "⏲️", titre: "Repousser", detail: "Laissez pousser 40 minutes : elles doivent être bien gonflées et légères.", badge: null },
+      { icone: "🔥", titre: "L'huile", detail: "Chauffez l'huile à 170°C — pas plus, sinon l'extérieur brûle avant que le cœur cuise.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Frittez 2 minutes par face, à couvert pour la première face : la boule gonfle avec sa fameuse ceinture blanche au milieu.", badge: null },
+      { icone: "💉", titre: "Garnir & servir", detail: "Égouttez, laissez tiédir, puis injectez la confiture à la poche munie d'une douille fine. Sucre glace, et servez. Les sufganiyot de Hanouka !", badge: null }
+    ]
+  },
 });

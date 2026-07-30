@@ -11089,4 +11089,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Crème anglaise froide, îles dessus, filet de caramel et amandes. Les îles flottantes du dimanche !", badge: null }
     ]
   },
+  rugelach: {
+    dateAjout: "2026-07-28T17:07:00",
+    nom: "Rugelach",
+    cat: "desserts", pays: "israel",
+    base: 4,
+    temps: "50 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥐",
+    description: "Rugelach — les petits croissants roulés d'Europe centrale devenus l'emblème des boulangeries de Jérusalem : une pâte au fromage frais (le secret du fondant), roulée sur une garniture noix-cannelle ou chocolat, et sirotée à la sortie du four. Impossible de n'en prendre qu'un.",
+    tableauRugelach: [
+      { nb: 1, farine: "55 g", beurre: "35 g", fromagefrais: "35 g", sucre: "25 g", noix: "20 g", cannelle: "1.5 g", confiture: "15 g", oeufs: "¼", miel: "8 ml" },
+      { nb: 2, farine: "110 g", beurre: "70 g", fromagefrais: "70 g", sucre: "50 g", noix: "40 g", cannelle: "3 g", confiture: "30 g", oeufs: "½", miel: "16 ml" },
+      { nb: 3, farine: "165 g", beurre: "105 g", fromagefrais: "105 g", sucre: "75 g", noix: "60 g", cannelle: "4.5 g", confiture: "45 g", oeufs: "¾", miel: "24 ml" },
+      { nb: 4, farine: "220 g", beurre: "140 g", fromagefrais: "140 g", sucre: "100 g", noix: "80 g", cannelle: "6 g", confiture: "60 g", oeufs: "1", miel: "32 ml" },
+      { nb: 5, farine: "275 g", beurre: "175 g", fromagefrais: "175 g", sucre: "125 g", noix: "100 g", cannelle: "7.5 g", confiture: "75 g", oeufs: "1¼", miel: "40 ml" },
+      { nb: 6, farine: "330 g", beurre: "210 g", fromagefrais: "210 g", sucre: "150 g", noix: "120 g", cannelle: "9 g", confiture: "90 g", oeufs: "1½", miel: "48 ml" },
+      { nb: 7, farine: "385 g", beurre: "245 g", fromagefrais: "245 g", sucre: "175 g", noix: "140 g", cannelle: "10.5 g", confiture: "105 g", oeufs: "1¾", miel: "56 ml" },
+      { nb: 8, farine: "440 g", beurre: "280 g", fromagefrais: "280 g", sucre: "200 g", noix: "160 g", cannelle: "12 g", confiture: "120 g", oeufs: "2", miel: "64 ml" },
+      { nb: 9, farine: "495 g", beurre: "315 g", fromagefrais: "315 g", sucre: "225 g", noix: "180 g", cannelle: "13.5 g", confiture: "135 g", oeufs: "2¼", miel: "72 ml" },
+      { nb: 10, farine: "550 g", beurre: "350 g", fromagefrais: "350 g", sucre: "250 g", noix: "200 g", cannelle: "15 g", confiture: "150 g", oeufs: "2½", miel: "80 ml" },
+      { nb: 11, farine: "605 g", beurre: "385 g", fromagefrais: "385 g", sucre: "275 g", noix: "220 g", cannelle: "16.5 g", confiture: "165 g", oeufs: "2¾", miel: "88 ml" },
+      { nb: 12, farine: "660 g", beurre: "420 g", fromagefrais: "420 g", sucre: "300 g", noix: "240 g", cannelle: "18 g", confiture: "180 g", oeufs: "3", miel: "96 ml" },
+      { nb: 13, farine: "715 g", beurre: "455 g", fromagefrais: "455 g", sucre: "325 g", noix: "260 g", cannelle: "19.5 g", confiture: "195 g", oeufs: "3¼", miel: "104 ml" },
+      { nb: 14, farine: "770 g", beurre: "490 g", fromagefrais: "490 g", sucre: "350 g", noix: "280 g", cannelle: "21 g", confiture: "210 g", oeufs: "3½", miel: "112 ml" },
+      { nb: 15, farine: "825 g", beurre: "525 g", fromagefrais: "525 g", sucre: "375 g", noix: "300 g", cannelle: "22.5 g", confiture: "225 g", oeufs: "3¾", miel: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "La pâte magique", detail: "Travaillez le beurre froid, le fromage frais et la farine avec une pincée de sel — jamais longtemps, juste assez pour amalgamer.", badge: null },
+      { icone: "🧊", titre: "Reposer", detail: "Formez deux disques plats, filmez et laissez au frais 2 heures MINIMUM (une nuit c'est mieux) : cette pâte se travaille FROIDE.", badge: null },
+      { icone: "🥜", titre: "La garniture", detail: "Mélangez noix concassées, sucre et cannelle.", badge: null },
+      { icone: "⭕", titre: "Étaler", detail: "Étalez chaque disque en cercle fin ; tartinez de confiture puis parsemez du mélange aux noix.", badge: null },
+      { icone: "🍕", titre: "Découper", detail: "Coupez le cercle en 12 triangles, comme une pizza.", badge: null },
+      { icone: "🥐", titre: "Rouler", detail: "Roulez chaque triangle de la base vers la pointe et courbez légèrement en croissant.", badge: null },
+      { icone: "♨️", titre: "Cuire & siroter", detail: "Dorez à l'œuf, cuisez 25 minutes à 180°C, puis badigeonnez de miel tiède à la sortie. Les rugelach de Jérusalem !", badge: null }
+    ]
+  },
+  hamantaschen: {
+    dateAjout: "2026-07-28T17:08:00",
+    nom: "Hamantaschen",
+    cat: "desserts", pays: "israel",
+    base: 4,
+    temps: "45 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🔺",
+    description: "Hamantaschen — les triangles de Pourim : des sablés pliés en trois coins autour d'une garniture aux graines de pavot, à la confiture ou aux dattes. Ils représentent le chapeau (ou les oreilles) du méchant Haman — et le vrai défi est qu'ils ne s'ouvrent PAS à la cuisson.",
+    tableauHamantaschen: [
+      { nb: 1, farine: "60 g", beurre: "30 g", sucre: "30 g", oeufs: "½", pavot: "15 g", confiture: "25 g", citron: "", lait: "15 ml", levurechimique: "1.5 g" },
+      { nb: 2, farine: "120 g", beurre: "60 g", sucre: "60 g", oeufs: "1", pavot: "30 g", confiture: "50 g", citron: "", lait: "30 ml", levurechimique: "3 g" },
+      { nb: 3, farine: "180 g", beurre: "90 g", sucre: "90 g", oeufs: "1½", pavot: "45 g", confiture: "75 g", citron: "", lait: "45 ml", levurechimique: "4.5 g" },
+      { nb: 4, farine: "240 g", beurre: "120 g", sucre: "120 g", oeufs: "2", pavot: "60 g", confiture: "100 g", citron: "", lait: "60 ml", levurechimique: "6 g" },
+      { nb: 5, farine: "300 g", beurre: "150 g", sucre: "150 g", oeufs: "2½", pavot: "75 g", confiture: "125 g", citron: "¾", lait: "75 ml", levurechimique: "7.5 g" },
+      { nb: 6, farine: "360 g", beurre: "180 g", sucre: "180 g", oeufs: "3", pavot: "90 g", confiture: "150 g", citron: "", lait: "90 ml", levurechimique: "9 g" },
+      { nb: 7, farine: "420 g", beurre: "210 g", sucre: "210 g", oeufs: "3½", pavot: "105 g", confiture: "175 g", citron: "1", lait: "105 ml", levurechimique: "10.5 g" },
+      { nb: 8, farine: "480 g", beurre: "240 g", sucre: "240 g", oeufs: "4", pavot: "120 g", confiture: "200 g", citron: "1", lait: "120 ml", levurechimique: "12 g" },
+      { nb: 9, farine: "540 g", beurre: "270 g", sucre: "270 g", oeufs: "4½", pavot: "135 g", confiture: "225 g", citron: "1", lait: "135 ml", levurechimique: "13.5 g" },
+      { nb: 10, farine: "600 g", beurre: "300 g", sucre: "300 g", oeufs: "5", pavot: "150 g", confiture: "250 g", citron: "1½", lait: "150 ml", levurechimique: "15 g" },
+      { nb: 11, farine: "660 g", beurre: "330 g", sucre: "330 g", oeufs: "5½", pavot: "165 g", confiture: "275 g", citron: "1", lait: "165 ml", levurechimique: "16.5 g" },
+      { nb: 12, farine: "720 g", beurre: "360 g", sucre: "360 g", oeufs: "6", pavot: "180 g", confiture: "300 g", citron: "1", lait: "180 ml", levurechimique: "18 g" },
+      { nb: 13, farine: "780 g", beurre: "390 g", sucre: "390 g", oeufs: "6½", pavot: "195 g", confiture: "325 g", citron: "1", lait: "195 ml", levurechimique: "19.5 g" },
+      { nb: 14, farine: "840 g", beurre: "420 g", sucre: "420 g", oeufs: "7", pavot: "210 g", confiture: "350 g", citron: "2", lait: "210 ml", levurechimique: "21 g" },
+      { nb: 15, farine: "900 g", beurre: "450 g", sucre: "450 g", oeufs: "7½", pavot: "225 g", confiture: "375 g", citron: "2¼", lait: "225 ml", levurechimique: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "La pâte", detail: "Crémez beurre et sucre, ajoutez l'œuf et le zeste de citron, puis farine et levure : pâte sablée souple.", badge: null },
+      { icone: "🧊", titre: "Reposer", detail: "Filmez et laissez 1 heure au frais — une pâte molle s'ouvrira au four, c'est la règle n°1.", badge: null },
+      { icone: "🌑", titre: "La garniture pavot", detail: "Faites frémir les graines de pavot moulues dans le lait avec un peu de sucre 5 minutes jusqu'à une pâte épaisse ; refroidissez.", badge: null },
+      { icone: "⭕", titre: "Découper", detail: "Étalez la pâte à 4 mm et découpez des cercles de 7-8 cm.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "UNE PETITE cuillère de garniture au centre — trop de garniture = ouverture garantie.", badge: null },
+      { icone: "🔺", titre: "Plier", detail: "Rabattez trois côtés pour former un triangle et PINCEZ fermement les trois coins, en laissant le centre visible.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "20 minutes à 175°C. Laissez refroidir sur la plaque avant de bouger. Les hamantaschen de Pourim !", badge: null }
+    ]
+  },
 });

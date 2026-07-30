@@ -45261,4 +45261,78 @@ Object.assign(recettes, {
       { icone: "⏳", titre: "Le repos", detail: "Laissez reposer 1 HEURE emballé avant de trancher DANS le sens contraire des fibres. Le brisket texan !", badge: null }
     ]
   },
+  kugel: {
+    dateAjout: "2026-07-28T17:03:00",
+    nom: "Kugel aux Nouilles",
+    cat: "plats", pays: "allemagne",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐ Facile",
+    emoji: "🍮",
+    description: "Lokshen kugel — le gratin de nouilles ashkénaze, ni tout à fait plat ni tout à fait dessert : des tagliatelles liées au fromage blanc et aux œufs, raisins secs et cannelle, cuites jusqu'à une croûte dorée et un cœur crémeux. Sur toutes les tables de fête depuis la Rhénanie médiévale.",
+    tableauKugel: [
+      { nb: 1, pates: "90 g", fromageblanc: "80 g", oeufs: "1", cremefraiche: "30 g", sucre: "25 g", raisinssecs: "25 g", beurre: "20 g", cannelle: "1 g", vanille: "0.3 g" },
+      { nb: 2, pates: "180 g", fromageblanc: "160 g", oeufs: "2", cremefraiche: "60 g", sucre: "50 g", raisinssecs: "50 g", beurre: "40 g", cannelle: "2 g", vanille: "0.6 g" },
+      { nb: 3, pates: "270 g", fromageblanc: "240 g", oeufs: "3", cremefraiche: "90 g", sucre: "75 g", raisinssecs: "75 g", beurre: "60 g", cannelle: "3 g", vanille: "0.9 g" },
+      { nb: 4, pates: "360 g", fromageblanc: "320 g", oeufs: "4", cremefraiche: "120 g", sucre: "100 g", raisinssecs: "100 g", beurre: "80 g", cannelle: "4 g", vanille: "1.2 g" },
+      { nb: 5, pates: "450 g", fromageblanc: "400 g", oeufs: "5", cremefraiche: "150 g", sucre: "125 g", raisinssecs: "125 g", beurre: "100 g", cannelle: "5 g", vanille: "1.5 g" },
+      { nb: 6, pates: "540 g", fromageblanc: "480 g", oeufs: "6", cremefraiche: "180 g", sucre: "150 g", raisinssecs: "150 g", beurre: "120 g", cannelle: "6 g", vanille: "1.8 g" },
+      { nb: 7, pates: "630 g", fromageblanc: "560 g", oeufs: "7", cremefraiche: "210 g", sucre: "175 g", raisinssecs: "175 g", beurre: "140 g", cannelle: "7 g", vanille: "2.1 g" },
+      { nb: 8, pates: "720 g", fromageblanc: "640 g", oeufs: "8", cremefraiche: "240 g", sucre: "200 g", raisinssecs: "200 g", beurre: "160 g", cannelle: "8 g", vanille: "2.4 g" },
+      { nb: 9, pates: "810 g", fromageblanc: "720 g", oeufs: "9", cremefraiche: "270 g", sucre: "225 g", raisinssecs: "225 g", beurre: "180 g", cannelle: "9 g", vanille: "2.7 g" },
+      { nb: 10, pates: "900 g", fromageblanc: "800 g", oeufs: "10", cremefraiche: "300 g", sucre: "250 g", raisinssecs: "250 g", beurre: "200 g", cannelle: "10 g", vanille: "3 g" },
+      { nb: 11, pates: "990 g", fromageblanc: "880 g", oeufs: "11", cremefraiche: "330 g", sucre: "275 g", raisinssecs: "275 g", beurre: "220 g", cannelle: "11 g", vanille: "3.3 g" },
+      { nb: 12, pates: "1080 g", fromageblanc: "960 g", oeufs: "12", cremefraiche: "360 g", sucre: "300 g", raisinssecs: "300 g", beurre: "240 g", cannelle: "12 g", vanille: "3.6 g" },
+      { nb: 13, pates: "1170 g", fromageblanc: "1040 g", oeufs: "13", cremefraiche: "390 g", sucre: "325 g", raisinssecs: "325 g", beurre: "260 g", cannelle: "13 g", vanille: "3.9 g" },
+      { nb: 14, pates: "1260 g", fromageblanc: "1120 g", oeufs: "14", cremefraiche: "420 g", sucre: "350 g", raisinssecs: "350 g", beurre: "280 g", cannelle: "14 g", vanille: "4.2 g" },
+      { nb: 15, pates: "1350 g", fromageblanc: "1200 g", oeufs: "15", cremefraiche: "450 g", sucre: "375 g", raisinssecs: "375 g", beurre: "300 g", cannelle: "15 g", vanille: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Les nouilles", detail: "Cuisez les pâtes larges (tagliatelles) al dente MOINS 1 minute : elles finiront de cuire au four.", badge: null },
+      { icone: "🍇", titre: "Les raisins", detail: "Faites gonfler les raisins secs 10 minutes dans de l'eau chaude, puis égouttez-les.", badge: null },
+      { icone: "🥣", titre: "L'appareil", detail: "Fouettez fromage blanc, crème, œufs, sucre, vanille et une pincée de sel.", badge: null },
+      { icone: "🧈", titre: "Le beurre", detail: "Faites fondre le beurre et versez-en les trois quarts dans l'appareil ; gardez le reste.", badge: null },
+      { icone: "🥘", titre: "Mélanger", detail: "Mêlez pâtes, appareil et raisins ; versez dans un plat beurré et lissez.", badge: null },
+      { icone: "🍂", titre: "La croûte", detail: "Arrosez du beurre restant et saupoudrez généreusement de cannelle et d'un peu de sucre.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "45 minutes à 180°C : le dessus doit être bien doré et croustillant, le cœur crémeux. Le kugel des jours de fête !", badge: null }
+    ]
+  },
+  cholent: {
+    dateAjout: "2026-07-28T17:04:00",
+    nom: "Cholent",
+    cat: "plats", pays: "israel",
+    base: 4,
+    temps: "12 h",
+    niveau: "⭐ Facile",
+    emoji: "🕯️",
+    description: "Cholent (hamin) — le mijoté du chabbat, inventé pour respecter l'interdit d'allumer un feu : bœuf, orge, haricots et pommes de terre enfournés le vendredi soir à très basse température et sortis le samedi midi. 12 heures de cuisson, zéro surveillance — le plat le plus fondant du monde.",
+    tableauCholent: [
+      { nb: 1, boeuf: "150 g", orge: "40 g", haricotsblancs: "50 g", pommedeterre: "120 g", oignon: "50 g", ail: "1", paprika: "2 g", laurier: "0.3 g", oeufs: "½", huileolive: "12 ml" },
+      { nb: 2, boeuf: "300 g", orge: "80 g", haricotsblancs: "100 g", pommedeterre: "240 g", oignon: "100 g", ail: "2", paprika: "4 g", laurier: "0.6 g", oeufs: "1", huileolive: "24 ml" },
+      { nb: 3, boeuf: "450 g", orge: "120 g", haricotsblancs: "150 g", pommedeterre: "360 g", oignon: "150 g", ail: "3", paprika: "6 g", laurier: "0.9 g", oeufs: "1½", huileolive: "36 ml" },
+      { nb: 4, boeuf: "600 g", orge: "160 g", haricotsblancs: "200 g", pommedeterre: "480 g", oignon: "200 g", ail: "4", paprika: "8 g", laurier: "1.2 g", oeufs: "2", huileolive: "48 ml" },
+      { nb: 5, boeuf: "750 g", orge: "200 g", haricotsblancs: "250 g", pommedeterre: "600 g", oignon: "250 g", ail: "5", paprika: "10 g", laurier: "1.5 g", oeufs: "2½", huileolive: "60 ml" },
+      { nb: 6, boeuf: "900 g", orge: "240 g", haricotsblancs: "300 g", pommedeterre: "720 g", oignon: "300 g", ail: "6", paprika: "12 g", laurier: "1.8 g", oeufs: "3", huileolive: "72 ml" },
+      { nb: 7, boeuf: "1050 g", orge: "280 g", haricotsblancs: "350 g", pommedeterre: "840 g", oignon: "350 g", ail: "7", paprika: "14 g", laurier: "2.1 g", oeufs: "3½", huileolive: "84 ml" },
+      { nb: 8, boeuf: "1200 g", orge: "320 g", haricotsblancs: "400 g", pommedeterre: "960 g", oignon: "400 g", ail: "8", paprika: "16 g", laurier: "2.4 g", oeufs: "4", huileolive: "96 ml" },
+      { nb: 9, boeuf: "1350 g", orge: "360 g", haricotsblancs: "450 g", pommedeterre: "1080 g", oignon: "450 g", ail: "9", paprika: "18 g", laurier: "2.7 g", oeufs: "4½", huileolive: "108 ml" },
+      { nb: 10, boeuf: "1500 g", orge: "400 g", haricotsblancs: "500 g", pommedeterre: "1200 g", oignon: "500 g", ail: "10", paprika: "20 g", laurier: "3 g", oeufs: "5", huileolive: "120 ml" },
+      { nb: 11, boeuf: "1650 g", orge: "440 g", haricotsblancs: "550 g", pommedeterre: "1320 g", oignon: "550 g", ail: "11", paprika: "22 g", laurier: "3.3 g", oeufs: "5½", huileolive: "132 ml" },
+      { nb: 12, boeuf: "1800 g", orge: "480 g", haricotsblancs: "600 g", pommedeterre: "1440 g", oignon: "600 g", ail: "12", paprika: "24 g", laurier: "3.6 g", oeufs: "6", huileolive: "144 ml" },
+      { nb: 13, boeuf: "1950 g", orge: "520 g", haricotsblancs: "650 g", pommedeterre: "1560 g", oignon: "650 g", ail: "13", paprika: "26 g", laurier: "3.9 g", oeufs: "6½", huileolive: "156 ml" },
+      { nb: 14, boeuf: "2100 g", orge: "560 g", haricotsblancs: "700 g", pommedeterre: "1680 g", oignon: "700 g", ail: "14", paprika: "28 g", laurier: "4.2 g", oeufs: "7", huileolive: "168 ml" },
+      { nb: 15, boeuf: "2250 g", orge: "600 g", haricotsblancs: "750 g", pommedeterre: "1800 g", oignon: "750 g", ail: "15", paprika: "30 g", laurier: "4.5 g", oeufs: "7½", huileolive: "180 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "La veille", detail: "Faites tremper les haricots blancs une nuit — indispensable pour une cuisson longue et douce.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Salez le bœuf en gros morceaux et faites-le dorer à l'huile avec les oignons, dans une cocotte en fonte.", badge: null },
+      { icone: "🌾", titre: "Les couches", detail: "Ajoutez orge, haricots égouttés, pommes de terre entières, ail, paprika et laurier.", badge: null },
+      { icone: "🥚", titre: "LES ŒUFS", detail: "Posez des œufs ENTIERS dans leur coquille sur le dessus : ils vont brunir et devenir crémeux — c'est la signature du cholent.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Couvrez d'eau à deux doigts au-dessus des ingrédients, portez à frémissement sur le feu.", badge: null },
+      { icone: "🌙", titre: "La nuit", detail: "Couvrez et enfournez à 100-110°C pour 10 à 12 HEURES, sans jamais ouvrir.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Au matin, tout est fondu et brun. Écalez les œufs et servez-les avec. Le cholent du chabbat !", badge: null }
+    ]
+  },
 });

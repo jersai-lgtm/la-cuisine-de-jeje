@@ -87826,5 +87826,345 @@ window.RECETTES_EN = {
     "detail": "Chill, then serve warm or cool with cinnamon and roasted chickpeas. Istanbul boza!"
    }
   ]
+ },
+ "latkes": {
+  "nom": "Latkes",
+  "description": "Latkes — the potato pancakes of Hanukkah: grated, SQUEEZED to death, bound with egg and fried in oil until the edges turn to lace. Eaten with applesauce or sour cream — and the debate between the two camps has lasted generations.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the potatoes and onion on the COARSE side (never a blender, that makes purée)."
+   },
+   {
+    "titre": "SQUEEZE",
+    "detail": "Wrap everything in a cloth and squeeze with all your strength: the more water out, the crisper the latke."
+   },
+   {
+    "titre": "The starch",
+    "detail": "Let the collected water stand 2 minutes: the starch sinks. Discard the water, keep the starch and return it to the potatoes — the secret binder."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add egg, cornflour and salt; mix just before frying (the batter darkens if it waits)."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat a good depth of oil — the latkes must sizzle properly."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop flattened spoonfuls; 3-4 minutes per side WITHOUT touching, until the lacy edges are deep golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain, salt, and serve scorching with applesauce AND sour cream — pick your side. Hanukkah latkes!"
+   }
+  ]
+ },
+ "matzoballsoup": {
+  "nom": "Matzo Ball Soup",
+  "description": "Matzo ball soup — 'Jewish penicillin': a golden dill-scented chicken broth with kneidlach (matzo meal dumplings) light as clouds. Every family defends its texture — airy 'floaters' or dense 'sinkers'. The universal cure for everything.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Simmer the chicken 1 hour with carrot, celery, onion, parsley stems and salt — NEVER boil, the broth must stay clear."
+   },
+   {
+    "titre": "The kneidlach",
+    "detail": "Mix the matzo meal with eggs, oil, salt and 2 spoons of warm broth."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and rest 30 minutes in the FRIDGE: the matzo swells, the mix becomes shapeable."
+   },
+   {
+    "titre": "Shape",
+    "detail": "With wet hands, roll walnut-sized balls — they will DOUBLE as they cook, don't make them big."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach 30 minutes in simmering salted water, covered and WITHOUT opening (the steam makes them rise)."
+   },
+   {
+    "titre": "The clear broth",
+    "detail": "Strain the broth, keep the chicken meat and slice the carrots."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scorching broth, 2 balls per bowl, chicken, carrots and plenty of dill. Jewish penicillin!"
+   }
+  ]
+ },
+ "gefiltefish": {
+  "nom": "Gefilte Fish",
+  "description": "Gefilte fish — the Shabbat fish quenelles born in the shtetls of Poland: carp (or cod) minced with onion and matzo, poached in a sweet carrot broth. Served COLD with a carrot slice and horseradish — the starter that divides and that we love.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Mince the fish with a knife or coarse mincer — definitely NOT a blender (the flesh turns rubbery)."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Combine with grated onion, matzo meal, egg, salt, pepper and sugar; work until it holds."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Rest 30 minutes in the fridge: the matzo absorbs the moisture."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Simmer the fish trimmings (or heads) with onion, sliced carrots and a little sugar for 20 minutes; strain, keeping the carrots."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form oval quenelles with wet hands."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach 45 minutes in the broth at the gentlest simmer, covered."
+   },
+   {
+    "titre": "Cool & serve",
+    "detail": "Cool IN the broth (it jellies), then serve cold, a carrot slice on each quenelle, horseradish alongside. Shabbat gefilte fish!"
+   }
+  ]
+ },
+ "kugel": {
+  "nom": "Noodle Kugel",
+  "description": "Lokshen kugel — the Ashkenazi noodle bake, neither quite a dish nor quite a dessert: wide noodles bound with fresh cheese and eggs, raisins and cinnamon, baked to a golden crust and a creamy heart. On every festive table since medieval Rhineland.",
+  "etapes": [
+   {
+    "titre": "The noodles",
+    "detail": "Cook the wide noodles (tagliatelle) al dente MINUS 1 minute: they finish in the oven."
+   },
+   {
+    "titre": "The raisins",
+    "detail": "Plump the raisins 10 minutes in hot water, then drain."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Whisk fresh cheese, cream, eggs, sugar, vanilla and a pinch of salt."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Melt the butter and pour three quarters into the custard; keep the rest."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold together noodles, custard and raisins; pour into a buttered dish and smooth."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Drizzle with the remaining butter and dust generously with cinnamon and a little sugar."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 180°C: the top must be deep golden and crisp, the heart creamy. Festive-day kugel!"
+   }
+  ]
+ },
+ "cholent": {
+  "nom": "Cholent",
+  "description": "Cholent (hamin) — the Shabbat stew, invented to honour the ban on lighting a fire: beef, barley, beans and potatoes put in the oven on Friday night and taken out on Saturday noon. 12 hours of cooking, zero supervision — the most melting dish in the world.",
+  "etapes": [
+   {
+    "titre": "The night before",
+    "detail": "Soak the white beans overnight — essential for a long gentle cook."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Salt the beef in large pieces and brown in oil with the onions, in a cast-iron pot."
+   },
+   {
+    "titre": "The layers",
+    "detail": "Add barley, drained beans, whole potatoes, garlic, paprika and bay."
+   },
+   {
+    "titre": "THE EGGS",
+    "detail": "Set WHOLE eggs in their shells on top: they will brown and turn creamy — the cholent signature."
+   },
+   {
+    "titre": "Wet",
+    "detail": "Cover with water two fingers above the ingredients, bring to a simmer on the hob."
+   },
+   {
+    "titre": "Overnight",
+    "detail": "Cover and bake at 100-110°C for 10 to 12 HOURS, never opening."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In the morning everything is melting and brown. Peel the eggs and serve them with it. Shabbat cholent!"
+   }
+  ]
+ },
+ "knish": {
+  "nom": "Knish",
+  "description": "Knish — New York's pocket pastry, landed from Eastern Europe with the immigrants: a thin supple dough rolled around mashed potato with fried onions. Sold on Manhattan street corners since 1910 — eat it scorching, with a squirt of mustard.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, oil, half the egg, salt and a little warm water into a supple dough; REST 30 minutes (it must become stretchy)."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Brown the sliced onions AT LENGTH in oil — 15 minutes, to deep golden: that is where all the flavour hides."
+   },
+   {
+    "titre": "The mash",
+    "detail": "Boil the potatoes, crush roughly with the onions, salt and plenty of pepper."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Roll the dough VERY thin on a floured cloth, until you can see through it — like a strudel."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Lay the mash in a log along one edge and roll tight; brush the seam."
+   },
+   {
+    "titre": "Portion",
+    "detail": "Cut the log into sections and pinch each end shut, pressing into a small round puck."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash and bake 35 minutes at 190°C. Scorching, with mustard. Manhattan knish!"
+   }
+  ]
+ },
+ "blintzes": {
+  "nom": "Blintzes",
+  "description": "Blintzes — the Ashkenazi stuffed crêpes: thin pancakes folded into envelopes around sweet vanilla fresh cheese, then GOLDENED IN BUTTER in the pan. Served with sour cream and jam — Shavuot on a plate, and the best brunch in Eastern Europe.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk flour, milk, eggs and a pinch of salt into a very loose batter; rest 20 minutes."
+   },
+   {
+    "titre": "The crêpes",
+    "detail": "Cook thin crêpes ON ONE SIDE ONLY (the uncooked face goes inside) and stack them."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix well-drained fresh cheese, sugar, vanilla and lemon zest: the filling must be firm, not runny."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Spoon the filling onto the cooked side, fold in the sides then roll into a small rectangular envelope."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Foam the butter in a pan over medium heat."
+   },
+   {
+    "titre": "Gild",
+    "detail": "Brown the blintzes 2-3 minutes per side — the surface crisps and the heart turns hot and molten."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sour cream on one side, jam on the other, icing sugar on top. Shavuot blintzes!"
+   }
+  ]
+ },
+ "rugelach": {
+  "nom": "Rugelach",
+  "description": "Rugelach — the little rolled crescents of Central Europe turned emblem of Jerusalem's bakeries: a cream-cheese dough (the secret of the tenderness), rolled over a walnut-cinnamon or chocolate filling, and syruped out of the oven. Impossible to take just one.",
+  "etapes": [
+   {
+    "titre": "The magic dough",
+    "detail": "Work the cold butter, fresh cheese and flour with a pinch of salt — never long, just enough to come together."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Form two flat discs, wrap and chill 2 hours MINIMUM (overnight is better): this dough is worked COLD."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix crushed walnuts, sugar and cinnamon."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll each disc into a thin circle; spread with jam then scatter the walnut mixture."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the circle into 12 triangles, like a pizza."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll each triangle from base to tip and curve slightly into a crescent."
+   },
+   {
+    "titre": "Bake & syrup",
+    "detail": "Egg-wash, bake 25 minutes at 180°C, then brush with warm honey out of the oven. Jerusalem rugelach!"
+   }
+  ]
+ },
+ "hamantaschen": {
+  "nom": "Hamantaschen",
+  "description": "Hamantaschen — the triangles of Purim: shortbread folded into three corners around a poppy-seed, jam or date filling. They represent the hat (or the ears) of the villain Haman — and the real challenge is keeping them from opening in the oven.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Cream butter and sugar, add the egg and lemon zest, then flour and baking powder: a supple shortcrust."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and chill 1 hour — a soft dough will open in the oven, that is rule number one."
+   },
+   {
+    "titre": "The poppy filling",
+    "detail": "Simmer the ground poppy seeds in the milk with a little sugar for 5 minutes to a thick paste; cool."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll the dough to 4 mm and cut 7-8 cm circles."
+   },
+   {
+    "titre": "Fill",
+    "detail": "ONE SMALL spoon of filling in the centre — too much filling guarantees an opening."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold three sides into a triangle and PINCH the three corners firmly, leaving the centre visible."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 175°C. Cool on the tray before moving. Purim hamantaschen!"
+   }
+  ]
+ },
+ "sufganiyot": {
+  "nom": "Sufganiyot",
+  "description": "Sufganiyot — the doughnuts of Hanukkah: balls of brioche dough fried in oil (the festival's symbol), piped full of strawberry jam and dusted with icing sugar. In Israel, bakeries sell millions of them over the eight days of the holiday.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, sugar, warm milk, egg, soft butter and a pinch of salt into a supple elastic dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Rise 1 hour somewhere warm, until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Knock back and form even balls (about 60 g); set them on floured paper."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Prove 40 minutes: they must be well puffed and light."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat the oil to 170°C — no hotter, or the outside burns before the heart cooks."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry 2 minutes per side, covered for the first side: the ball puffs with its famous white belt around the middle."
+   },
+   {
+    "titre": "Fill & serve",
+    "detail": "Drain, cool slightly, then pipe in the jam with a fine nozzle. Icing sugar, and serve. Hanukkah sufganiyot!"
+   }
+  ]
  }
 };

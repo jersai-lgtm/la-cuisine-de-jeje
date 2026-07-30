@@ -6782,4 +6782,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Égouttez, salez et servez BRÛLANTS avec du poisson frit ou du pulled pork. Hush, puppy !", badge: null }
     ]
   },
+  latkes: {
+    dateAjout: "2026-07-28T17:00:00",
+    nom: "Latkes",
+    cat: "encas", pays: "israel",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🕎",
+    description: "Latkes — les galettes de pommes de terre de Hanouka : râpées, PRESSÉES à mort, liées à l'œuf et frites dans l'huile jusqu'aux bords en dentelle. On les mange avec de la compote de pommes ou de la crème aigre — et le débat entre les deux camps dure depuis des générations.",
+    tableauLatkes: [
+      { nb: 1, pommedeterre: "180 g", oignon: "40 g", oeufs: "½", maizena: "12 g", huileolive: "20 ml", cremefraiche: "25 g", pommes: "50 g", sel: "2 g" },
+      { nb: 2, pommedeterre: "360 g", oignon: "80 g", oeufs: "1", maizena: "24 g", huileolive: "40 ml", cremefraiche: "50 g", pommes: "100 g", sel: "4 g" },
+      { nb: 3, pommedeterre: "540 g", oignon: "120 g", oeufs: "1½", maizena: "36 g", huileolive: "60 ml", cremefraiche: "75 g", pommes: "150 g", sel: "6 g" },
+      { nb: 4, pommedeterre: "720 g", oignon: "160 g", oeufs: "2", maizena: "48 g", huileolive: "80 ml", cremefraiche: "100 g", pommes: "200 g", sel: "8 g" },
+      { nb: 5, pommedeterre: "900 g", oignon: "200 g", oeufs: "2½", maizena: "60 g", huileolive: "100 ml", cremefraiche: "125 g", pommes: "250 g", sel: "10 g" },
+      { nb: 6, pommedeterre: "1080 g", oignon: "240 g", oeufs: "3", maizena: "72 g", huileolive: "120 ml", cremefraiche: "150 g", pommes: "300 g", sel: "12 g" },
+      { nb: 7, pommedeterre: "1260 g", oignon: "280 g", oeufs: "3½", maizena: "84 g", huileolive: "140 ml", cremefraiche: "175 g", pommes: "350 g", sel: "14 g" },
+      { nb: 8, pommedeterre: "1440 g", oignon: "320 g", oeufs: "4", maizena: "96 g", huileolive: "160 ml", cremefraiche: "200 g", pommes: "400 g", sel: "16 g" },
+      { nb: 9, pommedeterre: "1620 g", oignon: "360 g", oeufs: "4½", maizena: "108 g", huileolive: "180 ml", cremefraiche: "225 g", pommes: "450 g", sel: "18 g" },
+      { nb: 10, pommedeterre: "1800 g", oignon: "400 g", oeufs: "5", maizena: "120 g", huileolive: "200 ml", cremefraiche: "250 g", pommes: "500 g", sel: "20 g" },
+      { nb: 11, pommedeterre: "1980 g", oignon: "440 g", oeufs: "5½", maizena: "132 g", huileolive: "220 ml", cremefraiche: "275 g", pommes: "550 g", sel: "22 g" },
+      { nb: 12, pommedeterre: "2160 g", oignon: "480 g", oeufs: "6", maizena: "144 g", huileolive: "240 ml", cremefraiche: "300 g", pommes: "600 g", sel: "24 g" },
+      { nb: 13, pommedeterre: "2340 g", oignon: "520 g", oeufs: "6½", maizena: "156 g", huileolive: "260 ml", cremefraiche: "325 g", pommes: "650 g", sel: "26 g" },
+      { nb: 14, pommedeterre: "2520 g", oignon: "560 g", oeufs: "7", maizena: "168 g", huileolive: "280 ml", cremefraiche: "350 g", pommes: "700 g", sel: "28 g" },
+      { nb: 15, pommedeterre: "2700 g", oignon: "600 g", oeufs: "7½", maizena: "180 g", huileolive: "300 ml", cremefraiche: "375 g", pommes: "750 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper", detail: "Râpez les pommes de terre et l'oignon À LA GROSSE GRILLE (jamais au mixeur, ça fait de la purée).", badge: null },
+      { icone: "💪", titre: "PRESSER", detail: "Enfermez le tout dans un linge et pressez de toutes vos forces : plus il sort d'eau, plus la latke sera croustillante.", badge: null },
+      { icone: "🥣", titre: "L'amidon", detail: "Laissez reposer l'eau récupérée 2 minutes : l'amidon tombe au fond. Jetez l'eau, gardez l'amidon et remettez-le dans les pommes de terre — le liant secret.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Ajoutez œuf, maïzena et sel ; mélangez juste avant la cuisson (la pâte noircit si elle attend).", badge: null },
+      { icone: "🔥", titre: "L'huile", detail: "Chauffez une bonne épaisseur d'huile — les latkes doivent y grésiller franchement.", badge: null },
+      { icone: "🥞", titre: "Frire", detail: "Déposez des cuillerées aplaties ; 3-4 minutes par face SANS toucher, jusqu'à bords dentelle bien dorés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez, salez, et servez brûlant avec compote de pommes ET crème aigre — choisis ton camp. Les latkes de Hanouka !", badge: null }
+    ]
+  },
+  knish: {
+    dateAjout: "2026-07-28T17:05:00",
+    nom: "Knish",
+    cat: "encas", pays: "usa",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Knish — le chausson de New York, débarqué d'Europe de l'Est avec les immigrants : une pâte fine et souple enroulée autour d'une purée de pommes de terre aux oignons frits. Vendu aux coins de rue de Manhattan depuis 1910 — à manger brûlant, avec une giclée de moutarde.",
+    tableauKnish: [
+      { nb: 1, farine: "70 g", huileolive: "20 ml", pommedeterre: "170 g", oignon: "70 g", oeufs: "½", moutarde: "8 g", poivre: "1 g", sel: "2.5 g" },
+      { nb: 2, farine: "140 g", huileolive: "40 ml", pommedeterre: "340 g", oignon: "140 g", oeufs: "1", moutarde: "16 g", poivre: "2 g", sel: "5 g" },
+      { nb: 3, farine: "210 g", huileolive: "60 ml", pommedeterre: "510 g", oignon: "210 g", oeufs: "1½", moutarde: "24 g", poivre: "3 g", sel: "7.5 g" },
+      { nb: 4, farine: "280 g", huileolive: "80 ml", pommedeterre: "680 g", oignon: "280 g", oeufs: "2", moutarde: "32 g", poivre: "4 g", sel: "10 g" },
+      { nb: 5, farine: "350 g", huileolive: "100 ml", pommedeterre: "850 g", oignon: "350 g", oeufs: "2½", moutarde: "40 g", poivre: "5 g", sel: "12.5 g" },
+      { nb: 6, farine: "420 g", huileolive: "120 ml", pommedeterre: "1020 g", oignon: "420 g", oeufs: "3", moutarde: "48 g", poivre: "6 g", sel: "15 g" },
+      { nb: 7, farine: "490 g", huileolive: "140 ml", pommedeterre: "1190 g", oignon: "490 g", oeufs: "3½", moutarde: "56 g", poivre: "7 g", sel: "17.5 g" },
+      { nb: 8, farine: "560 g", huileolive: "160 ml", pommedeterre: "1360 g", oignon: "560 g", oeufs: "4", moutarde: "64 g", poivre: "8 g", sel: "20 g" },
+      { nb: 9, farine: "630 g", huileolive: "180 ml", pommedeterre: "1530 g", oignon: "630 g", oeufs: "4½", moutarde: "72 g", poivre: "9 g", sel: "22.5 g" },
+      { nb: 10, farine: "700 g", huileolive: "200 ml", pommedeterre: "1700 g", oignon: "700 g", oeufs: "5", moutarde: "80 g", poivre: "10 g", sel: "25 g" },
+      { nb: 11, farine: "770 g", huileolive: "220 ml", pommedeterre: "1870 g", oignon: "770 g", oeufs: "5½", moutarde: "88 g", poivre: "11 g", sel: "27.5 g" },
+      { nb: 12, farine: "840 g", huileolive: "240 ml", pommedeterre: "2040 g", oignon: "840 g", oeufs: "6", moutarde: "96 g", poivre: "12 g", sel: "30 g" },
+      { nb: 13, farine: "910 g", huileolive: "260 ml", pommedeterre: "2210 g", oignon: "910 g", oeufs: "6½", moutarde: "104 g", poivre: "13 g", sel: "32.5 g" },
+      { nb: 14, farine: "980 g", huileolive: "280 ml", pommedeterre: "2380 g", oignon: "980 g", oeufs: "7", moutarde: "112 g", poivre: "14 g", sel: "35 g" },
+      { nb: 15, farine: "1050 g", huileolive: "300 ml", pommedeterre: "2550 g", oignon: "1050 g", oeufs: "7½", moutarde: "120 g", poivre: "15 g", sel: "37.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez farine, huile, la moitié de l'œuf, sel et un peu d'eau tiède en pâte souple ; laissez REPOSER 30 minutes (elle doit devenir extensible).", badge: null },
+      { icone: "🧅", titre: "Les oignons", detail: "Faites dorer LONGUEMENT les oignons émincés dans l'huile — 15 minutes, jusqu'au brun doré : c'est là que se cache tout le goût.", badge: null },
+      { icone: "🥔", titre: "La purée", detail: "Cuisez les pommes de terre, écrasez-les grossièrement avec les oignons, sel et beaucoup de poivre.", badge: null },
+      { icone: "📏", titre: "Étirer", detail: "Étalez la pâte TRÈS fin sur un linge fariné, jusqu'à voir à travers — comme un strudel.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Déposez la purée en boudin sur un bord et roulez serré ; badigeonnez la soudure.", badge: null },
+      { icone: "✂️", titre: "Portionner", detail: "Coupez le boudin en tronçons et pincez chaque extrémité pour fermer, en tassant en petit palet rond.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Dorez à l'œuf et enfournez 35 minutes à 190°C. Brûlant, avec de la moutarde. Le knish de Manhattan !", badge: null }
+    ]
+  },
 });

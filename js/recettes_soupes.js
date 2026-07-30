@@ -5634,4 +5634,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Finissez avec le reste de coriandre et le citron, et servez brûlante. La chorba frik algérienne !", badge: null }
     ]
   },
+  matzoballsoup: {
+    dateAjout: "2026-07-28T17:01:00",
+    nom: "Soupe aux Boulettes de Matzo",
+    cat: "soupes", pays: "israel",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Matzo ball soup — « la pénicilline juive » : un bouillon de poule doré à l'aneth, avec des kneidlach (boulettes de farine de matzo) légères comme des nuages. Chaque famille défend sa texture — « floaters » aériennes ou « sinkers » denses. Le remède universel contre tout.",
+    tableauMatzoballsoup: [
+      { nb: 1, poulet: "120 g", chapelure: "45 g", oeufs: "1", carotte: "60 g", celeri: "40 g", oignon: "40 g", aneth: "3 g", persil: "2 g", huileolive: "15 ml", sel: "3 g" },
+      { nb: 2, poulet: "240 g", chapelure: "90 g", oeufs: "2", carotte: "120 g", celeri: "80 g", oignon: "80 g", aneth: "6 g", persil: "4 g", huileolive: "30 ml", sel: "6 g" },
+      { nb: 3, poulet: "360 g", chapelure: "135 g", oeufs: "3", carotte: "180 g", celeri: "120 g", oignon: "120 g", aneth: "9 g", persil: "6 g", huileolive: "45 ml", sel: "9 g" },
+      { nb: 4, poulet: "480 g", chapelure: "180 g", oeufs: "4", carotte: "240 g", celeri: "160 g", oignon: "160 g", aneth: "12 g", persil: "8 g", huileolive: "60 ml", sel: "12 g" },
+      { nb: 5, poulet: "600 g", chapelure: "225 g", oeufs: "5", carotte: "300 g", celeri: "200 g", oignon: "200 g", aneth: "15 g", persil: "10 g", huileolive: "75 ml", sel: "15 g" },
+      { nb: 6, poulet: "720 g", chapelure: "270 g", oeufs: "6", carotte: "360 g", celeri: "240 g", oignon: "240 g", aneth: "18 g", persil: "12 g", huileolive: "90 ml", sel: "18 g" },
+      { nb: 7, poulet: "840 g", chapelure: "315 g", oeufs: "7", carotte: "420 g", celeri: "280 g", oignon: "280 g", aneth: "21 g", persil: "14 g", huileolive: "105 ml", sel: "21 g" },
+      { nb: 8, poulet: "960 g", chapelure: "360 g", oeufs: "8", carotte: "480 g", celeri: "320 g", oignon: "320 g", aneth: "24 g", persil: "16 g", huileolive: "120 ml", sel: "24 g" },
+      { nb: 9, poulet: "1080 g", chapelure: "405 g", oeufs: "9", carotte: "540 g", celeri: "360 g", oignon: "360 g", aneth: "27 g", persil: "18 g", huileolive: "135 ml", sel: "27 g" },
+      { nb: 10, poulet: "1200 g", chapelure: "450 g", oeufs: "10", carotte: "600 g", celeri: "400 g", oignon: "400 g", aneth: "30 g", persil: "20 g", huileolive: "150 ml", sel: "30 g" },
+      { nb: 11, poulet: "1320 g", chapelure: "495 g", oeufs: "11", carotte: "660 g", celeri: "440 g", oignon: "440 g", aneth: "33 g", persil: "22 g", huileolive: "165 ml", sel: "33 g" },
+      { nb: 12, poulet: "1440 g", chapelure: "540 g", oeufs: "12", carotte: "720 g", celeri: "480 g", oignon: "480 g", aneth: "36 g", persil: "24 g", huileolive: "180 ml", sel: "36 g" },
+      { nb: 13, poulet: "1560 g", chapelure: "585 g", oeufs: "13", carotte: "780 g", celeri: "520 g", oignon: "520 g", aneth: "39 g", persil: "26 g", huileolive: "195 ml", sel: "39 g" },
+      { nb: 14, poulet: "1680 g", chapelure: "630 g", oeufs: "14", carotte: "840 g", celeri: "560 g", oignon: "560 g", aneth: "42 g", persil: "28 g", huileolive: "210 ml", sel: "42 g" },
+      { nb: 15, poulet: "1800 g", chapelure: "675 g", oeufs: "15", carotte: "900 g", celeri: "600 g", oignon: "600 g", aneth: "45 g", persil: "30 g", huileolive: "225 ml", sel: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Le bouillon", detail: "Faites frémir le poulet 1 heure avec carotte, céleri, oignon, tiges de persil et sel — JAMAIS bouillir, le bouillon doit rester clair.", badge: null },
+      { icone: "🥣", titre: "Les kneidlach", detail: "Mélangez la farine de matzo (chapelure fine de pain azyme) avec œufs, huile, sel et 2 cuillères de bouillon tiède.", badge: null },
+      { icone: "🧊", titre: "Reposer", detail: "Filmez et laissez 30 minutes au FRAIS : la matzo gonfle, la pâte devient façonnable.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Mains mouillées, roulez des boules de la taille d'une noix — elles vont DOUBLER en cuisant, ne les faites pas grosses.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Pochez-les 30 minutes dans de l'eau salée frémissante, à couvert et SANS ouvrir (l'humidité les fait lever).", badge: null },
+      { icone: "🫗", titre: "Le bouillon clair", detail: "Filtrez le bouillon, récupérez la chair de poulet et les carottes en rondelles.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Bouillon brûlant, 2 boulettes par bol, poulet, carottes et beaucoup d'aneth. La pénicilline juive !", badge: null }
+    ]
+  },
 });
