@@ -3922,4 +3922,41 @@ oeufmayo: {
       { icone: "🍽️", titre: "Refroidir & servir", detail: "Laissez refroidir DANS le fumet (il gélifie), puis servez froid, une rondelle de carotte sur chaque quenelle, raifort à côté. Le gefilte fish du chabbat !", badge: null }
     ]
   },
+  crabefarci: {
+    dateAjout: "2026-07-28T21:02:00",
+    nom: "Crabe Farci",
+    cat: "entrees", pays: "antilles",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦀",
+    description: "Crabe farci — l'entrée créole des grandes tablées : la chair de crabe mêlée à du pain trempé au lait, cive, ail et piment, remise dans la carapace et gratinée à la chapelure. En Guadeloupe et Martinique, c'est LE plat du Vendredi saint — piquant, iodé, servi brûlant dans sa coquille.",
+    tableauCrabefarci: [
+      { nb: 1, crabe: "150 g", pain: "35 g", lait: "40 ml", oignon: "30 g", ail: "1", piment: "0.5 g", persil: "4 g", citronvert: "¼", chapelure: "15 g", beurre: "12 g", thym: "0.3 g" },
+      { nb: 2, crabe: "300 g", pain: "70 g", lait: "80 ml", oignon: "60 g", ail: "2", piment: "1 g", persil: "8 g", citronvert: "½", chapelure: "30 g", beurre: "24 g", thym: "0.6 g" },
+      { nb: 3, crabe: "450 g", pain: "105 g", lait: "120 ml", oignon: "90 g", ail: "3", piment: "1.5 g", persil: "12 g", citronvert: "¾", chapelure: "45 g", beurre: "36 g", thym: "0.9 g" },
+      { nb: 4, crabe: "600 g", pain: "140 g", lait: "160 ml", oignon: "120 g", ail: "4", piment: "2 g", persil: "16 g", citronvert: "1", chapelure: "60 g", beurre: "48 g", thym: "1.2 g" },
+      { nb: 5, crabe: "750 g", pain: "175 g", lait: "200 ml", oignon: "150 g", ail: "5", piment: "2.5 g", persil: "20 g", citronvert: "1¼", chapelure: "75 g", beurre: "60 g", thym: "1.5 g" },
+      { nb: 6, crabe: "900 g", pain: "210 g", lait: "240 ml", oignon: "180 g", ail: "6", piment: "3 g", persil: "24 g", citronvert: "1½", chapelure: "90 g", beurre: "72 g", thym: "1.8 g" },
+      { nb: 7, crabe: "1050 g", pain: "245 g", lait: "280 ml", oignon: "210 g", ail: "7", piment: "3.5 g", persil: "28 g", citronvert: "1¾", chapelure: "105 g", beurre: "84 g", thym: "2.1 g" },
+      { nb: 8, crabe: "1200 g", pain: "280 g", lait: "320 ml", oignon: "240 g", ail: "8", piment: "4 g", persil: "32 g", citronvert: "2", chapelure: "120 g", beurre: "96 g", thym: "2.4 g" },
+      { nb: 9, crabe: "1350 g", pain: "315 g", lait: "360 ml", oignon: "270 g", ail: "9", piment: "4.5 g", persil: "36 g", citronvert: "2¼", chapelure: "135 g", beurre: "108 g", thym: "2.7 g" },
+      { nb: 10, crabe: "1500 g", pain: "350 g", lait: "400 ml", oignon: "300 g", ail: "10", piment: "5 g", persil: "40 g", citronvert: "2½", chapelure: "150 g", beurre: "120 g", thym: "3 g" },
+      { nb: 11, crabe: "1650 g", pain: "385 g", lait: "440 ml", oignon: "330 g", ail: "11", piment: "5.5 g", persil: "44 g", citronvert: "2¾", chapelure: "165 g", beurre: "132 g", thym: "3.3 g" },
+      { nb: 12, crabe: "1800 g", pain: "420 g", lait: "480 ml", oignon: "360 g", ail: "12", piment: "6 g", persil: "48 g", citronvert: "3", chapelure: "180 g", beurre: "144 g", thym: "3.6 g" },
+      { nb: 13, crabe: "1950 g", pain: "455 g", lait: "520 ml", oignon: "390 g", ail: "13", piment: "6.5 g", persil: "52 g", citronvert: "3¼", chapelure: "195 g", beurre: "156 g", thym: "3.9 g" },
+      { nb: 14, crabe: "2100 g", pain: "490 g", lait: "560 ml", oignon: "420 g", ail: "14", piment: "7 g", persil: "56 g", citronvert: "3½", chapelure: "210 g", beurre: "168 g", thym: "4.2 g" },
+      { nb: 15, crabe: "2250 g", pain: "525 g", lait: "600 ml", oignon: "450 g", ail: "15", piment: "7.5 g", persil: "60 g", citronvert: "3¾", chapelure: "225 g", beurre: "180 g", thym: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦀", titre: "La chair", detail: "Décortiquez le crabe en gardant les carapaces ; effilochez la chair en vérifiant qu'il ne reste AUCUN cartilage.", badge: null },
+      { icone: "🍞", titre: "Le pain", detail: "Faites tremper la mie de pain dans le lait, puis pressez-la légèrement.", badge: null },
+      { icone: "🧅", titre: "Le hachis", detail: "Faites revenir oignon (ou cive), ail, thym et piment dans le beurre, jusqu'à translucide.", badge: null },
+      { icone: "🥣", titre: "La farce", detail: "Mélangez chair de crabe, pain pressé, hachis, persil et jus de citron vert ; goûtez et relevez — la farce doit PIQUER.", badge: null },
+      { icone: "🐚", titre: "Garnir", detail: "Remplissez les carapaces nettoyées (ou des ramequins) en tassant bien.", badge: null },
+      { icone: "🍞", titre: "La croûte", detail: "Saupoudrez de chapelure et parsemez de petites noisettes de beurre.", badge: null },
+      { icone: "♨️", titre: "Gratiner", detail: "20 minutes à 200°C jusqu'à croûte dorée. Servez brûlant, citron vert à côté. Le crabe farci du Vendredi saint !", badge: null }
+    ]
+  },
 });

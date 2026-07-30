@@ -1162,4 +1162,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "48 h de frais minimum, puis sortez-les 20 minutes avant. Pain de campagne, cornichons. Les vraies rillettes !", badge: null }
     ]
   },
+  urnebes: {
+    dateAjout: "2026-07-28T21:09:00",
+    nom: "Urnebes",
+    cat: "tartinables", pays: "serbie",
+    base: 4,
+    temps: "15 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "Urnebes — littéralement « le chaos » en serbe : un fromage frais salé écrasé avec beaucoup de paprika, d'ail et de piment, jusqu'à une pâte orange irrégulière. Servi avec les grillades (ćevapi, pljeskavica) — trois ingrédients, zéro finesse assumée, et un résultat imbattable.",
+    tableauUrnebes: [
+      { nb: 1, feta: "90 g", fromageblanc: "40 g", paprika: "4 g", ail: "1", piment: "1 g", huileolive: "15 ml", poivre: "0.5 g" },
+      { nb: 2, feta: "180 g", fromageblanc: "80 g", paprika: "8 g", ail: "2", piment: "2 g", huileolive: "30 ml", poivre: "1 g" },
+      { nb: 3, feta: "270 g", fromageblanc: "120 g", paprika: "12 g", ail: "3", piment: "3 g", huileolive: "45 ml", poivre: "1.5 g" },
+      { nb: 4, feta: "360 g", fromageblanc: "160 g", paprika: "16 g", ail: "4", piment: "4 g", huileolive: "60 ml", poivre: "2 g" },
+      { nb: 5, feta: "450 g", fromageblanc: "200 g", paprika: "20 g", ail: "5", piment: "5 g", huileolive: "75 ml", poivre: "2.5 g" },
+      { nb: 6, feta: "540 g", fromageblanc: "240 g", paprika: "24 g", ail: "6", piment: "6 g", huileolive: "90 ml", poivre: "3 g" },
+      { nb: 7, feta: "630 g", fromageblanc: "280 g", paprika: "28 g", ail: "7", piment: "7 g", huileolive: "105 ml", poivre: "3.5 g" },
+      { nb: 8, feta: "720 g", fromageblanc: "320 g", paprika: "32 g", ail: "8", piment: "8 g", huileolive: "120 ml", poivre: "4 g" },
+      { nb: 9, feta: "810 g", fromageblanc: "360 g", paprika: "36 g", ail: "9", piment: "9 g", huileolive: "135 ml", poivre: "4.5 g" },
+      { nb: 10, feta: "900 g", fromageblanc: "400 g", paprika: "40 g", ail: "10", piment: "10 g", huileolive: "150 ml", poivre: "5 g" },
+      { nb: 11, feta: "990 g", fromageblanc: "440 g", paprika: "44 g", ail: "11", piment: "11 g", huileolive: "165 ml", poivre: "5.5 g" },
+      { nb: 12, feta: "1080 g", fromageblanc: "480 g", paprika: "48 g", ail: "12", piment: "12 g", huileolive: "180 ml", poivre: "6 g" },
+      { nb: 13, feta: "1170 g", fromageblanc: "520 g", paprika: "52 g", ail: "13", piment: "13 g", huileolive: "195 ml", poivre: "6.5 g" },
+      { nb: 14, feta: "1260 g", fromageblanc: "560 g", paprika: "56 g", ail: "14", piment: "14 g", huileolive: "210 ml", poivre: "7 g" },
+      { nb: 15, feta: "1350 g", fromageblanc: "600 g", paprika: "60 g", ail: "15", piment: "15 g", huileolive: "225 ml", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Le fromage", detail: "Émiettez la feta (ou un fromage de brebis salé) grossièrement À LA FOURCHETTE — surtout pas au mixeur, l'urnebes doit rester IRRÉGULIER.", badge: null },
+      { icone: "🥛", titre: "Adoucir", detail: "Ajoutez le fromage blanc et écrasez : la texture devient crémeuse par endroits, granuleuse ailleurs. C'est le chaos, c'est le nom.", badge: null },
+      { icone: "🌶️", titre: "Le paprika", detail: "Incorporez le paprika généreusement — c'est lui qui donne la couleur orange caractéristique.", badge: null },
+      { icone: "🧄", titre: "L'ail", detail: "Écrasez l'ail en pâte avec un peu de sel et mélangez-le.", badge: null },
+      { icone: "🔥", titre: "Le feu", detail: "Ajoutez le piment (fort ou doux, selon votre courage) et le poivre.", badge: null },
+      { icone: "🫒", titre: "L'huile", detail: "Versez l'huile d'olive en filet en mélangeant : la pâte devient brillante et se tartine.", badge: null },
+      { icone: "🍽️", titre: "Reposer", detail: "1 heure au frais minimum, puis servez avec des grillades et du pain. L'urnebes serbe — le chaos délicieux !", badge: null }
+    ]
+  },
 });

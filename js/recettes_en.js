@@ -88506,5 +88506,345 @@ window.RECETTES_EN = {
     "detail": "18 minutes at 165°C: the edges barely golden, the tops cracked. Cool ON the tray. Chai-time nankhatai!"
    }
   ]
+ },
+ "palourdesmarinieres": {
+  "nom": "Clams Marinière",
+  "description": "Palourdes marinières — absolute seaside simplicity: clams opened in white wine with shallot, garlic and parsley, in 5 minutes flat. Finer and brinier than mussels, they release a juice you mop to the last drop. The secret is one word: sand.",
+  "etapes": [
+   {
+    "titre": "THE DE-SANDING",
+    "detail": "Soak the clams 2 hours in VERY salty water (35 g/l, like the sea), chilled: they spit out their sand. Change the water once."
+   },
+   {
+    "titre": "Sort",
+    "detail": "Discard any that stay open after a tap on the worktop."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sweat the chopped shallot and garlic in the butter, without colouring."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Pour the white wine and boil hard for 1 minute to drive off the alcohol."
+   },
+   {
+    "titre": "Open",
+    "detail": "Tip in the clams, cover and shake the pot: 3 to 4 minutes, they open by themselves."
+   },
+   {
+    "titre": "The juices",
+    "detail": "Lift them out as they open (or they toughen) and reduce the juices 1 minute."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the peppered juices over the clams, parsley to taste, and bread. Do NOT salt — the sea did it!"
+   }
+  ]
+ },
+ "homardgrille": {
+  "nom": "Grilled Lobster",
+  "description": "Grilled lobster with herb butter — the great occasion dish: split in two, brushed with a lemon-garlic-tarragon butter and flashed under the grill just long enough. The flesh must stay PEARLY: thirty seconds too many and lobster turns to rubber. It's all in the timing.",
+  "etapes": [
+   {
+    "titre": "Sedate",
+    "detail": "Place the lobster 20 minutes in the freezer: it falls asleep, the most humane method."
+   },
+   {
+    "titre": "Split",
+    "detail": "Lay it on its back and split it in two with one clean cut, head to tail; remove the grit sac."
+   },
+   {
+    "titre": "The herb butter",
+    "detail": "Work the soft butter with crushed garlic, lemon zest and juice, parsley, tarragon, chilli and salt."
+   },
+   {
+    "titre": "Brush",
+    "detail": "Spread the butter generously over all the flesh and into the split."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Flash under a SCORCHING grill, flesh side up, 6 to 8 minutes depending on size."
+   },
+   {
+    "titre": "The test",
+    "detail": "The flesh is ready when it turns opaque and lifts away — watch it without looking away."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon over the melted butter from the dish, lemon alongside. Grilled lobster — summer luxury!"
+   }
+  ]
+ },
+ "crabefarci": {
+  "nom": "Stuffed Crab",
+  "description": "Crabe farci — the Creole starter of big gatherings: crab meat mixed with milk-soaked bread, spring onion, garlic and chilli, returned to the shell and gratinated with breadcrumbs. In Guadeloupe and Martinique it is THE Good Friday dish — spicy, briny, served scorching in its shell.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Pick the crab keeping the shells; flake the meat, checking NO cartilage remains."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Soak the bread crumb in the milk, then squeeze lightly."
+   },
+   {
+    "titre": "The base",
+    "detail": "Fry onion (or spring onion), garlic, thyme and chilli in the butter until translucent."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Mix crab meat, squeezed bread, the fried base, parsley and lime juice; taste and lift — the stuffing must BITE."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pack the cleaned shells (or ramekins), pressing well."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Dust with breadcrumbs and dot with small knobs of butter."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "20 minutes at 200°C to a golden crust. Serve scorching, lime alongside. Good Friday stuffed crab!"
+   }
+  ]
+ },
+ "crabcakes": {
+  "nom": "Crab Cakes",
+  "description": "Maryland crab cakes — the golden rule: as little binder as possible. Big lumps of crab meat barely held together by mayonnaise, mustard and a handful of breadcrumbs, pan-fried golden. If you see more crumb than crab, it is not a crab cake — it is a fritter.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Use BIG lumps (jumbo lump) and check by touch: not one piece of cartilage."
+   },
+   {
+    "titre": "The binder",
+    "detail": "Whisk mayonnaise, mustard, egg, lemon juice, paprika and parsley SEPARATELY."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Pour the binder over the crab and fold BY HAND, very gently: the lumps must not break."
+   },
+   {
+    "titre": "The breadcrumbs",
+    "detail": "Add just enough breadcrumbs to hold — not a gram more."
+   },
+   {
+    "titre": "The rest",
+    "detail": "Shape thick pucks and chill 30 minutes: without that rest they collapse in the pan."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Fry in butter 4 minutes per side over medium heat, without moving them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Golden crust, flaking heart. Lemon and tartare sauce. Maryland crab cakes!"
+   }
+  ]
+ },
+ "calamarsfarcis": {
+  "nom": "Stuffed Squid",
+  "description": "Calamari ripieni — southern Italy's stuffed squid: the bodies filled with breadcrumbs, chopped tentacles, capers, olives and parsley, sewn or pinned shut, then simmered in tomato. The stuffing swells as it cooks: fill only TWO THIRDS, or it all escapes into the sauce.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Clean the squid: separate the bodies (keep them whole) and chop the tentacles."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Fry the chopped tentacles with the garlic in the oil for 3 minutes."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Mix with breadcrumbs, capers, chopped olives, parsley and a stream of oil; the stuffing must be moist, not compact."
+   },
+   {
+    "titre": "FILL TO 2/3",
+    "detail": "Fill the bodies only TWO THIRDS full — the stuffing swells. Close with a wooden pick."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the stuffed squid 2 minutes in hot oil, on all sides."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Deglaze with white wine, add tomatoes and chilli; cover and simmer 40 minutes over VERY low heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "The squid is tender when a knife tip enters without resistance. Slice into rounds, coat with sauce. Calamari ripieni!"
+   }
+  ]
+ },
+ "crevettescreole": {
+  "nom": "Shrimp Creole",
+  "description": "Shrimp creole — New Orleans' emblematic dish: shrimp poached at the last minute in a tomato sauce built on the holy trinity (onion-celery-pepper) and lifted with cayenne. Served over white rice — Louisiana on a red plate.",
+  "etapes": [
+   {
+    "titre": "The shrimp",
+    "detail": "Peel the shrimp; keep the shells and make a quick stock (10 minutes in a glass of water), then strain."
+   },
+   {
+    "titre": "The holy trinity",
+    "detail": "Soften diced onion, celery and pepper in the oil — 10 minutes, the base of all Cajun cooking."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add garlic, paprika, cayenne, thyme and bay; 1 fragrant minute."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the crushed tomatoes and the shrimp stock; simmer 20 minutes uncovered."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Meanwhile cook the white rice, grains separate."
+   },
+   {
+    "titre": "THE LAST MINUTE",
+    "detail": "Tip the shrimp into the simmering sauce: 3 minutes MAXIMUM, they blush pink and stay tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Mound the rice and pour the creole shrimp around it. New Orleans shrimp creole!"
+   }
+  ]
+ },
+ "dolmapoivron": {
+  "nom": "Biber Dolması",
+  "description": "Biber dolması — Turkish stuffed peppers: rice, pine nuts, raisins, mint and dill (with or without meat), sealed inside sweet peppers and gently cooked in a tomato broth. The meat-free 'zeytinyağlı' version is eaten COLD, with olive oil — even better the next day.",
+  "etapes": [
+   {
+    "titre": "The peppers",
+    "detail": "Cut a cap around the stem and hollow out the seeds, without piercing the base."
+   },
+   {
+    "titre": "The pine nuts",
+    "detail": "Turn the pine nuts blond in the oil, then add the chopped onion and soften."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice, raisins, cinnamon and tomato paste; coat 2 minutes."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Off the heat, fold in chopped mint and dill, salt and pepper — the rice stays RAW, it cooks inside the pepper."
+   },
+   {
+    "titre": "FILL TO 3/4",
+    "detail": "Fill the peppers three quarters full (the rice swells) and replace the caps."
+   },
+   {
+    "titre": "Cook upright",
+    "detail": "Pack them UPRIGHT and tight in a pot, add oil, lemon juice and water halfway up; cover."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "50 minutes over low heat, until the rice is tender. Serve warm or COLD, Turkish-style. Biber dolması!"
+   }
+  ]
+ },
+ "patatasrellenas": {
+  "nom": "Papas Rellenas",
+  "description": "Papas rellenas — Peru's fried stuffed potatoes: mash moulded by hand around a beef hash with onions, olives and hard-boiled egg, then deep-fried golden. Crisp outside, soft beneath, a surprise at the centre — the king of Lima street snacks.",
+  "etapes": [
+   {
+    "titre": "The mash",
+    "detail": "Boil the potatoes in salted water, drain and let them DRY 5 minutes before mashing — wet mash will not hold."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mash finely, salt and bind with a little flour: the mash must be mouldable like a dough."
+   },
+   {
+    "titre": "The hash",
+    "detail": "Fry onion, garlic, cumin and paprika, add the minced beef and let it colour; off the heat, add chopped olives and chopped hard-boiled egg."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Take a handful of mash in your palm, flatten, hollow, place a spoon of filling."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Close the mash around the filling and roll into an egg shape, perfectly smooth — not a single crack, or it bursts in the fryer."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Roll each papa in flour and chill 15 minutes."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Deep-fry at 180°C to golden brown, turning. Serve with salsa criolla. Lima's papas rellenas!"
+   }
+  ]
+ },
+ "zeljanica": {
+  "nom": "Zeljanica",
+  "description": "Zeljanica — the Balkan spiral pie: thin pastry sheets filled with spinach and salty fresh cheese, rolled into logs then coiled into a giant snail in a round tin. A Bosnian pita cut into wedges — crisp on top, melting inside.",
+  "etapes": [
+   {
+    "titre": "The spinach",
+    "detail": "Wilt the spinach in a pan with the onion, then SQUEEZE it hard: water is the enemy of pita."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix squeezed spinach, crumbled feta, fresh cheese, egg and pepper — salt lightly, the feta already does."
+   },
+   {
+    "titre": "The sheets",
+    "detail": "Lay out a filo sheet, brush with oil, lay a second on top."
+   },
+   {
+    "titre": "The logs",
+    "detail": "Spread the filling in a line along one edge and roll into a thin but not tight log (it must be able to swell)."
+   },
+   {
+    "titre": "The snail",
+    "detail": "Coil the first log at the centre of an oiled round tin, then continue with the others around it."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Whisk cream and remaining egg, pour over the whole spiral: this is what makes the heart melting."
+   },
+   {
+    "titre": "Bake",
+    "detail": "40 minutes at 190°C to deep golden. Rest 10 minutes and cut into wedges. Bosnian zeljanica!"
+   }
+  ]
+ },
+ "urnebes": {
+  "nom": "Urnebes",
+  "description": "Urnebes — literally 'chaos' in Serbian: salty fresh cheese mashed with plenty of paprika, garlic and chilli into an irregular orange paste. Served with grilled meats (ćevapi, pljeskavica) — three ingredients, deliberately zero finesse, and an unbeatable result.",
+  "etapes": [
+   {
+    "titre": "The cheese",
+    "detail": "Crumble the feta (or a salty sheep's cheese) roughly WITH A FORK — never a blender, urnebes must stay IRREGULAR."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Add the fresh cheese and mash: the texture turns creamy in places, grainy in others. That is the chaos, that is the name."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Work in the paprika generously — it gives the characteristic orange colour."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Crush the garlic to a paste with a little salt and mix it in."
+   },
+   {
+    "titre": "The heat",
+    "detail": "Add the chilli (hot or mild, depending on your courage) and the pepper."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Stream in the olive oil while mixing: the paste turns glossy and spreadable."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour chilled minimum, then serve with grilled meats and bread. Serbian urnebes — delicious chaos!"
+   }
+  ]
  }
 };
