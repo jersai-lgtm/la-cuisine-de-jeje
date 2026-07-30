@@ -6671,4 +6671,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Immédiatement : le contraste bacon tiède / laitue glacée EST le BLT.", badge: null }
     ]
   },
+  scotcheggs: {
+    dateAjout: "2026-07-27T23:50:00",
+    nom: "Scotch Eggs",
+    cat: "encas", pays: "angleterre",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥚",
+    description: "Scotch eggs — l'œuf blindé britannique : un œuf mollet enveloppé de chair à saucisse, pané et frit doré. Inventé (dit-on) par Fortnum & Mason en 1738 pour les voyageurs en diligence — aujourd'hui le roi des pique-niques et des pubs, jaune coulant obligatoire.",
+    tableauScotcheggs: [
+      { nb: 1, oeufs: "1¼", saucisse: "80 g", chapelure: "20 g", farine: "10 g", moutarde: "5 g", huileolive: "12 ml", persil: "1 g" },
+      { nb: 2, oeufs: "2½", saucisse: "160 g", chapelure: "40 g", farine: "20 g", moutarde: "10 g", huileolive: "24 ml", persil: "2 g" },
+      { nb: 3, oeufs: "3¾", saucisse: "240 g", chapelure: "60 g", farine: "30 g", moutarde: "15 g", huileolive: "36 ml", persil: "3 g" },
+      { nb: 4, oeufs: "5", saucisse: "320 g", chapelure: "80 g", farine: "40 g", moutarde: "20 g", huileolive: "48 ml", persil: "4 g" },
+      { nb: 5, oeufs: "6¼", saucisse: "400 g", chapelure: "100 g", farine: "50 g", moutarde: "25 g", huileolive: "60 ml", persil: "5 g" },
+      { nb: 6, oeufs: "7½", saucisse: "480 g", chapelure: "120 g", farine: "60 g", moutarde: "30 g", huileolive: "72 ml", persil: "6 g" },
+      { nb: 7, oeufs: "8¾", saucisse: "560 g", chapelure: "140 g", farine: "70 g", moutarde: "35 g", huileolive: "84 ml", persil: "7 g" },
+      { nb: 8, oeufs: "10", saucisse: "640 g", chapelure: "160 g", farine: "80 g", moutarde: "40 g", huileolive: "96 ml", persil: "8 g" },
+      { nb: 9, oeufs: "11¼", saucisse: "720 g", chapelure: "180 g", farine: "90 g", moutarde: "45 g", huileolive: "108 ml", persil: "9 g" },
+      { nb: 10, oeufs: "12½", saucisse: "800 g", chapelure: "200 g", farine: "100 g", moutarde: "50 g", huileolive: "120 ml", persil: "10 g" },
+      { nb: 11, oeufs: "13¾", saucisse: "880 g", chapelure: "220 g", farine: "110 g", moutarde: "55 g", huileolive: "132 ml", persil: "11 g" },
+      { nb: 12, oeufs: "15", saucisse: "960 g", chapelure: "240 g", farine: "120 g", moutarde: "60 g", huileolive: "144 ml", persil: "12 g" },
+      { nb: 13, oeufs: "16¼", saucisse: "1040 g", chapelure: "260 g", farine: "130 g", moutarde: "65 g", huileolive: "156 ml", persil: "13 g" },
+      { nb: 14, oeufs: "17½", saucisse: "1120 g", chapelure: "280 g", farine: "140 g", moutarde: "70 g", huileolive: "168 ml", persil: "14 g" },
+      { nb: 15, oeufs: "18¾", saucisse: "1200 g", chapelure: "300 g", farine: "150 g", moutarde: "75 g", huileolive: "180 ml", persil: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Les œufs mollets", detail: "Cuisez les œufs 6 minutes, plongez-les dans l'eau glacée et écalez-les DÉLICATEMENT.", badge: null },
+      { icone: "🌭", titre: "La chair", detail: "Mélangez la chair à saucisse avec moutarde et persil ciselé.", badge: null },
+      { icone: "🤲", titre: "Blinder", detail: "Aplatissez la chair en disque dans votre main mouillée et enveloppez chaque œuf hermétiquement.", badge: null },
+      { icone: "🥚", titre: "Paner", detail: "Farine, œuf battu restant, chapelure — en pressant bien.", badge: null },
+      { icone: "🧊", titre: "Raffermir", detail: "Passez 15 minutes au frais : la panure tiendra.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire 6 à 7 minutes dans l'huile à 170°C, en tournant : brun doré, saucisse cuite.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Tiède ou froid, coupé en deux : le jaune doit couler à peine. Le scotch egg des pubs !", badge: null }
+    ]
+  },
 });

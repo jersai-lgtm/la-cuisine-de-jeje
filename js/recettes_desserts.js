@@ -11052,4 +11052,41 @@ Object.assign(recettes, {
       { icone: "♨️", titre: "Cuire doux", detail: "Cuisez à 140°C environ 15 minutes : le glaçage reste BLANC, le cœur moelleux. Les zimtsterne !", badge: null }
     ]
   },
+  ilesflottantes: {
+    dateAjout: "2026-07-27T23:59:00",
+    nom: "Îles Flottantes",
+    cat: "desserts", pays: "france",
+    base: 4,
+    temps: "40 min + frais",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🏝️",
+    description: "Îles flottantes — le dessert des dimanches français : des îles de blancs montés pochés au lait, voguant sur une crème anglaise vanillée, sous un filet de caramel et des amandes grillées. Léger comme un nuage, régressif comme une cantine — le duo blancs-jaunes parfait, rien ne se perd.",
+    tableauIlesflottantes: [
+      { nb: 1, oeufs: "1", lait: "120 ml", sucre: "25 g", vanille: "0.4 g", caramel: "8 g", amandes: "4 g" },
+      { nb: 2, oeufs: "2", lait: "240 ml", sucre: "50 g", vanille: "0.8 g", caramel: "16 g", amandes: "8 g" },
+      { nb: 3, oeufs: "3", lait: "360 ml", sucre: "75 g", vanille: "1.2 g", caramel: "24 g", amandes: "12 g" },
+      { nb: 4, oeufs: "4", lait: "480 ml", sucre: "100 g", vanille: "1.6 g", caramel: "32 g", amandes: "16 g" },
+      { nb: 5, oeufs: "5", lait: "600 ml", sucre: "125 g", vanille: "2 g", caramel: "40 g", amandes: "20 g" },
+      { nb: 6, oeufs: "6", lait: "720 ml", sucre: "150 g", vanille: "2.4 g", caramel: "48 g", amandes: "24 g" },
+      { nb: 7, oeufs: "7", lait: "840 ml", sucre: "175 g", vanille: "2.8 g", caramel: "56 g", amandes: "28 g" },
+      { nb: 8, oeufs: "8", lait: "960 ml", sucre: "200 g", vanille: "3.2 g", caramel: "64 g", amandes: "32 g" },
+      { nb: 9, oeufs: "9", lait: "1080 ml", sucre: "225 g", vanille: "3.6 g", caramel: "72 g", amandes: "36 g" },
+      { nb: 10, oeufs: "10", lait: "1200 ml", sucre: "250 g", vanille: "4 g", caramel: "80 g", amandes: "40 g" },
+      { nb: 11, oeufs: "11", lait: "1320 ml", sucre: "275 g", vanille: "4.4 g", caramel: "88 g", amandes: "44 g" },
+      { nb: 12, oeufs: "12", lait: "1440 ml", sucre: "300 g", vanille: "4.8 g", caramel: "96 g", amandes: "48 g" },
+      { nb: 13, oeufs: "13", lait: "1560 ml", sucre: "325 g", vanille: "5.2 g", caramel: "104 g", amandes: "52 g" },
+      { nb: 14, oeufs: "14", lait: "1680 ml", sucre: "350 g", vanille: "5.6 g", caramel: "112 g", amandes: "56 g" },
+      { nb: 15, oeufs: "15", lait: "1800 ml", sucre: "375 g", vanille: "6 g", caramel: "120 g", amandes: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Séparer", detail: "Séparez blancs et jaunes — les deux serviront, rien ne se perd.", badge: null },
+      { icone: "🍮", titre: "La crème anglaise", detail: "Chauffez le lait vanillé ; versez sur jaunes-sucre blanchis, puis épaississez à feu doux SANS bouillir (la cuillère se nappe).", badge: null },
+      { icone: "🧊", titre: "Refroidir", detail: "Filmez la crème et placez-la au frais.", badge: null },
+      { icone: "☁️", titre: "Les blancs", detail: "Montez les blancs en neige ferme avec une cuillère de sucre.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Formez des quenelles et pochez-les 1 minute par face dans une eau ou un lait frémissant ; égouttez sur un linge.", badge: null },
+      { icone: "🥜", titre: "Les amandes", detail: "Torréfiez les amandes effilées à sec.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Crème anglaise froide, îles dessus, filet de caramel et amandes. Les îles flottantes du dimanche !", badge: null }
+    ]
+  },
 });

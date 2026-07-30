@@ -86126,5 +86126,345 @@ window.RECETTES_EN = {
     "detail": "Bake at 140°C about 15 minutes: the icing stays WHITE, the heart chewy. Zimtsterne!"
    }
   ]
+ },
+ "scotcheggs": {
+  "nom": "Scotch Eggs",
+  "description": "Scotch eggs — the British armoured egg: a soft-boiled egg wrapped in sausage meat, breaded and fried golden. Invented (they say) by Fortnum & Mason in 1738 for stagecoach travellers — today the king of picnics and pubs, runny yolk mandatory.",
+  "etapes": [
+   {
+    "titre": "The soft eggs",
+    "detail": "Boil the eggs 6 minutes, plunge into iced water and peel GENTLY."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Mix the sausage meat with mustard and chopped parsley."
+   },
+   {
+    "titre": "Armour",
+    "detail": "Flatten the meat into a disc in your wet hand and wrap each egg seamlessly."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Flour, remaining beaten egg, breadcrumbs — pressing well."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill 15 minutes: the coating will hold."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry 6 to 7 minutes in 170°C oil, turning: golden brown, sausage cooked."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Warm or cold, halved: the yolk should barely run. The pub scotch egg!"
+   }
+  ]
+ },
+ "uovainpurgatorio": {
+  "nom": "Uova in Purgatorio",
+  "description": "Uova in purgatorio — Naples' 'eggs in purgatory': poached straight in a garlic-chilli tomato sauce that simmers like purgatory's flames, parmesan and basil on top. Naples' shakshuka — with bread, you save the souls and mop the pan.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Turn the sliced garlic blond with the chilli in the olive oil."
+   },
+   {
+    "titre": "The purgatory",
+    "detail": "Add the crushed tomatoes, salt, and simmer 10 minutes into a thick sauce."
+   },
+   {
+    "titre": "The wells",
+    "detail": "Dig wells in the sauce with a spoon."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Crack an egg into each well; salt the yolks."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover and poach 5 minutes: set whites, runny yolks."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Grated parmesan and torn basil over everything."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In the pan, with grilled bread for mopping. Naples' eggs in purgatory!"
+   }
+  ]
+ },
+ "eggcurry": {
+  "nom": "Egg Curry",
+  "description": "Egg curry (anda curry) — India's egg curry: hard-boiled eggs seared until blistered, dropped into a spiced onion-tomato-coconut sauce. The everyday curry, ready in 30 minutes, proof that a masala needs no meat to sing — with rice or naan.",
+  "etapes": [
+   {
+    "titre": "The eggs",
+    "detail": "Boil the eggs 9 minutes, peel and lightly score them."
+   },
+   {
+    "titre": "Blister",
+    "detail": "Sear them in the oil with a pinch of turmeric until golden-blistered; set aside."
+   },
+   {
+    "titre": "The masala",
+    "detail": "Brown the sliced onion, then grated garlic and ginger."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add curry and remaining turmeric; 30 fragrant seconds."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the crushed tomatoes and stew 8 minutes."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Pour the coconut milk and simmer 5 minutes; salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Return the eggs 2 minutes, coriander, and serve with rice or naan. Anda curry!"
+   }
+  ]
+ },
+ "khailookkeuy": {
+  "nom": "Son-in-Law Eggs",
+  "description": "Khai look keuy — Thailand's 'son-in-law eggs': hard-boiled eggs FRIED until the skin blisters golden, coated in a sweet-sour tamarind sauce and covered with crispy fried shallots. Legend says the dish was a warning to misbehaving sons-in-law… Crispy, melting, addictive.",
+  "etapes": [
+   {
+    "titre": "The eggs",
+    "detail": "Boil the eggs 8 minutes, peel and pat PERFECTLY dry."
+   },
+   {
+    "titre": "The shallots",
+    "detail": "Slice the shallots thin and fry golden in the oil; drain on paper."
+   },
+   {
+    "titre": "Fry the eggs",
+    "detail": "In the same hot oil, fry the whole eggs, rolling them: the skin blisters and gilds."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Melt brown sugar, dissolved tamarind and fish sauce into a coating sweet-sour caramel."
+   },
+   {
+    "titre": "Lift",
+    "detail": "Add the chilli; the sauce must snap sweet-sour-salty."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Halve the fried eggs, golden face up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat with tamarind sauce, cover with fried shallots and coriander. Son-in-law eggs!"
+   }
+  ]
+ },
+ "khaijiao": {
+  "nom": "Khai Jiao",
+  "description": "Khai jiao — the puffed Thai omelette: eggs beaten with fish sauce, poured FROM HIGH UP into very hot oil where they balloon into crispy golden lace, served on rice with sriracha. Bangkok's best-loved one-euro dinner — 15 minutes, high art.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the jasmine rice — the omelette sits on it."
+   },
+   {
+    "titre": "Beat",
+    "detail": "Beat the eggs with the fish sauce and chopped onion until frothy."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat the oil in a wok until it shimmers — REALLY hot."
+   },
+   {
+    "titre": "The test",
+    "detail": "A drop of egg must puff and rise instantly."
+   },
+   {
+    "titre": "Pour from high",
+    "detail": "Pour the eggs in one go FROM 30 CM UP: the omelette balloons into a golden cloud."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Fold and flip after 1 minute: lacy edges, tender heart."
+   },
+   {
+    "titre": "Serve",
+    "detail": "On the rice, chilli or sriracha. Bangkok khai jiao — 15 minutes flat!"
+   }
+  ]
+ },
+ "tortangtalong": {
+  "nom": "Tortang Talong",
+  "description": "Tortang talong — the Philippines' eggplant omelette: a whole eggplant grilled until the skin blackens, peeled, fanned flat KEEPING the stem, dipped in beaten egg and pan-fried golden. The eggplant melts, the egg crisps — Filipino everyday genius, with rice and banana ketchup.",
+  "etapes": [
+   {
+    "titre": "Grill",
+    "detail": "Grill the eggplants WHOLE over a flame or under the grill until black-skinned and soft."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Seal them 10 minutes in a bag or under a bowl: the skin will slip off."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel gently, KEEPING the stem attached."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Flatten each eggplant with a fork into a wide fan."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Beat the salted eggs with chopped garlic and onion; dip each fan."
+   },
+   {
+    "titre": "Gild",
+    "detail": "Pan-fry 3 minutes per side, re-coating with egg."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With rice (and banana ketchup for purists!). Tortang talong!"
+   }
+  ]
+ },
+ "omelettemerepoulard": {
+  "nom": "Mère Poulard Omelette",
+  "description": "The Mère Poulard omelette — Mont-Saint-Michel's soufflé since 1888: eggs whipped AT LENGTH into a mousse (to the rhythm of whisks you hear from the street), cooked in butter into an omelette puffed like a cloud, baveuse inside, golden below. Three ingredients, one knack, one legend.",
+  "etapes": [
+   {
+    "titre": "Separate",
+    "detail": "Separate whites and yolks."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the whites to a firm mousse, and the yolks with the cream and salt — AT LENGTH, the Poulard secret."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Gently fold the yolks into the whites without breaking the mousse."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Foam a generous knob of butter in a properly hot pan."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour the mousse: it puffs at once. Medium heat, hands off, 3 minutes."
+   },
+   {
+    "titre": "Fold",
+    "detail": "When the base is golden and the top still baveuse, fold into a half-moon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slide onto the plate and serve IMMEDIATELY, puffed and trembling. La Mère Poulard!"
+   }
+  ]
+ },
+ "eggsflorentine": {
+  "nom": "Eggs Florentine",
+  "description": "Eggs Florentine — the green sister of eggs Benedict: a poached egg on a bed of buttered spinach, toasted muffin and lemony hollandaise flowing over everything. The chic brunch of New York cafés — the fork pierces, the yolk meets the hollandaise, Sunday is a success.",
+  "etapes": [
+   {
+    "titre": "The spinach",
+    "detail": "Melt the spinach in a little butter; salt, press out the excess water."
+   },
+   {
+    "titre": "The hollandaise",
+    "detail": "Whisk a yolk with a dash of water over a gentle bain-marie, then stream in melted butter; lemon, salt."
+   },
+   {
+    "titre": "The trembling water",
+    "detail": "Bring a pan of water to a tremble with the vinegar (never boiling)."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Make a whirlpool and slip in the egg; 3 minutes, set white, runny yolk."
+   },
+   {
+    "titre": "The base",
+    "detail": "Toast the bread (English muffin, ideally) and butter it."
+   },
+   {
+    "titre": "Build",
+    "detail": "Bread, spinach bed, drained poached egg."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat with hollandaise, a grind of pepper. The fork pierces — eggs Florentine!"
+   }
+  ]
+ },
+ "cilbir": {
+  "nom": "Çılbır",
+  "description": "Çılbır — Turkish poached eggs, served to Ottoman sultans as early as the 15th century: set on creamy garlic yogurt, doused with foaming paprika butter that draws red rivers. Yolk, cool yogurt and chilli butter in the same spoon — a shock.",
+  "etapes": [
+   {
+    "titre": "The yogurt",
+    "detail": "Beat the (thick, Greek-style) yogurt with pressed garlic and a pinch of salt; bring to room temperature."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the eggs 3 minutes in trembling vinegared water: set whites, runny yolks."
+   },
+   {
+    "titre": "The red butter",
+    "detail": "Foam the butter with paprika and chilli — without burning, it must redden as it perfumes."
+   },
+   {
+    "titre": "The bed",
+    "detail": "Spread the garlic yogurt into a nest on shallow plates."
+   },
+   {
+    "titre": "Set",
+    "detail": "Place the drained poached eggs at the centre."
+   },
+   {
+    "titre": "The rivers",
+    "detail": "Pour the foaming red butter: it draws rivers through the white."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped dill, grilled bread, and a spoon that takes everything at once. Ottoman çılbır!"
+   }
+  ]
+ },
+ "ilesflottantes": {
+  "nom": "Îles Flottantes",
+  "description": "Îles flottantes — the French Sunday dessert: islands of whipped egg whites poached in milk, sailing on a vanilla crème anglaise, under a thread of caramel and toasted almonds. Light as a cloud, comforting as a canteen — the perfect whites-yolks duo, nothing wasted.",
+  "etapes": [
+   {
+    "titre": "Separate",
+    "detail": "Separate whites and yolks — both will serve, nothing is lost."
+   },
+   {
+    "titre": "The crème anglaise",
+    "detail": "Heat the vanilla milk; pour over pale yolk-sugar, then thicken over low heat WITHOUT boiling (the spoon coats)."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cover the cream and refrigerate."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whip the whites stiff with a spoonful of sugar."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Shape quenelles and poach 1 minute per side in trembling water or milk; drain on a cloth."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Dry-toast the flaked almonds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cold crème anglaise, islands on top, caramel thread and almonds. Sunday îles flottantes!"
+   }
+  ]
  }
 };
