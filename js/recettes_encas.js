@@ -6708,4 +6708,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Tiède ou froid, coupé en deux : le jaune doit couler à peine. Le scotch egg des pubs !", badge: null }
     ]
   },
+  alootikki: {
+    dateAjout: "2026-07-28T09:03:00",
+    nom: "Aloo Tikki",
+    cat: "encas", pays: "inde",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Aloo tikki — les galettes de pommes de terre épicées du nord de l'Inde : purée liée à la fécule, farcie de petits pois au gingembre, dorée croustillante à la poêle. Le roi du street food de Delhi — servi brûlant avec du yaourt et un chutney, sur assiette en carton, debout dans la rue.",
+    tableauAlootikki: [
+      { nb: 1, pommedeterre: "160 g", petitspois: "40 g", maizena: "12 g", gingembre: "4 g", piment: "0.5 g", cumin: "1 g", coriandre: "2 g", yaourt: "30 g", huileolive: "12 ml", sel: "1.5 g" },
+      { nb: 2, pommedeterre: "320 g", petitspois: "80 g", maizena: "24 g", gingembre: "8 g", piment: "1 g", cumin: "2 g", coriandre: "4 g", yaourt: "60 g", huileolive: "24 ml", sel: "3 g" },
+      { nb: 3, pommedeterre: "480 g", petitspois: "120 g", maizena: "36 g", gingembre: "12 g", piment: "1.5 g", cumin: "3 g", coriandre: "6 g", yaourt: "90 g", huileolive: "36 ml", sel: "4.5 g" },
+      { nb: 4, pommedeterre: "640 g", petitspois: "160 g", maizena: "48 g", gingembre: "16 g", piment: "2 g", cumin: "4 g", coriandre: "8 g", yaourt: "120 g", huileolive: "48 ml", sel: "6 g" },
+      { nb: 5, pommedeterre: "800 g", petitspois: "200 g", maizena: "60 g", gingembre: "20 g", piment: "2.5 g", cumin: "5 g", coriandre: "10 g", yaourt: "150 g", huileolive: "60 ml", sel: "7.5 g" },
+      { nb: 6, pommedeterre: "960 g", petitspois: "240 g", maizena: "72 g", gingembre: "24 g", piment: "3 g", cumin: "6 g", coriandre: "12 g", yaourt: "180 g", huileolive: "72 ml", sel: "9 g" },
+      { nb: 7, pommedeterre: "1120 g", petitspois: "280 g", maizena: "84 g", gingembre: "28 g", piment: "3.5 g", cumin: "7 g", coriandre: "14 g", yaourt: "210 g", huileolive: "84 ml", sel: "10.5 g" },
+      { nb: 8, pommedeterre: "1280 g", petitspois: "320 g", maizena: "96 g", gingembre: "32 g", piment: "4 g", cumin: "8 g", coriandre: "16 g", yaourt: "240 g", huileolive: "96 ml", sel: "12 g" },
+      { nb: 9, pommedeterre: "1440 g", petitspois: "360 g", maizena: "108 g", gingembre: "36 g", piment: "4.5 g", cumin: "9 g", coriandre: "18 g", yaourt: "270 g", huileolive: "108 ml", sel: "13.5 g" },
+      { nb: 10, pommedeterre: "1600 g", petitspois: "400 g", maizena: "120 g", gingembre: "40 g", piment: "5 g", cumin: "10 g", coriandre: "20 g", yaourt: "300 g", huileolive: "120 ml", sel: "15 g" },
+      { nb: 11, pommedeterre: "1760 g", petitspois: "440 g", maizena: "132 g", gingembre: "44 g", piment: "5.5 g", cumin: "11 g", coriandre: "22 g", yaourt: "330 g", huileolive: "132 ml", sel: "16.5 g" },
+      { nb: 12, pommedeterre: "1920 g", petitspois: "480 g", maizena: "144 g", gingembre: "48 g", piment: "6 g", cumin: "12 g", coriandre: "24 g", yaourt: "360 g", huileolive: "144 ml", sel: "18 g" },
+      { nb: 13, pommedeterre: "2080 g", petitspois: "520 g", maizena: "156 g", gingembre: "52 g", piment: "6.5 g", cumin: "13 g", coriandre: "26 g", yaourt: "390 g", huileolive: "156 ml", sel: "19.5 g" },
+      { nb: 14, pommedeterre: "2240 g", petitspois: "560 g", maizena: "168 g", gingembre: "56 g", piment: "7 g", cumin: "14 g", coriandre: "28 g", yaourt: "420 g", huileolive: "168 ml", sel: "21 g" },
+      { nb: 15, pommedeterre: "2400 g", petitspois: "600 g", maizena: "180 g", gingembre: "60 g", piment: "7.5 g", cumin: "15 g", coriandre: "30 g", yaourt: "450 g", huileolive: "180 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "La purée", detail: "Cuisez les pommes de terre à l'eau, égouttez-les et laissez-les SÉCHER 5 minutes avant d'écraser.", badge: null },
+      { icone: "🌾", titre: "Lier", detail: "Mélangez la purée refroidie avec la fécule et le sel : la pâte doit se tenir sans coller.", badge: null },
+      { icone: "🫛", titre: "La farce", detail: "Écrasez grossièrement les petits pois avec gingembre râpé, cumin, piment et coriandre.", badge: null },
+      { icone: "🤲", titre: "Farcir", detail: "Formez des boules de purée, creusez-les, garnissez de petits pois et refermez.", badge: null },
+      { icone: "⚪", titre: "Aplatir", detail: "Aplatissez délicatement en galettes épaisses.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faites-les dorer à la poêle 4 minutes par face, sans les bouger trop tôt — la croûte doit se former.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Brûlantes, avec du yaourt battu et de la coriandre. L'aloo tikki de Delhi !", badge: null }
+    ]
+  },
 });

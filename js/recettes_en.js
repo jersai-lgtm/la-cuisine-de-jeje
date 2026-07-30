@@ -86466,5 +86466,345 @@ window.RECETTES_EN = {
     "detail": "Cold crème anglaise, islands on top, caramel thread and almonds. Sunday îles flottantes!"
    }
   ]
+ },
+ "albondigas": {
+  "nom": "Albóndigas",
+  "description": "Albóndigas — the Spanish tapas meatballs: beef and pork bound with milk-soaked bread, browned then simmered in a tomato sauce with white wine and paprika. Served in a cazuela with a toothpick, or as a main with rice — the tapas that gathers the whole bar.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Soak the bread crumb in the milk, then squeeze lightly."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Combine minced beef and pork with the bread, egg, half the garlic, parsley, salt and pepper."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Shape walnut-sized meatballs with damp hands."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown them in olive oil on all sides; set aside."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "In the same pan, soften onion and remaining garlic, then the paprika off the heat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Deglaze with white wine, add the crushed tomatoes and return the meatballs; 25 minutes covered."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped parsley, and bread for the sauce. Barra albóndigas!"
+   }
+  ]
+ },
+ "izmirkoftesi": {
+  "nom": "İzmir Köftesi",
+  "description": "İzmir köftesi — the baked meatballs of Izmir: elongated köfte browned in the pan, arranged in a dish with potatoes and peppers, drowned in tomato sauce and baked until everything candies together. The Turkish family dish that fills the house with cumin.",
+  "etapes": [
+   {
+    "titre": "The mix",
+    "detail": "Combine the minced beef with crumbled bread, half the grated onion, egg, cumin, salt and parsley; knead well."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form ELONGATED meatballs (like thick fingers) — the İzmir shape."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Quickly brown them in a pan on all sides; set aside."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut the potatoes into wedges and the peppers into strips; brown them too."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Lay köfte and vegetables in a baking dish, alternating."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Mix crushed tomatoes, paste, remaining onion and a glass of water; pour over the dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "40 minutes at 190°C: the sauce reduces, everything candies. Family İzmir köftesi!"
+   }
+  ]
+ },
+ "soutzoukakia": {
+  "nom": "Soutzoukakia",
+  "description": "Soutzoukakia — the meatballs of Smyrna: elongated köfte with CUMIN and garlic, simmered in a red-wine tomato sauce scented with cinnamon. Brought to Greece by the refugees of Asia Minor in 1922 — a dish that tells a story in every bite.",
+  "etapes": [
+   {
+    "titre": "The mix",
+    "detail": "Soak the bread in water, squeeze and mix with the beef, crushed garlic, generous CUMIN, egg, salt and parsley."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest the mix 20 minutes in the fridge: the cumin permeates the meat."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll elongated spindle-shaped meatballs."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown them in olive oil; set aside."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Soften the onion, deglaze with red wine and reduce by half."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add tomatoes and cinnamon, return the meatballs; 25 minutes on low."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With rice or mash, parsley on top. Smyrna soutzoukakia!"
+   }
+  ]
+ },
+ "alootikki": {
+  "nom": "Aloo Tikki",
+  "description": "Aloo tikki — northern India's spiced potato patties: mash bound with starch, stuffed with ginger peas, pan-fried crisp and golden. The king of Delhi street food — served scorching with yogurt and chutney, on a paper plate, standing in the street.",
+  "etapes": [
+   {
+    "titre": "The mash",
+    "detail": "Boil the potatoes, drain and let them DRY 5 minutes before mashing."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix the cooled mash with the starch and salt: the dough must hold without sticking."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Roughly crush the peas with grated ginger, cumin, chilli and coriander."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Shape balls of mash, hollow them, fill with peas and seal."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Gently flatten into thick patties."
+   },
+   {
+    "titre": "Gild",
+    "detail": "Pan-fry 4 minutes per side, without moving them too early — the crust must set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scorching, with beaten yogurt and coriander. Delhi aloo tikki!"
+   }
+  ]
+ },
+ "lentejasestofadas": {
+  "nom": "Lentejas Estofadas",
+  "description": "Lentejas estofadas — the Spanish Sunday lentils: simmered with chorizo, carrot, pepper and smoked paprika until the broth turns orange and unctuous. The plato de cuchara ('spoon dish') every family claims as their own — better reheated, as always.",
+  "etapes": [
+   {
+    "titre": "The lentils",
+    "detail": "Rinse the lentils (green or blond) — no soaking needed."
+   },
+   {
+    "titre": "The chorizo",
+    "detail": "Fry the sliced chorizo in the oil: it releases its orange fat, the dish's treasure."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Add onion, garlic and pepper; soften 8 minutes in that fragrant fat."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Off the heat, add the (ideally smoked) paprika and stir — it must never burn."
+   },
+   {
+    "titre": "Wet",
+    "detail": "Add lentils, carrot, cubed potatoes and bay; cover with water by three fingers."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "45 minutes at the gentlest simmer, without stirring hard; salt at the end."
+   },
+   {
+    "titre": "Serve",
+    "detail": "The broth must be unctuous, not watery. By the spoon, with bread. Las lentejas de la abuela!"
+   }
+  ]
+ },
+ "peperonata": {
+  "nom": "Peperonata",
+  "description": "Peperonata — Italy's confit peppers: red and yellow strips melted very slowly in olive oil with onion, tomato and a dash of vinegar. Neither raw nor crunchy: fully candied, almost a jam. Hot as a dish, cold as antipasto, on toast at breakfast.",
+  "etapes": [
+   {
+    "titre": "The peppers",
+    "detail": "Deseed the peppers (red AND yellow for colour) and cut into wide strips."
+   },
+   {
+    "titre": "The base",
+    "detail": "Soften the sliced onion and garlic in olive oil over low heat, without colouring."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Add the peppers and a pinch of salt; cover and sweat 15 minutes."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomatoes and sugar; carry on uncovered."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Stew 25 minutes, stirring occasionally: the peppers must melt, the edges caramelise."
+   },
+   {
+    "titre": "The vinegar",
+    "detail": "Add the vinegar at the end and let it evaporate 2 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Torn basil, a stream of raw oil. Hot, warm or cold — peperonata does it all!"
+   }
+  ]
+ },
+ "hasselbackpotatis": {
+  "nom": "Hasselback Potatoes",
+  "description": "Hasselbackspotatis — Stockholm's accordion potatoes, created in 1953 at the Hasselbacken restaurant: sliced thinly without cutting through, doused in butter and topped with breadcrumbs. Crisp on the surface, melting at the heart — the side that steals the show.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Choose evenly sized potatoes and wash them (skin on)."
+   },
+   {
+    "titre": "The trick",
+    "detail": "Set each potato in the hollow of a tablespoon: the rim stops the knife and you will never cut all the way through."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice thinly (2-3 mm) along the whole length — the accordion is born."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush with melted butter, garlic and thyme, working INTO the slits; salt."
+   },
+   {
+    "titre": "First bake",
+    "detail": "45 minutes at 200°C: the slices fan open."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Mix breadcrumbs and parmesan, scatter on top with a last drizzle of butter."
+   },
+   {
+    "titre": "Finish",
+    "detail": "15 minutes more: golden crust, melting heart. Stockholm hasselbackspotatis!"
+   }
+  ]
+ },
+ "patatasrevolconas": {
+  "nom": "Patatas Revolconas",
+  "description": "Patatas revolconas — Ávila's red mash: potatoes roughly crushed and 'tumbled' (revolcar) in smoked-paprika fat, crowned with torreznos, those crispy pork bits. The shepherds' dish of Castile — rustic, smoky, comforting beyond reason.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Boil the whole potatoes in salted water with the bay leaf until tender."
+   },
+   {
+    "titre": "The torreznos",
+    "detail": "Meanwhile fry the pork bits in the oil until PROPERLY crisp; set aside."
+   },
+   {
+    "titre": "The red fat",
+    "detail": "In the rendered fat, turn the crushed garlic blond, then take off the heat."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Add the smoked paprika off the heat: it dyes the fat deep red without bitterness."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Drain the potatoes (keep a little water) and crush them ROUGHLY with a fork."
+   },
+   {
+    "titre": "Revolcar",
+    "detail": "Pour in the red fat and 'tumble' the mash with a spoon, adding a little cooking water: rustic, never smooth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with the crispy torreznos. Las patatas revolconas de Ávila!"
+   }
+  ]
+ },
+ "rumbledethumps": {
+  "nom": "Rumbledethumps",
+  "description": "Rumbledethumps — the Scottish Borders gratin with the impossible name: mashed potato and cabbage folded with butter and chives, covered with cheddar and grilled. Cousin of Irish colcannon, in a golden baked version — the name comes from the noise of mashing it all together.",
+  "etapes": [
+   {
+    "titre": "The mash",
+    "detail": "Boil the potatoes and mash with half the butter, the milk and nutmeg."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Slice the cabbage (curly or white) into thin ribbons."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Melt the cabbage and onion in the remaining butter 8 minutes, covered — tender, never watery."
+   },
+   {
+    "titre": "Rumble",
+    "detail": "Mix mash and cabbage vigorously: that is the 'rumbledethumps', the sound of the mashing."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Pour into a buttered dish and barely smooth — the ridges will gratinate."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Cover generously with grated cheese."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "20 minutes at 200°C: the top browns and blisters. Borders rumbledethumps!"
+   }
+  ]
+ },
+ "gratinpoireaux": {
+  "nom": "Leek Gratin",
+  "description": "Gratin de poireaux — the grandmother classic: melting leeks coated in nutmeg béchamel, covered with gruyère and baked to golden blisters. Simple, cheap, comforting — proof that a well-treated vegetable needs no one else.",
+  "etapes": [
+   {
+    "titre": "The leeks",
+    "detail": "Split the leeks lengthwise, wash carefully (grit hides between the leaves) and cut into lengths."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil 12 minutes in salted water or steam — tender but not collapsed."
+   },
+   {
+    "titre": "PRESS",
+    "detail": "Drain and press them well: leek water is the gratin's enemy."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Melt the butter, add the flour and stir 2 minutes without colouring."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Pour in the hot milk in a stream, whisking; thicken, then nutmeg, salt, pepper."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Lay the leeks in a buttered dish and coat with béchamel."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Cover with grated gruyère and bake 25 minutes at 200°C, to golden blisters. Grandma's gratin!"
+   }
+  ]
  }
 };
