@@ -87486,5 +87486,345 @@ window.RECETTES_EN = {
     "detail": "In a bowl, with lettuce leaves and grilled meat: fill, roll, swallow. Ssamjang!"
    }
   ]
+ },
+ "chaimasala": {
+  "nom": "Masala Chai",
+  "description": "Masala chai — the spiced tea that paces Indian days: cardamom, ginger, cinnamon and clove boiled with black tea, milk and sugar, poured from high to froth it. Every chaiwallah has a secret ratio — the only tea you BOIL, and that's the point.",
+  "etapes": [
+   {
+    "titre": "The spices",
+    "detail": "Crush the cardamom pods, ginger and pepper in a mortar — never powdered, the aroma is everything."
+   },
+   {
+    "titre": "The spiced infusion",
+    "detail": "Bring a glass of water to the boil with all the spices; boil 5 minutes."
+   },
+   {
+    "titre": "The tea",
+    "detail": "Add the black tea (strong Assam) and boil 2 minutes more."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Pour in the milk and sugar; bring to a simmer."
+   },
+   {
+    "titre": "The rise",
+    "detail": "Let it rise until it threatens to boil over, then lower — repeat THREE times: that is what builds the texture."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into glasses through a fine sieve."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour from glass to glass from high up to froth it. The chaiwallahs' masala chai!"
+   }
+  ]
+ },
+ "atay": {
+  "nom": "Moroccan Mint Tea",
+  "description": "Atay bi na'na' — Moroccan mint tea, far more than a drink: a ritual. Rinsed gunpowder green tea, a bouquet of fresh mint, sugar loaf, and that gesture of pouring from very high to raise the foam. It is served three times, each glass sweeter than the last.",
+  "etapes": [
+   {
+    "titre": "Wake the tea",
+    "detail": "Put the gunpowder green tea in the pot, cover with a little boiling water, swirl 10 seconds and DISCARD that water — it carries off the bitterness."
+   },
+   {
+    "titre": "The infusion",
+    "detail": "Pour boiling water over the rinsed tea and steep 3 minutes."
+   },
+   {
+    "titre": "The mint",
+    "detail": "Pack a BIG bouquet of fresh mint (stems included) into the pot — don't be shy."
+   },
+   {
+    "titre": "The sugar",
+    "detail": "Add the sugar generously: Moroccan tea is sweet, that is how it is."
+   },
+   {
+    "titre": "Marry",
+    "detail": "Pour a glass and return it to the pot, THREE times: the tea aerates and the flavours marry."
+   },
+   {
+    "titre": "The foam",
+    "detail": "Serve holding the pot very high: the stream should fall 30 cm and foam the glass."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In small glasses, scorching, with gazelle horns. Moroccan atay — three glasses, three friendships!"
+   }
+  ]
+ },
+ "cafedeolla": {
+  "nom": "Café de Olla",
+  "description": "Café de olla — Mexican coffee in a clay pot: steeped (never pressure-brewed) with a piece of piloncillo, a cinnamon stick and sometimes orange zest. The earthenware pot gives it its unique taste — the coffee of markets and cold sierra mornings.",
+  "etapes": [
+   {
+    "titre": "The pot",
+    "detail": "Use an olla de barro (clay pot) if you have one — it makes the taste. Otherwise a saucepan will do."
+   },
+   {
+    "titre": "The spiced water",
+    "detail": "Bring the water to the boil with the cinnamon stick, clove and orange zest."
+   },
+   {
+    "titre": "The piloncillo",
+    "detail": "Add the whole cane sugar (piloncillo ideally) and let it dissolve completely."
+   },
+   {
+    "titre": "Infuse the spices",
+    "detail": "Lower the heat and infuse 5 minutes: the water must be amber and fragrant."
+   },
+   {
+    "titre": "The coffee",
+    "detail": "Off the heat, add the COARSELY GROUND coffee and stir once."
+   },
+   {
+    "titre": "Let it settle",
+    "detail": "Cover and steep 5 minutes WITHOUT stirring: the grounds sink on their own."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour gently into clay cups, leaving the grounds behind. Café de olla — the Mexican morning!"
+   }
+  ]
+ },
+ "bicerin": {
+  "nom": "Bicerin",
+  "description": "Bicerin — Turin's speciality since 1763: three distinct layers in a small glass — thick hot chocolate at the bottom, espresso in the middle, milk cream on top. You do NOT stir: you drink through the layers. Dumas adored it; the city has classified it a traditional drink.",
+  "etapes": [
+   {
+    "titre": "The chocolate",
+    "detail": "Melt the dark chocolate with half the milk and the sugar over very low heat, whisking."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Continue until the chocolate COATS the spoon — it must be thick, it holds the first layer."
+   },
+   {
+    "titre": "The espresso",
+    "detail": "Brew a very strong coffee, piping hot."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the cold cream with the remaining milk into a soft (not stiff) foam."
+   },
+   {
+    "titre": "First layer",
+    "detail": "Pour the hot chocolate into clear glasses, one third full."
+   },
+   {
+    "titre": "Second layer",
+    "detail": "Add the coffee GENTLY, pouring over the back of a spoon against the side: it floats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with the foamy cream, a veil of cocoa, and DO NOT STIR. Turin's bicerin!"
+   }
+  ]
+ },
+ "cafetrung": {
+  "nom": "Vietnamese Egg Coffee",
+  "description": "Cà phê trứng — Hanoi's egg coffee, invented in 1946 when milk was scarce: an egg yolk whipped with condensed milk into a warm unctuous foam, set over a very strong Vietnamese coffee. It does NOT taste of egg — it is a liquid tiramisu, and it is overwhelming.",
+  "etapes": [
+   {
+    "titre": "The coffee",
+    "detail": "Brew a VERY strong coffee (Vietnamese robusta through a phin filter, ideally) and keep it scorching."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Separate the yolks — yolks only, the whites would ruin the texture."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the yolks with the condensed milk and vanilla for a good 5 minutes: the mixture TRIPLES in volume and pales."
+   },
+   {
+    "titre": "Over a bain-marie",
+    "detail": "Whisk 2 minutes over a warm (never hot) bain-marie: the foam holds and the egg is safe."
+   },
+   {
+    "titre": "The test",
+    "detail": "The foam must ribbon and sit on the surface — like a sabayon."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour the hot coffee into a small glass and spoon the foam on top: it floats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A veil of cocoa, and a small spoon. You eat the foam, you drink the coffee. Hanoi's cà phê trứng!"
+   }
+  ]
+ },
+ "yuja": {
+  "nom": "Korean Citron Tea",
+  "description": "Yuja-cha — the Korean tea that is not a tea: whole citrus (yuzu or lemon) thinly sliced and candied in sugar for 3 days, two spoonfuls of which are diluted in hot water. The jar lives for months in the fridge — a remedy against cold and colds in every Korean home.",
+  "etapes": [
+   {
+    "titre": "Wash",
+    "detail": "Scrub the lemons in HOT WATER with a little salt: you eat the peel, it must be spotless."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice them VERY thin, peel included, and remove the pips (they would turn the jar bitter)."
+   },
+   {
+    "titre": "Layer",
+    "detail": "In a scalded jar, alternate layers of lemon and sugar, packing down."
+   },
+   {
+    "titre": "The maceration",
+    "detail": "Finish with a generous sugar layer, seal and leave 3 days at room temperature."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Turn the jar once a day: the sugar dissolves into a thick translucent syrup."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Add the honey, stir and refrigerate — the jar is ready and keeps for months."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Two spoonfuls (syrup AND slices) in a cup of hot water. Korean yuja-cha — the cold-fighter!"
+   }
+  ]
+ },
+ "sbiten": {
+  "nom": "Sbiten",
+  "description": "Sbiten — the hot drink of Russian winters, drunk long before tea arrived: honey and spices infused in water, served scorching by street vendors from portable samovars. Cinnamon, ginger, star anise and mint — the taste of the 17th century, and the best cure for frost.",
+  "etapes": [
+   {
+    "titre": "The spiced water",
+    "detail": "Bring a litre of water to the boil with sliced ginger, cinnamon, star anise and clove."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Lower the heat and infuse 15 minutes covered — the water turns amber."
+   },
+   {
+    "titre": "The mint",
+    "detail": "Add the mint and orange zest; take off the heat and leave 5 minutes."
+   },
+   {
+    "titre": "The honey — WARM",
+    "detail": "Let it drop to 50°C BEFORE adding the honey: boiling, it loses its aromas and benefits."
+   },
+   {
+    "titre": "Dissolve",
+    "detail": "Stir until the honey has fully dissolved."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain out the whole spices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scorching, in large mugs, an orange wedge inside. Sbiten of the Russian winters!"
+   }
+  ]
+ },
+ "quentao": {
+  "nom": "Quentão",
+  "description": "Quentão — the drink of Brazil's June festivals ('the big hot one'): ginger, cinnamon and citrus simmered in a brown-sugar syrup, served steaming around the Festa Junina bonfires. The alcohol-free version is just as comforting — the ginger provides plenty of warmth on its own.",
+  "etapes": [
+   {
+    "titre": "The ginger",
+    "detail": "Peel and thinly slice the ginger — it is what 'heats' the drink, don't skimp."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Melt the brown sugar dry in a pan to a light blond caramel."
+   },
+   {
+    "titre": "The citrus",
+    "detail": "Add ginger, orange and lemon zest, cinnamon, clove and the quartered apples."
+   },
+   {
+    "titre": "Wet",
+    "detail": "Pour in a litre of water — the caramel will crackle, that's normal."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 20 minutes uncovered: the liquid reduces and turns amber and spicy."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: it should catch your throat with ginger and stay properly sweet."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Strain and serve SCORCHING in mugs, an orange slice inside. Festa Junina quentão!"
+   }
+  ]
+ },
+ "suuteitsai": {
+  "nom": "Suutei Tsai",
+  "description": "Suutei tsai — Mongolia's SALTED milk tea: green tea boiled with milk, butter and salt, aerated by ladling. Startling at the first sip, comforting by the third — on the steppe it is as much food as drink, offered to every visitor entering the yurt.",
+  "etapes": [
+   {
+    "titre": "The toasted rice",
+    "detail": "(Traditional) Dry-toast the rice a few minutes until golden and fragrant."
+   },
+   {
+    "titre": "The tea",
+    "detail": "Bring half a litre of water to the boil with the loose green tea; boil 5 minutes."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Add the milk and toasted rice; bring to a simmer."
+   },
+   {
+    "titre": "Aerate",
+    "detail": "Lift liquid with a ladle and pour it back from high, about twenty times: the tea aerates and turns silky."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Add the butter and let it melt in, stirring."
+   },
+   {
+    "titre": "SALT",
+    "detail": "Salt it — yes, salt, that is the point: suutei tsai is never sweet."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Strain into bowls, scorching. The salted tea of the steppe — to offer every visitor!"
+   }
+  ]
+ },
+ "boza": {
+  "nom": "Boza",
+  "description": "Boza — Istanbul's millennial drink: a lightly fermented cereal porridge, thick, sweet and barely tangy, served warm with cinnamon and roasted chickpeas. Vendors still call it through the streets on winter evenings — a taste that crosses centuries.",
+  "etapes": [
+   {
+    "titre": "The porridge",
+    "detail": "Cook the fine bulgur (or wheat semolina) in a litre of water for 40 minutes, to a very soft porridge."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend at length then PASS THROUGH A FINE SIEVE: boza must be perfectly smooth, not a grain left."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar to the still-hot porridge and stir until dissolved."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it drop to hand temperature — too hot kills the yeast, too cold and it sleeps."
+   },
+   {
+    "titre": "The fermentation",
+    "detail": "Dissolve the yeast in a little porridge and stir it in; cover with a cloth."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Ferment 24 to 48 hours at room temperature: fine bubbles appear and the taste turns barely tangy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chill, then serve warm or cool with cinnamon and roasted chickpeas. Istanbul boza!"
+   }
+  ]
  }
 };
