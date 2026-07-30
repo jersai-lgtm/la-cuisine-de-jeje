@@ -88166,5 +88166,345 @@ window.RECETTES_EN = {
     "detail": "Drain, cool slightly, then pipe in the jam with a fine nozzle. Icing sugar, and serve. Hanukkah sufganiyot!"
    }
   ]
+ },
+ "polvorones": {
+  "nom": "Polvorones",
+  "description": "Polvorones — the shortbreads that crumble to dust (polvo = dust): TOASTED flour, lard, almonds and cinnamon, barely bound, rolled in icing sugar. Andalusia, Christmas, twisted tissue paper — and that mouthful that collapses the moment you touch it.",
+  "etapes": [
+   {
+    "titre": "TOAST the flour",
+    "detail": "Dry-heat the flour 10 minutes in a pan (or 180°C oven), stirring, until blond and nutty — THE polvorón secret."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely: warm, it would melt the fat."
+   },
+   {
+    "titre": "The toasted bits",
+    "detail": "Toast the sesame and ground almonds too, a few minutes."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Work the (very soft) lard with half the icing sugar, the cinnamon and zest, then add flour, almonds and sesame."
+   },
+   {
+    "titre": "Rest",
+    "detail": "The dough is SANDY and barely bound — that's normal. Press it together, wrap and chill 1 hour."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll to 1.5 cm between two papers and cut ovals; transfer gently to the tray."
+   },
+   {
+    "titre": "Bake & roll",
+    "detail": "15 minutes at 170°C, no colouring. Cool WITHOUT touching, then roll in icing sugar. Christmas polvorones!"
+   }
+  ]
+ },
+ "kourabiedes": {
+  "nom": "Kourabiedes",
+  "description": "Kourabiedes — the white Greek Christmas crescents: a butter-almond shortbread scented with orange blossom water, BURIED under icing sugar while still warm. They are piled into pyramids on a platter — and you always leave with sugar on your nose.",
+  "etapes": [
+   {
+    "titre": "The butter",
+    "detail": "Take the butter out 1 hour ahead and whip it ALONE for 5 minutes: it must turn white and fluffy (that makes the texture)."
+   },
+   {
+    "titre": "The sugar",
+    "detail": "Add a third of the icing sugar and whip 3 minutes more."
+   },
+   {
+    "titre": "Perfume",
+    "detail": "Fold in the egg yolk, orange blossom water and vanilla."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Toast the ground almonds (or crushed almonds) and fold in with the flour, BY HAND, without kneading."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form crescents or balls; set them on the tray."
+   },
+   {
+    "titre": "Bake pale",
+    "detail": "18 minutes at 170°C: they must stay PALE, barely golden underneath."
+   },
+   {
+    "titre": "Bury",
+    "detail": "Dust generously with icing sugar while still HOT, then again once cold. Christmas kourabiedes!"
+   }
+  ]
+ },
+ "anzacbiscuits": {
+  "nom": "Anzac Biscuits",
+  "description": "Anzac biscuits — the biscuits sent to Australian and New Zealand soldiers during the Great War: oats, coconut, golden syrup and bicarbonate, with NO egg (they had to survive the sea voyage). Crunchy or chewy depending on the bake — the national debate since 1915.",
+  "etapes": [
+   {
+    "titre": "The dry mix",
+    "detail": "Combine rolled oats, flour, desiccated coconut and brown sugar."
+   },
+   {
+    "titre": "The butter-syrup",
+    "detail": "Gently melt the butter with the golden syrup (or maple syrup/honey) — without boiling."
+   },
+   {
+    "titre": "The bicarbonate",
+    "detail": "Dissolve the bicarbonate in a spoon of boiling water and pour into the melted butter: it FOAMS, that's the point."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Pour the foaming mixture over the dry mix and stir: the dough must hold when pressed."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll balls and flatten slightly, spacing them WELL apart (they spread a lot)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "12 minutes at 160°C for CHEWY biscuits, 16 minutes for CRUNCHY ones — pick your side."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Leave them 5 minutes on the tray (they harden as they cool) before lifting. Anzac biscuits!"
+   }
+  ]
+ },
+ "pizzelle": {
+  "nom": "Pizzelle",
+  "description": "Pizzelle — the world's oldest wafers, born in Abruzzo in the 8th century: an anise batter pressed between two engraved irons until it becomes crisp lace. Every family had its own iron with their initials — roll them into cones or stack them flat.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Whisk the eggs with the sugar until pale and doubled."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Add the warm melted butter, the anise seeds (or a dash of anisette) and lemon zest."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Fold in flour and baking powder: the batter must be THICK like cake batter, not runny."
+   },
+   {
+    "titre": "The iron",
+    "detail": "Heat the pizzelle iron (or a thin waffle iron) and grease lightly the first time only."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Place a teaspoonful at the centre, close and press: 40 to 60 seconds is enough."
+   },
+   {
+    "titre": "The choice",
+    "detail": "Out of the iron THEY ARE SOFT: roll them around a handle for cones, or lay them flat under a weight."
+   },
+   {
+    "titre": "Cool",
+    "detail": "They harden in 30 seconds. Icing sugar, and stack. Abruzzo pizzelle!"
+   }
+  ]
+ },
+ "pepparkakor": {
+  "nom": "Pepparkakor",
+  "description": "Pepparkakor — the Swedish Advent spice biscuits: ginger, cinnamon, clove, cardamom and pepper in a syrup dough, cut into hearts, stars and little pigs, so thin they snap. Tradition says you place a hand on the biscuit, make a wish and break it in three.",
+  "etapes": [
+   {
+    "titre": "The spiced syrup",
+    "detail": "Heat syrup, brown sugar and butter with ALL the spices, without boiling: the house smells of Christmas."
+   },
+   {
+    "titre": "The bicarbonate",
+    "detail": "Off the heat, add the bicarbonate: the mixture foams and lightens."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Work in the flour to a supple brown dough."
+   },
+   {
+    "titre": "The LONG rest",
+    "detail": "Wrap and chill OVERNIGHT — the spices settle and the dough rolls easily."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "Roll to 2-3 mm MAXIMUM: the thinness makes the snap."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Stamp out hearts, stars and little pigs; set them on the tray."
+   },
+   {
+    "titre": "Bake fast",
+    "detail": "Only 6 to 8 minutes at 180°C — they darken quickly. A wish, a hand on the biscuit, and snap! Pepparkakor!"
+   }
+  ]
+ },
+ "krumkake": {
+  "nom": "Krumkake",
+  "description": "Krumkake — the Norwegian lace cones: a cream-and-cardamom batter baked on an engraved iron, then rolled SCORCHING hot onto a wooden cone. Seven biscuits are traditionally required for a Norwegian Christmas — this one is always on the list, filled with whipped cream.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Whisk eggs and sugar until fully pale — it takes a while, persist."
+   },
+   {
+    "titre": "The fats",
+    "detail": "Add the cooled melted butter, the cream, ground cardamom and vanilla."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Fold in the flour gently: the batter is loose, like thick crêpe batter."
+   },
+   {
+    "titre": "The iron",
+    "detail": "Heat the krumkake iron over medium heat — too hot and it burns in 10 seconds."
+   },
+   {
+    "titre": "Cook",
+    "detail": "A teaspoonful at the centre, close and press; 30 to 45 seconds to pale gold."
+   },
+   {
+    "titre": "ROLL FAST",
+    "detail": "Lift and roll IMMEDIATELY onto the wooden cone — you have 5 seconds before it sets (gloves advised!)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Let it harden, slide off the cone. Fill with whipped cream and berries at the last minute. Christmas krumkaker!"
+   }
+  ]
+ },
+ "mandelbrot": {
+  "nom": "Mandelbrot",
+  "description": "Mandelbrot — the Ashkenazi 'almond bread', cousin of the biscotti but made with OIL (so pareve, dairy-free): baked as a log, sliced then RE-baked until dry and crunchy. It keeps for weeks and is dunked in tea — the biscuit in every grandmother's tin.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Whisk eggs and sugar, then stream in the oil and add the orange zest."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Fold in flour and baking powder: the dough is sticky, that's normal — oil your hands."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Add the whole or chopped almonds (toasted is even better)."
+   },
+   {
+    "titre": "The logs",
+    "detail": "Shape 2 flattened logs 5 cm wide on the tray, well spaced."
+   },
+   {
+    "titre": "First bake",
+    "detail": "25 minutes at 175°C: the logs puff and gild."
+   },
+   {
+    "titre": "Slice warm",
+    "detail": "Remove and cool 10 minutes, then slice on the bias at 1.5 cm with a serrated knife (too hot it crumbles, too cold it snaps)."
+   },
+   {
+    "titre": "Second bake",
+    "detail": "Lay the slices flat, dust with cinnamon sugar and bake 12 more minutes, turning halfway. Grandma's mandelbrot!"
+   }
+  ]
+ },
+ "vanillekipferl": {
+  "nom": "Vanillekipferl",
+  "description": "Vanillekipferl — the Viennese crescent moons: a melting hazelnut or almond shortbread, egg-free, rolled in vanilla sugar straight out of the oven. Legend says their shape celebrates the victory over the Ottomans in 1683 — since then no Austrian Christmas goes without them.",
+  "etapes": [
+   {
+    "titre": "The hazelnuts",
+    "detail": "Toast the hazelnuts (or almonds), rub off the skins, and grind to a fine powder."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Rub the cold diced butter into the flour, nut powder, a third of the icing sugar and the salt — WITH YOUR FINGERTIPS."
+   },
+   {
+    "titre": "Bring together",
+    "detail": "Press the dough to bind it, never kneading: it must stay crumbly."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap as a log and chill 1 hour."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Cut sections, roll into small logs tapered at the ends and curve into crescents."
+   },
+   {
+    "titre": "Bake pale",
+    "detail": "12 minutes at 170°C — the tips barely golden, the rest pale blond."
+   },
+   {
+    "titre": "The vanilla sugar",
+    "detail": "Mix the remaining icing sugar with the vanilla and roll the crescents in it WHILE STILL WARM (they absorb it). Viennese Vanillekipferl!"
+   }
+  ]
+ },
+ "snickerdoodle": {
+  "nom": "Snickerdoodles",
+  "description": "Snickerdoodles — the crackled cinnamon cookies: a cream-of-tartar dough (which gives both the tangy taste AND the cracks), rolled in cinnamon sugar before baking. Soft in the middle, fissured on top — American kids' favourite cookie, and the funniest name in baking.",
+  "etapes": [
+   {
+    "titre": "Cream",
+    "detail": "Whip the soft butter with three quarters of the sugar until pale and airy."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Add the egg and vanilla; whip 1 minute more."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Fold in flour, bicarbonate, salt and cream of tartar if you have it (2 g — it makes the tang and the cracks; otherwise a dash of lemon)."
+   },
+   {
+    "titre": "Rest",
+    "detail": "30 minutes chilled: the dough firms and spreads less."
+   },
+   {
+    "titre": "The cinnamon sugar",
+    "detail": "Mix the remaining sugar with the cinnamon on a plate."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Shape balls and roll them GENEROUSLY in the cinnamon sugar."
+   },
+   {
+    "titre": "Bake",
+    "detail": "10 minutes at 180°C: they puff then fall, cracking. Take them out SOFT in the centre. Snickerdoodles!"
+   }
+  ]
+ },
+ "nankhatai": {
+  "nom": "Nankhatai",
+  "description": "Nankhatai — the Indian shortbreads born in Surat in the 16th century from a converted Dutch bakery: flour, semolina and ghee scented with cardamom, EGG-FREE, decorated with pistachios. They melt in the mouth and crack prettily on top — the biscuit of the afternoon chai.",
+  "etapes": [
+   {
+    "titre": "The ghee",
+    "detail": "Use very soft clarified butter (ghee) — it gives the characteristic melting quality."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip the ghee with the icing sugar for 5 minutes: the mixture must whiten and lighten."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Combine flour, fine semolina, baking powder and ground cardamom, then fold into the sweetened ghee."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Bring together without kneading: the dough should be supple and barely sticky (a spoon of milk if too dry)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll balls, flatten slightly and score a small cross on top (that is where they will crack)."
+   },
+   {
+    "titre": "The pistachios",
+    "detail": "Press pistachio slivers into the centre of each biscuit."
+   },
+   {
+    "titre": "Bake",
+    "detail": "18 minutes at 165°C: the edges barely golden, the tops cracked. Cool ON the tray. Chai-time nankhatai!"
+   }
+  ]
  }
 };
