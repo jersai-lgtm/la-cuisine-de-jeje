@@ -89186,5 +89186,345 @@ window.RECETTES_EN = {
     "detail": "40 minutes at 190°C to golden. Rest 10 minutes before cutting. Leek pie!"
    }
   ]
+ },
+ "poivronsfarcispoulet": {
+  "nom": "Chicken Curry & Feta Stuffed Peppers",
+  "description": "The sunny version of stuffed peppers: minced chicken cooked with curry and coconut milk, mixed with bulgur and feta that melts as it bakes. Nothing like the classic beef-and-rice filling — this one is gentle, fragrant, lightly spiced. The feta forms molten pockets at the cut.",
+  "etapes": [
+   {
+    "titre": "The peppers",
+    "detail": "Cut a cap around the stem and hollow out the seeds without piercing the base; keep the caps."
+   },
+   {
+    "titre": "The bulgur",
+    "detail": "Pour the bulgur into twice its volume of boiling salted water, cover and let it swell 10 minutes off the heat."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Fry the onion and garlic in the oil, add the minced chicken and let it colour."
+   },
+   {
+    "titre": "The curry",
+    "detail": "Add the curry and stir 30 seconds, then pour in the coconut milk and reduce 3 minutes."
+   },
+   {
+    "titre": "The feta",
+    "detail": "Off the heat, fold in the bulgur, chopped coriander and the feta in LARGE dice — it must stay in pieces to melt into pockets."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pack the peppers, replace the caps and stand them in a dish with a little water."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 190°C: the peppers slump slightly and colour. Serve hot, coriander on top."
+   }
+  ]
+ },
+ "courgettesfarciesthon": {
+  "nom": "Tuna & Ricotta Stuffed Courgettes",
+  "description": "The light Italian take on stuffed courgettes: the scooped flesh fried with garlic, mixed with tuna, ricotta and lemon, returned to the boats and gratinated with breadcrumbs. No meat, no rice — fresher, faster, perfect for a summer dinner.",
+  "etapes": [
+   {
+    "titre": "The boats",
+    "detail": "Halve the courgettes lengthwise and scoop them out with a teaspoon, leaving 5 mm of flesh."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Salt the insides and stand them upside down 10 minutes: they release their water (the gratin's enemy)."
+   },
+   {
+    "titre": "The flesh",
+    "detail": "Chop the scooped flesh and fry with garlic in the oil until all moisture has gone."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Off the heat, mix with the drained tuna, ricotta, egg, lemon zest and chopped basil."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the patted-dry boats generously."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Mix breadcrumbs and parmesan, scatter on top and drizzle with oil."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "30 minutes at 190°C to a golden crust. A squeeze of lemon to serve."
+   }
+  ]
+ },
+ "auberginesfarciesagneau": {
+  "nom": "Lamb & Mint Stuffed Aubergines",
+  "description": "The Levantine take on stuffed aubergines: minced lamb with pine nuts, cinnamon and plenty of fresh mint, crowned with feta — a world away from the tomato-based Turkish karnıyarık. The contrast between the warm fragrant lamb and the cool mint makes the dish.",
+  "etapes": [
+   {
+    "titre": "The aubergines",
+    "detail": "Halve lengthwise and score the flesh in a lattice without piercing the skin."
+   },
+   {
+    "titre": "Pre-bake",
+    "detail": "Oil, salt and bake cut-side up 25 minutes at 200°C: the flesh must collapse."
+   },
+   {
+    "titre": "The pine nuts",
+    "detail": "Toast the pine nuts dry — they burn in 30 seconds, don't look away."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Fry onion and garlic, add the minced lamb, cinnamon and cumin; let it colour well."
+   },
+   {
+    "titre": "The mint",
+    "detail": "OFF THE HEAT, add the chopped mint, pine nuts and lemon juice — cooked mint loses all its perfume."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lightly crush the aubergine flesh in its skin and fill generously."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Crumble the feta on top and return 15 minutes to the oven. Fresh mint to serve."
+   }
+  ]
+ },
+ "tomatesfarcieschevre": {
+  "nom": "Goat Cheese & Basil Stuffed Tomatoes",
+  "description": "The meat-free stuffed tomato: a mixture of fresh goat cheese, milk-soaked country bread, basil and pine nuts, baked until the top browns and the tomato candies. Lighter and more summery than the sausage-meat version — and ready in 50 minutes.",
+  "etapes": [
+   {
+    "titre": "The tomatoes",
+    "detail": "Choose FIRM round tomatoes; cut a cap and hollow them with a spoon."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Salt the insides and turn them upside down on paper for 15 minutes — this prevents the puddle in the dish."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Soak the crumb in the milk then squeeze lightly."
+   },
+   {
+    "titre": "The pine nuts",
+    "detail": "Dry-toast until blond."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mash the goat cheese with the bread, garlic, chopped basil, pine nuts, salt and pepper — coarse texture, not smooth."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Mound the filling into the tomatoes, scatter parmesan and thyme, drizzle with oil."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 180°C: the top browns and the tomatoes slump and candy. Fresh basil to serve."
+   }
+  ]
+ },
+ "quichesaumonepinards": {
+  "nom": "Salmon & Spinach Quiche",
+  "description": "The Sunday quiche gone to sea: fresh salmon in large cubes and well-squeezed spinach in a creamy dill custard. Finer than a lorraine, more substantial than a leek quiche — and the salmon stays pink if you don't cook it twice.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Line a tin with the shortcrust, prick it and blind-bake 12 minutes at 190°C — this prevents a soggy bottom."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Wilt the spinach in butter with the shallot, then SQUEEZE it thoroughly in a sieve."
+   },
+   {
+    "titre": "The salmon",
+    "detail": "Cut the salmon into large 2 cm cubes, salt and lemon them; do NOT cook them first."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Whisk eggs, cream, dill, nutmeg, salt and pepper."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread spinach and salmon cubes over the pre-baked base."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour in the custard gently — it should come up level without drowning the pieces."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 180°C: the custard is just set and still trembles at the centre. The salmon stays pink."
+   }
+  ]
+ },
+ "gratinbutternut": {
+  "nom": "Butternut Gratin with Gruyère",
+  "description": "The autumn dauphinois: thin slices of butternut instead of potato, baked in a sage-and-nutmeg cream, gratinated with gruyère. The squash brings a gentle sweetness potato lacks — and it cooks twenty minutes faster.",
+  "etapes": [
+   {
+    "titre": "The squash",
+    "detail": "Peel the butternut and slice it THINLY (2-3 mm) on a mandoline — even thickness guarantees even cooking."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Rub the dish with cut garlic then butter it generously."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Heat cream, milk, crushed garlic, nutmeg, sage, salt and pepper without boiling — infuse 5 minutes."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Lay the slices in a tight rosette, in layers, salting very lightly between each."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour in the infused cream: it should come just below the surface, not drown it."
+   },
+   {
+    "titre": "Bake covered",
+    "detail": "45 minutes at 180°C under foil: the squash softens without browning too fast."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Uncover, scatter the gruyère and bake 20 minutes more: golden crust, melting heart. Rest 10 minutes."
+   }
+  ]
+ },
+ "burgerpouletcroustillant": {
+  "nom": "Crispy Chicken Burger",
+  "description": "The chicken burger that rivals the best: a fillet marinated in buttermilk (here yogurt and lemon), coated in spiced flour and fried until crisp, set on crunchy coleslaw. The acidic marinade tenderises the meat and makes the coating cling — that is the whole secret.",
+  "etapes": [
+   {
+    "titre": "THE MARINADE",
+    "detail": "Mix yogurt, lemon juice, salt and a little paprika; submerge the flattened fillets and leave 2 hours (overnight is better)."
+   },
+   {
+    "titre": "The coleslaw",
+    "detail": "Grate cabbage and carrot, salt them 10 minutes, squeeze then mix with lemony mayonnaise."
+   },
+   {
+    "titre": "The coating",
+    "detail": "Mix flour, paprika, chilli, salt and pepper in a shallow dish."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Lift the fillets WITHOUT draining (the marinade glues the coating) and press them firmly into the spiced flour."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Leave 10 minutes in the air: the coating hydrates and will hold better in the fryer."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry 6 to 7 minutes at 170°C, turning: golden brown, crisp, cooked through."
+   },
+   {
+    "titre": "Build",
+    "detail": "Toast the buns, coleslaw at the bottom, crispy chicken on top, a little mayo. Serve immediately."
+   }
+  ]
+ },
+ "crumblepoirechocolat": {
+  "nom": "Pear & Chocolate Crumble",
+  "description": "The indulgent variant of apple crumble: melting pears barely caramelised and shards of dark chocolate that melt into pockets beneath an almond shortcrust topping. The chocolate doesn't blend in — it forms rivers at the bottom of the dish.",
+  "etapes": [
+   {
+    "titre": "The pears",
+    "detail": "Peel RIPE but firm pears and cut into large cubes; lemon them."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Fry 5 minutes in a little butter with a spoon of brown sugar — just to colour, not to cook."
+   },
+   {
+    "titre": "The chocolate",
+    "detail": "Break the dark chocolate into LARGE shards (not chips: big pieces make melting pockets)."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Rub together with your fingertips flour, ground almonds, remaining brown sugar, cinnamon and COLD diced butter — stop as soon as it forms big crumbs."
+   },
+   {
+    "titre": "The chill",
+    "detail": "Chill the topping 15 minutes: cold it bakes crisp, warm it clumps."
+   },
+   {
+    "titre": "Build",
+    "detail": "Spread pears and chocolate in a dish, cover with the crumbs WITHOUT pressing."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 180°C to golden. Cool 10 minutes — scorching chocolate is treacherous!"
+   }
+  ]
+ },
+ "cookiesdoublechocolat": {
+  "nom": "Double Chocolate Cookies",
+  "description": "The all-chocolate version of the cookie: a deep cocoa dough, almost brownie-like, studded with big shards of dark chocolate that stay molten. The secret to the soft heart: pull the tray when the centre still looks RAW — it finishes cooking on the sheet.",
+  "etapes": [
+   {
+    "titre": "Cream",
+    "detail": "Whip the soft butter with the brown sugar for 3 minutes: it must pale and turn fluffy."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Add the egg and vanilla; whip 1 minute more."
+   },
+   {
+    "titre": "The cocoa",
+    "detail": "Sift flour, cocoa, bicarbonate and salt over the top, then fold WITH A SPATULA — never a whisk, the dough would turn elastic."
+   },
+   {
+    "titre": "The shards",
+    "detail": "Chop the chocolate with a knife into large irregular pieces (far better than chips) and fold them in."
+   },
+   {
+    "titre": "THE REST",
+    "detail": "Wrap and chill 30 minutes MINIMUM: the dough hydrates and the cookies spread less."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll generous balls, well spaced on the tray, without flattening them."
+   },
+   {
+    "titre": "Bake short",
+    "detail": "9 to 10 minutes at 180°C: the edges are set, the centre looks RAW. Leave them 5 minutes on the tray — that is where they finish baking."
+   }
+  ]
+ },
+ "cheesecakecitronbasilic": {
+  "nom": "Lemon & Basil Cheesecake",
+  "description": "The summer cheesecake: the classic filling scented with lemon zest and an infused basil syrup, on a buttery biscuit base. The basil surprises, then it makes sense — it extends the lemon without dominating. Far fresher than the vanilla version.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Crush the biscuits to a coarse powder, mix with the melted butter and press FIRMLY into a tin; chill 15 minutes."
+   },
+   {
+    "titre": "THE BASIL SYRUP",
+    "detail": "Simmer a third of the sugar with 2 spoons of water, drop in the basil off the heat and infuse 15 minutes; strain, pressing."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Zest the lemons finely and squeeze the juice."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Whisk the cream cheese with the remaining sugar and cornflour — SLOWLY, without beating in air (air causes cracks)."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Add the eggs ONE BY ONE, then the cream, basil syrup, zest and lemon juice."
+   },
+   {
+    "titre": "Bake in a bain-marie",
+    "detail": "Pour over the base and bake 1 hour at 150°C in a water bath: the centre must still WOBBLE."
+   },
+   {
+    "titre": "Cool slowly",
+    "detail": "Oven off, door ajar, 1 hour — then 6 hours in the fridge. Fresh basil and zest to serve."
+   }
+  ]
  }
 };
