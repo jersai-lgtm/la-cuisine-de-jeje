@@ -3451,4 +3451,41 @@ Object.assign(recettes, {
       { icone: "🌰", titre: "Servir", detail: "Sésame grillé. Frais et croquant, à côté d'un plat gras ou d'un barbecue coréen. Le musaengchae !", badge: null }
     ]
   },
+  saladefenouilorange: {
+    dateAjout: "2026-07-29T19:00:00",
+    nom: "Salade Fenouil-Orange",
+    cat: "salades", pays: "italie",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍊",
+    description: "La salade sicilienne d'hiver : du fenouil tranché à la mandoline, des suprêmes d'orange, des olives noires et de l'huile d'olive. Le croquant anisé du fenouil contre le sucré-acide de l'orange — trois ingrédients qui n'ont l'air de rien et qui font un plat entier.",
+    tableauSaladefenouilorange: [
+      { nb: 1, fenouil: "150 g", orange: "1", olives: "25 g", huileolive: "15 ml", oignonrouge: "25 g", persil: "3 g", citron: "", poivre: "1 g" },
+      { nb: 2, fenouil: "300 g", orange: "2", olives: "50 g", huileolive: "30 ml", oignonrouge: "50 g", persil: "6 g", citron: "", poivre: "2 g" },
+      { nb: 3, fenouil: "450 g", orange: "3", olives: "75 g", huileolive: "45 ml", oignonrouge: "75 g", persil: "9 g", citron: "", poivre: "3 g" },
+      { nb: 4, fenouil: "600 g", orange: "4", olives: "100 g", huileolive: "60 ml", oignonrouge: "100 g", persil: "12 g", citron: "", poivre: "4 g" },
+      { nb: 5, fenouil: "750 g", orange: "5", olives: "125 g", huileolive: "75 ml", oignonrouge: "125 g", persil: "15 g", citron: "1", poivre: "5 g" },
+      { nb: 6, fenouil: "900 g", orange: "6", olives: "150 g", huileolive: "90 ml", oignonrouge: "150 g", persil: "18 g", citron: "1", poivre: "6 g" },
+      { nb: 7, fenouil: "1050 g", orange: "7", olives: "175 g", huileolive: "105 ml", oignonrouge: "175 g", persil: "21 g", citron: "1", poivre: "7 g" },
+      { nb: 8, fenouil: "1200 g", orange: "8", olives: "200 g", huileolive: "120 ml", oignonrouge: "200 g", persil: "24 g", citron: "1", poivre: "8 g" },
+      { nb: 9, fenouil: "1350 g", orange: "9", olives: "225 g", huileolive: "135 ml", oignonrouge: "225 g", persil: "27 g", citron: "1", poivre: "9 g" },
+      { nb: 10, fenouil: "1500 g", orange: "10", olives: "250 g", huileolive: "150 ml", oignonrouge: "250 g", persil: "30 g", citron: "2", poivre: "10 g" },
+      { nb: 11, fenouil: "1650 g", orange: "11", olives: "275 g", huileolive: "165 ml", oignonrouge: "275 g", persil: "33 g", citron: "2", poivre: "11 g" },
+      { nb: 12, fenouil: "1800 g", orange: "12", olives: "300 g", huileolive: "180 ml", oignonrouge: "300 g", persil: "36 g", citron: "2", poivre: "12 g" },
+      { nb: 13, fenouil: "1950 g", orange: "13", olives: "325 g", huileolive: "195 ml", oignonrouge: "325 g", persil: "39 g", citron: "2", poivre: "13 g" },
+      { nb: 14, fenouil: "2100 g", orange: "14", olives: "350 g", huileolive: "210 ml", oignonrouge: "350 g", persil: "42 g", citron: "2", poivre: "14 g" },
+      { nb: 15, fenouil: "2250 g", orange: "15", olives: "375 g", huileolive: "225 ml", oignonrouge: "375 g", persil: "45 g", citron: "3", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Le fenouil", detail: "Ôtez les tiges (gardez les plumets pour décorer) et tranchez le bulbe à la MANDOLINE, le plus fin possible.", badge: null },
+      { icone: "🧊", titre: "Le croquant", detail: "Plongez les tranches 10 minutes dans l'eau glacée : elles se raidissent et deviennent ultra-croquantes.", badge: null },
+      { icone: "🍊", titre: "Les suprêmes", detail: "Pelez les oranges À VIF au couteau et prélevez les quartiers entre les membranes ; gardez le jus qui coule.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Émincez l'oignon rouge très fin et rincez-le à l'eau froide pour ôter son âcreté.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Égouttez le fenouil, séchez-le et mêlez-le aux oranges, olives et oignon.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Huile d'olive, jus d'orange récupéré, un trait de citron, sel et beaucoup de poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Plumets de fenouil et persil par-dessus. Servez IMMÉDIATEMENT — le fenouil ramollit en attendant.", badge: null }
+    ]
+  },
 });

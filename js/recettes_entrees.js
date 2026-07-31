@@ -4255,4 +4255,78 @@ oeufmayo: {
       { icone: "🫙", titre: "Servir", detail: "Laissez refroidir : ils se raffermissent et collent légèrement entre eux. À piocher aux baguettes avec du riz.", badge: null }
     ]
   },
+  verrinesaumonavocat: {
+    dateAjout: "2026-07-29T18:07:00",
+    nom: "Verrine Saumon-Avocat",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "20 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "🥂",
+    description: "L'entrée de fête sans cuisson : trois couches nettes — avocat écrasé au citron, fromage frais à l'aneth, saumon fumé — montées dans un verre. Le secret des couches bien dessinées : les faire à la POCHE, jamais à la cuillère, et laisser prendre au frais entre chaque.",
+    tableauVerrinesaumonavocat: [
+      { nb: 1, saumonfume: "50 g", avocat: "70 g", fromagefrais: "50 g", citron: "¼", aneth: "2 g", echalote: "12 g", creme: "15 ml", poivre: "0.5 g" },
+      { nb: 2, saumonfume: "100 g", avocat: "140 g", fromagefrais: "100 g", citron: "½", aneth: "4 g", echalote: "24 g", creme: "30 ml", poivre: "1 g" },
+      { nb: 3, saumonfume: "150 g", avocat: "210 g", fromagefrais: "150 g", citron: "¾", aneth: "6 g", echalote: "36 g", creme: "45 ml", poivre: "1.5 g" },
+      { nb: 4, saumonfume: "200 g", avocat: "280 g", fromagefrais: "200 g", citron: "1", aneth: "8 g", echalote: "48 g", creme: "60 ml", poivre: "2 g" },
+      { nb: 5, saumonfume: "250 g", avocat: "350 g", fromagefrais: "250 g", citron: "1¼", aneth: "10 g", echalote: "60 g", creme: "75 ml", poivre: "2.5 g" },
+      { nb: 6, saumonfume: "300 g", avocat: "420 g", fromagefrais: "300 g", citron: "1½", aneth: "12 g", echalote: "72 g", creme: "90 ml", poivre: "3 g" },
+      { nb: 7, saumonfume: "350 g", avocat: "490 g", fromagefrais: "350 g", citron: "1¾", aneth: "14 g", echalote: "84 g", creme: "105 ml", poivre: "3.5 g" },
+      { nb: 8, saumonfume: "400 g", avocat: "560 g", fromagefrais: "400 g", citron: "2", aneth: "16 g", echalote: "96 g", creme: "120 ml", poivre: "4 g" },
+      { nb: 9, saumonfume: "450 g", avocat: "630 g", fromagefrais: "450 g", citron: "2¼", aneth: "18 g", echalote: "108 g", creme: "135 ml", poivre: "4.5 g" },
+      { nb: 10, saumonfume: "500 g", avocat: "700 g", fromagefrais: "500 g", citron: "2½", aneth: "20 g", echalote: "120 g", creme: "150 ml", poivre: "5 g" },
+      { nb: 11, saumonfume: "550 g", avocat: "770 g", fromagefrais: "550 g", citron: "2¾", aneth: "22 g", echalote: "132 g", creme: "165 ml", poivre: "5.5 g" },
+      { nb: 12, saumonfume: "600 g", avocat: "840 g", fromagefrais: "600 g", citron: "3", aneth: "24 g", echalote: "144 g", creme: "180 ml", poivre: "6 g" },
+      { nb: 13, saumonfume: "650 g", avocat: "910 g", fromagefrais: "650 g", citron: "3¼", aneth: "26 g", echalote: "156 g", creme: "195 ml", poivre: "6.5 g" },
+      { nb: 14, saumonfume: "700 g", avocat: "980 g", fromagefrais: "700 g", citron: "3½", aneth: "28 g", echalote: "168 g", creme: "210 ml", poivre: "7 g" },
+      { nb: 15, saumonfume: "750 g", avocat: "1050 g", fromagefrais: "750 g", citron: "3¾", aneth: "30 g", echalote: "180 g", creme: "225 ml", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥑", titre: "L'avocat", detail: "Écrasez l'avocat à la fourchette avec le jus de citron, du sel et du poivre — grossièrement, pas en purée lisse.", badge: null },
+      { icone: "🧀", titre: "La crème", detail: "Fouettez le fromage frais avec la crème, l'aneth ciselé et l'échalote très finement hachée.", badge: null },
+      { icone: "🐟", titre: "Le saumon", detail: "Coupez le saumon fumé en petits dés réguliers.", badge: null },
+      { icone: "1️⃣", titre: "Première couche", detail: "Répartissez l'avocat au fond des verres à la poche et tassez légèrement ; 15 minutes au frais.", badge: null },
+      { icone: "2️⃣", titre: "Deuxième couche", detail: "Pochez la crème par-dessus SANS l'écraser — la poche évite de salir les parois.", badge: null },
+      { icone: "3️⃣", titre: "Troisième couche", detail: "Terminez par les dés de saumon en petit dôme.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "1 heure au frais minimum. Aneth et zeste de citron au dernier moment. L'entrée de fête sans four !", badge: null }
+    ]
+  },
+  poeleechampignons: {
+    dateAjout: "2026-07-29T18:08:00",
+    nom: "Poêlée de Champignons Persillés",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍄",
+    description: "La poêlée de champignons comme il faut : saisis À FEU VIF et en une seule couche pour qu'ils dorent au lieu de bouillir, puis persillade jetée au dernier moment. Trois ingrédients, deux règles absolues, et un accompagnement qui vole la vedette à tout ce qu'il accompagne.",
+    tableauPoeleechampignons: [
+      { nb: 1, champignons: "200 g", ail: "1½", persil: "8 g", beurre: "20 g", huileolive: "8 ml", echalote: "25 g", citron: "", poivre: "1 g" },
+      { nb: 2, champignons: "400 g", ail: "3", persil: "16 g", beurre: "40 g", huileolive: "16 ml", echalote: "50 g", citron: "", poivre: "2 g" },
+      { nb: 3, champignons: "600 g", ail: "4½", persil: "24 g", beurre: "60 g", huileolive: "24 ml", echalote: "75 g", citron: "", poivre: "3 g" },
+      { nb: 4, champignons: "800 g", ail: "6", persil: "32 g", beurre: "80 g", huileolive: "32 ml", echalote: "100 g", citron: "", poivre: "4 g" },
+      { nb: 5, champignons: "1000 g", ail: "7½", persil: "40 g", beurre: "100 g", huileolive: "40 ml", echalote: "125 g", citron: "½", poivre: "5 g" },
+      { nb: 6, champignons: "1200 g", ail: "9", persil: "48 g", beurre: "120 g", huileolive: "48 ml", echalote: "150 g", citron: "", poivre: "6 g" },
+      { nb: 7, champignons: "1400 g", ail: "10½", persil: "56 g", beurre: "140 g", huileolive: "56 ml", echalote: "175 g", citron: "", poivre: "7 g" },
+      { nb: 8, champignons: "1600 g", ail: "12", persil: "64 g", beurre: "160 g", huileolive: "64 ml", echalote: "200 g", citron: "", poivre: "8 g" },
+      { nb: 9, champignons: "1800 g", ail: "13½", persil: "72 g", beurre: "180 g", huileolive: "72 ml", echalote: "225 g", citron: "", poivre: "9 g" },
+      { nb: 10, champignons: "2000 g", ail: "15", persil: "80 g", beurre: "200 g", huileolive: "80 ml", echalote: "250 g", citron: "1", poivre: "10 g" },
+      { nb: 11, champignons: "2200 g", ail: "16½", persil: "88 g", beurre: "220 g", huileolive: "88 ml", echalote: "275 g", citron: "1", poivre: "11 g" },
+      { nb: 12, champignons: "2400 g", ail: "18", persil: "96 g", beurre: "240 g", huileolive: "96 ml", echalote: "300 g", citron: "1", poivre: "12 g" },
+      { nb: 13, champignons: "2600 g", ail: "19½", persil: "104 g", beurre: "260 g", huileolive: "104 ml", echalote: "325 g", citron: "1", poivre: "13 g" },
+      { nb: 14, champignons: "2800 g", ail: "21", persil: "112 g", beurre: "280 g", huileolive: "112 ml", echalote: "350 g", citron: "1", poivre: "14 g" },
+      { nb: 15, champignons: "3000 g", ail: "22½", persil: "120 g", beurre: "300 g", huileolive: "120 ml", echalote: "375 g", citron: "1½", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍄", titre: "Nettoyer", detail: "Brossez ou essuyez les champignons — jamais d'eau, ils la boivent et ne doreront JAMAIS.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Coupez-les en quartiers épais (pas en lamelles fines : elles rendent trop d'eau et se ratatinent).", badge: null },
+      { icone: "🔥", titre: "FEU VIF", detail: "Chauffez la poêle jusqu'à ce qu'elle fume légèrement, puis mettez l'huile.", badge: null },
+      { icone: "📏", titre: "UNE SEULE COUCHE", detail: "Jetez les champignons en une seule couche, SANS les remuer 2 minutes : entassés ou remués trop tôt, ils bouillent au lieu de dorer.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Sautez-les 3 minutes de plus jusqu'à ce qu'ils soient bien dorés partout ; salez SEULEMENT maintenant.", badge: null },
+      { icone: "🧈", titre: "Le beurre", detail: "Ajoutez le beurre et l'échalote ; laissez mousser 1 minute.", badge: null },
+      { icone: "🌿", titre: "La persillade", detail: "Hors du feu, ail et persil hachés ensemble, un trait de citron. Servez immédiatement.", badge: null }
+    ]
+  },
 });

@@ -5747,4 +5747,42 @@ Object.assign(recettes, {
     ],
     liees: ["veloutecourgette"]
   },
+  veloutecourgettechevre: {
+    dateAjout: "2026-07-29T18:06:00",
+    nom: "Velouté Courgette-Chèvre",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Le velouté de courgettes qui gagne en caractère : le chèvre frais fondu dedans apporte l'acidité et le sel, sans une goutte de crème. Cuisson courte, peau gardée pour la couleur — un velouté vert tendre prêt en 30 minutes.",
+    tableauVeloutecourgettechevre: [
+      { nb: 1, courgette: "280 g", chevre: "60 g", oignon: "40 g", ail: "½", huileolive: "10 ml", menthe: "2 g", citron: "", poivre: "1 g" },
+      { nb: 2, courgette: "560 g", chevre: "120 g", oignon: "80 g", ail: "1", huileolive: "20 ml", menthe: "4 g", citron: "", poivre: "2 g" },
+      { nb: 3, courgette: "840 g", chevre: "180 g", oignon: "120 g", ail: "1½", huileolive: "30 ml", menthe: "6 g", citron: "", poivre: "3 g" },
+      { nb: 4, courgette: "1120 g", chevre: "240 g", oignon: "160 g", ail: "2", huileolive: "40 ml", menthe: "8 g", citron: "", poivre: "4 g" },
+      { nb: 5, courgette: "1400 g", chevre: "300 g", oignon: "200 g", ail: "2½", huileolive: "50 ml", menthe: "10 g", citron: "¾", poivre: "5 g" },
+      { nb: 6, courgette: "1680 g", chevre: "360 g", oignon: "240 g", ail: "3", huileolive: "60 ml", menthe: "12 g", citron: "", poivre: "6 g" },
+      { nb: 7, courgette: "1960 g", chevre: "420 g", oignon: "280 g", ail: "3½", huileolive: "70 ml", menthe: "14 g", citron: "1", poivre: "7 g" },
+      { nb: 8, courgette: "2240 g", chevre: "480 g", oignon: "320 g", ail: "4", huileolive: "80 ml", menthe: "16 g", citron: "1", poivre: "8 g" },
+      { nb: 9, courgette: "2520 g", chevre: "540 g", oignon: "360 g", ail: "4½", huileolive: "90 ml", menthe: "18 g", citron: "1", poivre: "9 g" },
+      { nb: 10, courgette: "2800 g", chevre: "600 g", oignon: "400 g", ail: "5", huileolive: "100 ml", menthe: "20 g", citron: "1½", poivre: "10 g" },
+      { nb: 11, courgette: "3080 g", chevre: "660 g", oignon: "440 g", ail: "5½", huileolive: "110 ml", menthe: "22 g", citron: "1", poivre: "11 g" },
+      { nb: 12, courgette: "3360 g", chevre: "720 g", oignon: "480 g", ail: "6", huileolive: "120 ml", menthe: "24 g", citron: "1", poivre: "12 g" },
+      { nb: 13, courgette: "3640 g", chevre: "780 g", oignon: "520 g", ail: "6½", huileolive: "130 ml", menthe: "26 g", citron: "1", poivre: "13 g" },
+      { nb: 14, courgette: "3920 g", chevre: "840 g", oignon: "560 g", ail: "7", huileolive: "140 ml", menthe: "28 g", citron: "2", poivre: "14 g" },
+      { nb: 15, courgette: "4200 g", chevre: "900 g", oignon: "600 g", ail: "7½", huileolive: "150 ml", menthe: "30 g", citron: "2¼", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Les courgettes", detail: "Lavez-les et coupez-les en rondelles SANS les peler — la peau donne la couleur verte.", badge: null },
+      { icone: "🧅", titre: "Le fond", detail: "Faites suer oignon et ail dans l'huile 5 minutes, sans coloration.", badge: null },
+      { icone: "💧", titre: "Peu d'eau", detail: "Ajoutez les courgettes et de l'eau à MI-HAUTEUR seulement : la courgette est déjà pleine d'eau.", badge: null },
+      { icone: "⏱️", titre: "COURT", detail: "12 minutes à couvert, pas plus : au-delà, le vert vire au kaki et le goût s'affadit.", badge: null },
+      { icone: "🧀", titre: "Le chèvre", detail: "Hors du feu, ajoutez le chèvre frais en morceaux et laissez-le fondre 1 minute.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez longuement jusqu'à texture soyeuse ; ajustez avec un peu d'eau si trop épais.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Menthe ciselée, trait de citron, poivre. Chaud ou froid, il est bon dans les deux.", badge: null }
+    ],
+    liees: ["veloutecourgette"]
+  },
 });

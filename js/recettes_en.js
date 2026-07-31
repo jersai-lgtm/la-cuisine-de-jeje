@@ -90886,5 +90886,923 @@ window.RECETTES_EN = {
     "detail": "After 4 hours it is ready. Take it out 5 minutes before serving to soften. Homemade apricot sorbet!"
    }
   ]
+ },
+ "pouletcocotte": {
+  "nom": "Grandmother's Pot-Roast Chicken",
+  "description": "Sunday chicken in its cast-iron pot: browned on all sides, then simmered covered with bacon, mushrooms, baby onions and potatoes cooking IN the juices. Nothing is lost, everything concentrates — the very definition of grandmother's cooking.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Salt the chicken pieces and brown in butter on ALL sides — 10 minutes, unhurried: colour is flavour."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Set the chicken aside, fry the bacon and baby onions in the juices."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "Add the mushrooms and let them release their water then brown."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour the white wine and scrape the bottom with a wooden spoon — that is where the flavour lives."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Return the chicken, add the potatoes in large pieces, skin-on garlic, thyme and bay."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and cook 50 minutes over low heat, WITHOUT opening: the steam falls back and bastes everything."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Uncover, adjust, and serve straight from the pot. Sunday chicken!"
+   }
+  ]
+ },
+ "blanquettesaumon": {
+  "nom": "Salmon Blanquette",
+  "description": "Veal blanquette gone to sea: a white wine and cream velouté, leeks and mushrooms, and salmon cubes poached AT THE END so they stay pearly. Faster and lighter than the original — 45 minutes instead of two hours.",
+  "etapes": [
+   {
+    "titre": "The salmon",
+    "detail": "Cut the salmon into large 3 cm cubes and keep them CHILLED until the last moment."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Sweat the sliced leeks and mushrooms in butter for 8 minutes."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Dust with flour, stir 2 minutes without colouring — that binds the velouté."
+   },
+   {
+    "titre": "Wet",
+    "detail": "Pour the white wine then a glass of water, whisking; thicken 10 minutes."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream and simmer 5 minutes; the sauce must coat the spoon."
+   },
+   {
+    "titre": "POACH AT THE END",
+    "detail": "Slide the salmon cubes into the SIMMERING sauce and turn off the heat: 4 covered minutes are enough, they finish cooking by themselves."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Off the heat, add the egg yolk beaten with lemon, stirring — the sauce turns glossy. Dill, and serve with rice."
+   }
+  ]
+ },
+ "filetmignoncroute": {
+  "nom": "Pork Fillet in Pastry",
+  "description": "Pork tenderloin sealed in puff pastry with a mushroom duxelles and cured ham: the meat stays pink, the crust is golden. The secret to pastry that doesn't go soggy? A properly DRIED duxelles and a well-chilled assembly before baking.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Salt the fillet and sear 4 minutes on all sides in butter; let it COOL completely."
+   },
+   {
+    "titre": "THE DUXELLES",
+    "detail": "Chop the mushrooms very finely with a knife and dry them out in a pan with the shallot for 10 minutes — until NOT A DROP remains."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Spread the duxelles on a cold plate: hot, it would melt the pastry's butter."
+   },
+   {
+    "titre": "The coat",
+    "detail": "Lay the cured ham slices on cling film, cover with duxelles, set the mustard-brushed fillet on top and roll TIGHT in the film; chill 30 minutes."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Unroll the film, set the roll on the puff pastry and wrap, sealing well, seam UNDERNEATH."
+   },
+   {
+    "titre": "The chill",
+    "detail": "Egg-wash, score with a knife and chill 20 more minutes — cold pastry puffs better."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 200°C. REST 10 minutes before slicing, or the juices escape."
+   }
+  ]
+ },
+ "gratinaubergines": {
+  "nom": "Aubergine & Mozzarella Bake",
+  "description": "The Italian aubergine bake: slices ROASTED in the oven (not fried, so far less greasy), layered with basil tomato sauce and stretchy mozzarella. Roasting instead of frying changes everything — the texture stays firm and the dish doesn't weigh you down.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Cut the aubergines into 1 cm lengthwise slices; salt and drain 20 minutes."
+   },
+   {
+    "titre": "Pat dry",
+    "detail": "Pat them thoroughly — the salt drew out the bitterness AND the water."
+   },
+   {
+    "titre": "ROAST",
+    "detail": "Brush with oil and bake 20 minutes at 200°C, turning: they brown without soaking up a litre of oil."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Fry onion and garlic, add the crushed tomatoes and oregano; reduce 15 minutes."
+   },
+   {
+    "titre": "Drain the mozzarella",
+    "detail": "Slice the mozzarella and lay it on paper for 10 minutes: otherwise it waters the bake."
+   },
+   {
+    "titre": "Build",
+    "detail": "Alternate sauce, aubergines, mozzarella, basil and parmesan over 3 layers, finishing with parmesan."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "25 minutes at 190°C. REST 10 minutes before serving — the portions hold together."
+   }
+  ]
+ },
+ "cakesalesaumon": {
+  "nom": "Smoked Salmon & Dill Loaf",
+  "description": "The apéritif loaf, fresh version: smoked salmon, dill and lemon zest in a cream-cheese batter that stays incredibly moist. It slices better the next day, travels anywhere, and there is nothing to cook but the loaf itself.",
+  "etapes": [
+   {
+    "titre": "The salmon",
+    "detail": "Cut the smoked salmon into strips then 1 cm dice — no smaller, they would vanish into the batter."
+   },
+   {
+    "titre": "The dill",
+    "detail": "Chop the dill finely and zest the lemon."
+   },
+   {
+    "titre": "The base",
+    "detail": "Whisk eggs, milk, olive oil and cream cheese until smooth."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Add flour and baking powder and mix JUST enough — an overworked loaf batter turns elastic."
+   },
+   {
+    "titre": "The fillings",
+    "detail": "Fold in salmon, dill, zest and a grind of pepper (no salt, the salmon brings it)."
+   },
+   {
+    "titre": "The tin",
+    "detail": "Pour into a lined tin and smooth."
+   },
+   {
+    "titre": "Bake",
+    "detail": "40 minutes at 180°C, until a blade comes out clean. Wait for it to cool COMPLETELY to slice cleanly."
+   }
+  ]
+ },
+ "muffinssaleschorizo": {
+  "nom": "Chorizo & Feta Savoury Muffins",
+  "description": "The savoury muffin, Spanish version: mild chorizo, large feta cubes and red pepper in a smoked-paprika batter. The feta cubes melt into creamy pockets — that is what makes them irresistible warm, at the apéritif.",
+  "etapes": [
+   {
+    "titre": "The chorizo",
+    "detail": "Fry the diced chorizo 2 minutes dry and keep the released orange fat."
+   },
+   {
+    "titre": "The pepper",
+    "detail": "Dice the pepper small and fry in that fat for 3 minutes."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the filling cool — hot, it would cook the eggs in the batter."
+   },
+   {
+    "titre": "The base",
+    "detail": "Whisk eggs, milk, olive oil and the reserved chorizo fat."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Add flour, baking powder, paprika and pepper; mix 10 seconds MAXIMUM, lumps are normal."
+   },
+   {
+    "titre": "The cubes",
+    "detail": "Fold in chorizo, pepper and the feta in LARGE cubes (it must stay in pieces)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Fill the cases three quarters full and bake 22 minutes at 180°C. Serve warm."
+   }
+  ]
+ },
+ "veloutecourgettechevre": {
+  "nom": "Courgette & Goat Cheese Soup",
+  "description": "Courgette soup with character: fresh goat cheese melted in brings acidity and salt, without a drop of cream. Short cooking, skin left on for colour — a tender green soup ready in 30 minutes.",
+  "etapes": [
+   {
+    "titre": "The courgettes",
+    "detail": "Wash and slice them WITHOUT peeling — the skin gives the green colour."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sweat onion and garlic in the oil for 5 minutes, without colouring."
+   },
+   {
+    "titre": "Little water",
+    "detail": "Add the courgettes and water only HALFWAY UP: courgettes are already full of water."
+   },
+   {
+    "titre": "SHORT",
+    "detail": "12 minutes covered, no more: beyond that the green turns khaki and the taste fades."
+   },
+   {
+    "titre": "The goat cheese",
+    "detail": "Off the heat, add the fresh goat cheese in pieces and let it melt for 1 minute."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend at length to a silky texture; loosen with a little water if too thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped mint, a squeeze of lemon, pepper. Hot or cold, it's good both ways."
+   }
+  ]
+ },
+ "verrinesaumonavocat": {
+  "nom": "Salmon & Avocado Verrine",
+  "description": "The festive no-cook starter: three clean layers — lemon-crushed avocado, dill cream cheese, smoked salmon — built in a glass. The secret to sharp layers: pipe them, never spoon them, and chill between each one.",
+  "etapes": [
+   {
+    "titre": "The avocado",
+    "detail": "Crush the avocado with a fork with lemon juice, salt and pepper — roughly, not to a smooth purée."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whisk the cream cheese with the cream, chopped dill and very finely minced shallot."
+   },
+   {
+    "titre": "The salmon",
+    "detail": "Cut the smoked salmon into small even dice."
+   },
+   {
+    "titre": "First layer",
+    "detail": "Pipe the avocado into the bottom of the glasses and press lightly; chill 15 minutes."
+   },
+   {
+    "titre": "Second layer",
+    "detail": "Pipe the cream on top WITHOUT crushing it — piping keeps the sides clean."
+   },
+   {
+    "titre": "Third layer",
+    "detail": "Finish with the salmon dice in a small dome."
+   },
+   {
+    "titre": "Serve",
+    "detail": "1 hour chilled minimum. Dill and lemon zest at the last moment. The festive starter with no oven!"
+   }
+  ]
+ },
+ "poeleechampignons": {
+  "nom": "Garlic Parsley Mushrooms",
+  "description": "Pan-fried mushrooms done properly: seared over HIGH heat in a single layer so they brown instead of steaming, then a persillade thrown in at the last second. Three ingredients, two absolute rules, and a side dish that steals the show from whatever it accompanies.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Brush or wipe the mushrooms — never water, they drink it and will NEVER brown."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut into thick quarters (not thin slices: they release too much water and shrivel)."
+   },
+   {
+    "titre": "HIGH HEAT",
+    "detail": "Heat the pan until it lightly smokes, then add the oil."
+   },
+   {
+    "titre": "SINGLE LAYER",
+    "detail": "Tip in the mushrooms in one layer and DON'T stir for 2 minutes: crowded or stirred too early, they steam instead of browning."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Toss 3 minutes more until well browned all over; salt ONLY now."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Add the butter and shallot; let it foam for 1 minute."
+   },
+   {
+    "titre": "The persillade",
+    "detail": "Off the heat, garlic and parsley chopped together, a squeeze of lemon. Serve immediately."
+   }
+  ]
+ },
+ "saladefenouilorange": {
+  "nom": "Fennel & Orange Salad",
+  "description": "The Sicilian winter salad: fennel sliced on a mandoline, orange segments, black olives and olive oil. The aniseed crunch of fennel against the sweet-sharp orange — three ingredients that look like nothing and make a whole dish.",
+  "etapes": [
+   {
+    "titre": "The fennel",
+    "detail": "Remove the stalks (keep the fronds) and slice the bulb on a MANDOLINE, as thin as possible."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Plunge the slices 10 minutes into iced water: they stiffen and turn ultra-crisp."
+   },
+   {
+    "titre": "The segments",
+    "detail": "Peel the oranges to the flesh and cut out the segments between the membranes; keep the juice."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Slice the red onion very thin and rinse in cold water to remove its bite."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Drain the fennel, dry it and toss with the oranges, olives and onion."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Olive oil, the reserved orange juice, a squeeze of lemon, salt and plenty of pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fennel fronds and parsley on top. Serve IMMEDIATELY — fennel softens as it waits."
+   }
+  ]
+ },
+ "risottocitron": {
+  "nom": "Lemon Risotto",
+  "description": "Italy's simplest and brightest risotto: nothing but rice, stock, parmesan and PLENTY of lemon — zest in the cooking, juice at the end. An Amalfi coast recipe where lemon is not an accent but the main ingredient.",
+  "etapes": [
+   {
+    "titre": "Zest and juice",
+    "detail": "Zest the lemons finely and juice them SEPARATELY: the zest will cook, the juice will not (it would turn bitter)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sweat the finely chopped onion in half the butter, without colouring."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the rice and stir 2 minutes: the grains must turn translucent at the edges."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour the white wine and let it evaporate completely."
+   },
+   {
+    "titre": "Ladle by ladle",
+    "detail": "Add hot stock one ladle at a time with HALF the zest, stirring — 18 minutes."
+   },
+   {
+    "titre": "MANTECARE",
+    "detail": "Off the heat, add the remaining VERY cold butter and the parmesan, beating vigorously: that is the gesture that makes risotto creamy."
+   },
+   {
+    "titre": "Juice at the end",
+    "detail": "Add the lemon juice and remaining zest off the heat, cover 2 minutes. Basil, pepper. Serve at once."
+   }
+  ]
+ },
+ "pommesdauphine": {
+  "nom": "Pommes Dauphine",
+  "description": "The puffed spheres of classic French cooking: half potato purée, half choux pastry, deep-fried until they balloon into hollow crisp spheres. A bistro side people think is complicated but which is just two very simple preparations.",
+  "etapes": [
+   {
+    "titre": "The DRY purée",
+    "detail": "Cook the potatoes IN THEIR SKINS (they absorb less water), peel them hot and mash; dry the purée 2 minutes in the pan."
+   },
+   {
+    "titre": "The choux paste",
+    "detail": "Boil half a glass of water with the butter and salt, tip in the flour at once and dry the panade for 2 minutes."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Off the heat, beat in the eggs one by one: the paste must ribbon and fall slowly."
+   },
+   {
+    "titre": "The marriage",
+    "detail": "Mix ONE part choux paste to TWO parts purée, with the nutmeg — the classic ratio."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cool 30 minutes in the fridge: the mixture firms up and shapes better."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form balls with two spoons or a piping bag."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop into 170°C oil: they puff and rise in 4 minutes. Drain, salt, serve SCORCHING."
+   }
+  ]
+ },
+ "chouxcraquelin": {
+  "nom": "Craquelin Cream Puffs",
+  "description": "The cream puff with its craquelin disc: a shortcrust topping laid on BEFORE baking, which melts and forms a perfectly round crackled shell. The craquelin isn't just decorative — it regulates the rise and stops the puffs from distorting.",
+  "etapes": [
+   {
+    "titre": "THE CRAQUELIN",
+    "detail": "Mix a third of the soft butter with the brown sugar and a third of the flour into a paste; roll it VERY thin between two papers and freeze 20 minutes."
+   },
+   {
+    "titre": "The choux paste",
+    "detail": "Boil water, half the milk, the remaining butter and a pinch of salt; tip in the remaining flour at once and dry the panade 2 minutes."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Off the heat, beat in the eggs gradually: the paste must form a BEAK that droops slowly."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Pipe even balls well spaced on the tray."
+   },
+   {
+    "titre": "The disc",
+    "detail": "Cut discs from the frozen craquelin and lay one on EACH puff."
+   },
+   {
+    "titre": "Bake WITHOUT OPENING",
+    "detail": "25 minutes at 180°C, oven closed: opening before the end collapses the puffs irreversibly."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Make a vanilla pastry cream (remaining milk, yolk, sugar, cornflour), chill it and fill the puffs from underneath."
+   }
+  ]
+ },
+ "paletsbretons": {
+  "nom": "Breton Butter Cookies",
+  "description": "The thick Breton shortbread with salted butter: a very rich dough beaten like a cream, baked INSIDE rings to keep straight sides. The Guérande salt is not a detail — it is what makes the butter flavour explode.",
+  "etapes": [
+   {
+    "titre": "The salted butter",
+    "detail": "Take the butter out 1 hour ahead: it must be SOFT, not melted. Add the Guérande salt and work it to a cream."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip with the sugar 4 minutes until pale and fluffy."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Add the egg yolks and vanilla; whip 2 minutes more."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Fold in flour and baking powder WITH A SPATULA, without working it — the dough must stay very soft, almost flowing."
+   },
+   {
+    "titre": "THE REST",
+    "detail": "Wrap and chill 2 hours MINIMUM: without it, the dough spreads and the palet loses its thickness."
+   },
+   {
+    "titre": "The rings",
+    "detail": "Roll to 1.5 cm and cut discs; leave them INSIDE buttered pastry rings — that gives the straight sides."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 170°C to golden. Cool INSIDE the rings before unmoulding."
+   }
+  ]
+ },
+ "flanparisien": {
+  "nom": "Parisian Flan",
+  "description": "The custard tart of Parisian bakeries: a crisp pastry case and a thick vanilla custard, browned almost to burnt on top. The secret to a flan that holds: cook the custard BEFORE it goes in the oven.",
+  "etapes": [
+   {
+    "titre": "The case",
+    "detail": "Line a TALL tin with the pastry, bringing it well up the sides; prick and chill 30 minutes."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Bring milk and cream to a simmer with the split scraped vanilla pod; infuse 20 minutes off the heat."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Whisk eggs, sugar and cornflour until pale."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Pour the strained hot milk over the eggs in a stream, whisking."
+   },
+   {
+    "titre": "COOK THE CUSTARD",
+    "detail": "Return to the heat and whisk NON-STOP until it thickens strongly (2-3 minutes) — it must already be set before the oven."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour the scorching custard into the raw pastry case and smooth."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 180°C: the top must darken and even blacken in places — that is the real Parisian flan. 4 hours chilled before cutting."
+   }
+  ]
+ },
+ "tartepraline": {
+  "nom": "Pink Praline Tart",
+  "description": "Lyon's pink tart: crushed pink pralines melted into cream until the filling turns fuchsia, poured onto a shortcrust base. Impossible to fail, impossible to forget — THE dessert of Lyon's bouchons.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Line a tin with the shortcrust, prick it and blind-bake 15 minutes at 180°C with weights."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Crush the pink pralines ROUGHLY — not to a powder, you want pieces."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Heat the cream and add the pralines; melt 10 minutes over VERY low heat, stirring."
+   },
+   {
+    "titre": "The colour",
+    "detail": "The mixture turns fuchsia and syrupy; if pieces remain, perfect (they crunch)."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Simmer 5 minutes more: the filling must coat the spoon, or it will not set."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour onto the pre-baked base and scatter flaked almonds."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 180°C until it bubbles at the edges. Cool COMPLETELY — the filling sets as it cools."
+   }
+  ]
+ },
+ "eclaircafe": {
+  "nom": "Coffee Éclairs",
+  "description": "The coffee éclair from the pâtissier's window: a pastry cream made with strong espresso and a glossy fondant that cracks under the tooth. The real coffee flavour comes from a REDUCED espresso, not a flavouring.",
+  "etapes": [
+   {
+    "titre": "THE REDUCED ESPRESSO",
+    "detail": "Brew a very strong coffee and REDUCE it by half in a pan: the flavour concentrates without watering the creams."
+   },
+   {
+    "titre": "The choux paste",
+    "detail": "Boil water, butter and a pinch of salt; tip in the flour at once and dry the panade 2 minutes."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Off the heat, beat in the eggs gradually until it ribbons into a beak."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Pipe EVEN 12 cm logs with a fluted nozzle; bake 30 minutes at 180°C without opening."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Make a pastry cream and add two thirds of the reduced coffee; cover and chill."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pierce three holes under each éclair and pipe until it feels heavy."
+   },
+   {
+    "titre": "The fondant",
+    "detail": "Mix icing sugar and the remaining reduced coffee into a thick but flowing glaze; dip the tops and smooth with a finger. Set 15 minutes."
+   }
+  ]
+ },
+ "beignetspomme": {
+  "nom": "Apple Fritters",
+  "description": "Funfair apple rings in batter: the batter lightened with BEER puffs into a crisp shell around a melting apple heart. The beer adds no flavour — only bubbles, and that is what makes all the lightness.",
+  "etapes": [
+   {
+    "titre": "The rings",
+    "detail": "Peel the apples, core them and slice into 8 mm rings — even thickness means even cooking."
+   },
+   {
+    "titre": "Macerate",
+    "detail": "Dust with a little sugar and cinnamon and leave 15 minutes."
+   },
+   {
+    "titre": "THE BEER BATTER",
+    "detail": "Whisk flour, baking powder, egg yolk and COLD beer: the batter must coat the back of a spoon."
+   },
+   {
+    "titre": "The white",
+    "detail": "Whip the egg white stiff and fold in gently — the second source of lightness."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Pat the apple rings dry: wet, the batter slides off."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Dip each ring in the batter, drain and slip into 175°C oil: 2 minutes per side to golden."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Drain on paper and roll IMMEDIATELY in cinnamon sugar. Serve scorching."
+   }
+  ]
+ },
+ "verrinemanguecoco": {
+  "nom": "Mango & Coconut Verrine",
+  "description": "The tropical dessert in three layers: crushed biscuits at the bottom, silky coconut cream in the middle, bright mango purée on top. No cooking, built in glasses — the perfect illusion of a chef's dessert for 25 minutes of work.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Crush the biscuits into rough crumbs and press into the bottom of the glasses."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Heat coconut milk and sugar, add the slaked cornflour and whisk until thickened (2 minutes)."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cover with cling film TOUCHING the surface and cool completely — otherwise a skin forms."
+   },
+   {
+    "titre": "Lighten",
+    "detail": "Whip the cold cream to soft peaks and fold into the cooled coconut cream."
+   },
+   {
+    "titre": "The mango",
+    "detail": "Blend the mango with lime juice into a smooth purée; keep a few dice for the top."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pipe the coconut cream over the biscuits, then pour the mango purée as the final layer."
+   },
+   {
+    "titre": "Serve",
+    "detail": "2 hours chilled. Mango dice and toasted coconut at serving time."
+   }
+  ]
+ },
+ "cookiesnoixblanc": {
+  "nom": "White Chocolate & Nut Cookies",
+  "description": "The gentle version of the cookie: big shards of white chocolate and toasted macadamias (or walnuts), in a brown-sugar dough. White chocolate burns fast — hence the short bake and the compulsory chilling of the dough.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the nuts 5 minutes: that is what stops them tasting of cardboard in the cookie."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip the soft butter and brown sugar 3 minutes until pale and fluffy."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Add the egg and vanilla; whip 1 minute more."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Fold in flour, bicarbonate and salt WITH A SPATULA, without working it."
+   },
+   {
+    "titre": "The shards",
+    "detail": "Chop the white chocolate with a knife into large pieces and add with the nuts."
+   },
+   {
+    "titre": "THE REST",
+    "detail": "30 minutes chilled MINIMUM: without it, the white chocolate melts too fast and the cookies spread into puddles."
+   },
+   {
+    "titre": "Bake short",
+    "detail": "9 minutes at 180°C — the edges are set, the centre looks raw. 5 minutes on the tray before moving."
+   }
+  ]
+ },
+ "browniepecan": {
+  "nom": "Pecan Brownies",
+  "description": "The fudgy brownie in its most classic form: plenty of chocolate, little flour, and toasted pecans for crunch. The glossy crackled crust comes from one gesture: whisking the eggs with the sugar at length before adding the chocolate.",
+  "etapes": [
+   {
+    "titre": "The pecans",
+    "detail": "Toast the pecans 6 minutes in the oven and chop roughly."
+   },
+   {
+    "titre": "The chocolate",
+    "detail": "Melt chocolate and butter over a gentle bain-marie; let it COOL slightly."
+   },
+   {
+    "titre": "THE CRUST SECRET",
+    "detail": "Whisk eggs and sugar 4 minutes with a beater until very pale and foamy — that foam forms the glossy crackled crust."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Stream in the warm chocolate, whisking gently."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Add flour, cocoa and salt WITH A SPATULA in 10 turns maximum — an overmixed brownie becomes a cake."
+   },
+   {
+    "titre": "The nuts",
+    "detail": "Fold in three quarters of the pecans and pour into a lined square tin; scatter the rest."
+   },
+   {
+    "titre": "UNDERBAKE",
+    "detail": "20 minutes at 180°C: the centre still wobbles. Cool COMPLETELY before cutting — that is when it turns fudgy."
+   }
+  ]
+ },
+ "crumblepommecaramel": {
+  "nom": "Apple & Salted Caramel Crumble",
+  "description": "The apple crumble levelled up: the fruit caramelised in salted butter BEFORE baking, under an oat topping. The salted caramel at the bottom of the dish turns a childhood dessert into a bistro one.",
+  "etapes": [
+   {
+    "titre": "The apples",
+    "detail": "Peel and cut the apples into large cubes — big pieces hold their shape, small ones turn to compote."
+   },
+   {
+    "titre": "THE CARAMEL",
+    "detail": "Melt half the brown sugar dry to an amber caramel, then add half the butter and the SALT off the heat."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Pour in the cream, stirring: it bubbles violently, that's normal. You have salted caramel."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Tip the apples into the caramel and fry 5 minutes over high heat — they colour without cooking through."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Rub together with your fingertips flour, oats, remaining sugar and COLD butter, with the cinnamon — stop at large crumbs."
+   },
+   {
+    "titre": "The chill",
+    "detail": "15 minutes chilled for the topping: cold it crisps; warm it clumps."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour the caramelised apples into a dish, cover with crumbs WITHOUT pressing, and bake 30 minutes at 180°C."
+   }
+  ]
+ },
+ "tiramisuspeculoos": {
+  "nom": "Speculoos Tiramisu",
+  "description": "Tiramisu the Belgian way: ladyfingers swapped for speculoos, whose cinnamon and brown sugar marry with the coffee. Careful — speculoos soak up TWICE as fast as ladyfingers: a lightning dip in the coffee, no more.",
+  "etapes": [
+   {
+    "titre": "The coffee",
+    "detail": "Brew a strong coffee, barely sweeten it and let it COOL completely."
+   },
+   {
+    "titre": "The sabayon",
+    "detail": "Whisk the yolks with the sugar 5 minutes until pale and ribboning."
+   },
+   {
+    "titre": "The mascarpone",
+    "detail": "Fold it in WITH A SPATULA with the vanilla — never a whisk, it splits."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whip the whites stiff and fold in three times, lifting the mixture."
+   },
+   {
+    "titre": "LIGHTNING DIP",
+    "detail": "Dip the speculoos ONE SECOND per side, no more: they absorb twice as fast as ladyfingers."
+   },
+   {
+    "titre": "Build",
+    "detail": "Alternate speculoos and cream over two layers in a dish or glasses."
+   },
+   {
+    "titre": "Set",
+    "detail": "6 hours chilled MINIMUM. Sifted cocoa and cinnamon just before serving."
+   }
+  ]
+ },
+ "rizaulaitcaramel": {
+  "nom": "Rice Pudding with Salted Caramel",
+  "description": "The canteen rice pudding, redeemed: cooked very gently with vanilla, then drowned in salted butter caramel poured at the last second. The contrast between the warm creamy rice and caramel that barely sets on contact — that is the whole pleasure.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Drop the round rice into boiling water 3 minutes and drain: it loses its surface starch and won't clump."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "Bring the milk to a simmer with the split vanilla pod, add the rice and cook 30 minutes over VERY low heat, stirring often."
+   },
+   {
+    "titre": "Sugar at the end",
+    "detail": "Add half the sugar only in the last 10 minutes — too early and it toughens the grains."
+   },
+   {
+    "titre": "THE CARAMEL",
+    "detail": "Melt the remaining sugar dry to a deep amber — it should smoke slightly, that is when it has flavour."
+   },
+   {
+    "titre": "Salted butter",
+    "detail": "Off the heat, add the butter and salt, then the cream, stirring: it bubbles violently, that's normal."
+   },
+   {
+    "titre": "The texture",
+    "detail": "The rice must be creamy and fall SLOWLY from the spoon — it thickens further as it cools, so leave it looser than you want."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the warm rice and pour the hot caramel over at the last moment. A pinch of flaky salt."
+   }
+  ]
+ },
+ "parfaitglacenougat": {
+  "nom": "Frozen Nougat Parfait",
+  "description": "The frozen dessert with NO ice cream maker: an Italian meringue lightened with whipped cream, with honey, caramelised almonds and pistachios, set in a terrine in the freezer. You slice it like a loaf — not a crystal, not a machine, and a guaranteed effect.",
+  "etapes": [
+   {
+    "titre": "Caramelised almonds",
+    "detail": "Caramelise the chopped almonds with a spoon of sugar in a pan; spread on paper, let them harden, then crush."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Bring the honey and remaining sugar with a spoon of water to 118°C (soft ball: a drop forms a soft bead in cold water)."
+   },
+   {
+    "titre": "THE ITALIAN MERINGUE",
+    "detail": "Pour that scorching syrup IN A STREAM over the whipped whites, beating until completely cool — the meringue turns firm and glossy."
+   },
+   {
+    "titre": "The whipped cream",
+    "detail": "Whip the VERY cold cream to soft peaks (not stiff, it would turn grainy when frozen)."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fold the cream into the meringue gently, then the crushed almonds and pistachios."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into a film-lined terrine and tap to release air bubbles."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "6 hours MINIMUM. Turn out, slice and serve with a berry coulis. No ice cream maker!"
+   }
+  ]
+ },
+ "omelettenorvegienne": {
+  "nom": "Baked Alaska",
+  "description": "The showpiece dessert: ice cream set on a sponge, completely covered in meringue, then blasted in a SCORCHING oven or flambéed — and the ice cream does not melt. Meringue is a perfect thermal insulator: it is physics disguised as dessert.",
+  "etapes": [
+   {
+    "titre": "The sponge",
+    "detail": "Whisk whole eggs with a third of the sugar to the ribbon, fold in sifted flour and cornflour, and bake 10 minutes at 200°C in a thin sheet."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Cut the sponge to the size of your mould and soak with a rum syrup."
+   },
+   {
+    "titre": "The ice cream",
+    "detail": "Pack softened ice cream onto the sponge in an even dome; return to the FREEZER 3 hours — the cold must be absolute."
+   },
+   {
+    "titre": "THE MERINGUE",
+    "detail": "Whip the whites with the remaining sugar into a VERY firm glossy meringue (it should form a bird's beak on the whisk)."
+   },
+   {
+    "titre": "Mask",
+    "detail": "Take out the frozen dome and cover it ENTIRELY with meringue, leaving not the slightest gap — that insulation protects the ice cream."
+   },
+   {
+    "titre": "Re-freeze",
+    "detail": "Return 1 hour to the freezer: the meringue must be frozen before meeting the fire."
+   },
+   {
+    "titre": "THE BLAST",
+    "detail": "4 minutes at 240°C (or a blowtorch): the meringue browns, the ice cream stays intact. Serve IMMEDIATELY, flambéed with rum if you dare."
+   }
+  ]
+ },
+ "religieuse": {
+  "nom": "Chocolate Religieuse",
+  "description": "The religieuse — two stacked choux buns filled with chocolate pastry cream, glazed with fondant and ringed with a collar of buttercream. Born in the 19th century, its silhouette evokes a nun in her habit. The most elegant monument of French pâtisserie — and this app's 2750th recipe.",
+  "etapes": [
+   {
+    "titre": "The choux paste",
+    "detail": "Boil water, a third of the milk, the butter and a pinch of salt; tip in the flour at once and dry the panade 2 minutes on the heat."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Off the heat, beat in the eggs gradually: the paste must form a soft beak that droops slowly from the spatula."
+   },
+   {
+    "titre": "TWO SIZES",
+    "detail": "Pipe LARGE buns (5 cm) and SMALL ones (3 cm) — one of each per religieuse. Bake 30 minutes at 180°C, never opening the oven."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Make a pastry cream (remaining milk, yolks, sugar, cornflour), add the melted chocolate off the heat; cover and chill."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pierce each bun underneath and pipe until they feel HEAVY."
+   },
+   {
+    "titre": "The fondant",
+    "detail": "Mix icing sugar, cocoa and a little hot water into a glossy glaze; dip the top of each bun and smooth with a finger."
+   },
+   {
+    "titre": "STACK",
+    "detail": "Set the small bun on the large one, glued with a dot of cream, then pipe a collar of stars at the joint. The religieuse is ready — and the app now holds 2750 recipes!"
+   }
+  ]
  }
 };
