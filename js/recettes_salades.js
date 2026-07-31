@@ -3414,4 +3414,41 @@ Object.assign(recettes, {
     ],
     liees: ["tabulemaison","tabboulehlibanais"]
   },
+  musaengchae: {
+    dateAjout: "2026-07-29T14:05:00",
+    nom: "Musaengchae",
+    cat: "salades", pays: "coreedusud",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥕",
+    description: "Musaengchae — la salade de radis râpé coréenne : des filaments de daikon assaisonnés au vinaigre de riz, gochugaru et sésame, croquants et acidulés. Version « rapide » du kimchi, sans fermentation : elle est prête en 20 minutes et se mange le jour même.",
+    tableauMusaengchae: [
+      { nb: 1, radis: "200 g", vinaigreRiz: "15 ml", gochugaru: "3 g", sucre: "8 g", ail: "½", sesame: "3 g", oignon: "20 g", sel: "4 g" },
+      { nb: 2, radis: "400 g", vinaigreRiz: "30 ml", gochugaru: "6 g", sucre: "16 g", ail: "1", sesame: "6 g", oignon: "40 g", sel: "8 g" },
+      { nb: 3, radis: "600 g", vinaigreRiz: "45 ml", gochugaru: "9 g", sucre: "24 g", ail: "1½", sesame: "9 g", oignon: "60 g", sel: "12 g" },
+      { nb: 4, radis: "800 g", vinaigreRiz: "60 ml", gochugaru: "12 g", sucre: "32 g", ail: "2", sesame: "12 g", oignon: "80 g", sel: "16 g" },
+      { nb: 5, radis: "1000 g", vinaigreRiz: "75 ml", gochugaru: "15 g", sucre: "40 g", ail: "2½", sesame: "15 g", oignon: "100 g", sel: "20 g" },
+      { nb: 6, radis: "1200 g", vinaigreRiz: "90 ml", gochugaru: "18 g", sucre: "48 g", ail: "3", sesame: "18 g", oignon: "120 g", sel: "24 g" },
+      { nb: 7, radis: "1400 g", vinaigreRiz: "105 ml", gochugaru: "21 g", sucre: "56 g", ail: "3½", sesame: "21 g", oignon: "140 g", sel: "28 g" },
+      { nb: 8, radis: "1600 g", vinaigreRiz: "120 ml", gochugaru: "24 g", sucre: "64 g", ail: "4", sesame: "24 g", oignon: "160 g", sel: "32 g" },
+      { nb: 9, radis: "1800 g", vinaigreRiz: "135 ml", gochugaru: "27 g", sucre: "72 g", ail: "4½", sesame: "27 g", oignon: "180 g", sel: "36 g" },
+      { nb: 10, radis: "2000 g", vinaigreRiz: "150 ml", gochugaru: "30 g", sucre: "80 g", ail: "5", sesame: "30 g", oignon: "200 g", sel: "40 g" },
+      { nb: 11, radis: "2200 g", vinaigreRiz: "165 ml", gochugaru: "33 g", sucre: "88 g", ail: "5½", sesame: "33 g", oignon: "220 g", sel: "44 g" },
+      { nb: 12, radis: "2400 g", vinaigreRiz: "180 ml", gochugaru: "36 g", sucre: "96 g", ail: "6", sesame: "36 g", oignon: "240 g", sel: "48 g" },
+      { nb: 13, radis: "2600 g", vinaigreRiz: "195 ml", gochugaru: "39 g", sucre: "104 g", ail: "6½", sesame: "39 g", oignon: "260 g", sel: "52 g" },
+      { nb: 14, radis: "2800 g", vinaigreRiz: "210 ml", gochugaru: "42 g", sucre: "112 g", ail: "7", sesame: "42 g", oignon: "280 g", sel: "56 g" },
+      { nb: 15, radis: "3000 g", vinaigreRiz: "225 ml", gochugaru: "45 g", sucre: "120 g", ail: "7½", sesame: "45 g", oignon: "300 g", sel: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥕", titre: "La julienne", detail: "Râpez ou taillez le radis blanc en filaments FINS et longs — à la mandoline, c'est parfait.", badge: null },
+      { icone: "🧂", titre: "Dégorger", detail: "Salez et laissez 15 minutes : le radis rend beaucoup d'eau, et c'est ce qui le rend croquant.", badge: null },
+      { icone: "💪", titre: "Presser", detail: "Pressez fermement entre les mains et jetez l'eau rendue.", badge: null },
+      { icone: "🌶️", titre: "Le rouge", detail: "Massez d'abord avec le gochugaru SEUL : les filaments prennent une belle couleur rouge uniforme.", badge: null },
+      { icone: "🍚", titre: "Assaisonner", detail: "Ajoutez vinaigre de riz, sucre, ail râpé et oignon ciselé ; mélangez à la main.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez 10 minutes que les saveurs s'installent.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Sésame grillé. Frais et croquant, à côté d'un plat gras ou d'un barbecue coréen. Le musaengchae !", badge: null }
+    ]
+  },
 });

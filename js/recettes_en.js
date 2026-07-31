@@ -89866,5 +89866,1025 @@ window.RECETTES_EN = {
     "detail": "45 minutes at 180°C, until a blade comes out clean. Turn out warm and cool completely before slicing cleanly."
    }
   ]
+ },
+ "sigeumchinamul": {
+  "nom": "Sigeumchi Namul",
+  "description": "Sigeumchi namul — the seasoned spinach that opens every Korean meal: blanched for 30 seconds, SQUEEZED, then massaged with sesame oil, garlic and toasted seeds. Served at room temperature, it belongs to the banchan, those little dishes refilled at will.",
+  "etapes": [
+   {
+    "titre": "Boiling water",
+    "detail": "Bring a large pan of salted water to the boil — plenty of water, so it doesn't cool down."
+   },
+   {
+    "titre": "30 SECONDS",
+    "detail": "Plunge the spinach for 30 seconds only: it must wilt without ever going grey."
+   },
+   {
+    "titre": "The shock",
+    "detail": "Drain and plunge IMMEDIATELY into iced water: the vivid green locks in."
+   },
+   {
+    "titre": "SQUEEZE",
+    "detail": "Squeeze into a ball between your hands, very hard: otherwise the seasoning slides to the bottom of the bowl."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Cut the ball in two and pull the strands apart by hand — they must stay in filaments, not a clump."
+   },
+   {
+    "titre": "Season",
+    "detail": "Massage with grated garlic, soy sauce, sesame oil and salt, BY HAND — that is the namul gesture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter toasted sesame seeds and serve at room temperature. The banchan of every meal!"
+   }
+  ]
+ },
+ "kongnamul": {
+  "nom": "Kongnamul Muchim",
+  "description": "Kongnamul muchim — crunchy seasoned soybean sprouts: cooked COVERED without ever lifting the lid (or they smell of hay), then tossed with garlic, sesame and a little chilli. Korea's most eaten banchan, in every bibimbap.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the sprouts and pick off the brown roots if you are patient (Korean cooks do)."
+   },
+   {
+    "titre": "A little water",
+    "detail": "Put them in a pan with just half a glass of salted water."
+   },
+   {
+    "titre": "DO NOT OPEN",
+    "detail": "Cover and cook 5 minutes over medium heat WITHOUT EVER lifting the lid — that is the rule: opening releases a hay smell that lingers."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Drain and rinse in cold water to stop the cooking; they must stay CRUNCHY."
+   },
+   {
+    "titre": "Wring",
+    "detail": "Press gently to remove excess water, without crushing the sprouts."
+   },
+   {
+    "titre": "Season",
+    "detail": "Massage with grated garlic, chopped spring onion, sesame oil, gochugaru and salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toasted sesame on top, at room temperature. The kongnamul of every bibimbap!"
+   }
+  ]
+ },
+ "gamjajorim": {
+  "nom": "Gamja Jorim",
+  "description": "Gamja jorim — Korean braised-glazed potatoes: small cubes simmered in sweet soy sauce until it reduces to a glossy glaze coating them entirely. Sweet-savoury, shiny, addictive — the favourite banchan of Korean children.",
+  "etapes": [
+   {
+    "titre": "The cubes",
+    "detail": "Cut the potatoes into even 2 cm cubes — evenness makes even cooking."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse in cold water until it runs clear: less starch, a glossier sauce."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Fry 5 minutes in the oil with the onion, until the edges turn translucent."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add soy sauce, brown sugar, garlic and half a glass of water."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Cover and simmer 12 minutes over medium heat, stirring occasionally."
+   },
+   {
+    "titre": "GLAZE",
+    "detail": "Uncover and raise the heat: the sauce reduces to a syrup and coats every cube in a shiny glaze. Stir constantly at this point."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sesame and chilli on top. Warm or cold, with rice. Gamja jorim!"
+   }
+  ]
+ },
+ "dubujorim": {
+  "nom": "Dubu Jorim",
+  "description": "Dubu jorim — tofu slices browned then braised in a soy-chilli sauce: crisp outside, tender inside, coated in a sauce that soaks in at the edges. The secret to actually browning them: pat them dry like your life depends on it.",
+  "etapes": [
+   {
+    "titre": "The tofu",
+    "detail": "Slice firm tofu into 1 cm thick rectangles."
+   },
+   {
+    "titre": "PAT DRY",
+    "detail": "Set them between two cloths with a weight on top for 15 minutes: wet tofu NEVER browns, it steams."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Fry 4 minutes per side in hot oil, without touching them."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix soy sauce, gochugaru, grated garlic, brown sugar, chopped onion and half a glass of water."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Pour the sauce into the pan around the slices (not over them, to keep the crust)."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Simmer 8 minutes over low heat, spooning sauce over the slices, until it coats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sesame and fresh onion. With white rice. Banchan dubu jorim!"
+   }
+  ]
+ },
+ "kkakdugi": {
+  "nom": "Kkakdugi",
+  "description": "Kkakdugi — cubed radish kimchi: white radish dice salted then coated in a gochugaru-garlic-ginger paste, fermenting for 3 days. Crunchier and juicier than cabbage kimchi — it SNAPS between your teeth, and that is the whole point.",
+  "etapes": [
+   {
+    "titre": "The cubes",
+    "detail": "Peel the white radish (daikon) and cut into 2 cm cubes — hence the name kkakdugi, 'cut into dice'."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Toss with the salt and brown sugar; drain 1 hour, stirring twice."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse quickly in cold water and drain WITHOUT squeezing (the cubes must stay juicy). Keep 3 spoons of their water."
+   },
+   {
+    "titre": "The paste",
+    "detail": "Mix gochugaru, grated garlic and ginger, chopped onion, soy sauce and the reserved water into a red paste."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Massage the cubes with the paste — GLOVES essential, gochugaru stains fingers for days."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pack tightly into a jar, pressing out the air; leave 5 cm of headspace (it overflows as it ferments)."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "2 to 3 days at room temperature (bubbles appear), then refrigerate. Kkakdugi is ready!"
+   }
+  ]
+ },
+ "musaengchae": {
+  "nom": "Musaengchae",
+  "description": "Musaengchae — Korean shredded radish salad: daikon strands seasoned with rice vinegar, gochugaru and sesame, crunchy and sharp. The 'quick' version of kimchi, no fermentation: ready in 20 minutes and eaten the same day.",
+  "etapes": [
+   {
+    "titre": "The julienne",
+    "detail": "Grate or cut the white radish into FINE long strands — a mandoline is perfect."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Salt and leave 15 minutes: the radish releases a lot of water, and that is what makes it crunchy."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Press firmly between your hands and discard the released water."
+   },
+   {
+    "titre": "The red",
+    "detail": "Massage first with the gochugaru ALONE: the strands take on an even red colour."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add rice vinegar, sugar, grated garlic and chopped onion; mix by hand."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Leave 10 minutes for the flavours to settle."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toasted sesame. Fresh and crunchy, beside a rich dish or a Korean barbecue. Musaengchae!"
+   }
+  ]
+ },
+ "jangjorim": {
+  "nom": "Jangjorim",
+  "description": "Jangjorim — shredded braised beef in its sweet soy sauce, with hard-boiled eggs marinating in it. You shred it BY HAND into strands and pick a few with each mouthful of rice. The protein banchan that keeps a week.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Simmer the beef (chuck or shin) 40 minutes in water with the onion, ginger and pepper; skim."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Lift out the meat and strain the broth — keep two glasses, it is the sauce base."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Hard-boil the eggs and peel them."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Bring the reserved broth to a simmer with soy sauce, brown sugar, whole garlic cloves and chilli."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Return the meat and the eggs; simmer 20 minutes uncovered, the sauce reduces by half."
+   },
+   {
+    "titre": "SHRED",
+    "detail": "Lift out the meat and shred it BY HAND along the grain — never with a knife, the strands make the jangjorim."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Return the strands to the sauce with the eggs and let it cool. Served cold, in small pinches with rice."
+   }
+  ]
+ },
+ "gajinamul": {
+  "nom": "Gaji Namul",
+  "description": "Gaji namul — seasoned steamed aubergines: cooked BY STEAM (never fried, unlike their Chinese cousins), shredded by hand then massaged with garlic, sesame and soy sauce. Melting, light, without a drop of frying oil.",
+  "etapes": [
+   {
+    "titre": "The batons",
+    "detail": "Halve the aubergines lengthwise then cut into finger-sized batons."
+   },
+   {
+    "titre": "STEAM",
+    "detail": "Steam them 8 minutes, skin side up: they must turn translucent and soft."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Spread on a plate and cool in the air — no cold water, they would soak it up."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Pull them into strips BY HAND, lengthwise: the ragged surface catches the seasoning."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Press very GENTLY to remove the released juices (they are fragile)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Massage with soy sauce, grated garlic, sesame oil, chopped onion and gochugaru."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toasted sesame, at room temperature. Gaji namul — Korean lightness!"
+   }
+  ]
+ },
+ "kongjaban": {
+  "nom": "Kongjaban",
+  "description": "Kongjaban — glazed black soybeans: slowly simmered in soy sauce and sugar until glossy and slightly sticky, scattered with sesame. A tiny banchan picked up with chopsticks, bean by bean — and it keeps for two weeks.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the black soybeans 4 hours (or overnight): they double in volume."
+   },
+   {
+    "titre": "First cooking",
+    "detail": "Drain and simmer 30 minutes in clear water, until tender to the bite."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Discard the cooking water, return the beans to the pan with soy sauce, brown sugar, garlic and a glass of water."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Simmer 20 minutes uncovered, stirring regularly."
+   },
+   {
+    "titre": "THE GLAZE",
+    "detail": "When almost no liquid remains, add the honey and sesame oil; stir constantly for 2 minutes: the beans turn GLOSSY."
+   },
+   {
+    "titre": "The sesame",
+    "detail": "Off the heat, scatter toasted sesame seeds and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let them cool: they firm up and stick lightly together. Picked up with chopsticks alongside rice."
+   }
+  ]
+ },
+ "buchujeon": {
+  "nom": "Buchujeon",
+  "description": "Buchujeon — the Korean chive pancake: a very thin batter where whole stems are just coated, fried to lacy crisp edges. In Korea it is made on rainy days — the sound of the frying is said to recall the sound of the drops.",
+  "etapes": [
+   {
+    "titre": "The chives",
+    "detail": "Wash and dry the Chinese chives (or thick chives); cut into 5 cm lengths, WHOLE."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk flour, cornflour, egg and VERY cold water: the batter must be loose, almost liquid — that makes the lace."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Mix the chives into the batter: each stem should be just COATED, not drowned. You must see the green through it."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat the oil generously in a pan — a jeon is cooked almost in shallow frying."
+   },
+   {
+    "titre": "Spread thin",
+    "detail": "Pour and spread THINLY, distributing the stems; do not overload the pan."
+   },
+   {
+    "titre": "Flip",
+    "detail": "5 minutes until the edges are golden and lacy, then flip and press with a spatula."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into wedges, serve scorching with a soy-vinegar-chilli dip. The buchujeon of rainy days!"
+   }
+  ]
+ },
+ "omelettechampignons": {
+  "nom": "Mushroom Omelette",
+  "description": "The omelette that demands patience: mushrooms pan-fried DRY first so they release their water and concentrate their flavour, before being folded into a still-runny omelette. The difference between a failed and a great mushroom omelette lies in that single step.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Brush or wipe the mushrooms — DO NOT wash them in water, they drink it like a sponge."
+   },
+   {
+    "titre": "DRY FIRST",
+    "detail": "Throw them into a hot pan with NO fat: they release their water, it evaporates, they start to sing."
+   },
+   {
+    "titre": "Then the butter",
+    "detail": "Only then add the butter, shallot and garlic; brown 3 minutes. Salt AT THE END (salt draws out water)."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Beat the eggs with a fork with the cream, salt and pepper — not a whisk, the omelette would go foamy."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour into the buttered pan over MEDIUM heat and draw the edges to the centre with a spatula."
+   },
+   {
+    "titre": "Fill",
+    "detail": "When the top is still glossy and runny, lay the mushrooms over one half."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold over, wait 30 seconds and slide onto the plate. Parsley, pepper. The runny mushroom omelette!"
+   }
+  ]
+ },
+ "patescitroncrevettes": {
+  "nom": "Lemon & Prawn Pasta",
+  "description": "Lemon pasta gone to sea: a lemony cream emulsified with pasta water, prawns just turned pink and plenty of zest. A 25-minute dish that tastes of a waterside terrace — provided you don't overcook the prawns.",
+  "etapes": [
+   {
+    "titre": "The zest",
+    "detail": "Zest the lemons BEFORE juicing them (the reverse is impossible); keep zest and juice separate."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Start the pasta in plenty of salted water and take ONE LADLE of cooking water before draining."
+   },
+   {
+    "titre": "The prawns",
+    "detail": "Sear the prawns 1 minute per side in the oil with garlic and chilli; REMOVE them at once."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "In the same pan, pour the cream and lemon juice; simmer 2 minutes."
+   },
+   {
+    "titre": "THE EMULSION",
+    "detail": "Add the pasta water bit by bit, stirring: the starch binds the sauce and makes it coat."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Tip in the drained pasta and toss 1 minute with the parmesan."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Return the prawns, lemon zest, parsley, a grind of pepper. Serve immediately."
+   }
+  ]
+ },
+ "tortillachorizo": {
+  "nom": "Chorizo Tortilla",
+  "description": "The Spanish tortilla, spiced up: the chorizo releases its orange fat which perfumes the slow-cooked potatoes, and the whole sets in egg into a thick, melting cake. The national debate over a runny or set centre applies here too — I vote runny.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Cut them into THIN irregular slices (never cubes) — that is the traditional cut."
+   },
+   {
+    "titre": "The chorizo",
+    "detail": "Fry the diced chorizo 3 minutes dry: it releases an orange fat, keep ALL of it."
+   },
+   {
+    "titre": "CONFIT",
+    "detail": "Add the oil, potatoes and onion; cover and cook 20 minutes over LOW heat — they must not fry but melt."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain in a colander, keeping 2 spoons of the fragrant oil."
+   },
+   {
+    "titre": "THE REST",
+    "detail": "Beat the salted eggs, tip in the warm potatoes and REST 10 minutes: that is what binds the tortilla."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour into the oiled pan and cook 5 minutes over medium heat, loosening the edges."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Cover with a plate, flip decisively, and slide back into the pan for 3 minutes. Runny centre!"
+   }
+  ]
+ },
+ "veloutebrocoliroquefort": {
+  "nom": "Broccoli & Blue Cheese Soup",
+  "description": "The soup that reconciles you with broccoli: cooked FAST to stay vivid green, blended at length and lifted with Roquefort melting into it. The blue cheese brings salt and depth — no need for extra cream, the cheese does all the work.",
+  "etapes": [
+   {
+    "titre": "Separate",
+    "detail": "Break the broccoli into small florets AND peel the stalk to dice it — it is the tastiest part, never throw it away."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sweat onion and garlic in the oil for 5 minutes, without colouring."
+   },
+   {
+    "titre": "The potato",
+    "detail": "Add the diced potato and cover with water; 10 minutes."
+   },
+   {
+    "titre": "BROCCOLI LAST",
+    "detail": "Add the broccoli only 6 MINUTES before the end: any longer and it turns khaki."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend at length — a good 2 minutes — for a truly velvety texture."
+   },
+   {
+    "titre": "The blue cheese",
+    "detail": "Add the crumbled Roquefort OFF THE HEAT and blend again: it melts and salts the soup."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A swirl of cream, crushed walnuts, ground pepper. Only salt after tasting!"
+   }
+  ]
+ },
+ "risottobutternut": {
+  "nom": "Butternut & Sage Risotto",
+  "description": "The autumn risotto: half the squash melted INTO the rice for colour and creaminess, the other half roasted separately for bite. Sage fried in butter on top does the rest — the risotto everyone agrees on in October.",
+  "etapes": [
+   {
+    "titre": "Two squashes",
+    "detail": "Cut half the butternut into small dice (to melt) and the rest into larger cubes (to roast)."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Bake the large cubes 20 minutes at 200°C with a drizzle of oil — they caramelise while you make the risotto."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Sweat the onion, add the rice and stir 2 minutes: the grains turn translucent at the edges."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour the white wine and let it evaporate completely."
+   },
+   {
+    "titre": "LADLE BY LADLE",
+    "detail": "Add hot stock one ladle at a time with the small squash dice, stirring — 18 minutes, never more liquid than the rice can absorb."
+   },
+   {
+    "titre": "The sage",
+    "detail": "Fry the sage leaves 30 seconds in foaming butter until they CRISP."
+   },
+   {
+    "titre": "Mantecare",
+    "detail": "Off the heat, beat in the parmesan and sage butter; cover 2 minutes. Serve with the roasted cubes and hazelnuts."
+   }
+  ]
+ },
+ "currypouletepinards": {
+  "nom": "Chicken & Spinach Curry",
+  "description": "Saag murgh, the green cousin of butter chicken: chicken simmered in a spinach purée with ginger and garam masala, loosened with a little cream. The deep green surprises, the taste is gentle and earthy — and far lighter than a tomato curry.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Plunge the spinach 1 minute in boiling water then into iced water: the green stays VIVID."
+   },
+   {
+    "titre": "The purée",
+    "detail": "Blend with a little water into a smooth purée; set aside."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Salt the chicken pieces and brown in the oil; set aside."
+   },
+   {
+    "titre": "The masala",
+    "detail": "Turn the onion blond, then add grated garlic and ginger; 2 minutes."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add curry and cumin and stir 30 seconds: they must toast to release their oils."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken with half a glass of water; cover 15 minutes over low heat."
+   },
+   {
+    "titre": "The green",
+    "detail": "Add the spinach purée and cream; heat 5 minutes WITHOUT boiling (or the green turns). Lemon, and serve with rice."
+   }
+  ]
+ },
+ "frittatacourgette": {
+  "nom": "Courgette & Mint Frittata",
+  "description": "The summer frittata: grated and squeezed courgettes, ricotta in melting pockets and plenty of fresh mint, cooked gently then finished under the grill. Eaten warm or cold, cut into wedges — ideal for a picnic or lunchbox.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the courgettes coarsely, salt them and drain 15 minutes."
+   },
+   {
+    "titre": "SQUEEZE",
+    "detail": "Squeeze hard in a cloth: courgette frittata always fails for the same reason — too much water."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the onion then the squeezed courgettes 5 minutes in the oil, over high heat."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Beat the eggs with the parmesan, lemon zest, chopped mint and pepper."
+   },
+   {
+    "titre": "The ricotta",
+    "detail": "Mix courgettes and custard, then add the ricotta in LARGE spoonfuls without stirring — it must stay in pockets."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "Pour into the oiled pan and cook 12 minutes over VERY low heat, covered: the edges set, the centre wobbles."
+   },
+   {
+    "titre": "Finish under the grill",
+    "detail": "3 minutes under the grill to brown the top. Cool slightly before cutting — frittata is served warm."
+   }
+  ]
+ },
+ "boulettespoulettomate": {
+  "nom": "Chicken Meatballs in Tomato Sauce",
+  "description": "The light version of meatballs in sauce: minced chicken bound with ricotta (the secret to tenderness, since poultry tends to dry out), simmered in a basil tomato sauce. Easier to digest than beef meatballs and just as comforting.",
+  "etapes": [
+   {
+    "titre": "The mix",
+    "detail": "Combine the minced chicken with ricotta, breadcrumbs, egg, parmesan, garlic and chopped basil."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the mix 20 minutes: it firms up and the balls roll without sticking."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Shape walnut-sized balls with damp hands — don't press too hard, a compacted meatball turns rubbery."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown 4 minutes in the oil, rolling them; they are not cooked through, that's normal."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Set them aside, soften the onion in the same pan then add the crushed tomatoes; salt."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the meatballs and simmer 20 minutes covered — they finish cooking IN the sauce and stay tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fresh basil, grated parmesan, with pasta or bread. Chicken meatballs!"
+   }
+  ]
+ },
+ "croquechevreepinards": {
+  "nom": "Goat Cheese & Spinach Croque-Monsieur",
+  "description": "The croque reinvented without ham: wilted well-squeezed spinach, fresh goat cheese and a nutmeg béchamel, grilled to bubbling. The goat cheese replaces gruyère with a touch of acidity that lightens the whole — and the honey on top makes all the difference.",
+  "etapes": [
+   {
+    "titre": "The spinach",
+    "detail": "Wilt in a pan then SQUEEZE hard: a croque with wet spinach is a soggy disaster."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Melt the butter, add the flour and stir 2 minutes without colouring."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Pour in the hot milk, whisking; thicken, add nutmeg, salt and pepper."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Lightly toast the bread slices FIRST: they will resist the filling's moisture."
+   },
+   {
+    "titre": "Build",
+    "detail": "Béchamel on each slice, then spinach, goat cheese rounds, and close."
+   },
+   {
+    "titre": "The top",
+    "detail": "Coat the top with the remaining béchamel and scatter grated gruyère."
+   },
+   {
+    "titre": "Grill",
+    "detail": "12 minutes at 200°C to golden bubbles. A drizzle of honey out of the oven — try it, you'll see."
+   }
+  ]
+ },
+ "gratinpatesthon": {
+  "nom": "Tuna Pasta Bake",
+  "description": "The store-cupboard pasta bake: tuna, tomatoes and a lemony béchamel, gratinated with breadcrumbs for crunch. Everything comes from the pantry, it's ready in 45 minutes and feeds a table — the emergency dish that looks like nothing and always wins.",
+  "etapes": [
+   {
+    "titre": "The pasta",
+    "detail": "Cook the pasta 2 MINUTES LESS than stated: it finishes in the oven absorbing the sauce."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Melt the butter, add the flour and stir 2 minutes."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Pour in the hot milk, whisking, thicken; nutmeg, salt, pepper and the lemon zest."
+   },
+   {
+    "titre": "The tuna",
+    "detail": "Flake the drained tuna and mix with the drained crushed tomatoes."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine pasta, béchamel and filling; pour into a buttered dish."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Mix gruyère and breadcrumbs and cover the whole surface — the breadcrumbs make the REAL crunch."
+   },
+   {
+    "titre": "Bake",
+    "detail": "25 minutes at 200°C to a golden crust and bubbling edges. Rest 5 minutes before serving."
+   }
+  ]
+ },
+ "moelleuxpistache": {
+  "nom": "Pistachio Fondant",
+  "description": "The chocolate fondant gone green: a batter of pistachio paste and white chocolate, with a heart that flows at the cut. The principle is the same — deliberately underbake — but the flavour is that of warm pistachio ice cream. Served with a scoop of vanilla.",
+  "etapes": [
+   {
+    "titre": "The pistachio paste",
+    "detail": "Blend unsalted pistachios at length with the cream into a smooth pale-green paste."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Melt the butter gently and mix into the pistachio paste."
+   },
+   {
+    "titre": "Whisk pale",
+    "detail": "Whisk eggs and sugar 3 minutes until doubled and pale — that air makes the softness."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fold in the warm pistachio-butter mixture, then the sifted flour and ground almonds."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Pour into buttered and floured ramekins and chill 30 minutes — cold batter cooks the edges better than the centre."
+   },
+   {
+    "titre": "UNDERBAKE",
+    "detail": "9 to 10 minutes at 200°C: the edges are set, the centre still MOVES when shaken."
+   },
+   {
+    "titre": "Turn out fast",
+    "detail": "Wait 1 minute, run a blade around and turn out onto the plate. Serve immediately, the heart flows!"
+   }
+  ]
+ },
+ "tiramisucitron": {
+  "nom": "Lemon Tiramisu",
+  "description": "Tiramisu without coffee or cocoa: the biscuits soaked in a lemon-limoncello syrup, the mascarpone cream scented with zest, and a shower of fresh zest instead of cocoa. Lighter, brighter — the tiramisu served in summer on the Amalfi coast.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Simmer the juice of one lemon with a third of the sugar and two spoons of water; COOL completely."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Whisk the yolks with the remaining sugar for 5 minutes: the mixture must pale and ribbon."
+   },
+   {
+    "titre": "The mascarpone",
+    "detail": "Fold in the mascarpone WITH A SPATULA — a whisk splits it and turns it grainy."
+   },
+   {
+    "titre": "The zest",
+    "detail": "Add the finely grated zest of two lemons and the vanilla."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whip the whites stiff and fold them in three times, gently, lifting the mixture."
+   },
+   {
+    "titre": "Build",
+    "detail": "Dip the biscuits QUICKLY in the cold syrup (2 seconds, no more) and alternate with the cream."
+   },
+   {
+    "titre": "Set",
+    "detail": "6 hours chilled MINIMUM. Fresh lemon zest just before serving — never in advance, it dries out."
+   }
+  ]
+ },
+ "clafoutisabricots": {
+  "nom": "Apricot Clafoutis",
+  "description": "The summer clafoutis: barely sweetened apricot halves in an almond batter that puffs in the oven then falls, trembling. The apricot's sharpness cuts through the batter's softness — far more interesting than the cherry version, let's be honest.",
+  "etapes": [
+   {
+    "titre": "The apricots",
+    "detail": "Halve and stone them; arrange them ROUNDED side down in the buttered dish."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Dust with a spoon of sugar and bake 10 minutes at 200°C: they release their water BEFORE the batter (the anti-soggy secret)."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk eggs and remaining sugar, then the sifted flour and ground almonds."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Stream in the warm milk while whisking, then the melted butter and vanilla: the batter should flow like crêpe batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest 15 minutes — the batter will be smoother and less elastic."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour gently over the pre-baked apricots, without moving them."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 180°C: it puffs, browns and still trembles at the centre. It SINKS as it cools, that's normal."
+   }
+  ]
+ },
+ "muffinsmyrtilles": {
+  "nom": "Blueberry Muffins",
+  "description": "The American muffin at its finest: floured blueberries that don't sink, a properly domed top thanks to a heat shock, and lemon zest to wake up the fruit. The absolute muffin rule: mix as LITTLE as possible — lumps are your friends.",
+  "etapes": [
+   {
+    "titre": "FLOUR THE FRUIT",
+    "detail": "Roll the blueberries in a spoonful of flour taken from the total: floured, they stay SUSPENDED instead of sinking."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Combine flour, baking powder, sugar and lemon zest in a bowl."
+   },
+   {
+    "titre": "The wet mix",
+    "detail": "Separately whisk egg, yogurt, melted butter and vanilla."
+   },
+   {
+    "titre": "MIX LITTLE",
+    "detail": "Pour the wet over the dry and mix for 10 SECONDS maximum with a spatula: lumps MUST remain, or the muffins turn rubbery."
+   },
+   {
+    "titre": "The blueberries",
+    "detail": "Fold them in with 3 turns of the spatula, no more."
+   },
+   {
+    "titre": "THE HEAT SHOCK",
+    "detail": "Fill the cases to the brim and bake at 220°C for 5 minutes, THEN drop to 180°C for 15 minutes — that is what creates the dome."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Leave 5 minutes in the tin then on a rack. Best warm, the same day."
+   }
+  ]
+ },
+ "sablesdattes": {
+  "nom": "Date Shortbreads",
+  "description": "The date-filled shortbread, quiet cousin of the maamoul: two discs of shortcrust enclosing a date purée with cinnamon and orange blossom. The sweetness comes only from the fruit — and they keep two weeks in a tin.",
+  "etapes": [
+   {
+    "titre": "The date paste",
+    "detail": "Stone the dates and blend with the orange blossom water and cinnamon into a thick sticky paste."
+   },
+   {
+    "titre": "Soften",
+    "detail": "If the paste is too firm, add a spoon of hot water — it must spread without tearing."
+   },
+   {
+    "titre": "The shortcrust",
+    "detail": "Rub flour, cold butter, icing sugar and salt with your fingertips, then bind with the egg."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and chill 1 hour: shortcrust worked cold does not shrink."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll to 3 mm and cut discs; count an EVEN number (two per shortbread)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a hazelnut of date paste at the centre of half the discs, cover and seal the edges with a fork."
+   },
+   {
+    "titre": "Bake",
+    "detail": "15 minutes at 170°C — they must stay PALE. Cool completely before handling."
+   }
+  ]
+ },
+ "tartecitronmeringuee": {
+  "nom": "Lemon Meringue Pie",
+  "description": "The lemon tart crowned with Italian meringue torched golden: the contrast between the sharp lemon curd and the marshmallow softness of the meringue. Italian meringue (made with hot syrup) holds for hours without weeping, unlike the French version.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Line the tin, prick and blind-bake 20 minutes at 180°C with weights: a soft base ruins the tart."
+   },
+   {
+    "titre": "The curd",
+    "detail": "Whisk eggs, half the sugar, lemon juice and zest and cornflour in a pan."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook over low heat WITHOUT stopping whisking until it coats (like pastry cream) — 5 minutes."
+   },
+   {
+    "titre": "The cold butter",
+    "detail": "Off the heat, beat in the COLD diced butter piece by piece: it makes the curd glossy and silky."
+   },
+   {
+    "titre": "Fill & chill",
+    "detail": "Pour onto the baked base, smooth and set 3 hours in the fridge."
+   },
+   {
+    "titre": "THE ITALIAN MERINGUE",
+    "detail": "Bring the remaining sugar with 2 spoons of water to 118°C; pour this syrup in a stream over the whipped whites, beating until cool — it turns glossy and firm."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Pipe the meringue in peaks and torch golden (or 2 minutes under the grill, watching). Serve chilled."
+   }
+  ]
+ },
+ "moussecafe": {
+  "nom": "Coffee Mousse",
+  "description": "Chocolate mousse that swapped cocoa for a strong espresso: yolks whipped into a sabayon, very strong coffee and whipped whites, for an airy texture with a deep espresso flavour. A grown-up dessert, served in small glasses.",
+  "etapes": [
+   {
+    "titre": "The coffee",
+    "detail": "Brew a VERY strong coffee (double dose) and let it cool — a weak coffee gives a bland mousse."
+   },
+   {
+    "titre": "The gelatine",
+    "detail": "Soften the gelatine in cold water, squeeze and dissolve in the still-warm coffee."
+   },
+   {
+    "titre": "The sabayon",
+    "detail": "Whisk the yolks with the sugar over a bain-marie for 5 minutes: the mixture triples and turns foamy and warm."
+   },
+   {
+    "titre": "The chocolate",
+    "detail": "Melt the dark chocolate and fold into the sabayon with the gelatinised coffee."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the VERY cold cream to soft (not stiff) peaks and fold in gently."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whip the whites stiff and fold in three times, lifting with a spatula."
+   },
+   {
+    "titre": "Set",
+    "detail": "Pour into glasses and chill 4 hours. A coffee bean or cocoa on top to serve."
+   }
+  ]
+ },
+ "gateauyaourtcitronpavot": {
+  "nom": "Lemon Poppy Seed Yogurt Cake",
+  "description": "The childhood yogurt cake, grown-up version: plenty of lemon zest, poppy seeds for crunch, and a lemon glaze poured over the cake while STILL HOT so it soaks in. Still the same yogurt pot as the measure — that is the magic of this recipe.",
+  "etapes": [
+   {
+    "titre": "The pot",
+    "detail": "Empty the yogurt into a bowl and keep the pot: it measures everything else."
+   },
+   {
+    "titre": "ZEST INTO THE SUGAR",
+    "detail": "Rub the lemon zest INTO the sugar with your fingertips until the sugar is damp and fragrant — the essential oils release, and that is decisive."
+   },
+   {
+    "titre": "The wet mix",
+    "detail": "Add eggs, yogurt and oil to the scented sugar; whisk."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Fold in flour, baking powder and poppy seeds without overworking."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour into a lined tin and bake 35 minutes at 180°C, until a blade comes out clean."
+   },
+   {
+    "titre": "The glaze",
+    "detail": "Mix the icing sugar with lemon juice: it should be runny, not thick."
+   },
+   {
+    "titre": "SOAK IT HOT",
+    "detail": "Prick the cake with a fork straight out of the oven and pour over the glaze: it penetrates and crystallises as it cools. That is the WHOLE difference."
+   }
+  ]
+ },
+ "pancakesbanane": {
+  "nom": "Banana Pancakes",
+  "description": "Sunday pancakes with mashed banana: it replaces part of the sugar and makes the batter incredibly tender. The more SPOTTED the banana, the better — the black ones at the bottom of the basket are the best. With maple syrup and pecans.",
+  "etapes": [
+   {
+    "titre": "BLACK BANANAS",
+    "detail": "Choose very ripe, almost black bananas: sweeter, more fragrant, and they mash by themselves."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash with a fork keeping some pieces — too smooth a purée gives flat pancakes."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Combine flour, baking powder, brown sugar and cinnamon."
+   },
+   {
+    "titre": "The wet mix",
+    "detail": "Whisk milk, egg, melted butter and mashed banana."
+   },
+   {
+    "titre": "MIX LITTLE",
+    "detail": "Bring the two together in 10 seconds with a spatula: the batter must stay LUMPY, the secret of thick pancakes."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest the batter 10 minutes: the raising agent starts working and the flour hydrates."
+   },
+   {
+    "titre": "Cook",
+    "detail": "MEDIUM heat, barely buttered pan. Flip when bubbles burst on the surface — not before. Maple syrup and pecans."
+   }
+  ]
+ },
+ "sorbetabricot": {
+  "nom": "Apricot Sorbet",
+  "description": "Apricot sorbet without an ice cream maker: the fruit roasted first to concentrate its flavour, blended with a syrup and stirred every 45 minutes. Roasting changes everything — raw apricot sorbet is watery, this one is intense and velvety.",
+  "etapes": [
+   {
+    "titre": "ROAST",
+    "detail": "Halve the apricots and bake 20 minutes at 200°C with the honey: they concentrate their flavour and lose water."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Simmer the sugar with half a glass of water for 3 minutes; cool."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the roasted apricots (skin included) with the syrup, lemon juice and vanilla until perfectly smooth."
+   },
+   {
+    "titre": "The egg white",
+    "detail": "Add the UNWHIPPED egg white and blend 30 seconds: it prevents large crystals forming (the anti-brick trick)."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Pour into a wide shallow container — the larger the surface, the faster and more evenly it sets."
+   },
+   {
+    "titre": "SCRAPE",
+    "detail": "Every 45 minutes, take it out and scrape vigorously with a fork, 3 to 4 times in a row."
+   },
+   {
+    "titre": "Serve",
+    "detail": "After 4 hours it is ready. Take it out 5 minutes before serving to soften. Homemade apricot sorbet!"
+   }
+  ]
  }
 };

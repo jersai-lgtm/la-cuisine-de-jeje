@@ -2814,4 +2814,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Crème aigre d'un côté, confiture de l'autre, sucre glace dessus. Les blintzes de Chavouot !", badge: null }
     ]
   },
+  pancakesbanane: {
+    dateAjout: "2026-07-29T16:08:00",
+    nom: "Pancakes Banane",
+    cat: "brunch", pays: "usa",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Les pancakes du dimanche à la banane écrasée : elle remplace une partie du sucre et rend la pâte incroyablement moelleuse. Plus la banane est TACHÉE, mieux c'est — les noires du fond du panier sont les meilleures. Avec du sirop d'érable et des noix de pécan.",
+    tableauPancakesbanane: [
+      { nb: 1, banane: "60 g", farine: "45 g", lait: "50 ml", oeufs: "", levurechimique: "2.5 g", beurre: "12 g", sucreroux: "8 g", cannelle: "0.4 g", siropderable: "12 ml" },
+      { nb: 2, banane: "120 g", farine: "90 g", lait: "100 ml", oeufs: "", levurechimique: "5 g", beurre: "24 g", sucreroux: "16 g", cannelle: "0.8 g", siropderable: "24 ml" },
+      { nb: 3, banane: "180 g", farine: "135 g", lait: "150 ml", oeufs: "", levurechimique: "7.5 g", beurre: "36 g", sucreroux: "24 g", cannelle: "1.2 g", siropderable: "36 ml" },
+      { nb: 4, banane: "240 g", farine: "180 g", lait: "200 ml", oeufs: "1", levurechimique: "10 g", beurre: "48 g", sucreroux: "32 g", cannelle: "1.6 g", siropderable: "48 ml" },
+      { nb: 5, banane: "300 g", farine: "225 g", lait: "250 ml", oeufs: "1½", levurechimique: "12.5 g", beurre: "60 g", sucreroux: "40 g", cannelle: "2 g", siropderable: "60 ml" },
+      { nb: 6, banane: "360 g", farine: "270 g", lait: "300 ml", oeufs: "1", levurechimique: "15 g", beurre: "72 g", sucreroux: "48 g", cannelle: "2.4 g", siropderable: "72 ml" },
+      { nb: 7, banane: "420 g", farine: "315 g", lait: "350 ml", oeufs: "2", levurechimique: "17.5 g", beurre: "84 g", sucreroux: "56 g", cannelle: "2.8 g", siropderable: "84 ml" },
+      { nb: 8, banane: "480 g", farine: "360 g", lait: "400 ml", oeufs: "2", levurechimique: "20 g", beurre: "96 g", sucreroux: "64 g", cannelle: "3.2 g", siropderable: "96 ml" },
+      { nb: 9, banane: "540 g", farine: "405 g", lait: "450 ml", oeufs: "2", levurechimique: "22.5 g", beurre: "108 g", sucreroux: "72 g", cannelle: "3.6 g", siropderable: "108 ml" },
+      { nb: 10, banane: "600 g", farine: "450 g", lait: "500 ml", oeufs: "3", levurechimique: "25 g", beurre: "120 g", sucreroux: "80 g", cannelle: "4 g", siropderable: "120 ml" },
+      { nb: 11, banane: "660 g", farine: "495 g", lait: "550 ml", oeufs: "3", levurechimique: "27.5 g", beurre: "132 g", sucreroux: "88 g", cannelle: "4.4 g", siropderable: "132 ml" },
+      { nb: 12, banane: "720 g", farine: "540 g", lait: "600 ml", oeufs: "3", levurechimique: "30 g", beurre: "144 g", sucreroux: "96 g", cannelle: "4.8 g", siropderable: "144 ml" },
+      { nb: 13, banane: "780 g", farine: "585 g", lait: "650 ml", oeufs: "3", levurechimique: "32.5 g", beurre: "156 g", sucreroux: "104 g", cannelle: "5.2 g", siropderable: "156 ml" },
+      { nb: 14, banane: "840 g", farine: "630 g", lait: "700 ml", oeufs: "4", levurechimique: "35 g", beurre: "168 g", sucreroux: "112 g", cannelle: "5.6 g", siropderable: "168 ml" },
+      { nb: 15, banane: "900 g", farine: "675 g", lait: "750 ml", oeufs: "4½", levurechimique: "37.5 g", beurre: "180 g", sucreroux: "120 g", cannelle: "6 g", siropderable: "180 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "LES BANANES NOIRES", detail: "Choisissez des bananes très mûres, presque noires : elles sont plus sucrées, plus parfumées et s'écrasent toutes seules.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Écrasez-les à la fourchette en gardant quelques morceaux — une purée trop lisse donne des pancakes plats.", badge: null },
+      { icone: "🥣", titre: "Les secs", detail: "Mélangez farine, levure, sucre roux et cannelle.", badge: null },
+      { icone: "🥛", titre: "Les liquides", detail: "Fouettez lait, œuf, beurre fondu et bananes écrasées.", badge: null },
+      { icone: "🥄", titre: "MÉLANGER PEU", detail: "Réunissez les deux en 10 secondes à la spatule : la pâte doit rester GRUMELEUSE, c'est le secret des pancakes épais.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez la pâte 10 minutes : la levure commence à agir et la farine s'hydrate.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Poêle à feu MOYEN, à peine beurrée. Retournez quand des bulles éclatent en surface — pas avant. Sirop d'érable et noix de pécan.", badge: null }
+    ],
+    liees: ["pancakes","pancakesproteine"]
+  },
 });

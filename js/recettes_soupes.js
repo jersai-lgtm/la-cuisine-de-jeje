@@ -5709,4 +5709,42 @@ Object.assign(recettes, {
     ],
     liees: ["veloutePoiron"]
   },
+  veloutebrocoliroquefort: {
+    dateAjout: "2026-07-29T15:03:00",
+    nom: "Velouté Brocoli-Roquefort",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥦",
+    description: "Le velouté qui réconcilie avec le brocoli : cuit VITE pour rester vert vif, mixé longuement et relevé de roquefort qui fond dedans. Le bleu apporte le sel et la profondeur — inutile d'ajouter de la crème, le fromage fait tout le travail.",
+    tableauVeloutebrocoliroquefort: [
+      { nb: 1, brocoli: "250 g", roquefort: "45 g", oignon: "40 g", pommedeterre: "60 g", ail: "½", creme: "25 ml", noix: "12 g", huileolive: "8 ml", poivre: "1 g" },
+      { nb: 2, brocoli: "500 g", roquefort: "90 g", oignon: "80 g", pommedeterre: "120 g", ail: "1", creme: "50 ml", noix: "24 g", huileolive: "16 ml", poivre: "2 g" },
+      { nb: 3, brocoli: "750 g", roquefort: "135 g", oignon: "120 g", pommedeterre: "180 g", ail: "1½", creme: "75 ml", noix: "36 g", huileolive: "24 ml", poivre: "3 g" },
+      { nb: 4, brocoli: "1000 g", roquefort: "180 g", oignon: "160 g", pommedeterre: "240 g", ail: "2", creme: "100 ml", noix: "48 g", huileolive: "32 ml", poivre: "4 g" },
+      { nb: 5, brocoli: "1250 g", roquefort: "225 g", oignon: "200 g", pommedeterre: "300 g", ail: "2½", creme: "125 ml", noix: "60 g", huileolive: "40 ml", poivre: "5 g" },
+      { nb: 6, brocoli: "1500 g", roquefort: "270 g", oignon: "240 g", pommedeterre: "360 g", ail: "3", creme: "150 ml", noix: "72 g", huileolive: "48 ml", poivre: "6 g" },
+      { nb: 7, brocoli: "1750 g", roquefort: "315 g", oignon: "280 g", pommedeterre: "420 g", ail: "3½", creme: "175 ml", noix: "84 g", huileolive: "56 ml", poivre: "7 g" },
+      { nb: 8, brocoli: "2000 g", roquefort: "360 g", oignon: "320 g", pommedeterre: "480 g", ail: "4", creme: "200 ml", noix: "96 g", huileolive: "64 ml", poivre: "8 g" },
+      { nb: 9, brocoli: "2250 g", roquefort: "405 g", oignon: "360 g", pommedeterre: "540 g", ail: "4½", creme: "225 ml", noix: "108 g", huileolive: "72 ml", poivre: "9 g" },
+      { nb: 10, brocoli: "2500 g", roquefort: "450 g", oignon: "400 g", pommedeterre: "600 g", ail: "5", creme: "250 ml", noix: "120 g", huileolive: "80 ml", poivre: "10 g" },
+      { nb: 11, brocoli: "2750 g", roquefort: "495 g", oignon: "440 g", pommedeterre: "660 g", ail: "5½", creme: "275 ml", noix: "132 g", huileolive: "88 ml", poivre: "11 g" },
+      { nb: 12, brocoli: "3000 g", roquefort: "540 g", oignon: "480 g", pommedeterre: "720 g", ail: "6", creme: "300 ml", noix: "144 g", huileolive: "96 ml", poivre: "12 g" },
+      { nb: 13, brocoli: "3250 g", roquefort: "585 g", oignon: "520 g", pommedeterre: "780 g", ail: "6½", creme: "325 ml", noix: "156 g", huileolive: "104 ml", poivre: "13 g" },
+      { nb: 14, brocoli: "3500 g", roquefort: "630 g", oignon: "560 g", pommedeterre: "840 g", ail: "7", creme: "350 ml", noix: "168 g", huileolive: "112 ml", poivre: "14 g" },
+      { nb: 15, brocoli: "3750 g", roquefort: "675 g", oignon: "600 g", pommedeterre: "900 g", ail: "7½", creme: "375 ml", noix: "180 g", huileolive: "120 ml", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥦", titre: "Séparer", detail: "Détaillez le brocoli en petits bouquets ET épluchez le tronc pour le couper en dés — il est le plus savoureux, ne le jetez jamais.", badge: null },
+      { icone: "🧅", titre: "Le fond", detail: "Faites suer oignon et ail dans l'huile 5 minutes, sans coloration.", badge: null },
+      { icone: "🥔", titre: "La pomme de terre", detail: "Ajoutez la pomme de terre en dés et couvrez d'eau à hauteur ; 10 minutes.", badge: null },
+      { icone: "⏱️", titre: "LE BROCOLI EN DERNIER", detail: "Ajoutez le brocoli seulement 6 MINUTES avant la fin : plus longtemps et il vire au kaki.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez longuement — 2 bonnes minutes — pour une texture vraiment veloutée.", badge: null },
+      { icone: "🧀", titre: "Le roquefort", detail: "Ajoutez le roquefort émietté HORS DU FEU et mixez à nouveau : il fond et sale le velouté.", badge: null },
+      { icone: "🥜", titre: "Servir", detail: "Crème en spirale, noix concassées, poivre du moulin. Ne salez qu'après avoir goûté !", badge: null }
+    ],
+    liees: ["veloutecourgette"]
+  },
 });
