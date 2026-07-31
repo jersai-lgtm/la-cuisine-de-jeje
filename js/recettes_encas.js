@@ -7004,4 +7004,80 @@ Object.assign(recettes, {
       { icone: "♨️", titre: "Cuire", detail: "Dorez à l'œuf, parsemez de sésame et enfournez 25 minutes à 200°C. Chauds, avec du ketchup. Les sausage rolls !", badge: null }
     ]
   },
+  wrapsaumonavocat: {
+    dateAjout: "2026-07-29T11:08:00",
+    nom: "Wrap Saumon-Avocat",
+    cat: "encas", pays: "usa",
+    base: 2,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🌯",
+    description: "Le wrap qui a tout : saumon fumé, avocat écrasé au citron, fromage frais à l'aneth et roquette, roulé serré dans une tortilla. Zéro cuisson, prêt en 15 minutes, et il tient parfaitement dans une lunchbox — à condition de bien le rouler et de le laisser reposer avant de couper.",
+    tableauWrapsaumonavocat: [
+      { nb: 1, tortillas: "70 g", saumonfume: "70 g", avocat: "80 g", fromagefrais: "45 g", roquette: "20 g", aneth: "2 g", citron: "¼", concombre: "40 g", poivre: "0.5 g" },
+      { nb: 2, tortillas: "140 g", saumonfume: "140 g", avocat: "160 g", fromagefrais: "90 g", roquette: "40 g", aneth: "4 g", citron: "½", concombre: "80 g", poivre: "1 g" },
+      { nb: 3, tortillas: "210 g", saumonfume: "210 g", avocat: "240 g", fromagefrais: "135 g", roquette: "60 g", aneth: "6 g", citron: "¾", concombre: "120 g", poivre: "1.5 g" },
+      { nb: 4, tortillas: "280 g", saumonfume: "280 g", avocat: "320 g", fromagefrais: "180 g", roquette: "80 g", aneth: "8 g", citron: "1", concombre: "160 g", poivre: "2 g" },
+      { nb: 5, tortillas: "350 g", saumonfume: "350 g", avocat: "400 g", fromagefrais: "225 g", roquette: "100 g", aneth: "10 g", citron: "1¼", concombre: "200 g", poivre: "2.5 g" },
+      { nb: 6, tortillas: "420 g", saumonfume: "420 g", avocat: "480 g", fromagefrais: "270 g", roquette: "120 g", aneth: "12 g", citron: "1½", concombre: "240 g", poivre: "3 g" },
+      { nb: 7, tortillas: "490 g", saumonfume: "490 g", avocat: "560 g", fromagefrais: "315 g", roquette: "140 g", aneth: "14 g", citron: "1¾", concombre: "280 g", poivre: "3.5 g" },
+      { nb: 8, tortillas: "560 g", saumonfume: "560 g", avocat: "640 g", fromagefrais: "360 g", roquette: "160 g", aneth: "16 g", citron: "2", concombre: "320 g", poivre: "4 g" },
+      { nb: 9, tortillas: "630 g", saumonfume: "630 g", avocat: "720 g", fromagefrais: "405 g", roquette: "180 g", aneth: "18 g", citron: "2¼", concombre: "360 g", poivre: "4.5 g" },
+      { nb: 10, tortillas: "700 g", saumonfume: "700 g", avocat: "800 g", fromagefrais: "450 g", roquette: "200 g", aneth: "20 g", citron: "2½", concombre: "400 g", poivre: "5 g" },
+      { nb: 11, tortillas: "770 g", saumonfume: "770 g", avocat: "880 g", fromagefrais: "495 g", roquette: "220 g", aneth: "22 g", citron: "2¾", concombre: "440 g", poivre: "5.5 g" },
+      { nb: 12, tortillas: "840 g", saumonfume: "840 g", avocat: "960 g", fromagefrais: "540 g", roquette: "240 g", aneth: "24 g", citron: "3", concombre: "480 g", poivre: "6 g" },
+      { nb: 13, tortillas: "910 g", saumonfume: "910 g", avocat: "1040 g", fromagefrais: "585 g", roquette: "260 g", aneth: "26 g", citron: "3¼", concombre: "520 g", poivre: "6.5 g" },
+      { nb: 14, tortillas: "980 g", saumonfume: "980 g", avocat: "1120 g", fromagefrais: "630 g", roquette: "280 g", aneth: "28 g", citron: "3½", concombre: "560 g", poivre: "7 g" },
+      { nb: 15, tortillas: "1050 g", saumonfume: "1050 g", avocat: "1200 g", fromagefrais: "675 g", roquette: "300 g", aneth: "30 g", citron: "3¾", concombre: "600 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥑", titre: "L'avocat", detail: "Écrasez l'avocat à la fourchette avec le jus de citron, du sel et du poivre — grossièrement, pas en purée lisse.", badge: null },
+      { icone: "🧀", titre: "La crème", detail: "Mélangez le fromage frais avec l'aneth ciselé et un peu de zeste de citron.", badge: null },
+      { icone: "🌯", titre: "Assouplir", detail: "Passez les tortillas 10 secondes à la poêle sèche ou 15 au micro-ondes : froides, elles CRAQUENT en roulant.", badge: null },
+      { icone: "🥄", titre: "Tartiner", detail: "Étalez le fromage frais sur toute la surface, puis l'avocat écrasé — la couche grasse empêche le wrap de se détremper.", badge: null },
+      { icone: "🐟", titre: "Garnir", detail: "Disposez saumon fumé, concombre en fins bâtonnets et roquette EN LIGNE, au tiers inférieur (pas au centre).", badge: null },
+      { icone: "💪", titre: "Rouler serré", detail: "Rabattez les côtés, puis roulez FERMEMENT en tassant la garniture au fur et à mesure.", badge: null },
+      { icone: "🔪", titre: "Reposer", detail: "Enveloppez dans du film et laissez 5 minutes : le wrap se soude. Coupez en biais avec un couteau-scie.", badge: null }
+    ],
+    liees: ["wrapveggie","bagelsaumon"]
+  },
+  cakeolivechorizo: {
+    dateAjout: "2026-07-29T11:09:00",
+    nom: "Cake Salé Olives-Chorizo",
+    cat: "encas", pays: "france",
+    base: 8,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "La version espagnole du cake salé de l'apéro : chorizo doux, olives vertes et parmesan, avec du paprika fumé dans la pâte qui la colore en orange. Le chorizo rend son gras en cuisant et parfume tout le cake — bien plus caractériel que la version jambon.",
+    tableauCakeolivechorizo: [
+      { nb: 1, farine: "30 g", oeufs: "½", chorizo: "25 g", olives: "15 g", parmesan: "12 g", lait: "20 ml", huileolive: "12 ml", levurechimique: "1.5 g", paprika: "0.8 g" },
+      { nb: 2, farine: "60 g", oeufs: "1", chorizo: "50 g", olives: "30 g", parmesan: "24 g", lait: "40 ml", huileolive: "24 ml", levurechimique: "3 g", paprika: "1.6 g" },
+      { nb: 3, farine: "90 g", oeufs: "1½", chorizo: "75 g", olives: "45 g", parmesan: "36 g", lait: "60 ml", huileolive: "36 ml", levurechimique: "4.5 g", paprika: "2.4 g" },
+      { nb: 4, farine: "120 g", oeufs: "2", chorizo: "100 g", olives: "60 g", parmesan: "48 g", lait: "80 ml", huileolive: "48 ml", levurechimique: "6 g", paprika: "3.2 g" },
+      { nb: 5, farine: "150 g", oeufs: "2½", chorizo: "125 g", olives: "75 g", parmesan: "60 g", lait: "100 ml", huileolive: "60 ml", levurechimique: "7.5 g", paprika: "4 g" },
+      { nb: 6, farine: "180 g", oeufs: "3", chorizo: "150 g", olives: "90 g", parmesan: "72 g", lait: "120 ml", huileolive: "72 ml", levurechimique: "9 g", paprika: "4.8 g" },
+      { nb: 7, farine: "210 g", oeufs: "3½", chorizo: "175 g", olives: "105 g", parmesan: "84 g", lait: "140 ml", huileolive: "84 ml", levurechimique: "10.5 g", paprika: "5.6 g" },
+      { nb: 8, farine: "240 g", oeufs: "4", chorizo: "200 g", olives: "120 g", parmesan: "96 g", lait: "160 ml", huileolive: "96 ml", levurechimique: "12 g", paprika: "6.4 g" },
+      { nb: 9, farine: "270 g", oeufs: "4½", chorizo: "225 g", olives: "135 g", parmesan: "108 g", lait: "180 ml", huileolive: "108 ml", levurechimique: "13.5 g", paprika: "7.2 g" },
+      { nb: 10, farine: "300 g", oeufs: "5", chorizo: "250 g", olives: "150 g", parmesan: "120 g", lait: "200 ml", huileolive: "120 ml", levurechimique: "15 g", paprika: "8 g" },
+      { nb: 11, farine: "330 g", oeufs: "5½", chorizo: "275 g", olives: "165 g", parmesan: "132 g", lait: "220 ml", huileolive: "132 ml", levurechimique: "16.5 g", paprika: "8.8 g" },
+      { nb: 12, farine: "360 g", oeufs: "6", chorizo: "300 g", olives: "180 g", parmesan: "144 g", lait: "240 ml", huileolive: "144 ml", levurechimique: "18 g", paprika: "9.6 g" },
+      { nb: 13, farine: "390 g", oeufs: "6½", chorizo: "325 g", olives: "195 g", parmesan: "156 g", lait: "260 ml", huileolive: "156 ml", levurechimique: "19.5 g", paprika: "10.4 g" },
+      { nb: 14, farine: "420 g", oeufs: "7", chorizo: "350 g", olives: "210 g", parmesan: "168 g", lait: "280 ml", huileolive: "168 ml", levurechimique: "21 g", paprika: "11.2 g" },
+      { nb: 15, farine: "450 g", oeufs: "7½", chorizo: "375 g", olives: "225 g", parmesan: "180 g", lait: "300 ml", huileolive: "180 ml", levurechimique: "22.5 g", paprika: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌭", titre: "Le chorizo", detail: "Coupez le chorizo en petits dés et faites-le revenir 2 minutes à sec : il rend un gras orange que vous GARDEREZ pour la pâte.", badge: null },
+      { icone: "🫒", titre: "Les olives", detail: "Dénoyautez et coupez les olives vertes en deux ; épongez-les bien (une olive mouillée fait un trou dans le cake).", badge: null },
+      { icone: "🥚", titre: "La base", detail: "Fouettez œufs, lait, huile d'olive et le gras de chorizo réservé.", badge: null },
+      { icone: "🌾", titre: "Les secs", detail: "Ajoutez farine, levure, paprika et poivre ; mélangez JUSTE ce qu'il faut — trop travaillée, la pâte devient élastique.", badge: null },
+      { icone: "🧀", titre: "Les garnitures", detail: "Incorporez chorizo, olives et parmesan en farinant légèrement les morceaux : ils ne tomberont pas au fond.", badge: null },
+      { icone: "🍞", titre: "Le moule", detail: "Versez dans un moule à cake chemisé et lissez ; tracez un trait d'huile sur la longueur pour une belle fente.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "45 minutes à 180°C, lame sèche. Démoulez tiède et attendez le refroidissement complet pour trancher net.", badge: null }
+    ],
+    liees: ["cakesaleolives"]
+  },
 });

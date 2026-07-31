@@ -3376,4 +3376,42 @@ Object.assign(recettes, {
       { icone: "🧊", titre: "Reposer", detail: "3 heures au frais MINIMUM (une nuit, c'est mieux) : la sauce s'assagit et enrobe. La macaroni salad du BBQ !", badge: null }
     ]
   },
+  taboulequinoa: {
+    dateAjout: "2026-07-29T11:06:00",
+    nom: "Taboulé de Quinoa",
+    cat: "salades", pays: "france",
+    base: 4,
+    temps: "30 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    description: "Le taboulé sans gluten : du quinoa à la place de la semoule, avec la même générosité d'herbes fraîches, de concombre et de tomate, et beaucoup de citron. Le quinoa apporte un petit croquant que la semoule n'a pas — et deux fois plus de protéines.",
+    tableauTaboulequinoa: [
+      { nb: 1, quinoa: "60 g", tomate: "80 g", concombre: "70 g", persil: "12 g", menthe: "6 g", oignon: "25 g", citron: "½", huileolive: "15 ml", cumin: "0.5 g" },
+      { nb: 2, quinoa: "120 g", tomate: "160 g", concombre: "140 g", persil: "24 g", menthe: "12 g", oignon: "50 g", citron: "1", huileolive: "30 ml", cumin: "1 g" },
+      { nb: 3, quinoa: "180 g", tomate: "240 g", concombre: "210 g", persil: "36 g", menthe: "18 g", oignon: "75 g", citron: "1½", huileolive: "45 ml", cumin: "1.5 g" },
+      { nb: 4, quinoa: "240 g", tomate: "320 g", concombre: "280 g", persil: "48 g", menthe: "24 g", oignon: "100 g", citron: "2", huileolive: "60 ml", cumin: "2 g" },
+      { nb: 5, quinoa: "300 g", tomate: "400 g", concombre: "350 g", persil: "60 g", menthe: "30 g", oignon: "125 g", citron: "2½", huileolive: "75 ml", cumin: "2.5 g" },
+      { nb: 6, quinoa: "360 g", tomate: "480 g", concombre: "420 g", persil: "72 g", menthe: "36 g", oignon: "150 g", citron: "3", huileolive: "90 ml", cumin: "3 g" },
+      { nb: 7, quinoa: "420 g", tomate: "560 g", concombre: "490 g", persil: "84 g", menthe: "42 g", oignon: "175 g", citron: "3½", huileolive: "105 ml", cumin: "3.5 g" },
+      { nb: 8, quinoa: "480 g", tomate: "640 g", concombre: "560 g", persil: "96 g", menthe: "48 g", oignon: "200 g", citron: "4", huileolive: "120 ml", cumin: "4 g" },
+      { nb: 9, quinoa: "540 g", tomate: "720 g", concombre: "630 g", persil: "108 g", menthe: "54 g", oignon: "225 g", citron: "4½", huileolive: "135 ml", cumin: "4.5 g" },
+      { nb: 10, quinoa: "600 g", tomate: "800 g", concombre: "700 g", persil: "120 g", menthe: "60 g", oignon: "250 g", citron: "5", huileolive: "150 ml", cumin: "5 g" },
+      { nb: 11, quinoa: "660 g", tomate: "880 g", concombre: "770 g", persil: "132 g", menthe: "66 g", oignon: "275 g", citron: "5½", huileolive: "165 ml", cumin: "5.5 g" },
+      { nb: 12, quinoa: "720 g", tomate: "960 g", concombre: "840 g", persil: "144 g", menthe: "72 g", oignon: "300 g", citron: "6", huileolive: "180 ml", cumin: "6 g" },
+      { nb: 13, quinoa: "780 g", tomate: "1040 g", concombre: "910 g", persil: "156 g", menthe: "78 g", oignon: "325 g", citron: "6½", huileolive: "195 ml", cumin: "6.5 g" },
+      { nb: 14, quinoa: "840 g", tomate: "1120 g", concombre: "980 g", persil: "168 g", menthe: "84 g", oignon: "350 g", citron: "7", huileolive: "210 ml", cumin: "7 g" },
+      { nb: 15, quinoa: "900 g", tomate: "1200 g", concombre: "1050 g", persil: "180 g", menthe: "90 g", oignon: "375 g", citron: "7½", huileolive: "225 ml", cumin: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "RINCER", detail: "Rincez le quinoa à l'eau froide dans une passoire fine pendant 1 minute : la saponine de surface est amère, c'est ce qui rate la plupart des quinoas.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Cuisez-le 12 minutes dans 1,5 fois son volume d'eau salée, puis laissez gonfler 5 minutes hors du feu à couvert.", badge: null },
+      { icone: "🍴", titre: "Aérer", detail: "Égrenez-le à la fourchette et laissez-le REFROIDIR complètement — chaud, il cuirait les herbes.", badge: null },
+      { icone: "🥒", titre: "Les légumes", detail: "Épépinez tomate et concombre (l'eau des pépins délave la vinaigrette) et coupez-les en petits dés.", badge: null },
+      { icone: "🌿", titre: "Les herbes", detail: "Ciselez FINEMENT persil et menthe — dans un taboulé, l'herbe est un ingrédient, pas une décoration.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Mélangez jus de citron, huile d'olive, cumin, sel et poivre, puis versez sur le quinoa.", badge: null },
+      { icone: "🧊", titre: "Reposer", detail: "Ajoutez légumes et herbes, mélangez et laissez 1 heure au frais avant de servir. Rectifiez le citron au dernier moment.", badge: null }
+    ],
+    liees: ["tabulemaison","tabboulehlibanais"]
+  },
 });

@@ -1245,4 +1245,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Couronnez de roquette et d'un filet d'huile d'olive, et servez aussitôt. La pinsa romana !", badge: null }
     ]
   },
+  pizzachevremiel: {
+    dateAjout: "2026-07-29T11:07:00",
+    nom: "Pizza Chèvre-Miel",
+    cat: "pizzas", pays: "italie",
+    base: 2,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍯",
+    description: "La pizza blanche sucrée-salée : pas de sauce tomate, une base de crème, des rondelles de chèvre qui gratinent et un filet de miel versé À LA SORTIE du four. Le chaud et le froid, le salé et le sucré, avec de la roquette et des noix — un classique des pizzerias françaises.",
+    tableauPizzachevremiel: [
+      { nb: 1, pate: "130 g", chevre: "80 g", creme: "40 ml", miel: "15 ml", roquette: "20 g", noix: "15 g", mozzarella: "40 g", thym: "0.4 g", poivre: "0.5 g" },
+      { nb: 2, pate: "260 g", chevre: "160 g", creme: "80 ml", miel: "30 ml", roquette: "40 g", noix: "30 g", mozzarella: "80 g", thym: "0.8 g", poivre: "1 g" },
+      { nb: 3, pate: "390 g", chevre: "240 g", creme: "120 ml", miel: "45 ml", roquette: "60 g", noix: "45 g", mozzarella: "120 g", thym: "1.2 g", poivre: "1.5 g" },
+      { nb: 4, pate: "520 g", chevre: "320 g", creme: "160 ml", miel: "60 ml", roquette: "80 g", noix: "60 g", mozzarella: "160 g", thym: "1.6 g", poivre: "2 g" },
+      { nb: 5, pate: "650 g", chevre: "400 g", creme: "200 ml", miel: "75 ml", roquette: "100 g", noix: "75 g", mozzarella: "200 g", thym: "2 g", poivre: "2.5 g" },
+      { nb: 6, pate: "780 g", chevre: "480 g", creme: "240 ml", miel: "90 ml", roquette: "120 g", noix: "90 g", mozzarella: "240 g", thym: "2.4 g", poivre: "3 g" },
+      { nb: 7, pate: "910 g", chevre: "560 g", creme: "280 ml", miel: "105 ml", roquette: "140 g", noix: "105 g", mozzarella: "280 g", thym: "2.8 g", poivre: "3.5 g" },
+      { nb: 8, pate: "1040 g", chevre: "640 g", creme: "320 ml", miel: "120 ml", roquette: "160 g", noix: "120 g", mozzarella: "320 g", thym: "3.2 g", poivre: "4 g" },
+      { nb: 9, pate: "1170 g", chevre: "720 g", creme: "360 ml", miel: "135 ml", roquette: "180 g", noix: "135 g", mozzarella: "360 g", thym: "3.6 g", poivre: "4.5 g" },
+      { nb: 10, pate: "1300 g", chevre: "800 g", creme: "400 ml", miel: "150 ml", roquette: "200 g", noix: "150 g", mozzarella: "400 g", thym: "4 g", poivre: "5 g" },
+      { nb: 11, pate: "1430 g", chevre: "880 g", creme: "440 ml", miel: "165 ml", roquette: "220 g", noix: "165 g", mozzarella: "440 g", thym: "4.4 g", poivre: "5.5 g" },
+      { nb: 12, pate: "1560 g", chevre: "960 g", creme: "480 ml", miel: "180 ml", roquette: "240 g", noix: "180 g", mozzarella: "480 g", thym: "4.8 g", poivre: "6 g" },
+      { nb: 13, pate: "1690 g", chevre: "1040 g", creme: "520 ml", miel: "195 ml", roquette: "260 g", noix: "195 g", mozzarella: "520 g", thym: "5.2 g", poivre: "6.5 g" },
+      { nb: 14, pate: "1820 g", chevre: "1120 g", creme: "560 ml", miel: "210 ml", roquette: "280 g", noix: "210 g", mozzarella: "560 g", thym: "5.6 g", poivre: "7 g" },
+      { nb: 15, pate: "1950 g", chevre: "1200 g", creme: "600 ml", miel: "225 ml", roquette: "300 g", noix: "225 g", mozzarella: "600 g", thym: "6 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "LE FOUR À FOND", detail: "Préchauffez à 250°C (ou au maximum) avec la plaque DEDANS depuis 30 minutes : une pizza se cuit sur une surface brûlante.", badge: null },
+      { icone: "🥛", titre: "La base", detail: "Étalez la pâte finement et nappez-la de crème fraîche, en laissant un bord de 1 cm.", badge: null },
+      { icone: "🧀", titre: "Les fromages", detail: "Répartissez la mozzarella râpée puis les rondelles de chèvre — pas trop serrées, elles s'étalent en fondant.", badge: null },
+      { icone: "🌿", titre: "Le thym", detail: "Parsemez de thym et poivrez ; PAS de sel, les fromages en apportent assez.", badge: null },
+      { icone: "♨️", titre: "Cuire vite", detail: "8 à 10 minutes sur la plaque brûlante : les bords gonflent et le chèvre dore par endroits.", badge: null },
+      { icone: "🍯", titre: "LE MIEL À LA FIN", detail: "Versez le miel en filet dès la sortie du four — cuit, il brunirait et deviendrait amer.", badge: null },
+      { icone: "🥬", titre: "Finir", detail: "Ajoutez la roquette et les noix concassées sur la pizza brûlante et servez immédiatement.", badge: null }
+    ],
+    liees: ["pizzamargherita","pizzafiguechevre"]
+  },
 });

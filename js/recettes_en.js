@@ -89526,5 +89526,345 @@ window.RECETTES_EN = {
     "detail": "Oven off, door ajar, 1 hour — then 6 hours in the fridge. Fresh basil and zest to serve."
    }
   ]
+ },
+ "tartetatinabricots": {
+  "nom": "Apricot Tarte Tatin",
+  "description": "The summer tatin: apricots caramelised cut-side down in butter and sugar, covered with pastry and flipped out of the oven. Sharper than apples, they hold up less long in the heat — this is a fast tatin, almost candied, with a brighter caramel.",
+  "etapes": [
+   {
+    "titre": "The apricots",
+    "detail": "Halve and stone the apricots; choose them RIPE but firm, or they release too much water."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Melt the sugar dry in a tatin mould (or ovenproof pan) to a blond caramel; add the butter off the heat."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Set the halves ROUNDED side down, packed tight in a rosette — they will shrink."
+   },
+   {
+    "titre": "Pre-cook",
+    "detail": "Stew 10 minutes over low heat on the hob: the apricot juices meet the caramel."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Lay the puff pastry over the fruit and tuck the edges INSIDE the mould, like a tucked-in blanket."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 200°C: the pastry must be well puffed and golden."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Wait 5 minutes (no more, or the caramel sticks) and flip decisively onto a plate. A sprig of rosemary, and serve warm."
+   }
+  ]
+ },
+ "financierspistache": {
+  "nom": "Pistachio Financiers",
+  "description": "The tender-green variant of the financier: half the ground almonds swapped for pistachio, with that BROWN butter that makes everything. The contrast between the caramelised crust and the soft pale-green heart — plus pistachio shards on top.",
+  "etapes": [
+   {
+    "titre": "The powder",
+    "detail": "Grind unsalted pistachios to a FINE powder (keep a few chopped for the top)."
+   },
+   {
+    "titre": "THE BROWN BUTTER",
+    "detail": "Melt the butter and cook until it foams, smells of hazelnut and turns amber; strain it."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Combine sifted pistachio powder, ground almonds, icing sugar and flour."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Add the UNWHIPPED egg whites (just loosened with a fork) and mix."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Stream in the still-warm brown butter and mix to a smooth batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the batter 1 hour: the financiers rise better and form a finer crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Fill buttered moulds three quarters full, scatter chopped pistachios and bake 13 minutes at 200°C. Golden crust, soft heart."
+   }
+  ]
+ },
+ "rizaulaitcoco": {
+  "nom": "Coconut-Mango Rice Pudding",
+  "description": "Rice pudding gone tropical: cooked half in milk, half in coconut milk, scented with vanilla and lime, served warm with fresh mango dice. Creamier than the classic — the coconut fat coats every grain.",
+  "etapes": [
+   {
+    "titre": "Blanch the rice",
+    "detail": "Drop the round rice into boiling water for 3 minutes and drain: it loses excess starch and won't clump."
+   },
+   {
+    "titre": "The milks",
+    "detail": "Bring milk and coconut milk to a simmer with the split vanilla pod."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "Add the rice and cook 30 minutes over VERY low heat, stirring often — it must stay creamy, not dry."
+   },
+   {
+    "titre": "Sugar at the end",
+    "detail": "Add the sugar only in the last 10 minutes: too early and it toughens the grains."
+   },
+   {
+    "titre": "The mango",
+    "detail": "Dice the ripe mango small and dress with lime."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Dry-toast the grated coconut 2 minutes until blond."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the warm rice, crown with mango and toasted coconut, lime zest. The tropics in a bowl!"
+   }
+  ]
+ },
+ "pannacottafruitsrouges": {
+  "nom": "Berry Panna Cotta",
+  "description": "The summer panna cotta: the classic vanilla cream topped with a barely sweetened berry coulis, sharp, cutting through the richness. The real test of success: it must WOBBLE when you shake the ramekin — otherwise there is too much gelatine.",
+  "etapes": [
+   {
+    "titre": "The gelatine",
+    "detail": "Soften the gelatine leaves 10 minutes in VERY cold water."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Heat cream, milk, sugar and the split scraped vanilla pod to a simmer, then take off the heat and infuse 10 minutes."
+   },
+   {
+    "titre": "Dissolve",
+    "detail": "Squeeze the gelatine and dissolve it in the HOT but not boiling cream (above 80°C it loses its power)."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Strain and pour into ramekins or glasses."
+   },
+   {
+    "titre": "Set",
+    "detail": "4 hours chilled MINIMUM — overnight is better."
+   },
+   {
+    "titre": "The coulis",
+    "detail": "Stew the berries 5 minutes with a spoon of sugar and the lemon juice, then blend and sieve if you want no seeds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon over the cold coulis at serving time. Shake it: it must wobble. Summer panna cotta!"
+   }
+  ]
+ },
+ "blondies": {
+  "nom": "Blondies",
+  "description": "The brownie without cocoa: a dense fudgy square of brown butter and muscovado, with pecans and white chocolate shards. The flavour is caramel rather than chocolate — and like a brownie, it must come out of the oven UNDERBAKED at the centre.",
+  "etapes": [
+   {
+    "titre": "THE BROWN BUTTER",
+    "detail": "Melt the butter until it foams and smells nutty — it gives the blondie its caramel flavour."
+   },
+   {
+    "titre": "The brown sugar",
+    "detail": "Whisk it HOT with the muscovado: the sugar partly melts and creates that glossy crackled crust."
+   },
+   {
+    "titre": "Cool slightly",
+    "detail": "Let it cool before adding the egg, or it will cook."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Add egg and vanilla, whisk 1 minute until glossy."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Fold in flour, baking powder and salt WITH A SPATULA, without working it — an overmixed blondie becomes a cake."
+   },
+   {
+    "titre": "The nuts",
+    "detail": "Add the chopped nuts and pour into a lined square tin (2 cm layer)."
+   },
+   {
+    "titre": "UNDERBAKE",
+    "detail": "22 minutes at 175°C: the centre must still wobble. Cool COMPLETELY before cutting — otherwise it collapses."
+   }
+  ]
+ },
+ "veloutepotimarroncoco": {
+  "nom": "Coconut-Curry Squash Soup",
+  "description": "Squash soup gone to Asia: coconut milk instead of cream, curry and ginger to wake up the sweetness of the red kuri. Silky, lightly spiced, and a deep orange colour — far more interesting than the classic cream version.",
+  "etapes": [
+   {
+    "titre": "The squash",
+    "detail": "Cube the red kuri squash WITHOUT peeling it (its skin is thin and melts — that is the whole point of this variety)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Fry onion, garlic and grated ginger in the oil for 5 minutes."
+   },
+   {
+    "titre": "The curry",
+    "detail": "Add the curry and stir 30 seconds: it must toast without burning to release its aromas."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the squash and water only HALFWAY UP (no more, or the soup will be thin); 20 minutes covered."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Pour in the coconut milk and simmer 5 minutes more."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend at length to a velvet texture; loosen with a little water if too thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A squeeze of lime, coriander, toasted coconut and a swirl of coconut milk. Autumn soup, tropical version!"
+   }
+  ]
+ },
+ "taboulequinoa": {
+  "nom": "Quinoa Tabbouleh",
+  "description": "Gluten-free tabbouleh: quinoa instead of semolina, with the same generosity of fresh herbs, cucumber and tomato, and plenty of lemon. The quinoa brings a slight crunch semolina lacks — and twice the protein.",
+  "etapes": [
+   {
+    "titre": "RINSE",
+    "detail": "Rinse the quinoa in cold water in a fine sieve for 1 minute: the surface saponin is bitter, and that is what ruins most quinoa."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook 12 minutes in 1.5 times its volume of salted water, then let it swell 5 minutes off the heat, covered."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Fluff with a fork and let it COOL completely — hot, it would cook the herbs."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Deseed tomato and cucumber (seed water dilutes the dressing) and dice small."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Chop parsley and mint FINELY — in a tabbouleh, herbs are an ingredient, not a garnish."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Mix lemon juice, olive oil, cumin, salt and pepper, then pour over the quinoa."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Add vegetables and herbs, toss and chill 1 hour before serving. Adjust the lemon at the last moment."
+   }
+  ]
+ },
+ "pizzachevremiel": {
+  "nom": "Goat Cheese & Honey Pizza",
+  "description": "The sweet-savoury white pizza: no tomato sauce, a cream base, goat cheese rounds that gratinate and a drizzle of honey poured AS IT LEAVES the oven. Hot and cold, salty and sweet, with rocket and walnuts — a French pizzeria classic.",
+  "etapes": [
+   {
+    "titre": "OVEN FLAT OUT",
+    "detail": "Preheat to 250°C (or maximum) with the tray INSIDE for 30 minutes: a pizza bakes on a scorching surface."
+   },
+   {
+    "titre": "The base",
+    "detail": "Roll the dough thin and spread with crème fraîche, leaving a 1 cm border."
+   },
+   {
+    "titre": "The cheeses",
+    "detail": "Scatter the grated mozzarella then the goat cheese rounds — not too tight, they spread as they melt."
+   },
+   {
+    "titre": "The thyme",
+    "detail": "Scatter thyme and pepper; NO salt, the cheeses bring enough."
+   },
+   {
+    "titre": "Bake fast",
+    "detail": "8 to 10 minutes on the scorching tray: the edges puff and the goat cheese browns in patches."
+   },
+   {
+    "titre": "HONEY AT THE END",
+    "detail": "Drizzle the honey the moment it leaves the oven — baked, it would brown and turn bitter."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the rocket and crushed walnuts onto the scorching pizza and serve immediately."
+   }
+  ]
+ },
+ "wrapsaumonavocat": {
+  "nom": "Salmon & Avocado Wrap",
+  "description": "The wrap that has everything: smoked salmon, lemon-crushed avocado, dill cream cheese and rocket, rolled tight in a tortilla. No cooking, ready in 15 minutes, and it holds perfectly in a lunchbox — provided you roll it tight and let it rest before cutting.",
+  "etapes": [
+   {
+    "titre": "The avocado",
+    "detail": "Crush the avocado with a fork with lemon juice, salt and pepper — roughly, not to a smooth purée."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Mix the cream cheese with chopped dill and a little lemon zest."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Warm the tortillas 10 seconds in a dry pan or 15 in the microwave: cold, they CRACK when rolled."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the cream cheese over the whole surface, then the crushed avocado — the fatty layer stops the wrap going soggy."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay smoked salmon, cucumber batons and rocket IN A LINE, on the lower third (not the centre)."
+   },
+   {
+    "titre": "Roll tight",
+    "detail": "Fold in the sides, then roll FIRMLY, packing the filling as you go."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap in film and leave 5 minutes: it seals itself. Cut on the bias with a serrated knife."
+   }
+  ]
+ },
+ "cakeolivechorizo": {
+  "nom": "Olive & Chorizo Savoury Cake",
+  "description": "The Spanish version of the apéritif savoury cake: mild chorizo, green olives and parmesan, with smoked paprika in the batter turning it orange. The chorizo releases its fat as it bakes and perfumes the whole loaf — far more characterful than the ham version.",
+  "etapes": [
+   {
+    "titre": "The chorizo",
+    "detail": "Dice the chorizo small and fry 2 minutes dry: it releases an orange fat that you will KEEP for the batter."
+   },
+   {
+    "titre": "The olives",
+    "detail": "Stone and halve the green olives; pat them very dry (a wet olive leaves a hole in the cake)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Whisk eggs, milk, olive oil and the reserved chorizo fat."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Add flour, baking powder, paprika and pepper; mix JUST enough — overworked, the batter turns elastic."
+   },
+   {
+    "titre": "The fillings",
+    "detail": "Fold in chorizo, olives and parmesan, lightly flouring the pieces: they will not sink."
+   },
+   {
+    "titre": "The tin",
+    "detail": "Pour into a lined loaf tin and smooth; draw a line of oil down the length for a clean split."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 180°C, until a blade comes out clean. Turn out warm and cool completely before slicing cleanly."
+   }
+  ]
  }
 };

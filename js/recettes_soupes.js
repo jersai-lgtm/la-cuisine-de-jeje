@@ -5671,4 +5671,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Bouillon brûlant, 2 boulettes par bol, poulet, carottes et beaucoup d'aneth. La pénicilline juive !", badge: null }
     ]
   },
+  veloutepotimarroncoco: {
+    dateAjout: "2026-07-29T11:05:00",
+    nom: "Velouté Potimarron Coco-Curry",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Le velouté de courge parti vers l'Asie : lait de coco à la place de la crème, curry et gingembre pour réveiller la douceur du potimarron. Onctueux, légèrement épicé, et une couleur orange profond — bien plus intéressant que la version crème classique.",
+    tableauVeloutepotimarroncoco: [
+      { nb: 1, courge: "250 g", laitcoco: "80 ml", oignon: "40 g", gingembre: "5 g", curry: "2 g", ail: "½", huileolive: "8 ml", citronvert: "", coriandre: "2 g", coco: "4 g" },
+      { nb: 2, courge: "500 g", laitcoco: "160 ml", oignon: "80 g", gingembre: "10 g", curry: "4 g", ail: "1", huileolive: "16 ml", citronvert: "", coriandre: "4 g", coco: "8 g" },
+      { nb: 3, courge: "750 g", laitcoco: "240 ml", oignon: "120 g", gingembre: "15 g", curry: "6 g", ail: "1½", huileolive: "24 ml", citronvert: "", coriandre: "6 g", coco: "12 g" },
+      { nb: 4, courge: "1000 g", laitcoco: "320 ml", oignon: "160 g", gingembre: "20 g", curry: "8 g", ail: "2", huileolive: "32 ml", citronvert: "", coriandre: "8 g", coco: "16 g" },
+      { nb: 5, courge: "1250 g", laitcoco: "400 ml", oignon: "200 g", gingembre: "25 g", curry: "10 g", ail: "2½", huileolive: "40 ml", citronvert: "¾", coriandre: "10 g", coco: "20 g" },
+      { nb: 6, courge: "1500 g", laitcoco: "480 ml", oignon: "240 g", gingembre: "30 g", curry: "12 g", ail: "3", huileolive: "48 ml", citronvert: "", coriandre: "12 g", coco: "24 g" },
+      { nb: 7, courge: "1750 g", laitcoco: "560 ml", oignon: "280 g", gingembre: "35 g", curry: "14 g", ail: "3½", huileolive: "56 ml", citronvert: "1", coriandre: "14 g", coco: "28 g" },
+      { nb: 8, courge: "2000 g", laitcoco: "640 ml", oignon: "320 g", gingembre: "40 g", curry: "16 g", ail: "4", huileolive: "64 ml", citronvert: "1", coriandre: "16 g", coco: "32 g" },
+      { nb: 9, courge: "2250 g", laitcoco: "720 ml", oignon: "360 g", gingembre: "45 g", curry: "18 g", ail: "4½", huileolive: "72 ml", citronvert: "1", coriandre: "18 g", coco: "36 g" },
+      { nb: 10, courge: "2500 g", laitcoco: "800 ml", oignon: "400 g", gingembre: "50 g", curry: "20 g", ail: "5", huileolive: "80 ml", citronvert: "1½", coriandre: "20 g", coco: "40 g" },
+      { nb: 11, courge: "2750 g", laitcoco: "880 ml", oignon: "440 g", gingembre: "55 g", curry: "22 g", ail: "5½", huileolive: "88 ml", citronvert: "1", coriandre: "22 g", coco: "44 g" },
+      { nb: 12, courge: "3000 g", laitcoco: "960 ml", oignon: "480 g", gingembre: "60 g", curry: "24 g", ail: "6", huileolive: "96 ml", citronvert: "1", coriandre: "24 g", coco: "48 g" },
+      { nb: 13, courge: "3250 g", laitcoco: "1040 ml", oignon: "520 g", gingembre: "65 g", curry: "26 g", ail: "6½", huileolive: "104 ml", citronvert: "1", coriandre: "26 g", coco: "52 g" },
+      { nb: 14, courge: "3500 g", laitcoco: "1120 ml", oignon: "560 g", gingembre: "70 g", curry: "28 g", ail: "7", huileolive: "112 ml", citronvert: "2", coriandre: "28 g", coco: "56 g" },
+      { nb: 15, courge: "3750 g", laitcoco: "1200 ml", oignon: "600 g", gingembre: "75 g", curry: "30 g", ail: "7½", huileolive: "120 ml", citronvert: "2¼", coriandre: "30 g", coco: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎃", titre: "La courge", detail: "Coupez le potimarron en cubes SANS le peler (sa peau est fine et fondante — c'est tout l'intérêt de cette courge).", badge: null },
+      { icone: "🧅", titre: "Le fond", detail: "Faites revenir oignon, ail et gingembre râpé dans l'huile, 5 minutes.", badge: null },
+      { icone: "🍛", titre: "Le curry", detail: "Ajoutez le curry et remuez 30 secondes : il doit griller sans brûler pour libérer ses arômes.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Ajoutez la courge et de l'eau à MI-HAUTEUR seulement (pas plus, sinon le velouté sera liquide) ; 20 minutes à couvert.", badge: null },
+      { icone: "🥥", titre: "Le coco", detail: "Versez le lait de coco et laissez frémir 5 minutes de plus.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez longuement jusqu'à texture de velours ; rectifiez avec un peu d'eau si trop épais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Trait de citron vert, coriandre, coco râpée grillée et un filet de lait de coco en spirale. Le velouté d'automne version tropiques !", badge: null }
+    ],
+    liees: ["veloutePoiron"]
+  },
 });
