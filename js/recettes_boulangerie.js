@@ -3099,4 +3099,42 @@ Object.assign(recettes, {
       { icone: "💉", titre: "Garnir & servir", detail: "Égouttez, laissez tiédir, puis injectez la confiture à la poche munie d'une douille fine. Sucre glace, et servez. Les sufganiyot de Hanouka !", badge: null }
     ]
   },
+  painsuedois: {
+    dateAjout: "2026-08-01T11:09:00",
+    nom: "Pain Suédois Croustillant",
+    cat: "boulangerie", pays: "suede",
+    base: 8,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🇸🇪",
+    description: "Le knäckebröd : une galette de seigle très fine, percée de trous et cuite jusqu'à devenir cassante comme une tuile. Elle se garde des semaines dans une boîte et supporte tout — beurre, hareng, saumon, fromage frais.",
+    tableauPainsuedois: [
+      { nb: 1, farineseigle: "45 g", farine: "20 g", levure: "1.5 g", miel: "4 g", sel: "1.5 g", huile: "5 ml", cumin: "1 g" },
+      { nb: 2, farineseigle: "90 g", farine: "40 g", levure: "3 g", miel: "8 g", sel: "3 g", huile: "10 ml", cumin: "2 g" },
+      { nb: 3, farineseigle: "135 g", farine: "60 g", levure: "4.5 g", miel: "12 g", sel: "4.5 g", huile: "15 ml", cumin: "3 g" },
+      { nb: 4, farineseigle: "180 g", farine: "80 g", levure: "6 g", miel: "16 g", sel: "6 g", huile: "20 ml", cumin: "4 g" },
+      { nb: 5, farineseigle: "225 g", farine: "100 g", levure: "7.5 g", miel: "20 g", sel: "7.5 g", huile: "25 ml", cumin: "5 g" },
+      { nb: 6, farineseigle: "270 g", farine: "120 g", levure: "9 g", miel: "24 g", sel: "9 g", huile: "30 ml", cumin: "6 g" },
+      { nb: 7, farineseigle: "315 g", farine: "140 g", levure: "10.5 g", miel: "28 g", sel: "10.5 g", huile: "35 ml", cumin: "7 g" },
+      { nb: 8, farineseigle: "360 g", farine: "160 g", levure: "12 g", miel: "32 g", sel: "12 g", huile: "40 ml", cumin: "8 g" },
+      { nb: 9, farineseigle: "405 g", farine: "180 g", levure: "13.5 g", miel: "36 g", sel: "13.5 g", huile: "45 ml", cumin: "9 g" },
+      { nb: 10, farineseigle: "450 g", farine: "200 g", levure: "15 g", miel: "40 g", sel: "15 g", huile: "50 ml", cumin: "10 g" },
+      { nb: 11, farineseigle: "495 g", farine: "220 g", levure: "16.5 g", miel: "44 g", sel: "16.5 g", huile: "55 ml", cumin: "11 g" },
+      { nb: 12, farineseigle: "540 g", farine: "240 g", levure: "18 g", miel: "48 g", sel: "18 g", huile: "60 ml", cumin: "12 g" },
+      { nb: 13, farineseigle: "585 g", farine: "260 g", levure: "19.5 g", miel: "52 g", sel: "19.5 g", huile: "65 ml", cumin: "13 g" },
+      { nb: 14, farineseigle: "630 g", farine: "280 g", levure: "21 g", miel: "56 g", sel: "21 g", huile: "70 ml", cumin: "14 g" },
+      { nb: 15, farineseigle: "675 g", farine: "300 g", levure: "22.5 g", miel: "60 g", sel: "22.5 g", huile: "75 ml", cumin: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍶", titre: "La levure", detail: "Délayez levure et miel dans 45 ml d'eau tiède par personne et laissez mousser 10 minutes.", badge: null },
+      { icone: "🌾", titre: "Pétrir", detail: "Mélangez les deux farines, le sel, les graines de carvi écrasées et l'huile, puis pétrissez 8 minutes : la pâte reste dense, c'est normal avec le seigle.", badge: null },
+      { icone: "⏳", titre: "Pousser", detail: "45 minutes à couvert. Le seigle lève peu — ne vous attendez pas au doublement d'une pâte à pain blanc.", badge: null },
+      { icone: "🥏", titre: "Diviser", detail: "Formez des boules de 60 g et laissez-les détendre 10 minutes, sinon la pâte se rétractera à l'étalage.", badge: null },
+      { icone: "📏", titre: "Étaler très fin", detail: "Étalez chaque boule à 2 mm — l'épaisseur d'une pièce de monnaie. Plus fin égale plus croustillant.", badge: null },
+      { icone: "🕳️", titre: "Percer", detail: "Piquez toute la surface à la fourchette et découpez un trou au centre : ces trous empêchent les cloques à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "8 à 10 minutes à 230°C jusqu'à taches brunes. Refroidissez sur grille : le croustillant n'apparaît qu'en refroidissant.", badge: null }
+    ],
+    liees: ["painseigle","painsemi","saumonfume"]
+  },
 });

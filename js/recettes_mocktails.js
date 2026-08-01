@@ -1706,4 +1706,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Au frais, puis servez tiède ou frais avec cannelle et pois chiches grillés. La boza d'Istanbul !", badge: null }
     ]
   },
+  cafefrappegrec: {
+    dateAjout: "2026-08-01T12:08:00",
+    nom: "Café Frappé Grec",
+    cat: "mocktails", pays: "grece",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🧋",
+    description: "L'icône de l'été grec, inventée par accident à Thessalonique en 1957 faute d'eau chaude. Du café INSTANTANÉ — et uniquement instantané — battu avec très peu d'eau jusqu'à former une mousse dense qui tient sur le verre pendant une heure.",
+    tableauCafefrappegrec: [
+      { nb: 1, cafe: "4 g", sucre: "8 g", lait: "40 ml", glacon: "5" },
+      { nb: 2, cafe: "8 g", sucre: "16 g", lait: "80 ml", glacon: "10" },
+      { nb: 3, cafe: "12 g", sucre: "24 g", lait: "120 ml", glacon: "15" },
+      { nb: 4, cafe: "16 g", sucre: "32 g", lait: "160 ml", glacon: "20" },
+      { nb: 5, cafe: "20 g", sucre: "40 g", lait: "200 ml", glacon: "25" },
+      { nb: 6, cafe: "24 g", sucre: "48 g", lait: "240 ml", glacon: "30" },
+      { nb: 7, cafe: "28 g", sucre: "56 g", lait: "280 ml", glacon: "35" },
+      { nb: 8, cafe: "32 g", sucre: "64 g", lait: "320 ml", glacon: "40" },
+      { nb: 9, cafe: "36 g", sucre: "72 g", lait: "360 ml", glacon: "45" },
+      { nb: 10, cafe: "40 g", sucre: "80 g", lait: "400 ml", glacon: "50" },
+      { nb: 11, cafe: "44 g", sucre: "88 g", lait: "440 ml", glacon: "55" },
+      { nb: 12, cafe: "48 g", sucre: "96 g", lait: "480 ml", glacon: "60" },
+      { nb: 13, cafe: "52 g", sucre: "104 g", lait: "520 ml", glacon: "65" },
+      { nb: 14, cafe: "56 g", sucre: "112 g", lait: "560 ml", glacon: "70" },
+      { nb: 15, cafe: "60 g", sucre: "120 g", lait: "600 ml", glacon: "75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "☕", titre: "Café instantané", detail: "Utilisez impérativement du café soluble : le café filtre ne moussera JAMAIS, c'est chimiquement impossible.", badge: null },
+      { icone: "💧", titre: "Très peu d'eau", detail: "Mettez café, sucre et 3 cuillères à soupe d'eau FROIDE dans un shaker. Pas plus : c'est la concentration qui crée la mousse.", badge: null },
+      { icone: "🌀", titre: "Battre", detail: "Secouez énergiquement 45 secondes (ou mixez 20 secondes). La mousse doit être épaisse, beige clair, et tenir sur une cuillère.", badge: null },
+      { icone: "🧊", titre: "Le verre", detail: "Remplissez un grand verre de glaçons jusqu'en haut — le frappé se boit glacial ou ne se boit pas.", badge: null },
+      { icone: "🥛", titre: "Verser", detail: "Versez la mousse sur les glaçons : elle reste en surface en une couche généreuse de 3 cm.", badge: null },
+      { icone: "🥛", titre: "Le lait", detail: "Complétez d'eau froide, puis ajoutez le lait en dernier — il descend en volutes à travers la mousse.", badge: null },
+      { icone: "🥤", titre: "Servir", detail: "Une paille, et surtout PAS de cuillère : en Grèce, on ne mélange jamais un frappé, on le boit à travers la mousse.", badge: null }
+    ],
+    liees: ["cafeglace","frappealafraise","matchalatte"]
+  },
+  chocolatchaudviennois: {
+    dateAjout: "2026-08-01T12:09:00",
+    nom: "Chocolat Chaud Viennois",
+    cat: "mocktails", pays: "autriche",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "☕",
+    description: "Le chocolat des cafés de Vienne : épais, fait de VRAI chocolat noir fondu dans le lait, couronné d'une montagne de crème fouettée à peine sucrée. Rien à voir avec une poudre chocolatée — ici la crème et le chocolat amer se répondent.",
+    tableauChocolatchaudviennois: [
+      { nb: 1, lait: "180 ml", chocolatnoir: "35 g", cremechantilly: "40 ml", sucre: "6 g", cacao: "2 g", vanille: "0.3 g", maizena: "3 g" },
+      { nb: 2, lait: "360 ml", chocolatnoir: "70 g", cremechantilly: "80 ml", sucre: "12 g", cacao: "4 g", vanille: "0.6 g", maizena: "6 g" },
+      { nb: 3, lait: "540 ml", chocolatnoir: "105 g", cremechantilly: "120 ml", sucre: "18 g", cacao: "6 g", vanille: "0.9 g", maizena: "9 g" },
+      { nb: 4, lait: "720 ml", chocolatnoir: "140 g", cremechantilly: "160 ml", sucre: "24 g", cacao: "8 g", vanille: "1.2 g", maizena: "12 g" },
+      { nb: 5, lait: "900 ml", chocolatnoir: "175 g", cremechantilly: "200 ml", sucre: "30 g", cacao: "10 g", vanille: "1.5 g", maizena: "15 g" },
+      { nb: 6, lait: "1080 ml", chocolatnoir: "210 g", cremechantilly: "240 ml", sucre: "36 g", cacao: "12 g", vanille: "1.8 g", maizena: "18 g" },
+      { nb: 7, lait: "1260 ml", chocolatnoir: "245 g", cremechantilly: "280 ml", sucre: "42 g", cacao: "14 g", vanille: "2.1 g", maizena: "21 g" },
+      { nb: 8, lait: "1440 ml", chocolatnoir: "280 g", cremechantilly: "320 ml", sucre: "48 g", cacao: "16 g", vanille: "2.4 g", maizena: "24 g" },
+      { nb: 9, lait: "1620 ml", chocolatnoir: "315 g", cremechantilly: "360 ml", sucre: "54 g", cacao: "18 g", vanille: "2.7 g", maizena: "27 g" },
+      { nb: 10, lait: "1800 ml", chocolatnoir: "350 g", cremechantilly: "400 ml", sucre: "60 g", cacao: "20 g", vanille: "3 g", maizena: "30 g" },
+      { nb: 11, lait: "1980 ml", chocolatnoir: "385 g", cremechantilly: "440 ml", sucre: "66 g", cacao: "22 g", vanille: "3.3 g", maizena: "33 g" },
+      { nb: 12, lait: "2160 ml", chocolatnoir: "420 g", cremechantilly: "480 ml", sucre: "72 g", cacao: "24 g", vanille: "3.6 g", maizena: "36 g" },
+      { nb: 13, lait: "2340 ml", chocolatnoir: "455 g", cremechantilly: "520 ml", sucre: "78 g", cacao: "26 g", vanille: "3.9 g", maizena: "39 g" },
+      { nb: 14, lait: "2520 ml", chocolatnoir: "490 g", cremechantilly: "560 ml", sucre: "84 g", cacao: "28 g", vanille: "4.2 g", maizena: "42 g" },
+      { nb: 15, lait: "2700 ml", chocolatnoir: "525 g", cremechantilly: "600 ml", sucre: "90 g", cacao: "30 g", vanille: "4.5 g", maizena: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍫", titre: "Hacher", detail: "Hachez le chocolat noir au couteau : en petits éclats, il fond uniformément sans jamais grainer.", badge: null },
+      { icone: "🥛", titre: "Chauffer", detail: "Portez le lait avec la vanille à FRÉMISSEMENT, jamais à ébullition — un lait bouilli prend un goût de cuit.", badge: null },
+      { icone: "🌀", titre: "Émulsionner", detail: "Versez un tiers du lait chaud sur le chocolat, fouettez jusqu'à lisse et brillant, puis ajoutez le reste.", badge: null },
+      { icone: "🥄", titre: "Épaissir", detail: "Délayez la maïzena dans une cuillère de lait froid, versez et laissez épaissir 2 minutes : c'est ce qui donne la texture viennoise, nappante.", badge: null },
+      { icone: "❄️", titre: "La chantilly", detail: "Fouettez la crème TRÈS FROIDE avec le sucre jusqu'à souple — trop ferme, elle ne coulerait pas dans le chocolat.", badge: null },
+      { icone: "☕", titre: "Servir", detail: "Chocolat brûlant dans une tasse préchauffée à l'eau chaude, puis la chantilly déposée à la cuillère.", badge: null },
+      { icone: "🍫", titre: "Finir", detail: "Cacao râpé sur la crème. À Vienne, on ne mélange pas : on boit le chocolat chaud À TRAVERS la crème froide.", badge: null }
+    ],
+    liees: ["chocolatchaud","cafeviennois","cremechantilly"]
+  },
 });

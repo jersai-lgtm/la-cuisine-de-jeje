@@ -4329,4 +4329,80 @@ oeufmayo: {
       { icone: "🌿", titre: "La persillade", detail: "Hors du feu, ail et persil hachés ensemble, un trait de citron. Servez immédiatement.", badge: null }
     ]
   },
+  artichautvinaigrette: {
+    dateAjout: "2026-08-01T11:00:00",
+    nom: "Artichaut Vinaigrette",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "L'entrée la plus conviviale qui soit : un artichaut entier cuit à l'eau qu'on effeuille à la main, feuille après feuille, en trempant chacune dans la vinaigrette. Le cœur, débarrassé de son foin, se garde pour la fin — c'est la récompense.",
+    tableauArtichautvinaigrette: [
+      { nb: 1, artichaut: "1", huileolive: "15 ml", vinaigreVin: "5 ml", moutarde: "5 g", echalote: "", citron: "¼", laurier: "0.3 g", persil: "2 g", poivre: "0.4 g" },
+      { nb: 2, artichaut: "2", huileolive: "30 ml", vinaigreVin: "10 ml", moutarde: "10 g", echalote: "", citron: "½", laurier: "0.6 g", persil: "4 g", poivre: "0.8 g" },
+      { nb: 3, artichaut: "3", huileolive: "45 ml", vinaigreVin: "15 ml", moutarde: "15 g", echalote: "", citron: "¾", laurier: "0.9 g", persil: "6 g", poivre: "1.2 g" },
+      { nb: 4, artichaut: "4", huileolive: "60 ml", vinaigreVin: "20 ml", moutarde: "20 g", echalote: "1", citron: "1", laurier: "1.2 g", persil: "8 g", poivre: "1.6 g" },
+      { nb: 5, artichaut: "5", huileolive: "75 ml", vinaigreVin: "25 ml", moutarde: "25 g", echalote: "1½", citron: "1¼", laurier: "1.5 g", persil: "10 g", poivre: "2 g" },
+      { nb: 6, artichaut: "6", huileolive: "90 ml", vinaigreVin: "30 ml", moutarde: "30 g", echalote: "1", citron: "1½", laurier: "1.8 g", persil: "12 g", poivre: "2.4 g" },
+      { nb: 7, artichaut: "7", huileolive: "105 ml", vinaigreVin: "35 ml", moutarde: "35 g", echalote: "2", citron: "1¾", laurier: "2.1 g", persil: "14 g", poivre: "2.8 g" },
+      { nb: 8, artichaut: "8", huileolive: "120 ml", vinaigreVin: "40 ml", moutarde: "40 g", echalote: "2", citron: "2", laurier: "2.4 g", persil: "16 g", poivre: "3.2 g" },
+      { nb: 9, artichaut: "9", huileolive: "135 ml", vinaigreVin: "45 ml", moutarde: "45 g", echalote: "2", citron: "2¼", laurier: "2.7 g", persil: "18 g", poivre: "3.6 g" },
+      { nb: 10, artichaut: "10", huileolive: "150 ml", vinaigreVin: "50 ml", moutarde: "50 g", echalote: "3", citron: "2½", laurier: "3 g", persil: "20 g", poivre: "4 g" },
+      { nb: 11, artichaut: "11", huileolive: "165 ml", vinaigreVin: "55 ml", moutarde: "55 g", echalote: "3", citron: "2¾", laurier: "3.3 g", persil: "22 g", poivre: "4.4 g" },
+      { nb: 12, artichaut: "12", huileolive: "180 ml", vinaigreVin: "60 ml", moutarde: "60 g", echalote: "3", citron: "3", laurier: "3.6 g", persil: "24 g", poivre: "4.8 g" },
+      { nb: 13, artichaut: "13", huileolive: "195 ml", vinaigreVin: "65 ml", moutarde: "65 g", echalote: "3", citron: "3¼", laurier: "3.9 g", persil: "26 g", poivre: "5.2 g" },
+      { nb: 14, artichaut: "14", huileolive: "210 ml", vinaigreVin: "70 ml", moutarde: "70 g", echalote: "4", citron: "3½", laurier: "4.2 g", persil: "28 g", poivre: "5.6 g" },
+      { nb: 15, artichaut: "15", huileolive: "225 ml", vinaigreVin: "75 ml", moutarde: "75 g", echalote: "4½", citron: "3¾", laurier: "4.5 g", persil: "30 g", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "✂️", titre: "Parer", detail: "Cassez la queue à la main plutôt que de la couper : les fibres dures du fond partent avec elle.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Frottez la base au citron dès qu'elle est coupée — l'artichaut noircit en quelques minutes à l'air.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Plongez-le tête en bas dans l'eau bouillante salée avec le laurier, 35 à 40 minutes selon la taille.", badge: null },
+      { icone: "🔎", titre: "Vérifier", detail: "Il est cuit quand une feuille de la base s'arrache SANS résistance. Dans le doute, prolongez : un artichaut trop cuit reste bon, pas l'inverse.", badge: null },
+      { icone: "🙃", titre: "Égoutter", detail: "Sortez-le et laissez-le refroidir TÊTE EN BAS sur une grille : toute l'eau piégée entre les feuilles s'écoule.", badge: null },
+      { icone: "🥄", titre: "La vinaigrette", detail: "Délayez la moutarde dans le vinaigre avec l'échalote ciselée et du sel, puis montez à l'huile en filet en fouettant.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Artichaut tiède ou froid, vinaigrette à part dans un bol, persil dessus. On effeuille avec les doigts, on racle la base de la feuille entre les dents.", badge: null }
+    ],
+    liees: ["vinaigretteclassique","artichautmarine","asperge"]
+  },
+  aspergeshollandaise: {
+    dateAjout: "2026-08-01T11:01:00",
+    nom: "Asperges Sauce Hollandaise",
+    cat: "entrees", saisons: ["printemps"], pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌱",
+    description: "Le grand classique du printemps : des asperges blanches juste cuites, nappées d'une hollandaise mousseuse montée au bain-marie. Une sauce capricieuse qu'un seul geste sauve — la sortir du feu dès qu'elle épaissit, jamais une seconde de plus.",
+    tableauAspergeshollandaise: [
+      { nb: 1, asperges: "200 g", beurre: "45 g", oeufs: "½", citron: "", vinaigreBlanc: "5 ml", poivre: "0.4 g", sel: "1 g" },
+      { nb: 2, asperges: "400 g", beurre: "90 g", oeufs: "1", citron: "", vinaigreBlanc: "10 ml", poivre: "0.8 g", sel: "2 g" },
+      { nb: 3, asperges: "600 g", beurre: "135 g", oeufs: "1½", citron: "", vinaigreBlanc: "15 ml", poivre: "1.2 g", sel: "3 g" },
+      { nb: 4, asperges: "800 g", beurre: "180 g", oeufs: "2", citron: "1", vinaigreBlanc: "20 ml", poivre: "1.6 g", sel: "4 g" },
+      { nb: 5, asperges: "1000 g", beurre: "225 g", oeufs: "2½", citron: "1½", vinaigreBlanc: "25 ml", poivre: "2 g", sel: "5 g" },
+      { nb: 6, asperges: "1200 g", beurre: "270 g", oeufs: "3", citron: "1", vinaigreBlanc: "30 ml", poivre: "2.4 g", sel: "6 g" },
+      { nb: 7, asperges: "1400 g", beurre: "315 g", oeufs: "3½", citron: "2", vinaigreBlanc: "35 ml", poivre: "2.8 g", sel: "7 g" },
+      { nb: 8, asperges: "1600 g", beurre: "360 g", oeufs: "4", citron: "2", vinaigreBlanc: "40 ml", poivre: "3.2 g", sel: "8 g" },
+      { nb: 9, asperges: "1800 g", beurre: "405 g", oeufs: "4½", citron: "2", vinaigreBlanc: "45 ml", poivre: "3.6 g", sel: "9 g" },
+      { nb: 10, asperges: "2000 g", beurre: "450 g", oeufs: "5", citron: "3", vinaigreBlanc: "50 ml", poivre: "4 g", sel: "10 g" },
+      { nb: 11, asperges: "2200 g", beurre: "495 g", oeufs: "5½", citron: "3", vinaigreBlanc: "55 ml", poivre: "4.4 g", sel: "11 g" },
+      { nb: 12, asperges: "2400 g", beurre: "540 g", oeufs: "6", citron: "3", vinaigreBlanc: "60 ml", poivre: "4.8 g", sel: "12 g" },
+      { nb: 13, asperges: "2600 g", beurre: "585 g", oeufs: "6½", citron: "3", vinaigreBlanc: "65 ml", poivre: "5.2 g", sel: "13 g" },
+      { nb: 14, asperges: "2800 g", beurre: "630 g", oeufs: "7", citron: "4", vinaigreBlanc: "70 ml", poivre: "5.6 g", sel: "14 g" },
+      { nb: 15, asperges: "3000 g", beurre: "675 g", oeufs: "7½", citron: "4½", vinaigreBlanc: "75 ml", poivre: "6 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Éplucher", detail: "Pelez les asperges blanches de la pointe vers la base, en deux passages : la peau est amère et fibreuse.", badge: null },
+      { icone: "🎀", titre: "Botteler", detail: "Liez-les en botte avec une ficelle : elles resteront droites et les pointes ne se casseront pas.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "12 à 15 minutes dans l'eau bouillante salée additionnée d'un peu de sucre. Elles sont prêtes quand la pointe d'un couteau entre sans forcer.", badge: null },
+      { icone: "🧈", titre: "Clarifier", detail: "Faites fondre le beurre doucement et écumez la mousse blanche en surface : le beurre clarifié ne fera pas trancher la sauce.", badge: null },
+      { icone: "🔥", titre: "La base", detail: "Fouettez les jaunes avec le vinaigre et une cuillère d'eau au bain-marie FRÉMISSANT, jamais bouillant.", badge: null },
+      { icone: "🌀", titre: "Monter", detail: "Quand le mélange fait le ruban, versez le beurre clarifié tiède en filet SANS CESSER de fouetter. Hors du feu dès que la sauce nappe.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Citron, sel, poivre. Nappez les asperges tièdes aussitôt — la hollandaise ne se réchauffe pas, elle tranche.", badge: null }
+    ],
+    liees: ["aspergesmimosa","veloutedasperges","saucebearnaise"]
+  },
 });

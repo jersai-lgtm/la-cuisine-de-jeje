@@ -7268,4 +7268,80 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Frire", detail: "Plongez-les dans l'huile à 170°C : elles gonflent et remontent en 4 minutes. Égouttez, salez, servez BRÛLANT.", badge: null }
     ]
   },
+  galettesaucisse: {
+    dateAjout: "2026-08-01T10:08:00",
+    nom: "Galette-Saucisse",
+    cat: "encas", pays: "france",
+    base: 4,
+    temps: "40 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥨",
+    description: "Le hot-dog breton : une saucisse grillée roulée dans une galette de sarrasin froide, à manger debout, à la main, sans aucune sauce. Le sacrilège absolu à Rennes serait d'y mettre du ketchup — la moutarde est tolérée du bout des lèvres.",
+    tableauGalettesaucisse: [
+      { nb: 1, farinesarrasin: "45 g", saucisse: "90 g", oeufs: "", beurre: "8 g", sel: "1 g", moutarde: "4 g" },
+      { nb: 2, farinesarrasin: "90 g", saucisse: "180 g", oeufs: "", beurre: "16 g", sel: "2 g", moutarde: "8 g" },
+      { nb: 3, farinesarrasin: "135 g", saucisse: "270 g", oeufs: "", beurre: "24 g", sel: "3 g", moutarde: "12 g" },
+      { nb: 4, farinesarrasin: "180 g", saucisse: "360 g", oeufs: "", beurre: "32 g", sel: "4 g", moutarde: "16 g" },
+      { nb: 5, farinesarrasin: "225 g", saucisse: "450 g", oeufs: "¾", beurre: "40 g", sel: "5 g", moutarde: "20 g" },
+      { nb: 6, farinesarrasin: "270 g", saucisse: "540 g", oeufs: "", beurre: "48 g", sel: "6 g", moutarde: "24 g" },
+      { nb: 7, farinesarrasin: "315 g", saucisse: "630 g", oeufs: "1", beurre: "56 g", sel: "7 g", moutarde: "28 g" },
+      { nb: 8, farinesarrasin: "360 g", saucisse: "720 g", oeufs: "1", beurre: "64 g", sel: "8 g", moutarde: "32 g" },
+      { nb: 9, farinesarrasin: "405 g", saucisse: "810 g", oeufs: "1", beurre: "72 g", sel: "9 g", moutarde: "36 g" },
+      { nb: 10, farinesarrasin: "450 g", saucisse: "900 g", oeufs: "1½", beurre: "80 g", sel: "10 g", moutarde: "40 g" },
+      { nb: 11, farinesarrasin: "495 g", saucisse: "990 g", oeufs: "1", beurre: "88 g", sel: "11 g", moutarde: "44 g" },
+      { nb: 12, farinesarrasin: "540 g", saucisse: "1080 g", oeufs: "1", beurre: "96 g", sel: "12 g", moutarde: "48 g" },
+      { nb: 13, farinesarrasin: "585 g", saucisse: "1170 g", oeufs: "1", beurre: "104 g", sel: "13 g", moutarde: "52 g" },
+      { nb: 14, farinesarrasin: "630 g", saucisse: "1260 g", oeufs: "2", beurre: "112 g", sel: "14 g", moutarde: "56 g" },
+      { nb: 15, farinesarrasin: "675 g", saucisse: "1350 g", oeufs: "2¼", beurre: "120 g", sel: "15 g", moutarde: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez farine de sarrasin, sel, œuf et 130 ml d'eau par personne. Fouettez jusqu'à parfaitement lisse.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "2 heures minimum au frais, idéalement une nuit : le sarrasin doit s'hydrater, sinon la galette casse.", badge: null },
+      { icone: "🍳", titre: "La première", detail: "Chauffez la crêpière à feu VIF et beurrez-la. La première galette est toujours ratée — c'est le test de température.", badge: null },
+      { icone: "🌀", titre: "Étaler", detail: "Versez une louche et étalez très finement à la rozell ou au dos d'une louche. 1 minute par face, sans plus.", badge: null },
+      { icone: "🌭", titre: "La saucisse", detail: "Grillez la saucisse fraîche 12 minutes à la poêle ou au barbecue, en la tournant souvent, sans la piquer.", badge: null },
+      { icone: "🧻", titre: "Refroidir", detail: "Laissez tiédir les galettes à plat sur un torchon : une galette chaude colle et se déchire au roulage.", badge: null },
+      { icone: "🥨", titre: "Rouler", detail: "Un trait de moutarde, la saucisse brûlante posée en diagonale, et on roule serré. Ça se mange debout, tout de suite.", badge: null }
+    ],
+    liees: ["galettesarrasin","crepes","pateacrepes"]
+  },
+  sandwichpastrami: {
+    dateAjout: "2026-08-01T10:09:00",
+    nom: "Sandwich Pastrami",
+    cat: "encas", pays: "usa",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥪",
+    description: "Le monument des delis new-yorkais : une montagne de bœuf fumé RÉCHAUFFÉ À LA VAPEUR entre deux tranches de pain de seigle, moutarde et cornichon. La vapeur est non négociable — c'est elle qui refond le gras et rend la viande fondante.",
+    tableauSandwichpastrami: [
+      { nb: 1, boeuf: "120 g", painseigle: "80 g", moutarde: "12 g", cornichons: "25 g", choucroute: "40 g", emmental: "25 g", beurre: "8 g" },
+      { nb: 2, boeuf: "240 g", painseigle: "160 g", moutarde: "24 g", cornichons: "50 g", choucroute: "80 g", emmental: "50 g", beurre: "16 g" },
+      { nb: 3, boeuf: "360 g", painseigle: "240 g", moutarde: "36 g", cornichons: "75 g", choucroute: "120 g", emmental: "75 g", beurre: "24 g" },
+      { nb: 4, boeuf: "480 g", painseigle: "320 g", moutarde: "48 g", cornichons: "100 g", choucroute: "160 g", emmental: "100 g", beurre: "32 g" },
+      { nb: 5, boeuf: "600 g", painseigle: "400 g", moutarde: "60 g", cornichons: "125 g", choucroute: "200 g", emmental: "125 g", beurre: "40 g" },
+      { nb: 6, boeuf: "720 g", painseigle: "480 g", moutarde: "72 g", cornichons: "150 g", choucroute: "240 g", emmental: "150 g", beurre: "48 g" },
+      { nb: 7, boeuf: "840 g", painseigle: "560 g", moutarde: "84 g", cornichons: "175 g", choucroute: "280 g", emmental: "175 g", beurre: "56 g" },
+      { nb: 8, boeuf: "960 g", painseigle: "640 g", moutarde: "96 g", cornichons: "200 g", choucroute: "320 g", emmental: "200 g", beurre: "64 g" },
+      { nb: 9, boeuf: "1080 g", painseigle: "720 g", moutarde: "108 g", cornichons: "225 g", choucroute: "360 g", emmental: "225 g", beurre: "72 g" },
+      { nb: 10, boeuf: "1200 g", painseigle: "800 g", moutarde: "120 g", cornichons: "250 g", choucroute: "400 g", emmental: "250 g", beurre: "80 g" },
+      { nb: 11, boeuf: "1320 g", painseigle: "880 g", moutarde: "132 g", cornichons: "275 g", choucroute: "440 g", emmental: "275 g", beurre: "88 g" },
+      { nb: 12, boeuf: "1440 g", painseigle: "960 g", moutarde: "144 g", cornichons: "300 g", choucroute: "480 g", emmental: "300 g", beurre: "96 g" },
+      { nb: 13, boeuf: "1560 g", painseigle: "1040 g", moutarde: "156 g", cornichons: "325 g", choucroute: "520 g", emmental: "325 g", beurre: "104 g" },
+      { nb: 14, boeuf: "1680 g", painseigle: "1120 g", moutarde: "168 g", cornichons: "350 g", choucroute: "560 g", emmental: "350 g", beurre: "112 g" },
+      { nb: 15, boeuf: "1800 g", painseigle: "1200 g", moutarde: "180 g", cornichons: "375 g", choucroute: "600 g", emmental: "375 g", beurre: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "♨️", titre: "La vapeur", detail: "Posez les tranches de pastrami dans un panier vapeur 8 minutes. C'est LE geste du deli : jamais de micro-ondes, qui dessèche.", badge: null },
+      { icone: "🥒", titre: "Égoutter", detail: "Pressez la choucroute entre vos mains pour en extraire le maximum de jus, sinon le pain sera trempé.", badge: null },
+      { icone: "🍞", titre: "Le pain", detail: "Beurrez légèrement les tranches de pain de seigle et faites-les dorer à la poêle côté extérieur.", badge: null },
+      { icone: "🌭", titre: "La moutarde", detail: "Moutarde forte GÉNÉREUSEMENT sur les deux faces intérieures : c'est le contrepoids du gras fumé.", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Emmental sur la tranche du bas, pastrami brûlant par-dessus : la chaleur le fait fondre toute seule.", badge: null },
+      { icone: "🗻", titre: "Empiler haut", detail: "Empilez la viande en accordéon et non à plat — c'est ce qui donne la hauteur du vrai sandwich de deli.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Choucroute, chapeau, une pique en bois au centre, et coupez en deux d'un coup net. À manger immédiatement.", badge: null }
+    ],
+    liees: ["croquemonsieur","painseigle","coleslaw"]
+  },
 });

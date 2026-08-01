@@ -91804,5 +91804,1025 @@ window.RECETTES_EN = {
     "detail": "Set the small bun on the large one, glued with a dot of cream, then pipe a collar of stars at the joint. The religieuse is ready — and the app now holds 2750 recipes!"
    }
   ]
+ },
+ "lasagnessaumonepinards": {
+  "nom": "Salmon & Spinach Lasagne",
+  "description": "The white lasagne: not a drop of tomato, but fresh salmon, wilted spinach and a lemony béchamel. Lighter and infinitely more elegant than its bolognese cousin — the dish that impresses without seeming to try.",
+  "etapes": [
+   {
+    "titre": "The spinach",
+    "detail": "Wilt the spinach in a pan with the garlic for 4 minutes, then PRESS it hard in a sieve: any water left would make the whole dish soggy."
+   },
+   {
+    "titre": "The salmon",
+    "detail": "Remove skin and bones, cut the salmon into 2 cm cubes. It cooks in the dish — never pre-cook it or it turns dry."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Melt the butter, tip in the flour all at once and stir for 2 minutes until it smells nutty."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Pour in the COLD milk in three additions, whisking each time, then the cream. Let it thicken for 5 minutes."
+   },
+   {
+    "titre": "Season",
+    "detail": "Off the heat: nutmeg, salt, pepper and the lemon zest. Taste — the béchamel should be slightly over-seasoned, the pasta will mellow it."
+   },
+   {
+    "titre": "Build",
+    "detail": "Alternate béchamel, pasta, spinach, salmon — four layers, finishing with béchamel spread right to the edges."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Parmesan and emmental on top, 40 minutes at 180°C. Rest 10 minutes before cutting or the portions collapse."
+   }
+  ]
+ },
+ "hachisparmentierpoisson": {
+  "nom": "Fish Shepherd's Pie",
+  "description": "The sea's parmentier: flaked cod bound in a herby béchamel under a golden cheese-topped mash. The anti-waste recipe par excellence — it rescues leftover poached fish and turns it into a celebration dish.",
+  "etapes": [
+   {
+    "titre": "The mash",
+    "detail": "Boil the potatoes in their skins for 30 minutes: they absorb less water and the mash holds better."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the cod for 6 minutes in a little simmering milk with the shallot — never at a rolling boil or it falls apart."
+   },
+   {
+    "titre": "Save it",
+    "detail": "Drain the fish KEEPING the milk: it will flavour the whole béchamel."
+   },
+   {
+    "titre": "The binding",
+    "detail": "Butter-flour roux, then the strained poaching milk. Whisk to a coating sauce, add parsley and lemon zest."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Flake the cod into large pieces with a fork and fold gently into the sauce — you want chunks, not mush."
+   },
+   {
+    "titre": "Smooth mash",
+    "detail": "Mash the peeled potatoes with the remaining butter and a little hot milk, nutmeg, salt."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Fish at the bottom, mash on top, scored with a fork, emmental and breadcrumbs. 20 minutes at 200°C until golden-crusted."
+   }
+  ]
+ },
+ "quichechampignons": {
+  "nom": "Mushroom Quiche",
+  "description": "The autumn quiche: mushrooms dry-fried until concentrated, a barely-set cream and egg custard, a hint of garlic and parsley. The secret is one sentence — fry the mushrooms ALONE first, or the quiche weeps water.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Roll out the pastry, prick it and chill 30 minutes: relaxed pastry doesn't shrink in the oven."
+   },
+   {
+    "titre": "Dry-fry",
+    "detail": "Throw the sliced mushrooms into a SCORCHING pan with no fat. They release their water — wait until it has fully evaporated."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Only then: butter, shallot, garlic. Brown for 3 minutes, parsley off the heat, season."
+   },
+   {
+    "titre": "Blind-bake",
+    "detail": "Bake the case blind for 12 minutes at 190°C under paper and weights — the guarantee against a soggy bottom."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Beat the eggs with cream and milk, nutmeg, salt, pepper. Don't over-whisk: bubbles make the quiche rise then collapse."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Cooled mushrooms on the pre-baked case, emmental, then pour the custard in gently."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 180°C: the centre should still wobble slightly when it comes out, it sets outside the oven."
+   }
+  ]
+ },
+ "gratinsavoyard": {
+  "nom": "Gratin Savoyard",
+  "description": "The mountain cousin of the dauphinois: no cream here but stock, and above all beaufort or comté between every layer. Rustic, saltier, stringier — the gratin that sustains you after a day on the slopes.",
+  "etapes": [
+   {
+    "titre": "The dish",
+    "detail": "Rub the dish with cut garlic then butter it generously: garlic perfumes without ever dominating."
+   },
+   {
+    "titre": "Slice thin",
+    "detail": "Cut the potatoes into 2-3 mm rounds on a mandoline. DO NOT RINSE them: the starch is what binds the gratin."
+   },
+   {
+    "titre": "Grate",
+    "detail": "Grate the comté coarsely — thick shreds melt into strands, finely grated cheese disappears."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Build in layers: potatoes, salt, pepper, nutmeg, comté. Repeat three times, keeping back a third of the cheese."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in hot milk until it just REACHES the top layer without drowning it — it must stay visible."
+   },
+   {
+    "titre": "Bake covered",
+    "detail": "50 minutes at 160°C under foil: gentle heat lets the potatoes soften without burning the cheese."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Remove the foil, remaining comté and knobs of butter, 20 minutes at 200°C. A knife should slide through without resistance."
+   }
+  ]
+ },
+ "escalopemilanaise": {
+  "nom": "Veal Milanese",
+  "description": "Cotoletta alla milanese: a veal escalope beaten thin, crumbed and cooked IN BUTTER, never oil. Served plain with a simple wedge of lemon — Milanese cooks consider sauce a heresy.",
+  "etapes": [
+   {
+    "titre": "Flatten",
+    "detail": "Put the escalope between two sheets of paper and roll it to 5 mm without tearing it."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper the meat NOW: once crumbed, seasoning no longer penetrates."
+   },
+   {
+    "titre": "The coating",
+    "detail": "Mix breadcrumbs and grated parmesan. The parmesan gives both the amber colour and the flavour."
+   },
+   {
+    "titre": "Crumb",
+    "detail": "Flour, then beaten egg, then crumbs, PRESSING firmly with your palm: a pressed coating doesn't peel off."
+   },
+   {
+    "titre": "Rest",
+    "detail": "15 minutes chilled: the coating dries and bonds for good."
+   },
+   {
+    "titre": "Cook in butter",
+    "detail": "Foaming butter over MEDIUM heat, 4 minutes a side. Too hot and the butter blackens; too gentle and the crumb drinks the fat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain on kitchen paper, parsley, lemon wedge. Eat immediately — a milanese that waits is no longer crisp."
+   }
+  ]
+ },
+ "flamichepoireaux": {
+  "nom": "Leek Flamiche",
+  "description": "The great Picardy pie: two sheets of pastry enclosing leeks melted in cream. Unlike a quiche it is COVERED — that lid traps the steam and makes the filling incomparably soft.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Split the leeks lengthways into quarters and wash under running water: grit hides between the tight leaves."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the white and tender green into 1 cm lengths — the dark green is too fibrous, save it for stock."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Sweat the leeks in butter, covered, over very low heat for 25 minutes. They must soften without ever colouring."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the cream and reduce uncovered for 5 minutes, nutmeg, salt, pepper. Let it cool COMPLETELY."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line the tin with one sheet, add the cold leeks — hot, they would melt the butter in the pastry."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Lay the second sheet on top, seal the edges with beaten egg and crimp, then cut a chimney in the centre."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Egg wash, score lines with a knife tip, 35 minutes at 190°C until deep brown."
+   }
+  ]
+ },
+ "potjevleesch": {
+  "nom": "Potjevleesch",
+  "description": "The Flemish \"little pot of meat\": four white meats slow-cooked in a beer and vinegar jelly, served COLD with fries. A rustic terrine from the North, born to preserve leftovers and now a regional emblem.",
+  "etapes": [
+   {
+    "titre": "Cut up",
+    "detail": "Cut the three meats into large 4 cm cubes: any smaller and they would fall apart over three hours."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Mix meats, beer, vinegar, onion and aromatics and marinate 12 hours in the fridge — that night makes the whole flavour."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line the terrine with bacon, letting it overhang: it will fold back over the top at the end."
+   },
+   {
+    "titre": "Pack",
+    "detail": "Stack the drained meats alternating the kinds, with the carrot rounds."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "Pour in the strained marinade to cover, put the lid on and cook 3 hours at 150°C — never hotter or the jelly clouds."
+   },
+   {
+    "titre": "The jelly",
+    "detail": "Lift out the terrine, take the juices, add the softened gelatine and pour back. Correct the salt: cold food always tastes blander."
+   },
+   {
+    "titre": "Set",
+    "detail": "24 hours in the fridge under a light weight. Serve COLD, sliced, with piping hot fries."
+   }
+  ]
+ },
+ "axoa": {
+  "nom": "Veal Axoa",
+  "description": "The dish of Basque fairs: veal cut with a KNIFE (never minced), stewed with sweet green peppers and Espelette chilli. Pronounced \"a-sho-a\", traditionally eaten with crushed potatoes.",
+  "etapes": [
+   {
+    "titre": "Knife-cut",
+    "detail": "Cut the veal shoulder into 1 cm dice with a knife. A mincer crushes the fibres — the axoa would lose its texture."
+   },
+   {
+    "titre": "The peppers",
+    "detail": "Deseed the sweet peppers (or green peppers) and cut into thin strips."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the meat in small handfuls in very hot oil. Too much at once and it boils instead of browning."
+   },
+   {
+    "titre": "The base",
+    "detail": "Set the meat aside, sweat onions and peppers for 10 minutes over low heat until translucent."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the meat, add garlic, thyme and the Espelette chilli: it is the signature of the dish."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Moisten halfway up with stock and simmer 1 hour, covered, over the gentlest heat."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Uncover for 15 minutes to reduce: the juices should coat the meat without drowning it. Serve with crushed potatoes."
+   }
+  ]
+ },
+ "galettesaucisse": {
+  "nom": "Galette-Saucisse",
+  "description": "The Breton hot-dog: a grilled sausage rolled in a cold buckwheat galette, eaten standing, by hand, with no sauce at all. In Rennes, ketchup would be sacrilege — mustard is barely tolerated.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix buckwheat flour, salt, egg and 130 ml of water per person. Whisk until perfectly smooth."
+   },
+   {
+    "titre": "Rest",
+    "detail": "2 hours minimum in the fridge, ideally overnight: the buckwheat must hydrate or the galette cracks."
+   },
+   {
+    "titre": "The first one",
+    "detail": "Heat the crêpe pan over HIGH heat and butter it. The first galette is always a failure — it is the temperature test."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Pour a ladleful and spread very thinly with a rozell or the back of a ladle. 1 minute a side, no more."
+   },
+   {
+    "titre": "The sausage",
+    "detail": "Grill the fresh sausage 12 minutes in a pan or on the barbecue, turning often, never piercing it."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the galettes cool flat on a cloth: a hot galette sticks and tears when rolled."
+   },
+   {
+    "titre": "Roll",
+    "detail": "A line of mustard, the piping hot sausage laid diagonally, and roll it tight. Eaten standing, straight away."
+   }
+  ]
+ },
+ "sandwichpastrami": {
+  "nom": "Pastrami Sandwich",
+  "description": "The New York deli monument: a mountain of smoked beef STEAMED to reheat, between two slices of rye bread, mustard and pickle. The steaming is non-negotiable — it re-melts the fat and makes the meat meltingly tender.",
+  "etapes": [
+   {
+    "titre": "Steam",
+    "detail": "Put the pastrami slices in a steamer basket for 8 minutes. This is THE deli move: never a microwave, which dries it out."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Squeeze the sauerkraut between your hands to extract as much juice as possible, or the bread will be soaked."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Butter the rye slices lightly and toast them in a pan on the outer side."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "Strong mustard GENEROUSLY on both inner faces: it is the counterweight to the smoky fat."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Emmental on the bottom slice, scorching pastrami on top: the heat melts it by itself."
+   },
+   {
+    "titre": "Pile high",
+    "detail": "Stack the meat in folds, not flat — that is what gives a true deli sandwich its height."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Sauerkraut, lid, a wooden pick through the middle, and cut in two in one clean stroke. Eat immediately."
+   }
+  ]
+ },
+ "artichautvinaigrette": {
+  "nom": "Artichoke Vinaigrette",
+  "description": "The most sociable starter there is: a whole boiled artichoke pulled apart by hand, leaf by leaf, each one dipped in vinaigrette. The heart, stripped of its choke, is saved for last — it is the reward.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Snap the stalk off by hand rather than cutting it: the tough fibres in the base come away with it."
+   },
+   {
+    "titre": "Lemon it",
+    "detail": "Rub the cut base with lemon straight away — artichoke blackens within minutes in the air."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Plunge it head down into boiling salted water with the bay leaf, 35 to 40 minutes depending on size."
+   },
+   {
+    "titre": "Check",
+    "detail": "It is done when a leaf from the base pulls away WITHOUT resistance. When in doubt, keep going: an overcooked artichoke is still good, an undercooked one isn't."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Lift it out and cool it UPSIDE DOWN on a rack: all the water trapped between the leaves runs out."
+   },
+   {
+    "titre": "The vinaigrette",
+    "detail": "Slacken the mustard with the vinegar, chopped shallot and salt, then whisk in the oil in a thin stream."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Artichoke warm or cold, vinaigrette in a bowl alongside, parsley on top. Pull the leaves off with your fingers and scrape the base between your teeth."
+   }
+  ]
+ },
+ "aspergeshollandaise": {
+  "nom": "Asparagus with Hollandaise",
+  "description": "The great spring classic: white asparagus cooked just so, cloaked in a foaming hollandaise whisked over a bain-marie. A temperamental sauce saved by one move — take it off the heat the second it thickens, never a moment later.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Peel the white asparagus from tip to base in two passes: the skin is bitter and fibrous."
+   },
+   {
+    "titre": "Tie",
+    "detail": "Tie them into a bundle with string: they stay upright and the tips don't snap."
+   },
+   {
+    "titre": "Cook",
+    "detail": "12 to 15 minutes in boiling salted water with a little sugar added. Ready when a knife tip goes in without force."
+   },
+   {
+    "titre": "Clarify",
+    "detail": "Melt the butter gently and skim the white foam off the top: clarified butter won't split the sauce."
+   },
+   {
+    "titre": "The base",
+    "detail": "Whisk the yolks with the vinegar and a spoon of water over a bain-marie at a BARE simmer, never boiling."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "When the mixture ribbons, pour in the warm clarified butter in a thin stream WITHOUT stopping whisking. Off the heat as soon as it coats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Lemon, salt, pepper. Coat the warm asparagus straight away — hollandaise cannot be reheated, it splits."
+   }
+  ]
+ },
+ "chipironsencre": {
+  "nom": "Squid in Ink",
+  "description": "Chipirones en su tinta: small squid stewed in a deep black sauce made with their own ink. Startling to look at, surprisingly gentle to taste — the ink brings iodine and silkiness, never bitterness.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Gut the squid keeping the INK SACS in a bowl: they will make the whole sauce."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Remove the clear quill and the beak, keep the tentacles whole, leave the bodies WHOLE so they stay tender."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Melt onion and pepper in olive oil for 20 minutes over very low heat, until jammy."
+   },
+   {
+    "titre": "Concentrate",
+    "detail": "Garlic, crushed tomato, reduce another 10 minutes: the sofrito should be thick and dark."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, let the alcohol cook off for 3 minutes, then the squid and the crumbled bread that will thicken the sauce."
+   },
+   {
+    "titre": "The ink",
+    "detail": "Slacken the ink sacs in a little hot water, strain, and pour in. The sauce turns black instantly."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "25 minutes covered over the lowest heat — squid goes tender, then rubbery, then tender again. Parsley, plain rice alongside."
+   }
+  ]
+ },
+ "sauceaurore": {
+  "nom": "Aurore Sauce",
+  "description": "A béchamel blushed pink with tomato purée — hence the name, the colour of daybreak. The sauce for hard-boiled eggs, poached fish and quenelles: soft, coating, and infinitely more interesting than a plain béchamel.",
+  "etapes": [
+   {
+    "titre": "The roux",
+    "detail": "Melt the butter without colouring it, add the flour and stir for 2 minutes: the raw flour taste must go."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Pour COLD milk onto the hot roux in three additions, whisking hard between each."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Bring to a gentle boil stirring constantly, then cook 5 minutes over low heat."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Stir in the tomato purée off the heat and whisk: the sauce takes on its characteristic orange tint."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Add the cream, which rounds out the acidity of the purée and adds shine."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, white pepper, nutmeg. Taste: if acidity dominates, a pinch of sugar fixes everything."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pass through a fine sieve for a perfectly smooth texture. Coat hard-boiled eggs, poached fish or quenelles."
+   }
+  ]
+ },
+ "saucediable": {
+  "nom": "Devilled Sauce",
+  "description": "The peppery brown sauce of the classic repertoire: a reduction of white wine, vinegar and shallot, fired up with cracked pepper and cayenne. It goes with grilled chicken \"à la diable\" — hence its name and its reputation.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop the shallots very finely: they should melt into the sauce, not announce themselves."
+   },
+   {
+    "titre": "The pepper",
+    "detail": "Crack the pepper COARSELY in a mortar. Ground, it turns acrid as it reduces; cracked, it stays fragrant."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce wine, vinegar, shallots and pepper until only a spoonful of syrupy liquid remains."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add the stock and tomato purée, reduce by half again over medium heat."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Cayenne off the heat: boiled, it turns bitter and its heat becomes uncontrollable."
+   },
+   {
+    "titre": "Mount",
+    "detail": "Swirl in the cold butter a piece at a time, never letting it boil — the sauce would break greasy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped tarragon, salt. Serve immediately over grilled chicken, a pork chop or kidneys."
+   }
+  ]
+ },
+ "sauceravigote": {
+  "nom": "Ravigote Sauce",
+  "description": "A vinaigrette loaded with capers, gherkins, onion and fresh herbs. \"Ravigoter\" means to revive — which is exactly its effect on tête de veau, a warm leek or cold fish.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Slacken the mustard with the vinegar and salt — salt won't dissolve once the oil is in."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour in the oil in a thin stream while whisking: the sauce should thicken and turn opaque."
+   },
+   {
+    "titre": "Chop fine",
+    "detail": "Chop gherkins, capers and onion with a KNIFE. In a blender it all turns to grey purée."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Squeeze the capers between your fingers to remove their brine: otherwise the sauce is too salty."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Chop parsley, tarragon and chives at the last minute — chopped ahead, they blacken and lose their scent."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold everything into the vinaigrette and stir. The sauce should be well loaded: it's a sauce to chew, not to coat."
+   },
+   {
+    "titre": "Rest",
+    "detail": "20 minutes at room temperature before serving, so the herbs perfume the oil. Never serve it fridge-cold."
+   }
+  ]
+ },
+ "saucecharcutiere": {
+  "nom": "Charcutière Sauce",
+  "description": "The sauce for Sunday's pork chop: a mustardy shallot base into which julienned gherkins are thrown AT THE LAST MOMENT. Cooked, they turn soft and bitter — all the crunch of the sauce lives there.",
+  "etapes": [
+   {
+    "titre": "Sweat",
+    "detail": "Melt the chopped shallots in half the butter over low heat, without colouring."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Sprinkle over the flour and stir 2 minutes: this gives the sauce body without cream."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, reduce by half to cook off the sharpness of the alcohol."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Stock and tomato purée, then 12 minutes at a bare simmer until it coats a spoon."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "OFF THE HEAT, whisk in the mustard: boiled, it loses all its bite and turns bitter."
+   },
+   {
+    "titre": "The gherkins",
+    "detail": "Cut them into fine julienne and throw them in at the very last moment, just to warm through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Remaining cold butter to gloss, parsley, pepper. Spoon over a grilled pork chop or leftover roast."
+   }
+  ]
+ },
+ "saucemornay": {
+  "nom": "Mornay Sauce",
+  "description": "Cheese béchamel enriched with an egg yolk — the sauce that holds a croque-monsieur together, gratinates ham-wrapped chicory and cloaks a poached egg. The yolk is what sets it apart from plain cheese sauce: it gives shine and structure under the grill.",
+  "etapes": [
+   {
+    "titre": "The roux",
+    "detail": "Melted butter, flour, 2 minutes over medium heat without colouring: we want a white sauce."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Cold milk in three additions, whisking. The golden rule: cold liquid onto a hot roux, never the reverse."
+   },
+   {
+    "titre": "Cook",
+    "detail": "8 minutes over low heat, stirring: the béchamel should coat the back of a spoon."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "OFF THE HEAT, stir in the grated emmental and parmesan. On the heat, the cheese would string and the fat separate."
+   },
+   {
+    "titre": "The yolk",
+    "detail": "Slacken the yolk with two spoons of hot sauce, then pour it all back: never the yolk straight into the pan."
+   },
+   {
+    "titre": "Season",
+    "detail": "Nutmeg, white pepper, salt carefully — both cheeses are already salty."
+   },
+   {
+    "titre": "Use",
+    "detail": "Coat and grill 8 minutes at 220°C: the yolk browns the surface into a beautifully uneven crust."
+   }
+  ]
+ },
+ "saucechien": {
+  "nom": "Sauce Chien",
+  "description": "THE Caribbean sauce for grilled fish: onion, garlic, spring onion and chilli chopped fine, woken up with boiling water and lime. Its name is said to come from the \"Chien\" brand of knife used to chop it — nothing to do with dogs, rest assured.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop onion, garlic, spring onion (or chives) and parsley VERY finely by knife — sauce chien is never blended."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Deseed the Caribbean chilli and chop a tiny amount. Taste before adding more: its heat builds over 30 seconds."
+   },
+   {
+    "titre": "Boiling water",
+    "detail": "Pour 3 spoons of BOILING water over the chopped mixture. That thermal shock lightly cooks the onion and releases every aroma."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Rest 5 minutes covered: this is when the sauce gains its flavour, not before."
+   },
+   {
+    "titre": "The lime",
+    "detail": "Add the lime juice and picked thyme. The acidity should be bright, almost sharp."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Neutral oil last, whisked in with a fork. It binds without masking — never olive oil, far too assertive."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Salt, pepper. Serve warm over grilled fish, accras or barbecued meat. Keeps 3 days chilled."
+   }
+  ]
+ },
+ "painsuedois": {
+  "nom": "Swedish Crispbread",
+  "description": "Knäckebröd: a very thin rye flatbread, pierced with holes and baked until it snaps like a tile. It keeps for weeks in a tin and carries anything — butter, herring, salmon, cream cheese.",
+  "etapes": [
+   {
+    "titre": "The yeast",
+    "detail": "Dissolve yeast and honey in 45 ml of warm water per person and let it froth for 10 minutes."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix both flours, the salt, the crushed caraway seeds and the oil, then knead 8 minutes: the dough stays dense, which is normal with rye."
+   },
+   {
+    "titre": "Rise",
+    "detail": "45 minutes covered. Rye rises little — don't expect the doubling of a white bread dough."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Shape 60 g balls and let them relax 10 minutes, or the dough will shrink back when rolled."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "Roll each ball to 2 mm — the thickness of a coin. Thinner means crisper."
+   },
+   {
+    "titre": "Pierce",
+    "detail": "Prick the whole surface with a fork and cut a hole in the centre: those holes stop it blistering in the oven."
+   },
+   {
+    "titre": "Bake",
+    "detail": "8 to 10 minutes at 230°C until brown-spotted. Cool on a rack: the crispness only appears as it cools."
+   }
+  ]
+ },
+ "speculoosmaison": {
+  "nom": "Homemade Speculoos",
+  "description": "The Belgian coffee-house biscuit: brown sugar, cinnamon and mixed spice, crisp to the last crumb. Chilling the dough is not optional — it develops the caramel flavour and lets you cut clean biscuits.",
+  "etapes": [
+   {
+    "titre": "Cream",
+    "detail": "Work the soft butter with the brown sugar into a smooth, sandy paste, without trying to aerate it."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the egg and mix: the dough should stay dense, that's normal."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Cinnamon, mixed spice, bicarbonate and salt blended into the flour BEFORE adding — otherwise the spices clump."
+   },
+   {
+    "titre": "Bring together",
+    "detail": "Gather without kneading. Overworked, the dough gives hard biscuits instead of crisp ones."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Flatten into a disc, wrap and chill 12 hours. This is THE difference between a good and an excellent speculoos."
+   },
+   {
+    "titre": "Cut out",
+    "detail": "Roll to 3 mm between two sheets of paper and cut the biscuits. Chill 10 more minutes before baking."
+   },
+   {
+    "titre": "Bake",
+    "detail": "12 minutes at 170°C. They are still soft when they come out: the snap arrives as they cool on a rack."
+   }
+  ]
+ },
+ "cantuccini": {
+  "nom": "Almond Cantuccini",
+  "description": "The Tuscan TWICE-baked biscuits — biscotti literally means \"baked twice\". A log of dough is baked, sliced, then the slices go back in to dry. Hard enough to dunk in vin santo without ever falling apart.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Toast the WHOLE almonds for 8 minutes at 160°C. Whole, they give those characteristic shards when sliced."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Beat eggs and sugar for 3 minutes until pale, then add orange zest and vanilla."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Fold in flour, baking powder and salt with a spatula: the dough is sticky, don't try to smooth it."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Add the warm almonds and mix just enough to distribute them."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Flour your hands and shape two flat logs 5 cm wide on the tray, well spaced."
+   },
+   {
+    "titre": "First bake",
+    "detail": "25 minutes at 170°C. Take out and cool 10 minutes — too hot, they crumble when cut."
+   },
+   {
+    "titre": "Slice and dry",
+    "detail": "Cut 1.5 cm slices on the diagonal, lay them flat and BAKE AGAIN for 12 minutes, turning halfway."
+   }
+  ]
+ },
+ "koulourakia": {
+  "nom": "Koulourakia",
+  "description": "The little braided biscuits of Greek Easter, scented with orange and vanilla. Neither shortbread nor dry biscuit: their particular texture, between biscuit and brioche, comes from butter beaten long with the eggs.",
+  "etapes": [
+   {
+    "titre": "Beat long",
+    "detail": "Beat butter and sugar for 6 MINUTES with a mixer, until very pale and airy. This step makes the whole texture."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Add the eggs one at a time, beating well between each, then the orange zest and vanilla."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Fold in flour and baking powder in three additions: the dough should be supple and not sticky, like modelling clay."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll 12 cm ropes between your palms, then fold in half and twist — the traditional shape."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with egg yolk slackened in milk: this gives the deep glossy brown."
+   },
+   {
+    "titre": "The sesame",
+    "detail": "Scatter sesame seeds, pressing lightly so they stick."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 180°C until well browned. They harden as they cool — take them out as soon as the colour is right."
+   }
+  ]
+ },
+ "madeleineschocolat": {
+  "nom": "Chocolate Madeleines",
+  "description": "The chocolate madeleine, with its obligatory hump and a crisp shell dipped in dark chocolate. The hump depends on one thing: ICE-COLD batter in a SCORCHING oven — there is no other secret.",
+  "etapes": [
+   {
+    "titre": "Brown butter",
+    "detail": "Heat the butter until it foams and smells nutty, then let it cool a little. It perfumes everything."
+   },
+   {
+    "titre": "The ribbon",
+    "detail": "Whisk eggs, sugar and honey for 4 minutes: the mixture must pale and fall in a ribbon."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Sift flour, cocoa and baking powder TOGETHER — cocoa forms stubborn lumps if neglected."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fold in the dry mix then the warm brown butter in a stream, with a spatula."
+   },
+   {
+    "titre": "The rest",
+    "detail": "MINIMUM 2 hours in the fridge, ideally overnight. No rest, no hump."
+   },
+   {
+    "titre": "The shock",
+    "detail": "Fill the cold moulds three-quarters full, oven at 240°C: 4 minutes, then down to 180°C for 6 minutes."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Turn out while warm. Dip the shell in melted chocolate and let it set, domed side up."
+   }
+  ]
+ },
+ "sablesdiamant": {
+  "nom": "Diamond Shortbread",
+  "description": "Vanilla shortbread rolled in coarse sugar before slicing — the grains sparkle around the rim like diamonds, hence the name. A three-ingredient dough that forgives nothing: the butter must be good, it is alone on stage.",
+  "etapes": [
+   {
+    "titre": "Cream",
+    "detail": "Soft butter and icing sugar with a spatula, until smooth. Don't beat in air: we want shortbread, not cake."
+   },
+   {
+    "titre": "The vanilla",
+    "detail": "Scrape the pod and add the seeds: it is this biscuit's only flavour, don't be stingy."
+   },
+   {
+    "titre": "Rub in",
+    "detail": "Add flour and salt and work with your fingertips until the dough just comes together."
+   },
+   {
+    "titre": "The log",
+    "detail": "Roll a neat 4 cm log in cling film. Roll it on the worktop so it is perfectly round."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "2 hours in the fridge — a soft log gives oval biscuits."
+   },
+   {
+    "titre": "The sugar",
+    "detail": "Brush the log with egg white and roll it in coarse sugar, pressing well."
+   },
+   {
+    "titre": "Slice and bake",
+    "detail": "Cut 1 cm rounds, space them out and bake 15 minutes at 170°C: barely golden at the edges, no more."
+   }
+  ]
+ },
+ "palmierscaramelises": {
+  "nom": "Caramelised Palmiers",
+  "description": "Two ingredients, ten minutes of work: puff pastry and sugar. The sugar melts, caramelises and glazes the layers — the highest-return biscuit in all of French baking.",
+  "etapes": [
+   {
+    "titre": "Sugar the surface",
+    "detail": "Do NOT flour the worktop: sugar it. The pastry picks up sugar as it is rolled, and that is where everything happens."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the pastry into a 3 mm rectangle, dust generously with sugar, brown sugar, cinnamon and a pinch of salt."
+   },
+   {
+    "titre": "Roll up",
+    "detail": "Roll both long sides towards the centre until they meet, keeping it tight."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "30 minutes in the freezer: the only way to get clean slices that keep their heart shape."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut 1 cm slices with a sharp knife in a single stroke — sawing crushes the layers."
+   },
+   {
+    "titre": "Space out",
+    "detail": "Lay them FLAT on baking paper leaving 5 cm between each: they double in width as they bake."
+   },
+   {
+    "titre": "Turn",
+    "detail": "12 minutes at 200°C, turn each palmier over, then 6 minutes more. Both faces must be caramelised."
+   }
+  ]
+ },
+ "succespraline": {
+  "nom": "Praline Succès",
+  "description": "Two almond dacquoise discs sandwiching a praline buttercream. A great classic of pâtisserie windows, unjustly forgotten — the contrast between the chewy-crisp biscuit and the melting praline is unbeatable.",
+  "etapes": [
+   {
+    "titre": "Tant pour tant",
+    "detail": "Sift ground almonds and icing sugar together: lumps would ruin the dacquoise's smooth texture."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whip the whites adding the sugar in three goes, to the bird's-beak stage — firm but still supple, never grainy."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold in the almond-sugar mix IN THREE ADDITIONS with a spatula, lifting as you go. The mass must stay airy."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Pipe two 18 cm spiral discs onto baking paper, starting from the centre."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 160°C, fan: the discs should be dry to the touch and lift off by themselves."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the soft butter for 5 minutes then beat in the praline paste: the cream must be very light, not greasy."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "One disc, a thick layer of praline cream, the second disc. Toasted flaked almonds around the sides, icing sugar, 2 hours chilled."
+   }
+  ]
+ },
+ "nonnettes": {
+  "nom": "Dijon Nonnettes",
+  "description": "Little soft gingerbread cakes with a heart of orange marmalade, sugar-glazed. Born in convents — hence the name — they improve three days after baking, once the honey has finished soaking through.",
+  "etapes": [
+   {
+    "titre": "Warm the honey",
+    "detail": "Warm honey and milk without boiling: the honey turns fluid and blends without lumps."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Mix flour, baking powder, bicarbonate, cinnamon, ginger, aniseed and orange zest in a bowl."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the warm honey over the dry mix and whisk: the batter should be thick and sticky, like gingerbread dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "30 minutes covered — time for the flour to hydrate fully, the key to softness."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the moulds halfway, drop a spoon of marmalade IN THE CENTRE, then cover with more batter."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 170°C. Don't skewer the centre to check: you would hit the marmalade."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Icing sugar slackened with a few drops of water, brushed on while STILL WARM: the glaze dries into a shiny coat."
+   }
+  ]
+ },
+ "cafefrappegrec": {
+  "nom": "Greek Frappé",
+  "description": "The icon of the Greek summer, invented by accident in Thessaloniki in 1957 when no hot water was available. INSTANT coffee — and only instant — whipped with very little water into a dense foam that holds on the glass for an hour.",
+  "etapes": [
+   {
+    "titre": "Instant coffee",
+    "detail": "You must use instant coffee: filter coffee will NEVER foam, it is chemically impossible."
+   },
+   {
+    "titre": "Very little water",
+    "detail": "Put coffee, sugar and 3 tablespoons of COLD water in a shaker. No more: concentration is what creates the foam."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake hard for 45 seconds (or blend for 20). The foam must be thick, pale beige, and hold on a spoon."
+   },
+   {
+    "titre": "The glass",
+    "detail": "Fill a tall glass to the top with ice — a frappé is drunk ice-cold or not at all."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the foam over the ice: it stays on top in a generous 3 cm layer."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Top up with cold water, then add the milk last — it swirls down through the foam."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A straw, and definitely NO spoon: in Greece a frappé is never stirred, it is drunk through the foam."
+   }
+  ]
+ },
+ "chocolatchaudviennois": {
+  "nom": "Viennese Hot Chocolate",
+  "description": "The hot chocolate of Vienna's coffee houses: thick, made with REAL dark chocolate melted into milk, crowned with a mountain of barely sweetened whipped cream. Nothing like cocoa powder — here the cream and the bitter chocolate answer each other.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop the dark chocolate with a knife: in small shards it melts evenly and never seizes."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Bring the milk with the vanilla to a BARE SIMMER, never a boil — boiled milk tastes cooked."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour a third of the hot milk over the chocolate, whisk until smooth and glossy, then add the rest."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Slake the cornflour in a spoon of cold milk, pour in and let it thicken for 2 minutes: this gives the coating Viennese texture."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the VERY COLD cream with the sugar to soft peaks — too firm and it won't sink into the chocolate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scalding chocolate in a cup pre-warmed with hot water, then the cream spooned on top."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Grated cocoa over the cream. In Vienna you don't stir: you drink the hot chocolate THROUGH the cold cream."
+   }
+  ]
  }
 };
