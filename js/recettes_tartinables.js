@@ -1199,4 +1199,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Reposer", detail: "1 heure au frais minimum, puis servez avec des grillades et du pain. L'urnebes serbe — le chaos délicieux !", badge: null }
     ]
   },
+  tapenadeverte: {
+    dateAjout: "2026-08-01T19:05:00",
+    nom: "Tapenade Verte",
+    cat: "tartinables", pays: "france",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🫒",
+    description: "La sœur claire de la tapenade noire : olives vertes, câpres, anchois et amandes, plus vive et plus fruitée. « Tapena » veut dire câpre en provençal — c'est elle, et non l'olive, qui donne son nom à la préparation.",
+    tableauTapenadeverte: [
+      { nb: 1, olives: "55 g", capres: "8 g", anchois: "5 g", amande: "10 g", huileolive: "15 ml", ail: "", citron: "", thym: "0.3 g", poivre: "0.3 g" },
+      { nb: 2, olives: "110 g", capres: "16 g", anchois: "10 g", amande: "20 g", huileolive: "30 ml", ail: "", citron: "", thym: "0.6 g", poivre: "0.6 g" },
+      { nb: 3, olives: "165 g", capres: "24 g", anchois: "15 g", amande: "30 g", huileolive: "45 ml", ail: "", citron: "", thym: "0.9 g", poivre: "0.9 g" },
+      { nb: 4, olives: "220 g", capres: "32 g", anchois: "20 g", amande: "40 g", huileolive: "60 ml", ail: "", citron: "", thym: "1.2 g", poivre: "1.2 g" },
+      { nb: 5, olives: "275 g", capres: "40 g", anchois: "25 g", amande: "50 g", huileolive: "75 ml", ail: "1", citron: "¾", thym: "1.5 g", poivre: "1.5 g" },
+      { nb: 6, olives: "330 g", capres: "48 g", anchois: "30 g", amande: "60 g", huileolive: "90 ml", ail: "1", citron: "", thym: "1.8 g", poivre: "1.8 g" },
+      { nb: 7, olives: "385 g", capres: "56 g", anchois: "35 g", amande: "70 g", huileolive: "105 ml", ail: "1", citron: "1", thym: "2.1 g", poivre: "2.1 g" },
+      { nb: 8, olives: "440 g", capres: "64 g", anchois: "40 g", amande: "80 g", huileolive: "120 ml", ail: "1", citron: "1", thym: "2.4 g", poivre: "2.4 g" },
+      { nb: 9, olives: "495 g", capres: "72 g", anchois: "45 g", amande: "90 g", huileolive: "135 ml", ail: "1", citron: "1", thym: "2.7 g", poivre: "2.7 g" },
+      { nb: 10, olives: "550 g", capres: "80 g", anchois: "50 g", amande: "100 g", huileolive: "150 ml", ail: "2", citron: "1½", thym: "3 g", poivre: "3 g" },
+      { nb: 11, olives: "605 g", capres: "88 g", anchois: "55 g", amande: "110 g", huileolive: "165 ml", ail: "2", citron: "1", thym: "3.3 g", poivre: "3.3 g" },
+      { nb: 12, olives: "660 g", capres: "96 g", anchois: "60 g", amande: "120 g", huileolive: "180 ml", ail: "2", citron: "1", thym: "3.6 g", poivre: "3.6 g" },
+      { nb: 13, olives: "715 g", capres: "104 g", anchois: "65 g", amande: "130 g", huileolive: "195 ml", ail: "2", citron: "1", thym: "3.9 g", poivre: "3.9 g" },
+      { nb: 14, olives: "770 g", capres: "112 g", anchois: "70 g", amande: "140 g", huileolive: "210 ml", ail: "2", citron: "2", thym: "4.2 g", poivre: "4.2 g" },
+      { nb: 15, olives: "825 g", capres: "120 g", anchois: "75 g", amande: "150 g", huileolive: "225 ml", ail: "3", citron: "2¼", thym: "4.5 g", poivre: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫒", titre: "Dénoyauter", detail: "Utilisez des olives vertes EN SAUMURE, jamais dénoyautées industriellement : celles-ci sont fades et molles.", badge: null },
+      { icone: "💧", titre: "Dessaler", detail: "Rincez olives et câpres à l'eau froide et égouttez : elles sont déjà très salées, on ne salera pas ensuite.", badge: null },
+      { icone: "🌰", titre: "Torréfier", detail: "Faites griller les amandes 5 minutes à sec : elles apportent le corps et le liant de la tapenade.", badge: null },
+      { icone: "🔪", titre: "Hacher", detail: "Au COUTEAU pour une texture rustique, ou au mixeur par à-coups courts. Jamais en purée lisse.", badge: null },
+      { icone: "🐟", titre: "Les anchois", detail: "Écrasez les filets d'anchois à la fourchette et incorporez-les : on ne doit pas les identifier, seulement les sentir.", badge: null },
+      { icone: "🫒", titre: "Monter", detail: "Huile d'olive fruitée en filet en remuant, jusqu'à une pâte souple qui tient sur le pain.", badge: null },
+      { icone: "🍋", titre: "Finir", detail: "Zeste de citron, thym, poivre. Laissez reposer 2 heures avant de servir sur des toasts grillés.", badge: null }
+    ],
+    liees: ["tapenade","anchoiade","pestomaison"]
+  },
 });

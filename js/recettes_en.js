@@ -93844,5 +93844,1025 @@ window.RECETTES_EN = {
     "detail": "Mix icing sugar and the remaining rum, pour over the cake while STILL HOT and spread: the glaze dries into a shiny crust."
    }
   ]
+ },
+ "cotedeboeuf": {
+  "nom": "Côte de Bœuf",
+  "description": "The sharing cut: a 4 cm thick rib, hard-seared then finished in the oven, and above all RESTED as long as it cooked. That rest is not optional — it redistributes the juices and makes the meat evenly pink.",
+  "etapes": [
+   {
+    "titre": "Temper",
+    "detail": "Take the rib out 2 HOURS ahead: cold meat cooks grey at the edges before the centre is pink."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Blot the surface carefully with kitchen paper. Wet meat doesn't colour, it boils."
+   },
+   {
+    "titre": "Sear",
+    "detail": "SMOKING hot cast-iron pan, neutral oil, 4 minutes a side without touching it — the crust forms by itself."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Lower the heat, add butter, crushed unpeeled garlic and herbs, then baste with a spoon for 3 minutes."
+   },
+   {
+    "titre": "Finish in the oven",
+    "detail": "12 minutes at 180°C for rare. On a thermometer: 52°C at the core for rare, 57°C for medium."
+   },
+   {
+    "titre": "REST",
+    "detail": "15 minutes under foil, on a rack. Cut too soon, it empties all its juice onto the plate."
+   },
+   {
+    "titre": "Carve",
+    "detail": "Take the bone off, then slice ACROSS the grain into 1 cm strips. Flaky salt at the very last moment."
+   }
+  ]
+ },
+ "chateaubriand": {
+  "nom": "Chateaubriand",
+  "description": "The heart of the beef fillet, cut thick and roasted whole, created by the writer Chateaubriand's cook around 1820. Served with béarnaise and château potatoes — the very definition of a bourgeois classic.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Take the HEART of the fillet, the thickest part, and tie it into an even barrel for uniform cooking."
+   },
+   {
+    "titre": "Château potatoes",
+    "detail": "Turn the potatoes into large seven-sided olives and blanch them 4 minutes in boiling water."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Very hot pan, oil, then colour the fillet 2 minutes on EACH face — including the ends, held with tongs."
+   },
+   {
+    "titre": "Foaming butter",
+    "detail": "Butter, thyme, shallot, and baste constantly for 4 minutes: this basting flavours the crust."
+   },
+   {
+    "titre": "Roast",
+    "detail": "10 minutes at 200°C. Chateaubriand is served RARE — 52°C at the core, never more, the cut is too lean."
+   },
+   {
+    "titre": "Rest",
+    "detail": "10 minutes covered with foil while the château potatoes finish browning in butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Remove the string and cut into two or three thick slices. Béarnaise on the side, flaky salt on top."
+   }
+  ]
+ },
+ "fauxfiletroquefort": {
+  "nom": "Sirloin with Roquefort Sauce",
+  "description": "The brasserie duo par excellence: a seared piece of beef and a creamy roquefort sauce built in the pan juices. The cheese goes in OFF THE HEAT — boiled, it turns grainy and bitter.",
+  "etapes": [
+   {
+    "titre": "Temper",
+    "detail": "Take the meat out 30 minutes ahead and blot it dry: two moves that change everything about the browning."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Scorching pan, oil, 2 minutes a side for rare on a 2 cm thick steak."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Move the meat to a warm plate and cover it: it rests while the sauce is made."
+   },
+   {
+    "titre": "The pan juices",
+    "detail": "Pour off excess fat, add the butter and shallot and scrape up all the brown bits."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, reduce almost dry to concentrate, then pour in the cream."
+   },
+   {
+    "titre": "The roquefort",
+    "detail": "OFF THE HEAT, mash the roquefort into the hot cream with a fork until it melts completely."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add the juices released during resting, coat the steak, crushed walnuts and pepper. Don't salt: the roquefort is enough."
+   }
+  ]
+ },
+ "pouletbiere": {
+  "nom": "Chicken in Beer",
+  "description": "The stew of Flanders and Alsace: chicken browned then long-braised in AMBER beer, never bitter lager. A slice of mustard-spread gingerbread, dropped in at the end, thickens the sauce and gives it its distinctive taste.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Brown the chicken pieces in butter on all sides, 10 minutes. Set aside."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "In the same pot, fry the lardons and sliced onions in the rendered fat."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "Add the mushrooms and let them colour for 5 minutes over high heat."
+   },
+   {
+    "titre": "The beer",
+    "detail": "Return the chicken, pour in the amber beer, thyme and bay. It should come halfway up, no more."
+   },
+   {
+    "titre": "Braise",
+    "detail": "45 minutes covered at a bare simmer. Beer loses its bitterness with long cooking."
+   },
+   {
+    "titre": "The gingerbread",
+    "detail": "Spread the gingerbread with mustard and drop it into the sauce: it melts and thickens it naturally."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Cream off the heat, correct salt and pepper. Serve with fries or steamed potatoes."
+   }
+  ]
+ },
+ "pintadechoux": {
+  "nom": "Guinea Fowl with Cabbage",
+  "description": "The country celebration bird: guinea fowl, leaner and more flavourful than chicken, braised on a bed of green cabbage and bacon. The cabbage drinks up every juice — by the end, it is what everyone fights over.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Separate the cabbage leaves, remove the thick ribs and blanch 5 minutes in boiling water. Drain and squeeze."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Colour the guinea fowl in butter on all sides, 12 minutes — it must be well browned, that is the flavour of the dish."
+   },
+   {
+    "titre": "The base",
+    "detail": "Set the bird aside, sweat lardons, onion and carrot in the pot for 6 minutes."
+   },
+   {
+    "titre": "The bed",
+    "detail": "Add the squeezed cabbage, crushed juniper berries, thyme and bay, and mix well."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "White wine and stock, then set the guinea fowl ON the bed of cabbage, breast up."
+   },
+   {
+    "titre": "Braise",
+    "detail": "55 minutes covered at 160°C: the bird cooks in the cabbage steam and stays moist, which is rare with guinea fowl."
+   },
+   {
+    "titre": "Crisp the skin",
+    "detail": "Uncover for the last 10 minutes at 200°C. Carve and serve the bird on its cabbage."
+   }
+  ]
+ },
+ "caillesraisins": {
+  "nom": "Quail with Grapes",
+  "description": "The great autumn classic: small roast quail, deglazed with cognac and served with fresh grapes just warmed through. The contrast between the firm flesh and the grapes bursting in the mouth is the whole point.",
+  "etapes": [
+   {
+    "titre": "Bard",
+    "detail": "Wrap each quail in a thin sheet of pork fat and tie: the flesh is very lean and would dry without that protection."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Colour them in butter on all sides, 6 minutes, turning gently with tongs."
+   },
+   {
+    "titre": "The grapes",
+    "detail": "Peel the grapes if you're patient, or simply split them. Set aside — they do NOT cook."
+   },
+   {
+    "titre": "Roast",
+    "detail": "18 minutes at 200°C, basted twice with their own juices. Quail is served slightly pink at the thigh."
+   },
+   {
+    "titre": "Flame",
+    "detail": "Lift out the quail, deglaze the pot with cognac and flame it to burn off the alcohol."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Shallot, stock, reduce by half, then whisk in cold butter off the heat."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Drop the grapes into the hot sauce for 30 SECONDS only, just to warm them, and coat the quail."
+   }
+  ]
+ },
+ "chevreuilveneur": {
+  "nom": "Venison Grand Veneur",
+  "description": "The hunt dish par excellence: a pink venison fillet cloaked in a poivrade sauce softened with redcurrant jelly and cream. \"Grand Veneur\" was the title of the master of the royal hunt — the sauce owes it both name and nobility.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "12 hours chilled in red wine with carrot, onion, crushed juniper, thyme and cracked pepper."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Lift out the meat, BLOT it perfectly and keep the marinade: without that drying, no browning is possible."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Scorching pan, colour the fillet 3 minutes a side, then keep warm under foil."
+   },
+   {
+    "titre": "The poivrade",
+    "detail": "Fry the marinade vegetables, dust with flour, then pour in the strained marinade."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "30 minutes of gentle reduction, then pass through a sieve, pressing the vegetables hard."
+   },
+   {
+    "titre": "Grand veneur",
+    "detail": "Off the heat: blackcurrant (or redcurrant) jelly and cream. The sweet-sharp note is this sauce's signature."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Whisk in cold butter, slice the venison PINK and serve with pan-fried chestnuts."
+   }
+  ]
+ },
+ "sanglierairelles": {
+  "nom": "Wild Boar with Lingonberries",
+  "description": "The most generous of hunt stews: a shoulder of wild boar marinated then simmered for three hours in red wine, softened with sharp lingonberries. Without the marinade and without the slowness, the meat stays tough — here everything is a matter of patience.",
+  "etapes": [
+   {
+    "titre": "Marinate 24 h",
+    "detail": "Full-bodied red wine, vegetables, garlic, juniper and bay: 24 hours chilled. This is what tenderises and flavours the boar."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Separate meat, vegetables and liquid. Blot the pieces of meat carefully."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown them in small batches in very hot oil — overloading the pot would make them boil."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Return all the meat, sprinkle with flour and let it toast for 3 minutes, stirring."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Drained vegetables, lardons, then the strained marinade. Bring to the boil and skim carefully."
+   },
+   {
+    "titre": "Simmer 2 h 30",
+    "detail": "Covered, at 150°C or over the gentlest heat. The meat must fall apart under a spoon, not before."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Lingonberries and a square of dark chocolate in the last 15 minutes: the chocolate thickens and rounds without being tasted."
+   }
+  ]
+ },
+ "blanquetteagneau": {
+  "nom": "Lamb Blanquette",
+  "description": "The blanquette nobody makes: same technique as the veal version, but with lamb shoulder, which is more fragrant. The meat is blanched first to remove impurities — that is what guarantees an immaculately white sauce.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Cover the lamb with COLD water, boil for 3 minutes, then throw the water away and rinse the meat."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Start again in cold water with carrot, leek, clove-studded onion and bay. Skim relentlessly for the first 10 minutes."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "1 h 15 at a barely visible simmer: at a rolling boil the meat would toughen and the broth would cloud."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "Cook them separately for 5 minutes in a little lemony broth so they stay properly white."
+   },
+   {
+    "titre": "The velouté",
+    "detail": "White roux of butter and flour, then the hot strained cooking broth. 10 minutes of cooking."
+   },
+   {
+    "titre": "The binding",
+    "detail": "Cream and egg yolk beaten together, slackened with a little hot sauce, poured back OFF THE HEAT."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Lemon juice to lift it, meat and mushrooms folded into the sauce. Pilaf rice alongside."
+   }
+  ]
+ },
+ "veaumarengo": {
+  "nom": "Veal Marengo",
+  "description": "Created, legend says, by Napoleon's cook on the evening of the battle of Marengo, with whatever came to hand. Veal, tomatoes, white wine and mushrooms — a summer stew, lighter than a bourguignon.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the veal shoulder in small batches in olive oil: it is the only step that builds flavour."
+   },
+   {
+    "titre": "The base",
+    "detail": "Set the meat aside, sweat onion, carrot and garlic for 5 minutes in the same pot."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Return the meat, flour, and toast for 3 minutes, stirring constantly."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, scrape up all the caramelised bits, reduce by half to lose the sharpness."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Chopped tomatoes and purée, thyme, salt, pepper, then water just to cover."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "1 h 15 covered over low heat: the veal should cut with a spoon."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Mushrooms and olives for the last 20 minutes only, or they would fall apart. Serve with rice."
+   }
+  ]
+ },
+ "pickleslegumes": {
+  "nom": "Quick Vegetable Pickles",
+  "description": "The quick pickle, ready in 48 hours and needing no sterilisation: carrot, cauliflower, radish and red onion drowned in a warm vinegar brine. It wakes up a sandwich, a charcuterie board or a bowl of rice — and it always crunches.",
+  "etapes": [
+   {
+    "titre": "Cut evenly",
+    "detail": "Cut all the vegetables to the SAME size, into batons or small florets: they must marinate at the same speed."
+   },
+   {
+    "titre": "Guaranteed crunch",
+    "detail": "Put them in iced water for 10 minutes: the shock firms the cells and guarantees the final crunch."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pack the vegetables into a CLEAN jar with the garlic, bay leaf and mustard seeds."
+   },
+   {
+    "titre": "The brine",
+    "detail": "Bring vinegar, sugar, salt and an equal volume of water to the boil, until fully dissolved."
+   },
+   {
+    "titre": "Cool a little",
+    "detail": "Let the brine drop to 60°C before pouring: boiling, it would cook the vegetables and soften them."
+   },
+   {
+    "titre": "Submerge",
+    "detail": "Pour until everything is fully covered — any vegetable sticking out will mould. Tap the jar to release bubbles."
+   },
+   {
+    "titre": "Wait",
+    "detail": "48 hours chilled minimum. They keep a month and improve every week."
+   }
+  ]
+ },
+ "cornichonsmaison": {
+  "nom": "Homemade Pickled Gherkins",
+  "description": "Real French cornichons, crunchy and sharp — nothing like the sweet industrial kind. The secret is salting them first: without it, the gherkins release water into the jar and go soft.",
+  "etapes": [
+   {
+    "titre": "Scrub",
+    "detail": "Rub each gherkin with a rough cloth to remove the tiny spines — never a knife, the skin must stay intact."
+   },
+   {
+    "titre": "Salt them",
+    "detail": "Cover with coarse salt in a bowl and leave for 12 HOURS. They will release a lot of water: that's the point."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse thoroughly in cold water and DRY them one by one in a clean cloth."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Pack them tightly into the jar with shallots, tarragon, bay, cloves and mustard seeds."
+   },
+   {
+    "titre": "The vinegar",
+    "detail": "Use spirit vinegar of at least 8% and pour it in COLD: hot, it would cook the gherkins."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Check everything is submerged, seal tightly and keep away from light."
+   },
+   {
+    "titre": "Be patient",
+    "detail": "1 MONTH minimum before opening. They then keep for a year and improve with time."
+   }
+  ]
+ },
+ "chutneyoignons": {
+  "nom": "Onion Chutney",
+  "description": "The savoury jam of cheeseboards: red onions candied for an hour in balsamic vinegar and brown sugar, down to a dark marmalade. It turns a piece of cheddar into a proper tasting.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Slice the red onions into THIN, even strips: thick pieces will still be hard after an hour's cooking."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Soften them gently in olive oil for 20 minutes, covered, without colouring, until translucent."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Add the brown sugar and let it caramelise for 10 minutes uncovered, stirring: the onions gloss and darken."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Balsamic vinegar and red wine, thyme, bay, salt, pepper. The smell is sharp — it will mellow."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "40 minutes over very low heat, uncovered, stirring every 10 minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "The chutney is ready when a spoon leaves a FURROW on the pan bottom that doesn't close up."
+   },
+   {
+    "titre": "Jar it",
+    "detail": "Into a scalded jar, sealed hot and turned upside down. Wait 3 days before tasting: the flavours must marry."
+   }
+  ]
+ },
+ "moutardemaison": {
+  "nom": "Homemade Mustard",
+  "description": "Two ingredients are enough: mustard seeds and an acidic liquid. The heat comes from a chemical reaction that starts on contact with water — hence the absolute rule: COLD liquid for a hot mustard, warm for a mild one.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Cover the mustard seeds with COLD vinegar and white wine and let them swell for 24 hours at room temperature."
+   },
+   {
+    "titre": "Check",
+    "detail": "The seeds should have absorbed almost all the liquid and become tender to the bite."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Pulse the blender: stop early for a wholegrain mustard, keep going for a smooth one."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, honey, crushed garlic and turmeric for the characteristic yellow. Taste: it will be VERY fierce at this point."
+   },
+   {
+    "titre": "Don't panic",
+    "detail": "The bitterness and brutal heat of the first day are normal — they fade within 48 hours."
+   },
+   {
+    "titre": "Rest",
+    "detail": "48 hours chilled in a sealed jar: the time the mustard needs to round off its edges."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Too thick, slacken with a little water; too hot, a pinch of sugar or a spoon of oil calms it."
+   }
+  ]
+ },
+ "siropmenthe": {
+  "nom": "Homemade Mint Syrup",
+  "description": "A cloudy, natural green syrup — nothing like the fluorescent shop version. The infusion happens OFF THE HEAT: boiled mint loses its fresh scent and tastes of hay within minutes.",
+  "etapes": [
+   {
+    "titre": "Wash",
+    "detail": "Wash the mint and keep STALKS AND LEAVES: the stalks hold much of the aroma."
+   },
+   {
+    "titre": "The water",
+    "detail": "Bring 100 ml of water per person to the boil, then REMOVE from the heat immediately."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Drop the mint into the hot water, cover, and infuse for 30 minutes off the heat."
+   },
+   {
+    "titre": "Press",
+    "detail": "Strain, PRESSING the leaves hard against the sieve: that is where the most concentrated liquid hides."
+   },
+   {
+    "titre": "The sugar",
+    "detail": "Return the infusion to the heat with the sugar and stir until fully dissolved, 5 minutes at a simmer."
+   },
+   {
+    "titre": "Stabilise",
+    "detail": "Lemon juice and a pinch of salt off the heat: lemon fixes the colour and prevents crystallisation."
+   },
+   {
+    "titre": "Bottle",
+    "detail": "Scalded bottle, filled hot. Keeps 3 months chilled. One part syrup to eight of water."
+   }
+  ]
+ },
+ "tapenadeverte": {
+  "nom": "Green Tapenade",
+  "description": "The pale sister of black tapenade: green olives, capers, anchovies and almonds, brighter and fruitier. \"Tapena\" means caper in Provençal — it is the caper, not the olive, that gives the dish its name.",
+  "etapes": [
+   {
+    "titre": "Stone them",
+    "detail": "Use green olives IN BRINE, never industrially pitted ones: those are bland and soft."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse olives and capers in cold water and drain: they are already very salty, no salt will be added later."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the almonds for 5 minutes: they give the tapenade its body and bind."
+   },
+   {
+    "titre": "Chop",
+    "detail": "By KNIFE for a rustic texture, or in a blender with short pulses. Never a smooth purée."
+   },
+   {
+    "titre": "The anchovies",
+    "detail": "Mash the anchovy fillets with a fork and stir them in: they should not be identifiable, only felt."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Fruity olive oil in a stream, stirring, to a supple paste that holds on bread."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Lemon zest, thyme, pepper. Rest 2 hours before serving on grilled toast."
+   }
+  ]
+ },
+ "beurremaison": {
+  "nom": "Homemade Butter",
+  "description": "A single operation: whip cream until it splits into butter and buttermilk. Twenty minutes in a mixer gives you butter of incomparable flavour — plus the washing, which determines how long it keeps.",
+  "etapes": [
+   {
+    "titre": "Temper",
+    "detail": "Take the cream out 1 hour ahead: between 12 and 15°C it splits twice as fast as straight from the fridge."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Mixer or beaters at medium speed. It passes through the whipped-cream stage — KEEP GOING, that's normal."
+   },
+   {
+    "titre": "The split",
+    "detail": "At around 15 minutes the mass suddenly yellows and a white liquid separates: it's done."
+   },
+   {
+    "titre": "The buttermilk",
+    "detail": "Strain and KEEP the buttermilk: it makes the best pancakes and Irish soda bread."
+   },
+   {
+    "titre": "Wash",
+    "detail": "Knead the butter in ICED water and change the water until it stays perfectly clear."
+   },
+   {
+    "titre": "Drive out the water",
+    "detail": "This washing is vital: the smallest trace of buttermilk would turn the butter rancid within three days."
+   },
+   {
+    "titre": "Salt and shape",
+    "detail": "Fine salt worked in with a spatula, then roll into a block in greaseproof paper. 10 days chilled."
+   }
+  ]
+ },
+ "ricottamaison": {
+  "nom": "Homemade Ricotta",
+  "description": "Milk, an acid, a sieve: homemade ricotta takes 40 minutes and beats every industrial one. The real secret is temperature — 85°C, never boiling, or the curds turn rubbery.",
+  "etapes": [
+   {
+    "titre": "The milk",
+    "detail": "Use WHOLE milk, never skimmed UHT: without fat there will be almost no curd."
+   },
+   {
+    "titre": "Heat gently",
+    "detail": "Milk, cream and salt over medium heat to 85°C — small bubbles at the edge, but NEVER a boil."
+   },
+   {
+    "titre": "The acid",
+    "detail": "Off the heat, pour in the lemon juice and stir ONCE only, very slowly, in a figure of eight."
+   },
+   {
+    "titre": "Hands off",
+    "detail": "Leave to stand 10 minutes without stirring: the curd forms and rises in white clumps."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Ladle gently with a slotted spoon into a sieve lined with fine cloth, set over a bowl."
+   },
+   {
+    "titre": "Time decides",
+    "detail": "20 minutes for a creamy spreadable ricotta, 1 hour for a firm one to cook with."
+   },
+   {
+    "titre": "Serve",
+    "detail": "NEVER squeeze the cloth: you would get a compact paste instead of silky curds. Keeps 3 days."
+   }
+  ]
+ },
+ "terrinepoisson": {
+  "nom": "Fish Terrine",
+  "description": "The cold starter for big tables: a white fish mousseline shot through with a band of pink salmon, cooked in a bain-marie. It all hinges on temperature — mixture and equipment ICE-COLD, or the cream splits and the terrine weeps.",
+  "etapes": [
+   {
+    "titre": "Everything cold",
+    "detail": "Put the blender bowl, blade, fish and cream in the FREEZER for 30 minutes. This is the absolute key."
+   },
+   {
+    "titre": "The mousseline",
+    "detail": "Blend the cold cod with the eggs and salt to a smooth paste, without letting the mixture warm."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Add the VERY COLD cream in a stream with the motor running. Stop as soon as it is incorporated."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Split in two: one half plain with dill, the other blended with blanched, squeezed spinach."
+   },
+   {
+    "titre": "Build",
+    "detail": "Buttered and lined tin: green layer, a band of salmon cut into strips down the middle, white layer."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "1 hour at 150°C in a HOT water bath: gentle heat stops the terrine puffing then collapsing."
+   },
+   {
+    "titre": "Press",
+    "detail": "Cool, then 12 hours chilled under a light weight. Turn out and serve cold with sauce gribiche."
+   }
+  ]
+ },
+ "harengspommes": {
+  "nom": "Herring with Warm Potatoes",
+  "description": "The timeless bistro hors d'œuvre: smoked herring fillets marinated in oil with carrot and onion, served over warm potatoes. The potatoes must be WARM to drink up the marinade — cold, they stay bland.",
+  "etapes": [
+   {
+    "titre": "Desalt",
+    "detail": "If your herrings are very salty, soak them for 2 hours in milk: it neutralises the salt without drying the flesh."
+   },
+   {
+    "titre": "The slices",
+    "detail": "Cut carrot and onion into VERY thin rounds on a mandoline: they should candy, not crunch."
+   },
+   {
+    "titre": "Build the jar",
+    "detail": "Layer herring fillets, vegetable rounds, bay, thyme and peppercorns in a jar."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Cover with neutral oil (groundnut or sunflower) — olive oil sets solid when chilled and masks the fish."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "48 hours chilled minimum. The herrings then keep 3 weeks and improve continuously."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Boil ratte or charlotte potatoes in their skins, peel them HOT and cut into thick rounds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon two tablespoons of the marinade over the warm potatoes, lay the herrings and vegetables on top, parsley."
+   }
+  ]
+ },
+ "limoncello": {
+  "nom": "Limoncello",
+  "description": "The liqueur of the Amalfi coast: lemon ZEST only, steeped in alcohol, never juice. The white beneath the skin — the pith — brings a stubborn bitterness: it is the recipe's only real difficulty.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "Use UNWAXED, untreated lemons without exception: only the peel is used here, and that is where pesticides concentrate."
+   },
+   {
+    "titre": "Wash",
+    "detail": "Scrub them in hot water and dry: the slightest food wax would ruin the liqueur's clarity."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Take the peel off with a peeler avoiding ALL the white. If the zest is translucent on the inside, it's perfect."
+   },
+   {
+    "titre": "Steep",
+    "detail": "Zest and strong alcohol in a sealed jar, away from light, for 3 WEEKS. Shake every 2 days."
+   },
+   {
+    "titre": "The signal",
+    "detail": "The zest turns white and brittle, the alcohol takes on a bright yellow: the steeping is done."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Make a syrup with the sugar and an equal volume of water, and let it COOL completely before mixing."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Strain, bottle and wait another week. Serve ICE-COLD, straight from the freezer."
+   }
+  ]
+ },
+ "vinorange": {
+  "nom": "Orange Wine",
+  "description": "The homemade aperitif of Provençal farmhouses: rosé wine, bitter oranges, sugar and a splash of eau-de-vie, forgotten for forty days. A grandmother's recipe needing no technique — only patience and a dark corner.",
+  "etapes": [
+   {
+    "titre": "The oranges",
+    "detail": "Use BITTER oranges (Seville) if you can: sweet oranges give a flat, sugary wine."
+   },
+   {
+    "titre": "Cut up",
+    "detail": "Cut the oranges and lemon into quarters WITH their peel, unpeeled: the bitterness of the skin is essential."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fruit, rosé or light red wine, sugar, split vanilla and cinnamon in a large jar."
+   },
+   {
+    "titre": "The alcohol",
+    "detail": "Add the eau-de-vie or rum: it stabilises the mix and prevents any stray fermentation."
+   },
+   {
+    "titre": "Steep",
+    "detail": "40 DAYS away from light, at room temperature. Stir the jar once a week."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a sieve then a fine cloth, without pressing the fruit — it would cloud the wine."
+   },
+   {
+    "titre": "Age",
+    "detail": "Bottle and rest 2 months chilled before serving. Drink it very cold, as an aperitif."
+   }
+  ]
+ },
+ "hypocras": {
+  "nom": "Hypocras",
+  "description": "The spiced wine of the Middle Ages, served at the end of banquets and attributed to Hippocrates — hence the name. Cinnamon, ginger and cardamom infused COLD in honey-sweetened wine: unlike mulled wine, it is never cooked.",
+  "etapes": [
+   {
+    "titre": "The wine",
+    "detail": "Choose a tannic but simple red: the spices would mask the subtleties of a fine bottle."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Roughly crush cinnamon, cardamom and cloves in a mortar — ground, they would leave the wine cloudy and dusty."
+   },
+   {
+    "titre": "The honey",
+    "detail": "Warm one glass of wine (never above 40°C) to dissolve the honey, then pour it back into the rest."
+   },
+   {
+    "titre": "COLD",
+    "detail": "This is the whole difference from mulled wine: hypocras infuses cold, which keeps the volatile aromas intact."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "48 hours chilled, jar sealed, stirring morning and evening."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a coffee filter or fine cloth — hypocras must be perfectly clear, that is its signature."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Orange zest in the bottle, and serve cool as an aperitif or at the end of the meal, as in the Middle Ages."
+   }
+  ]
+ },
+ "kefirfruits": {
+  "nom": "Water Kefir",
+  "description": "A fizzy, living drink fermented by kefir grains passed from hand to hand for generations. Two absolute rules: never let metal touch the grains, and never seal the jar during the first fermentation.",
+  "etapes": [
+   {
+    "titre": "The jar",
+    "detail": "Large GLASS jar, wooden or plastic spoon. Metal damages kefir grains — that is rule number one."
+   },
+   {
+    "titre": "The sugar",
+    "detail": "Dissolve the sugar in 250 ml of UNCHLORINATED water per person: chlorine from the tap kills the ferments."
+   },
+   {
+    "titre": "The fruit",
+    "detail": "Add the kefir grains, a slice of lemon and a dried fig — the fig acts as the indicator."
+   },
+   {
+    "titre": "First fermentation",
+    "detail": "24 to 48 h at room temperature, jar covered with a cloth, NEVER sealed: the gas must escape."
+   },
+   {
+    "titre": "The signal",
+    "detail": "The drink is ready when the FIG RISES to the surface. It is the only reliable indicator."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a plastic sieve, save the grains (they will be reused) and bottle the liquid."
+   },
+   {
+    "titre": "Second fermentation",
+    "detail": "24 h in a SEALED bottle to create the bubbles, then chill. Open over the sink, it foams."
+   }
+  ]
+ },
+ "kombucha": {
+  "nom": "Kombucha",
+  "description": "Tea fermented by a SCOBY, the gelatinous disc that floats on the surface and alarms everyone the first time. The sugar feeds the culture, not you: after fermenting, almost none is left in the finished drink.",
+  "etapes": [
+   {
+    "titre": "The tea",
+    "detail": "Brew black or green tea for 10 minutes in 300 ml of water per person. No flavoured tea, no herbal infusion: the essential oils kill the SCOBY."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Dissolve the sugar in the HOT tea, then let it cool to room temperature — essential."
+   },
+   {
+    "titre": "The SCOBY",
+    "detail": "Add the SCOBY and a glass of already-fermented kombucha: that starting acidity prevents mould."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "7 to 10 days at 22-25°C, jar covered with a cloth held by an elastic band — never a lid."
+   },
+   {
+    "titre": "Taste",
+    "detail": "From day 7, taste daily through a straw: stop when the sugar-acid balance suits you."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Bottle with grated ginger and lemon, sealed tightly: this is where the bubbles are born."
+   },
+   {
+    "titre": "Second fermentation",
+    "detail": "2 to 3 days at room temperature, then CHILL to stop the fermentation dead."
+   }
+  ]
+ },
+ "aguafrescapasteque": {
+  "nom": "Watermelon Agua Fresca",
+  "description": "The drink of Mexican markets: blended watermelon barely let down with water, a squeeze of lime, a few mint leaves. Unstrained it is cloudy and rustic, strained it becomes clear and elegant — both are good.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "A properly ripe watermelon needs almost no sugar — tap it: it should sound HOLLOW."
+   },
+   {
+    "titre": "Cut up",
+    "detail": "Cube the flesh, removing the black seeds: blended, they release an unpleasant bitterness."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Put the cubes in the freezer for 20 minutes: the drink will be ice-cold without being diluted by melting ice."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the watermelon alone first, with no water: you will see how much juice it actually holds."
+   },
+   {
+    "titre": "Let down",
+    "detail": "Add very cold water little by little — an agua fresca must stay FRUITY, not become flavoured water."
+   },
+   {
+    "titre": "Balance",
+    "detail": "Lime, sugar if needed, and a PINCH OF SALT: that is what makes the fruit flavour pop."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Strain or not to taste, ice, bruised mint leaves. Drink within 3 hours."
+   }
+  ]
+ },
+ "broyepoitou": {
+  "nom": "Broyé du Poitou",
+  "description": "A huge flat shortbread that is never cut: tradition says you break it with a punch to the centre, at the table. A lot of butter, very little egg — that imbalance gives its crumbly texture and nutty taste.",
+  "etapes": [
+   {
+    "titre": "Rub in",
+    "detail": "Work the soft butter with the sugar using your fingertips, without trying to aerate it."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the egg, rum, vanilla and salt, and mix just enough."
+   },
+   {
+    "titre": "Bring together",
+    "detail": "Flour all at once, then gather INTO A BALL without kneading: a worked broyé turns hard instead of crumbly."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour chilled: the butter must cool so the dough rolls without sticking."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll into a disc 1 cm thick — the thickness is what sets a broyé apart from ordinary shortbread."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Egg glaze, then draw a criss-cross pattern with a fork over the whole surface."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 170°C until golden brown. Cool completely — and break it with your fist to serve."
+   }
+  ]
+ },
+ "visitandines": {
+  "nom": "Visitandines",
+  "description": "The ancestor of the financier, invented by the Visitation nuns to use up egg whites — they ate no meat and used the yolks elsewhere. Same batter, but moulded in oval boats rather than ingots.",
+  "etapes": [
+   {
+    "titre": "Brown butter",
+    "detail": "Heat the butter until it foams, browns and smells nutty. Strain out the black deposits."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Beat the whites WITH A FORK, just frothy — never whipped to peaks, the texture would be dry."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Combine ground almonds, icing sugar, flour and salt, sifted together to avoid any lumps."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Whites onto the dry mix, then the WARM brown butter in a stream, folding with a spatula."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour chilled minimum: rested batter rises better and develops the brown butter flavour."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill buttered boat moulds only TWO THIRDS full — they rise a lot."
+   },
+   {
+    "titre": "Bake",
+    "detail": "13 minutes at 200°C: well-browned edges, soft centre. Turn out warm onto a rack."
+   }
+  ]
+ },
+ "mirlitonrouen": {
+  "nom": "Rouen Mirlitons",
+  "description": "Small Norman tartlets in puff pastry, filled with a highly perfumed almond mixture and crowned with three whole almonds. The icing sugar forms a thin crackly crust in the oven that contrasts with the soft centre.",
+  "etapes": [
+   {
+    "titre": "Line",
+    "detail": "Cut discs of puff pastry and line tartlet tins, pushing the pastry well up the sides."
+   },
+   {
+    "titre": "Prick",
+    "detail": "Prick the bases with a fork and chill 20 minutes: the pastry will shrink less."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Whisk eggs and sugar for 3 minutes, then add ground almonds, cream, melted butter and orange blossom water."
+   },
+   {
+    "titre": "Rest",
+    "detail": "15 minutes of resting so the ground almonds hydrate: the filling will be smoother and softer."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the cases three-quarters full — the mixture rises slightly in the oven."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Three whole almonds set in a triangle on each tartlet: the mirliton's signature."
+   },
+   {
+    "titre": "The icing sugar",
+    "detail": "Dust GENEROUSLY with icing sugar before baking: 25 minutes at 180°C, the crust forms in the oven."
+   }
+  ]
+ },
+ "sacristains": {
+  "nom": "Sacristains",
+  "description": "Twists of puff pastry rolled in sugar and almonds, named after the twisted cords of a cassock. Two ingredients, five minutes of shaping: the best possible use for a puff pastry offcut.",
+  "etapes": [
+   {
+    "titre": "Roll out",
+    "detail": "Roll the puff pastry into a 3 mm rectangle on a SUGARED surface, never floured."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush the whole surface with beaten egg: this is what makes the sugar and almonds stick."
+   },
+   {
+    "titre": "Top",
+    "detail": "Sugar, flaked almonds, cinnamon and a pinch of salt, spread evenly, then press down with a rolling pin."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut 2 cm wide strips along the full length, with a sharp knife."
+   },
+   {
+    "titre": "Twist",
+    "detail": "Take each strip by both ends and turn them in OPPOSITE directions, 3 or 4 turns."
+   },
+   {
+    "titre": "Anchor",
+    "detail": "Press both ends firmly onto the tray: without this, the twists unwind in the oven."
+   },
+   {
+    "titre": "Bake",
+    "detail": "18 minutes at 200°C until golden and caramelised. Lift off warm, they harden as they cool."
+   }
+  ]
  }
 };

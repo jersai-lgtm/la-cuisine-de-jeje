@@ -7,6 +7,9 @@
 // =============================================================================
 
 window.I18N_ING = {
+  "🐦 Pintade": "🐦 Guinea fowl", "🐣 Caille": "🐣 Quail", "🦌 Chevreuil": "🦌 Venison",
+  "🐗 Sanglier": "🐗 Wild boar", "🔴 Airelles": "🔴 Lingonberries", "🟣 Baies de genièvre": "🟣 Juniper berries",
+  "🐟 Hareng fumé": "🐟 Smoked herring", "🌰 Châtaignes": "🌰 Chestnuts", "🟡 Graines de moutarde": "🟡 Mustard seeds",
   "🟤 Clou de girofle": "🟤 Clove", "🦐 Crevettes": "🦐 Shrimp", "🥣 Sauce tartare": "🥣 Tartar sauce",
   "🥚 Blanc d'œuf": "🥚 Egg white", "🌈 Macarons": "🌈 Macarons", "🥛 Yaourt grec": "🥛 Greek yogurt",
   "🍞 Chapelure panko": "🍞 Panko breadcrumbs", "🍄 Champignons": "🍄 Mushrooms", "🍄 Morilles séchées": "🍄 Dried morels", "🍪 Biscuits spéculoos": "🍪 Speculoos biscuits", "🍅 Tomates séchées": "🍅 Sun-dried tomatoes", "🐟 Œufs de cabillaud fumés": "🐟 Smoked cod roe", "🐟 Truite": "🐟 Trout", "🐟 Bar (loup de mer)": "🐟 Sea bass", "🫘 Fèves sèches": "🫘 Dried split fava beans", "🧀 Brocciu": "🧀 Brocciu cheese", "🥬 Endives": "🥬 Endives", "🧀 Roquefort": "🧀 Roquefort", "🎃 Potimarron": "🎃 Red kuri squash",
