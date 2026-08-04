@@ -92824,5 +92824,1025 @@ window.RECETTES_EN = {
     "detail": "Grated cocoa over the cream. In Vienna you don't stir: you drink the hot chocolate THROUGH the cold cream."
    }
   ]
+ },
+ "saucesoubise": {
+  "nom": "Soubise Sauce",
+  "description": "A béchamel in which melted onion replaces half the body: soft, almost sweet, ivory white. Attributed to the Prince de Soubise in the 18th century, it goes with lamb, hard-boiled eggs and poached vegetables.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Slice the onions VERY thinly: the finer the slices, the smoother the final sauce."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Drop them into boiling water for 3 minutes and drain: this blanching removes the harshness and bite."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Melt them in butter, covered, for 25 minutes over very low heat, WITHOUT COLOURING — browned onion would give a beige sauce."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Push the onions aside, dust with the flour and stir for 2 minutes."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rice and the hot milk: the rice cooks in the sauce and gives a very gentle natural binding."
+   },
+   {
+    "titre": "Cook",
+    "detail": "20 minutes at a bare simmer, stirring: rice and onions must be completely soft."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend until perfectly velvety, pass through a fine sieve, cream, nutmeg, salt. The sauce should coat without being gluey."
+   }
+  ]
+ },
+ "saucechasseur": {
+  "nom": "Chasseur Sauce",
+  "description": "The classic brown sauce with mushrooms and tarragon. Its name comes from hunting: it used to cloak the day's game, but it transforms a plain chicken breast or a burger just as well.",
+  "etapes": [
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the sliced mushrooms in half the butter over HIGH heat: they must brown, not stew in their own water."
+   },
+   {
+    "titre": "The shallots",
+    "detail": "Add the chopped shallots and let them soften for 3 minutes without burning."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, and reduce BY THREE QUARTERS: this is where all the flavour of the sauce concentrates."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the peeled, deseeded chopped tomato and let it break down for 5 minutes."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Strong stock, then 15 minutes of gentle reduction until it coats a spoon."
+   },
+   {
+    "titre": "The tarragon",
+    "detail": "Chopped tarragon off the heat — cooked, it turns bitter and loses its aniseed scent."
+   },
+   {
+    "titre": "Mount",
+    "detail": "Cold butter in pieces, swirling the pan, parsley, salt, pepper. Serve immediately."
+   }
+  ]
+ },
+ "saucenormande": {
+  "nom": "Normande Sauce",
+  "description": "Cider, cream and apple: the three Norman pillars in a pale sauce bound with egg yolk. It goes with sole, chicken or pork — anywhere the fruity sharpness of cider wakes up a mild flesh.",
+  "etapes": [
+   {
+    "titre": "Sweat",
+    "detail": "Soften the chopped shallot in half the butter, without colouring."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "Add the sliced mushrooms and let them release their water, then let it evaporate completely."
+   },
+   {
+    "titre": "The cider",
+    "detail": "Pour in dry cider and reduce by half: the alcohol goes, the apple acidity stays."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Dust with flour off the heat, stir well, then cook 3 minutes more, whisking."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Double cream and 10 minutes of gentle reduction until it coats a spoon."
+   },
+   {
+    "titre": "The yolk",
+    "detail": "Slacken the yolk with a little hot sauce, pour back, and DO NOT BOIL AGAIN: the sauce would split."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Apple dice just fried in butter as garnish, salt, white pepper. Serve at once."
+   }
+  ]
+ },
+ "saucepoulette": {
+  "nom": "Poulette Sauce",
+  "description": "A white velouté bound with egg yolk and lifted with lemon and parsley. The traditional sauce for mussels, sheep's trotters and mushrooms — clean, sharp, never heavy despite the cream.",
+  "etapes": [
+   {
+    "titre": "The white roux",
+    "detail": "Melted butter, flour, 2 minutes WITHOUT colouring: the velouté must stay cream white."
+   },
+   {
+    "titre": "The stock",
+    "detail": "Pour in the hot stock in three additions, whisking hard each time."
+   },
+   {
+    "titre": "Cook",
+    "detail": "10 minutes over low heat: the minimum for the raw flour taste to disappear completely."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "Add the cream and reduce for 3 minutes until it coats a spoon."
+   },
+   {
+    "titre": "The binding",
+    "detail": "Whisk the yolk with two spoons of hot sauce BEFORE pouring it back: added neat, it would set into threads."
+   },
+   {
+    "titre": "Warm gently",
+    "detail": "Return to VERY low heat for 1 minute, never boiling, stirring with a spatula."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Lemon juice and parsley off the heat, salt, white pepper. Coat mussels, mushrooms or poached poultry."
+   }
+  ]
+ },
+ "saucechoron": {
+  "nom": "Choron Sauce",
+  "description": "A béarnaise with tomato purée added — invented by chef Choron at the Voisin restaurant in Paris. Its salmon-pink colour and tarragon scent make it THE sauce for tournedos and grilled beef.",
+  "etapes": [
+   {
+    "titre": "The reduction",
+    "detail": "Reduce vinegar, white wine, shallot, cracked pepper and the tarragon STALKS down to 2 spoonfuls."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the reduction through a sieve, pressing well, and let it cool a little."
+   },
+   {
+    "titre": "Clarify",
+    "detail": "Melt the butter over low heat and skim the white foam: the milk solids would split the sauce."
+   },
+   {
+    "titre": "The sabayon",
+    "detail": "Whisk the yolks with the reduction over a bare simmer until the whisk leaves a trail on the bottom."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "WARM clarified butter in a very thin stream, whisking without stopping. Too hot or too fast and the emulsion breaks."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Stir in the tomato purée off the heat: the sauce takes on its characteristic pink hue."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Chopped tarragon leaves, salt. Hold the sauce at 40°C maximum — hotter it curdles, cooler it sets."
+   }
+  ]
+ },
+ "saucemaltaise": {
+  "nom": "Maltaise Sauce",
+  "description": "A hollandaise with blood orange, named after the oranges of Malta. Its citrus sweetness makes it the obligatory partner of asparagus — and a revelation on poached white fish or soft-boiled eggs.",
+  "etapes": [
+   {
+    "titre": "The juice",
+    "detail": "Squeeze the blood oranges and REDUCE the juice by half: unreduced, it would slacken the sauce."
+   },
+   {
+    "titre": "Clarify",
+    "detail": "Butter melted gently, foam skimmed, milk solids left in the bottom of the pan."
+   },
+   {
+    "titre": "The bain-marie",
+    "detail": "Water at a bare simmer, never boiling: the bowl must not touch the water."
+   },
+   {
+    "titre": "The sabayon",
+    "detail": "Whisk the yolks with the vinegar and a spoon of water until tripled in volume and ribboning."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Warm clarified butter in a stream, whisking constantly. If the sauce thickens too much, a drop of warm water saves it."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Reduced orange juice and finely grated zest off the heat, then a touch of lemon for balance."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Salt, white pepper. Serve within 20 minutes, at 40°C — a maltaise is never reheated."
+   }
+  ]
+ },
+ "saucerobert": {
+  "nom": "Robert Sauce",
+  "description": "One of the oldest French sauces, mentioned by Rabelais as early as 1534: onions, white wine and mustard. Add gherkins and it becomes charcutière — that is the only difference between the two.",
+  "etapes": [
+   {
+    "titre": "Melt",
+    "detail": "Slice the onions finely and melt them in butter for 15 minutes over low heat, until translucent and lightly golden."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Sprinkle over the flour and stir 2 minutes: this gives body without cream."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, reduce by half to drive off the sharpness of the alcohol."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Stock, then 12 minutes at a bare simmer, stirring now and then."
+   },
+   {
+    "titre": "Balance",
+    "detail": "A pinch of sugar corrects the wine's residual acidity — a classic move, never sweet to taste."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "OFF THE HEAT only: boiled, mustard loses its bite and turns bitter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Salt, pepper. Spoon over a pork chop, a grilled sausage or leftover roast."
+   }
+  ]
+ },
+ "saucebercy": {
+  "nom": "Bercy Sauce",
+  "description": "Shallot, white wine and fish stock reduced then mounted with butter — named after the wine warehouses of Bercy in Paris. The sauce for poached fish: light, bright, and never masking the ingredient.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop the shallots into tiny even dice: they stay visible in the finished sauce."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Soften them in a knob of butter without colouring, 4 minutes."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "White wine, reduce ALMOST DRY: only a syrupy film should remain in the pan."
+   },
+   {
+    "titre": "The stock",
+    "detail": "Add the fish stock (or stock) and reduce by half again."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "A spoon of cream stabilises the emulsion to come and stops the sauce splitting."
+   },
+   {
+    "titre": "Mount",
+    "detail": "Off the heat, VERY COLD butter in pieces, swirling the pan. The sauce pales and turns silky."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Chopped parsley, lemon juice, salt, white pepper. Serve immediately on poached or grilled fish."
+   }
+  ]
+ },
+ "saucenantua": {
+  "nom": "Nantua Sauce",
+  "description": "The pink sauce of the Bresse, born in Nantua to cloak pike quenelles. Its colour and flavour come from a homemade crayfish butter — that is where all the work lies, and it cannot be substituted.",
+  "etapes": [
+   {
+    "titre": "Shell",
+    "detail": "Shell the prawns (or crayfish) KEEPING every shell: they give the colour and the flavour."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Fry the shells over high heat for 5 minutes until bright red and smelling nutty."
+   },
+   {
+    "titre": "Flame",
+    "detail": "Cognac, flame it, then the shallot and tomato purée, 2 minutes more."
+   },
+   {
+    "titre": "The crayfish butter",
+    "detail": "Blend shells and butter together, then push through a FINE sieve, pressing hard. This pink butter is the heart of the sauce."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Roux with the flour and a little of the pink butter, cold milk in three additions, 8 minutes cooking."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the rest of the crayfish butter and the cream off the heat: the sauce turns coral pink."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Prawn meat as garnish, a touch of chilli, salt. Coat quenelles or a fine fish."
+   }
+  ]
+ },
+ "sauceamericaine": {
+  "nom": "Américaine Sauce",
+  "description": "The great shellfish sauce: shells flamed in cognac, tomato, white wine and tarragon. Born in Paris around 1860, its name is disputed — \"armoricaine\" for the Bretons, \"américaine\" for everyone else.",
+  "etapes": [
+   {
+    "titre": "The shells",
+    "detail": "Crush the shells with a rolling pin: the more broken they are, the more flavour they release."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Very hot olive oil, shells for 5 minutes until bright red — that colouring IS the flavour of the sauce."
+   },
+   {
+    "titre": "Flame",
+    "detail": "Cognac off the heat, then flame it: the alcohol burns off and leaves its barrel aromas."
+   },
+   {
+    "titre": "The base",
+    "detail": "Shallot, finely diced carrot, garlic, 5 minutes of gentle sweating."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "White wine reduced by half, then chopped tomatoes, purée, tarragon and a glass of water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "30 minutes uncovered at a gentle bubble: the sauce reduces to a deep orange-red."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Blend then PRESS through a sieve with all your strength, mount with cold butter, chilli, salt. Serve on fish or pasta."
+   }
+  ]
+ },
+ "beurremaitredhotel": {
+  "nom": "Maître d'Hôtel Butter",
+  "description": "Butter, parsley, lemon: the simplest of compound butters, and the most useful. Rolled into a log and kept in the freezer, one slice on a grilled steak gives you an instant sauce.",
+  "etapes": [
+   {
+    "titre": "The butter",
+    "detail": "Take the butter out 1 hour ahead: it must be SOFT, yielding under a finger, never melted."
+   },
+   {
+    "titre": "The parsley",
+    "detail": "Chop flat-leaf parsley very finely and DRY it in a cloth — wet, it would make the butter bead."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Finely grated zest and a few drops of juice only: too much juice stops the butter setting."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Mash everything with a fork along with the shallot, salt and pepper until perfectly even and green."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Put the butter on cling film, roll into a 3 cm log and twist the ends like a sweet wrapper."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "2 hours in the fridge minimum — or 30 minutes in the freezer if you're in a hurry."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut 1 cm slices and lay them on the meat SCORCHING hot off the grill: they melt into sauce."
+   }
+  ]
+ },
+ "salsaverde": {
+  "nom": "Italian Salsa Verde",
+  "description": "The green sauce of Lombardy's bollito misto: parsley, capers, anchovies and breadcrumbs soaked in vinegar. Powerful and salty, it wakes up boiled meats, steamed potatoes and grilled fish.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Soak the breadcrumb in the vinegar for 5 minutes, then SQUEEZE it: it gives body without excess oil."
+   },
+   {
+    "titre": "The anchovies",
+    "detail": "Rinse the anchovy fillets in cold water to remove excess salt, then mash them with a fork."
+   },
+   {
+    "titre": "The parsley",
+    "detail": "Chop flat-leaf parsley by knife, without the thick stalks. A blender oxidises herbs and the sauce turns khaki."
+   },
+   {
+    "titre": "The capers",
+    "detail": "Capers and garlic very finely chopped, mixed into the parsley."
+   },
+   {
+    "titre": "The hard-boiled egg",
+    "detail": "A mashed hard-boiled yolk rounds off the acidity — optional in the North, compulsory in Lombardy."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the olive oil in a stream with a spoon: the sauce must stay GRAINY, never smooth."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour at room temperature before serving. Pepper, and taste before salting — anchovies and capers are already salty."
+   }
+  ]
+ },
+ "sauceperigueux": {
+  "nom": "Périgueux Sauce",
+  "description": "The sauce for great occasions: a brown stock reduced with port in which black Périgord truffle infuses. It is added OFF THE HEAT at the last moment — cooked truffle loses all its perfume within minutes.",
+  "etapes": [
+   {
+    "titre": "Sweat",
+    "detail": "Soften the chopped shallot in half the butter over low heat, 4 minutes without colouring."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Flour, 2 minutes of stirring to get a blond roux, not a brown one."
+   },
+   {
+    "titre": "The port",
+    "detail": "Pour in the port and reduce by half: its sugar caramelises and gives depth."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Veal stock or strong stock, then 20 minutes of gentle reduction to a glossy coating sauce."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Fine sieve, pressing the shallots: the sauce must be perfectly smooth before the truffle."
+   },
+   {
+    "titre": "The truffle",
+    "detail": "Grate or julienne the truffle finely and drop it into the hot sauce OFF THE HEAT."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Cover and infuse 10 minutes off the heat. Cold butter to gloss, pepper. Serve without ever boiling again."
+   }
+  ]
+ },
+ "tiellesetoise": {
+  "nom": "Tielle Sétoise",
+  "description": "The fishermen's pie of Sète, brought from Gaeta by Italian immigrants: octopus stewed in a spicy tomato sauce, enclosed in an olive-oil dough. It is eaten WARM, never piping hot, often on the quayside.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead flour, yeast, olive oil, salt and 22 ml of warm water per person for 10 minutes: the dough should be supple and slightly oily."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 hour covered in a warm place, until doubled in size."
+   },
+   {
+    "titre": "The octopus",
+    "detail": "Cut the octopus (or squid) into 2 cm pieces and fry them for 5 minutes in olive oil."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Garlic, onion, chopped tomatoes, purée, white wine, chilli and saffron. Salt lightly: octopus is already briny."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "45 minutes covered over low heat: the octopus must be fork-tender. The sauce must be THICK, or it would soak the pastry."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Roll two discs, fill the first with COLD filling, cover, and seal the edges by rolling them inwards."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Brush with red oil (oil + purée + chilli) and bake 30 minutes at 200°C. Serve warm."
+   }
+  ]
+ },
+ "saladelyonnaise": {
+  "nom": "Lyonnaise Salad",
+  "description": "The classic of Lyon's bouchons: crunchy frisée, grilled bacon, garlic croutons and a runny poached egg on top. The yolk mixes into the warm dressing and becomes the real sauce of the dish.",
+  "etapes": [
+   {
+    "titre": "The frisée",
+    "detail": "Keep only the pale yellow HEART of the frisée: the outer green leaves are bitter and tough."
+   },
+   {
+    "titre": "The croutons",
+    "detail": "Cut the bread into large cubes and fry until golden, then rub them with garlic while still hot."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Dry-fry the lardons until crisp and KEEP the rendered fat: it goes into the dressing."
+   },
+   {
+    "titre": "Vinegared water",
+    "detail": "Bring a pan of water to a bare simmer with a dash of vinegar — never salt, it would shred the white."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Crack the egg into a ramekin, create a whirlpool in the water and slide it into the centre. Exactly 3 minutes."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mustard, vinegar, shallot, pepper, then oil and WARM bacon fat in a stream."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Frisée dressed with the warm vinaigrette, lardons, croutons, poached egg on top. The yolk is pierced at the table."
+   }
+  ]
+ },
+ "pouletgastongerard": {
+  "nom": "Chicken Gaston Gérard",
+  "description": "Born of an accident in 1930: the wife of Dijon's mayor spilled paprika on her husband's chicken and rescued it with mustard, cream and comté. The dish became a Burgundian classic — the most delicious mistake in history.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Brown the chicken pieces in butter on all sides, 10 minutes: this is the flavour base of the dish."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Dust generously with paprika and toast it for 1 minute — it should smell, not burn."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, scrape up all the caramelised bits, then 25 minutes covered over low heat."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Lift out the chicken and arrange it in a gratin dish."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Reduce the cooking juices by half, add the cream and let it thicken for 5 minutes."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "Dijon mustard OFF THE HEAT, then half the grated comté, whisking until smooth."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Coat the chicken, remaining comté and breadcrumbs, 15 minutes at 200°C until golden and bubbling."
+   }
+  ]
+ },
+ "poteeauvergnate": {
+  "nom": "Auvergne Potée",
+  "description": "The one-pot meal of Auvergne farms: cabbage, root vegetables and pork in every form, simmered for hours in the same broth. The broth is served first as a soup, then the meats and vegetables — two courses in one pot.",
+  "etapes": [
+   {
+    "titre": "Desalt",
+    "detail": "Soak the ham and bacon in cold water for 2 hours if your cured pork is very salty."
+   },
+   {
+    "titre": "Blanch the cabbage",
+    "detail": "Drop the cabbage leaves into boiling water for 5 minutes and drain: this removes bitterness and makes it easier to digest."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Start in COLD WATER with the meats, the onion studded with cloves, thyme and bay. Skim carefully."
+   },
+   {
+    "titre": "Long cooking",
+    "detail": "1 h 30 at a bare simmer — never at a rolling boil, the meat would go stringy."
+   },
+   {
+    "titre": "Hard vegetables",
+    "detail": "Carrots, turnips and cabbage for the last 45 minutes."
+   },
+   {
+    "titre": "Soft ones",
+    "detail": "Potatoes and leeks, plus the sausage PRICKED with a fork, for the last 25 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Broth first, in a soup plate over toasted bread. Meats and vegetables next, with strong mustard."
+   }
+  ]
+ },
+ "boucheesalareine": {
+  "nom": "Bouchées à la Reine",
+  "description": "Created for Marie Leszczyńska, Queen of France and a great gourmande: a puff pastry vol-au-vent filled with a creamy chicken and mushroom blanquette. The starter of celebration meals, the one served at weddings.",
+  "etapes": [
+   {
+    "titre": "The cases",
+    "detail": "Cut two discs per bouchée: one solid, one hollowed into a ring. Glue the ring onto the disc with beaten egg."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Glaze the top WITHOUT letting egg run down the sides — egg on the edges stops the layers rising straight."
+   },
+   {
+    "titre": "Bake",
+    "detail": "25 minutes at 200°C, then gently scoop out the still-soft centre to form the cavity."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Poach the chicken breast for 12 minutes in simmering stock, then cut into 1.5 cm dice."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "Cook them 5 minutes in a little lemony stock: they stay white instead of darkening."
+   },
+   {
+    "titre": "The velouté",
+    "detail": "White roux, strained poaching stock, 10 minutes, then the cream and egg yolk off the heat."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Mix chicken and mushrooms into the sauce, fill the SCORCHING cases and set the lid on top. Serve at once."
+   }
+  ]
+ },
+ "fricasseepoulet": {
+  "nom": "Chicken Fricassée",
+  "description": "Halfway between a sauté and a stew: the chicken is sealed WITHOUT colouring then simmered in its own white sauce. This \"white\" cooking is what distinguishes a fricassée from a chasseur or a coq au vin.",
+  "etapes": [
+   {
+    "titre": "Seal",
+    "detail": "Cook the chicken in butter over MEDIUM heat without letting it colour: the flesh should whiten and firm up, nothing more."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Add the chopped onion and let it turn translucent, still without colouring."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Flour over the meat, stir 2 minutes: the sauce binds during cooking, with no separate roux."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "White wine then hot stock to cover, thyme, salt, white pepper."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "35 minutes covered at a bare simmer. The chicken should come off the bone without falling apart."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "Add them for the last 10 minutes only — any earlier and they release too much water."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix cream and yolk, slacken with a little hot sauce, pour back OFF THE HEAT. Parsley, and do not boil again."
+   }
+  ]
+ },
+ "friandsviande": {
+  "nom": "Meat Friands",
+  "description": "The puff pastry turnover of French bakeries, filled with parsleyed sausage meat. Eaten warm, by hand, on the way out of the boulangerie — and infinitely better homemade, where the filling is genuinely generous.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sweat the shallot in butter for 3 minutes and let it COOL before adding it to the raw meat."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix sausage meat, cold shallot, parsley, breadcrumbs, nutmeg, white wine, salt and plenty of pepper."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Fry a spoonful of the filling and taste it: the only way to adjust the salt before sealing it in."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut 10 × 14 cm rectangles from well-chilled puff pastry."
+   },
+   {
+    "titre": "Fill",
+    "detail": "A log of filling on one half, leaving a 2 cm margin all round — overfilled, the friand bursts open."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Moisten the edges, fold over and press with a fork. Cut ONE chimney in the centre for steam."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg glaze, 25 minutes at 200°C until deep brown. Let them cool 5 minutes: the filling is scalding."
+   }
+  ]
+ },
+ "languesdechat": {
+  "nom": "Cat's Tongues",
+  "description": "The thin flat biscuits that have accompanied ice cream and coffee since the 19th century. Four ingredients in equal weights, piped as very well-spaced fingers — because they spread enormously in the oven.",
+  "etapes": [
+   {
+    "titre": "Cream",
+    "detail": "Beat the SOFT butter and icing sugar for 4 minutes to a light white cream."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Add the egg whites AT ROOM TEMPERATURE, a little at a time: cold, they would split the butter."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Fold in the sifted flour and salt with a spatula, without working it: the batter should be smooth and supple."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Plain 6 mm nozzle, 6 cm fingers, leaving 5 CM between each — they double in width."
+   },
+   {
+    "titre": "Tap",
+    "detail": "Tap the tray flat on the worktop: the fingers flatten evenly and bake uniformly."
+   },
+   {
+    "titre": "Bake",
+    "detail": "8 minutes at 190°C: the centre stays PALE, only the rim should brown. That is the sign of a proper cat's tongue."
+   },
+   {
+    "titre": "Lift off",
+    "detail": "Lift them off IMMEDIATELY with a palette knife, while still supple, and cool flat on a rack."
+   }
+  ]
+ },
+ "cigarettesrusses": {
+  "nom": "Russian Cigarettes",
+  "description": "The same batter as cat's tongues, but spread into thin discs and ROLLED scorching hot around a spoon handle. It all happens in 15 seconds: too hot and it flops, too cold and it snaps. Only four are baked at a time.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Soft butter and icing sugar creamed, room-temperature egg whites, sifted flour: the batter should be smooth and flowing."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour chilled: the batter spreads better and the butter won't melt under your fingers."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread VERY thin 8 cm discs with an offset spatula (a cardboard template helps enormously)."
+   },
+   {
+    "titre": "Four at a time",
+    "detail": "NEVER bake more than four at once: beyond that, the last ones harden before you can roll them."
+   },
+   {
+    "titre": "Bake",
+    "detail": "5 minutes at 200°C until the rim is golden and the centre still pale."
+   },
+   {
+    "titre": "Roll fast",
+    "detail": "Take the tray out and roll each disc around a wooden spoon handle IMMEDIATELY, keeping it tight."
+   },
+   {
+    "titre": "Dip",
+    "detail": "If one hardens before rolling, put it back in the oven for 20 seconds. Dip the ends in melted chocolate."
+   }
+  ]
+ },
+ "croquantsamandes": {
+  "nom": "Almond Croquants",
+  "description": "France's hardest biscuit, a speciality of the South-West and Provence: nothing but egg white, sugar, flour and whole almonds. It is dunked in coffee or sweet wine — biting it straight is a challenge.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Toast the whole almonds for 10 minutes at 160°C: their toasted flavour is the essence of the recipe."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Beat the whites WITH A FORK, just frothy — never whipped to peaks, the croquant would turn meringue-like."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add sugar, honey and lemon zest and mix until the sugar has fully dissolved."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Flour and salt, then the warm almonds: the dough is very thick and sticky, that's normal."
+   },
+   {
+    "titre": "Shape",
+    "detail": "With wet hands, shape two flat 5 cm strips on the tray."
+   },
+   {
+    "titre": "First bake",
+    "detail": "20 minutes at 175°C until golden. Take out and cool for only 5 minutes."
+   },
+   {
+    "titre": "Slice and dry",
+    "detail": "Cut 1 cm slices and BAKE AGAIN flat for 15 minutes at 140°C: this drying gives the legendary hardness."
+   }
+  ]
+ },
+ "navettesmarseille": {
+  "nom": "Marseille Navettes",
+  "description": "The boat-shaped biscuits of the Vieux-Port, scented with orange blossom and sold on rue Sainte since 1781. They are blessed at Candlemas — and keep for weeks, so dry and dense is their dough.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix flour, sugar, salt, then the egg, olive oil and orange blossom water. Knead 5 minutes."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the orange zest: with the blossom water, it is the whole identity of the navette."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour chilled and wrapped — the dough is stiff, resting makes it workable."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll 8 cm logs, flatten slightly and point BOTH ends: that is the boat shape."
+   },
+   {
+    "titre": "The slit",
+    "detail": "Split each navette lengthways, 5 mm deep — it will open neatly in the oven."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with diluted egg yolk: navettes should be glossy and brown, never pale."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 180°C. They are hard when they come out and stay that way — that's the recipe, not a failure."
+   }
+  ]
+ },
+ "calissons": {
+  "nom": "Calissons d'Aix",
+  "description": "The diamond of Aix-en-Provence: almond and candied melon paste on a sheet of wafer paper, capped with white royal icing. It needs two 12-hour drying stages — long, but nothing else about it is hard.",
+  "etapes": [
+   {
+    "titre": "The melon",
+    "detail": "Rinse the candied melon in warm water and BLOT it well: too much syrup makes the paste impossible to work."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend melon, candied orange peel and ground almonds into a smooth, glossy paste."
+   },
+   {
+    "titre": "Cook the paste",
+    "detail": "Heat the paste with the sugar and orange blossom water in a pan for 5 minutes, stirring: it should come away from the sides."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread 1 cm thick onto a sheet of wafer paper and leave to dry for 12 HOURS in the open air."
+   },
+   {
+    "titre": "The icing",
+    "detail": "Whisk egg white, icing sugar and a few drops of lemon into a thick, opaque royal icing."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Spread the icing in a THIN, even layer with a palette knife, then let it set for 1 hour."
+   },
+   {
+    "titre": "Cut out",
+    "detail": "Cut the diamonds with a cutter or an oiled knife, and dry for a further 12 hours before storing."
+   }
+  ]
+ },
+ "petsdenonne": {
+  "nom": "Pets de Nonne",
+  "description": "Choux pastry fritters that puff and turn themselves over in the oil. Their irreverent name comes from an abbey legend — a clumsy nun is said to have dropped a spoonful of batter into the fryer.",
+  "etapes": [
+   {
+    "titre": "The panade",
+    "detail": "Boil water, milk, butter and salt, tip in the flour ALL AT ONCE and dry it out for 2 minutes with a spatula."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Off the heat, beat in the eggs one at a time: the paste must form a soft beak that droops slowly."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Orange blossom water in the paste — the traditional scent, discreet but recognisable."
+   },
+   {
+    "titre": "The oil",
+    "detail": "Heat the oil to 160°C ONLY: any hotter and the outside browns before the inside puffs."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Scoop walnut-sized pieces with a teaspoon and slide them into the oil, 5 or 6 at a time maximum."
+   },
+   {
+    "titre": "Let them be",
+    "detail": "Don't touch them: they puff, turn themselves OVER and double in size. 6 to 7 minutes in all."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Kitchen paper, then a generous dusting of icing sugar. Eat warm, within 15 minutes."
+   }
+  ]
+ },
+ "florentins": {
+  "nom": "Florentines",
+  "description": "A lace of flaked almonds set in a honey and cream caramel, with a dark chocolate base underneath. No flour, or almost none: the caramel alone holds it all together.",
+  "etapes": [
+   {
+    "titre": "The caramel",
+    "detail": "Bring sugar, honey, cream and butter to 118°C on a thermometer: without one, count 4 minutes of hard bubbling."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Off the heat, add flaked almonds, candied orange peel and the pinch of flour, mix with a spatula."
+   },
+   {
+    "titre": "Portion",
+    "detail": "Drop well-spaced teaspoonfuls: they spread to double the size."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Flatten each mound with a wet fork into a thin, even disc."
+   },
+   {
+    "titre": "Bake",
+    "detail": "10 minutes at 180°C until golden caramel ACROSS the whole surface, not just the edges."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let them cool COMPLETELY on the tray: warm, they are floppy and tear."
+   },
+   {
+    "titre": "Chocolate",
+    "detail": "Spread melted chocolate underneath each florentine, comb it with a fork and let it set upside down."
+   }
+  ]
+ },
+ "macaronsamiens": {
+  "nom": "Amiens Macarons",
+  "description": "Nothing like the Parisian shell macaron: this is a thick, soft, dense disc made from almond paste and apricot jam. A 16th-century recipe, far simpler and far more rustic.",
+  "etapes": [
+   {
+    "titre": "The paste",
+    "detail": "Mix ground almonds, sugar, honey and egg whites into a thick, even paste."
+   },
+   {
+    "titre": "The jam",
+    "detail": "Fold in the apricot jam: it brings the characteristic moisture and softness."
+   },
+   {
+    "titre": "Rest",
+    "detail": "24 HOURS chilled, wrapped. This rest is non-negotiable: it lets the almond hydrate fully."
+   },
+   {
+    "titre": "The log",
+    "detail": "Roll the paste into a 4 cm log on a sugared (never floured) surface."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut 1.5 cm thick discs — the thickness is what sets it apart from a Parisian macaron."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush the tops with egg yolk and set a whole almond in the centre of each."
+   },
+   {
+    "titre": "Bake",
+    "detail": "12 minutes at 200°C ONLY: they must stay very soft in the middle, barely coloured."
+   }
+  ]
+ },
+ "paindegenes": {
+  "nom": "Pain de Gênes",
+  "description": "An almond cake created in 1800 in tribute to the siege of Genoa, where soldiers survived on stores of almonds. Very little flour, a great deal of almond: it is dense, moist and keeps for days.",
+  "etapes": [
+   {
+    "titre": "The almond paste",
+    "detail": "Work the ground almonds and sugar with ONE egg into a smooth paste: it is the base of the whole cake."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Add the remaining eggs one at a time, beating for 8 MINUTES: the mass must triple and turn foamy."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Warm melted butter and rum, folded in with a spatula, lifting gently."
+   },
+   {
+    "titre": "The dry mix",
+    "detail": "Flour, cornflour and baking powder sifted together, folded in twice without knocking out the air."
+   },
+   {
+    "titre": "The tin",
+    "detail": "Butter the tin and line it with flaked almonds: they stick to the cake and form its crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 170°C. The top should dome and a skewer come out barely moist."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Turn out warm and wait 24 HOURS before cutting: pain de Gênes improves and turns meltingly soft the next day."
+   }
+  ]
+ },
+ "gateaunantais": {
+  "nom": "Nantes Cake",
+  "description": "The almond and rum cake of Nantes, born of the port's colonial trade in the 18th century. Its white rum glaze, applied hot, sets into a thin brittle crust — its absolute signature.",
+  "etapes": [
+   {
+    "titre": "Cream",
+    "detail": "Beat soft butter and sugar for 5 minutes until fully pale — this gives the close but melting texture."
+   },
+   {
+    "titre": "The almond",
+    "detail": "Add the ground almonds and vanilla, mix well before moving on to the eggs."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "One at a time, beating each in: if the mixture splits, a spoon of flour rescues it."
+   },
+   {
+    "titre": "The rum",
+    "detail": "Two-thirds of the rum in the batter, the remaining third SAVED for the glaze — don't use it all."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Flour and salt with a spatula, without working it, then pour into a buttered and floured tin."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 170°C. The cake should be golden and a skewer come out dry."
+   },
+   {
+    "titre": "Glaze hot",
+    "detail": "Mix icing sugar and the remaining rum, pour over the cake while STILL HOT and spread: the glaze dries into a shiny crust."
+   }
+  ]
  }
 };

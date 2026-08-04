@@ -369,7 +369,7 @@ Object.assign(recettes, {
     ]
   },
   saladeavocatcrevettes: {
-    liees: ["mayonnaise", "ketchup", "saucecocktail"],
+    liees: ["mayonnaise","ketchup","saucecocktail"],
     nom: "Salade avocat crevettes",
     cat: "salades", pays: "france",
     base: 4,
@@ -1215,7 +1215,7 @@ Object.assign(recettes, {
     ]
   },
   fattouche: {
-    liees: ["painpita", "vinaigrette"],
+    liees: ["painpita","vinaigrette"],
     nom: "Salade Fattouche",
     cat: "salades",
     pays: "liban",
@@ -1404,7 +1404,7 @@ Object.assign(recettes, {
 
   fattoush: {
     saisons: ["printemps", "ete"],
-    liees: ["painpita", "vinaigrette"],
+    liees: ["painpita","vinaigrette"],
     nom: "Fattoush",
     dateAjout: "2026-06-12T14:08:00",
     cat: "salades", pays: "liban",
@@ -3487,5 +3487,43 @@ Object.assign(recettes, {
       { icone: "🫒", titre: "Assaisonner", detail: "Huile d'olive, jus d'orange récupéré, un trait de citron, sel et beaucoup de poivre.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Plumets de fenouil et persil par-dessus. Servez IMMÉDIATEMENT — le fenouil ramollit en attendant.", badge: null }
     ]
+  },
+  saladelyonnaise: {
+    dateAjout: "2026-08-01T15:04:00",
+    nom: "Salade Lyonnaise",
+    cat: "salades", pays: "france",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Le classique des bouchons lyonnais : frisée craquante, lardons grillés, croûtons à l'ail et un œuf poché coulant par-dessus. Le jaune se mélange à la vinaigrette chaude et devient la vraie sauce du plat.",
+    tableauSaladelyonnaise: [
+      { nb: 1, salade: "70 g", lardons: "55 g", oeufs: "1", painrassis: "35 g", vinaigreVin: "12 ml", huile: "12 ml", moutarde: "5 g", ail: "", echalote: "", poivre: "0.4 g" },
+      { nb: 2, salade: "140 g", lardons: "110 g", oeufs: "2", painrassis: "70 g", vinaigreVin: "24 ml", huile: "24 ml", moutarde: "10 g", ail: "", echalote: "", poivre: "0.8 g" },
+      { nb: 3, salade: "210 g", lardons: "165 g", oeufs: "3", painrassis: "105 g", vinaigreVin: "36 ml", huile: "36 ml", moutarde: "15 g", ail: "", echalote: "", poivre: "1.2 g" },
+      { nb: 4, salade: "280 g", lardons: "220 g", oeufs: "4", painrassis: "140 g", vinaigreVin: "48 ml", huile: "48 ml", moutarde: "20 g", ail: "1", echalote: "1", poivre: "1.6 g" },
+      { nb: 5, salade: "350 g", lardons: "275 g", oeufs: "5", painrassis: "175 g", vinaigreVin: "60 ml", huile: "60 ml", moutarde: "25 g", ail: "1½", echalote: "1½", poivre: "2 g" },
+      { nb: 6, salade: "420 g", lardons: "330 g", oeufs: "6", painrassis: "210 g", vinaigreVin: "72 ml", huile: "72 ml", moutarde: "30 g", ail: "1", echalote: "1", poivre: "2.4 g" },
+      { nb: 7, salade: "490 g", lardons: "385 g", oeufs: "7", painrassis: "245 g", vinaigreVin: "84 ml", huile: "84 ml", moutarde: "35 g", ail: "2", echalote: "2", poivre: "2.8 g" },
+      { nb: 8, salade: "560 g", lardons: "440 g", oeufs: "8", painrassis: "280 g", vinaigreVin: "96 ml", huile: "96 ml", moutarde: "40 g", ail: "2", echalote: "2", poivre: "3.2 g" },
+      { nb: 9, salade: "630 g", lardons: "495 g", oeufs: "9", painrassis: "315 g", vinaigreVin: "108 ml", huile: "108 ml", moutarde: "45 g", ail: "2", echalote: "2", poivre: "3.6 g" },
+      { nb: 10, salade: "700 g", lardons: "550 g", oeufs: "10", painrassis: "350 g", vinaigreVin: "120 ml", huile: "120 ml", moutarde: "50 g", ail: "3", echalote: "3", poivre: "4 g" },
+      { nb: 11, salade: "770 g", lardons: "605 g", oeufs: "11", painrassis: "385 g", vinaigreVin: "132 ml", huile: "132 ml", moutarde: "55 g", ail: "3", echalote: "3", poivre: "4.4 g" },
+      { nb: 12, salade: "840 g", lardons: "660 g", oeufs: "12", painrassis: "420 g", vinaigreVin: "144 ml", huile: "144 ml", moutarde: "60 g", ail: "3", echalote: "3", poivre: "4.8 g" },
+      { nb: 13, salade: "910 g", lardons: "715 g", oeufs: "13", painrassis: "455 g", vinaigreVin: "156 ml", huile: "156 ml", moutarde: "65 g", ail: "3", echalote: "3", poivre: "5.2 g" },
+      { nb: 14, salade: "980 g", lardons: "770 g", oeufs: "14", painrassis: "490 g", vinaigreVin: "168 ml", huile: "168 ml", moutarde: "70 g", ail: "4", echalote: "4", poivre: "5.6 g" },
+      { nb: 15, salade: "1050 g", lardons: "825 g", oeufs: "15", painrassis: "525 g", vinaigreVin: "180 ml", huile: "180 ml", moutarde: "75 g", ail: "4½", echalote: "4½", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "La frisée", detail: "Ne gardez que le CŒUR jaune pâle de la frisée : les feuilles vertes extérieures sont amères et coriaces.", badge: null },
+      { icone: "🍞", titre: "Les croûtons", detail: "Taillez le pain en gros cubes et faites-les dorer à la poêle, puis frottez-les à l'ail encore chauds.", badge: null },
+      { icone: "🥓", titre: "Les lardons", detail: "Grillez les lardons à sec jusqu'à croustillants et GARDEZ la graisse rendue : elle entre dans la vinaigrette.", badge: null },
+      { icone: "💧", titre: "L'eau vinaigrée", detail: "Portez une casserole d'eau à frémissement avec un trait de vinaigre — jamais de sel, il ferait éclater le blanc.", badge: null },
+      { icone: "🥚", titre: "Pocher", detail: "Cassez l'œuf dans un ramequin, créez un tourbillon dans l'eau et faites-le glisser au centre. 3 minutes exactement.", badge: null },
+      { icone: "🥄", titre: "La vinaigrette", detail: "Moutarde, vinaigre, échalote, poivre, puis huile et graisse de lardons TIÈDE en filet.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Frisée assaisonnée à la vinaigrette tiède, lardons, croûtons, œuf poché au sommet. On perce le jaune à table.", badge: null }
+    ],
+    liees: ["saladecesar","vinaigrette"]
   },
 });

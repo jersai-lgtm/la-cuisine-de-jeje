@@ -141,7 +141,7 @@ Object.assign(recettes, {
       ]
   },
   rillettessaumonfume: {
-    liees: ["painsigle", "paincampagne"],
+    liees: ["painsigle","paincampagne"],
     nom: "Rillettes Saumon Fumé",
     cat: "aperitifs", pays: "france",
     base: 1,
@@ -174,7 +174,7 @@ Object.assign(recettes, {
     ]
   },
   patatasbravas: {
-    liees: ["mayonnaise", "saucetomate", "aioli"],
+    liees: ["mayonnaise","saucetomate","aioli"],
     nom: "Patatas Bravas",
     cat: "aperitifs", pays: "espagne",
     base: 4,

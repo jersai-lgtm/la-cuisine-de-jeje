@@ -129,7 +129,7 @@ Object.assign(recettes, {
       ]
   },
   shakshuka: {
-    liees: ["painpita", "harissa", "saucetomate"],
+    liees: ["painpita","harissa","saucetomate"],
     nom: "Shakshuka",
     cat: "brunch", saisons: ["automne","ete"], pays: "liban",
     base: 2,

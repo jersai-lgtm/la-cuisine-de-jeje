@@ -87,7 +87,7 @@ Object.assign(recettes, {
     temps: "1h",
     niveau: "⭐⭐ Moyen",
     emoji: "🍐",
-    liees: ["patebrisee", "patesablee"],
+    liees: ["patebrisee","patesablee"],
     description: "La tarte Bourdaloue — poires pochées fondantes sur un lit de crème d'amande parfumée, dans une pâte croustillante. Le grand classique des pâtisseries parisiennes, né rue Bourdaloue.",
     tableauBourdaloue: [
       { nb: 1, poire: "60 g", amandes: "25 g", beurre: "20 g", sucre: "20 g", oeuf: "0.5", farine: "25 g" },
@@ -926,7 +926,7 @@ Object.assign(recettes, {
       ]
   },
   tartetatinpommes: {
-    liees: ["patebrisee", "compotepommes", "patefeuilletee"],
+    liees: ["patebrisee","compotepommes","patefeuilletee"],
     nom: "Tarte Tatin aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
@@ -1332,7 +1332,7 @@ Object.assign(recettes, {
     ]
   },
   tarteaupommes: {
-    liees: ["patebrisee", "compotepommes", "glacevanille"],
+    liees: ["patebrisee","compotepommes","glacevanille"],
     nom: "Tarte aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
@@ -5205,7 +5205,7 @@ Object.assign(recettes, {
     ]
   },
   numbercake: {
-    nom: "Number cake", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["macarons", "patesablee"],
+    nom: "Number cake", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["macarons","patesablee"],
     base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🔢",
     description: "Le gâteau-chiffre tendance des anniversaires : deux couches de sablé en forme de chiffre, garnies d'une chantilly mascarpone pochée, fruits frais et macarons.",
     ingredients: {},
@@ -5325,7 +5325,7 @@ Object.assign(recettes, {
     ]
   },
   tarteabricots: {
-    liees: ["patesablee", "patebrisee"],
+    liees: ["patesablee","patebrisee"],
     nom: "Tarte aux Abricots",
     cat: "desserts", saisons: ["ete"], pays: "france", dateAjout: "2026-06-19T11:00:00",
     base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🥧",
@@ -12778,7 +12778,7 @@ Object.assign(recettes, {
       { icone: "📏", titre: "Découper", detail: "Étalez à 3 mm entre deux feuilles de papier et découpez les biscuits. Remettez 10 minutes au froid avant d'enfourner.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "12 minutes à 170°C. Ils sont encore mous à la sortie : le croquant arrive en refroidissant sur grille.", badge: null }
     ],
-    liees: ["tiramisuspeculoos","glacespeculoos","patetartinerspeculoos"]
+    liees: ["tiramisuspeculoos","glacespeculoos","tartinerspeculoos"]
   },
   cantuccini: {
     dateAjout: "2026-08-01T12:01:00",
@@ -12816,7 +12816,7 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Première cuisson", detail: "25 minutes à 170°C. Sortez et laissez tiédir 10 minutes — trop chauds, ils s'émietteraient à la découpe.", badge: null },
       { icone: "🔪", titre: "Trancher et sécher", detail: "Coupez en biais des tranches de 1,5 cm, couchez-les et RECUISEZ 12 minutes en les retournant à mi-temps.", badge: null }
     ],
-    liees: ["biscuitsamandes","tiramisu","cafe"]
+    liees: ["cantuccini","tiramisu","glacecafe"]
   },
   koulourakia: {
     dateAjout: "2026-08-01T12:02:00",
@@ -12892,7 +12892,7 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Le choc", detail: "Remplissez les moules froids aux trois quarts, four à 240°C : 4 minutes, puis baissez à 180°C pour 6 minutes.", badge: null },
       { icone: "🍫", titre: "Tremper", detail: "Démoulez tièdes. Trempez la coquille dans le chocolat fondu et laissez cristalliser côté bombé vers le haut.", badge: null }
     ],
-    liees: ["madeleines","financierspistache","moelleuxauchocolat"]
+    liees: ["madeleine","financierspistache","moelleuxchocolat"]
   },
   sablesdiamant: {
     dateAjout: "2026-08-01T12:04:00",
@@ -12968,7 +12968,7 @@ Object.assign(recettes, {
       { icone: "🌴", titre: "Espacer", detail: "Posez-les à PLAT sur papier cuisson en laissant 5 cm entre chacune : ils doublent de largeur à la cuisson.", badge: null },
       { icone: "🔥", titre: "Retourner", detail: "12 minutes à 200°C, retournez chaque palmier, puis 6 minutes de plus. Les deux faces doivent être caramélisées.", badge: null }
     ],
-    liees: ["patefeuilletee","chaussonauxpommes","sables"]
+    liees: ["patefeuilletee","chaussonpommes","sables"]
   },
   succespraline: {
     dateAjout: "2026-08-01T12:06:00",
@@ -13006,7 +13006,7 @@ Object.assign(recettes, {
       { icone: "🍯", titre: "La crème", detail: "Fouettez le beurre pommade 5 minutes puis incorporez le praliné : la crème doit être très aérienne, pas grasse.", badge: null },
       { icone: "🏆", titre: "Monter", detail: "Un disque, une couche épaisse de crème pralinée, le second disque. Amandes effilées grillées sur le tour, sucre glace, 2 h au frais.", badge: null }
     ],
-    liees: ["parisbrest","dacquoise","pralinemaison"]
+    liees: ["parisbrestreinterpretation","dacquoise"]
   },
   nonnettes: {
     dateAjout: "2026-08-01T12:07:00",
@@ -13044,6 +13044,386 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "20 minutes à 170°C. Ne piquez pas pour vérifier au centre : vous tomberiez sur la marmelade.", badge: null },
       { icone: "❄️", titre: "Glacer", detail: "Sucre glace délayé dans quelques gouttes d'eau, pinceau sur les nonnettes ENCORE TIÈDES : le glaçage sèche en une couche brillante.", badge: null }
     ],
-    liees: ["painepices","melomakarona","confiturelorange"]
+    liees: ["melomakarona"]
+  },
+  languesdechat: {
+    dateAjout: "2026-08-01T16:00:00",
+    nom: "Langues de Chat",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🐱",
+    description: "Les fins biscuits plats et allongés qui accompagnent glaces et cafés depuis le XIXᵉ siècle. Quatre ingrédients à poids égal, une pâte pochée en bâtonnets très espacés — car elles s'étalent énormément à la cuisson.",
+    tableauLanguesdechat: [
+      { nb: 1, beurre: "10 g", sucreglace: "10 g", oeufs: "", farine: "10 g", vanille: "0.2 g", sel: "0.2 g" },
+      { nb: 2, beurre: "20 g", sucreglace: "20 g", oeufs: "", farine: "20 g", vanille: "0.4 g", sel: "0.4 g" },
+      { nb: 3, beurre: "30 g", sucreglace: "30 g", oeufs: "", farine: "30 g", vanille: "0.6 g", sel: "0.6 g" },
+      { nb: 4, beurre: "40 g", sucreglace: "40 g", oeufs: "", farine: "40 g", vanille: "0.8 g", sel: "0.8 g" },
+      { nb: 5, beurre: "50 g", sucreglace: "50 g", oeufs: "¾", farine: "50 g", vanille: "1 g", sel: "1 g" },
+      { nb: 6, beurre: "60 g", sucreglace: "60 g", oeufs: "", farine: "60 g", vanille: "1.2 g", sel: "1.2 g" },
+      { nb: 7, beurre: "70 g", sucreglace: "70 g", oeufs: "1", farine: "70 g", vanille: "1.4 g", sel: "1.4 g" },
+      { nb: 8, beurre: "80 g", sucreglace: "80 g", oeufs: "1", farine: "80 g", vanille: "1.6 g", sel: "1.6 g" },
+      { nb: 9, beurre: "90 g", sucreglace: "90 g", oeufs: "1", farine: "90 g", vanille: "1.8 g", sel: "1.8 g" },
+      { nb: 10, beurre: "100 g", sucreglace: "100 g", oeufs: "1½", farine: "100 g", vanille: "2 g", sel: "2 g" },
+      { nb: 11, beurre: "110 g", sucreglace: "110 g", oeufs: "1", farine: "110 g", vanille: "2.2 g", sel: "2.2 g" },
+      { nb: 12, beurre: "120 g", sucreglace: "120 g", oeufs: "1", farine: "120 g", vanille: "2.4 g", sel: "2.4 g" },
+      { nb: 13, beurre: "130 g", sucreglace: "130 g", oeufs: "1", farine: "130 g", vanille: "2.6 g", sel: "2.6 g" },
+      { nb: 14, beurre: "140 g", sucreglace: "140 g", oeufs: "2", farine: "140 g", vanille: "2.8 g", sel: "2.8 g" },
+      { nb: 15, beurre: "150 g", sucreglace: "150 g", oeufs: "2¼", farine: "150 g", vanille: "3 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Crémer", detail: "Fouettez le beurre POMMADE et le sucre glace 4 minutes jusqu'à texture de crème blanche et légère.", badge: null },
+      { icone: "🥚", titre: "Les blancs", detail: "Ajoutez les blancs d'œufs À TEMPÉRATURE AMBIANTE, un peu à la fois : froids, ils feraient trancher le beurre.", badge: null },
+      { icone: "🌾", titre: "La farine", detail: "Incorporez la farine tamisée et le sel à la spatule, sans travailler : la pâte doit être lisse et souple.", badge: null },
+      { icone: "🍥", titre: "Pocher", detail: "Poche à douille lisse de 6 mm, bâtonnets de 6 cm, en laissant 5 CM entre chacun — elles doublent de largeur.", badge: null },
+      { icone: "👋", titre: "Tapoter", detail: "Tapez la plaque à plat sur le plan de travail : les bâtonnets s'aplatissent uniformément et cuisent régulièrement.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "8 minutes à 190°C : le centre reste PÂLE, seul le pourtour doit brunir. C'est le signe d'une langue de chat réussie.", badge: null },
+      { icone: "🐱", titre: "Décoller", detail: "Décollez-les IMMÉDIATEMENT à la spatule, encore souples, et laissez refroidir à plat sur une grille.", badge: null }
+    ],
+    liees: ["cigarettesrusses","tuilesamandes","glacevanille"]
+  },
+  cigarettesrusses: {
+    dateAjout: "2026-08-01T16:01:00",
+    nom: "Cigarettes Russes",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "35 min",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🚬",
+    description: "La même pâte que les langues de chat, mais étalée en disques fins et ROULÉE brûlante autour d'un manche de cuillère. Tout se joue en 15 secondes : trop chaud c'est mou, trop froid ça casse. On n'en cuit que quatre à la fois.",
+    tableauCigarettesrusses: [
+      { nb: 1, beurre: "10 g", sucreglace: "11 g", oeufs: "", farine: "9 g", vanille: "0.2 g", chocolatnoir: "8 g" },
+      { nb: 2, beurre: "20 g", sucreglace: "22 g", oeufs: "", farine: "18 g", vanille: "0.4 g", chocolatnoir: "16 g" },
+      { nb: 3, beurre: "30 g", sucreglace: "33 g", oeufs: "", farine: "27 g", vanille: "0.6 g", chocolatnoir: "24 g" },
+      { nb: 4, beurre: "40 g", sucreglace: "44 g", oeufs: "", farine: "36 g", vanille: "0.8 g", chocolatnoir: "32 g" },
+      { nb: 5, beurre: "50 g", sucreglace: "55 g", oeufs: "¾", farine: "45 g", vanille: "1 g", chocolatnoir: "40 g" },
+      { nb: 6, beurre: "60 g", sucreglace: "66 g", oeufs: "", farine: "54 g", vanille: "1.2 g", chocolatnoir: "48 g" },
+      { nb: 7, beurre: "70 g", sucreglace: "77 g", oeufs: "1", farine: "63 g", vanille: "1.4 g", chocolatnoir: "56 g" },
+      { nb: 8, beurre: "80 g", sucreglace: "88 g", oeufs: "1", farine: "72 g", vanille: "1.6 g", chocolatnoir: "64 g" },
+      { nb: 9, beurre: "90 g", sucreglace: "99 g", oeufs: "1", farine: "81 g", vanille: "1.8 g", chocolatnoir: "72 g" },
+      { nb: 10, beurre: "100 g", sucreglace: "110 g", oeufs: "1½", farine: "90 g", vanille: "2 g", chocolatnoir: "80 g" },
+      { nb: 11, beurre: "110 g", sucreglace: "121 g", oeufs: "1", farine: "99 g", vanille: "2.2 g", chocolatnoir: "88 g" },
+      { nb: 12, beurre: "120 g", sucreglace: "132 g", oeufs: "1", farine: "108 g", vanille: "2.4 g", chocolatnoir: "96 g" },
+      { nb: 13, beurre: "130 g", sucreglace: "143 g", oeufs: "1", farine: "117 g", vanille: "2.6 g", chocolatnoir: "104 g" },
+      { nb: 14, beurre: "140 g", sucreglace: "154 g", oeufs: "2", farine: "126 g", vanille: "2.8 g", chocolatnoir: "112 g" },
+      { nb: 15, beurre: "150 g", sucreglace: "165 g", oeufs: "2¼", farine: "135 g", vanille: "3 g", chocolatnoir: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "La pâte", detail: "Beurre pommade et sucre glace crémés, blancs d'œufs tempérés, farine tamisée : la pâte doit être lisse et coulante.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "1 heure au frais : la pâte s'étale mieux et le beurre ne fond pas sous les doigts.", badge: null },
+      { icone: "⭕", titre: "Étaler", detail: "Étalez des disques de 8 cm TRÈS fins à la spatule coudée (un gabarit en carton aide énormément).", badge: null },
+      { icone: "4️⃣", titre: "Par quatre", detail: "N'en cuisez JAMAIS plus de quatre à la fois : au-delà, les dernières durcissent avant d'être roulées.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "5 minutes à 200°C jusqu'à ce que le tour soit doré et le centre encore blond.", badge: null },
+      { icone: "🚬", titre: "Rouler vite", detail: "Sortez la plaque et roulez chaque disque autour d'un manche de cuillère en bois IMMÉDIATEMENT, en serrant.", badge: null },
+      { icone: "🍫", titre: "Tremper", detail: "Si une cigarette durcit avant d'être roulée, repassez-la 20 secondes au four. Trempez les extrémités dans le chocolat fondu.", badge: null }
+    ],
+    liees: ["languesdechat","tuilesamandes","glacevanille"]
+  },
+  croquantsamandes: {
+    dateAjout: "2026-08-01T16:02:00",
+    nom: "Croquants aux Amandes",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🦷",
+    description: "Le biscuit le plus dur de France, spécialité du Sud-Ouest et de Provence : que du blanc d'œuf, du sucre, de la farine et des amandes entières. Il se trempe dans le café ou le vin doux — le croquer directement relève du défi.",
+    tableauCroquantsamandes: [
+      { nb: 1, amande: "22 g", sucre: "20 g", farine: "15 g", oeufs: "", miel: "3 g", citron: "", sel: "0.2 g" },
+      { nb: 2, amande: "44 g", sucre: "40 g", farine: "30 g", oeufs: "", miel: "6 g", citron: "", sel: "0.4 g" },
+      { nb: 3, amande: "66 g", sucre: "60 g", farine: "45 g", oeufs: "", miel: "9 g", citron: "", sel: "0.6 g" },
+      { nb: 4, amande: "88 g", sucre: "80 g", farine: "60 g", oeufs: "", miel: "12 g", citron: "", sel: "0.8 g" },
+      { nb: 5, amande: "110 g", sucre: "100 g", farine: "75 g", oeufs: "¾", miel: "15 g", citron: "½", sel: "1 g" },
+      { nb: 6, amande: "132 g", sucre: "120 g", farine: "90 g", oeufs: "", miel: "18 g", citron: "", sel: "1.2 g" },
+      { nb: 7, amande: "154 g", sucre: "140 g", farine: "105 g", oeufs: "1", miel: "21 g", citron: "", sel: "1.4 g" },
+      { nb: 8, amande: "176 g", sucre: "160 g", farine: "120 g", oeufs: "1", miel: "24 g", citron: "", sel: "1.6 g" },
+      { nb: 9, amande: "198 g", sucre: "180 g", farine: "135 g", oeufs: "1", miel: "27 g", citron: "", sel: "1.8 g" },
+      { nb: 10, amande: "220 g", sucre: "200 g", farine: "150 g", oeufs: "1½", miel: "30 g", citron: "1", sel: "2 g" },
+      { nb: 11, amande: "242 g", sucre: "220 g", farine: "165 g", oeufs: "1", miel: "33 g", citron: "1", sel: "2.2 g" },
+      { nb: 12, amande: "264 g", sucre: "240 g", farine: "180 g", oeufs: "1", miel: "36 g", citron: "1", sel: "2.4 g" },
+      { nb: 13, amande: "286 g", sucre: "260 g", farine: "195 g", oeufs: "1", miel: "39 g", citron: "1", sel: "2.6 g" },
+      { nb: 14, amande: "308 g", sucre: "280 g", farine: "210 g", oeufs: "2", miel: "42 g", citron: "1", sel: "2.8 g" },
+      { nb: 15, amande: "330 g", sucre: "300 g", farine: "225 g", oeufs: "2¼", miel: "45 g", citron: "1½", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier", detail: "Grillez les amandes entières 10 minutes à 160°C : leur goût torréfié est l'essentiel de la recette.", badge: null },
+      { icone: "🥚", titre: "Les blancs", detail: "Fouettez les blancs À LA FOURCHETTE, juste mousseux — surtout pas montés en neige, le croquant deviendrait meringué.", badge: null },
+      { icone: "🍯", titre: "Sucrer", detail: "Ajoutez sucre, miel et zeste de citron et mélangez jusqu'à dissolution complète du sucre.", badge: null },
+      { icone: "🌾", titre: "La farine", detail: "Farine et sel, puis les amandes tièdes : la pâte est très épaisse et collante, c'est normal.", badge: null },
+      { icone: "🥖", titre: "Former", detail: "Façonnez à la main mouillée deux bandes plates de 5 cm de large sur la plaque.", badge: null },
+      { icone: "🔥", titre: "Première cuisson", detail: "20 minutes à 175°C jusqu'à doré. Sortez et laissez tiédir 5 minutes seulement.", badge: null },
+      { icone: "🔪", titre: "Trancher et sécher", detail: "Coupez des tranches de 1 cm et RECUISEZ-les 15 minutes à 140°C, à plat : c'est ce séchage qui donne la dureté légendaire.", badge: null }
+    ],
+    liees: ["cantuccini","navettesmarseille","macaronsamiens"]
+  },
+  navettesmarseille: {
+    dateAjout: "2026-08-01T16:03:00",
+    nom: "Navettes de Marseille",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "50 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "⛵",
+    description: "Les biscuits en forme de barque du Vieux-Port, parfumés à la fleur d'oranger et vendus depuis 1781 rue Sainte. On les bénit à la Chandeleur — et on les garde des semaines, tant leur pâte est sèche et dense.",
+    tableauNavettesmarseille: [
+      { nb: 1, farine: "28 g", sucre: "11 g", huileolive: "5 ml", oeufs: "", fleuroranger: "3 ml", orange: "", sel: "0.2 g" },
+      { nb: 2, farine: "56 g", sucre: "22 g", huileolive: "10 ml", oeufs: "", fleuroranger: "6 ml", orange: "", sel: "0.4 g" },
+      { nb: 3, farine: "84 g", sucre: "33 g", huileolive: "15 ml", oeufs: "", fleuroranger: "9 ml", orange: "", sel: "0.6 g" },
+      { nb: 4, farine: "112 g", sucre: "44 g", huileolive: "20 ml", oeufs: "", fleuroranger: "12 ml", orange: "", sel: "0.8 g" },
+      { nb: 5, farine: "140 g", sucre: "55 g", huileolive: "25 ml", oeufs: "¾", fleuroranger: "15 ml", orange: "½", sel: "1 g" },
+      { nb: 6, farine: "168 g", sucre: "66 g", huileolive: "30 ml", oeufs: "", fleuroranger: "18 ml", orange: "", sel: "1.2 g" },
+      { nb: 7, farine: "196 g", sucre: "77 g", huileolive: "35 ml", oeufs: "1", fleuroranger: "21 ml", orange: "", sel: "1.4 g" },
+      { nb: 8, farine: "224 g", sucre: "88 g", huileolive: "40 ml", oeufs: "1", fleuroranger: "24 ml", orange: "", sel: "1.6 g" },
+      { nb: 9, farine: "252 g", sucre: "99 g", huileolive: "45 ml", oeufs: "1", fleuroranger: "27 ml", orange: "", sel: "1.8 g" },
+      { nb: 10, farine: "280 g", sucre: "110 g", huileolive: "50 ml", oeufs: "1½", fleuroranger: "30 ml", orange: "1", sel: "2 g" },
+      { nb: 11, farine: "308 g", sucre: "121 g", huileolive: "55 ml", oeufs: "1", fleuroranger: "33 ml", orange: "1", sel: "2.2 g" },
+      { nb: 12, farine: "336 g", sucre: "132 g", huileolive: "60 ml", oeufs: "1", fleuroranger: "36 ml", orange: "1", sel: "2.4 g" },
+      { nb: 13, farine: "364 g", sucre: "143 g", huileolive: "65 ml", oeufs: "1", fleuroranger: "39 ml", orange: "1", sel: "2.6 g" },
+      { nb: 14, farine: "392 g", sucre: "154 g", huileolive: "70 ml", oeufs: "2", fleuroranger: "42 ml", orange: "1", sel: "2.8 g" },
+      { nb: 15, farine: "420 g", sucre: "165 g", huileolive: "75 ml", oeufs: "2¼", fleuroranger: "45 ml", orange: "1½", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez farine, sucre, sel, puis l'œuf, l'huile d'olive et la fleur d'oranger. Pétrissez 5 minutes.", badge: null },
+      { icone: "🍊", titre: "Parfumer", detail: "Ajoutez le zeste d'orange : avec la fleur d'oranger, c'est toute l'identité de la navette.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "1 heure au frais filmée — la pâte est dure, le repos la rend malléable.", badge: null },
+      { icone: "⛵", titre: "Former", detail: "Roulez des boudins de 8 cm, aplatissez légèrement et pointez les DEUX extrémités : c'est la forme de la barque.", badge: null },
+      { icone: "🔪", titre: "L'entaille", detail: "Fendez chaque navette dans la longueur sur 5 mm de profondeur — elle s'ouvrira joliment à la cuisson.", badge: null },
+      { icone: "🖌️", titre: "Dorer", detail: "Badigeonnez au jaune d'œuf dilué : les navettes doivent être brillantes et brunes, jamais pâles.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "20 minutes à 180°C. Elles sont dures à la sortie et le restent — c'est la recette, pas un raté.", badge: null }
+    ],
+    liees: ["croquantsamandes","koulourakia","calissons"]
+  },
+  calissons: {
+    dateAjout: "2026-08-01T16:04:00",
+    nom: "Calissons d'Aix",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "1 h + séchage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "💎",
+    description: "Le losange d'Aix-en-Provence : pâte d'amandes et melon confit sur une feuille de pain azyme, coiffé d'un glaçage royal blanc. Il demande deux séchages de 12 heures — c'est long, mais rien d'autre n'est difficile.",
+    tableauCalissons: [
+      { nb: 1, poudreamande: "20 g", melon: "18 g", orange: "", sucreglace: "18 g", fleuroranger: "2 ml", oeufs: "", citron: "", sucre: "6 g" },
+      { nb: 2, poudreamande: "40 g", melon: "36 g", orange: "", sucreglace: "36 g", fleuroranger: "4 ml", oeufs: "", citron: "", sucre: "12 g" },
+      { nb: 3, poudreamande: "60 g", melon: "54 g", orange: "", sucreglace: "54 g", fleuroranger: "6 ml", oeufs: "", citron: "", sucre: "18 g" },
+      { nb: 4, poudreamande: "80 g", melon: "72 g", orange: "", sucreglace: "72 g", fleuroranger: "8 ml", oeufs: "", citron: "", sucre: "24 g" },
+      { nb: 5, poudreamande: "100 g", melon: "90 g", orange: "¾", sucreglace: "90 g", fleuroranger: "10 ml", oeufs: "", citron: "¼", sucre: "30 g" },
+      { nb: 6, poudreamande: "120 g", melon: "108 g", orange: "", sucreglace: "108 g", fleuroranger: "12 ml", oeufs: "", citron: "", sucre: "36 g" },
+      { nb: 7, poudreamande: "140 g", melon: "126 g", orange: "1", sucreglace: "126 g", fleuroranger: "14 ml", oeufs: "", citron: "", sucre: "42 g" },
+      { nb: 8, poudreamande: "160 g", melon: "144 g", orange: "1", sucreglace: "144 g", fleuroranger: "16 ml", oeufs: "", citron: "", sucre: "48 g" },
+      { nb: 9, poudreamande: "180 g", melon: "162 g", orange: "1", sucreglace: "162 g", fleuroranger: "18 ml", oeufs: "", citron: "", sucre: "54 g" },
+      { nb: 10, poudreamande: "200 g", melon: "180 g", orange: "1½", sucreglace: "180 g", fleuroranger: "20 ml", oeufs: "", citron: "½", sucre: "60 g" },
+      { nb: 11, poudreamande: "220 g", melon: "198 g", orange: "1", sucreglace: "198 g", fleuroranger: "22 ml", oeufs: "", citron: "", sucre: "66 g" },
+      { nb: 12, poudreamande: "240 g", melon: "216 g", orange: "1", sucreglace: "216 g", fleuroranger: "24 ml", oeufs: "", citron: "", sucre: "72 g" },
+      { nb: 13, poudreamande: "260 g", melon: "234 g", orange: "1", sucreglace: "234 g", fleuroranger: "26 ml", oeufs: "1", citron: "", sucre: "78 g" },
+      { nb: 14, poudreamande: "280 g", melon: "252 g", orange: "2", sucreglace: "252 g", fleuroranger: "28 ml", oeufs: "1", citron: "", sucre: "84 g" },
+      { nb: 15, poudreamande: "300 g", melon: "270 g", orange: "2¼", sucreglace: "270 g", fleuroranger: "30 ml", oeufs: "1", citron: "¾", sucre: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍈", titre: "Le melon", detail: "Rincez le melon confit à l'eau tiède et ÉPONGEZ-LE bien : trop de sirop rendrait la pâte impossible à travailler.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez melon, écorces d'orange confites et poudre d'amande jusqu'à obtenir une pâte homogène et brillante.", badge: null },
+      { icone: "🍯", titre: "Cuire la pâte", detail: "Chauffez la pâte avec le sucre et la fleur d'oranger à la casserole 5 minutes en remuant : elle doit se décoller des parois.", badge: null },
+      { icone: "📏", titre: "Étaler", detail: "Étalez à 1 cm d'épaisseur sur une feuille de pain azyme et laissez sécher 12 HEURES à l'air libre.", badge: null },
+      { icone: "❄️", titre: "Le glaçage", detail: "Fouettez blanc d'œuf, sucre glace et quelques gouttes de citron jusqu'à un glaçage royal épais et opaque.", badge: null },
+      { icone: "🖌️", titre: "Glacer", detail: "Étalez le glaçage en couche FINE et régulière à la spatule, puis laissez prendre 1 heure.", badge: null },
+      { icone: "💎", titre: "Découper", detail: "Découpez les losanges à l'emporte-pièce ou au couteau huilé, et laissez encore sécher 12 heures avant de les ranger.", badge: null }
+    ],
+    liees: ["navettesmarseille","macaronsamiens","paindegenes"]
+  },
+  petsdenonne: {
+    dateAjout: "2026-08-01T16:05:00",
+    nom: "Pets de Nonne",
+    cat: "desserts", pays: "france",
+    base: 6,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "☁️",
+    description: "Des beignets de pâte à choux qui gonflent et se retournent tout seuls dans l'huile. Leur nom irrévérencieux vient d'une légende d'abbaye — une religieuse maladroite aurait laissé tomber une cuillère de pâte dans la friture.",
+    tableauPetsdenonne: [
+      { nb: 1, farine: "22 g", beurre: "16 g", oeufs: "", lait: "20 ml", huile: "25 ml", sucreglace: "8 g", fleuroranger: "2 ml", sel: "0.3 g" },
+      { nb: 2, farine: "44 g", beurre: "32 g", oeufs: "1", lait: "40 ml", huile: "50 ml", sucreglace: "16 g", fleuroranger: "4 ml", sel: "0.6 g" },
+      { nb: 3, farine: "66 g", beurre: "48 g", oeufs: "1", lait: "60 ml", huile: "75 ml", sucreglace: "24 g", fleuroranger: "6 ml", sel: "0.9 g" },
+      { nb: 4, farine: "88 g", beurre: "64 g", oeufs: "2", lait: "80 ml", huile: "100 ml", sucreglace: "32 g", fleuroranger: "8 ml", sel: "1.2 g" },
+      { nb: 5, farine: "110 g", beurre: "80 g", oeufs: "3", lait: "100 ml", huile: "125 ml", sucreglace: "40 g", fleuroranger: "10 ml", sel: "1.5 g" },
+      { nb: 6, farine: "132 g", beurre: "96 g", oeufs: "3", lait: "120 ml", huile: "150 ml", sucreglace: "48 g", fleuroranger: "12 ml", sel: "1.8 g" },
+      { nb: 7, farine: "154 g", beurre: "112 g", oeufs: "4", lait: "140 ml", huile: "175 ml", sucreglace: "56 g", fleuroranger: "14 ml", sel: "2.1 g" },
+      { nb: 8, farine: "176 g", beurre: "128 g", oeufs: "4", lait: "160 ml", huile: "200 ml", sucreglace: "64 g", fleuroranger: "16 ml", sel: "2.4 g" },
+      { nb: 9, farine: "198 g", beurre: "144 g", oeufs: "5", lait: "180 ml", huile: "225 ml", sucreglace: "72 g", fleuroranger: "18 ml", sel: "2.7 g" },
+      { nb: 10, farine: "220 g", beurre: "160 g", oeufs: "6", lait: "200 ml", huile: "250 ml", sucreglace: "80 g", fleuroranger: "20 ml", sel: "3 g" },
+      { nb: 11, farine: "242 g", beurre: "176 g", oeufs: "6", lait: "220 ml", huile: "275 ml", sucreglace: "88 g", fleuroranger: "22 ml", sel: "3.3 g" },
+      { nb: 12, farine: "264 g", beurre: "192 g", oeufs: "7", lait: "240 ml", huile: "300 ml", sucreglace: "96 g", fleuroranger: "24 ml", sel: "3.6 g" },
+      { nb: 13, farine: "286 g", beurre: "208 g", oeufs: "7", lait: "260 ml", huile: "325 ml", sucreglace: "104 g", fleuroranger: "26 ml", sel: "3.9 g" },
+      { nb: 14, farine: "308 g", beurre: "224 g", oeufs: "8", lait: "280 ml", huile: "350 ml", sucreglace: "112 g", fleuroranger: "28 ml", sel: "4.2 g" },
+      { nb: 15, farine: "330 g", beurre: "240 g", oeufs: "9", lait: "300 ml", huile: "375 ml", sucreglace: "120 g", fleuroranger: "30 ml", sel: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "La panade", detail: "Portez à ébullition eau, lait, beurre et sel, versez la farine D'UN COUP et desséchez 2 minutes à la spatule.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Hors du feu, incorporez les œufs un à un : la pâte doit former un bec souple qui retombe lentement.", badge: null },
+      { icone: "🌸", titre: "Parfumer", detail: "Fleur d'oranger dans la pâte — le parfum traditionnel, discret mais reconnaissable.", badge: null },
+      { icone: "🌡️", titre: "L'huile", detail: "Chauffez l'huile à 160°C SEULEMENT : plus chaude, l'extérieur brunit avant que l'intérieur ne gonfle.", badge: null },
+      { icone: "🥄", titre: "Former", detail: "Prélevez des noix de pâte à la petite cuillère et faites-les glisser dans l'huile, 5 ou 6 à la fois maximum.", badge: null },
+      { icone: "🔄", titre: "Laisser faire", detail: "Ne les touchez pas : ils gonflent, se retournent SEULS et doublent de volume. 6 à 7 minutes en tout.", badge: null },
+      { icone: "☁️", titre: "Égoutter", detail: "Papier absorbant, puis sucre glace généreux. Ils se mangent tièdes, dans les 15 minutes.", badge: null }
+    ],
+    liees: ["chouxcraquelin","beignetspomme","chouxcraquelin"]
+  },
+  florentins: {
+    dateAjout: "2026-08-01T16:06:00",
+    nom: "Florentins",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍯",
+    description: "Une dentelle d'amandes effilées prise dans un caramel au miel et à la crème, semelle de chocolat noir dessous. Aucune farine, ou presque : c'est le caramel seul qui tient tout ensemble.",
+    tableauFlorentins: [
+      { nb: 1, amandeeffilee: "20 g", sucre: "12 g", creme: "12 ml", miel: "6 g", beurre: "8 g", orange: "", chocolatnoir: "14 g", farine: "2 g" },
+      { nb: 2, amandeeffilee: "40 g", sucre: "24 g", creme: "24 ml", miel: "12 g", beurre: "16 g", orange: "", chocolatnoir: "28 g", farine: "4 g" },
+      { nb: 3, amandeeffilee: "60 g", sucre: "36 g", creme: "36 ml", miel: "18 g", beurre: "24 g", orange: "", chocolatnoir: "42 g", farine: "6 g" },
+      { nb: 4, amandeeffilee: "80 g", sucre: "48 g", creme: "48 ml", miel: "24 g", beurre: "32 g", orange: "", chocolatnoir: "56 g", farine: "8 g" },
+      { nb: 5, amandeeffilee: "100 g", sucre: "60 g", creme: "60 ml", miel: "30 g", beurre: "40 g", orange: "½", chocolatnoir: "70 g", farine: "10 g" },
+      { nb: 6, amandeeffilee: "120 g", sucre: "72 g", creme: "72 ml", miel: "36 g", beurre: "48 g", orange: "", chocolatnoir: "84 g", farine: "12 g" },
+      { nb: 7, amandeeffilee: "140 g", sucre: "84 g", creme: "84 ml", miel: "42 g", beurre: "56 g", orange: "", chocolatnoir: "98 g", farine: "14 g" },
+      { nb: 8, amandeeffilee: "160 g", sucre: "96 g", creme: "96 ml", miel: "48 g", beurre: "64 g", orange: "", chocolatnoir: "112 g", farine: "16 g" },
+      { nb: 9, amandeeffilee: "180 g", sucre: "108 g", creme: "108 ml", miel: "54 g", beurre: "72 g", orange: "", chocolatnoir: "126 g", farine: "18 g" },
+      { nb: 10, amandeeffilee: "200 g", sucre: "120 g", creme: "120 ml", miel: "60 g", beurre: "80 g", orange: "1", chocolatnoir: "140 g", farine: "20 g" },
+      { nb: 11, amandeeffilee: "220 g", sucre: "132 g", creme: "132 ml", miel: "66 g", beurre: "88 g", orange: "1", chocolatnoir: "154 g", farine: "22 g" },
+      { nb: 12, amandeeffilee: "240 g", sucre: "144 g", creme: "144 ml", miel: "72 g", beurre: "96 g", orange: "1", chocolatnoir: "168 g", farine: "24 g" },
+      { nb: 13, amandeeffilee: "260 g", sucre: "156 g", creme: "156 ml", miel: "78 g", beurre: "104 g", orange: "1", chocolatnoir: "182 g", farine: "26 g" },
+      { nb: 14, amandeeffilee: "280 g", sucre: "168 g", creme: "168 ml", miel: "84 g", beurre: "112 g", orange: "1", chocolatnoir: "196 g", farine: "28 g" },
+      { nb: 15, amandeeffilee: "300 g", sucre: "180 g", creme: "180 ml", miel: "90 g", beurre: "120 g", orange: "1½", chocolatnoir: "210 g", farine: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "Le caramel", detail: "Portez sucre, miel, crème et beurre à 118°C au thermomètre : sans thermomètre, comptez 4 minutes de gros bouillons.", badge: null },
+      { icone: "🌰", titre: "Les amandes", detail: "Hors du feu, ajoutez amandes effilées, écorces d'orange confites et la pointe de farine, mélangez à la spatule.", badge: null },
+      { icone: "🥄", titre: "Doser", detail: "Déposez des tas d'une cuillère à café bien espacés : ils s'étalent au double à la cuisson.", badge: null },
+      { icone: "⭕", titre: "Aplatir", detail: "Aplatissez chaque tas à la fourchette humide pour un disque fin et régulier.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "10 minutes à 180°C jusqu'à caramel doré sur TOUTE la surface, pas seulement sur les bords.", badge: null },
+      { icone: "⏳", titre: "Refroidir", detail: "Laissez refroidir COMPLÈTEMENT sur la plaque : chauds, ils sont mous et se déchirent.", badge: null },
+      { icone: "🍫", titre: "Chocolater", detail: "Étalez le chocolat fondu sous chaque florentin, striez à la fourchette et laissez cristalliser à l'envers.", badge: null }
+    ],
+    liees: ["tuilesamandes","nougatglace"]
+  },
+  macaronsamiens: {
+    dateAjout: "2026-08-01T16:07:00",
+    nom: "Macarons d'Amiens",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "35 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🟠",
+    description: "Rien à voir avec le macaron parisien à coque : ici un palet épais, moelleux et dense, à base de pâte d'amande et de confiture d'abricot. Une recette du XVIᵉ siècle, bien plus simple et bien plus rustique.",
+    tableauMacaronsamiens: [
+      { nb: 1, poudreamande: "22 g", sucre: "18 g", oeufs: "", confiture: "8 g", miel: "3 g", vanille: "0.2 g", amande: "4 g" },
+      { nb: 2, poudreamande: "44 g", sucre: "36 g", oeufs: "", confiture: "16 g", miel: "6 g", vanille: "0.4 g", amande: "8 g" },
+      { nb: 3, poudreamande: "66 g", sucre: "54 g", oeufs: "", confiture: "24 g", miel: "9 g", vanille: "0.6 g", amande: "12 g" },
+      { nb: 4, poudreamande: "88 g", sucre: "72 g", oeufs: "", confiture: "32 g", miel: "12 g", vanille: "0.8 g", amande: "16 g" },
+      { nb: 5, poudreamande: "110 g", sucre: "90 g", oeufs: "¾", confiture: "40 g", miel: "15 g", vanille: "1 g", amande: "20 g" },
+      { nb: 6, poudreamande: "132 g", sucre: "108 g", oeufs: "", confiture: "48 g", miel: "18 g", vanille: "1.2 g", amande: "24 g" },
+      { nb: 7, poudreamande: "154 g", sucre: "126 g", oeufs: "1", confiture: "56 g", miel: "21 g", vanille: "1.4 g", amande: "28 g" },
+      { nb: 8, poudreamande: "176 g", sucre: "144 g", oeufs: "1", confiture: "64 g", miel: "24 g", vanille: "1.6 g", amande: "32 g" },
+      { nb: 9, poudreamande: "198 g", sucre: "162 g", oeufs: "1", confiture: "72 g", miel: "27 g", vanille: "1.8 g", amande: "36 g" },
+      { nb: 10, poudreamande: "220 g", sucre: "180 g", oeufs: "1½", confiture: "80 g", miel: "30 g", vanille: "2 g", amande: "40 g" },
+      { nb: 11, poudreamande: "242 g", sucre: "198 g", oeufs: "1", confiture: "88 g", miel: "33 g", vanille: "2.2 g", amande: "44 g" },
+      { nb: 12, poudreamande: "264 g", sucre: "216 g", oeufs: "1", confiture: "96 g", miel: "36 g", vanille: "2.4 g", amande: "48 g" },
+      { nb: 13, poudreamande: "286 g", sucre: "234 g", oeufs: "1", confiture: "104 g", miel: "39 g", vanille: "2.6 g", amande: "52 g" },
+      { nb: 14, poudreamande: "308 g", sucre: "252 g", oeufs: "2", confiture: "112 g", miel: "42 g", vanille: "2.8 g", amande: "56 g" },
+      { nb: 15, poudreamande: "330 g", sucre: "270 g", oeufs: "2¼", confiture: "120 g", miel: "45 g", vanille: "3 g", amande: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez poudre d'amande, sucre, miel et blancs d'œufs jusqu'à une pâte épaisse et homogène.", badge: null },
+      { icone: "🍑", titre: "La confiture", detail: "Incorporez la confiture d'abricot : c'est elle qui apporte l'humidité et le moelleux caractéristiques.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "24 HEURES au frais, filmé. Ce repos n'est pas négociable : il permet à l'amande de s'hydrater complètement.", badge: null },
+      { icone: "🥖", titre: "Le boudin", detail: "Roulez la pâte en boudin de 4 cm de diamètre sur un plan sucré (jamais fariné).", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Coupez des palets de 1,5 cm d'épaisseur — épais, c'est ce qui fait la différence avec un macaron parisien.", badge: null },
+      { icone: "🖌️", titre: "Dorer", detail: "Badigeonnez le dessus au jaune d'œuf et déposez une amande entière au centre de chacun.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "12 minutes à 200°C SEULEMENT : ils doivent rester très moelleux au cœur, à peine colorés.", badge: null }
+    ],
+    liees: ["macarons","calissons","croquantsamandes"]
+  },
+  paindegenes: {
+    dateAjout: "2026-08-01T16:08:00",
+    nom: "Pain de Gênes",
+    cat: "desserts", pays: "france",
+    base: 8,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌰",
+    description: "Un gâteau d'amandes créé en 1800 en hommage au siège de Gênes, où les soldats survécurent grâce à des stocks d'amandes. Très peu de farine, beaucoup d'amande : il est dense, humide et se garde plusieurs jours.",
+    tableauPaindegenes: [
+      { nb: 1, poudreamande: "30 g", sucre: "25 g", oeufs: "", beurre: "22 g", farine: "8 g", maizena: "4 g", rhum: "5 ml", amandeeffilee: "6 g", levurechimique: "0.5 g" },
+      { nb: 2, poudreamande: "60 g", sucre: "50 g", oeufs: "1", beurre: "44 g", farine: "16 g", maizena: "8 g", rhum: "10 ml", amandeeffilee: "12 g", levurechimique: "1 g" },
+      { nb: 3, poudreamande: "90 g", sucre: "75 g", oeufs: "1", beurre: "66 g", farine: "24 g", maizena: "12 g", rhum: "15 ml", amandeeffilee: "18 g", levurechimique: "1.5 g" },
+      { nb: 4, poudreamande: "120 g", sucre: "100 g", oeufs: "2", beurre: "88 g", farine: "32 g", maizena: "16 g", rhum: "20 ml", amandeeffilee: "24 g", levurechimique: "2 g" },
+      { nb: 5, poudreamande: "150 g", sucre: "125 g", oeufs: "3", beurre: "110 g", farine: "40 g", maizena: "20 g", rhum: "25 ml", amandeeffilee: "30 g", levurechimique: "2.5 g" },
+      { nb: 6, poudreamande: "180 g", sucre: "150 g", oeufs: "3", beurre: "132 g", farine: "48 g", maizena: "24 g", rhum: "30 ml", amandeeffilee: "36 g", levurechimique: "3 g" },
+      { nb: 7, poudreamande: "210 g", sucre: "175 g", oeufs: "4", beurre: "154 g", farine: "56 g", maizena: "28 g", rhum: "35 ml", amandeeffilee: "42 g", levurechimique: "3.5 g" },
+      { nb: 8, poudreamande: "240 g", sucre: "200 g", oeufs: "4", beurre: "176 g", farine: "64 g", maizena: "32 g", rhum: "40 ml", amandeeffilee: "48 g", levurechimique: "4 g" },
+      { nb: 9, poudreamande: "270 g", sucre: "225 g", oeufs: "5", beurre: "198 g", farine: "72 g", maizena: "36 g", rhum: "45 ml", amandeeffilee: "54 g", levurechimique: "4.5 g" },
+      { nb: 10, poudreamande: "300 g", sucre: "250 g", oeufs: "6", beurre: "220 g", farine: "80 g", maizena: "40 g", rhum: "50 ml", amandeeffilee: "60 g", levurechimique: "5 g" },
+      { nb: 11, poudreamande: "330 g", sucre: "275 g", oeufs: "6", beurre: "242 g", farine: "88 g", maizena: "44 g", rhum: "55 ml", amandeeffilee: "66 g", levurechimique: "5.5 g" },
+      { nb: 12, poudreamande: "360 g", sucre: "300 g", oeufs: "7", beurre: "264 g", farine: "96 g", maizena: "48 g", rhum: "60 ml", amandeeffilee: "72 g", levurechimique: "6 g" },
+      { nb: 13, poudreamande: "390 g", sucre: "325 g", oeufs: "7", beurre: "286 g", farine: "104 g", maizena: "52 g", rhum: "65 ml", amandeeffilee: "78 g", levurechimique: "6.5 g" },
+      { nb: 14, poudreamande: "420 g", sucre: "350 g", oeufs: "8", beurre: "308 g", farine: "112 g", maizena: "56 g", rhum: "70 ml", amandeeffilee: "84 g", levurechimique: "7 g" },
+      { nb: 15, poudreamande: "450 g", sucre: "375 g", oeufs: "9", beurre: "330 g", farine: "120 g", maizena: "60 g", rhum: "75 ml", amandeeffilee: "90 g", levurechimique: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "La pâte d'amande", detail: "Travaillez poudre d'amande et sucre avec UN œuf jusqu'à une pâte lisse : c'est la base de tout le gâteau.", badge: null },
+      { icone: "🥚", titre: "Monter", detail: "Ajoutez les œufs restants un par un en fouettant 8 MINUTES au batteur : la masse doit tripler et devenir mousseuse.", badge: null },
+      { icone: "🧈", titre: "Le beurre", detail: "Beurre fondu tiède et rhum, incorporés à la maryse en soulevant délicatement.", badge: null },
+      { icone: "🌾", titre: "Les secs", detail: "Farine, maïzena et levure tamisées ensemble, incorporées en deux fois sans faire retomber la masse.", badge: null },
+      { icone: "🥧", titre: "Le moule", detail: "Beurrez le moule et tapissez-le d'amandes effilées : elles se colleront au gâteau et formeront sa croûte.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "35 minutes à 170°C. Le dessus doit être bombé et une lame ressortir à peine humide.", badge: null },
+      { icone: "⏳", titre: "Attendre", detail: "Démoulez tiède et attendez 24 HEURES avant de couper : le pain de Gênes se bonifie et devient fondant le lendemain.", badge: null }
+    ],
+    liees: ["succespraline","gateaunantais","financierspistache"]
+  },
+  gateaunantais: {
+    dateAjout: "2026-08-01T16:09:00",
+    nom: "Gâteau Nantais",
+    cat: "desserts", pays: "france",
+    base: 8,
+    temps: "55 min",
+    niveau: "⭐ Facile",
+    emoji: "🥃",
+    description: "Le gâteau d'amandes et de rhum de Nantes, né du commerce colonial du port au XVIIIᵉ siècle. Son glaçage blanc au rhum, appliqué à chaud, cristallise en une fine croûte cassante — c'est sa signature absolue.",
+    tableauGateaunantais: [
+      { nb: 1, poudreamande: "25 g", sucre: "26 g", beurre: "25 g", oeufs: "½", farine: "15 g", rhum: "10 ml", sucreglace: "15 g", vanille: "0.3 g", sel: "0.2 g" },
+      { nb: 2, poudreamande: "50 g", sucre: "52 g", beurre: "50 g", oeufs: "1", farine: "30 g", rhum: "20 ml", sucreglace: "30 g", vanille: "0.6 g", sel: "0.4 g" },
+      { nb: 3, poudreamande: "75 g", sucre: "78 g", beurre: "75 g", oeufs: "1½", farine: "45 g", rhum: "30 ml", sucreglace: "45 g", vanille: "0.9 g", sel: "0.6 g" },
+      { nb: 4, poudreamande: "100 g", sucre: "104 g", beurre: "100 g", oeufs: "2", farine: "60 g", rhum: "40 ml", sucreglace: "60 g", vanille: "1.2 g", sel: "0.8 g" },
+      { nb: 5, poudreamande: "125 g", sucre: "130 g", beurre: "125 g", oeufs: "2½", farine: "75 g", rhum: "50 ml", sucreglace: "75 g", vanille: "1.5 g", sel: "1 g" },
+      { nb: 6, poudreamande: "150 g", sucre: "156 g", beurre: "150 g", oeufs: "3", farine: "90 g", rhum: "60 ml", sucreglace: "90 g", vanille: "1.8 g", sel: "1.2 g" },
+      { nb: 7, poudreamande: "175 g", sucre: "182 g", beurre: "175 g", oeufs: "3½", farine: "105 g", rhum: "70 ml", sucreglace: "105 g", vanille: "2.1 g", sel: "1.4 g" },
+      { nb: 8, poudreamande: "200 g", sucre: "208 g", beurre: "200 g", oeufs: "4", farine: "120 g", rhum: "80 ml", sucreglace: "120 g", vanille: "2.4 g", sel: "1.6 g" },
+      { nb: 9, poudreamande: "225 g", sucre: "234 g", beurre: "225 g", oeufs: "4½", farine: "135 g", rhum: "90 ml", sucreglace: "135 g", vanille: "2.7 g", sel: "1.8 g" },
+      { nb: 10, poudreamande: "250 g", sucre: "260 g", beurre: "250 g", oeufs: "5", farine: "150 g", rhum: "100 ml", sucreglace: "150 g", vanille: "3 g", sel: "2 g" },
+      { nb: 11, poudreamande: "275 g", sucre: "286 g", beurre: "275 g", oeufs: "5½", farine: "165 g", rhum: "110 ml", sucreglace: "165 g", vanille: "3.3 g", sel: "2.2 g" },
+      { nb: 12, poudreamande: "300 g", sucre: "312 g", beurre: "300 g", oeufs: "6", farine: "180 g", rhum: "120 ml", sucreglace: "180 g", vanille: "3.6 g", sel: "2.4 g" },
+      { nb: 13, poudreamande: "325 g", sucre: "338 g", beurre: "325 g", oeufs: "6½", farine: "195 g", rhum: "130 ml", sucreglace: "195 g", vanille: "3.9 g", sel: "2.6 g" },
+      { nb: 14, poudreamande: "350 g", sucre: "364 g", beurre: "350 g", oeufs: "7", farine: "210 g", rhum: "140 ml", sucreglace: "210 g", vanille: "4.2 g", sel: "2.8 g" },
+      { nb: 15, poudreamande: "375 g", sucre: "390 g", beurre: "375 g", oeufs: "7½", farine: "225 g", rhum: "150 ml", sucreglace: "225 g", vanille: "4.5 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Crémer", detail: "Fouettez beurre pommade et sucre 5 minutes jusqu'à blanchiment complet — c'est ce qui donne la texture serrée mais fondante.", badge: null },
+      { icone: "🌰", titre: "L'amande", detail: "Ajoutez la poudre d'amande et la vanille, mélangez bien avant de passer aux œufs.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Un par un, en fouettant à chaque fois : si l'appareil tranche, une cuillère de farine le rattrape.", badge: null },
+      { icone: "🥃", titre: "Le rhum", detail: "Deux tiers du rhum dans la pâte, le tiers restant RÉSERVÉ pour le glaçage — ne mettez pas tout.", badge: null },
+      { icone: "🌾", titre: "La farine", detail: "Farine et sel à la spatule, sans travailler, puis versez dans un moule beurré et fariné.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "35 minutes à 170°C. Le gâteau doit être doré et une lame ressortir sèche.", badge: null },
+      { icone: "❄️", titre: "Glacer à chaud", detail: "Mélangez sucre glace et rhum restant, versez sur le gâteau ENCORE CHAUD et étalez : le glaçage sèche en croûte brillante.", badge: null }
+    ],
+    liees: ["paindegenes","babaaurhum","quatrequarts"]
   },
 });

@@ -1742,7 +1742,7 @@ Object.assign(recettes, {
       { icone: "🥛", titre: "Le lait", detail: "Complétez d'eau froide, puis ajoutez le lait en dernier — il descend en volutes à travers la mousse.", badge: null },
       { icone: "🥤", titre: "Servir", detail: "Une paille, et surtout PAS de cuillère : en Grèce, on ne mélange jamais un frappé, on le boit à travers la mousse.", badge: null }
     ],
-    liees: ["cafeglace","frappealafraise","matchalatte"]
+    liees: ["glacecafe","frappefraise","matchalattewi"]
   },
   chocolatchaudviennois: {
     dateAjout: "2026-08-01T12:09:00",
@@ -1780,6 +1780,6 @@ Object.assign(recettes, {
       { icone: "☕", titre: "Servir", detail: "Chocolat brûlant dans une tasse préchauffée à l'eau chaude, puis la chantilly déposée à la cuillère.", badge: null },
       { icone: "🍫", titre: "Finir", detail: "Cacao râpé sur la crème. À Vienne, on ne mélange pas : on boit le chocolat chaud À TRAVERS la crème froide.", badge: null }
     ],
-    liees: ["chocolatchaud","cafeviennois","cremechantilly"]
+    liees: ["chocolatChaud"]
   },
 });

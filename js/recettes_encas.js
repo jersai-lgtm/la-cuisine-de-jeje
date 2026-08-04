@@ -913,7 +913,7 @@ Object.assign(recettes, {
       ]
   },
   clubsandwich: {
-    liees: ["mayonnaise", "paindemie"],
+    liees: ["mayonnaise","paindemie"],
     nom: "Club sandwich",
     cat: "encas", pays: "usa",
     base: 2,
@@ -985,7 +985,7 @@ Object.assign(recettes, {
       ]
   },
   nuggetspoulet: {
-    liees: ["ketchup", "saucebarbecue"],
+    liees: ["ketchup","saucebarbecue"],
     nom: "Nuggets de poulet maison",
     cat: "encas", pays: "usa",
     base: 4,
@@ -1655,7 +1655,7 @@ Object.assign(recettes, {
     ]
   },
   zapiekanka: {
-    liees: ["ketchup", "painbaguette"],
+    liees: ["ketchup","painbaguette"],
     nom: "Zapiekanka",
     cat: "encas",
     pays: "pologne",
@@ -2213,7 +2213,7 @@ Object.assign(recettes, {
     ]
   },
   corndogcoreen: {
-    nom: "Korean corn dog", cat: "encas", pays: "coree", dateAjout: "2026-06-17T10:00:00", liees: ["ketchup", "mayonnaise"],
+    nom: "Korean corn dog", cat: "encas", pays: "coree", dateAjout: "2026-06-17T10:00:00", liees: ["ketchup","mayonnaise"],
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🌭",
     description: "Le hot-dog coréen viral : saucisse et mozzarella enrobées d'une pâte épaisse, panées au panko et frites jusqu'à ultra-croustillant, puis saupoudrées de sucre. Effet fromage filant garanti.",
     ingredients: {},
@@ -2673,7 +2673,7 @@ Object.assign(recettes, {
     temps: "35 min",
     niveau: "⭐ Facile",
     emoji: "🌯",
-    liees: ["galettetacos", "guacamole"],
+    liees: ["galettetacos","guacamole"],
     description: "Le burrito frit du Tex-Mex : une galette garnie de poulet, haricots rouges, riz et fromage, roulée puis dorée jusqu'au croustillant. Croquant dehors, fondant dedans.",
     tableauChimichanga: [
       { nb: 1, tortilla: 1, poulet: "80 g", haricotsrouges: "40 g", cheddar: "25 g", riz: "40 g", tomates: "30 g", huile: "10 ml" },
@@ -7304,7 +7304,7 @@ Object.assign(recettes, {
       { icone: "🧻", titre: "Refroidir", detail: "Laissez tiédir les galettes à plat sur un torchon : une galette chaude colle et se déchire au roulage.", badge: null },
       { icone: "🥨", titre: "Rouler", detail: "Un trait de moutarde, la saucisse brûlante posée en diagonale, et on roule serré. Ça se mange debout, tout de suite.", badge: null }
     ],
-    liees: ["galettesarrasin","crepes","pateacrepes"]
+    liees: ["galettesarrasin","crepes","crepes"]
   },
   sandwichpastrami: {
     dateAjout: "2026-08-01T10:09:00",
@@ -7342,6 +7342,44 @@ Object.assign(recettes, {
       { icone: "🗻", titre: "Empiler haut", detail: "Empilez la viande en accordéon et non à plat — c'est ce qui donne la hauteur du vrai sandwich de deli.", badge: null },
       { icone: "🔪", titre: "Trancher", detail: "Choucroute, chapeau, une pique en bois au centre, et coupez en deux d'un coup net. À manger immédiatement.", badge: null }
     ],
-    liees: ["croquemonsieur","painseigle","coleslaw"]
+    liees: ["croquemonsieur","painsigle","coleslaw"]
+  },
+  friandsviande: {
+    dateAjout: "2026-08-01T15:09:00",
+    nom: "Friands à la Viande",
+    cat: "encas", pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🥟",
+    description: "Le chausson feuilleté des boulangeries françaises, garni de chair à saucisse persillée. À manger tiède, à la main, en sortant de la boulangerie — et infiniment meilleur fait maison, où la farce est vraiment généreuse.",
+    tableauFriandsviande: [
+      { nb: 1, pateFeuilletee: "60 g", porc: "70 g", echalote: "", persil: "4 g", oeufs: "¼", chapelure: "8 g", muscade: "0.2 g", vinblanc: "10 ml", poivre: "0.4 g" },
+      { nb: 2, pateFeuilletee: "120 g", porc: "140 g", echalote: "", persil: "8 g", oeufs: "½", chapelure: "16 g", muscade: "0.4 g", vinblanc: "20 ml", poivre: "0.8 g" },
+      { nb: 3, pateFeuilletee: "180 g", porc: "210 g", echalote: "1", persil: "12 g", oeufs: "¾", chapelure: "24 g", muscade: "0.6 g", vinblanc: "30 ml", poivre: "1.2 g" },
+      { nb: 4, pateFeuilletee: "240 g", porc: "280 g", echalote: "1", persil: "16 g", oeufs: "1", chapelure: "32 g", muscade: "0.8 g", vinblanc: "40 ml", poivre: "1.6 g" },
+      { nb: 5, pateFeuilletee: "300 g", porc: "350 g", echalote: "2", persil: "20 g", oeufs: "1¼", chapelure: "40 g", muscade: "1 g", vinblanc: "50 ml", poivre: "2 g" },
+      { nb: 6, pateFeuilletee: "360 g", porc: "420 g", echalote: "2", persil: "24 g", oeufs: "1½", chapelure: "48 g", muscade: "1.2 g", vinblanc: "60 ml", poivre: "2.4 g" },
+      { nb: 7, pateFeuilletee: "420 g", porc: "490 g", echalote: "2", persil: "28 g", oeufs: "1¾", chapelure: "56 g", muscade: "1.4 g", vinblanc: "70 ml", poivre: "2.8 g" },
+      { nb: 8, pateFeuilletee: "480 g", porc: "560 g", echalote: "3", persil: "32 g", oeufs: "2", chapelure: "64 g", muscade: "1.6 g", vinblanc: "80 ml", poivre: "3.2 g" },
+      { nb: 9, pateFeuilletee: "540 g", porc: "630 g", echalote: "3", persil: "36 g", oeufs: "2¼", chapelure: "72 g", muscade: "1.8 g", vinblanc: "90 ml", poivre: "3.6 g" },
+      { nb: 10, pateFeuilletee: "600 g", porc: "700 g", echalote: "4", persil: "40 g", oeufs: "2½", chapelure: "80 g", muscade: "2 g", vinblanc: "100 ml", poivre: "4 g" },
+      { nb: 11, pateFeuilletee: "660 g", porc: "770 g", echalote: "4", persil: "44 g", oeufs: "2¾", chapelure: "88 g", muscade: "2.2 g", vinblanc: "110 ml", poivre: "4.4 g" },
+      { nb: 12, pateFeuilletee: "720 g", porc: "840 g", echalote: "4", persil: "48 g", oeufs: "3", chapelure: "96 g", muscade: "2.4 g", vinblanc: "120 ml", poivre: "4.8 g" },
+      { nb: 13, pateFeuilletee: "780 g", porc: "910 g", echalote: "5", persil: "52 g", oeufs: "3¼", chapelure: "104 g", muscade: "2.6 g", vinblanc: "130 ml", poivre: "5.2 g" },
+      { nb: 14, pateFeuilletee: "840 g", porc: "980 g", echalote: "5", persil: "56 g", oeufs: "3½", chapelure: "112 g", muscade: "2.8 g", vinblanc: "140 ml", poivre: "5.6 g" },
+      { nb: 15, pateFeuilletee: "900 g", porc: "1050 g", echalote: "6", persil: "60 g", oeufs: "3¾", chapelure: "120 g", muscade: "3 g", vinblanc: "150 ml", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "La base", detail: "Faites suer l'échalote au beurre 3 minutes et laissez-la REFROIDIR avant de l'ajouter à la viande crue.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Mélangez chair à saucisse, échalote froide, persil, chapelure, muscade, vin blanc, sel et beaucoup de poivre.", badge: null },
+      { icone: "🍳", titre: "Goûter", detail: "Poêlez une cuillère de farce et goûtez-la : c'est le seul moyen d'ajuster le sel avant d'enfermer la garniture.", badge: null },
+      { icone: "📏", titre: "Découper", detail: "Taillez des rectangles de 10 × 14 cm dans la pâte feuilletée bien froide.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Un boudin de farce sur la moitié, en laissant 2 cm de marge tout autour — trop garni, le friand s'ouvre à la cuisson.", badge: null },
+      { icone: "🤏", titre: "Souder", detail: "Humectez les bords, rabattez et pressez à la fourchette. Percez UNE cheminée au centre pour la vapeur.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Dorure à l'œuf, 25 minutes à 200°C jusqu'à brun profond. Laissez tiédir 5 minutes : la farce est brûlante.", badge: null }
+    ],
+    liees: ["patefeuilletee","boucheesalareine","saucissonbrioche"]
   },
 });

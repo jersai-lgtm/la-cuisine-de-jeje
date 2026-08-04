@@ -934,7 +934,7 @@ Object.assign(recettes, {
     ]
   },
   pizzatonno: {
-    liees: ["pizza", "saucetomate"],
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Thon & Oignon",
     cat: "pizzas",
     pays: "italie",
@@ -974,7 +974,7 @@ Object.assign(recettes, {
     ]
   },
   pizzasalsiccia: {
-    liees: ["pizza", "saucetomate"],
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Salsiccia",
     cat: "pizzas",
     pays: "italie",
@@ -1054,7 +1054,7 @@ Object.assign(recettes, {
     ]
   },
   pizzaamatriciana: {
-    liees: ["pizza", "saucetomate"],
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Amatriciana",
     cat: "pizzas",
     pays: "italie",
@@ -1094,7 +1094,7 @@ Object.assign(recettes, {
     ]
   },
   pizzagreca: {
-    liees: ["pizza", "saucetomate"],
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Grecque",
     cat: "pizzas",
     pays: "grece",
@@ -1133,7 +1133,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapollobbq: {
-    liees: ["pizza", "saucebarbecue"],
+    liees: ["pizza","saucebarbecue"],
     nom: "Pizza Poulet BBQ",
     cat: "pizzas",
     pays: "usa",

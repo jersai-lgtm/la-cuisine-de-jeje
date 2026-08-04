@@ -965,7 +965,7 @@ Object.assign(recettes, {
     ]
   },
   burgermaison: {
-    liees: ["painburger", "sauceburger", "mayonnaise", "ketchup"],
+    liees: ["painburger","sauceburger","mayonnaise","ketchup"],
     nom: "Burger Maison",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
@@ -2674,7 +2674,7 @@ Object.assign(recettes, {
     ]
   },
   wagyuBurger: {
-    liees: ["painburger", "sauceburger", "mayonnaise", "ketchup"],
+    liees: ["painburger","sauceburger","mayonnaise","ketchup"],
     nom: "Burger Wagyu",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
@@ -5505,7 +5505,7 @@ Object.assign(recettes, {
     ]
   },
   quichepoireaux: {
-    liees: ["patebrisee", "vinaigrette"],
+    liees: ["patebrisee","vinaigrette"],
     nom: "Quiche aux Poireaux",
     cat: "plats", saisons: ["hiver","printemps","automne"], pays: "france",
     base: 6,
@@ -5582,7 +5582,7 @@ Object.assign(recettes, {
     ]
   },
   currywurst: {
-    liees: ["ketchup", "painsigle", "saucetomate"],
+    liees: ["ketchup","painsigle","saucetomate"],
     nom: "Currywurst",
     cat: "plats", pays: "allemagne",
     base: 4,
@@ -5931,7 +5931,7 @@ Object.assign(recettes, {
     ]
   },
   tartareboeuf: {
-    liees: ["paincampagne", "ketchup", "vinaigrette", "saucetartare"],
+    liees: ["paincampagne","ketchup","vinaigrette","saucetartare"],
     nom: "Tartare de Bœuf",
     cat: "plats", pays: "france",
     base: 4,
@@ -7524,7 +7524,7 @@ Object.assign(recettes, {
     ]
   },
   enchiladas: {
-    liees: ["galettetacos", "saucetomate"],
+    liees: ["galettetacos","saucetomate"],
     cat: "plats", pays: "mexique",
     dateAjout: "2026-06-01",
     base: 4,
@@ -7669,7 +7669,7 @@ Object.assign(recettes, {
     ]
   },
   francesinha: {
-    liees: ["paindemie", "saucetomate"],
+    liees: ["paindemie","saucetomate"],
     cat: "plats", pays: "portugal",
     dateAjout: "2026-06-01",
     base: 2,
@@ -13233,7 +13233,7 @@ Object.assign(recettes, {
     ]
   },
   fishburger: {
-    nom: "Fish burger", cat: "plats", pays: "usa", dateAjout: "2026-06-17T10:00:00", liees: ["painburger", "saucetartare"],
+    nom: "Fish burger", cat: "plats", pays: "usa", dateAjout: "2026-06-17T10:00:00", liees: ["painburger","saucetartare"],
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍔",
     description: "Le burger de poisson façon fast-food, version maison : filet pané bien croustillant, cheddar fondant et sauce tartare. Imbattable avec des frites.",
     ingredients: {},
@@ -16177,7 +16177,7 @@ Object.assign(recettes, {
     ]
   },
   tajinmalsouka: {
-    liees: ["brik", "feuilledebrick"],
+    liees: ["brik","feuilledebrick"],
     nom: "Tajine Malsouka",
     cat: "plats", pays: "tunisie",
     base: 4,
@@ -46646,7 +46646,7 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Monter", detail: "Alternez béchamel, pâtes, épinards, saumon — quatre couches, en finissant par de la béchamel bien étalée jusqu'aux bords.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Parmesan et emmental sur le dessus, 40 minutes à 180°C. Laissez reposer 10 minutes avant de couper, sinon les parts s'effondrent.", badge: null }
     ],
-    liees: ["lasagnesbolognaise","patealasagne","saucebechamel"]
+    liees: ["lasagneviande","lasagne","bechamel"]
   },
   hachisparmentierpoisson: {
     dateAjout: "2026-08-01T10:01:00",
@@ -46684,7 +46684,7 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "La purée fine", detail: "Écrasez les pommes de terre pelées avec le beurre restant et un peu de lait chaud, muscade, sel.", badge: null },
       { icone: "🔥", titre: "Gratiner", detail: "Poisson au fond, purée par-dessus, striez à la fourchette, emmental et chapelure. 20 minutes à 200°C jusqu'à croûte dorée.", badge: null }
     ],
-    liees: ["hachisparmentier","puree","saucebechamel"]
+    liees: ["hachisparmentier","bechamel"]
   },
   quichechampignons: {
     dateAjout: "2026-08-01T10:02:00",
@@ -46722,7 +46722,7 @@ Object.assign(recettes, {
       { icone: "🧀", titre: "Garnir", detail: "Champignons refroidis sur le fond précuit, emmental, puis l'appareil versé doucement.", badge: null },
       { icone: "⏲️", titre: "Cuire", detail: "30 minutes à 180°C : le centre doit encore trembloter légèrement quand vous sortez la quiche, il finit de prendre hors du four.", badge: null }
     ],
-    liees: ["quichelorraine","patebrisee","quicheaupoireaux"]
+    liees: ["quichelorraine","patebrisee","quichelorraine"]
   },
   gratinsavoyard: {
     dateAjout: "2026-08-01T10:03:00",
@@ -46760,7 +46760,7 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire couvert", detail: "50 minutes à 160°C sous papier alu : la cuisson douce permet aux pommes de terre de s'attendrir sans que le fromage brûle.", badge: null },
       { icone: "🏔️", titre: "Gratiner", detail: "Retirez l'alu, comté restant et noisettes de beurre, 20 minutes à 200°C. La lame d'un couteau doit traverser sans résistance.", badge: null }
     ],
-    liees: ["gratindauphinois","tartiflette","raclette"]
+    liees: ["gratindauphinois","tartiflettesavoyarde","raclette"]
   },
   escalopemilanaise: {
     dateAjout: "2026-08-01T10:04:00",
@@ -46798,7 +46798,7 @@ Object.assign(recettes, {
       { icone: "🧈", titre: "Cuire au beurre", detail: "Beurre mousseux à feu MOYEN, 4 minutes par face. Trop chaud, le beurre noircit ; trop doux, la panure boit la graisse.", badge: null },
       { icone: "🍋", titre: "Servir", detail: "Égouttez sur papier absorbant, persil, quartier de citron. Se mange immédiatement — une milanaise qui attend n'est plus croustillante.", badge: null }
     ],
-    liees: ["escalopespouletpanees","saltimbocca","roquette"]
+    liees: ["saltimbocca","saladeroquetteparmesan"]
   },
   flamichepoireaux: {
     dateAjout: "2026-08-01T10:05:00",
@@ -46836,7 +46836,7 @@ Object.assign(recettes, {
       { icone: "🔒", titre: "Couvrir", detail: "Posez la seconde abaisse, soudez les bords à l'œuf battu en pinçant, et percez une cheminée au centre.", badge: null },
       { icone: "🖌️", titre: "Dorer", detail: "Dorure à l'œuf, rayures à la pointe du couteau, 35 minutes à 190°C jusqu'à un brun profond.", badge: null }
     ],
-    liees: ["quicheaupoireaux","patefeuilletee","veloutepatatepoireaux"]
+    liees: ["quichelorraine","patefeuilletee","veloutepatatepoireaux"]
   },
   potjevleesch: {
     dateAjout: "2026-08-01T10:06:00",
@@ -46874,7 +46874,7 @@ Object.assign(recettes, {
       { icone: "💧", titre: "La gelée", detail: "Sortez la terrine, prélevez le jus, ajoutez la gélatine ramollie et reversez. Rectifiez le sel : froid, tout paraît plus fade.", badge: null },
       { icone: "❄️", titre: "Prendre", detail: "24 heures au réfrigérateur sous un poids léger. Se sert FROID, en tranches, avec des frites brûlantes.", badge: null }
     ],
-    liees: ["carbonadeflamande","friteslmaison","terrinedecampagne"]
+    liees: ["carbonadeflamande","terrinecampagne"]
   },
   axoa: {
     dateAjout: "2026-08-01T10:07:00",
@@ -46912,7 +46912,7 @@ Object.assign(recettes, {
       { icone: "♨️", titre: "Mijoter", detail: "Mouillez au bouillon à mi-hauteur et laissez mijoter 1 heure à couvert, à tout petit feu.", badge: null },
       { icone: "🥔", titre: "Finir", detail: "Découvrez 15 minutes pour réduire : le jus doit napper la viande sans la noyer. Servez avec des pommes de terre écrasées.", badge: null }
     ],
-    liees: ["poulettabasquaise","piperade","puree"]
+    liees: ["piperade"]
   },
   chipironsencre: {
     dateAjout: "2026-08-01T11:02:00",
@@ -46950,6 +46950,158 @@ Object.assign(recettes, {
       { icone: "🖤", titre: "L'encre", detail: "Délayez les poches d'encre dans un peu d'eau chaude, filtrez, et versez. La sauce devient noire instantanément.", badge: null },
       { icone: "♨️", titre: "Mijoter", detail: "25 minutes à couvert à tout petit feu — le calamar est tendre, puis caoutchouteux, puis tendre à nouveau. Persil, riz blanc à côté.", badge: null }
     ],
-    liees: ["calamarsalaromaine","paella","rizblanc"]
+    liees: ["calamarsRomaine","paella"]
+  },
+  tiellesetoise: {
+    dateAjout: "2026-08-01T15:03:00",
+    nom: "Tielle Sétoise",
+    cat: "plats", pays: "france",
+    base: 6,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐙",
+    description: "La tourte des pêcheurs de Sète, importée de Gaète par les immigrés italiens : du poulpe mijoté dans une sauce tomate pimentée, enfermé dans une pâte à l'huile d'olive. Elle se mange TIÈDE, jamais brûlante, souvent sur le port.",
+    tableauTiellesetoise: [
+      { nb: 1, farine: "45 g", huileolive: "15 ml", levure: "2 g", calamars: "110 g", tomate: "90 g", concentreTomate: "10 g", ail: "½", oignon: "", vinblanc: "25 ml", piment: "0.5 g", persil: "3 g", safran: "0.05 g" },
+      { nb: 2, farine: "90 g", huileolive: "30 ml", levure: "4 g", calamars: "220 g", tomate: "180 g", concentreTomate: "20 g", ail: "1", oignon: "", vinblanc: "50 ml", piment: "1 g", persil: "6 g", safran: "0.1 g" },
+      { nb: 3, farine: "135 g", huileolive: "45 ml", levure: "6 g", calamars: "330 g", tomate: "270 g", concentreTomate: "30 g", ail: "1½", oignon: "1", vinblanc: "75 ml", piment: "1.5 g", persil: "9 g", safran: "0.15 g" },
+      { nb: 4, farine: "180 g", huileolive: "60 ml", levure: "8 g", calamars: "440 g", tomate: "360 g", concentreTomate: "40 g", ail: "2", oignon: "1", vinblanc: "100 ml", piment: "2 g", persil: "12 g", safran: "0.2 g" },
+      { nb: 5, farine: "225 g", huileolive: "75 ml", levure: "10 g", calamars: "550 g", tomate: "450 g", concentreTomate: "50 g", ail: "2½", oignon: "2", vinblanc: "125 ml", piment: "2.5 g", persil: "15 g", safran: "0.25 g" },
+      { nb: 6, farine: "270 g", huileolive: "90 ml", levure: "12 g", calamars: "660 g", tomate: "540 g", concentreTomate: "60 g", ail: "3", oignon: "2", vinblanc: "150 ml", piment: "3 g", persil: "18 g", safran: "0.3 g" },
+      { nb: 7, farine: "315 g", huileolive: "105 ml", levure: "14 g", calamars: "770 g", tomate: "630 g", concentreTomate: "70 g", ail: "3½", oignon: "2", vinblanc: "175 ml", piment: "3.5 g", persil: "21 g", safran: "0.35 g" },
+      { nb: 8, farine: "360 g", huileolive: "120 ml", levure: "16 g", calamars: "880 g", tomate: "720 g", concentreTomate: "80 g", ail: "4", oignon: "3", vinblanc: "200 ml", piment: "4 g", persil: "24 g", safran: "0.4 g" },
+      { nb: 9, farine: "405 g", huileolive: "135 ml", levure: "18 g", calamars: "990 g", tomate: "810 g", concentreTomate: "90 g", ail: "4½", oignon: "3", vinblanc: "225 ml", piment: "4.5 g", persil: "27 g", safran: "0.45 g" },
+      { nb: 10, farine: "450 g", huileolive: "150 ml", levure: "20 g", calamars: "1100 g", tomate: "900 g", concentreTomate: "100 g", ail: "5", oignon: "4", vinblanc: "250 ml", piment: "5 g", persil: "30 g", safran: "0.5 g" },
+      { nb: 11, farine: "495 g", huileolive: "165 ml", levure: "22 g", calamars: "1210 g", tomate: "990 g", concentreTomate: "110 g", ail: "5½", oignon: "4", vinblanc: "275 ml", piment: "5.5 g", persil: "33 g", safran: "0.55 g" },
+      { nb: 12, farine: "540 g", huileolive: "180 ml", levure: "24 g", calamars: "1320 g", tomate: "1080 g", concentreTomate: "120 g", ail: "6", oignon: "4", vinblanc: "300 ml", piment: "6 g", persil: "36 g", safran: "0.6 g" },
+      { nb: 13, farine: "585 g", huileolive: "195 ml", levure: "26 g", calamars: "1430 g", tomate: "1170 g", concentreTomate: "130 g", ail: "6½", oignon: "5", vinblanc: "325 ml", piment: "6.5 g", persil: "39 g", safran: "0.65 g" },
+      { nb: 14, farine: "630 g", huileolive: "210 ml", levure: "28 g", calamars: "1540 g", tomate: "1260 g", concentreTomate: "140 g", ail: "7", oignon: "5", vinblanc: "350 ml", piment: "7 g", persil: "42 g", safran: "0.7 g" },
+      { nb: 15, farine: "675 g", huileolive: "225 ml", levure: "30 g", calamars: "1650 g", tomate: "1350 g", concentreTomate: "150 g", ail: "7½", oignon: "6", vinblanc: "375 ml", piment: "7.5 g", persil: "45 g", safran: "0.75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez farine, levure, huile d'olive, sel et 22 ml d'eau tiède par personne 10 minutes : la pâte doit être souple et légèrement grasse.", badge: null },
+      { icone: "⏳", titre: "Pousser", detail: "1 heure à couvert dans un endroit tiède, jusqu'à ce qu'elle double de volume.", badge: null },
+      { icone: "🐙", titre: "Le poulpe", detail: "Coupez le poulpe (ou les encornets) en morceaux de 2 cm et faites-les revenir 5 minutes à l'huile d'olive.", badge: null },
+      { icone: "🍅", titre: "La sauce", detail: "Ail, oignon, tomates concassées, concentré, vin blanc, piment et safran. Salez peu : le poulpe est déjà iodé.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "45 minutes à couvert à feu doux : le poulpe doit être fondant sous la fourchette. La sauce doit être ÉPAISSE, sinon elle détremperait la pâte.", badge: null },
+      { icone: "🥧", titre: "Monter", detail: "Étalez deux disques, garnissez le premier de farce FROIDE, couvrez, et soudez les bords en les roulant vers l'intérieur.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Badigeonnez d'huile d'olive rouge (huile + concentré + piment) et cuisez 30 minutes à 200°C. Servez tiède.", badge: null }
+    ],
+    liees: ["chipironsencre","pissaladiere","pizzamargherita"]
+  },
+  pouletgastongerard: {
+    dateAjout: "2026-08-01T15:05:00",
+    nom: "Poulet Gaston Gérard",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Né d'un accident en 1930 : la femme du maire de Dijon renverse du paprika sur le poulet de son mari et rattrape le tout à la moutarde, à la crème et au comté. Le plat devient un classique bourguignon — l'erreur la plus délicieuse de l'histoire.",
+    tableauPouletgastongerard: [
+      { nb: 1, poulet: "180 g", creme: "70 ml", comte: "30 g", moutarde: "14 g", vinblanc: "45 ml", beurre: "15 g", paprika: "1.5 g", chapelure: "10 g", poivre: "0.4 g" },
+      { nb: 2, poulet: "360 g", creme: "140 ml", comte: "60 g", moutarde: "28 g", vinblanc: "90 ml", beurre: "30 g", paprika: "3 g", chapelure: "20 g", poivre: "0.8 g" },
+      { nb: 3, poulet: "540 g", creme: "210 ml", comte: "90 g", moutarde: "42 g", vinblanc: "135 ml", beurre: "45 g", paprika: "4.5 g", chapelure: "30 g", poivre: "1.2 g" },
+      { nb: 4, poulet: "720 g", creme: "280 ml", comte: "120 g", moutarde: "56 g", vinblanc: "180 ml", beurre: "60 g", paprika: "6 g", chapelure: "40 g", poivre: "1.6 g" },
+      { nb: 5, poulet: "900 g", creme: "350 ml", comte: "150 g", moutarde: "70 g", vinblanc: "225 ml", beurre: "75 g", paprika: "7.5 g", chapelure: "50 g", poivre: "2 g" },
+      { nb: 6, poulet: "1080 g", creme: "420 ml", comte: "180 g", moutarde: "84 g", vinblanc: "270 ml", beurre: "90 g", paprika: "9 g", chapelure: "60 g", poivre: "2.4 g" },
+      { nb: 7, poulet: "1260 g", creme: "490 ml", comte: "210 g", moutarde: "98 g", vinblanc: "315 ml", beurre: "105 g", paprika: "10.5 g", chapelure: "70 g", poivre: "2.8 g" },
+      { nb: 8, poulet: "1440 g", creme: "560 ml", comte: "240 g", moutarde: "112 g", vinblanc: "360 ml", beurre: "120 g", paprika: "12 g", chapelure: "80 g", poivre: "3.2 g" },
+      { nb: 9, poulet: "1620 g", creme: "630 ml", comte: "270 g", moutarde: "126 g", vinblanc: "405 ml", beurre: "135 g", paprika: "13.5 g", chapelure: "90 g", poivre: "3.6 g" },
+      { nb: 10, poulet: "1800 g", creme: "700 ml", comte: "300 g", moutarde: "140 g", vinblanc: "450 ml", beurre: "150 g", paprika: "15 g", chapelure: "100 g", poivre: "4 g" },
+      { nb: 11, poulet: "1980 g", creme: "770 ml", comte: "330 g", moutarde: "154 g", vinblanc: "495 ml", beurre: "165 g", paprika: "16.5 g", chapelure: "110 g", poivre: "4.4 g" },
+      { nb: 12, poulet: "2160 g", creme: "840 ml", comte: "360 g", moutarde: "168 g", vinblanc: "540 ml", beurre: "180 g", paprika: "18 g", chapelure: "120 g", poivre: "4.8 g" },
+      { nb: 13, poulet: "2340 g", creme: "910 ml", comte: "390 g", moutarde: "182 g", vinblanc: "585 ml", beurre: "195 g", paprika: "19.5 g", chapelure: "130 g", poivre: "5.2 g" },
+      { nb: 14, poulet: "2520 g", creme: "980 ml", comte: "420 g", moutarde: "196 g", vinblanc: "630 ml", beurre: "210 g", paprika: "21 g", chapelure: "140 g", poivre: "5.6 g" },
+      { nb: 15, poulet: "2700 g", creme: "1050 ml", comte: "450 g", moutarde: "210 g", vinblanc: "675 ml", beurre: "225 g", paprika: "22.5 g", chapelure: "150 g", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Colorer", detail: "Faites dorer les morceaux de poulet au beurre sur toutes les faces, 10 minutes : c'est le fond de goût du plat.", badge: null },
+      { icone: "🌶️", titre: "Le paprika", detail: "Saupoudrez généreusement de paprika et faites-le torréfier 1 minute — il doit sentir, pas brûler.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Vin blanc, grattez tous les sucs au fond de la cocotte, puis 25 minutes à couvert à feu doux.", badge: null },
+      { icone: "🍗", titre: "Réserver", detail: "Sortez le poulet et disposez-le dans un plat à gratin.", badge: null },
+      { icone: "🥛", titre: "La sauce", detail: "Faites réduire le jus de cuisson de moitié, ajoutez la crème et laissez épaissir 5 minutes.", badge: null },
+      { icone: "🌭", titre: "La moutarde", detail: "Moutarde de Dijon HORS DU FEU, puis la moitié du comté râpé, en fouettant jusqu'à lisse.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Nappez le poulet, comté restant et chapelure, 15 minutes à 200°C jusqu'à croûte dorée et bouillonnante.", badge: null }
+    ],
+    liees: ["pouletrotiperfect","saucemoutardemiel","gratindauphinois"]
+  },
+  poteeauvergnate: {
+    dateAjout: "2026-08-01T15:06:00",
+    nom: "Potée Auvergnate",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "2 h 30",
+    niveau: "⭐ Facile",
+    emoji: "🥬",
+    description: "Le plat unique des fermes d'Auvergne : chou, légumes racines et cochon sous toutes ses formes, mijotés des heures dans le même bouillon. On sert d'abord le bouillon en soupe, puis les viandes et les légumes — deux plats en une casserole.",
+    tableauPoteeauvergnate: [
+      { nb: 1, chou: "140 g", pommedeterre: "150 g", carotte: "", navet: "½", poireaux: "60 g", saucisse: "80 g", lardons: "45 g", jambon: "50 g", oignon: "", clougirofle: "0.3 g", thym: "0.5 g", laurier: "0.3 g" },
+      { nb: 2, chou: "280 g", pommedeterre: "300 g", carotte: "1", navet: "1", poireaux: "120 g", saucisse: "160 g", lardons: "90 g", jambon: "100 g", oignon: "", clougirofle: "0.6 g", thym: "1 g", laurier: "0.6 g" },
+      { nb: 3, chou: "420 g", pommedeterre: "450 g", carotte: "2", navet: "1½", poireaux: "180 g", saucisse: "240 g", lardons: "135 g", jambon: "150 g", oignon: "", clougirofle: "0.9 g", thym: "1.5 g", laurier: "0.9 g" },
+      { nb: 4, chou: "560 g", pommedeterre: "600 g", carotte: "3", navet: "2", poireaux: "240 g", saucisse: "320 g", lardons: "180 g", jambon: "200 g", oignon: "1", clougirofle: "1.2 g", thym: "2 g", laurier: "1.2 g" },
+      { nb: 5, chou: "700 g", pommedeterre: "750 g", carotte: "4", navet: "2½", poireaux: "300 g", saucisse: "400 g", lardons: "225 g", jambon: "250 g", oignon: "1½", clougirofle: "1.5 g", thym: "2.5 g", laurier: "1.5 g" },
+      { nb: 6, chou: "840 g", pommedeterre: "900 g", carotte: "4", navet: "3", poireaux: "360 g", saucisse: "480 g", lardons: "270 g", jambon: "300 g", oignon: "1", clougirofle: "1.8 g", thym: "3 g", laurier: "1.8 g" },
+      { nb: 7, chou: "980 g", pommedeterre: "1050 g", carotte: "5", navet: "3½", poireaux: "420 g", saucisse: "560 g", lardons: "315 g", jambon: "350 g", oignon: "2", clougirofle: "2.1 g", thym: "3.5 g", laurier: "2.1 g" },
+      { nb: 8, chou: "1120 g", pommedeterre: "1200 g", carotte: "6", navet: "4", poireaux: "480 g", saucisse: "640 g", lardons: "360 g", jambon: "400 g", oignon: "2", clougirofle: "2.4 g", thym: "4 g", laurier: "2.4 g" },
+      { nb: 9, chou: "1260 g", pommedeterre: "1350 g", carotte: "7", navet: "4½", poireaux: "540 g", saucisse: "720 g", lardons: "405 g", jambon: "450 g", oignon: "2", clougirofle: "2.7 g", thym: "4.5 g", laurier: "2.7 g" },
+      { nb: 10, chou: "1400 g", pommedeterre: "1500 g", carotte: "8", navet: "5", poireaux: "600 g", saucisse: "800 g", lardons: "450 g", jambon: "500 g", oignon: "3", clougirofle: "3 g", thym: "5 g", laurier: "3 g" },
+      { nb: 11, chou: "1540 g", pommedeterre: "1650 g", carotte: "8", navet: "5½", poireaux: "660 g", saucisse: "880 g", lardons: "495 g", jambon: "550 g", oignon: "3", clougirofle: "3.3 g", thym: "5.5 g", laurier: "3.3 g" },
+      { nb: 12, chou: "1680 g", pommedeterre: "1800 g", carotte: "9", navet: "6", poireaux: "720 g", saucisse: "960 g", lardons: "540 g", jambon: "600 g", oignon: "3", clougirofle: "3.6 g", thym: "6 g", laurier: "3.6 g" },
+      { nb: 13, chou: "1820 g", pommedeterre: "1950 g", carotte: "10", navet: "6½", poireaux: "780 g", saucisse: "1040 g", lardons: "585 g", jambon: "650 g", oignon: "3", clougirofle: "3.9 g", thym: "6.5 g", laurier: "3.9 g" },
+      { nb: 14, chou: "1960 g", pommedeterre: "2100 g", carotte: "11", navet: "7", poireaux: "840 g", saucisse: "1120 g", lardons: "630 g", jambon: "700 g", oignon: "4", clougirofle: "4.2 g", thym: "7 g", laurier: "4.2 g" },
+      { nb: 15, chou: "2100 g", pommedeterre: "2250 g", carotte: "12", navet: "7½", poireaux: "900 g", saucisse: "1200 g", lardons: "675 g", jambon: "750 g", oignon: "4½", clougirofle: "4.5 g", thym: "7.5 g", laurier: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Dessaler", detail: "Faites tremper le jambon et les lardons 2 heures à l'eau froide si votre charcuterie est très salée.", badge: null },
+      { icone: "🥬", titre: "Blanchir le chou", detail: "Plongez les feuilles de chou 5 minutes dans l'eau bouillante et égouttez : cela retire l'amertume et la digestion difficile.", badge: null },
+      { icone: "♨️", titre: "Le bouillon", detail: "Départ à l'EAU FROIDE avec les viandes, l'oignon piqué de clous de girofle, thym et laurier. Écumez soigneusement.", badge: null },
+      { icone: "⏳", titre: "Cuisson longue", detail: "1 h 30 à petits frémissements — jamais à gros bouillons, la viande deviendrait filandreuse.", badge: null },
+      { icone: "🥕", titre: "Les légumes durs", detail: "Carottes, navets et chou pour les 45 dernières minutes.", badge: null },
+      { icone: "🥔", titre: "Les tendres", detail: "Pommes de terre et poireaux, plus la saucisse PIQUÉE à la fourchette, pour les 25 dernières minutes.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Bouillon d'abord, en assiette creuse sur du pain grillé. Viandes et légumes ensuite, avec de la moutarde forte.", badge: null }
+    ],
+    liees: ["potaufeu","choucroute"]
+  },
+  fricasseepoulet: {
+    dateAjout: "2026-08-01T15:08:00",
+    nom: "Fricassée de Poulet",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "À mi-chemin entre le sauté et le ragoût : le poulet est saisi SANS coloration puis mijoté dans sa propre sauce blanche. Cette cuisson « à blanc » est ce qui distingue une fricassée d'un poulet chasseur ou d'un coq au vin.",
+    tableauFricasseepoulet: [
+      { nb: 1, poulet: "180 g", champignons: "60 g", oignon: "½", bouillon: "120 ml", creme: "50 ml", vinblanc: "40 ml", beurre: "18 g", farine: "10 g", oeufs: "", persil: "3 g", thym: "0.4 g" },
+      { nb: 2, poulet: "360 g", champignons: "120 g", oignon: "1", bouillon: "240 ml", creme: "100 ml", vinblanc: "80 ml", beurre: "36 g", farine: "20 g", oeufs: "", persil: "6 g", thym: "0.8 g" },
+      { nb: 3, poulet: "540 g", champignons: "180 g", oignon: "1½", bouillon: "360 ml", creme: "150 ml", vinblanc: "120 ml", beurre: "54 g", farine: "30 g", oeufs: "", persil: "9 g", thym: "1.2 g" },
+      { nb: 4, poulet: "720 g", champignons: "240 g", oignon: "2", bouillon: "480 ml", creme: "200 ml", vinblanc: "160 ml", beurre: "72 g", farine: "40 g", oeufs: "", persil: "12 g", thym: "1.6 g" },
+      { nb: 5, poulet: "900 g", champignons: "300 g", oignon: "2½", bouillon: "600 ml", creme: "250 ml", vinblanc: "200 ml", beurre: "90 g", farine: "50 g", oeufs: "1", persil: "15 g", thym: "2 g" },
+      { nb: 6, poulet: "1080 g", champignons: "360 g", oignon: "3", bouillon: "720 ml", creme: "300 ml", vinblanc: "240 ml", beurre: "108 g", farine: "60 g", oeufs: "1", persil: "18 g", thym: "2.4 g" },
+      { nb: 7, poulet: "1260 g", champignons: "420 g", oignon: "3½", bouillon: "840 ml", creme: "350 ml", vinblanc: "280 ml", beurre: "126 g", farine: "70 g", oeufs: "1", persil: "21 g", thym: "2.8 g" },
+      { nb: 8, poulet: "1440 g", champignons: "480 g", oignon: "4", bouillon: "960 ml", creme: "400 ml", vinblanc: "320 ml", beurre: "144 g", farine: "80 g", oeufs: "1", persil: "24 g", thym: "3.2 g" },
+      { nb: 9, poulet: "1620 g", champignons: "540 g", oignon: "4½", bouillon: "1080 ml", creme: "450 ml", vinblanc: "360 ml", beurre: "162 g", farine: "90 g", oeufs: "1", persil: "27 g", thym: "3.6 g" },
+      { nb: 10, poulet: "1800 g", champignons: "600 g", oignon: "5", bouillon: "1200 ml", creme: "500 ml", vinblanc: "400 ml", beurre: "180 g", farine: "100 g", oeufs: "2", persil: "30 g", thym: "4 g" },
+      { nb: 11, poulet: "1980 g", champignons: "660 g", oignon: "5½", bouillon: "1320 ml", creme: "550 ml", vinblanc: "440 ml", beurre: "198 g", farine: "110 g", oeufs: "2", persil: "33 g", thym: "4.4 g" },
+      { nb: 12, poulet: "2160 g", champignons: "720 g", oignon: "6", bouillon: "1440 ml", creme: "600 ml", vinblanc: "480 ml", beurre: "216 g", farine: "120 g", oeufs: "2", persil: "36 g", thym: "4.8 g" },
+      { nb: 13, poulet: "2340 g", champignons: "780 g", oignon: "6½", bouillon: "1560 ml", creme: "650 ml", vinblanc: "520 ml", beurre: "234 g", farine: "130 g", oeufs: "2", persil: "39 g", thym: "5.2 g" },
+      { nb: 14, poulet: "2520 g", champignons: "840 g", oignon: "7", bouillon: "1680 ml", creme: "700 ml", vinblanc: "560 ml", beurre: "252 g", farine: "140 g", oeufs: "2", persil: "42 g", thym: "5.6 g" },
+      { nb: 15, poulet: "2700 g", champignons: "900 g", oignon: "7½", bouillon: "1800 ml", creme: "750 ml", vinblanc: "600 ml", beurre: "270 g", farine: "150 g", oeufs: "3", persil: "45 g", thym: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Raidir", detail: "Faites revenir le poulet au beurre à feu MOYEN sans le laisser colorer : la chair doit blanchir et se raffermir, c'est tout.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Ajoutez l'oignon ciselé et laissez-le devenir translucide, toujours sans coloration.", badge: null },
+      { icone: "🌾", titre: "Singer", detail: "Farine sur la viande, remuez 2 minutes : la sauce se liera pendant la cuisson, sans roux séparé.", badge: null },
+      { icone: "🍷", titre: "Mouiller", detail: "Vin blanc puis bouillon chaud à hauteur, thym, sel, poivre blanc.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "35 minutes à couvert à petits frémissements. Le poulet doit se détacher de l'os sans se déliter.", badge: null },
+      { icone: "🍄", titre: "Les champignons", detail: "Ajoutez-les pour les 10 dernières minutes seulement — plus tôt, ils rendraient trop d'eau.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Mélangez crème et jaune, détendez avec un peu de sauce chaude, reversez HORS DU FEU. Persil, et ne faites plus bouillir.", badge: null }
+    ],
+    liees: ["blanquetteveau","saucepoulette","pouletchasseur"]
   },
 });

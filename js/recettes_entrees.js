@@ -767,7 +767,7 @@ Object.assign(recettes, {
     ]
   },
 oeufmayo: {
-    liees: ["mayonnaise", "paincampagne"],
+    liees: ["mayonnaise","paincampagne"],
     nom: "Œufs mayonnaise",
     cat: "entrees", pays: "france",
     base: 6,
@@ -1096,7 +1096,7 @@ oeufmayo: {
     ]
   },
   saladechevrechaud: {
-    liees: ["painbaguette", "vinaigrette"],
+    liees: ["painbaguette","vinaigrette"],
     nom: "Salade de chèvre chaud",
     dateAjout: "2026-06-05",
     cat: "entrees", pays: "france",
@@ -4365,7 +4365,7 @@ oeufmayo: {
       { icone: "🥄", titre: "La vinaigrette", detail: "Délayez la moutarde dans le vinaigre avec l'échalote ciselée et du sel, puis montez à l'huile en filet en fouettant.", badge: null },
       { icone: "🌿", titre: "Servir", detail: "Artichaut tiède ou froid, vinaigrette à part dans un bol, persil dessus. On effeuille avec les doigts, on racle la base de la feuille entre les dents.", badge: null }
     ],
-    liees: ["vinaigretteclassique","artichautmarine","asperge"]
+    liees: ["vinaigrette","aspergesmimosa"]
   },
   aspergeshollandaise: {
     dateAjout: "2026-08-01T11:01:00",
@@ -4403,6 +4403,44 @@ oeufmayo: {
       { icone: "🌀", titre: "Monter", detail: "Quand le mélange fait le ruban, versez le beurre clarifié tiède en filet SANS CESSER de fouetter. Hors du feu dès que la sauce nappe.", badge: null },
       { icone: "🍋", titre: "Servir", detail: "Citron, sel, poivre. Nappez les asperges tièdes aussitôt — la hollandaise ne se réchauffe pas, elle tranche.", badge: null }
     ],
-    liees: ["aspergesmimosa","veloutedasperges","saucebearnaise"]
+    liees: ["aspergesmimosa","velouteAsperges","bearnaise"]
+  },
+  boucheesalareine: {
+    dateAjout: "2026-08-01T15:07:00",
+    nom: "Bouchées à la Reine",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "👑",
+    description: "Créées pour Marie Leszczyńska, reine de France et grande gourmande : un vol-au-vent de pâte feuilletée garni d'une blanquette de volaille aux champignons. L'entrée des repas de fête, celle qu'on servait aux mariages.",
+    tableauBoucheesalareine: [
+      { nb: 1, pateFeuilletee: "55 g", volaille: "80 g", champignons: "50 g", bouillon: "90 ml", creme: "35 ml", beurre: "15 g", farine: "10 g", oeufs: "", citron: "", muscade: "0.2 g" },
+      { nb: 2, pateFeuilletee: "110 g", volaille: "160 g", champignons: "100 g", bouillon: "180 ml", creme: "70 ml", beurre: "30 g", farine: "20 g", oeufs: "", citron: "", muscade: "0.4 g" },
+      { nb: 3, pateFeuilletee: "165 g", volaille: "240 g", champignons: "150 g", bouillon: "270 ml", creme: "105 ml", beurre: "45 g", farine: "30 g", oeufs: "", citron: "", muscade: "0.6 g" },
+      { nb: 4, pateFeuilletee: "220 g", volaille: "320 g", champignons: "200 g", bouillon: "360 ml", creme: "140 ml", beurre: "60 g", farine: "40 g", oeufs: "", citron: "", muscade: "0.8 g" },
+      { nb: 5, pateFeuilletee: "275 g", volaille: "400 g", champignons: "250 g", bouillon: "450 ml", creme: "175 ml", beurre: "75 g", farine: "50 g", oeufs: "1", citron: "¾", muscade: "1 g" },
+      { nb: 6, pateFeuilletee: "330 g", volaille: "480 g", champignons: "300 g", bouillon: "540 ml", creme: "210 ml", beurre: "90 g", farine: "60 g", oeufs: "1", citron: "", muscade: "1.2 g" },
+      { nb: 7, pateFeuilletee: "385 g", volaille: "560 g", champignons: "350 g", bouillon: "630 ml", creme: "245 ml", beurre: "105 g", farine: "70 g", oeufs: "1", citron: "1", muscade: "1.4 g" },
+      { nb: 8, pateFeuilletee: "440 g", volaille: "640 g", champignons: "400 g", bouillon: "720 ml", creme: "280 ml", beurre: "120 g", farine: "80 g", oeufs: "1", citron: "1", muscade: "1.6 g" },
+      { nb: 9, pateFeuilletee: "495 g", volaille: "720 g", champignons: "450 g", bouillon: "810 ml", creme: "315 ml", beurre: "135 g", farine: "90 g", oeufs: "1", citron: "1", muscade: "1.8 g" },
+      { nb: 10, pateFeuilletee: "550 g", volaille: "800 g", champignons: "500 g", bouillon: "900 ml", creme: "350 ml", beurre: "150 g", farine: "100 g", oeufs: "2", citron: "1½", muscade: "2 g" },
+      { nb: 11, pateFeuilletee: "605 g", volaille: "880 g", champignons: "550 g", bouillon: "990 ml", creme: "385 ml", beurre: "165 g", farine: "110 g", oeufs: "2", citron: "1", muscade: "2.2 g" },
+      { nb: 12, pateFeuilletee: "660 g", volaille: "960 g", champignons: "600 g", bouillon: "1080 ml", creme: "420 ml", beurre: "180 g", farine: "120 g", oeufs: "2", citron: "1", muscade: "2.4 g" },
+      { nb: 13, pateFeuilletee: "715 g", volaille: "1040 g", champignons: "650 g", bouillon: "1170 ml", creme: "455 ml", beurre: "195 g", farine: "130 g", oeufs: "2", citron: "1", muscade: "2.6 g" },
+      { nb: 14, pateFeuilletee: "770 g", volaille: "1120 g", champignons: "700 g", bouillon: "1260 ml", creme: "490 ml", beurre: "210 g", farine: "140 g", oeufs: "2", citron: "2", muscade: "2.8 g" },
+      { nb: 15, pateFeuilletee: "825 g", volaille: "1200 g", champignons: "750 g", bouillon: "1350 ml", creme: "525 ml", beurre: "225 g", farine: "150 g", oeufs: "3", citron: "2¼", muscade: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "👑", titre: "Les croûtes", detail: "Découpez deux disques par bouchée : un plein, un évidé en couronne. Collez la couronne sur le disque à l'œuf battu.", badge: null },
+      { icone: "🥚", titre: "Dorer", detail: "Dorez le dessus SANS faire couler sur les tranches — l'œuf sur les bords empêcherait le feuilletage de monter droit.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "25 minutes à 200°C, puis évidez délicatement le centre encore mou pour former la cavité.", badge: null },
+      { icone: "🍗", titre: "La volaille", detail: "Pochez le blanc de volaille 12 minutes dans le bouillon frémissant, puis taillez-le en dés de 1,5 cm.", badge: null },
+      { icone: "🍄", titre: "Les champignons", detail: "Cuisez-les 5 minutes dans un peu de bouillon citronné : ils restent blancs au lieu de noircir.", badge: null },
+      { icone: "🥛", titre: "Le velouté", detail: "Roux blanc, bouillon de pochage filtré, 10 minutes, puis la crème et le jaune d'œuf hors du feu.", badge: null },
+      { icone: "🍽️", titre: "Garnir", detail: "Mélangez volaille et champignons à la sauce, garnissez les croûtes BRÛLANTES et posez le chapeau. Servez aussitôt.", badge: null }
+    ],
+    liees: ["patefeuilletee","blanquetteveau","saucepoulette"]
   },
 });

@@ -1396,7 +1396,7 @@ Object.assign(recettes, {
     ]
   },
   cruffin: {
-    nom: "Cruffin", cat: "boulangerie", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["confiturefraise", "patefeuilletee"],
+    nom: "Cruffin", cat: "boulangerie", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["confiturefraise","patefeuilletee"],
     base: 6, temps: "1 h", niveau: "⭐⭐⭐ Difficile", emoji: "🥐",
     description: "L'hybride irrésistible : un croissant feuilleté façonné comme un muffin, tout en couches croustillantes, souvent fourré de crème ou roulé dans le sucre.",
     ingredients: {},
@@ -3135,6 +3135,6 @@ Object.assign(recettes, {
       { icone: "🕳️", titre: "Percer", detail: "Piquez toute la surface à la fourchette et découpez un trou au centre : ces trous empêchent les cloques à la cuisson.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "8 à 10 minutes à 230°C jusqu'à taches brunes. Refroidissez sur grille : le croustillant n'apparaît qu'en refroidissant.", badge: null }
     ],
-    liees: ["painseigle","painsemi","saumonfume"]
+    liees: ["painsigle","paincampagne","rillettessaumonfume"]
   },
 });
