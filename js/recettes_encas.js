@@ -7304,7 +7304,7 @@ Object.assign(recettes, {
       { icone: "🧻", titre: "Refroidir", detail: "Laissez tiédir les galettes à plat sur un torchon : une galette chaude colle et se déchire au roulage.", badge: null },
       { icone: "🥨", titre: "Rouler", detail: "Un trait de moutarde, la saucisse brûlante posée en diagonale, et on roule serré. Ça se mange debout, tout de suite.", badge: null }
     ],
-    liees: ["galettesarrasin","crepes","crepes"]
+    liees: ["galettesarrasin","crepes"]
   },
   sandwichpastrami: {
     dateAjout: "2026-08-01T10:09:00",
@@ -7381,5 +7381,43 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Dorure à l'œuf, 25 minutes à 200°C jusqu'à brun profond. Laissez tiédir 5 minutes : la farce est brûlante.", badge: null }
     ],
     liees: ["patefeuilletee","boucheesalareine","saucissonbrioche"]
+  },
+  rissoles: {
+    dateAjout: "2026-08-01T23:06:00",
+    nom: "Rissoles au Bœuf",
+    cat: "encas", pays: "france",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🥟",
+    description: "Le chausson médiéval devenu goûter d'enfance : un disque de pâte replié sur une farce de viande, soudé et frit ou cuit au four. Aussi vieux que le Moyen Âge, il est l'ancêtre direct de tous les chaussons salés d'Europe.",
+    tableauRissoles: [
+      { nb: 1, pateFeuilletee: "55 g", boeufhache: "70 g", oignon: "", tomate: "35 g", oeufs: "", persil: "3 g", cumin: "0.4 g", huile: "8 ml", poivre: "0.4 g" },
+      { nb: 2, pateFeuilletee: "110 g", boeufhache: "140 g", oignon: "", tomate: "70 g", oeufs: "", persil: "6 g", cumin: "0.8 g", huile: "16 ml", poivre: "0.8 g" },
+      { nb: 3, pateFeuilletee: "165 g", boeufhache: "210 g", oignon: "1", tomate: "105 g", oeufs: "", persil: "9 g", cumin: "1.2 g", huile: "24 ml", poivre: "1.2 g" },
+      { nb: 4, pateFeuilletee: "220 g", boeufhache: "280 g", oignon: "1", tomate: "140 g", oeufs: "", persil: "12 g", cumin: "1.6 g", huile: "32 ml", poivre: "1.6 g" },
+      { nb: 5, pateFeuilletee: "275 g", boeufhache: "350 g", oignon: "2", tomate: "175 g", oeufs: "1", persil: "15 g", cumin: "2 g", huile: "40 ml", poivre: "2 g" },
+      { nb: 6, pateFeuilletee: "330 g", boeufhache: "420 g", oignon: "2", tomate: "210 g", oeufs: "1", persil: "18 g", cumin: "2.4 g", huile: "48 ml", poivre: "2.4 g" },
+      { nb: 7, pateFeuilletee: "385 g", boeufhache: "490 g", oignon: "2", tomate: "245 g", oeufs: "1", persil: "21 g", cumin: "2.8 g", huile: "56 ml", poivre: "2.8 g" },
+      { nb: 8, pateFeuilletee: "440 g", boeufhache: "560 g", oignon: "3", tomate: "280 g", oeufs: "1", persil: "24 g", cumin: "3.2 g", huile: "64 ml", poivre: "3.2 g" },
+      { nb: 9, pateFeuilletee: "495 g", boeufhache: "630 g", oignon: "3", tomate: "315 g", oeufs: "1", persil: "27 g", cumin: "3.6 g", huile: "72 ml", poivre: "3.6 g" },
+      { nb: 10, pateFeuilletee: "550 g", boeufhache: "700 g", oignon: "4", tomate: "350 g", oeufs: "2", persil: "30 g", cumin: "4 g", huile: "80 ml", poivre: "4 g" },
+      { nb: 11, pateFeuilletee: "605 g", boeufhache: "770 g", oignon: "4", tomate: "385 g", oeufs: "2", persil: "33 g", cumin: "4.4 g", huile: "88 ml", poivre: "4.4 g" },
+      { nb: 12, pateFeuilletee: "660 g", boeufhache: "840 g", oignon: "4", tomate: "420 g", oeufs: "2", persil: "36 g", cumin: "4.8 g", huile: "96 ml", poivre: "4.8 g" },
+      { nb: 13, pateFeuilletee: "715 g", boeufhache: "910 g", oignon: "5", tomate: "455 g", oeufs: "2", persil: "39 g", cumin: "5.2 g", huile: "104 ml", poivre: "5.2 g" },
+      { nb: 14, pateFeuilletee: "770 g", boeufhache: "980 g", oignon: "5", tomate: "490 g", oeufs: "2", persil: "42 g", cumin: "5.6 g", huile: "112 ml", poivre: "5.6 g" },
+      { nb: 15, pateFeuilletee: "825 g", boeufhache: "1050 g", oignon: "6", tomate: "525 g", oeufs: "3", persil: "45 g", cumin: "6 g", huile: "120 ml", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "La base", detail: "Faites revenir l'oignon à l'huile 5 minutes, puis ajoutez le bœuf haché et écrasez-le à la fourchette.", badge: null },
+      { icone: "🍅", titre: "Concentrer", detail: "Tomate concassée, cumin, sel, poivre, puis 15 minutes à découvert : la farce doit être SÈCHE, sans jus.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laissez refroidir complètement avec le persil — une farce chaude ferait fondre le beurre de la pâte.", badge: null },
+      { icone: "⭕", titre: "Découper", detail: "Découpez des disques de 10 cm dans la pâte bien froide, à l'emporte-pièce ou à l'aide d'un bol.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Une cuillère de farce au centre, en laissant 1,5 cm de marge tout autour.", badge: null },
+      { icone: "🤏", titre: "Souder", detail: "Humectez les bords, repliez en demi-lune et pressez à la fourchette. Une soudure ratée = une rissole ouverte.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Dorure à l'œuf, une petite fente sur le dessus, 25 minutes à 200°C. Ou frites 4 minutes à 170°C.", badge: null }
+    ],
+    liees: ["friandsviande","empanadasargentines","patefeuilletee"]
   },
 });

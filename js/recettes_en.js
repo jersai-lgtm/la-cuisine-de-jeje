@@ -94864,5 +94864,1025 @@ window.RECETTES_EN = {
     "detail": "18 minutes at 200°C until golden and caramelised. Lift off warm, they harden as they cool."
    }
   ]
+ },
+ "pommessarladaises": {
+  "nom": "Sarladaise Potatoes",
+  "description": "The Périgord's side dish: potatoes sautéed in DUCK FAT, finished with parsley and garlic. Butter is heresy here — only duck fat gives that golden crust and that aroma.",
+  "etapes": [
+   {
+    "titre": "The variety",
+    "detail": "Use waxy potatoes (charlotte, ratte): floury ones would fall apart in the pan."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut into even 4 mm rounds — too thin they burn, too thick they stay raw in the middle."
+   },
+   {
+    "titre": "Dry",
+    "detail": "DO NOT RINSE them but blot them in a cloth: the starch helps browning, water prevents searing."
+   },
+   {
+    "titre": "The fat",
+    "detail": "Melt the duck fat in a large frying pan until it shimmers."
+   },
+   {
+    "titre": "Cook covered",
+    "detail": "Tip in the potatoes, cover and leave 12 minutes over medium heat without touching: they steam."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover, raise the heat and turn them gently every 3 minutes for 15 minutes, until crusted golden."
+   },
+   {
+    "titre": "The persillade",
+    "detail": "Chopped garlic and parsley in the LAST 2 minutes only: any earlier and the garlic burns and turns bitter."
+   }
+  ]
+ },
+ "pommesboulangere": {
+  "nom": "Boulangère Potatoes",
+  "description": "The gratin without cream: potatoes and onions cooked in STOCK, under a roast whose juices baste them. The name comes from the days when housewives took their dish to bake in the baker's oven after the bread.",
+  "etapes": [
+   {
+    "titre": "The onions",
+    "detail": "Slice them finely and melt them in butter for 15 minutes until golden and jammy: they are the soul of the dish."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Potatoes in 3 mm rounds on a mandoline, UNRINSED: the starch will thicken the stock."
+   },
+   {
+    "titre": "The dish",
+    "detail": "Rub the dish with garlic and butter it generously."
+   },
+   {
+    "titre": "Layer",
+    "detail": "A layer of potatoes, a layer of onions, salt, pepper, thyme — and repeat three times."
+   },
+   {
+    "titre": "The stock",
+    "detail": "Pour in HOT stock to three quarters of the height, no more."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Knobs of butter over the whole surface and a bay leaf pushed into the centre."
+   },
+   {
+    "titre": "Bake",
+    "detail": "1 hour at 180°C. The top should be well browned and the stock completely absorbed."
+   }
+  ]
+ },
+ "pommesanna": {
+  "nom": "Pommes Anna",
+  "description": "A potato cake created under Napoleon III: rounds arranged in a tight rosette, cooked in clarified butter until they form a golden cake turned out whole. No binder — the starch alone welds the layers.",
+  "etapes": [
+   {
+    "titre": "Clarify",
+    "detail": "Melt the butter and skim the foam: clarified butter takes 200°C without burning, whole butter doesn't."
+   },
+   {
+    "titre": "Slice thin",
+    "detail": "2 mm rounds on a mandoline. DO NOT RINSE THEM: the starch is the dish's only binder."
+   },
+   {
+    "titre": "The rosette",
+    "detail": "In a buttered cast-iron pan, lay the rounds in a tight overlapping rosette starting from the centre."
+   },
+   {
+    "titre": "Brush",
+    "detail": "Clarified butter, salt and pepper between EVERY layer: it takes time, but it makes the cake melting."
+   },
+   {
+    "titre": "Press",
+    "detail": "Press firmly with the back of a spoon: the cake must be compact, with no air pockets."
+   },
+   {
+    "titre": "Cook",
+    "detail": "10 minutes on the hob to seal the base, then 40 minutes at 200°C."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Run a knife round the edge, set a plate on top and flip in one sharp movement. Cut into wedges like a cake."
+   }
+  ]
+ },
+ "pommesduchesse": {
+  "nom": "Duchess Potatoes",
+  "description": "The golden rosettes of celebration buffets: mash enriched with egg yolks, piped through a star nozzle and roasted. The mash must be VERY dry — the slightest moisture and the rosettes collapse in the oven.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Floury potatoes (maris piper) in large pieces, started in cold salted water, 25 minutes."
+   },
+   {
+    "titre": "Dry out",
+    "detail": "Drain and RETURN THEM to the heat for 3 minutes, stirring: all residual water must evaporate."
+   },
+   {
+    "titre": "Press",
+    "detail": "Pass through a ricer or sieve — NEVER a blender, which makes the mash elastic and gluey."
+   },
+   {
+    "titre": "Enrich",
+    "detail": "Butter in pieces off the heat, nutmeg, salt, pepper. Let cool for 5 minutes."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Beat in the yolks one at a time into the WARM mash: too hot, they would scramble."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Large star nozzle, 5 cm rosettes well spaced on a buttered tray. Cool for 20 minutes."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brush with egg yolk glaze, then 15 minutes at 220°C until the ridges are deeply browned."
+   }
+  ]
+ },
+ "pureecelerirave": {
+  "nom": "Celeriac Purée",
+  "description": "The white purée of fine dining: celeriac cooked IN MILK, blended with a little potato for structure. Half the calories of a classic mash, and infinitely more fragrant.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Peel the celeriac GENEROUSLY with a knife: its skin is thick, fibrous and impossible to blend."
+   },
+   {
+    "titre": "Acidulate",
+    "detail": "Drop the cubes into lemon water as you go — celeriac blackens within minutes."
+   },
+   {
+    "titre": "Cook in milk",
+    "detail": "Cook celeriac and potato in the milk, covered, for 25 minutes at a bare simmer."
+   },
+   {
+    "titre": "Watch it",
+    "detail": "Milk boils over very fast: leave the lid slightly ajar and lower the heat if it rises."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Save the cooking milk — it is what will loosen the purée, never fresh milk."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend with the butter, then add the hot milk little by little to the texture you want."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Cream, nutmeg, salt, white pepper. Pass through a sieve for a restaurant-smooth purée."
+   }
+  ]
+ },
+ "pureepetitspois": {
+  "nom": "Minted Pea Purée",
+  "description": "A vivid green purée, ready in twenty minutes with frozen peas — often better than fresh, picked and frozen within two hours. The secret to the colour: very short cooking and immediate chilling.",
+  "etapes": [
+   {
+    "titre": "Plenty of water",
+    "detail": "Bring a large volume of heavily salted water to a HARD boil: the volume stops the water cooling when the peas go in."
+   },
+   {
+    "titre": "3 minutes",
+    "detail": "Cook the peas for 3 minutes only. Longer and they turn khaki and lose their sweetness."
+   },
+   {
+    "titre": "Cold shock",
+    "detail": "Plunge them IMMEDIATELY into iced water: this is what fixes the chlorophyll for good."
+   },
+   {
+    "titre": "The shallot",
+    "detail": "Soften it in butter for 3 minutes without colouring while the peas cool."
+   },
+   {
+    "titre": "Blend hot",
+    "detail": "Blend the drained peas with the shallot, the HOT cream and fresh mint."
+   },
+   {
+    "titre": "Sieve",
+    "detail": "Pass through a fine sieve to remove the skins: the step that separates good from exceptional."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Lemon, salt, pepper. Serve IMMEDIATELY: the colour darkens if the purée is held warm."
+   }
+  ]
+ },
+ "flancourgette": {
+  "nom": "Courgette Flan",
+  "description": "The vegetable flan of summer tables: grated courgettes salted and drained, bound with eggs and cream, baked in a bain-marie. It all hinges on the draining — a courgette is 95% water, and that water would ruin the set.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the courgettes WITH THEIR SKIN on the coarse side: the skin brings the green colour and the structure."
+   },
+   {
+    "titre": "Salt and drain",
+    "detail": "Salt and let the water run out for 30 minutes in a sieve — you will be surprised how much."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Squeeze them HARD with your hands, then in a cloth. This step is not optional."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry them for 5 minutes in olive oil with the garlic: this evaporates the last moisture and concentrates the flavour."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Beat eggs, cream, milk, parmesan, nutmeg and pepper — without whisking hard, to avoid incorporating air."
+   },
+   {
+    "titre": "Combine",
+    "detail": "COOLED courgettes and chopped basil into the custard. Hot, they would scramble the eggs."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "45 minutes at 160°C in a water bath: this gentle cooking gives a silky, bubble-free texture."
+   }
+  ]
+ },
+ "petitspoisfrancaise": {
+  "nom": "Peas à la Française",
+  "description": "Peas stewed with shredded LETTUCE, baby onions and bacon — a 17th-century recipe. The lettuce melts completely and releases its water: it does all the cooking, with no stock ever added.",
+  "etapes": [
+   {
+    "titre": "The bacon",
+    "detail": "Dry-fry the lardons for 4 minutes, then pour off the excess fat, keeping the residue."
+   },
+   {
+    "titre": "The baby onions",
+    "detail": "Add the butter and colour the baby onions for 5 minutes, rolling them around."
+   },
+   {
+    "titre": "The lettuce",
+    "detail": "Shred a whole lettuce into 1 cm ribbons and tip it into the pot: it fills everything, it will melt."
+   },
+   {
+    "titre": "The peas",
+    "detail": "Peas, sugar, salt and pepper. The sugar isn't there to sweeten but to lift the flavour of the peas."
+   },
+   {
+    "titre": "NO water",
+    "detail": "Do NOT add liquid: the lettuce releases enough water for the whole cooking. That is the key to the recipe."
+   },
+   {
+    "titre": "Stew",
+    "detail": "20 minutes covered over very low heat, stirring once halfway."
+   },
+   {
+    "titre": "Bind",
+    "detail": "A knob of cold butter off the heat to gloss the juices, chopped parsley. Serve with lamb or poultry."
+   }
+  ]
+ },
+ "fenouilbraise": {
+  "nom": "Braised Fennel with Orange",
+  "description": "Fennel loses all its aniseed aggression when braised: it turns sweet, almost sugary, and orange underlines that sweetness. An unbeatable side for fish, also eaten cold as an antipasto.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Cut off the stalks keeping the green FRONDS: they will be the fresh garnish at the end."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Split the bulbs into 2 cm wedges KEEPING the core: it is what holds the layers together."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Brown them on both flat faces in olive oil, 6 minutes: this caramelisation is essential."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, let it evaporate for 2 minutes, then garlic, thyme and orange zest."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Stock and orange juice halfway up only: we are braising, not boiling."
+   },
+   {
+    "titre": "Braise",
+    "detail": "30 minutes covered over low heat. A knife tip should go through with no resistance at all."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover for 8 minutes to glaze, add the olives, and scatter with chopped fronds. Hot or cold."
+   }
+  ]
+ },
+ "salsifisgratines": {
+  "nom": "Gratinated Salsify",
+  "description": "A forgotten vegetable being rediscovered: salsify tastes delicately of something between artichoke and asparagus. Its only fault is blackening and sticking to your fingers — hence the \"blanc\", a floured water that keeps the roots pristine.",
+  "etapes": [
+   {
+    "titre": "Protect yourself",
+    "detail": "Wear gloves: salsify oozes a sticky latex that blackens hands for two days."
+   },
+   {
+    "titre": "The blanc",
+    "detail": "Prepare a \"blanc\": two spoons of flour slaked in cold water with lemon juice."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel and cut into 5 cm lengths, dropping them into the blanc as you go."
+   },
+   {
+    "titre": "Cook",
+    "detail": "35 minutes in the simmering blanc: the flour forms a veil that prevents oxidation."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Butter-flour roux, hot milk, 8 minutes of cooking, then cream and nutmeg."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Drained salsify in a buttered dish, béchamel over, parsley, emmental and breadcrumbs."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "20 minutes at 200°C until golden-crusted and bubbling at the edges."
+   }
+  ]
+ },
+ "topinamboursrotis": {
+  "nom": "Roasted Jerusalem Artichokes",
+  "description": "The make-do vegetable of wartime, now chic again for its artichoke and hazelnut flavour. Roasted in oil with the skin on, it caramelises and turns crisp outside, melting inside — the exact opposite of what our grandparents remember.",
+  "etapes": [
+   {
+    "titre": "Scrub",
+    "detail": "Do NOT peel them: scrub them under water. The skin turns crisp and concentrates the nutty flavour."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Halve them lengthways, or quarter the largest: the flat faces caramelise."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "5 minutes in boiling salted water: this greatly reduces the inulin, the sugar responsible for digestive trouble."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Drain and dry them well: a wet Jerusalem artichoke doesn't roast, it steams."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Olive oil, thyme, unpeeled garlic, salt, pepper — toss by hand to coat every face."
+   },
+   {
+    "titre": "Roast",
+    "detail": "30 minutes at 200°C, CUT SIDE DOWN, turning only once halfway."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Toasted crushed hazelnuts, parsley, lemon zest and flaky salt as they come out of the oven."
+   }
+  ]
+ },
+ "omelettefinesherbes": {
+  "nom": "Fines Herbes Omelette",
+  "description": "The classic test of any cookery competition: three eggs, butter, herbs, and a technique that forgives nothing. A French omelette should be RUNNY at the heart, pale yellow with no colouring at all, rolled into a smooth oval.",
+  "etapes": [
+   {
+    "titre": "Beat",
+    "detail": "Beat the eggs with a FORK, not a whisk: we want them homogenous, not aerated."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Chop parsley, chives and tarragon at the last moment and add them to the beaten eggs."
+   },
+   {
+    "titre": "Salt late",
+    "detail": "Salt just before cooking: salt added too early liquefies the eggs and makes them watery."
+   },
+   {
+    "titre": "The pan",
+    "detail": "20 cm pan over MEDIUM heat, foaming butter but never browned — a French omelette does not colour."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Pour in and stir constantly with a flat fork, drawing the edges to the centre, for 30 seconds."
+   },
+   {
+    "titre": "Stop",
+    "detail": "While liquid still shows on the surface, STOP stirring and let it set for 20 seconds untouched."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Tilt the pan, roll the omelette over on itself towards the edge and slide it onto the plate, seam underneath."
+   }
+  ]
+ },
+ "oeufsplatchorizo": {
+  "nom": "Fried Eggs with Chorizo",
+  "description": "Spanish huevos con chorizo: the chorizo renders its orange fat, and it is IN that fat that the eggs are fried. The white goes lacy at the edges, the yolk stays runny — and you mop it up with bread, compulsorily.",
+  "etapes": [
+   {
+    "titre": "The chorizo",
+    "detail": "Cut it into 3 mm rounds: too thick and it stays hard; too thin and it burns before releasing its fat."
+   },
+   {
+    "titre": "Render",
+    "detail": "Start the pan COLD with the chorizo and oil, then bring the heat up slowly — the orange fat comes out gradually."
+   },
+   {
+    "titre": "Save it",
+    "detail": "Set the crisp rounds aside and keep all the fat in the pan: it will flavour everything."
+   },
+   {
+    "titre": "Crack separately",
+    "detail": "Crack each egg into a ramekin first: a piece of shell in the pan is unfixable."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Slide the eggs into the HOT fat. The white should sizzle and go lacy at the edges."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Spoon the hot fat over the white, never touching the yolk, for 2 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chorizo back on top, paprika, parsley, salt on the white only. Toasted bread to mop up — that's the whole point."
+   }
+  ]
+ },
+ "carottesvichy": {
+  "nom": "Vichy Carrots",
+  "description": "Carrots glazed the classic way: cooked in just enough water with butter and sugar, until the liquid evaporates and leaves a shining syrup that coats them. The original recipe used Vichy water, whose bicarbonate kept the carrots vividly orange.",
+  "etapes": [
+   {
+    "titre": "Slice evenly",
+    "detail": "Cut the carrots into 4 mm rounds ALL the same: one thicker round will stay raw among the others."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Choose a WIDE pan where the carrots sit in a single layer: piled up, they would steam."
+   },
+   {
+    "titre": "Just cover",
+    "detail": "Water JUST level with the carrots, no more — all that liquid must disappear by the end."
+   },
+   {
+    "titre": "Butter and sugar",
+    "detail": "Butter, sugar and salt in the cold water from the start: the sugar isn't there to sweeten but to make them shine."
+   },
+   {
+    "titre": "The cartouche",
+    "detail": "Lay a disc of baking paper with a hole in the centre directly on the carrots: it concentrates the steam."
+   },
+   {
+    "titre": "Cook",
+    "detail": "20 minutes over medium heat. The water must evaporate ALMOST completely, leaving a syrupy film."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Remove the paper, raise the heat for 2 minutes shaking the pan: the carrots lacquer. Parsley at the very last moment."
+   }
+  ]
+ },
+ "pojarski": {
+  "nom": "Chicken Pojarski",
+  "description": "A Russian boneless cutlet: minced poultry bound with bread soaked in cream, crumbed and fried in butter. Served to Tsar Nicholas I at a roadside inn, it bears the innkeeper's name — and is recognised by its shaggy crumb coating.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Soak the stale breadcrumb in the cream for 10 minutes: it gives the characteristic softness."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Chop the poultry by KNIFE into small dice, not in a mincer: a pojarski must keep some texture."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Soften the onion in butter and let it COOL before mixing it into the raw meat."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Combine meat, squeezed bread, cold onion, parsley, nutmeg, salt and pepper. Cold diced butter at the end."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "1 hour chilled: a cold mixture shapes without sticking and holds in the pan."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form oval domed cutlets, then coat in egg and breadcrumbs, pressing well."
+   },
+   {
+    "titre": "Fry in butter",
+    "detail": "Clarified butter over medium heat, 6 minutes a side until golden. Serve with mash."
+   }
+  ]
+ },
+ "zrazy": {
+  "nom": "Zrazy",
+  "description": "Polish beef roulades: thin slices of beef rolled around gherkin, bacon and onion, then long-braised. The sour gherkin filling melts into the sauce and sharpens it — the dish's signature.",
+  "etapes": [
+   {
+    "titre": "Flatten",
+    "detail": "Beat the beef slices to 4 mm between two sheets of paper — without holing them, or they will open."
+   },
+   {
+    "titre": "Mustard",
+    "detail": "Brush each slice with mustard and pepper it: this is the roll's internal seasoning."
+   },
+   {
+    "titre": "Fill",
+    "detail": "A baton of gherkin, a little fried bacon and onion, laid in a line along one edge."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll tightly, tucking in the sides, then secure with a wooden pick or string."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Dust lightly with flour and brown the rolls on all sides in hot oil."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Stock halfway up, bay leaf, mushrooms, then 1 h 30 covered over the gentlest heat."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Remove the picks, reduce the juices for 10 minutes uncovered. Serve with steamed potatoes or buckwheat."
+   }
+  ]
+ },
+ "rissoles": {
+  "nom": "Beef Rissoles",
+  "description": "The medieval turnover that became a childhood snack: a disc of pastry folded over a meat filling, sealed and either fried or baked. As old as the Middle Ages, it is the direct ancestor of every savoury turnover in Europe.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Fry the onion in oil for 5 minutes, then add the minced beef and break it up with a fork."
+   },
+   {
+    "titre": "Concentrate",
+    "detail": "Chopped tomato, cumin, salt, pepper, then 15 minutes uncovered: the filling must be DRY, with no juices."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely with the parsley — a hot filling would melt the butter in the pastry."
+   },
+   {
+    "titre": "Cut out",
+    "detail": "Cut 10 cm discs from well-chilled pastry, with a cutter or using a bowl."
+   },
+   {
+    "titre": "Fill",
+    "detail": "A spoonful of filling in the centre, leaving a 1.5 cm margin all round."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Moisten the edges, fold into a half-moon and press with a fork. A bad seal means an open rissole."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Egg glaze, a small slit on top, 25 minutes at 200°C. Or deep-fried 4 minutes at 170°C."
+   }
+  ]
+ },
+ "matelotevinblanc": {
+  "nom": "White Wine Matelote",
+  "description": "The river-fish stew of the Loire and Alsace boatmen: several fish braised in white wine, the sauce thickened with beurre manié. A matelote takes at least THREE different fish — that's the rule.",
+  "etapes": [
+   {
+    "titre": "Three fish",
+    "detail": "Use at least three different flesh types, cut into large 5 cm pieces that will hold together."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sweat onions and mushrooms in butter for 8 minutes without colouring."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Dry white wine, bay leaf, and simmer 10 minutes to cook off the alcohol and soften the acidity."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Add the fish in order of firmness, firmest first. 8 minutes in total, NEVER more."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Lift out fish and garnish gently with a slotted spoon, keep warm under a plate."
+   },
+   {
+    "titre": "Beurre manié",
+    "detail": "Work equal parts soft butter and flour together, then whisk this paste into the broth."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Cream, reduce 5 minutes, parsley. Coat the fish and serve with garlic-rubbed croutons."
+   }
+  ]
+ },
+ "citronsconfits": {
+  "nom": "Salt-Preserved Lemons",
+  "description": "The signature ingredient of tagine: lemons split, packed with coarse salt and forgotten for a month. The salt draws out the water and creates its own brine — after which only the PEEL is used, the pulp is discarded.",
+  "etapes": [
+   {
+    "titre": "The lemons",
+    "detail": "Choose UNWAXED lemons with thin, rough skins: only the peel will be eaten."
+   },
+   {
+    "titre": "Wash",
+    "detail": "Scrub them in hot water and rub with coarse salt to remove any residual wax."
+   },
+   {
+    "titre": "Cut a cross",
+    "detail": "Cut each lemon in a cross WITHOUT going all the way through: it should open like a flower and stay in one piece."
+   },
+   {
+    "titre": "Pack with salt",
+    "detail": "Open out the quarters and fill the inside generously with coarse salt — hold nothing back."
+   },
+   {
+    "titre": "Press down",
+    "detail": "Pack them tightly into the jar, PRESSING hard: they must release their juice and cover themselves."
+   },
+   {
+    "titre": "Top up",
+    "detail": "If the juice doesn't cover everything after 3 days, add fresh lemon juice, never water."
+   },
+   {
+    "titre": "Wait a month",
+    "detail": "The peel should turn translucent and tender. Rinse before use and discard the pulp: only the peel is cooked."
+   }
+  ]
+ },
+ "tomatesconfites": {
+  "nom": "Slow-Roasted Tomatoes",
+  "description": "Tomatoes dried slowly in a low oven until all their sugar concentrates. Three hours of waiting, but the difference from shop-bought sun-dried tomatoes is the difference between a sweet and a piece of cardboard.",
+  "etapes": [
+   {
+    "titre": "The choice",
+    "detail": "Use PLUM tomatoes (roma, olivette): they have little juice and plenty of flesh, unlike round ones."
+   },
+   {
+    "titre": "Deseed",
+    "detail": "Halve them and scoop out the seeds and juice with a teaspoon: the water is what lengthens the cooking."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Set them cut side DOWN on a rack, salt them and let them drain for 30 minutes."
+   },
+   {
+    "titre": "Season",
+    "detail": "Turn them over, then olive oil, sliced garlic, thyme, a pinch of sugar and pepper on each."
+   },
+   {
+    "titre": "Low temperature",
+    "detail": "90°C ONLY, fan on, door held ajar with a wooden spoon to let the moisture escape."
+   },
+   {
+    "titre": "Roast 3 hours",
+    "detail": "They should halve in size and wrinkle, but stay SUPPLE — a hard piece is a failed piece."
+   },
+   {
+    "titre": "Store",
+    "detail": "In a jar, covered with olive oil and basil. A month chilled, and the oil becomes a treasure in itself."
+   }
+  ]
+ },
+ "nougatmontelimar": {
+  "nom": "Montélimar Nougat",
+  "description": "The protected white nougat: at least 30% almonds and 25% lavender honey — that's the law. A syrup cooked to 145°C poured over whipped whites, then long drying in the mixer; the only real difficulty is thermometer precision.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Toast almonds and pistachios for 10 minutes at 150°C and KEEP THEM WARM: cold, they would seize the nougat."
+   },
+   {
+    "titre": "The honey",
+    "detail": "Bring the honey alone to 125°C: it foams enormously, use a pan three times too big."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whip the whites to firm peaks while the honey heats, then pour it in a stream with the mixer running."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, glucose and a little water to exactly 145°C — the thermometer is not negotiable here."
+   },
+   {
+    "titre": "Dry it out",
+    "detail": "Pour the boiling syrup onto the meringue and WHISK for 15 to 20 minutes: the mass must become very dense and matte."
+   },
+   {
+    "titre": "The test",
+    "detail": "Drop a little into cold water: it should form a firm ball. If not, keep whisking for 5 more minutes."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Fold in the warm nuts, pour between two sheets of wafer paper, press under a weight and wait 12 hours."
+   }
+  ]
+ },
+ "caramelsmous": {
+  "nom": "Salted Butter Soft Caramels",
+  "description": "The Breton caramels that stick to your teeth just enough. It all hangs on a single degree: 118°C gives a runny caramel, 121°C a perfect soft one, 125°C a tooth-breaker.",
+  "etapes": [
+   {
+    "titre": "Hot cream",
+    "detail": "Boil the cream with the vanilla and KEEP IT HOT: poured cold onto caramel, it would spit violently."
+   },
+   {
+    "titre": "Dry caramel",
+    "detail": "Melt the sugar and glucose with NO WATER in a heavy pan, without stirring, tilting the pan."
+   },
+   {
+    "titre": "The colour",
+    "detail": "Wait for a deep amber: too pale a caramel is sickly, too dark it turns bitter."
+   },
+   {
+    "titre": "Stop the cooking",
+    "detail": "Pour in the hot cream in THREE additions, stirring — it bubbles up hard, stand back."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Salted butter in pieces off the heat, then return to the heat."
+   },
+   {
+    "titre": "121°C",
+    "detail": "Cook back to exactly 121°C, stirring constantly so the base doesn't catch."
+   },
+   {
+    "titre": "Pour and cut",
+    "detail": "Pour into a lined frame, flaky salt, 4 hours of setting, then cut with an oiled knife and wrap individually."
+   }
+  ]
+ },
+ "guimauve": {
+  "nom": "French Marshmallow",
+  "description": "A cloud of sugar whipped with gelatine — the real French guimauve, soft and fragrant, nothing like rubbery industrial marshmallows. The cornflour-icing sugar dusting isn't decorative: without it, everything sticks.",
+  "etapes": [
+   {
+    "titre": "The gelatine",
+    "detail": "Soak the gelatine leaves in plenty of VERY COLD water for 10 minutes, then squeeze them out."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, glucose and a little water taken to 130°C: at that temperature the syrup is concentrated enough to hold the foam."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whip the whites to soft peaks while the syrup cooks — not too firm, they would break."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Boiling syrup in a THIN STREAM onto the whites, mixer running, avoiding the whisk to prevent splashing."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Squeezed gelatine then raspberry purée, and whisk 10 minutes until the bowl feels only WARM."
+   },
+   {
+    "titre": "Pour out",
+    "detail": "Frame dusted with cornflour + icing sugar, pour in the mass and smooth with an oiled spatula. 4 hours in the open air."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Oiled knife, cubes rolled in the cornflour-sugar mix on EVERY face, or they stick together."
+   }
+  ]
+ },
+ "patesdefruits": {
+  "nom": "Fruit Jellies",
+  "description": "The sweet of Auvergne: fruit purée cooked with sugar and PECTIN to 105°C. Without pectin nothing sets — and it must be mixed with sugar before it meets the fruit, or it forms lumps you can never fix.",
+  "etapes": [
+   {
+    "titre": "The purée",
+    "detail": "Blend and SIEVE the fruit: raspberry seeds would ruin the smooth texture of a fruit jelly."
+   },
+   {
+    "titre": "Mix dry",
+    "detail": "Mix the pectin with a tenth of the sugar FIRST: added alone, it would form permanent lumps."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Bring the purée to 40°C, then rain in the pectin-sugar mix while whisking, and bring to the boil."
+   },
+   {
+    "titre": "The rest of the sugar",
+    "detail": "Add the remaining sugar and the glucose in three additions, letting it return to the boil each time."
+   },
+   {
+    "titre": "105°C",
+    "detail": "Cook to 105°C on a thermometer, stirring the base CONSTANTLY: it catches very fast."
+   },
+   {
+    "titre": "The acid",
+    "detail": "Lemon juice off the heat: it triggers the pectin set. Pour IMMEDIATELY, it sets within a minute."
+   },
+   {
+    "titre": "Coat",
+    "detail": "24 hours at room temperature, then cut and roll in caster sugar on every face."
+   }
+  ]
+ },
+ "truffeschocolat": {
+  "nom": "Chocolate Truffles",
+  "description": "Three ingredients for the most cost-effective confection there is: chocolate, cream, cocoa. The only trap is thermal — boiling cream poured in all at once splits the ganache, which turns greasy and grainy.",
+  "etapes": [
+   {
+    "titre": "Chop fine",
+    "detail": "Chop the chocolate with a knife into 2 mm shards: the smaller the pieces, the more even the melt."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Bring the cream and honey to a BARE SIMMER only — never a rolling boil, it would be too hot."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Pour over the chocolate and WAIT 2 minutes without touching: the heat does the work by itself."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Stir with a spatula starting from the CENTRE in small widening circles: the ganache turns glossy and smooth."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Diced butter when the ganache is at 35°C, then the rum. The butter gives that melt in the mouth."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "3 hours chilled minimum. Too soft a ganache is impossible to roll, too hard it cracks."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Scoop balls with a melon baller, roll them QUICKLY between your palms then in bitter cocoa."
+   }
+  ]
+ },
+ "orangettes": {
+  "nom": "Orangettes",
+  "description": "Orange peel candied slowly in an ever more concentrated syrup, then dipped in dark chocolate. Blanching in three changes of water is the step nobody may skip: it removes all the bitterness from the pith.",
+  "etapes": [
+   {
+    "titre": "Take the peel",
+    "detail": "Quarter the unwaxed oranges and remove the peel WITH its pith: here we keep it all."
+   },
+   {
+    "titre": "Blanch 3 times",
+    "detail": "Start in cold water, bring to the boil, drain — and REPEAT three times with fresh water each time."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the blanched peel into even 6 mm strips."
+   },
+   {
+    "titre": "Candy",
+    "detail": "Syrup of 1 part water to 1 sugar, add the peel and simmer gently for 1 hour."
+   },
+   {
+    "titre": "Three days",
+    "detail": "Leave them in the syrup 24 h, then add more sugar and cook 20 minutes — three days running."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Drain on a rack for 24 hours: the strips should be supple and not sticky before the chocolate."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Temper the chocolate, dip two-thirds of each strip and let it set on paper."
+   }
+  ]
+ },
+ "mendiants": {
+  "nom": "Mendiants",
+  "description": "Chocolate discs studded with four dried fruits, recalling the robes of the mendicant orders: almond for the Augustinians, hazelnut for the Carmelites, fig for the Franciscans, raisin for the Dominicans.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Toast almonds and hazelnuts for 8 minutes, cut figs and apricots into small pieces. Everything must be READY before the chocolate."
+   },
+   {
+    "titre": "Temper 1",
+    "detail": "Melt two-thirds of the chocolate over a bain-marie to 50°C, never higher."
+   },
+   {
+    "titre": "Temper 2",
+    "detail": "Off the heat, add the remaining third in pieces and stir down to 28°C: the stable crystals form."
+   },
+   {
+    "titre": "Temper 3",
+    "detail": "Bring it back up to 31°C very gently. This cycle is what gives the shine and the SNAP."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Spoon 4 cm discs onto baking paper, well spaced."
+   },
+   {
+    "titre": "Decorate fast",
+    "detail": "Place the dried fruits IMMEDIATELY, before the chocolate sets — you have about 30 seconds per disc."
+   },
+   {
+    "titre": "Crystallise",
+    "detail": "2 hours at 18°C, NEVER in the fridge: cold would bloom the chocolate white on the surface."
+   }
+  ]
+ },
+ "puitsdamour": {
+  "nom": "Puits d'Amour",
+  "description": "A crown of puff pastry filled with vanilla pastry cream, caramelised with a blowtorch. Created in 1735 by pastry chef Vincent La Chapelle, its name comes from an opera of the day — and the caramel must be done AT THE LAST MINUTE.",
+  "etapes": [
+   {
+    "titre": "Two discs",
+    "detail": "For each puits cut one solid disc and one ring. Stick the ring onto the disc with water, not egg."
+   },
+   {
+    "titre": "Prick the base",
+    "detail": "Prick ONLY the centre disc with a fork: it must stay flat while the ring rises."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 200°C. If the centre puffs anyway, press it down gently as it comes out."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Milk infused with vanilla, yolks whitened with sugar and cornflour, then boiled for 2 minutes while whisking."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Butter off the heat, then cover with film TOUCHING the surface and cool fast — warm pastry cream sours."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Whisk the cold cream to loosen it, then pipe it generously into each puits."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "A fine dusting of brown sugar and the blowtorch just before serving: the caramel must CRACK under the spoon."
+   }
+  ]
+ },
+ "jesuites": {
+  "nom": "Jésuites",
+  "description": "Triangles of puff pastry filled with frangipane and topped with a crisp almond glaze. Their shape is said to evoke a Jesuit's hat — a bakery pastry now rare, yet very simple to make.",
+  "etapes": [
+   {
+    "titre": "The frangipane",
+    "detail": "Cream butter and sugar, add ground almonds, ONE whole egg and the rum. It should be thick, not runny."
+   },
+   {
+    "titre": "Chill",
+    "detail": "1 hour in the fridge: cold frangipane doesn't leak out of the sides while baking."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the pastry into rectangles, spread frangipane on half of them leaving a 1 cm border."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Cover with a second rectangle, seal, then cut DIAGONALLY to get two triangles."
+   },
+   {
+    "titre": "The glaze",
+    "detail": "Whisk an egg white with the icing sugar into a thick but spreadable glaze."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Spread the glaze on the TOP of the triangles only, without running onto the layered edges."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Flaked almonds, 25 minutes at 190°C. The glaze should stay WHITE and crisp, barely coloured."
+   }
+  ]
+ },
+ "gateaubattu": {
+  "nom": "Picardy Gâteau Battu",
+  "description": "The tall brioche of Picardy, baked in a fluted mould that gives it the look of a crown. Its peculiarity: a wild proportion of egg yolks and butter, and the twenty minutes of beating that give it its name.",
+  "etapes": [
+   {
+    "titre": "Yolks only",
+    "detail": "Use mostly YOLKS: they give the bright yellow colour and the characteristic softness of a gâteau battu."
+   },
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in warm milk with a spoon of flour and let it froth for 15 minutes."
+   },
+   {
+    "titre": "Beat 20 minutes",
+    "detail": "Knead flour, yolks, sugar, salt and starter for 20 MINUTES with a dough hook: the dough must cleanly leave the bowl."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Add the soft butter in small pieces, one at a time, never adding more before the last is absorbed."
+   },
+   {
+    "titre": "First rise",
+    "detail": "2 hours at 25°C: the dough must TRIPLE in volume, not merely double."
+   },
+   {
+    "titre": "The mould",
+    "detail": "Butter a tall fluted mould very generously and fill it only HALF way."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 180°C, covering with foil halfway if the top colours too fast."
+   }
+  ]
  }
 };
