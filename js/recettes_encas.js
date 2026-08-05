@@ -7078,7 +7078,7 @@ Object.assign(recettes, {
       { icone: "🍞", titre: "Le moule", detail: "Versez dans un moule à cake chemisé et lissez ; tracez un trait d'huile sur la longueur pour une belle fente.", badge: null },
       { icone: "♨️", titre: "Cuire", detail: "45 minutes à 180°C, lame sèche. Démoulez tiède et attendez le refroidissement complet pour trancher net.", badge: null }
     ],
-    liees: ["cakesaleolives"]
+    liees: ["cakeolivesjambon"]
   },
   buchujeon: {
     dateAjout: "2026-07-29T14:09:00",
@@ -7191,7 +7191,7 @@ Object.assign(recettes, {
       { icone: "🍞", titre: "Le moule", detail: "Versez dans un moule chemisé et lissez.", badge: null },
       { icone: "♨️", titre: "Cuire", detail: "40 minutes à 180°C, lame sèche. Attendez le refroidissement COMPLET pour trancher net.", badge: null }
     ],
-    liees: ["cakesaleolives","cakeolivechorizo"]
+    liees: ["cakeolivesjambon","cakeolivechorizo"]
   },
   muffinssaleschorizo: {
     dateAjout: "2026-07-29T18:05:00",

@@ -11911,7 +11911,7 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "Monter", detail: "Trempez les biscuits RAPIDEMENT dans le sirop froid (2 secondes, pas plus) et alternez avec la crème.", badge: null },
       { icone: "❄️", titre: "Prendre", detail: "6 heures au frais MINIMUM. Zestes de citron frais juste avant de servir — jamais à l'avance, ils sèchent.", badge: null }
     ],
-    liees: ["tiramisu","tiramisufraises"]
+    liees: ["tiramisu"]
   },
   clafoutisabricots: {
     dateAjout: "2026-07-29T16:02:00",
@@ -12062,7 +12062,7 @@ Object.assign(recettes, {
       { icone: "☁️", titre: "LA MERINGUE ITALIENNE", detail: "Portez le reste de sucre avec 2 cuillères d'eau à 118°C ; versez ce sirop en filet sur les blancs montés en fouettant jusqu'au refroidissement — elle devient brillante et ferme.", badge: null },
       { icone: "🔥", titre: "Décorer", detail: "Pochez la meringue en pointes et dorez au chalumeau (ou 2 minutes sous le gril, en surveillant). Servez frais.", badge: null }
     ],
-    liees: ["tartecitron","pateSablee"]
+    liees: ["tartecitron","patesablee"]
   },
   moussecafe: {
     dateAjout: "2026-07-29T16:06:00",
@@ -12100,7 +12100,7 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "Les blancs", detail: "Montez les blancs en neige et incorporez-les en trois fois, en soulevant la masse à la spatule.", badge: null },
       { icone: "❄️", titre: "Prendre", detail: "Versez en verrines et laissez 4 heures au frais. Grain de café ou cacao par-dessus au service.", badge: null }
     ],
-    liees: ["moussechocolat"]
+    liees: []
   },
   gateauyaourtcitronpavot: {
     dateAjout: "2026-07-29T16:07:00",
@@ -12363,7 +12363,7 @@ Object.assign(recettes, {
       { icone: "💉", titre: "Garnir", detail: "Percez trois trous sous chaque éclair et garnissez à la poche jusqu'à ce qu'il soit lourd.", badge: null },
       { icone: "✨", titre: "Le fondant", detail: "Mélangez sucre glace et reste de café réduit en glaçage épais mais coulant ; trempez le dessus et lissez au doigt. Laissez prendre 15 minutes.", badge: null }
     ],
-    liees: ["eclairchocolat","chouxcraquelin"]
+    liees: ["chouxcraquelin"]
   },
   beignetspomme: {
     dateAjout: "2026-07-29T19:08:00",
@@ -12740,7 +12740,7 @@ Object.assign(recettes, {
       { icone: "✨", titre: "Le fondant", detail: "Mélangez sucre glace, cacao et un peu d'eau chaude en glaçage brillant ; trempez le dessus de chaque chou et lissez au doigt.", badge: null },
       { icone: "👑", titre: "MONTER", detail: "Posez le petit chou sur le grand en le collant d'une pointe de crème, puis pochez une collerette d'étoiles à la jonction. La religieuse est prête — et l'appli compte 2750 recettes !", badge: null }
     ],
-    liees: ["croquembouche","eclairchocolat","chouxcraquelin"]
+    liees: ["croquembouche","chouxcraquelin"]
   },
   speculoosmaison: {
     dateAjout: "2026-08-01T12:00:00",
@@ -13652,7 +13652,7 @@ Object.assign(recettes, {
       { icone: "🌡️", titre: "121°C", detail: "Recuisez jusqu'à 121°C exactement, en remuant sans arrêt pour éviter que le fond n'attache.", badge: null },
       { icone: "✂️", titre: "Couler et couper", detail: "Coulez dans un cadre chemisé, fleur de sel, 4 heures de repos, puis coupez au couteau huilé et emballez individuellement.", badge: null }
     ],
-    liees: ["patetartinercaramel","crumblepommecaramel","rizaulaitcaramel"]
+    liees: ["crumblepommecaramel","rizaulaitcaramel"]
   },
   guimauve: {
     dateAjout: "2026-08-02T09:02:00",
@@ -13690,7 +13690,7 @@ Object.assign(recettes, {
       { icone: "📏", titre: "Couler", detail: "Cadre chemisé de fécule + sucre glace, coulez la masse et lissez à la spatule huilée. 4 heures à l'air libre.", badge: null },
       { icone: "✂️", titre: "Découper", detail: "Couteau huilé, cubes roulés dans le mélange fécule-sucre glace sur TOUTES les faces, sinon ils collent entre eux.", badge: null }
     ],
-    liees: ["patesdefruits","nougatmontelimar","chamallowsgrilles"]
+    liees: ["patesdefruits","nougatmontelimar"]
   },
   patesdefruits: {
     dateAjout: "2026-08-02T09:03:00",
@@ -13728,7 +13728,7 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "L'acide", detail: "Jus de citron hors du feu : il déclenche la prise de la pectine. Coulez IMMÉDIATEMENT, ça fige en une minute.", badge: null },
       { icone: "🍬", titre: "Enrober", detail: "24 heures à température ambiante, puis découpez et roulez dans le sucre cristal sur toutes les faces.", badge: null }
     ],
-    liees: ["guimauve","confiture","geleefruits"]
+    liees: ["guimauve","confiturefraise"]
   },
   truffeschocolat: {
     dateAjout: "2026-08-02T09:04:00",
@@ -13766,7 +13766,7 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Raffermir", detail: "3 heures au frais minimum. Une ganache trop molle est impossible à rouler, trop dure elle se fendille.", badge: null },
       { icone: "🍫", titre: "Rouler", detail: "Formez des boules à la cuillère parisienne, roulez-les VITE entre vos paumes puis dans le cacao amer.", badge: null }
     ],
-    liees: ["mendiants","orangettes","moussechocolat"]
+    liees: ["mendiants","orangettes"]
   },
   orangettes: {
     dateAjout: "2026-08-02T09:05:00",
@@ -13880,7 +13880,7 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "Garnir", detail: "Fouettez la crème froide pour la détendre, puis pochez-la généreusement dans chaque puits.", badge: null },
       { icone: "🔥", titre: "Caraméliser", detail: "Cassonade en pluie fine et chalumeau juste avant de servir : le caramel doit CRAQUER sous la cuillère.", badge: null }
     ],
-    liees: ["chouxcraquelin","milleFeuille","flanparisien"]
+    liees: ["chouxcraquelin","millefeuille","flanparisien"]
   },
   jesuites: {
     dateAjout: "2026-08-02T09:08:00",
@@ -13956,6 +13956,462 @@ Object.assign(recettes, {
       { icone: "👑", titre: "Le moule", detail: "Beurrez très généreusement un moule cannelé haut et remplissez-le à MOITIÉ seulement.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "45 minutes à 180°C, en couvrant d'alu à mi-cuisson si le dessus colore trop vite.", badge: null }
     ],
-    liees: ["brioche","kougelhopf","broyepoitou"]
+    liees: ["brioche","broyepoitou"]
+  },
+  entremetstroischocolats: {
+    dateAjout: "2026-08-02T14:03:00",
+    nom: "Entremets Trois Chocolats",
+    cat: "desserts", pays: "france",
+    base: 10,
+    temps: "2 h + 6 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍫",
+    description: "Trois mousses superposées — noir, lait, blanc — sur un biscuit croustillant. Le piège est la température : chaque mousse doit être coulée sur une couche BIEN PRISE, et le chocolat blanc, plus fragile, demande moins de gélatine que le noir.",
+    tableauEntremetstroischocolats: [
+      { nb: 1, chocolatnoir: "20 g", chocolatLait: "20 g", chocolatBlanc: "20 g", creme: "110 ml", gelatine: "2.5 g", oeufs: "", sucre: "15 g", farine: "8 g", beurre: "8 g", cacao: "3 g" },
+      { nb: 2, chocolatnoir: "40 g", chocolatLait: "40 g", chocolatBlanc: "40 g", creme: "220 ml", gelatine: "5 g", oeufs: "", sucre: "30 g", farine: "16 g", beurre: "16 g", cacao: "6 g" },
+      { nb: 3, chocolatnoir: "60 g", chocolatLait: "60 g", chocolatBlanc: "60 g", creme: "330 ml", gelatine: "7.5 g", oeufs: "", sucre: "45 g", farine: "24 g", beurre: "24 g", cacao: "9 g" },
+      { nb: 4, chocolatnoir: "80 g", chocolatLait: "80 g", chocolatBlanc: "80 g", creme: "440 ml", gelatine: "10 g", oeufs: "1", sucre: "60 g", farine: "32 g", beurre: "32 g", cacao: "12 g" },
+      { nb: 5, chocolatnoir: "100 g", chocolatLait: "100 g", chocolatBlanc: "100 g", creme: "550 ml", gelatine: "12.5 g", oeufs: "1½", sucre: "75 g", farine: "40 g", beurre: "40 g", cacao: "15 g" },
+      { nb: 6, chocolatnoir: "120 g", chocolatLait: "120 g", chocolatBlanc: "120 g", creme: "660 ml", gelatine: "15 g", oeufs: "1", sucre: "90 g", farine: "48 g", beurre: "48 g", cacao: "18 g" },
+      { nb: 7, chocolatnoir: "140 g", chocolatLait: "140 g", chocolatBlanc: "140 g", creme: "770 ml", gelatine: "17.5 g", oeufs: "2", sucre: "105 g", farine: "56 g", beurre: "56 g", cacao: "21 g" },
+      { nb: 8, chocolatnoir: "160 g", chocolatLait: "160 g", chocolatBlanc: "160 g", creme: "880 ml", gelatine: "20 g", oeufs: "2", sucre: "120 g", farine: "64 g", beurre: "64 g", cacao: "24 g" },
+      { nb: 9, chocolatnoir: "180 g", chocolatLait: "180 g", chocolatBlanc: "180 g", creme: "990 ml", gelatine: "22.5 g", oeufs: "2", sucre: "135 g", farine: "72 g", beurre: "72 g", cacao: "27 g" },
+      { nb: 10, chocolatnoir: "200 g", chocolatLait: "200 g", chocolatBlanc: "200 g", creme: "1100 ml", gelatine: "25 g", oeufs: "3", sucre: "150 g", farine: "80 g", beurre: "80 g", cacao: "30 g" },
+      { nb: 11, chocolatnoir: "220 g", chocolatLait: "220 g", chocolatBlanc: "220 g", creme: "1210 ml", gelatine: "27.5 g", oeufs: "3", sucre: "165 g", farine: "88 g", beurre: "88 g", cacao: "33 g" },
+      { nb: 12, chocolatnoir: "240 g", chocolatLait: "240 g", chocolatBlanc: "240 g", creme: "1320 ml", gelatine: "30 g", oeufs: "3", sucre: "180 g", farine: "96 g", beurre: "96 g", cacao: "36 g" },
+      { nb: 13, chocolatnoir: "260 g", chocolatLait: "260 g", chocolatBlanc: "260 g", creme: "1430 ml", gelatine: "32.5 g", oeufs: "3", sucre: "195 g", farine: "104 g", beurre: "104 g", cacao: "39 g" },
+      { nb: 14, chocolatnoir: "280 g", chocolatLait: "280 g", chocolatBlanc: "280 g", creme: "1540 ml", gelatine: "35 g", oeufs: "4", sucre: "210 g", farine: "112 g", beurre: "112 g", cacao: "42 g" },
+      { nb: 15, chocolatnoir: "300 g", chocolatLait: "300 g", chocolatBlanc: "300 g", creme: "1650 ml", gelatine: "37.5 g", oeufs: "4½", sucre: "225 g", farine: "120 g", beurre: "120 g", cacao: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍪", titre: "Le biscuit", detail: "Génoise cacao fine cuite 10 minutes, ou un croustillant praliné-crêpes dentelle : il doit rester CROQUANT sous la mousse.", badge: null },
+      { icone: "🍫", titre: "Mousse noire", detail: "Chocolat noir fondu à 45°C, gélatine, puis crème montée SOUPLE incorporée en trois fois.", badge: null },
+      { icone: "🌡️", titre: "La règle", detail: "La crème montée doit être à peine ferme : trop montée, elle fait des grumeaux blancs dans le chocolat.", badge: null },
+      { icone: "1️⃣", titre: "Couler", detail: "Versez la mousse noire sur le biscuit dans un cercle et lissez. 1 HEURE au congélateur, pas moins.", badge: null },
+      { icone: "2️⃣", titre: "Mousse lait", detail: "Même technique avec le chocolat au lait, coulée sur la couche prise. Encore 1 heure de froid.", badge: null },
+      { icone: "3️⃣", titre: "Mousse blanche", detail: "Le chocolat blanc tient moins : montez la crème un peu plus ferme pour compenser. Dernière couche.", badge: null },
+      { icone: "❄️", titre: "Prendre", detail: "4 heures au frais minimum. Décerclez au chalumeau ou au sèche-cheveux, et voile de cacao sur le dessus.", badge: null }
+    ],
+    liees: ["bavaroisfruits"]
+  },
+  ispahan: {
+    dateAjout: "2026-08-02T14:04:00",
+    nom: "Ispahan",
+    cat: "desserts", pays: "france",
+    base: 6,
+    temps: "2 h + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🌹",
+    description: "L'accord rose-litchi-framboise devenu une signature de la pâtisserie française contemporaine. Deux coques de macaron géantes enfermant une ganache à la rose, des framboises et des litchis — l'équilibre tient à la couronne de framboises sur le pourtour.",
+    tableauIspahan: [
+      { nb: 1, poudreamande: "22 g", sucreglace: "22 g", oeufs: "", sucre: "20 g", chocolatBlanc: "25 g", creme: "40 ml", framboise: "45 g", litchi: "35 g", eauRose: "3 ml" },
+      { nb: 2, poudreamande: "44 g", sucreglace: "44 g", oeufs: "", sucre: "40 g", chocolatBlanc: "50 g", creme: "80 ml", framboise: "90 g", litchi: "70 g", eauRose: "6 ml" },
+      { nb: 3, poudreamande: "66 g", sucreglace: "66 g", oeufs: "", sucre: "60 g", chocolatBlanc: "75 g", creme: "120 ml", framboise: "135 g", litchi: "105 g", eauRose: "9 ml" },
+      { nb: 4, poudreamande: "88 g", sucreglace: "88 g", oeufs: "1", sucre: "80 g", chocolatBlanc: "100 g", creme: "160 ml", framboise: "180 g", litchi: "140 g", eauRose: "12 ml" },
+      { nb: 5, poudreamande: "110 g", sucreglace: "110 g", oeufs: "1½", sucre: "100 g", chocolatBlanc: "125 g", creme: "200 ml", framboise: "225 g", litchi: "175 g", eauRose: "15 ml" },
+      { nb: 6, poudreamande: "132 g", sucreglace: "132 g", oeufs: "1", sucre: "120 g", chocolatBlanc: "150 g", creme: "240 ml", framboise: "270 g", litchi: "210 g", eauRose: "18 ml" },
+      { nb: 7, poudreamande: "154 g", sucreglace: "154 g", oeufs: "2", sucre: "140 g", chocolatBlanc: "175 g", creme: "280 ml", framboise: "315 g", litchi: "245 g", eauRose: "21 ml" },
+      { nb: 8, poudreamande: "176 g", sucreglace: "176 g", oeufs: "2", sucre: "160 g", chocolatBlanc: "200 g", creme: "320 ml", framboise: "360 g", litchi: "280 g", eauRose: "24 ml" },
+      { nb: 9, poudreamande: "198 g", sucreglace: "198 g", oeufs: "2", sucre: "180 g", chocolatBlanc: "225 g", creme: "360 ml", framboise: "405 g", litchi: "315 g", eauRose: "27 ml" },
+      { nb: 10, poudreamande: "220 g", sucreglace: "220 g", oeufs: "3", sucre: "200 g", chocolatBlanc: "250 g", creme: "400 ml", framboise: "450 g", litchi: "350 g", eauRose: "30 ml" },
+      { nb: 11, poudreamande: "242 g", sucreglace: "242 g", oeufs: "3", sucre: "220 g", chocolatBlanc: "275 g", creme: "440 ml", framboise: "495 g", litchi: "385 g", eauRose: "33 ml" },
+      { nb: 12, poudreamande: "264 g", sucreglace: "264 g", oeufs: "3", sucre: "240 g", chocolatBlanc: "300 g", creme: "480 ml", framboise: "540 g", litchi: "420 g", eauRose: "36 ml" },
+      { nb: 13, poudreamande: "286 g", sucreglace: "286 g", oeufs: "3", sucre: "260 g", chocolatBlanc: "325 g", creme: "520 ml", framboise: "585 g", litchi: "455 g", eauRose: "39 ml" },
+      { nb: 14, poudreamande: "308 g", sucreglace: "308 g", oeufs: "4", sucre: "280 g", chocolatBlanc: "350 g", creme: "560 ml", framboise: "630 g", litchi: "490 g", eauRose: "42 ml" },
+      { nb: 15, poudreamande: "330 g", sucreglace: "330 g", oeufs: "4½", sucre: "300 g", chocolatBlanc: "375 g", creme: "600 ml", framboise: "675 g", litchi: "525 g", eauRose: "45 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Le tant pour tant", detail: "Mixez et TAMISEZ poudre d'amande et sucre glace ensemble : le moindre grumeau se verra sur la coque.", badge: null },
+      { icone: "🥚", titre: "La meringue", detail: "Meringue italienne : sirop à 118°C versé sur les blancs montés, fouettés jusqu'à refroidissement à 40°C.", badge: null },
+      { icone: "🌀", titre: "Macaronner", detail: "Écrasez la masse contre la paroi jusqu'à ce qu'elle forme un ruban qui retombe LENTEMENT — ni trop, ni pas assez.", badge: null },
+      { icone: "⭕", titre: "Pocher", detail: "Deux grands disques de 18 cm, tapotez la plaque et laissez CROÛTER 30 minutes : le doigt ne doit plus coller.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "18 minutes à 150°C : la collerette se forme au pied et les coques ne doivent pas colorer.", badge: null },
+      { icone: "🌹", titre: "La ganache", detail: "Chocolat blanc fondu, crème chaude, eau de rose, puis 6 heures au frais avant de la monter au fouet.", badge: null },
+      { icone: "🍓", titre: "Monter", detail: "Ganache pochée en spirale, COURONNE de framboises debout sur le pourtour, litchis au centre, second disque.", badge: null }
+    ],
+    liees: ["macarons","entremetstroischocolats","bavaroisfruits"]
+  },
+  tartefinepomme: {
+    dateAjout: "2026-08-02T14:05:00",
+    nom: "Tarte Fine aux Pommes",
+    cat: "desserts", pays: "france",
+    base: 6,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍏",
+    description: "La tarte la plus élégante avec le moins d'efforts : une abaisse de feuilletage très fine, des lamelles de pomme en rosace, du sucre et du beurre. Pas de crème, pas d'appareil — tout repose sur la finesse de la pâte et la cuisson à four très chaud.",
+    tableauTartefinepomme: [
+      { nb: 1, pateFeuilletee: "45 g", pomme: "1", beurre: "12 g", sucre: "15 g", cassonade: "8 g", cannelle: "0.3 g", confiture: "10 g", citron: "" },
+      { nb: 2, pateFeuilletee: "90 g", pomme: "2", beurre: "24 g", sucre: "30 g", cassonade: "16 g", cannelle: "0.6 g", confiture: "20 g", citron: "" },
+      { nb: 3, pateFeuilletee: "135 g", pomme: "3", beurre: "36 g", sucre: "45 g", cassonade: "24 g", cannelle: "0.9 g", confiture: "30 g", citron: "" },
+      { nb: 4, pateFeuilletee: "180 g", pomme: "4", beurre: "48 g", sucre: "60 g", cassonade: "32 g", cannelle: "1.2 g", confiture: "40 g", citron: "" },
+      { nb: 5, pateFeuilletee: "225 g", pomme: "6", beurre: "60 g", sucre: "75 g", cassonade: "40 g", cannelle: "1.5 g", confiture: "50 g", citron: "¾" },
+      { nb: 6, pateFeuilletee: "270 g", pomme: "7", beurre: "72 g", sucre: "90 g", cassonade: "48 g", cannelle: "1.8 g", confiture: "60 g", citron: "" },
+      { nb: 7, pateFeuilletee: "315 g", pomme: "8", beurre: "84 g", sucre: "105 g", cassonade: "56 g", cannelle: "2.1 g", confiture: "70 g", citron: "1" },
+      { nb: 8, pateFeuilletee: "360 g", pomme: "9", beurre: "96 g", sucre: "120 g", cassonade: "64 g", cannelle: "2.4 g", confiture: "80 g", citron: "1" },
+      { nb: 9, pateFeuilletee: "405 g", pomme: "10", beurre: "108 g", sucre: "135 g", cassonade: "72 g", cannelle: "2.7 g", confiture: "90 g", citron: "1" },
+      { nb: 10, pateFeuilletee: "450 g", pomme: "12", beurre: "120 g", sucre: "150 g", cassonade: "80 g", cannelle: "3 g", confiture: "100 g", citron: "1½" },
+      { nb: 11, pateFeuilletee: "495 g", pomme: "13", beurre: "132 g", sucre: "165 g", cassonade: "88 g", cannelle: "3.3 g", confiture: "110 g", citron: "1" },
+      { nb: 12, pateFeuilletee: "540 g", pomme: "14", beurre: "144 g", sucre: "180 g", cassonade: "96 g", cannelle: "3.6 g", confiture: "120 g", citron: "1" },
+      { nb: 13, pateFeuilletee: "585 g", pomme: "15", beurre: "156 g", sucre: "195 g", cassonade: "104 g", cannelle: "3.9 g", confiture: "130 g", citron: "1" },
+      { nb: 14, pateFeuilletee: "630 g", pomme: "16", beurre: "168 g", sucre: "210 g", cassonade: "112 g", cannelle: "4.2 g", confiture: "140 g", citron: "2" },
+      { nb: 15, pateFeuilletee: "675 g", pomme: "18", beurre: "180 g", sucre: "225 g", cassonade: "120 g", cannelle: "4.5 g", confiture: "150 g", citron: "2¼" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "📏", titre: "Étaler très fin", detail: "Étalez la pâte feuilletée à 2 mm SEULEMENT : c'est cette finesse qui fait toute la différence avec une tarte ordinaire.", badge: null },
+      { icone: "🕳️", titre: "Piquer", detail: "Piquez généreusement à la fourchette et réservez 20 minutes au frais pour éviter que la pâte ne gonfle.", badge: null },
+      { icone: "🍏", titre: "Trancher", detail: "Coupez les pommes en lamelles de 2 mm à la mandoline, citronnées au fur et à mesure.", badge: null },
+      { icone: "🌻", titre: "La rosace", detail: "Disposez-les en rosace serrée en les faisant se CHEVAUCHER de moitié : elles rétrécissent beaucoup à la cuisson.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Petits dés de beurre partout, sucre et cassonade en pluie, pointe de cannelle.", badge: null },
+      { icone: "🔥", titre: "Four très chaud", detail: "220°C pendant 22 minutes : la pâte doit être BRUNE en dessous, pas blonde, sinon elle sera molle.", badge: null },
+      { icone: "✨", titre: "Lustrer", detail: "Confiture d'abricot chauffée passée au pinceau à la sortie du four : c'est le nappage des professionnels.", badge: null }
+    ],
+    liees: ["tartetatinpommes","chaussonpommes","crumblepommecaramel"]
+  },
+  briochepolonaise: {
+    dateAjout: "2026-08-02T14:06:00",
+    nom: "Brioche Polonaise",
+    cat: "desserts", pays: "france",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "👑",
+    description: "Une brioche rassise imbibée de sirop au kirsch, garnie de crème pâtissière aux fruits confits, entièrement recouverte de meringue dorée. Une pâtisserie anti-gaspi de génie — elle n'existe QUE grâce à la brioche de la veille.",
+    tableauBriochepolonaise: [
+      { nb: 1, briocheoupain: "60 g", lait: "70 ml", oeufs: "½", sucre: "30 g", maizena: "6 g", fruitsconfits: "20 g", rhum: "8 ml", amandeeffilee: "6 g", vanille: "0.3 g" },
+      { nb: 2, briocheoupain: "120 g", lait: "140 ml", oeufs: "1", sucre: "60 g", maizena: "12 g", fruitsconfits: "40 g", rhum: "16 ml", amandeeffilee: "12 g", vanille: "0.6 g" },
+      { nb: 3, briocheoupain: "180 g", lait: "210 ml", oeufs: "1½", sucre: "90 g", maizena: "18 g", fruitsconfits: "60 g", rhum: "24 ml", amandeeffilee: "18 g", vanille: "0.9 g" },
+      { nb: 4, briocheoupain: "240 g", lait: "280 ml", oeufs: "2", sucre: "120 g", maizena: "24 g", fruitsconfits: "80 g", rhum: "32 ml", amandeeffilee: "24 g", vanille: "1.2 g" },
+      { nb: 5, briocheoupain: "300 g", lait: "350 ml", oeufs: "2½", sucre: "150 g", maizena: "30 g", fruitsconfits: "100 g", rhum: "40 ml", amandeeffilee: "30 g", vanille: "1.5 g" },
+      { nb: 6, briocheoupain: "360 g", lait: "420 ml", oeufs: "3", sucre: "180 g", maizena: "36 g", fruitsconfits: "120 g", rhum: "48 ml", amandeeffilee: "36 g", vanille: "1.8 g" },
+      { nb: 7, briocheoupain: "420 g", lait: "490 ml", oeufs: "3½", sucre: "210 g", maizena: "42 g", fruitsconfits: "140 g", rhum: "56 ml", amandeeffilee: "42 g", vanille: "2.1 g" },
+      { nb: 8, briocheoupain: "480 g", lait: "560 ml", oeufs: "4", sucre: "240 g", maizena: "48 g", fruitsconfits: "160 g", rhum: "64 ml", amandeeffilee: "48 g", vanille: "2.4 g" },
+      { nb: 9, briocheoupain: "540 g", lait: "630 ml", oeufs: "4½", sucre: "270 g", maizena: "54 g", fruitsconfits: "180 g", rhum: "72 ml", amandeeffilee: "54 g", vanille: "2.7 g" },
+      { nb: 10, briocheoupain: "600 g", lait: "700 ml", oeufs: "5", sucre: "300 g", maizena: "60 g", fruitsconfits: "200 g", rhum: "80 ml", amandeeffilee: "60 g", vanille: "3 g" },
+      { nb: 11, briocheoupain: "660 g", lait: "770 ml", oeufs: "5½", sucre: "330 g", maizena: "66 g", fruitsconfits: "220 g", rhum: "88 ml", amandeeffilee: "66 g", vanille: "3.3 g" },
+      { nb: 12, briocheoupain: "720 g", lait: "840 ml", oeufs: "6", sucre: "360 g", maizena: "72 g", fruitsconfits: "240 g", rhum: "96 ml", amandeeffilee: "72 g", vanille: "3.6 g" },
+      { nb: 13, briocheoupain: "780 g", lait: "910 ml", oeufs: "6½", sucre: "390 g", maizena: "78 g", fruitsconfits: "260 g", rhum: "104 ml", amandeeffilee: "78 g", vanille: "3.9 g" },
+      { nb: 14, briocheoupain: "840 g", lait: "980 ml", oeufs: "7", sucre: "420 g", maizena: "84 g", fruitsconfits: "280 g", rhum: "112 ml", amandeeffilee: "84 g", vanille: "4.2 g" },
+      { nb: 15, briocheoupain: "900 g", lait: "1050 ml", oeufs: "7½", sucre: "450 g", maizena: "90 g", fruitsconfits: "300 g", rhum: "120 ml", amandeeffilee: "90 g", vanille: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "La brioche rassise", detail: "Il FAUT une brioche de la veille : fraîche, elle se déliterait entièrement au contact du sirop.", badge: null },
+      { icone: "🍷", titre: "Le sirop", detail: "Sirop léger (eau + sucre) parfumé au kirsch ou au rhum, laissé TIÉDIR avant usage.", badge: null },
+      { icone: "🥛", titre: "La crème", detail: "Crème pâtissière classique, refroidie filmée au contact, puis fruits confits macérés incorporés.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Coupez la brioche en trois disques horizontaux et imbibez chacun au pinceau — généreusement mais sans noyer.", badge: null },
+      { icone: "🎂", titre: "Monter", detail: "Alternez brioche et crème, en reconstituant la forme d'origine, puis 1 heure au frais pour raffermir.", badge: null },
+      { icone: "☁️", titre: "La meringue", detail: "Meringue italienne : sirop à 118°C sur les blancs montés, fouettée jusqu'à complet refroidissement.", badge: null },
+      { icone: "🔥", titre: "Recouvrir", detail: "Masquez ENTIÈREMENT la brioche de meringue, amandes effilées, puis dorez au four à 240°C 5 minutes.", badge: null }
+    ],
+    liees: ["puitsdamour","omelettenorvegienne","gateaubattu"]
+  },
+  duchessescafe: {
+    dateAjout: "2026-08-02T14:07:00",
+    nom: "Duchesses au Café",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "☕",
+    description: "De petits choux garnis de crème au beurre au café et glacés au fondant — la pâtisserie de salon de thé des années 1950, injustement oubliée. Le café doit être un EXTRAIT très concentré, sinon la crème se détend et tourne.",
+    tableauDuchessescafe: [
+      { nb: 1, farine: "12 g", beurre: "20 g", oeufs: "½", lait: "15 ml", sucre: "15 g", cafe: "3 g", sucreglace: "12 g", noisettes: "5 g", sel: "0.2 g" },
+      { nb: 2, farine: "24 g", beurre: "40 g", oeufs: "1", lait: "30 ml", sucre: "30 g", cafe: "6 g", sucreglace: "24 g", noisettes: "10 g", sel: "0.4 g" },
+      { nb: 3, farine: "36 g", beurre: "60 g", oeufs: "1½", lait: "45 ml", sucre: "45 g", cafe: "9 g", sucreglace: "36 g", noisettes: "15 g", sel: "0.6 g" },
+      { nb: 4, farine: "48 g", beurre: "80 g", oeufs: "2", lait: "60 ml", sucre: "60 g", cafe: "12 g", sucreglace: "48 g", noisettes: "20 g", sel: "0.8 g" },
+      { nb: 5, farine: "60 g", beurre: "100 g", oeufs: "2½", lait: "75 ml", sucre: "75 g", cafe: "15 g", sucreglace: "60 g", noisettes: "25 g", sel: "1 g" },
+      { nb: 6, farine: "72 g", beurre: "120 g", oeufs: "3", lait: "90 ml", sucre: "90 g", cafe: "18 g", sucreglace: "72 g", noisettes: "30 g", sel: "1.2 g" },
+      { nb: 7, farine: "84 g", beurre: "140 g", oeufs: "3½", lait: "105 ml", sucre: "105 g", cafe: "21 g", sucreglace: "84 g", noisettes: "35 g", sel: "1.4 g" },
+      { nb: 8, farine: "96 g", beurre: "160 g", oeufs: "4", lait: "120 ml", sucre: "120 g", cafe: "24 g", sucreglace: "96 g", noisettes: "40 g", sel: "1.6 g" },
+      { nb: 9, farine: "108 g", beurre: "180 g", oeufs: "4½", lait: "135 ml", sucre: "135 g", cafe: "27 g", sucreglace: "108 g", noisettes: "45 g", sel: "1.8 g" },
+      { nb: 10, farine: "120 g", beurre: "200 g", oeufs: "5", lait: "150 ml", sucre: "150 g", cafe: "30 g", sucreglace: "120 g", noisettes: "50 g", sel: "2 g" },
+      { nb: 11, farine: "132 g", beurre: "220 g", oeufs: "5½", lait: "165 ml", sucre: "165 g", cafe: "33 g", sucreglace: "132 g", noisettes: "55 g", sel: "2.2 g" },
+      { nb: 12, farine: "144 g", beurre: "240 g", oeufs: "6", lait: "180 ml", sucre: "180 g", cafe: "36 g", sucreglace: "144 g", noisettes: "60 g", sel: "2.4 g" },
+      { nb: 13, farine: "156 g", beurre: "260 g", oeufs: "6½", lait: "195 ml", sucre: "195 g", cafe: "39 g", sucreglace: "156 g", noisettes: "65 g", sel: "2.6 g" },
+      { nb: 14, farine: "168 g", beurre: "280 g", oeufs: "7", lait: "210 ml", sucre: "210 g", cafe: "42 g", sucreglace: "168 g", noisettes: "70 g", sel: "2.8 g" },
+      { nb: 15, farine: "180 g", beurre: "300 g", oeufs: "7½", lait: "225 ml", sucre: "225 g", cafe: "45 g", sucreglace: "180 g", noisettes: "75 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "La panade", detail: "Eau, lait, beurre et sel à ébullition, farine d'un coup, puis desséchez 2 minutes à la spatule.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Hors du feu, œufs un par un : la pâte doit former un bec souple qui retombe lentement de la spatule.", badge: null },
+      { icone: "⭕", titre: "Pocher", detail: "Petits choux de 3 cm bien espacés, aplatissez la pointe avec un doigt mouillé.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "25 minutes à 180°C SANS jamais ouvrir le four : un choc thermique les ferait retomber définitivement.", badge: null },
+      { icone: "☕", titre: "L'extrait", detail: "Faites réduire du café très fort jusqu'à obtenir une cuillère de liquide SIROPEUX : c'est lui qui parfume tout.", badge: null },
+      { icone: "🧈", titre: "La crème", detail: "Crème au beurre : sirop à 118°C sur les jaunes, refroidissement complet, puis beurre pommade et extrait de café.", badge: null },
+      { icone: "✨", titre: "Glacer", detail: "Garnissez par-dessous, puis trempez le dessus dans un fondant au café. Une noisette grillée sur chacune.", badge: null }
+    ],
+    liees: ["chouxcraquelin","eclaircafe","profiteroles"]
+  },
+  tartebouillie: {
+    dateAjout: "2026-08-02T14:08:00",
+    nom: "Tarte à la Bouillie",
+    cat: "desserts", pays: "france",
+    base: 8,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    description: "La tarte bretonne des dimanches : une pâte sablée garnie d'une simple bouillie de lait vanillé, cuite jusqu'à ce que la surface se craquelle. Trois ingrédients, aucune technique — c'est la définition même du dessert de grand-mère.",
+    tableauTartebouillie: [
+      { nb: 1, pateSablee: "40 g", lait: "120 ml", sucre: "22 g", farine: "12 g", oeufs: "", beurre: "8 g", vanille: "0.4 g", fleuroranger: "2 ml" },
+      { nb: 2, pateSablee: "80 g", lait: "240 ml", sucre: "44 g", farine: "24 g", oeufs: "", beurre: "16 g", vanille: "0.8 g", fleuroranger: "4 ml" },
+      { nb: 3, pateSablee: "120 g", lait: "360 ml", sucre: "66 g", farine: "36 g", oeufs: "", beurre: "24 g", vanille: "1.2 g", fleuroranger: "6 ml" },
+      { nb: 4, pateSablee: "160 g", lait: "480 ml", sucre: "88 g", farine: "48 g", oeufs: "1", beurre: "32 g", vanille: "1.6 g", fleuroranger: "8 ml" },
+      { nb: 5, pateSablee: "200 g", lait: "600 ml", sucre: "110 g", farine: "60 g", oeufs: "1½", beurre: "40 g", vanille: "2 g", fleuroranger: "10 ml" },
+      { nb: 6, pateSablee: "240 g", lait: "720 ml", sucre: "132 g", farine: "72 g", oeufs: "1", beurre: "48 g", vanille: "2.4 g", fleuroranger: "12 ml" },
+      { nb: 7, pateSablee: "280 g", lait: "840 ml", sucre: "154 g", farine: "84 g", oeufs: "2", beurre: "56 g", vanille: "2.8 g", fleuroranger: "14 ml" },
+      { nb: 8, pateSablee: "320 g", lait: "960 ml", sucre: "176 g", farine: "96 g", oeufs: "2", beurre: "64 g", vanille: "3.2 g", fleuroranger: "16 ml" },
+      { nb: 9, pateSablee: "360 g", lait: "1080 ml", sucre: "198 g", farine: "108 g", oeufs: "2", beurre: "72 g", vanille: "3.6 g", fleuroranger: "18 ml" },
+      { nb: 10, pateSablee: "400 g", lait: "1200 ml", sucre: "220 g", farine: "120 g", oeufs: "3", beurre: "80 g", vanille: "4 g", fleuroranger: "20 ml" },
+      { nb: 11, pateSablee: "440 g", lait: "1320 ml", sucre: "242 g", farine: "132 g", oeufs: "3", beurre: "88 g", vanille: "4.4 g", fleuroranger: "22 ml" },
+      { nb: 12, pateSablee: "480 g", lait: "1440 ml", sucre: "264 g", farine: "144 g", oeufs: "3", beurre: "96 g", vanille: "4.8 g", fleuroranger: "24 ml" },
+      { nb: 13, pateSablee: "520 g", lait: "1560 ml", sucre: "286 g", farine: "156 g", oeufs: "3", beurre: "104 g", vanille: "5.2 g", fleuroranger: "26 ml" },
+      { nb: 14, pateSablee: "560 g", lait: "1680 ml", sucre: "308 g", farine: "168 g", oeufs: "4", beurre: "112 g", vanille: "5.6 g", fleuroranger: "28 ml" },
+      { nb: 15, pateSablee: "600 g", lait: "1800 ml", sucre: "330 g", farine: "180 g", oeufs: "4½", beurre: "120 g", vanille: "6 g", fleuroranger: "30 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥧", titre: "Foncer", detail: "Étalez la pâte sablée dans le moule, piquez le fond et réservez 30 minutes au frais.", badge: null },
+      { icone: "🥛", titre: "Le lait", detail: "Portez le lait à frémissement avec la gousse de vanille fendue et laissez INFUSER 15 minutes hors du feu.", badge: null },
+      { icone: "🥚", titre: "Délayer", detail: "Fouettez œufs, sucre et farine dans un saladier jusqu'à parfaitement lisse, sans grumeau.", badge: null },
+      { icone: "🌀", titre: "Tempérer", detail: "Versez un tiers du lait chaud sur le mélange en fouettant, puis reversez le tout dans la casserole.", badge: null },
+      { icone: "♨️", titre: "Épaissir", detail: "Cuisez 4 minutes en fouettant sans arrêt : la bouillie doit être ÉPAISSE, comme une crème pâtissière ferme.", badge: null },
+      { icone: "🌸", titre: "Parfumer", detail: "Beurre et fleur d'oranger hors du feu, puis versez la bouillie encore chaude sur le fond de tarte.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "35 minutes à 180°C. La surface doit se craqueler et prendre des taches brunes — c'est le signe qu'elle est prête.", badge: null }
+    ],
+    liees: ["flanparisien","farbreton"]
+  },
+  pralinesroses: {
+    dateAjout: "2026-08-02T14:09:00",
+    nom: "Pralines Roses de Lyon",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌸",
+    description: "Les amandes enrobées de sucre rose vif qui font la tarte et la brioche lyonnaises. Le sucre est cuit à 116°C puis SABLÉ en remuant : il redevient poudre, puis fond à nouveau au contact de la chaleur — c'est ce double mouvement qui crée la coque irrégulière.",
+    tableauPralinesroses: [
+      { nb: 1, amande: "30 g", sucre: "35 g", colorant: "0.1 g", vanille: "0.2 g" },
+      { nb: 2, amande: "60 g", sucre: "70 g", colorant: "0.2 g", vanille: "0.4 g" },
+      { nb: 3, amande: "90 g", sucre: "105 g", colorant: "0.3 g", vanille: "0.6 g" },
+      { nb: 4, amande: "120 g", sucre: "140 g", colorant: "0.4 g", vanille: "0.8 g" },
+      { nb: 5, amande: "150 g", sucre: "175 g", colorant: "0.5 g", vanille: "1 g" },
+      { nb: 6, amande: "180 g", sucre: "210 g", colorant: "0.6 g", vanille: "1.2 g" },
+      { nb: 7, amande: "210 g", sucre: "245 g", colorant: "0.7 g", vanille: "1.4 g" },
+      { nb: 8, amande: "240 g", sucre: "280 g", colorant: "0.8 g", vanille: "1.6 g" },
+      { nb: 9, amande: "270 g", sucre: "315 g", colorant: "0.9 g", vanille: "1.8 g" },
+      { nb: 10, amande: "300 g", sucre: "350 g", colorant: "1 g", vanille: "2 g" },
+      { nb: 11, amande: "330 g", sucre: "385 g", colorant: "1.1 g", vanille: "2.2 g" },
+      { nb: 12, amande: "360 g", sucre: "420 g", colorant: "1.2 g", vanille: "2.4 g" },
+      { nb: 13, amande: "390 g", sucre: "455 g", colorant: "1.3 g", vanille: "2.6 g" },
+      { nb: 14, amande: "420 g", sucre: "490 g", colorant: "1.4 g", vanille: "2.8 g" },
+      { nb: 15, amande: "450 g", sucre: "525 g", colorant: "1.5 g", vanille: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier", detail: "Grillez les amandes ENTIÈRES avec leur peau 10 minutes à 160°C, et gardez-les au chaud.", badge: null },
+      { icone: "🌡️", titre: "Le sirop", detail: "Sucre, un peu d'eau, colorant rouge et vanille portés à 116°C exactement au thermomètre.", badge: null },
+      { icone: "🥜", titre: "Enrober", detail: "Jetez les amandes chaudes dans le sirop et remuez SANS ARRÊT à la spatule, hors du feu.", badge: null },
+      { icone: "❄️", titre: "Le sablage", detail: "Le sucre blanchit et redevient POUDRE autour des amandes : c'est normal, c'est le sablage, ne paniquez pas.", badge: null },
+      { icone: "🔥", titre: "Refondre", detail: "Remettez sur feu doux en remuant : le sucre sablé refond peu à peu et enrobe les amandes d'une coque brillante.", badge: null },
+      { icone: "🔁", titre: "Recommencer", detail: "Répétez sablage et refonte DEUX FOIS de plus : chaque cycle épaissit la coque et donne le relief caractéristique.", badge: null },
+      { icone: "🌸", titre: "Séparer", detail: "Étalez sur papier cuisson et séparez les amandes à la fourchette avant refroidissement complet.", badge: null }
+    ],
+    liees: ["tartepraline","briochepolonaise","nougatmontelimar"]
+  },
+  berlingots: {
+    dateAjout: "2026-08-02T16:00:00",
+    nom: "Berlingots de Carpentras",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "40 min",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🔺",
+    description: "Le bonbon rayé en forme de tétraèdre, né à Carpentras du sirop des fruits confits. Les rayures blanches viennent d'un sucre ÉTIRÉ jusqu'à devenir opaque et nacré, posé sur le sucre coloré resté transparent.",
+    tableauBerlingots: [
+      { nb: 1, sucre: "40 g", glucose: "10 g", colorant: "0.1 g", menthe: "1 g", citron: "" },
+      { nb: 2, sucre: "80 g", glucose: "20 g", colorant: "0.2 g", menthe: "2 g", citron: "" },
+      { nb: 3, sucre: "120 g", glucose: "30 g", colorant: "0.3 g", menthe: "3 g", citron: "" },
+      { nb: 4, sucre: "160 g", glucose: "40 g", colorant: "0.4 g", menthe: "4 g", citron: "" },
+      { nb: 5, sucre: "200 g", glucose: "50 g", colorant: "0.5 g", menthe: "5 g", citron: "½" },
+      { nb: 6, sucre: "240 g", glucose: "60 g", colorant: "0.6 g", menthe: "6 g", citron: "" },
+      { nb: 7, sucre: "280 g", glucose: "70 g", colorant: "0.7 g", menthe: "7 g", citron: "" },
+      { nb: 8, sucre: "320 g", glucose: "80 g", colorant: "0.8 g", menthe: "8 g", citron: "" },
+      { nb: 9, sucre: "360 g", glucose: "90 g", colorant: "0.9 g", menthe: "9 g", citron: "" },
+      { nb: 10, sucre: "400 g", glucose: "100 g", colorant: "1 g", menthe: "10 g", citron: "1" },
+      { nb: 11, sucre: "440 g", glucose: "110 g", colorant: "1.1 g", menthe: "11 g", citron: "1" },
+      { nb: 12, sucre: "480 g", glucose: "120 g", colorant: "1.2 g", menthe: "12 g", citron: "1" },
+      { nb: 13, sucre: "520 g", glucose: "130 g", colorant: "1.3 g", menthe: "13 g", citron: "1" },
+      { nb: 14, sucre: "560 g", glucose: "140 g", colorant: "1.4 g", menthe: "14 g", citron: "1" },
+      { nb: 15, sucre: "600 g", glucose: "150 g", colorant: "1.5 g", menthe: "15 g", citron: "1½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌡️", titre: "Cuire à 145°C", detail: "Sucre, glucose et eau portés à 145°C exactement : c'est le stade du « cassé », indispensable pour un bonbon dur.", badge: null },
+      { icone: "💧", titre: "Stopper", detail: "Trempez le fond de la casserole 3 secondes dans l'eau froide pour arrêter net la cuisson.", badge: null },
+      { icone: "✂️", titre: "Séparer", detail: "Versez un tiers de la masse à part sur un marbre huilé : c'est elle qui deviendra la rayure blanche.", badge: null },
+      { icone: "🎨", titre: "Colorer", detail: "Ajoutez colorant et arôme aux deux tiers restants, en repliant la masse sur elle-même à la spatule.", badge: null },
+      { icone: "💪", titre: "Étirer", detail: "Étirez le tiers réservé encore chaud en le repliant sans arrêt : il emprisonne de l'air, blanchit et devient nacré.", badge: null },
+      { icone: "🌀", titre: "Assembler", detail: "Posez des bandes blanches sur le boudin coloré, roulez pour souder, et étirez en un long cordon régulier.", badge: null },
+      { icone: "🔺", titre: "Couper", detail: "Coupez au ciseau en tournant le cordon d'un QUART DE TOUR entre chaque coupe : c'est ce geste qui crée le tétraèdre.", badge: null }
+    ],
+    liees: ["sucettescaramel","patesdefruits","pralinesroses"]
+  },
+  rocherspraline: {
+    dateAjout: "2026-08-02T16:01:00",
+    nom: "Rochers Praliné",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🪨",
+    description: "Un cœur de praliné aux crêpes dentelle enrobé de chocolat et d'éclats de noisette. Le croustillant vient uniquement de la gavotte écrasée — et il disparaît si le mélange attend à l'air libre plus de quelques minutes.",
+    tableauRocherspraline: [
+      { nb: 1, pralin: "20 g", chocolatLait: "18 g", chocolatnoir: "12 g", noisettes: "12 g", biscuits: "10 g", huile: "2 ml" },
+      { nb: 2, pralin: "40 g", chocolatLait: "36 g", chocolatnoir: "24 g", noisettes: "24 g", biscuits: "20 g", huile: "4 ml" },
+      { nb: 3, pralin: "60 g", chocolatLait: "54 g", chocolatnoir: "36 g", noisettes: "36 g", biscuits: "30 g", huile: "6 ml" },
+      { nb: 4, pralin: "80 g", chocolatLait: "72 g", chocolatnoir: "48 g", noisettes: "48 g", biscuits: "40 g", huile: "8 ml" },
+      { nb: 5, pralin: "100 g", chocolatLait: "90 g", chocolatnoir: "60 g", noisettes: "60 g", biscuits: "50 g", huile: "10 ml" },
+      { nb: 6, pralin: "120 g", chocolatLait: "108 g", chocolatnoir: "72 g", noisettes: "72 g", biscuits: "60 g", huile: "12 ml" },
+      { nb: 7, pralin: "140 g", chocolatLait: "126 g", chocolatnoir: "84 g", noisettes: "84 g", biscuits: "70 g", huile: "14 ml" },
+      { nb: 8, pralin: "160 g", chocolatLait: "144 g", chocolatnoir: "96 g", noisettes: "96 g", biscuits: "80 g", huile: "16 ml" },
+      { nb: 9, pralin: "180 g", chocolatLait: "162 g", chocolatnoir: "108 g", noisettes: "108 g", biscuits: "90 g", huile: "18 ml" },
+      { nb: 10, pralin: "200 g", chocolatLait: "180 g", chocolatnoir: "120 g", noisettes: "120 g", biscuits: "100 g", huile: "20 ml" },
+      { nb: 11, pralin: "220 g", chocolatLait: "198 g", chocolatnoir: "132 g", noisettes: "132 g", biscuits: "110 g", huile: "22 ml" },
+      { nb: 12, pralin: "240 g", chocolatLait: "216 g", chocolatnoir: "144 g", noisettes: "144 g", biscuits: "120 g", huile: "24 ml" },
+      { nb: 13, pralin: "260 g", chocolatLait: "234 g", chocolatnoir: "156 g", noisettes: "156 g", biscuits: "130 g", huile: "26 ml" },
+      { nb: 14, pralin: "280 g", chocolatLait: "252 g", chocolatnoir: "168 g", noisettes: "168 g", biscuits: "140 g", huile: "28 ml" },
+      { nb: 15, pralin: "300 g", chocolatLait: "270 g", chocolatnoir: "180 g", noisettes: "180 g", biscuits: "150 g", huile: "30 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier", detail: "Grillez les noisettes 10 minutes à 160°C, frottez-les dans un torchon pour ôter les peaux, puis concassez-les.", badge: null },
+      { icone: "🍫", titre: "Le praliné", detail: "Faites fondre le chocolat au lait et mélangez-le au praliné jusqu'à une masse lisse et brillante.", badge: null },
+      { icone: "🥐", titre: "Le croustillant", detail: "Écrasez les crêpes dentelle À LA MAIN en gros éclats — mixées, elles deviendraient de la poudre sans croquant.", badge: null },
+      { icone: "🌀", titre: "Mélanger vite", detail: "Incorporez gavottes et la moitié des noisettes en 30 secondes, sans travailler : chaque seconde ramollit le croustillant.", badge: null },
+      { icone: "❄️", titre: "Former", detail: "Boules de 2 cm à la cuillère, posées sur papier, puis 1 heure au frais pour qu'elles durcissent.", badge: null },
+      { icone: "🍫", titre: "Tempérer", detail: "Chocolat noir tempéré (45°C → 28°C → 31°C) avec une pointe d'huile neutre pour un enrobage plus fluide.", badge: null },
+      { icone: "🪨", titre: "Enrober", detail: "Trempez chaque boule à la fourchette, égouttez, et roulez immédiatement dans les noisettes concassées restantes.", badge: null }
+    ],
+    liees: ["truffeschocolat","mendiants","patetartiner"]
+  },
+  pateamandemaison: {
+    dateAjout: "2026-08-02T16:02:00",
+    nom: "Pâte d'Amande Maison",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🌰",
+    description: "Deux ingrédients et cinq minutes de robot pour une pâte d'amande incomparablement meilleure que celle du commerce. Le ratio décide de tout : 50/50 amande-sucre pour du modelage, 66/33 pour une pâte de dégustation, plus riche et moins sucrée.",
+    tableauPateamandemaison: [
+      { nb: 1, poudreamande: "30 g", sucreglace: "25 g", oeufs: "", eauFleurOranger: "2 ml", citron: "" },
+      { nb: 2, poudreamande: "60 g", sucreglace: "50 g", oeufs: "", eauFleurOranger: "4 ml", citron: "" },
+      { nb: 3, poudreamande: "90 g", sucreglace: "75 g", oeufs: "", eauFleurOranger: "6 ml", citron: "" },
+      { nb: 4, poudreamande: "120 g", sucreglace: "100 g", oeufs: "", eauFleurOranger: "8 ml", citron: "" },
+      { nb: 5, poudreamande: "150 g", sucreglace: "125 g", oeufs: "", eauFleurOranger: "10 ml", citron: "¼" },
+      { nb: 6, poudreamande: "180 g", sucreglace: "150 g", oeufs: "", eauFleurOranger: "12 ml", citron: "" },
+      { nb: 7, poudreamande: "210 g", sucreglace: "175 g", oeufs: "", eauFleurOranger: "14 ml", citron: "" },
+      { nb: 8, poudreamande: "240 g", sucreglace: "200 g", oeufs: "", eauFleurOranger: "16 ml", citron: "" },
+      { nb: 9, poudreamande: "270 g", sucreglace: "225 g", oeufs: "", eauFleurOranger: "18 ml", citron: "" },
+      { nb: 10, poudreamande: "300 g", sucreglace: "250 g", oeufs: "", eauFleurOranger: "20 ml", citron: "½" },
+      { nb: 11, poudreamande: "330 g", sucreglace: "275 g", oeufs: "", eauFleurOranger: "22 ml", citron: "" },
+      { nb: 12, poudreamande: "360 g", sucreglace: "300 g", oeufs: "", eauFleurOranger: "24 ml", citron: "" },
+      { nb: 13, poudreamande: "390 g", sucreglace: "325 g", oeufs: "1", eauFleurOranger: "26 ml", citron: "" },
+      { nb: 14, poudreamande: "420 g", sucreglace: "350 g", oeufs: "1", eauFleurOranger: "28 ml", citron: "" },
+      { nb: 15, poudreamande: "450 g", sucreglace: "375 g", oeufs: "1", eauFleurOranger: "30 ml", citron: "¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Tamiser", detail: "Tamisez poudre d'amande et sucre glace ENSEMBLE : les grumeaux de sucre glace sont impossibles à rattraper ensuite.", badge: null },
+      { icone: "🥚", titre: "Le blanc", detail: "Ajoutez le blanc d'œuf PETIT À PETIT, une cuillère à la fois — trop de liquide et la pâte devient impossible à travailler.", badge: null },
+      { icone: "🌀", titre: "Mixer court", detail: "Mixez par à-coups de 5 secondes : un mixage long chauffe l'amande, qui rend son huile et rend la pâte grasse.", badge: null },
+      { icone: "👐", titre: "Fraiser", detail: "Terminez à la main sur un plan sucré, en écrasant la pâte avec la paume jusqu'à parfaitement lisse.", badge: null },
+      { icone: "🍊", titre: "Parfumer", detail: "Fleur d'oranger et quelques gouttes de citron : le citron équilibre le sucre et relève l'amande.", badge: null },
+      { icone: "🎨", titre: "Colorer", detail: "Colorant en gel au cure-dent, jamais liquide — le colorant liquide détremperait la pâte.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Filmez SERRÉ et laissez 24 heures au frais : la pâte se raffermit et le goût d'amande se développe.", badge: null }
+    ],
+    liees: ["calissons","macaronsamiens","galettedesrois"]
+  },
+  barreschocolatees: {
+    dateAjout: "2026-08-02T16:03:00",
+    nom: "Barres Chocolatées Maison",
+    cat: "desserts", pays: "usa",
+    base: 12,
+    temps: "45 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍫",
+    description: "La version maison de la barre du distributeur : nougat, caramel et cacahuètes sous une coque de chocolat. Chaque couche doit être BIEN PRISE avant la suivante — sinon la découpe entraîne tout et les strates se mélangent.",
+    tableauBarreschocolatees: [
+      { nb: 1, chocolatLait: "25 g", cacahuete: "15 g", sucre: "20 g", glucose: "8 g", creme: "15 ml", beurre: "8 g", oeufs: "", vanille: "0.2 g", sel: "0.3 g" },
+      { nb: 2, chocolatLait: "50 g", cacahuete: "30 g", sucre: "40 g", glucose: "16 g", creme: "30 ml", beurre: "16 g", oeufs: "", vanille: "0.4 g", sel: "0.6 g" },
+      { nb: 3, chocolatLait: "75 g", cacahuete: "45 g", sucre: "60 g", glucose: "24 g", creme: "45 ml", beurre: "24 g", oeufs: "", vanille: "0.6 g", sel: "0.9 g" },
+      { nb: 4, chocolatLait: "100 g", cacahuete: "60 g", sucre: "80 g", glucose: "32 g", creme: "60 ml", beurre: "32 g", oeufs: "", vanille: "0.8 g", sel: "1.2 g" },
+      { nb: 5, chocolatLait: "125 g", cacahuete: "75 g", sucre: "100 g", glucose: "40 g", creme: "75 ml", beurre: "40 g", oeufs: "", vanille: "1 g", sel: "1.5 g" },
+      { nb: 6, chocolatLait: "150 g", cacahuete: "90 g", sucre: "120 g", glucose: "48 g", creme: "90 ml", beurre: "48 g", oeufs: "", vanille: "1.2 g", sel: "1.8 g" },
+      { nb: 7, chocolatLait: "175 g", cacahuete: "105 g", sucre: "140 g", glucose: "56 g", creme: "105 ml", beurre: "56 g", oeufs: "", vanille: "1.4 g", sel: "2.1 g" },
+      { nb: 8, chocolatLait: "200 g", cacahuete: "120 g", sucre: "160 g", glucose: "64 g", creme: "120 ml", beurre: "64 g", oeufs: "", vanille: "1.6 g", sel: "2.4 g" },
+      { nb: 9, chocolatLait: "225 g", cacahuete: "135 g", sucre: "180 g", glucose: "72 g", creme: "135 ml", beurre: "72 g", oeufs: "", vanille: "1.8 g", sel: "2.7 g" },
+      { nb: 10, chocolatLait: "250 g", cacahuete: "150 g", sucre: "200 g", glucose: "80 g", creme: "150 ml", beurre: "80 g", oeufs: "", vanille: "2 g", sel: "3 g" },
+      { nb: 11, chocolatLait: "275 g", cacahuete: "165 g", sucre: "220 g", glucose: "88 g", creme: "165 ml", beurre: "88 g", oeufs: "", vanille: "2.2 g", sel: "3.3 g" },
+      { nb: 12, chocolatLait: "300 g", cacahuete: "180 g", sucre: "240 g", glucose: "96 g", creme: "180 ml", beurre: "96 g", oeufs: "", vanille: "2.4 g", sel: "3.6 g" },
+      { nb: 13, chocolatLait: "325 g", cacahuete: "195 g", sucre: "260 g", glucose: "104 g", creme: "195 ml", beurre: "104 g", oeufs: "1", vanille: "2.6 g", sel: "3.9 g" },
+      { nb: 14, chocolatLait: "350 g", cacahuete: "210 g", sucre: "280 g", glucose: "112 g", creme: "210 ml", beurre: "112 g", oeufs: "1", vanille: "2.8 g", sel: "4.2 g" },
+      { nb: 15, chocolatLait: "375 g", cacahuete: "225 g", sucre: "300 g", glucose: "120 g", creme: "225 ml", beurre: "120 g", oeufs: "1", vanille: "3 g", sel: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "☁️", titre: "Le nougat", detail: "Blancs montés + sirop à 130°C fouetté jusqu'à refroidissement : c'est la couche blanche et aérienne du bas.", badge: null },
+      { icone: "📏", titre: "Étaler", detail: "Étalez le nougat sur 1 cm dans un cadre chemisé et laissez prendre 1 HEURE au frais.", badge: null },
+      { icone: "🍬", titre: "Le caramel", detail: "Caramel à sec, crème chaude, beurre, sel, recuit à 118°C : plus chaud il durcirait, plus froid il coulerait.", badge: null },
+      { icone: "🥜", titre: "Les cacahuètes", detail: "Torréfiez-les 8 minutes et mélangez-les au caramel tiède, hors du feu.", badge: null },
+      { icone: "⏳", titre: "Deuxième couche", detail: "Coulez le caramel sur le nougat PRIS et laissez encore 2 heures au frais.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Coupez des barres au couteau chauffé sous l'eau chaude et essuyé entre chaque coupe.", badge: null },
+      { icone: "🍫", titre: "Enrober", detail: "Chocolat au lait tempéré, trempage à la fourchette, égouttage, et cristallisation 2 heures à 18°C.", badge: null }
+    ],
+    liees: ["caramelsmous","rocherspraline","cookies"]
+  },
+  sucettescaramel: {
+    dateAjout: "2026-08-02T16:04:00",
+    nom: "Sucettes au Caramel",
+    cat: "desserts", pays: "france",
+    base: 12,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍭",
+    description: "Du sucre cuit à 150°C coulé sur des bâtonnets : la confiserie la plus simple et la plus spectaculaire à faire avec des enfants. Une seule règle de sécurité — le sucre à 150°C brûle bien plus gravement que l'eau bouillante.",
+    tableauSucettescaramel: [
+      { nb: 1, sucre: "30 g", glucose: "8 g", beurre: "3 g", vanille: "0.2 g", fleurdesel: "0.3 g" },
+      { nb: 2, sucre: "60 g", glucose: "16 g", beurre: "6 g", vanille: "0.4 g", fleurdesel: "0.6 g" },
+      { nb: 3, sucre: "90 g", glucose: "24 g", beurre: "9 g", vanille: "0.6 g", fleurdesel: "0.9 g" },
+      { nb: 4, sucre: "120 g", glucose: "32 g", beurre: "12 g", vanille: "0.8 g", fleurdesel: "1.2 g" },
+      { nb: 5, sucre: "150 g", glucose: "40 g", beurre: "15 g", vanille: "1 g", fleurdesel: "1.5 g" },
+      { nb: 6, sucre: "180 g", glucose: "48 g", beurre: "18 g", vanille: "1.2 g", fleurdesel: "1.8 g" },
+      { nb: 7, sucre: "210 g", glucose: "56 g", beurre: "21 g", vanille: "1.4 g", fleurdesel: "2.1 g" },
+      { nb: 8, sucre: "240 g", glucose: "64 g", beurre: "24 g", vanille: "1.6 g", fleurdesel: "2.4 g" },
+      { nb: 9, sucre: "270 g", glucose: "72 g", beurre: "27 g", vanille: "1.8 g", fleurdesel: "2.7 g" },
+      { nb: 10, sucre: "300 g", glucose: "80 g", beurre: "30 g", vanille: "2 g", fleurdesel: "3 g" },
+      { nb: 11, sucre: "330 g", glucose: "88 g", beurre: "33 g", vanille: "2.2 g", fleurdesel: "3.3 g" },
+      { nb: 12, sucre: "360 g", glucose: "96 g", beurre: "36 g", vanille: "2.4 g", fleurdesel: "3.6 g" },
+      { nb: 13, sucre: "390 g", glucose: "104 g", beurre: "39 g", vanille: "2.6 g", fleurdesel: "3.9 g" },
+      { nb: 14, sucre: "420 g", glucose: "112 g", beurre: "42 g", vanille: "2.8 g", fleurdesel: "4.2 g" },
+      { nb: 15, sucre: "450 g", glucose: "120 g", beurre: "45 g", vanille: "3 g", fleurdesel: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "📋", titre: "Tout préparer", detail: "Bâtonnets posés sur papier cuisson AVANT de commencer : une fois le sucre cuit, vous avez 60 secondes.", badge: null },
+      { icone: "🍬", titre: "Le sirop", detail: "Sucre, glucose et deux cuillères d'eau à feu moyen, SANS remuer une seule fois — remuer fait cristalliser.", badge: null },
+      { icone: "🖌️", titre: "Nettoyer les bords", detail: "Passez un pinceau mouillé sur les parois de la casserole : le moindre cristal ferait masser toute la préparation.", badge: null },
+      { icone: "🌡️", titre: "150°C", detail: "Cuisez jusqu'à 150°C et une couleur ambre clair. À 155°C, le caramel devient amer très vite.", badge: null },
+      { icone: "🧈", titre: "Arrêter", detail: "Hors du feu, beurre, vanille et fleur de sel — le beurre rend la sucette moins cassante.", badge: null },
+      { icone: "🍭", titre: "Couler", detail: "Versez à la cuillère en disques de 4 cm SUR l'extrémité de chaque bâtonnet, en partant du centre.", badge: null },
+      { icone: "⏳", titre: "Durcir", detail: "20 minutes à température ambiante, puis emballez chaque sucette : à l'air, elles deviennent collantes en une heure.", badge: null }
+    ],
+    liees: ["caramelsmous","berlingots","patesdefruits"]
   },
 });

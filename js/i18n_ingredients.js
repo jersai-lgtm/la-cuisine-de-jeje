@@ -12,6 +12,7 @@ window.I18N_ING = {
   "🐟 Hareng fumé": "🐟 Smoked herring", "🌰 Châtaignes": "🌰 Chestnuts", "🟡 Graines de moutarde": "🟡 Mustard seeds",
   "🫛 Salsifis": "🫛 Salsify", "🍠 Topinambours": "🍠 Jerusalem artichokes", "🟤 Céleri-rave": "🟤 Celeriac",
   "🍯 Sirop de glucose": "🍯 Glucose syrup", "⚗️ Pectine": "⚗️ Pectin",
+  "🍒 Cascara": "🍒 Cascara", "🥥 Huile de coco": "🥥 Coconut oil",
   "🟤 Clou de girofle": "🟤 Clove", "🦐 Crevettes": "🦐 Shrimp", "🥣 Sauce tartare": "🥣 Tartar sauce",
   "🥚 Blanc d'œuf": "🥚 Egg white", "🌈 Macarons": "🌈 Macarons", "🥛 Yaourt grec": "🥛 Greek yogurt",
   "🍞 Chapelure panko": "🍞 Panko breadcrumbs", "🍄 Champignons": "🍄 Mushrooms", "🍄 Morilles séchées": "🍄 Dried morels", "🍪 Biscuits spéculoos": "🍪 Speculoos biscuits", "🍅 Tomates séchées": "🍅 Sun-dried tomatoes", "🐟 Œufs de cabillaud fumés": "🐟 Smoked cod roe", "🐟 Truite": "🐟 Trout", "🐟 Bar (loup de mer)": "🐟 Sea bass", "🫘 Fèves sèches": "🫘 Dried split fava beans", "🧀 Brocciu": "🧀 Brocciu cheese", "🥬 Endives": "🥬 Endives", "🧀 Roquefort": "🧀 Roquefort", "🎃 Potimarron": "🎃 Red kuri squash",

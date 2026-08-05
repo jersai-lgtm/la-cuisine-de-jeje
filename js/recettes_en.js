@@ -95884,5 +95884,1025 @@ window.RECETTES_EN = {
     "detail": "45 minutes at 180°C, covering with foil halfway if the top colours too fast."
    }
   ]
+ },
+ "gratindemacaronis": {
+  "nom": "Macaroni Gratin",
+  "description": "The French baked pasta, plainer than its American cousin: nutmeg béchamel, grated gruyère, diced ham. The macaroni must be cooked VERY al dente — it will finish swelling in the sauce in the oven.",
+  "etapes": [
+   {
+    "titre": "Undercook",
+    "detail": "Allow 3 MINUTES LESS than the packet says: the pasta will absorb the béchamel in the oven."
+   },
+   {
+    "titre": "Don't rinse",
+    "detail": "Drain without rinsing: the surface starch helps the sauce cling to the pasta."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Melted butter, flour, 2 minutes without colouring — we want a white béchamel."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Cold milk in three additions, whisking, then 8 minutes of cooking. It should be slightly LOOSER than usual."
+   },
+   {
+    "titre": "Season",
+    "detail": "Generous nutmeg, pepper, salt, and two-thirds of the grated cheese off the heat."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fold pasta, diced ham and béchamel together in the buttered dish."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Remaining cheese and breadcrumbs, 25 minutes at 200°C until golden and bubbling at the edges."
+   }
+  ]
+ },
+ "polentafrite": {
+  "nom": "Fried Polenta",
+  "description": "Polenta cooled, cut into chips and fried until crisp: golden crust, creamy heart. It is northern Italy's anti-waste recipe, born to use up yesterday's polenta.",
+  "etapes": [
+   {
+    "titre": "The ratio",
+    "detail": "Allow FOUR volumes of stock to one of polenta: any less and it will be crumbly and break when cut."
+   },
+   {
+    "titre": "Rain it in",
+    "detail": "Boiling stock, polenta RAINED in while whisking constantly — tipped in at once, it lumps permanently."
+   },
+   {
+    "titre": "Cook",
+    "detail": "20 minutes over low heat, stirring regularly: it must come away from the sides of the pan."
+   },
+   {
+    "titre": "Enrich",
+    "detail": "Parmesan, butter, chopped rosemary, salt and pepper off the heat."
+   },
+   {
+    "titre": "Pour out",
+    "detail": "Spread 2 cm thick in an oiled dish and smooth the surface with a wet spatula."
+   },
+   {
+    "titre": "Chill",
+    "detail": "2 hours minimum: warm polenta would fall apart in hot oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "2 cm batons, oil at 180°C, 5 minutes until golden. Flaky salt as they come out."
+   }
+  ]
+ },
+ "endivesbraisees": {
+  "nom": "Braised Chicory with Honey",
+  "description": "Chicory's bitterness vanishes when braised with honey and lemon. The decisive move is removing the bitter CORE at the base — two seconds with a knife that completely change the result.",
+  "etapes": [
+   {
+    "titre": "The core",
+    "detail": "Hollow out the base in a cone shape with a knife tip: that is where ALL the bitterness concentrates."
+   },
+   {
+    "titre": "Split",
+    "detail": "Halve the chicory lengthways, without separating the halves completely so they hold together."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Cut side down in foaming butter, 8 minutes without touching: they must brown well."
+   },
+   {
+    "titre": "The honey",
+    "detail": "Turn them over, drizzle with honey and caramelise for 3 minutes — this neutralises the last bitterness."
+   },
+   {
+    "titre": "Acidify",
+    "detail": "Lemon juice to deglaze, then stock, thyme, salt and pepper."
+   },
+   {
+    "titre": "Braise",
+    "detail": "25 minutes covered over low heat. A knife should go through the base with no resistance at all."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Uncover for 5 minutes to reduce the juices to a glossy syrup that coats the chicory."
+   }
+  ]
+ },
+ "poeleeforestiere": {
+  "nom": "Forestière Mushrooms",
+  "description": "A mix of mushrooms sautéed with garlic and parsley, deglazed with a splash of cream. The golden rule is one word: SPACE. An overcrowded pan boils mushrooms in their own water instead of browning them.",
+  "etapes": [
+   {
+    "titre": "Don't wash them",
+    "detail": "Brush the mushrooms or wipe them with damp paper: plunged into water they drink it and never brown."
+   },
+   {
+    "titre": "Cut up",
+    "detail": "Cut into large irregular pieces — they shrink by two-thirds while cooking."
+   },
+   {
+    "titre": "Scorching pan",
+    "detail": "Heat oil and pan over HIGH heat, almost smoking, before adding a single mushroom."
+   },
+   {
+    "titre": "Small batches",
+    "detail": "Sauté them IN TWO BATCHES. Overloaded, the pan cools and the mushrooms release their water."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Once browned, add the butter, shallot and garlic: 2 minutes, no more, garlic burns fast."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, let it evaporate, then the cream and a quick 2-minute reduction."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chopped parsley off the heat, salt, pepper. Serve immediately, with meat or on toast."
+   }
+  ]
+ },
+ "pommesnoisette": {
+  "nom": "Pommes Noisette",
+  "description": "Small balls of mashed potato, crumbed and fried, crisp outside and melting inside — the school-canteen memory everyone loves. They contain no hazelnut at all: the name comes from their shape and colour.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Floury potatoes in their skins for 30 minutes: peeled and boiled, they would soak up water."
+   },
+   {
+    "titre": "Dry out",
+    "detail": "Peel them hot, rice them, then return to the heat for 3 minutes to drive off all moisture."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Egg yolk, nutmeg, salt and pepper into the WARM mash, with no milk or butter — the mash must stay dry."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "1 hour chilled: cold mash rolls into even balls that hold their shape."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll 3 cm balls between lightly floured palms."
+   },
+   {
+    "titre": "Crumb",
+    "detail": "Flour, beaten egg, breadcrumbs — and a SECOND egg-and-crumb coat for a really solid crust."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Oil at 175°C, 4 minutes until deep golden, in small batches. Kitchen paper and salt."
+   }
+  ]
+ },
+ "soupelentillescorail": {
+  "nom": "Red Lentil & Coconut Soup",
+  "description": "The most cost-effective soup in the repertoire: red lentils need no soaking and collapse in 20 minutes into a natural velouté. Coconut milk and turmeric make it a complete, protein-rich meal for under a euro a portion.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the red lentils until the water runs CLEAR: surface starch would make the soup gluey."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sweat onion and carrot in oil for 6 minutes, then garlic and grated ginger for 1 minute."
+   },
+   {
+    "titre": "Toast the spices",
+    "detail": "Turmeric and cumin in the hot oil for 30 SECONDS: that is where they release their aroma, not in liquid."
+   },
+   {
+    "titre": "The lentils",
+    "detail": "Add the lentils and stir to coat them in spices before any liquid."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Stock, then 20 minutes covered: the lentils collapse by themselves, no blender needed."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Add it off the heat — boiled, it splits and leaves greasy specks on the surface."
+   },
+   {
+    "titre": "Lift it",
+    "detail": "Lime and coriander at serving time: the acidity completely transforms the soup."
+   }
+  ]
+ },
+ "consommeboeuf": {
+  "nom": "Beef Consommé",
+  "description": "The perfectly CLEAR broth of haute cuisine, clarified by a raft of egg whites and minced meat that traps every impurity as it rises. An exercise in patience where a single boil clouds the result for good.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "First make a classic stock: meat, bones and vegetables, 3 hours at a simmer, regularly skimmed."
+   },
+   {
+    "titre": "Degrease",
+    "detail": "Cool completely overnight and remove the layer of set fat on the surface — down to the last gram."
+   },
+   {
+    "titre": "The raft",
+    "detail": "Mix minced meat, egg whites, finely cut vegetables and a ladle of COLD stock."
+   },
+   {
+    "titre": "Incorporate",
+    "detail": "Pour this mixture into the COLD stock and stir: in hot stock the whites would set instantly."
+   },
+   {
+    "titre": "Heat slowly",
+    "detail": "Heat VERY slowly, stirring, to 70°C, then STOP stirring. The raft forms and rises."
+   },
+   {
+    "titre": "The chimney",
+    "detail": "Pierce a hole in the raft and simmer for 1 hour without ever boiling: the broth circulates and clarifies."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass gently through a fine cloth, without pressing. The consommé should be as transparent as tea."
+   }
+  ]
+ },
+ "soupeorgeperle": {
+  "nom": "Pearl Barley Soup",
+  "description": "The soup that sustains you in cold countries: pearl barley releases its starch as it cooks and thickens the broth naturally. A complete meal for under a euro, which improves after two days in the fridge.",
+  "etapes": [
+   {
+    "titre": "Rinse the barley",
+    "detail": "Rinse the pearl barley in cold water to remove the starch dust, without soaking it."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Dry-fry the lardons in the pot for 5 minutes: their fat will be the soup's only fat."
+   },
+   {
+    "titre": "The mirepoix",
+    "detail": "Add carrot, leek, celery and onion in small even dice, 8 minutes over medium heat."
+   },
+   {
+    "titre": "Coat the grain",
+    "detail": "Tip in the barley and stir for 2 minutes to coat it in fat — as for a risotto."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Stock, thyme, bay, then 40 minutes covered over low heat."
+   },
+   {
+    "titre": "Check",
+    "detail": "The barley should be tender but keep a slight bite in the centre, and the soup should have thickened."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Parsley, pepper, salt carefully — the bacon and stock are already salty."
+   }
+  ]
+ },
+ "saladevosgienne": {
+  "nom": "Vosges Salad",
+  "description": "The warm salad of the Vosges: potatoes still hot, doused in a scorching bacon vinaigrette over a bed of green leaves. The warm-cold contrast is the whole point — this is a salad served IMMEDIATELY.",
+  "etapes": [
+   {
+    "titre": "Boil in skins",
+    "detail": "Waxy potatoes boiled in their skins for 25 minutes: they won't fall apart when sliced."
+   },
+   {
+    "titre": "Peel hot",
+    "detail": "Peel them SCORCHING, protecting your hand with a cloth: hot is when they absorb the dressing."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Dry-fry the lardons until crisp, then set them aside keeping the fat in the pan."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Just soften it in the hot fat for 2 minutes, without colouring."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour the vinegar into the HOT pan: it hisses and half evaporates, which softens its sharpness."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mustard and oil whisked into the pan off the heat, with all the bacon fat."
+   },
+   {
+    "titre": "Serve fast",
+    "detail": "Warm potatoes doused in the scorching dressing, green leaves, lardons, parsley. Serve at once."
+   }
+  ]
+ },
+ "saladecomtoise": {
+  "nom": "Comtoise Salad",
+  "description": "The salad of Franche-Comté: cubes of comté, walnut halves, smoked ham and croutons in a walnut-oil dressing. A complete Jura dish, where the comté must be cut into LARGE cubes that stay melting.",
+  "etapes": [
+   {
+    "titre": "The comté",
+    "detail": "Use comté aged at least 18 months and cut it into 1.5 cm cubes: any smaller and they vanish into the salad."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the walnut halves for 5 minutes: their flavour goes from neutral to deeply fragrant."
+   },
+   {
+    "titre": "The croutons",
+    "detail": "Fry the cubed bread until golden and rub them with garlic while still hot."
+   },
+   {
+    "titre": "The ham",
+    "detail": "Cut the smoked ham into strips and crisp them for 2 minutes in a dry pan."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mustard, vinegar, salt, then WALNUT oil in a stream — it is the signature of a comtoise."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Dress the leaves ALONE first, then divide them between the plates."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Comté, ham, walnuts and croutons on top, chopped chives. Don't toss: every mouthful should be different."
+   }
+  ]
+ },
+ "bombeglacee": {
+  "nom": "Bombe Glacée",
+  "description": "The spectacular frozen dessert of the 19th century: a spherical mould lined with ice cream and filled with a bombe mixture. Assembly happens in SUCCESSIVE well-set layers — otherwise everything blends and turning out reveals mush.",
+  "etapes": [
+   {
+    "titre": "Freeze the mould",
+    "detail": "Put the spherical mould in the freezer for 1 hour FIRST: a warm wall would melt the first layer."
+   },
+   {
+    "titre": "Line it",
+    "detail": "Spread softened vanilla ice cream in a 2 cm layer over the whole wall, with the back of a frozen spoon."
+   },
+   {
+    "titre": "Hollow out",
+    "detail": "Bring it right up to the rim and leave a hollow in the centre. 2 hours in the freezer to set this shell."
+   },
+   {
+    "titre": "The bombe mixture",
+    "detail": "Whisk the yolks with a sugar syrup cooked to 118°C until completely cool: the mass triples and pales."
+   },
+   {
+    "titre": "Lighten",
+    "detail": "Fold in softly whipped cream with a spatula, then the rum and the soaked candied fruit."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour into the centre of the frozen shell, smooth and cover with film. 6 HOURS minimum in the freezer."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Dip the mould in warm water for 5 seconds, flip sharply. Toasted almonds and chocolate shavings."
+   }
+  ]
+ },
+ "cassata": {
+  "nom": "Sicilian Cassata",
+  "description": "The Sicilian dessert par excellence: sweetened ricotta with candied fruit and chocolate chips, enclosed in soaked sponge. Beware the confusion — frozen cassata is a recent invention, the original is not an ice cream but a chilled dessert.",
+  "etapes": [
+   {
+    "titre": "Drain the ricotta",
+    "detail": "Let it drain for 12 HOURS in a sieve: wet ricotta would give a cream that never sets."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Whisk ricotta and icing sugar until perfectly smooth, then PASS IT THROUGH A SIEVE — that is what makes the Sicilian texture."
+   },
+   {
+    "titre": "Fill it",
+    "detail": "Fold in finely diced candied fruit, chocolate chips, cinnamon and orange blossom water."
+   },
+   {
+    "titre": "The sponge",
+    "detail": "Whisk eggs and sugar over a bain-marie to the ribbon, fold in sifted flour, 12 minutes at 180°C."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Cut the sponge into strips and soak them in a light flavoured syrup — moist but never sodden."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Line a mould with film, line it with sponge, fill with the cream and close with a sponge disc."
+   },
+   {
+    "titre": "Set",
+    "detail": "6 hours chilled under a light weight. Turn out and decorate with crushed pistachios and candied fruit."
+   }
+  ]
+ },
+ "spumoni": {
+  "nom": "Spumoni",
+  "description": "The Neapolitan tricolour ice cream, direct ancestor of American neapolitan: three layers in the colours of the Italian flag, separated by candied fruit and nuts. Each layer must be SET before the next — that is the only difficulty.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Classic crème anglaise: whitened yolks, hot milk and cream, cooked to 83°C WITHOUT boiling."
+   },
+   {
+    "titre": "The test",
+    "detail": "The custard coats the spoon and a finger leaves a clean trail. Above 85°C the yolks scramble."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Split the base in three: one with ground pistachio, one with blended cherry, one with melted chocolate."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Chill each third for 4 hours BEFORE churning — a warm base makes large crystals."
+   },
+   {
+    "titre": "First layer",
+    "detail": "Pour the green layer into the base of a lined loaf tin, smooth, and freeze 1 hour."
+   },
+   {
+    "titre": "Layer up",
+    "detail": "White-cherry layer with the crushed almonds, another hour, then the chocolate layer."
+   },
+   {
+    "titre": "Slice",
+    "detail": "6 hours of final setting. Dip the knife blade in hot water between each slice."
+   }
+  ]
+ },
+ "entremetstroischocolats": {
+  "nom": "Three-Chocolate Entremets",
+  "description": "Three stacked mousses — dark, milk, white — on a crisp biscuit base. The trap is temperature: each mousse must be poured onto a layer that has SET, and white chocolate, being more fragile, needs less gelatine than dark.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "A thin cocoa sponge baked 10 minutes, or a praline-feuilletine crunch: it must stay CRISP under the mousse."
+   },
+   {
+    "titre": "Dark mousse",
+    "detail": "Dark chocolate melted to 45°C, gelatine, then SOFTLY whipped cream folded in three additions."
+   },
+   {
+    "titre": "The rule",
+    "detail": "The whipped cream must be barely firm: over-whipped, it makes white lumps in the chocolate."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the dark mousse over the base in a ring and smooth. 1 HOUR in the freezer, no less."
+   },
+   {
+    "titre": "Milk mousse",
+    "detail": "Same technique with milk chocolate, poured on the set layer. Another hour of chilling."
+   },
+   {
+    "titre": "White mousse",
+    "detail": "White chocolate sets less firmly: whip the cream slightly firmer to compensate. Final layer."
+   },
+   {
+    "titre": "Set",
+    "detail": "4 hours chilled minimum. Release the ring with a blowtorch or hairdryer, and a veil of cocoa on top."
+   }
+  ]
+ },
+ "ispahan": {
+  "nom": "Ispahan",
+  "description": "The rose-lychee-raspberry accord that became a signature of contemporary French pâtisserie. Two giant macaron shells enclosing rose ganache, raspberries and lychees — the balance rests on the crown of raspberries around the rim.",
+  "etapes": [
+   {
+    "titre": "The almond mix",
+    "detail": "Blend and SIEVE ground almonds and icing sugar together: the smallest lump will show on the shell."
+   },
+   {
+    "titre": "The meringue",
+    "detail": "Italian meringue: syrup at 118°C poured onto whipped whites, beaten until cooled to 40°C."
+   },
+   {
+    "titre": "Macaronner",
+    "detail": "Press the mass against the bowl until it forms a ribbon that falls SLOWLY — neither too much nor too little."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Two large 18 cm discs, tap the tray and let them SKIN for 30 minutes: a finger should no longer stick."
+   },
+   {
+    "titre": "Bake",
+    "detail": "18 minutes at 150°C: the foot forms at the base and the shells must not colour."
+   },
+   {
+    "titre": "The ganache",
+    "detail": "Melted white chocolate, hot cream, rose water, then 6 hours chilled before whipping it."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Ganache piped in a spiral, a CROWN of raspberries standing around the rim, lychees in the centre, second disc."
+   }
+  ]
+ },
+ "tartefinepomme": {
+  "nom": "Thin Apple Tart",
+  "description": "The most elegant tart for the least effort: a very thin sheet of puff pastry, apple slices in a rosette, sugar and butter. No cream, no custard — everything rests on the thinness of the pastry and a very hot oven.",
+  "etapes": [
+   {
+    "titre": "Roll very thin",
+    "detail": "Roll the puff pastry to 2 mm ONLY: this thinness is what separates it from an ordinary tart."
+   },
+   {
+    "titre": "Prick",
+    "detail": "Prick generously with a fork and chill 20 minutes to stop the pastry puffing."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the apples into 2 mm slices on a mandoline, lemoned as you go."
+   },
+   {
+    "titre": "The rosette",
+    "detail": "Lay them in a tight rosette OVERLAPPING by half: they shrink a lot in the oven."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Small dice of butter all over, sugar and brown sugar rained on, a hint of cinnamon."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "220°C for 22 minutes: the pastry must be BROWN underneath, not pale, or it will be soggy."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Warmed apricot jam brushed on as it comes out of the oven: the professional's finish."
+   }
+  ]
+ },
+ "briochepolonaise": {
+  "nom": "Brioche Polonaise",
+  "description": "Stale brioche soaked in kirsch syrup, filled with pastry cream and candied fruit, entirely covered in golden meringue. A stroke of anti-waste genius — it exists ONLY thanks to yesterday's brioche.",
+  "etapes": [
+   {
+    "titre": "Stale brioche",
+    "detail": "You NEED day-old brioche: fresh, it would disintegrate on contact with the syrup."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Light syrup (water + sugar) flavoured with kirsch or rum, left to COOL before use."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Classic pastry cream, cooled under clingfilm, then soaked candied fruit folded in."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the brioche into three horizontal discs and brush each with syrup — generously but without drowning it."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Alternate brioche and cream, rebuilding the original shape, then 1 hour chilled to firm up."
+   },
+   {
+    "titre": "The meringue",
+    "detail": "Italian meringue: syrup at 118°C onto whipped whites, beaten until completely cool."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Mask the brioche ENTIRELY in meringue, flaked almonds, then brown in the oven at 240°C for 5 minutes."
+   }
+  ]
+ },
+ "duchessescafe": {
+  "nom": "Coffee Duchesses",
+  "description": "Small choux buns filled with coffee buttercream and glazed with fondant — the tearoom pastry of the 1950s, unjustly forgotten. The coffee must be a very concentrated EXTRACT, or the cream slackens and splits.",
+  "etapes": [
+   {
+    "titre": "The panade",
+    "detail": "Water, milk, butter and salt to the boil, flour all at once, then dry out for 2 minutes with a spatula."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Off the heat, eggs one at a time: the paste must form a soft beak that droops slowly from the spatula."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Small 3 cm buns well spaced, flatten the peak with a wet finger."
+   },
+   {
+    "titre": "Bake",
+    "detail": "25 minutes at 180°C WITHOUT ever opening the oven: a thermal shock would collapse them for good."
+   },
+   {
+    "titre": "The extract",
+    "detail": "Reduce very strong coffee to a single spoonful of SYRUPY liquid: it flavours everything."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Buttercream: syrup at 118°C onto the yolks, cooled completely, then soft butter and the coffee extract."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Fill from underneath, then dip the tops in coffee fondant. A toasted hazelnut on each."
+   }
+  ]
+ },
+ "tartebouillie": {
+  "nom": "Breton Milk Tart",
+  "description": "The Breton Sunday tart: a shortcrust case filled with a simple vanilla milk pudding, baked until the surface cracks. Three ingredients, no technique — the very definition of a grandmother's dessert.",
+  "etapes": [
+   {
+    "titre": "Line",
+    "detail": "Roll the shortcrust into the tin, prick the base and chill 30 minutes."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Bring the milk to a simmer with the split vanilla pod and INFUSE for 15 minutes off the heat."
+   },
+   {
+    "titre": "Slacken",
+    "detail": "Whisk eggs, sugar and flour in a bowl until perfectly smooth, with no lumps."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Pour a third of the hot milk onto the mixture while whisking, then return it all to the pan."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook for 4 minutes whisking constantly: the pudding must be THICK, like a firm pastry cream."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Butter and orange blossom water off the heat, then pour the still-hot mixture into the tart case."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 180°C. The surface should crack and take on brown patches — the sign it is ready."
+   }
+  ]
+ },
+ "pralinesroses": {
+  "nom": "Lyon Pink Pralines",
+  "description": "The vivid pink sugar-coated almonds behind Lyon's famous tart and brioche. The sugar is cooked to 116°C then made to CRYSTALLISE by stirring: it turns back to powder, then melts again with the heat — that double movement creates the uneven shell.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Toast the WHOLE almonds with their skins for 10 minutes at 160°C, and keep them warm."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, a little water, red colouring and vanilla brought to exactly 116°C on a thermometer."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Tip the warm almonds into the syrup and stir CONSTANTLY with a spatula, off the heat."
+   },
+   {
+    "titre": "The crystallisation",
+    "detail": "The sugar whitens and turns back to POWDER around the almonds: this is normal, don't panic."
+   },
+   {
+    "titre": "Remelt",
+    "detail": "Return to low heat, stirring: the crystallised sugar gradually remelts and coats the almonds in a shiny shell."
+   },
+   {
+    "titre": "Repeat",
+    "detail": "Repeat crystallising and remelting TWICE more: each cycle thickens the shell and gives the characteristic relief."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Spread on baking paper and separate the almonds with a fork before they cool completely."
+   }
+  ]
+ },
+ "berlingots": {
+  "nom": "Carpentras Berlingots",
+  "description": "The striped tetrahedron sweet, born in Carpentras from candied-fruit syrup. The white stripes come from sugar PULLED until it turns opaque and pearly, laid over coloured sugar that stayed clear.",
+  "etapes": [
+   {
+    "titre": "Cook to 145°C",
+    "detail": "Sugar, glucose and water taken to exactly 145°C: the hard-crack stage, essential for a hard sweet."
+   },
+   {
+    "titre": "Stop it",
+    "detail": "Dip the base of the pan in cold water for 3 seconds to halt the cooking dead."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Pour a third of the mass separately onto an oiled marble slab: it will become the white stripe."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Add colouring and flavouring to the remaining two-thirds, folding the mass over itself with a spatula."
+   },
+   {
+    "titre": "Pull",
+    "detail": "Pull the reserved third while still hot, folding it constantly: it traps air, whitens and turns pearly."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Lay white strips onto the coloured roll, roll to seal, and pull into a long even rope."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut with scissors, turning the rope a QUARTER TURN between each cut: that movement creates the tetrahedron."
+   }
+  ]
+ },
+ "rocherspraline": {
+  "nom": "Praline Rochers",
+  "description": "A praline and feuilletine centre coated in chocolate and hazelnut shards. The crunch comes only from the crushed wafer — and it vanishes if the mixture sits in the open air for more than a few minutes.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Toast the hazelnuts for 10 minutes at 160°C, rub them in a cloth to remove the skins, then crush them."
+   },
+   {
+    "titre": "The praline",
+    "detail": "Melt the milk chocolate and mix it into the praline paste until smooth and glossy."
+   },
+   {
+    "titre": "The crunch",
+    "detail": "Crush the wafer biscuits BY HAND into large shards — blended, they would become powder with no crunch."
+   },
+   {
+    "titre": "Mix fast",
+    "detail": "Fold in the wafers and half the hazelnuts in 30 seconds, without working it: every second softens the crunch."
+   },
+   {
+    "titre": "Shape",
+    "detail": "2 cm balls with a spoon, set on paper, then 1 hour chilled to harden."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Tempered dark chocolate (45°C → 28°C → 31°C) with a touch of neutral oil for a more fluid coating."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dip each ball on a fork, drain, and roll immediately in the remaining crushed hazelnuts."
+   }
+  ]
+ },
+ "pateamandemaison": {
+  "nom": "Homemade Marzipan",
+  "description": "Two ingredients and five minutes in the food processor for marzipan incomparably better than shop-bought. The ratio decides everything: 50/50 almond-sugar for modelling, 66/33 for eating, richer and less sweet.",
+  "etapes": [
+   {
+    "titre": "Sift",
+    "detail": "Sift ground almonds and icing sugar TOGETHER: icing sugar lumps are impossible to fix later."
+   },
+   {
+    "titre": "The egg white",
+    "detail": "Add the egg white LITTLE BY LITTLE, a spoon at a time — too much liquid and the paste becomes unworkable."
+   },
+   {
+    "titre": "Pulse briefly",
+    "detail": "Pulse in 5-second bursts: long blending heats the almond, which releases its oil and makes the paste greasy."
+   },
+   {
+    "titre": "Work by hand",
+    "detail": "Finish by hand on a sugared surface, pressing the paste with your palm until perfectly smooth."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Orange blossom water and a few drops of lemon: the lemon balances the sugar and lifts the almond."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Gel colouring on a cocktail stick, never liquid — liquid colouring would waterlog the paste."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap TIGHTLY and chill 24 hours: the paste firms up and the almond flavour develops."
+   }
+  ]
+ },
+ "barreschocolatees": {
+  "nom": "Homemade Chocolate Bars",
+  "description": "The homemade version of the vending-machine bar: nougat, caramel and peanuts under a chocolate shell. Each layer must be FULLY SET before the next — otherwise cutting drags everything and the strata merge.",
+  "etapes": [
+   {
+    "titre": "The nougat",
+    "detail": "Whipped whites + syrup at 130°C beaten until cool: this is the white airy bottom layer."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the nougat 1 cm thick in a lined frame and let it set for 1 HOUR in the fridge."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Dry caramel, hot cream, butter, salt, cooked back to 118°C: hotter it would harden, cooler it would run."
+   },
+   {
+    "titre": "The peanuts",
+    "detail": "Toast them for 8 minutes and stir them into the warm caramel, off the heat."
+   },
+   {
+    "titre": "Second layer",
+    "detail": "Pour the caramel onto the SET nougat and chill for another 2 hours."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut bars with a knife heated under hot water and wiped between each cut."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Tempered milk chocolate, dip on a fork, drain, and crystallise 2 hours at 18°C."
+   }
+  ]
+ },
+ "sucettescaramel": {
+  "nom": "Caramel Lollipops",
+  "description": "Sugar cooked to 150°C poured over sticks: the simplest and most spectacular confection to make with children. One safety rule only — sugar at 150°C burns far more severely than boiling water.",
+  "etapes": [
+   {
+    "titre": "Prepare everything",
+    "detail": "Sticks laid on baking paper BEFORE you start: once the sugar is cooked you have 60 seconds."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, glucose and two spoons of water over medium heat, WITHOUT stirring even once — stirring crystallises it."
+   },
+   {
+    "titre": "Clean the sides",
+    "detail": "Brush the pan walls with a wet pastry brush: a single crystal would seize the whole batch."
+   },
+   {
+    "titre": "150°C",
+    "detail": "Cook to 150°C and a pale amber colour. At 155°C the caramel turns bitter very fast."
+   },
+   {
+    "titre": "Stop",
+    "detail": "Off the heat, butter, vanilla and flaky salt — the butter makes the lollipop less brittle."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Spoon 4 cm discs ONTO the end of each stick, starting from the centre."
+   },
+   {
+    "titre": "Harden",
+    "detail": "20 minutes at room temperature, then wrap each lollipop: in open air they turn sticky within an hour."
+   }
+  ]
+ },
+ "tofumaison": {
+  "nom": "Homemade Tofu",
+  "description": "Soybeans, water, a coagulant: homemade tofu has a nutty flavour and creamy texture no industrial block reaches. The coagulant goes in THREE additions very gently — poured at once, it makes hard lumps and the milk stays milky.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "12 hours in cold water: the beans must TRIPLE in size and split in two under pressure."
+   },
+   {
+    "titre": "Grind",
+    "detail": "Blend with three volumes of very hot water for 3 minutes, to a perfectly smooth white purée."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Press through a fine cloth: you get soy milk on one side and okara on the other (keep it for fritters)."
+   },
+   {
+    "titre": "Cook the milk",
+    "detail": "12 minutes at a bare simmer, stirring CONSTANTLY: raw soy is indigestible and the base catches fast."
+   },
+   {
+    "titre": "Cool to 75°C",
+    "detail": "Let it drop to 75°C: hotter, the curd will be hard and grainy; cooler, it won't set at all."
+   },
+   {
+    "titre": "Coagulate",
+    "detail": "Diluted lemon juice added in THREE goes, stirring very gently in a figure of eight, then 15 minutes untouched."
+   },
+   {
+    "titre": "Press",
+    "detail": "Pour the curd into a perforated mould lined with cloth and press under a weight: 20 min for silken, 1 h for firm."
+   }
+  ]
+ },
+ "cafeturc": {
+  "nom": "Turkish Coffee",
+  "description": "Coffee brewed in a cezve, unfiltered, with the grounds settling in the bottom of the cup. Listed by UNESCO as intangible heritage, it must NEVER boil: you lift it off the heat the moment the foam rises, and repeat three times.",
+  "etapes": [
+   {
+    "titre": "The cezve",
+    "detail": "Use a copper cezve (ibrik) with a narrow base: its shape concentrates the foam, a saucepan never will."
+   },
+   {
+    "titre": "The grind",
+    "detail": "The coffee must be ground EXTREMELY fine, like flour — finer than for espresso, and this is essential."
+   },
+   {
+    "titre": "Cold water",
+    "detail": "Start with COLD water, one cup per person, with the coffee and sugar mixed in from the start."
+   },
+   {
+    "titre": "Stir once",
+    "detail": "Mix well BEFORE heating, then never touch the spoon again: stirring destroys the foam."
+   },
+   {
+    "titre": "Very low heat",
+    "detail": "Heat slowly. After about 3 minutes, a thick brown foam forms and begins to rise."
+   },
+   {
+    "titre": "Three rises",
+    "detail": "Lift off the heat AS SOON AS the foam reaches the rim, let it fall back, and repeat twice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the foam into each cup first, then the coffee. Wait 1 minute for the grounds to settle before drinking."
+   }
+  ]
+ },
+ "cascara": {
+  "nom": "Cascara Infusion",
+  "description": "The dried coffee cherry — the pulp once thrown away to keep only the bean. Infused, it gives a fruity drink between tea and tisane, tasting of cherry and hibiscus, with very little caffeine.",
+  "etapes": [
+   {
+    "titre": "Cascara",
+    "detail": "It is the dried husk of the coffee cherry — a by-product long discarded, now sold by roasters."
+   },
+   {
+    "titre": "The dose",
+    "detail": "6 g per 250 ml per person: twice as much as tea, because cascara infuses far more gently."
+   },
+   {
+    "titre": "Water at 95°C",
+    "detail": "Boil the water then wait 1 minute: boiling, it extracts bitter tannins from the husk."
+   },
+   {
+    "titre": "Infuse 5 minutes",
+    "detail": "Cover while infusing to keep the volatile aromas — they escape very fast uncovered."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain and press the husks lightly to recover the most concentrated liquid."
+   },
+   {
+    "titre": "Season",
+    "detail": "Honey, grated ginger and a squeeze of lemon: the acidity brings out the red cherry note."
+   },
+   {
+    "titre": "Two ways",
+    "detail": "Hot like a tisane, or cooled over ice with an orange slice — excellent as a summer drink."
+   }
+  ]
+ },
+ "goldenlatte": {
+  "nom": "Golden Latte",
+  "description": "The Ayurvedic \"golden milk\": turmeric, ginger and pepper in hot milk. The pepper is not a flavour detail — the piperine it contains multiplies curcumin absorption twentyfold, which is the whole logic of the recipe.",
+  "etapes": [
+   {
+    "titre": "The paste",
+    "detail": "First mix turmeric, ginger, pepper and cinnamon with a spoon of hot water into a smooth paste."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Heat this paste in the pan for 1 minute: the spices open up and lose their raw powder taste."
+   },
+   {
+    "titre": "The pepper",
+    "detail": "NEVER skip it: without piperine, curcumin is very poorly absorbed by the body."
+   },
+   {
+    "titre": "The fat",
+    "detail": "Add the coconut oil — curcumin is fat-soluble and needs fat to be absorbed."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Pour in the milk (dairy, oat or almond) and heat WITHOUT boiling, to a bare simmer only."
+   },
+   {
+    "titre": "Froth",
+    "detail": "Whisk hard or use a frother: the foam makes the texture far more pleasant."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Honey OFF THE HEAT — above 40°C it loses its properties. A dusting of cinnamon and serve hot."
+   }
+  ]
+ },
+ "chocolatazteque": {
+  "nom": "Aztec Hot Chocolate",
+  "description": "Chocolate as the Aztecs drank it — almost: bitter, spiced with chilli and cinnamon, frothed with a molinillo. They drank it cold, unsweetened and without milk; this version keeps the chilli but softens the rest.",
+  "etapes": [
+   {
+    "titre": "The chocolate",
+    "detail": "Use 70% minimum: the Aztecs drank pure cacao, and the bitterness is part of the identity."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "A pinch of cayenne or a piece of infused ancho chilli — the heat should arrive at the END of the mouthful."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Milk, cinnamon and vanilla brought to a simmer, then infused 5 minutes off the heat with the chilli."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Remove the chilli and cinnamon stick before adding the chocolate: the infusion is plenty."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Chopped chocolate and cocoa into the hot milk, whisked until perfectly smooth and glossy."
+   },
+   {
+    "titre": "Froth",
+    "detail": "Whisk hard for 1 minute: the Aztecs poured from one vessel to another to create this foam, a sign of quality."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Brown sugar at the end, toasted crushed almonds on the foam. Drink scalding, in small sips."
+   }
+  ]
  }
 };

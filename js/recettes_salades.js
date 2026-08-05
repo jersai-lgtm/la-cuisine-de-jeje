@@ -2632,7 +2632,7 @@ Object.assign(recettes, {
       { icone: "🥗", titre: "Mélanger", detail: "Ajoutez les crudités et mélangez délicatement, salez.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servez bien frais, aussitôt, dans une demi-noix de coco ou un bol. Frais, doux et iodé — le poisson cru au coco de Samoa.", badge: null }
     ],
-    liees: ["kokoda"]
+    liees: ["kokodafidji"]
   },
   lasary: {
     dateAjout: "2026-07-11T09:08:00",
@@ -3525,5 +3525,81 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Dresser", detail: "Frisée assaisonnée à la vinaigrette tiède, lardons, croûtons, œuf poché au sommet. On perce le jaune à table.", badge: null }
     ],
     liees: ["saladecesar","vinaigrette"]
+  },
+  saladevosgienne: {
+    dateAjout: "2026-08-02T12:08:00",
+    nom: "Salade Vosgienne",
+    cat: "salades", pays: "france",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "La salade tiède des Vosges : des pommes de terre encore chaudes arrosées d'une vinaigrette aux lardons brûlante, sur un lit de salade verte. Le contraste tiède-froid est tout l'intérêt — c'est une salade qui se sert IMMÉDIATEMENT.",
+    tableauSaladevosgienne: [
+      { nb: 1, pommedeterre: "200 g", lardons: "60 g", salade: "50 g", oignon: "", vinaigreVin: "12 ml", huile: "12 ml", moutarde: "6 g", persil: "3 g", poivre: "0.4 g" },
+      { nb: 2, pommedeterre: "400 g", lardons: "120 g", salade: "100 g", oignon: "", vinaigreVin: "24 ml", huile: "24 ml", moutarde: "12 g", persil: "6 g", poivre: "0.8 g" },
+      { nb: 3, pommedeterre: "600 g", lardons: "180 g", salade: "150 g", oignon: "", vinaigreVin: "36 ml", huile: "36 ml", moutarde: "18 g", persil: "9 g", poivre: "1.2 g" },
+      { nb: 4, pommedeterre: "800 g", lardons: "240 g", salade: "200 g", oignon: "1", vinaigreVin: "48 ml", huile: "48 ml", moutarde: "24 g", persil: "12 g", poivre: "1.6 g" },
+      { nb: 5, pommedeterre: "1000 g", lardons: "300 g", salade: "250 g", oignon: "1½", vinaigreVin: "60 ml", huile: "60 ml", moutarde: "30 g", persil: "15 g", poivre: "2 g" },
+      { nb: 6, pommedeterre: "1200 g", lardons: "360 g", salade: "300 g", oignon: "1", vinaigreVin: "72 ml", huile: "72 ml", moutarde: "36 g", persil: "18 g", poivre: "2.4 g" },
+      { nb: 7, pommedeterre: "1400 g", lardons: "420 g", salade: "350 g", oignon: "2", vinaigreVin: "84 ml", huile: "84 ml", moutarde: "42 g", persil: "21 g", poivre: "2.8 g" },
+      { nb: 8, pommedeterre: "1600 g", lardons: "480 g", salade: "400 g", oignon: "2", vinaigreVin: "96 ml", huile: "96 ml", moutarde: "48 g", persil: "24 g", poivre: "3.2 g" },
+      { nb: 9, pommedeterre: "1800 g", lardons: "540 g", salade: "450 g", oignon: "2", vinaigreVin: "108 ml", huile: "108 ml", moutarde: "54 g", persil: "27 g", poivre: "3.6 g" },
+      { nb: 10, pommedeterre: "2000 g", lardons: "600 g", salade: "500 g", oignon: "3", vinaigreVin: "120 ml", huile: "120 ml", moutarde: "60 g", persil: "30 g", poivre: "4 g" },
+      { nb: 11, pommedeterre: "2200 g", lardons: "660 g", salade: "550 g", oignon: "3", vinaigreVin: "132 ml", huile: "132 ml", moutarde: "66 g", persil: "33 g", poivre: "4.4 g" },
+      { nb: 12, pommedeterre: "2400 g", lardons: "720 g", salade: "600 g", oignon: "3", vinaigreVin: "144 ml", huile: "144 ml", moutarde: "72 g", persil: "36 g", poivre: "4.8 g" },
+      { nb: 13, pommedeterre: "2600 g", lardons: "780 g", salade: "650 g", oignon: "3", vinaigreVin: "156 ml", huile: "156 ml", moutarde: "78 g", persil: "39 g", poivre: "5.2 g" },
+      { nb: 14, pommedeterre: "2800 g", lardons: "840 g", salade: "700 g", oignon: "4", vinaigreVin: "168 ml", huile: "168 ml", moutarde: "84 g", persil: "42 g", poivre: "5.6 g" },
+      { nb: 15, pommedeterre: "3000 g", lardons: "900 g", salade: "750 g", oignon: "4½", vinaigreVin: "180 ml", huile: "180 ml", moutarde: "90 g", persil: "45 g", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire en robe", detail: "Pommes de terre à chair ferme cuites en robe des champs 25 minutes : elles ne se déliteront pas à la découpe.", badge: null },
+      { icone: "🔥", titre: "Peler chaud", detail: "Pelez-les BRÛLANTES en vous protégeant d'un torchon : c'est chaudes qu'elles absorbent la vinaigrette.", badge: null },
+      { icone: "🥓", titre: "Les lardons", detail: "Faites-les rissoler à sec jusqu'à croustillants, puis réservez-les en gardant la graisse dans la poêle.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Faites-le juste tomber dans la graisse chaude 2 minutes, sans le colorer.", badge: null },
+      { icone: "💥", titre: "Déglacer", detail: "Versez le vinaigre dans la poêle CHAUDE : il grésille et s'évapore à moitié, ce qui adoucit son acidité.", badge: null },
+      { icone: "🥄", titre: "La vinaigrette", detail: "Moutarde et huile fouettées dans la poêle hors du feu, avec toute la graisse de lardons.", badge: null },
+      { icone: "🍽️", titre: "Dresser vite", detail: "Pommes de terre tièdes arrosées de vinaigrette brûlante, salade verte, lardons, persil. Servez tout de suite.", badge: null }
+    ],
+    liees: ["saladelyonnaise","saladecomtoise","vinaigrette"]
+  },
+  saladecomtoise: {
+    dateAjout: "2026-08-02T12:09:00",
+    nom: "Salade Comtoise",
+    cat: "salades", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "La salade franc-comtoise : dés de comté, cerneaux de noix, jambon fumé et croûtons, dans une vinaigrette à l'huile de noix. Un plat complet du Jura, où le comté doit être coupé en GROS dés qui restent fondants.",
+    tableauSaladecomtoise: [
+      { nb: 1, salade: "70 g", comte: "60 g", jambon: "45 g", noix: "20 g", painrassis: "30 g", huilenoix: "15 ml", vinaigreVin: "6 ml", moutarde: "5 g", ail: "", ciboulette: "3 g" },
+      { nb: 2, salade: "140 g", comte: "120 g", jambon: "90 g", noix: "40 g", painrassis: "60 g", huilenoix: "30 ml", vinaigreVin: "12 ml", moutarde: "10 g", ail: "", ciboulette: "6 g" },
+      { nb: 3, salade: "210 g", comte: "180 g", jambon: "135 g", noix: "60 g", painrassis: "90 g", huilenoix: "45 ml", vinaigreVin: "18 ml", moutarde: "15 g", ail: "", ciboulette: "9 g" },
+      { nb: 4, salade: "280 g", comte: "240 g", jambon: "180 g", noix: "80 g", painrassis: "120 g", huilenoix: "60 ml", vinaigreVin: "24 ml", moutarde: "20 g", ail: "", ciboulette: "12 g" },
+      { nb: 5, salade: "350 g", comte: "300 g", jambon: "225 g", noix: "100 g", painrassis: "150 g", huilenoix: "75 ml", vinaigreVin: "30 ml", moutarde: "25 g", ail: "1", ciboulette: "15 g" },
+      { nb: 6, salade: "420 g", comte: "360 g", jambon: "270 g", noix: "120 g", painrassis: "180 g", huilenoix: "90 ml", vinaigreVin: "36 ml", moutarde: "30 g", ail: "1", ciboulette: "18 g" },
+      { nb: 7, salade: "490 g", comte: "420 g", jambon: "315 g", noix: "140 g", painrassis: "210 g", huilenoix: "105 ml", vinaigreVin: "42 ml", moutarde: "35 g", ail: "1", ciboulette: "21 g" },
+      { nb: 8, salade: "560 g", comte: "480 g", jambon: "360 g", noix: "160 g", painrassis: "240 g", huilenoix: "120 ml", vinaigreVin: "48 ml", moutarde: "40 g", ail: "1", ciboulette: "24 g" },
+      { nb: 9, salade: "630 g", comte: "540 g", jambon: "405 g", noix: "180 g", painrassis: "270 g", huilenoix: "135 ml", vinaigreVin: "54 ml", moutarde: "45 g", ail: "1", ciboulette: "27 g" },
+      { nb: 10, salade: "700 g", comte: "600 g", jambon: "450 g", noix: "200 g", painrassis: "300 g", huilenoix: "150 ml", vinaigreVin: "60 ml", moutarde: "50 g", ail: "2", ciboulette: "30 g" },
+      { nb: 11, salade: "770 g", comte: "660 g", jambon: "495 g", noix: "220 g", painrassis: "330 g", huilenoix: "165 ml", vinaigreVin: "66 ml", moutarde: "55 g", ail: "2", ciboulette: "33 g" },
+      { nb: 12, salade: "840 g", comte: "720 g", jambon: "540 g", noix: "240 g", painrassis: "360 g", huilenoix: "180 ml", vinaigreVin: "72 ml", moutarde: "60 g", ail: "2", ciboulette: "36 g" },
+      { nb: 13, salade: "910 g", comte: "780 g", jambon: "585 g", noix: "260 g", painrassis: "390 g", huilenoix: "195 ml", vinaigreVin: "78 ml", moutarde: "65 g", ail: "2", ciboulette: "39 g" },
+      { nb: 14, salade: "980 g", comte: "840 g", jambon: "630 g", noix: "280 g", painrassis: "420 g", huilenoix: "210 ml", vinaigreVin: "84 ml", moutarde: "70 g", ail: "2", ciboulette: "42 g" },
+      { nb: 15, salade: "1050 g", comte: "900 g", jambon: "675 g", noix: "300 g", painrassis: "450 g", huilenoix: "225 ml", vinaigreVin: "90 ml", moutarde: "75 g", ail: "3", ciboulette: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Le comté", detail: "Prenez un comté de 18 mois minimum et coupez-le en dés de 1,5 cm : trop petits, ils disparaissent dans la salade.", badge: null },
+      { icone: "🌰", titre: "Torréfier", detail: "Grillez les cerneaux de noix 5 minutes à sec : leur goût passe de neutre à profondément parfumé.", badge: null },
+      { icone: "🍞", titre: "Les croûtons", detail: "Faites dorer le pain en cubes à la poêle et frottez-les à l'ail encore chauds.", badge: null },
+      { icone: "🥓", titre: "Le jambon", detail: "Taillez le jambon fumé en lanières et faites-les croustiller 2 minutes à sec à la poêle.", badge: null },
+      { icone: "🥄", titre: "La vinaigrette", detail: "Moutarde, vinaigre, sel, puis l'huile de NOIX en filet — c'est elle qui signe la salade comtoise.", badge: null },
+      { icone: "🥬", titre: "Assaisonner", detail: "Assaisonnez la salade verte SEULE en premier, puis répartissez-la dans les assiettes.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Comté, jambon, noix et croûtons par-dessus, ciboulette ciselée. Ne mélangez pas : chaque bouchée doit être différente.", badge: null }
+    ],
+    liees: ["saladevosgienne","saladelyonnaise","fonduesavoyarde"]
   },
 });
