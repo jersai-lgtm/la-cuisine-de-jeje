@@ -1283,4 +1283,42 @@ Object.assign(recettes, {
     ],
     liees: ["pizzamargherita","pizzafiguechevre"]
   },
+  sfincione: {
+    dateAjout: "2026-08-03T09:06:00",
+    nom: "Sfincione",
+    cat: "pizzas", pays: "italie",
+    base: 4,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧽",
+    description: "La pizza de Palerme : une pâte épaisse et spongieuse (« sfincia » veut dire éponge), garnie d'oignons fondus, d'anchois et de chapelure — SANS mozzarella. Le caciocavallo est glissé sous la sauce, pas dessus.",
+    tableauSfincione: [
+      { nb: 1, farine: "70 g", levure: "2 g", oignon: "1", tomate: "90 g", anchois: "12 g", chapelure: "20 g", pecorino: "25 g", huileolive: "25 ml", origan: "0.8 g", sel: "1.8 g" },
+      { nb: 2, farine: "140 g", levure: "4 g", oignon: "2", tomate: "180 g", anchois: "24 g", chapelure: "40 g", pecorino: "50 g", huileolive: "50 ml", origan: "1.6 g", sel: "3.6 g" },
+      { nb: 3, farine: "210 g", levure: "6 g", oignon: "3", tomate: "270 g", anchois: "36 g", chapelure: "60 g", pecorino: "75 g", huileolive: "75 ml", origan: "2.4 g", sel: "5.4 g" },
+      { nb: 4, farine: "280 g", levure: "8 g", oignon: "4", tomate: "360 g", anchois: "48 g", chapelure: "80 g", pecorino: "100 g", huileolive: "100 ml", origan: "3.2 g", sel: "7.2 g" },
+      { nb: 5, farine: "350 g", levure: "10 g", oignon: "6", tomate: "450 g", anchois: "60 g", chapelure: "100 g", pecorino: "125 g", huileolive: "125 ml", origan: "4 g", sel: "9 g" },
+      { nb: 6, farine: "420 g", levure: "12 g", oignon: "7", tomate: "540 g", anchois: "72 g", chapelure: "120 g", pecorino: "150 g", huileolive: "150 ml", origan: "4.8 g", sel: "10.8 g" },
+      { nb: 7, farine: "490 g", levure: "14 g", oignon: "8", tomate: "630 g", anchois: "84 g", chapelure: "140 g", pecorino: "175 g", huileolive: "175 ml", origan: "5.6 g", sel: "12.6 g" },
+      { nb: 8, farine: "560 g", levure: "16 g", oignon: "9", tomate: "720 g", anchois: "96 g", chapelure: "160 g", pecorino: "200 g", huileolive: "200 ml", origan: "6.4 g", sel: "14.4 g" },
+      { nb: 9, farine: "630 g", levure: "18 g", oignon: "10", tomate: "810 g", anchois: "108 g", chapelure: "180 g", pecorino: "225 g", huileolive: "225 ml", origan: "7.2 g", sel: "16.2 g" },
+      { nb: 10, farine: "700 g", levure: "20 g", oignon: "12", tomate: "900 g", anchois: "120 g", chapelure: "200 g", pecorino: "250 g", huileolive: "250 ml", origan: "8 g", sel: "18 g" },
+      { nb: 11, farine: "770 g", levure: "22 g", oignon: "13", tomate: "990 g", anchois: "132 g", chapelure: "220 g", pecorino: "275 g", huileolive: "275 ml", origan: "8.8 g", sel: "19.8 g" },
+      { nb: 12, farine: "840 g", levure: "24 g", oignon: "14", tomate: "1080 g", anchois: "144 g", chapelure: "240 g", pecorino: "300 g", huileolive: "300 ml", origan: "9.6 g", sel: "21.6 g" },
+      { nb: 13, farine: "910 g", levure: "26 g", oignon: "15", tomate: "1170 g", anchois: "156 g", chapelure: "260 g", pecorino: "325 g", huileolive: "325 ml", origan: "10.4 g", sel: "23.4 g" },
+      { nb: 14, farine: "980 g", levure: "28 g", oignon: "16", tomate: "1260 g", anchois: "168 g", chapelure: "280 g", pecorino: "350 g", huileolive: "350 ml", origan: "11.2 g", sel: "25.2 g" },
+      { nb: 15, farine: "1050 g", levure: "30 g", oignon: "18", tomate: "1350 g", anchois: "180 g", chapelure: "300 g", pecorino: "375 g", huileolive: "375 ml", origan: "12 g", sel: "27 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Pâte hydratée", detail: "75 % d'eau : la pâte est molle et collante, c'est ce qui donnera la mie alvéolée et spongieuse.", badge: null },
+      { icone: "⏳", titre: "Longue pousse", detail: "2 heures à température ambiante, avec deux rabats à 40 minutes d'intervalle.", badge: null },
+      { icone: "🧅", titre: "Les oignons", detail: "Émincés et fondus 25 minutes à l'huile d'olive jusqu'à confits et dorés : ils sont la garniture principale.", badge: null },
+      { icone: "🐟", titre: "Les anchois", detail: "Fondus dans l'huile avec les oignons : ils disparaissent et donnent la profondeur salée typique.", badge: null },
+      { icone: "🧀", titre: "Le fromage dessous", detail: "Étalez la pâte dans un moule huilé et posez le fromage DIRECTEMENT sur la pâte, avant la sauce.", badge: null },
+      { icone: "🍅", titre: "Garnir", detail: "Sauce tomate et oignons par-dessus le fromage, puis origan — jamais de mozzarella dans un sfincione.", badge: null },
+      { icone: "🍞", titre: "La chapelure", detail: "Chapelure mêlée d'huile d'olive en pluie sur le dessus, puis 25 minutes à 220°C jusqu'à croûte dorée.", badge: null }
+    ],
+    liees: ["pissaladiere","focacciaolives","panelle"]
+  },
 });

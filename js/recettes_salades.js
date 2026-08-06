@@ -3602,4 +3602,42 @@ Object.assign(recettes, {
     ],
     liees: ["saladevosgienne","saladelyonnaise","fonduesavoyarde"]
   },
+  puntarelle: {
+    dateAjout: "2026-08-03T10:00:00",
+    nom: "Puntarelle alla Romana",
+    cat: "salades", saisons: ["hiver"], pays: "italie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "La salade d'hiver des Romains : des pousses de chicorée catalogne taillées en lanières et plongées dans l'EAU GLACÉE, où elles s'enroulent en boucles. Une vinaigrette à l'anchois et à l'ail, et rien d'autre.",
+    tableauPuntarelle: [
+      { nb: 1, endive: "150 g", anchois: "12 g", ail: "½", huileolive: "30 ml", vinaigreVin: "10 ml", citron: "", poivre: "0.4 g" },
+      { nb: 2, endive: "300 g", anchois: "24 g", ail: "1", huileolive: "60 ml", vinaigreVin: "20 ml", citron: "", poivre: "0.8 g" },
+      { nb: 3, endive: "450 g", anchois: "36 g", ail: "1½", huileolive: "90 ml", vinaigreVin: "30 ml", citron: "", poivre: "1.2 g" },
+      { nb: 4, endive: "600 g", anchois: "48 g", ail: "2", huileolive: "120 ml", vinaigreVin: "40 ml", citron: "", poivre: "1.6 g" },
+      { nb: 5, endive: "750 g", anchois: "60 g", ail: "2½", huileolive: "150 ml", vinaigreVin: "50 ml", citron: "¾", poivre: "2 g" },
+      { nb: 6, endive: "900 g", anchois: "72 g", ail: "3", huileolive: "180 ml", vinaigreVin: "60 ml", citron: "", poivre: "2.4 g" },
+      { nb: 7, endive: "1050 g", anchois: "84 g", ail: "3½", huileolive: "210 ml", vinaigreVin: "70 ml", citron: "1", poivre: "2.8 g" },
+      { nb: 8, endive: "1200 g", anchois: "96 g", ail: "4", huileolive: "240 ml", vinaigreVin: "80 ml", citron: "1", poivre: "3.2 g" },
+      { nb: 9, endive: "1350 g", anchois: "108 g", ail: "4½", huileolive: "270 ml", vinaigreVin: "90 ml", citron: "1", poivre: "3.6 g" },
+      { nb: 10, endive: "1500 g", anchois: "120 g", ail: "5", huileolive: "300 ml", vinaigreVin: "100 ml", citron: "1½", poivre: "4 g" },
+      { nb: 11, endive: "1650 g", anchois: "132 g", ail: "5½", huileolive: "330 ml", vinaigreVin: "110 ml", citron: "1", poivre: "4.4 g" },
+      { nb: 12, endive: "1800 g", anchois: "144 g", ail: "6", huileolive: "360 ml", vinaigreVin: "120 ml", citron: "1", poivre: "4.8 g" },
+      { nb: 13, endive: "1950 g", anchois: "156 g", ail: "6½", huileolive: "390 ml", vinaigreVin: "130 ml", citron: "1", poivre: "5.2 g" },
+      { nb: 14, endive: "2100 g", anchois: "168 g", ail: "7", huileolive: "420 ml", vinaigreVin: "140 ml", citron: "2", poivre: "5.6 g" },
+      { nb: 15, endive: "2250 g", anchois: "180 g", ail: "7½", huileolive: "450 ml", vinaigreVin: "150 ml", citron: "2¼", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Séparer", detail: "Détachez les pousses centrales creuses du pied : ce sont elles, les puntarelle, le reste part en soupe.", badge: null },
+      { icone: "✂️", titre: "Tailler en lanières", detail: "Fendez chaque pousse en lanières de 3 mm dans la longueur, avec un couteau ou l'outil romain à fils.", badge: null },
+      { icone: "🧊", titre: "L'eau glacée", detail: "Plongez-les 2 HEURES dans l'eau très froide avec des glaçons : elles s'enroulent en boucles et perdent leur amertume.", badge: null },
+      { icone: "🐟", titre: "Les anchois", detail: "Écrasez les filets d'anchois avec l'ail dégermé au mortier, jusqu'à une pâte parfaitement lisse.", badge: null },
+      { icone: "🫒", titre: "La vinaigrette", detail: "Vinaigre puis huile d'olive montés sur la pâte d'anchois en fouettant — elle doit rester bien liée.", badge: null },
+      { icone: "💧", titre: "Sécher", detail: "Égouttez et SÉCHEZ les puntarelle en essoreuse : une salade mouillée ne prend pas la vinaigrette.", badge: null },
+      { icone: "🥄", titre: "Assaisonner", detail: "Mélangez au dernier moment et servez tout de suite : les boucles retombent en 20 minutes.", badge: null }
+    ],
+    liees: ["saladeroquetteparmesan","carciofiromana","anchoiade"]
+  },
 });

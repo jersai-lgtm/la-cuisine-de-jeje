@@ -96904,5 +96904,3405 @@ window.RECETTES_EN = {
     "detail": "Brown sugar at the end, toasted crushed almonds on the foam. Drink scalding, in small sips."
    }
   ]
+ },
+ "saucemousseline": {
+  "nom": "Mousseline Sauce",
+  "description": "A hollandaise lightened with a third of whipped cream folded in AT THE LAST MOMENT. It doubles in volume, turns airy and holds better than its parent — the sauce for asparagus and poached fish on special days.",
+  "etapes": [
+   {
+    "titre": "Clarify",
+    "detail": "Butter melted gently, foam skimmed, milk solids left behind: without this the sauce will split."
+   },
+   {
+    "titre": "The bain-marie",
+    "detail": "Water at a bare simmer, bowl NOT touching the water — the rule for every warm emulsion."
+   },
+   {
+    "titre": "The sabayon",
+    "detail": "Yolks, vinegar and a spoon of water whisked until tripled in volume and ribboning."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "WARM clarified butter in a thin stream, whisking without stopping. It should coat the back of a spoon."
+   },
+   {
+    "titre": "Season",
+    "detail": "Lemon, salt, white pepper off the heat. Taste: it should be frankly sharp, the cream will soften it."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whip the VERY COLD cream to soft peaks — firm, it would leave white lumps in the sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fold the cream in with a spatula IN TWO ADDITIONS, lifting as you go. Serve within 10 minutes."
+   }
+  ]
+ },
+ "saucemoutardeancienne": {
+  "nom": "Wholegrain Mustard Sauce",
+  "description": "A creamy sauce with whole mustard seeds that pop between the teeth. It goes with rabbit, chicken and fish — and is made in the cooking pan, catching all the meat juices.",
+  "etapes": [
+   {
+    "titre": "Sweat",
+    "detail": "Soften the chopped shallot in butter for 3 minutes, in the pan the meat cooked in."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine, scrape up all the brown bits: that is where the sauce's flavour lives."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce BY TWO THIRDS — under-reduced wine leaves an aggressive sharpness."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Stock, then reduce by half again over medium heat."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "Double cream and 5 minutes of reduction: the sauce should coat without being thick."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "OFF THE HEAT: wholegrain mustard whisked in briskly. Boiled, it loses all its bite."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Chopped tarragon, pepper, salt carefully — mustard already brings plenty of salt."
+   }
+  ]
+ },
+ "beurrecitronne": {
+  "nom": "Lemon Butter",
+  "description": "The simplest compound butter for fish: zest, juice and soft butter. A slice on a grilled fillet melts into an instant sauce — and a log in the freezer lasts six months.",
+  "etapes": [
+   {
+    "titre": "Soft butter",
+    "detail": "Take the butter out 1 hour ahead: it must yield under a finger without being melted, or it won't take the flavours."
+   },
+   {
+    "titre": "The zest",
+    "detail": "Zest the lemon VERY finely on a microplane, without reaching the bitter white pith."
+   },
+   {
+    "titre": "The juice",
+    "detail": "A few drops only: too much juice splits the butter, which then weeps in the fridge."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Chives and dill chopped and DRIED in a cloth — water from the herbs would make the butter bead."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Mash with a fork until perfectly even, pale green and glossy."
+   },
+   {
+    "titre": "Roll",
+    "detail": "A 3 cm log in cling film, ends twisted like a sweet wrapper, packed with no air bubbles."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "2 hours chilled. Cut 1 cm slices and lay them on the fish SCORCHING off the grill."
+   }
+  ]
+ },
+ "beurreanchois": {
+  "nom": "Anchovy Butter",
+  "description": "A pink, saline butter that melts over grilled meat or spreads on country bread. The anchovy disappears entirely as an identifiable flavour: it leaves only a salty depth impossible to name.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the anchovy fillets in cold water for 2 minutes and blot them: in oil they are very salty."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash them with a fork into a fine paste, with the degermed garlic — whole pieces would be too aggressive."
+   },
+   {
+    "titre": "The butter",
+    "detail": "SOFT butter worked with a spatula to a creamy texture, before anything is added."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Work in the anchovy paste little by little: the butter takes on an even pink tint."
+   },
+   {
+    "titre": "Balance",
+    "detail": "Lemon and generous pepper. DO NOT SALT: the anchovies bring all the salt needed."
+   },
+   {
+    "titre": "The parsley",
+    "detail": "Finely chopped parsley, added last so it stays properly green."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Roll into a log and chill 4 hours: the anchovy note fades and melts into the butter."
+   }
+  ]
+ },
+ "beurrecolbert": {
+  "nom": "Colbert Butter",
+  "description": "A maître d'hôtel butter enriched with meat glaze and tarragon — the obligatory partner of merlan Colbert. The meat glaze is stock reduced until syrupy: that is what gives the depth.",
+  "etapes": [
+   {
+    "titre": "The meat glaze",
+    "detail": "Reduce strong stock until ONE SPOONFUL of syrupy, glossy liquid remains."
+   },
+   {
+    "titre": "The test",
+    "detail": "The glaze coats the back of a spoon and holds a clean finger trail. Allow 20 minutes of reduction."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely: hot, it would melt the butter instead of blending into it."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Soft butter worked with a spatula to a smooth pale cream."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Work in the cold meat glaze: the butter turns beige and smells of reduced sauce."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Tarragon and parsley chopped very fine, lemon, pepper, light salt."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Wrapped log, 3 hours chilled. A slice inside a butterflied fried whiting — the classic move."
+   }
+  ]
+ },
+ "saucegrenobloise": {
+  "nom": "Grenobloise Sauce",
+  "description": "Brown butter, capers, lemon segments and croutons — the classic garnish for skate and trout. The butter must reach a nutty brown WITHOUT going black: there are only fifteen seconds between the two.",
+  "etapes": [
+   {
+    "titre": "The segments",
+    "detail": "Peel the lemon to the flesh with a knife and cut out the segments between the membranes: no skin, no pith."
+   },
+   {
+    "titre": "The croutons",
+    "detail": "Small dice of stale bread fried golden in a little butter, then drained on paper."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the capers and squeeze them between your fingers: in brine they are far too salty."
+   },
+   {
+    "titre": "Brown butter",
+    "detail": "Butter over MEDIUM heat: it foams, then the milk solids brown and a nutty smell rises."
+   },
+   {
+    "titre": "Fifteen seconds",
+    "detail": "The moment it smells nutty, take it off the heat IMMEDIATELY — fifteen seconds more and it is black and bitter."
+   },
+   {
+    "titre": "Stop it",
+    "detail": "Throw the capers into the hot butter: they hiss and stop the cooking dead."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Lemon segments, croutons, parsley, pepper. Pour over the fish at the moment of serving, never before."
+   }
+  ]
+ },
+ "saucearrabbiata": {
+  "nom": "Arrabbiata Sauce",
+  "description": "\"Angry\": a tomato sauce with dried chilli and garlic, no onion and no herbs. Its simplicity is its strength — four ingredients, and a chilli infused in COLD oil to draw out the heat without the bitterness.",
+  "etapes": [
+   {
+    "titre": "Cold oil",
+    "detail": "Put sliced garlic and crumbled dried chilli into COLD oil, then bring the heat up slowly."
+   },
+   {
+    "titre": "Listen",
+    "detail": "The garlic should sing without ever browning: as soon as it turns golden at the edges, the tomato goes in."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Peeled tomatoes crushed by hand, never blended — the irregular pieces make the Neapolitan texture."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "25 minutes uncovered over medium heat, crushing the pieces with a spoon now and then."
+   },
+   {
+    "titre": "The test",
+    "detail": "The sauce is ready when a spoon leaves a FURROW on the base that doesn't close immediately."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt only at the end: reduction concentrates everything, and early salting makes it inedible."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Parsley off the heat, grated pecorino at the table. On penne rigate, never on smooth pasta."
+   }
+  ]
+ },
+ "saucealfredo": {
+  "nom": "Alfredo Sauce",
+  "description": "The Roman original contains NO cream and NO garlic: only butter, parmesan and the pasta cooking water. It is the starch in that water that creates the emulsion — the American creamed version is a convenient betrayal, but a betrayal.",
+  "etapes": [
+   {
+    "titre": "Grate fine",
+    "detail": "Grate the parmesan ON A MICROPLANE: coarsely grated, it won't melt and will string instead of creaming."
+   },
+   {
+    "titre": "The cooking water",
+    "detail": "Salt the pasta water lightly and keep TWO LADLES: it is the secret ingredient of the whole recipe."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Melt the butter in a large shallow bowl, off the heat — it must not colour."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add a ladle of BOILING pasta water and whisk: butter and water emulsify into a cream."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Tip the drained VERY al dente pasta into the bowl and toss vigorously."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Parmesan in three additions OFF THE HEAT, stirring constantly: on the heat it would go rubbery and lumpy."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add cooking water until the sauce coats and gleams. Generous pepper, serve at once."
+   }
+  ]
+ },
+ "saucegenovese": {
+  "nom": "Neapolitan Genovese Sauce",
+  "description": "Despite the name, this sauce is Neapolitan: kilos of onions melted for four hours with a piece of beef, until they become a sweet brown cream. No tomato at all — and a three-to-one onion-to-meat ratio, which is the absolute rule.",
+  "etapes": [
+   {
+    "titre": "Lots of onions",
+    "detail": "Allow THREE times more onion than meat by weight. It feels absurd but that is the recipe."
+   },
+   {
+    "titre": "Slice thin",
+    "detail": "Slice them finely on a mandoline: they must melt completely, not stay in strips."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the piece of beef on all sides in olive oil, then add carrot and celery."
+   },
+   {
+    "titre": "The mountain",
+    "detail": "Bury the meat under ALL the onions: it looks ridiculous, they will reduce by four fifths."
+   },
+   {
+    "titre": "Three hours",
+    "detail": "Cover and cook over the gentlest heat for 3 hours, stirring every 30 minutes. The onions release water then candy."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine once the onions start catching and browning — it lifts the residue and restarts the melting."
+   },
+   {
+    "titre": "Finish",
+    "detail": "1 more hour uncovered to a brown cream. Shred the meat into it, grated pecorino at the table."
+   }
+  ]
+ },
+ "saucehoisinmaison": {
+  "nom": "Homemade Hoisin Sauce",
+  "description": "The sweet-salty brown sauce of Peking duck, made in fifteen minutes with no additives. Its name means \"seafood\" although it contains none — a linguistic mystery never solved.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Whisk the peanut butter with the soy sauce until perfectly smooth — it binds the whole sauce."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Honey, rice vinegar and sesame oil: the sweet-sour-salty balance must be set at this stage."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Five-spice and crushed garlic — five-spice is what makes the sauce instantly recognisable."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Bring to a bare simmer for 3 minutes over low heat, never boiling: the honey would turn bitter."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cornflour slaked in a spoon of cold water, whisked in. Allow 1 minute to thicken."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Adjust: too salty, a little honey; too sweet, a dash of vinegar. It must be POWERFUL, it will be diluted in use."
+   },
+   {
+    "titre": "Store",
+    "detail": "In a sealed jar in the fridge. It thickens as it cools — loosen with a little hot water if needed."
+   }
+  ]
+ },
+ "paindecampagnelevain": {
+  "nom": "Sourdough Country Loaf",
+  "description": "Real natural-leaven bread: flour, water, salt and a living starter. No baker's yeast at all. The long cold fermentation develops acidity, an open crumb and a week's keeping — three things no quick bread achieves.",
+  "etapes": [
+   {
+    "titre": "Refresh the starter",
+    "detail": "Feed your starter 8 hours ahead: it must DOUBLE and bubble, or it is too weak to raise the dough."
+   },
+   {
+    "titre": "Autolyse",
+    "detail": "Mix flours and water ALONE, then rest 1 hour: the gluten develops by itself, with no kneading."
+   },
+   {
+    "titre": "Mixing",
+    "detail": "Add starter and salt, then knead for only 5 minutes. The dough stays sticky, which is normal with sourdough."
+   },
+   {
+    "titre": "Folds",
+    "detail": "Every 45 minutes for 3 hours, fold the dough over itself in the bowl: this replaces kneading."
+   },
+   {
+    "titre": "Cold bulk",
+    "detail": "12 to 18 HOURS in the fridge: this long cold creates the aroma, the acidity and the large holes."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into a ball without degassing, place seam-up in a floured banneton, and 2 hours at room temperature."
+   },
+   {
+    "titre": "Bake in a pot",
+    "detail": "Cast-iron pot preheated to 250°C, loaf scored, lid on for 20 minutes then 25 minutes uncovered at 220°C."
+   }
+  ]
+ },
+ "paincompletmaison": {
+  "nom": "Homemade Wholemeal Bread",
+  "description": "Wholemeal bread has a bad reputation because it is so often dry and dense. The answer is one word: HYDRATION. Bran absorbs far more water than white flour — you need 75% water against 65% for a standard loaf.",
+  "etapes": [
+   {
+    "titre": "Hydrate hard",
+    "detail": "75 ml of water per 100 g of flour: the dough will look too slack, and that is exactly right."
+   },
+   {
+    "titre": "Soak the bran",
+    "detail": "Mix wholemeal flour and water and rest 30 minutes BEFORE adding the yeast: the bran swells and stops cutting the gluten."
+   },
+   {
+    "titre": "The honey",
+    "detail": "A spoon of honey feeds the yeast and offsets the natural bitterness of bran."
+   },
+   {
+    "titre": "Knead long",
+    "detail": "12 minutes with a dough hook: wholemeal has less available gluten, so it needs longer to develop."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 h 30 at 25°C. Don't aim for doubling: wholemeal dough always rises less than white."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Round or lengthen it, place in a buttered loaf tin, then 1 hour of proving under a cloth."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 210°C with a bowl of water in the oven. The loaf should sound HOLLOW when tapped underneath."
+   }
+  ]
+ },
+ "painpolaire": {
+  "nom": "Swedish Polar Bread",
+  "description": "Polarbröd: a soft, pliable flatbread halfway between bread and pancake, pricked all over and cooked in a PAN. It is the base of Scandinavian wraps and freezes without ever going hard.",
+  "etapes": [
+   {
+    "titre": "Warm milk",
+    "detail": "Dissolve yeast and syrup in milk at 35°C — above 40°C the yeast dies."
+   },
+   {
+    "titre": "The flours",
+    "detail": "Wheat and rye flour, salt and crushed fennel seeds: the fennel is the Nordic signature."
+   },
+   {
+    "titre": "Knead",
+    "detail": "8 minutes: the dough should be supple and slightly sticky, never firm."
+   },
+   {
+    "titre": "Rise",
+    "detail": "45 minutes covered in a warm place, until doubled."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "Divide into 60 g balls and roll each to 5 mm — far thinner than an ordinary bread."
+   },
+   {
+    "titre": "Prick",
+    "detail": "Prick densely with a fork over the WHOLE surface: without this it would puff up like a pita."
+   },
+   {
+    "titre": "Pan-cook",
+    "detail": "Dry pan over medium heat, 2 minutes a side until brown-spotted. Stack them under a cloth so they stay soft."
+   }
+  ]
+ },
+ "pitamaison": {
+  "nom": "Homemade Pita Bread",
+  "description": "The pita's pocket doesn't come from a complicated technique but from a THERMAL SHOCK: thin dough hitting a 250°C surface. Steam forms instantly, separates the two faces and inflates the bread like a balloon.",
+  "etapes": [
+   {
+    "titre": "Activate",
+    "detail": "Yeast and sugar in warm water, 10 minutes until frothy: if nothing froths, the yeast is dead."
+   },
+   {
+    "titre": "Knead",
+    "detail": "8 minutes to a smooth elastic dough that springs back when pressed with a finger."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 h 30 covered until fully doubled."
+   },
+   {
+    "titre": "Divide",
+    "detail": "70 g balls, then 20 MINUTES of resting: without it the dough shrinks back when rolled and won't puff."
+   },
+   {
+    "titre": "Roll",
+    "detail": "5 mm thick, no more and no less. Too thin it burns; too thick it won't split in two."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "Tray or stone at 250°C FOR 30 MINUTES: it is the stored heat that makes the pocket, not the dial setting."
+   },
+   {
+    "titre": "Bake 4 minutes",
+    "detail": "The pita balloons after 2 minutes. Take it out BEFORE it colours and stack under a cloth."
+   }
+  ]
+ },
+ "tortillamais": {
+  "nom": "Corn Tortillas",
+  "description": "Two ingredients: masa harina and water. Careful — masa harina is NOT ordinary cornmeal; it is nixtamalised corn treated with lime, and no other flour can replace it.",
+  "etapes": [
+   {
+    "titre": "Masa harina",
+    "detail": "Only it contains the gelatinised starch that lets a tortilla hold together. Ordinary cornmeal crumbles."
+   },
+   {
+    "titre": "Hydrate",
+    "detail": "HOT water added little by little while mixing: allow about 60 ml per 100 g of masa."
+   },
+   {
+    "titre": "The test",
+    "detail": "The dough should feel like modelling clay: a flattened ball must not crack at the edges."
+   },
+   {
+    "titre": "Rest",
+    "detail": "20 minutes under a damp cloth: the masa finishes hydrating and becomes far more pliable."
+   },
+   {
+    "titre": "Press",
+    "detail": "30 g balls pressed between two sheets of plastic — a tortilla press, or a heavy pan at a pinch."
+   },
+   {
+    "titre": "Three turns",
+    "detail": "DRY pan, very hot: 30 seconds, turn, 60 seconds, turn again for 30 seconds."
+   },
+   {
+    "titre": "The puff",
+    "detail": "On the third turn the tortilla puffs: the sign of perfect cooking. Keep them stacked in a cloth."
+   }
+  ]
+ },
+ "pretzelsmous": {
+  "nom": "Soft Pretzels",
+  "description": "The mahogany crust and distinctive taste of a pretzel come from an ALKALINE BATH before baking. Baked bicarbonate is an excellent stand-in for the bakery's lye — without the danger.",
+  "etapes": [
+   {
+    "titre": "Baked bicarbonate",
+    "detail": "Spread the bicarbonate on a tray and bake it 1 hour at 120°C: it becomes far more alkaline, almost like lye."
+   },
+   {
+    "titre": "The dough",
+    "detail": "A firm, low-hydration dough kneaded 10 minutes: a pretzel is not a soft bread, it must be dense."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 hour covered until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll 50 cm ropes thinner at the ends, cross them twice and fold onto the belly."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "20 minutes in the freezer: a cold pretzel keeps its shape in the alkaline bath."
+   },
+   {
+    "titre": "The bath",
+    "detail": "Dip each pretzel for 30 SECONDS in boiling water with the baked bicarbonate. Gloves required."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Flaky salt, a slash across the belly, 15 minutes at 220°C until deep mahogany."
+   }
+  ]
+ },
+ "englishmuffin": {
+  "nom": "English Muffins",
+  "description": "The English flatbread cooked IN A PAN, not an oven — hence its two flat faces and its crumb full of holes. It is NEVER cut with a knife: you split it with a fork, to keep the nooks that will hold the butter.",
+  "etapes": [
+   {
+    "titre": "The milk",
+    "detail": "Warm the milk with the butter to 35°C: milk gives the characteristic softness, water alone makes a dry bread."
+   },
+   {
+    "titre": "Knead",
+    "detail": "10 minutes: the dough should be very soft, almost sticky. Resist the urge to add flour."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 h 30 until doubled."
+   },
+   {
+    "titre": "Cut out",
+    "detail": "Roll to 1.5 cm and cut 8 cm discs with a cutter, without twisting the cutter."
+   },
+   {
+    "titre": "The semolina",
+    "detail": "Roll each disc in fine semolina on both faces — it gives the typical sandy texture."
+   },
+   {
+    "titre": "Prove",
+    "detail": "45 minutes under a cloth: they should puff and feel airy."
+   },
+   {
+    "titre": "Pan-cook",
+    "detail": "DRY pan over LOW heat, 8 minutes a side. Too hot and the outside burns before the centre cooks."
+   }
+  ]
+ },
+ "pumpernickel": {
+  "nom": "Pumpernickel",
+  "description": "The black bread of Westphalia, baked for 16 HOURS at very low temperature. Its near-black colour and liquorice taste come from no colouring: it is the Maillard reaction pushed to the extreme by an endless bake.",
+  "etapes": [
+   {
+    "titre": "Whole rye",
+    "detail": "Use WHOLE rye flour, coarsely milled: pumpernickel has almost no gluten, so the crumb will be dense."
+   },
+   {
+    "titre": "High hydration",
+    "detail": "80% water: the dough looks like a thick sticky porridge. That's normal, it is never hand-shaped."
+   },
+   {
+    "titre": "The starter",
+    "detail": "Active rye starter, malt (or cane) syrup and caraway. Mix with a spatula, no kneading."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "4 hours at room temperature: the dough barely rises but the surface covers in bubbles."
+   },
+   {
+    "titre": "The sealed tin",
+    "detail": "Pour into a buttered loaf tin and SEAL tightly with foil: no steam must escape."
+   },
+   {
+    "titre": "Very long bake",
+    "detail": "16 HOURS at 110°C. Yes, sixteen — that is what caramelises the sugars and blackens the crumb."
+   },
+   {
+    "titre": "Wait 24 h",
+    "detail": "Cool completely then wait 24 hours before slicing: cut warm, it crumbles entirely."
+   }
+  ]
+ },
+ "lavash": {
+  "nom": "Lavash",
+  "description": "The Armenian bread listed by UNESCO: an enormous sheet, so thin it becomes translucent. Fresh it is pliable and used as a wrap; dried it keeps six months and rehydrates in seconds under a damp cloth.",
+  "etapes": [
+   {
+    "titre": "Knead long",
+    "detail": "12 minutes: the gluten must be VERY well developed to be rolled that thin without tearing."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour covered. The dough must be completely relaxed, or it will shrink back when rolled."
+   },
+   {
+    "titre": "Divide",
+    "detail": "60 g balls, rested a further 15 minutes under a cloth."
+   },
+   {
+    "titre": "Roll to the extreme",
+    "detail": "Roll until you can SEE THE WORKTOP through the dough — under a millimetre, almost translucent."
+   },
+   {
+    "titre": "By hand",
+    "detail": "Finish by stretching it by hand, like a pizza: a rolling pin alone never reaches that thinness."
+   },
+   {
+    "titre": "Flash bake",
+    "detail": "Scorching tray at 250°C: 60 SECONDS is enough, the sheet blisters and takes brown spots."
+   },
+   {
+    "titre": "Two uses",
+    "detail": "Under a damp cloth it stays pliable for wraps. In the open air it dries into a cracker that keeps six months."
+   }
+  ]
+ },
+ "mantou": {
+  "nom": "Mantou",
+  "description": "The Chinese bun cooked BY STEAM: pure white, cloud-soft, with no crust at all. A dash of vinegar in the steamer water guarantees that whiteness — without it they yellow slightly.",
+  "etapes": [
+   {
+    "titre": "The milk",
+    "detail": "Yeast and sugar in warm milk: milk gives the whiteness and softness, water alone gives a dull bread."
+   },
+   {
+    "titre": "Knead 15 minutes",
+    "detail": "Far longer than for a Western bread: the dough must be PERFECTLY smooth, without a single blemish."
+   },
+   {
+    "titre": "First rise",
+    "detail": "1 hour covered until doubled."
+   },
+   {
+    "titre": "Degas fully",
+    "detail": "Knead again for 5 minutes to drive out ALL the gas: bubbles would leave craters after steaming."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll into a log and cut lengths, or roll into a spiral for the traditional shape."
+   },
+   {
+    "titre": "Prove",
+    "detail": "30 minutes on paper squares in the steamer basket, well spaced — they swell a lot."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Start from COLD, 15 minutes after boiling, then 5 minutes off the heat WITHOUT opening: a shock would collapse them."
+   }
+  ]
+ },
+ "queuedeboeufbraisee": {
+  "nom": "Braised Oxtail",
+  "description": "The cheapest cut of beef becomes, after four hours, one of the most sumptuous. The collagen in the tail melts into gelatine and gives a sauce that COATS naturally, with no flour or thickening of any kind.",
+  "etapes": [
+   {
+    "titre": "Dry",
+    "detail": "Blot the pieces carefully: wet oxtail will never colour, and without colour there is no flavour."
+   },
+   {
+    "titre": "Sear hard",
+    "detail": "Brown them on EVERY face in very hot oil, in small batches, 12 minutes in total."
+   },
+   {
+    "titre": "The base",
+    "detail": "Set the meat aside, fry carrot, onion, celery and garlic in the same pot for 8 minutes."
+   },
+   {
+    "titre": "Concentrate",
+    "detail": "Tomato purée and flour, toasted for 3 minutes while stirring: this gives the sauce its brown colour."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Red wine, bring to the boil and reduce by half to drive off the alcohol."
+   },
+   {
+    "titre": "Three hours",
+    "detail": "Stock to cover, lid on, 3 hours at 150°C. The meat must fall from the bone under simple pressure."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Lift out the meat, strain and reduce the juices for 15 minutes: they turn syrupy and glossy by themselves."
+   }
+  ]
+ },
+ "rognonsmoutarde": {
+  "nom": "Kidneys in Mustard Sauce",
+  "description": "The most delicate offal in the repertoire, and the fastest to ruin. Two rules: kidneys are cooked RARE, and they must never boil in their juices — or they turn rubbery and bitter.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Cut out the central fat and the white ducts: that is where the ammonia taste hides."
+   },
+   {
+    "titre": "Soak",
+    "detail": "30 minutes in milk or vinegared water, then rinse and DRY perfectly."
+   },
+   {
+    "titre": "Sear hot",
+    "detail": "Scorching pan, foaming butter, kidneys in a single layer: 2 MINUTES total, not a second more."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Lift them out IMMEDIATELY onto a warm plate — they keep cooking in their own heat."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "In the same pan, mushrooms and shallot for 5 minutes until browned."
+   },
+   {
+    "titre": "Flame",
+    "detail": "Cognac, flame it, then cream and 4 minutes of reduction to a coating consistency."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "OFF THE HEAT, mustard and the juices released by the kidneys. Return the kidneys for 30 seconds just to warm through."
+   }
+  ]
+ },
+ "foiedeveaupersillade": {
+  "nom": "Calf's Liver with Persillade",
+  "description": "A thick slice seared two minutes a side, pink in the middle. Calf's liver forgives no overcooking: past pink it turns grainy and bitter in under thirty seconds.",
+  "etapes": [
+   {
+    "titre": "Cut thick",
+    "detail": "2 cm minimum. A thin slice cooks through before it has coloured — a guaranteed failure."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Take it out 30 minutes ahead: ice-cold liver cooks grey outside and raw in the middle."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Flour it just BEFORE cooking and tap off the excess: floured too early, the coating turns pasty."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Foaming butter over high heat, 2 minutes a side for 2 cm. The liver must stay YIELDING to the touch."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Lift out and cover: it rests while the persillade is made, and finishes cooking gently."
+   },
+   {
+    "titre": "The persillade",
+    "detail": "Chopped garlic and parsley thrown into the cooking butter for 30 SECONDS — garlic burns in a minute."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "A dash of vinegar into the scorching pan, poured straight over the liver. Salt, pepper, serve immediately."
+   }
+  ]
+ },
+ "boudinblancpommes": {
+  "nom": "White Pudding with Apples",
+  "description": "White pudding is already cooked when you buy it: the job is only to REHEAT and colour it. Pricked with a fork it bursts; over high heat it explodes. Gentleness and patience are the only rules.",
+  "etapes": [
+   {
+    "titre": "Never prick",
+    "detail": "NEVER prick the pudding: the skin holds the fat and juices, pierced it lets everything escape."
+   },
+   {
+    "titre": "The apples",
+    "detail": "Tart apples in thick wedges, pan-fried in butter for 8 minutes with the brown sugar until caramelised."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Lift out the apples and keep them warm: they would collapse into purée if left in."
+   },
+   {
+    "titre": "LOW heat",
+    "detail": "Puddings in foaming butter over low heat, 12 minutes, turning regularly with tongs."
+   },
+   {
+    "titre": "Watch",
+    "detail": "The skin should brown without ever splitting. If it starts to swell, lower the heat at once."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Set the puddings aside, pour the cider into the pan and scrape up the residue, then reduce by half."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Cream, thyme, 3 minutes of reduction. Return apples and puddings to coat them and serve."
+   }
+  ]
+ },
+ "boudinnoirpommes": {
+  "nom": "Black Pudding with Apples",
+  "description": "The oldest pairing in French cooking: the fat and iron of the pudding, the acidity and sugar of the apple. As old as Homer, who already describes a blood sausage in the Odyssey — probably the world's oldest charcuterie.",
+  "etapes": [
+   {
+    "titre": "The apples",
+    "detail": "Cooking apples in THICK wedges: cooking varieties hold their shape, eating apples collapse."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Melt it in butter for 10 minutes until golden, then add the apples and brown sugar."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "8 minutes over medium heat without stirring much: the faces should brown, not break down."
+   },
+   {
+    "titre": "Vinegar",
+    "detail": "A dash of cider vinegar at the end: it cuts the sugar and wakes the whole thing up."
+   },
+   {
+    "titre": "The pudding",
+    "detail": "Cut it into 5 cm lengths or leave it whole — but never prick it."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "MEDIUM heat pan, 10 minutes, turning carefully. The skin should crack between the teeth, not in the pan."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pudding over the apple compote, with mash or sautéed potatoes. Freshly ground pepper."
+   }
+  ]
+ },
+ "jambonneaumadere": {
+  "nom": "Ham Hock in Madeira",
+  "description": "A modest, gelatinous cut, long-braised in a fortified wine that lacquers its surface. Lightly salted hock must be soaked overnight — the one step you cannot skip.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "12 hours in cold water, changing it three times: without this the dish is inedible."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Start in cold water, boil 10 minutes, throw the water away: this removes residual salt and impurities."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Dry the hock and colour it in butter on all sides, 10 minutes."
+   },
+   {
+    "titre": "The base",
+    "detail": "Clove-studded onion, carrot and bay around the meat in the pot."
+   },
+   {
+    "titre": "The madeira",
+    "detail": "Pour in the fortified wine and reduce by half uncovered before adding the stock."
+   },
+   {
+    "titre": "Braise",
+    "detail": "2 hours covered at 150°C, basting with the juices every 30 minutes."
+   },
+   {
+    "titre": "Lacquer",
+    "detail": "Uncover, brush with honey and raise to 210°C for 15 minutes: the rind turns glossy and crisp."
+   }
+  ]
+ },
+ "lapinpruneaux": {
+  "nom": "Rabbit with Prunes",
+  "description": "A classic of the North and Flanders: rabbit, being very lean, is protected from drying out by prunes that give up their sugar and moisture. The sweet-savoury note isn't a whim here, it is a technique.",
+  "etapes": [
+   {
+    "titre": "Plump them",
+    "detail": "Soak the prunes in hot tea or beer for 1 hour: dry, they would drink all the sauce."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Colour the rabbit pieces in butter for 12 minutes — rabbit browns badly, be patient."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Set the meat aside, fry lardons and onions in the same pot."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Return the rabbit, flour it and toast for 2 minutes, stirring."
+   },
+   {
+    "titre": "The beer",
+    "detail": "Amber beer, thyme, bay, then 1 hour covered over low heat."
+   },
+   {
+    "titre": "The thickener",
+    "detail": "Gingerbread spread with mustard dropped into the sauce: it melts and thickens it, a typical northern move."
+   },
+   {
+    "titre": "The prunes",
+    "detail": "Add them for the LAST 20 minutes only: any earlier and they would disintegrate."
+   }
+  ]
+ },
+ "canardnavets": {
+  "nom": "Duck with Turnips",
+  "description": "Duck renders enormous amounts of fat — and it is IN that fat that the turnips are glazed, soaking it all up. A dish of balance: the peppery turnip cuts the richness of the bird, and nothing else is needed.",
+  "etapes": [
+   {
+    "titre": "Render the fat",
+    "detail": "Start COLD, skin side down, 15 minutes over low heat: the fat melts slowly and the skin crisps."
+   },
+   {
+    "titre": "Save it",
+    "detail": "Pour the rendered fat into a bowl and KEEP IT: it is the most precious ingredient in the recipe."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Finish searing the duck on the other faces, then set aside."
+   },
+   {
+    "titre": "Glaze the turnips",
+    "detail": "Turnip wedges in the duck fat with the sugar: 12 minutes until golden and glossy."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Set the turnips aside, sweat the onion, dust with flour and deglaze with white wine."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Duck, stock, thyme, bay: 1 hour covered over low heat."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Turnips for the last 25 minutes only — they would melt away over the full hour."
+   }
+  ]
+ },
+ "pouletvinjaune": {
+  "nom": "Chicken with Vin Jaune",
+  "description": "The emblematic dish of the Jura: creamed chicken scented with vin jaune and morels. The wine goes in IN TWO STAGES — part cooked for depth, part raw at the last moment for its highly volatile walnut aroma.",
+  "etapes": [
+   {
+    "titre": "The morels",
+    "detail": "If using dried morels, rehydrate them 30 minutes and KEEP the strained soaking water."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Colour the chicken in butter for 12 minutes on all sides, then set aside."
+   },
+   {
+    "titre": "The shallot",
+    "detail": "Sweat it in the pot, dust with flour and cook for 2 minutes."
+   },
+   {
+    "titre": "First wine",
+    "detail": "HALF the vin jaune, reduced by half: this part gives depth and acidity."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Chicken, mushrooms, strained soaking water: 35 minutes covered over low heat."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "Cream and 8 minutes of uncovered reduction to a properly coating sauce."
+   },
+   {
+    "titre": "Second wine",
+    "detail": "The rest of the vin jaune OFF THE HEAT, and the grated comté. Its walnut aroma would not survive cooking."
+   }
+  ]
+ },
+ "gigotseptheures": {
+  "nom": "Seven-Hour Leg of Lamb",
+  "description": "The \"spoon\" leg of lamb: seven hours at 120°C, until the meat falls into strands and no knife is needed. The absolute opposite of a pink roast leg — and arguably even more impressive.",
+  "etapes": [
+   {
+    "titre": "Stud it",
+    "detail": "Cut slits in the leg with a knife and slide whole garlic cloves and anchovy fillets into each one."
+   },
+   {
+    "titre": "The anchovies",
+    "detail": "You won't taste them: they melt completely and give a salty depth impossible to identify."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear the leg on all faces in very hot olive oil, 15 minutes."
+   },
+   {
+    "titre": "The base",
+    "detail": "Carrots, onions and herbs around the meat in a cast-iron pot just its size."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "White wine and stock halfway up only: this is braising, the meat must not swim."
+   },
+   {
+    "titre": "Seven hours",
+    "detail": "120°C, lid CLOSED, 7 hours. You can seal the lid with a flour-and-water paste for a perfect seal."
+   },
+   {
+    "titre": "The test",
+    "detail": "The meat must come away with a SPOON. If a knife is needed, give it another hour."
+   }
+  ]
+ },
+ "raiebeurrenoisette": {
+  "nom": "Skate with Brown Butter",
+  "description": "Skate wing has stranded flesh that lifts away from the cartilage by itself. A useful detail: skate that smells slightly of ammonia is not spoiled — a rinse in vinegared water makes the smell vanish.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the wing in vinegared water for 2 minutes: it completely neutralises the fish's natural ammonia smell."
+   },
+   {
+    "titre": "Poach",
+    "detail": "SIMMERING court-bouillon, 8 minutes for a 200 g wing. At a rolling boil the flesh would fall apart."
+   },
+   {
+    "titre": "Skin it",
+    "detail": "Lift out the wing and scrape off the grey skin with a knife blade: it comes away in one piece."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Blot very carefully: wet skate won't colour and the butter will spit."
+   },
+   {
+    "titre": "Flour",
+    "detail": "A light dusting just before frying — it protects the flesh and gives a fine golden crust."
+   },
+   {
+    "titre": "Brown butter",
+    "detail": "Butter over medium heat until it smells nutty and turns amber. Fifteen seconds more and it is black."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Rinsed capers then vinegar into the scorching butter: it hisses and stops dead. Lemon, parsley, serve."
+   }
+  ]
+ },
+ "merlanfrit": {
+  "nom": "Angry Fried Whiting",
+  "description": "The \"angry\" whiting bites its own tail: the tail is pushed into its mouth before frying, and it comes out curled and furious-looking. A 19th-century presentation, spectacular and entirely pointless — hence irresistible.",
+  "etapes": [
+   {
+    "titre": "Gut it",
+    "detail": "Gut the whiting through the gills keeping the belly INTACT: that is what lets it hold the curl."
+   },
+   {
+    "titre": "Angry",
+    "detail": "Slide the tail into the fish's mouth and push it in firmly: it keeps the position through cooking."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper inside AND out before crumbing: afterwards, seasoning no longer penetrates."
+   },
+   {
+    "titre": "Crumb",
+    "detail": "Flour, beaten egg, breadcrumbs PRESSED well in, including into the folds of the curl."
+   },
+   {
+    "titre": "Rest",
+    "detail": "15 minutes chilled: the coating dries and grips, otherwise it peels off in the oil."
+   },
+   {
+    "titre": "Oil at 175°C",
+    "detail": "Too cool and the fish drinks oil; too hot and the crumb burns before the flesh cooks."
+   },
+   {
+    "titre": "Fry",
+    "detail": "6 minutes in total, spooning oil over the top. Drain on a rack — never paper, which softens it."
+   }
+  ]
+ },
+ "sandrebeurreblanc": {
+  "nom": "Pike-Perch with Beurre Blanc",
+  "description": "The finest river fish, with pearly flesh and no pin bones. Cooked on the skin ONLY, it keeps a crisp skin and barely-set flesh — overcooking is the only real risk.",
+  "etapes": [
+   {
+    "titre": "Dry the skin",
+    "detail": "Blot the skin and leave the fillet uncovered in the fridge for 15 minutes: dry skin crisps, wet skin sticks."
+   },
+   {
+    "titre": "Score",
+    "detail": "Three light cuts in the skin: they stop the fillet curling in the pan."
+   },
+   {
+    "titre": "The reduction",
+    "detail": "Shallot, white wine and vinegar reduced to TWO SPOONFULS of syrupy liquid."
+   },
+   {
+    "titre": "Stabilise",
+    "detail": "A spoon of cream in the reduction: the insurance against a split beurre blanc."
+   },
+   {
+    "titre": "Mount",
+    "detail": "VERY COLD butter in pieces, off the heat, swirling the pan. The sauce pales and turns silky."
+   },
+   {
+    "titre": "Cook the fish",
+    "detail": "Skin down in hot oil, 5 minutes WITHOUT touching it, pressing for the first 30 seconds."
+   },
+   {
+    "titre": "Finish",
+    "detail": "30 seconds on the flesh side, no more: pike-perch is done when the surface turns opaque and the centre stays pearly."
+   }
+  ]
+ },
+ "moulesfarcies": {
+  "nom": "Stuffed Mussels",
+  "description": "Mussels steamed open then filled with garlic butter and gratinated. A south-western recipe that turns a cheap shellfish into a festive nibble — and that can be prepared entirely in advance.",
+  "etapes": [
+   {
+    "titre": "Sort",
+    "detail": "Discard any mussel that is cracked or stays OPEN when tapped: the absolute safety rule."
+   },
+   {
+    "titre": "Open them",
+    "detail": "White wine and shallot in a large pot, mussels covered for 4 minutes over high heat, shaking."
+   },
+   {
+    "titre": "Half-shell them",
+    "detail": "Remove the EMPTY shell from each mussel and keep the meat in the other half."
+   },
+   {
+    "titre": "The garlic butter",
+    "detail": "Soft butter, degermed garlic and parsley chopped very fine, pepper — the mix should be properly green."
+   },
+   {
+    "titre": "Fill",
+    "detail": "A knob of butter on each mussel, pushed down around the meat."
+   },
+   {
+    "titre": "Crumb",
+    "detail": "Breadcrumbs mixed with parmesan on top: they soak up the melting butter and turn crisp."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "8 minutes at 220°C, on a bed of coarse salt to steady the shells. Serve scalding."
+   }
+  ]
+ },
+ "bulotmayonnaise": {
+  "nom": "Whelks with Mayonnaise",
+  "description": "The staple of the seafood platter. Everything hangs on the cooking: too short and the whelk is rubbery; too long and it goes hard as wood. Twenty minutes from the return to the boil, not a minute more.",
+  "etapes": [
+   {
+    "titre": "Purge",
+    "detail": "2 hours in heavily salted water with coarse salt: the whelks spit out their sand, which is essential."
+   },
+   {
+    "titre": "Scrub",
+    "detail": "Scrub the shells under cold water to remove weed and sand clinging outside."
+   },
+   {
+    "titre": "Start cold",
+    "detail": "Cold heavily salted water with thyme and bay — starting hot would make them retract into their shells."
+   },
+   {
+    "titre": "20 minutes",
+    "detail": "Count 20 minutes from the return to the boil. It is the only number to remember in this recipe."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let them cool IN their cooking water: they stay tender instead of hardening as they dry."
+   },
+   {
+    "titre": "The mayonnaise",
+    "detail": "Yolk, mustard and vinegar at room temperature, oil in a very thin stream, whisked to an emulsion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cold whelks with a wooden pick, mayonnaise alongside. Remove the operculum and the small black coil at the end."
+   }
+  ]
+ },
+ "marmitedieppoise": {
+  "nom": "Dieppoise Marmite",
+  "description": "The Norman bouillabaisse: white fish, mussels and prawns in a cider and cream broth. Each fish goes in at ITS own moment — that sequencing, and nothing else, makes the dish work.",
+  "etapes": [
+   {
+    "titre": "The mussels",
+    "detail": "Open them in cider for 4 minutes, shell them and STRAIN the juice: that juice is the base of the whole dish."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sliced leeks and mushrooms melted in butter for 10 minutes, without colouring."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Dust with flour, then pour in the strained mussel juice and the rest of the cider."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "A few threads infused 10 minutes in the hot broth: it colours and perfumes, but must not boil long."
+   },
+   {
+    "titre": "Sequence",
+    "detail": "Cod first (5 min), then salmon (3 min), then prawns and mussels (1 min). NEVER all together."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "Cream off the heat, stirring gently so the fish pieces don't break."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Parsley, pepper. Serve with toasted bread — and never reheat: the fish would turn cottony."
+   }
+  ]
+ },
+ "bourrideprovence": {
+  "nom": "Provençal Bourride",
+  "description": "The discreet sister of bouillabaisse: a fish broth THICKENED WITH AÏOLI, turning silky and golden. The liaison happens off the heat and must never exceed 80°C — beyond that, the aïoli splits instantly.",
+  "etapes": [
+   {
+    "titre": "The aïoli",
+    "detail": "Make the aïoli with pounded garlic, yolks and olive oil IN A THIN STREAM, like mayonnaise. Set half aside."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Leek, fennel, orange zest, saffron and white wine, covered with water: 20 minutes at a simmer."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Thick potato rounds cooked 15 minutes in the broth, then kept warm."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Fish for 8 minutes at a simmer. Lift it out gently and keep it warm with the vegetables."
+   },
+   {
+    "titre": "Cool a little",
+    "detail": "Let the broth drop to 80°C — THE condition for the liaison; a thermometer really helps here."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Pour a ladle of warm broth onto the aïoli while whisking, then return it all to the pan."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Over VERY low heat, stir with a spatula until the broth coats the spoon. NEVER let it boil."
+   }
+  ]
+ },
+ "chaudreecharentaise": {
+  "nom": "Charentaise Chaudrée",
+  "description": "The sailors' soup of Aunis, probable ancestor of American chowder — both words share the root \"chaudière\". White fish, white wine, butter: no cream and no tomato, unlike every other French fish soup.",
+  "etapes": [
+   {
+    "titre": "Cuttlefish first",
+    "detail": "Cuttlefish or squid need 25 MINUTES, white fish 6: they can never start together."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sweat onion and garlic in butter for 5 minutes without colouring."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Dry white wine, bay and thyme, then the cuttlefish: 25 minutes covered over low heat."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "In thick rounds, added halfway through the cuttlefish — their starch will thicken the chaudrée naturally."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Cod in large cubes for the LAST 6 minutes only."
+   },
+   {
+    "titre": "Mount with butter",
+    "detail": "Off the heat, cold butter in pieces, stirring: the only thickening in this soup, with no cream."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Parsley, ground pepper, toasted country bread. A chaudrée is served scalding, in a deep plate."
+   }
+  ]
+ },
+ "fritureeperlans": {
+  "nom": "Fried Smelts",
+  "description": "Tiny fish fried WHOLE, eaten head, bones and all. Rich in calcium and omega-3, they were once the food of the poor and have become an aperitif treat — the only fried fish you crunch like crisps.",
+  "etapes": [
+   {
+    "titre": "Don't gut them",
+    "detail": "Smelts are cooked WHOLE, ungutted: they are too small, and it is what gives them all their flavour."
+   },
+   {
+    "titre": "Rinse and dry",
+    "detail": "Rinse in iced water then blot carefully in a cloth — water would make the oil erupt."
+   },
+   {
+    "titre": "Dry-flour",
+    "detail": "Shake them in a bag with the flour and paprika: the bag coats evenly and prevents clumps."
+   },
+   {
+    "titre": "Sieve",
+    "detail": "Pass them through a sieve to remove EXCESS flour: it would burn and blacken the oil."
+   },
+   {
+    "titre": "180°C",
+    "detail": "Properly hot oil: at that temperature the fry is dry and crisp, never greasy."
+   },
+   {
+    "titre": "By the handful",
+    "detail": "Fry in small batches for 3 minutes, until pale gold. Too many at once drops the temperature."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Rack and kitchen paper, flaky salt IMMEDIATELY, fried parsley and lemon wedges. Eat scalding."
+   }
+  ]
+ },
+ "seichearmoricaine": {
+  "nom": "Cuttlefish à l'Armoricaine",
+  "description": "Cuttlefish is a muscle: tender for the first five minutes, rubbery for the next twenty, then tender again after forty. So there are only two possible cooking times — very short or very long. This is the long one.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Remove the bone, skin and beak. Cut the bodies into 2 cm strips and keep the tentacles whole."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Colour them for 4 minutes over HIGH heat in olive oil: they release a lot of water, let it evaporate."
+   },
+   {
+    "titre": "Flame",
+    "detail": "Cognac, flame it: the move that separates an armoricaine from a plain tomato sauce."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Onion, carrot and garlic for 8 minutes, then tomato purée toasted for 2 minutes."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "White wine reduced by half, then chopped tomatoes, tarragon and chilli."
+   },
+   {
+    "titre": "45 minutes",
+    "detail": "Covered over low heat. The cuttlefish goes through a rubbery phase around 20 minutes: DON'T STOP."
+   },
+   {
+    "titre": "Serve",
+    "detail": "The sauce should coat and the cuttlefish cut with a fork. Plain rice alongside, fresh tarragon on top."
+   }
+  ]
+ },
+ "rigatoniamatriciana": {
+  "nom": "Rigatoni all'Amatriciana",
+  "description": "Four ingredients only: guanciale, tomato, pecorino, chilli. No garlic, no onion, no oil — the guanciale renders enough fat for everything. The Amatrice recipe is protected, and any addition makes it something else.",
+  "etapes": [
+   {
+    "titre": "The guanciale",
+    "detail": "Cut it into THICK 1 cm lardons: too thin and it melts entirely, leaving nothing to bite."
+   },
+   {
+    "titre": "Start cold",
+    "detail": "COLD pan, guanciale alone, heat raised gently: the fat melts slowly and the rind turns glassy."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Lift out the crisp lardons and keep ALL the fat in the pan: it is the dish's only fat."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine into the hot fat, let it evaporate completely — it lifts the residue and softens the fat."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Peeled tomatoes crushed by hand and chilli: 15 minutes of reduction over medium heat."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Rigatoni very al dente, drained keeping a ladle of cooking water, tipped into the sauce."
+   },
+   {
+    "titre": "The pecorino",
+    "detail": "OFF THE HEAT, grated pecorino and the guanciale returned. The cooking water binds it into a glossy sauce."
+   }
+  ]
+ },
+ "trofiepesto": {
+  "nom": "Trofie al Pesto",
+  "description": "The complete Ligurian dish: hand-rolled trofie, mortar-made pesto, and above all potatoes and green beans cooked IN the pasta water. That addition surprises the French but is compulsory in Genoa.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Flour and warm water ONLY, no egg: knead 10 minutes to a firm smooth dough."
+   },
+   {
+    "titre": "Roll by hand",
+    "detail": "Small pieces rolled into twisted spindles between palm and worktop — irregular is the point."
+   },
+   {
+    "titre": "Mortar pesto",
+    "detail": "Garlic, salt and basil pounded first, then pine nuts, then cheeses, then oil in a stream. A blender heats and blackens basil."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Diced potatoes and cut green beans, cooked IN the pasta water — the Genoese tradition."
+   },
+   {
+    "titre": "Sequence",
+    "detail": "Potatoes 8 minutes, then beans 4 minutes, then trofie 4 minutes: everything finishes together."
+   },
+   {
+    "titre": "Loosen the pesto",
+    "detail": "A ladle of WARM cooking water into the pesto before adding it: hot, it would lose its green."
+   },
+   {
+    "titre": "Mix off the heat",
+    "detail": "Combine everything in a bowl, NEVER over heat. Pesto is never cooked, barely warmed."
+   }
+  ]
+ },
+ "raviolisricotta": {
+  "nom": "Ricotta & Spinach Ravioli",
+  "description": "The classic filling of all northern Italy. The only real trap is MOISTURE: badly drained ricotta or badly squeezed spinach and every ravioli bursts. Five minutes of squeezing avoids an hour of disaster.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "100 g flour to 1 egg, kneaded 10 minutes to an elastic dough. Wrap and rest 30 minutes."
+   },
+   {
+    "titre": "Drain the ricotta",
+    "detail": "12 hours in a sieve if it is very wet. Ricotta that weeps ruins everything."
+   },
+   {
+    "titre": "Squeeze the spinach",
+    "detail": "Blanched, cooled, then SQUEEZED TO DEATH in a cloth. You should extract a full glass of water."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Ricotta, chopped spinach, parmesan, nutmeg, salt, pepper. It must be firm and hold its shape on a spoon."
+   },
+   {
+    "titre": "Roll thin",
+    "detail": "Roll the dough through the machine until you can see your hand through it — notch 6 or 7 on a standard roller."
+   },
+   {
+    "titre": "Expel the air",
+    "detail": "Place the filling, moisten, close while PUSHING the air out around each mound: a bubble bursts the ravioli."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Water at a BARE SIMMER, never a rolling boil, 3 minutes. Sage butter and parmesan to serve."
+   }
+  ]
+ },
+ "tortellinibrodo": {
+  "nom": "Tortellini in Brodo",
+  "description": "Bologna's Christmas dish: tiny tortellini served in a perfectly clear capon broth. Legend says their shape imitates the navel of Venus, glimpsed by an innkeeper through a keyhole.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Capon or boiling fowl, carrot, celery, onion, started in COLD WATER: 3 hours at a simmer, skimming."
+   },
+   {
+    "titre": "Clarity",
+    "detail": "NEVER let it boil: a single rolling boil clouds the broth and it will never clear again."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Pork browned in butter, cured ham and mortadella blended very fine with parmesan, egg and nutmeg."
+   },
+   {
+    "titre": "Rest the filling",
+    "detail": "12 hours chilled: the flavours marry and the filling firms up, which makes shaping easier."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "Pasta rolled to the maximum, cut into 3 cm squares ONLY — Bolognese tortellini are tiny."
+   },
+   {
+    "titre": "Shape",
+    "detail": "A dot of filling, fold into a triangle, then wrap around your index finger and seal the two points."
+   },
+   {
+    "titre": "Cook in the broth",
+    "detail": "3 minutes in SIMMERING broth, never in water. Serve in the broth with parmesan on the side."
+   }
+  ]
+ },
+ "paccheri": {
+  "nom": "Paccheri alla Sorrentina",
+  "description": "Big pasta tubes that slap as they hit the plate — \"paccheri\" comes from the Neapolitan for \"slap\". Their diameter traps sauce and melted mozzarella inside: no other shape does that.",
+  "etapes": [
+   {
+    "titre": "The sauce",
+    "detail": "Garlic in cold oil, peeled tomatoes crushed by hand, 25 minutes of gentle reduction."
+   },
+   {
+    "titre": "The basil",
+    "detail": "A WHOLE sprig thrown into the sauce while it cooks, removed at the end: it perfumes without disintegrating."
+   },
+   {
+    "titre": "Drain the mozzarella",
+    "detail": "Dice it and let it drain 30 minutes: otherwise it will weep whey into the dish."
+   },
+   {
+    "titre": "Cook very al dente",
+    "detail": "Paccheri are cooked 3 minutes LESS than the packet says: they finish in the oven."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Mix pasta and sauce off the heat, with a ladle of cooking water to bind."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Alternate paccheri and mozzarella cubes in a dish, sliding cheese INSIDE the tubes."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Parmesan on top, 15 minutes at 200°C. The mozzarella should string when you lift a tube."
+   }
+  ]
+ },
+ "garganelliragu": {
+  "nom": "Garganelli with Ragù",
+  "description": "Fresh pasta rolled on a ridged comb, which grips ragù like nothing else. Real Bolognese ragù contains more MEAT than tomato — a spoon of purée, not a whole tin.",
+  "etapes": [
+   {
+    "titre": "The soffritto",
+    "detail": "Carrot, celery and onion in TINY dice, melted 15 minutes over low heat: the base of every ragù."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Coarsely minced beef and pork, seared over high heat until browned — not merely greyed, PROPERLY browned."
+   },
+   {
+    "titre": "The wine",
+    "detail": "White wine, evaporated completely: white respects the meat flavour better than red."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Pour in the milk and let it absorb entirely BEFORE the tomato: it tenderises the meat, the Bolognese key."
+   },
+   {
+    "titre": "Little tomato",
+    "detail": "One spoon of purée only, then a little stock. A ragù is not a tomato sauce."
+   },
+   {
+    "titre": "Three hours",
+    "detail": "Over the gentlest heat, half-covered. The sauce should barely move, one bubble every 3 seconds."
+   },
+   {
+    "titre": "The garganelli",
+    "detail": "4 cm squares of fresh pasta rolled diagonally on a comb, cooked 3 minutes. Parmesan at the table."
+   }
+  ]
+ },
+ "strozzapreti": {
+  "nom": "Strozzapreti with Vegetables",
+  "description": "\"Priest-stranglers\": the name is said to come from Romagna housewives cursing greedy priests as they rolled their pasta. Made with NO EGG, just water, they have a bite egg pasta never has.",
+  "etapes": [
+   {
+    "titre": "Water dough",
+    "detail": "Flour and warm water only, salt: 10 minutes of kneading to a firm, almost hard dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "30 minutes wrapped: without resting, the dough shrinks back and refuses to roll."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll to 2 mm and cut 2 cm wide strips, then 8 cm lengths."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll each length between your palms while TWISTING it: the irregular shape is what grips the sauce."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Diced aubergine and courgette, fried SEPARATELY in olive oil: they don't cook at the same rate."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Chopped tomatoes, garlic, basil, 15 minutes of reduction, then the roasted vegetables returned."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pasta cooked 4 minutes, tossed with the sauce, quenelles of ricotta and grated pecorino on top."
+   }
+  ]
+ },
+ "cavatelli": {
+  "nom": "Cavatelli with Broccoli",
+  "description": "The dish of Puglia: little shells hollowed with a finger, served with broccoli melted to a cream and anchovy. The broccoli cooks IN the pasta water until it collapses — it becomes the sauce itself.",
+  "etapes": [
+   {
+    "titre": "Fine semolina",
+    "detail": "Durum semolina and warm water: the dough of Puglia, with no egg and no soft wheat flour."
+   },
+   {
+    "titre": "Knead",
+    "detail": "10 minutes to a very firm smooth dough, then 30 minutes resting under a damp cloth."
+   },
+   {
+    "titre": "Hollow",
+    "detail": "Cut 1 cm lengths and press each with TWO FINGERS while dragging: it hollows and curls."
+   },
+   {
+    "titre": "The crumbs",
+    "detail": "Stale bread crumbled and fried golden in olive oil — in Puglia, the \"poor man's parmesan\"."
+   },
+   {
+    "titre": "The broccoli",
+    "detail": "Cook it 12 minutes in salted water until it FALLS APART under a fork. Keep the water."
+   },
+   {
+    "titre": "The anchovy",
+    "detail": "Melted in oil with garlic and chilli over low heat: it disappears and leaves only a salty depth."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Cavatelli cooked 5 minutes in the broccoli water, drained, tossed with everything. Crumbs and pecorino on top."
+   }
+  ]
+ },
+ "agnolotti": {
+  "nom": "Agnolotti del Plin",
+  "description": "\"Plin\" means PINCH in Piedmontese: the filling is sealed by pinching the dough between thumb and forefinger. Tiny, they are traditionally served \"al tovagliolo\" — no sauce, on a napkin, with just their roasting juices.",
+  "etapes": [
+   {
+    "titre": "The roast",
+    "detail": "Roast the veal and pork in butter for 40 minutes with the white wine: originally this recycled leftover roast."
+   },
+   {
+    "titre": "Chop fine",
+    "detail": "Blend the cooled meat with squeezed spinach, parmesan and nutmeg. The filling must be very fine."
+   },
+   {
+    "titre": "KEEP the juices",
+    "detail": "Save the deglazed roasting juices: they will be the SAUCE, the one tradition to respect absolutely."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "An 8 cm wide strip of pasta, rolled to the maximum: you should see through it."
+   },
+   {
+    "titre": "The plin",
+    "detail": "Small mounds of filling every 2 cm, fold the dough over and PINCH between mounds with thumb and forefinger."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Cut with a wheel between each pinch: you get tiny rectangular cushions."
+   },
+   {
+    "titre": "Serve",
+    "detail": "3 minutes in simmering water, then SIMPLY the reheated roasting juices, or a sage butter."
+   }
+  ]
+ },
+ "canederli": {
+  "nom": "Canederli",
+  "description": "The stale bread dumplings of Trentino, direct cousins of Austrian Knödel. An absolute anti-waste recipe: dry bread, milk, an egg and leftover charcuterie become a dish that genuinely fills you.",
+  "etapes": [
+   {
+    "titre": "Dry bread",
+    "detail": "You NEED genuinely stale bread, 2 or 3 days old: fresh bread gives a sticky shapeless paste."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Warm milk poured over the bread cubes, then 30 MINUTES of resting, stirring twice."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Lardons and onion fried, cooled, then mixed into the bread with egg, parsley, parmesan and nutmeg."
+   },
+   {
+    "titre": "The test",
+    "detail": "The mixture must hold as a ball without sticking. Too wet, add flour; too dry, a spoon of milk."
+   },
+   {
+    "titre": "Shape",
+    "detail": "5 cm balls rolled between WET palms, packed firmly so they don't fall apart."
+   },
+   {
+    "titre": "Test one",
+    "detail": "Poach ONE trial ball for 2 minutes: if it disintegrates, add flour to the whole batch."
+   },
+   {
+    "titre": "Poach",
+    "detail": "15 minutes in SIMMERING broth. Serve in the broth with chives, or pan-fried in butter the next day."
+   }
+  ]
+ },
+ "acquacotta": {
+  "nom": "Acquacotta",
+  "description": "\"Cooked water\": the shepherds' soup of the Maremma, made with whatever was to hand — stale bread, vegetables, and a poached egg on top. The name says it all: it was literally water, and became a dish with real character.",
+  "etapes": [
+   {
+    "titre": "The onions",
+    "detail": "Plenty of sliced onions melted for 20 minutes in olive oil over very low heat, until translucent and sweet."
+   },
+   {
+    "titre": "The celery",
+    "detail": "Add the diced celery and garlic: 5 more minutes, still without colouring."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Chopped tomatoes, chilli, salt: 15 minutes of reduction before adding liquid."
+   },
+   {
+    "titre": "The water",
+    "detail": "Stock, or simply WATER — in the original version there was nothing but water."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Slices of stale bread TOASTED and rubbed with garlic, laid in the base of each deep plate."
+   },
+   {
+    "titre": "Poach the eggs",
+    "detail": "Crack the eggs straight into the simmering soup: 4 minutes, white set and yolk runny."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Soup poured over the bread, egg on top, grated pecorino, raw olive oil and basil. Wait 2 minutes for the bread to soak."
+   }
+  ]
+ },
+ "pappaalpomodoro": {
+  "nom": "Pappa al Pomodoro",
+  "description": "The Tuscan porridge of bread and tomato — thick enough for a spoon to stand up in it. It is eaten WARM or cold, never scalding, with a stream of raw olive oil poured over at the last moment.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "You NEED unsalted Tuscan bread, very stale. Fresh or salted bread gives a sticky, bland mush."
+   },
+   {
+    "titre": "Garlic oil",
+    "detail": "Crushed garlic in olive oil over low heat for 3 minutes: it must perfume without ever browning."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Ripe peeled chopped tomatoes, 20 minutes of reduction over medium heat with the chilli."
+   },
+   {
+    "titre": "Add the bread",
+    "detail": "Bread in large pieces thrown into the hot sauce with the stock: it will drink all the liquid."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Crush with a wooden spoon: the bread must break down completely into a thick purée."
+   },
+   {
+    "titre": "The basil",
+    "detail": "Plenty of basil torn by hand, off the heat — knife-cut, it would blacken."
+   },
+   {
+    "titre": "Raw oil",
+    "detail": "Let it COOL for 20 minutes, then a generous stream of raw olive oil. That is what makes the final flavour."
+   }
+  ]
+ },
+ "minestraverdure": {
+  "nom": "Minestra di Verdure",
+  "description": "The Italian vegetable soup, with no pasta and no beans — that is what separates it from minestrone. The vegetables are cut in EVEN dice and go in by firmness: that is the whole technique, and it is enough.",
+  "etapes": [
+   {
+    "titre": "Even dice",
+    "detail": "Cut ALL the vegetables into exactly 1 cm dice: this gives an Italian minestra its clean look."
+   },
+   {
+    "titre": "The soffritto",
+    "detail": "Onion, carrot and celery melted for 12 minutes in olive oil, covered, over low heat."
+   },
+   {
+    "titre": "By firmness",
+    "detail": "Potatoes first (15 min), then green beans (8 min), then courgettes (5 min), then spinach (2 min)."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Added with the potatoes: its acidity would stop the green vegetables cooking if it went in too early."
+   },
+   {
+    "titre": "Little stock",
+    "detail": "A minestra is THICK: the stock should just reach the vegetables, not drown them."
+   },
+   {
+    "titre": "The rind",
+    "detail": "Throw a parmesan rind into the soup as it cooks: the nonnas' umami secret."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Torn basil, grated parmesan, a stream of raw olive oil. As good warm as hot."
+   }
+  ]
+ },
+ "carciofiromana": {
+  "nom": "Carciofi alla Romana",
+  "description": "Whole artichokes braised UPSIDE DOWN in olive oil and water, stuffed with Roman mint and garlic. They cook half poached, half steamed — and become so tender you eat them with a spoon.",
+  "etapes": [
+   {
+    "titre": "Turn them",
+    "detail": "Strip the tough leaves down to the tender heart, peel the stalk and cut the tip: only the edible part should remain."
+   },
+   {
+    "titre": "Lemon them",
+    "detail": "Drop them into lemon water as you go: an artichoke blackens in three minutes."
+   },
+   {
+    "titre": "Remove the choke",
+    "detail": "Open the central leaves and scoop out the choke with a teaspoon — it is inedible and fibrous."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Roman mint, parsley and garlic chopped very fine with salt: the mint is COMPULSORY, the Roman signature."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Pack the central hollow with stuffing, spreading the leaves well, then close by pressing."
+   },
+   {
+    "titre": "Upside down",
+    "detail": "Pack them UPSIDE DOWN and tightly in a pan just their size, oil and white wine halfway up."
+   },
+   {
+    "titre": "Braise",
+    "detail": "35 minutes covered over low heat. A knife tip should pass through the base with no resistance."
+   }
+  ]
+ },
+ "panelle": {
+  "nom": "Panelle",
+  "description": "The chickpea-flour fritters of Palermo, sold inside a bread roll like a sandwich. Two ingredients, a batter set solid then fried — the cheapest street food in Sicily.",
+  "etapes": [
+   {
+    "titre": "Slake cold",
+    "detail": "Chickpea flour in COLD water, whisked perfectly smooth: in hot water it would lump permanently."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bring to medium heat stirring CONSTANTLY with a spatula: the batter thickens abruptly around 8 minutes."
+   },
+   {
+    "titre": "Stir hard",
+    "detail": "It must come away from the sides and form a compact mass — allow 12 minutes of arm work."
+   },
+   {
+    "titre": "Season",
+    "detail": "Parsley, salt, plenty of pepper off the heat."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread 4 mm thick on an oiled tray or a wet worktop, smoothing with a spatula."
+   },
+   {
+    "titre": "Set",
+    "detail": "1 hour at room temperature: the paste hardens and can be cut like pastry."
+   },
+   {
+    "titre": "Fry",
+    "detail": "8 cm rectangles, oil at 180°C, 3 minutes until golden and blistered. Lemon, salt, and into a bread roll."
+   }
+  ]
+ },
+ "crocchedipatate": {
+  "nom": "Crocchè di Patate",
+  "description": "The long Neapolitan potato croquettes known as \"panzarotti\", with a stringy mozzarella heart. The mash must be VERY dry and thoroughly cold: the only insurance against bursting in the fryer.",
+  "etapes": [
+   {
+    "titre": "Boil in skins",
+    "detail": "Floury potatoes in their skins for 30 minutes: peeled and boiled, they would soak up water."
+   },
+   {
+    "titre": "Dry out",
+    "detail": "Rice them then RETURN them to the heat for 4 minutes, stirring: all moisture must go."
+   },
+   {
+    "titre": "Enrich",
+    "detail": "Parmesan, egg yolk, parsley, nutmeg, pepper. No milk, no butter: the mash must stay firm."
+   },
+   {
+    "titre": "Chill",
+    "detail": "2 hours minimum. Warm mash is impossible to shape and bursts in the fryer."
+   },
+   {
+    "titre": "The heart",
+    "detail": "Flatten a portion in your palm, a baton of mozzarella in the centre, close and roll into an 8 cm log."
+   },
+   {
+    "titre": "Crumb",
+    "detail": "Flour, egg, breadcrumbs — and a SECOND egg-and-crumb coat: that double armour holds the cheese in."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Oil at 175°C, 4 minutes, in small batches. Drain on a rack and eat within 5 minutes."
+   }
+  ]
+ },
+ "sfincione": {
+  "nom": "Sfincione",
+  "description": "The pizza of Palermo: a thick spongy dough (\"sfincia\" means sponge), topped with melted onions, anchovies and breadcrumbs — with NO mozzarella. The caciocavallo goes under the sauce, not on top.",
+  "etapes": [
+   {
+    "titre": "Wet dough",
+    "detail": "75% water: the dough is soft and sticky, which gives the open, spongy crumb."
+   },
+   {
+    "titre": "Long rise",
+    "detail": "2 hours at room temperature, with two folds 40 minutes apart."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Sliced and melted 25 minutes in olive oil until jammy and golden: they are the main topping."
+   },
+   {
+    "titre": "The anchovies",
+    "detail": "Melted into the oil with the onions: they vanish and give the typical salty depth."
+   },
+   {
+    "titre": "Cheese underneath",
+    "detail": "Spread the dough in an oiled tin and lay the cheese DIRECTLY on the dough, before the sauce."
+   },
+   {
+    "titre": "Top",
+    "detail": "Tomato sauce and onions over the cheese, then oregano — never mozzarella in a sfincione."
+   },
+   {
+    "titre": "The crumbs",
+    "detail": "Breadcrumbs mixed with olive oil rained over the top, then 25 minutes at 220°C until golden-crusted."
+   }
+  ]
+ },
+ "tigelle": {
+  "nom": "Tigelle",
+  "description": "The little round breads of Modena, cooked between two scorching plates and split to be filled. Traditionally stuffed with \"cunza\" — pounded lard, garlic and rosemary — but anything suits them.",
+  "etapes": [
+   {
+    "titre": "The milk",
+    "detail": "Yeast slaked in warm milk: milk gives the softness, water alone makes a dry bread."
+   },
+   {
+    "titre": "The lard",
+    "detail": "It is traditional and irreplaceable for the texture; olive oil alone gives a drier tigella."
+   },
+   {
+    "titre": "Knead",
+    "detail": "8 minutes to a smooth supple dough, then 1 h 30 of rising, covered."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll to 1 cm thick — that thickness is what lets you split them after baking."
+   },
+   {
+    "titre": "Cut out",
+    "detail": "8 cm discs with a cutter, then 30 minutes of proving under a cloth."
+   },
+   {
+    "titre": "Dry-cook",
+    "detail": "DRY cast-iron pan over medium heat, 4 minutes a side. They should puff and take brown spots."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split them horizontally with a knife while STILL HOT and fill immediately: the heat melts the filling."
+   }
+  ]
+ },
+ "crescentine": {
+  "nom": "Fried Crescentine",
+  "description": "The fried dough diamonds of Bologna, which balloon like pillows in the oil — also called \"gnocco fritto\". They are eaten SCALDING, draped with charcuterie that melts slightly against them.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Flour, warm milk, yeast and lard kneaded 8 minutes: it should be supple but not sticky."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 h 30 covered until fully doubled."
+   },
+   {
+    "titre": "Roll thin",
+    "detail": "Roll to 3 mm ONLY: any thicker and the crescentina won't puff and stays doughy inside."
+   },
+   {
+    "titre": "Cut",
+    "detail": "8 cm diamonds with a fluted wheel, without re-kneading: the dough must stay relaxed."
+   },
+   {
+    "titre": "Oil at 180°C",
+    "detail": "Too cool and they drink oil; too hot and they brown before puffing."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop them in and SPOON hot oil over them the moment they land: that move is what balloons them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "1 minute a side, kitchen paper, and serve IMMEDIATELY with charcuterie and stracchino."
+   }
+  ]
+ },
+ "scaccia": {
+  "nom": "Scaccia Ragusana",
+  "description": "The speciality of Ragusa: dough rolled to transparency, filled then folded into FOUR, giving a dozen flaky layers when sliced. An unlikely cross between bread, lasagne and mille-feuille.",
+  "etapes": [
+   {
+    "titre": "Semolina and flour",
+    "detail": "The blend gives the elasticity needed to roll the dough transparent without tearing."
+   },
+   {
+    "titre": "Knead long",
+    "detail": "12 minutes: the gluten must be VERY developed, the condition for extreme rolling."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 h 30 covered. The dough must be completely relaxed before rolling."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Tomatoes reduced 25 minutes with onion and basil: THICK, or it would soak the layers."
+   },
+   {
+    "titre": "Roll to the extreme",
+    "detail": "On an oiled surface, roll and stretch by hand until translucent, into a large rectangle."
+   },
+   {
+    "titre": "The folding",
+    "detail": "Sauce and cheese over the whole surface, then fold the sides to the centre, fill AGAIN, and fold in three."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Olive oil on top, 45 minutes at 200°C. When sliced, you should count at least eight distinct layers."
+   }
+  ]
+ },
+ "puntarelle": {
+  "nom": "Puntarelle alla Romana",
+  "description": "The Romans' winter salad: catalogna chicory shoots cut into strips and plunged into ICED WATER, where they curl into ringlets. An anchovy and garlic dressing, and nothing else.",
+  "etapes": [
+   {
+    "titre": "Separate",
+    "detail": "Pull the hollow inner shoots from the base: those are the puntarelle, the rest goes into soup."
+   },
+   {
+    "titre": "Cut into strips",
+    "detail": "Split each shoot lengthways into 3 mm strips, with a knife or the Roman wire tool."
+   },
+   {
+    "titre": "Iced water",
+    "detail": "Soak them 2 HOURS in very cold water with ice: they curl into ringlets and lose their bitterness."
+   },
+   {
+    "titre": "The anchovies",
+    "detail": "Pound the anchovy fillets with degermed garlic in a mortar to a perfectly smooth paste."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Vinegar then olive oil whisked into the anchovy paste — it must stay properly emulsified."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Drain and DRY the puntarelle in a spinner: wet leaves won't take the dressing."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Toss at the last moment and serve straight away: the curls droop within 20 minutes."
+   }
+  ]
+ },
+ "vignole": {
+  "nom": "Roman Vignole",
+  "description": "The Roman spring dish: broad beans, peas and artichokes stewed together with guanciale. Three vegetables that only overlap for a few weeks a year — a dish you cannot fake.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Pod them then PEEL each bean after a 1-minute blanch: the second skin is bitter and tough."
+   },
+   {
+    "titre": "The artichokes",
+    "detail": "Turned down to the tender heart, quartered and lemoned as you go."
+   },
+   {
+    "titre": "The guanciale",
+    "detail": "Started cold, melted gently for 8 minutes: its fat will be the only fat besides the olive oil."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Melted in the fat for 6 minutes, without colouring."
+   },
+   {
+    "titre": "Artichokes first",
+    "detail": "They need 15 minutes more than the other vegetables: white wine, lid on, low heat."
+   },
+   {
+    "titre": "The greens",
+    "detail": "Broad beans and peas for the LAST 12 minutes only — longer and they turn khaki."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Torn fresh mint and lemon zest off the heat. Eaten warm, never scalding."
+   }
+  ]
+ },
+ "asure": {
+  "nom": "Aşure",
+  "description": "\"Noah's pudding\": legend says it was made from the last scraps left on the Ark. Grains, pulses, dried fruit — some forty possible ingredients, nothing animal, and a tradition of sharing it with neighbours.",
+  "etapes": [
+   {
+    "titre": "Soak 12 h",
+    "detail": "Wheat, beans and chickpeas soaked SEPARATELY overnight: they don't cook at the same rate."
+   },
+   {
+    "titre": "Cook the wheat",
+    "detail": "1 h 30 over low heat until the grains BURST and release their starch: it thickens everything."
+   },
+   {
+    "titre": "The pulses",
+    "detail": "Cooked separately and added only once tender — otherwise they would stay hard in the sugar."
+   },
+   {
+    "titre": "Sugar last",
+    "detail": "NEVER add the sugar before everything is tender: it would permanently stop the pulses cooking."
+   },
+   {
+    "titre": "The dried fruit",
+    "detail": "Apricots, figs and raisins for the last 20 minutes, with the orange zest."
+   },
+   {
+    "titre": "Perfume",
+    "detail": "Rose water and cinnamon off the heat: heat would drive off their volatile scent."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Divide into bowls and let set 4 hours: aşure must be THICK. Walnuts and pomegranate at serving time."
+   }
+  ]
+ },
+ "tavukgogsu": {
+  "nom": "Tavuk Göğsü",
+  "description": "The most disconcerting dessert in the world: a blancmange made with CHICKEN BREAST, shredded into fibres so fine they become invisible. Served to Ottoman sultans, it tastes of milk and cinnamon — the poultry is completely undetectable.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Chicken breast poached 20 minutes in water, with no salt and no aromatics: it must stay perfectly NEUTRAL."
+   },
+   {
+    "titre": "Rinse three times",
+    "detail": "Rinse the meat in cold water THREE times: this removes any trace of poultry flavour."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred by hand into finer and finer fibres, until it is almost like cotton wool — allow 20 minutes."
+   },
+   {
+    "titre": "Wash the fibres",
+    "detail": "Rinse the fibres again and squeeze them: they should be white and odourless, like wadding."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Milk, sugar, rice flour and cornflour brought to the boil while whisking, 8 minutes until very thick."
+   },
+   {
+    "titre": "Incorporate",
+    "detail": "Add the fibres and whisk hard: they disperse and disappear completely from view."
+   },
+   {
+    "titre": "Set",
+    "detail": "Pour into moulds, 4 hours chilled. Roll it up or dust with cinnamon before serving."
+   }
+  ]
+ },
+ "kadayif": {
+  "nom": "Kadayıf",
+  "description": "Crisp shredded pastry enclosing pistachios, drowned in syrup. The absolute rule of Middle Eastern pastry: COLD syrup on HOT cake, or hot syrup on cold cake — never both at the same temperature.",
+  "etapes": [
+   {
+    "titre": "Syrup first",
+    "detail": "Sugar, water and lemon boiled for 10 minutes, then COOLED completely. Make it first."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "A few drops stop the syrup crystallising as it cools — this is essential."
+   },
+   {
+    "titre": "Untangle",
+    "detail": "Separate the shredded pastry by hand, fluffing it: clumped together, it would bake as a solid block."
+   },
+   {
+    "titre": "Butter generously",
+    "detail": "Melted butter poured over the strands and worked in BY HAND: every strand must be coated or it burns."
+   },
+   {
+    "titre": "Shape",
+    "detail": "A handful of strands, crushed pistachios in the centre, close into a tight nest in a buttered tin."
+   },
+   {
+    "titre": "Bake",
+    "detail": "40 minutes at 170°C until evenly deep golden. A pale kadayıf will be soft and disappointing."
+   },
+   {
+    "titre": "The shock",
+    "detail": "Pour the COLD syrup over the kadayıf STRAIGHT FROM THE OVEN: it hisses violently, and that is what makes it crisp."
+   }
+  ]
+ },
+ "mhalbi": {
+  "nom": "Mhalbi",
+  "description": "The rose-scented rice cream of the Maghreb: three ingredients, no eggs, no gelatine. The starch of the rice flour alone sets the cream — a dessert of rare simplicity and elegance.",
+  "etapes": [
+   {
+    "titre": "Slake cold",
+    "detail": "Rice flour slaked in COLD milk, whisked perfectly smooth: in hot milk, lumps are guaranteed."
+   },
+   {
+    "titre": "Low heat",
+    "detail": "Heat gently, whisking CONSTANTLY: the cream thickens abruptly around 6 minutes."
+   },
+   {
+    "titre": "The test",
+    "detail": "It is ready when it coats the spoon and a finger trail doesn't close up."
+   },
+   {
+    "titre": "Cook 2 minutes more",
+    "detail": "After thickening, continue 2 minutes: this removes the raw flour taste."
+   },
+   {
+    "titre": "The rose water",
+    "detail": "Off the heat only — boiled, it loses all its scent and leaves only bitterness."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour into ramekins and cool uncovered, then film TOUCHING the surface to prevent a skin."
+   },
+   {
+    "titre": "Set",
+    "detail": "3 hours chilled. Ground cinnamon and crushed nuts just before serving."
+   }
+  ]
+ },
+ "zalabia": {
+  "nom": "Zalabia",
+  "description": "The syrup-soaked fried spirals of the Maghreb, bright orange and crisp. The batter is a LIQUID doughnut batter piped in a spiral through a cone — the movement takes three attempts to learn and is rarely forgotten.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, water, lemon and orange blossom cooked 12 minutes to a syrupy consistency, then COOLED."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Flour, cornflour, yeast, yoghurt and water: it should fall from the whisk in a continuous ribbon, like thick pancake batter."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "1 h 30 covered in a warm place: it should be bubbly and smell slightly sour."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "A few infused threads give the natural orange colour — food colouring is the modern shortcut."
+   },
+   {
+    "titre": "The cone",
+    "detail": "Fill a piping bag or a pierced squeeze bottle, and pour 8 cm SPIRALS into the hot oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "170°C, 2 minutes a side until golden. Too hot and the spiral browns before the centre cooks."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Plunge the SCALDING zalabias into the COLD syrup for 30 seconds, then drain on a rack."
+   }
+  ]
+ },
+ "tcharak": {
+  "nom": "Tcharak",
+  "description": "Algerian almond-paste crescents, dipped in honey then rolled in icing sugar. Cousins of gazelle horns but plumper and easier — the dough is more supple and forgives far more.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Ground almonds, sugar, cinnamon, lemon zest and orange blossom water: work to a paste that holds together."
+   },
+   {
+    "titre": "The moisture",
+    "detail": "If the filling crumbles, add orange blossom water DROP BY DROP — too wet, it would burst the dough."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Flour, melted butter, egg and a little water: knead 8 minutes to a supple, non-sticky dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "30 minutes wrapped: the dough relaxes and becomes much easier to roll thin."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll to 2 mm, cut discs, a log of filling in the centre, close and curve into a crescent."
+   },
+   {
+    "titre": "Bake",
+    "detail": "18 minutes at 170°C: they must stay PALE, barely blond. Browned, they would be dry."
+   },
+   {
+    "titre": "The honey",
+    "detail": "Dip them WARM in hot scented honey for 20 seconds, drain, then roll in icing sugar."
+   }
+  ]
+ },
+ "barbari": {
+  "nom": "Barbari Bread",
+  "description": "The large Iranian flatbread with deep grooves, brushed with a COOKED FLOUR GLAZE before baking. That glaze, called roomal, gives the characteristic golden-brown colour and glossy crust.",
+  "etapes": [
+   {
+    "titre": "Wet dough",
+    "detail": "70% water: the dough is supple and slightly sticky, which gives the soft crumb."
+   },
+   {
+    "titre": "Long rise",
+    "detail": "2 hours covered with two folds: gluten development makes the whole texture of a barbari."
+   },
+   {
+    "titre": "The roomal",
+    "detail": "Cook cornflour and water into a translucent paste, then let it COOL."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough into a long 40 cm rectangle on an oiled tray, without degassing it."
+   },
+   {
+    "titre": "The grooves",
+    "detail": "Draw 4 or 5 deep furrows lengthways with wet fingers, right down to the tray."
+   },
+   {
+    "titre": "Brush",
+    "detail": "Brush the roomal over the whole surface, then scatter sesame and nigella seeds."
+   },
+   {
+    "titre": "Scorching oven",
+    "detail": "250°C with steam, 15 minutes. The crust should be golden brown and glossy, the crumb still soft."
+   }
+  ]
+ },
+ "matnakash": {
+  "nom": "Matnakash",
+  "description": "The everyday Armenian bread, whose name means \"hand-pulled\": the sunken patterns are drawn with the FINGERS before baking, never with a blade. A sweet black-tea glaze gives it its amber colour.",
+  "etapes": [
+   {
+    "titre": "The tea glaze",
+    "detail": "Brew a strong black tea with sugar and let it COOL: it will colour the bread a deep amber."
+   },
+   {
+    "titre": "Knead",
+    "detail": "10 minutes to a smooth elastic dough, then 1 h 30 of rising, covered."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Flatten BY HAND into a 2 cm thick disc or oval, with no rolling pin: the gesture is part of the bread."
+   },
+   {
+    "titre": "The pattern",
+    "detail": "With wet fingers, draw a circle near the rim and two lines across the centre, PRESSING hard down to the tray."
+   },
+   {
+    "titre": "Prove",
+    "detail": "40 minutes: the pattern softens a little but must stay visible."
+   },
+   {
+    "titre": "Tea glaze",
+    "detail": "Brush generously with the cold sweet tea and scatter sesame seeds."
+   },
+   {
+    "titre": "Bake",
+    "detail": "22 minutes at 220°C with steam. The crust should be thin and amber, the crumb very open."
+   }
+  ]
+ },
+ "solianka": {
+  "nom": "Solyanka",
+  "description": "The sour-salty Russian soup, made from every scrap of charcuterie in the fridge. Its signature: the gherkin BRINE poured into the broth, plus olives and lemon — an acid profile no other European soup has.",
+  "etapes": [
+   {
+    "titre": "Three meats minimum",
+    "detail": "A solyanka worthy of the name contains at least THREE different cured meats: that is its very definition."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Boil the beef for 45 minutes to get a strong broth, then cut it into strips."
+   },
+   {
+    "titre": "The fry",
+    "detail": "Onion and tomato purée fried together for 8 minutes: the tomato must darken and lose its raw sharpness."
+   },
+   {
+    "titre": "The gherkins",
+    "detail": "Cut into julienne and THROWN INTO THE BROTH with their brine — that brine gives the characteristic acidity."
+   },
+   {
+    "titre": "The meats",
+    "detail": "All the meats in strips, added together for 15 minutes of simmering."
+   },
+   {
+    "titre": "Olives and capers",
+    "detail": "For the last 5 minutes only: any longer and they would turn the soup bitter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A lemon slice in each bowl, a big spoon of soured cream and plenty of dill. That is the Russian ritual."
+   }
+  ]
+ },
+ "rassolnik": {
+  "nom": "Rassolnik",
+  "description": "The Russian soup of pearl barley and pickles, named after \"rassol\", the brine. Kidneys are traditional but optional — the brine is not: it defines the dish.",
+  "etapes": [
+   {
+    "titre": "Cook the barley separately",
+    "detail": "45 minutes in clear water, SEPARATELY: cooked in the broth it would cloud it and turn it gluey."
+   },
+   {
+    "titre": "The brine",
+    "detail": "Heat the pickle brine separately and pour it into the broth — never boiled, it would turn bitter."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "BEFORE the pickles without exception: in acid broth a potato never cooks and stays hard."
+   },
+   {
+    "titre": "The fry",
+    "detail": "Carrot and onion fried in butter for 8 minutes, until lightly golden."
+   },
+   {
+    "titre": "The pickles",
+    "detail": "In julienne, added once the potatoes are tender, with the hot brine."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Drained barley added last, 5 minutes for everything to marry."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Soured cream and dill in each bowl, ground pepper. A rassolnik should be frankly sour."
+   }
+  ]
+ },
+ "pizzoccheri": {
+  "nom": "Pizzoccheri",
+  "description": "The BUCKWHEAT tagliatelle of Valtellina, cooked with potatoes and cabbage, drowned in melted cheese and sage butter. Italy's most generous mountain dish — it is never served as a starter.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Two thirds buckwheat to one third wheat: buckwheat alone has no gluten and the dough would fall apart."
+   },
+   {
+    "titre": "Knead",
+    "detail": "10 minutes to a dark compact dough, then 30 minutes resting under a cloth."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll to 3 mm and cut SHORT 7 cm tagliatelle: the characteristic shape."
+   },
+   {
+    "titre": "Sequence",
+    "detail": "Diced potatoes 8 minutes, then shredded cabbage 5 minutes, then pizzoccheri 4 minutes — same pan."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Casera or mountain tomme in slices: it must melt into strands, not oil."
+   },
+   {
+    "titre": "Layer up",
+    "detail": "In a HOT dish: pasta-vegetables, cheese, pasta-vegetables, cheese. The heat melts everything."
+   },
+   {
+    "titre": "Garlic butter",
+    "detail": "Brown butter with garlic and sage poured SCALDING over the top: it runs through the layers and binds it all."
+   }
+  ]
+ },
+ "casoncelli": {
+  "nom": "Casoncelli alla Bergamasca",
+  "description": "The sweet-wrapper-shaped ravioli of Bergamo, with a startling sweet-savoury filling: meat, amaretti, raisins and pear. A Renaissance inheritance, from when sugar was just another spice.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Minced beef fried, then blended with crushed amaretti, raisins, grated pear, parmesan and breadcrumbs."
+   },
+   {
+    "titre": "Sweet and savoury",
+    "detail": "The amaretti and raisins are not a whim: without them it is no longer a casoncello."
+   },
+   {
+    "titre": "Rest",
+    "detail": "2 hours chilled: the filling firms up and the flavours marry, which is essential here."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Egg pasta rolled thin, cut into 6 × 8 cm rectangles."
+   },
+   {
+    "titre": "The sweet shape",
+    "detail": "Filling in the centre, fold in half, then PINCH both ends, twisting them like a sweet wrapper."
+   },
+   {
+    "titre": "Cook",
+    "detail": "4 minutes in simmering water, no more: thin pasta cooks very fast."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Brown butter with crisp lardons and sage, poured scalding. Parmesan and ground pepper."
+   }
+  ]
+ },
+ "malloreddus": {
+  "nom": "Malloreddus alla Campidanese",
+  "description": "The Sardinian \"little calves\": tiny ridged semolina gnocchi, flavoured with SAFFRON in the dough itself. Sardinia is Italy's leading saffron producer, and this pasta is its most everyday proof.",
+  "etapes": [
+   {
+    "titre": "The saffron",
+    "detail": "Infuse the threads in warm water for 20 minutes: that saffron water will be used to knead the semolina."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Fine semolina and saffron water only, kneaded 12 minutes to a very firm, golden-yellow dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "30 minutes under a damp cloth, or the dough cracks when shaped."
+   },
+   {
+    "titre": "Ridge them",
+    "detail": "1 cm ropes cut into lengths, rolled on a gnocchi board or the tines of a fork."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Let them dry 1 hour on a floured cloth: malloreddus must be firm before cooking."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Crumbled sausage meat browned, red wine evaporated, then tomatoes and 30 minutes of reduction."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pasta cooked 8 minutes, tossed with the sauce, plenty of grated Sardinian pecorino and basil."
+   }
+  ]
+ },
+ "fregolapalourdes": {
+  "nom": "Fregola with Clams",
+  "description": "Sardinian fregola is semolina rolled into beads then TOASTED in the oven, which gives it a unique nutty flavour. It is cooked like a risotto, absorbing the clam juices.",
+  "etapes": [
+   {
+    "titre": "Purge",
+    "detail": "Clams or cockles for 2 hours in salted water: they spit out their sand, a non-negotiable step."
+   },
+   {
+    "titre": "Open them",
+    "detail": "White wine and garlic, covered, 4 minutes over high heat. Lift them out as they open and STRAIN the juice finely."
+   },
+   {
+    "titre": "Toast",
+    "detail": "If your fregola isn't already toasted, give it 8 minutes at 180°C: the flavour changes completely."
+   },
+   {
+    "titre": "The base",
+    "detail": "Garlic, chilli and chopped tomatoes, 10 minutes of reduction in olive oil."
+   },
+   {
+    "titre": "Like a risotto",
+    "detail": "Tip in the fregola and stir for 1 minute, then add the strained clam juice a ladle at a time."
+   },
+   {
+    "titre": "Cook",
+    "detail": "15 minutes, stirring regularly, adding hot stock as it absorbs."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Shelled clams (keep a few whole) for the last minute. Parsley, lemon, raw oil."
+   }
+  ]
+ },
+ "brasatobarolo": {
+  "nom": "Brasato al Barolo",
+  "description": "Piedmont's king of dishes: a piece of beef marinated then braised in a WHOLE BOTTLE of Barolo. The wine is not economised here — it is the entire cooking liquid and becomes the sauce.",
+  "etapes": [
+   {
+    "titre": "Marinate 24 h",
+    "detail": "Meat, vegetables, spices and ALL the wine: 24 hours chilled, the meat fully submerged."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Lift out the meat and blot it perfectly — marinated meat is soaked and would never brown."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear it in butter on all sides, 12 minutes: the dish's only colouring, don't waste it."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Drained from the marinade and fried 10 minutes, then floured and stirred 2 minutes."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Pour in ALL the strained marinade: it must cover three quarters of the meat, no less."
+   },
+   {
+    "titre": "Three hours",
+    "detail": "Lid on, 150°C, turning the piece every hour. The meat must yield to a fork."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Lift out the meat and BLEND the vegetables with the juices: this gives a thick velvety sauce with no cream or butter."
+   }
+  ]
+ },
+ "peposo": {
+  "nom": "Peposo dell'Impruneta",
+  "description": "The dish of the workers who fired the tiles for Florence's Duomo: they set a pot of beef, garlic and WHOLE PEPPERCORNS in the brick kiln. Five ingredients, no technique, and a stunning result.",
+  "etapes": [
+   {
+    "titre": "Lots of pepper",
+    "detail": "Allow a TEASPOON of whole peppercorns per person. It seems enormous: it is the name of the dish, \"peposo\"."
+   },
+   {
+    "titre": "Unpeeled garlic",
+    "detail": "A whole head, cloves UNPEELED: they will melt and dissolve completely over 3 hours."
+   },
+   {
+    "titre": "Don't sear",
+    "detail": "Unlike every other braise, the meat is NOT browned: that is the original tile-makers' recipe."
+   },
+   {
+    "titre": "All together",
+    "detail": "Meat, garlic, pepper, bay, salt and red wine to COVER in a cast-iron pot."
+   },
+   {
+    "titre": "Three hours",
+    "detail": "150°C, covered. The wine reduces very slowly and becomes a black syrupy sauce."
+   },
+   {
+    "titre": "Watch it",
+    "detail": "If the liquid drops below the meat, add a little hot water — never cold, it would toughen the meat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "On toasted Tuscan bread, with the deeply reduced sauce. The whole peppercorns are eaten, they have gone tender."
+   }
+  ]
+ },
+ "spezzatino": {
+  "nom": "Spezzatino with Peas",
+  "description": "Italy's everyday stew: cubes of beef simmered in a light tomato sauce, with peas added at the end. The nonnas' Sunday dish, eaten with plenty of bread for mopping.",
+  "etapes": [
+   {
+    "titre": "Large cubes",
+    "detail": "Cut the beef into 4 cm cubes: any smaller and they would disintegrate over two hours."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Flour the cubes and shake off the excess: flour helps browning and thickens the sauce naturally."
+   },
+   {
+    "titre": "Sear in batches",
+    "detail": "In two or three goes: an overloaded pot boils the meat instead of browning it."
+   },
+   {
+    "titre": "The soffritto",
+    "detail": "Onion, carrot and celery in small dice melted 10 minutes in the meat residue."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Red wine, evaporated completely, then tomato purée toasted for 2 minutes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Tomatoes, stock, rosemary: 1 h 30 covered over low heat, stirring now and then."
+   },
+   {
+    "titre": "The peas",
+    "detail": "For the LAST 15 minutes only — any earlier and they grey and lose their sweetness."
+   }
+  ]
+ },
+ "polpettone": {
+  "nom": "Polpettone",
+  "description": "The Italian meatloaf, often stuffed with hard-boiled eggs and mortadella that draw a mosaic when sliced. Breadcrumb soaked in MILK is what makes it soft: without it, it would be compact and dry.",
+  "etapes": [
+   {
+    "titre": "The panade",
+    "detail": "Breadcrumb soaked in milk for 10 minutes then SQUEEZED: the secret of a soft polpettone."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Beef, pork, panade, egg, parmesan, parsley, nutmeg — mix by hand WITHOUT crushing the meat."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Boil two for 9 minutes, peel them and keep them whole: they will be the heart of the polpettone."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the mixture into a rectangle on paper, lay the mortadella then the eggs in a line down the centre."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll tightly using the paper, seal the ends well and compact by pressing."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear the roll in olive oil on all sides, 8 minutes, before it goes in the oven."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Deglaze with white wine, then 50 minutes at 180°C, basting. REST 15 minutes before slicing."
+   }
+  ]
+ },
+ "ongletechalote": {
+  "nom": "Hanger Steak with Shallots",
+  "description": "The butcher's cut — the one he kept for himself. Very flavourful but with LONG fibres: it must be sliced across the grain, or it is inedible however it was cooked.",
+  "etapes": [
+   {
+    "titre": "Temper",
+    "detail": "Take the steak out 1 hour ahead: it is a thick cut that would cook grey outside if it started cold."
+   },
+   {
+    "titre": "Remove the sinew",
+    "detail": "A central sinew runs through hanger steak: cut it out, it NEVER tenderises with cooking."
+   },
+   {
+    "titre": "The shallots",
+    "detail": "Plenty of sliced shallots, melted in butter for 15 minutes over low heat until jammy and sweet."
+   },
+   {
+    "titre": "Sear hard",
+    "detail": "SMOKING pan, 2 minutes a side maximum. Hanger steak is eaten RARE — medium, it turns dry and tough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "5 minutes under foil while the sauce finishes: the juices redistribute through the fibres."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Red wine and vinegar over the shallots, reduced by three quarters, then stock and cold butter."
+   },
+   {
+    "titre": "Slice ACROSS",
+    "detail": "Cut perpendicular to the fibres, on the bias, into 1 cm slices. THE rule of hanger steak."
+   }
+  ]
+ },
+ "churrasco": {
+  "nom": "Churrasco",
+  "description": "The Brazilian skewer grill: large pieces seasoned with COARSE SALT only, never marinated. The salt forms a crust that protects the meat and partly falls away when carved — no spices, no sauce.",
+  "etapes": [
+   {
+    "titre": "Coarse salt",
+    "detail": "Salt GENEROUSLY with coarse salt 40 minutes ahead: it penetrates, forms a crust, and the excess falls off as it cooks."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Fold the piece concertina-style onto a wide skewer: this shape exposes more surface to the fire."
+   },
+   {
+    "titre": "Grey embers",
+    "detail": "Wait until the embers are covered in WHITE ash: flames would burn the salt crust."
+   },
+   {
+    "titre": "Far from the fire",
+    "detail": "20 cm above the embers, no closer: churrasco cooks slowly, by radiant heat."
+   },
+   {
+    "titre": "Turn often",
+    "detail": "Every 4 minutes, rotating steadily — constant rotation is what gives even cooking."
+   },
+   {
+    "titre": "The vinagrete",
+    "detail": "Chopped tomato, red onion and parsley, vinegar and oil: the ONLY Brazilian sauce, served alongside."
+   },
+   {
+    "titre": "Carve thin",
+    "detail": "Cut thin slices from the outside of the piece and return the rest to the fire — the rodízio service."
+   }
+  ]
+ },
+ "tomahawk": {
+  "nom": "Tomahawk Steak",
+  "description": "A rib of beef with the whole bone left on and cleaned — hence the axe shape. Too thick to sear then cook, it needs the REVERSE method: gentle oven first, brutal sear after.",
+  "etapes": [
+   {
+    "titre": "Salt the day before",
+    "detail": "Salt generously 12 to 24 hours ahead, uncovered in the fridge: the salt penetrates and the surface dries, which helps the crust."
+   },
+   {
+    "titre": "Reverse sear",
+    "detail": "Oven at 100°C ONLY, on a rack, until 48°C at the core on a thermometer — allow about 50 minutes."
+   },
+   {
+    "titre": "The thermometer",
+    "detail": "On a 5 cm piece it is the ONLY reliable method. Without one, a tomahawk is a lottery."
+   },
+   {
+    "titre": "Rest first",
+    "detail": "10 minutes of rest AFTER the oven and BEFORE searing: counter-intuitive, but it keeps the juices."
+   },
+   {
+    "titre": "Sear brutally",
+    "detail": "Smoking cast-iron pan, 90 seconds a side: the crust forms without the heat penetrating further."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Butter, crushed garlic and herbs, spooned over for 2 minutes with the pan tilted."
+   },
+   {
+    "titre": "Carve",
+    "detail": "Cut the meat from the bone, then slice across into 1.5 cm strips. Flaky salt at the very last moment."
+   }
+  ]
+ },
+ "secretoiberique": {
+  "nom": "Ibérico Secreto",
+  "description": "The \"secret\" cut of Ibérico pork, hidden under the shoulder and known only to butchers. Marbled like wagyu, it is eaten PINK — the only pork cut never cooked through.",
+  "etapes": [
+   {
+    "titre": "The cut",
+    "detail": "Ask your butcher for secreto: a flat, heavily marbled muscle between the shoulder and the fat."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Blot carefully: a wet surface would prevent the crust forming."
+   },
+   {
+    "titre": "Bare pan",
+    "detail": "NO fat at all: secreto is so marbled it renders its own within seconds."
+   },
+   {
+    "titre": "Two minutes",
+    "detail": "2 minutes a side over high heat. The intramuscular fat melts and the surface caramelises."
+   },
+   {
+    "titre": "Pink inside",
+    "detail": "It must stay PINK: overcooked, all the marbling melts out and the meat turns dry, which is a waste."
+   },
+   {
+    "titre": "Rest",
+    "detail": "5 minutes under foil, compulsory for such a fatty cut."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Across the grain, into 1 cm strips. Flaky salt, smoked paprika, garlic and parsley, raw olive oil."
+   }
+  ]
+ },
+ "paleronconfit": {
+  "nom": "Slow-Confit Chuck",
+  "description": "A very sinewy cut that becomes extraordinary after six hours at low temperature. The central sinew, inedible when cooked fast, turns into gelatine and thickens the sauce by itself.",
+  "etapes": [
+   {
+    "titre": "The cut",
+    "detail": "Chuck is run through by a central sinew: do NOT remove it, it is what gives the silkiness."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown it whole on all faces over high heat, 12 minutes, without cutting it up."
+   },
+   {
+    "titre": "The base",
+    "detail": "Carrot, onion and garlic fried, then tomato purée toasted for 2 minutes."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Red wine reduced by half, then stock: the liquid should come halfway up, no more."
+   },
+   {
+    "titre": "90°C",
+    "detail": "Six hours at 90°C in the oven, lid closed. This very low heat melts the collagen without contracting the fibres."
+   },
+   {
+    "titre": "The test",
+    "detail": "The meat must shred BY ITSELF under a fork. If it resists, give it another hour without hesitating."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Lift out the meat, strain and reduce the juices for 15 minutes: they turn syrupy and glossy thanks to the collagen."
+   }
+  ]
+ },
+ "selleagneau": {
+  "nom": "Stuffed Saddle of Lamb",
+  "description": "The celebration cut par excellence: the saddle boned, filled with a herb stuffing, rolled and tied. It slices into perfect medallions where the stuffing draws a spiral — a visual effect worth the two hours of work.",
+  "etapes": [
+   {
+    "titre": "Bone it",
+    "detail": "Ask the butcher to bone the saddle keeping both fillets attached — or do it yourself following the bone with a knife."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Blanched and SQUEEZED spinach, breadcrumbs, garlic, parsley, mint and rosemary chopped: it must be firm, not wet."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Open the saddle flat, flatten the fillets slightly and spread the stuffing in an even layer."
+   },
+   {
+    "titre": "Roll tight",
+    "detail": "Roll lengthways and tie every 3 cm — a loose roll deforms and loses its spiral."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear the roll on all sides in olive oil, 10 minutes, turning with tongs."
+   },
+   {
+    "titre": "Roast",
+    "detail": "25 minutes at 180°C for PINK lamb: 55°C at the core on a thermometer, never more."
+   },
+   {
+    "titre": "Rest 15 minutes",
+    "detail": "Absolutely essential before slicing: cut too soon, the spiral collapses and the juices escape."
+   }
+  ]
+ },
+ "carreagneauherbes": {
+  "nom": "Herb-Crusted Rack of Lamb",
+  "description": "A French-trimmed rack, seared then covered with a herb crumb crust that protects the meat and crisps. The mustard is not there for flavour: it is the GLUE that holds the crust.",
+  "etapes": [
+   {
+    "titre": "French-trim",
+    "detail": "Scrape the bones clean over 4 cm so they are perfectly white: purely aesthetic, but the dish's signature."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Blend breadcrumbs, parsley, garlic, thyme, rosemary and cold butter into a green sandy paste."
+   },
+   {
+    "titre": "Chill the crust",
+    "detail": "20 minutes in the fridge: a cold crust grips better and doesn't slide off in the oven."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Colour the rack FAT side first, 4 minutes, then the other faces 2 minutes. Let it cool a little."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "Brush the rounded face: it acts as glue, and its flavour disappears completely in the oven."
+   },
+   {
+    "titre": "Apply",
+    "detail": "Press the herb crust on in a 5 mm layer over the mustard, packing it down with your palm."
+   },
+   {
+    "titre": "Roast",
+    "detail": "18 minutes at 200°C for pink lamb (54°C at the core), then 10 minutes of compulsory rest."
+   }
+  ]
+ },
+ "arista": {
+  "nom": "Tuscan Arista",
+  "description": "The Florentine roast pork with rosemary and garlic, whose name is said to come from the Greek \"aristos\" — excellent — spoken by Byzantine bishops in 1439. Loin stays moist where fillet would be dry.",
+  "etapes": [
+   {
+    "titre": "The cut",
+    "detail": "Use neck end or a rack, NEVER fillet: it has no fat and would dry out in two hours."
+   },
+   {
+    "titre": "The battuto",
+    "detail": "Chop garlic, rosemary and fennel seeds very fine with coarse salt: a proper green fragrant mince."
+   },
+   {
+    "titre": "Score",
+    "detail": "Cut deep slits in the meat and pack them with battuto — not just on the surface."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "12 hours chilled and wrapped: the aromatics penetrate deeply, which changes everything."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear the roast in olive oil on all sides, 12 minutes, before it goes in the oven."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Deglaze with white wine, potatoes around it, then 1 h 15 at 170°C basting every 20 minutes."
+   },
+   {
+    "titre": "Rest",
+    "detail": "15 minutes before carving. Arista is eaten hot, but it is even better COLD the next day."
+   }
+  ]
+ },
+ "galantinevolaille": {
+  "nom": "Chicken Galantine",
+  "description": "A bird entirely BONED through the back, stuffed, rolled in a cloth and poached. Served cold in slices, it reveals a mosaic of stuffing and garnish — the most impressive charcuterie you can make at home.",
+  "etapes": [
+   {
+    "titre": "Bone through the back",
+    "detail": "Split the skin along the spine and follow the carcass with a knife, without piercing the skin. Allow 30 minutes the first time."
+   },
+   {
+    "titre": "The carcass",
+    "detail": "Don't throw it away: it makes the poaching stock, which then becomes the jelly."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Pork, chicken meat, cured ham, egg, cream and cognac coarsely blended — it should stay rustic."
+   },
+   {
+    "titre": "The garnish",
+    "detail": "Whole pistachios and carrot batons laid in lines: they will draw the mosaic when sliced."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Spread the stuffing over the flattened bird, roll tightly and wrap in a cloth, tied like a sweet."
+   },
+   {
+    "titre": "Poach",
+    "detail": "1 h 30 in SIMMERING stock, never boiling: the skin would burst and the stuffing escape."
+   },
+   {
+    "titre": "Press",
+    "detail": "Cool in the stock, then 12 hours chilled UNDER A WEIGHT. Clarified jelly around it to serve."
+   }
+  ]
+ },
+ "ballotinepoulet": {
+  "nom": "Chicken Ballotine",
+  "description": "The simple, hot version of a galantine: a boned thigh, stuffed and rolled. Far more approachable than a whole bird, and served hot with its jus — the ideal training before attempting a galantine.",
+  "etapes": [
+   {
+    "titre": "Bone the thigh",
+    "detail": "Follow the bone with a knife keeping the skin intact: it holds everything together during cooking."
+   },
+   {
+    "titre": "The duxelles",
+    "detail": "Mushrooms chopped VERY fine with shallot, fried until all the water has evaporated — allow 12 minutes."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Breadcrumb soaked in cream, squeezed, mixed into the duxelles with the tarragon."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Stuffing in the centre of the opened thigh, roll keeping the skin on the outside, tie every 2 cm."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear in butter SKIN side first, 6 minutes, until crisp and golden."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Deglaze with white wine, stock, then 30 minutes covered over low heat or in the oven at 180°C."
+   },
+   {
+    "titre": "The jus",
+    "detail": "Remove the string, reduce the juices for 5 minutes and whisk in cold butter. Slice into medallions."
+   }
+  ]
+ },
+ "scaloppinelimone": {
+  "nom": "Scaloppine al Limone",
+  "description": "The fastest Italian dish in the repertoire: floured escalopes seared for two minutes, and a sauce built in the pan with lemon and butter. Fifteen minutes flat, and yet a restaurant dish.",
+  "etapes": [
+   {
+    "titre": "Flatten thin",
+    "detail": "5 mm between two sheets of paper: a thick escalope would cook through before the sauce is ready."
+   },
+   {
+    "titre": "Flour at the last minute",
+    "detail": "Flour JUST before cooking and tap off: floured ahead, the coating turns pasty and grey."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Oil and butter over high heat, 90 seconds a side — no more, veal dries out within seconds."
+   },
+   {
+    "titre": "Set aside",
+    "detail": "Move the escalopes to a warm plate: they finish cooking in their own heat."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine in the pan, scrape up the residue and leftover flour: it thickens the sauce by itself."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Juice and zest with the stock, 2 minutes of reduction to a syrupy consistency."
+   },
+   {
+    "titre": "Mount",
+    "detail": "Cold butter in pieces OFF THE HEAT, parsley. Return the escalopes for 30 seconds to coat them."
+   }
+  ]
+ },
+ "piccatamilanaise": {
+  "nom": "Piccata Milanese",
+  "description": "Cousin of the scaloppine, but with CAPERS that give a sharp, saline sauce. \"Piccata\" comes from \"pricked\" — pricked with capers. The sauce is bound only with cold butter, never added flour.",
+  "etapes": [
+   {
+    "titre": "Rinse the capers",
+    "detail": "Rinse and squeeze them between your fingers: in brine they would salt the whole sauce by themselves."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Escalopes to 5 mm, salted and peppered BEFORE flouring — afterwards, seasoning no longer penetrates."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Foaming butter, 90 seconds a side over high heat, then keep warm."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine and a touch of garlic, reduced by two thirds while scraping the base."
+   },
+   {
+    "titre": "The capers",
+    "detail": "Thrown into the reduction with the stock: they infuse for 2 minutes and release their salinity."
+   },
+   {
+    "titre": "The lemon",
+    "detail": "Juice added OFF THE HEAT: boiled, it turns bitter and loses its freshness."
+   },
+   {
+    "titre": "Mount",
+    "detail": "VERY cold butter in pieces while swirling the pan, parsley. The sauce should be glossy and coating."
+   }
+  ]
+ },
+ "stracotto": {
+  "nom": "Stracotto",
+  "description": "\"Overcooked\": the Italian braise pushed until the meat falls into strands. Five hours during which you do nothing — and half the dish becomes a pasta sauce the next day.",
+  "etapes": [
+   {
+    "titre": "Whole piece",
+    "detail": "Do NOT cut the meat up: a whole 1 kg piece keeps its juices, cubes would dry out over five hours."
+   },
+   {
+    "titre": "Sear at length",
+    "detail": "15 minutes of browning on all sides: the dish's only source of grilled flavour."
+   },
+   {
+    "titre": "The soffritto",
+    "detail": "Carrot, onion and celery in small dice, melted 15 minutes in the meat residue."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Reduced by half uncovered before any other liquid: the alcohol must disappear completely."
+   },
+   {
+    "titre": "Four hours",
+    "detail": "Tomatoes, stock, aromatics, lid on, 150°C. Turn the piece every hour."
+   },
+   {
+    "titre": "The test",
+    "detail": "The meat must fall apart under a fork with NO resistance. If it still holds, give it another hour."
+   },
+   {
+    "titre": "Double use",
+    "detail": "Shred the meat into its sauce: half is eaten with mash, the other dresses pasta the next day."
+   }
+  ]
+ },
+ "bollitomisto": {
+  "nom": "Bollito Misto",
+  "description": "The great Piedmontese boiled dinner: seven different meats, each cooked SEPARATELY in its own broth, served from a trolley with seven sauces. This is the home version with three meats — already plenty.",
+  "etapes": [
+   {
+    "titre": "A pan each",
+    "detail": "Each meat cooks SEPARATELY: their times differ, and together they would cancel each other out."
+   },
+   {
+    "titre": "Start cold",
+    "detail": "For the beef, start in COLD water: it gives its flavour to the broth, which is the point for that meat."
+   },
+   {
+    "titre": "Start hot",
+    "detail": "For the poultry, start in BOILING water: it keeps its flavour inside instead of giving it up."
+   },
+   {
+    "titre": "The timings",
+    "detail": "Beef 3 hours, poultry 1 hour, sausage 30 minutes. Skim systematically for the first 10 minutes."
+   },
+   {
+    "titre": "The salsa verde",
+    "detail": "Parsley, capers, anchovy, vinegared bread and olive oil, chopped by knife: the compulsory sauce."
+   },
+   {
+    "titre": "At least two sauces",
+    "detail": "Serve salsa verde AND mustard at minimum: the green-sour against yellow-sharp contrast makes the dish."
+   },
+   {
+    "titre": "The service",
+    "detail": "Bring the meats together in a little scalding broth at the last moment. The remaining broth is served as soup."
+   }
+  ]
+ },
+ "chartreuselegumes": {
+  "nom": "Vegetable Chartreuse",
+  "description": "A mould lined with vegetables in a geometric PATTERN, filled then turned out. Invented by Carthusian monks who, eating no meat, hid game beneath the vegetables for their guests — a lovely story, and probably false.",
+  "etapes": [
+   {
+    "titre": "Cut evenly",
+    "detail": "Carrots and turnips into STRICTLY identical batons: the pattern forgives no irregularity."
+   },
+   {
+    "titre": "Blanch separately",
+    "detail": "Each vegetable apart, in plenty of salted water, then an immediate ice bath to fix the colours."
+   },
+   {
+    "titre": "The timings",
+    "detail": "Beans 4 minutes, carrots 6, turnips 5, cabbage 3, peas 3. Each has its own, without exception."
+   },
+   {
+    "titre": "The lining",
+    "detail": "Buttered mould, batons laid in a chevron or in ALTERNATING orange and white rays, packed tight."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Cabbage and peas bound with an egg-and-cream mixture, packed into the centre without shifting the lining."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "50 minutes at 160°C in a water bath: gentle heat sets the custard without puffing the chartreuse."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "REST 15 minutes, run a blade around the edge and flip in one confident movement. The pattern appears."
+   }
+  ]
+ },
+ "turbandesole": {
+  "nom": "Turban of Sole",
+  "description": "Sole fillets arranged in a crown in a mould, filled with fish mousseline, poached in a bain-marie then turned out. A great classic of bourgeois cooking, spectacular and yet entirely preparable in advance.",
+  "etapes": [
+   {
+    "titre": "The fillets",
+    "detail": "Gently flatten the sole fillets with a rolling pin between two sheets of paper: they must be supple to line the mould."
+   },
+   {
+    "titre": "Everything frozen",
+    "detail": "Blender bowl, blade, fish and cream 30 minutes in the FREEZER: a warm mousseline always splits."
+   },
+   {
+    "titre": "The mousseline",
+    "detail": "Blend the cold cod with the egg and salt, then the VERY cold cream in a stream with the motor running."
+   },
+   {
+    "titre": "Line",
+    "detail": "Buttered mould, fillets laid like spokes, tip to the centre and tail hanging over the outside."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Mousseline in the centre, packed well, then fold the fillet tails over the top to close."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "45 minutes at 150°C in a HOT water bath: never a dry oven, the mousseline would dry out."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Rest 10 minutes, blot the released juices, then flip. Shallot beurre blanc around it, dill on top."
+   }
+  ]
+ },
+ "saumonbellevue": {
+  "nom": "Salmon en Bellevue",
+  "description": "A whole salmon poached in court-bouillon, cooled, decorated and glazed with ASPIC. The cold centrepiece of old-fashioned buffets, thought to have vanished — it mostly demands patience and a light hand for the decoration.",
+  "etapes": [
+   {
+    "titre": "The court-bouillon",
+    "detail": "Vegetables, white wine, bay and peppercorns, cooked 20 minutes then COOLED completely."
+   },
+   {
+    "titre": "Start cold",
+    "detail": "The salmon goes into a COLD court-bouillon: plunged into hot liquid, its skin bursts and the flesh contracts."
+   },
+   {
+    "titre": "Barely simmer",
+    "detail": "Bring it up very gently and hold at 80°C WITHOUT ever boiling: 8 minutes per kilo is enough."
+   },
+   {
+    "titre": "Cool in it",
+    "detail": "Let the salmon cool IN its court-bouillon: it keeps cooking gently and stays moist."
+   },
+   {
+    "titre": "Dress it",
+    "detail": "Carefully remove the skin and the brown line, without damaging the pink flesh beneath."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Cucumber rounds as scales, hard-boiled egg slices, sprigs of dill: the decoration should be placed, never crowded."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "COLD but still liquid aspic, brushed on in TWO coats, with 20 minutes of chilling between them."
+   }
+  ]
+ },
+ "timbalefruitsmer": {
+  "nom": "Seafood Timbale",
+  "description": "A blind-baked pastry case filled with seafood bound in a creamy fish-stock sauce. A timbale is an edible container — it must be strong enough to stand and fine enough to eat.",
+  "etapes": [
+   {
+    "titre": "The case",
+    "detail": "Line a tall mould with puff pastry, prick the base and press the sides well up so they stick."
+   },
+   {
+    "titre": "Blind bake",
+    "detail": "Paper and baking beans, 25 minutes at 190°C, then 10 minutes without weights to dry the base."
+   },
+   {
+    "titre": "The mussels",
+    "detail": "Opened in white wine for 4 minutes, shelled, and the juice STRAINED finely — it is the heart of the sauce."
+   },
+   {
+    "titre": "The squid",
+    "detail": "Seared for 2 minutes only over high heat: beyond that they would go rubbery in the timbale."
+   },
+   {
+    "titre": "The duxelles",
+    "detail": "Mushrooms and shallot fried until all the water has evaporated."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "White roux, strained mussel juice, infused saffron, cream: 8 minutes to a properly coating consistency."
+   },
+   {
+    "titre": "Fill at the last moment",
+    "detail": "Seafood folded into the hot sauce, poured into the case JUST before serving — otherwise it goes soggy."
+   }
+  ]
+ },
+ "poulardedemideuil": {
+  "nom": "Poularde Demi-Deuil",
+  "description": "The legendary dish of Mère Brazier then Paul Bocuse: slices of BLACK TRUFFLE slid under the skin of a poached hen, drawing dark patches through the white skin — hence \"half-mourning\".",
+  "etapes": [
+   {
+    "titre": "Slice the truffle",
+    "detail": "2 mm slices on a mandoline: too thick and they won't lie against the flesh; too thin and they vanish."
+   },
+   {
+    "titre": "Lift the skin",
+    "detail": "Slide your hand between skin and flesh from the neck, GENTLY, without piercing it — the critical move of the dish."
+   },
+   {
+    "titre": "Truffle it",
+    "detail": "Lay the slices flat under the skin, well spread over the breasts and thighs."
+   },
+   {
+    "titre": "48 hours",
+    "detail": "Wrap and leave the truffled bird 48 HOURS chilled: the truffle aroma migrates through all the flesh."
+   },
+   {
+    "titre": "Truss",
+    "detail": "Truss tightly and wrap in muslin: the bird keeps its shape and the skin won't tear."
+   },
+   {
+    "titre": "Poach",
+    "detail": "1 h 30 in vegetable broth at 80°C, NEVER boiling: above that, the skin bursts and the truffle is lost."
+   },
+   {
+    "titre": "Suprême sauce",
+    "detail": "White roux, strained poaching broth, cream and egg yolk off the heat. Coat and serve with the vegetables."
+   }
+  ]
+ },
+ "homardthermidor": {
+  "nom": "Lobster Thermidor",
+  "description": "Created in 1894 at Marie's in Paris, on the opening night of a play called Thermidor. The meat is removed, bound in a mustardy cognac sauce, then PUT BACK in the shell and gratinated — and here the app reaches its 3000th recipe.",
+  "etapes": [
+   {
+    "titre": "Cook the lobster",
+    "detail": "8 minutes per 500 g in a HARD-BOILING court-bouillon, then an immediate ice bath to stop the cooking dead."
+   },
+   {
+    "titre": "Split it",
+    "detail": "Lay the lobster on its back and split it lengthways with one stroke of a heavy knife, head to tail."
+   },
+   {
+    "titre": "Empty and keep",
+    "detail": "Remove all the meat, including from the claws, and SAVE the coral: it gives the sauce colour and flavour."
+   },
+   {
+    "titre": "Flame",
+    "detail": "Meat and shallot seared in butter for 2 minutes, then cognac flamed — the alcohol burns off and leaves its aromas."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Butter roux, milk and cream, 8 minutes of cooking, then crushed coral, tarragon and a touch of chilli."
+   },
+   {
+    "titre": "The mustard",
+    "detail": "OFF THE HEAT only: boiled, it would turn bitter and mask the lobster's delicate flavour."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Meat coated in sauce, returned to the half-shells, parmesan, 6 minutes under the grill. Three thousand recipes, and this one to celebrate."
+   }
+  ]
  }
 };
