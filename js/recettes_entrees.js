@@ -4671,4 +4671,42 @@ oeufmayo: {
     ],
     liees: ["turbandesole","terrinepoisson","galantinevolaille"]
   },
+  berthoud: {
+    dateAjout: "2026-08-06T10:01:00",
+    nom: "Berthoud",
+    cat: "entrees", saisons: ["automne","hiver"], pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🫕",
+    description: "La spécialité du Chablais : de l'Abondance râpé, arrosé de vin blanc et de madère, gratiné dans un petit plat individuel. Inventé dans les années 1970 à Thonon, c'est une fondue miniature qu'on mange à la cuillère avec du pain.",
+    tableauBerthoud: [
+      { nb: 1, abondance: "90 g", vinblanc: "25 ml", porto: "12 ml", ail: "", pain: "70 g", poivre: "0.5 g", muscade: "0.2 g" },
+      { nb: 2, abondance: "180 g", vinblanc: "50 ml", porto: "24 ml", ail: "", pain: "140 g", poivre: "1 g", muscade: "0.4 g" },
+      { nb: 3, abondance: "270 g", vinblanc: "75 ml", porto: "36 ml", ail: "1", pain: "210 g", poivre: "1.5 g", muscade: "0.6 g" },
+      { nb: 4, abondance: "360 g", vinblanc: "100 ml", porto: "48 ml", ail: "1", pain: "280 g", poivre: "2 g", muscade: "0.8 g" },
+      { nb: 5, abondance: "450 g", vinblanc: "125 ml", porto: "60 ml", ail: "2", pain: "350 g", poivre: "2.5 g", muscade: "1 g" },
+      { nb: 6, abondance: "540 g", vinblanc: "150 ml", porto: "72 ml", ail: "2", pain: "420 g", poivre: "3 g", muscade: "1.2 g" },
+      { nb: 7, abondance: "630 g", vinblanc: "175 ml", porto: "84 ml", ail: "2", pain: "490 g", poivre: "3.5 g", muscade: "1.4 g" },
+      { nb: 8, abondance: "720 g", vinblanc: "200 ml", porto: "96 ml", ail: "3", pain: "560 g", poivre: "4 g", muscade: "1.6 g" },
+      { nb: 9, abondance: "810 g", vinblanc: "225 ml", porto: "108 ml", ail: "3", pain: "630 g", poivre: "4.5 g", muscade: "1.8 g" },
+      { nb: 10, abondance: "900 g", vinblanc: "250 ml", porto: "120 ml", ail: "4", pain: "700 g", poivre: "5 g", muscade: "2 g" },
+      { nb: 11, abondance: "990 g", vinblanc: "275 ml", porto: "132 ml", ail: "4", pain: "770 g", poivre: "5.5 g", muscade: "2.2 g" },
+      { nb: 12, abondance: "1080 g", vinblanc: "300 ml", porto: "144 ml", ail: "4", pain: "840 g", poivre: "6 g", muscade: "2.4 g" },
+      { nb: 13, abondance: "1170 g", vinblanc: "325 ml", porto: "156 ml", ail: "5", pain: "910 g", poivre: "6.5 g", muscade: "2.6 g" },
+      { nb: 14, abondance: "1260 g", vinblanc: "350 ml", porto: "168 ml", ail: "5", pain: "980 g", poivre: "7 g", muscade: "2.8 g" },
+      { nb: 15, abondance: "1350 g", vinblanc: "375 ml", porto: "180 ml", ail: "6", pain: "1050 g", poivre: "7.5 g", muscade: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Le fromage", detail: "Abondance fruité râpé GROSSIÈREMENT ou taillé en lamelles : râpé fin, il rendrait son gras et grainerait.", badge: null },
+      { icone: "🧄", titre: "Frotter le plat", detail: "Frottez un petit plat à œuf individuel avec une gousse d'ail coupée, généreusement.", badge: null },
+      { icone: "🍷", titre: "Les alcools", detail: "Vin blanc de Savoie et un trait de madère versés au fond du plat, sous le fromage.", badge: null },
+      { icone: "🧀", titre: "Remplir", detail: "Fromage tassé par-dessus, poivre et une pointe de muscade. Le plat doit être bien rempli.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "12 minutes à 200°C : le fromage doit bouillonner et dorer par endroits, sans se dessécher.", badge: null },
+      { icone: "👀", titre: "Surveiller", detail: "Passé 15 minutes, l'Abondance rend son huile et se sépare — c'est le seul risque du plat.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Brûlant, dans le plat de cuisson, avec du pain de campagne grillé et des pommes de terre en robe.", badge: null }
+    ],
+    liees: ["montdorchaud","fonduesavoyarde","raclette"]
+  },
 });

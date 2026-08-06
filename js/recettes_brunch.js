@@ -2928,4 +2928,42 @@ Object.assign(recettes, {
     ],
     liees: ["omelettefinesherbes","oeufmayo","tortillaespagnole"]
   },
+  matafan: {
+    dateAjout: "2026-08-06T10:04:00",
+    nom: "Matafan Savoyard",
+    cat: "brunch", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    description: "« Mate-faim » : une grosse crêpe épaisse de pommes de terre râpées, cuite à la poêle et retournée d'un coup. Le repas des paysans qui devait tenir jusqu'au soir — d'où le nom, et d'où la générosité.",
+    tableauMatafan: [
+      { nb: 1, pommedeterre: "220 g", farine: "25 g", oeufs: "½", lait: "40 ml", beurre: "25 g", oignon: "", persil: "4 g", poivre: "0.4 g", sel: "2 g" },
+      { nb: 2, pommedeterre: "440 g", farine: "50 g", oeufs: "1", lait: "80 ml", beurre: "50 g", oignon: "", persil: "8 g", poivre: "0.8 g", sel: "4 g" },
+      { nb: 3, pommedeterre: "660 g", farine: "75 g", oeufs: "1½", lait: "120 ml", beurre: "75 g", oignon: "", persil: "12 g", poivre: "1.2 g", sel: "6 g" },
+      { nb: 4, pommedeterre: "880 g", farine: "100 g", oeufs: "2", lait: "160 ml", beurre: "100 g", oignon: "1", persil: "16 g", poivre: "1.6 g", sel: "8 g" },
+      { nb: 5, pommedeterre: "1100 g", farine: "125 g", oeufs: "2½", lait: "200 ml", beurre: "125 g", oignon: "1½", persil: "20 g", poivre: "2 g", sel: "10 g" },
+      { nb: 6, pommedeterre: "1320 g", farine: "150 g", oeufs: "3", lait: "240 ml", beurre: "150 g", oignon: "1", persil: "24 g", poivre: "2.4 g", sel: "12 g" },
+      { nb: 7, pommedeterre: "1540 g", farine: "175 g", oeufs: "3½", lait: "280 ml", beurre: "175 g", oignon: "2", persil: "28 g", poivre: "2.8 g", sel: "14 g" },
+      { nb: 8, pommedeterre: "1760 g", farine: "200 g", oeufs: "4", lait: "320 ml", beurre: "200 g", oignon: "2", persil: "32 g", poivre: "3.2 g", sel: "16 g" },
+      { nb: 9, pommedeterre: "1980 g", farine: "225 g", oeufs: "4½", lait: "360 ml", beurre: "225 g", oignon: "2", persil: "36 g", poivre: "3.6 g", sel: "18 g" },
+      { nb: 10, pommedeterre: "2200 g", farine: "250 g", oeufs: "5", lait: "400 ml", beurre: "250 g", oignon: "3", persil: "40 g", poivre: "4 g", sel: "20 g" },
+      { nb: 11, pommedeterre: "2420 g", farine: "275 g", oeufs: "5½", lait: "440 ml", beurre: "275 g", oignon: "3", persil: "44 g", poivre: "4.4 g", sel: "22 g" },
+      { nb: 12, pommedeterre: "2640 g", farine: "300 g", oeufs: "6", lait: "480 ml", beurre: "300 g", oignon: "3", persil: "48 g", poivre: "4.8 g", sel: "24 g" },
+      { nb: 13, pommedeterre: "2860 g", farine: "325 g", oeufs: "6½", lait: "520 ml", beurre: "325 g", oignon: "3", persil: "52 g", poivre: "5.2 g", sel: "26 g" },
+      { nb: 14, pommedeterre: "3080 g", farine: "350 g", oeufs: "7", lait: "560 ml", beurre: "350 g", oignon: "4", persil: "56 g", poivre: "5.6 g", sel: "28 g" },
+      { nb: 15, pommedeterre: "3300 g", farine: "375 g", oeufs: "7½", lait: "600 ml", beurre: "375 g", oignon: "4½", persil: "60 g", poivre: "6 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper", detail: "Pommes de terre crues râpées à la grosse grille, pressées dans un torchon — l'eau empêcherait la prise.", badge: null },
+      { icone: "🥚", titre: "L'appareil", detail: "Œufs, lait et farine fouettés en pâte lisse, puis les pommes de terre et l'oignon râpé incorporés.", badge: null },
+      { icone: "🍳", titre: "La poêle", detail: "Poêle de 24 cm bien beurrée à feu MOYEN : trop vif, l'extérieur brûle avant que le centre ne cuise.", badge: null },
+      { icone: "👐", titre: "Tasser", detail: "Versez tout l'appareil et tassez à la spatule en un disque régulier d'1,5 cm d'épaisseur.", badge: null },
+      { icone: "⏱️", titre: "Cuire sans toucher", detail: "8 minutes sans y toucher : une croûte doit se former, sinon le matafan se déchirera au retournement.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Glissez-le sur une assiette, posez la poêle dessus et retournez d'un geste FRANC. Le geste rate si on hésite.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "7 minutes de l'autre côté, persil et poivre. Se mange en parts, avec une salade verte ou de la charcuterie.", badge: null }
+    ],
+    liees: ["farconsavoyard","rosti","pommesanna"]
+  },
 });

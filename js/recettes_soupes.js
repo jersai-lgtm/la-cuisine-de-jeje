@@ -6203,4 +6203,42 @@ Object.assign(recettes, {
     ],
     liees: ["solianka","soupeorgeperle","bortsch"]
   },
+  zosui: {
+    dateAjout: "2026-08-06T12:06:00",
+    nom: "Zosui",
+    cat: "soupes", pays: "japon",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍚",
+    description: "La soupe de riz japonaise faite avec le bouillon restant d'un nabe. Contrairement au congee chinois, le riz est DÉJÀ CUIT et seulement réchauffé : la soupe se fait en dix minutes, pas en deux heures.",
+    tableauZosui: [
+      { nb: 1, riz: "80 g", dashi: "300 ml", oeufs: "1", saucesoja: "12 ml", mirin: "8 ml", champignons: "40 g", epinards: "40 g", ciboulette: "5 g", gingembre: "4 g", nori: "2 g" },
+      { nb: 2, riz: "160 g", dashi: "600 ml", oeufs: "2", saucesoja: "24 ml", mirin: "16 ml", champignons: "80 g", epinards: "80 g", ciboulette: "10 g", gingembre: "8 g", nori: "4 g" },
+      { nb: 3, riz: "240 g", dashi: "900 ml", oeufs: "3", saucesoja: "36 ml", mirin: "24 ml", champignons: "120 g", epinards: "120 g", ciboulette: "15 g", gingembre: "12 g", nori: "6 g" },
+      { nb: 4, riz: "320 g", dashi: "1200 ml", oeufs: "4", saucesoja: "48 ml", mirin: "32 ml", champignons: "160 g", epinards: "160 g", ciboulette: "20 g", gingembre: "16 g", nori: "8 g" },
+      { nb: 5, riz: "400 g", dashi: "1500 ml", oeufs: "5", saucesoja: "60 ml", mirin: "40 ml", champignons: "200 g", epinards: "200 g", ciboulette: "25 g", gingembre: "20 g", nori: "10 g" },
+      { nb: 6, riz: "480 g", dashi: "1800 ml", oeufs: "6", saucesoja: "72 ml", mirin: "48 ml", champignons: "240 g", epinards: "240 g", ciboulette: "30 g", gingembre: "24 g", nori: "12 g" },
+      { nb: 7, riz: "560 g", dashi: "2100 ml", oeufs: "7", saucesoja: "84 ml", mirin: "56 ml", champignons: "280 g", epinards: "280 g", ciboulette: "35 g", gingembre: "28 g", nori: "14 g" },
+      { nb: 8, riz: "640 g", dashi: "2400 ml", oeufs: "8", saucesoja: "96 ml", mirin: "64 ml", champignons: "320 g", epinards: "320 g", ciboulette: "40 g", gingembre: "32 g", nori: "16 g" },
+      { nb: 9, riz: "720 g", dashi: "2700 ml", oeufs: "9", saucesoja: "108 ml", mirin: "72 ml", champignons: "360 g", epinards: "360 g", ciboulette: "45 g", gingembre: "36 g", nori: "18 g" },
+      { nb: 10, riz: "800 g", dashi: "3000 ml", oeufs: "10", saucesoja: "120 ml", mirin: "80 ml", champignons: "400 g", epinards: "400 g", ciboulette: "50 g", gingembre: "40 g", nori: "20 g" },
+      { nb: 11, riz: "880 g", dashi: "3300 ml", oeufs: "11", saucesoja: "132 ml", mirin: "88 ml", champignons: "440 g", epinards: "440 g", ciboulette: "55 g", gingembre: "44 g", nori: "22 g" },
+      { nb: 12, riz: "960 g", dashi: "3600 ml", oeufs: "12", saucesoja: "144 ml", mirin: "96 ml", champignons: "480 g", epinards: "480 g", ciboulette: "60 g", gingembre: "48 g", nori: "24 g" },
+      { nb: 13, riz: "1040 g", dashi: "3900 ml", oeufs: "13", saucesoja: "156 ml", mirin: "104 ml", champignons: "520 g", epinards: "520 g", ciboulette: "65 g", gingembre: "52 g", nori: "26 g" },
+      { nb: 14, riz: "1120 g", dashi: "4200 ml", oeufs: "14", saucesoja: "168 ml", mirin: "112 ml", champignons: "560 g", epinards: "560 g", ciboulette: "70 g", gingembre: "56 g", nori: "28 g" },
+      { nb: 15, riz: "1200 g", dashi: "4500 ml", oeufs: "15", saucesoja: "180 ml", mirin: "120 ml", champignons: "600 g", epinards: "600 g", ciboulette: "75 g", gingembre: "60 g", nori: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz déjà cuit", detail: "Utilisez du riz cuit de la veille : c'est la définition du zosui, un plat anti-gaspi né des restes de nabe.", badge: null },
+      { icone: "💧", titre: "Rincer le riz", detail: "Rincez le riz cuit à l'eau froide et égouttez : cela retire l'amidon collant et évite la bouillie.", badge: null },
+      { icone: "🍲", titre: "Le dashi", detail: "Bouillon de dashi porté à frémissement avec soja et mirin — assaisonnez LÉGÈREMENT, le riz va absorber.", badge: null },
+      { icone: "🍄", titre: "Les légumes", detail: "Champignons et épinards ajoutés 4 minutes, juste pour les cuire sans les détruire.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Ajouté pour 5 minutes SEULEMENT : il doit se réchauffer et gonfler un peu, pas se déliter.", badge: null },
+      { icone: "🥚", titre: "L'œuf en fil", detail: "Battu et versé EN FILET FIN dans le bouillon frémissant, en tournant doucement : il forme des rubans.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Retirez du feu dès l'œuf pris, ciboule, gingembre râpé et nori émietté. Se mange immédiatement.", badge: null }
+    ],
+    liees: ["takikomigohan","soupemiso","tendon"]
+  },
 });

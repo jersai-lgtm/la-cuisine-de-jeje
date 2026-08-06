@@ -3631,4 +3631,42 @@ Object.assign(recettes, {
     ],
     liees: ["lavash","barbari","paindecampagnelevain"]
   },
+  shokupan: {
+    dateAjout: "2026-08-06T12:05:00",
+    nom: "Shokupan",
+    cat: "boulangerie", pays: "japon",
+    base: 10,
+    temps: "4 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍞",
+    description: "Le pain de mie japonais, si moelleux qu'on peut l'étirer comme du coton. Son secret est le TANGZHONG : une petite quantité de farine cuite avec du lait, qui retient l'eau et garde la mie tendre pendant des jours.",
+    tableauShokupan: [
+      { nb: 1, farine: "70 g", lait: "50 ml", creme: "15 ml", beurre: "12 g", sucre: "8 g", levure: "1.5 g", sel: "1.2 g", oeufs: "" },
+      { nb: 2, farine: "140 g", lait: "100 ml", creme: "30 ml", beurre: "24 g", sucre: "16 g", levure: "3 g", sel: "2.4 g", oeufs: "" },
+      { nb: 3, farine: "210 g", lait: "150 ml", creme: "45 ml", beurre: "36 g", sucre: "24 g", levure: "4.5 g", sel: "3.6 g", oeufs: "" },
+      { nb: 4, farine: "280 g", lait: "200 ml", creme: "60 ml", beurre: "48 g", sucre: "32 g", levure: "6 g", sel: "4.8 g", oeufs: "" },
+      { nb: 5, farine: "350 g", lait: "250 ml", creme: "75 ml", beurre: "60 g", sucre: "40 g", levure: "7.5 g", sel: "6 g", oeufs: "¾" },
+      { nb: 6, farine: "420 g", lait: "300 ml", creme: "90 ml", beurre: "72 g", sucre: "48 g", levure: "9 g", sel: "7.2 g", oeufs: "" },
+      { nb: 7, farine: "490 g", lait: "350 ml", creme: "105 ml", beurre: "84 g", sucre: "56 g", levure: "10.5 g", sel: "8.4 g", oeufs: "1" },
+      { nb: 8, farine: "560 g", lait: "400 ml", creme: "120 ml", beurre: "96 g", sucre: "64 g", levure: "12 g", sel: "9.6 g", oeufs: "1" },
+      { nb: 9, farine: "630 g", lait: "450 ml", creme: "135 ml", beurre: "108 g", sucre: "72 g", levure: "13.5 g", sel: "10.8 g", oeufs: "1" },
+      { nb: 10, farine: "700 g", lait: "500 ml", creme: "150 ml", beurre: "120 g", sucre: "80 g", levure: "15 g", sel: "12 g", oeufs: "1½" },
+      { nb: 11, farine: "770 g", lait: "550 ml", creme: "165 ml", beurre: "132 g", sucre: "88 g", levure: "16.5 g", sel: "13.2 g", oeufs: "1" },
+      { nb: 12, farine: "840 g", lait: "600 ml", creme: "180 ml", beurre: "144 g", sucre: "96 g", levure: "18 g", sel: "14.4 g", oeufs: "1" },
+      { nb: 13, farine: "910 g", lait: "650 ml", creme: "195 ml", beurre: "156 g", sucre: "104 g", levure: "19.5 g", sel: "15.6 g", oeufs: "1" },
+      { nb: 14, farine: "980 g", lait: "700 ml", creme: "210 ml", beurre: "168 g", sucre: "112 g", levure: "21 g", sel: "16.8 g", oeufs: "2" },
+      { nb: 15, farine: "1050 g", lait: "750 ml", creme: "225 ml", beurre: "180 g", sucre: "120 g", levure: "22.5 g", sel: "18 g", oeufs: "2¼" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Le tangzhong", detail: "5 % de la farine cuits avec 5 fois leur poids de lait jusqu'à former une bouillie épaisse, à 65°C.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laissez le tangzhong revenir à température ambiante : chaud, il tuerait la levure.", badge: null },
+      { icone: "💪", titre: "Pétrir 15 minutes", detail: "Beaucoup plus long que pour un pain classique : le réseau de gluten doit être parfait pour la mie filante.", badge: null },
+      { icone: "🧈", titre: "Le beurre en dernier", detail: "Incorporé APRÈS le pétrissage, en petits morceaux : ajouté trop tôt, il empêcherait le gluten de se former.", badge: null },
+      { icone: "🪟", titre: "Le test de la vitre", detail: "Étirez un morceau de pâte : il doit devenir translucide sans se déchirer. Sinon, pétrissez encore 5 minutes.", badge: null },
+      { icone: "🌀", titre: "Façonner en rouleaux", detail: "Trois pâtons étalés, roulés serrés et posés côte à côte dans le moule : c'est ce qui donne la mie filante.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "30 minutes à 180°C. Démoulez IMMÉDIATEMENT sur une grille, sinon la vapeur ramollit la croûte.", badge: null }
+    ],
+    liees: ["paindemie","mantou","melonpan"]
+  },
 });

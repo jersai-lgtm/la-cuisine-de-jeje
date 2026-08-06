@@ -16,6 +16,8 @@ window.I18N_ING = {
   "🧠 Rognons de veau": "🧠 Veal kidneys", "⚪ Boudin blanc": "⚪ White pudding", "⚫ Boudin noir": "⚫ Black pudding",
   "🐠 Aile de raie": "🐠 Skate wing", "🐟 Merlan": "🐟 Whiting", "🐟 Sandre": "🐟 Pike-perch",
   "🐚 Bulots": "🐚 Whelks", "🐟 Éperlans": "🐟 Smelts",
+  "🐍 Anguille": "🐍 Eel", "🧀 Mont d'Or": "🧀 Mont d'Or cheese", "🧀 Abondance": "🧀 Abondance cheese",
+  "🌼 Fleurs de courgette": "🌼 Courgette flowers", "🐠 Stockfisch": "🐠 Stockfish",
   "🟤 Clou de girofle": "🟤 Clove", "🦐 Crevettes": "🦐 Shrimp", "🥣 Sauce tartare": "🥣 Tartar sauce",
   "🥚 Blanc d'œuf": "🥚 Egg white", "🌈 Macarons": "🌈 Macarons", "🥛 Yaourt grec": "🥛 Greek yogurt",
   "🍞 Chapelure panko": "🍞 Panko breadcrumbs", "🍄 Champignons": "🍄 Mushrooms", "🍄 Morilles séchées": "🍄 Dried morels", "🍪 Biscuits spéculoos": "🍪 Speculoos biscuits", "🍅 Tomates séchées": "🍅 Sun-dried tomatoes", "🐟 Œufs de cabillaud fumés": "🐟 Smoked cod roe", "🐟 Truite": "🐟 Trout", "🐟 Bar (loup de mer)": "🐟 Sea bass", "🫘 Fèves sèches": "🫘 Dried split fava beans", "🧀 Brocciu": "🧀 Brocciu cheese", "🥬 Endives": "🥬 Endives", "🧀 Roquefort": "🧀 Roquefort", "🎃 Potimarron": "🎃 Red kuri squash",

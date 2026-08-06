@@ -1195,4 +1195,42 @@ Object.assign(recettes, {
     ],
     liees: ["cassata","bombeglacee","glacepistache"]
   },
+  trounormand: {
+    dateAjout: "2026-08-06T12:01:00",
+    nom: "Trou Normand",
+    cat: "glaces", pays: "france",
+    base: 6,
+    temps: "20 min + turbinage",
+    niveau: "⭐ Facile",
+    emoji: "🍏",
+    description: "Un sorbet à la pomme arrosé de calvados, servi ENTRE deux plats pour « faire un trou » et relancer l'appétit. Une tradition normande qui remonte au XIXᵉ siècle, aujourd'hui devenue un dessert à part entière.",
+    tableauTrounormand: [
+      { nb: 1, pomme: "1", sucre: "30 g", citron: "", rhum: "15 ml", glucose: "8 g", cannelle: "0.2 g" },
+      { nb: 2, pomme: "2", sucre: "60 g", citron: "", rhum: "30 ml", glucose: "16 g", cannelle: "0.4 g" },
+      { nb: 3, pomme: "3", sucre: "90 g", citron: "", rhum: "45 ml", glucose: "24 g", cannelle: "0.6 g" },
+      { nb: 4, pomme: "4", sucre: "120 g", citron: "1", rhum: "60 ml", glucose: "32 g", cannelle: "0.8 g" },
+      { nb: 5, pomme: "6", sucre: "150 g", citron: "1½", rhum: "75 ml", glucose: "40 g", cannelle: "1 g" },
+      { nb: 6, pomme: "7", sucre: "180 g", citron: "1", rhum: "90 ml", glucose: "48 g", cannelle: "1.2 g" },
+      { nb: 7, pomme: "8", sucre: "210 g", citron: "2", rhum: "105 ml", glucose: "56 g", cannelle: "1.4 g" },
+      { nb: 8, pomme: "9", sucre: "240 g", citron: "2", rhum: "120 ml", glucose: "64 g", cannelle: "1.6 g" },
+      { nb: 9, pomme: "10", sucre: "270 g", citron: "2", rhum: "135 ml", glucose: "72 g", cannelle: "1.8 g" },
+      { nb: 10, pomme: "12", sucre: "300 g", citron: "3", rhum: "150 ml", glucose: "80 g", cannelle: "2 g" },
+      { nb: 11, pomme: "13", sucre: "330 g", citron: "3", rhum: "165 ml", glucose: "88 g", cannelle: "2.2 g" },
+      { nb: 12, pomme: "14", sucre: "360 g", citron: "3", rhum: "180 ml", glucose: "96 g", cannelle: "2.4 g" },
+      { nb: 13, pomme: "15", sucre: "390 g", citron: "3", rhum: "195 ml", glucose: "104 g", cannelle: "2.6 g" },
+      { nb: 14, pomme: "16", sucre: "420 g", citron: "4", rhum: "210 ml", glucose: "112 g", cannelle: "2.8 g" },
+      { nb: 15, pomme: "18", sucre: "450 g", citron: "4½", rhum: "225 ml", glucose: "120 g", cannelle: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍏", titre: "Les pommes", detail: "Prenez des pommes ACIDES (granny, boskoop) : les pommes douces donneraient un sorbet plat et écœurant.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Citronnez immédiatement la chair coupée : une pomme oxydée donnerait un sorbet beige au lieu de blanc.", badge: null },
+      { icone: "♨️", titre: "Compoter", detail: "Cuisez les pommes 12 minutes à couvert avec deux cuillères d'eau, jusqu'à ce qu'elles s'écrasent.", badge: null },
+      { icone: "🌀", titre: "Mixer et tamiser", detail: "Mixez puis PASSEZ AU TAMIS : les fibres de pomme donneraient une texture granuleuse au sorbet.", badge: null },
+      { icone: "🍬", titre: "Le sirop", detail: "Sucre et glucose dissous dans un peu d'eau chaude : le glucose empêche le sorbet de cristalliser en glaçons.", badge: null },
+      { icone: "❄️", titre: "Refroidir à fond", detail: "4 heures au frais MINIMUM avant de turbiner : une base tiède fait de gros cristaux de glace.", badge: null },
+      { icone: "🥃", titre: "Le calvados", detail: "Ajouté APRÈS turbinage, en fin de sanglage : l'alcool empêche la prise s'il est mis trop tôt.", badge: null }
+    ],
+    liees: ["sorbetcitron","poirehelene","bombeglacee"]
+  },
 });

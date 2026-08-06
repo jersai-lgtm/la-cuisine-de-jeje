@@ -100304,5 +100304,1025 @@ window.RECETTES_EN = {
     "detail": "Meat coated in sauce, returned to the half-shells, parmesan, 6 minutes under the grill. Three thousand recipes, and this one to celebrate."
    }
   ]
+ },
+ "montdorchaud": {
+  "nom": "Baked Mont d'Or",
+  "description": "The cheese is baked IN ITS SPRUCE BOX, splashed with white wine, until it becomes a runny fondue eaten with a spoon. A dish that only exists from October to March — Mont d'Or is seasonal by law.",
+  "etapes": [
+   {
+    "titre": "Keep the box",
+    "detail": "The cheese bakes in its spruce band: it holds it together and perfumes the paste. Tie it if it is loose."
+   },
+   {
+    "titre": "Cut a well",
+    "detail": "Remove a 4 cm disc of rind from the centre: this is where the wine and garlic go in."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "A clove cut into slivers pushed into the paste, plus a clove rubbed over the rind."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Two spoons of dry white wine poured into the well — no more, or the cheese turns liquid."
+   },
+   {
+    "titre": "Bake",
+    "detail": "25 minutes at 180°C on a tray, the box sitting on foil in case it overflows."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Boiled in their skins meanwhile, served hot and peeled at the table."
+   },
+   {
+    "titre": "Serve",
+    "detail": "The cheese should be runny and bubbling in the middle. Dip the potatoes straight into the box."
+   }
+  ]
+ },
+ "berthoud": {
+  "nom": "Berthoud",
+  "description": "The speciality of the Chablais: grated Abondance cheese, splashed with white wine and madeira, gratinated in a small individual dish. Invented in the 1970s in Thonon, it is a miniature fondue eaten with a spoon and bread.",
+  "etapes": [
+   {
+    "titre": "The cheese",
+    "detail": "Fruity Abondance grated COARSELY or cut in slivers: finely grated, it would render its fat and go grainy."
+   },
+   {
+    "titre": "Rub the dish",
+    "detail": "Rub a small individual gratin dish generously with a cut garlic clove."
+   },
+   {
+    "titre": "The alcohols",
+    "detail": "Savoy white wine and a dash of madeira poured into the bottom of the dish, under the cheese."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Cheese packed on top, pepper and a hint of nutmeg. The dish should be well filled."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "12 minutes at 200°C: the cheese should bubble and brown in places, without drying out."
+   },
+   {
+    "titre": "Watch it",
+    "detail": "Past 15 minutes, Abondance releases its oil and splits — the dish's only risk."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scalding, in its baking dish, with toasted country bread and potatoes in their skins."
+   }
+  ]
+ },
+ "farconsavoyard": {
+  "nom": "Savoyard Farçon",
+  "description": "A cake of grated potato, both sweet AND savoury: prunes, raisins and bacon in the same mould. It once baked all morning while the family was at mass — hence its interminable bain-marie cooking.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the raw potatoes coarsely and SQUEEZE them hard: water would make a dense grey farçon."
+   },
+   {
+    "titre": "Plump them",
+    "detail": "Prunes and raisins soaked 30 minutes in hot tea or eau-de-vie."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Fried with the onion until crisp, then cooled before going into the mixture."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Squeezed potato, eggs, cream, sugar, cinnamon, nutmeg, salt and pepper: it is surprisingly liquid."
+   },
+   {
+    "titre": "The mould",
+    "detail": "A VERY well buttered charlotte mould, lined with prunes on the base and sides — they show when turned out."
+   },
+   {
+    "titre": "Bain-marie 2 h 30",
+    "detail": "160°C in a hot water bath. This long gentle cooking gives the distinctive texture."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Wait 20 minutes, run a blade round and flip. Eaten hot, in slices, as a one-pot meal."
+   }
+  ]
+ },
+ "diotsvinblanc": {
+  "nom": "Diots in White Wine",
+  "description": "Savoyard sausages simmered in Savoy white wine with onions. A mountain-refuge and village-fête dish: it needs no technique, only good diots and a dry white wine.",
+  "etapes": [
+   {
+    "titre": "Never prick",
+    "detail": "NEVER prick the diots: pierced, they lose their fat and turn dry and mealy."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Colour them in butter on all sides for 10 minutes, rolling them with tongs."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Set the sausages aside, melt plenty of sliced onions for 15 minutes until golden."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Flour over the onions, 2 minutes of cooking: it will thicken the sauce without cream."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Dry Savoy white wine poured level with the sausages returned to the pot."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "35 minutes covered over low heat. The wine reduces into a silky blond sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With steamed potatoes or crozets. The onion sauce is the best part of the dish."
+   }
+  ]
+ },
+ "matafan": {
+  "nom": "Savoyard Matafan",
+  "description": "\"Hunger-killer\": a thick potato pancake cooked in a pan and flipped in one movement. The peasants' meal that had to last until evening — hence the name, and hence the generosity.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Raw potatoes coarsely grated and squeezed in a cloth — water would stop it setting."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Eggs, milk and flour whisked smooth, then the potatoes and grated onion folded in."
+   },
+   {
+    "titre": "The pan",
+    "detail": "A well-buttered 24 cm pan over MEDIUM heat: too hot and the outside burns before the centre cooks."
+   },
+   {
+    "titre": "Press down",
+    "detail": "Pour in all the batter and press it into an even 1.5 cm disc with a spatula."
+   },
+   {
+    "titre": "Cook untouched",
+    "detail": "8 minutes without touching: a crust must form, or the matafan will tear when flipped."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Slide it onto a plate, put the pan over it and flip in one DECISIVE movement. Hesitation ruins it."
+   },
+   {
+    "titre": "Finish",
+    "detail": "7 minutes on the other side, parsley and pepper. Eaten in wedges, with green salad or charcuterie."
+   }
+  ]
+ },
+ "saladesavoyarde": {
+  "nom": "Savoyard Salad",
+  "description": "Warm potatoes, cubes of beaufort, bacon and croutons on green leaves. The cheese must be cut into LARGE cubes and added onto the still-hot potatoes: it starts to melt without turning oily.",
+  "etapes": [
+   {
+    "titre": "In their skins",
+    "detail": "Waxy potatoes boiled 25 minutes with the skin on: they won't fall apart when sliced."
+   },
+   {
+    "titre": "Peel hot",
+    "detail": "Peel them scalding, protecting your hands: hot is when they absorb the dressing."
+   },
+   {
+    "titre": "Large cubes",
+    "detail": "Beaufort or comté in 1.5 cm cubes: any smaller and they would melt away entirely."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Dry-fried until crisp, the rendered fat KEPT for the dressing."
+   },
+   {
+    "titre": "The croutons",
+    "detail": "Cubed bread browned in the bacon fat, then rubbed with garlic while hot."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mustard, vinegar, shallot, then walnut oil and warm bacon fat in a stream."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dressed leaves at the bottom, warm potatoes, cheese on top, bacon, croutons and walnuts."
+   }
+  ]
+ },
+ "tourteblettes": {
+  "nom": "Niçoise Swiss Chard Pie",
+  "description": "The most disconcerting dessert in Nice: a SWEET pie made with chard leaves, apples, raisins, pine nuts and parmesan. Yes, parmesan in a dessert — and yes, it is delicious.",
+  "etapes": [
+   {
+    "titre": "Leaves only",
+    "detail": "Use ONLY the green of the chard: the white ribs go into a gratin, they have no place here."
+   },
+   {
+    "titre": "Salt and drain",
+    "detail": "Shredded leaves salted and pressed for 30 minutes: they release an astonishing amount of water."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Raisins plumped in warm rum for 30 minutes — they bring the sugar and the perfume."
+   },
+   {
+    "titre": "The apples",
+    "detail": "In small lemoned dice, raw: they cook in the pie and keep a little bite."
+   },
+   {
+    "titre": "The parmesan",
+    "detail": "It is what makes this uniquely Niçoise: it brings the salt that balances the sugar."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Pastry base, filling packed down, second disc, edges crimped and a chimney in the centre."
+   },
+   {
+    "titre": "Bake",
+    "detail": "45 minutes at 180°C. Generous icing sugar as it comes out. Eaten WARM or cold, never scalding."
+   }
+  ]
+ },
+ "petitsfarcisnicois": {
+  "nom": "Niçoise Stuffed Vegetables",
+  "description": "Tomatoes, round courgettes, onions and peppers hollowed and filled with the same meat and rice mixture. They are eaten WARM or cold, never scalding — and the next day they are better.",
+  "etapes": [
+   {
+    "titre": "Hollow them",
+    "detail": "Hollow the vegetables leaving a 5 mm wall and KEEP the flesh: it goes into the stuffing, nothing is wasted."
+   },
+   {
+    "titre": "Salt and drain",
+    "detail": "Salt the hollowed tomatoes and turn them upside down for 30 minutes: they release their water."
+   },
+   {
+    "titre": "The flesh",
+    "detail": "Tomato and courgette flesh chopped and fried in olive oil until all moisture has gone."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Meats, RAW rice, breadcrumb, reduced flesh, garlic, parsley, parmesan: the rice swells inside the vegetable."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill generously, doming the top: the stuffing settles and shrinks slightly as it bakes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "1 hour at 180°C, olive oil on top, with a little water in the dish so nothing catches."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Let them COOL for at least 30 minutes before serving: scalding, they have no flavour."
+   }
+  ]
+ },
+ "beignetsfleurscourgette": {
+  "nom": "Courgette Flower Fritters",
+  "description": "Male courgette flowers dipped in a very light batter and fried. The batter must be made with ICED WATER and used immediately: it is the thermal shock that gives the lightness.",
+  "etapes": [
+   {
+    "titre": "Choose the flowers",
+    "detail": "Use MALE flowers, the ones without a baby courgette attached: females are more fragile and rarer."
+   },
+   {
+    "titre": "Check inside",
+    "detail": "Open each flower and remove the pistil: it is bitter. Check no insect is hiding inside."
+   },
+   {
+    "titre": "Don't wash them",
+    "detail": "Brush them clean rather than rinsing: wet, they collapse and the batter won't cling."
+   },
+   {
+    "titre": "Iced water",
+    "detail": "Flour, cornflour and VERY COLD water, mixed with a fork leaving lumps — this is tempura."
+   },
+   {
+    "titre": "Use at once",
+    "detail": "Make the batter at the last moment: rested, it develops gluten and turns elastic."
+   },
+   {
+    "titre": "175°C",
+    "detail": "Dip each flower holding it by the stem, drain for a second, and lower it in."
+   },
+   {
+    "titre": "Fry",
+    "detail": "2 minutes to a very pale blond — not golden, the flower would burn. Flaky salt and lemon immediately."
+   }
+  ]
+ },
+ "estocaficada": {
+  "nom": "Estocaficada",
+  "description": "The most Niçois dish there is: stockfish — air-dried cod, hard as wood — rehydrated for four days then stewed with tomatoes, olives and potatoes. A fearsome smell, an unforgettable taste.",
+  "etapes": [
+   {
+    "titre": "Four days",
+    "detail": "Stockfish is soaked for 4 DAYS under running water or with the water changed twice daily: no shortcuts."
+   },
+   {
+    "titre": "The test",
+    "detail": "It is ready when the flesh bends without snapping and has almost doubled in size. If not, give it another day."
+   },
+   {
+    "titre": "Cut up",
+    "detail": "Remove skin and bones and cut into large 5 cm pieces — the flesh is long and fibrous."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Onion, pepper and garlic melted 20 minutes in olive oil, until jammy."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Chopped tomatoes, white wine, thyme and bay: 20 minutes of reduction before the fish goes in."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Stockfish added, 1 hour covered over low heat. The potatoes go in halfway."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Niçoise olives for the last 15 minutes, basil off the heat. Eaten warm, with plenty of bread."
+   }
+  ]
+ },
+ "supionsfrits": {
+  "nom": "Fried Baby Squid",
+  "description": "Small Mediterranean cuttlefish fried whole in a very light coating. Like all cephalopods they cook for TWO MINUTES or forty — here it is two, and not a second more.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Remove the bone and beak, keep the bodies WHOLE and the tentacles: supions are eaten in one bite."
+   },
+   {
+    "titre": "Dry thoroughly",
+    "detail": "Blot them very carefully in a cloth: water would make the oil erupt and the flour wouldn't stick."
+   },
+   {
+    "titre": "Flour and semolina",
+    "detail": "The flour-and-fine-semolina blend gives a far crisper crust than flour alone."
+   },
+   {
+    "titre": "Sieve",
+    "detail": "Shake them in a sieve to remove excess flour, which would burn and blacken the oil."
+   },
+   {
+    "titre": "180°C",
+    "detail": "Properly hot oil and small batches: too many at once drops the temperature."
+   },
+   {
+    "titre": "Two minutes",
+    "detail": "2 minutes MAXIMUM. Beyond that, they contract and turn rubbery, permanently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Rack and paper, flaky salt, garlic-parsley and lemon wedges. Eat scalding, with your fingers."
+   }
+  ]
+ },
+ "sardinesfarcies": {
+  "nom": "Stuffed Sardines",
+  "description": "Sardines butterflied open, filled with a spinach and parmesan stuffing, then baked. A Provençal recipe that turns the cheapest fish on the market into a celebration dish.",
+  "etapes": [
+   {
+    "titre": "Butterfly them",
+    "detail": "Scale, gut, then pull out the backbone from the head end: the sardine opens flat in one piece."
+   },
+   {
+    "titre": "Behead",
+    "detail": "Cut off head and tail; leave the skin, it holds the sardine together while baking."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Blanched 2 minutes, cooled then SQUEEZED hard: water would make the filling leak out."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Chopped spinach, breadcrumb, parmesan, garlic, parsley, toasted pine nuts and egg: firm and cohesive."
+   },
+   {
+    "titre": "Fill",
+    "detail": "A spoon of stuffing on half the sardines, close with a second sardine skin-side out."
+   },
+   {
+    "titre": "Season",
+    "detail": "Olive oil, lemon zest, pepper. Little or no salt: the parmesan is already salty."
+   },
+   {
+    "titre": "Bake",
+    "detail": "15 minutes at 200°C ONLY: beyond that, the sardine dries out and loses all its moisture."
+   }
+  ]
+ },
+ "gaufresbruxelles": {
+  "nom": "Brussels Waffles",
+  "description": "Rectangular, very light and crisp, not to be confused with the Liège waffle which is dense and sugary. The secret is the WHIPPED WHITES folded in last — the batter must be airy, almost foamy.",
+  "etapes": [
+   {
+    "titre": "The yeast",
+    "detail": "Slaked in milk at 35°C with a pinch of sugar, left to froth for 10 minutes."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Flour, yolks, melted butter, yeasted milk and WATER: the water is what lightens it compared to all-milk."
+   },
+   {
+    "titre": "Rise",
+    "detail": "1 hour covered: the batter should double and cover itself in surface bubbles."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whipped to FIRM peaks and folded in with a spatula just before cooking, lifting gently."
+   },
+   {
+    "titre": "Cook at once",
+    "detail": "Don't let it rest after the whites: they would collapse and the waffle would be flat and dense."
+   },
+   {
+    "titre": "Hot iron",
+    "detail": "Well preheated and lightly buttered, 4 minutes per waffle until golden and crisp."
+   },
+   {
+    "titre": "Don't stack",
+    "detail": "Set them on a RACK, never stacked: steam would soften the crispness within 30 seconds."
+   }
+  ]
+ },
+ "anguilleauvert": {
+  "nom": "Eel in Green Sauce",
+  "description": "The emblematic dish of Flanders: eel pieces poached in a green broth of fresh HERBS — sorrel, chervil, spinach, mint. It is eaten cold in its jelly as often as hot.",
+  "etapes": [
+   {
+    "titre": "Prepare the eel",
+    "detail": "Ask the fishmonger to skin it and cut it into 5 cm lengths: it is delicate work."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Firm the pieces in butter with the shallot for 4 minutes, without colouring them."
+   },
+   {
+    "titre": "The wine",
+    "detail": "Dry white wine poured level with the fish, 8 minutes of poaching at a BARE SIMMER — never boiling."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Spinach, sorrel, parsley, mint and tarragon chopped, added ALL AT ONCE: the volume looks absurd, they will collapse."
+   },
+   {
+    "titre": "Two minutes",
+    "detail": "The herbs cook for 2 MINUTES only: beyond that the green turns khaki and bitterness rises."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Egg yolks beaten with a little hot broth, poured back OFF THE HEAT while stirring."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Lemon, pepper. Hot immediately, or chilled 6 hours: the broth sets into a green jelly, the summer version."
+   }
+  ]
+ },
+ "chicongratin": {
+  "nom": "Belgian Chicory Gratin",
+  "description": "The Belgian family dish par excellence: braised chicory rolled in ham and gratinated under béchamel. The single fatal trap is the WATER in the chicory — badly drained, the gratin swims.",
+  "etapes": [
+   {
+    "titre": "The bitter core",
+    "detail": "Hollow the base of each chicory into a cone: that is where the bitterness concentrates, and it takes two seconds."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Butter, a little water, sugar and lemon, covered for 25 minutes: sugar and lemon neutralise the bitterness."
+   },
+   {
+    "titre": "SQUEEZE",
+    "detail": "The decisive step: squeeze each chicory between your hands until all the water is out. Genuinely all."
+   },
+   {
+    "titre": "Blot",
+    "detail": "Then blot them in a cloth. Without this, the béchamel is diluted and the gratin runs."
+   },
+   {
+    "titre": "Roll",
+    "detail": "One slice of ham per chicory, rolled tight, laid seam-down in the buttered dish."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Roux, cold milk, 8 minutes, nutmeg — it must be THICK, thicker than an ordinary béchamel."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Béchamel, grated emmental, 25 minutes at 200°C until golden-crusted and bubbling at the edges."
+   }
+  ]
+ },
+ "hutsepot": {
+  "nom": "Hutsepot",
+  "description": "The Flemish pot-au-feu: pork cuts and root vegetables simmered until everything merges, then partly MASHED. Unlike the French pot-au-feu, keeping the pieces whole is not the aim here.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Pork and bacon started in COLD WATER, carefully skimmed for the first 10 minutes, then 1 h 15 of simmering."
+   },
+   {
+    "titre": "The roots",
+    "detail": "Carrots, turnips and clove-studded onion added for the last 45 minutes."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "For the last 30 minutes: they should break down slightly, and it is they that bind the dish."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Leek and cabbage for the last 20 minutes only, or they would grey."
+   },
+   {
+    "titre": "The sausage",
+    "detail": "Added for the last 20 minutes, pricked with a fork so it flavours the broth."
+   },
+   {
+    "titre": "Mash",
+    "detail": "THE difference from a pot-au-feu: roughly mash the vegetables with a masher, in the broth."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Butter and pepper into the mash, sliced meats laid on top. Strong mustard alongside."
+   }
+  ]
+ },
+ "saladeliegeoise": {
+  "nom": "Liège Salad",
+  "description": "Green beans, potatoes and bacon in a HOT vinegar dressing, served warm. The family dish of Liège, eaten as a main course and not as a side.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Cooked 8 minutes in plenty of heavily salted boiling water: they must stay crunchy and BRIGHT GREEN."
+   },
+   {
+    "titre": "Ice shock",
+    "detail": "Iced water immediately, then drained: this fixes the colour and stops the cooking dead."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "In their skins for 25 minutes, peeled HOT and cut into large pieces."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Dry-fried until crisp, the rendered fat carefully kept in the pan."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Just softened in the fat for 2 minutes, without colouring."
+   },
+   {
+    "titre": "The vinegar",
+    "detail": "Poured into the SCORCHING pan off the heat: it hisses and half evaporates, softening its bite."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the boiling vinegared fat over the warm vegetables, toss, parsley and pepper. Serve warm."
+   }
+  ]
+ },
+ "tarteaumaton": {
+  "nom": "Maton Tart",
+  "description": "The tart of Geraardsbergen, protected by a brotherhood: puff pastry filled with \"maton\", a milk curd made by curdling milk with buttermilk. A dessert dating from the 13th century.",
+  "etapes": [
+   {
+    "titre": "Curdle the milk",
+    "detail": "Bring the milk to 85°C and pour in the buttermilk (or lemon juice): it curdles at once into white flakes."
+   },
+   {
+    "titre": "Let it set",
+    "detail": "10 minutes without stirring: the curd separates from the whey and rises to the surface."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Pour into a cloth-lined sieve and let it drain for 1 HOUR, without pressing."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Drained maton, eggs, sugar, cream, lemon zest and vanilla, whisked until even but still grainy."
+   },
+   {
+    "titre": "The base",
+    "detail": "Puff pastry pricked and blind-baked 12 minutes: without this, the maton would soak it."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Flaked almonds stirred into the filling AND scattered on top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 180°C. The top should be well browned and the centre barely wobbling. Eaten WARM."
+   }
+  ]
+ },
+ "couquededinant": {
+  "nom": "Couque de Dinant",
+  "description": "The hardest biscuit in the world: TWO ingredients only, flour and honey, with no water and no fat. You don't bite it — you suck it, or break it with a hammer. As much a decorative object as a confection.",
+  "etapes": [
+   {
+    "titre": "Warm the honey",
+    "detail": "Bring the honey to 60°C: it turns perfectly fluid and will blend into the flour without lumps."
+   },
+   {
+    "titre": "Two ingredients",
+    "detail": "Flour and honey, NOTHING else: no water, no egg, no butter, no raising agent. That is the entire recipe."
+   },
+   {
+    "titre": "Knead at length",
+    "detail": "15 minutes: the dough is extremely hard and dry. That is normal, and it is very physical."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour wrapped: the flour hydrates from the honey and the dough softens slightly."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Press the dough HARD into a carved wooden mould, or roll to 8 mm and cut shapes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "20 minutes at 200°C until dark brown and glossy. The honey caramelises and hardens as it cools."
+   },
+   {
+    "titre": "Dry",
+    "detail": "48 hours in the open air: the biscuit becomes stone-hard. It then keeps for YEARS."
+   }
+  ]
+ },
+ "lacquemant": {
+  "nom": "Lacquemant",
+  "description": "The flat waffle of the Liège fair, split in two and filled with a runny orange-blossom SYRUP. Invented in 1903 by a fairground vendor, it is eaten standing, hot, and it inevitably runs down your fingers.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Flour, melted butter, egg, yeast and milk: a supple dough, closer to biscuit dough than waffle batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "1 hour chilled: the dough must be firm to be rolled very thin."
+   },
+   {
+    "titre": "Roll thin",
+    "detail": "3 mm thick, cut into 12 × 6 cm rectangles — the traditional lacquemant shape."
+   },
+   {
+    "titre": "Cook",
+    "detail": "3 minutes in a hot waffle iron, until golden. The waffle must be FLAT and thin, not puffed."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, brown sugar, a little water and orange blossom cooked to 110°C: it must stay RUNNY, never thick."
+   },
+   {
+    "titre": "Split hot",
+    "detail": "Split the still-SCALDING waffle through its thickness with a thin knife: cold, it would shatter."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon the hot syrup between the two layers and close. Eat immediately, over a napkin."
+   }
+  ]
+ },
+ "rizconde": {
+  "nom": "Riz Condé",
+  "description": "A moulded rice pudding turned out and crowned with poached fruit, glazed with apricot. The great classic of Belle Époque buffets, halfway between a dessert and a centrepiece — and far simpler than it looks.",
+  "etapes": [
+   {
+    "titre": "Blanch the rice",
+    "detail": "3 minutes in boiling water then rinsed: this removes surface starch and stops the rice clumping."
+   },
+   {
+    "titre": "Cook in milk",
+    "detail": "40 minutes over VERY low heat with the vanilla, stirring often: the rice must be soft, not al dente."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Yolks and sugar stirred in off the heat, then returned for 2 minutes over low heat WITHOUT boiling."
+   },
+   {
+    "titre": "The gelatine",
+    "detail": "Leaves softened in cold water, squeezed and melted into the still-hot rice."
+   },
+   {
+    "titre": "Lighten",
+    "detail": "Softly whipped cream folded in when the rice is WARM: too hot it would melt, too cold the rice would have set."
+   },
+   {
+    "titre": "The fruit",
+    "detail": "Apricots poached 8 minutes in a light syrup, drained and cooled before assembly."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Oiled savarin mould, rice packed in, 4 hours chilled. Turn out, arrange the fruit and glaze with warm jam."
+   }
+  ]
+ },
+ "trounormand": {
+  "nom": "Trou Normand",
+  "description": "An apple sorbet doused with calvados, served BETWEEN courses to \"make a hole\" and revive the appetite. A Norman tradition dating from the 19th century, now a dessert in its own right.",
+  "etapes": [
+   {
+    "titre": "The apples",
+    "detail": "Use TART apples (granny, bramley): sweet apples would give a flat, cloying sorbet."
+   },
+   {
+    "titre": "Lemon them",
+    "detail": "Lemon the cut flesh immediately: an oxidised apple gives a beige sorbet instead of white."
+   },
+   {
+    "titre": "Cook down",
+    "detail": "Cook the apples 12 minutes covered with two spoons of water, until they collapse."
+   },
+   {
+    "titre": "Blend and sieve",
+    "detail": "Blend then PASS THROUGH A SIEVE: apple fibres would give the sorbet a grainy texture."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Sugar and glucose dissolved in a little hot water: glucose stops the sorbet setting into ice shards."
+   },
+   {
+    "titre": "Chill thoroughly",
+    "detail": "4 hours chilled MINIMUM before churning: a warm base makes large ice crystals."
+   },
+   {
+    "titre": "The calvados",
+    "detail": "Added AFTER churning, at the end: alcohol prevents freezing if added too early."
+   }
+  ]
+ },
+ "gongbao": {
+  "nom": "Gong Bao Chicken",
+  "description": "The Sichuan classic, often butchered in the West: diced chicken, peanuts and whole DRIED chillies in a very short sweet-sour sauce. The chillies are not eaten — they flavour the oil, that's all.",
+  "etapes": [
+   {
+    "titre": "Velveting",
+    "detail": "Diced chicken marinated 20 minutes with cornflour, soy and a little water: this is what makes the meat so tender."
+   },
+   {
+    "titre": "Sauce first",
+    "detail": "Mix soy, black vinegar, sugar and cornflour BEFORE you start: a wok gives you no time to measure."
+   },
+   {
+    "titre": "The chillies",
+    "detail": "Whole dried chillies and Sichuan pepper thrown into hot oil for 20 SECONDS: they should darken, not blacken."
+   },
+   {
+    "titre": "Very hot wok",
+    "detail": "Chicken seared 3 minutes over maximum heat, without constant stirring: it must colour."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Garlic and ginger for 30 seconds only — beyond that they burn and turn the whole dish bitter."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Poured in all at once, it thickens within 30 seconds against the scorching wok. It is instant."
+   },
+   {
+    "titre": "The peanuts",
+    "detail": "Toasted and added AT THE VERY END, off the heat: in the sauce they would soften immediately."
+   }
+  ]
+ },
+ "lamian": {
+  "nom": "Lamian",
+  "description": "Hand-PULLED noodles, doubled again and again until you have hundreds of strands. The technique takes weeks to learn — but even botched, these noodles beat any industrial packet.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Flour, water, salt and a pinch of bicarbonate — the alkalinity makes the dough extensible, the real secret."
+   },
+   {
+    "titre": "Knead 15 minutes",
+    "detail": "The dough must become VERY elastic: if it tears when stretched, it hasn't been worked enough."
+   },
+   {
+    "titre": "Rest 2 hours",
+    "detail": "Oiled and wrapped. Resting matters as much as kneading: the gluten must relax."
+   },
+   {
+    "titre": "The first pull",
+    "detail": "Roll a rope, stretch it slapping it on the worktop, fold in half and repeat."
+   },
+   {
+    "titre": "Double",
+    "detail": "Each doubling multiplies the strands by two: 8 doublings give 256 noodles. It is mathematical."
+   },
+   {
+    "titre": "Cook fast",
+    "detail": "90 SECONDS in boiling water only — fresh noodles cook four times faster than dried."
+   },
+   {
+    "titre": "Serve",
+    "detail": "In a beef broth with star anise and ginger, with coriander, spring onion and chilli oil."
+   }
+  ]
+ },
+ "tendon": {
+  "nom": "Tendon",
+  "description": "A bowl of rice topped with tempura and doused in a sweet-salty sauce. The tempura must go onto the rice THE SECOND it leaves the oil: thirty seconds more and the crispness is gone.",
+  "etapes": [
+   {
+    "titre": "Rice first",
+    "detail": "Japanese rice rinsed until the water runs clear, cooked and rested 10 minutes covered: it must be ready BEFORE frying."
+   },
+   {
+    "titre": "Tentsuyu sauce",
+    "detail": "Dashi, soy sauce, mirin and sugar simmered for 3 minutes, then kept warm."
+   },
+   {
+    "titre": "Iced batter",
+    "detail": "Flour, cornflour, egg yolk and ICED WATER, mixed with chopsticks leaving LUMPS."
+   },
+   {
+    "titre": "Don't overmix",
+    "detail": "A smooth tempura batter develops gluten and gives a heavy, doughy fritter. The lumps are deliberate."
+   },
+   {
+    "titre": "175°C",
+    "detail": "Prawns 2 minutes, vegetables 3 minutes. A thermometer is more useful here than any other tool."
+   },
+   {
+    "titre": "Immediately",
+    "detail": "Put the tempura onto the rice THE MOMENT it leaves the oil, without an intermediate plate."
+   },
+   {
+    "titre": "Douse",
+    "detail": "Sauce poured over the tempura and rice at the last moment, and serve within seconds."
+   }
+  ]
+ },
+ "shokupan": {
+  "nom": "Shokupan",
+  "description": "Japanese milk bread, so soft you can pull it apart like cotton. Its secret is TANGZHONG: a small amount of flour cooked with milk, which holds water and keeps the crumb tender for days.",
+  "etapes": [
+   {
+    "titre": "The tangzhong",
+    "detail": "5% of the flour cooked with five times its weight in milk to a thick paste, at 65°C."
+   },
+   {
+    "titre": "Cool it",
+    "detail": "Let the tangzhong come back to room temperature: hot, it would kill the yeast."
+   },
+   {
+    "titre": "Knead 15 minutes",
+    "detail": "Far longer than for ordinary bread: the gluten network must be perfect for that pull-apart crumb."
+   },
+   {
+    "titre": "Butter last",
+    "detail": "Added AFTER kneading, in small pieces: added too early, it would stop the gluten forming."
+   },
+   {
+    "titre": "The windowpane test",
+    "detail": "Stretch a piece of dough: it should go translucent without tearing. If not, knead 5 more minutes."
+   },
+   {
+    "titre": "Shape as rolls",
+    "detail": "Three pieces rolled out, rolled up tightly and set side by side in the tin: this gives the stranded crumb."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 180°C. Turn out IMMEDIATELY onto a rack, or steam will soften the crust."
+   }
+  ]
+ },
+ "zosui": {
+  "nom": "Zosui",
+  "description": "The Japanese rice soup made with the broth left from a nabe. Unlike Chinese congee, the rice is ALREADY COOKED and merely reheated: the soup takes ten minutes, not two hours.",
+  "etapes": [
+   {
+    "titre": "Pre-cooked rice",
+    "detail": "Use yesterday's cooked rice: that is the definition of zosui, an anti-waste dish born from nabe leftovers."
+   },
+   {
+    "titre": "Rinse the rice",
+    "detail": "Rinse the cooked rice in cold water and drain: this removes sticky starch and prevents porridge."
+   },
+   {
+    "titre": "The dashi",
+    "detail": "Dashi broth brought to a simmer with soy and mirin — season LIGHTLY, the rice will absorb."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Mushrooms and spinach added for 4 minutes, just enough to cook without destroying them."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Added for 5 minutes ONLY: it should warm through and swell a little, not break down."
+   },
+   {
+    "titre": "Egg ribbons",
+    "detail": "Beaten and poured in a THIN STREAM into the simmering broth, stirring gently: it forms ribbons."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Off the heat as soon as the egg sets, spring onion, grated ginger and crumbled nori. Eat immediately."
+   }
+  ]
+ },
+ "takikomigohan": {
+  "nom": "Takikomi Gohan",
+  "description": "Japanese rice cooked IN a seasoned broth with its garnishes, instead of being boiled then mixed. Every grain absorbs the dashi — the fundamental difference from fried rice.",
+  "etapes": [
+   {
+    "titre": "Rinse and rest",
+    "detail": "Rinse the rice until the water runs clear, then let it drain for 30 minutes: it will absorb the broth better."
+   },
+   {
+    "titre": "The ratio",
+    "detail": "Use the SAME volume of liquid as rice, counting the dashi AND the soy and mirin in the total."
+   },
+   {
+    "titre": "The garnishes",
+    "detail": "Chicken, mushrooms, carrot and bamboo shoots cut into even 1 cm pieces."
+   },
+   {
+    "titre": "Don't stir",
+    "detail": "Lay the garnishes ON the rice without stirring: mixed in, they would stop the rice cooking evenly."
+   },
+   {
+    "titre": "Cook",
+    "detail": "High heat to the boil, then 12 minutes over VERY low heat, covered, without ever opening."
+   },
+   {
+    "titre": "The rest",
+    "detail": "10 minutes off the heat, lid CLOSED: this is when the rice finishes swelling and the steam redistributes."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Fold gently with a paddle in cutting motions, never stirring: the grains must not be crushed."
+   }
+  ]
+ },
+ "menchikatsu": {
+  "nom": "Menchi Katsu",
+  "description": "A minced meat patty crumbed in PANKO and deep-fried, crisp outside and juicy inside. Panko, with its long light flakes, absorbs half as much oil as ordinary breadcrumbs.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Very finely chopped and COOLED after frying: hot, it would cook the meat and render its fat."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Beef and pork, breadcrumb soaked in milk, egg, nutmeg, pepper: worked 3 minutes until it turns sticky."
+   },
+   {
+    "titre": "Work the meat",
+    "detail": "Unlike a burger, you MUST work it: this gives the bound, springy texture."
+   },
+   {
+    "titre": "Expel the air",
+    "detail": "Throw the patty from one hand to the other about ten times: without this, it would burst in the oil."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "30 minutes chilled: a cold patty keeps its shape and doesn't deform while frying."
+   },
+   {
+    "titre": "The panko",
+    "detail": "Flour, egg, panko pressed lightly — without crushing the flakes, which make all the crispness."
+   },
+   {
+    "titre": "170°C",
+    "detail": "6 minutes, turning halfway. Serve with finely shredded white cabbage and tonkatsu sauce."
+   }
+  ]
+ },
+ "turnipcake": {
+  "nom": "Turnip Cake",
+  "description": "The lo bak go of dim sum: a savoury cake of grated daikon and rice flour, steamed, cooled then PAN-FRIED in slices. That double cooking is what gives the crisp outside and melting centre.",
+  "etapes": [
+   {
+    "titre": "The daikon",
+    "detail": "It is daikon, not European turnip: far juicier and slightly peppery."
+   },
+   {
+    "titre": "Cook the radish",
+    "detail": "Grated and cooked 15 minutes in a little water: it turns translucent and gives up a lot of juice. KEEP that juice."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Chinese sausage, dried shrimp and rehydrated mushrooms, fried together for 5 minutes."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Rice flour and cornflour slaked in the COLD radish juice: hot, lumps are guaranteed."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Hot radish poured onto the batter while whisking: it thickens instantly into a very stiff paste."
+   },
+   {
+    "titre": "Steam 45 min",
+    "detail": "In an oiled tin, covered. A blade pushed into the centre should come out clean."
+   },
+   {
+    "titre": "Cool then fry",
+    "detail": "4 hours chilled COMPULSORY, then 1.5 cm slices fried 3 minutes a side until crisp."
+   }
+  ]
  }
 };
