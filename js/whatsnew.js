@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "4.10.9",
+    titre: "🖨️ Imprime tes recettes + recherche plus futée",
+    texte: "Trois nouveautés d'un coup ! 🖨️ Un bouton « Imprimer » débarque dans chaque fiche : tu obtiens une belle page A4 avec les ingrédients pour le nombre de convives que tu as choisi et les étapes numérotées — parfait à poser sur le plan de travail (ou à enregistrer en PDF). 🔍 La recherche fouille maintenant DANS les étapes : tape « sans four », « pain rassis » ou « anti-gaspi » et tu trouveras les recettes qui vont avec, même si ces mots ne sont pas dans le titre. ⚡ Et l'appli s'ouvre nettement plus vite : elle a maigri d'un tiers, surtout appréciable sur téléphone. Bonne cuisine ! 👨‍🍳"
+  },
+  {
     v: "4.5.7",
     titre: "📅 Planifie tes recettes dans ton agenda",
     texte: "Fini d'oublier ce que tu voulais cuisiner ! Sur chaque fiche recette, un nouveau bouton 📅 te permet de la planifier : choisis le jour et le moment (matin, midi, après-midi ou soir), et hop — l'événement s'ouvre tout prêt dans Google Agenda (ou en fichier .ics pour les autres calendriers), avec le temps de préparation et un lien qui rouvre direct la recette le jour J. 🛒 Bonus : sur la liste de courses, le bouton « 📅 Rappel courses » crée un rappel avec les recettes de ton panier. Plus aucune excuse pour le « qu'est-ce qu'on mange ce soir ? » ! 😄"
