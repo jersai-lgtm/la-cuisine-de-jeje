@@ -3004,4 +3004,42 @@ Object.assign(recettes, {
     ],
     liees: ["patranque","galettesarrasin","matafan"]
   },
+  laverbread: {
+    dateAjout: "2026-08-07T11:02:00",
+    nom: "Laverbread",
+    cat: "brunch", pays: "paysdegalles",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌊",
+    description: "Le « caviar gallois » : une purée d'algue noire roulée dans l'avoine et poêlée dans la graisse de bacon. Rien à voir avec du pain — le mot « bread » vient d'une déformation, c'est une algue et rien d'autre.",
+    tableauLaverbread: [
+      { nb: 1, algue: "60 g", avoine: "25 g", bacon: "45 g", beurre: "10 g", citron: "¼", poivre: "0.6 g", pain: "40 g", tomate: "½" },
+      { nb: 2, algue: "120 g", avoine: "50 g", bacon: "90 g", beurre: "20 g", citron: "½", poivre: "1.2 g", pain: "80 g", tomate: "1" },
+      { nb: 3, algue: "180 g", avoine: "75 g", bacon: "135 g", beurre: "30 g", citron: "¾", poivre: "1.8 g", pain: "120 g", tomate: "1½" },
+      { nb: 4, algue: "240 g", avoine: "100 g", bacon: "180 g", beurre: "40 g", citron: "1", poivre: "2.4 g", pain: "160 g", tomate: "2" },
+      { nb: 5, algue: "300 g", avoine: "125 g", bacon: "225 g", beurre: "50 g", citron: "1¼", poivre: "3 g", pain: "200 g", tomate: "2½" },
+      { nb: 6, algue: "360 g", avoine: "150 g", bacon: "270 g", beurre: "60 g", citron: "1½", poivre: "3.6 g", pain: "240 g", tomate: "3" },
+      { nb: 7, algue: "420 g", avoine: "175 g", bacon: "315 g", beurre: "70 g", citron: "1¾", poivre: "4.2 g", pain: "280 g", tomate: "3½" },
+      { nb: 8, algue: "480 g", avoine: "200 g", bacon: "360 g", beurre: "80 g", citron: "2", poivre: "4.8 g", pain: "320 g", tomate: "4" },
+      { nb: 9, algue: "540 g", avoine: "225 g", bacon: "405 g", beurre: "90 g", citron: "2¼", poivre: "5.4 g", pain: "360 g", tomate: "4½" },
+      { nb: 10, algue: "600 g", avoine: "250 g", bacon: "450 g", beurre: "100 g", citron: "2½", poivre: "6 g", pain: "400 g", tomate: "5" },
+      { nb: 11, algue: "660 g", avoine: "275 g", bacon: "495 g", beurre: "110 g", citron: "2¾", poivre: "6.6 g", pain: "440 g", tomate: "5½" },
+      { nb: 12, algue: "720 g", avoine: "300 g", bacon: "540 g", beurre: "120 g", citron: "3", poivre: "7.2 g", pain: "480 g", tomate: "6" },
+      { nb: 13, algue: "780 g", avoine: "325 g", bacon: "585 g", beurre: "130 g", citron: "3¼", poivre: "7.8 g", pain: "520 g", tomate: "6½" },
+      { nb: 14, algue: "840 g", avoine: "350 g", bacon: "630 g", beurre: "140 g", citron: "3½", poivre: "8.4 g", pain: "560 g", tomate: "7" },
+      { nb: 15, algue: "900 g", avoine: "375 g", bacon: "675 g", beurre: "150 g", citron: "3¾", poivre: "9 g", pain: "600 g", tomate: "7½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌊", titre: "L'algue longuement cuite", detail: "Le laver se cuit 4 à 5 heures jusqu'à devenir une purée noire : en bocal, il est déjà prêt à l'emploi.", badge: null },
+      { icone: "🥓", titre: "Le bacon d'abord", detail: "Faites-le rendre TOUT son gras : c'est dans cette graisse, et pas dans du beurre, que se cuit le laverbread.", badge: null },
+      { icone: "🌾", titre: "Rouler dans l'avoine", detail: "Formez des petits palets de purée et roulez-les généreusement dans l'avoine — c'est la seule panure.", badge: null },
+      { icone: "🍳", titre: "Poêle brûlante", detail: "Posez les palets dans le gras fumant : à feu doux, l'avoine boit la graisse sans jamais croustiller.", badge: null },
+      { icone: "⏱️", titre: "Deux minutes par face", detail: "Pas plus : la purée est déjà cuite, on ne cherche que la croûte d'avoine dorée.", badge: null },
+      { icone: "🍋", titre: "Beaucoup de citron", detail: "L'algue est très iodée et salée : sans acidité, le goût sature au bout de trois bouchées.", badge: null },
+      { icone: "🍅", titre: "Le petit-déjeuner gallois", detail: "Servez avec le bacon, des tomates poêlées et du pain grillé. C'est un plat du MATIN.", badge: null }
+    ],
+    liees: ["welshrarebit","welshcakes","englishmuffin"]
+  },
 });

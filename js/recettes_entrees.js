@@ -4899,4 +4899,42 @@ oeufmayo: {
     ],
     liees: ["rillettesmaquereau","tarama","smorrebrod"]
   },
+  arbroathsmokie: {
+    dateAjout: "2026-08-07T11:00:00",
+    nom: "Arbroath Smokie",
+    cat: "entrees", pays: "ecosse",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🔥",
+    description: "L'églefin fumé à chaud d'Arbroath, protégé par une IGP européenne comme un champagne. Il est déjà CUIT par le fumage : le réchauffer trop le transforme en carton, tout l'art est de ne presque rien faire.",
+    tableauArbroathsmokie: [
+      { nb: 1, haddock: "110 g", beurre: "20 g", creme: "30 ml", citron: "", ciboulette: "3 g", poivre: "0.5 g", painrassis: "35 g", moutarde: "3 g" },
+      { nb: 2, haddock: "220 g", beurre: "40 g", creme: "60 ml", citron: "", ciboulette: "6 g", poivre: "1 g", painrassis: "70 g", moutarde: "6 g" },
+      { nb: 3, haddock: "330 g", beurre: "60 g", creme: "90 ml", citron: "", ciboulette: "9 g", poivre: "1.5 g", painrassis: "105 g", moutarde: "9 g" },
+      { nb: 4, haddock: "440 g", beurre: "80 g", creme: "120 ml", citron: "1", ciboulette: "12 g", poivre: "2 g", painrassis: "140 g", moutarde: "12 g" },
+      { nb: 5, haddock: "550 g", beurre: "100 g", creme: "150 ml", citron: "1½", ciboulette: "15 g", poivre: "2.5 g", painrassis: "175 g", moutarde: "15 g" },
+      { nb: 6, haddock: "660 g", beurre: "120 g", creme: "180 ml", citron: "1", ciboulette: "18 g", poivre: "3 g", painrassis: "210 g", moutarde: "18 g" },
+      { nb: 7, haddock: "770 g", beurre: "140 g", creme: "210 ml", citron: "2", ciboulette: "21 g", poivre: "3.5 g", painrassis: "245 g", moutarde: "21 g" },
+      { nb: 8, haddock: "880 g", beurre: "160 g", creme: "240 ml", citron: "2", ciboulette: "24 g", poivre: "4 g", painrassis: "280 g", moutarde: "24 g" },
+      { nb: 9, haddock: "990 g", beurre: "180 g", creme: "270 ml", citron: "2", ciboulette: "27 g", poivre: "4.5 g", painrassis: "315 g", moutarde: "27 g" },
+      { nb: 10, haddock: "1100 g", beurre: "200 g", creme: "300 ml", citron: "3", ciboulette: "30 g", poivre: "5 g", painrassis: "350 g", moutarde: "30 g" },
+      { nb: 11, haddock: "1210 g", beurre: "220 g", creme: "330 ml", citron: "3", ciboulette: "33 g", poivre: "5.5 g", painrassis: "385 g", moutarde: "33 g" },
+      { nb: 12, haddock: "1320 g", beurre: "240 g", creme: "360 ml", citron: "3", ciboulette: "36 g", poivre: "6 g", painrassis: "420 g", moutarde: "36 g" },
+      { nb: 13, haddock: "1430 g", beurre: "260 g", creme: "390 ml", citron: "3", ciboulette: "39 g", poivre: "6.5 g", painrassis: "455 g", moutarde: "39 g" },
+      { nb: 14, haddock: "1540 g", beurre: "280 g", creme: "420 ml", citron: "4", ciboulette: "42 g", poivre: "7 g", painrassis: "490 g", moutarde: "42 g" },
+      { nb: 15, haddock: "1650 g", beurre: "300 g", creme: "450 ml", citron: "4½", ciboulette: "45 g", poivre: "7.5 g", painrassis: "525 g", moutarde: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Un poisson déjà cuit", detail: "Le smokie est fumé à CHAUD, pas à froid : il se mange tel quel, contrairement au saumon fumé.", badge: null },
+      { icone: "🖐️", titre: "Effeuiller à la main", detail: "Ouvrez-le en deux et retirez l'arête centrale d'un geste : la chair se détache seule en gros pétales.", badge: null },
+      { icone: "🦴", titre: "Traquer les arêtes", detail: "Passez la pulpe des doigts sur chaque pétale : les arêtes latérales sont fines et se repèrent au toucher.", badge: null },
+      { icone: "🧈", titre: "Beurre mousseux, feu doux", detail: "Juste tiédir 2 MINUTES : au-delà, les fibres se resserrent et le poisson devient sec et filandreux.", badge: null },
+      { icone: "🥛", titre: "Une cuillère de crème", detail: "Elle enrobe sans masquer : le fumage est puissant, une sauce chargée l'écraserait complètement.", badge: null },
+      { icone: "🍋", titre: "Citron obligatoire", detail: "L'acidité coupe le gras du fumage — sans elle, la deuxième bouchée est déjà lourde.", badge: null },
+      { icone: "🍞", titre: "Sur pain grillé chaud", detail: "Servez immédiatement sur du pain grillé beurré, avec ciboulette et poivre. Rien d'autre.", badge: null }
+    ],
+    liees: ["cullenskink","gravlax","rillettessaumonfume"]
+  },
 });

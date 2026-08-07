@@ -104384,5 +104384,1025 @@ window.RECETTES_EN = {
     "detail": "A piped white icing ring and a dot of raspberry jam in the centre. Nothing else."
    }
   ]
+ },
+ "arbroathsmokie": {
+  "nom": "Arbroath Smokie",
+  "description": "The hot-smoked haddock of Arbroath, protected by European PGI status like a champagne. It is already COOKED by the smoking: over-heating turns it to cardboard, so the whole art is doing almost nothing.",
+  "etapes": [
+   {
+    "titre": "An already-cooked fish",
+    "detail": "The smokie is HOT-smoked, not cold: it is eaten as is, unlike smoked salmon."
+   },
+   {
+    "titre": "Flake by hand",
+    "detail": "Open it out and lift the backbone in one movement: the flesh comes away in large petals."
+   },
+   {
+    "titre": "Hunt the bones",
+    "detail": "Run your fingertips over each petal: the lateral pin bones are fine and found by touch."
+   },
+   {
+    "titre": "Foaming butter, low heat",
+    "detail": "Warm through for 2 MINUTES only: beyond that the fibres tighten and the fish turns dry and stringy."
+   },
+   {
+    "titre": "A spoonful of cream",
+    "detail": "It coats without masking: the smoke is powerful and a heavy sauce would crush it."
+   },
+   {
+    "titre": "Lemon is compulsory",
+    "detail": "The acidity cuts the fat of the smoking — without it, the second mouthful is already heavy."
+   },
+   {
+    "titre": "On hot toast",
+    "detail": "Serve immediately on buttered toast, with chives and pepper. Nothing else."
+   }
+  ]
+ },
+ "skirlie": {
+  "nom": "Skirlie",
+  "description": "Oatmeal toasted in fat with onion: three ingredients, twenty minutes, and the cheapest Scottish side dish in the world. Its name comes from the SOUND — the \"skirl\" the oats make in the pan.",
+  "etapes": [
+   {
+    "titre": "Coarse oatmeal",
+    "detail": "Pinhead oats or THICK rolled oats: fine flakes turn to porridge the moment they meet the fat."
+   },
+   {
+    "titre": "Fat, not oil",
+    "detail": "Lard or dripping: vegetable oil gives a flat skirlie without the characteristic meaty taste."
+   },
+   {
+    "titre": "Onion fully softened",
+    "detail": "10 minutes over low heat until translucent and sweet: left crunchy, it dominates the dish."
+   },
+   {
+    "titre": "Add the oats dry",
+    "detail": "Tipped in all at once onto the onion, they instantly soak up every bit of available fat."
+   },
+   {
+    "titre": "Stir constantly",
+    "detail": "5 minutes of continuous stirring: the oats catch and burn within seconds if you stop."
+   },
+   {
+    "titre": "Listen",
+    "detail": "It sizzles, then starts to RASP: that is the signal, it is toasted through."
+   },
+   {
+    "titre": "Season generously",
+    "detail": "Plenty of pepper and parsley off the heat. Served under a roast or with an egg."
+   }
+  ]
+ },
+ "laverbread": {
+  "nom": "Laverbread",
+  "description": "\"Welsh caviar\": a purée of black seaweed rolled in oatmeal and fried in bacon fat. Nothing to do with bread — the word is a corruption, this is seaweed and nothing else.",
+  "etapes": [
+   {
+    "titre": "Long-cooked seaweed",
+    "detail": "Laver is boiled 4 to 5 hours until it becomes a black purée: jarred, it is ready to use."
+   },
+   {
+    "titre": "Bacon first",
+    "detail": "Render ALL its fat: the laverbread cooks in that fat, not in butter."
+   },
+   {
+    "titre": "Roll in oatmeal",
+    "detail": "Shape small patties of the purée and roll them generously in oats — that is the only coating."
+   },
+   {
+    "titre": "Scorching pan",
+    "detail": "Lay the patties into the smoking fat: over low heat the oats drink the fat and never crisp."
+   },
+   {
+    "titre": "Two minutes a side",
+    "detail": "No longer: the purée is already cooked, you only want the golden oat crust."
+   },
+   {
+    "titre": "Plenty of lemon",
+    "detail": "The seaweed is intensely iodised and salty: without acidity the flavour saturates after three bites."
+   },
+   {
+    "titre": "The Welsh breakfast",
+    "detail": "Serve with the bacon, fried tomatoes and toast. This is a MORNING dish."
+   }
+  ]
+ },
+ "lardycake": {
+  "nom": "Lardy Cake",
+  "description": "A laminated bread made with LARD, dried fruit and sugar, which caramelises in its own fat at the bottom of the tin. The Wiltshire Sunday loaf — outrageously rich, and entirely unapologetic.",
+  "etapes": [
+   {
+    "titre": "A plain bread dough",
+    "detail": "Flour, yeast, warm milk and salt: NO fat in the dough, it comes only during lamination."
+   },
+   {
+    "titre": "Full first rise",
+    "detail": "1 h 30 until doubled: an under-proved dough will not survive the three folds that follow."
+   },
+   {
+    "titre": "Lard in flecks",
+    "detail": "Roll the dough out, dot with small pieces of lard, sugar and fruit — like a rustic lamination."
+   },
+   {
+    "titre": "Three single folds",
+    "detail": "Fold in three, turn a quarter, repeat: three times, adding fat and sugar at each turn."
+   },
+   {
+    "titre": "20 minutes chilled between folds",
+    "detail": "Softened lard would merge into the dough and there would be no layers at all."
+   },
+   {
+    "titre": "Sugar in the tin",
+    "detail": "A layer of brown sugar and lard in the base: that becomes the caramel bottom."
+   },
+   {
+    "titre": "Turn out upside down, at once",
+    "detail": "35 minutes at 190°C then turn out IMMEDIATELY: cooled in the tin, the caramel sets and glues."
+   }
+  ]
+ },
+ "sallylunn": {
+  "nom": "Sally Lunn",
+  "description": "The great brioche loaf of Bath, so light it is compared to a cloud. The dough is almost LIQUID: it is not kneaded but beaten — that extreme hydration is what gives the open crumb.",
+  "etapes": [
+   {
+    "titre": "An almost liquid dough",
+    "detail": "It should fall from the whisk in a thick ribbon: if it forms a ball, add more cream."
+   },
+   {
+    "titre": "Beat, don't knead",
+    "detail": "10 minutes with the paddle: gluten develops by beating, as for a baba dough."
+   },
+   {
+    "titre": "Warm throughout",
+    "detail": "Milk, cream and eggs at 25°C: cold stops the yeast dead in a dough this wet."
+   },
+   {
+    "titre": "Two slow rises",
+    "detail": "1 h 30 then 1 h in the tin: the length of the rises creates the large air pockets."
+   },
+   {
+    "titre": "A tall round tin",
+    "detail": "It rises into a DOME and needs the walls to support it, or it spreads out completely."
+   },
+   {
+    "titre": "Moderate oven",
+    "detail": "30 minutes at 180°C: too hot and the crust sets before the crumb has finished rising."
+   },
+   {
+    "titre": "Slice horizontally",
+    "detail": "A Sally Lunn is cut into THREE discs through its thickness, each buttered. Never into wedges."
+   }
+  ]
+ },
+ "fatrascals": {
+  "nom": "Fat Rascals",
+  "description": "The large Yorkshire scones, decorated with two glacé cherries and almonds that give them a FACE. Halfway between a scone and a rock cake — richer, heavier and far more generous.",
+  "etapes": [
+   {
+    "titre": "Cold butter, cold hands",
+    "detail": "Rub in quickly: the heat of your hands melts the butter and the rascal spreads in the oven."
+   },
+   {
+    "titre": "Two zests",
+    "detail": "Orange AND lemon: that pairing is what separates a fat rascal from a plain fruit scone."
+   },
+   {
+    "titre": "A richer dough",
+    "detail": "It is heavier and fattier than scone dough: it will not rise as much, and that is normal."
+   },
+   {
+    "titre": "Shape by hand",
+    "detail": "No cutter: balls flattened by hand into thick uneven 8 cm rounds."
+   },
+   {
+    "titre": "The face",
+    "detail": "Two glacé cherry halves for eyes and three almonds for a mouth — the Bettys signature."
+   },
+   {
+    "titre": "Glaze twice",
+    "detail": "One coat of egg wash before, one after placing the decoration: the fruit must shine."
+   },
+   {
+    "titre": "Short bake",
+    "detail": "18 minutes at 200°C: they must stay SOFT in the middle, one minute too long dries them out."
+   }
+  ]
+ },
+ "pikelets": {
+  "nom": "Pikelets",
+  "description": "The crumpet WITHOUT a ring: the same holey batter, poured freely into the pan, spreading out with lacy edges. Faster, more rustic, and far easier to get right.",
+  "etapes": [
+   {
+    "titre": "A pourable batter",
+    "detail": "Much looser than thick pancake batter: it must spread into a disc by itself in the pan."
+   },
+   {
+    "titre": "Warm milk, not hot",
+    "detail": "38°C maximum: above 45°C the yeast dies and you will never get a single hole."
+   },
+   {
+    "titre": "One hour of fermentation",
+    "detail": "The batter should be FOAMY and smell of yeast: trapped gas is what makes the holes."
+   },
+   {
+    "titre": "Bicarbonate last",
+    "detail": "Added just before cooking, it restarts bubble production on contact with the heat."
+   },
+   {
+    "titre": "Medium pan, barely greased",
+    "detail": "Too hot and the surface sets before the bubbles have risen and burst."
+   },
+   {
+    "titre": "Wait for the holes",
+    "detail": "Flip ONLY when the whole surface is peppered with open holes and the top looks matt."
+   },
+   {
+    "titre": "Thirty seconds on the other side",
+    "detail": "Just to colour: the second side should stay pale, it is the underside."
+   }
+  ]
+ },
+ "jamrolypoly": {
+  "nom": "Jam Roly-Poly",
+  "description": "A suet pastry roll filled with jam, STEAMED for two hours. The quintessential British school pudding — nicknamed \"dead man's arm\" from the days it was cooked in a shirt sleeve.",
+  "etapes": [
+   {
+    "titre": "Suet or lard",
+    "detail": "Grated FROZEN into the flour: in soft lumps it melts instead of creating the little steam pockets."
+   },
+   {
+    "titre": "Just enough milk",
+    "detail": "The dough should be soft but dry to the touch: sticky, it will be impossible to roll."
+   },
+   {
+    "titre": "An even rectangle",
+    "detail": "Rolled to 5 mm: too thin and the jam breaks through, too thick and the middle stays raw."
+   },
+   {
+    "titre": "Leave a border",
+    "detail": "2 cm bare all the way round: without it, the jam escapes from the ends while cooking."
+   },
+   {
+    "titre": "Roll tight, don't crush",
+    "detail": "Starting from the short side, like a swiss roll — and pinch the ends shut."
+   },
+   {
+    "titre": "Wrap with slack",
+    "detail": "Baking paper then foil, folded with a BIG pleat down the middle: it swells a lot and needs room."
+   },
+   {
+    "titre": "Two hours of steam",
+    "detail": "In a pot or in the oven in a covered bain-marie. Served with hot custard."
+   }
+  ]
+ },
+ "lemonposset": {
+  "nom": "Lemon Posset",
+  "description": "Three ingredients, no gelatine, no eggs: the lemon's ACID is what sets the cream, exactly like milk curdling. A medieval dessert that became the simplest cream in the English repertoire.",
+  "etapes": [
+   {
+    "titre": "Full-fat cream",
+    "detail": "35 % fat MINIMUM: reduced-fat cream will never set, however much lemon you add."
+   },
+   {
+    "titre": "Three minutes at the boil",
+    "detail": "Cream and sugar boiled for exactly 3 minutes: reduction is what allows the set, not chilling."
+   },
+   {
+    "titre": "Cool to 60°C",
+    "detail": "Juice poured into boiling cream would curdle instantly — wait 5 minutes off the heat."
+   },
+   {
+    "titre": "The juice all at once",
+    "detail": "Poured in while whisking: the acid coagulates the proteins and it visibly thickens in 30 seconds."
+   },
+   {
+    "titre": "Pass through a sieve",
+    "detail": "Removes zest strands and lumps: that is what gives the perfectly smooth texture."
+   },
+   {
+    "titre": "Pour into glasses",
+    "detail": "4 HOURS chilled minimum: the set is slow and the freezer will not speed it up."
+   },
+   {
+    "titre": "Serve with acidity",
+    "detail": "Fresh raspberries and a shortbread: posset is very rich and needs a counterpoint."
+   }
+  ]
+ },
+ "queenofpuddings": {
+  "nom": "Queen of Puddings",
+  "description": "Three layers: a breadcrumb custard, a layer of jam, a golden meringue. Each layer cooks SEPARATELY in the same dish — this is a dessert of three bakes, not one.",
+  "etapes": [
+   {
+    "titre": "Breadcrumb, not fine crumb",
+    "detail": "Torn by hand into uneven pieces: fine crumbs would give a dense, pasty custard."
+   },
+   {
+    "titre": "Infuse the milk",
+    "detail": "Hot milk, lemon zest and vanilla left 15 minutes off the heat before pouring over the crumbs."
+   },
+   {
+    "titre": "YOLKS only",
+    "detail": "They go into the custard; the whites are saved for the meringue — nothing is wasted here."
+   },
+   {
+    "titre": "First bake",
+    "detail": "25 minutes at 170°C in a bain-marie until the custard is SET but still wobbling."
+   },
+   {
+    "titre": "Warmed jam",
+    "detail": "Spread over the hot custard, it spreads itself: cold, it would tear the custard's surface."
+   },
+   {
+    "titre": "Firm meringue",
+    "detail": "Whites whipped with the sugar in three additions to glossy soft peaks, then spread in waves."
+   },
+   {
+    "titre": "Short second bake",
+    "detail": "12 minutes at 160°C: the meringue should brown at the tips while staying marshmallow inside."
+   }
+  ]
+ },
+ "labskaus": {
+  "nom": "Labskaus",
+  "description": "The Hamburg sailors' dish: salt beef, beetroot and potato mashed together into a PINK purée, served with a fried egg, a gherkin and a pickled herring. It shocks the eye and convinces the mouth.",
+  "etapes": [
+   {
+    "titre": "Salt beef",
+    "detail": "Traditionally corned beef: failing that, well-salted boiled beef, shredded, does the job."
+   },
+   {
+    "titre": "Cooked beetroot",
+    "detail": "Cut into small dice and NOT blended: its juice colours the mash, not its pulp."
+   },
+   {
+    "titre": "Coarse mash",
+    "detail": "Crushed with a fork: smooth and fine, labskaus becomes a characterless paste."
+   },
+   {
+    "titre": "Onion well softened",
+    "detail": "10 minutes in the lard until golden: it brings the sweetness that balances the vinegar."
+   },
+   {
+    "titre": "Mix while hot",
+    "detail": "Meat, mash, beetroot and a little gherkin brine: the pink appears as you stir."
+   },
+   {
+    "titre": "Reheat without drying",
+    "detail": "5 minutes over low heat with a splash of stock: labskaus must stay MOIST and glossy."
+   },
+   {
+    "titre": "The three garnishes",
+    "detail": "Fried egg on top, gherkin and rollmops alongside. All three are compulsory, not decorative."
+   }
+  ]
+ },
+ "himmelunderde": {
+  "nom": "Himmel und Erde",
+  "description": "\"Heaven and earth\": apples (from heaven) and potatoes (from the earth) mashed together, under fried black pudding and crisp onions. The Rhineland name says exactly what is on the plate.",
+  "etapes": [
+   {
+    "titre": "SHARP apples",
+    "detail": "Boskoop or russet: a sweet apple would collapse into purée and the dish would lose its contrast."
+   },
+   {
+    "titre": "Cook separately",
+    "detail": "Apples and potatoes in two pans: apple takes 8 minutes, potato 20."
+   },
+   {
+    "titre": "A touch of vinegar",
+    "detail": "In the apples: acidity is what keeps the whole thing from becoming a flat sweet dish."
+   },
+   {
+    "titre": "Crush roughly",
+    "detail": "With a fork, keeping visible whole pieces of apple in the mash."
+   },
+   {
+    "titre": "Onion rings",
+    "detail": "Floured and fried until deep golden and CRISP: the only crunch on the plate."
+   },
+   {
+    "titre": "Don't prick the pudding",
+    "detail": "Thick 2 cm slices, fried 3 minutes a side: pricked, it empties out and dries."
+   },
+   {
+    "titre": "Build the plate",
+    "detail": "Mash on the bottom, black pudding on top, fried onions over everything. Serve at once, all scalding."
+   }
+  ]
+ },
+ "grunkohl": {
+  "nom": "Grünkohl",
+  "description": "The kale of northern Germany, simmered for two hours with smoked sausage and bacon. It is only harvested AFTER the first frost: cold turns its starch to sugar and strips out the bitterness.",
+  "etapes": [
+   {
+    "titre": "After the frost",
+    "detail": "Kale picked before the frost stays bitter: failing that, 24 h in the freezer does the same job."
+   },
+   {
+    "titre": "Strip the ribs",
+    "detail": "The central stalks stay tough even after two hours — tear the leaf off by hand."
+   },
+   {
+    "titre": "Blanch 3 minutes",
+    "detail": "Then refresh: this fixes the green and removes the last bitterness before the long simmer."
+   },
+   {
+    "titre": "Fat first",
+    "detail": "Bacon and lard melted, onion in: the whole dish is built on that fatty base."
+   },
+   {
+    "titre": "Two hours minimum",
+    "detail": "Covered, at the smallest simmer: kale must go MELTING, almost confit. One hour is not enough."
+   },
+   {
+    "titre": "Oats to thicken",
+    "detail": "A handful of rolled oats at the end: the traditional way to thicken, without flour."
+   },
+   {
+    "titre": "Whole sausages",
+    "detail": "Set on the kale for the last 40 minutes: they flavour the dish and stay juicy."
+   }
+  ]
+ },
+ "schweinshaxe": {
+  "nom": "Schweinshaxe",
+  "description": "The Bavarian pork knuckle with glassy, crackling rind. The secret is not the cooking but the DIAMOND SCORING and a final blast of beer in a very hot oven.",
+  "etapes": [
+   {
+    "titre": "Score in diamonds",
+    "detail": "Rind cut every 1.5 cm in a crosshatch, WITHOUT reaching the meat: this is where the crackling starts."
+   },
+   {
+    "titre": "Dry-salt the day before",
+    "detail": "Coarse salt rubbed into the cuts, 12 h uncovered in the fridge: the rind must dry to go glassy."
+   },
+   {
+    "titre": "Caraway, not cumin",
+    "detail": "Caraway (Kümmel) is THE Bavarian signature: cumin would give an oriental note that has no place here."
+   },
+   {
+    "titre": "Braise first",
+    "detail": "2 hours at 160°C in the beer and stock, rind ABOVE the liquid: the meat turns meltingly tender."
+   },
+   {
+    "titre": "Baste with beer",
+    "detail": "Every 20 minutes during braising: the beer sugars caramelise the rind."
+   },
+   {
+    "titre": "The final blast",
+    "detail": "20 minutes at 240°C: the rind puffs, blisters and becomes a golden shell. Watch it without leaving."
+   },
+   {
+    "titre": "Rest 10 minutes",
+    "detail": "Under LOOSE foil, never tight: trapped steam would soften everything you just built."
+   }
+  ]
+ },
+ "senfeier": {
+  "nom": "Senfeier",
+  "description": "Hard-boiled eggs in a white mustard sauce over potatoes: the archetypal German student dish. Everything depends on NOT boiling the sauce once the mustard is in.",
+  "etapes": [
+   {
+    "titre": "Exactly nine minutes",
+    "detail": "Eggs lowered into BOILING water: the yolk should be set but still bright yellow, not grey."
+   },
+   {
+    "titre": "Immediate cold shock",
+    "detail": "Iced water straight out: it stops the cooking and lifts the shell off the white."
+   },
+   {
+    "titre": "A white roux",
+    "detail": "Butter and flour cooked 2 minutes WITHOUT colouring: browned, it gives a beige sauce and a toasted taste."
+   },
+   {
+    "titre": "Hot milk all at once",
+    "detail": "Poured in while whisking hard: the surest method against lumps."
+   },
+   {
+    "titre": "Mustard OFF the heat",
+    "detail": "Added once the sauce has stopped boiling: boiled, mustard turns BITTER and loses all its bite."
+   },
+   {
+    "titre": "A squeeze of lemon",
+    "detail": "It wakes the mustard up and keeps the sauce from tasting heavy and floury."
+   },
+   {
+    "titre": "Eggs halved",
+    "detail": "Set yolk-up on the potatoes, sauce spooned over, generous parsley."
+   }
+  ]
+ },
+ "marillenknodel": {
+  "nom": "Marillenknödel",
+  "description": "WHOLE apricots enclosed in potato dough, poached then rolled in buttered breadcrumbs. A sugar cube slipped in where the stone was becomes a syrup inside.",
+  "etapes": [
+   {
+    "titre": "Yesterday's potatoes",
+    "detail": "Boiled, peeled and cooled OVERNIGHT: warm, they release water and the dough turns sticky."
+   },
+   {
+    "titre": "Use a ricer",
+    "detail": "Never a blender: released starch would make the dough elastic and impossible to shape."
+   },
+   {
+    "titre": "Work fast and little",
+    "detail": "Flour added all at once, 30 SECONDS of kneading: more and the dumplings turn rubbery."
+   },
+   {
+    "titre": "Sugar in the stone's place",
+    "detail": "Remove the stone and slip in a sugar cube: it melts into a syrup inside."
+   },
+   {
+    "titre": "Enclose with no gaps",
+    "detail": "Flatten the dough in your palm, set the apricot in and close by turning: the smallest hole and it bursts."
+   },
+   {
+    "titre": "Poach, never boil",
+    "detail": "TREMBLING salted water, 12 minutes: at a rolling boil they all split."
+   },
+   {
+    "titre": "Buttered breadcrumbs",
+    "detail": "Crumbs browned in butter with sugar and cinnamon, then the scalding dumplings rolled in them."
+   }
+  ]
+ },
+ "powidltascherl": {
+  "nom": "Powidltascherl",
+  "description": "Sweet plum-paste ravioli, made from the same potato dough as knödel. \"Powidl\" is a plum butter cooked WITHOUT SUGAR for hours — that is the real recipe.",
+  "etapes": [
+   {
+    "titre": "The powidl",
+    "detail": "Plums or prunes cooked 2 h over the lowest heat WITHOUT sugar to a thick black paste."
+   },
+   {
+    "titre": "It must hold on a spoon",
+    "detail": "Too runny and it would soak through the dough and the tascherl would open in the water."
+   },
+   {
+    "titre": "Same dough as knödel",
+    "detail": "Yesterday's potatoes, riced, flour and egg: minimal kneading, 30 seconds."
+   },
+   {
+    "titre": "Roll to 3 mm",
+    "detail": "On a well-floured surface: this dough sticks far more than a classic pasta dough."
+   },
+   {
+    "titre": "Shape triangles",
+    "detail": "A spoon of powidl on a square, folded into a triangle, edges pressed with your fingertips."
+   },
+   {
+    "titre": "Poach 8 minutes",
+    "detail": "Trembling salted water: they float to the surface when done, like gnocchi."
+   },
+   {
+    "titre": "Crumbs and icing sugar",
+    "detail": "Rolled in the buttered crumbs then dusted. Eaten SCALDING, never lukewarm."
+   }
+  ]
+ },
+ "esterhazytorte": {
+  "nom": "Esterházy Torte",
+  "description": "Five hazelnut meringue discs, a cognac buttercream, and the SPIDERWEB glaze that made its reputation. The pattern is drawn in 30 seconds — before the fondant sets.",
+  "etapes": [
+   {
+    "titre": "Hazelnut meringue",
+    "detail": "Whites whipped very stiff then ground hazelnuts FOLDED gently: whisked in, they would collapse everything."
+   },
+   {
+    "titre": "Five identical discs",
+    "detail": "Draw the circles in pencil under the paper: any unevenness shows on the sides of the finished cake."
+   },
+   {
+    "titre": "Slow bake",
+    "detail": "25 minutes at 150°C: the discs must DRY rather than brown, staying crisp in the centre."
+   },
+   {
+    "titre": "Custard buttercream",
+    "detail": "Custard base cooled to 25°C then soft butter beaten in: at different temperatures it splits."
+   },
+   {
+    "titre": "Assemble tightly",
+    "detail": "A thin even layer between each disc: too thick and the cake slides when cut."
+   },
+   {
+    "titre": "Warm fondant",
+    "detail": "Icing sugar, water and a little egg white, poured at 35°C: too hot it runs, too cold it won't spread."
+   },
+   {
+    "titre": "Draw FAST",
+    "detail": "Spirals of melted chocolate, then a cocktail stick pulled from the centre outwards, eight times. 30 seconds flat."
+   }
+  ]
+ },
+ "punschkrapfen": {
+  "nom": "Punschkrapfen",
+  "description": "The little pink cubes of Viennese pastry shops, whose centre is made of cake OFFCUTS soaked in rum. Recycling raised to an institution: no Austrian pastry shop throws away its trimmings.",
+  "etapes": [
+   {
+    "titre": "An ordinary sponge",
+    "detail": "Baked as a sheet and cut into THREE: two layers stay whole, the third gets crumbled."
+   },
+   {
+    "titre": "A centre of offcuts",
+    "detail": "Crumble the third layer with the trimmings: the origin and whole point of the cake."
+   },
+   {
+    "titre": "Rum soaking",
+    "detail": "Crumbs mixed with apricot jam, rum and a little melted chocolate: very wet."
+   },
+   {
+    "titre": "Three storeys",
+    "detail": "Sponge, packed crumb filling, sponge. A weight on top for 2 HOURS chilled."
+   },
+   {
+    "titre": "Cut with a hot knife",
+    "detail": "4 cm cubes, blade dipped in hot water and wiped between each cut: the edges stay sharp."
+   },
+   {
+    "titre": "Pink glaze",
+    "detail": "Icing sugar, lemon juice and a touch of beetroot juice: a PALE pink, never garish."
+   },
+   {
+    "titre": "Glaze on a rack",
+    "detail": "The icing must run down all four sides untouched by a spatula, or it goes dull."
+   }
+  ]
+ },
+ "cholerasuisse": {
+  "nom": "Cholera Valaisanne",
+  "description": "A Valais pie of potato, pear, apple and cheese, born during the 1836 cholera epidemic: nobody went out, so they cooked whatever was left in the cellar. Its name is frightening, its taste is not.",
+  "etapes": [
+   {
+    "titre": "Pre-cooked potatoes",
+    "detail": "Boiled the day before and cooled, in slices: raw, they release water and soak the pastry."
+   },
+   {
+    "titre": "FIRM pears",
+    "detail": "A ripe pear would collapse into purée: use them barely ripe, almost crisp."
+   },
+   {
+    "titre": "Softened leek and onion",
+    "detail": "10 minutes in butter until completely tender: they bind the filling without any cream."
+   },
+   {
+    "titre": "Build in layers",
+    "detail": "Potato, fruit, cheese, bacon, in alternating well-packed layers."
+   },
+   {
+    "titre": "Cheese on every layer",
+    "detail": "The cheese melts and welds the layers together: it is the pie's only \"cement\"."
+   },
+   {
+    "titre": "Seal the edges",
+    "detail": "Two discs of puff pastry, edges dampened and pinched, egg wash and a chimney in the centre."
+   },
+   {
+    "titre": "Long bake",
+    "detail": "50 minutes at 190°C: the pie is tall and the centre needs time to get properly hot."
+   }
+  ]
+ },
+ "koldskaal": {
+  "nom": "Koldskål",
+  "description": "The cold buttermilk soup Danes drink all summer, with little dry biscuits that soften in it. It is DRUNK as much as eaten — and it is the most refreshing dessert in the North.",
+  "etapes": [
+   {
+    "titre": "Danish buttermilk",
+    "detail": "Unobtainable here: plain yoghurt loosened with milk gives exactly the same acidity and fluidity."
+   },
+   {
+    "titre": "Yolks and sugar",
+    "detail": "Beaten until the mixture pales and ribbons: that is what gives the silkiness."
+   },
+   {
+    "titre": "Everything ice cold",
+    "detail": "Yoghurt, milk, bowl: koldskål is served at 4°C, lukewarm it is frankly unpleasant."
+   },
+   {
+    "titre": "Zest AND juice",
+    "detail": "The zest gives perfume, the juice acidity: both, or the dessert tastes flat and sweet."
+   },
+   {
+    "titre": "Whisk in slowly",
+    "detail": "Yoghurt poured slowly onto the yolks while whisking: all at once, the mixture goes lumpy."
+   },
+   {
+    "titre": "2 hours chilled",
+    "detail": "The flavour builds and the texture settles: served straight away it is still frothy."
+   },
+   {
+    "titre": "Biscuits at the last moment",
+    "detail": "Dropped in at serving: soaked in advance they dissolve completely and nothing is left."
+   }
+  ]
+ },
+ "medisterpolse": {
+  "nom": "Medisterpølse",
+  "description": "The large coiled Danish sausage, its filling worked with MILK until it becomes a smooth paste. It is always cooked as one long coil, never as individual links.",
+  "etapes": [
+   {
+    "titre": "Two mincings",
+    "detail": "Pork and back fat put TWICE through the fine plate: fineness is what defines a medisterpølse."
+   },
+   {
+    "titre": "Milk little by little",
+    "detail": "Added a spoon at a time while working: the filling must become a smooth glossy paste."
+   },
+   {
+    "titre": "Keep it ice cold",
+    "detail": "Bowl and meat chilled throughout: above 12°C the fat melts and the mixture splits."
+   },
+   {
+    "titre": "Scandinavian spices",
+    "detail": "Allspice, clove and ginger: that trio is the true signature, not paprika."
+   },
+   {
+    "titre": "A single coil",
+    "detail": "Casing filled WITHOUT stretching it, wound into a spiral and pinned with two crossed skewers."
+   },
+   {
+    "titre": "Poach before frying",
+    "detail": "15 minutes in trembling water: it cooks through without the skin bursting."
+   },
+   {
+    "titre": "Colour in the pan",
+    "detail": "5 minutes a side in butter after poaching: only now do you go for colour."
+   }
+  ]
+ },
+ "rommegrot": {
+  "nom": "Rømmegrøt",
+  "description": "The Norwegian festive cream porridge, from which you make the butter SEEP OUT to pour over it afterwards. A technical feat disguised as peasant food: the cream renders its own butter in the pan.",
+  "etapes": [
+   {
+    "titre": "Thick cream",
+    "detail": "38 % minimum, ideally soured cream: light cream will NEVER render its butter."
+   },
+   {
+    "titre": "Boil for 10 minutes",
+    "detail": "Covered, at a gentle boil: this is what begins to break the emulsion."
+   },
+   {
+    "titre": "Flour rained in",
+    "detail": "Sifted over the boiling cream while stirring constantly: it absorbs the water and frees the fat."
+   },
+   {
+    "titre": "The butter seeps",
+    "detail": "Keep stirring: pools of clear butter rise to the surface. THAT IS THE POINT."
+   },
+   {
+    "titre": "Harvest the butter",
+    "detail": "Spoon it off and set aside: it will be poured over the plates, as tradition demands."
+   },
+   {
+    "titre": "Loosen with hot milk",
+    "detail": "Added little by little to a soft porridge: too thick, it turns gluey as it cools."
+   },
+   {
+    "titre": "Serve doused",
+    "detail": "Porridge in the bowl, harvested butter poured over, sugar and cinnamon. Scalding, always."
+   }
+  ]
+ },
+ "fiskeboller": {
+  "nom": "Fiskeboller",
+  "description": "The white, bouncy Norwegian fish balls, poached then served in a white curry sauce. Their springy texture comes from SALT, which makes the fish proteins swell.",
+  "etapes": [
+   {
+    "titre": "Very fresh white fish",
+    "detail": "Hake, cod or pollock: an oily fish would give a grey, flabby ball."
+   },
+   {
+    "titre": "Everything in the freezer 15 minutes",
+    "detail": "Fish, bowl, blade: above 10°C the emulsion breaks and the balls disintegrate."
+   },
+   {
+    "titre": "Salt FIRST",
+    "detail": "Blend the fish with the salt alone for 2 minutes: it makes the proteins swell and gives the bounce."
+   },
+   {
+    "titre": "Milk in a thread",
+    "detail": "Poured very slowly with the machine running: all at once it would never be absorbed and the mix would split."
+   },
+   {
+    "titre": "Poach at 80°C",
+    "detail": "TREMBLING salted water, never boiling: at a rolling boil the balls burst and empty."
+   },
+   {
+    "titre": "They float up",
+    "detail": "They rise when cooked, in 6 to 8 minutes. Keep them in their warm water."
+   },
+   {
+    "titre": "The curry sauce",
+    "detail": "White roux, poaching water and milk, curry cooked in it 2 minutes: the balls finish in the sauce."
+   }
+  ]
+ },
+ "pinnekjott": {
+  "nom": "Pinnekjøtt",
+  "description": "The salted, dried Christmas lamb ribs, STEAMED on a bed of birch sticks — hence the name, \"stick meat\". A 30-hour soak is absolutely compulsory.",
+  "etapes": [
+   {
+    "titre": "Thirty hours of soaking",
+    "detail": "Cold water changed THREE times: under-soaked, the meat is inedible and there is no fixing it."
+   },
+   {
+    "titre": "The bed of sticks",
+    "detail": "Peeled birch sticks in the bottom of the pot: failing that, a raised trivet does the same job."
+   },
+   {
+    "titre": "Water must not touch the meat",
+    "detail": "It must stay BELOW the bed of sticks: this is steam, not a broth."
+   },
+   {
+    "titre": "Three hours covered",
+    "detail": "At the lowest heat, never uncovering: the meat falls off the bone by itself at the end."
+   },
+   {
+    "titre": "Watch the level",
+    "detail": "Top up with BOILING water if needed: the pot must never run dry."
+   },
+   {
+    "titre": "Under the grill",
+    "detail": "5 minutes at the end: the fat caramelises and the rind turns crisp."
+   },
+   {
+    "titre": "Swede mash",
+    "detail": "Swede and potato crushed with butter and cream: the compulsory accompaniment."
+   }
+  ]
+ },
+ "leipajuusto": {
+  "nom": "Leipäjuusto",
+  "description": "Finnish \"bread cheese\", which SQUEAKS between the teeth and is grilled until it blisters brown. Served scalding with arctic berry jam and coffee — sometimes dunked in it.",
+  "etapes": [
+   {
+    "titre": "Whole UNHOMOGENISED milk",
+    "detail": "Shop UHT milk will not curdle properly: look for raw milk or fresh whole milk."
+   },
+   {
+    "titre": "Heat to 38°C",
+    "detail": "Not a degree more: above 40°C the rennet denatures and the milk will never set."
+   },
+   {
+    "titre": "Don't move it",
+    "detail": "45 minutes WITHOUT stirring or moving the pan: the slightest vibration breaks the forming curd."
+   },
+   {
+    "titre": "Cut the curd",
+    "detail": "Score it in a grid with a knife then rest 10 minutes: the green whey should rise by itself."
+   },
+   {
+    "titre": "Drain and press",
+    "detail": "Curd tipped into a cloth and pressed under a weight for 30 minutes: it must form a compact disc."
+   },
+   {
+    "titre": "Grill it",
+    "detail": "Disc brushed with cream, under the grill until the surface BLISTERS dark brown."
+   },
+   {
+    "titre": "Serve scalding",
+    "detail": "Cut into wedges with lingonberry jam. In Lapland, it is dunked in coffee."
+   }
+  ]
+ },
+ "ponnukokur": {
+  "nom": "Pönnukökur",
+  "description": "Icelandic pancakes, thinner than French crêpes and flavoured with CARDAMOM and browned butter. Folded in quarters over sugar, or rolled with jam and cream.",
+  "etapes": [
+   {
+    "titre": "Browned butter",
+    "detail": "Melted until it smells of hazelnut and turns brown: THE flavour that defines a pönnukaka."
+   },
+   {
+    "titre": "Cardamom ground fresh",
+    "detail": "Crush the seeds in a mortar: shop-bought powder has lost 90 % of its perfume."
+   },
+   {
+    "titre": "A very thin batter",
+    "detail": "Looser than French crêpe batter: they should be almost translucent once cooked."
+   },
+   {
+    "titre": "Rest 30 minutes",
+    "detail": "The flour hydrates and the bubbles disappear: without a rest they tear when turned."
+   },
+   {
+    "titre": "A dedicated pan",
+    "detail": "Icelanders keep a pan that is NEVER washed, only wiped: it becomes non-stick."
+   },
+   {
+    "titre": "High heat, very little batter",
+    "detail": "A tiny ladleful swirled immediately: they cook in 40 seconds a side."
+   },
+   {
+    "titre": "Two ways",
+    "detail": "Folded in quarters over sugar, or rolled with rhubarb jam and whipped cream."
+   }
+  ]
+ },
+ "boterkoek": {
+  "nom": "Boterkoek",
+  "description": "The Dutch butter cake: a single thick, dense layer barely cooked in the middle, where butter is a THIRD of the total weight. Deliberately under-baked — that is what makes it melt.",
+  "etapes": [
+   {
+    "titre": "One third butter",
+    "detail": "It is enormous and it is intentional: a lightened boterkoek has no reason to exist."
+   },
+   {
+    "titre": "Soft butter, not melted",
+    "detail": "Melted, it makes a greasy flat cake: it must be creamed with the sugar, not poured."
+   },
+   {
+    "titre": "Mix as little as possible",
+    "detail": "Stop the moment the flour disappears: gluten would make it chewy instead of short."
+   },
+   {
+    "titre": "A 2 cm layer",
+    "detail": "Spread in a tart tin: thicker and the centre stays raw, thinner and it becomes a shortbread."
+   },
+   {
+    "titre": "Score the top",
+    "detail": "Crosshatch drawn with a fork then egg wash: the visual signature of boterkoek."
+   },
+   {
+    "titre": "Take it out UNDER-BAKED",
+    "detail": "25 minutes at 175°C: edges golden, centre still pale and soft. It finishes setting as it cools."
+   },
+   {
+    "titre": "Wait until fully cold",
+    "detail": "Cut warm, it collapses. It needs 2 hours before it holds a clean slice."
+   }
+  ]
+ },
+ "kibbeling": {
+  "nom": "Kibbeling",
+  "description": "The fried cod bites of Dutch markets, served in a cone with garlic sauce. The batter is made with BEER and contains baking powder: two gases instead of one.",
+  "etapes": [
+   {
+    "titre": "Even cubes",
+    "detail": "3 cm across: any larger and the outside burns before the centre is cooked."
+   },
+   {
+    "titre": "Salt 15 minutes ahead",
+    "detail": "Salt firms the flesh and stops it falling apart in the hot oil."
+   },
+   {
+    "titre": "Very cold beer",
+    "detail": "The thermal shock between icy batter and 180°C oil creates the steam that makes the crust."
+   },
+   {
+    "titre": "Two raising agents",
+    "detail": "Beer AND baking powder: the Dutch make a particularly puffed, light batter."
+   },
+   {
+    "titre": "Don't over-mix",
+    "detail": "A few lumps are NORMAL and desirable: a smooth batter gives a hard crust."
+   },
+   {
+    "titre": "180°C, small batches",
+    "detail": "Six pieces at a time maximum: more and the oil cools and the batter drinks the fat."
+   },
+   {
+    "titre": "The garlic sauce",
+    "detail": "Mayonnaise, crushed garlic, lemon and parsley: made while the fish drains."
+   }
+  ]
+ },
+ "tartealdjote": {
+  "nom": "Tarte al d'Djote",
+  "description": "The chard and cheese tart of Nivelles, protected by a brotherhood since 1962. Its cheese, \"bètchéye\", is a curd MATURED for three months — that is where the powerful smell and unique taste come from.",
+  "etapes": [
+   {
+    "titre": "A powerful cheese",
+    "detail": "Bètchéye is unobtainable: a Maroilles or Vieux-Lille mixed with fromage blanc comes close."
+   },
+   {
+    "titre": "Chard leaves only",
+    "detail": "Only the LEAVES, not the stalks: the stalks would release water and soak the tart."
+   },
+   {
+    "titre": "Squeeze hard",
+    "detail": "Chard blanched 2 minutes then wrung out by hand until nothing more drips."
+   },
+   {
+    "titre": "A yeasted dough, not shortcrust",
+    "detail": "A thin bread dough: it absorbs the cheese's moisture without going soft."
+   },
+   {
+    "titre": "A high rim",
+    "detail": "Bring the dough 3 cm up the sides: the filling is very liquid at first and would spill."
+   },
+   {
+    "titre": "Don't overfill",
+    "detail": "2 cm of filling maximum: any deeper and the centre would never set and stay runny."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "30 minutes at 220°C: the surface should blister and brown in patches. Eaten WARM."
+   }
+  ]
  }
 };

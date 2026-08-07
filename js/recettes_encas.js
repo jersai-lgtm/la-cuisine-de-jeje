@@ -7724,4 +7724,42 @@ Object.assign(recettes, {
     ],
     liees: ["cornishpasty","empanadagallega","scotchpie"]
   },
+  kibbeling: {
+    dateAjout: "2026-08-07T11:28:00",
+    nom: "Kibbeling",
+    cat: "encas", pays: "paysbas",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Les bouchées de cabillaud frites des marchés néerlandais, servies dans un cornet avec une sauce à l'ail. La pâte à frire est à la BIÈRE et contient de la levure chimique : deux gaz au lieu d'un.",
+    tableauKibbeling: [
+      { nb: 1, colin: "130 g", farine: "35 g", biere: "55 ml", levurechimique: "2 g", paprika: "1.5 g", curry: "1 g", mayonnaise: "25 g", ail: "", citron: "¼", huile: "25 ml", persil: "3 g", sel: "2 g" },
+      { nb: 2, colin: "260 g", farine: "70 g", biere: "110 ml", levurechimique: "4 g", paprika: "3 g", curry: "2 g", mayonnaise: "50 g", ail: "", citron: "½", huile: "50 ml", persil: "6 g", sel: "4 g" },
+      { nb: 3, colin: "390 g", farine: "105 g", biere: "165 ml", levurechimique: "6 g", paprika: "4.5 g", curry: "3 g", mayonnaise: "75 g", ail: "", citron: "¾", huile: "75 ml", persil: "9 g", sel: "6 g" },
+      { nb: 4, colin: "520 g", farine: "140 g", biere: "220 ml", levurechimique: "8 g", paprika: "6 g", curry: "4 g", mayonnaise: "100 g", ail: "1", citron: "1", huile: "100 ml", persil: "12 g", sel: "8 g" },
+      { nb: 5, colin: "650 g", farine: "175 g", biere: "275 ml", levurechimique: "10 g", paprika: "7.5 g", curry: "5 g", mayonnaise: "125 g", ail: "1½", citron: "1¼", huile: "125 ml", persil: "15 g", sel: "10 g" },
+      { nb: 6, colin: "780 g", farine: "210 g", biere: "330 ml", levurechimique: "12 g", paprika: "9 g", curry: "6 g", mayonnaise: "150 g", ail: "1", citron: "1½", huile: "150 ml", persil: "18 g", sel: "12 g" },
+      { nb: 7, colin: "910 g", farine: "245 g", biere: "385 ml", levurechimique: "14 g", paprika: "10.5 g", curry: "7 g", mayonnaise: "175 g", ail: "2", citron: "1¾", huile: "175 ml", persil: "21 g", sel: "14 g" },
+      { nb: 8, colin: "1040 g", farine: "280 g", biere: "440 ml", levurechimique: "16 g", paprika: "12 g", curry: "8 g", mayonnaise: "200 g", ail: "2", citron: "2", huile: "200 ml", persil: "24 g", sel: "16 g" },
+      { nb: 9, colin: "1170 g", farine: "315 g", biere: "495 ml", levurechimique: "18 g", paprika: "13.5 g", curry: "9 g", mayonnaise: "225 g", ail: "2", citron: "2¼", huile: "225 ml", persil: "27 g", sel: "18 g" },
+      { nb: 10, colin: "1300 g", farine: "350 g", biere: "550 ml", levurechimique: "20 g", paprika: "15 g", curry: "10 g", mayonnaise: "250 g", ail: "3", citron: "2½", huile: "250 ml", persil: "30 g", sel: "20 g" },
+      { nb: 11, colin: "1430 g", farine: "385 g", biere: "605 ml", levurechimique: "22 g", paprika: "16.5 g", curry: "11 g", mayonnaise: "275 g", ail: "3", citron: "2¾", huile: "275 ml", persil: "33 g", sel: "22 g" },
+      { nb: 12, colin: "1560 g", farine: "420 g", biere: "660 ml", levurechimique: "24 g", paprika: "18 g", curry: "12 g", mayonnaise: "300 g", ail: "3", citron: "3", huile: "300 ml", persil: "36 g", sel: "24 g" },
+      { nb: 13, colin: "1690 g", farine: "455 g", biere: "715 ml", levurechimique: "26 g", paprika: "19.5 g", curry: "13 g", mayonnaise: "325 g", ail: "3", citron: "3¼", huile: "325 ml", persil: "39 g", sel: "26 g" },
+      { nb: 14, colin: "1820 g", farine: "490 g", biere: "770 ml", levurechimique: "28 g", paprika: "21 g", curry: "14 g", mayonnaise: "350 g", ail: "4", citron: "3½", huile: "350 ml", persil: "42 g", sel: "28 g" },
+      { nb: 15, colin: "1950 g", farine: "525 g", biere: "825 ml", levurechimique: "30 g", paprika: "22.5 g", curry: "15 g", mayonnaise: "375 g", ail: "4½", citron: "3¾", huile: "375 ml", persil: "45 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Des cubes réguliers", detail: "3 cm de côté : plus gros, l'extérieur brûle avant que le cœur ne soit cuit.", badge: null },
+      { icone: "🧂", titre: "Saler 15 minutes avant", detail: "Le sel raffermit la chair et l'empêche de se déliter dans l'huile bouillante.", badge: null },
+      { icone: "🍺", titre: "Bière très froide", detail: "Le choc thermique entre la pâte glacée et l'huile à 180°C crée la vapeur qui fait la croûte.", badge: null },
+      { icone: "🫧", titre: "Deux agents levants", detail: "Bière ET levure chimique : les Néerlandais font une pâte particulièrement soufflée et légère.", badge: null },
+      { icone: "🥄", titre: "Ne pas trop mélanger", detail: "Quelques grumeaux sont NORMAUX et souhaitables : une pâte lisse donne une croûte dure.", badge: null },
+      { icone: "🌡️", titre: "180°C, petites quantités", detail: "Six morceaux à la fois maximum : plus, et l'huile refroidit et la pâte boit le gras.", badge: null },
+      { icone: "🧄", titre: "La sauce à l'ail", detail: "Mayonnaise, ail écrasé, citron et persil : elle se fait pendant que le poisson s'égoutte.", badge: null }
+    ],
+    liees: ["fishandchips","accrasmorue","brandadeMorue"]
+  },
 });

@@ -510,6 +510,9 @@ const INGREDIENTS_PRIX = {
   paprikaFume:    { prixKg: 30.0, calPer100g: 282,  lipSat: 2.1,  sucre: 10,   sel: 0,    fibres: 35,  prot: 14,   flv: 0, glucides: 28, lipides: 13 },
   paprikafume:    { prixKg: 30.0, calPer100g: 282,  lipSat: 2.1,  sucre: 10,   sel: 0,    fibres: 35,  prot: 14,   flv: 0, glucides: 28, lipides: 13 },
   cumin:          { prixKg: 25.0, calPer100g: 375,  lipSat: 1.5,  sucre: 2.3,  sel: 0,    fibres: 11,  prot: 18,   flv: 0, glucides: 44, lipides: 8.5 },
+  carvi:          { prixKg: 28.0, calPer100g: 333,  lipSat: 0.6,  sucre: 0.6,  sel: 0,    fibres: 38,  prot: 20,   flv: 0, glucides: 52, lipides: 14.6 },
+  maroilles:      { prixKg: 18.50, calPer100g: 340, lipSat: 18.0, sucre: 0.5,  sel: 2.5,  fibres: 0,   prot: 21,   flv: 0, glucides: 0.5, lipides: 27 },
+  chourouge:      { prixKg: 2.20, calPer100g: 31,   lipSat: 0,    sucre: 3.8,  sel: 0.03, fibres: 2.1, prot: 1.4,  flv: 0, glucides: 5.3, lipides: 0.2 },
   fenugrec:       { prixKg: 30.0, calPer100g: 323,  lipSat: 1.5,  sucre: 0,    sel: 0,    fibres: 25,  prot: 23,   flv: 0, glucides: 43, lipides: 7.5 },
   herbesprovence: { prixKg: 40.0, calPer100g: 280,  lipSat: 0.4,  sucre: 0,    sel: 0.1,  fibres: 64,  prot: 9,    flv: 0, glucides: 8, lipides: 1 },
   persil:         { prixKg: 14.0, calPer100g: 36,   lipSat: 0.1,  sucre: 0.9,  sel: 0.1,  fibres: 3.3, prot: 3,    flv: 100, glucides: 8, lipides: 0.8 },
@@ -1555,7 +1558,7 @@ const INGREDIENTS_LABELS = {
   acai: "🫐 Açaï", coulis: "🍓 Coulis", sambar: "🍲 Sambar",
   // == Aromates & épices ==
   sel: "🧂 Sel", poivre: "🌶️ Poivre noir", piment: "🌶️ Piment",
-  masala: "🌶️ Garam masala", curry: "🌶️ Curry", cumin: "🌿 Cumin",
+  masala: "🌶️ Garam masala", curry: "🌶️ Curry", cumin: "🌿 Cumin", carvi: "🌿 Carvi (Kümmel)", maroilles: "🧀 Maroilles", chourouge: "🟣 Chou rouge",
   cannelle: "🪵 Cannelle", muscade: "🌰 Muscade", safran: "🌼 Safran", paprika: "🌶️ Paprika",
   // === Lot 1 — Ingrédients classiques français ===
   brochet: "🐟 Brochet", ecrevisses: "🦞 Écrevisses", lapin: "🐰 Lapin",
