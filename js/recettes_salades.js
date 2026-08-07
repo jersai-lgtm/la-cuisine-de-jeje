@@ -3754,4 +3754,42 @@ Object.assign(recettes, {
     ],
     liees: ["esqueixada","escalivada","romesco"]
   },
+  sillsallad: {
+    dateAjout: "2026-08-07T09:20:00",
+    nom: "Sillsallad",
+    cat: "salades", pays: "suede",
+    base: 6,
+    temps: "30 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "💗",
+    description: "La salade rose de Noël suédoise : hareng mariné, betterave et pomme liés à la crème. Sa couleur vient uniquement du JUS DE BETTERAVE, et elle doit reposer une nuit pour que le rose devienne uniforme.",
+    tableauSillsallad: [
+      { nb: 1, hareng: "45 g", betterave: "90 g", pomme: "", cornichons: "25 g", oignon: "¼", creme: "35 ml", vinaigreBlanc: "6 ml", sucre: "4 g", aneth: "2 g", poivre: "0.4 g", oeufs: "" },
+      { nb: 2, hareng: "90 g", betterave: "180 g", pomme: "", cornichons: "50 g", oignon: "½", creme: "70 ml", vinaigreBlanc: "12 ml", sucre: "8 g", aneth: "4 g", poivre: "0.8 g", oeufs: "" },
+      { nb: 3, hareng: "135 g", betterave: "270 g", pomme: "1", cornichons: "75 g", oignon: "¾", creme: "105 ml", vinaigreBlanc: "18 ml", sucre: "12 g", aneth: "6 g", poivre: "1.2 g", oeufs: "" },
+      { nb: 4, hareng: "180 g", betterave: "360 g", pomme: "1", cornichons: "100 g", oignon: "1", creme: "140 ml", vinaigreBlanc: "24 ml", sucre: "16 g", aneth: "8 g", poivre: "1.6 g", oeufs: "1" },
+      { nb: 5, hareng: "225 g", betterave: "450 g", pomme: "2", cornichons: "125 g", oignon: "1¼", creme: "175 ml", vinaigreBlanc: "30 ml", sucre: "20 g", aneth: "10 g", poivre: "2 g", oeufs: "1½" },
+      { nb: 6, hareng: "270 g", betterave: "540 g", pomme: "2", cornichons: "150 g", oignon: "1½", creme: "210 ml", vinaigreBlanc: "36 ml", sucre: "24 g", aneth: "12 g", poivre: "2.4 g", oeufs: "1" },
+      { nb: 7, hareng: "315 g", betterave: "630 g", pomme: "2", cornichons: "175 g", oignon: "1¾", creme: "245 ml", vinaigreBlanc: "42 ml", sucre: "28 g", aneth: "14 g", poivre: "2.8 g", oeufs: "2" },
+      { nb: 8, hareng: "360 g", betterave: "720 g", pomme: "3", cornichons: "200 g", oignon: "2", creme: "280 ml", vinaigreBlanc: "48 ml", sucre: "32 g", aneth: "16 g", poivre: "3.2 g", oeufs: "2" },
+      { nb: 9, hareng: "405 g", betterave: "810 g", pomme: "3", cornichons: "225 g", oignon: "2¼", creme: "315 ml", vinaigreBlanc: "54 ml", sucre: "36 g", aneth: "18 g", poivre: "3.6 g", oeufs: "2" },
+      { nb: 10, hareng: "450 g", betterave: "900 g", pomme: "4", cornichons: "250 g", oignon: "2½", creme: "350 ml", vinaigreBlanc: "60 ml", sucre: "40 g", aneth: "20 g", poivre: "4 g", oeufs: "3" },
+      { nb: 11, hareng: "495 g", betterave: "990 g", pomme: "4", cornichons: "275 g", oignon: "2¾", creme: "385 ml", vinaigreBlanc: "66 ml", sucre: "44 g", aneth: "22 g", poivre: "4.4 g", oeufs: "3" },
+      { nb: 12, hareng: "540 g", betterave: "1080 g", pomme: "4", cornichons: "300 g", oignon: "3", creme: "420 ml", vinaigreBlanc: "72 ml", sucre: "48 g", aneth: "24 g", poivre: "4.8 g", oeufs: "3" },
+      { nb: 13, hareng: "585 g", betterave: "1170 g", pomme: "5", cornichons: "325 g", oignon: "3¼", creme: "455 ml", vinaigreBlanc: "78 ml", sucre: "52 g", aneth: "26 g", poivre: "5.2 g", oeufs: "3" },
+      { nb: 14, hareng: "630 g", betterave: "1260 g", pomme: "5", cornichons: "350 g", oignon: "3½", creme: "490 ml", vinaigreBlanc: "84 ml", sucre: "56 g", aneth: "28 g", poivre: "5.6 g", oeufs: "4" },
+      { nb: 15, hareng: "675 g", betterave: "1350 g", pomme: "6", cornichons: "375 g", oignon: "3¾", creme: "525 ml", vinaigreBlanc: "90 ml", sucre: "60 g", aneth: "30 g", poivre: "6 g", oeufs: "4½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Dessaler le hareng", detail: "Filets marinés rincés et trempés 20 minutes dans du lait s'ils sont très salés : goûtez avant de décider.", badge: null },
+      { icone: "🍠", titre: "Betteraves cuites, pas au vinaigre", detail: "Les betteraves en bocal au vinaigre déséquilibrent tout — prenez-les simplement cuites.", badge: null },
+      { icone: "🔲", titre: "Tout en dés de 5 mm", detail: "Hareng, betterave, pomme et cornichon à la MÊME taille : c'est une salade de texture régulière.", badge: null },
+      { icone: "🍏", titre: "Pomme acide", detail: "Une granny ou une boskoop : une pomme sucrée disparaîtrait derrière le vinaigre et la betterave.", badge: null },
+      { icone: "🥛", titre: "Crème à peine fouettée", detail: "Montée mousseuse mais pas ferme, puis pliée délicatement : battue, elle deviendrait du beurre au contact du sel.", badge: null },
+      { icone: "🌙", titre: "Reposer une nuit", detail: "12 heures au frais : le jus de betterave doit teinter uniformément la crème, sinon la salade reste marbrée.", badge: null },
+      { icone: "🥚", titre: "Décorer au service", detail: "Œuf dur haché et aneth au dernier moment. Se sert FROIDE, avec du pain de seigle.", badge: null }
+    ],
+    liees: ["gravlax","smorrebrod","saladeolivier"]
+  },
 });

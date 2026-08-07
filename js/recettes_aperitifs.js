@@ -4012,4 +4012,42 @@ tapenade: {
       { icone: "🍽️", titre: "Patienter", detail: "48 heures au frais avant d'ouvrir. Sur l'antipasti ou dans un sandwich. La giardiniera !", badge: null }
     ]
   },
+  devilshorseback: {
+    dateAjout: "2026-08-07T09:04:00",
+    nom: "Devils on Horseback",
+    cat: "aperitifs", pays: "angleterre",
+    base: 6,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "😈",
+    description: "Des pruneaux fourrés aux amandes, enroulés dans du bacon et passés au four. Le savoury victorien servi APRÈS le dessert — le sucré-salé le plus efficace jamais inventé pour un apéro.",
+    tableauDevilshorseback: [
+      { nb: 1, pruneaux: "45 g", bacon: "35 g", amandes: "10 g", the: "0.2 g", poivre: "0.3 g", chutney: "6 g" },
+      { nb: 2, pruneaux: "90 g", bacon: "70 g", amandes: "20 g", the: "0.4 g", poivre: "0.6 g", chutney: "12 g" },
+      { nb: 3, pruneaux: "135 g", bacon: "105 g", amandes: "30 g", the: "0.6 g", poivre: "0.9 g", chutney: "18 g" },
+      { nb: 4, pruneaux: "180 g", bacon: "140 g", amandes: "40 g", the: "0.8 g", poivre: "1.2 g", chutney: "24 g" },
+      { nb: 5, pruneaux: "225 g", bacon: "175 g", amandes: "50 g", the: "1 g", poivre: "1.5 g", chutney: "30 g" },
+      { nb: 6, pruneaux: "270 g", bacon: "210 g", amandes: "60 g", the: "1.2 g", poivre: "1.8 g", chutney: "36 g" },
+      { nb: 7, pruneaux: "315 g", bacon: "245 g", amandes: "70 g", the: "1.4 g", poivre: "2.1 g", chutney: "42 g" },
+      { nb: 8, pruneaux: "360 g", bacon: "280 g", amandes: "80 g", the: "1.6 g", poivre: "2.4 g", chutney: "48 g" },
+      { nb: 9, pruneaux: "405 g", bacon: "315 g", amandes: "90 g", the: "1.8 g", poivre: "2.7 g", chutney: "54 g" },
+      { nb: 10, pruneaux: "450 g", bacon: "350 g", amandes: "100 g", the: "2 g", poivre: "3 g", chutney: "60 g" },
+      { nb: 11, pruneaux: "495 g", bacon: "385 g", amandes: "110 g", the: "2.2 g", poivre: "3.3 g", chutney: "66 g" },
+      { nb: 12, pruneaux: "540 g", bacon: "420 g", amandes: "120 g", the: "2.4 g", poivre: "3.6 g", chutney: "72 g" },
+      { nb: 13, pruneaux: "585 g", bacon: "455 g", amandes: "130 g", the: "2.6 g", poivre: "3.9 g", chutney: "78 g" },
+      { nb: 14, pruneaux: "630 g", bacon: "490 g", amandes: "140 g", the: "2.8 g", poivre: "4.2 g", chutney: "84 g" },
+      { nb: 15, pruneaux: "675 g", bacon: "525 g", amandes: "150 g", the: "3 g", poivre: "4.5 g", chutney: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍵", titre: "Réhydrater les pruneaux", detail: "10 minutes dans du thé chaud : secs, ils resteraient durs et le bacon serait cuit avant eux.", badge: null },
+      { icone: "🥜", titre: "L'amande à l'intérieur", detail: "Une amande entière glissée dans chaque pruneau dénoyauté : c'est le croquant qui fait toute la recette.", badge: null },
+      { icone: "🥓", titre: "Bacon fin", detail: "Tranches fines coupées en deux dans la longueur : épais, il ne serait pas croustillant au bout de 15 minutes.", badge: null },
+      { icone: "🌀", titre: "Enrouler serré", detail: "Une seule couche de bacon bien tendue autour du pruneau — deux couches, et l'intérieur reste mou.", badge: null },
+      { icone: "📌", titre: "Piquer", detail: "Un cure-dent qui traverse le bacon ET le pruneau, sinon tout se déroule au four.", badge: null },
+      { icone: "🔥", titre: "Four très chaud", detail: "15 minutes à 200°C sur grille (pas dans un plat) : la graisse doit s'égoutter pour que le bacon croustille.", badge: null },
+      { icone: "😈", titre: "Servir chaud", detail: "Ils sont brûlants et le pruneau explose de sucre — laissez 3 minutes, puis servez avec du chutney.", badge: null }
+    ],
+    liees: ["gilda","giardiniera","feuilletessaucisse"]
+  },
 });

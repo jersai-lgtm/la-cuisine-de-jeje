@@ -7686,4 +7686,42 @@ Object.assign(recettes, {
     ],
     liees: ["baozi","mantou"]
   },
+  forfarbridie: {
+    dateAjout: "2026-08-07T09:11:00",
+    nom: "Forfar Bridie",
+    cat: "encas", pays: "ecosse",
+    base: 6,
+    temps: "1 h 15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌙",
+    description: "Le chausson de bœuf écossais, cousin du Cornish pasty mais SANS pomme de terre — la garniture est de la viande, point. Sa croûte au saindoux tient dans la poche d'un ouvrier toute une matinée.",
+    tableauForfarbridie: [
+      { nb: 1, boeuf: "100 g", farine: "55 g", saindoux: "22 g", beurre: "10 g", oignon: "", bouillon: "25 ml", moutarde: "4 g", poivre: "0.8 g", sel: "1.2 g", oeufs: "" },
+      { nb: 2, boeuf: "200 g", farine: "110 g", saindoux: "44 g", beurre: "20 g", oignon: "1", bouillon: "50 ml", moutarde: "8 g", poivre: "1.6 g", sel: "2.4 g", oeufs: "" },
+      { nb: 3, boeuf: "300 g", farine: "165 g", saindoux: "66 g", beurre: "30 g", oignon: "1", bouillon: "75 ml", moutarde: "12 g", poivre: "2.4 g", sel: "3.6 g", oeufs: "" },
+      { nb: 4, boeuf: "400 g", farine: "220 g", saindoux: "88 g", beurre: "40 g", oignon: "2", bouillon: "100 ml", moutarde: "16 g", poivre: "3.2 g", sel: "4.8 g", oeufs: "" },
+      { nb: 5, boeuf: "500 g", farine: "275 g", saindoux: "110 g", beurre: "50 g", oignon: "3", bouillon: "125 ml", moutarde: "20 g", poivre: "4 g", sel: "6 g", oeufs: "½" },
+      { nb: 6, boeuf: "600 g", farine: "330 g", saindoux: "132 g", beurre: "60 g", oignon: "3", bouillon: "150 ml", moutarde: "24 g", poivre: "4.8 g", sel: "7.2 g", oeufs: "" },
+      { nb: 7, boeuf: "700 g", farine: "385 g", saindoux: "154 g", beurre: "70 g", oignon: "4", bouillon: "175 ml", moutarde: "28 g", poivre: "5.6 g", sel: "8.4 g", oeufs: "" },
+      { nb: 8, boeuf: "800 g", farine: "440 g", saindoux: "176 g", beurre: "80 g", oignon: "4", bouillon: "200 ml", moutarde: "32 g", poivre: "6.4 g", sel: "9.6 g", oeufs: "" },
+      { nb: 9, boeuf: "900 g", farine: "495 g", saindoux: "198 g", beurre: "90 g", oignon: "5", bouillon: "225 ml", moutarde: "36 g", poivre: "7.2 g", sel: "10.8 g", oeufs: "" },
+      { nb: 10, boeuf: "1000 g", farine: "550 g", saindoux: "220 g", beurre: "100 g", oignon: "6", bouillon: "250 ml", moutarde: "40 g", poivre: "8 g", sel: "12 g", oeufs: "1" },
+      { nb: 11, boeuf: "1100 g", farine: "605 g", saindoux: "242 g", beurre: "110 g", oignon: "6", bouillon: "275 ml", moutarde: "44 g", poivre: "8.8 g", sel: "13.2 g", oeufs: "1" },
+      { nb: 12, boeuf: "1200 g", farine: "660 g", saindoux: "264 g", beurre: "120 g", oignon: "7", bouillon: "300 ml", moutarde: "48 g", poivre: "9.6 g", sel: "14.4 g", oeufs: "1" },
+      { nb: 13, boeuf: "1300 g", farine: "715 g", saindoux: "286 g", beurre: "130 g", oignon: "7", bouillon: "325 ml", moutarde: "52 g", poivre: "10.4 g", sel: "15.6 g", oeufs: "1" },
+      { nb: 14, boeuf: "1400 g", farine: "770 g", saindoux: "308 g", beurre: "140 g", oignon: "8", bouillon: "350 ml", moutarde: "56 g", poivre: "11.2 g", sel: "16.8 g", oeufs: "1" },
+      { nb: 15, boeuf: "1500 g", farine: "825 g", saindoux: "330 g", beurre: "150 g", oignon: "9", bouillon: "375 ml", moutarde: "60 g", poivre: "12 g", sel: "18 g", oeufs: "1½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Hacher au couteau", detail: "Bavette ou macreuse coupée en petits dés, JAMAIS hachée : le bridie doit se mâcher, pas fondre.", badge: null },
+      { icone: "🧅", titre: "Oignon cru", detail: "Émincé finement et mélangé cru à la viande : il cuit à la vapeur dans le chausson et parfume tout.", badge: null },
+      { icone: "🐖", titre: "Pâte au saindoux", detail: "Moitié saindoux moitié beurre : le saindoux donne le friable, le beurre le goût. À l'eau glacée.", badge: null },
+      { icone: "🌙", titre: "Le demi-cercle", detail: "Un disque de 18 cm garni sur une moitié seulement, puis replié : c'est la forme de croissant qui fait le bridie.", badge: null },
+      { icone: "🤏", titre: "Souder à la fourchette", detail: "Bord badigeonné d'eau, replié et pressé aux dents de fourchette — pas de torsade, contrairement au Cornish pasty.", badge: null },
+      { icone: "🕳️", titre: "Percer le dessus", detail: "Un ou deux trous : la vapeur de la viande doit sortir, sinon la pâte se déchire sur le côté.", badge: null },
+      { icone: "🔥", titre: "Deux temps", detail: "15 minutes à 210°C pour saisir, puis 35 minutes à 175°C pour cuire la viande sans brûler la croûte.", badge: null }
+    ],
+    liees: ["cornishpasty","empanadagallega","scotchpie"]
+  },
 });

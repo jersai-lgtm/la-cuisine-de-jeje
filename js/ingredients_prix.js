@@ -600,6 +600,7 @@ const INGREDIENTS_PRIX = {
   tamarin:        { prixKg: 12.0, calPer100g: 240,  lipSat: 0.3,  sucre: 38,   sel: 0,    fibres: 5.1, prot: 2.8,  flv: 100, glucides: 40, lipides: 1.5 },
   chutney:        { prixKg: 7.00, calPer100g: 250,  lipSat: 0.5,  sucre: 50,   sel: 0.5,  fibres: 2,   prot: 1,    flv: 50, glucides: 52, lipides: 1 },
   confiture:      { prixKg: 5.00, calPer100g: 280,  lipSat: 0,    sucre: 67,   sel: 0,    fibres: 1,   prot: 0.4,  flv: 50, glucides: 68, lipides: 0.2 },
+  marmelade:      { prixKg: 6.20, calPer100g: 265,  lipSat: 0,    sucre: 63,   sel: 0,    fibres: 1.2, prot: 0.3,  flv: 50, glucides: 65, lipides: 0.1 },
   sambar:         { prixKg: 8.00, calPer100g: 100,  lipSat: 0.5,  sucre: 2,    sel: 1,    fibres: 4,   prot: 5,    flv: 50, glucides: 6, lipides: 1.5 },
   sauce:          { prixKg: 6.00, calPer100g: 150,  lipSat: 2,    sucre: 8,    sel: 1.5,  fibres: 1,   prot: 2,    flv: 30, glucides: 10, lipides: 4 },
   crema:          { prixKg: 4.50, calPer100g: 195,  lipSat: 12,   sucre: 3,    sel: 0.1,  fibres: 0,   prot: 2.5,  flv: 0, glucides: 3, lipides: 18 },
@@ -1495,6 +1496,7 @@ const INGREDIENTS_LABELS = {
   cheddar: "🧀 Cheddar", mozza: "🧀 Mozzarella", fromage: "🧀 Fromage",
   laitCoco: "🥥 Lait de coco", cremeCoco: "🥥 Crème de coco", coco: "🥥 Lait de coco",
   confiture: "🍓 Confiture", moutarde: "🟡 Moutarde",
+  marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==
   oeufs: "🥚 Œufs", oeuf: "🥚 Œuf", oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",
   oeufPate: "🥚 Œufs (pâte)", jaunes: "🥚 Jaunes d'œufs", jaunesCreme: "🥚 Jaunes d'œufs",

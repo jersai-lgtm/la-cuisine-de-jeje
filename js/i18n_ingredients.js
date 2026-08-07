@@ -128,7 +128,7 @@ window.I18N_ING = {
   "🌶️ Épices biryani (garam masala)": "🌶️ Biryani spices (garam masala)", "🧄 Pâte gingembre-ail": "🧄 Ginger-garlic paste",
   "🍗 Poulet ou pigeon": "🍗 Chicken or pigeon", "🌶️ Ras-el-hanout": "🌶️ Ras el hanout", "🍝 Tagliatelles fraîches": "🍝 Fresh tagliatelle",
   "🍄 Truffe noire": "🍄 Black truffle", "🍺 Bière brune": "🍺 Dark beer", "🥖 Pain d'épices moutardé": "🥖 Mustard gingerbread",
-  "🍯 Vergeoise (cassonade)": "🍯 Vergeoise (brown sugar)", "🥓 Saindoux": "🥓 Lard", "🍫 Ganache ou confiture": "🍫 Ganache or jam",
+  "🍊 Marmelade d'orange": "🍊 Orange marmalade", "🍯 Vergeoise (cassonade)": "🍯 Vergeoise (brown sugar)", "🥓 Saindoux": "🥓 Lard", "🍫 Ganache ou confiture": "🍫 Ganache or jam",
   "✨ Arôme (vanille...)": "✨ Flavoring (vanilla...)", "🍞 Levure boulangère": "🍞 Baker's yeast", "🥛 Crème chantilly": "🥛 Whipped cream",
   "🥚 Jaune d'œuf": "🥚 Egg yolk", "🌶️ Tabasco": "🌶️ Tabasco", "🌾 Farine tamisée": "🌾 Sifted flour", "🍋 Jus de citron": "🍋 Lemon juice",
   "🍞 Levure chimique": "🍞 Baking powder", "🫚 Gingembre": "🫚 Ginger", "🫚 Galanga": "🫚 Galangal", "⭐ Anis étoilé": "⭐ Star anise",

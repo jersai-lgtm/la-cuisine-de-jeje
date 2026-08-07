@@ -3385,4 +3385,42 @@ mayonnaise: {
     ],
     liees: ["saucesoja","teriyaki","pekinduckeasy"]
   },
+  piccalilli: {
+    dateAjout: "2026-08-07T09:05:00",
+    nom: "Piccalilli",
+    cat: "sauces", saisons: ["ete","automne"], pays: "angleterre",
+    base: 8,
+    temps: "45 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "💛",
+    description: "Le pickle jaune anglais, héritage des chutneys indiens du XVIIIᵉ siècle. Les légumes sont SALÉS À CRU une nuit avant d'être noyés dans une sauce moutarde-curcuma : c'est ce dégorgeage qui garde le croquant un an durant.",
+    tableauPiccalilli: [
+      { nb: 1, choufleur: "70 g", cornichons: "40 g", oignon: "½", haricotsverts: "30 g", vinaigreBlanc: "60 ml", moutarde: "10 g", curcuma: "1.5 g", gingembre: "1.5 g", sucre: "22 g", farine: "8 g", sel: "8 g", coriandre: "1 g" },
+      { nb: 2, choufleur: "140 g", cornichons: "80 g", oignon: "1", haricotsverts: "60 g", vinaigreBlanc: "120 ml", moutarde: "20 g", curcuma: "3 g", gingembre: "3 g", sucre: "44 g", farine: "16 g", sel: "16 g", coriandre: "2 g" },
+      { nb: 3, choufleur: "210 g", cornichons: "120 g", oignon: "1½", haricotsverts: "90 g", vinaigreBlanc: "180 ml", moutarde: "30 g", curcuma: "4.5 g", gingembre: "4.5 g", sucre: "66 g", farine: "24 g", sel: "24 g", coriandre: "3 g" },
+      { nb: 4, choufleur: "280 g", cornichons: "160 g", oignon: "2", haricotsverts: "120 g", vinaigreBlanc: "240 ml", moutarde: "40 g", curcuma: "6 g", gingembre: "6 g", sucre: "88 g", farine: "32 g", sel: "32 g", coriandre: "4 g" },
+      { nb: 5, choufleur: "350 g", cornichons: "200 g", oignon: "2½", haricotsverts: "150 g", vinaigreBlanc: "300 ml", moutarde: "50 g", curcuma: "7.5 g", gingembre: "7.5 g", sucre: "110 g", farine: "40 g", sel: "40 g", coriandre: "5 g" },
+      { nb: 6, choufleur: "420 g", cornichons: "240 g", oignon: "3", haricotsverts: "180 g", vinaigreBlanc: "360 ml", moutarde: "60 g", curcuma: "9 g", gingembre: "9 g", sucre: "132 g", farine: "48 g", sel: "48 g", coriandre: "6 g" },
+      { nb: 7, choufleur: "490 g", cornichons: "280 g", oignon: "3½", haricotsverts: "210 g", vinaigreBlanc: "420 ml", moutarde: "70 g", curcuma: "10.5 g", gingembre: "10.5 g", sucre: "154 g", farine: "56 g", sel: "56 g", coriandre: "7 g" },
+      { nb: 8, choufleur: "560 g", cornichons: "320 g", oignon: "4", haricotsverts: "240 g", vinaigreBlanc: "480 ml", moutarde: "80 g", curcuma: "12 g", gingembre: "12 g", sucre: "176 g", farine: "64 g", sel: "64 g", coriandre: "8 g" },
+      { nb: 9, choufleur: "630 g", cornichons: "360 g", oignon: "4½", haricotsverts: "270 g", vinaigreBlanc: "540 ml", moutarde: "90 g", curcuma: "13.5 g", gingembre: "13.5 g", sucre: "198 g", farine: "72 g", sel: "72 g", coriandre: "9 g" },
+      { nb: 10, choufleur: "700 g", cornichons: "400 g", oignon: "5", haricotsverts: "300 g", vinaigreBlanc: "600 ml", moutarde: "100 g", curcuma: "15 g", gingembre: "15 g", sucre: "220 g", farine: "80 g", sel: "80 g", coriandre: "10 g" },
+      { nb: 11, choufleur: "770 g", cornichons: "440 g", oignon: "5½", haricotsverts: "330 g", vinaigreBlanc: "660 ml", moutarde: "110 g", curcuma: "16.5 g", gingembre: "16.5 g", sucre: "242 g", farine: "88 g", sel: "88 g", coriandre: "11 g" },
+      { nb: 12, choufleur: "840 g", cornichons: "480 g", oignon: "6", haricotsverts: "360 g", vinaigreBlanc: "720 ml", moutarde: "120 g", curcuma: "18 g", gingembre: "18 g", sucre: "264 g", farine: "96 g", sel: "96 g", coriandre: "12 g" },
+      { nb: 13, choufleur: "910 g", cornichons: "520 g", oignon: "6½", haricotsverts: "390 g", vinaigreBlanc: "780 ml", moutarde: "130 g", curcuma: "19.5 g", gingembre: "19.5 g", sucre: "286 g", farine: "104 g", sel: "104 g", coriandre: "13 g" },
+      { nb: 14, choufleur: "980 g", cornichons: "560 g", oignon: "7", haricotsverts: "420 g", vinaigreBlanc: "840 ml", moutarde: "140 g", curcuma: "21 g", gingembre: "21 g", sucre: "308 g", farine: "112 g", sel: "112 g", coriandre: "14 g" },
+      { nb: 15, choufleur: "1050 g", cornichons: "600 g", oignon: "7½", haricotsverts: "450 g", vinaigreBlanc: "900 ml", moutarde: "150 g", curcuma: "22.5 g", gingembre: "22.5 g", sucre: "330 g", farine: "120 g", sel: "120 g", coriandre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧂", titre: "Saler à cru", detail: "Légumes en petits dés, couverts de gros sel, 12 HEURES : ils rendent leur eau et resteront croquants.", badge: null },
+      { icone: "🚿", titre: "Rincer longuement", detail: "Rincez à grande eau et goûtez : s'il reste salé, rincez encore — c'est l'erreur classique de la recette.", badge: null },
+      { icone: "🌾", titre: "Le roux d'épices", detail: "Farine, moutarde, curcuma et gingembre cuits 2 minutes à sec : la farine perd son goût cru.", badge: null },
+      { icone: "🍶", titre: "Délayer au vinaigre", detail: "Vinaigre versé FROID sur le roux chaud en fouettant : versé chaud, il ferait des grumeaux immédiats.", badge: null },
+      { icone: "♨️", titre: "Épaissir", detail: "5 minutes d'ébullition douce jusqu'à texture de crème anglaise : elle épaissira encore en refroidissant.", badge: null },
+      { icone: "🥬", titre: "Enrober à peine", detail: "Légumes jetés dans la sauce 2 MINUTES seulement, hors du feu : cuits, ils deviendraient mous.", badge: null },
+      { icone: "🫙", titre: "Mettre en pot chaud", detail: "Bocaux stérilisés remplis brûlants et retournés. Attendez 4 SEMAINES avant d'ouvrir : le goût se construit.", badge: null }
+    ],
+    liees: ["chutneyoignons","chutneymangue","giardiniera"]
+  },
 });
