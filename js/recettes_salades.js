@@ -3716,4 +3716,42 @@ Object.assign(recettes, {
     ],
     liees: ["saladevosgienne","saladesavoyarde","hutsepot"]
   },
+  xato: {
+    dateAjout: "2026-08-06T16:02:00",
+    nom: "Xató",
+    cat: "salades", saisons: ["hiver"], pays: "espagne",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "La salade de scarole du Penedès, dont tout l'intérêt tient à la SAUCE : amandes, noisettes, piment nyora, ail et pain, pilés au mortier. Une romesco froide, plus épaisse et plus rustique, servie sur des feuilles amères.",
+    tableauXato: [
+      { nb: 1, salade: "90 g", cabillaud: "50 g", thon: "40 g", anchois: "15 g", olives: "30 g", amande: "25 g", noisettes: "15 g", painrassis: "20 g", ail: "½", huileolive: "35 ml", vinaigreXeres: "12 ml", piment: "1 g" },
+      { nb: 2, salade: "180 g", cabillaud: "100 g", thon: "80 g", anchois: "30 g", olives: "60 g", amande: "50 g", noisettes: "30 g", painrassis: "40 g", ail: "1", huileolive: "70 ml", vinaigreXeres: "24 ml", piment: "2 g" },
+      { nb: 3, salade: "270 g", cabillaud: "150 g", thon: "120 g", anchois: "45 g", olives: "90 g", amande: "75 g", noisettes: "45 g", painrassis: "60 g", ail: "1½", huileolive: "105 ml", vinaigreXeres: "36 ml", piment: "3 g" },
+      { nb: 4, salade: "360 g", cabillaud: "200 g", thon: "160 g", anchois: "60 g", olives: "120 g", amande: "100 g", noisettes: "60 g", painrassis: "80 g", ail: "2", huileolive: "140 ml", vinaigreXeres: "48 ml", piment: "4 g" },
+      { nb: 5, salade: "450 g", cabillaud: "250 g", thon: "200 g", anchois: "75 g", olives: "150 g", amande: "125 g", noisettes: "75 g", painrassis: "100 g", ail: "2½", huileolive: "175 ml", vinaigreXeres: "60 ml", piment: "5 g" },
+      { nb: 6, salade: "540 g", cabillaud: "300 g", thon: "240 g", anchois: "90 g", olives: "180 g", amande: "150 g", noisettes: "90 g", painrassis: "120 g", ail: "3", huileolive: "210 ml", vinaigreXeres: "72 ml", piment: "6 g" },
+      { nb: 7, salade: "630 g", cabillaud: "350 g", thon: "280 g", anchois: "105 g", olives: "210 g", amande: "175 g", noisettes: "105 g", painrassis: "140 g", ail: "3½", huileolive: "245 ml", vinaigreXeres: "84 ml", piment: "7 g" },
+      { nb: 8, salade: "720 g", cabillaud: "400 g", thon: "320 g", anchois: "120 g", olives: "240 g", amande: "200 g", noisettes: "120 g", painrassis: "160 g", ail: "4", huileolive: "280 ml", vinaigreXeres: "96 ml", piment: "8 g" },
+      { nb: 9, salade: "810 g", cabillaud: "450 g", thon: "360 g", anchois: "135 g", olives: "270 g", amande: "225 g", noisettes: "135 g", painrassis: "180 g", ail: "4½", huileolive: "315 ml", vinaigreXeres: "108 ml", piment: "9 g" },
+      { nb: 10, salade: "900 g", cabillaud: "500 g", thon: "400 g", anchois: "150 g", olives: "300 g", amande: "250 g", noisettes: "150 g", painrassis: "200 g", ail: "5", huileolive: "350 ml", vinaigreXeres: "120 ml", piment: "10 g" },
+      { nb: 11, salade: "990 g", cabillaud: "550 g", thon: "440 g", anchois: "165 g", olives: "330 g", amande: "275 g", noisettes: "165 g", painrassis: "220 g", ail: "5½", huileolive: "385 ml", vinaigreXeres: "132 ml", piment: "11 g" },
+      { nb: 12, salade: "1080 g", cabillaud: "600 g", thon: "480 g", anchois: "180 g", olives: "360 g", amande: "300 g", noisettes: "180 g", painrassis: "240 g", ail: "6", huileolive: "420 ml", vinaigreXeres: "144 ml", piment: "12 g" },
+      { nb: 13, salade: "1170 g", cabillaud: "650 g", thon: "520 g", anchois: "195 g", olives: "390 g", amande: "325 g", noisettes: "195 g", painrassis: "260 g", ail: "6½", huileolive: "455 ml", vinaigreXeres: "156 ml", piment: "13 g" },
+      { nb: 14, salade: "1260 g", cabillaud: "700 g", thon: "560 g", anchois: "210 g", olives: "420 g", amande: "350 g", noisettes: "210 g", painrassis: "280 g", ail: "7", huileolive: "490 ml", vinaigreXeres: "168 ml", piment: "14 g" },
+      { nb: 15, salade: "1350 g", cabillaud: "750 g", thon: "600 g", anchois: "225 g", olives: "450 g", amande: "375 g", noisettes: "225 g", painrassis: "300 g", ail: "7½", huileolive: "525 ml", vinaigreXeres: "180 ml", piment: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier", detail: "Amandes et noisettes grillées 10 minutes à 160°C : sans torréfaction, la sauce est plate et sans profondeur.", badge: null },
+      { icone: "🍞", titre: "Le pain frit", detail: "Une tranche de pain rassis frite à l'huile d'olive : c'est elle qui épaissit la sauce, pas la farine.", badge: null },
+      { icone: "🌶️", titre: "Le nyora", detail: "Piment doux séché réhydraté 30 minutes à l'eau chaude, dont on gratte la chair à la cuillère.", badge: null },
+      { icone: "🥣", titre: "Le mortier", detail: "Pilez ail et sel, puis les fruits secs, puis le pain, puis le nyora : l'ORDRE compte, du plus dur au plus tendre.", badge: null },
+      { icone: "🫒", titre: "Monter", detail: "Huile d'olive en filet en pilant, puis vinaigre de Xérès : la sauce doit être épaisse comme une mayonnaise.", badge: null },
+      { icone: "🥬", titre: "La scarole", detail: "Cœurs de scarole coupés à la main, lavés et SÉCHÉS à l'essoreuse : une salade mouillée ne prend pas la sauce.", badge: null },
+      { icone: "🐟", titre: "Dresser", detail: "Scarole, morue effilochée, thon, anchois et olives, puis la sauce déposée en grosses cuillerées par-dessus.", badge: null }
+    ],
+    liees: ["esqueixada","escalivada","romesco"]
+  },
 });

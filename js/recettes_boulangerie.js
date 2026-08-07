@@ -3669,4 +3669,42 @@ Object.assign(recettes, {
     ],
     liees: ["paindemie","mantou","melonpan"]
   },
+  roscon: {
+    dateAjout: "2026-08-06T17:04:00",
+    nom: "Roscón de Reyes",
+    cat: "boulangerie", saisons: ["hiver"], pays: "espagne",
+    base: 10,
+    temps: "5 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "👑",
+    description: "La couronne briochée de l'Épiphanie espagnole, parfumée à la fleur d'oranger et couverte de fruits confits. Une fève ET un roi y sont cachés : celui qui trouve la fève paie le roscón de l'année suivante.",
+    tableauRoscon: [
+      { nb: 1, farine: "60 g", lait: "22 ml", beurre: "18 g", oeufs: "", sucre: "15 g", levure: "2 g", fleuroranger: "4 ml", orange: "", fruitsconfits: "15 g", amandeeffilee: "8 g", sucreglace: "6 g", sel: "1 g" },
+      { nb: 2, farine: "120 g", lait: "44 ml", beurre: "36 g", oeufs: "", sucre: "30 g", levure: "4 g", fleuroranger: "8 ml", orange: "", fruitsconfits: "30 g", amandeeffilee: "16 g", sucreglace: "12 g", sel: "2 g" },
+      { nb: 3, farine: "180 g", lait: "66 ml", beurre: "54 g", oeufs: "1", sucre: "45 g", levure: "6 g", fleuroranger: "12 ml", orange: "", fruitsconfits: "45 g", amandeeffilee: "24 g", sucreglace: "18 g", sel: "3 g" },
+      { nb: 4, farine: "240 g", lait: "88 ml", beurre: "72 g", oeufs: "1", sucre: "60 g", levure: "8 g", fleuroranger: "16 ml", orange: "", fruitsconfits: "60 g", amandeeffilee: "32 g", sucreglace: "24 g", sel: "4 g" },
+      { nb: 5, farine: "300 g", lait: "110 ml", beurre: "90 g", oeufs: "1¾", sucre: "75 g", levure: "10 g", fleuroranger: "20 ml", orange: "¾", fruitsconfits: "75 g", amandeeffilee: "40 g", sucreglace: "30 g", sel: "5 g" },
+      { nb: 6, farine: "360 g", lait: "132 ml", beurre: "108 g", oeufs: "2", sucre: "90 g", levure: "12 g", fleuroranger: "24 ml", orange: "", fruitsconfits: "90 g", amandeeffilee: "48 g", sucreglace: "36 g", sel: "6 g" },
+      { nb: 7, farine: "420 g", lait: "154 ml", beurre: "126 g", oeufs: "2", sucre: "105 g", levure: "14 g", fleuroranger: "28 ml", orange: "1", fruitsconfits: "105 g", amandeeffilee: "56 g", sucreglace: "42 g", sel: "7 g" },
+      { nb: 8, farine: "480 g", lait: "176 ml", beurre: "144 g", oeufs: "2", sucre: "120 g", levure: "16 g", fleuroranger: "32 ml", orange: "1", fruitsconfits: "120 g", amandeeffilee: "64 g", sucreglace: "48 g", sel: "8 g" },
+      { nb: 9, farine: "540 g", lait: "198 ml", beurre: "162 g", oeufs: "3", sucre: "135 g", levure: "18 g", fleuroranger: "36 ml", orange: "1", fruitsconfits: "135 g", amandeeffilee: "72 g", sucreglace: "54 g", sel: "9 g" },
+      { nb: 10, farine: "600 g", lait: "220 ml", beurre: "180 g", oeufs: "3½", sucre: "150 g", levure: "20 g", fleuroranger: "40 ml", orange: "1½", fruitsconfits: "150 g", amandeeffilee: "80 g", sucreglace: "60 g", sel: "10 g" },
+      { nb: 11, farine: "660 g", lait: "242 ml", beurre: "198 g", oeufs: "3", sucre: "165 g", levure: "22 g", fleuroranger: "44 ml", orange: "1", fruitsconfits: "165 g", amandeeffilee: "88 g", sucreglace: "66 g", sel: "11 g" },
+      { nb: 12, farine: "720 g", lait: "264 ml", beurre: "216 g", oeufs: "4", sucre: "180 g", levure: "24 g", fleuroranger: "48 ml", orange: "1", fruitsconfits: "180 g", amandeeffilee: "96 g", sucreglace: "72 g", sel: "12 g" },
+      { nb: 13, farine: "780 g", lait: "286 ml", beurre: "234 g", oeufs: "4", sucre: "195 g", levure: "26 g", fleuroranger: "52 ml", orange: "1", fruitsconfits: "195 g", amandeeffilee: "104 g", sucreglace: "78 g", sel: "13 g" },
+      { nb: 14, farine: "840 g", lait: "308 ml", beurre: "252 g", oeufs: "4", sucre: "210 g", levure: "28 g", fleuroranger: "56 ml", orange: "2", fruitsconfits: "210 g", amandeeffilee: "112 g", sucreglace: "84 g", sel: "14 g" },
+      { nb: 15, farine: "900 g", lait: "330 ml", beurre: "270 g", oeufs: "5¼", sucre: "225 g", levure: "30 g", fleuroranger: "60 ml", orange: "2¼", fruitsconfits: "225 g", amandeeffilee: "120 g", sucreglace: "90 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍊", titre: "Le lait infusé", detail: "Faites infuser zeste d'orange et de citron dans le lait chaud 30 minutes, puis FILTREZ et refroidissez.", badge: null },
+      { icone: "🥣", titre: "Le levain-levure", detail: "Un premier pâton de farine, levure et lait tiède laissé lever 30 minutes : il donnera de la force à la pâte riche.", badge: null },
+      { icone: "💪", titre: "Pétrir 20 minutes", detail: "Pâte très riche en beurre et en œufs : elle est collante longtemps, ne cédez pas à la tentation d'ajouter de la farine.", badge: null },
+      { icone: "🧈", titre: "Beurre en dernier", detail: "Incorporé morceau par morceau après le pétrissage, jusqu'à ce que la pâte redevienne lisse et brillante.", badge: null },
+      { icone: "❄️", titre: "Pousse lente", detail: "12 heures au FRAIS : c'est le froid long qui développe l'arôme et donne la mie filante caractéristique.", badge: null },
+      { icone: "👑", titre: "Former la couronne", detail: "Percez un trou au centre avec les doigts et élargissez-le à 12 cm : il se refermera beaucoup à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Dorure, fruits confits, amandes et sucre humidifié, 20 minutes à 180°C. Fève et roi glissés par-dessous après cuisson.", badge: null }
+    ],
+    liees: ["brioche","gateaubattu"]
+  },
 });

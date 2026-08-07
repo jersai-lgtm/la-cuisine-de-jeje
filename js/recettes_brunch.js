@@ -2966,4 +2966,42 @@ Object.assign(recettes, {
     ],
     liees: ["farconsavoyard","rosti","pommesanna"]
   },
+  bourriols: {
+    dateAjout: "2026-08-06T15:03:00",
+    nom: "Bourriols",
+    cat: "brunch", pays: "france",
+    base: 6,
+    temps: "30 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    description: "Les crêpes épaisses de sarrasin du Cantal, levées à la levure et cuites à la poêle. Contrairement aux galettes bretonnes, elles sont ÉPAISSES et moelleuses — plus proches d'un blini que d'une crêpe.",
+    tableauBourriols: [
+      { nb: 1, farinesarrasin: "45 g", farine: "20 g", lait: "90 ml", levure: "1.5 g", oeufs: "¼", beurre: "12 g", sel: "1.2 g" },
+      { nb: 2, farinesarrasin: "90 g", farine: "40 g", lait: "180 ml", levure: "3 g", oeufs: "½", beurre: "24 g", sel: "2.4 g" },
+      { nb: 3, farinesarrasin: "135 g", farine: "60 g", lait: "270 ml", levure: "4.5 g", oeufs: "¾", beurre: "36 g", sel: "3.6 g" },
+      { nb: 4, farinesarrasin: "180 g", farine: "80 g", lait: "360 ml", levure: "6 g", oeufs: "1", beurre: "48 g", sel: "4.8 g" },
+      { nb: 5, farinesarrasin: "225 g", farine: "100 g", lait: "450 ml", levure: "7.5 g", oeufs: "1¼", beurre: "60 g", sel: "6 g" },
+      { nb: 6, farinesarrasin: "270 g", farine: "120 g", lait: "540 ml", levure: "9 g", oeufs: "1½", beurre: "72 g", sel: "7.2 g" },
+      { nb: 7, farinesarrasin: "315 g", farine: "140 g", lait: "630 ml", levure: "10.5 g", oeufs: "1¾", beurre: "84 g", sel: "8.4 g" },
+      { nb: 8, farinesarrasin: "360 g", farine: "160 g", lait: "720 ml", levure: "12 g", oeufs: "2", beurre: "96 g", sel: "9.6 g" },
+      { nb: 9, farinesarrasin: "405 g", farine: "180 g", lait: "810 ml", levure: "13.5 g", oeufs: "2¼", beurre: "108 g", sel: "10.8 g" },
+      { nb: 10, farinesarrasin: "450 g", farine: "200 g", lait: "900 ml", levure: "15 g", oeufs: "2½", beurre: "120 g", sel: "12 g" },
+      { nb: 11, farinesarrasin: "495 g", farine: "220 g", lait: "990 ml", levure: "16.5 g", oeufs: "2¾", beurre: "132 g", sel: "13.2 g" },
+      { nb: 12, farinesarrasin: "540 g", farine: "240 g", lait: "1080 ml", levure: "18 g", oeufs: "3", beurre: "144 g", sel: "14.4 g" },
+      { nb: 13, farinesarrasin: "585 g", farine: "260 g", lait: "1170 ml", levure: "19.5 g", oeufs: "3¼", beurre: "156 g", sel: "15.6 g" },
+      { nb: 14, farinesarrasin: "630 g", farine: "280 g", lait: "1260 ml", levure: "21 g", oeufs: "3½", beurre: "168 g", sel: "16.8 g" },
+      { nb: 15, farinesarrasin: "675 g", farine: "300 g", lait: "1350 ml", levure: "22.5 g", oeufs: "3¾", beurre: "180 g", sel: "18 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Les deux farines", detail: "Sarrasin majoritaire et un peu de blé : le sarrasin seul, sans gluten, ne lèverait pas avec la levure.", badge: null },
+      { icone: "🥛", titre: "Délayer", detail: "Levure dans le lait tiède à 35°C, puis versée sur les farines en fouettant jusqu'à pâte lisse.", badge: null },
+      { icone: "⏳", titre: "Lever 2 heures", detail: "À couvert dans un endroit tiède : la pâte doit doubler et se couvrir de bulles. C'est la levée qui fait le bourriol.", badge: null },
+      { icone: "🥚", titre: "L'œuf", detail: "Ajouté APRÈS la levée, en fouettant délicatement pour ne pas dégazer la pâte.", badge: null },
+      { icone: "🍳", titre: "La poêle", detail: "Bien beurrée à feu MOYEN : trop vif, l'extérieur brûle avant que le centre épais ne cuise.", badge: null },
+      { icone: "🥞", titre: "Cuire épais", detail: "Une petite louche par bourriol, 3 minutes par face : ils doivent faire 8 mm d'épaisseur.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Chauds, avec du cantal fondu, du jambon de pays ou simplement du beurre salé.", badge: null }
+    ],
+    liees: ["patranque","galettesarrasin","matafan"]
+  },
 });

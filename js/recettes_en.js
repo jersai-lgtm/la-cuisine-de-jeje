@@ -101324,5 +101324,1025 @@ window.RECETTES_EN = {
     "detail": "4 hours chilled COMPULSORY, then 1.5 cm slices fried 3 minutes a side until crisp."
    }
   ]
+ },
+ "tripoux": {
+  "nom": "Auvergne Tripoux",
+  "description": "Small parcels of lamb tripe, stuffed and tied, simmered for six hours in a white wine broth. The breakfast dish of Auvergne markets — yes, breakfast: they are eaten from seven in the morning.",
+  "etapes": [
+   {
+    "titre": "Clean the tripe",
+    "detail": "Buy it already blanched from the tripe butcher. Rinse it thoroughly in vinegared water and scrape it with a knife."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut 12 cm squares: these become the wrappers, and the offcuts go into the stuffing."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Tripe offcuts, lamb shoulder and bacon coarsely chopped with garlic, parsley, salt and plenty of pepper."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "A spoon of stuffing in the centre of each square, fold the four corners in and TIE tightly like a parcel."
+   },
+   {
+    "titre": "The broth",
+    "detail": "White wine, stock, carrot, clove-studded onion, bay and tomato: the parcels must be SUBMERGED."
+   },
+   {
+    "titre": "Six hours",
+    "detail": "150°C covered, or over the gentlest heat. Tripe only turns tender after five hours — not before."
+   },
+   {
+    "titre": "The test",
+    "detail": "A tripou is ready when the tripe cuts with a fork without resistance. If not, give it another hour."
+   }
+  ]
+ },
+ "falette": {
+  "nom": "Aveyron Falette",
+  "description": "A boned breast of lamb stuffed with chard and cured ham, rolled then braised in a bean broth. The celebration dish of Aveyron farms, served hot or cold in slices.",
+  "etapes": [
+   {
+    "titre": "The breast",
+    "detail": "Ask the butcher to bone the lamb breast keeping a whole rectangle: that is the wrapper."
+   },
+   {
+    "titre": "The chard",
+    "detail": "Green only, blanched 2 minutes and SQUEEZED hard: water would make the stuffing leak out of the roll."
+   },
+   {
+    "titre": "The stuffing",
+    "detail": "Chopped chard, cured ham, breadcrumb, egg, garlic and parsley: firm and well bound."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Stuffing spread on the meat, rolled tightly lengthways and tied every 3 cm."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Colour the roll on all sides for 12 minutes before braising."
+   },
+   {
+    "titre": "Braise",
+    "detail": "White wine, stock, carrot, onion and soaked white beans: 2 h 15 covered at 150°C."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Rest 20 minutes before cutting into thick slices. The beans are served around it, in their juices."
+   }
+  ]
+ },
+ "patranque": {
+  "nom": "Patranque",
+  "description": "The ancestor of truffade: stale bread soaked in milk, fried with fresh tomme until the cheese pulls into strands. The anti-waste dish of Cantal mountain huts, made with whatever was left from the day before.",
+  "etapes": [
+   {
+    "titre": "Stale bread",
+    "detail": "You NEED genuinely dry bread, 2 or 3 days old: fresh bread gives a sticky mush."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Warm milk poured over the crumbled bread, left 10 minutes: it should be damp but not sodden."
+   },
+   {
+    "titre": "Fresh tomme",
+    "detail": "This is the unripened cantal curd, the one used for aligot. In Auvergne it is bought fresh by weight."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Foaming butter, crushed garlic, then the soaked bread spread in an even layer."
+   },
+   {
+    "titre": "Let it crust",
+    "detail": "8 minutes without touching: a golden crust must form underneath, the best part of the dish."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Sliced tomme added on top, then stirred with a spatula until it PULLS."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Lift and fold the mass as for aligot, 3 minutes: the cheese must form long strands."
+   }
+  ]
+ },
+ "bourriols": {
+  "nom": "Bourriols",
+  "description": "The thick buckwheat pancakes of Cantal, raised with yeast and cooked in a pan. Unlike Breton galettes, they are THICK and soft — closer to a blini than a crêpe.",
+  "etapes": [
+   {
+    "titre": "Two flours",
+    "detail": "Mostly buckwheat and a little wheat: buckwheat alone, having no gluten, would not rise with yeast."
+   },
+   {
+    "titre": "Slake",
+    "detail": "Yeast in milk at 35°C, then poured onto the flours and whisked to a smooth batter."
+   },
+   {
+    "titre": "Rise 2 hours",
+    "detail": "Covered in a warm place: the batter must double and bubble. The rise is what makes a bourriol."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Added AFTER the rise, whisked in gently so as not to knock out the gas."
+   },
+   {
+    "titre": "The pan",
+    "detail": "Well buttered over MEDIUM heat: too hot and the outside burns before the thick centre cooks."
+   },
+   {
+    "titre": "Cook thick",
+    "detail": "A small ladle per bourriol, 3 minutes a side: they should be 8 mm thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Hot, with melted cantal, country ham or simply salted butter."
+   }
+  ]
+ },
+ "cousinat": {
+  "nom": "Cousinat",
+  "description": "The chestnut soup of Béarn, enriched with milk and scented with herbs. A famine dish turned delicacy: chestnuts were the \"bread of the poor\" throughout the mountains of south-west France.",
+  "etapes": [
+   {
+    "titre": "The chestnuts",
+    "detail": "Fresh: score and roast 20 minutes, then peel while hot — cold, the inner skin becomes impossible to remove."
+   },
+   {
+    "titre": "The shortcut",
+    "detail": "Vacuum-packed cooked chestnuts work perfectly and save an hour of thankless work."
+   },
+   {
+    "titre": "The base",
+    "detail": "Lardons dry-fried, then onion and leek melted in the rendered fat, 10 minutes."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Chestnuts, stock, thyme and bay: 30 minutes of simmering until they collapse."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Added only at the END of cooking: boiled long, it would catch on the base and taste burnt."
+   },
+   {
+    "titre": "Blend half",
+    "detail": "Blend HALF only: a cousinat must keep some texture, it is not a velouté."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cream, parsley, pepper. The crisp lardons kept aside are scattered at the last moment."
+   }
+  ]
+ },
+ "enchaud": {
+  "nom": "Périgord Enchaud",
+  "description": "A pork fillet studded with garlic, rolled and slowly confited in its own fat. It is eaten HOT on the day, then cold in its jelly for days after — and cold is when it is best.",
+  "etapes": [
+   {
+    "titre": "Stud with garlic",
+    "detail": "Cut slits in the fillet and slide garlic slivers into each: allow a whole clove per person."
+   },
+   {
+    "titre": "Salt the day before",
+    "detail": "Salt, pepper and thyme rubbed in 12 hours ahead, chilled: the salt penetrates and seasons deeply."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the fillet onto itself and tie every 3 cm: the shape must be even for clean slices."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Colour it in duck fat on all sides, 10 minutes over medium heat."
+   },
+   {
+    "titre": "Confit",
+    "detail": "White wine, bay, lid on, 2 h 30 at 130°C. The meat cooks in its fat, it must never fry."
+   },
+   {
+    "titre": "The jelly",
+    "detail": "Let it cool IN the fat: the cooking juices set into jelly beneath the layer of fat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Hot in thick slices with sarladaise potatoes, or cold in thin slices with its jelly."
+   }
+  ]
+ },
+ "tourain": {
+  "nom": "Garlic Tourain",
+  "description": "The garlic soup of south-west France, bound with egg white in threads and yolk with vinegar. It was served to newlyweds at dawn after the wedding — hence its other name, the \"bride and groom's soup\".",
+  "etapes": [
+   {
+    "titre": "Plenty of garlic",
+    "detail": "Allow TWO whole cloves per person: tourain is a garlic soup, not a lightly garlicky one."
+   },
+   {
+    "titre": "Melt the garlic",
+    "detail": "Crushed and melted in duck fat for 8 minutes over VERY low heat: it must turn blond without ever browning."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Flour added and cooked 2 minutes: it gives the broth its characteristic slight silkiness."
+   },
+   {
+    "titre": "The stock",
+    "detail": "Poured in hot while whisking, then 15 minutes of simmering so the garlic mellows completely."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Beaten with a fork and poured in a STREAM into the simmering soup while stirring: they form threads."
+   },
+   {
+    "titre": "Yolk with vinegar",
+    "detail": "Yolk beaten with the vinegar, slackened with a ladle of hot soup, poured back OFF THE HEAT."
+   },
+   {
+    "titre": "The chabrot",
+    "detail": "Serve over stale bread. Tradition says you finish by pouring red wine into the last of the soup."
+   }
+  ]
+ },
+ "croustadegasconne": {
+  "nom": "Gascon Croustade",
+  "description": "Sheets of pastry stretched to transparency, buttered and crumpled into petals over apples in armagnac. The dough is worked on a stretched sheet, and pulled until you can READ A NEWSPAPER through it — the traditional test.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Flour, warm water, oil and a pinch of salt, kneaded 15 minutes: it must be VERY elastic."
+   },
+   {
+    "titre": "Rest 1 hour",
+    "detail": "Oiled and wrapped. Without this rest, the dough tears the moment you try to stretch it."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "On a floured sheet, stretch the dough with the BACKS of your hands, from the centre out, until translucent."
+   },
+   {
+    "titre": "The apples",
+    "detail": "In wedges macerated 1 hour in rum, sugar and vanilla: the armagnac is the croustade's signature."
+   },
+   {
+    "titre": "Butter each sheet",
+    "detail": "Cut squares of pastry and brush them with melted butter: it is what makes them crisp."
+   },
+   {
+    "titre": "Crumple into petals",
+    "detail": "Lay the sheets CRUMPLED like tissue paper, to create volume and waves."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 180°C. Icing sugar as it comes out. A croustade should crackle when cut."
+   }
+  ]
+ },
+ "mourtayrol": {
+  "nom": "Mourtayrol",
+  "description": "The celebration soup of the Aubrac: a chicken and beef broth coloured with SAFFRON, poured over stale bread and gratinated. Saffron, grown in neighbouring Quercy, made it a rich man's dish served only on great occasions.",
+  "etapes": [
+   {
+    "titre": "Start cold",
+    "detail": "Chicken, beef and ham in COLD water: this draws the maximum flavour into the broth."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Skim relentlessly for the first 15 minutes: this is where the broth's clarity is decided."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Carrot, leek, turnip and clove-studded onion added after skimming, for 2 hours of simmering."
+   },
+   {
+    "titre": "The saffron",
+    "detail": "Infuse the threads in a ladle of HOT broth for 20 minutes, then pour back: never straight into the pot."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Slices of stale bread layered in a terrine, with a little broth between each."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Pour the saffron broth over to cover, and let the bread drink for 15 minutes before baking."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "30 minutes at 180°C until golden-crusted. The meats are served separately, with mustard."
+   }
+  ]
+ },
+ "txangurro": {
+  "nom": "Txangurro",
+  "description": "Basque spider crab: the meat is picked out, mixed with a brandy sofrito, PUT BACK in the shell and gratinated. A celebration dish of San Sebastián, as spectacular as lobster thermidor but far more affordable.",
+  "etapes": [
+   {
+    "titre": "Cook the crab",
+    "detail": "15 minutes in a hard-boiling court-bouillon, then cooled: overcooked, the meat turns stringy."
+   },
+   {
+    "titre": "Pick the meat",
+    "detail": "Recover ALL the meat, including from the legs, and keep the brown coral: it carries the flavour."
+   },
+   {
+    "titre": "Keep the shells",
+    "detail": "Clean them and boil them 5 minutes: they serve as the dishes, the Basque presentation."
+   },
+   {
+    "titre": "The sofrito",
+    "detail": "Onion and leek melted 15 minutes in olive oil, then chopped tomato reduced 10 minutes."
+   },
+   {
+    "titre": "Flame",
+    "detail": "Brandy poured in and flamed, then white wine reduced by half: both alcohols are the txangurro's signature."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Crab meat and coral folded into the sofrito off the heat, with a touch of chilli."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Fill the shells, breadcrumbs and knobs of butter, 8 minutes under the grill until golden."
+   }
+  ]
+ },
+ "butifarramongetes": {
+  "nom": "Butifarra amb Mongetes",
+  "description": "The Catalan Sunday dish: a grilled sausage and white beans fried in the cooking fat. Two ingredients, but the beans must CRUST in the pan — softly sautéed, the dish is pointless.",
+  "etapes": [
+   {
+    "titre": "Never prick it",
+    "detail": "Butifarra is NEVER pricked: pierced, it loses its fat and turns dry and mealy."
+   },
+   {
+    "titre": "Grill gently",
+    "detail": "Pan or embers over MEDIUM heat, 15 minutes turning it: the skin must brown without splitting."
+   },
+   {
+    "titre": "Keep the fat",
+    "detail": "Set the sausage aside warm and keep ALL the rendered fat: it is the beans' only fat."
+   },
+   {
+    "titre": "Dried beans",
+    "detail": "Soaked 12 hours and cooked 1 h 30, they are incomparable. Jarred beans work, well drained."
+   },
+   {
+    "titre": "Dry them",
+    "detail": "Blot the beans in a cloth: damp, they will never crust and will stay soft."
+   },
+   {
+    "titre": "Make them crust",
+    "detail": "In the scorching fat over HIGH heat, WITHOUT stirring for 4 minutes: a golden crust must form underneath."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Crushed garlic and parsley for the last 30 seconds, pepper, flaky salt. Sliced sausage on top."
+   }
+  ]
+ },
+ "kokotxas": {
+  "nom": "Kokotxas al Pil-Pil",
+  "description": "Cod throats, a tiny gelatinous cut, cooked in an emulsion of olive oil and their own gelatine. Pil-pil is emulsified WITHOUT a whisk or any thickener: purely by swirling the pan in circles.",
+  "etapes": [
+   {
+    "titre": "The kokotxas",
+    "detail": "This is the cod's throat, under the jaw: very gelatinous, and it supplies the pil-pil's binding."
+   },
+   {
+    "titre": "Garlic oil",
+    "detail": "Sliced garlic browned gently in olive oil, then REMOVED and set aside: it becomes the garnish."
+   },
+   {
+    "titre": "Warm oil",
+    "detail": "Let the oil drop back to 60°C: too hot and it would fry the kokotxas instead of poaching them."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Kokotxas skin side down, 4 minutes over VERY low heat: they should barely quiver in the oil."
+   },
+   {
+    "titre": "The gelatine",
+    "detail": "A whitish liquid seeps from the skin: that is the gelatine, the ingredient that makes the whole emulsion."
+   },
+   {
+    "titre": "Swirl, don't whisk",
+    "detail": "Off the heat, swirl the pan in SLOW circles for 5 minutes: the oil pales and thickens."
+   },
+   {
+    "titre": "Patience",
+    "detail": "If it won't take, keep going: pil-pil sometimes needs 10 minutes. Golden garlic, chilli and parsley to finish."
+   }
+  ]
+ },
+ "melimato": {
+  "nom": "Mel i Mató",
+  "description": "The simplest Catalan dessert there is: a fresh unsalted, unripened goat's cheese, drizzled with honey and scattered with walnuts. Three ingredients, no cooking to speak of, and an unbeatable result.",
+  "etapes": [
+   {
+    "titre": "The milk",
+    "detail": "WHOLE milk, ideally goat's: skimmed, it would give almost no curd and the mató would fail."
+   },
+   {
+    "titre": "Heat to 85°C",
+    "detail": "Gently, never boiling: above that, the curd turns hard and grainy instead of creamy."
+   },
+   {
+    "titre": "The acid",
+    "detail": "Lemon juice added off the heat, stirred ONCE very slowly, then left alone."
+   },
+   {
+    "titre": "Wait",
+    "detail": "10 minutes without stirring: the curd forms in white flakes and rises, leaving a pale yellow whey."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Ladle into a cloth-lined sieve and leave 30 minutes without pressing."
+   },
+   {
+    "titre": "The texture",
+    "detail": "Mató must stay CREAMY, not dry: the more you drain it, the more crumbly and the less good it becomes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Turn out as a dome, drizzle generously with honey, crushed walnuts and a hint of cinnamon."
+   }
+  ]
+ },
+ "xato": {
+  "nom": "Xató",
+  "description": "The escarole salad of the Penedès, whose whole point is the SAUCE: almonds, hazelnuts, nyora chilli, garlic and bread, pounded in a mortar. A cold romesco, thicker and more rustic, served over bitter leaves.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Almonds and hazelnuts roasted 10 minutes at 160°C: without toasting, the sauce is flat and shallow."
+   },
+   {
+    "titre": "Fried bread",
+    "detail": "A slice of stale bread fried in olive oil: it thickens the sauce, not flour."
+   },
+   {
+    "titre": "The nyora",
+    "detail": "Dried sweet chilli rehydrated 30 minutes in hot water, its flesh scraped out with a spoon."
+   },
+   {
+    "titre": "The mortar",
+    "detail": "Pound garlic and salt, then the nuts, then the bread, then the nyora: the ORDER matters, hardest to softest."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Olive oil in a stream while pounding, then sherry vinegar: the sauce should be as thick as mayonnaise."
+   },
+   {
+    "titre": "The escarole",
+    "detail": "Escarole hearts torn by hand, washed and SPUN DRY: wet leaves won't take the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Escarole, shredded cod, tuna, anchovies and olives, then the sauce spooned over in large dollops."
+   }
+  ]
+ },
+ "suquet": {
+  "nom": "Suquet de Peix",
+  "description": "The fishermen's fish stew of Catalonia, thickened with PICADA — a pounded paste of almonds, garlic and bread that replaces flour. The name comes from \"suc\", the juice: it is eaten with a spoon.",
+  "etapes": [
+   {
+    "titre": "Crack the potatoes",
+    "detail": "Break them with a knife tip rather than cutting: the released starch thickens the suc naturally."
+   },
+   {
+    "titre": "The sofregit",
+    "detail": "Onion melted 20 minutes in olive oil then grated tomato reduced 15 minutes: the Catalan base."
+   },
+   {
+    "titre": "The picada",
+    "detail": "Toasted almonds, garlic, fried bread and parsley pounded in a mortar with a ladle of broth."
+   },
+   {
+    "titre": "Cook the potatoes",
+    "detail": "In the sofregit with the saffron broth, 20 minutes until they crumble slightly."
+   },
+   {
+    "titre": "Thicken with picada",
+    "detail": "Poured into the broth 5 minutes before the fish: it thickens the suc and gives it a nutty note."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Cod 5 minutes, then prawns and mussels 2 minutes — never all together."
+   },
+   {
+    "titre": "Rest",
+    "detail": "5 minutes off the heat before serving: the suc thickens further and the flavours marry."
+   }
+  ]
+ },
+ "arrosnegre": {
+  "nom": "Arròs Negre",
+  "description": "Catalan black rice, coloured with squid INK. Unlike paella, it is never stirred: the rice must stay in a thin layer and form a socarrat, that caramelised crust at the bottom of the pan.",
+  "etapes": [
+   {
+    "titre": "The ink",
+    "detail": "Keep the cuttlefish ink sacs, or buy sachets from the fishmonger: allow 4 g per person."
+   },
+   {
+    "titre": "Sear the squid",
+    "detail": "2 minutes over high heat in olive oil, then set aside: it will finish cooking in the rice."
+   },
+   {
+    "titre": "The sofregit",
+    "detail": "Onion and pepper melted 15 minutes, then grated tomato and paprika off the heat."
+   },
+   {
+    "titre": "Coat the rice",
+    "detail": "Round rice stirred 2 minutes into the sofregit: each grain must turn translucent at the edges."
+   },
+   {
+    "titre": "Diluted ink",
+    "detail": "Slacken the ink in the HOT broth before pouring: added neat, it would leave black patches."
+   },
+   {
+    "titre": "Stop stirring",
+    "detail": "Once the broth is in, DO NOT TOUCH the rice again: that is what lets the socarrat form."
+   },
+   {
+    "titre": "The socarrat",
+    "detail": "18 minutes over medium heat then 2 minutes on HIGH: listen, the rice should crackle. Rest 5 minutes, lemon."
+   }
+  ]
+ },
+ "calcots": {
+  "nom": "Calçots with Romesco",
+  "description": "Young onions grilled OVER FLAMES until entirely black, then peeled and dipped in romesco. Catalan calçotades are eaten with a bib and gloves — a messy, joyful feast.",
+  "etapes": [
+   {
+    "titre": "The calçots",
+    "detail": "They are young transplanted onions, between a shallot and a leek. Failing that: large spring onions."
+   },
+   {
+    "titre": "Burn them properly",
+    "detail": "Over hot embers or under a full grill: the outside must be ENTIRELY black, don't hold back."
+   },
+   {
+    "titre": "Wrap them",
+    "detail": "Seal them in newspaper or a cloth for 20 minutes: the steam cooks the heart and loosens the skin."
+   },
+   {
+    "titre": "The romesco",
+    "detail": "Roasted tomatoes and garlic, toasted almonds and hazelnuts, fried bread, nyora chilli and paprika."
+   },
+   {
+    "titre": "Pound",
+    "detail": "In the mortar in order: garlic, nuts, bread, then tomatoes. Olive oil in a stream and vinegar to finish."
+   },
+   {
+    "titre": "Peel and dip",
+    "detail": "Pull the black part with one hand, the tender white slides out: dip it whole into the sauce."
+   },
+   {
+    "titre": "Eat head-up",
+    "detail": "Tradition says you hold it above your mouth and lower it in. The bib really is useful."
+   }
+  ]
+ },
+ "fricando": {
+  "nom": "Fricandó",
+  "description": "The Catalan veal stew with small mushrooms, thickened with almond picada. Moixernons — dried St George's mushrooms — are irreplaceable: they give the dish its distinctive woodland aroma.",
+  "etapes": [
+   {
+    "titre": "Rehydrate",
+    "detail": "Dried mushrooms soaked 30 minutes in warm water, and KEEP the strained water: it is concentrated flavour."
+   },
+   {
+    "titre": "Flour and sear",
+    "detail": "Floured veal escalopes, shaken, seared 3 minutes a side in hot oil. Set aside."
+   },
+   {
+    "titre": "The sofregit",
+    "detail": "Onion melted 20 minutes over low heat then grated tomato reduced 15 minutes: it is slow, and essential."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "White wine reduced by half, then stock and the strained mushroom soaking water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Veal returned, 1 hour covered over low heat: the escalopes must turn tender without falling apart."
+   },
+   {
+    "titre": "The picada",
+    "detail": "Toasted almonds, garlic, fried bread and parsley pounded in a mortar with a little broth."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Mushrooms and picada for the last 15 minutes: the sauce thickens and takes on its almond flavour."
+   }
+  ]
+ },
+ "panellets": {
+  "nom": "Panellets",
+  "description": "The little marzipan balls of Catalan All Saints' Day, rolled in pine nuts. The paste contains POTATO or sweet potato: it gives the softness and lets the pine nuts stick.",
+  "etapes": [
+   {
+    "titre": "The potato",
+    "detail": "Cooked, mashed and COOLED: it brings the moisture that makes the paste supple and just sticky enough."
+   },
+   {
+    "titre": "The paste",
+    "detail": "Ground almonds, sugar, cold mash, lemon zest and an egg yolk, worked into an even paste."
+   },
+   {
+    "titre": "Rest 12 hours",
+    "detail": "Chilled and wrapped: the paste firms up and becomes far easier to roll into even balls."
+   },
+   {
+    "titre": "Three flavours",
+    "detail": "Divide in three: plain with pine nuts, cocoa, and coconut. Making several kinds is the tradition."
+   },
+   {
+    "titre": "Roll",
+    "detail": "20 g balls rolled between slightly damp palms so the paste doesn't stick."
+   },
+   {
+    "titre": "The pine nuts",
+    "detail": "Dip the balls in egg white then roll them in pine nuts, PRESSING firmly to embed them."
+   },
+   {
+    "titre": "Bake briefly",
+    "detail": "8 minutes at 200°C ONLY: the pine nuts brown, but the centre must stay raw and soft."
+   }
+  ]
+ },
+ "lechefrita": {
+  "nom": "Leche Frita",
+  "description": "\"Fried milk\": a very firm pastry cream, chilled, cut into squares, crumbed and fried. The outside crunches, the inside is molten and scalding — a contrast few desserts achieve.",
+  "etapes": [
+   {
+    "titre": "Infuse",
+    "detail": "Milk heated with lemon zest and a cinnamon stick, infused 20 minutes off the heat, then strained."
+   },
+   {
+    "titre": "Very thick",
+    "detail": "Cornflour, sugar and yolks slaked in a little COLD milk: the cream must be MUCH firmer than a pastry cream."
+   },
+   {
+    "titre": "Cook",
+    "detail": "8 minutes whisking constantly: the cream must come away from the sides and form a compact mass."
+   },
+   {
+    "titre": "Pour out",
+    "detail": "Spread 2 cm thick in an oiled dish, smooth and cover with film TOUCHING the surface to prevent a skin."
+   },
+   {
+    "titre": "Set 6 hours",
+    "detail": "Chilled. Any less and the cream won't cut and will disintegrate in the oil."
+   },
+   {
+    "titre": "Crumb",
+    "detail": "5 cm squares passed through flour, egg and breadcrumbs — gently, the cream is fragile."
+   },
+   {
+    "titre": "Fry fast",
+    "detail": "180°C, 90 SECONDS a side only: beyond that the cream melts and escapes. Cinnamon sugar immediately."
+   }
+  ]
+ },
+ "goxua": {
+  "nom": "Goxua",
+  "description": "The dessert of Vitoria, built UPSIDE DOWN in three layers: whipped cream at the bottom, soaked sponge in the middle, pastry cream and caramel on top. \"Goxua\" simply means \"sweet\" in Basque.",
+  "etapes": [
+   {
+    "titre": "Cream first",
+    "detail": "VERY cold cream whipped to soft peaks with a little sugar, spread in the BOTTOM of the glasses: it is the base, not the top."
+   },
+   {
+    "titre": "Set it",
+    "detail": "1 hour in the freezer: the cream must be firm to take the sponge without collapsing."
+   },
+   {
+    "titre": "The sponge",
+    "detail": "Eggs and sugar whisked to the ribbon, sifted flour folded in, 10 minutes at 180°C on a thin tray."
+   },
+   {
+    "titre": "The soak",
+    "detail": "Light syrup with rum and lemon: the sponge must be moist but not disintegrate."
+   },
+   {
+    "titre": "The pastry cream",
+    "detail": "Milk infused with cinnamon and lemon, yolks, sugar, cornflour: 4 minutes of cooking until very thick."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "A disc of soaked sponge on the set cream, then COOLED pastry cream over it, well smoothed."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Dry caramel poured in a thin stream over the cold cream: it sets instantly into a brittle sheet."
+   }
+  ]
+ },
+ "pantxineta": {
+  "nom": "Pantxineta",
+  "description": "Two sheets of puff pastry enclosing pastry cream, topped with flaked almonds. Created in 1915 in San Sebastián by the Otaegui patisserie, it is eaten WARM — which is what sets it apart from everything else.",
+  "etapes": [
+   {
+    "titre": "The pastry cream",
+    "detail": "Vanilla milk, yolks, sugar and cornflour, cooked 4 minutes whisking: it must be THICK, it will heat again in the oven."
+   },
+   {
+    "titre": "Cool fast",
+    "detail": "Film TOUCHING the surface and chill 2 hours: warm, it would melt the butter in the pastry."
+   },
+   {
+    "titre": "Two sheets",
+    "detail": "A base disc slightly larger than the top one: it will fold up to seal the edges."
+   },
+   {
+    "titre": "Fill the centre",
+    "detail": "Cream piped in a spiral leaving a 3 cm bare margin: at the edge, it would escape while baking."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Moisten the margin, lay the second disc on and press firmly, then scallop with the back of a knife."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Egg glaze then flaked almonds pressed on: they must stick, or they will fall off and burn."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 190°C until deep golden. Icing sugar, and serve WARM: the cream should still be runny."
+   }
+  ]
+ },
+ "intxaursaltsa": {
+  "nom": "Intxaursaltsa",
+  "description": "The Basque walnut cream served on Christmas Eve. The walnuts are pounded in a MORTAR, never blended: a blender releases their oil and the cream turns greasy and bitter instead of silky.",
+  "etapes": [
+   {
+    "titre": "Skin the walnuts",
+    "detail": "Blanch them 2 minutes and rub them in a cloth: the brown skin is bitter and would spoil the cream."
+   },
+   {
+    "titre": "Pound in a mortar",
+    "detail": "Crush the kernels in a mortar with a little sugar, in small batches: never in a blender."
+   },
+   {
+    "titre": "The texture",
+    "detail": "You want a lumpy paste, not a powder: the small pieces will be felt between the teeth, and that is intended."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Milk, cream, cinnamon and lemon zest brought to a simmer, then the pounded walnuts added."
+   },
+   {
+    "titre": "The thickener",
+    "detail": "A crumb of stale bread: it thickens the cream, there is no egg and no flour in this recipe."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "40 minutes over VERY low heat, stirring often: the cream thickens slowly and turns pale beige."
+   },
+   {
+    "titre": "Serve",
+    "detail": "It should coat the spoon without being firm. Eaten WARM, never chilled — this is a winter dessert."
+   }
+  ]
+ },
+ "touron": {
+  "nom": "Almond Turrón",
+  "description": "The Spanish Christmas nougat, in the HARD Alicante version: honey, sugar and whole almonds, with no whipped egg white. It is broken with a knife and crunched — nothing like soft French nougat.",
+  "etapes": [
+   {
+    "titre": "Lots of almonds",
+    "detail": "Alicante turrón contains at least 60% almonds: that is Spanish law, and it is what makes its quality."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Roast the whole almonds 12 minutes at 160°C and KEEP THEM WARM: cold, they would seize the honey."
+   },
+   {
+    "titre": "The honey",
+    "detail": "Brought alone to 125°C: it foams enormously, use a pan three times too large."
+   },
+   {
+    "titre": "The sugar",
+    "detail": "Sugar and a little water cooked separately to 145°C, then poured onto the honey while whisking."
+   },
+   {
+    "titre": "The egg white",
+    "detail": "A single white, added to the hot mixture while whisking: it lightens the mass without making it foamy."
+   },
+   {
+    "titre": "Dry it out",
+    "detail": "10 minutes of cooking, stirring constantly: the mass must turn dense, matte and pull from the sides."
+   },
+   {
+    "titre": "Press",
+    "detail": "Warm almonds folded in, poured between two sheets of wafer paper and PRESSED under a weight for 12 hours."
+   }
+  ]
+ },
+ "roscon": {
+  "nom": "Roscón de Reyes",
+  "description": "The brioche crown of the Spanish Epiphany, scented with orange blossom and covered in candied fruit. A bean AND a king are hidden inside: whoever finds the bean pays for next year's roscón.",
+  "etapes": [
+   {
+    "titre": "Infused milk",
+    "detail": "Infuse orange and lemon zest in hot milk for 30 minutes, then STRAIN and cool."
+   },
+   {
+    "titre": "The starter",
+    "detail": "A first small dough of flour, yeast and warm milk left to rise 30 minutes: it gives strength to the rich dough."
+   },
+   {
+    "titre": "Knead 20 minutes",
+    "detail": "A dough very rich in butter and eggs: it stays sticky for a long time, don't give in and add flour."
+   },
+   {
+    "titre": "Butter last",
+    "detail": "Worked in piece by piece after kneading, until the dough turns smooth and glossy again."
+   },
+   {
+    "titre": "Slow rise",
+    "detail": "12 hours CHILLED: the long cold develops the aroma and gives the characteristic stranded crumb."
+   },
+   {
+    "titre": "Shape the crown",
+    "detail": "Make a hole in the centre with your fingers and widen it to 12 cm: it closes up a lot while baking."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Glaze, candied fruit, almonds and dampened sugar, 20 minutes at 180°C. Bean and king slipped in underneath after baking."
+   }
+  ]
+ },
+ "pestinos": {
+  "nom": "Pestiños",
+  "description": "The Andalusian fritters of Christmas and Holy Week: an olive oil dough scented with ANISEED and sesame, folded like an envelope, fried then glazed with honey. The oil is first heated with orange zest, which is then removed.",
+  "etapes": [
+   {
+    "titre": "Flavour the oil",
+    "detail": "Heat the olive oil with orange zest and aniseed, then REMOVE them and let it cool."
+   },
+   {
+    "titre": "The sesame",
+    "detail": "Dry-toasted for 3 minutes before going into the dough: raw, it has almost no flavour."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Flour, flavoured oil, white wine and sesame: kneaded 8 minutes to a supple, non-sticky dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "30 minutes wrapped: the dough relaxes and becomes much easier to roll very thin."
+   },
+   {
+    "titre": "Thin squares",
+    "detail": "Roll to 2 mm and cut 8 cm squares — thicker, the pestiño would be hard and doughy."
+   },
+   {
+    "titre": "Fold like an envelope",
+    "detail": "Fold two opposite corners to the centre and PINCH firmly: badly sealed, they open in the oil."
+   },
+   {
+    "titre": "Fry and glaze",
+    "detail": "170°C, 2 minutes a side, then dipped SCALDING into warm honey and drained on a rack."
+   }
+  ]
+ },
+ "mantecados": {
+  "nom": "Mantecados",
+  "description": "The Andalusian shortbreads that dissolve into powder in the mouth. Two secrets: the flour is TOASTED in the oven before use, and the fat is lard — it is what gives that unique crumbliness.",
+  "etapes": [
+   {
+    "titre": "Toast the flour",
+    "detail": "Spread it on a tray and bake 25 minutes at 150°C, stirring: it must turn blond and smell nutty."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the flour come back to room temperature: hot, it would melt the lard instantly."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Toasted then finely ground, they join the flour — their fat adds to the crumbliness."
+   },
+   {
+    "titre": "The lard",
+    "detail": "It is irreplaceable: butter would give an ordinary shortbread, not that powdery Andalusian melt."
+   },
+   {
+    "titre": "Rub in",
+    "detail": "Work with your fingertips WITHOUT kneading: the dough must stay crumbly and barely cohesive."
+   },
+   {
+    "titre": "Rest",
+    "detail": "2 hours chilled: the dough firms up, otherwise it is impossible to cut without crumbling."
+   },
+   {
+    "titre": "Bake briefly",
+    "detail": "Cut thick 2 cm discs and bake 18 minutes at 170°C: they must stay PALE. Icing sugar once cold."
+   }
+  ]
+ },
+ "churrosporras": {
+  "nom": "Porras",
+  "description": "The thick Madrid churros, fatter and softer than the classic ones. The difference is one ingredient: a pinch of BICARBONATE, which puffs the dough and gives an airy centre instead of a dense one.",
+  "etapes": [
+   {
+    "titre": "Boiling water",
+    "detail": "Pour BOILING water all at once onto the flour and bicarbonate, and mix hard with a spatula."
+   },
+   {
+    "titre": "One dough",
+    "detail": "The dough comes together into a compact mass in 2 minutes. Unlike churros, it contains no egg and no butter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "20 minutes covered: the bicarbonate works and the dough becomes softer and easier to pipe."
+   },
+   {
+    "titre": "The big nozzle",
+    "detail": "A fluted nozzle of at least 2 cm: the calibre is what separates a porra from an ordinary churro."
+   },
+   {
+    "titre": "In a spiral",
+    "detail": "Pipe one large continuous spiral straight into the oil, then cut it into lengths with scissors."
+   },
+   {
+    "titre": "190°C",
+    "detail": "Hotter than for churros: being thick, a porra must crust fast so it doesn't drink the oil."
+   },
+   {
+    "titre": "The chocolate",
+    "detail": "6 minutes of frying, cinnamon sugar, and a very thick hot chocolate thickened with cornflour for dipping."
+   }
+  ]
+ },
+ "canelones": {
+  "nom": "Canelones de Sant Esteve",
+  "description": "The Catalan cannelloni of 26 December, made with the LEFTOVERS of the Christmas roast. An anti-waste recipe turned institution: in Barcelona, Boxing Day is literally called \"canelones day\".",
+  "etapes": [
+   {
+    "titre": "The leftovers",
+    "detail": "Christmas roast, poultry, black pudding, anything goes: the rule is that NOTHING from yesterday's meal may remain."
+   },
+   {
+    "titre": "The sofregit",
+    "detail": "Onion melted 20 minutes then grated tomato reduced: the Catalan base, always."
+   },
+   {
+    "titre": "Chop fine",
+    "detail": "Meats blended finely with the sofregit and a little foie gras: the filling should be smooth, almost a mousse."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "White wine reduced then a ladle of béchamel folded into the filling: it must be supple and pipeable."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Pasta sheets pre-cooked 6 minutes, dried on a cloth, filled and rolled tightly."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Looser than usual: it must coat generously and offset the dryness of the leftovers."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Béchamel, parmesan, 25 minutes at 200°C until golden-crusted and bubbling at the edges."
+   }
+  ]
+ },
+ "carolina": {
+  "nom": "Carolina de Bilbao",
+  "description": "The emblematic pastry of Bilbao: a pastry-cream tartlet crowned with a PEAK of meringue, half glazed in chocolate, half in egg yolk. An instantly recognisable silhouette and genuinely spectacular.",
+  "etapes": [
+   {
+    "titre": "The bases",
+    "detail": "Puff pastry in small tartlet cases, pricked and blind-baked 15 minutes under weights."
+   },
+   {
+    "titre": "The pastry cream",
+    "detail": "Vanilla milk, yolks, sugar, cornflour: cooked 4 minutes until very thick, then cooled under film."
+   },
+   {
+    "titre": "Italian meringue",
+    "detail": "Syrup at 118°C poured onto whipped whites, beaten until completely cool: it must be VERY firm."
+   },
+   {
+    "titre": "Pipe a peak",
+    "detail": "Plain nozzle, one large 8 cm conical point on each tartlet: the carolina's signature."
+   },
+   {
+    "titre": "Dry it",
+    "detail": "10 minutes at 100°C: the meringue must skin over to take the glazes without collapsing."
+   },
+   {
+    "titre": "Chocolate glaze",
+    "detail": "Melted chocolate brushed vertically onto ONE HALF only of the peak."
+   },
+   {
+    "titre": "Yellow glaze",
+    "detail": "Icing sugar, egg yolk and a drop of lemon on the other half. The two colours must not touch."
+   }
+  ]
  }
 };
