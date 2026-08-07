@@ -204,6 +204,10 @@ function construireIndexRecherche() {
       pays,
       ingredients,
       ingredientsNorm: tousIngredients.map(i => normalizeText(i)),
+      // texteNorm (description + étapes) est rempli PLUS TARD, à la première recherche
+      // qui en a besoin — voir construireIndexTexte(). Le construire ici coûterait
+      // plusieurs Mo de chaînes et une seconde de CPU au démarrage pour rien.
+      texteNorm: null,
     };
     window._searchIndex.cartes.push(entry);
     
@@ -215,6 +219,39 @@ function construireIndexRecherche() {
     });
   });
   console.log("✅ Index recherche : " + window._searchIndex.cartes.length + " cartes, " + Object.keys(window._searchIndex.parIngredient).length + " ingrédients");
+}
+
+// v263 : index TEXTE (description + étapes), construit à la demande.
+// Jusqu'ici la recherche ne regardait que nom / catégorie / pays / ingrédients :
+// « sans four », « anti-gaspi », « pain rassis » ou « à la poêle » ne renvoyaient
+// rien, alors que l'information est écrite noir sur blanc dans les étapes.
+// On ne le construit qu'au premier besoin réel : coût nul tant qu'on cherche
+// par nom, et une seule passe ensuite pour toute la session.
+function construireIndexTexte() {
+  if (!window._searchIndex || window._searchIndex.texteFait) return;
+  window._searchIndex.texteFait = true;
+  const t0 = performance.now();
+  window._searchIndex.cartes.forEach(entry => {
+    const r = (typeof recettes !== "undefined") ? recettes[entry.cle] : null;
+    if (!r) { entry.texteNorm = ""; return; }
+    // r.txt : blob de recherche pré-calculé au build (présent si les étapes sont
+    // chargées à la demande). Sinon on reconstruit depuis les données en mémoire.
+    if (typeof r.txt === "string") { entry.texteNorm = normalizeText(r.txt); return; }
+    const bouts = [r.description || r.desc || ""];
+    if (Array.isArray(r.etapes)) {
+      r.etapes.forEach(e => {
+        if (Array.isArray(e)) bouts.push(e.slice(1).join(" "));
+        else if (typeof e === "string") bouts.push(e);
+        else if (e && typeof e === "object") bouts.push([e.titre, e.detail, e.texte].filter(Boolean).join(" "));
+      });
+    }
+    // Le conseil batch (« se congèle cru », « sans four », « la veille ») est du
+    // texte utile et déjà chargé : autant l'indexer.
+    const b = (typeof RECETTES_BATCH !== "undefined") ? RECETTES_BATCH[entry.cle] : null;
+    if (b) bouts.push(b.conseilSoir || "", (b.conservation && b.conservation.note) || "");
+    entry.texteNorm = normalizeText(bouts.join(" "));
+  });
+  console.log("✅ Index texte : " + window._searchIndex.cartes.length + " recettes en " + Math.round(performance.now() - t0) + " ms");
 }
 
 // === FUZZY MATCH : distance de Levenshtein (tolérance fautes) ===
@@ -295,6 +332,44 @@ function scorerCartes(qNorm) {
   if (!window._searchIndex) return [];
   const motsQuery = qNorm.split(/\s+/).filter(Boolean);
 
+  // v263 : le texte des étapes n'est consulté qu'en DERNIER recours — si aucune
+  // carte ne matche par nom / catégorie / pays / ingrédient. Il ne peut donc
+  // jamais reléguer un résultat pertinent, seulement rattraper un « 0 résultat ».
+  const scoresRapides = scorerSansTexte(qNorm, motsQuery);
+  if (scoresRapides.length > 0) return scoresRapides;
+  if (qNorm.length < 3) return scoresRapides;
+  construireIndexTexte();
+  return scorerAvecTexte(qNorm, motsQuery);
+}
+
+// Rattrapage sur le texte des étapes. Deux passes, de la plus stricte à la plus
+// large — on s'arrête à la première qui donne quelque chose :
+//   1. l'EXPRESSION exacte ("sans four", "pain rassis") ;
+//   2. sinon, tous les mots présents en MOT ENTIER.
+// Le mot entier est indispensable : en simple sous-chaîne, « four » matche
+// « fourchette » et « enfourner », et « sans four » remontait 268 recettes.
+function scorerAvecTexte(qNorm, motsQuery) {
+  const cartes = window._searchIndex.cartes;
+
+  const parPhrase = cartes
+    .map(e => ({ entry: e, score: (e.texteNorm || "").includes(qNorm) ? 100 : 0 }))
+    .filter(x => x.score > 0);
+  if (parPhrase.length) return parPhrase;
+
+  const mots = motsQuery.filter(m => m.length >= 3);
+  if (!mots.length) return [];
+  const echapRx = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  // (?:s|es)? pour tolérer le pluriel : « poêles » matche la recherche « poele »
+  const rx = mots.map(m => new RegExp("(?:^|[^a-z0-9])" + echapRx(m) + "(?:s|es)?(?:[^a-z0-9]|$)"));
+
+  return cartes.map(entry => {
+    const txt = entry.texteNorm || "";
+    if (!txt || !rx.every(r => r.test(txt))) return { entry, score: 0 };
+    return { entry, score: 10 * mots.length };
+  }).filter(x => x.score > 0);
+}
+
+function scorerSansTexte(qNorm, motsQuery) {
   return window._searchIndex.cartes.map(entry => {
     let score = 0;
     const motsNom = entry.nomNorm.split(/\s+/).filter(Boolean);

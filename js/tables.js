@@ -1936,6 +1936,7 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
       <div class="fiche-partage-actions" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:4px">
         <button type="button" onclick="partagerRecette('${nom}')" aria-label="Partager cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer">📤 Partager</button>
         <button type="button" onclick="partagerImageRecette('${nom}')" aria-label="Partager une image de la recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer">📸 Image</button>
+        <button type="button" onclick="imprimerRecette('${nom}', ${personnes})" aria-label="Imprimer cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer">🖨️ Imprimer</button>
       </div>
     </div>
     ${htmlPrixCalories(nom, personnes)}

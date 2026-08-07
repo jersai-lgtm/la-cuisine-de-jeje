@@ -60,6 +60,46 @@ for (const k of cles) {
   if (!existsSync(join(ROOT, img))) avert.push(`${k} : image manquante (${img})`);
 }
 
+// 3 bis) Deux recettes différentes portant le MÊME nom (doublon réel).
+// Historique : 4 paires étaient passées entre les mailles (Janssons, Æbleskiver,
+// Scotch eggs, Raspeballer) parce que seule la CLÉ était contrôlée, pas le nom.
+{
+  const normNom = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .toLowerCase().replace(/ı/g, "i").replace(/[^a-z0-9]+/g, " ").trim();
+  const parNom = new Map();
+  for (const k of cles) {
+    const n = normNom(R[k].nom);
+    if (!n) continue;
+    if (parNom.has(n)) erreurs.push(`Nom en double : "${R[k].nom}" porté par "${parNom.get(n)}" ET "${k}"`);
+    else parNom.set(n, k);
+  }
+}
+
+// 3 ter) Deux clés d'ingrédient pour le même produit, au MÊME mode de dosage.
+// Le référentiel a deux familles légitimes : au poids (prixKg/calPer100g) et à la
+// pièce (prixUnite/cal) — figue/figues, pommedeterre/pommeDeTerre. Celles-là sont
+// normales. En revanche deux entrées du MÊME mode divergent en prix et en calories
+// selon la graphie employée, et faussent silencieusement le coût des recettes.
+{
+  const cp = sandbox();
+  try {
+    exec(cp, "ingredients_prix.js");
+    const P = cp.INGREDIENTS_PRIX || cp.window.INGREDIENTS_PRIX || {};
+    const SEPARES = new Set(["pate", "pates"]);   // pâte (à tarte) ≠ pâtes (alimentaires)
+    const dosage = (k) => (P[k] && P[k].prixUnite !== undefined ? "unite" : "poids");
+    const normIng = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/s$/, "");
+    const grp = {};
+    for (const k of Object.keys(P)) (grp[normIng(k)] = grp[normIng(k)] || []).push(k);
+    for (const ks of Object.values(grp)) {
+      if (ks.length < 2 || ks.some((k) => SEPARES.has(k))) continue;
+      for (const mode of ["poids", "unite"]) {
+        const m = ks.filter((k) => dosage(k) === mode);
+        if (m.length > 1) erreurs.push(`Ingrédient en double (dosage ${mode}) : ${m.join(" / ")} — fusionner, sinon le coût dépend de la graphie`);
+      }
+    }
+  } catch (e) { avert.push(`ingredients_prix.js non vérifiable (${e.message})`); }
+}
+
 // 4) Cohérence de recettes_batch.js
 try {
   const cb = sandbox();

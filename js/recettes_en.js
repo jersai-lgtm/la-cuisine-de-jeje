@@ -5839,36 +5839,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "scotchegg": {
-  "nom": "Scotch Egg",
-  "description": "A British soft-boiled egg wrapped in sausage meat, breaded and fried—crispy on the outside and creamy on the inside.",
-  "etapes": [
-   {
-    "titre": "Soft-Boiled Eggs",
-    "detail": "Cook the soft-boiled eggs then carefully peel them. CHEF'S TIP: Cool the soft-boiled eggs in ice water before peeling—the shell will come off cleanly without tearing the white."
-   },
-   {
-    "titre": "Wrap",
-    "detail": "Wrap each egg with sausage meat."
-   },
-   {
-    "titre": "Bread",
-    "detail": "Dredge in flour, beaten egg, then breadcrumbs."
-   },
-   {
-    "titre": "Fry",
-    "detail": "Fry until golden brown."
-   },
-   {
-    "titre": "Drain",
-    "detail": "Drain on paper towels."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Cut in half to reveal the creamy yolk."
-   }
-  ]
- },
  "sosaties": {
   "nom": "Sosaties",
   "description": "South African lamb skewers marinated in curry and apricot, with sweet and spicy flavors.",
@@ -13806,36 +13776,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve dusted with powdered sugar with a compote."
-   }
-  ]
- },
- "aebleskiver": {
-  "nom": "Æbleskiver",
-  "description": "Danish puffed pancake balls cooked in a special mold, dusted with sugar.",
-  "etapes": [
-   {
-    "titre": "Batter",
-    "detail": "Prepare a smooth batter, separate and whip the egg whites."
-   },
-   {
-    "titre": "Aerate",
-    "detail": "Gently fold in the whipped egg whites. CHEF'S TIP: it's the whipped egg whites that give æbleskiver their light and fluffy texture, don't crush them when mixing."
-   },
-   {
-    "titre": "Heat",
-    "detail": "Butter and heat the hemisphere mold."
-   },
-   {
-    "titre": "Pour",
-    "detail": "Fill each cavity with batter."
-   },
-   {
-    "titre": "Turn",
-    "detail": "Flip the balls halfway through cooking with a pick to form spheres."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Dust with powdered sugar and serve with jam."
    }
   ]
  },
@@ -29841,36 +29781,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "gratinchouxfleur": {
-  "nom": "Cauliflower Gratin",
-  "description": "Tender cauliflower florets smothered in a creamy béchamel sauce and gratinéed with cheese. A comforting winter dish.",
-  "etapes": [
-   {
-    "titre": "Cook the cauliflower",
-    "detail": "Cut the cauliflower into florets and cook them for 10 minutes in salted boiling water: they should remain slightly firm."
-   },
-   {
-    "titre": "Béchamel",
-    "detail": "Make a roux with butter and flour, gradually pour in the milk while whisking until thickened. Season with salt, pepper, and nutmeg."
-   },
-   {
-    "titre": "Assemble",
-    "detail": "Drain the cauliflower and arrange it in a buttered baking dish."
-   },
-   {
-    "titre": "Coat",
-    "detail": "Pour the béchamel sauce over the cauliflower."
-   },
-   {
-    "titre": "Gratinée",
-    "detail": "Sprinkle with grated cheese and bake at 200 °C for 25 minutes."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve golden brown and bubbling. CHEF'S TIP: drain the cauliflower very well and pat it dry, otherwise it releases water and thins out the béchamel during cooking."
-   }
-  ]
- },
  "fajitaspoulet": {
   "nom": "Chicken Fajitas",
   "description": "Strips of chicken marinated in tex-mex spices, sautéed with bell peppers and onions, to be rolled in warm tortillas.",
@@ -30496,40 +30406,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Mix vigorously at the table before eating, while still hot."
-   }
-  ]
- },
- "janssonfrestelse": {
-  "nom": "Jansson's Temptation",
-  "description": "\"Jansson's Temptation\": a Swedish gratin of julienned potatoes, caramelized onions, and anchovy fillets, bound with cream. Creamy, golden, and deeply comforting.",
-  "etapes": [
-   {
-    "titre": "Cut",
-    "detail": "Cut the potatoes into thin matchsticks."
-   },
-   {
-    "titre": "Caramelize the onion",
-    "detail": "Melt the sliced onion in butter without browning."
-   },
-   {
-    "titre": "Layer",
-    "detail": "Alternate layers of potatoes, onion, and anchovy fillets in a buttered baking dish."
-   },
-   {
-    "titre": "Add cream",
-    "detail": "Pour the cream until it reaches halfway up the dish. CHEF'S TIP: add a little of the anchovy liquid to the cream—that's the secret to the true umami of authentic Jansson's Temptation."
-   },
-   {
-    "titre": "Top with breadcrumbs",
-    "detail": "Sprinkle with breadcrumbs and dots of butter."
-   },
-   {
-    "titre": "Bake",
-    "detail": "Bake at 200°C until the potatoes are tender and the top is golden."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Let rest for a few minutes before serving."
    }
   ]
  },
@@ -39812,7 +39688,7 @@ window.RECETTES_EN = {
   ]
  },
  "bessara": {
-  "nom": "Bessara",
+  "nom": "Moroccan Bessara",
   "description": "Morocco's velvety fava bean soup, the quintessential morning dish: favas melted with garlic and cumin, drizzled with olive oil and paprika.",
   "etapes": [
    {
@@ -45264,7 +45140,7 @@ window.RECETTES_EN = {
   ]
  },
  "besara": {
-  "nom": "Bessara",
+  "nom": "Egyptian Bessara",
   "description": "A velvety puree of dried fava beans and herbs, drizzled with olive oil and cumin. Cheap, filling, vivid green — a beloved classic.",
   "etapes": [
    {
@@ -53544,40 +53420,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve with steamed potatoes on the side."
-   }
-  ]
- },
- "raspeball": {
-  "nom": "Raspeball (Norwegian Potato Dumplings)",
-  "description": "Norwegian dumplings made from grated raw potato, poached and served with bacon, sausage, and mashed rutabaga. Sunday comfort food at its finest.",
-  "etapes": [
-   {
-    "titre": "Grate the potatoes",
-    "detail": "Finely grate the raw potatoes and squeeze out the excess liquid."
-   },
-   {
-    "titre": "Make the dough",
-    "detail": "Mix with flour and salt into a firm dough."
-   },
-   {
-    "titre": "Shape",
-    "detail": "Shape into large round dumplings."
-   },
-   {
-    "titre": "Poach",
-    "detail": "Poach in barely simmering water for 45-60 minutes."
-   },
-   {
-    "titre": "Cook the toppings",
-    "detail": "Fry the bacon and sausage slices until golden."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve the hot dumplings topped with bacon and sausage."
-   },
-   {
-    "titre": "Finish",
-    "detail": "Top with a knob of butter before serving."
    }
   ]
  },
