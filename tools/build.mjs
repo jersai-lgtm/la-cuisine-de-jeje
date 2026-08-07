@@ -17,7 +17,7 @@
 //    données (recettes_*.js), qui pèsent ~86 % du JS.
 // =============================================================================
 
-import { readFileSync, writeFileSync, rmSync, mkdirSync, cpSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, rmSync, mkdirSync, cpSync, existsSync, statSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -25,6 +25,7 @@ import { transform } from "esbuild";
 import { genererSEO } from "./seo.mjs";
 import { genererMiniatures } from "./thumbs.mjs";
 import { chargerCatalogue } from "./recettes-data.mjs";
+import { compacterFichierRecettes } from "./compacter-recettes.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
@@ -74,13 +75,24 @@ async function main() {
   const lignesASupprimer = new Set();
   const bundles = [];      // noms des bundles produits (pour le précache du SW)
   let totalBrut = 0, totalMin = 0;
+  const compacte = [];
   for (let g = 0; g < groups.length; g++) {
     const grp = groups[g];
     let concat = "";
     if (process.env.DEBUGERR) concat += `window.addEventListener('error',function(e){(window.__berr=window.__berr||[]).push((e.message||'')+' @ ligne '+e.lineno+':'+e.colno);});\n`;
     for (const f of grp.files) {
       if (!existsSync(p(f))) throw new Error(`Fichier référencé introuvable : ${f}`);
-      concat += `\n;\n/* ${f} */\n` + readFileSync(p(f), "utf8");
+      // Les fichiers de recettes partent sous forme COMPACTE : le tableau de 15
+      // lignes par convive est la moitié de tout le JS de l'appli, et il se
+      // reconstruit à l'identique au chargement (js/tableaux_expand.js).
+      // Les sources restent lisibles, seule la version livrée est compactée.
+      const compactable = /^js\/recettes_(?!en\.js|batch\.js)[a-z]+\.js$/.test(f);
+      let src = null;
+      if (compactable) {
+        const r = compacterFichierRecettes(p(f));
+        if (r) { src = r.js; compacte.push({ f, ...r.stats, gain: 1 - Buffer.byteLength(r.js) / statSync(p(f)).size }); }
+      }
+      concat += `\n;\n/* ${f} */\n` + (src ?? readFileSync(p(f), "utf8"));
     }
     totalBrut += Buffer.byteLength(concat);
     const min = await minifyJs(concat);
@@ -91,6 +103,13 @@ async function main() {
     console.log(`   bloc ${g + 1} : ${grp.files.length} fichiers → ${name} (${(Buffer.byteLength(min) / 1024).toFixed(0)} Ko)`);
     remplacement[grp.start] = `<script defer src="${name}"></script>`;
     for (let i = grp.start; i <= grp.end; i++) lignesASupprimer.add(i);
+  }
+
+  if (compacte.length) {
+    const der = compacte.reduce((n, c) => n + c.derivables, 0);
+    const lit = compacte.reduce((n, c) => n + c.litterales, 0);
+    const moy = compacte.reduce((n, c) => n + c.gain, 0) / compacte.length;
+    console.log(`   Tableaux compactés : ${der} dérivables + ${lit} littérales sur ${compacte.length} fichiers (−${(moy * 100).toFixed(0)} % avant minification)`);
   }
 
   // 4) Réécrire index.html : remplacer chaque bloc par son tag bundle
