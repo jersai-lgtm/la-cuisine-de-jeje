@@ -102344,5 +102344,1025 @@ window.RECETTES_EN = {
     "detail": "Icing sugar, egg yolk and a drop of lemon on the other half. The two colours must not touch."
    }
   ]
+ },
+ "bacalhaugomes": {
+  "nom": "Bacalhau à Gomes de Sá",
+  "description": "Porto's most famous salt cod dish, created in the 19th century by a ruined merchant turned cook. The cod is NOT boiled but steeped in hot milk off the heat — which is what keeps it moist.",
+  "etapes": [
+   {
+    "titre": "Desalt 36 hours",
+    "detail": "Salt cod soaked in cold water, changed four times: the only genuinely long step in the recipe."
+   },
+   {
+    "titre": "Steep in milk",
+    "detail": "Bring the milk to a simmer, TAKE IT OFF the heat and let the cod steep for 20 minutes, covered."
+   },
+   {
+    "titre": "Flake",
+    "detail": "Drain and flake into large pieces, removing skin and bones. Keep the milk, it will flavour the onions."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Sliced and melted 25 minutes in olive oil with garlic and bay, until jammy and golden."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Boiled in their skins, peeled hot and cut into thick 1 cm ROUNDS."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Alternate potatoes, onions and cod in an earthenware dish, drizzling olive oil on each layer."
+   },
+   {
+    "titre": "Bake",
+    "detail": "25 minutes at 190°C. Quartered hard-boiled eggs, black olives and parsley AS IT LEAVES the oven, never before."
+   }
+  ]
+ },
+ "bacalhaunatas": {
+  "nom": "Bacalhau com Natas",
+  "description": "The Sunday cod and cream gratin of Portugal. The potatoes are FRIED as matchsticks before being gratinated: this stops them releasing water and gives the dish its structure.",
+  "etapes": [
+   {
+    "titre": "Desalt",
+    "detail": "36 hours in cold water changed four times, then flake the cod into large pieces."
+   },
+   {
+    "titre": "Fry the potatoes",
+    "detail": "As matchsticks, fried 4 minutes at 170°C: blanched in water, they would waterlog the whole gratin."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Melted in butter 15 minutes until golden, then the flaked cod sautéed 3 minutes with them."
+   },
+   {
+    "titre": "The creamy béchamel",
+    "detail": "Butter-flour roux, hot milk, then cream: it should be loose, it will thicken in the oven."
+   },
+   {
+    "titre": "Season",
+    "detail": "Generous nutmeg and pepper. Do NOT salt: the cod brings all the salt needed."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fried potatoes, cod and onions and béchamel gently folded together in the buttered dish."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Grated cheese, 25 minutes at 200°C until golden-crusted. Parsley out of the oven."
+   }
+  ]
+ },
+ "amejoas": {
+  "nom": "Amêijoas à Bulhão Pato",
+  "description": "Clams opened with garlic, olive oil and coriander, named after a 19th-century gourmet poet. Four ingredients, eight minutes — and a broth you will mop up to the last drop.",
+  "etapes": [
+   {
+    "titre": "Purge",
+    "detail": "Clams for 2 hours in heavily salted water: they spit out their sand, without which the dish is inedible."
+   },
+   {
+    "titre": "Sort",
+    "detail": "Discard any clam that is cracked or stays OPEN when tapped: the safety rule."
+   },
+   {
+    "titre": "Cold garlic oil",
+    "detail": "Sliced garlic in COLD olive oil, brought up gently: it must turn blond without ever browning."
+   },
+   {
+    "titre": "High heat",
+    "detail": "Clams tipped in all at once, white wine, lid on, MAXIMUM heat."
+   },
+   {
+    "titre": "Listen",
+    "detail": "Shake the pan every 30 seconds. They open in 3 to 5 minutes — the moment they do, stop."
+   },
+   {
+    "titre": "The coriander",
+    "detail": "A large chopped handful thrown in OFF THE HEAT: cooked, it would lose its distinctive scent."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Lemon, pepper, and plenty of bread. The juice at the bottom of the pan is the best part."
+   }
+  ]
+ },
+ "alheira": {
+  "nom": "Alheira de Mirandela",
+  "description": "A PORK-FREE sausage invented by 15th-century Portuguese Jews to deceive the Inquisition. Made of poultry and bread, it became a national emblem — and its history is as remarkable as its taste.",
+  "etapes": [
+   {
+    "titre": "Poach the meats",
+    "detail": "Chicken and turkey poached 45 minutes in a heavily garlicky, spicy broth. KEEP the broth."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Stale bread crumbled and soaked in the HOT poaching broth: it absorbs all the flavour of the meats."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred the meats by hand into fine fibres, never in a blender: an alheira must keep its texture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Crushed garlic, smoked paprika, chilli and olive oil: the mix should be frankly spicy and properly red."
+   },
+   {
+    "titre": "Fill the casings",
+    "detail": "Pipe into sausage casings, shaped into horseshoes, and dry for 12 hours."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Grilled in the oven 20 minutes at 200°C or pan-fried: the skin should split and brown, the sign it is ready."
+   },
+   {
+    "titre": "Serve",
+    "detail": "With a fried egg, chips and a salad — the canonical Portuguese trio, never otherwise."
+   }
+  ]
+ },
+ "cozidoportugues": {
+  "nom": "Cozido à Portuguesa",
+  "description": "Portugal's national boiled dinner: meats, cured sausages and vegetables, each added at ITS own cooking time. The rice cooks in the final broth and is served separately — which sets cozido apart from all its European cousins.",
+  "etapes": [
+   {
+    "titre": "Start in cold water",
+    "detail": "Beef and pork in cold water, brought to the boil then carefully skimmed for 15 minutes."
+   },
+   {
+    "titre": "The sequencing",
+    "detail": "Beef 2 h, pork 1 h 30, chicken 45 min, sausages 30 min: each goes in at ITS hour, never all together."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Soaked overnight and cooked SEPARATELY: in the salty meat broth they would stay hard."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Carrots and turnips 40 minutes, potatoes 30, cabbage 20: the same sequencing logic."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Cooked in a ladle of strained broth, separately: it must never cook in the main pot."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sliced meats in the centre, vegetables around, rice and beans in separate dishes."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Served as a soup BEFORE the main dish, with a little rice in it: that is tradition, and it is the best moment."
+   }
+  ]
+ },
+ "sardinhasassadas": {
+  "nom": "Sardinhas Assadas",
+  "description": "The grilled sardines of Lisbon's June festivals, eaten ON a slice of bread that catches the juices. They are neither gutted nor scaled: the fat and scales protect the flesh from the fire.",
+  "etapes": [
+   {
+    "titre": "Don't gut them",
+    "detail": "Sardines are grilled WHOLE, ungutted and unscaled: that is tradition, and it protects the flesh."
+   },
+   {
+    "titre": "Dry salt",
+    "detail": "Cover them in coarse salt for 30 minutes, then shake off the excess: salt firms and seasons the flesh."
+   },
+   {
+    "titre": "Grey embers",
+    "detail": "Wait until the embers are ash-covered: flames would burn the skin before the flesh cooked."
+   },
+   {
+    "titre": "Five minutes",
+    "detail": "5 minutes a side for medium sardines, untouched — turned too soon, they tear."
+   },
+   {
+    "titre": "Bread underneath",
+    "detail": "Put a slice of country bread UNDER each sardine on the plate: it drinks the juices and fat."
+   },
+   {
+    "titre": "The salad",
+    "detail": "Grilled peeled peppers and sliced onion, olive oil, garlic and parsley: the canonical accompaniment."
+   },
+   {
+    "titre": "Eat with your fingers",
+    "detail": "Open the sardine by hand, the bone lifts out in one movement, and eat it on the bread. Lemon, flaky salt."
+   }
+  ]
+ },
+ "leitao": {
+  "nom": "Leitão à Bairrada",
+  "description": "The roast suckling pig of Bairrada, with skin so crisp it shatters like glass. The secret is a paste of garlic, lard and PEPPER brushed on the inside — and a very hot oven at the end.",
+  "etapes": [
+   {
+    "titre": "The garlic paste",
+    "detail": "Garlic, lard, plenty of black pepper and salt pounded in a mortar: a grey, intensely fragrant paste."
+   },
+   {
+    "titre": "Brush the inside",
+    "detail": "Coat the INSIDE of the pig generously: that is where the flavour penetrates, not through the skin."
+   },
+   {
+    "titre": "Dry the skin",
+    "detail": "Blot the skin and let it dry uncovered in the fridge for 12 hours: wet skin will never crisp."
+   },
+   {
+    "titre": "Roast gently",
+    "detail": "3 hours at 160°C, basting with white wine every 30 minutes: the meat turns meltingly tender."
+   },
+   {
+    "titre": "The blast",
+    "detail": "20 minutes at 250°C AT THE END: this final shock blisters and vitrifies the skin."
+   },
+   {
+    "titre": "The test",
+    "detail": "The skin must CRACK under the knife like glass. If it bends, give it 5 more minutes at 250°C."
+   },
+   {
+    "titre": "Carve",
+    "detail": "Rest 15 minutes, then cut with a heavy knife into large pieces with the skin. Orange wedges alongside."
+   }
+  ]
+ },
+ "toucinhoceu": {
+  "nom": "Toucinho do Céu",
+  "description": "\"Bacon from heaven\": a convent cake of almonds and egg YOLKS, with almost no flour. Its name comes from the lard it once contained — replaced by butter, but the name stayed.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Sugar and water cooked to 110°C — the \"short thread\" stage: a drop between two fingers forms a short thread."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Ground almonds tipped into the HOT syrup off the heat, stirred to a thick paste."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool to 40°C: added to a scalding paste, the yolks would scramble into threads."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "One at a time, whisking each in. The convent recipe used up to twelve for one cake."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Melted and added last, with the lemon zest and cinnamon."
+   },
+   {
+    "titre": "Bake in a bain-marie",
+    "detail": "35 minutes at 170°C: the centre must stay MOIST, almost runny. A dry toucinho is a failed one."
+   },
+   {
+    "titre": "Wait",
+    "detail": "12 hours chilled before turning out: it firms up and becomes sliceable. Icing sugar and cinnamon."
+   }
+  ]
+ },
+ "sericaia": {
+  "nom": "Sericaia",
+  "description": "The dessert of the Alentejo: an egg and cinnamon custard dropped in untidy spoonfuls, which cracks and splits as it bakes. Its fissures and chaotic look are not a fault — they are its signature.",
+  "etapes": [
+   {
+    "titre": "Infuse",
+    "detail": "Milk heated with lemon zest and a cinnamon stick, infused 20 minutes off the heat, then strained."
+   },
+   {
+    "titre": "The base",
+    "detail": "Flour slaked in a little COLD milk, then poured into the hot milk: 3 minutes to a light thickening."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Stirred in off the heat into the WARM mixture, with the sugar: hot, they would cook instantly."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Whipped to firm peaks and folded in with a spatula in three additions, without breaking them."
+   },
+   {
+    "titre": "Drop in spoonfuls",
+    "detail": "Drop the mixture BY THE SPOON into an earthenware dish, in untidy mounds: DO NOT SMOOTH IT."
+   },
+   {
+    "titre": "The cinnamon",
+    "detail": "Dust each spoonful generously before baking: it will draw the characteristic patterns."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 190°C. A sericaia should puff, crack and split — which is exactly the intention."
+   }
+  ]
+ },
+ "salamechocolate": {
+  "nom": "Chocolate Salami",
+  "description": "A \"salami\" of chocolate and crushed biscuits, rolled and cut into rounds. No baking, no equipment — and the visual illusion is so convincing that it is often served on a charcuterie board.",
+  "etapes": [
+   {
+    "titre": "Crush by hand",
+    "detail": "Crush the biscuits COARSELY in a bag: those chunks are what will imitate the fat in a salami."
+   },
+   {
+    "titre": "No blender",
+    "detail": "Blended, the biscuits become powder and the visual illusion disappears entirely."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Chocolate and butter melted over a bain-marie, then left to COOL before adding the egg."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Beaten with the sugar until pale, then folded into the warm chocolate with the port."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Broken biscuits folded in with a spatula: the mass should be compact and mouldable, not runny."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Shape a 5 cm log in cling film, twist the ends and roll to compact it well."
+   },
+   {
+    "titre": "Set",
+    "detail": "6 hours chilled. Roll in icing sugar to imitate the bloom on a salami, and cut into rounds."
+   }
+  ]
+ },
+ "bolorei": {
+  "nom": "Bolo Rei",
+  "description": "Portugal's Christmas brioche crown, covered in candied and dried fruit. It once hid a bean AND a gift; the bean was banned by law in 1999 for safety reasons, though many still put one in.",
+  "etapes": [
+   {
+    "titre": "Soak the fruit",
+    "detail": "Candied and dried fruit soaked 12 hours in port: it gives the bolo rei its perfume."
+   },
+   {
+    "titre": "The starter",
+    "detail": "Yeast, warm milk and a little flour, left to froth for 30 minutes: the dough is rich and needs help."
+   },
+   {
+    "titre": "Knead 15 minutes",
+    "detail": "Flour, eggs, sugar, zest and starter: the dough must turn elastic before a single gram of butter."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Added in small pieces, one at a time, never adding more before the last is fully absorbed."
+   },
+   {
+    "titre": "Slow rise",
+    "detail": "12 hours CHILLED: this long cold develops the aroma and gives the stranded crumb."
+   },
+   {
+    "titre": "The crown",
+    "detail": "Make a hole in the centre and widen it to 12 cm by turning the dough: it closes up a lot while baking."
+   },
+   {
+    "titre": "Decorate and bake",
+    "detail": "Glaze, candied fruit pressed into the dough, walnuts and pine nuts, 25 minutes at 180°C. Icing sugar once cold."
+   }
+  ]
+ },
+ "pudimabade": {
+  "nom": "Pudim Abade de Priscos",
+  "description": "Portugal's most disconcerting custard: created by an abbot of Braga in the 19th century, it contains SMOKED LARD, which is completely undetectable. It has no flour, no milk and no egg white — only yolks, sugar and port.",
+  "etapes": [
+   {
+    "titre": "The lard",
+    "detail": "Smoked pork fat cut into small dice: it melts into the syrup and gives a salty depth impossible to identify."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, water, lemon zest, cinnamon and the lard cooked together 10 minutes, then carefully STRAINED."
+   },
+   {
+    "titre": "Cool",
+    "detail": "The syrup must drop to 40°C: poured hot onto the yolks, it would cook them instantly into threads."
+   },
+   {
+    "titre": "Yolks only",
+    "detail": "15 yolks for a pudding serving 8 — this is a convent dessert, economy is not the point."
+   },
+   {
+    "titre": "Strain twice",
+    "detail": "Pass the mixture through a fine sieve TWICE: this gives the pudim its perfectly smooth texture."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Dry caramel poured into the mould and left to set before gently pouring the mixture over it."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "1 hour at 160°C in a water bath, covered with foil. 12 hours chilled before turning out, or it collapses."
+   }
+  ]
+ },
+ "ovosmoles": {
+  "nom": "Ovos Moles d'Aveiro",
+  "description": "A cream of egg yolks and sugar sealed inside shell-shaped wafers. A convent speciality of Aveiro protected by a PGI — the nuns used the whites to starch their habits.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Sugar and water cooked to exactly 110°C: too little and the cream is runny, too much and it crystallises."
+   },
+   {
+    "titre": "Cool to 40°C",
+    "detail": "The most important step: poured hot onto the yolks, the syrup would scramble them irretrievably."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Passed through a sieve BEFORE mixing: this removes the chalazae, the white threads that spoil the texture."
+   },
+   {
+    "titre": "Rice flour",
+    "detail": "One spoon only: it stabilises the cream without thickening it, and it is the traditional recipe."
+   },
+   {
+    "titre": "Cook gently",
+    "detail": "8 minutes over VERY low heat, stirring constantly: the cream must coat the spoon, not boil."
+   },
+   {
+    "titre": "Rest 24 hours",
+    "detail": "Covered with film touching the surface, chilled: the cream firms up enough to be piped in."
+   },
+   {
+    "titre": "The wafers",
+    "detail": "Very thin wafer batter baked between two plates, moulded into shells, filled and sealed with water."
+   }
+  ]
+ },
+ "travesseiros": {
+  "nom": "Travesseiros de Sintra",
+  "description": "The \"pillows\" of Sintra: rectangles of puff pastry filled with an almond and egg yolk cream. The Piriquita pastry shop has made them since 1862 with the same recipe, kept secret and never published.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Sugar and water at 110°C, then ground almonds stirred in off the heat: the paste must be thick and smooth."
+   },
+   {
+    "titre": "Cool a little",
+    "detail": "Let it drop to 40°C before the yolks — the same rule as for every Portuguese convent dessert."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Beaten in one at a time, then 4 minutes over low heat to a pastry-cream consistency."
+   },
+   {
+    "titre": "Chill",
+    "detail": "2 hours in the fridge, covered with film touching the surface: warm, the cream would melt the pastry butter."
+   },
+   {
+    "titre": "The rectangles",
+    "detail": "Puff pastry rolled to 2 mm and cut into 12 × 8 cm rectangles."
+   },
+   {
+    "titre": "Shape the pillow",
+    "detail": "A log of cream down the centre, fold both long sides to the middle and turn SEAM SIDE DOWN."
+   },
+   {
+    "titre": "Bake",
+    "detail": "25 minutes at 200°C until deep golden and well puffed. Generous icing sugar straight out of the oven."
+   }
+  ]
+ },
+ "diples": {
+  "nom": "Diples",
+  "description": "Ribbons of dough stretched to transparency, ROLLED UP in boiling oil with two forks, then drowned in honey. The movement takes about ten attempts to learn — and the early failures still eat very well.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Flour, eggs, a drizzle of oil and orange zest: kneaded 12 minutes until very elastic and smooth."
+   },
+   {
+    "titre": "Rest 1 hour",
+    "detail": "Wrapped, at room temperature: without resting, the dough shrinks back and refuses to stretch."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "Pass the dough through the machine to its finest setting: you should see your hand through it, like pasta."
+   },
+   {
+    "titre": "The ribbons",
+    "detail": "Cut 6 × 25 cm strips — any shorter and they won't make enough turns."
+   },
+   {
+    "titre": "Oil at 170°C",
+    "detail": "Hotter, the dough stiffens before you can roll it; cooler, it drinks the oil."
+   },
+   {
+    "titre": "Roll in the oil",
+    "detail": "Dip one end, and as soon as it stiffens, ROLL the strip onto itself with two forks."
+   },
+   {
+    "titre": "The honey",
+    "detail": "30 seconds of frying per roll, drained, then dipped 20 seconds in warm honey. Walnuts and cinnamon."
+   }
+  ]
+ },
+ "karydopita": {
+  "nom": "Karydopita",
+  "description": "The Greek walnut cake, soaked in a clove-scented syrup. Like every syrup pastry it follows the golden rule: COLD syrup on a HOT cake — otherwise the cake floats instead of absorbing.",
+  "etapes": [
+   {
+    "titre": "Syrup first",
+    "detail": "Sugar, water, cinnamon, cloves and orange zest boiled 10 minutes, then COOLED completely. Make it first."
+   },
+   {
+    "titre": "The walnuts",
+    "detail": "Chopped COARSELY by knife: blended, they would release their oil and the cake would be heavy."
+   },
+   {
+    "titre": "The semolina",
+    "detail": "A little fine semolina replaces part of the flour: it absorbs syrup better without turning pasty."
+   },
+   {
+    "titre": "The ribbon",
+    "detail": "Eggs and sugar whisked 6 minutes until very pale and foamy: the cake's only leavening."
+   },
+   {
+    "titre": "Fold in",
+    "detail": "Oil, then the dry mix and walnuts with a spatula, without working it: the batter must stay airy."
+   },
+   {
+    "titre": "Bake",
+    "detail": "35 minutes at 175°C. Cut it INTO DIAMONDS as soon as it leaves the oven, while still hot."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Pour the COLD syrup over the SCALDING cake, in several goes. Wait 4 hours for it to absorb everything."
+   }
+  ]
+ },
+ "ravani": {
+  "nom": "Ravani",
+  "description": "The Greek semolina cake in lemon syrup, soft and light as a sponge. Unlike most cakes it contains almost no flour: the SEMOLINA provides all the structure and absorption.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, water and lemon juice boiled 8 minutes, then COOLED. Always first, without exception."
+   },
+   {
+    "titre": "Hydrate the semolina",
+    "detail": "Semolina and yoghurt mixed and left 20 MINUTES: the semolina swells and the cake will be soft, not sandy."
+   },
+   {
+    "titre": "The ribbon",
+    "detail": "Eggs and sugar whisked 5 minutes until foamy and pale."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Oil, hydrated semolina, flour, baking powder and lemon zest folded in without knocking out the air."
+   },
+   {
+    "titre": "Spread thin",
+    "detail": "The batter should be 2 cm thick MAXIMUM: any thicker and the syrup would never reach the centre."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 180°C until golden. Cut into diamonds immediately, out of the oven."
+   },
+   {
+    "titre": "Soak",
+    "detail": "COLD syrup on the SCALDING cake, poured in three goes. Desiccated coconut on top once absorbed."
+   }
+  ]
+ },
+ "rizogalo": {
+  "nom": "Rizogalo",
+  "description": "Greek rice pudding, thickened with CORNFLOUR at the end rather than eggs. That binding gives a very creamy texture and lets it stay silky even cold, which a classic rice pudding does not.",
+  "etapes": [
+   {
+    "titre": "Round rice",
+    "detail": "Round-grain rice WITHOUT EXCEPTION: long grain releases too little starch and the rizogalo would stay runny."
+   },
+   {
+    "titre": "Pre-cook in water",
+    "detail": "10 minutes in a little boiling water before the milk: the rice opens up and absorbs better afterwards."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Added hot with the lemon zest, then 30 minutes over VERY low heat, stirring often."
+   },
+   {
+    "titre": "Watch the base",
+    "detail": "Milk catches very fast: stir every 3 minutes, scraping the bottom of the pan well."
+   },
+   {
+    "titre": "The cornflour",
+    "detail": "Slaked in a little COLD milk and added at the end: 2 minutes is enough to thicken."
+   },
+   {
+    "titre": "Sugar last",
+    "detail": "Added after thickening: put in too early, it would stop the rice absorbing the milk properly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Divide into ramekins, let them cool a little, then generous ground cinnamon. Eaten warm or cold."
+   }
+  ]
+ },
+ "ekmekkataifi": {
+  "nom": "Ekmek Kataifi",
+  "description": "Three storeys: a base of crisp syrup-soaked kataifi, a pastry cream, and a mountain of whipped cream. The contrast between the crunch below and the lightness above is the whole point of the dessert.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Sugar, water, lemon and cinnamon boiled 10 minutes, then cooled completely."
+   },
+   {
+    "titre": "The kataifi",
+    "detail": "Separate the strands by hand and work them with the melted butter: every strand must be coated."
+   },
+   {
+    "titre": "Bake the base",
+    "detail": "Pack into a tin and bake 35 minutes at 170°C until EVENLY deep golden — pale, it would stay soft."
+   },
+   {
+    "titre": "Soak",
+    "detail": "COLD syrup on the SCALDING base: it hisses, and that is what creates the distinctive soaked crunch."
+   },
+   {
+    "titre": "The pastry cream",
+    "detail": "Milk, yolks, sugar and cornflour cooked 4 minutes until very thick, cooled under film."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Pastry cream spread over the cooled base, well smoothed, then 2 hours chilled to firm up."
+   },
+   {
+    "titre": "The whipped cream",
+    "detail": "Whipped firm and spread in a THICK layer on top. Crushed pistachios and cinnamon before serving."
+   }
+  ]
+ },
+ "halvasemoule": {
+  "nom": "Semolina Halva",
+  "description": "The \"1-2-3-4\" dessert: one measure of oil, two of semolina, three of sugar, four of water. A recipe you remember forever and can make without scales, from whatever is in the cupboard.",
+  "etapes": [
+   {
+    "titre": "The 1-2-3-4 rule",
+    "detail": "One glass of oil, two of semolina, three of sugar, four of water: no scales needed, ever."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Water, sugar, cinnamon, cloves and lemon zest boiled 5 minutes, then KEPT HOT."
+   },
+   {
+    "titre": "Toast the semolina",
+    "detail": "In the hot oil, 10 MINUTES stirring constantly: it must turn golden and smell nutty."
+   },
+   {
+    "titre": "The key step",
+    "detail": "The toasting is everything: pale semolina gives a bland, pasty halva."
+   },
+   {
+    "titre": "Pour the syrup",
+    "detail": "HOT syrup poured onto the hot semolina — careful, it spits violently. Stand back and pour slowly."
+   },
+   {
+    "titre": "Absorb",
+    "detail": "Stir for 3 minutes: the semolina drinks all the liquid and the mass pulls away from the pan sides."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Almonds and raisins folded in, packed into a mould and left 30 minutes. Turn out and dust with cinnamon."
+   }
+  ]
+ },
+ "yorkshirepudding": {
+  "nom": "Yorkshire Pudding",
+  "description": "The English popover that accompanies the Sunday roast. It only rises if THREE conditions are met: rested cold batter, smoking fat in the tin, very hot oven. Miss one and you get a flat pancake.",
+  "etapes": [
+   {
+    "titre": "The ratio",
+    "detail": "One volume of egg, one of milk, one of flour: measure by the glass rather than by weight, the English way."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Whisk until perfectly smooth, like a slightly thick pancake batter. Salt generously."
+   },
+   {
+    "titre": "Rest 2 hours",
+    "detail": "CHILLED: cold batter poured into scorching fat creates the thermal shock that makes it all rise."
+   },
+   {
+    "titre": "Heat the fat",
+    "detail": "Muffin tins with a spoon of roasting fat, 12 minutes at 230°C: it must SMOKE."
+   },
+   {
+    "titre": "Pour fast",
+    "detail": "Take out the tin, fill two-thirds with the cold batter and get it back in IN UNDER 20 SECONDS."
+   },
+   {
+    "titre": "Don't open",
+    "detail": "20 minutes at 230°C WITHOUT ever opening the door: a draught collapses them for good."
+   },
+   {
+    "titre": "The result",
+    "detail": "They should triple in height and form a crater. Serve immediately, with the roast and gravy."
+   }
+  ]
+ },
+ "lancashirehotpot": {
+  "nom": "Lancashire Hotpot",
+  "description": "The Lancashire lamb stew under a roof of scalloped potatoes that browns in the oven. One pot, no technique — and a dish mill workers left cooking all day in the baker's oven.",
+  "etapes": [
+   {
+    "titre": "Lamb neck",
+    "detail": "Use neck or shoulder, NOT leg: you need fat and collagen for three hours of cooking."
+   },
+   {
+    "titre": "Flour and sear",
+    "detail": "Floured pieces browned in small batches: the flour thickens the sauce with no separate roux."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Plenty of sliced onions melted 12 minutes in the same pot, with the carrots."
+   },
+   {
+    "titre": "Slice thin",
+    "detail": "Potatoes in 3 mm rounds on a mandoline — thick, they wouldn't brown into scallops."
+   },
+   {
+    "titre": "The roof",
+    "detail": "Lay the rounds as overlapping SCALES over the whole surface, in concentric circles."
+   },
+   {
+    "titre": "Covered first",
+    "detail": "2 hours at 160°C WITH the lid: the meat steams and the potatoes soften."
+   },
+   {
+    "titre": "Uncovered after",
+    "detail": "45 minutes uncovered with melted butter brushed on: this is when the roof turns golden and crisp."
+   }
+  ]
+ },
+ "bangersmash": {
+  "nom": "Bangers and Mash",
+  "description": "Sausages, mash and onion gravy: the pub dish par excellence. The name comes from the First World War, when sausages padded with water EXPLODED noisily in the pan.",
+  "etapes": [
+   {
+    "titre": "Low heat",
+    "detail": "English sausages cook SLOWLY, 20 minutes over medium heat, turning them: over high heat they burst."
+   },
+   {
+    "titre": "Don't prick them",
+    "detail": "Pricked, they lose their juices and dry out — true of every fresh sausage."
+   },
+   {
+    "titre": "The mash",
+    "detail": "Floury potatoes in their skins, peeled hot, riced then dried out for 2 minutes."
+   },
+   {
+    "titre": "Plenty of butter",
+    "detail": "Pub mash is VERY buttery: allow 30 g per person, plus hot milk."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Sliced and melted 20 minutes in the sausage fat until brown and jammy — it takes time, that's normal."
+   },
+   {
+    "titre": "The gravy",
+    "detail": "Flour over the onions, 2 minutes, then stock, Worcestershire and mustard: 8 minutes of reduction."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Mash in a dome, sausages leaning on it, gravy poured generously over everything."
+   }
+  ]
+ },
+ "trifle": {
+  "nom": "Trifle",
+  "description": "The great English layered dessert, built in a glass bowl so every layer shows. The absolute rule: each layer must be COLD and SET before the next, or the whole thing merges into pink mush.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Biscuits or sponge packed into the bottom of the bowl and soaked in port or sherry — generously."
+   },
+   {
+    "titre": "The jelly",
+    "detail": "Raspberries and jelly poured over the biscuits, then 2 HOURS chilled: it must be completely set."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Thick cornflour custard, cooled UNDER FILM touching the surface to prevent a skin."
+   },
+   {
+    "titre": "Wait for cold",
+    "detail": "Poured warm onto the jelly, it would melt it: the custard must be at fridge temperature."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Custard spread gently with a spoon over the set jelly, working from the edges to the centre."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Whipped firm and spread in a thick layer — this should be the most generous of the four layers."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Toasted flaked almonds and fresh raspberries. 4 hours chilled before serving, minimum."
+   }
+  ]
+ },
+ "treacletart": {
+  "nom": "Treacle Tart",
+  "description": "A tart of golden syrup and BREADCRUMBS, which absorb the syrup and give it its unique texture. Without the bread, the syrup would stay liquid and the tart inedible — the crumbs are the structural ingredient.",
+  "etapes": [
+   {
+    "titre": "Line and blind-bake",
+    "detail": "Shortcrust pricked and blind-baked 15 minutes under weights: without it, the syrup would soak the base."
+   },
+   {
+    "titre": "The breadcrumbs",
+    "detail": "Stale bread crumbled FINELY: it absorbs the syrup and gives the characteristic texture."
+   },
+   {
+    "titre": "Warm the syrup",
+    "detail": "Golden syrup warmed to 50°C: cold, it is too thick to mix evenly into the crumbs."
+   },
+   {
+    "titre": "Plenty of lemon",
+    "detail": "Zest AND juice, generously: it is the only counterweight to the syrup's extreme sweetness, don't be shy."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Crumbs, warm syrup, egg, cream and ginger: rest 10 minutes for the crumbs to swell."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour onto the pre-baked base and smooth. Lattice strips of pastry if you want the classic look."
+   },
+   {
+    "titre": "Bake",
+    "detail": "30 minutes at 180°C: the centre should be just set and still wobbling. Eaten WARM with cream."
+   }
+  ]
+ },
+ "breadbutterpudding": {
+  "nom": "Bread and Butter Pudding",
+  "description": "Buttered bread stacked in an egg custard and baked. The absolute anti-waste dessert — and the only one where STALE bread gives a better result than fresh, because it absorbs without disintegrating.",
+  "etapes": [
+   {
+    "titre": "Stale bread",
+    "detail": "You NEED 2-day-old bread: fresh, it would collapse entirely and the pudding would be mush."
+   },
+   {
+    "titre": "Butter generously",
+    "detail": "Each slice buttered on ONE side only: the butter waterproofs it and stops the bread dissolving."
+   },
+   {
+    "titre": "The raisins",
+    "detail": "Soaked 20 minutes in hot tea or rum: dry, they would drink up all the custard."
+   },
+   {
+    "titre": "Stack upright",
+    "detail": "Slices arranged at an ANGLE and overlapping, butter side up: the points must stick out."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Milk, cream, eggs, sugar, vanilla and nutmeg whisked without frothing, then poured over the bread."
+   },
+   {
+    "titre": "Let it drink",
+    "detail": "30 MINUTES of soaking before baking: without it, the centre would stay dry."
+   },
+   {
+    "titre": "Bake",
+    "detail": "40 minutes at 170°C in a bain-marie: the protruding points must brown and crisp. Jam brushed on."
+   }
+  ]
+ },
+ "flapjack": {
+  "nom": "Flapjacks",
+  "description": "Oat bars with butter and golden syrup, chewy in the middle and crisp at the edges. Three ingredients, one bowl — and the most honest cereal bar there is, with nothing industrial in it.",
+  "etapes": [
+   {
+    "titre": "The oats",
+    "detail": "OLD-FASHIONED rolled oats, thick ones: instant oats would give a pasty bar with no chew."
+   },
+   {
+    "titre": "Melt together",
+    "detail": "Butter, brown sugar and golden syrup melted GENTLY without boiling: boiled, they would set as hard caramel."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Oats tipped into the hot mixture and stirred until every flake is coated and glossy."
+   },
+   {
+    "titre": "Press hard",
+    "detail": "Press FIRMLY into the tin with the back of a spoon: poorly packed, the flapjack crumbles when cut."
+   },
+   {
+    "titre": "Bake briefly",
+    "detail": "20 minutes at 180°C ONLY: the edges should brown but the centre stay pale and soft to the touch."
+   },
+   {
+    "titre": "Cut HOT",
+    "detail": "Score the bars with a knife straight out of the oven: cold, a flapjack shatters instead of cutting."
+   },
+   {
+    "titre": "Cool in the tin",
+    "detail": "Wait for COMPLETE cooling before turning out: warm, it falls apart entirely."
+   }
+  ]
+ },
+ "milliondollar": {
+  "nom": "Millionaire's Shortbread",
+  "description": "Three layers: Scottish shortbread, condensed-milk caramel, chocolate. The trap is the cutting — chocolate that is too thick cracks and tears the caramel away. You score it BEFORE it fully hardens.",
+  "etapes": [
+   {
+    "titre": "The shortbread",
+    "detail": "Flour, butter and sugar rubbed together, pressed into the tin and baked 25 minutes at 170°C until pale gold."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "Condensed milk, butter, brown sugar and golden syrup cooked 12 MINUTES stirring CONSTANTLY over low heat."
+   },
+   {
+    "titre": "Don't leave it",
+    "detail": "Condensed-milk caramel catches and burns in 30 seconds of inattention: never walk away."
+   },
+   {
+    "titre": "The right colour",
+    "detail": "It must turn deep blond and thicken noticeably: too pale it won't set, too dark it will go hard."
+   },
+   {
+    "titre": "Set it",
+    "detail": "Caramel poured over the cooled shortbread, then 2 HOURS chilled before the chocolate."
+   },
+   {
+    "titre": "The chocolate",
+    "detail": "Melted and spread in a THIN layer: thick, it will crack and tear the caramel when cut."
+   },
+   {
+    "titre": "Score early",
+    "detail": "Mark the squares with a knife while the chocolate is still SOFT, then let it harden completely."
+   }
+  ]
+ },
+ "welshcakes": {
+  "nom": "Welsh Cakes",
+  "description": "Halfway between a scone and a shortbread, cooked ON A PAN over a cast-iron griddle. No oven needed — which is what made them possible in Welsh cottages that had none.",
+  "etapes": [
+   {
+    "titre": "Rub in",
+    "detail": "COLD diced butter rubbed into the flour with your fingertips, to a coarse crumb texture."
+   },
+   {
+    "titre": "The raisins",
+    "detail": "Added dry, unsoaked: they will swell while cooking and stay evenly spread through the dough."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Egg and a little milk, mixed with a fork JUST enough: over-worked, the dough turns hard."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Exactly 1 cm thick, then cut 6 cm discs with a cutter."
+   },
+   {
+    "titre": "The griddle",
+    "detail": "DRY cast-iron pan or very lightly buttered, over MEDIUM-LOW heat: too hot and the outside burns before the centre cooks."
+   },
+   {
+    "titre": "Three minutes",
+    "detail": "3 minutes a side until golden brown. They should rise slightly and sound hollow when tapped."
+   },
+   {
+    "titre": "Sugar them hot",
+    "detail": "Dust with caster sugar straight out of the pan, while they are still scalding."
+   }
+  ]
+ },
+ "kjottkaker": {
+  "nom": "Kjøttkaker",
+  "description": "The large Norwegian meat patties served with brown sauce, peas and lingonberry jam. They differ from Swedish meatballs by their SIZE and by the ginger and nutmeg that flavour them.",
+  "etapes": [
+   {
+    "titre": "Two meats",
+    "detail": "Beef and pork: the pork brings the fat without which the patties would be dry and dense."
+   },
+   {
+    "titre": "Cold milk",
+    "detail": "Added LITTLE BY LITTLE while working the meat: it must be fully absorbed before each new addition."
+   },
+   {
+    "titre": "Everything cold",
+    "detail": "Meat, milk and bowl chilled: a warm mixture rejects the liquid and the patties fall apart while cooking."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Ground ginger and generous nutmeg: this pairing is what sets kjøttkaker apart from every other meatball."
+   },
+   {
+    "titre": "Large and flat",
+    "detail": "Shape THICK 7 cm patties: these are \"meat cakes\", not round meatballs."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Foaming butter, 4 minutes a side over medium heat, then set aside: they will finish in the sauce."
+   },
+   {
+    "titre": "The brown sauce",
+    "detail": "Brown roux in the cooking butter, stock, then the patties returned for 15 minutes. Lingonberries alongside."
+   }
+  ]
  }
 };

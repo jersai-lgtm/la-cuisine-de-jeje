@@ -4785,4 +4785,42 @@ oeufmayo: {
     ],
     liees: ["romesco","escalivada","xato"]
   },
+  amejoas: {
+    dateAjout: "2026-08-06T20:02:00",
+    nom: "Amêijoas à Bulhão Pato",
+    cat: "entrees", pays: "portugal",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🐚",
+    description: "Des palourdes ouvertes à l'ail, à l'huile d'olive et à la coriandre, nommées d'après un poète gourmand du XIXᵉ siècle. Quatre ingrédients, huit minutes — et un jus qu'on saucera jusqu'à la dernière goutte.",
+    tableauAmejoas: [
+      { nb: 1, moules: "250 g", ail: "1", huileolive: "30 ml", coriandre: "12 g", citron: "", vinblanc: "40 ml", poivre: "0.4 g", pain: "60 g" },
+      { nb: 2, moules: "500 g", ail: "2", huileolive: "60 ml", coriandre: "24 g", citron: "", vinblanc: "80 ml", poivre: "0.8 g", pain: "120 g" },
+      { nb: 3, moules: "750 g", ail: "3", huileolive: "90 ml", coriandre: "36 g", citron: "1", vinblanc: "120 ml", poivre: "1.2 g", pain: "180 g" },
+      { nb: 4, moules: "1000 g", ail: "4", huileolive: "120 ml", coriandre: "48 g", citron: "1", vinblanc: "160 ml", poivre: "1.6 g", pain: "240 g" },
+      { nb: 5, moules: "1250 g", ail: "5", huileolive: "150 ml", coriandre: "60 g", citron: "2", vinblanc: "200 ml", poivre: "2 g", pain: "300 g" },
+      { nb: 6, moules: "1500 g", ail: "6", huileolive: "180 ml", coriandre: "72 g", citron: "2", vinblanc: "240 ml", poivre: "2.4 g", pain: "360 g" },
+      { nb: 7, moules: "1750 g", ail: "7", huileolive: "210 ml", coriandre: "84 g", citron: "2", vinblanc: "280 ml", poivre: "2.8 g", pain: "420 g" },
+      { nb: 8, moules: "2000 g", ail: "8", huileolive: "240 ml", coriandre: "96 g", citron: "3", vinblanc: "320 ml", poivre: "3.2 g", pain: "480 g" },
+      { nb: 9, moules: "2250 g", ail: "9", huileolive: "270 ml", coriandre: "108 g", citron: "3", vinblanc: "360 ml", poivre: "3.6 g", pain: "540 g" },
+      { nb: 10, moules: "2500 g", ail: "10", huileolive: "300 ml", coriandre: "120 g", citron: "4", vinblanc: "400 ml", poivre: "4 g", pain: "600 g" },
+      { nb: 11, moules: "2750 g", ail: "11", huileolive: "330 ml", coriandre: "132 g", citron: "4", vinblanc: "440 ml", poivre: "4.4 g", pain: "660 g" },
+      { nb: 12, moules: "3000 g", ail: "12", huileolive: "360 ml", coriandre: "144 g", citron: "4", vinblanc: "480 ml", poivre: "4.8 g", pain: "720 g" },
+      { nb: 13, moules: "3250 g", ail: "13", huileolive: "390 ml", coriandre: "156 g", citron: "5", vinblanc: "520 ml", poivre: "5.2 g", pain: "780 g" },
+      { nb: 14, moules: "3500 g", ail: "14", huileolive: "420 ml", coriandre: "168 g", citron: "5", vinblanc: "560 ml", poivre: "5.6 g", pain: "840 g" },
+      { nb: 15, moules: "3750 g", ail: "15", huileolive: "450 ml", coriandre: "180 g", citron: "6", vinblanc: "600 ml", poivre: "6 g", pain: "900 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Dégorger", detail: "Palourdes 2 heures dans l'eau très salée : elles recrachent leur sable, sans quoi le plat est immangeable.", badge: null },
+      { icone: "🐚", titre: "Trier", detail: "Jetez toute palourde cassée ou qui reste OUVERTE quand on la tape : c'est la règle de sécurité.", badge: null },
+      { icone: "🧄", titre: "L'ail à froid", detail: "Ail en lamelles dans l'huile d'olive FROIDE, montée doucement : il doit blondir sans jamais brunir.", badge: null },
+      { icone: "🔥", titre: "Feu vif", detail: "Palourdes jetées d'un coup dans l'huile parfumée, vin blanc, couvercle, feu MAXIMUM.", badge: null },
+      { icone: "👂", titre: "Écouter", detail: "Secouez la casserole toutes les 30 secondes. Elles s'ouvrent en 3 à 5 minutes — dès que c'est fait, on arrête.", badge: null },
+      { icone: "🌿", titre: "La coriandre", detail: "Une grosse poignée hachée jetée HORS DU FEU : cuite, elle perdrait tout son parfum si caractéristique.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Citron, poivre, et beaucoup de pain. Le jus au fond de la casserole est le meilleur de la recette.", badge: null }
+    ],
+    liees: ["moulesmarinieres","moulesfarcies","fregolapalourdes"]
+  },
 });

@@ -3707,4 +3707,42 @@ Object.assign(recettes, {
     ],
     liees: ["brioche","gateaubattu"]
   },
+  bolorei: {
+    dateAjout: "2026-08-06T21:00:00",
+    nom: "Bolo Rei",
+    cat: "boulangerie", saisons: ["hiver"], pays: "portugal",
+    base: 10,
+    temps: "5 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "👑",
+    description: "La couronne briochée de Noël portugaise, couverte de fruits confits et de fruits secs. Elle cachait autrefois une fève ET un cadeau ; la loi a interdit la fève en 1999 pour raisons de sécurité, mais beaucoup la remettent quand même.",
+    tableauBolorei: [
+      { nb: 1, farine: "60 g", beurre: "22 g", oeufs: "", sucre: "18 g", levure: "2 g", lait: "25 ml", porto: "12 ml", fruitsconfits: "25 g", noix: "12 g", pignons: "8 g", orange: "", sel: "1 g" },
+      { nb: 2, farine: "120 g", beurre: "44 g", oeufs: "", sucre: "36 g", levure: "4 g", lait: "50 ml", porto: "24 ml", fruitsconfits: "50 g", noix: "24 g", pignons: "16 g", orange: "", sel: "2 g" },
+      { nb: 3, farine: "180 g", beurre: "66 g", oeufs: "1", sucre: "54 g", levure: "6 g", lait: "75 ml", porto: "36 ml", fruitsconfits: "75 g", noix: "36 g", pignons: "24 g", orange: "", sel: "3 g" },
+      { nb: 4, farine: "240 g", beurre: "88 g", oeufs: "1", sucre: "72 g", levure: "8 g", lait: "100 ml", porto: "48 ml", fruitsconfits: "100 g", noix: "48 g", pignons: "32 g", orange: "", sel: "4 g" },
+      { nb: 5, farine: "300 g", beurre: "110 g", oeufs: "2", sucre: "90 g", levure: "10 g", lait: "125 ml", porto: "60 ml", fruitsconfits: "125 g", noix: "60 g", pignons: "40 g", orange: "¾", sel: "5 g" },
+      { nb: 6, farine: "360 g", beurre: "132 g", oeufs: "2", sucre: "108 g", levure: "12 g", lait: "150 ml", porto: "72 ml", fruitsconfits: "150 g", noix: "72 g", pignons: "48 g", orange: "", sel: "6 g" },
+      { nb: 7, farine: "420 g", beurre: "154 g", oeufs: "2", sucre: "126 g", levure: "14 g", lait: "175 ml", porto: "84 ml", fruitsconfits: "175 g", noix: "84 g", pignons: "56 g", orange: "1", sel: "7 g" },
+      { nb: 8, farine: "480 g", beurre: "176 g", oeufs: "3", sucre: "144 g", levure: "16 g", lait: "200 ml", porto: "96 ml", fruitsconfits: "200 g", noix: "96 g", pignons: "64 g", orange: "1", sel: "8 g" },
+      { nb: 9, farine: "540 g", beurre: "198 g", oeufs: "3", sucre: "162 g", levure: "18 g", lait: "225 ml", porto: "108 ml", fruitsconfits: "225 g", noix: "108 g", pignons: "72 g", orange: "1", sel: "9 g" },
+      { nb: 10, farine: "600 g", beurre: "220 g", oeufs: "4", sucre: "180 g", levure: "20 g", lait: "250 ml", porto: "120 ml", fruitsconfits: "250 g", noix: "120 g", pignons: "80 g", orange: "1½", sel: "10 g" },
+      { nb: 11, farine: "660 g", beurre: "242 g", oeufs: "4", sucre: "198 g", levure: "22 g", lait: "275 ml", porto: "132 ml", fruitsconfits: "275 g", noix: "132 g", pignons: "88 g", orange: "1", sel: "11 g" },
+      { nb: 12, farine: "720 g", beurre: "264 g", oeufs: "4", sucre: "216 g", levure: "24 g", lait: "300 ml", porto: "144 ml", fruitsconfits: "300 g", noix: "144 g", pignons: "96 g", orange: "1", sel: "12 g" },
+      { nb: 13, farine: "780 g", beurre: "286 g", oeufs: "5", sucre: "234 g", levure: "26 g", lait: "325 ml", porto: "156 ml", fruitsconfits: "325 g", noix: "156 g", pignons: "104 g", orange: "1", sel: "13 g" },
+      { nb: 14, farine: "840 g", beurre: "308 g", oeufs: "5", sucre: "252 g", levure: "28 g", lait: "350 ml", porto: "168 ml", fruitsconfits: "350 g", noix: "168 g", pignons: "112 g", orange: "2", sel: "14 g" },
+      { nb: 15, farine: "900 g", beurre: "330 g", oeufs: "6", sucre: "270 g", levure: "30 g", lait: "375 ml", porto: "180 ml", fruitsconfits: "375 g", noix: "180 g", pignons: "120 g", orange: "2¼", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍷", titre: "Macérer les fruits", detail: "Fruits confits et fruits secs trempés 12 heures dans le porto : c'est lui qui donne au bolo rei son parfum.", badge: null },
+      { icone: "🥛", titre: "Le levain", detail: "Levure, lait tiède et un peu de farine, laissés mousser 30 minutes : la pâte est riche, elle a besoin d'aide.", badge: null },
+      { icone: "💪", titre: "Pétrir 15 minutes", detail: "Farine, œufs, sucre, zestes et levain : la pâte doit devenir élastique avant le moindre gramme de beurre.", badge: null },
+      { icone: "🧈", titre: "Le beurre", detail: "Ajouté en petits morceaux, un à un, sans jamais en remettre avant absorption complète du précédent.", badge: null },
+      { icone: "❄️", titre: "Pousse lente", detail: "12 heures au FRAIS : c'est ce froid long qui développe l'arôme et rend la mie filante.", badge: null },
+      { icone: "👑", titre: "La couronne", detail: "Percez un trou au centre et élargissez-le à 12 cm en tournant la pâte : il se referme beaucoup à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Décorer et cuire", detail: "Dorure, fruits confits pressés dans la pâte, noix et pignons, 25 minutes à 180°C. Sucre glace à froid.", badge: null }
+    ],
+    liees: ["roscon","brioche","gateaubattu"]
+  },
 });
