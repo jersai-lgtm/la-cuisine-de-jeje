@@ -40,6 +40,9 @@
     }
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute("content", theme === "light" ? "#f6f1ea" : "#ff4d88");
+    // v5.1 : les nuances soft/pale de la couleur d'accent ne sont pas les mêmes
+    // sur fond clair et sur fond sombre — on les rejoue à chaque bascule.
+    if (typeof window.reappliquerCouleur === "function") window.reappliquerCouleur();
   }
 
   // Cycle : sombre → clair → auto → sombre
