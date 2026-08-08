@@ -4087,4 +4087,42 @@ Object.assign(recettes, {
     ],
     liees: ["brioche","tartepraline","pralinesroses"]
   },
+  gachebretonne: {
+    dateAjout: "2026-08-08T09:26:00",
+    nom: "Gâche Bretonne",
+    cat: "boulangerie", pays: "france",
+    base: 10,
+    temps: "4 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥖",
+    description: "La brioche vendéenne à la CRÈME FRAÎCHE, dense et serrée, fendue sur toute sa longueur. Elle ne ressemble à aucune autre brioche : la crème remplace une partie du beurre et lui donne une mie compacte et fondante.",
+    tableauGachebretonne: [
+      { nb: 1, farine: "48 g", creme: "22 ml", beurre: "12 g", oeufs: "", sucre: "10 g", levureboulangere: "1.5 g", fleuroranger: "2 ml", sel: "0.8 g", lait: "8 ml" },
+      { nb: 2, farine: "96 g", creme: "44 ml", beurre: "24 g", oeufs: "", sucre: "20 g", levureboulangere: "3 g", fleuroranger: "4 ml", sel: "1.6 g", lait: "16 ml" },
+      { nb: 3, farine: "144 g", creme: "66 ml", beurre: "36 g", oeufs: "", sucre: "30 g", levureboulangere: "4.5 g", fleuroranger: "6 ml", sel: "2.4 g", lait: "24 ml" },
+      { nb: 4, farine: "192 g", creme: "88 ml", beurre: "48 g", oeufs: "1", sucre: "40 g", levureboulangere: "6 g", fleuroranger: "8 ml", sel: "3.2 g", lait: "32 ml" },
+      { nb: 5, farine: "240 g", creme: "110 ml", beurre: "60 g", oeufs: "1½", sucre: "50 g", levureboulangere: "7.5 g", fleuroranger: "10 ml", sel: "4 g", lait: "40 ml" },
+      { nb: 6, farine: "288 g", creme: "132 ml", beurre: "72 g", oeufs: "1", sucre: "60 g", levureboulangere: "9 g", fleuroranger: "12 ml", sel: "4.8 g", lait: "48 ml" },
+      { nb: 7, farine: "336 g", creme: "154 ml", beurre: "84 g", oeufs: "2", sucre: "70 g", levureboulangere: "10.5 g", fleuroranger: "14 ml", sel: "5.6 g", lait: "56 ml" },
+      { nb: 8, farine: "384 g", creme: "176 ml", beurre: "96 g", oeufs: "2", sucre: "80 g", levureboulangere: "12 g", fleuroranger: "16 ml", sel: "6.4 g", lait: "64 ml" },
+      { nb: 9, farine: "432 g", creme: "198 ml", beurre: "108 g", oeufs: "2", sucre: "90 g", levureboulangere: "13.5 g", fleuroranger: "18 ml", sel: "7.2 g", lait: "72 ml" },
+      { nb: 10, farine: "480 g", creme: "220 ml", beurre: "120 g", oeufs: "3", sucre: "100 g", levureboulangere: "15 g", fleuroranger: "20 ml", sel: "8 g", lait: "80 ml" },
+      { nb: 11, farine: "528 g", creme: "242 ml", beurre: "132 g", oeufs: "3", sucre: "110 g", levureboulangere: "16.5 g", fleuroranger: "22 ml", sel: "8.8 g", lait: "88 ml" },
+      { nb: 12, farine: "576 g", creme: "264 ml", beurre: "144 g", oeufs: "3", sucre: "120 g", levureboulangere: "18 g", fleuroranger: "24 ml", sel: "9.6 g", lait: "96 ml" },
+      { nb: 13, farine: "624 g", creme: "286 ml", beurre: "156 g", oeufs: "3", sucre: "130 g", levureboulangere: "19.5 g", fleuroranger: "26 ml", sel: "10.4 g", lait: "104 ml" },
+      { nb: 14, farine: "672 g", creme: "308 ml", beurre: "168 g", oeufs: "4", sucre: "140 g", levureboulangere: "21 g", fleuroranger: "28 ml", sel: "11.2 g", lait: "112 ml" },
+      { nb: 15, farine: "720 g", creme: "330 ml", beurre: "180 g", oeufs: "4½", sucre: "150 g", levureboulangere: "22.5 g", fleuroranger: "30 ml", sel: "12 g", lait: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "De la crème épaisse, entière", detail: "30 % minimum : une crème allégée donne une gâche sèche, la matière grasse EST la recette.", badge: null },
+      { icone: "🐌", titre: "Un pétrissage long", detail: "15 minutes au crochet : la gâche a une mie serrée, il faut développer le gluten à fond.", badge: null },
+      { icone: "❄️", titre: "Pousse lente au frais", detail: "Une nuit au frigo : c'est ce qui donne le goût. Une pousse rapide à température donne une brioche fade.", badge: null },
+      { icone: "✋", titre: "Façonner en long", detail: "Un boudin régulier de 30 cm, soudure en dessous : la gâche est une brioche allongée, jamais tressée.", badge: null },
+      { icone: "🔪", titre: "La grigne, profonde", detail: "Une seule entaille dans toute la longueur, 1 cm de profondeur : c'est la signature visuelle.", badge: null },
+      { icone: "🥚", titre: "Dorer deux fois", detail: "Avant la deuxième pousse et juste avant le four : c'est ce qui donne le brillant profond et régulier.", badge: null },
+      { icone: "🔥", titre: "Four modéré", detail: "30 minutes à 170°C : trop chaud, la croûte se forme avant que la mie dense n'ait fini de cuire.", badge: null }
+    ],
+    liees: ["brioche","saintgenix","kouglof"]
+  },
 });

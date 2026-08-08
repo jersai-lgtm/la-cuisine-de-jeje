@@ -1275,4 +1275,42 @@ Object.assign(recettes, {
     ],
     liees: ["cervellecanut","tzatziki","labneh"]
   },
+  baccalamantecato: {
+    dateAjout: "2026-08-08T09:06:00",
+    nom: "Baccalà Mantecato",
+    cat: "tartinables", pays: "italie",
+    base: 8,
+    temps: "45 min + dessalage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🤍",
+    description: "La crème vénitienne de morue montée à l'huile, servie sur des croûtons de polenta. Il n'y a NI crème NI lait : c'est le collagène du poisson qui émulsionne l'huile, exactement comme un jaune d'œuf.",
+    tableauBaccalamantecato: [
+      { nb: 1, moruedessale: "70 g", huileOlive: "35 ml", ail: "", persil: "5 g", poivre: "0.5 g", polenta: "30 g", citron: "", laurier: "0.2 g" },
+      { nb: 2, moruedessale: "140 g", huileOlive: "70 ml", ail: "", persil: "10 g", poivre: "1 g", polenta: "60 g", citron: "", laurier: "0.4 g" },
+      { nb: 3, moruedessale: "210 g", huileOlive: "105 ml", ail: "", persil: "15 g", poivre: "1.5 g", polenta: "90 g", citron: "", laurier: "0.6 g" },
+      { nb: 4, moruedessale: "280 g", huileOlive: "140 ml", ail: "", persil: "20 g", poivre: "2 g", polenta: "120 g", citron: "", laurier: "0.8 g" },
+      { nb: 5, moruedessale: "350 g", huileOlive: "175 ml", ail: "1", persil: "25 g", poivre: "2.5 g", polenta: "150 g", citron: "½", laurier: "1 g" },
+      { nb: 6, moruedessale: "420 g", huileOlive: "210 ml", ail: "1", persil: "30 g", poivre: "3 g", polenta: "180 g", citron: "", laurier: "1.2 g" },
+      { nb: 7, moruedessale: "490 g", huileOlive: "245 ml", ail: "1", persil: "35 g", poivre: "3.5 g", polenta: "210 g", citron: "", laurier: "1.4 g" },
+      { nb: 8, moruedessale: "560 g", huileOlive: "280 ml", ail: "1", persil: "40 g", poivre: "4 g", polenta: "240 g", citron: "", laurier: "1.6 g" },
+      { nb: 9, moruedessale: "630 g", huileOlive: "315 ml", ail: "1", persil: "45 g", poivre: "4.5 g", polenta: "270 g", citron: "", laurier: "1.8 g" },
+      { nb: 10, moruedessale: "700 g", huileOlive: "350 ml", ail: "2", persil: "50 g", poivre: "5 g", polenta: "300 g", citron: "1", laurier: "2 g" },
+      { nb: 11, moruedessale: "770 g", huileOlive: "385 ml", ail: "2", persil: "55 g", poivre: "5.5 g", polenta: "330 g", citron: "1", laurier: "2.2 g" },
+      { nb: 12, moruedessale: "840 g", huileOlive: "420 ml", ail: "2", persil: "60 g", poivre: "6 g", polenta: "360 g", citron: "1", laurier: "2.4 g" },
+      { nb: 13, moruedessale: "910 g", huileOlive: "455 ml", ail: "2", persil: "65 g", poivre: "6.5 g", polenta: "390 g", citron: "1", laurier: "2.6 g" },
+      { nb: 14, moruedessale: "980 g", huileOlive: "490 ml", ail: "2", persil: "70 g", poivre: "7 g", polenta: "420 g", citron: "1", laurier: "2.8 g" },
+      { nb: 15, moruedessale: "1050 g", huileOlive: "525 ml", ail: "3", persil: "75 g", poivre: "7.5 g", polenta: "450 g", citron: "1½", laurier: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "48 heures de dessalage", detail: "Eau changée quatre fois, au frais : sous-dessalée, la crème est immangeable et il n'y a pas de rattrapage.", badge: null },
+      { icone: "🐟", titre: "Pocher dans l'eau, pas le lait", detail: "20 minutes à frémissement : le lait masquerait le goût, et à Venise on veut le poisson pur.", badge: null },
+      { icone: "🔥", titre: "Travailler CHAUD", detail: "La morue doit être brûlante quand on commence à monter : froide, elle refuse l'huile et l'émulsion casse.", badge: null },
+      { icone: "🥄", titre: "Cuillère en bois, pas mixeur", detail: "On monte à la main contre les parois : le mixeur casse les fibres et fait une pâte collante.", badge: null },
+      { icone: "💧", titre: "Huile en filet, comme une mayonnaise", detail: "Très lentement au début : versée d'un coup, elle ne sera jamais absorbée.", badge: null },
+      { icone: "🤍", titre: "Jusqu'au blanc et mousseux", detail: "15 bonnes minutes de bras : le mantecato doit tripler de volume et devenir presque aérien.", badge: null },
+      { icone: "🌽", titre: "Sur des croûtons de polenta", detail: "Polenta refroidie, coupée en carrés et grillée : c'est le support vénitien traditionnel.", badge: null }
+    ],
+    liees: ["brandadeMorue","estofinado","tarama"]
+  },
 });

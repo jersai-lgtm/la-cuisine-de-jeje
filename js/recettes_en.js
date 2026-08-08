@@ -106266,5 +106266,1025 @@ window.RECETTES_EN = {
     "detail": "In a mug, like tea — though it also keeps very well cold in the fridge."
    }
   ]
+ },
+ "pansoti": {
+  "nom": "Pansoti with Walnut Sauce",
+  "description": "Ligurian herb ravioli under a walnut sauce that is NEVER cooked. Preboggion, the local hillside herb mix, is replaced here with chard, spinach and borage — but the sauce is untouchable.",
+  "etapes": [
+   {
+    "titre": "A mix of herbs, not one",
+    "detail": "Chard, spinach, borage, dandelion: DIVERSITY makes the flavour, never a single herb."
+   },
+   {
+    "titre": "Squeeze the herbs dry",
+    "detail": "Blanched then wrung out until nothing drips: water would burst the ravioli."
+   },
+   {
+    "titre": "Peel the walnuts",
+    "detail": "Boiled 2 minutes then rubbed: the skin is BITTER and would ruin the whole sauce."
+   },
+   {
+    "titre": "Bread soaked in milk",
+    "detail": "The binder of salsa di noci: without it, oil and walnuts separate into a puddle."
+   },
+   {
+    "titre": "The sauce NEVER cooks",
+    "detail": "All done in a mortar or blender, cold: heated, it turns bitter and grainy."
+   },
+   {
+    "titre": "Fold into triangles",
+    "detail": "A square of pasta, a nut of filling, folded over and the points sealed with water."
+   },
+   {
+    "titre": "Loosen at the last moment",
+    "detail": "Two spoons of pasta water into the sauce just before saucing: it should coat, not glue."
+   }
+  ]
+ },
+ "capponmagro": {
+  "nom": "Cappon Magro",
+  "description": "The Genoese pyramid of fish and vegetables, built on sea biscuits soaked in vinegar. A Lenten dish turned centrepiece — you build it upright, in layers, and never mix it.",
+  "etapes": [
+   {
+    "titre": "Sea biscuits",
+    "detail": "Hard biscuits rubbed with garlic and soaked in vinegared water: they form the base and must be SOFT."
+   },
+   {
+    "titre": "Every vegetable cooked apart",
+    "detail": "Separately, in its own water: cooked together they stain each other and the beetroot dyes everything."
+   },
+   {
+    "titre": "Everything drained perfectly",
+    "detail": "An hour on a rack: residual water makes the layers slide and collapses the pyramid."
+   },
+   {
+    "titre": "Salsa verde is the glue",
+    "detail": "Parsley, garlic, capers, anchovies and vinegared bread, blended: it goes between EVERY layer."
+   },
+   {
+    "titre": "Build a pyramid",
+    "detail": "From widest to narrowest, pressing lightly at each level so it holds."
+   },
+   {
+    "titre": "Two hours chilled",
+    "detail": "The cappon magro must firm up before being moved, or it collapses at the first serving."
+   },
+   {
+    "titre": "Decorate at the last moment",
+    "detail": "Prawns, hard-boiled eggs and olives placed just before serving, so they stay glossy."
+   }
+  ]
+ },
+ "bonet": {
+  "nom": "Piedmontese Bonet",
+  "description": "The Piedmontese cocoa and amaretti custard, baked in a hat-shaped mould — hence the name. The amaretti are not a garnish: they dissolve into the mixture and give it its bitter almond note.",
+  "etapes": [
+   {
+    "titre": "Dry caramel",
+    "detail": "Sugar alone in the pan, no water: it caramelises faster and gives a much cleaner flavour."
+   },
+   {
+    "titre": "Pour it scalding",
+    "detail": "Into the cold mould, turning fast: a few seconds cooler and it sets before coating the base."
+   },
+   {
+    "titre": "Amaretti crushed FINE",
+    "detail": "To a powder: in pieces they float up and form a crust instead of dissolving."
+   },
+   {
+    "titre": "Cocoa slaked separately",
+    "detail": "In a little hot milk, to a smooth paste: tipped in dry it lumps beyond recovery."
+   },
+   {
+    "titre": "Don't froth it",
+    "detail": "Eggs and sugar mixed with a fork: froth creates bubbles that hole the custard."
+   },
+   {
+    "titre": "Bain-marie, compulsory",
+    "detail": "50 minutes at 160°C: dry, the custard boils, holes and turns grainy."
+   },
+   {
+    "titre": "Six hours chilled",
+    "detail": "Minimum, overnight is better: turned out warm it slumps. Bonet is eaten VERY cold."
+   }
+  ]
+ },
+ "panissa": {
+  "nom": "Panissa Vercellese",
+  "description": "The risotto of the Piedmont rice fields, with beans and raw Vercelli salami. It is not a creamy risotto: panissa is meant to be TIGHT, you should be able to eat it with a fork.",
+  "etapes": [
+   {
+    "titre": "Beans cooked first",
+    "detail": "Soaked overnight, simmered an hour: their cooking water IS the stock, keep it carefully."
+   },
+   {
+    "titre": "Raw salami, crumbled",
+    "detail": "Salam d'la duja is raw and fatty: crumbled into the hot fat, it melts and flavours everything."
+   },
+   {
+    "titre": "Red wine, not white",
+    "detail": "The Piedmontese signature: a Barbera or Nebbiolo, poured over the pearled rice."
+   },
+   {
+    "titre": "Pearl the rice",
+    "detail": "2 minutes in the fat before any liquid: the grains must turn translucent at the edges."
+   },
+   {
+    "titre": "Bean stock",
+    "detail": "Ladle by ladle, scalding: it gives panissa its colour and flavour, not water."
+   },
+   {
+    "titre": "Tight, not runny",
+    "detail": "Unlike risotto: stop when the spoon leaves a clean trail on the bottom of the pan."
+   },
+   {
+    "titre": "NO butter, NO parmesan",
+    "detail": "No final mantecatura: panissa is a peasant dish, it finishes as it is."
+   }
+  ]
+ },
+ "strangolapreti": {
+  "nom": "Strangolapreti",
+  "description": "The Trentino gnocchi of stale bread and spinach, whose name means \"priest-stranglers\". They contain NO potato: it is bread, and that gives them their slightly rustic density.",
+  "etapes": [
+   {
+    "titre": "TRULY stale bread",
+    "detail": "Two days minimum, diced: fresh bread gives a sticky dough impossible to roll."
+   },
+   {
+    "titre": "Soak in warm milk",
+    "detail": "30 minutes, then squeezed by hand: it should be supple but not dripping."
+   },
+   {
+    "titre": "Spinach squeezed hard",
+    "detail": "Blanched then wrung in a cloth: mistake number one is spinach water, it ruins everything."
+   },
+   {
+    "titre": "Chop very fine",
+    "detail": "Spinach and bread chopped with a knife: in pieces, the gnocchi break up in the water."
+   },
+   {
+    "titre": "Minimum flour",
+    "detail": "Just enough for the dough to hold: too much and you get lead balls."
+   },
+   {
+    "titre": "Test ONE gnocchi",
+    "detail": "Always: if it disintegrates, add a spoon of flour. Never cook them all at once."
+   },
+   {
+    "titre": "Sage butter",
+    "detail": "Beurre noisette with fried sage leaves, poured scalding. Nothing else, and certainly no tomato sauce."
+   }
+  ]
+ },
+ "casunziei": {
+  "nom": "Casunziei",
+  "description": "The bright pink ravioli of the Dolomites, filled with beetroot and poppy seed. The colour is not a dye: the beetroot shows through the thin pasta and stains it from inside.",
+  "etapes": [
+   {
+    "titre": "Beetroot ROASTED, not boiled",
+    "detail": "An hour in the oven in foil: boiled, they soak up water and the filling runs."
+   },
+   {
+    "titre": "Drain the filling overnight",
+    "detail": "In a sieve in the fridge: the step everyone skips, and the reason their ravioli burst."
+   },
+   {
+    "titre": "Potato absorbs",
+    "detail": "A little dry mash in the filling: it drinks the remaining moisture and gives structure."
+   },
+   {
+    "titre": "Very thin pasta",
+    "detail": "1 mm: that is what lets the colour show. Thick, you get a beige heavy ravioli."
+   },
+   {
+    "titre": "Half-moons, not squares",
+    "detail": "Cut with a round cutter and folded: the shape is part of the casunziei's identity."
+   },
+   {
+    "titre": "Push the air out",
+    "detail": "Pressing from the centre to the edges: one air bubble and the ravioli bursts while cooking."
+   },
+   {
+    "titre": "Melted butter and poppy",
+    "detail": "Beurre noisette, parmesan and toasted poppy seeds. The poppy is compulsory, not decorative."
+   }
+  ]
+ },
+ "baccalamantecato": {
+  "nom": "Baccalà Mantecato",
+  "description": "The Venetian salt cod cream whipped with oil, served on polenta croutons. There is NO cream and NO milk: the fish's own collagen emulsifies the oil, exactly like an egg yolk.",
+  "etapes": [
+   {
+    "titre": "48 hours of soaking",
+    "detail": "Water changed four times, chilled: under-soaked, the cream is inedible with no fixing it."
+   },
+   {
+    "titre": "Poach in water, not milk",
+    "detail": "20 minutes at a tremble: milk would mask the flavour, and in Venice they want the fish pure."
+   },
+   {
+    "titre": "Work it HOT",
+    "detail": "The cod must be scalding when you start beating: cold, it refuses the oil and the emulsion breaks."
+   },
+   {
+    "titre": "Wooden spoon, not blender",
+    "detail": "Beaten by hand against the sides: a blender shreds the fibres into sticky paste."
+   },
+   {
+    "titre": "Oil in a thread, like mayonnaise",
+    "detail": "Very slowly at first: poured in at once, it will never be absorbed."
+   },
+   {
+    "titre": "Until white and fluffy",
+    "detail": "A good 15 minutes of arm: the mantecato should treble in volume and turn almost airy."
+   },
+   {
+    "titre": "On polenta croutons",
+    "detail": "Polenta set, cut into squares and grilled: the traditional Venetian support."
+   }
+  ]
+ },
+ "sardeinsaor": {
+  "nom": "Sarde in Saor",
+  "description": "Venetian sardines marinated with onions, pine nuts and raisins. \"Saor\" was a PRESERVING technique for sailors — vinegar and sugar kept fish edible for weeks at sea.",
+  "etapes": [
+   {
+    "titre": "Flour and fry",
+    "detail": "Sardines gutted, floured, fried 2 minutes a side: the crust stops them disintegrating in the vinegar."
+   },
+   {
+    "titre": "TWICE as much onion as fish",
+    "detail": "That is the rule: the onions are not a garnish, they are the other half of the dish."
+   },
+   {
+    "titre": "Onions melted 25 minutes",
+    "detail": "Over low heat, without colouring: left crunchy, they stay aggressive under the vinegar."
+   },
+   {
+    "titre": "Vinegar onto hot onions",
+    "detail": "It half evaporates and loses its bite: poured cold, it is far too sharp."
+   },
+   {
+    "titre": "Raisins and pine nuts",
+    "detail": "Raisins soaked 20 minutes, pine nuts toasted dry: Venice's Byzantine inheritance."
+   },
+   {
+    "titre": "Layer alternately",
+    "detail": "Onions, sardines, onions, sardines, ALWAYS finishing with the protective onion layer."
+   },
+   {
+    "titre": "48 hours chilled",
+    "detail": "Minimum. At 24 h it is good, at 48 h perfect, at 72 h better still."
+   }
+  ]
+ },
+ "frico": {
+  "nom": "Frico Friulano",
+  "description": "The Friulian cheese and potato cake, crisp outside and stringy inside. There are only TWO ingredients — and it is the blend of cheeses of different ages that makes all the difference.",
+  "etapes": [
+   {
+    "titre": "Three ages of cheese",
+    "detail": "Young for the stretch, medium for flavour, old for crispness: one age alone gives a flat frico."
+   },
+   {
+    "titre": "Cheese in dice, not grated",
+    "detail": "Grated, it melts too fast and gives up its fat before the potato has cooked."
+   },
+   {
+    "titre": "Pre-cooked potatoes",
+    "detail": "Boiled the day before and grated cold: raw, they release water that prevents crisping."
+   },
+   {
+    "titre": "Non-stick pan, MEDIUM heat",
+    "detail": "Too hot and the cheese burns bitter before it has melted through."
+   },
+   {
+    "titre": "15 minutes untouched",
+    "detail": "The crust forms slowly: every poke breaks it and the frico falls apart."
+   },
+   {
+    "titre": "Flip onto a plate",
+    "detail": "Slid onto a large plate, pan inverted over it, turned in one sharp movement."
+   },
+   {
+    "titre": "Serve with polenta",
+    "detail": "The compulsory Friulian accompaniment: polenta absorbs the fat and balances everything."
+   }
+  ]
+ },
+ "codavaccinara": {
+  "nom": "Coda alla Vaccinara",
+  "description": "The oxtail of Rome's slaughtermen, braised four hours with celery, cocoa and raisins. The cocoa does not sweeten: it DEEPENS the sauce, exactly as in a Mexican mole.",
+  "etapes": [
+   {
+    "titre": "Thick sections",
+    "detail": "Cut at the joints, 5 cm: the marrow and collagen around the bone make the whole sauce."
+   },
+   {
+    "titre": "Soak 3 hours",
+    "detail": "Cold water changed twice: oxtail gives up a lot of blood, or the sauce turns cloudy and strong."
+   },
+   {
+    "titre": "Brown without hurrying",
+    "detail": "10 minutes per batch in the melted fat: the only colouring in the dish, it must be deep."
+   },
+   {
+    "titre": "Reduce the wine dry",
+    "detail": "Almost entirely evaporated before adding tomato: otherwise the sauce keeps an acid, alcoholic edge."
+   },
+   {
+    "titre": "Four hours, not three",
+    "detail": "At a tremble, covered: the meat must fall off the bone to a spoon, with no resistance."
+   },
+   {
+    "titre": "Celery at the end",
+    "detail": "Whole stalks added for the last hour: any earlier and they vanish completely."
+   },
+   {
+    "titre": "Cocoa, raisins and pine nuts",
+    "detail": "In the last 15 minutes: the \"in dolce forte\" touch, discreet but recognisable."
+   }
+  ]
+ },
+ "pastaceci": {
+  "nom": "Pasta e Ceci",
+  "description": "The Roman chickpea and pasta soup, halfway between a dish and a broth. The secret is one move: BLEND some of the chickpeas to thicken, and keep the rest whole.",
+  "etapes": [
+   {
+    "titre": "Dried chickpeas, compulsory",
+    "detail": "Soaked 12 hours: tinned ones have no cooking water, and that water is the entire broth."
+   },
+   {
+    "titre": "Rosemary infused in oil",
+    "detail": "A whole sprig warmed gently then REMOVED: left in, it dominates and turns camphorous."
+   },
+   {
+    "titre": "Two melted anchovies",
+    "detail": "They vanish completely and give no fishy taste: just salty depth."
+   },
+   {
+    "titre": "Blend a third",
+    "detail": "A third of the chickpeas blended and returned to the pan: the dish's only thickener."
+   },
+   {
+    "titre": "Pasta cooked IN it",
+    "detail": "Never separately: it releases starch into the soup and thickens it further. Short tubes, snapped."
+   },
+   {
+    "titre": "Allow more liquid",
+    "detail": "The pasta absorbs a lot: the soup should look too thin before you add it."
+   },
+   {
+    "titre": "Raw oil at serving",
+    "detail": "A generous thread in every bowl: the Roman finish, never butter."
+   }
+  ]
+ },
+ "scarpariello": {
+  "nom": "Pasta alla Scarpariello",
+  "description": "The Neapolitan cobbler's pasta, made with the week's leftover cheese. There is no meat and no cream: melted PARMESAN in the pasta water makes the entire sauce.",
+  "etapes": [
+   {
+    "titre": "Burst cherry tomatoes",
+    "detail": "Crushed with a fork in the hot oil: left whole they stay watery and bland."
+   },
+   {
+    "titre": "Sauce cooked 10 minutes",
+    "detail": "No longer: scarpariello is a fast dish, a long sauce would make it another recipe."
+   },
+   {
+    "titre": "Two cheeses, not one",
+    "detail": "Parmesan for meltiness, pecorino for bite: the pairing is the Neapolitan signature."
+   },
+   {
+    "titre": "OFF the heat for the cheese",
+    "detail": "Added over heat it strings and clumps into rubbery lumps beyond rescue."
+   },
+   {
+    "titre": "Pasta water is the key",
+    "detail": "A good ladleful, starchy: it emulsifies the cheese into a creamy sauce."
+   },
+   {
+    "titre": "Stir vigorously",
+    "detail": "Tossing the pan: the movement creates the emulsion, a limp spoon will not do."
+   },
+   {
+    "titre": "Basil torn by hand",
+    "detail": "Never cut with a knife: the blade oxidises the edges and the basil blackens within minutes."
+   }
+  ]
+ },
+ "cimedirapa": {
+  "nom": "Orecchiette with Cime di Rapa",
+  "description": "The emblematic dish of Puglia: little ear-shaped pasta and bitter turnip tops. Pasta and greens cook IN THE SAME WATER — that is where the flavours meet.",
+  "etapes": [
+   {
+    "titre": "Cime di rapa, or broccoli rabe",
+    "detail": "Unobtainable outside Italy: broccoli rabe or broccoli florets with their leaves come close."
+   },
+   {
+    "titre": "Keep the leaves",
+    "detail": "They carry the characteristic bitterness: throwing them away loses the dish's identity."
+   },
+   {
+    "titre": "One pan only",
+    "detail": "The greens for 4 minutes, then the pasta in the SAME water: it turns green and fragrant."
+   },
+   {
+    "titre": "Anchovies melted in oil",
+    "detail": "Over very low heat, crushed with a spoon: they must disappear, not fry."
+   },
+   {
+    "titre": "Garlic and chilli infused",
+    "detail": "Garlic crushed in its skin, removed before it browns: burnt, it turns all the oil bitter."
+   },
+   {
+    "titre": "Toasted breadcrumbs",
+    "detail": "Stale bread blitzed and browned dry: Puglia's \"poor man's parmesan\", essential for crunch."
+   },
+   {
+    "titre": "Toss together",
+    "detail": "Drained pasta thrown into the anchovy oil with the greens, 1 minute over high heat."
+   }
+  ]
+ },
+ "tiellabarese": {
+  "nom": "Tiella Barese",
+  "description": "The Bari gratin in three layers: potato, rice and raw mussels, baked together and never stirred. The rice cooks in the MUSSEL LIQUOR — the whole genius of the dish.",
+  "etapes": [
+   {
+    "titre": "Mussels opened RAW",
+    "detail": "With a knife, uncooked: essential, an already-cooked mussel would be rubbery after an hour in the oven."
+   },
+   {
+    "titre": "Strain their liquor",
+    "detail": "Collected and passed through a fine sieve: the rice's only cooking liquid, don't lose a drop."
+   },
+   {
+    "titre": "THIN potato slices",
+    "detail": "3 mm: any thicker and they won't cook in the time the rice needs."
+   },
+   {
+    "titre": "Three layers, in order",
+    "detail": "Potato, mussels in their half shells facing up, raw rice over the top. NEVER stir."
+   },
+   {
+    "titre": "Raw rice, never pre-cooked",
+    "detail": "It absorbs the mussel liquor as it bakes: pre-cooked, it would turn to mush."
+   },
+   {
+    "titre": "Liquid just level",
+    "detail": "Mussel liquor topped up with water: it should just reach the rice, not drown it."
+   },
+   {
+    "titre": "One hour at 180°C",
+    "detail": "Never stirring, never covered: the breadcrumb and pecorino crust forms slowly on top."
+   }
+  ]
+ },
+ "pastaconlesarde": {
+  "nom": "Pasta con le Sarde",
+  "description": "The Sicilian dish that sums up the whole island: sardines from the sea, wild fennel from the mountains, raisins and saffron brought by the Arabs. Four civilisations in one plate of pasta.",
+  "etapes": [
+   {
+    "titre": "Wild fennel",
+    "detail": "Unobtainable here: the green fronds of a fennel bulb plus a few seeds come closest."
+   },
+   {
+    "titre": "Cook the fennel first",
+    "detail": "10 minutes in boiling water, DRAINED but keep the water: the pasta cooks in it."
+   },
+   {
+    "titre": "Two different fish",
+    "detail": "Fresh sardines in pieces AND melted salted anchovies: they play different roles."
+   },
+   {
+    "titre": "Raisins and pine nuts",
+    "detail": "Sicily's Arab inheritance: raisins soaked in warm water, pine nuts toasted dry."
+   },
+   {
+    "titre": "Saffron diluted",
+    "detail": "In a ladle of hot cooking water, 10 minutes before use: dry, it will not release."
+   },
+   {
+    "titre": "Pasta in the fennel water",
+    "detail": "It is green and fragrant: throwing it away loses half the dish's flavour."
+   },
+   {
+    "titre": "Breadcrumbs instead of cheese",
+    "detail": "In Sicily you NEVER put cheese on fish: toasted breadcrumbs take its place."
+   }
+  ]
+ },
+ "panefrattau": {
+  "nom": "Pane Frattau",
+  "description": "The Sardinian shepherd's dish: sheets of carasau bread softened in broth, layered with tomato sauce and crowned with a poached egg. Three storecupboard ingredients, five minutes of assembly.",
+  "etapes": [
+   {
+    "titre": "Carasau bread",
+    "detail": "Those very thin dry Sardinian sheets; failing that, matzo or very well-toasted bread slices."
+   },
+   {
+    "titre": "TREMBLING broth",
+    "detail": "Each sheet dipped for 3 SECONDS, no more: beyond that it disintegrates into mush."
+   },
+   {
+    "titre": "Work fast",
+    "detail": "The bread keeps softening: dip a sheet, lay it down, move to the next immediately."
+   },
+   {
+    "titre": "Three storeys",
+    "detail": "Bread, sauce, pecorino, and repeat twice: never more, it would collapse."
+   },
+   {
+    "titre": "A simple tomato sauce",
+    "detail": "Garlic, tomato, basil, 20 minutes: an elaborate sauce would crush the bread's delicacy."
+   },
+   {
+    "titre": "Egg poached at the last second",
+    "detail": "In the dipping broth: it takes on the flavour, and you dirty one pan fewer."
+   },
+   {
+    "titre": "Plenty of pecorino",
+    "detail": "Grated on every layer AND on top: the dish's only seasoning."
+   }
+  ]
+ },
+ "pastiera": {
+  "nom": "Neapolitan Pastiera",
+  "description": "The Neapolitan Easter tart, with wheat cooked in milk and orange blossom. It is made on Maundy Thursday to be eaten on Sunday: three days of rest is not optional, it is the recipe.",
+  "etapes": [
+   {
+    "titre": "Wheat cooked in milk",
+    "detail": "An hour over very low heat with the zest: it must burst and go creamy, not stay in firm grains."
+   },
+   {
+    "titre": "Ricotta DRAINED 24 h",
+    "detail": "In a sieve in the fridge: wet ricotta gives a pastiera that weeps and never sets."
+   },
+   {
+    "titre": "Generous orange blossom",
+    "detail": "It is THE perfume of pastiera: timid, you get a plain ricotta tart."
+   },
+   {
+    "titre": "Sieve the ricotta",
+    "detail": "Twice: that gives the silky texture, a blender would turn it liquid."
+   },
+   {
+    "titre": "Whipped whites folded last",
+    "detail": "They lighten a very dense filling: folded with a spatula, never a whisk."
+   },
+   {
+    "titre": "Seven strips of pastry",
+    "detail": "Diamond lattice, traditionally seven: this is a pastiera, not a jam tart."
+   },
+   {
+    "titre": "Three days of rest",
+    "detail": "It is BETTER on the third day: the flavours marry and the texture softens."
+   }
+  ]
+ },
+ "migliaccio": {
+  "nom": "Neapolitan Migliaccio",
+  "description": "The Neapolitan Carnival cake: semolina cooked in milk, ricotta and plenty of lemon. There is NO pastry — a cake made entirely in a saucepan before it goes in the oven.",
+  "etapes": [
+   {
+    "titre": "Semolina rained into milk",
+    "detail": "Boiling, whisking constantly: tipped in at once it lumps beyond recovery."
+   },
+   {
+    "titre": "Cook to a mass",
+    "detail": "5 minutes stirring: the semolina must come away from the sides and ball around the spoon."
+   },
+   {
+    "titre": "Cool before the ricotta",
+    "detail": "Hot, it would curdle the ricotta and set the eggs: waiting 20 minutes is compulsory."
+   },
+   {
+    "titre": "Plenty of zest",
+    "detail": "Two whole lemons: a migliaccio without lemon is just a semolina flan."
+   },
+   {
+    "titre": "Whole eggs, one at a time",
+    "detail": "Fully incorporated before the next: added together, the mixture splits."
+   },
+   {
+    "titre": "A thick layer",
+    "detail": "4 cm in a round tin: thinner and it dries out, thicker and the centre stays liquid."
+   },
+   {
+    "titre": "Long, gentle bake",
+    "detail": "1 hour at 170°C: the surface must go BROWN, almost scorched in places. That is intentional."
+   }
+  ]
+ },
+ "seadas": {
+  "nom": "Seadas",
+  "description": "Sardinian pastries filled with FRESH cheese, fried and drenched in bitter arbutus honey. Once a savoury dish turned dessert: the cheese is not sweetened, the honey alone tips it over.",
+  "etapes": [
+   {
+    "titre": "A YOUNG pecorino",
+    "detail": "Fresh and sharp, never aged: an old pecorino would not stretch and would taste far too strong."
+   },
+   {
+    "titre": "Melt it with the zest",
+    "detail": "Over low heat to a stretchy mass, then spread and cooled: it must be HARD before cutting."
+   },
+   {
+    "titre": "Two discs per seada",
+    "detail": "One below, the cheese round, one above: never a folded turnover, the shape is round."
+   },
+   {
+    "titre": "Seal with a cutter",
+    "detail": "Edges dampened, pressed then trimmed with a fluted wheel: the Sardinian finish."
+   },
+   {
+    "titre": "Oil at 170°C",
+    "detail": "Hotter and the pastry browns before the cheese melts; cooler and it drinks the oil."
+   },
+   {
+    "titre": "Two minutes a side",
+    "detail": "They puff and the cheese turns runny: any longer and it pierces the pastry and escapes."
+   },
+   {
+    "titre": "Bitter honey, poured scalding",
+    "detail": "Arbutus or chestnut honey: a mild honey would tip the dessert into cloying."
+   }
+  ]
+ },
+ "cartellate": {
+  "nom": "Cartellate",
+  "description": "The fried pastry roses of Puglia, dipped in vincotto at Christmas. The shape is not decorative: it is said to represent Christ's halo, and every family pleats it its own way.",
+  "etapes": [
+   {
+    "titre": "White wine in the dough",
+    "detail": "Not water: the alcohol evaporates while frying and makes the pastry far lighter and blistered."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "1 mm on a pasta machine: thick, a cartellata is hard as wood and impossible to bite."
+   },
+   {
+    "titre": "4 cm fluted strips",
+    "detail": "With a fluted wheel: the serrated edge is what lets the pleats catch."
+   },
+   {
+    "titre": "Pinch every 3 cm",
+    "detail": "Folding the strip in half lengthways: each pinch makes a pocket that will hold the honey."
+   },
+   {
+    "titre": "Coil into a rose",
+    "detail": "Loosely: the pockets must stay open, or the rose looks like a flat doughnut."
+   },
+   {
+    "titre": "Dry 12 hours",
+    "detail": "In the open air on a cloth: that sets the shape, or they unwind in the oil."
+   },
+   {
+    "titre": "Dip in HOT honey",
+    "detail": "10 seconds only, then drained on a rack: any longer and they go soft."
+   }
+  ]
+ },
+ "storzapreti": {
+  "nom": "Storzapreti",
+  "description": "Corsican brocciu and chard dumplings, baked under tomato sauce. The name means \"priest-stranglers\", like their Trentino cousin — but here it is brocciu, and nothing else, that makes the recipe.",
+  "etapes": [
+   {
+    "titre": "Brocciu, not ricotta",
+    "detail": "A sheep's WHEY cheese, far saltier and more fragrant; failing that, brousse or sheep's ricotta."
+   },
+   {
+    "titre": "Only the green of the chard",
+    "detail": "The stalks would release too much water: keep them for a gratin, not for storzapreti."
+   },
+   {
+    "titre": "Squeeze out the last drop",
+    "detail": "Chard blanched then wrung in a cloth: THE move that decides whether the dumplings hold."
+   },
+   {
+    "titre": "Minimum flour",
+    "detail": "Just enough to bind: too much and the dumpling becomes a tasteless ball of dough."
+   },
+   {
+    "titre": "Roll with floured hands",
+    "detail": "4 cm balls, without packing them: pressed tight, they turn dense and heavy."
+   },
+   {
+    "titre": "Poach BEFORE gratinating",
+    "detail": "3 minutes in trembling water: they float when set and will not fall apart afterwards."
+   },
+   {
+    "titre": "Gratinate 20 minutes",
+    "detail": "In the tomato sauce, grated brocciu on top, 200°C: the edges must brown and crisp."
+   }
+  ]
+ },
+ "pulentacorse": {
+  "nom": "Corsican Pulenta",
+  "description": "Corsican polenta made with CHESTNUT flour, not maize. Dark, dense and faintly sweet, it is cut with a thread and fried — it was the bread of the mountains before wheat reached them.",
+  "etapes": [
+   {
+    "titre": "Real chestnut flour",
+    "detail": "Fine and brown, sifted: it clumps with moisture, sifting first is essential."
+   },
+   {
+    "titre": "Barely trembling water",
+    "detail": "Not boiling: chestnut flour is far more fragile than maize semolina and lumps easily."
+   },
+   {
+    "titre": "Rained in, all at once",
+    "detail": "Poured in one continuous motion while stirring: in bursts it forms lumps you cannot break."
+   },
+   {
+    "titre": "Stir for 40 minutes",
+    "detail": "Without ever stopping, with a wooden spatula: it is physical work, and it is the recipe."
+   },
+   {
+    "titre": "It leaves the sides",
+    "detail": "That is the signal: pulenta is ready when it forms a mass that lifts from the pan in one block."
+   },
+   {
+    "titre": "Cut with a THREAD",
+    "detail": "A taut kitchen string, as for cheese: a knife tears and crushes it."
+   },
+   {
+    "titre": "Fry the slices",
+    "detail": "The next day, in olive oil, with brocciu and grilled figatellu. The classic service."
+   }
+  ]
+ },
+ "figatellu": {
+  "nom": "Grilled Figatellu",
+  "description": "The Corsican liver sausage, grilled over embers and served on bread that catches the fat. It is eaten ONLY IN WINTER: a fresh charcuterie, never dried, its season running from November to March.",
+  "etapes": [
+   {
+    "titre": "Two thirds lean, one third liver",
+    "detail": "More liver and the bitterness dominates; less, and it is no longer a figatellu but an ordinary sausage."
+   },
+   {
+    "titre": "Marinate overnight",
+    "detail": "Red wine, crushed garlic and plenty of pepper: the marinade makes the dark colour and the perfume."
+   },
+   {
+    "titre": "Coarse mince",
+    "detail": "Wide plate: a figatellu should be chewed, a fine mince makes a characterless paste."
+   },
+   {
+    "titre": "Over embers, never in a pan",
+    "detail": "On vine cuttings or charcoal: the smoke of the embers is an integral part of the flavour."
+   },
+   {
+    "titre": "SLOW cooking",
+    "detail": "20 minutes away from the embers: too close and the skin bursts, losing all the fat."
+   },
+   {
+    "titre": "Bread UNDER the sausage",
+    "detail": "A thick slice set beneath while it cooks: it catches the fat, and it is the best part."
+   },
+   {
+    "titre": "With pulenta or potatoes",
+    "detail": "Never a sauce: figatellu is powerful enough on its own."
+   }
+  ]
+ },
+ "migliacciu": {
+  "nom": "Corsican Migliacciu",
+  "description": "The Corsican fresh-brocciu flatcake, traditionally baked on chestnut leaves. Neither properly sweet nor properly savoury: an in-between eaten at teatime as readily as at breakfast.",
+  "etapes": [
+   {
+    "titre": "Brocciu made that day",
+    "detail": "It is highly perishable: beyond three days it turns acid and the migliacciu goes sour."
+   },
+   {
+    "titre": "Crush with a fork",
+    "detail": "Never a blender: you want visible lumps of cheese in the cake."
+   },
+   {
+    "titre": "Generous lemon zest",
+    "detail": "With the eau-de-vie, the only flavouring: without it, migliacciu is flat."
+   },
+   {
+    "titre": "Very little flour",
+    "detail": "A third of the brocciu's weight: migliacciu is bound cheese, not a cake."
+   },
+   {
+    "titre": "On chestnut leaves",
+    "detail": "Traditionally; failing that, baking paper — but the leaves genuinely perfume the underside."
+   },
+   {
+    "titre": "A FLAT cake",
+    "detail": "2 cm thick maximum, spread by hand: any thicker and the centre stays wet."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "25 minutes at 220°C: the surface must blister and brown in patches, like a pizza."
+   }
+  ]
+ },
+ "canistrelli": {
+  "nom": "Canistrelli",
+  "description": "Corsican dry biscuits with white wine and aniseed, keeping for weeks. There is NO egg and NO butter: olive oil and wine bind the dough, which is why they last so long.",
+  "etapes": [
+   {
+    "titre": "White wine, not water",
+    "detail": "It brings the acidity that lifts the dough with the raising agent, and a perfume no water could."
+   },
+   {
+    "titre": "Olive oil, never butter",
+    "detail": "Butter goes rancid; olive oil is what lets canistrelli keep for three weeks."
+   },
+   {
+    "titre": "Knead just enough",
+    "detail": "30 seconds: the dough should stay rough and slightly crumbly, overworked it turns hard."
+   },
+   {
+    "titre": "Roll to 1.5 cm",
+    "detail": "Thick: a canistrellu is a DRY dense biscuit, not a thin shortbread."
+   },
+   {
+    "titre": "Cut into diamonds",
+    "detail": "With a knife, no cutter: the diamond shape is the signature, and there are no offcuts."
+   },
+   {
+    "titre": "Long, moderate bake",
+    "detail": "30 minutes at 170°C: it takes time to DRY the biscuit through, not just colour it."
+   },
+   {
+    "titre": "Cool completely",
+    "detail": "On a rack, then into an airtight tin: shut away warm, they soften and lose all their point."
+   }
+  ]
+ },
+ "kigahfarz": {
+  "nom": "Kig ha Farz",
+  "description": "The pot-au-feu of Léon, where a buckwheat batter cooks INSIDE a cloth bag in the middle of the broth. On the way out, the bag is crushed with a rolling pin: the farz crumbles to a semolina, and that gesture makes the dish.",
+  "etapes": [
+   {
+    "titre": "Two salted meats",
+    "detail": "Beef shin and lightly salted pork: the salt in the meat seasons the entire broth."
+   },
+   {
+    "titre": "Buckwheat farz",
+    "detail": "Flour, egg, cream and a little broth: a soft batter, neither runny nor stiff."
+   },
+   {
+    "titre": "The bag is essential",
+    "detail": "A cloth bag tied three-quarters full: too full and the farz has no room to swell and turns dense."
+   },
+   {
+    "titre": "The bag IN the broth",
+    "detail": "Tied to the pot handle: it must not touch the bottom or it would scorch."
+   },
+   {
+    "titre": "Three hours together",
+    "detail": "The farz drinks the broth all that time: this is where it takes its meaty flavour."
+   },
+   {
+    "titre": "Vegetables for the last hour",
+    "detail": "Cabbage, carrots and turnips added halfway: any earlier and they turn to purée."
+   },
+   {
+    "titre": "Crush the bag with a pin",
+    "detail": "On the worktop, before opening: the farz must come out AS CRUMBS, never as a block."
+   }
+  ]
+ },
+ "gachebretonne": {
+  "nom": "Gâche Bretonne",
+  "description": "The Vendée brioche made with CRÈME FRAÎCHE, dense and close-textured, split along its whole length. It resembles no other brioche: the cream replaces part of the butter and gives a compact, melting crumb.",
+  "etapes": [
+   {
+    "titre": "Full-fat thick cream",
+    "detail": "30 % minimum: reduced-fat cream gives a dry gâche, the fat IS the recipe."
+   },
+   {
+    "titre": "A long knead",
+    "detail": "15 minutes with the hook: gâche has a tight crumb, the gluten must be fully developed."
+   },
+   {
+    "titre": "Slow cold rise",
+    "detail": "Overnight in the fridge: that is where the flavour comes from. A fast warm rise gives a bland brioche."
+   },
+   {
+    "titre": "Shape it long",
+    "detail": "An even 30 cm log, seam underneath: gâche is an elongated brioche, never plaited."
+   },
+   {
+    "titre": "A deep slash",
+    "detail": "One single cut along the whole length, 1 cm deep: the visual signature."
+   },
+   {
+    "titre": "Glaze twice",
+    "detail": "Before the second rise and just before the oven: that gives the deep even shine."
+   },
+   {
+    "titre": "Moderate oven",
+    "detail": "30 minutes at 170°C: too hot and the crust sets before the dense crumb has finished baking."
+   }
+  ]
+ },
+ "douillons": {
+  "nom": "Norman Douillons",
+  "description": "WHOLE pears swaddled in pastry and baked, one per person. The fruit steams in its own moisture — and the salted butter replacing the core turns into caramel.",
+  "etapes": [
+   {
+    "titre": "FIRM pears",
+    "detail": "Conference or Williams barely ripe: a ripe pear collapses and the pastry fills with juice."
+   },
+   {
+    "titre": "Core from underneath",
+    "detail": "With an apple corer, keeping the fruit whole and the stalk: the presentation makes the douillon."
+   },
+   {
+    "titre": "Salted butter and brown sugar",
+    "detail": "Packed into the cavity: they melt into a caramel that rises through the fruit as it bakes."
+   },
+   {
+    "titre": "Wrap without stretching",
+    "detail": "A disc of pastry brought up around the fruit and pleated at the top: pulled tight, it splits."
+   },
+   {
+    "titre": "Let the stalk stick out",
+    "detail": "Pierce the top of the pastry to pass it through: the detail that makes a douillon recognisable."
+   },
+   {
+    "titre": "45 minutes at 180°C",
+    "detail": "On baking paper: the caramel always escapes a little, and it burns on a bare tray."
+   },
+   {
+    "titre": "Wait 15 minutes",
+    "detail": "The inside is scalding out of the oven: served too hot they burn the mouth and run."
+   }
+  ]
+ },
+ "niflettes": {
+  "nom": "Niflettes",
+  "description": "The little cream puff pastries of Provins, sold only around All Saints' Day. They were given to orphaned children to comfort them: \"ne flete\", do not weep — hence the name.",
+  "etapes": [
+   {
+    "titre": "A THICK pastry cream",
+    "detail": "Thicker than usual: runny, it overflows and burns on the tray within minutes."
+   },
+   {
+    "titre": "Orange blossom, not vanilla alone",
+    "detail": "The traditional Provins perfume: vanilla alone makes an ordinary tartlet."
+   },
+   {
+    "titre": "Cream completely cold",
+    "detail": "Filmed on the surface and chilled: warm, it melts the pastry and stops it rising."
+   },
+   {
+    "titre": "8 cm discs",
+    "detail": "Cut with a cutter and docked in the CENTRE only: the edges must be able to rise."
+   },
+   {
+    "titre": "A heaped spoon in the middle",
+    "detail": "Leaving 1.5 cm of bare edge: that edge puffs up and forms the collar."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "20 minutes at 200°C: you need fierce heat for the pastry to explode around the cream."
+   },
+   {
+    "titre": "Icing sugar when cool",
+    "detail": "Only once warm: dusted hot, the sugar melts and vanishes."
+   }
+  ]
+ },
+ "galettecomtoise": {
+  "nom": "Galette Comtoise",
+  "description": "The galette of Goumois, made from choux paste spread flat and baked, glazed with cream. Neither a brioche nor a puff pastry: choux paste spread flat gives a texture found nowhere else.",
+  "etapes": [
+   {
+    "titre": "Dry out the panade",
+    "detail": "Flour tipped into the boiling buttered milk, stirred 2 minutes: it must form a dry ball."
+   },
+   {
+    "titre": "Cool BEFORE the eggs",
+    "detail": "5 minutes off the heat: on a scalding panade the eggs set into scrambled grains."
+   },
+   {
+    "titre": "Eggs one by one",
+    "detail": "Each fully incorporated before the next: the paste should ribbon and fall in a point."
+   },
+   {
+    "titre": "Spread into a thick disc",
+    "detail": "1.5 cm with a wet spatula: choux paste is not rolled, it is pushed."
+   },
+   {
+    "titre": "Glaze with CREAM",
+    "detail": "Not egg: cream gives the ivory colour and the characteristic brown patches."
+   },
+   {
+    "titre": "Nibbed sugar on top",
+    "detail": "Generously: it caramelises and gives the crunch that contrasts with the soft crumb."
+   },
+   {
+    "titre": "Hot oven then moderate",
+    "detail": "10 minutes at 210°C to make it rise, then 20 minutes at 170°C to dry without burning."
+   }
+  ]
  }
 };
