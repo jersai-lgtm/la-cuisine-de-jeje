@@ -2086,4 +2086,42 @@ Object.assign(recettes, {
     ],
     liees: ["chocolatchaudviennois","goldenlatte","horchata"]
   },
+  blabarssoppa: {
+    dateAjout: "2026-08-07T15:29:00",
+    nom: "Blåbärssoppa",
+    cat: "mocktails", saisons: ["automne","hiver"], pays: "suede",
+    base: 6,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🫐",
+    description: "La « soupe » de myrtilles suédoise, qui se BOIT chaude au goulot pendant la Vasaloppet. Ce n'est ni un dessert ni un jus : c'est une boisson énergétique de fondeur, vieille de plus d'un siècle.",
+    tableauBlabarssoppa: [
+      { nb: 1, myrtilles: "70 g", sucre: "16 g", maizena: "4 g", citron: "", cannelle: "0.2 g", gingembre: "0.3 g" },
+      { nb: 2, myrtilles: "140 g", sucre: "32 g", maizena: "8 g", citron: "", cannelle: "0.4 g", gingembre: "0.6 g" },
+      { nb: 3, myrtilles: "210 g", sucre: "48 g", maizena: "12 g", citron: "", cannelle: "0.6 g", gingembre: "0.9 g" },
+      { nb: 4, myrtilles: "280 g", sucre: "64 g", maizena: "16 g", citron: "", cannelle: "0.8 g", gingembre: "1.2 g" },
+      { nb: 5, myrtilles: "350 g", sucre: "80 g", maizena: "20 g", citron: "¾", cannelle: "1 g", gingembre: "1.5 g" },
+      { nb: 6, myrtilles: "420 g", sucre: "96 g", maizena: "24 g", citron: "", cannelle: "1.2 g", gingembre: "1.8 g" },
+      { nb: 7, myrtilles: "490 g", sucre: "112 g", maizena: "28 g", citron: "1", cannelle: "1.4 g", gingembre: "2.1 g" },
+      { nb: 8, myrtilles: "560 g", sucre: "128 g", maizena: "32 g", citron: "1", cannelle: "1.6 g", gingembre: "2.4 g" },
+      { nb: 9, myrtilles: "630 g", sucre: "144 g", maizena: "36 g", citron: "1", cannelle: "1.8 g", gingembre: "2.7 g" },
+      { nb: 10, myrtilles: "700 g", sucre: "160 g", maizena: "40 g", citron: "1½", cannelle: "2 g", gingembre: "3 g" },
+      { nb: 11, myrtilles: "770 g", sucre: "176 g", maizena: "44 g", citron: "1", cannelle: "2.2 g", gingembre: "3.3 g" },
+      { nb: 12, myrtilles: "840 g", sucre: "192 g", maizena: "48 g", citron: "1", cannelle: "2.4 g", gingembre: "3.6 g" },
+      { nb: 13, myrtilles: "910 g", sucre: "208 g", maizena: "52 g", citron: "1", cannelle: "2.6 g", gingembre: "3.9 g" },
+      { nb: 14, myrtilles: "980 g", sucre: "224 g", maizena: "56 g", citron: "2", cannelle: "2.8 g", gingembre: "4.2 g" },
+      { nb: 15, myrtilles: "1050 g", sucre: "240 g", maizena: "60 g", citron: "2¼", cannelle: "3 g", gingembre: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫐", titre: "Myrtilles sauvages si possible", detail: "Les petites myrtilles des bois sont trois fois plus parfumées et colorées que les cultivées.", badge: null },
+      { icone: "♨️", titre: "Cuire seulement 8 minutes", detail: "Elles doivent éclater et rendre leur jus, pas confire : au-delà, on perd le goût frais du fruit.", badge: null },
+      { icone: "🫗", titre: "Passer ou non", detail: "Version boisson : on filtre finement. Version soupe : on garde les fruits entiers dans le liquide.", badge: null },
+      { icone: "🥣", titre: "Fécule délayée à FROID", detail: "Toujours à part dans un peu de jus refroidi : jetée dans le chaud, elle fait des grumeaux instantanés.", badge: null },
+      { icone: "🌡️", titre: "Une minute d'ébullition", detail: "Pas plus : au-delà, la fécule se dégrade et la boisson redevient liquide en refroidissant.", badge: null },
+      { icone: "🍋", titre: "Un trait de citron", detail: "Il réveille la myrtille, qui est douce et un peu plate toute seule.", badge: null },
+      { icone: "🍵", titre: "Se boit CHAUDE", detail: "Dans une tasse, comme un thé — mais elle se garde aussi très bien froide au réfrigérateur.", badge: null }
+    ],
+    liees: ["rodgrod","confituremyrtille","sima"]
+  },
 });

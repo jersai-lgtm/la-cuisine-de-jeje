@@ -351,6 +351,7 @@ const INGREDIENTS_PRIX = {
   poisson:        { prixKg: 16.0, calPer100g: 105,  lipSat: 0.4,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 20,   flv: 0, glucides: 0, lipides: 1.8 },
   dorade:         { prixKg: 22.0, calPer100g: 96,   lipSat: 0.4,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 20,   flv: 0, glucides: 0, lipides: 1.8 },
   brochet:        { prixKg: 18.0, calPer100g: 88,   lipSat: 0.2,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 19,   flv: 0, glucides: 0, lipides: 0.9 },
+  carpe:          { prixKg: 9.00, calPer100g: 127,  lipSat: 1.1,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 17.8, flv: 0, glucides: 0, lipides: 5.6 },
   moules:         { prixKg: 7.00, calPer100g: 86,   lipSat: 0.4,  sucre: 0,    sel: 0.7,  fibres: 0,   prot: 12,   flv: 0, glucides: 3.7, lipides: 2 },
   poulpe:         { prixKg: 22.0, calPer100g: 82,   lipSat: 0.2,  sucre: 0,    sel: 0.5,  fibres: 0,   prot: 15,   flv: 0, glucides: 0, lipides: 0.9 },
   calamars:       { prixKg: 15.0, calPer100g: 92,   lipSat: 0.4,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 16,   flv: 0, glucides: 0, lipides: 2 },
@@ -565,6 +566,7 @@ const INGREDIENTS_PRIX = {
   // ===== VINS & ALCOOLS =====
   vin:            { prixKg: 8.00, calPer100g: 85,   lipSat: 0,    sucre: 0.6,  sel: 0,    fibres: 0,   prot: 0.1,  flv: 0, glucides: 0.6, lipides: 0 },
   vinblanc:       { prixKg: 8.00, calPer100g: 82,   lipSat: 0,    sucre: 0.6,  sel: 0,    fibres: 0,   prot: 0.1,  flv: 0, glucides: 0.6, lipides: 0 },
+  vinjaune:       { prixKg: 45.0, calPer100g: 90,   lipSat: 0,    sucre: 1,    sel: 0,    fibres: 0,   prot: 0.1,  flv: 0, glucides: 1.5, lipides: 0 },
   vinrouge:       { prixKg: 8.00, calPer100g: 85,   lipSat: 0,    sucre: 0.6,  sel: 0,    fibres: 0,   prot: 0.1,  flv: 0, glucides: 0.6, lipides: 0 },
   vinRiz:         { prixKg: 4.00, calPer100g: 130,  lipSat: 0,    sucre: 2,    sel: 0,    fibres: 0,   prot: 0.3,  flv: 0, glucides: 2, lipides: 0 },
   marsala:        { prixKg: 12.0, calPer100g: 150,  lipSat: 0,    sucre: 9,    sel: 0,    fibres: 0,   prot: 0.1,  flv: 0, glucides: 9, lipides: 0 },
@@ -861,6 +863,8 @@ const INGREDIENTS_PRIX = {
   crozets: { prixKg: 3.8, calPer100g: 350, lipSat: 1.8, sucre: 1.5, sel: 0.5, fibres: 2, prot: 13, flv: 0, glucides: 72, lipides: 2 },
   oseille: { prixKg: 8.5, calPer100g: 22, lipSat: 0.1, sucre: 0.5, sel: 0.2, fibres: 2.2, prot: 2.7, flv: 100, glucides: 0.5, lipides: 0.2 },
   abricotsec: { prixKg: 12.5, calPer100g: 241, lipSat: 0.3, sucre: 53, sel: 0.1, fibres: 7.3, prot: 3.3, flv: 100, glucides: 53, lipides: 0.5 },
+  poiresechee:    { prixKg: 16.0, calPer100g: 262,  lipSat: 0.1,  sucre: 62,   sel: 0.01, fibres: 7.5, prot: 1.9,  flv: 100, glucides: 69, lipides: 0.6 },
+  pralinerose:    { prixKg: 24.0, calPer100g: 470,  lipSat: 2.0,  sucre: 62,   sel: 0.02, fibres: 3.0, prot: 6.5,  flv: 0, glucides: 65, lipides: 20 },
   gambas: { prixKg: 16.5, calPer100g: 99, lipSat: 0.3, sucre: 0, sel: 1.4, fibres: 0, prot: 20.3, flv: 0, glucides: 0, lipides: 0.5 },
   fumet: { prixKg: 4.2, calPer100g: 30, lipSat: 0.5, sucre: 0.5, sel: 3.5, fibres: 0, prot: 5, flv: 0, glucides: 0.5, lipides: 0.6 },
   lentillesvertes: { prixKg: 5.5, calPer100g: 353, lipSat: 0.4, sucre: 2, sel: 0.3, fibres: 8.3, prot: 25, flv: 100, glucides: 65, lipides: 0.5 },
@@ -1428,6 +1432,8 @@ const INGREDIENTS_LABELS = {
   cheddar: "🧀 Cheddar", mozza: "🧀 Mozzarella", fromage: "🧀 Fromage",
   laitCoco: "🥥 Lait de coco", cremeCoco: "🥥 Crème de coco", coco: "🥥 Lait de coco",
   confiture: "🍓 Confiture", moutarde: "🟡 Moutarde",
+  carpe: "🐟 Carpe", vinjaune: "🍶 Vin jaune du Jura",
+  poiresechee: "🍐 Poires séchées", pralinerose: "🌸 Pralines roses",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==
   oeufs: "🥚 Œufs",  oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",

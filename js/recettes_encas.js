@@ -7762,4 +7762,42 @@ Object.assign(recettes, {
     ],
     liees: ["fishandchips","accrasmorue","brandadeMorue"]
   },
+  bramboraky: {
+    dateAjout: "2026-08-07T15:27:00",
+    nom: "Bramboráky",
+    cat: "encas", pays: "tchequie",
+    base: 6,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🧄",
+    description: "Les galettes de pomme de terre tchèques, à l'ail et à la marjolaine, vendues brûlantes sur les marchés de Prague. Elles se distinguent du rösti par la PÂTE : ici il y a de l'œuf, de la farine et beaucoup d'ail.",
+    tableauBramboraky: [
+      { nb: 1, pommedeterre: "170 g", ail: "", oeufs: "", farine: "18 g", lait: "15 ml", origan: "1.2 g", cumin: "0.6 g", huile: "20 ml", poivre: "0.7 g", sel: "1.8 g" },
+      { nb: 2, pommedeterre: "340 g", ail: "1", oeufs: "", farine: "36 g", lait: "30 ml", origan: "2.4 g", cumin: "1.2 g", huile: "40 ml", poivre: "1.4 g", sel: "3.6 g" },
+      { nb: 3, pommedeterre: "510 g", ail: "2", oeufs: "", farine: "54 g", lait: "45 ml", origan: "3.6 g", cumin: "1.8 g", huile: "60 ml", poivre: "2.1 g", sel: "5.4 g" },
+      { nb: 4, pommedeterre: "680 g", ail: "3", oeufs: "1", farine: "72 g", lait: "60 ml", origan: "4.8 g", cumin: "2.4 g", huile: "80 ml", poivre: "2.8 g", sel: "7.2 g" },
+      { nb: 5, pommedeterre: "850 g", ail: "4", oeufs: "1½", farine: "90 g", lait: "75 ml", origan: "6 g", cumin: "3 g", huile: "100 ml", poivre: "3.5 g", sel: "9 g" },
+      { nb: 6, pommedeterre: "1020 g", ail: "4", oeufs: "1", farine: "108 g", lait: "90 ml", origan: "7.2 g", cumin: "3.6 g", huile: "120 ml", poivre: "4.2 g", sel: "10.8 g" },
+      { nb: 7, pommedeterre: "1190 g", ail: "5", oeufs: "2", farine: "126 g", lait: "105 ml", origan: "8.4 g", cumin: "4.2 g", huile: "140 ml", poivre: "4.9 g", sel: "12.6 g" },
+      { nb: 8, pommedeterre: "1360 g", ail: "6", oeufs: "2", farine: "144 g", lait: "120 ml", origan: "9.6 g", cumin: "4.8 g", huile: "160 ml", poivre: "5.6 g", sel: "14.4 g" },
+      { nb: 9, pommedeterre: "1530 g", ail: "7", oeufs: "2", farine: "162 g", lait: "135 ml", origan: "10.8 g", cumin: "5.4 g", huile: "180 ml", poivre: "6.3 g", sel: "16.2 g" },
+      { nb: 10, pommedeterre: "1700 g", ail: "8", oeufs: "3", farine: "180 g", lait: "150 ml", origan: "12 g", cumin: "6 g", huile: "200 ml", poivre: "7 g", sel: "18 g" },
+      { nb: 11, pommedeterre: "1870 g", ail: "8", oeufs: "3", farine: "198 g", lait: "165 ml", origan: "13.2 g", cumin: "6.6 g", huile: "220 ml", poivre: "7.7 g", sel: "19.8 g" },
+      { nb: 12, pommedeterre: "2040 g", ail: "9", oeufs: "3", farine: "216 g", lait: "180 ml", origan: "14.4 g", cumin: "7.2 g", huile: "240 ml", poivre: "8.4 g", sel: "21.6 g" },
+      { nb: 13, pommedeterre: "2210 g", ail: "10", oeufs: "3", farine: "234 g", lait: "195 ml", origan: "15.6 g", cumin: "7.8 g", huile: "260 ml", poivre: "9.1 g", sel: "23.4 g" },
+      { nb: 14, pommedeterre: "2380 g", ail: "11", oeufs: "4", farine: "252 g", lait: "210 ml", origan: "16.8 g", cumin: "8.4 g", huile: "280 ml", poivre: "9.8 g", sel: "25.2 g" },
+      { nb: 15, pommedeterre: "2550 g", ail: "12", oeufs: "4½", farine: "270 g", lait: "225 ml", origan: "18 g", cumin: "9 g", huile: "300 ml", poivre: "10.5 g", sel: "27 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper très fin", detail: "À la râpe fine, presque en purée : c'est ce qui distingue le bramborák du rösti, râpé gros.", badge: null },
+      { icone: "💧", titre: "Ne pas trop essorer", detail: "Contrairement au rösti : un peu d'eau et d'amidon sont nécessaires pour lier la pâte.", badge: null },
+      { icone: "🧄", titre: "Beaucoup plus d'ail qu'on croit", detail: "Deux gousses par personne, écrasées en purée : c'est l'ingrédient qui définit la recette.", badge: null },
+      { icone: "🌿", titre: "Marjolaine et cumin", detail: "Le duo tchèque, écrasé entre les doigts : sans eux, ce sont juste des galettes de pomme de terre.", badge: null },
+      { icone: "🥣", titre: "Une pâte souple", detail: "Elle doit tomber de la cuillère en s'étalant : trop épaisse, le centre restera cru.", badge: null },
+      { icone: "🍳", titre: "Huile bien chaude, couche FINE", detail: "5 mm maximum étalés à la cuillère : c'est le croustillant qu'on cherche, pas le moelleux.", badge: null },
+      { icone: "🧻", titre: "Égoutter debout", detail: "Sur du papier, posées de chant contre le bord de l'assiette : à plat, le dessous ramollit.", badge: null }
+    ],
+    liees: ["rosti","placki","paillassonpdt"]
+  },
 });

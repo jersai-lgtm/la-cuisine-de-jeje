@@ -1237,4 +1237,42 @@ Object.assign(recettes, {
     ],
     liees: ["tapenade","anchoiade","pestomaison"]
   },
+  bibeleskaes: {
+    dateAjout: "2026-08-07T15:12:00",
+    nom: "Bibeleskaes",
+    cat: "tartinables", saisons: ["printemps","ete"], pays: "france",
+    base: 6,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Le fromage blanc battu aux herbes d'Alsace, servi avec des pommes de terre en robe des champs. Le secret est de le battre LONGUEMENT : un bibeleskaes mal fouetté reste granuleux et rend de l'eau dans l'assiette.",
+    tableauBibeleskaes: [
+      { nb: 1, fromageblanc: "90 g", creme: "20 ml", echalote: "", ciboulette: "6 g", persil: "4 g", ail: "", huileOlive: "5 ml", poivre: "0.5 g", sel: "1.2 g", pommedeterre: "180 g" },
+      { nb: 2, fromageblanc: "180 g", creme: "40 ml", echalote: "", ciboulette: "12 g", persil: "8 g", ail: "", huileOlive: "10 ml", poivre: "1 g", sel: "2.4 g", pommedeterre: "360 g" },
+      { nb: 3, fromageblanc: "270 g", creme: "60 ml", echalote: "1", ciboulette: "18 g", persil: "12 g", ail: "", huileOlive: "15 ml", poivre: "1.5 g", sel: "3.6 g", pommedeterre: "540 g" },
+      { nb: 4, fromageblanc: "360 g", creme: "80 ml", echalote: "1", ciboulette: "24 g", persil: "16 g", ail: "", huileOlive: "20 ml", poivre: "2 g", sel: "4.8 g", pommedeterre: "720 g" },
+      { nb: 5, fromageblanc: "450 g", creme: "100 ml", echalote: "2", ciboulette: "30 g", persil: "20 g", ail: "1", huileOlive: "25 ml", poivre: "2.5 g", sel: "6 g", pommedeterre: "900 g" },
+      { nb: 6, fromageblanc: "540 g", creme: "120 ml", echalote: "2", ciboulette: "36 g", persil: "24 g", ail: "1", huileOlive: "30 ml", poivre: "3 g", sel: "7.2 g", pommedeterre: "1080 g" },
+      { nb: 7, fromageblanc: "630 g", creme: "140 ml", echalote: "2", ciboulette: "42 g", persil: "28 g", ail: "1", huileOlive: "35 ml", poivre: "3.5 g", sel: "8.4 g", pommedeterre: "1260 g" },
+      { nb: 8, fromageblanc: "720 g", creme: "160 ml", echalote: "3", ciboulette: "48 g", persil: "32 g", ail: "1", huileOlive: "40 ml", poivre: "4 g", sel: "9.6 g", pommedeterre: "1440 g" },
+      { nb: 9, fromageblanc: "810 g", creme: "180 ml", echalote: "3", ciboulette: "54 g", persil: "36 g", ail: "1", huileOlive: "45 ml", poivre: "4.5 g", sel: "10.8 g", pommedeterre: "1620 g" },
+      { nb: 10, fromageblanc: "900 g", creme: "200 ml", echalote: "4", ciboulette: "60 g", persil: "40 g", ail: "2", huileOlive: "50 ml", poivre: "5 g", sel: "12 g", pommedeterre: "1800 g" },
+      { nb: 11, fromageblanc: "990 g", creme: "220 ml", echalote: "4", ciboulette: "66 g", persil: "44 g", ail: "2", huileOlive: "55 ml", poivre: "5.5 g", sel: "13.2 g", pommedeterre: "1980 g" },
+      { nb: 12, fromageblanc: "1080 g", creme: "240 ml", echalote: "4", ciboulette: "72 g", persil: "48 g", ail: "2", huileOlive: "60 ml", poivre: "6 g", sel: "14.4 g", pommedeterre: "2160 g" },
+      { nb: 13, fromageblanc: "1170 g", creme: "260 ml", echalote: "5", ciboulette: "78 g", persil: "52 g", ail: "2", huileOlive: "65 ml", poivre: "6.5 g", sel: "15.6 g", pommedeterre: "2340 g" },
+      { nb: 14, fromageblanc: "1260 g", creme: "280 ml", echalote: "5", ciboulette: "84 g", persil: "56 g", ail: "2", huileOlive: "70 ml", poivre: "7 g", sel: "16.8 g", pommedeterre: "2520 g" },
+      { nb: 15, fromageblanc: "1350 g", creme: "300 ml", echalote: "6", ciboulette: "90 g", persil: "60 g", ail: "3", huileOlive: "75 ml", poivre: "7.5 g", sel: "18 g", pommedeterre: "2700 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Un fromage blanc ÉGOUTTÉ", detail: "En faisselle, laissé 2 h dans une passoire : un fromage blanc liquide donnera une flaque, pas une tartinade.", badge: null },
+      { icone: "💪", titre: "Battre 3 minutes", detail: "Au fouet, énergiquement : c'est ce qui casse les grains et donne la texture lisse et aérienne.", badge: null },
+      { icone: "🧅", titre: "Échalote dégorgée", detail: "Hachée fin et rincée à l'eau froide : crue et non rincée, elle domine tout et devient agressive.", badge: null },
+      { icone: "🌿", titre: "Herbes ciselées à la minute", detail: "Ciboulette et persil coupés au dernier moment : hachés à l'avance, ils noircissent et perdent leur parfum.", badge: null },
+      { icone: "🧄", titre: "Un demi-ail, pas plus", detail: "Écrasé en purée avec le sel : le bibeleskaes est une préparation douce, l'ail doit se deviner.", badge: null },
+      { icone: "❄️", titre: "Une heure au frais", detail: "Les herbes ont besoin de ce temps pour parfumer le fromage. Servi tout de suite, il est fade.", badge: null },
+      { icone: "🥔", titre: "Les pommes de terre chaudes", detail: "En robe des champs, brûlantes, écrasées à la fourchette dans le fromage froid. C'est le contraste qui fait le plat.", badge: null }
+    ],
+    liees: ["cervellecanut","tzatziki","labneh"]
+  },
 });

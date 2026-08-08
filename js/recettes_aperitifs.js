@@ -4013,4 +4013,42 @@ tapenade: {
     ],
     liees: ["gilda","giardiniera","feuilletessaucisse"]
   },
+  kougelhopfsale: {
+    dateAjout: "2026-08-07T15:11:00",
+    nom: "Kougelhopf Salé",
+    cat: "aperitifs", pays: "france",
+    base: 10,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "👑",
+    description: "La version apéritive du gâteau alsacien : lardons et noix à la place des raisins et du sucre. Il se sert TIÈDE, en tranches épaisses, avec un verre de vin blanc — c'est l'apéro dominical en Alsace.",
+    tableauKougelhopfsale: [
+      { nb: 1, farine: "40 g", beurre: "18 g", lardons: "25 g", noix: "10 g", oeufs: "", lait: "25 ml", levureboulangere: "1.5 g", fromagecomte: "15 g", poivre: "0.5 g", muscade: "0.3 g", sel: "1 g" },
+      { nb: 2, farine: "80 g", beurre: "36 g", lardons: "50 g", noix: "20 g", oeufs: "", lait: "50 ml", levureboulangere: "3 g", fromagecomte: "30 g", poivre: "1 g", muscade: "0.6 g", sel: "2 g" },
+      { nb: 3, farine: "120 g", beurre: "54 g", lardons: "75 g", noix: "30 g", oeufs: "", lait: "75 ml", levureboulangere: "4.5 g", fromagecomte: "45 g", poivre: "1.5 g", muscade: "0.9 g", sel: "3 g" },
+      { nb: 4, farine: "160 g", beurre: "72 g", lardons: "100 g", noix: "40 g", oeufs: "1", lait: "100 ml", levureboulangere: "6 g", fromagecomte: "60 g", poivre: "2 g", muscade: "1.2 g", sel: "4 g" },
+      { nb: 5, farine: "200 g", beurre: "90 g", lardons: "125 g", noix: "50 g", oeufs: "1½", lait: "125 ml", levureboulangere: "7.5 g", fromagecomte: "75 g", poivre: "2.5 g", muscade: "1.5 g", sel: "5 g" },
+      { nb: 6, farine: "240 g", beurre: "108 g", lardons: "150 g", noix: "60 g", oeufs: "1", lait: "150 ml", levureboulangere: "9 g", fromagecomte: "90 g", poivre: "3 g", muscade: "1.8 g", sel: "6 g" },
+      { nb: 7, farine: "280 g", beurre: "126 g", lardons: "175 g", noix: "70 g", oeufs: "2", lait: "175 ml", levureboulangere: "10.5 g", fromagecomte: "105 g", poivre: "3.5 g", muscade: "2.1 g", sel: "7 g" },
+      { nb: 8, farine: "320 g", beurre: "144 g", lardons: "200 g", noix: "80 g", oeufs: "2", lait: "200 ml", levureboulangere: "12 g", fromagecomte: "120 g", poivre: "4 g", muscade: "2.4 g", sel: "8 g" },
+      { nb: 9, farine: "360 g", beurre: "162 g", lardons: "225 g", noix: "90 g", oeufs: "2", lait: "225 ml", levureboulangere: "13.5 g", fromagecomte: "135 g", poivre: "4.5 g", muscade: "2.7 g", sel: "9 g" },
+      { nb: 10, farine: "400 g", beurre: "180 g", lardons: "250 g", noix: "100 g", oeufs: "3", lait: "250 ml", levureboulangere: "15 g", fromagecomte: "150 g", poivre: "5 g", muscade: "3 g", sel: "10 g" },
+      { nb: 11, farine: "440 g", beurre: "198 g", lardons: "275 g", noix: "110 g", oeufs: "3", lait: "275 ml", levureboulangere: "16.5 g", fromagecomte: "165 g", poivre: "5.5 g", muscade: "3.3 g", sel: "11 g" },
+      { nb: 12, farine: "480 g", beurre: "216 g", lardons: "300 g", noix: "120 g", oeufs: "3", lait: "300 ml", levureboulangere: "18 g", fromagecomte: "180 g", poivre: "6 g", muscade: "3.6 g", sel: "12 g" },
+      { nb: 13, farine: "520 g", beurre: "234 g", lardons: "325 g", noix: "130 g", oeufs: "3", lait: "325 ml", levureboulangere: "19.5 g", fromagecomte: "195 g", poivre: "6.5 g", muscade: "3.9 g", sel: "13 g" },
+      { nb: 14, farine: "560 g", beurre: "252 g", lardons: "350 g", noix: "140 g", oeufs: "4", lait: "350 ml", levureboulangere: "21 g", fromagecomte: "210 g", poivre: "7 g", muscade: "4.2 g", sel: "14 g" },
+      { nb: 15, farine: "600 g", beurre: "270 g", lardons: "375 g", noix: "150 g", oeufs: "4½", lait: "375 ml", levureboulangere: "22.5 g", fromagecomte: "225 g", poivre: "7.5 g", muscade: "4.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Une pâte à brioche", detail: "Riche en beurre et en œufs, mais SANS sucre : c'est la seule vraie différence avec le kouglof sucré.", badge: null },
+      { icone: "⏳", titre: "Deux pousses obligatoires", detail: "1 h 30 en cuve puis 1 h dans le moule : une seule pousse donne une mie serrée et lourde.", badge: null },
+      { icone: "🥓", titre: "Lardons rissolés et ÉGOUTTÉS", detail: "Leur graisse ferait retomber la pâte : on les ajoute froids et secs, en fin de pétrissage.", badge: null },
+      { icone: "🌰", titre: "Les noix au fond du moule", detail: "Une par cannelure : elles se retrouvent en relief sur le dessus une fois démoulé, c'est la signature.", badge: null },
+      { icone: "🧈", titre: "Beurrer chaque cannelure", detail: "Au pinceau, minutieusement : un moule mal beurré et le kouglof reste collé, il n'y a pas de rattrapage.", badge: null },
+      { icone: "🔥", titre: "45 minutes à 180°C", detail: "Couvrir d'alu à mi-cuisson : la couronne dore beaucoup plus vite que le cœur ne cuit.", badge: null },
+      { icone: "🔄", titre: "Démouler tiède", detail: "5 minutes d'attente, pas plus : chaud il casse, froid il colle.", badge: null }
+    ],
+    liees: ["kouglof","cakeolivesjambon","cakesalejambon"]
+  },
 });

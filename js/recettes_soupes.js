@@ -6432,4 +6432,42 @@ Object.assign(recettes, {
     ],
     liees: ["lohikeitto","cullenskink","clamchowder"]
   },
+  flaki: {
+    dateAjout: "2026-08-07T15:25:00",
+    nom: "Flaki",
+    cat: "soupes", saisons: ["automne","hiver"], pays: "pologne",
+    base: 6,
+    temps: "4 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥣",
+    description: "La soupe polonaise aux tripes, épaisse et poivrée, servie avec de la marjolaine et du paprika. Elle a la réputation d'être le meilleur remède contre la gueule de bois à Varsovie — et quatre heures de cuisson n'y sont pas pour rien.",
+    tableauFlaki: [
+      { nb: 1, boeuf: "90 g", bouillon: "250 ml", carotte: "½", poireau: "", celeri: "", oignon: "", beurre: "12 g", farine: "10 g", origan: "1.2 g", paprika: "1 g", muscade: "0.4 g", poivre: "1.2 g" },
+      { nb: 2, boeuf: "180 g", bouillon: "500 ml", carotte: "1", poireau: "", celeri: "", oignon: "", beurre: "24 g", farine: "20 g", origan: "2.4 g", paprika: "2 g", muscade: "0.8 g", poivre: "2.4 g" },
+      { nb: 3, boeuf: "270 g", bouillon: "750 ml", carotte: "1½", poireau: "1", celeri: "", oignon: "1", beurre: "36 g", farine: "30 g", origan: "3.6 g", paprika: "3 g", muscade: "1.2 g", poivre: "3.6 g" },
+      { nb: 4, boeuf: "360 g", bouillon: "1000 ml", carotte: "2", poireau: "1", celeri: "1", oignon: "1", beurre: "48 g", farine: "40 g", origan: "4.8 g", paprika: "4 g", muscade: "1.6 g", poivre: "4.8 g" },
+      { nb: 5, boeuf: "450 g", bouillon: "1250 ml", carotte: "2½", poireau: "2", celeri: "1½", oignon: "2", beurre: "60 g", farine: "50 g", origan: "6 g", paprika: "5 g", muscade: "2 g", poivre: "6 g" },
+      { nb: 6, boeuf: "540 g", bouillon: "1500 ml", carotte: "3", poireau: "2", celeri: "1", oignon: "2", beurre: "72 g", farine: "60 g", origan: "7.2 g", paprika: "6 g", muscade: "2.4 g", poivre: "7.2 g" },
+      { nb: 7, boeuf: "630 g", bouillon: "1750 ml", carotte: "3½", poireau: "2", celeri: "2", oignon: "2", beurre: "84 g", farine: "70 g", origan: "8.4 g", paprika: "7 g", muscade: "2.8 g", poivre: "8.4 g" },
+      { nb: 8, boeuf: "720 g", bouillon: "2000 ml", carotte: "4", poireau: "3", celeri: "2", oignon: "3", beurre: "96 g", farine: "80 g", origan: "9.6 g", paprika: "8 g", muscade: "3.2 g", poivre: "9.6 g" },
+      { nb: 9, boeuf: "810 g", bouillon: "2250 ml", carotte: "4½", poireau: "3", celeri: "2", oignon: "3", beurre: "108 g", farine: "90 g", origan: "10.8 g", paprika: "9 g", muscade: "3.6 g", poivre: "10.8 g" },
+      { nb: 10, boeuf: "900 g", bouillon: "2500 ml", carotte: "5", poireau: "4", celeri: "3", oignon: "4", beurre: "120 g", farine: "100 g", origan: "12 g", paprika: "10 g", muscade: "4 g", poivre: "12 g" },
+      { nb: 11, boeuf: "990 g", bouillon: "2750 ml", carotte: "5½", poireau: "4", celeri: "3", oignon: "4", beurre: "132 g", farine: "110 g", origan: "13.2 g", paprika: "11 g", muscade: "4.4 g", poivre: "13.2 g" },
+      { nb: 12, boeuf: "1080 g", bouillon: "3000 ml", carotte: "6", poireau: "4", celeri: "3", oignon: "4", beurre: "144 g", farine: "120 g", origan: "14.4 g", paprika: "12 g", muscade: "4.8 g", poivre: "14.4 g" },
+      { nb: 13, boeuf: "1170 g", bouillon: "3250 ml", carotte: "6½", poireau: "5", celeri: "3", oignon: "5", beurre: "156 g", farine: "130 g", origan: "15.6 g", paprika: "13 g", muscade: "5.2 g", poivre: "15.6 g" },
+      { nb: 14, boeuf: "1260 g", bouillon: "3500 ml", carotte: "7", poireau: "5", celeri: "4", oignon: "5", beurre: "168 g", farine: "140 g", origan: "16.8 g", paprika: "14 g", muscade: "5.6 g", poivre: "16.8 g" },
+      { nb: 15, boeuf: "1350 g", bouillon: "3750 ml", carotte: "7½", poireau: "6", celeri: "4½", oignon: "6", beurre: "180 g", farine: "150 g", origan: "18 g", paprika: "15 g", muscade: "6 g", poivre: "18 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧼", titre: "Nettoyer très longuement", detail: "Les tripes se frottent au gros sel et au vinaigre, se rincent cinq fois : c'est fastidieux et non négociable.", badge: null },
+      { icone: "♨️", titre: "Un premier blanchiment", detail: "10 minutes à l'eau bouillante, eau jetée : ce bouillon-là est trouble et fort, on ne le garde pas.", badge: null },
+      { icone: "⏳", titre: "Trois heures de cuisson", detail: "À frémissement : les tripes doivent devenir tendres sous la dent, pas caoutchouteuses.", badge: null },
+      { icone: "🔪", titre: "Trancher APRÈS cuisson", detail: "En lanières de 5 mm : coupées crues, elles se recroquevillent et durcissent.", badge: null },
+      { icone: "🥕", titre: "Les légumes en julienne", detail: "Ajoutés la dernière heure seulement : plus tôt, ils disparaîtraient complètement.", badge: null },
+      { icone: "🌾", titre: "Lier au roux blond", detail: "Beurre et farine cuits 3 minutes, délayés au bouillon chaud : le flaki doit napper la cuillère.", badge: null },
+      { icone: "🌿", titre: "Marjolaine généreuse", detail: "Écrasée entre les doigts hors du feu : c'est LE parfum du flaki, sans elle ce n'est plus le même plat.", badge: null }
+    ],
+    liees: ["gulyas","goulashhongrois","zurek"]
+  },
 });

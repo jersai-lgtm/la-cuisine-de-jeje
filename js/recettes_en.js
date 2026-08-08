@@ -105246,5 +105246,1025 @@ window.RECETTES_EN = {
     "detail": "30 minutes at 220°C: the surface should blister and brown in patches. Eaten WARM."
    }
   ]
+ },
+ "tartemaroilles": {
+  "nom": "Maroilles Tart",
+  "description": "The tart of northern France made with the country's most pungent cheese. Maroilles reeks when the fridge opens and turns hazelnut-sweet in the oven — the whole paradox of this tart, and nobody believes it until they taste it.",
+  "etapes": [
+   {
+    "titre": "A yeasted dough",
+    "detail": "Not shortcrust: a real maroilles tart sits on a brioche-bread dough that can carry the cheese."
+   },
+   {
+    "titre": "Two hours of proving",
+    "detail": "It must double: under-proved, the dough soaks up the melted fat and turns to leather."
+   },
+   {
+    "titre": "Remove the rind",
+    "detail": "Scrape off the orange rind with a knife: it is too salty and bitter, only the centre matters."
+   },
+   {
+    "titre": "Slice, don't grate",
+    "detail": "1 cm slices laid flat: grated, maroilles melts too fast and burns before the end."
+   },
+   {
+    "titre": "A light custard",
+    "detail": "Cream, egg and nutmeg only, NO salt: the cheese already brings plenty."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "25 minutes at 220°C: you need speed so the cheese browns instead of turning to oil."
+   },
+   {
+    "titre": "Wait 10 minutes",
+    "detail": "Straight out it is scalding and runny; warm, it holds together and the flavour rounds out."
+   }
+  ]
+ },
+ "caghuse": {
+  "nom": "Caghuse",
+  "description": "Picardy pork shoulder slow-cooked on a bed of onions, then deglazed with vinegar. It is eaten COLD the next day, set in its own jelly — the village-fête dish, made the day before so nobody has to work.",
+  "etapes": [
+   {
+    "titre": "Shoulder, with its fat",
+    "detail": "Loin would be dry after two hours: you need a marbled cut that stands up to the length."
+   },
+   {
+    "titre": "A thick bed of onions",
+    "detail": "Twice what you think: they melt to a compote and become the sauce, there is never too much."
+   },
+   {
+    "titre": "Brown the meat separately",
+    "detail": "In the lard, on every side, BEFORE setting it on the onions — otherwise it boils and stays grey."
+   },
+   {
+    "titre": "Two hours covered",
+    "detail": "150°C: the meat should confit in the onion steam, not roast."
+   },
+   {
+    "titre": "Vinegar at the end",
+    "detail": "Poured in for the last 15 minutes: added too early it evaporates and only the sharpness remains."
+   },
+   {
+    "titre": "Cool in its juices",
+    "detail": "This is where it happens: the juices set to jelly around the meat overnight."
+   },
+   {
+    "titre": "Serve COLD",
+    "detail": "Thick slices with the onion jelly, bread and a salad. Never reheated."
+   }
+  ]
+ },
+ "hochepot": {
+  "nom": "Flemish Hochepot",
+  "description": "The hotchpotch of Flanders, where EVERYTHING goes in: beef, pork, mutton, sausages and winter vegetables in one pot. Its name comes from the Dutch \"hutspot\", to shake the pot — this is a dish you never stir, you shake it.",
+  "etapes": [
+   {
+    "titre": "Three meats minimum",
+    "detail": "A hochepot only works as a mixture: beef for body, pork for fat, mutton for flavour."
+   },
+   {
+    "titre": "Start in cold water",
+    "detail": "All the meats together, brought up gently: in hot water they seize and the broth stays thin."
+   },
+   {
+    "titre": "Skim for 20 minutes",
+    "detail": "Relentlessly, until the grey foam stops rising: after that it is too late."
+   },
+   {
+    "titre": "Two hours before the vegetables",
+    "detail": "The meats need that time alone; the vegetables would be mush if they started with them."
+   },
+   {
+    "titre": "Vegetables by hardness",
+    "detail": "Turnip and carrot first, cabbage and leek 40 minutes later, potatoes for the last 25."
+   },
+   {
+    "titre": "Shake, don't stir",
+    "detail": "Take the handles and shake the pot: a spoon would break the vegetables and cloud the broth."
+   },
+   {
+    "titre": "Two courses",
+    "detail": "The broth first, in a deep plate with toast. Meats and vegetables after, on a platter."
+   }
+  ]
+ },
+ "estofinado": {
+  "nom": "Estofinado",
+  "description": "The stockfish of Aveyron, beaten with walnut oil like a brandade. Dried fish travelled up the Garonne from Bordeaux — which is how a salt-cod dish became the speciality of a landlocked département.",
+  "etapes": [
+   {
+    "titre": "Three days of soaking",
+    "detail": "True stockfish is dried HARD as wood: 72 hours with the water changed morning and evening, no less."
+   },
+   {
+    "titre": "Poach without boiling",
+    "detail": "Trembling water for 20 minutes: at a rolling boil the flesh shreds into dry threads."
+   },
+   {
+    "titre": "Flake by hand",
+    "detail": "Skin and bones removed one by one with your fingertips — a knife would miss the small pin bones."
+   },
+   {
+    "titre": "Crush the potatoes hot",
+    "detail": "With a fork, never a blender: released starch would make the dish rubbery."
+   },
+   {
+    "titre": "WALNUT oil",
+    "detail": "The Aveyron signature: olive oil would give a completely different, Mediterranean dish."
+   },
+   {
+    "titre": "Beat like a brandade",
+    "detail": "Warm oil poured in a thread while working with a wooden spoon, to a supple glossy texture."
+   },
+   {
+    "titre": "Egg and parsley",
+    "detail": "Hard-boiled eggs and parsley crushed in at the end, generously. Served SCALDING, with country bread."
+   }
+  ]
+ },
+ "farcipoitevin": {
+  "nom": "Farci Poitevin",
+  "description": "A green loaf from Poitou: kilos of chopped herbs bound with egg, wrapped in cabbage leaves and simmered in broth. It is eaten COLD in slices — the Easter dish, and one of the rare entirely vegetable terrines.",
+  "etapes": [
+   {
+    "titre": "Far more greens than you think",
+    "detail": "The herbs shrink by three quarters: what looks enormous raw barely fills a terrine once cooked."
+   },
+   {
+    "titre": "Blanch the cabbage leaves",
+    "detail": "3 minutes, then iced water: supple, they roll without cracking; raw, they tear."
+   },
+   {
+    "titre": "Chop by knife",
+    "detail": "A blender makes green water: you need a coarse chop to keep some bite."
+   },
+   {
+    "titre": "Squeeze hard",
+    "detail": "Blanched herbs wrung out by hand until nothing drips — otherwise the farci will never set."
+   },
+   {
+    "titre": "Eggs bind everything",
+    "detail": "Roughly one egg per person: the only binder, a true farci has no bread and no flour."
+   },
+   {
+    "titre": "Wrap tight",
+    "detail": "Line a cloth with cabbage leaves, fill, close and tie like a roast."
+   },
+   {
+    "titre": "Two hours in broth",
+    "detail": "Trembling, never boiling. Cooled overnight under a weight, it slices cleanly."
+   }
+  ]
+ },
+ "caillettes": {
+  "nom": "Ardèche Caillettes",
+  "description": "Ardèche meatballs where greens outweigh the meat: two thirds chard to one third pork. A poor man's charcuterie turned regional signature — and far lighter than it looks.",
+  "etapes": [
+   {
+    "titre": "Two thirds greens",
+    "detail": "That is the rule: the meat is only a binder. A mostly-meat caillette is not a caillette."
+   },
+   {
+    "titre": "Chard squeezed dry",
+    "detail": "Blanched then pressed until nothing drips: water would burst the balls."
+   },
+   {
+    "titre": "Only a little liver",
+    "detail": "30 g is enough: it gives depth, but would dominate everything beyond that."
+   },
+   {
+    "titre": "Mince, don't blend",
+    "detail": "Medium plate: a caillette should stay rustic, you should recognise what you are eating."
+   },
+   {
+    "titre": "Roll with wet hands",
+    "detail": "8 cm balls packed firm, set close together in a greased baking dish."
+   },
+   {
+    "titre": "Caul fat, if you find it",
+    "detail": "It holds and bastes them; failing that, a thin sheet of back fat or nothing at all will do."
+   },
+   {
+    "titre": "One hour at 170°C",
+    "detail": "Basted with their own fat every 20 minutes. Eaten warm or cold, never scalding."
+   }
+  ]
+ },
+ "pochouse": {
+  "nom": "Pochouse",
+  "description": "The Burgundian matelote made with WHITE wine, river fish and nothing else. Its historic rule: four fish, one of which must be eel — the eel is what gives the broth its body.",
+  "etapes": [
+   {
+    "titre": "Four river fish",
+    "detail": "Pike, eel, carp, perch: variety makes a pochouse, one fish alone gives a flat soup."
+   },
+   {
+    "titre": "Eel is compulsory",
+    "detail": "Its fat and gelatine bind the broth naturally — without it the sauce stays watery."
+   },
+   {
+    "titre": "White wine, never red",
+    "detail": "That is what separates pochouse from meurette: Aligoté or white Burgundy, dry and sharp."
+   },
+   {
+    "titre": "Add by cooking time",
+    "detail": "Eel and carp first (12 min), pike and perch 6 minutes later: they do not cook alike."
+   },
+   {
+    "titre": "Never let it boil",
+    "detail": "A tremble only: at a rolling boil the flesh falls apart and the broth clouds."
+   },
+   {
+    "titre": "Thicken with beurre manié",
+    "detail": "Butter and flour kneaded cold, whisked in off the heat in small pieces."
+   },
+   {
+    "titre": "Garlic croutons",
+    "detail": "Rubbed with raw garlic and put in the bowl BEFORE the broth, so they soak."
+   }
+  ]
+ },
+ "croutemorilles": {
+  "nom": "Morel Croûte",
+  "description": "A disarmingly simple starter from the Jura: creamed morels on toast. Everything hangs on the mushrooms' SOAKING WATER — throwing it away means throwing away three quarters of the flavour.",
+  "etapes": [
+   {
+    "titre": "Rehydrate in WARM water",
+    "detail": "45 minutes at 40°C: boiling water would cook the morels, cold water would not wake them."
+   },
+   {
+    "titre": "Keep the soaking water",
+    "detail": "It is the real stock here: strain it through a fine sieve or a coffee filter to remove the grit."
+   },
+   {
+    "titre": "Rinse the morels separately",
+    "detail": "Their honeycomb holds soil: three changes of water, squeezing gently each time."
+   },
+   {
+    "titre": "Reduce the soaking water",
+    "detail": "By three quarters, almost to a syrup: that concentrate gives the sauce its power."
+   },
+   {
+    "titre": "Vin jaune off the heat",
+    "detail": "Added at the end: boiled, it loses its characteristic nutty taste and only alcohol remains."
+   },
+   {
+    "titre": "Cream last",
+    "detail": "It must not boil more than 2 minutes, just enough to coat the back of a spoon."
+   },
+   {
+    "titre": "Toast with Comté",
+    "detail": "Thick slices toasted, grated Comté melted on top, morels spooned over. Immediately."
+   }
+  ]
+ },
+ "fleischnacka": {
+  "nom": "Fleischnacka",
+  "description": "Alsatian \"meat snails\": noodle dough rolled around leftover boiled beef, sliced and pan-fried. Pure recycling — and the best known way to finish a pot-au-feu.",
+  "etapes": [
+   {
+    "titre": "ALREADY-cooked meat",
+    "detail": "That is the whole point: leftover pot-au-feu or boiled beef, chopped with its onion and parsley."
+   },
+   {
+    "titre": "A rich noodle dough",
+    "detail": "Plenty of egg to little flour: it should be supple and yellow, like a thick spätzle dough."
+   },
+   {
+    "titre": "Rest 30 minutes",
+    "detail": "Without a rest it shrinks back under the pin and tears as soon as you roll it thin."
+   },
+   {
+    "titre": "Roll very thin",
+    "detail": "2 mm: that is what gives five or six turns of spiral per snail."
+   },
+   {
+    "titre": "Roll tight",
+    "detail": "Filling spread to within 2 cm of the edge, rolled tightly: air in the roll and it unwinds while cooking."
+   },
+   {
+    "titre": "Slice at 2 cm",
+    "detail": "With a sharp knife, without crushing — a dull knife flattens the spiral."
+   },
+   {
+    "titre": "Brown THEN moisten",
+    "detail": "Fried in butter 3 minutes a side, then stock halfway up and 20 minutes covered."
+   }
+  ]
+ },
+ "mojettes": {
+  "nom": "Buttered Mogettes",
+  "description": "The white bean of the Vendée, boiled and finished with salted butter. Three ingredients, no technique — proof that a properly cooked bean needs nothing else to be a dish.",
+  "etapes": [
+   {
+    "titre": "Fresh mogettes if you can",
+    "detail": "Picked semi-dry in September, they need no soaking and cook in 40 minutes."
+   },
+   {
+    "titre": "Otherwise soak 12 hours",
+    "detail": "Cold water, never hot: hot water cooks the skin, which then seals the centre off."
+   },
+   {
+    "titre": "NO salt at the start",
+    "detail": "Salt hardens the skin: added early, the beans stay firm whatever you do."
+   },
+   {
+    "titre": "A tremble, never a boil",
+    "detail": "At a rolling boil the skins burst and come off: you get grey mush."
+   },
+   {
+    "titre": "One hour covered",
+    "detail": "They must crush between two fingers with no resistance. An almost-cooked bean is inedible."
+   },
+   {
+    "titre": "Salt at the END",
+    "detail": "In the last 10 minutes, once the skin is already tender."
+   },
+   {
+    "titre": "Finish with salted butter",
+    "detail": "Off the heat, stirring: the butter binds the cooking juices and coats every bean. That is the whole dish."
+   }
+  ]
+ },
+ "tarteoignonalsacienne": {
+  "nom": "Alsatian Onion Tart",
+  "description": "The Alsatian Zewelwaï: a kilo of onions melted for an hour, bound with cream on thin pastry. The whole recipe is PATIENCE — a rushed onion stays sharp, a melted one turns sweet.",
+  "etapes": [
+   {
+    "titre": "Far more onions than you think",
+    "detail": "They lose two thirds of their volume: two large onions per person is not too much."
+   },
+   {
+    "titre": "Slice thin and even",
+    "detail": "Uneven slices cook unevenly: the thin ones burn before the thick ones melt."
+   },
+   {
+    "titre": "One hour over low heat",
+    "detail": "COVERED, without colouring: you want meltingness and sugar, not browning."
+   },
+   {
+    "titre": "Let it cool",
+    "detail": "Hot onions plus eggs equals scrambled egg in the tart. Wait until you can put a finger in."
+   },
+   {
+    "titre": "A spoon of flour",
+    "detail": "In the custard: it absorbs the water the onions will still release while baking."
+   },
+   {
+    "titre": "Blind-bake the base",
+    "detail": "12 minutes: without it, a filling this wet would soak the pastry for certain."
+   },
+   {
+    "titre": "35 minutes at 190°C",
+    "detail": "The surface should be pale gold and wobbling in the centre. Eaten WARM, never scalding."
+   }
+  ]
+ },
+ "kougelhopfsale": {
+  "nom": "Savoury Kougelhopf",
+  "description": "The aperitif version of the Alsatian cake: bacon and walnuts instead of raisins and sugar. Served WARM in thick slices with a glass of white wine — the Sunday aperitif in Alsace.",
+  "etapes": [
+   {
+    "titre": "A brioche dough",
+    "detail": "Rich in butter and eggs, but with NO sugar: the only real difference from the sweet kouglof."
+   },
+   {
+    "titre": "Two rises, compulsory",
+    "detail": "1 h 30 in the bowl then 1 h in the mould: a single rise gives a tight, heavy crumb."
+   },
+   {
+    "titre": "Bacon fried and DRAINED",
+    "detail": "Its fat would collapse the dough: add it cold and dry, at the end of kneading."
+   },
+   {
+    "titre": "Walnuts in the mould",
+    "detail": "One per flute: they end up in relief on top once turned out — the signature."
+   },
+   {
+    "titre": "Butter every flute",
+    "detail": "With a brush, meticulously: a badly buttered mould and the kougelhopf sticks, with no fixing it."
+   },
+   {
+    "titre": "45 minutes at 180°C",
+    "detail": "Cover with foil halfway: the crown browns far faster than the centre cooks."
+   },
+   {
+    "titre": "Turn out warm",
+    "detail": "5 minutes' wait, no more: hot it breaks, cold it sticks."
+   }
+  ]
+ },
+ "bibeleskaes": {
+  "nom": "Bibeleskaes",
+  "description": "Alsatian whipped fromage blanc with herbs, served with jacket potatoes. The secret is beating it AT LENGTH: an under-whipped bibeleskaes stays grainy and weeps water on the plate.",
+  "etapes": [
+   {
+    "titre": "DRAINED fromage blanc",
+    "detail": "In a faisselle, left 2 h in a sieve: runny fromage blanc gives a puddle, not a spread."
+   },
+   {
+    "titre": "Beat for 3 minutes",
+    "detail": "With a whisk, hard: that breaks the curd and gives the smooth airy texture."
+   },
+   {
+    "titre": "Rinsed shallot",
+    "detail": "Finely chopped and rinsed in cold water: raw and unrinsed, it dominates and turns aggressive."
+   },
+   {
+    "titre": "Herbs snipped at the last minute",
+    "detail": "Chives and parsley cut just before: chopped ahead, they blacken and lose their perfume."
+   },
+   {
+    "titre": "Half a clove of garlic, no more",
+    "detail": "Crushed to a paste with the salt: bibeleskaes is a mild preparation, garlic should only be sensed."
+   },
+   {
+    "titre": "One hour chilled",
+    "detail": "The herbs need that time to flavour the cheese. Served immediately, it tastes of nothing."
+   },
+   {
+    "titre": "Hot potatoes",
+    "detail": "In their skins, scalding, crushed with a fork into the cold cheese. The contrast is the dish."
+   }
+  ]
+ },
+ "mannele": {
+  "nom": "Mannele",
+  "description": "The little brioche men of Alsatian Saint Nicholas, given to children on 6 December. Their dough is less rich than brioche: it has to hold the figure's shape without slumping in the oven.",
+  "etapes": [
+   {
+    "titre": "Less butter than brioche",
+    "detail": "25 % of the flour weight instead of 50: too rich and the man spreads and loses his arms."
+   },
+   {
+    "titre": "First rise in the fridge",
+    "detail": "Overnight: cold dough shapes far more cleanly than warm slack dough."
+   },
+   {
+    "titre": "Shape the man",
+    "detail": "A log, a pinched ball for the head, two cuts for arms, two for legs."
+   },
+   {
+    "titre": "DEEP cuts",
+    "detail": "They close by two thirds as it proves: timid cuts give you a man with no arms."
+   },
+   {
+    "titre": "Eyes last",
+    "detail": "Two raisins PUSHED IN after the egg wash, or they fall out while baking."
+   },
+   {
+    "titre": "Glaze twice",
+    "detail": "Once before proving, once just before the oven: that is what gives the deep shine."
+   },
+   {
+    "titre": "Short bake",
+    "detail": "12 minutes at 180°C only: they are small, one minute more and they are dry."
+   }
+  ]
+ },
+ "berawecka": {
+  "nom": "Berawecka",
+  "description": "The Alsatian Christmas \"pear bread\": almost ENTIRELY dried fruit, barely held together by dough. It macerates for three days in kirsch and keeps for weeks — a confection disguised as bread.",
+  "etapes": [
+   {
+    "titre": "Dried pears first",
+    "detail": "The ingredient that gives the bread its name: they should be a third of the fruit."
+   },
+   {
+    "titre": "Rehydrate in warm water",
+    "detail": "2 hours: hard fruit would tear the dough and stay leathery after baking."
+   },
+   {
+    "titre": "Three days of maceration",
+    "detail": "Fruit drained, diced and doused in kirsch, covered: this is where all the perfume is built."
+   },
+   {
+    "titre": "Very little dough",
+    "detail": "Berawecka is 90 % fruit: the dough is only cement, you should barely see it."
+   },
+   {
+    "titre": "Mix by hand",
+    "detail": "The mixture is very thick and very sticky: no machine will manage it without crushing the fruit."
+   },
+   {
+    "titre": "Shape small loaves",
+    "detail": "20 cm logs packed firm, brushed with kirsch: that gives the glossy crust."
+   },
+   {
+    "titre": "Gentle, long bake",
+    "detail": "1 hour at 160°C: in a hot oven the surface fruit burns before the centre is cooked."
+   }
+  ]
+ },
+ "saintgenix": {
+  "nom": "Saint-Genix Brioche",
+  "description": "The Savoyard brioche studded with PINK PRALINES, recognisable by its red-flecked crust. The trap: pralines melt and burn — the ones on top must go on at the very last moment.",
+  "etapes": [
+   {
+    "titre": "CRUSHED pralines",
+    "detail": "In large shards, not powder: powder tints the whole crumb a dirty pink and disappears."
+   },
+   {
+    "titre": "Keep the dough cold",
+    "detail": "Taken from the fridge to be filled: in warm dough the pralines melt before the oven."
+   },
+   {
+    "titre": "Fold in, don't knead",
+    "detail": "Pralines folded in with three turns only: kneaded, they pulverise and colour everything."
+   },
+   {
+    "titre": "Keep them central",
+    "detail": "The ones on top burn: put only a handful on the surface, and at the last minute."
+   },
+   {
+    "titre": "Second rise in the tin",
+    "detail": "1 h 30: the brioche should fill three quarters of the tin before baking."
+   },
+   {
+    "titre": "Moderate oven",
+    "detail": "35 minutes at 165°C, no hotter: praline sugar caramelises fast and turns bitter."
+   },
+   {
+    "titre": "Cover halfway",
+    "detail": "A sheet of foil laid on as soon as the surface is golden protects the pralines on top."
+   }
+  ]
+ },
+ "flamusse": {
+  "nom": "Apple Flamusse",
+  "description": "The Burgundian apple clafoutis, with no pastry and no butter in the batter. Five ingredients, one bowl, one fork — the pudding you make when there is nothing left and the meal still needs an ending.",
+  "etapes": [
+   {
+    "titre": "SHARP apples",
+    "detail": "Reinette or Boskoop: a sweet apple vanishes entirely into the sugar of the batter."
+   },
+   {
+    "titre": "Thick slices",
+    "detail": "5 mm: thinner and they melt away leaving only custard; thicker and they stay raw."
+   },
+   {
+    "titre": "Butter and sugar the dish",
+    "detail": "Sugar in the base caramelises and forms a thin crust that stops it sticking."
+   },
+   {
+    "titre": "Mix without beating",
+    "detail": "With a fork, just to combine: froth in the batter makes it rise then collapse."
+   },
+   {
+    "titre": "Rest 20 minutes",
+    "detail": "The flour hydrates and the bubbles rise: the flamusse comes out smoother and denser."
+   },
+   {
+    "titre": "Apples packed in the base",
+    "detail": "In a tight rosette, batter poured over: the apples should just break the surface, not swim."
+   },
+   {
+    "titre": "40 minutes at 180°C",
+    "detail": "It should be golden and barely wobbling. Eaten WARM, dusted with sugar."
+   }
+  ]
+ },
+ "gouere": {
+  "nom": "Apple Gouère",
+  "description": "The Berry apple cake, halfway between a custard and a sponge. Its quirk: the batter is made DIRECTLY in the dish, by hand — no bowl to wash.",
+  "etapes": [
+   {
+    "titre": "Everything in the dish",
+    "detail": "Flour, sugar, eggs and melted butter mixed by hand straight in the buttered dish: that is the tradition."
+   },
+   {
+    "titre": "Fromage blanc is the signature",
+    "detail": "It brings acidity and softness: without it this is just an ordinary apple cake."
+   },
+   {
+    "titre": "Apples in large wedges",
+    "detail": "Cut thick: they must stay recognisable under the batter, not melt into purée."
+   },
+   {
+    "titre": "Bury the apples",
+    "detail": "Pushed into the batter rather than set on top: that gives the half-custard half-cake texture."
+   },
+   {
+    "titre": "Sugar the surface",
+    "detail": "A spoonful scattered before baking: it forms a thin crisp crust."
+   },
+   {
+    "titre": "45 minutes at 180°C",
+    "detail": "A blade should come out damp but clean: overbaked, a gouère loses all its softness."
+   },
+   {
+    "titre": "Wait for warm",
+    "detail": "Hot, it collapses when cut; cold, it hardens. Warm is the only right moment."
+   }
+  ]
+ },
+ "oreillettes": {
+  "nom": "Oreillettes",
+  "description": "The Carnival fritters of southern France, stretched until TRANSPARENT before frying. Thinness is everything: a thick oreillette is a failed one, you should be able to read through it.",
+  "etapes": [
+   {
+    "titre": "A supple smooth dough",
+    "detail": "Kneaded 10 minutes: it must be elastic like bread dough, or it will refuse to stretch."
+   },
+   {
+    "titre": "Two hours' rest",
+    "detail": "Essential: the gluten relaxes and the dough becomes obedient. Without it, it springs back at every pass."
+   },
+   {
+    "titre": "Roll until transparent",
+    "detail": "With a pin then BY HAND, pulling gently: you should be able to make out your fingers through it."
+   },
+   {
+    "titre": "Rectangles with a slit",
+    "detail": "A cut in the middle through which one corner is threaded: that gives the twisted shape."
+   },
+   {
+    "titre": "Oil at 170°C, no hotter",
+    "detail": "Too hot and they brown in 10 seconds without puffing; too cool and they drink the fat."
+   },
+   {
+    "titre": "30 seconds a side",
+    "detail": "They puff and turn gold almost instantly: never take your eyes off the pan."
+   },
+   {
+    "titre": "Icing sugar while hot",
+    "detail": "Dusted straight out, on kitchen paper: cold, the sugar no longer clings."
+   }
+  ]
+ },
+ "fenetra": {
+  "nom": "Fénétra",
+  "description": "The forgotten cake of Toulouse: shortcrust, apricots, candied lemon and almond meringue. Its real difficulty is the order of layers — the apricot jam MUST seal the pastry from the wet filling.",
+  "etapes": [
+   {
+    "titre": "Blind-bake the base",
+    "detail": "15 minutes under weights: it is the foundation, a soft base ruins the whole cake."
+   },
+   {
+    "titre": "Jam as a barrier",
+    "detail": "A thin layer spread on the still-warm pastry: it waterproofs and prevents sogginess."
+   },
+   {
+    "titre": "Candied lemon is the signature",
+    "detail": "In tiny dice: it is what separates a fénétra from a plain apricot cake."
+   },
+   {
+    "titre": "Apricots poached and DRAINED",
+    "detail": "An hour on a rack: too much juice and the almond meringue will never set."
+   },
+   {
+    "titre": "Almond meringue",
+    "detail": "Whites whipped stiff then ground almonds FOLDED in: whisked, they collapse the whites."
+   },
+   {
+    "titre": "Spread without packing",
+    "detail": "With a spatula, in light waves: packed down, the meringue turns dense and rubbery."
+   },
+   {
+    "titre": "Gentle bake",
+    "detail": "30 minutes at 160°C: the meringue should dry and pale-gold, not colour. Eaten COLD."
+   }
+  ]
+ },
+ "paillassonpdt": {
+  "nom": "Potato Paillasson",
+  "description": "The Lyonnais grated potato cake, crisp outside and melting inside. There is NO egg and NO flour: the potato's own starch binds it, provided you don't rinse it.",
+  "etapes": [
+   {
+    "titre": "Waxy potatoes",
+    "detail": "A floury potato falls apart: you need Charlotte or Amandine, which hold together."
+   },
+   {
+    "titre": "NEVER rinse",
+    "detail": "The sticky starch is the paillasson's only binder: rinsed, it won't hold and will fall apart in the pan."
+   },
+   {
+    "titre": "Squeeze hard",
+    "detail": "Grated, wrung in a cloth until nothing drips: water prevents crisping."
+   },
+   {
+    "titre": "Salt at the last second",
+    "detail": "Salt draws out water: salted early, the paillasson releases juice and boils instead of frying."
+   },
+   {
+    "titre": "Press firmly into the pan",
+    "detail": "A 1.5 cm layer pressed with a spatula: too thick and the centre stays raw."
+   },
+   {
+    "titre": "10 minutes untouched",
+    "detail": "Over medium heat: the crust needs time, every poke breaks it."
+   },
+   {
+    "titre": "Flip onto a plate",
+    "detail": "Slid onto a plate, flipped back into the pan with fresh butter, 8 minutes more."
+   }
+  ]
+ },
+ "pommesfondantes": {
+  "nom": "Fondant Potatoes",
+  "description": "Potato cylinders browned in a pan then confited in stock until it is fully absorbed. The bistro technique par excellence: the liquid DISAPPEARS into the potato instead of drowning it.",
+  "etapes": [
+   {
+    "titre": "Cut even cylinders",
+    "detail": "5 cm tall, with a cutter or knife: uniformity is what guarantees even cooking."
+   },
+   {
+    "titre": "Dry them perfectly",
+    "detail": "Blotted with a cloth: a damp potato won't colour, it blanches in the butter."
+   },
+   {
+    "titre": "Brown both faces",
+    "detail": "Foaming butter, 4 minutes a side over medium-high heat: aim for deep brown, not gold."
+   },
+   {
+    "titre": "Garlic in its skin and thyme",
+    "detail": "Crushed with your fist into the pan: they flavour the stock through the whole confit."
+   },
+   {
+    "titre": "Stock HALFWAY up",
+    "detail": "Never more: the top must stay dry and keep roasting while the bottom confits."
+   },
+   {
+    "titre": "30 minutes covered",
+    "detail": "Low heat, never stirring: the liquid should be entirely absorbed by the end."
+   },
+   {
+    "titre": "Baste at the end",
+    "detail": "The remaining stock, now a syrup, spooned over: the final glaze."
+   }
+  ]
+ },
+ "pureepanais": {
+  "nom": "Parsnip Purée",
+  "description": "A white purée tasting of hazelnut and aniseed, far more fragrant than potato. Parsnip is very sweet: that is why it is cooked in MILK rather than water, which would wash the flavour away.",
+  "etapes": [
+   {
+    "titre": "Remove the core of large parsnips",
+    "detail": "The centre turns woody and fibrous with age: it will never mash."
+   },
+   {
+    "titre": "Cook in MILK",
+    "detail": "Never in water: the parsnip would lose all its sugar and the purée would be bland and watery."
+   },
+   {
+    "titre": "One third potato",
+    "detail": "It provides structure: parsnip alone gives a purée that runs and won't hold on a spoon."
+   },
+   {
+    "titre": "Watch the milk",
+    "detail": "It catches and boils over very fast: low heat, wide pan, and don't walk away."
+   },
+   {
+    "titre": "Ricer, not blender",
+    "detail": "A blender bursts the potato starch and turns everything into elastic glue."
+   },
+   {
+    "titre": "Cold diced butter",
+    "detail": "Beaten in off the heat, piece by piece: that gives the gloss and the silkiness."
+   },
+   {
+    "titre": "Generous nutmeg",
+    "detail": "It underlines the parsnip's hazelnut note — the only seasoning it needs."
+   }
+  ]
+ },
+ "carottesglacees": {
+  "nom": "Glazed Carrots",
+  "description": "The classic garnish of the French repertoire: carrots cooked in just enough water for it to evaporate into a syrup. The move is called \"glazing white\" and it is one of the very first taught in a kitchen.",
+  "etapes": [
+   {
+    "titre": "Cut evenly",
+    "detail": "In thick rounds or turned into olive shapes: uneven cuts give raw carrots next to mush."
+   },
+   {
+    "titre": "A single layer",
+    "detail": "A wide pan: stacked, they steam and will never glaze."
+   },
+   {
+    "titre": "Water HALFWAY up",
+    "detail": "No more, no less: too much water means evaporating too long and the carrots collapse."
+   },
+   {
+    "titre": "Butter, sugar and salt from the start",
+    "detail": "All together from cold: the sugar is not there to sweeten but to form the glossy syrup."
+   },
+   {
+    "titre": "A paper lid",
+    "detail": "A disc of baking paper laid directly on the carrots: it lets just enough steam escape."
+   },
+   {
+    "titre": "Watch the end",
+    "detail": "Once the water is nearly gone it happens fast: 30 seconds of inattention and the syrup caramelises."
+   },
+   {
+    "titre": "Roll in the syrup",
+    "detail": "A flick of the wrist, no spoon: every carrot should be lacquered and shining."
+   }
+  ]
+ },
+ "rizpilaf": {
+  "nom": "Rice Pilaf",
+  "description": "The rice of the classic French repertoire, pearled in butter before being moistened and baked IN THE OVEN without ever being stirred. The rule is arithmetic: one measure of rice to one and a half of stock, not a drop more.",
+  "etapes": [
+   {
+    "titre": "Do NOT rinse the rice",
+    "detail": "Unlike plain boiled rice: here you want the surface starch, it provides the binding."
+   },
+   {
+    "titre": "Onion softened without colour",
+    "detail": "5 minutes in butter over low heat: browned, it would give beige rice instead of pearly."
+   },
+   {
+    "titre": "Pearl the rice",
+    "detail": "2 minutes stirring until the grains turn translucent at the edges. The key step."
+   },
+   {
+    "titre": "BOILING stock",
+    "detail": "Poured in hot all at once: cold stock stops the cooking and the rice turns sticky."
+   },
+   {
+    "titre": "In the oven, not on the hob",
+    "detail": "18 minutes at 180°C covered: the surrounding heat cooks evenly, a burner scorches the base."
+   },
+   {
+    "titre": "Never stir",
+    "detail": "Not once, not even to look: every stir breaks the grains and releases starch."
+   },
+   {
+    "titre": "Fluff with a fork",
+    "detail": "5 minutes' rest covered, then aerated with a fork and a knob of butter."
+   }
+  ]
+ },
+ "flaki": {
+  "nom": "Flaki",
+  "description": "The Polish tripe soup, thick and peppery, served with marjoram and paprika. It has a reputation as Warsaw's best hangover cure — and four hours of cooking has something to do with it.",
+  "etapes": [
+   {
+    "titre": "Clean at length",
+    "detail": "Tripe is scrubbed with coarse salt and vinegar and rinsed five times: tedious and non-negotiable."
+   },
+   {
+    "titre": "A first blanching",
+    "detail": "10 minutes in boiling water, water discarded: that broth is cloudy and strong, it is not kept."
+   },
+   {
+    "titre": "Three hours of cooking",
+    "detail": "At a tremble: the tripe should turn tender to the bite, not rubbery."
+   },
+   {
+    "titre": "Slice AFTER cooking",
+    "detail": "Into 5 mm strips: cut raw, they curl and toughen."
+   },
+   {
+    "titre": "Vegetables in julienne",
+    "detail": "Added for the last hour only: any earlier and they vanish completely."
+   },
+   {
+    "titre": "Thicken with a blond roux",
+    "detail": "Butter and flour cooked 3 minutes, let down with hot broth: flaki should coat the spoon."
+   },
+   {
+    "titre": "Generous marjoram",
+    "detail": "Crushed between the fingers off the heat: THE flavour of flaki, without it this is another dish."
+   }
+  ]
+ },
+ "salatadeboeuf": {
+  "nom": "Salată de Boeuf",
+  "description": "Romania's festive salad: boiled beef and vegetables in tiny dice, bound with mayonnaise and smoothed like a cake. It is DECORATED — a savoury centrepiece, not a bowl you plonk on the table.",
+  "etapes": [
+   {
+    "titre": "EVERYTHING in 5 mm dice",
+    "detail": "The only real difficulty: random sizes ruin the texture, regularity is everything."
+   },
+   {
+    "titre": "Boiled beef, never roast",
+    "detail": "Leftover pot-au-feu is ideal: roast meat is too dry and won't take up the mayonnaise."
+   },
+   {
+    "titre": "Vegetables cooked FIRM",
+    "detail": "An overcooked vegetable turns to purée the moment you stir: better slightly crisp."
+   },
+   {
+    "titre": "Everything cold and dry",
+    "detail": "Warm or damp vegetables split the mayonnaise within hours."
+   },
+   {
+    "titre": "Gherkins separately",
+    "detail": "Squeezed in a cloth before adding: their brine would liquefy the whole salad."
+   },
+   {
+    "titre": "Smooth it like a cake",
+    "detail": "Packed into a dish, surface smoothed with a wet spatula: that is what allows decorating."
+   },
+   {
+    "titre": "One night chilled",
+    "detail": "Essential: the flavours marry and the salad firms up enough to be sliced."
+   }
+  ]
+ },
+ "bramboraky": {
+  "nom": "Bramboráky",
+  "description": "Czech potato pancakes with garlic and marjoram, sold scalding hot in Prague's markets. They differ from rösti in the BATTER: here there is egg, flour and a lot of garlic.",
+  "etapes": [
+   {
+    "titre": "Grate very finely",
+    "detail": "On the fine side, almost to a purée: that is what separates a bramborák from a coarsely grated rösti."
+   },
+   {
+    "titre": "Don't over-squeeze",
+    "detail": "Unlike rösti: some water and starch are needed to bind the batter."
+   },
+   {
+    "titre": "Far more garlic than you think",
+    "detail": "Two cloves per person, crushed to a paste: the ingredient that defines the recipe."
+   },
+   {
+    "titre": "Marjoram and caraway",
+    "detail": "The Czech pairing, crushed between the fingers: without them these are just potato pancakes."
+   },
+   {
+    "titre": "A soft batter",
+    "detail": "It should drop from the spoon and spread: too thick and the centre stays raw."
+   },
+   {
+    "titre": "Hot oil, THIN layer",
+    "detail": "5 mm maximum spread with a spoon: crispness is the goal, not fluffiness."
+   },
+   {
+    "titre": "Drain upright",
+    "detail": "On paper, propped against the plate rim: laid flat, the underside goes soggy."
+   }
+  ]
+ },
+ "oliebollen": {
+  "nom": "Oliebollen",
+  "description": "Dutch New Year fritters, sold from stalls on every pavement on 31 December. The batter is LIQUID, not kneaded: you let it rise then drop it into the oil by the spoonful.",
+  "etapes": [
+   {
+    "titre": "A pourable batter",
+    "detail": "Between thick pancake batter and bread dough: it should drop from the spoon, not be rolled."
+   },
+   {
+    "titre": "Raisins soaked in tea",
+    "detail": "1 hour: dry, they draw moisture from the batter and stay hard."
+   },
+   {
+    "titre": "One hour of proving",
+    "detail": "The batter must double and bubble: the yeast gives the softness, not the frying."
+   },
+   {
+    "titre": "Two wet spoons",
+    "detail": "Dipped in the hot oil between each ball, otherwise the batter sticks and the shapes distort."
+   },
+   {
+    "titre": "Exactly 175°C",
+    "detail": "Hotter and the outside browns before the centre cooks; cooler and they drink the oil."
+   },
+   {
+    "titre": "They turn themselves",
+    "detail": "Well-formed balls flip on their own halfway: if they don't, the batter is too heavy."
+   },
+   {
+    "titre": "Icing sugar at the last moment",
+    "detail": "Just before serving: dusted early, the sugar melts and they go sticky."
+   }
+  ]
+ },
+ "blabarssoppa": {
+  "nom": "Blåbärssoppa",
+  "description": "Swedish blueberry \"soup\", DRUNK hot from the bottle during the Vasaloppet ski race. Neither a dessert nor a juice: it is a cross-country skier's energy drink, over a century old.",
+  "etapes": [
+   {
+    "titre": "Wild blueberries if you can",
+    "detail": "Small forest bilberries are three times more fragrant and colourful than cultivated ones."
+   },
+   {
+    "titre": "Cook for only 8 minutes",
+    "detail": "They should burst and release their juice, not candy: beyond that you lose the fresh fruit taste."
+   },
+   {
+    "titre": "Sieve or not",
+    "detail": "Drink version: strain finely. Soup version: keep the whole fruit in the liquid."
+   },
+   {
+    "titre": "Starch slaked COLD",
+    "detail": "Always separately in a little cooled juice: thrown into hot liquid it lumps instantly."
+   },
+   {
+    "titre": "One minute at the boil",
+    "detail": "No more: beyond that the starch breaks down and it goes runny again as it cools."
+   },
+   {
+    "titre": "A squeeze of lemon",
+    "detail": "It wakes up the blueberry, which is sweet and a little flat on its own."
+   },
+   {
+    "titre": "Drunk HOT",
+    "detail": "In a mug, like tea — though it also keeps very well cold in the fridge."
+   }
+  ]
  }
 };

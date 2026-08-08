@@ -3792,4 +3792,42 @@ Object.assign(recettes, {
     ],
     liees: ["gravlax","smorrebrod","saladeolivier"]
   },
+  salatadeboeuf: {
+    dateAjout: "2026-08-07T15:26:00",
+    nom: "Salată de Boeuf",
+    cat: "salades", pays: "roumanie",
+    base: 8,
+    temps: "1 h 30 + repos",
+    niveau: "⭐ Facile",
+    emoji: "🎄",
+    description: "La salade roumaine des fêtes : bœuf bouilli et légumes en tout petits dés, liés à la mayonnaise et lissés comme un gâteau. Elle se DÉCORE — c'est une pièce montée salée, pas un saladier qu'on pose sur la table.",
+    tableauSalatadeboeuf: [
+      { nb: 1, boeuf: "70 g", pommedeterre: "110 g", carotte: "½", petitspois: "40 g", cornichons: "35 g", mayonnaise: "45 g", moutarde: "6 g", citron: "", poivre: "0.6 g", persil: "4 g", oeufs: "" },
+      { nb: 2, boeuf: "140 g", pommedeterre: "220 g", carotte: "1", petitspois: "80 g", cornichons: "70 g", mayonnaise: "90 g", moutarde: "12 g", citron: "", poivre: "1.2 g", persil: "8 g", oeufs: "" },
+      { nb: 3, boeuf: "210 g", pommedeterre: "330 g", carotte: "1½", petitspois: "120 g", cornichons: "105 g", mayonnaise: "135 g", moutarde: "18 g", citron: "", poivre: "1.8 g", persil: "12 g", oeufs: "" },
+      { nb: 4, boeuf: "280 g", pommedeterre: "440 g", carotte: "2", petitspois: "160 g", cornichons: "140 g", mayonnaise: "180 g", moutarde: "24 g", citron: "", poivre: "2.4 g", persil: "16 g", oeufs: "1" },
+      { nb: 5, boeuf: "350 g", pommedeterre: "550 g", carotte: "2½", petitspois: "200 g", cornichons: "175 g", mayonnaise: "225 g", moutarde: "30 g", citron: "1", poivre: "3 g", persil: "20 g", oeufs: "1½" },
+      { nb: 6, boeuf: "420 g", pommedeterre: "660 g", carotte: "3", petitspois: "240 g", cornichons: "210 g", mayonnaise: "270 g", moutarde: "36 g", citron: "1", poivre: "3.6 g", persil: "24 g", oeufs: "1" },
+      { nb: 7, boeuf: "490 g", pommedeterre: "770 g", carotte: "3½", petitspois: "280 g", cornichons: "245 g", mayonnaise: "315 g", moutarde: "42 g", citron: "1", poivre: "4.2 g", persil: "28 g", oeufs: "2" },
+      { nb: 8, boeuf: "560 g", pommedeterre: "880 g", carotte: "4", petitspois: "320 g", cornichons: "280 g", mayonnaise: "360 g", moutarde: "48 g", citron: "1", poivre: "4.8 g", persil: "32 g", oeufs: "2" },
+      { nb: 9, boeuf: "630 g", pommedeterre: "990 g", carotte: "4½", petitspois: "360 g", cornichons: "315 g", mayonnaise: "405 g", moutarde: "54 g", citron: "1", poivre: "5.4 g", persil: "36 g", oeufs: "2" },
+      { nb: 10, boeuf: "700 g", pommedeterre: "1100 g", carotte: "5", petitspois: "400 g", cornichons: "350 g", mayonnaise: "450 g", moutarde: "60 g", citron: "2", poivre: "6 g", persil: "40 g", oeufs: "3" },
+      { nb: 11, boeuf: "770 g", pommedeterre: "1210 g", carotte: "5½", petitspois: "440 g", cornichons: "385 g", mayonnaise: "495 g", moutarde: "66 g", citron: "2", poivre: "6.6 g", persil: "44 g", oeufs: "3" },
+      { nb: 12, boeuf: "840 g", pommedeterre: "1320 g", carotte: "6", petitspois: "480 g", cornichons: "420 g", mayonnaise: "540 g", moutarde: "72 g", citron: "2", poivre: "7.2 g", persil: "48 g", oeufs: "3" },
+      { nb: 13, boeuf: "910 g", pommedeterre: "1430 g", carotte: "6½", petitspois: "520 g", cornichons: "455 g", mayonnaise: "585 g", moutarde: "78 g", citron: "2", poivre: "7.8 g", persil: "52 g", oeufs: "3" },
+      { nb: 14, boeuf: "980 g", pommedeterre: "1540 g", carotte: "7", petitspois: "560 g", cornichons: "490 g", mayonnaise: "630 g", moutarde: "84 g", citron: "2", poivre: "8.4 g", persil: "56 g", oeufs: "4" },
+      { nb: 15, boeuf: "1050 g", pommedeterre: "1650 g", carotte: "7½", petitspois: "600 g", cornichons: "525 g", mayonnaise: "675 g", moutarde: "90 g", citron: "3", poivre: "9 g", persil: "60 g", oeufs: "4½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔲", titre: "TOUT en dés de 5 mm", detail: "C'est la seule vraie difficulté : le hasard des tailles ruine la texture, il faut de la régularité.", badge: null },
+      { icone: "🥩", titre: "Bœuf bouilli, jamais rôti", detail: "Un reste de pot-au-feu est idéal : le rôti est trop sec et ne s'imprègne pas de la mayonnaise.", badge: null },
+      { icone: "🥔", titre: "Légumes cuits FERMES", detail: "Un légume trop cuit se transforme en purée dès qu'on mélange : mieux vaut légèrement croquant.", badge: null },
+      { icone: "💧", titre: "Tout bien froid et sec", detail: "Des légumes tièdes ou humides font trancher la mayonnaise en quelques heures.", badge: null },
+      { icone: "🥒", titre: "Les cornichons à part", detail: "Pressés dans un torchon avant d'être ajoutés : leur saumure liquéfierait toute la salade.", badge: null },
+      { icone: "🎂", titre: "Lisser comme un gâteau", detail: "Tassée dans un plat, surface lissée à la spatule mouillée : c'est ce qui permet de décorer.", badge: null },
+      { icone: "❄️", titre: "Une nuit au frais", detail: "Indispensable : les saveurs se lient et la salade se tient assez pour être tranchée.", badge: null }
+    ],
+    liees: ["saladeolivier","sillsallad","saladepiemontaise"]
+  },
 });
