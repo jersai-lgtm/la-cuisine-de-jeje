@@ -285,6 +285,10 @@ const INGREDIENTS_PRIX = {
   travers:        { prixKg: 12.0, calPer100g: 360,  lipSat: 11,   sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 28 },
   jarret:         { prixKg: 10.0, calPer100g: 200,  lipSat: 5.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 28,   flv: 0, glucides: 0, lipides: 10 },
   joues:          { prixKg: 18.0, calPer100g: 220,  lipSat: 6.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 13 },
+  langue:         { prixKg: 13.0, calPer100g: 224,  lipSat: 5.6,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 16,   flv: 0, glucides: 3.7, lipides: 16 },
+  museau:         { prixKg: 11.0, calPer100g: 180,  lipSat: 4.2,  sucre: 0,    sel: 1.2,  fibres: 0,   prot: 17,   flv: 0, glucides: 0.5, lipides: 12 },
+  tetedeveau:     { prixKg: 14.0, calPer100g: 160,  lipSat: 3.8,  sucre: 0,    sel: 0.3,  fibres: 0,   prot: 18,   flv: 0, glucides: 0, lipides: 10 },
+  tripes:         { prixKg: 9.50, calPer100g: 94,   lipSat: 1.4,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 15,   flv: 0, glucides: 0, lipides: 4 },
   cotelets:       { prixKg: 16.0, calPer100g: 280,  lipSat: 9.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 24,   flv: 0, glucides: 0, lipides: 20 },
   os:             { prixKg: 2.00, calPer100g: 100,  lipSat: 2.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 10,   flv: 0, glucides: 0, lipides: 6 },
   queueboeuf:     { prixKg: 14.0, calPer100g: 270,  lipSat: 8.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 17 },
@@ -1439,6 +1443,7 @@ const INGREDIENTS_LABELS = {
   poiresechee: "🍐 Poires séchées", pralinerose: "🌸 Pralines roses",
   farinechataigne: "🌰 Farine de châtaigne",
   calvados: "🍏 Calvados", eaudevie: "🥃 Eau-de-vie",
+  langue: "👅 Langue de bœuf", museau: "🐄 Museau de bœuf", tetedeveau: "🐄 Tête de veau", tripes: "🐄 Tripes",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==
   oeufs: "🥚 Œufs",  oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",

@@ -107286,5 +107286,1025 @@ window.RECETTES_EN = {
     "detail": "10 minutes at 210°C to make it rise, then 20 minutes at 170°C to dry without burning."
    }
   ]
+ },
+ "rabodetoro": {
+  "nom": "Rabo de Toro",
+  "description": "The oxtail of Córdoba, braised four hours in red wine until it falls off the bone. Traditionally served after the bullfight — and the only way to tenderise the hardest-working cut on the animal.",
+  "etapes": [
+   {
+    "titre": "Thick sections",
+    "detail": "Cut at the joints: every piece must keep its central bone, that is where the gelatine comes from."
+   },
+   {
+    "titre": "Flour then brown",
+    "detail": "Each face browned without hurrying: the only colouring in the dish, it makes the whole colour of the sauce."
+   },
+   {
+    "titre": "A full-bodied red",
+    "detail": "A Rioja or Montilla: a light wine would vanish entirely in four hours of reduction."
+   },
+   {
+    "titre": "Burn off the alcohol",
+    "detail": "Or reduce uncovered for 10 minutes: otherwise the sauce keeps an alcoholic bitterness beyond rescue."
+   },
+   {
+    "titre": "Smoked pimentón, not sweet",
+    "detail": "The Andalusian signature: sweet paprika gives a correct dish with no identity."
+   },
+   {
+    "titre": "Four hours, covered",
+    "detail": "The meat must come away by itself. At three hours it still resists — you have to hold out."
+   },
+   {
+    "titre": "Cool overnight",
+    "detail": "The fat sets and lifts off with a spoon, and the sauce tastes far cleaner."
+   }
+  ]
+ },
+ "caldogallego": {
+  "nom": "Caldo Gallego",
+  "description": "The Galician soup of white beans, turnip tops and pork, eaten daily in the countryside. Its flavour comes from one ingredient: LACÓN, salted pork shoulder, which replaces the salt in the recipe.",
+  "etapes": [
+   {
+    "titre": "Desalt the lacón",
+    "detail": "24 hours with the water changed three times: this is VERY salty meat, and the soup is never salted afterwards."
+   },
+   {
+    "titre": "Beans and meat together",
+    "detail": "Starting in cold water: the beans take up the fat and smoke of the meat from the outset."
+   },
+   {
+    "titre": "NO salt before the end",
+    "detail": "Lacón and chorizo bring plenty: salted along the way, the caldo becomes inedible."
+   },
+   {
+    "titre": "Grelos, or green cabbage",
+    "detail": "These Galician turnip tops are bitter: green cabbage or French turnip tops do the job."
+   },
+   {
+    "titre": "Cabbage for the last half hour",
+    "detail": "Any earlier and it disappears, leaving a sulphurous note through the whole pot."
+   },
+   {
+    "titre": "Half-crush the potatoes",
+    "detail": "A few pressed against the side: they thicken the broth without any added flour."
+   },
+   {
+    "titre": "Better the next day",
+    "detail": "Like every dried-pulse soup: caldo is made the day before and reheated."
+   }
+  ]
+ },
+ "arrozabanda": {
+  "nom": "Arroz a Banda",
+  "description": "The fishermen's rice of Alicante, cooked in a powerful fish stock — but served WITHOUT the fish, which is eaten separately. \"A banda\" means \"on the side\": that is the whole point of the dish.",
+  "etapes": [
+   {
+    "titre": "A rock-fish stock",
+    "detail": "Heads and bones simmered 30 minutes MAXIMUM: beyond that any fish stock turns bitter."
+   },
+   {
+    "titre": "Strain twice",
+    "detail": "Sieve then muslin: a cloudy stock gives gritty rice and a dirty colour."
+   },
+   {
+    "titre": "Sofrito, at length",
+    "detail": "Tomato, garlic and pepper reduced 25 minutes to a dark jam: the base of all the flavour."
+   },
+   {
+    "titre": "Pearl the rice in the sofrito",
+    "detail": "2 minutes before the stock: the grains must coat in fat before meeting liquid."
+   },
+   {
+    "titre": "A THIN layer",
+    "detail": "1.5 cm maximum in a wide pan: deep, the rice steams instead of staying separate."
+   },
+   {
+    "titre": "Never stir",
+    "detail": "Not once after the stock goes in: this is what separates Spanish rice from risotto."
+   },
+   {
+    "titre": "Fish served separately",
+    "detail": "With aioli, as a second course: the tradition, and where the dish gets its name."
+   }
+  ]
+ },
+ "allipebre": {
+  "nom": "All i Pebre",
+  "description": "The eel stew of the Valencian Albufera: \"garlic and pepper\", and nothing else. The sauce thickens with pounded ALMONDS, never flour — the region's Arab inheritance.",
+  "etapes": [
+   {
+    "titre": "Eel in thick sections",
+    "detail": "5 cm, skin on: it holds together and provides the gelatine that bodies the sauce."
+   },
+   {
+    "titre": "A lot of garlic, genuinely",
+    "detail": "Two heads for four: the dish is called \"garlic and pepper\", that is not a figure of speech."
+   },
+   {
+    "titre": "Pimentón OFF the heat",
+    "detail": "Added with the pan off: over heat, paprika burns in three seconds and turns irretrievably bitter."
+   },
+   {
+    "titre": "Almond picada",
+    "detail": "Almonds, garlic and fried bread pounded in a mortar: the thickener, and there is no flour in this recipe."
+   },
+   {
+    "titre": "Cracked potatoes",
+    "detail": "Broken off with a knife rather than sliced: the ragged edges release starch."
+   },
+   {
+    "titre": "Potatoes first",
+    "detail": "20 minutes alone: the eel only needs 10 minutes and would fall apart otherwise."
+   },
+   {
+    "titre": "Picada at the end",
+    "detail": "Let down with a ladle of broth and stirred in 5 minutes before the end: the sauce thickens visibly."
+   }
+  ]
+ },
+ "cocarecapte": {
+  "nom": "Coca de Recapte",
+  "description": "The Catalan \"pizza\" with no cheese and no tomato: thin dough covered with GRILLED vegetables and anchovies. It is escalivada on bread — the smoke of the grill is the main ingredient.",
+  "etapes": [
+   {
+    "titre": "Grill the vegetables WHOLE",
+    "detail": "Aubergines and peppers blackened all over: the burnt skin is what gives the smoky flavour."
+   },
+   {
+    "titre": "Trap them 20 minutes",
+    "detail": "In a covered bowl: the steam lifts the skin, which then peels off with your fingertips."
+   },
+   {
+    "titre": "NEVER rinse them",
+    "detail": "Running them under water removes the skin AND all the smoke: you scrape, patiently."
+   },
+   {
+    "titre": "Drain an hour",
+    "detail": "On a rack: their water would soak the dough and the coca would stay soft in the middle."
+   },
+   {
+    "titre": "Very thin dough",
+    "detail": "3 mm, stretched by hand: a coca is a flatbread, not a thick pizza."
+   },
+   {
+    "titre": "Vegetables in strips",
+    "detail": "Torn by hand along the fibres and laid in lines: the Catalan presentation."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "20 minutes at 240°C: you need speed so the dough bakes before the vegetables dry out."
+   }
+  ]
+ },
+ "porrusalda": {
+  "nom": "Porrusalda",
+  "description": "The Basque leek and potato soup, thickened without any tool: you CRACK the potatoes with a knife so they release their starch. Three vegetables, no cream.",
+  "etapes": [
+   {
+    "titre": "The white AND the pale green",
+    "detail": "Two thirds of a leek usually goes in the bin: here you keep everything down to the tender green."
+   },
+   {
+    "titre": "Wash it fanned out",
+    "detail": "Split in four lengthways and run under water: soil lodges between the leaves."
+   },
+   {
+    "titre": "CRACK the potatoes",
+    "detail": "Push in the knife tip and snap them off: the ragged faces release the starch."
+   },
+   {
+    "titre": "Sweat without colouring",
+    "detail": "10 minutes in olive oil over low heat: browned, leek turns the whole soup bitter."
+   },
+   {
+    "titre": "No blender, no cream",
+    "detail": "Porrusalda is a RUSTIC soup: the pieces must stay visible and whole."
+   },
+   {
+    "titre": "25 minutes is enough",
+    "detail": "The potatoes should crush with a fork but keep their shape in the bowl."
+   },
+   {
+    "titre": "Raw oil at serving",
+    "detail": "A thread in every bowl: the only enrichment, and it makes all the difference."
+   }
+  ]
+ },
+ "piquillosfarcis": {
+  "nom": "Piquillo Peppers Stuffed with Salt Cod",
+  "description": "The confit red peppers of Navarre, filled with salt cod brandade and napped with their own sauce. Piquillos are neither hot nor sharp: they are wood-fire roasted, which makes them almost sweet.",
+  "etapes": [
+   {
+    "titre": "36 hours of soaking",
+    "detail": "Water changed three times: the cod must be barely salty, the filling is never salted afterwards."
+   },
+   {
+    "titre": "Poach in milk",
+    "detail": "15 minutes at a tremble: the milk softens what salt remains and perfumes the flesh."
+   },
+   {
+    "titre": "Flake and hunt the bones",
+    "detail": "With your fingertips, petal by petal: one pin bone ruins a whole mouthful."
+   },
+   {
+    "titre": "A little potato",
+    "detail": "It lightens the brandade and gives it the structure to stay inside the pepper."
+   },
+   {
+    "titre": "Pipe the filling",
+    "detail": "Without overfilling: an over-stuffed piquillo tears and the filling escapes while baking."
+   },
+   {
+    "titre": "Sauce from the damaged peppers",
+    "detail": "The torn ones blended with cream: nothing is wasted, and it is the traditional sauce."
+   },
+   {
+    "titre": "Gratinate 15 minutes",
+    "detail": "180°C, sauce around them and not on top: the peppers must stay glossy, not dry out."
+   }
+  ]
+ },
+ "ajoarriero": {
+  "nom": "Ajoarriero",
+  "description": "The Navarrese muleteers' dish: shredded salt cod, peppers and tomato, long simmered. Unlike brandade there is NO cream and NO purée — just vegetables and fish, eaten warm.",
+  "etapes": [
+   {
+    "titre": "36 hours of soaking",
+    "detail": "Three changes of water: the cod remains the saltiest thing in the dish, it is never salted again."
+   },
+   {
+    "titre": "Shred by hand, raw",
+    "detail": "Without pre-cooking: it will finish cooking in the sauce and keep some texture."
+   },
+   {
+    "titre": "Garlic confit, not browned",
+    "detail": "Slices poached 10 minutes in warm oil: browned, garlic turns bitter and dominates everything."
+   },
+   {
+    "titre": "Red and green peppers",
+    "detail": "Both: red brings sweetness, green bitterness. One type alone unbalances the dish."
+   },
+   {
+    "titre": "Simmer 25 minutes",
+    "detail": "Uncovered, over low heat: the vegetable water must evaporate, ajoarriero is not a sauce."
+   },
+   {
+    "titre": "Cod for the last 10 minutes",
+    "detail": "It cooks very fast: added too early it turns into dry threads."
+   },
+   {
+    "titre": "Serve WARM",
+    "detail": "On toast, never scalding or cold: at room temperature it gives its best."
+   }
+  ]
+ },
+ "fabesalmejas": {
+  "nom": "Fabes con Almejas",
+  "description": "The Asturian white beans with clams, the sea-going version of fabada. The beans must NEVER boil: you \"frighten\" the pot with cold water whenever it bubbles too hard, so the skins stay on.",
+  "etapes": [
+   {
+    "titre": "Fabes, big flat beans",
+    "detail": "Soaked 12 h: ordinary beans work, but the Asturian fabe is twice the size and far creamier."
+   },
+   {
+    "titre": "Never let it boil",
+    "detail": "A tremble throughout: at a rolling boil the skins burst and the beans fall apart."
+   },
+   {
+    "titre": "\"Frighten\" the pot",
+    "detail": "Half a glass of COLD water whenever it boils too hard: the thermal shock calms it instantly."
+   },
+   {
+    "titre": "Salt only at the end",
+    "detail": "Salt hardens the skin: added at the start, the beans stay firm whatever you do afterwards."
+   },
+   {
+    "titre": "Purge the clams",
+    "detail": "2 hours in salted water: they give up their grit, or the whole dish crunches unpleasantly."
+   },
+   {
+    "titre": "Open the clams separately",
+    "detail": "In white wine, covered: their strained liquor joins the beans, the empty shells are discarded."
+   },
+   {
+    "titre": "Bring together 5 minutes",
+    "detail": "No longer: re-cooked among the beans, clams turn rubbery."
+   }
+  ]
+ },
+ "zarangollo": {
+  "nom": "Zarangollo Murciano",
+  "description": "The soft-set Murcian omelette of courgette and melted onion. The secret is SLOWNESS: forty minutes for three vegetables, until they give up all their water and turn to jam.",
+  "etapes": [
+   {
+    "titre": "Courgettes in thin rounds",
+    "detail": "3 mm: thicker, they stay crunchy and the zarangollo loses its characteristic meltingness."
+   },
+   {
+    "titre": "Onions first, very slowly",
+    "detail": "20 minutes over low heat in the oil: they must be translucent and sweet before anything else."
+   },
+   {
+    "titre": "Salt the courgettes ahead",
+    "detail": "10 minutes in a colander: they release water that would otherwise boil the omelette."
+   },
+   {
+    "titre": "Stew 20 minutes more",
+    "detail": "Together, uncovered: the mixture should halve and turn almost to marmalade."
+   },
+   {
+    "titre": "Eggs beaten with a fork",
+    "detail": "Never a whisk: froth would make the texture spongy instead of soft."
+   },
+   {
+    "titre": "Very low heat for the eggs",
+    "detail": "3 minutes stirring: zarangollo is served SOFT-SET, it is not a firm tortilla."
+   },
+   {
+    "titre": "Serve immediately",
+    "detail": "It keeps cooking in the dish: five minutes' wait is enough to turn it into a dry omelette."
+   }
+  ]
+ },
+ "rojoes": {
+  "nom": "Rojões à Moda do Minho",
+  "description": "The pork cubes of the Minho, marinated in white wine and garlic then confited in their own fat. The dish ends with a strange move: the sauce is bound with BLOOD or pounded liver, which turns it almost black.",
+  "etapes": [
+   {
+    "titre": "Shoulder, in large dice",
+    "detail": "4 cm, with the fat: loin would be dry after two hours, you need a marbled cut."
+   },
+   {
+    "titre": "Marinate 12 hours",
+    "detail": "White wine, crushed garlic, bay and pimentón: the marinade makes the flavour, not the cooking."
+   },
+   {
+    "titre": "Drain and DRY",
+    "detail": "Blotted with paper before searing: damp meat boils instead of colouring."
+   },
+   {
+    "titre": "Brown in small batches",
+    "detail": "Three times rather than once: a crowded pan drops the temperature and the meat goes grey."
+   },
+   {
+    "titre": "Confit in the marinade",
+    "detail": "1 h 30 covered, low heat: the meat cooks in the wine and its own fat until meltingly tender."
+   },
+   {
+    "titre": "Pounded liver, at the end",
+    "detail": "Crushed in a mortar and let down with stock: the traditional thickener, it darkens the sauce and deepens it."
+   },
+   {
+    "titre": "Potatoes in the fat",
+    "detail": "Fried separately in the cooking fat: never boiled, and that is what makes the difference."
+   }
+  ]
+ },
+ "bolodemel": {
+  "nom": "Bolo de Mel",
+  "description": "The Madeiran cane-honey cake with spices and nuts, made on 8 December for Christmas. It is NEVER cut with a knife: you break it by hand, and it keeps for a whole year.",
+  "etapes": [
+   {
+    "titre": "Cane honey, not bee honey",
+    "detail": "Cane molasses is the true Madeiran base: failing that, dark chestnut honey plus a spoon of molasses."
+   },
+   {
+    "titre": "Melt the honey with the lard",
+    "detail": "Over low heat to a clear liquid: the only cooking before the oven."
+   },
+   {
+    "titre": "Spices in quantity",
+    "detail": "Cinnamon, aniseed, clove, pepper: bolo de mel is a SPICE cake, timid it has no point."
+   },
+   {
+    "titre": "Rest the batter 3 days",
+    "detail": "Chilled, covered: this is where the spices bind to the honey. Baked at once, it is flat."
+   },
+   {
+    "titre": "Nuts cracked, not ground",
+    "detail": "In large shards: they must be felt between the teeth, the cake's contrast."
+   },
+   {
+    "titre": "Gentle, long bake",
+    "detail": "50 minutes at 160°C: in a hot oven the honey caramelises on the surface and burns before the centre cooks."
+   },
+   {
+    "titre": "Wait three weeks",
+    "detail": "Wrapped tight: it takes up moisture, softens and becomes another cake entirely. It keeps a year."
+   }
+  ]
+ },
+ "filhoses": {
+  "nom": "Filhoses",
+  "description": "The flat Portuguese Christmas fritters, stretched BY HAND until almost transparent before frying. The dough contains squash or sweet potato — that is what makes them soft and orange.",
+  "etapes": [
+   {
+    "titre": "Cooked squash or sweet potato",
+    "detail": "Mashed and well DRAINED: its moisture would make the dough impossible to work."
+   },
+   {
+    "titre": "Purée cooled",
+    "detail": "Lukewarm at most: hot, it would kill the yeast before the dough even rises."
+   },
+   {
+    "titre": "Two hours of proving",
+    "detail": "The dough must double and turn airy: that is what lets you stretch it without tearing."
+   },
+   {
+    "titre": "Stretch by hand, not with a pin",
+    "detail": "Turning the ball between your fingers, like a pizza: a rolling pin crushes the bubbles."
+   },
+   {
+    "titre": "Until almost transparent",
+    "detail": "You should make out your hand through it: thick, a filhó stays raw in the middle."
+   },
+   {
+    "titre": "Oil at 175°C",
+    "detail": "Too hot and they brown in 15 seconds without puffing; too cool and they drink the fat."
+   },
+   {
+    "titre": "Cinnamon sugar while hot",
+    "detail": "Rolled straight out onto kitchen paper: cold, the sugar no longer sticks."
+   }
+  ]
+ },
+ "pittule": {
+  "nom": "Pittule",
+  "description": "The savoury fritters of Puglia, dropped by the spoonful into hot oil. The batter is so LIQUID it cannot be shaped: hence their ragged form and hollow inside.",
+  "etapes": [
+   {
+    "titre": "An almost liquid batter",
+    "detail": "70 % hydration: it must ribbon off the spoon, never form a ball."
+   },
+   {
+    "titre": "Two hours of proving",
+    "detail": "Covered, out of draughts: it must treble and cover itself in bubbles. The yeast creates the hollow inside."
+   },
+   {
+    "titre": "Never knock it back",
+    "detail": "After proving, do not stir: every stroke drives out the gas you waited two hours for."
+   },
+   {
+    "titre": "Fillings chopped FINE",
+    "detail": "Olives, capers, sun-dried tomatoes: in large pieces they burst the fritter in the oil."
+   },
+   {
+    "titre": "Two oiled spoons",
+    "detail": "Dipped in the hot oil between each: without that, the batter clings and refuses to drop."
+   },
+   {
+    "titre": "175°C, six at a time",
+    "detail": "More, and the temperature falls: the pittule drink the oil instead of puffing."
+   },
+   {
+    "titre": "They turn themselves",
+    "detail": "When the batter is well proved: if they stay flat, it did not rise enough."
+   }
+  ]
+ },
+ "culurgiones": {
+  "nom": "Culurgiones",
+  "description": "The Sardinian potato and mint ravioli, closed with a WHEAT-EAR pleat. That pleat is the signature of Ogliastra: it takes practice, and it is how you recognise a real culurgione.",
+  "etapes": [
+   {
+    "titre": "FLOURY potatoes",
+    "detail": "Boiled in their skins and riced HOT: cold, they turn gluey."
+   },
+   {
+    "titre": "Let the steam escape",
+    "detail": "Mash spread out 10 minutes before adding the cheese: residual moisture makes the filling run."
+   },
+   {
+    "titre": "Plenty of mint",
+    "detail": "Fresh, finely chopped: the ingredient that surprises and defines a culurgione. Never dried."
+   },
+   {
+    "titre": "Young Sardinian pecorino",
+    "detail": "Finely grated and mixed into the hot mash: it must melt into the filling, not stay in pieces."
+   },
+   {
+    "titre": "Thick discs",
+    "detail": "1.5 mm, thicker than a classic ravioli: the wheat-ear pleat needs material to hold."
+   },
+   {
+    "titre": "The wheat-ear pleat",
+    "detail": "Pinching alternately left-right as you climb: it takes time to learn, and it is the whole charm."
+   },
+   {
+    "titre": "Simple tomato sauce",
+    "detail": "Tomato, garlic, basil: a rich sauce would mask the mint, which is the heart of the recipe."
+   }
+  ]
+ },
+ "falculelle": {
+  "nom": "Falculelle",
+  "description": "The small Corsican brocciu cakes, baked ON a chestnut leaf that perfumes them. A speciality of Corte, they are still sold with their leaf, removed at the last moment.",
+  "etapes": [
+   {
+    "titre": "Chestnut leaves",
+    "detail": "Scalded 1 minute then dried: raw, they burn and give an acrid taste."
+   },
+   {
+    "titre": "Very fresh brocciu",
+    "detail": "Made that day: beyond three days it turns acid and the cake becomes frankly sour."
+   },
+   {
+    "titre": "Crush with a fork",
+    "detail": "Never a blender: you want to keep some grain, falculelle is not a smooth custard."
+   },
+   {
+    "titre": "Very little flour",
+    "detail": "One spoon per hundred grams of cheese: it binds, it must not be tasted."
+   },
+   {
+    "titre": "Whipped whites folded in",
+    "detail": "They lighten the very dense brocciu batter: folded with a spatula, in three additions."
+   },
+   {
+    "titre": "One spoonful per leaf",
+    "detail": "Spread without overflowing: the batter spreads a little while baking and would stick to the tray."
+   },
+   {
+    "titre": "Very hot oven",
+    "detail": "20 minutes at 210°C: the surface must brown and crack. Eaten WARM, leaf removed at the table."
+   }
+  ]
+ },
+ "bourdelots": {
+  "nom": "Norman Bourdelots",
+  "description": "The APPLE version of the Norman douillon: a whole fruit wrapped in pastry, cored and filled with butter and sugar. Bourdelot for apple, douillon for pear — the only difference, and Normans are firm about it.",
+  "etapes": [
+   {
+    "titre": "An apple that HOLDS",
+    "detail": "Reine des reinettes or Boskoop: a Golden collapses and the pastry fills with purée."
+   },
+   {
+    "titre": "Core without going through",
+    "detail": "The corer stops 1 cm from the bottom: otherwise the melted butter escapes and burns on the tray."
+   },
+   {
+    "titre": "Salted butter, brown sugar, calvados",
+    "detail": "Packed into the cavity: this trio becomes caramel while baking."
+   },
+   {
+    "titre": "Score the skin in a ring",
+    "detail": "One knife line all the way round at mid-height: the apple swells without bursting the pastry."
+   },
+   {
+    "titre": "Wrap without pulling",
+    "detail": "A disc of pastry brought up and pleated at the top: stretched tight, it splits within minutes."
+   },
+   {
+    "titre": "45 minutes at 180°C",
+    "detail": "On baking paper: the caramel always escapes a little and would burn on a bare tray."
+   },
+   {
+    "titre": "Crème fraîche alongside",
+    "detail": "Served cold on the scalding bourdelot: the traditional Norman service."
+   }
+  ]
+ },
+ "kouignpatatez": {
+  "nom": "Kouign Patatez",
+  "description": "The Breton \"potato cake\", cooked in a pan as one thick galette. It is not mash: the potatoes are GRATED RAW and bound with egg, giving a melting inside and caramelised edges.",
+  "etapes": [
+   {
+    "titre": "Grate RAW, medium plate",
+    "detail": "Neither fine nor coarse: too fine gives mash, too coarse leaves the centre raw."
+   },
+   {
+    "titre": "Squeeze, but not dry",
+    "detail": "A moderate press: unlike rösti, you need some starch left to bind with the egg."
+   },
+   {
+    "titre": "Bacon fried first",
+    "detail": "Its fat stays in the pan and cooks the galette: that is where the flavour comes from."
+   },
+   {
+    "titre": "Mix at the last second",
+    "detail": "Grated potato blackens within 20 minutes: prepare everything else first."
+   },
+   {
+    "titre": "Press firmly, 2 cm",
+    "detail": "With a spatula into foaming butter: poorly packed, the galette falls apart when turned."
+   },
+   {
+    "titre": "12 minutes a side",
+    "detail": "Over medium heat, untouched: the edges must brown and the centre stay soft."
+   },
+   {
+    "titre": "Flip onto a plate",
+    "detail": "Slid onto a plate, pan inverted over it: the only way not to break it."
+   }
+  ]
+ },
+ "museauvinaigrette": {
+  "nom": "Ox Muzzle Vinaigrette",
+  "description": "The bistro starter par excellence: jellied ox muzzle, thinly sliced and drowned in shallot vinaigrette. Nothing to cook — it all rests on how thinly you slice and how long it marinates.",
+  "etapes": [
+   {
+    "titre": "Slice VERY thin",
+    "detail": "2 mm with a sharp knife: thick, muzzle turns rubbery and hard to chew."
+   },
+   {
+    "titre": "Out of the fridge ahead",
+    "detail": "20 minutes: ice cold, the jelly is hard and the muzzle takes up no dressing."
+   },
+   {
+    "titre": "Rinsed shallots",
+    "detail": "Finely chopped and rinsed in cold water: raw, they stay sharp and cover everything."
+   },
+   {
+    "titre": "Plenty of flat parsley",
+    "detail": "A real handful, chopped: muzzle is fatty and needs freshness in quantity."
+   },
+   {
+    "titre": "A sharp vinaigrette",
+    "detail": "One third vinegar to two thirds oil: the classic ratio would be too mild here."
+   },
+   {
+    "titre": "Two hours' marinating",
+    "detail": "Chilled, covered: the muzzle must take up the dressing, served at once it is bland and fatty."
+   },
+   {
+    "titre": "Egg and gherkins",
+    "detail": "Chopped and scattered at the last moment: the bistro finish, and they bring the crunch."
+   }
+  ]
+ },
+ "saucissemorteau": {
+  "nom": "Morteau Sausage with Lentils",
+  "description": "The smoked sausage of the Haut-Doubs, poached whole on a bed of green lentils. It is NEVER pricked and never boiled: it would burst, and all its smoky fat would go into the water instead of the lentils.",
+  "etapes": [
+   {
+    "titre": "NEVER prick the sausage",
+    "detail": "The wooden peg closing a Morteau is there for that: pricked, it empties of all its fat."
+   },
+   {
+    "titre": "Poach, never boil",
+    "detail": "Trembling water at 85°C, 40 minutes: at a rolling boil the skin bursts every time."
+   },
+   {
+    "titre": "Green Puy lentils",
+    "detail": "They hold their shape; blond lentils turn to purée within thirty minutes."
+   },
+   {
+    "titre": "No salt at the start",
+    "detail": "The smoked sausage and the bacon salt it plenty: taste at the end."
+   },
+   {
+    "titre": "Cook the lentils in stock",
+    "detail": "Never in plain water: the aromatic broth makes all the difference."
+   },
+   {
+    "titre": "Sausage set ON the lentils",
+    "detail": "For the last 15 minutes: its smoky fat runs into them, and that is where the dish comes together."
+   },
+   {
+    "titre": "A dash of vinegar at the end",
+    "detail": "Off the heat: it wakes up the lentils, which are mild and a little flat alone."
+   }
+  ]
+ },
+ "kokkinisto": {
+  "nom": "Kokkinisto",
+  "description": "The Greek red stew, where cinnamon and clove meet tomato. The sweet-spice-and-tomato marriage always surprises at first — and it is exactly what separates a Greek dish from an Italian one.",
+  "etapes": [
+   {
+    "titre": "Chuck or shin",
+    "detail": "In large 5 cm cubes: two and a half hours of cooking calls for a collagen-rich cut."
+   },
+   {
+    "titre": "TOAST the tomato purée",
+    "detail": "One minute dry in the pan before any liquid: it loses its acidity and turns sweet."
+   },
+   {
+    "titre": "Cinnamon and clove, discreet",
+    "detail": "One stick and two whole cloves, removed at the end: ground, they dominate and it tastes of gingerbread."
+   },
+   {
+    "titre": "Reduce the wine by half",
+    "detail": "Before the tomato: otherwise the sauce keeps an acid edge that sits badly with the cinnamon."
+   },
+   {
+    "titre": "A pinch of sugar",
+    "detail": "It corrects the tomato's acidity: the Greek move, discreet but decisive."
+   },
+   {
+    "titre": "Two hours covered",
+    "detail": "At a tremble: the sauce must coat and the meat fall apart under a fork."
+   },
+   {
+    "titre": "Serve with pasta or rice",
+    "detail": "Kokkinisto is ALWAYS served with a starch that drinks the sauce, never alone."
+   }
+  ]
+ },
+ "papoutsakia": {
+  "nom": "Papoutsakia",
+  "description": "Greek \"little shoes\": aubergine halves stuffed with meat and capped with béchamel. It is an individual moussaka — but here the aubergine is the dish, not a layer.",
+  "etapes": [
+   {
+    "titre": "Hollow without piercing",
+    "detail": "A 1 cm border all round: too thin and the aubergine collapses and the filling escapes."
+   },
+   {
+    "titre": "Salt for 30 minutes",
+    "detail": "Coarse salt in the cavities: the aubergine gives up its bitterness and then absorbs half as much oil."
+   },
+   {
+    "titre": "Pre-bake the shells",
+    "detail": "20 minutes at 200°C, cut side down: raw, aubergine stays firm under the béchamel."
+   },
+   {
+    "titre": "The scooped flesh goes in the filling",
+    "detail": "What you hollowed out is not thrown away: chopped and fried with the meat, it doubles the aubergine flavour."
+   },
+   {
+    "titre": "Cinnamon in the meat",
+    "detail": "A pinch: the Greek signature also found in moussaka and pastitsio."
+   },
+   {
+    "titre": "A THICK béchamel",
+    "detail": "It must hold on the spoon: runny, it slides off the sides and burns on the tray."
+   },
+   {
+    "titre": "Gratinate 25 minutes",
+    "detail": "180°C: the top must be golden and blistered. Eaten WARM, never scalding."
+   }
+  ]
+ },
+ "giouvetsi": {
+  "nom": "Giouvetsi",
+  "description": "Lamb and orzo baked together in an earthenware dish. The kritharaki absorb ALL the meat juices: that is what makes them creamy without a drop of cream.",
+  "etapes": [
+   {
+    "titre": "Brown the lamb first",
+    "detail": "Shoulder in large cubes, seared over high heat: the only colouring in the dish and it makes the sauce."
+   },
+   {
+    "titre": "One hour WITHOUT the pasta",
+    "detail": "The lamb must be nearly tender before the orzo goes in, or it will be mush."
+   },
+   {
+    "titre": "Raw pasta, never pre-cooked",
+    "detail": "It cooks in the juices and absorbs them: pre-cooked, it would take on no flavour."
+   },
+   {
+    "titre": "Twice the liquid",
+    "detail": "Compared with a risotto: orzo drinks enormously, and the dish should finish just creamy."
+   },
+   {
+    "titre": "Stir only once",
+    "detail": "When you add the pasta: after that, let the oven work untouched."
+   },
+   {
+    "titre": "Uncovered for the last 20 minutes",
+    "detail": "The top must brown and crust slightly: the best part of a giouvetsi."
+   },
+   {
+    "titre": "Crumbled feta at serving",
+    "detail": "Never baked on top: it would turn rubbery. Add it in the bowl."
+   }
+  ]
+ },
+ "hunkarbegendi": {
+  "nom": "Hünkar Beğendi",
+  "description": "\"The sultan was pleased\": a lamb stew set on a purée of SMOKED aubergine bound with cheese. Without charring the aubergine over flame it is just a béchamel — the smoke is the whole dish.",
+  "etapes": [
+   {
+    "titre": "Char the aubergines WHOLE",
+    "detail": "Directly over the flame or under the grill until the skin is completely black: this is where the smoke comes from."
+   },
+   {
+    "titre": "Trap them 15 minutes",
+    "detail": "In a covered bowl: the steam lifts the skin, which then peels off with your fingertips."
+   },
+   {
+    "titre": "NEVER rinse",
+    "detail": "Water washes away all the smoke: scrape off the skin residue patiently with the back of a knife."
+   },
+   {
+    "titre": "Lemon the flesh at once",
+    "detail": "It blackens within three minutes in air: lemon keeps it pale and lifts the smoke."
+   },
+   {
+    "titre": "Béchamel first, aubergine after",
+    "detail": "Roux then milk, then the chopped flesh: the reverse gives a lumpy grey purée."
+   },
+   {
+    "titre": "Cheese off the heat",
+    "detail": "Kasar or young gruyère: added over heat it strings and the purée turns elastic."
+   },
+   {
+    "titre": "Stew IN THE CENTRE",
+    "detail": "Purée spread as a ring, lamb in the middle: the Ottoman presentation, never mixed."
+   }
+  ]
+ },
+ "testikebab": {
+  "nom": "Testi Kebabı",
+  "description": "The kebab cooked in a sealed clay JAR, broken open at the table with a knife. No liquid is added: the closed jar cooks the meat in its own steam alone, and nothing escapes for three hours.",
+  "etapes": [
+   {
+    "titre": "A clay jar, or a casserole",
+    "detail": "The principle is a SEAL: failing a testi, a cast-iron pot luted with dough does the same job."
+   },
+   {
+    "titre": "Large fatty cubes",
+    "detail": "4 cm of shoulder: the cooking is long and liquid-free, a lean cut would end up dry."
+   },
+   {
+    "titre": "No added liquid",
+    "detail": "No water, no stock: the vegetables release exactly what is needed, and that is the whole point."
+   },
+   {
+    "titre": "Vegetables UNDER the meat",
+    "detail": "Onions and peppers at the bottom: they give up water first and stop the meat catching."
+   },
+   {
+    "titre": "Lute the lid",
+    "detail": "A rope of flour and water pressed all round: that seal keeps the steam in for three hours."
+   },
+   {
+    "titre": "160°C, three hours",
+    "detail": "Never opening it: every look loses the accumulated steam and lengthens the cooking."
+   },
+   {
+    "titre": "Break it before the guests",
+    "detail": "That is the ritual: you crack the jar's neck with one sharp blow, and the fragrant steam escapes."
+   }
+  ]
+ },
+ "icpilav": {
+  "nom": "İç Pilav",
+  "description": "The Turkish festive rice with chicken livers, pine nuts and currants. The rice must be SOAKED in warm salted water first: that rinses off the starch and gives perfectly separate grains.",
+  "etapes": [
+   {
+    "titre": "Soak the rice 30 minutes",
+    "detail": "Warm SALTED water: the salt firms the grain while the water rinses the surface starch."
+   },
+   {
+    "titre": "Rinse until the water runs clear",
+    "detail": "Five or six times: every trace of remaining starch glues the grains together."
+   },
+   {
+    "titre": "Pine nuts browned FIRST",
+    "detail": "In the butter, before anything else: added later they no longer colour and stay soft."
+   },
+   {
+    "titre": "Livers seared fast",
+    "detail": "1 minute a side over high heat: overcooked, they turn grainy and bitter in the rice."
+   },
+   {
+    "titre": "Currants soaked in hot water",
+    "detail": "20 minutes: dry, they would drink the stock meant for the rice and stay hard."
+   },
+   {
+    "titre": "Never stir after the stock",
+    "detail": "The rice cooks 15 minutes covered, lowest heat, without lifting the lid once."
+   },
+   {
+    "titre": "Rest under a cloth",
+    "detail": "10 minutes off the heat, a tea towel between pan and lid: it absorbs the condensation."
+   }
+  ]
+ },
+ "podvarak": {
+  "nom": "Podvarak",
+  "description": "Serbian sauerkraut baked under a piece of smoked meat until brown and almost caramelised. Unlike Alsatian choucroute it never boils: it ROASTS, and that changes everything.",
+  "etapes": [
+   {
+    "titre": "Squeeze the sauerkraut",
+    "detail": "Well wrung out by hand: too sour and too wet, it would boil instead of roasting."
+   },
+   {
+    "titre": "Taste before deciding",
+    "detail": "If it is very sour, rinse once; if mild, don't rinse at all. It varies enormously."
+   },
+   {
+    "titre": "Plenty of melted onion",
+    "detail": "20 minutes in lard until deep gold: the onion sugar is what balances the acidity."
+   },
+   {
+    "titre": "Paprika off the heat",
+    "detail": "Always: over high heat it burns within seconds and turns irretrievably bitter."
+   },
+   {
+    "titre": "Smoked meat on top",
+    "detail": "Set on the cabbage, never mixed in: its fat runs down slowly and flavours the whole mass."
+   },
+   {
+    "titre": "Two hours uncovered",
+    "detail": "160°C: the top must brown and crust. Covered, you get ordinary sauerkraut."
+   },
+   {
+    "titre": "Stir only once",
+    "detail": "Halfway, to bring the browned top underneath: then let the new surface brown in its turn."
+   }
+  ]
+ },
+ "languepiquante": {
+  "nom": "Ox Tongue with Piquant Sauce",
+  "description": "The bistro classic nobody dares order any more: tongue poached three hours, peeled while hot, served under a gherkin and vinegar sauce. Peeling is the only critical moment — and it works ONLY while scalding.",
+  "etapes": [
+   {
+    "titre": "Soak 3 hours",
+    "detail": "Cold water changed twice: tongue releases a lot of blood, and the broth would be cloudy otherwise."
+   },
+   {
+    "titre": "Poach 3 hours",
+    "detail": "At a tremble with the aromatics: it is done when a needle goes in without resistance."
+   },
+   {
+    "titre": "PEEL IT SCALDING",
+    "detail": "Straight out of the broth, using a cloth to protect your hands: ten minutes cooler and the skin will not come."
+   },
+   {
+    "titre": "Return it to the broth",
+    "detail": "Once peeled, so it does not dry out while you make the sauce."
+   },
+   {
+    "titre": "Reduce vinegar and shallots",
+    "detail": "Almost dry before adding stock: that reduction gives the sauce its clean sharpness."
+   },
+   {
+    "titre": "Gherkins at the END",
+    "detail": "Chopped and thrown in off the heat: cooked, they go soft and lose all their bite."
+   },
+   {
+    "titre": "Slice on the bias",
+    "detail": "1 cm thick, at an angle: that cut is what makes tongue tender to the bite."
+   }
+  ]
+ },
+ "teteveauravigote": {
+  "nom": "Calf's Head Ravigote",
+  "description": "The most divisive dish in French cooking: calf's head poached in a \"blanc\" and served warm under a sharp ravigote. Cooking in a blanc — floured, lemoned water — is what keeps it immaculate.",
+  "etapes": [
+   {
+    "titre": "Soak 6 hours",
+    "detail": "Cold water changed three times: it is long, and it is what removes the smell that puts most people off."
+   },
+   {
+    "titre": "Cook in a \"blanc\"",
+    "detail": "Water, slaked flour and lemon: without it, calf's head greys and looks frankly unappetising."
+   },
+   {
+    "titre": "A tremble only",
+    "detail": "2 h 30: at a rolling boil the gelatine disperses and the pieces fall apart entirely."
+   },
+   {
+    "titre": "The needle test",
+    "detail": "It must go through with no resistance at all: undercooked, calf's head is inedible."
+   },
+   {
+    "titre": "A sharp ravigote",
+    "detail": "One third vinegar: calf's head is very gelatinous and needs a clean, cutting sauce."
+   },
+   {
+    "titre": "Capers and gherkins chopped COARSE",
+    "detail": "The crunch is essential against the meltingness of the meat."
+   },
+   {
+    "titre": "Serve WARM",
+    "detail": "Never scalding or cold: at 40°C the gelatine is melting without coating the mouth."
+   }
+  ]
+ },
+ "coquillesgratinees": {
+  "nom": "Gratinated Scallops",
+  "description": "The festive starter: scallops napped with a white wine sauce and gratinated in their shells. They cook for only TWO minutes — the rest of the oven time browns the sauce, not the shellfish.",
+  "etapes": [
+   {
+    "titre": "Very dry scallops",
+    "detail": "Blotted at length with paper: a wet scallop releases water and the sauce dilutes into a puddle."
+   },
+   {
+    "titre": "Sear 45 seconds a side",
+    "detail": "Over very high heat in foaming butter: they will finish under the grill, not now."
+   },
+   {
+    "titre": "Mushrooms cooked separately",
+    "detail": "They release enormous amounts of water: cooked in the sauce, they would turn it into broth."
+   },
+   {
+    "titre": "Reduce the wine by half",
+    "detail": "With the shallots, before the cream: that concentration gives the sauce its character."
+   },
+   {
+    "titre": "A sauce that COATS",
+    "detail": "It must hold on the back of a spoon: too thin, it overflows the shell in the oven."
+   },
+   {
+    "titre": "Crumbs and cheese, sparingly",
+    "detail": "A thin layer: too thick and it forms a lid, steaming the scallops."
+   },
+   {
+    "titre": "Under the grill 3 minutes",
+    "detail": "Not in the oven: you need heat from ABOVE, or the scallops overcook and turn rubbery."
+   }
+  ]
  }
 };

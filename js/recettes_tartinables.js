@@ -1313,4 +1313,42 @@ Object.assign(recettes, {
     ],
     liees: ["brandadeMorue","estofinado","tarama"]
   },
+  ajoarriero: {
+    dateAjout: "2026-08-08T14:07:00",
+    nom: "Ajoarriero",
+    cat: "tartinables", pays: "espagne",
+    base: 6,
+    temps: "45 min + dessalage",
+    niveau: "⭐ Facile",
+    emoji: "🧄",
+    description: "La préparation des muletiers navarrais : morue effilochée, poivrons et tomate, longuement mijotés. Contrairement à la brandade, il n'y a NI crème NI purée — juste du légume et du poisson, et ça se mange tiède.",
+    tableauAjoarriero: [
+      { nb: 1, moruedessale: "65 g", poivron: "", tomate: "", ail: "", oignon: "", huileOlive: "25 ml", paprikafume: "1.2 g", piment: "0.3 g", persil: "5 g", pain: "40 g" },
+      { nb: 2, moruedessale: "130 g", poivron: "1", tomate: "1", ail: "1", oignon: "", huileOlive: "50 ml", paprikafume: "2.4 g", piment: "0.6 g", persil: "10 g", pain: "80 g" },
+      { nb: 3, moruedessale: "195 g", poivron: "2", tomate: "1", ail: "2", oignon: "1", huileOlive: "75 ml", paprikafume: "3.6 g", piment: "0.9 g", persil: "15 g", pain: "120 g" },
+      { nb: 4, moruedessale: "260 g", poivron: "3", tomate: "2", ail: "2", oignon: "1", huileOlive: "100 ml", paprikafume: "4.8 g", piment: "1.2 g", persil: "20 g", pain: "160 g" },
+      { nb: 5, moruedessale: "325 g", poivron: "4", tomate: "3", ail: "3½", oignon: "2", huileOlive: "125 ml", paprikafume: "6 g", piment: "1.5 g", persil: "25 g", pain: "200 g" },
+      { nb: 6, moruedessale: "390 g", poivron: "4", tomate: "3", ail: "4", oignon: "2", huileOlive: "150 ml", paprikafume: "7.2 g", piment: "1.8 g", persil: "30 g", pain: "240 g" },
+      { nb: 7, moruedessale: "455 g", poivron: "5", tomate: "4", ail: "4", oignon: "2", huileOlive: "175 ml", paprikafume: "8.4 g", piment: "2.1 g", persil: "35 g", pain: "280 g" },
+      { nb: 8, moruedessale: "520 g", poivron: "6", tomate: "4", ail: "5", oignon: "3", huileOlive: "200 ml", paprikafume: "9.6 g", piment: "2.4 g", persil: "40 g", pain: "320 g" },
+      { nb: 9, moruedessale: "585 g", poivron: "7", tomate: "5", ail: "6", oignon: "3", huileOlive: "225 ml", paprikafume: "10.8 g", piment: "2.7 g", persil: "45 g", pain: "360 g" },
+      { nb: 10, moruedessale: "650 g", poivron: "8", tomate: "6", ail: "7", oignon: "4", huileOlive: "250 ml", paprikafume: "12 g", piment: "3 g", persil: "50 g", pain: "400 g" },
+      { nb: 11, moruedessale: "715 g", poivron: "8", tomate: "6", ail: "7", oignon: "4", huileOlive: "275 ml", paprikafume: "13.2 g", piment: "3.3 g", persil: "55 g", pain: "440 g" },
+      { nb: 12, moruedessale: "780 g", poivron: "9", tomate: "7", ail: "8", oignon: "4", huileOlive: "300 ml", paprikafume: "14.4 g", piment: "3.6 g", persil: "60 g", pain: "480 g" },
+      { nb: 13, moruedessale: "845 g", poivron: "10", tomate: "7", ail: "9", oignon: "5", huileOlive: "325 ml", paprikafume: "15.6 g", piment: "3.9 g", persil: "65 g", pain: "520 g" },
+      { nb: 14, moruedessale: "910 g", poivron: "11", tomate: "8", ail: "9", oignon: "5", huileOlive: "350 ml", paprikafume: "16.8 g", piment: "4.2 g", persil: "70 g", pain: "560 g" },
+      { nb: 15, moruedessale: "975 g", poivron: "12", tomate: "9", ail: "10½", oignon: "6", huileOlive: "375 ml", paprikafume: "18 g", piment: "4.5 g", persil: "75 g", pain: "600 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "36 heures de dessalage", detail: "Trois changements d'eau : la morue reste l'ingrédient le plus salé du plat, on ne resale jamais.", badge: null },
+      { icone: "🖐️", titre: "Effilocher à la main, à cru", detail: "Sans cuisson préalable : elle finira de cuire dans la sauce et gardera de la texture.", badge: null },
+      { icone: "🧄", titre: "Ail confit, pas doré", detail: "Lamelles pochées 10 minutes dans l'huile tiède : doré, l'ail deviendrait amer et dominerait tout.", badge: null },
+      { icone: "🌶️", titre: "Poivrons rouges et verts", detail: "Les deux : le rouge apporte le sucre, le vert l'amertume. Un seul type déséquilibre le plat.", badge: null },
+      { icone: "♨️", titre: "Mijoter 25 minutes", detail: "À découvert, à feu doux : l'eau des légumes doit s'évaporer, l'ajoarriero n'est pas une sauce.", badge: null },
+      { icone: "🐟", titre: "Morue les 10 dernières minutes", detail: "Elle cuit très vite : ajoutée trop tôt, elle se transforme en filaments secs.", badge: null },
+      { icone: "🍞", titre: "Servir TIÈDE", detail: "Sur du pain grillé, jamais brûlant ni froid : c'est à température ambiante qu'il donne le meilleur.", badge: null }
+    ],
+    liees: ["brandadeMorue","piquillosfarcis","baccalamantecato"]
+  },
 });

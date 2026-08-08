@@ -4051,4 +4051,42 @@ tapenade: {
     ],
     liees: ["kouglof","cakeolivesjambon","cakesalejambon"]
   },
+  pittule: {
+    dateAjout: "2026-08-08T14:13:00",
+    nom: "Pittule",
+    cat: "aperitifs", pays: "italie",
+    base: 8,
+    temps: "2 h",
+    niveau: "⭐ Facile",
+    emoji: "🫒",
+    description: "Les beignets salés des Pouilles, jetés à la cuillère dans l'huile bouillante. La pâte est si LIQUIDE qu'on ne peut pas la façonner : c'est ce qui leur donne leur forme irrégulière et leur intérieur creux.",
+    tableauPittule: [
+      { nb: 1, farine: "40 g", levureboulangere: "1.2 g", olives: "15 g", tomatesechees: "10 g", capres: "5 g", huile: "30 ml", origan: "0.6 g", sel: "1.2 g", anchois: "5 g" },
+      { nb: 2, farine: "80 g", levureboulangere: "2.4 g", olives: "30 g", tomatesechees: "20 g", capres: "10 g", huile: "60 ml", origan: "1.2 g", sel: "2.4 g", anchois: "10 g" },
+      { nb: 3, farine: "120 g", levureboulangere: "3.6 g", olives: "45 g", tomatesechees: "30 g", capres: "15 g", huile: "90 ml", origan: "1.8 g", sel: "3.6 g", anchois: "15 g" },
+      { nb: 4, farine: "160 g", levureboulangere: "4.8 g", olives: "60 g", tomatesechees: "40 g", capres: "20 g", huile: "120 ml", origan: "2.4 g", sel: "4.8 g", anchois: "20 g" },
+      { nb: 5, farine: "200 g", levureboulangere: "6 g", olives: "75 g", tomatesechees: "50 g", capres: "25 g", huile: "150 ml", origan: "3 g", sel: "6 g", anchois: "25 g" },
+      { nb: 6, farine: "240 g", levureboulangere: "7.2 g", olives: "90 g", tomatesechees: "60 g", capres: "30 g", huile: "180 ml", origan: "3.6 g", sel: "7.2 g", anchois: "30 g" },
+      { nb: 7, farine: "280 g", levureboulangere: "8.4 g", olives: "105 g", tomatesechees: "70 g", capres: "35 g", huile: "210 ml", origan: "4.2 g", sel: "8.4 g", anchois: "35 g" },
+      { nb: 8, farine: "320 g", levureboulangere: "9.6 g", olives: "120 g", tomatesechees: "80 g", capres: "40 g", huile: "240 ml", origan: "4.8 g", sel: "9.6 g", anchois: "40 g" },
+      { nb: 9, farine: "360 g", levureboulangere: "10.8 g", olives: "135 g", tomatesechees: "90 g", capres: "45 g", huile: "270 ml", origan: "5.4 g", sel: "10.8 g", anchois: "45 g" },
+      { nb: 10, farine: "400 g", levureboulangere: "12 g", olives: "150 g", tomatesechees: "100 g", capres: "50 g", huile: "300 ml", origan: "6 g", sel: "12 g", anchois: "50 g" },
+      { nb: 11, farine: "440 g", levureboulangere: "13.2 g", olives: "165 g", tomatesechees: "110 g", capres: "55 g", huile: "330 ml", origan: "6.6 g", sel: "13.2 g", anchois: "55 g" },
+      { nb: 12, farine: "480 g", levureboulangere: "14.4 g", olives: "180 g", tomatesechees: "120 g", capres: "60 g", huile: "360 ml", origan: "7.2 g", sel: "14.4 g", anchois: "60 g" },
+      { nb: 13, farine: "520 g", levureboulangere: "15.6 g", olives: "195 g", tomatesechees: "130 g", capres: "65 g", huile: "390 ml", origan: "7.8 g", sel: "15.6 g", anchois: "65 g" },
+      { nb: 14, farine: "560 g", levureboulangere: "16.8 g", olives: "210 g", tomatesechees: "140 g", capres: "70 g", huile: "420 ml", origan: "8.4 g", sel: "16.8 g", anchois: "70 g" },
+      { nb: 15, farine: "600 g", levureboulangere: "18 g", olives: "225 g", tomatesechees: "150 g", capres: "75 g", huile: "450 ml", origan: "9 g", sel: "18 g", anchois: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Une pâte QUASI liquide", detail: "70 % d'hydratation : elle doit couler de la cuillère en ruban, jamais former une boule.", badge: null },
+      { icone: "⏳", titre: "Deux heures de pousse", detail: "Couverte, à l'abri : elle doit tripler et se couvrir de bulles. C'est la levure qui crée le creux intérieur.", badge: null },
+      { icone: "🚫", titre: "Ne jamais la retravailler", detail: "Après la pousse, on ne remue plus : chaque coup de cuillère chasse le gaz qu'on a attendu deux heures.", badge: null },
+      { icone: "🫒", titre: "Garnitures hachées FIN", detail: "Olives, câpres, tomates séchées : en gros morceaux, elles font éclater le beignet dans l'huile.", badge: null },
+      { icone: "🥄", titre: "Deux cuillères huilées", detail: "Trempées dans l'huile chaude entre chaque : sans ça, la pâte colle et refuse de se détacher.", badge: null },
+      { icone: "🌡️", titre: "175°C, six à la fois", detail: "Plus, et la température chute : les pittule boivent l'huile au lieu de gonfler.", badge: null },
+      { icone: "🎈", titre: "Elles se retournent seules", detail: "Quand la pâte est bien levée : si elles restent à plat, c'est qu'elle a manqué de pousse.", badge: null }
+    ],
+    liees: ["beignetscrevettes","arancinissicilien","gnoccofritto"]
+  },
 });
