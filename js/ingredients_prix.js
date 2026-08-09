@@ -289,6 +289,7 @@ const INGREDIENTS_PRIX = {
   museau:         { prixKg: 11.0, calPer100g: 180,  lipSat: 4.2,  sucre: 0,    sel: 1.2,  fibres: 0,   prot: 17,   flv: 0, glucides: 0.5, lipides: 12 },
   tetedeveau:     { prixKg: 14.0, calPer100g: 160,  lipSat: 3.8,  sucre: 0,    sel: 0.3,  fibres: 0,   prot: 18,   flv: 0, glucides: 0, lipides: 10 },
   tripes:         { prixKg: 9.50, calPer100g: 94,   lipSat: 1.4,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 15,   flv: 0, glucides: 0, lipides: 4 },
+  goyave:         { prixKg: 11.0, calPer100g: 268,  lipSat: 0,    sucre: 60,   sel: 0.02, fibres: 3.5, prot: 0.6,  flv: 100, glucides: 66, lipides: 0.2 },
   cotelets:       { prixKg: 16.0, calPer100g: 280,  lipSat: 9.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 24,   flv: 0, glucides: 0, lipides: 20 },
   os:             { prixKg: 2.00, calPer100g: 100,  lipSat: 2.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 10,   flv: 0, glucides: 0, lipides: 6 },
   queueboeuf:     { prixKg: 14.0, calPer100g: 270,  lipSat: 8.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 17 },
@@ -1444,6 +1445,7 @@ const INGREDIENTS_LABELS = {
   farinechataigne: "🌰 Farine de châtaigne",
   calvados: "🍏 Calvados", eaudevie: "🥃 Eau-de-vie",
   langue: "👅 Langue de bœuf", museau: "🐄 Museau de bœuf", tetedeveau: "🐄 Tête de veau", tripes: "🐄 Tripes",
+  goyave: "🟥 Pâte de goyave",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==
   oeufs: "🥚 Œufs",  oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",
