@@ -290,6 +290,8 @@ const INGREDIENTS_PRIX = {
   tetedeveau:     { prixKg: 14.0, calPer100g: 160,  lipSat: 3.8,  sucre: 0,    sel: 0.3,  fibres: 0,   prot: 18,   flv: 0, glucides: 0, lipides: 10 },
   tripes:         { prixKg: 9.50, calPer100g: 94,   lipSat: 1.4,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 15,   flv: 0, glucides: 0, lipides: 4 },
   goyave:         { prixKg: 11.0, calPer100g: 268,  lipSat: 0,    sucre: 60,   sel: 0.02, fibres: 3.5, prot: 0.6,  flv: 100, glucides: 66, lipides: 0.2 },
+  goya:           { prixKg: 8.50, calPer100g: 17,   lipSat: 0,    sucre: 1.9,  sel: 0.01, fibres: 2.8, prot: 1.0,  flv: 100, glucides: 3.7, lipides: 0.2 },
+  papaseca:       { prixKg: 14.0, calPer100g: 330,  lipSat: 0.1,  sucre: 3.2,  sel: 0.02, fibres: 7.0, prot: 7.0,  flv: 100, glucides: 76, lipides: 0.5 },
   cotelets:       { prixKg: 16.0, calPer100g: 280,  lipSat: 9.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 24,   flv: 0, glucides: 0, lipides: 20 },
   os:             { prixKg: 2.00, calPer100g: 100,  lipSat: 2.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 10,   flv: 0, glucides: 0, lipides: 6 },
   queueboeuf:     { prixKg: 14.0, calPer100g: 270,  lipSat: 8.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 17 },
@@ -1445,7 +1447,7 @@ const INGREDIENTS_LABELS = {
   farinechataigne: "🌰 Farine de châtaigne",
   calvados: "🍏 Calvados", eaudevie: "🥃 Eau-de-vie",
   langue: "👅 Langue de bœuf", museau: "🐄 Museau de bœuf", tetedeveau: "🐄 Tête de veau", tripes: "🐄 Tripes",
-  goyave: "🟥 Pâte de goyave",
+  goyave: "🟥 Pâte de goyave", goya: "🥒 Melon amer (goya)", papaseca: "🥔 Papa seca (pomme de terre séchée)",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==
   oeufs: "🥚 Œufs",  oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",

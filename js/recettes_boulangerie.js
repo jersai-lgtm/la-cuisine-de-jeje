@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 23 recettes
+// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 24 recettes
 // 👉 Pour AJOUTER une recette Boulangerie : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4124,5 +4124,43 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Four modéré", detail: "30 minutes à 170°C : trop chaud, la croûte se forme avant que la mie dense n'ait fini de cuire.", badge: null }
     ],
     liees: ["brioche","saintgenix","kouglof"]
+  },
+  madfouna: {
+    dateAjout: "2026-08-24T12:07:00",
+    nom: "Madfouna",
+    cat: "boulangerie", pays: "maroc",
+    base: 6,
+    temps: "2 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "La « pizza berbère » du Tafilalet, un pain plat farci à la viande et aux amandes, cuit enterré sous le sable chaud du désert. « Madfouna » veut dire enfouie — le nom décrit la cuisson, pas la garniture.",
+    tableauMadfouna: [
+      { nb: 1, farine: "60 g", boeufhache: "70 g", oignon: "½", amandes: "15 g", oeufs: "¼", persil: "6 g", epicesras: "2 g", huileolive: "12 ml", levureboulangere: "1.2 g", sel: "0.8 g" },
+      { nb: 2, farine: "120 g", boeufhache: "140 g", oignon: "1", amandes: "30 g", oeufs: "½", persil: "12 g", epicesras: "4 g", huileolive: "24 ml", levureboulangere: "2.4 g", sel: "1.6 g" },
+      { nb: 3, farine: "180 g", boeufhache: "210 g", oignon: "1½", amandes: "45 g", oeufs: "¾", persil: "18 g", epicesras: "6 g", huileolive: "36 ml", levureboulangere: "3.6 g", sel: "2.4 g" },
+      { nb: 4, farine: "240 g", boeufhache: "280 g", oignon: "2", amandes: "60 g", oeufs: "1", persil: "24 g", epicesras: "8 g", huileolive: "48 ml", levureboulangere: "4.8 g", sel: "3.2 g" },
+      { nb: 5, farine: "300 g", boeufhache: "350 g", oignon: "2½", amandes: "75 g", oeufs: "1¼", persil: "30 g", epicesras: "10 g", huileolive: "60 ml", levureboulangere: "6 g", sel: "4 g" },
+      { nb: 6, farine: "360 g", boeufhache: "420 g", oignon: "3", amandes: "90 g", oeufs: "1½", persil: "36 g", epicesras: "12 g", huileolive: "72 ml", levureboulangere: "7.2 g", sel: "4.8 g" },
+      { nb: 7, farine: "420 g", boeufhache: "490 g", oignon: "3½", amandes: "105 g", oeufs: "1¾", persil: "42 g", epicesras: "14 g", huileolive: "84 ml", levureboulangere: "8.4 g", sel: "5.6 g" },
+      { nb: 8, farine: "480 g", boeufhache: "560 g", oignon: "4", amandes: "120 g", oeufs: "2", persil: "48 g", epicesras: "16 g", huileolive: "96 ml", levureboulangere: "9.6 g", sel: "6.4 g" },
+      { nb: 9, farine: "540 g", boeufhache: "630 g", oignon: "4½", amandes: "135 g", oeufs: "2¼", persil: "54 g", epicesras: "18 g", huileolive: "108 ml", levureboulangere: "10.8 g", sel: "7.2 g" },
+      { nb: 10, farine: "600 g", boeufhache: "700 g", oignon: "5", amandes: "150 g", oeufs: "2½", persil: "60 g", epicesras: "20 g", huileolive: "120 ml", levureboulangere: "12 g", sel: "8 g" },
+      { nb: 11, farine: "660 g", boeufhache: "770 g", oignon: "5½", amandes: "165 g", oeufs: "2¾", persil: "66 g", epicesras: "22 g", huileolive: "132 ml", levureboulangere: "13.2 g", sel: "8.8 g" },
+      { nb: 12, farine: "720 g", boeufhache: "840 g", oignon: "6", amandes: "180 g", oeufs: "3", persil: "72 g", epicesras: "24 g", huileolive: "144 ml", levureboulangere: "14.4 g", sel: "9.6 g" },
+      { nb: 13, farine: "780 g", boeufhache: "910 g", oignon: "6½", amandes: "195 g", oeufs: "3¼", persil: "78 g", epicesras: "26 g", huileolive: "156 ml", levureboulangere: "15.6 g", sel: "10.4 g" },
+      { nb: 14, farine: "840 g", boeufhache: "980 g", oignon: "7", amandes: "210 g", oeufs: "3½", persil: "84 g", epicesras: "28 g", huileolive: "168 ml", levureboulangere: "16.8 g", sel: "11.2 g" },
+      { nb: 15, farine: "900 g", boeufhache: "1050 g", oignon: "7½", amandes: "225 g", oeufs: "3¾", persil: "90 g", epicesras: "30 g", huileolive: "180 ml", levureboulangere: "18 g", sel: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Une pâte à pain SOUPLE, presque collante", detail: "Elle doit s'étirer à la main sans se déchirer : une pâte ferme se fendra en emprisonnant la garniture.", badge: null },
+      { icone: "🥩", titre: "Une farce crue, jamais précuite", detail: "Elle cuit dans le pain et l'imprègne de son jus : précuite, elle rend le tout sec et sans intérêt.", badge: null },
+      { icone: "💧", titre: "Une farce ÉGOUTTÉE, sans excès de gras", detail: "L'oignon rend beaucoup d'eau : on le fait dégorger au sel, sinon la pâte reste crue par en dessous.", badge: null },
+      { icone: "🌰", titre: "Amandes concassées, pas moulues", detail: "En éclats : elles apportent le croquant qui tranche avec le moelleux du pain. Moulues, elles disparaissent.", badge: null },
+      { icone: "🥟", titre: "Deux disques, soudés au rouleau", detail: "On pose la farce sur le premier, on couvre du second, et on scelle en roulant les bords ensemble.", badge: null },
+      { icone: "🍴", titre: "Piquer généreusement sur le dessus", detail: "La vapeur doit s'échapper : sans trous, le pain gonfle en ballon et se sépare de sa farce.", badge: null },
+      { icone: "🔥", titre: "Four très chaud, 240 °C, 20 minutes", detail: "Elle doit dorer vite : une cuisson lente dessèche la viande avant que la croûte ne se forme.", badge: null }
+    ],
+    liees: ["msemen","pastillapoulet","couscous"]
   },
 });

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 66 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 69 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -17644,5 +17644,119 @@ Object.assign(recettes, {
       { icone: "🥛", titre: "Crème fraîche à part", detail: "Servie froide sur le bourdelot brûlant : c'est le service normand traditionnel.", badge: null }
     ],
     liees: ["douillons","chaussonpommes","tartetatinpommes"]
+  },
+  zenzai: {
+    dateAjout: "2026-08-24T11:02:00",
+    nom: "Zenzai",
+    cat: "desserts", saisons: ["hiver"], pays: "japon",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐ Facile",
+    emoji: "🍡",
+    description: "La soupe sucrée de haricots azuki aux mochis grillés, dessert d'hiver qu'on sert brûlant avec un thé amer. Le sucre ne s'ajoute JAMAIS avant que les haricots ne soient tendres — il figerait leur peau définitivement.",
+    tableauZenzai: [
+      { nb: 1, haricotsrouges: "60 g", sucre: "55 g", farineRiz: "30 g", sel: "0.5 g" },
+      { nb: 2, haricotsrouges: "120 g", sucre: "110 g", farineRiz: "60 g", sel: "1 g" },
+      { nb: 3, haricotsrouges: "180 g", sucre: "165 g", farineRiz: "90 g", sel: "1.5 g" },
+      { nb: 4, haricotsrouges: "240 g", sucre: "220 g", farineRiz: "120 g", sel: "2 g" },
+      { nb: 5, haricotsrouges: "300 g", sucre: "275 g", farineRiz: "150 g", sel: "2.5 g" },
+      { nb: 6, haricotsrouges: "360 g", sucre: "330 g", farineRiz: "180 g", sel: "3 g" },
+      { nb: 7, haricotsrouges: "420 g", sucre: "385 g", farineRiz: "210 g", sel: "3.5 g" },
+      { nb: 8, haricotsrouges: "480 g", sucre: "440 g", farineRiz: "240 g", sel: "4 g" },
+      { nb: 9, haricotsrouges: "540 g", sucre: "495 g", farineRiz: "270 g", sel: "4.5 g" },
+      { nb: 10, haricotsrouges: "600 g", sucre: "550 g", farineRiz: "300 g", sel: "5 g" },
+      { nb: 11, haricotsrouges: "660 g", sucre: "605 g", farineRiz: "330 g", sel: "5.5 g" },
+      { nb: 12, haricotsrouges: "720 g", sucre: "660 g", farineRiz: "360 g", sel: "6 g" },
+      { nb: 13, haricotsrouges: "780 g", sucre: "715 g", farineRiz: "390 g", sel: "6.5 g" },
+      { nb: 14, haricotsrouges: "840 g", sucre: "770 g", farineRiz: "420 g", sel: "7 g" },
+      { nb: 15, haricotsrouges: "900 g", sucre: "825 g", farineRiz: "450 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Jeter la PREMIÈRE eau de cuisson", detail: "Cinq minutes d'ébullition, on égoutte, on repart à l'eau froide : c'est ce qui retire l'amertume des azuki.", badge: null },
+      { icone: "🚫", titre: "Ni sel ni sucre avant tendreté", detail: "Le sucre fige la peau des haricots : ajouté trop tôt, ils resteront durs quoi qu'on fasse ensuite.", badge: null },
+      { icone: "♨️", titre: "Une heure à petits frémissements", detail: "Les haricots doivent s'écraser entre deux doigts sans la moindre résistance avant qu'on ne les sucre.", badge: null },
+      { icone: "🍬", titre: "Le sucre en TROIS fois", detail: "Un tiers, vingt minutes, un tiers, et ainsi de suite : versé d'un coup, il déshydrate les haricots et les racornit.", badge: null },
+      { icone: "🧂", titre: "Une pincée de sel dans le sucré", detail: "Elle ne sale pas, elle creuse : sans elle, le zenzai est plat et vite écœurant.", badge: null },
+      { icone: "🍡", titre: "Griller les mochis à SEC", detail: "Jusqu'à ce qu'ils gonflent et se fendent : bouillis, ils se dissolvent et épaississent la soupe.", badge: null },
+      { icone: "🍵", titre: "Servir brûlant, avec un thé amer", detail: "L'amertume du thé vert est ce qui permet de finir un bol entier de quelque chose d'aussi sucré.", badge: null }
+    ],
+    liees: ["anmitsu","yokan","daifuku"]
+  },
+  songpyeon: {
+    dateAjout: "2026-08-24T11:04:00",
+    nom: "Songpyeon",
+    cat: "desserts", saisons: ["automne"], pays: "coree",
+    base: 10,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌙",
+    description: "Les gâteaux de riz en demi-lune de Chuseok, la fête coréenne des récoltes. On les cuit sur un lit d'aiguilles de pin — « song » veut dire pin, et c'est ce parfum qui donne son nom au gâteau.",
+    tableauSongpyeon: [
+      { nb: 1, farineRiz: "40 g", sesame: "12 g", miel: "10 g", sucre: "8 g", huilesesame: "2 ml", sel: "0.4 g" },
+      { nb: 2, farineRiz: "80 g", sesame: "24 g", miel: "20 g", sucre: "16 g", huilesesame: "4 ml", sel: "0.8 g" },
+      { nb: 3, farineRiz: "120 g", sesame: "36 g", miel: "30 g", sucre: "24 g", huilesesame: "6 ml", sel: "1.2 g" },
+      { nb: 4, farineRiz: "160 g", sesame: "48 g", miel: "40 g", sucre: "32 g", huilesesame: "8 ml", sel: "1.6 g" },
+      { nb: 5, farineRiz: "200 g", sesame: "60 g", miel: "50 g", sucre: "40 g", huilesesame: "10 ml", sel: "2 g" },
+      { nb: 6, farineRiz: "240 g", sesame: "72 g", miel: "60 g", sucre: "48 g", huilesesame: "12 ml", sel: "2.4 g" },
+      { nb: 7, farineRiz: "280 g", sesame: "84 g", miel: "70 g", sucre: "56 g", huilesesame: "14 ml", sel: "2.8 g" },
+      { nb: 8, farineRiz: "320 g", sesame: "96 g", miel: "80 g", sucre: "64 g", huilesesame: "16 ml", sel: "3.2 g" },
+      { nb: 9, farineRiz: "360 g", sesame: "108 g", miel: "90 g", sucre: "72 g", huilesesame: "18 ml", sel: "3.6 g" },
+      { nb: 10, farineRiz: "400 g", sesame: "120 g", miel: "100 g", sucre: "80 g", huilesesame: "20 ml", sel: "4 g" },
+      { nb: 11, farineRiz: "440 g", sesame: "132 g", miel: "110 g", sucre: "88 g", huilesesame: "22 ml", sel: "4.4 g" },
+      { nb: 12, farineRiz: "480 g", sesame: "144 g", miel: "120 g", sucre: "96 g", huilesesame: "24 ml", sel: "4.8 g" },
+      { nb: 13, farineRiz: "520 g", sesame: "156 g", miel: "130 g", sucre: "104 g", huilesesame: "26 ml", sel: "5.2 g" },
+      { nb: 14, farineRiz: "560 g", sesame: "168 g", miel: "140 g", sucre: "112 g", huilesesame: "28 ml", sel: "5.6 g" },
+      { nb: 15, farineRiz: "600 g", sesame: "180 g", miel: "150 g", sucre: "120 g", huilesesame: "30 ml", sel: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Pétrir la farine de riz à l'eau BOUILLANTE", detail: "Elle n'a pas de gluten : seule l'eau bouillante gélatinise l'amidon et rend la pâte malléable.", badge: null },
+      { icone: "🖐️", titre: "Pétrir dix minutes, jusqu'au lobe d'oreille", detail: "C'est le repère coréen, transmis tel quel : la pâte doit avoir exactement cette souplesse.", badge: null },
+      { icone: "🌰", titre: "Une farce SÈCHE, jamais coulante", detail: "Sésame grillé et miel à peine liants : trop humide, elle perce la pâte pendant la cuisson.", badge: null },
+      { icone: "💨", titre: "Chasser tout l'air en refermant", detail: "Une seule bulle emprisonnée fait éclater le gâteau dans le panier vapeur.", badge: null },
+      { icone: "🌙", titre: "Former une demi-lune, pas une boule", detail: "La forme n'est pas décorative : c'est un gâteau de récolte, et la demi-lune est celle qui va croître.", badge: null },
+      { icone: "🌲", titre: "Des aiguilles de pin dans le panier", detail: "Elles parfument la vapeur et empêchent les gâteaux de coller. À défaut, un linge humide — mais on perd le nom.", badge: null },
+      { icone: "🫒", titre: "Badigeonner d'huile de sésame à la sortie", detail: "Encore brûlants : ils deviennent brillants et cessent de coller les uns aux autres.", badge: null }
+    ],
+    liees: ["injeolmi","tteokguk","daifuku"]
+  },
+  romeuejulieta: {
+    dateAjout: "2026-08-24T12:03:00",
+    nom: "Romeu e Julieta",
+    cat: "desserts", pays: "bresil",
+    base: 8,
+    temps: "1 h 15",
+    niveau: "⭐ Facile",
+    emoji: "❤️",
+    description: "Le mariage brésilien le plus célèbre : la pâte de goyave et le fromage frais, si indissociables qu'on les a baptisés du nom des amants de Vérone. Ici en tarte, où la goyave fond en une couche brillante sur l'appareil au fromage.",
+    tableauRomeuejulieta: [
+      { nb: 1, goyave: "55 g", fromagefrais: "70 g", sucre: "18 g", oeufs: "½", farine: "12 g", beurre: "14 g", citron: "¼", sel: "0.3 g" },
+      { nb: 2, goyave: "110 g", fromagefrais: "140 g", sucre: "36 g", oeufs: "1", farine: "24 g", beurre: "28 g", citron: "½", sel: "0.6 g" },
+      { nb: 3, goyave: "165 g", fromagefrais: "210 g", sucre: "54 g", oeufs: "1½", farine: "36 g", beurre: "42 g", citron: "¾", sel: "0.9 g" },
+      { nb: 4, goyave: "220 g", fromagefrais: "280 g", sucre: "72 g", oeufs: "2", farine: "48 g", beurre: "56 g", citron: "1", sel: "1.2 g" },
+      { nb: 5, goyave: "275 g", fromagefrais: "350 g", sucre: "90 g", oeufs: "2½", farine: "60 g", beurre: "70 g", citron: "1¼", sel: "1.5 g" },
+      { nb: 6, goyave: "330 g", fromagefrais: "420 g", sucre: "108 g", oeufs: "3", farine: "72 g", beurre: "84 g", citron: "1½", sel: "1.8 g" },
+      { nb: 7, goyave: "385 g", fromagefrais: "490 g", sucre: "126 g", oeufs: "3½", farine: "84 g", beurre: "98 g", citron: "1¾", sel: "2.1 g" },
+      { nb: 8, goyave: "440 g", fromagefrais: "560 g", sucre: "144 g", oeufs: "4", farine: "96 g", beurre: "112 g", citron: "2", sel: "2.4 g" },
+      { nb: 9, goyave: "495 g", fromagefrais: "630 g", sucre: "162 g", oeufs: "4½", farine: "108 g", beurre: "126 g", citron: "2¼", sel: "2.7 g" },
+      { nb: 10, goyave: "550 g", fromagefrais: "700 g", sucre: "180 g", oeufs: "5", farine: "120 g", beurre: "140 g", citron: "2½", sel: "3 g" },
+      { nb: 11, goyave: "605 g", fromagefrais: "770 g", sucre: "198 g", oeufs: "5½", farine: "132 g", beurre: "154 g", citron: "2¾", sel: "3.3 g" },
+      { nb: 12, goyave: "660 g", fromagefrais: "840 g", sucre: "216 g", oeufs: "6", farine: "144 g", beurre: "168 g", citron: "3", sel: "3.6 g" },
+      { nb: 13, goyave: "715 g", fromagefrais: "910 g", sucre: "234 g", oeufs: "6½", farine: "156 g", beurre: "182 g", citron: "3¼", sel: "3.9 g" },
+      { nb: 14, goyave: "770 g", fromagefrais: "980 g", sucre: "252 g", oeufs: "7", farine: "168 g", beurre: "196 g", citron: "3½", sel: "4.2 g" },
+      { nb: 15, goyave: "825 g", fromagefrais: "1050 g", sucre: "270 g", oeufs: "7½", farine: "180 g", beurre: "210 g", citron: "3¾", sel: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Un fromage frais ACIDE, pas doux", detail: "Le queijo minas est légèrement acidulé : avec un fromage doux, la goyave écrase tout et le dessert devient sirupeux.", badge: null },
+      { icone: "🌡️", titre: "Fromage et œufs à température ambiante", detail: "Sortis du froid, ils font grumeler l'appareil et la tarte cuit en couches séparées.", badge: null },
+      { icone: "🥄", titre: "Mélanger à la spatule, jamais au fouet", detail: "Le fouet incorpore de l'air : la tarte gonfle au four puis retombe en crevassant en refroidissant.", badge: null },
+      { icone: "🟥", titre: "Fondre la goyave avec une cuillère d'eau", detail: "La goiabada est trop ferme pour s'étaler : quelques secondes à feu doux et elle devient nappante.", badge: null },
+      { icone: "〰️", titre: "Déposer la goyave en spirale, puis marbrer", detail: "Une pointe de couteau tirée en travers : mélangée, elle disparaît ; posée en bloc, elle coule au fond.", badge: null },
+      { icone: "🔥", titre: "Cuisson douce, 40 minutes à 150 °C", detail: "Le centre doit encore trembler à la sortie : trop cuit, l'appareil au fromage devient granuleux.", badge: null },
+      { icone: "❄️", titre: "Quatre heures au frais, minimum", detail: "Elle se coupe mal et n'a aucun goût tiède. Une nuit entière est encore mieux.", badge: null }
+    ],
+    liees: ["quindim","beijinho","brigadeiro"]
   },
 });

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_aperitifs.js — Recettes de catégorie "aperitifs" (Apéritifs) — 30 recettes
+// recettes_aperitifs.js — Recettes de catégorie "aperitifs" (Apéritifs) — 31 recettes
 // 👉 Pour AJOUTER une recette Apéritifs : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4088,5 +4088,43 @@ tapenade: {
       { icone: "🎈", titre: "Elles se retournent seules", detail: "Quand la pâte est bien levée : si elles restent à plat, c'est qu'elle a manqué de pousse.", badge: null }
     ],
     liees: ["beignetscrevettes","arancinissicilien","gnoccofritto"]
+  },
+  yangrouchuan: {
+    dateAjout: "2026-08-24T10:03:00",
+    nom: "Yang Rou Chuan",
+    cat: "aperitifs", saisons: ["ete"], pays: "chine",
+    base: 6,
+    temps: "30 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🍢",
+    description: "Les brochettes d'agneau au cumin du Xinjiang, vendues au coin des rues jusque tard dans la nuit. Le cumin ne se met JAMAIS sur la viande crue : il brûlerait avant que la brochette ne soit cuite.",
+    tableauYangrouchuan: [
+      { nb: 1, agneau: "110 g", cumin: "3 g", piment: "2 g", sel: "1.5 g", huile: "6 ml", ail: "1", poivre: "0.6 g" },
+      { nb: 2, agneau: "220 g", cumin: "6 g", piment: "4 g", sel: "3 g", huile: "12 ml", ail: "2", poivre: "1.2 g" },
+      { nb: 3, agneau: "330 g", cumin: "9 g", piment: "6 g", sel: "4.5 g", huile: "18 ml", ail: "3", poivre: "1.8 g" },
+      { nb: 4, agneau: "440 g", cumin: "12 g", piment: "8 g", sel: "6 g", huile: "24 ml", ail: "4", poivre: "2.4 g" },
+      { nb: 5, agneau: "550 g", cumin: "15 g", piment: "10 g", sel: "7.5 g", huile: "30 ml", ail: "5", poivre: "3 g" },
+      { nb: 6, agneau: "660 g", cumin: "18 g", piment: "12 g", sel: "9 g", huile: "36 ml", ail: "6", poivre: "3.6 g" },
+      { nb: 7, agneau: "770 g", cumin: "21 g", piment: "14 g", sel: "10.5 g", huile: "42 ml", ail: "7", poivre: "4.2 g" },
+      { nb: 8, agneau: "880 g", cumin: "24 g", piment: "16 g", sel: "12 g", huile: "48 ml", ail: "8", poivre: "4.8 g" },
+      { nb: 9, agneau: "990 g", cumin: "27 g", piment: "18 g", sel: "13.5 g", huile: "54 ml", ail: "9", poivre: "5.4 g" },
+      { nb: 10, agneau: "1100 g", cumin: "30 g", piment: "20 g", sel: "15 g", huile: "60 ml", ail: "10", poivre: "6 g" },
+      { nb: 11, agneau: "1210 g", cumin: "33 g", piment: "22 g", sel: "16.5 g", huile: "66 ml", ail: "11", poivre: "6.6 g" },
+      { nb: 12, agneau: "1320 g", cumin: "36 g", piment: "24 g", sel: "18 g", huile: "72 ml", ail: "12", poivre: "7.2 g" },
+      { nb: 13, agneau: "1430 g", cumin: "39 g", piment: "26 g", sel: "19.5 g", huile: "78 ml", ail: "13", poivre: "7.8 g" },
+      { nb: 14, agneau: "1540 g", cumin: "42 g", piment: "28 g", sel: "21 g", huile: "84 ml", ail: "14", poivre: "8.4 g" },
+      { nb: 15, agneau: "1650 g", cumin: "45 g", piment: "30 g", sel: "22.5 g", huile: "90 ml", ail: "15", poivre: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐑", titre: "Alterner maigre et GRAS", detail: "Un dé de gras tous les deux dés de viande : il fond sur la braise et arrose le reste. Sans lui, la brochette est sèche.", badge: null },
+      { icone: "📏", titre: "Des dés de 2 cm, pas plus", detail: "Plus gros, ils restent crus au cœur ; plus petits, ils sont carbonisés avant d'être cuits.", badge: null },
+      { icone: "🧂", titre: "Assaisonner APRÈS la première face", detail: "Le cumin brûle vite : posé sur la viande crue, il est noir avant que la brochette ne soit prête.", badge: null },
+      { icone: "🌾", titre: "Du cumin en graines, concassé au dernier moment", detail: "Moulu d'avance, il a perdu son huile essentielle. Le concasser libère le parfum qui définit ce plat.", badge: null },
+      { icone: "🔥", titre: "Braises vives, jamais de flamme", detail: "La flamme dépose de la suie ; la braise rouge saisit. On souffle plutôt que d'attendre.", badge: null },
+      { icone: "🔄", titre: "Tourner souvent, cuire vite", detail: "Trois à quatre minutes en tout : l'agneau doit rester rosé au centre.", badge: null },
+      { icone: "🍺", titre: "Se mangent debout, brûlantes", detail: "C'est un plat de rue : on les partage à plusieurs, directement sur la pique, sans assiette.", badge: null }
+    ],
+    liees: ["yakitori","anticuchos","seekhkebab"]
   },
 });

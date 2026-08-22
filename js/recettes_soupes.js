@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 35 recettes
+// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 39 recettes
 // 👉 Pour AJOUTER une recette Soupes : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -6545,5 +6545,157 @@ Object.assign(recettes, {
       { icone: "🫒", titre: "Huile crue au service", detail: "Un filet dans chaque bol : c'est le seul enrichissement, et il fait toute la différence.", badge: null }
     ],
     liees: ["veloutepoireau","caldogallego","veloutepatatepoireaux"]
+  },
+  suanlafen: {
+    dateAjout: "2026-08-24T10:00:00",
+    nom: "Suan La Fen",
+    cat: "soupes", saisons: ["automne","hiver"], pays: "chine",
+    base: 4,
+    temps: "1 h 15",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Les vermicelles de patate douce aigres-piquants de Chongqing, servis dans un bol assaisonné qu'on mouille de bouillon. Ce n'est pas une soupe qu'on assaisonne : c'est un assaisonnement qu'on allonge, et l'ordre change tout.",
+    tableauSuanlafen: [
+      { nb: 1, vermicelles: "70 g", bouillon: "320 ml", vinaigreNoir: "20 ml", huilepiment: "15 ml", cacahuete: "12 g", saucesoja: "10 ml", ail: "1", ciboule: "12 g", coriandre: "5 g", sesame: "3 g", sucre: "2 g", poivre: "0.6 g" },
+      { nb: 2, vermicelles: "140 g", bouillon: "640 ml", vinaigreNoir: "40 ml", huilepiment: "30 ml", cacahuete: "24 g", saucesoja: "20 ml", ail: "2", ciboule: "24 g", coriandre: "10 g", sesame: "6 g", sucre: "4 g", poivre: "1.2 g" },
+      { nb: 3, vermicelles: "210 g", bouillon: "960 ml", vinaigreNoir: "60 ml", huilepiment: "45 ml", cacahuete: "36 g", saucesoja: "30 ml", ail: "3", ciboule: "36 g", coriandre: "15 g", sesame: "9 g", sucre: "6 g", poivre: "1.8 g" },
+      { nb: 4, vermicelles: "280 g", bouillon: "1280 ml", vinaigreNoir: "80 ml", huilepiment: "60 ml", cacahuete: "48 g", saucesoja: "40 ml", ail: "4", ciboule: "48 g", coriandre: "20 g", sesame: "12 g", sucre: "8 g", poivre: "2.4 g" },
+      { nb: 5, vermicelles: "350 g", bouillon: "1600 ml", vinaigreNoir: "100 ml", huilepiment: "75 ml", cacahuete: "60 g", saucesoja: "50 ml", ail: "5", ciboule: "60 g", coriandre: "25 g", sesame: "15 g", sucre: "10 g", poivre: "3 g" },
+      { nb: 6, vermicelles: "420 g", bouillon: "1920 ml", vinaigreNoir: "120 ml", huilepiment: "90 ml", cacahuete: "72 g", saucesoja: "60 ml", ail: "6", ciboule: "72 g", coriandre: "30 g", sesame: "18 g", sucre: "12 g", poivre: "3.6 g" },
+      { nb: 7, vermicelles: "490 g", bouillon: "2240 ml", vinaigreNoir: "140 ml", huilepiment: "105 ml", cacahuete: "84 g", saucesoja: "70 ml", ail: "7", ciboule: "84 g", coriandre: "35 g", sesame: "21 g", sucre: "14 g", poivre: "4.2 g" },
+      { nb: 8, vermicelles: "560 g", bouillon: "2560 ml", vinaigreNoir: "160 ml", huilepiment: "120 ml", cacahuete: "96 g", saucesoja: "80 ml", ail: "8", ciboule: "96 g", coriandre: "40 g", sesame: "24 g", sucre: "16 g", poivre: "4.8 g" },
+      { nb: 9, vermicelles: "630 g", bouillon: "2880 ml", vinaigreNoir: "180 ml", huilepiment: "135 ml", cacahuete: "108 g", saucesoja: "90 ml", ail: "9", ciboule: "108 g", coriandre: "45 g", sesame: "27 g", sucre: "18 g", poivre: "5.4 g" },
+      { nb: 10, vermicelles: "700 g", bouillon: "3200 ml", vinaigreNoir: "200 ml", huilepiment: "150 ml", cacahuete: "120 g", saucesoja: "100 ml", ail: "10", ciboule: "120 g", coriandre: "50 g", sesame: "30 g", sucre: "20 g", poivre: "6 g" },
+      { nb: 11, vermicelles: "770 g", bouillon: "3520 ml", vinaigreNoir: "220 ml", huilepiment: "165 ml", cacahuete: "132 g", saucesoja: "110 ml", ail: "11", ciboule: "132 g", coriandre: "55 g", sesame: "33 g", sucre: "22 g", poivre: "6.6 g" },
+      { nb: 12, vermicelles: "840 g", bouillon: "3840 ml", vinaigreNoir: "240 ml", huilepiment: "180 ml", cacahuete: "144 g", saucesoja: "120 ml", ail: "12", ciboule: "144 g", coriandre: "60 g", sesame: "36 g", sucre: "24 g", poivre: "7.2 g" },
+      { nb: 13, vermicelles: "910 g", bouillon: "4160 ml", vinaigreNoir: "260 ml", huilepiment: "195 ml", cacahuete: "156 g", saucesoja: "130 ml", ail: "13", ciboule: "156 g", coriandre: "65 g", sesame: "39 g", sucre: "26 g", poivre: "7.8 g" },
+      { nb: 14, vermicelles: "980 g", bouillon: "4480 ml", vinaigreNoir: "280 ml", huilepiment: "210 ml", cacahuete: "168 g", saucesoja: "140 ml", ail: "14", ciboule: "168 g", coriandre: "70 g", sesame: "42 g", sucre: "28 g", poivre: "8.4 g" },
+      { nb: 15, vermicelles: "1050 g", bouillon: "4800 ml", vinaigreNoir: "300 ml", huilepiment: "225 ml", cacahuete: "180 g", saucesoja: "150 ml", ail: "15", ciboule: "180 g", coriandre: "75 g", sesame: "45 g", sucre: "30 g", poivre: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Des vermicelles de PATATE DOUCE", detail: "Ni blé ni riz : seule la patate douce donne cette texture élastique et translucide qui résiste sous la dent.", badge: null },
+      { icone: "💧", titre: "Tremper une heure à l'eau FROIDE", detail: "À l'eau chaude ils gonflent en surface et restent durs au cœur ; à froid, l'hydratation est régulière.", badge: null },
+      { icone: "🥣", titre: "Monter la sauce dans le BOL", detail: "Vinaigre, soja, ail écrasé, huile pimentée directement au fond : on mouille un assaisonnement, on n'assaisonne pas une soupe.", badge: null },
+      { icone: "🍶", titre: "Du vinaigre noir de Chinkiang", detail: "Son goût malté n'a rien à voir avec un vinaigre de vin — c'est lui qui donne le « suan » du nom.", badge: null },
+      { icone: "🌶️", titre: "L'huile pimentée versée BRÛLANTE", detail: "Sur l'ail cru au fond du bol : elle le cuit à l'instant et libère son parfum. Tiède, l'ail reste agressif.", badge: null },
+      { icone: "⏱️", titre: "Deux minutes de cuisson, pas plus", detail: "Les vermicelles trempés cuisent très vite et tournent en pâte si on les oublie.", badge: null },
+      { icone: "🥜", titre: "Cacahuètes concassées au dernier moment", detail: "Elles doivent croquer : ajoutées trop tôt, elles ramollissent et le bol perd son contraste.", badge: null }
+    ],
+    liees: ["dandanmian","liangpi","hotandsour"]
+  },
+  ishikarinabe: {
+    dateAjout: "2026-08-24T10:07:00",
+    nom: "Ishikari Nabe",
+    cat: "soupes", saisons: ["automne","hiver"], pays: "japon",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "La marmite au saumon et au miso de Hokkaidō, nommée d'après le fleuve où l'on pêchait les saumons de retour. Une noisette de beurre au service : c'est la signature de l'île la plus laitière du Japon.",
+    tableauIshikarinabe: [
+      { nb: 1, saumon: "130 g", chou: "90 g", tofu: "60 g", pommedeterre: "70 g", poireau: "40 g", carotte: "30 g", miso: "25 g", dashi: "300 ml", beurre: "8 g", sake: "15 ml" },
+      { nb: 2, saumon: "260 g", chou: "180 g", tofu: "120 g", pommedeterre: "140 g", poireau: "80 g", carotte: "60 g", miso: "50 g", dashi: "600 ml", beurre: "16 g", sake: "30 ml" },
+      { nb: 3, saumon: "390 g", chou: "270 g", tofu: "180 g", pommedeterre: "210 g", poireau: "120 g", carotte: "90 g", miso: "75 g", dashi: "900 ml", beurre: "24 g", sake: "45 ml" },
+      { nb: 4, saumon: "520 g", chou: "360 g", tofu: "240 g", pommedeterre: "280 g", poireau: "160 g", carotte: "120 g", miso: "100 g", dashi: "1200 ml", beurre: "32 g", sake: "60 ml" },
+      { nb: 5, saumon: "650 g", chou: "450 g", tofu: "300 g", pommedeterre: "350 g", poireau: "200 g", carotte: "150 g", miso: "125 g", dashi: "1500 ml", beurre: "40 g", sake: "75 ml" },
+      { nb: 6, saumon: "780 g", chou: "540 g", tofu: "360 g", pommedeterre: "420 g", poireau: "240 g", carotte: "180 g", miso: "150 g", dashi: "1800 ml", beurre: "48 g", sake: "90 ml" },
+      { nb: 7, saumon: "910 g", chou: "630 g", tofu: "420 g", pommedeterre: "490 g", poireau: "280 g", carotte: "210 g", miso: "175 g", dashi: "2100 ml", beurre: "56 g", sake: "105 ml" },
+      { nb: 8, saumon: "1040 g", chou: "720 g", tofu: "480 g", pommedeterre: "560 g", poireau: "320 g", carotte: "240 g", miso: "200 g", dashi: "2400 ml", beurre: "64 g", sake: "120 ml" },
+      { nb: 9, saumon: "1170 g", chou: "810 g", tofu: "540 g", pommedeterre: "630 g", poireau: "360 g", carotte: "270 g", miso: "225 g", dashi: "2700 ml", beurre: "72 g", sake: "135 ml" },
+      { nb: 10, saumon: "1300 g", chou: "900 g", tofu: "600 g", pommedeterre: "700 g", poireau: "400 g", carotte: "300 g", miso: "250 g", dashi: "3000 ml", beurre: "80 g", sake: "150 ml" },
+      { nb: 11, saumon: "1430 g", chou: "990 g", tofu: "660 g", pommedeterre: "770 g", poireau: "440 g", carotte: "330 g", miso: "275 g", dashi: "3300 ml", beurre: "88 g", sake: "165 ml" },
+      { nb: 12, saumon: "1560 g", chou: "1080 g", tofu: "720 g", pommedeterre: "840 g", poireau: "480 g", carotte: "360 g", miso: "300 g", dashi: "3600 ml", beurre: "96 g", sake: "180 ml" },
+      { nb: 13, saumon: "1690 g", chou: "1170 g", tofu: "780 g", pommedeterre: "910 g", poireau: "520 g", carotte: "390 g", miso: "325 g", dashi: "3900 ml", beurre: "104 g", sake: "195 ml" },
+      { nb: 14, saumon: "1820 g", chou: "1260 g", tofu: "840 g", pommedeterre: "980 g", poireau: "560 g", carotte: "420 g", miso: "350 g", dashi: "4200 ml", beurre: "112 g", sake: "210 ml" },
+      { nb: 15, saumon: "1950 g", chou: "1350 g", tofu: "900 g", pommedeterre: "1050 g", poireau: "600 g", carotte: "450 g", miso: "375 g", dashi: "4500 ml", beurre: "120 g", sake: "225 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Utiliser la tête et l'arête", detail: "Le vrai ishikari nabe se fait avec le poisson entier : les parures donnent au bouillon un corps que les pavés seuls n'apportent pas.", badge: null },
+      { icone: "🔥", titre: "Ébouillanter les parures 10 secondes", detail: "Puis les rincer à l'eau froide : ça retire l'écume et l'odeur forte. Sauté, le bouillon reste trouble.", badge: null },
+      { icone: "🥔", titre: "Les légumes durs en premier", detail: "Pomme de terre et carotte demandent un quart d'heure ; le chou et le poireau, trois minutes.", badge: null },
+      { icone: "🍲", titre: "Le miso DÉLAYÉ, jamais jeté tel quel", detail: "On le dilue dans une louche de bouillon prélevée : lancé dans la marmite, il reste en grumeaux.", badge: null },
+      { icone: "🚫", titre: "Ne plus faire bouillir après le miso", detail: "L'ébullition détruit son parfum et le rend plat. Frémissement, et rien de plus.", badge: null },
+      { icone: "🐟", titre: "Le saumon en dernier, quatre minutes", detail: "Il doit rester nacré au cœur : trop cuit, il devient farineux et se défait dans le bouillon.", badge: null },
+      { icone: "🧈", titre: "Une noisette de beurre au service", detail: "La marque de Hokkaidō : elle arrondit le miso et lie le bouillon d'un seul coup.", badge: null }
+    ],
+    liees: ["tonjiru","soupemiso","oden"]
+  },
+  chankonabe: {
+    dateAjout: "2026-08-24T11:01:00",
+    nom: "Chanko Nabe",
+    cat: "soupes", saisons: ["automne","hiver"], pays: "japon",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "La marmite quotidienne des lutteurs de sumo, servie deux fois par jour dans les écuries. On y met du poulet et jamais de bœuf : un lutteur ne doit pas tomber sur ses quatre pattes.",
+    tableauChankonabe: [
+      { nb: 1, poulet: "130 g", chou: "90 g", tofu: "70 g", champignons: "50 g", poireau: "45 g", carotte: "30 g", dashi: "320 ml", saucesoja: "20 ml", mirin: "12 ml", gingembre: "6 g", nouilles: "40 g" },
+      { nb: 2, poulet: "260 g", chou: "180 g", tofu: "140 g", champignons: "100 g", poireau: "90 g", carotte: "60 g", dashi: "640 ml", saucesoja: "40 ml", mirin: "24 ml", gingembre: "12 g", nouilles: "80 g" },
+      { nb: 3, poulet: "390 g", chou: "270 g", tofu: "210 g", champignons: "150 g", poireau: "135 g", carotte: "90 g", dashi: "960 ml", saucesoja: "60 ml", mirin: "36 ml", gingembre: "18 g", nouilles: "120 g" },
+      { nb: 4, poulet: "520 g", chou: "360 g", tofu: "280 g", champignons: "200 g", poireau: "180 g", carotte: "120 g", dashi: "1280 ml", saucesoja: "80 ml", mirin: "48 ml", gingembre: "24 g", nouilles: "160 g" },
+      { nb: 5, poulet: "650 g", chou: "450 g", tofu: "350 g", champignons: "250 g", poireau: "225 g", carotte: "150 g", dashi: "1600 ml", saucesoja: "100 ml", mirin: "60 ml", gingembre: "30 g", nouilles: "200 g" },
+      { nb: 6, poulet: "780 g", chou: "540 g", tofu: "420 g", champignons: "300 g", poireau: "270 g", carotte: "180 g", dashi: "1920 ml", saucesoja: "120 ml", mirin: "72 ml", gingembre: "36 g", nouilles: "240 g" },
+      { nb: 7, poulet: "910 g", chou: "630 g", tofu: "490 g", champignons: "350 g", poireau: "315 g", carotte: "210 g", dashi: "2240 ml", saucesoja: "140 ml", mirin: "84 ml", gingembre: "42 g", nouilles: "280 g" },
+      { nb: 8, poulet: "1040 g", chou: "720 g", tofu: "560 g", champignons: "400 g", poireau: "360 g", carotte: "240 g", dashi: "2560 ml", saucesoja: "160 ml", mirin: "96 ml", gingembre: "48 g", nouilles: "320 g" },
+      { nb: 9, poulet: "1170 g", chou: "810 g", tofu: "630 g", champignons: "450 g", poireau: "405 g", carotte: "270 g", dashi: "2880 ml", saucesoja: "180 ml", mirin: "108 ml", gingembre: "54 g", nouilles: "360 g" },
+      { nb: 10, poulet: "1300 g", chou: "900 g", tofu: "700 g", champignons: "500 g", poireau: "450 g", carotte: "300 g", dashi: "3200 ml", saucesoja: "200 ml", mirin: "120 ml", gingembre: "60 g", nouilles: "400 g" },
+      { nb: 11, poulet: "1430 g", chou: "990 g", tofu: "770 g", champignons: "550 g", poireau: "495 g", carotte: "330 g", dashi: "3520 ml", saucesoja: "220 ml", mirin: "132 ml", gingembre: "66 g", nouilles: "440 g" },
+      { nb: 12, poulet: "1560 g", chou: "1080 g", tofu: "840 g", champignons: "600 g", poireau: "540 g", carotte: "360 g", dashi: "3840 ml", saucesoja: "240 ml", mirin: "144 ml", gingembre: "72 g", nouilles: "480 g" },
+      { nb: 13, poulet: "1690 g", chou: "1170 g", tofu: "910 g", champignons: "650 g", poireau: "585 g", carotte: "390 g", dashi: "4160 ml", saucesoja: "260 ml", mirin: "156 ml", gingembre: "78 g", nouilles: "520 g" },
+      { nb: 14, poulet: "1820 g", chou: "1260 g", tofu: "980 g", champignons: "700 g", poireau: "630 g", carotte: "420 g", dashi: "4480 ml", saucesoja: "280 ml", mirin: "168 ml", gingembre: "84 g", nouilles: "560 g" },
+      { nb: 15, poulet: "1950 g", chou: "1350 g", tofu: "1050 g", champignons: "750 g", poireau: "675 g", carotte: "450 g", dashi: "4800 ml", saucesoja: "300 ml", mirin: "180 ml", gingembre: "90 g", nouilles: "600 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Du poulet, jamais de bœuf", detail: "Bœuf et porc marchent à quatre pattes : un lutteur qui touche le sol des mains a perdu. Le poulet tient sur deux pattes.", badge: null },
+      { icone: "🥣", titre: "Travailler la farce jusqu'au COLLANT", detail: "Le haché doit devenir élastique sous la main : c'est ce qui tient les boulettes sans œuf ni chapelure.", badge: null },
+      { icone: "🥄", titre: "Former les boulettes au-dessus de la marmite", detail: "Directement à la cuillère dans le bouillon : roulées à l'avance, elles se tassent et durcissent.", badge: null },
+      { icone: "🍲", titre: "Un dashi juste assaisonné, jamais fort", detail: "Sept légumes vont le charger en cuisant : trop salé au départ, il devient immangeable à la fin.", badge: null },
+      { icone: "🥬", titre: "Empiler par temps de cuisson", detail: "Carotte au fond, chou au milieu, poireau au sommet. On ne remue jamais un nabe.", badge: null },
+      { icone: "⏱️", titre: "Vingt minutes à frémissement", detail: "L'ébullition trouble le bouillon et fait éclater les boulettes une à une.", badge: null },
+      { icone: "🍜", titre: "Le « shime » : des nouilles pour finir", detail: "Une fois la marmite vidée, on jette des nouilles dans le bouillon concentré. Personne ne s'arrête avant.", badge: null }
+    ],
+    liees: ["sukiyaki","shabushabu","oden"]
+  },
+  gaengsom: {
+    dateAjout: "2026-08-24T11:09:00",
+    nom: "Gaeng Som",
+    cat: "soupes", pays: "thailande",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Le curry aigre du Sud thaïlandais, le seul de la famille qui se passe entièrement de lait de coco. Son corps vient d'un peu de chair de poisson pilée DANS la pâte — pas d'une matière grasse.",
+    tableauGaengsom: [
+      { nb: 1, poisson: "130 g", tamarin: "15 g", piment: "4 g", ail: "1", echalote: "1", saucePoisson: "18 ml", sucre: "8 g", gombo: "40 g", ananas: "50 g", chou: "50 g" },
+      { nb: 2, poisson: "260 g", tamarin: "30 g", piment: "8 g", ail: "2", echalote: "2", saucePoisson: "36 ml", sucre: "16 g", gombo: "80 g", ananas: "100 g", chou: "100 g" },
+      { nb: 3, poisson: "390 g", tamarin: "45 g", piment: "12 g", ail: "3", echalote: "3", saucePoisson: "54 ml", sucre: "24 g", gombo: "120 g", ananas: "150 g", chou: "150 g" },
+      { nb: 4, poisson: "520 g", tamarin: "60 g", piment: "16 g", ail: "4", echalote: "4", saucePoisson: "72 ml", sucre: "32 g", gombo: "160 g", ananas: "200 g", chou: "200 g" },
+      { nb: 5, poisson: "650 g", tamarin: "75 g", piment: "20 g", ail: "5", echalote: "5", saucePoisson: "90 ml", sucre: "40 g", gombo: "200 g", ananas: "250 g", chou: "250 g" },
+      { nb: 6, poisson: "780 g", tamarin: "90 g", piment: "24 g", ail: "6", echalote: "6", saucePoisson: "108 ml", sucre: "48 g", gombo: "240 g", ananas: "300 g", chou: "300 g" },
+      { nb: 7, poisson: "910 g", tamarin: "105 g", piment: "28 g", ail: "7", echalote: "7", saucePoisson: "126 ml", sucre: "56 g", gombo: "280 g", ananas: "350 g", chou: "350 g" },
+      { nb: 8, poisson: "1040 g", tamarin: "120 g", piment: "32 g", ail: "8", echalote: "8", saucePoisson: "144 ml", sucre: "64 g", gombo: "320 g", ananas: "400 g", chou: "400 g" },
+      { nb: 9, poisson: "1170 g", tamarin: "135 g", piment: "36 g", ail: "9", echalote: "9", saucePoisson: "162 ml", sucre: "72 g", gombo: "360 g", ananas: "450 g", chou: "450 g" },
+      { nb: 10, poisson: "1300 g", tamarin: "150 g", piment: "40 g", ail: "10", echalote: "10", saucePoisson: "180 ml", sucre: "80 g", gombo: "400 g", ananas: "500 g", chou: "500 g" },
+      { nb: 11, poisson: "1430 g", tamarin: "165 g", piment: "44 g", ail: "11", echalote: "11", saucePoisson: "198 ml", sucre: "88 g", gombo: "440 g", ananas: "550 g", chou: "550 g" },
+      { nb: 12, poisson: "1560 g", tamarin: "180 g", piment: "48 g", ail: "12", echalote: "12", saucePoisson: "216 ml", sucre: "96 g", gombo: "480 g", ananas: "600 g", chou: "600 g" },
+      { nb: 13, poisson: "1690 g", tamarin: "195 g", piment: "52 g", ail: "13", echalote: "13", saucePoisson: "234 ml", sucre: "104 g", gombo: "520 g", ananas: "650 g", chou: "650 g" },
+      { nb: 14, poisson: "1820 g", tamarin: "210 g", piment: "56 g", ail: "14", echalote: "14", saucePoisson: "252 ml", sucre: "112 g", gombo: "560 g", ananas: "700 g", chou: "700 g" },
+      { nb: 15, poisson: "1950 g", tamarin: "225 g", piment: "60 g", ail: "15", echalote: "15", saucePoisson: "270 ml", sucre: "120 g", gombo: "600 g", ananas: "750 g", chou: "750 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Une pâte de curry SANS lait de coco", detail: "Le gaeng som est le curry thaï maigre : y mettre du coco, c'est faire un autre plat.", badge: null },
+      { icone: "🥣", titre: "Piler au mortier, jamais au mixeur", detail: "Les lames coupent les fibres et libèrent de l'eau ; le pilon écrase et libère les huiles.", badge: null },
+      { icone: "🐟", titre: "Un peu de chair de poisson DANS la pâte", detail: "Pochée puis pilée avec les épices : c'est elle qui donne au bouillon son corps, sans une goutte de gras.", badge: null },
+      { icone: "🍋", titre: "Du tamarin, pas du citron", detail: "Son acidité est ronde et tient en bouche ; le citron donne une pointe qui retombe aussitôt.", badge: null },
+      { icone: "⚖️", titre: "Aigre, salé, sucré, piquant : les quatre", detail: "On goûte et on rattrape jusqu'à ce qu'aucun ne domine. C'est le seul vrai savoir-faire de ce plat.", badge: null },
+      { icone: "🥬", titre: "Les légumes jetés crus dans le bouillon", detail: "Deux minutes : ils doivent rester croquants, un gaeng som n'est pas un mijoté.", badge: null },
+      { icone: "🐟", titre: "Le poisson en dernier, feu coupé", detail: "La chaleur résiduelle suffit à le cuire : à gros bouillons, il se défait en filaments.", badge: null }
+    ],
+    liees: ["tom_yam","tomkhagai","khaosoi"]
   },
 });

@@ -108306,5 +108306,1026 @@ window.RECETTES_EN = {
     "detail": "Not in the oven: you need heat from ABOVE, or the scallops overcook and turn rubbery."
    }
   ]
+ },
+ "suanlafen": {
+  "nom": "Suan La Fen",
+  "description": "The hot-and-sour sweet potato noodles of Chongqing, served in a seasoned bowl that you then flood with broth. It is not a soup you season: it is a seasoning you lengthen, and the order changes everything.",
+  "etapes": [
+   {
+    "titre": "SWEET POTATO noodles",
+    "detail": "Neither wheat nor rice: only sweet potato gives that springy, translucent texture that resists the tooth."
+   },
+   {
+    "titre": "Soak one hour in COLD water",
+    "detail": "In hot water they swell on the surface and stay hard in the middle; cold, they hydrate evenly."
+   },
+   {
+    "titre": "Build the sauce in the BOWL",
+    "detail": "Vinegar, soy, crushed garlic and chilli oil straight into the base: you lengthen a seasoning, you do not season a soup."
+   },
+   {
+    "titre": "Chinkiang black vinegar",
+    "detail": "Its malty depth has nothing to do with wine vinegar — it is what gives the \"suan\" of the name."
+   },
+   {
+    "titre": "Pour the chilli oil BOILING",
+    "detail": "Over the raw garlic in the bowl: it cooks it on contact and releases the aroma. Lukewarm, the garlic stays harsh."
+   },
+   {
+    "titre": "Two minutes of cooking, no more",
+    "detail": "Soaked noodles cook very fast and turn to paste if forgotten."
+   },
+   {
+    "titre": "Crushed peanuts at the last second",
+    "detail": "They must crunch: added early they soften and the bowl loses its contrast."
+   }
+  ]
+ },
+ "sanbeiji": {
+  "nom": "Sanbei Ji",
+  "description": "Taiwan's \"three cup chicken\": sesame oil, soy sauce and rice wine in equal measure. The dish's name IS its recipe — and the basil thrown in off the heat at the end is its signature.",
+  "etapes": [
+   {
+    "titre": "Three cups, in EQUAL parts",
+    "detail": "Sesame oil, soy sauce and rice wine measured in the same glass: the name of the dish is the recipe."
+   },
+   {
+    "titre": "Fry the ginger first",
+    "detail": "Sliced, in the sesame oil until the edges curl: it turns crisp and loses its bite."
+   },
+   {
+    "titre": "WHOLE garlic, cloves crushed",
+    "detail": "Chopped it would burn; whole it confits and turns sweet and soft. It is a garnish, not a seasoning."
+   },
+   {
+    "titre": "Thigh meat, never breast",
+    "detail": "Skin and bone on: breast would be dry long before the sauce had reduced."
+   },
+   {
+    "titre": "Reduce uncovered to a GLAZE",
+    "detail": "The sauce must coat the chicken and shine; still runny, the dish has failed."
+   },
+   {
+    "titre": "Basil off the heat",
+    "detail": "A large handful thrown in with the flame out: it infuses in the steam. Cooked, it blackens and turns bitter."
+   },
+   {
+    "titre": "Serve in the cooking pot",
+    "detail": "Sanbei ji is eaten scalding, straight from its casserole, with white rice for the sauce."
+   }
+  ]
+ },
+ "luroufan": {
+  "nom": "Lu Rou Fan",
+  "description": "Taiwan's braised pork rice, the national dish served from breakfast to dinner. Its flavour comes not from soy sauce but from fried SHALLOTS — that is the smell you recognise from one end of the island to the other.",
+  "etapes": [
+   {
+    "titre": "Chop by KNIFE, never machine",
+    "detail": "The belly is cut into 5 mm dice: run through a mincer it turns to a textureless mush."
+   },
+   {
+    "titre": "Fried shallots, the real secret",
+    "detail": "Fried slowly to deep gold: that is the aroma you recognise in a lu rou fan, not the soy sauce."
+   },
+   {
+    "titre": "Render the fat before any liquid",
+    "detail": "The dice cook first in their own fat until coloured: that is the foundation of the flavour."
+   },
+   {
+    "titre": "Caramelise the sugar separately",
+    "detail": "A dark caramel before the soy goes in: it gives the mahogany colour and a bitterness that stands up to the sweetness."
+   },
+   {
+    "titre": "The eggs simmer IN the sauce",
+    "detail": "Hard-boiled and peeled, an hour in the braise: they colour right through and become the best part of the dish."
+   },
+   {
+    "titre": "Ninety minutes on the lowest heat",
+    "detail": "The sauce must turn syrupy and the fat melt entirely. Rushed, you get pork in sauce, not lu rou."
+   },
+   {
+    "titre": "A ladle over rice, nothing else",
+    "detail": "No vegetables on the plate: just a little pickled radish alongside, and that is the whole dish."
+   }
+  ]
+ },
+ "yangrouchuan": {
+  "nom": "Yang Rou Chuan",
+  "description": "The cumin lamb skewers of Xinjiang, sold on street corners deep into the night. Cumin NEVER goes on raw meat: it would burn long before the skewer was cooked.",
+  "etapes": [
+   {
+    "titre": "Alternate lean and FAT",
+    "detail": "One cube of fat for every two of meat: it melts over the coals and bastes the rest. Without it the skewer is dry."
+   },
+   {
+    "titre": "Cubes of 2 cm, no bigger",
+    "detail": "Larger and they stay raw inside; smaller and they char before they cook."
+   },
+   {
+    "titre": "Season AFTER the first side",
+    "detail": "Cumin burns fast: laid on raw meat it is black before the skewer is ready."
+   },
+   {
+    "titre": "Cumin seed, crushed at the last moment",
+    "detail": "Pre-ground it has lost its essential oil. Crushing it releases the aroma that defines this dish."
+   },
+   {
+    "titre": "Live coals, never flame",
+    "detail": "Flame deposits soot; red coals sear. Blow on them rather than wait."
+   },
+   {
+    "titre": "Turn often, cook fast",
+    "detail": "Three to four minutes in all: the lamb must stay pink at the centre."
+   },
+   {
+    "titre": "Eaten standing, scalding hot",
+    "detail": "This is street food: shared between several people, straight off the stick, no plate."
+   }
+  ]
+ },
+ "goyachampuru": {
+  "nom": "Goya Champuru",
+  "description": "Okinawa's stir-fry of bitter melon, tofu and pork belly, the daily dish of the longest-living archipelago on earth. You do not try to remove the bitterness: BITTER goya is the dish.",
+  "etapes": [
+   {
+    "titre": "Seed it and scrape the white pith",
+    "detail": "That is where most of the bitterness sits: scooping it out makes the melon bearable without erasing it."
+   },
+   {
+    "titre": "Salt the slices, wait 10 minutes",
+    "detail": "Rinsed then squeezed, they lose a third of their bitterness. The other two thirds are kept on purpose."
+   },
+   {
+    "titre": "Press the tofu half an hour",
+    "detail": "Firm tofu under a weight: waterlogged, it would flood the wok and nothing would colour."
+   },
+   {
+    "titre": "Break the tofu by HAND",
+    "detail": "Into ragged pieces: cut with a knife it makes neat cubes that the sauce slides off."
+   },
+   {
+    "titre": "Pork belly first, on its own",
+    "detail": "It renders the fat that cooks everything else: the only cooking fat you actually need."
+   },
+   {
+    "titre": "Beaten egg last, high heat",
+    "detail": "Poured in a stream and stirred twice: it must bind the whole, never become an omelette."
+   },
+   {
+    "titre": "Dried bonito off the heat",
+    "detail": "It ripples in the steam and melts on contact. Cooked in the wok it turns dusty."
+   }
+  ]
+ },
+ "monjayaki": {
+  "nom": "Monjayaki",
+  "description": "The runny cousin of okonomiyaki, the speciality of Tokyo's Tsukishima district. Its batter pours like milk — and you hold it behind a wall of cabbage before mixing everything on the griddle.",
+  "etapes": [
+   {
+    "titre": "Ten times runnier than okonomiyaki",
+    "detail": "The batter must pour like milk: that is exactly what separates monja from its Osaka cousin."
+   },
+   {
+    "titre": "Cabbage chopped VERY fine",
+    "detail": "In 3 mm shreds: in big pieces it will not bind and the whole thing stays a puddle."
+   },
+   {
+    "titre": "Fry the filling dry first",
+    "detail": "Cabbage, prawns and spring onion with no batter: it goes in only once the water has cooked off."
+   },
+   {
+    "titre": "Build a RING, a crater in the middle",
+    "detail": "Piled high with the filling: this is the dam that will hold the liquid batter."
+   },
+   {
+    "titre": "Pour the batter into the crater",
+    "detail": "It must thicken in place before you breach the wall. Poured too soon, it floods the griddle."
+   },
+   {
+    "titre": "Mix, then SPREAD thin",
+    "detail": "Scrape, spread, let it catch: the base must caramelise into a crust."
+   },
+   {
+    "titre": "Eaten with a tiny spatula, off the griddle",
+    "detail": "Never on a plate: you scrape up small crisp portions as you go, several people at once."
+   }
+  ]
+ },
+ "hitsumabushi": {
+  "nom": "Hitsumabushi",
+  "description": "Nagoya's glazed eel, shredded and MIXED through the rice — that is the whole difference from unadon. The bowl is eaten in four successive quarters, each a different way: the ritual is the recipe.",
+  "etapes": [
+   {
+    "titre": "Grill plain BEFORE glazing",
+    "detail": "A first pass with no sauce to render the fat: glazed straight away, the eel burns before it cooks."
+   },
+   {
+    "titre": "The glaze is built in layers",
+    "detail": "Soy, mirin and sugar reduced; brush and return to the heat three times. One coat does not lacquer."
+   },
+   {
+    "titre": "Cut into short strips",
+    "detail": "Two centimetres: hitsumabushi is eaten with a spoon, never cut on the plate."
+   },
+   {
+    "titre": "Mix the eel THROUGH the rice",
+    "detail": "\"Hitsumabushi\" means shredded and mixed — eel laid on top would make it an unadon."
+   },
+   {
+    "titre": "First quarter: plain",
+    "detail": "You taste the eel for what it is. The four quarters are not folklore, they are the dish."
+   },
+   {
+    "titre": "Second quarter: condiments",
+    "detail": "Spring onion, nori and wasabi stirred through: the same bowl turns sharp and herbal."
+   },
+   {
+    "titre": "Third quarter: flooded with dashi",
+    "detail": "Pour the hot broth over, like an ochazuke. For the fourth, you repeat whichever you liked best."
+   }
+  ]
+ },
+ "ishikarinabe": {
+  "nom": "Ishikari Nabe",
+  "description": "Hokkaidō's salmon and miso hotpot, named after the river where the returning salmon were caught. A knob of butter at the table: the signature of Japan's dairy island.",
+  "etapes": [
+   {
+    "titre": "Use the head and bones",
+    "detail": "A real ishikari nabe uses the whole fish: the trimmings give the broth a body that fillets alone cannot."
+   },
+   {
+    "titre": "Blanch the trimmings 10 seconds",
+    "detail": "Then rinse under cold water: it removes the scum and the strong smell. Skipped, the broth stays cloudy."
+   },
+   {
+    "titre": "Hard vegetables first",
+    "detail": "Potato and carrot need a quarter of an hour; cabbage and leek, three minutes."
+   },
+   {
+    "titre": "Miso LOOSENED, never dropped in whole",
+    "detail": "Dilute it in a ladle of the broth: thrown into the pot it stays in lumps."
+   },
+   {
+    "titre": "Never boil again after the miso",
+    "detail": "Boiling destroys its aroma and flattens it. A tremble, and no more."
+   },
+   {
+    "titre": "Salmon last, four minutes",
+    "detail": "It must stay pearly at the centre: overcooked it turns mealy and falls apart in the broth."
+   },
+   {
+    "titre": "A knob of butter at the table",
+    "detail": "The Hokkaidō signature: it rounds off the miso and binds the broth at a stroke."
+   }
+  ]
+ },
+ "nikuman": {
+  "nom": "Nikuman",
+  "description": "Japan's steamed pork bun, sold scalding hot in every convenience store from the first cold days. Its dough is SWEETER than a Chinese baozi — and that contrast with the savoury filling is the whole point.",
+  "etapes": [
+   {
+    "titre": "A dough sweeter than bread",
+    "detail": "Nikuman is softer and sweeter than the Chinese baozi: that contrast with the savoury filling is why the dish exists."
+   },
+   {
+    "titre": "Knead with MILK, not water",
+    "detail": "It gives a white crumb and a softness that survives reheating."
+   },
+   {
+    "titre": "A COLD filling, almost set",
+    "detail": "The fat must be solid when you fill: lukewarm, it escapes and soaks the dough from below."
+   },
+   {
+    "titre": "Eighteen pleats, turning as you go",
+    "detail": "Pinch and turn a quarter each time: the seal must be tight and form an even rosette."
+   },
+   {
+    "titre": "A square of paper under each bun",
+    "detail": "Without it they stick to the basket and tear when you lift them off."
+   },
+   {
+    "titre": "Prove 20 minutes IN the basket",
+    "detail": "Before lighting the heat: they double and turn light instead of staying dense."
+   },
+   {
+    "titre": "Do not lift the lid while steaming",
+    "detail": "The thermal shock collapses the dough at once. Fifteen minutes covered, then five off the heat."
+   }
+  ]
+ },
+ "motsunabe": {
+  "nom": "Motsunabe",
+  "description": "Fukuoka's tripe hotpot, built as a dome of cabbage and spring onion over a garlic broth. You always end by throwing noodles into what is left — and for many, that is the best part of the meal.",
+  "etapes": [
+   {
+    "titre": "FATTY tripe, never lean",
+    "detail": "Fukuoka's motsu uses well-marbled pieces: lean, they turn rubbery and the broth stays thin."
+   },
+   {
+    "titre": "Blanch twice, fresh water each time",
+    "detail": "Ten minutes, discard, start again: this removes the smell without removing the flavour."
+   },
+   {
+    "titre": "Pre-cook an hour before assembling",
+    "detail": "Tripe needs time; in the final pot it will only get twenty minutes."
+   },
+   {
+    "titre": "An amount of garlic that looks excessive",
+    "detail": "Two cloves per person, sliced: it is the mark of the dish, not a slip of the hand."
+   },
+   {
+    "titre": "Build a DOME, never stir",
+    "detail": "Cabbage first, spring onion standing on top in a haystack: each layer steams the one below."
+   },
+   {
+    "titre": "Twenty minutes covered, hands off",
+    "detail": "The cabbage collapses and releases its water, which sweetens and rounds the broth."
+   },
+   {
+    "titre": "Finish with noodles in the broth",
+    "detail": "The \"shime\": ramen thrown into what is left at the bottom. Nobody skips this."
+   }
+  ]
+ },
+ "mentaikopasta": {
+  "nom": "Mentaiko Pasta",
+  "description": "Japan's cod roe spaghetti, born in Fukuoka in the 1960s. The whole difficulty is one point: the roe must NEVER cook, or it turns grainy and the dish goes sandy.",
+  "etapes": [
+   {
+    "titre": "Cod roe, NEVER cooked",
+    "detail": "The sac is slit and scraped: heated, it granulates and turns sandy in the mouth."
+   },
+   {
+    "titre": "SOFTENED butter, not melted",
+    "detail": "Creamed with the roe, off the heat: melted, it splits and the sauce separates at once."
+   },
+   {
+    "titre": "Build the sauce in the BOWL",
+    "detail": "Never in the pan: only the heat of the pasta binds it, nothing else."
+   },
+   {
+    "titre": "Drain, keeping a ladle of water",
+    "detail": "Its starch binds the sauce; without it the butter slides off and pools at the bottom."
+   },
+   {
+    "titre": "Wait thirty seconds before tossing",
+    "detail": "Boiling pasta would set the roe. Warm, it stays creamy."
+   },
+   {
+    "titre": "Nori in strips, at the last second",
+    "detail": "Cut in advance it softens in the air and loses all its crispness."
+   },
+   {
+    "titre": "A squeeze of lemon on the plate",
+    "detail": "It lifts the fat and the salt: without it the dish cloys after three mouthfuls."
+   }
+  ]
+ },
+ "chankonabe": {
+  "nom": "Chanko Nabe",
+  "description": "The daily hotpot of sumo wrestlers, served twice a day in the stables. It is made with chicken and never beef: a wrestler must not fall onto four legs.",
+  "etapes": [
+   {
+    "titre": "Chicken, never beef",
+    "detail": "Beef and pork walk on four legs: a wrestler whose hands touch the ground has lost. Chicken stands on two."
+   },
+   {
+    "titre": "Work the mince until it is TACKY",
+    "detail": "It must turn elastic under the hand: that is what holds the balls together without egg or breadcrumb."
+   },
+   {
+    "titre": "Shape the balls over the pot",
+    "detail": "Straight off the spoon into the broth: rolled in advance they compact and toughen."
+   },
+   {
+    "titre": "A lightly seasoned dashi, never strong",
+    "detail": "Seven vegetables will load it as they cook: over-salted at the start, it becomes inedible by the end."
+   },
+   {
+    "titre": "Stack by cooking time",
+    "detail": "Carrot at the bottom, cabbage in the middle, leek on top. You never stir a nabe."
+   },
+   {
+    "titre": "Twenty minutes at a tremble",
+    "detail": "Boiling clouds the broth and bursts the meatballs one by one."
+   },
+   {
+    "titre": "The \"shime\": noodles to finish",
+    "detail": "Once the pot is empty, noodles go into the concentrated broth. Nobody stops before that."
+   }
+  ]
+ },
+ "zenzai": {
+  "nom": "Zenzai",
+  "description": "The sweet azuki bean soup with grilled mochi, a winter dessert served scalding with bitter tea. Sugar NEVER goes in before the beans are tender — it would set their skins for good.",
+  "etapes": [
+   {
+    "titre": "Throw away the FIRST cooking water",
+    "detail": "Five minutes at a boil, drain, start again from cold: that is what removes the azuki's bitterness."
+   },
+   {
+    "titre": "No salt or sugar before tenderness",
+    "detail": "Sugar sets the skins: added too early, the beans stay hard whatever you do afterwards."
+   },
+   {
+    "titre": "An hour at the barest tremble",
+    "detail": "The beans must crush between two fingers with no resistance at all before you sweeten them."
+   },
+   {
+    "titre": "Sugar in THREE goes",
+    "detail": "A third, twenty minutes, another third, and so on: all at once it dehydrates the beans and shrivels them."
+   },
+   {
+    "titre": "A pinch of salt in the sweetness",
+    "detail": "It does not salt, it deepens: without it zenzai is flat and quickly cloying."
+   },
+   {
+    "titre": "Grill the mochi DRY",
+    "detail": "Until they puff and split: boiled, they dissolve and thicken the soup instead."
+   },
+   {
+    "titre": "Serve scalding, with bitter tea",
+    "detail": "The bitterness of green tea is what lets you finish a whole bowl of something this sweet."
+   }
+  ]
+ },
+ "galbijjim": {
+  "nom": "Galbijjim",
+  "description": "The braised beef short ribs of Korean celebrations, meltingly soft in a dark soy sauce. The grated pear is not there to sweeten: its enzymes tenderise the meat better than any amount of extra cooking.",
+  "etapes": [
+   {
+    "titre": "Soak two hours in cold water",
+    "detail": "Changed three times: this draws out the blood and gives a clear sauce instead of a cloudy braise."
+   },
+   {
+    "titre": "Blanch ten minutes, then RINSE",
+    "detail": "Discard the water and rinse each piece one by one: scum left clinging would spoil the whole dish."
+   },
+   {
+    "titre": "Grated pear in the marinade",
+    "detail": "Its enzymes tenderise far better than an extra hour of cooking. This is the Korean move."
+   },
+   {
+    "titre": "Score the meat in a crosshatch",
+    "detail": "Right down to the bone: the marinade penetrates and the meat pulls away cleanly at the table."
+   },
+   {
+    "titre": "Vegetables with ROUNDED corners",
+    "detail": "Edges knocked off with a knife: cut sharp, they crumble over three hours and cloud the sauce."
+   },
+   {
+    "titre": "Three hours covered, lowest heat",
+    "detail": "The meat must come off the bone by itself. At a rolling boil it contracts and dries."
+   },
+   {
+    "titre": "Chestnuts and jujubes at the end",
+    "detail": "The last half hour only: added at the start they disintegrate completely into the sauce."
+   }
+  ]
+ },
+ "songpyeon": {
+  "nom": "Songpyeon",
+  "description": "The half-moon rice cakes of Chuseok, the Korean harvest festival. They are steamed on a bed of pine needles — \"song\" means pine, and that scent is what gives the cake its name.",
+  "etapes": [
+   {
+    "titre": "Knead the rice flour with BOILING water",
+    "detail": "It has no gluten: only boiling water gelatinises the starch and makes the dough workable."
+   },
+   {
+    "titre": "Knead ten minutes, to the earlobe",
+    "detail": "The Korean benchmark, passed down as is: the dough must have exactly that softness."
+   },
+   {
+    "titre": "A DRY filling, never runny",
+    "detail": "Toasted sesame and just enough honey to bind: too wet and it pierces the dough as it steams."
+   },
+   {
+    "titre": "Press out all the air when sealing",
+    "detail": "One trapped bubble is enough to burst the cake in the steamer."
+   },
+   {
+    "titre": "Shape a half-moon, not a ball",
+    "detail": "The shape is not decorative: this is a harvest cake, and the half-moon is the one still to grow."
+   },
+   {
+    "titre": "Pine needles in the steamer",
+    "detail": "They perfume the steam and stop the cakes sticking. Failing that, a damp cloth — but you lose the name."
+   },
+   {
+    "titre": "Brush with sesame oil on the way out",
+    "detail": "While still scalding: they turn glossy and stop sticking to one another."
+   }
+  ]
+ },
+ "puttu": {
+  "nom": "Puttu",
+  "description": "The steamed cylinder of rice and coconut, Kerala's daily breakfast. The whole recipe is one gesture: dampen the flour without ever wetting it — too much water and puttu becomes paste.",
+  "etapes": [
+   {
+    "titre": "Dampen, never wet",
+    "detail": "Sprinkle by hand, very gradually: the flour must stay a powder and never turn into a dough."
+   },
+   {
+    "titre": "The fist test",
+    "detail": "Squeeze a handful: if it holds its shape then crumbles at a flick, the hydration is right."
+   },
+   {
+    "titre": "Rest twenty minutes",
+    "detail": "The water spreads through all the flour. Used at once it stays in wet lumps and dry patches."
+   },
+   {
+    "titre": "Alternate flour and coconut",
+    "detail": "A layer of coconut at the base, then flour, coconut, flour: those strata are what make puttu."
+   },
+   {
+    "titre": "NEVER pack the mould",
+    "detail": "Spoon it in without pressing: compressed, puttu comes out dense and heavy."
+   },
+   {
+    "titre": "Ten minutes of steam, no more",
+    "detail": "As soon as steam escapes from the top of the cylinder, count five minutes and cut the heat."
+   },
+   {
+    "titre": "Push it out whole with a stick",
+    "detail": "It slides out as a full cylinder. Eaten crushed with banana, or with a black chickpea curry."
+   }
+  ]
+ },
+ "meenpollichathu": {
+  "nom": "Meen Pollichathu",
+  "description": "Kerala's fish cooked in a banana leaf parcel, under a long-cooked shallot masala. You open the parcel AT THE TABLE: the whole aroma escapes at once, and that is half the pleasure.",
+  "etapes": [
+   {
+    "titre": "A WHOLE fish, scored to the bone",
+    "detail": "Three deep cuts on each side: that is how the marinade gets in. A fillet will never give the same result."
+   },
+   {
+    "titre": "First marinade: turmeric, chilli, salt",
+    "detail": "Twenty minutes only: beyond that the salt starts to cook the flesh and firms it up."
+   },
+   {
+    "titre": "Sear the fish BEFORE wrapping",
+    "detail": "Two minutes a side in coconut oil: without that crust it will weep into the leaf."
+   },
+   {
+    "titre": "A long-cooked shallot masala",
+    "detail": "Twenty minutes on low heat until brown: that patience is what separates a decent dish from a real pollichathu."
+   },
+   {
+    "titre": "Pass the banana leaf over a flame",
+    "detail": "It turns supple and stops cracking as you fold. Baking paper will do — but you lose the perfume."
+   },
+   {
+    "titre": "Cook the parcel in a DRY pan",
+    "detail": "Five minutes each side: the leaf blackens, the fish cooks in its own scented steam."
+   },
+   {
+    "titre": "Open the parcel AT THE TABLE",
+    "detail": "The whole aroma escapes the moment you tear it. Opened in the kitchen, it is already gone."
+   }
+  ]
+ },
+ "kerabu": {
+  "nom": "Kerabu",
+  "description": "The Malaysian salad of toasted coconut, where kerisik — coconut pounded until it releases its oil — replaces any added fat. It is dressed AT THE TABLE, never before: salt wilts the herbs in ten minutes.",
+  "etapes": [
+   {
+    "titre": "Toast the coconut DRY",
+    "detail": "In a pan, stirring constantly, to a hazelnut brown: this is kerisik, the soul of the salad."
+   },
+   {
+    "titre": "Pound it until it releases OIL",
+    "detail": "It must give up its fat and form a dark paste. Blitzed in a machine it stays a powder and binds nothing."
+   },
+   {
+    "titre": "Lemongrass: the first three centimetres",
+    "detail": "Sliced into very fine rings: beyond that the stalk is woody and stays between the teeth."
+   },
+   {
+    "titre": "Prawns barely poached",
+    "detail": "One minute in trembling water: kerabu is a salad, not a cooked dish."
+   },
+   {
+    "titre": "Raw shallots, sliced very thin",
+    "detail": "Thick, they overwhelm everything; in petals they melt into the dressing."
+   },
+   {
+    "titre": "Herbs TORN, never cut",
+    "detail": "A knife oxidises mint and turns it black within minutes."
+   },
+   {
+    "titre": "Dress AT THE TABLE, not before",
+    "detail": "Salt draws water from the herbs: assembled ten minutes early, the salad is already limp."
+   }
+  ]
+ },
+ "namtok": {
+  "nom": "Nam Tok",
+  "description": "The grilled beef salad of Isan, whose name means \"waterfall\" — the sound of juices falling on the coals. Unlike larb, the meat stays in RARE slices: that is the whole difference.",
+  "etapes": [
+   {
+    "titre": "A thick piece, grilled WHOLE",
+    "detail": "Bavette or onglet, 3 cm thick: sliced before cooking, the meat would be grey and dry throughout."
+   },
+   {
+    "titre": "\"Nam tok\" means waterfall",
+    "detail": "It is the juice falling on the coals as it cooks. The name describes a sound, not a sauce."
+   },
+   {
+    "titre": "Rare inside, deeply coloured outside",
+    "detail": "High heat, short time: the centre must stay frankly red — that is what separates nam tok from larb."
+   },
+   {
+    "titre": "Rest ten minutes BEFORE slicing",
+    "detail": "Sliced hot, it loses all its juice into the bowl and turns bland."
+   },
+   {
+    "titre": "Toasted glutinous rice, coarsely pounded",
+    "detail": "Dry-roasted to brown then crushed: khao khua gives the dish its crunch and its nutty smell."
+   },
+   {
+    "titre": "Slice THIN, across the grain",
+    "detail": "Two millimetres: that is what makes plainly grilled meat tender in a salad."
+   },
+   {
+    "titre": "Serve warm, with raw cabbage",
+    "detail": "Never straight from the fridge: nam tok is eaten at temperature, with raw leaves to scoop the meat."
+   }
+  ]
+ },
+ "gaengsom": {
+  "nom": "Gaeng Som",
+  "description": "The sour curry of southern Thailand, the only one in the family that uses no coconut milk at all. Its body comes from a little fish flesh pounded INTO the paste — not from any fat.",
+  "etapes": [
+   {
+    "titre": "A curry paste with NO coconut milk",
+    "detail": "Gaeng som is the lean Thai curry: adding coconut makes it a different dish."
+   },
+   {
+    "titre": "Pound in a mortar, never blitz",
+    "detail": "Blades cut the fibres and release water; the pestle crushes and releases the oils."
+   },
+   {
+    "titre": "A little fish flesh IN the paste",
+    "detail": "Poached then pounded with the spices: that is what gives the broth its body, without a drop of fat."
+   },
+   {
+    "titre": "Tamarind, not lime",
+    "detail": "Its sourness is round and lingers; lime gives a spike that falls away at once."
+   },
+   {
+    "titre": "Sour, salty, sweet, hot: all four",
+    "detail": "Taste and correct until none dominates. It is the only real skill this dish demands."
+   },
+   {
+    "titre": "Vegetables thrown in raw",
+    "detail": "Two minutes: they must stay crunchy — a gaeng som is not a stew."
+   },
+   {
+    "titre": "Fish last, heat off",
+    "detail": "The residual heat is enough to cook it: at a rolling boil it shreds into threads."
+   }
+  ]
+ },
+ "tablierdesapeur": {
+  "nom": "Tablier de Sapeur",
+  "description": "Lyon's tripe marinated in white wine, breadcrumbed and pan-fried in butter, served with a gribiche sauce. The name is said to come from Marshal de Castellane, a sapper by trade — a sapper's leather apron has the shape of the breaded piece.",
+  "etapes": [
+   {
+    "titre": "Tripe that is ALREADY cooked",
+    "detail": "The tripe seller sells it blanched and cooked: raw, it would need six hours before the recipe even began."
+   },
+   {
+    "titre": "Wide, flat pieces",
+    "detail": "Cut into even 1 cm rectangles: that apron shape is what gives the dish its name."
+   },
+   {
+    "titre": "Marinate three hours in white wine",
+    "detail": "White wine, mustard and pepper: the marinade flavours tripe, which has almost none of its own."
+   },
+   {
+    "titre": "Blot THOROUGHLY before breading",
+    "detail": "A damp piece sheds its coating in the pan. Press between two sheets of paper, firmly."
+   },
+   {
+    "titre": "English breading, pressed home",
+    "detail": "Flour, egg, crumb — and push down hard with the palm: a coating merely laid on falls off in the pan."
+   },
+   {
+    "titre": "Cook in FOAMING butter",
+    "detail": "Neither smoking nor lukewarm: the crumb must colour in four minutes a side without the butter blackening."
+   },
+   {
+    "titre": "A sharply acid gribiche",
+    "detail": "Gherkins, capers, shallot and hard-boiled egg: tripe is rich, and the sauce must answer with acidity."
+   }
+  ]
+ },
+ "callosmadrilena": {
+  "nom": "Callos a la Madrileña",
+  "description": "Madrid's tripe with chorizo and blood sausage, simmered until the sauce thickens on its own. No flour goes in: the collagen from the tripe and the trotter does the binding, nothing else.",
+  "etapes": [
+   {
+    "titre": "Rub the tripe with coarse salt and lemon",
+    "detail": "Then rinse at length: this is the only treatment that truly removes the smell, long before any cooking."
+   },
+   {
+    "titre": "Blanch ten minutes, discard the water",
+    "detail": "Start again from cold: skip this and you perfume the whole dish with what you were trying to remove."
+   },
+   {
+    "titre": "A calf's trotter in the pot",
+    "detail": "IT is what will set the sauce as it cools. Without it you would need flour — and it would no longer be callos."
+   },
+   {
+    "titre": "Pimentón OFF the heat",
+    "detail": "Thrown into hot oil it turns bitter in three seconds. Cut the heat, stir it in, put it back."
+   },
+   {
+    "titre": "Blood sausage at the end",
+    "detail": "The last half hour only: any earlier and it disintegrates, turning the whole sauce black and gritty."
+   },
+   {
+    "titre": "Three hours at a tremble",
+    "detail": "The tripe must turn gelatinous and melt under the tooth. At three hours it still resists a little."
+   },
+   {
+    "titre": "Rest a whole night",
+    "detail": "The sauce sets to a jelly, the solid fat lifts off with a spoon, and the dish gains in clarity what it loses in fat."
+   }
+  ]
+ },
+ "carapulcra": {
+  "nom": "Carapulcra",
+  "description": "Peru's oldest stew, built on papa seca — potatoes boiled, sun-dried in the Andes and crushed. They are not rehydrated first: they are TOASTED, and that is where everything is decided.",
+  "etapes": [
+   {
+    "titre": "Toast the papa seca DRY",
+    "detail": "In a pan, no fat, until it smells of hazelnut: that toasting is what gives the dish its flavour, not the simmering."
+   },
+   {
+    "titre": "Soak two hours after toasting",
+    "detail": "Never before: soaked raw, it will never develop any aroma and stays mealy."
+   },
+   {
+    "titre": "Fatty pork, in large cubes",
+    "detail": "Shoulder or belly: lean meat would be dry long before the dried potato had finished absorbing."
+   },
+   {
+    "titre": "A long-cooked ají panca",
+    "detail": "Peruvian chilli is not hot, it is fruity: twenty minutes on low heat to draw out its brick-red colour."
+   },
+   {
+    "titre": "Roasted peanuts, pounded",
+    "detail": "They thicken and round out the sauce: the Andean touch found right across Peruvian cooking."
+   },
+   {
+    "titre": "An hour uncovered, stirring",
+    "detail": "Papa seca drinks enormously and catches very fast: do not walk away from the pan."
+   },
+   {
+    "titre": "A square of dark chocolate at the end",
+    "detail": "An old gesture: it darkens the sauce and gives a depth no spice can replace."
+   }
+  ]
+ },
+ "romeuejulieta": {
+  "nom": "Romeu e Julieta",
+  "description": "Brazil's most famous marriage: guava paste and fresh cheese, so inseparable they were named after the lovers of Verona. Here as a tart, where the guava melts into a glossy layer over the cheese filling.",
+  "etapes": [
+   {
+    "titre": "A TART fresh cheese, not mild",
+    "detail": "Queijo minas is faintly sour: with a mild cheese the guava overwhelms everything and the dessert turns syrupy."
+   },
+   {
+    "titre": "Cheese and eggs at room temperature",
+    "detail": "Straight from the fridge they make the filling curdle and the tart bakes in separate layers."
+   },
+   {
+    "titre": "Mix with a spatula, never a whisk",
+    "detail": "A whisk beats in air: the tart rises in the oven then sinks and cracks as it cools."
+   },
+   {
+    "titre": "Melt the guava with a spoon of water",
+    "detail": "Goiabada is too firm to spread: a few seconds on low heat and it becomes pourable."
+   },
+   {
+    "titre": "Spiral the guava on, then marble it",
+    "detail": "Drag a knife tip across: stirred in it disappears; left in a block it sinks to the bottom."
+   },
+   {
+    "titre": "Gentle bake, 40 minutes at 150 °C",
+    "detail": "The centre must still wobble when it comes out: overbaked, the cheese filling turns grainy."
+   },
+   {
+    "titre": "Four hours chilled, minimum",
+    "detail": "It cuts badly and tastes of nothing while warm. A full night is better still."
+   }
+  ]
+ },
+ "gulai": {
+  "nom": "Gulai",
+  "description": "The yellow curry of Sumatra, the looser and gentler cousin of rendang. The start is identical: the difference is where you stop — gulai stays saucy where rendang goes all the way to dry.",
+  "etapes": [
+   {
+    "titre": "A blended spice paste, not chopped",
+    "detail": "The bumbu must become a smooth purée: in pieces, the aromatics stay gritty in the sauce."
+   },
+   {
+    "titre": "Fry the paste until the oil separates",
+    "detail": "Ten minutes minimum: when oil rises to the surface, the paste is cooked. Before that it tastes raw."
+   },
+   {
+    "titre": "Coconut milk in TWO stages",
+    "detail": "The thick cream first for cooking, the thin milk after to loosen: added together, they split."
+   },
+   {
+    "titre": "Never cover the pan",
+    "detail": "Condensation would fall back into the coconut milk and grain it beyond rescue."
+   },
+   {
+    "titre": "Stir in one direction",
+    "detail": "A slow, steady motion keeps the coconut from separating: the Indonesian gesture, and it is not superstition."
+   },
+   {
+    "titre": "Ninety minutes on low heat",
+    "detail": "The sauce must coat without drying out. Reduce it too far and you have made a rendang."
+   },
+   {
+    "titre": "Tamarind right at the end",
+    "detail": "Its acidity balances the richness of the coconut: added at the start it vanishes entirely in the cooking."
+   }
+  ]
+ },
+ "asampedas": {
+  "nom": "Asam Pedas",
+  "description": "The sour, fiery fish of Malacca, without a drop of coconut milk. Okra is no side vegetable here: it is what gives the broth its silky body, and it goes in whole, never sliced.",
+  "etapes": [
+   {
+    "titre": "A FIRM-fleshed fish",
+    "detail": "Mackerel, ray or snapper: a delicate fish would fall apart before the broth had found its flavour."
+   },
+   {
+    "titre": "Dried chillies rehydrated, not fresh",
+    "detail": "Soaked twenty minutes then blended: they give the deep red colour and a round heat, with no green acidity."
+   },
+   {
+    "titre": "A touch of toasted shrimp paste",
+    "detail": "Wrapped in paper and dry-fried before blending: raw, it dominates the entire dish."
+   },
+   {
+    "titre": "Cook the paste until the oil rises",
+    "detail": "The only reliable sign: until it separates, the curry will taste raw."
+   },
+   {
+    "titre": "Strained tamarind juice, never the pulp",
+    "detail": "Loosen the block in warm water and pass it through a sieve: fibres and stones stay behind."
+   },
+   {
+    "titre": "WHOLE okra, at the end",
+    "detail": "Sliced, it releases its mucilage and makes the broth stringy. Whole, it binds it just enough."
+   },
+   {
+    "titre": "The fish, eight minutes, no more",
+    "detail": "It finishes cooking in the hot broth off the heat, and holds its shape."
+   }
+  ]
+ },
+ "tangiamarrakchia": {
+  "nom": "Tangia Marrakchia",
+  "description": "The bachelors' dish of Marrakesh: a sealed jar, handed to the hammam stoker who buries it in the furnace ashes. Five hours later the meat falls apart — and you will have done nothing but fill the jar.",
+  "etapes": [
+   {
+    "titre": "Everything goes in RAW",
+    "detail": "No colouring, no browning: tangia is the one great Moroccan dish where nothing is seared."
+   },
+   {
+    "titre": "Shin or shoulder, on the bone",
+    "detail": "Five hours demand collagen: a lean cut would be dry threads long before the end."
+   },
+   {
+    "titre": "Preserved lemon, peel only",
+    "detail": "The pulp is too salty and bitter: scrape it away and keep only the rind, cut into strips."
+   },
+   {
+    "titre": "Smen, or well-salted butter",
+    "detail": "That fermented butter is the dish's signature. Failing it, salted butter and a touch of blue cheese come close."
+   },
+   {
+    "titre": "Seal it airtight",
+    "detail": "Parchment and string, or a heavy lid: the whole cooking happens in trapped steam, with no added water."
+   },
+   {
+    "titre": "Five hours at 130 °C, untouched",
+    "detail": "Do not open, do not stir, do not check. Opening means losing the steam and adding an hour."
+   },
+   {
+    "titre": "Rest half an hour, still sealed",
+    "detail": "The meat firms slightly and comes away cleanly instead of shredding into the juices."
+   }
+  ]
+ },
+ "madfouna": {
+  "nom": "Madfouna",
+  "description": "The \"Berber pizza\" of the Tafilalet, a flatbread stuffed with meat and almonds, baked buried under hot desert sand. \"Madfouna\" means buried — the name describes the cooking, not the filling.",
+  "etapes": [
+   {
+    "titre": "A SOFT bread dough, almost sticky",
+    "detail": "It must stretch by hand without tearing: a stiff dough will split and let the filling out."
+   },
+   {
+    "titre": "A raw filling, never pre-cooked",
+    "detail": "It cooks inside the bread and soaks it with its juices: pre-cooked, the whole thing turns dry and pointless."
+   },
+   {
+    "titre": "A DRAINED filling, not greasy",
+    "detail": "Onion gives off a lot of water: salt it to draw that out, or the dough stays raw underneath."
+   },
+   {
+    "titre": "Almonds cracked, not ground",
+    "detail": "In shards: they bring the crunch that plays against the soft bread. Ground, they disappear."
+   },
+   {
+    "titre": "Two discs, sealed with the rolling pin",
+    "detail": "Filling on the first, cover with the second, and seal by rolling the edges together."
+   },
+   {
+    "titre": "Prick the top generously",
+    "detail": "Steam must escape: without holes the bread balloons and separates from its filling."
+   },
+   {
+    "titre": "Very hot oven, 240 °C, 20 minutes",
+    "detail": "It must colour fast: a slow bake dries the meat before the crust has formed."
+   }
+  ]
+ },
+ "khlii": {
+  "nom": "Khlii",
+  "description": "Morocco's confit meat, sun-dried then kept for a whole year under its own fat. It is the ancestor of the refrigerator — and at breakfast, two eggs cracked into its melted fat make a meal on their own.",
+  "etapes": [
+   {
+    "titre": "LONG, thin strips",
+    "detail": "Two centimetres wide down the whole length of the muscle: thick, they will never dry through."
+   },
+   {
+    "titre": "Rub with salt and spices, 24 hours",
+    "detail": "Salt draws the water, spices protect: this step is what makes keeping it possible, not the fat."
+   },
+   {
+    "titre": "Dry three days in dry air",
+    "detail": "Hung in the shade in a draught: in direct sun the outside crusts and the inside stays damp."
+   },
+   {
+    "titre": "The bend test",
+    "detail": "The strip must fold without snapping and without sticking: brittle means too dry, tacky means it will mould."
+   },
+   {
+    "titre": "Confit two hours in the fat",
+    "detail": "On the lowest heat, never at a tremble: boiling fat hardens the meat instead of confiting it."
+   },
+   {
+    "titre": "Submerge COMPLETELY in the jar",
+    "detail": "One end poking out and the whole jar oxidises. Pack it down and cover with a centimetre of fat."
+   },
+   {
+    "titre": "At breakfast, with eggs",
+    "detail": "A spoon of khlii and its fat in an earthenware dish, two eggs cracked over: that is the real use."
+   }
+  ]
+ },
+ "kukupaka": {
+  "nom": "Kuku Paka",
+  "description": "The grilled chicken in coconut milk of the Swahili coast, between East Africa and India. The chicken is grilled BEFORE it enters the sauce: without that smoke, it is just one more coconut curry.",
+  "etapes": [
+   {
+    "titre": "Marinate in garlic, ginger and lime",
+    "detail": "Two hours minimum: the Indian base of the Swahili coast, and it carries the whole dish."
+   },
+   {
+    "titre": "GRILL the chicken before the sauce",
+    "detail": "Over coals or under the grill, to charred marks: that smoke is what separates kuku paka from a curry."
+   },
+   {
+    "titre": "Pieces with skin and bone",
+    "detail": "Boneless breast would dry on the grill and then fall apart in the sauce."
+   },
+   {
+    "titre": "Full-fat coconut milk, never light",
+    "detail": "The sauce must coat: light milk stays thin and splits as soon as it heats."
+   },
+   {
+    "titre": "The sauce NEVER boils",
+    "detail": "A barely visible tremble: at a boil the coconut separates into oil and white curds."
+   },
+   {
+    "titre": "Twenty minutes of chicken in the sauce",
+    "detail": "It finishes cooking in it and flavours it in return: grilled then simply napped, it is not the same dish."
+   },
+   {
+    "titre": "Coriander and lime at the last second",
+    "detail": "The sauce is rich and sweet: it needs that fresh acidity right before serving."
+   }
+  ]
  }
+
 };

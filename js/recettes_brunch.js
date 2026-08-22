@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 32 recettes
+// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 34 recettes
 // 👉 Pour AJOUTER une recette Brunch : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3041,5 +3041,81 @@ Object.assign(recettes, {
       { icone: "🍅", titre: "Le petit-déjeuner gallois", detail: "Servez avec le bacon, des tomates poêlées et du pain grillé. C'est un plat du MATIN.", badge: null }
     ],
     liees: ["welshrarebit","welshcakes","englishmuffin"]
+  },
+  puttu: {
+    dateAjout: "2026-08-24T11:05:00",
+    nom: "Puttu",
+    cat: "brunch", pays: "inde",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥥",
+    description: "Le cylindre de riz et de coco cuit à la vapeur, petit-déjeuner quotidien du Kerala. Toute la recette tient dans un geste : humidifier la farine sans jamais la mouiller — trop d'eau et le puttu devient une pâte.",
+    tableauPuttu: [
+      { nb: 1, farineRiz: "70 g", cocoflocons: "25 g", banane: "60 g", sucre: "8 g", sel: "1 g" },
+      { nb: 2, farineRiz: "140 g", cocoflocons: "50 g", banane: "120 g", sucre: "16 g", sel: "2 g" },
+      { nb: 3, farineRiz: "210 g", cocoflocons: "75 g", banane: "180 g", sucre: "24 g", sel: "3 g" },
+      { nb: 4, farineRiz: "280 g", cocoflocons: "100 g", banane: "240 g", sucre: "32 g", sel: "4 g" },
+      { nb: 5, farineRiz: "350 g", cocoflocons: "125 g", banane: "300 g", sucre: "40 g", sel: "5 g" },
+      { nb: 6, farineRiz: "420 g", cocoflocons: "150 g", banane: "360 g", sucre: "48 g", sel: "6 g" },
+      { nb: 7, farineRiz: "490 g", cocoflocons: "175 g", banane: "420 g", sucre: "56 g", sel: "7 g" },
+      { nb: 8, farineRiz: "560 g", cocoflocons: "200 g", banane: "480 g", sucre: "64 g", sel: "8 g" },
+      { nb: 9, farineRiz: "630 g", cocoflocons: "225 g", banane: "540 g", sucre: "72 g", sel: "9 g" },
+      { nb: 10, farineRiz: "700 g", cocoflocons: "250 g", banane: "600 g", sucre: "80 g", sel: "10 g" },
+      { nb: 11, farineRiz: "770 g", cocoflocons: "275 g", banane: "660 g", sucre: "88 g", sel: "11 g" },
+      { nb: 12, farineRiz: "840 g", cocoflocons: "300 g", banane: "720 g", sucre: "96 g", sel: "12 g" },
+      { nb: 13, farineRiz: "910 g", cocoflocons: "325 g", banane: "780 g", sucre: "104 g", sel: "13 g" },
+      { nb: 14, farineRiz: "980 g", cocoflocons: "350 g", banane: "840 g", sucre: "112 g", sel: "14 g" },
+      { nb: 15, farineRiz: "1050 g", cocoflocons: "375 g", banane: "900 g", sucre: "120 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💦", titre: "Humidifier, surtout pas mouiller", detail: "On asperge à la main, très progressivement : la farine doit rester une poudre, jamais devenir une pâte.", badge: null },
+      { icone: "✋", titre: "Le test du poing", detail: "Serrer une poignée : si elle garde la forme puis s'émiette d'une pichenette, l'hydratation est juste.", badge: null },
+      { icone: "🕐", titre: "Laisser reposer vingt minutes", detail: "L'eau se répartit dans toute la farine. Utilisée aussitôt, elle reste en grumeaux mouillés et en zones sèches.", badge: null },
+      { icone: "🥥", titre: "Alterner farine et noix de coco", detail: "Une couche de coco au fond, puis farine, coco, farine : ce sont ces strates qui font le puttu.", badge: null },
+      { icone: "🚫", titre: "Ne JAMAIS tasser dans le moule", detail: "On verse à la cuillère sans appuyer : compressé, le puttu sort dense et lourd.", badge: null },
+      { icone: "♨️", titre: "Dix minutes de vapeur, pas plus", detail: "Dès que la vapeur sort par le haut du cylindre, on compte cinq minutes et on coupe le feu.", badge: null },
+      { icone: "🍌", titre: "Démouler d'un coup, à la baguette", detail: "On pousse par le bas et il sort en cylindre entier. Se mange écrasé avec la banane, ou avec un curry de pois chiches.", badge: null }
+    ],
+    liees: ["idli","appam","idiyappam"]
+  },
+  khlii: {
+    dateAjout: "2026-08-24T12:08:00",
+    nom: "Khlii",
+    cat: "brunch", pays: "maroc",
+    base: 8,
+    temps: "3 h + séchage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫙",
+    description: "La viande confite marocaine, séchée au soleil puis conservée un an entier sous sa graisse. C'est l'ancêtre du réfrigérateur — et au petit-déjeuner, deux œufs cassés dans sa graisse fondue suffisent à faire un plat.",
+    tableauKhlii: [
+      { nb: 1, boeuf: "120 g", sel: "12 g", ail: "2", coriandre: "3 g", cumin: "2 g", curcuma: "1 g", saindoux: "25 g", huileolive: "15 ml", oeufs: "1" },
+      { nb: 2, boeuf: "240 g", sel: "24 g", ail: "4", coriandre: "6 g", cumin: "4 g", curcuma: "2 g", saindoux: "50 g", huileolive: "30 ml", oeufs: "2" },
+      { nb: 3, boeuf: "360 g", sel: "36 g", ail: "6", coriandre: "9 g", cumin: "6 g", curcuma: "3 g", saindoux: "75 g", huileolive: "45 ml", oeufs: "3" },
+      { nb: 4, boeuf: "480 g", sel: "48 g", ail: "8", coriandre: "12 g", cumin: "8 g", curcuma: "4 g", saindoux: "100 g", huileolive: "60 ml", oeufs: "4" },
+      { nb: 5, boeuf: "600 g", sel: "60 g", ail: "10", coriandre: "15 g", cumin: "10 g", curcuma: "5 g", saindoux: "125 g", huileolive: "75 ml", oeufs: "5" },
+      { nb: 6, boeuf: "720 g", sel: "72 g", ail: "12", coriandre: "18 g", cumin: "12 g", curcuma: "6 g", saindoux: "150 g", huileolive: "90 ml", oeufs: "6" },
+      { nb: 7, boeuf: "840 g", sel: "84 g", ail: "14", coriandre: "21 g", cumin: "14 g", curcuma: "7 g", saindoux: "175 g", huileolive: "105 ml", oeufs: "7" },
+      { nb: 8, boeuf: "960 g", sel: "96 g", ail: "16", coriandre: "24 g", cumin: "16 g", curcuma: "8 g", saindoux: "200 g", huileolive: "120 ml", oeufs: "8" },
+      { nb: 9, boeuf: "1080 g", sel: "108 g", ail: "18", coriandre: "27 g", cumin: "18 g", curcuma: "9 g", saindoux: "225 g", huileolive: "135 ml", oeufs: "9" },
+      { nb: 10, boeuf: "1200 g", sel: "120 g", ail: "20", coriandre: "30 g", cumin: "20 g", curcuma: "10 g", saindoux: "250 g", huileolive: "150 ml", oeufs: "10" },
+      { nb: 11, boeuf: "1320 g", sel: "132 g", ail: "22", coriandre: "33 g", cumin: "22 g", curcuma: "11 g", saindoux: "275 g", huileolive: "165 ml", oeufs: "11" },
+      { nb: 12, boeuf: "1440 g", sel: "144 g", ail: "24", coriandre: "36 g", cumin: "24 g", curcuma: "12 g", saindoux: "300 g", huileolive: "180 ml", oeufs: "12" },
+      { nb: 13, boeuf: "1560 g", sel: "156 g", ail: "26", coriandre: "39 g", cumin: "26 g", curcuma: "13 g", saindoux: "325 g", huileolive: "195 ml", oeufs: "13" },
+      { nb: 14, boeuf: "1680 g", sel: "168 g", ail: "28", coriandre: "42 g", cumin: "28 g", curcuma: "14 g", saindoux: "350 g", huileolive: "210 ml", oeufs: "14" },
+      { nb: 15, boeuf: "1800 g", sel: "180 g", ail: "30", coriandre: "45 g", cumin: "30 g", curcuma: "15 g", saindoux: "375 g", huileolive: "225 ml", oeufs: "15" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Des lanières LONGUES et fines", detail: "Deux centimètres de large sur toute la longueur du muscle : épaisses, elles ne sécheront jamais à cœur.", badge: null },
+      { icone: "🧂", titre: "Frotter au sel et aux épices, 24 heures", detail: "Le sel tire l'eau, les épices protègent : c'est cette étape qui rend la conservation possible, pas la graisse.", badge: null },
+      { icone: "☀️", titre: "Sécher trois jours à l'air sec", detail: "Suspendues à l'ombre dans un courant d'air : au soleil direct, l'extérieur croûte et l'intérieur reste humide.", badge: null },
+      { icone: "👂", titre: "Le test de souplesse", detail: "La lanière doit plier sans casser et sans coller : cassante elle est trop sèche, collante elle moisira.", badge: null },
+      { icone: "♨️", titre: "Confire deux heures dans la graisse", detail: "À feu très doux, sans jamais frémir : une graisse bouillante durcit la viande au lieu de la confire.", badge: null },
+      { icone: "🫙", titre: "Immerger COMPLÈTEMENT dans le bocal", detail: "Un seul bout qui dépasse et tout le bocal s'oxyde. On tasse et on recouvre d'un centimètre de graisse.", badge: null },
+      { icone: "🍳", titre: "Au petit-déjeuner, avec des œufs", detail: "Une cuillère de khlii et sa graisse dans un plat en terre, deux œufs cassés dessus : c'est le vrai usage.", badge: null }
+    ],
+    liees: ["msemen","rfissa","tajinemouton"]
   },
 });

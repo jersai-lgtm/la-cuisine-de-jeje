@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_salades.js — Recettes de catégorie "salades" (Salades) — 24 recettes
+// recettes_salades.js — Recettes de catégorie "salades" (Salades) — 26 recettes
 // 👉 Pour AJOUTER une recette Salades : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3829,5 +3829,81 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Une nuit au frais", detail: "Indispensable : les saveurs se lient et la salade se tient assez pour être tranchée.", badge: null }
     ],
     liees: ["saladeolivier","sillsallad","saladepiemontaise"]
+  },
+  kerabu: {
+    dateAjout: "2026-08-24T11:07:00",
+    nom: "Kerabu",
+    cat: "salades", saisons: ["ete"], pays: "malaisie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "La salade malaisienne à la noix de coco torréfiée, où le kerisik — cette coco pilée jusqu'à rendre son huile — remplace toute matière grasse. Elle s'assaisonne À TABLE, jamais avant : le sel flétrit les herbes en dix minutes.",
+    tableauKerabu: [
+      { nb: 1, cocoflocons: "25 g", crevettes: "50 g", haricotsverts: "60 g", echalote: "1", citronvert: "½", citronnelle: "6 g", piment: "3 g", menthe: "6 g", coriandre: "5 g", saucePoisson: "8 ml", sucre: "4 g" },
+      { nb: 2, cocoflocons: "50 g", crevettes: "100 g", haricotsverts: "120 g", echalote: "2", citronvert: "1", citronnelle: "12 g", piment: "6 g", menthe: "12 g", coriandre: "10 g", saucePoisson: "16 ml", sucre: "8 g" },
+      { nb: 3, cocoflocons: "75 g", crevettes: "150 g", haricotsverts: "180 g", echalote: "3", citronvert: "1½", citronnelle: "18 g", piment: "9 g", menthe: "18 g", coriandre: "15 g", saucePoisson: "24 ml", sucre: "12 g" },
+      { nb: 4, cocoflocons: "100 g", crevettes: "200 g", haricotsverts: "240 g", echalote: "4", citronvert: "2", citronnelle: "24 g", piment: "12 g", menthe: "24 g", coriandre: "20 g", saucePoisson: "32 ml", sucre: "16 g" },
+      { nb: 5, cocoflocons: "125 g", crevettes: "250 g", haricotsverts: "300 g", echalote: "5", citronvert: "2½", citronnelle: "30 g", piment: "15 g", menthe: "30 g", coriandre: "25 g", saucePoisson: "40 ml", sucre: "20 g" },
+      { nb: 6, cocoflocons: "150 g", crevettes: "300 g", haricotsverts: "360 g", echalote: "6", citronvert: "3", citronnelle: "36 g", piment: "18 g", menthe: "36 g", coriandre: "30 g", saucePoisson: "48 ml", sucre: "24 g" },
+      { nb: 7, cocoflocons: "175 g", crevettes: "350 g", haricotsverts: "420 g", echalote: "7", citronvert: "3½", citronnelle: "42 g", piment: "21 g", menthe: "42 g", coriandre: "35 g", saucePoisson: "56 ml", sucre: "28 g" },
+      { nb: 8, cocoflocons: "200 g", crevettes: "400 g", haricotsverts: "480 g", echalote: "8", citronvert: "4", citronnelle: "48 g", piment: "24 g", menthe: "48 g", coriandre: "40 g", saucePoisson: "64 ml", sucre: "32 g" },
+      { nb: 9, cocoflocons: "225 g", crevettes: "450 g", haricotsverts: "540 g", echalote: "9", citronvert: "4½", citronnelle: "54 g", piment: "27 g", menthe: "54 g", coriandre: "45 g", saucePoisson: "72 ml", sucre: "36 g" },
+      { nb: 10, cocoflocons: "250 g", crevettes: "500 g", haricotsverts: "600 g", echalote: "10", citronvert: "5", citronnelle: "60 g", piment: "30 g", menthe: "60 g", coriandre: "50 g", saucePoisson: "80 ml", sucre: "40 g" },
+      { nb: 11, cocoflocons: "275 g", crevettes: "550 g", haricotsverts: "660 g", echalote: "11", citronvert: "5½", citronnelle: "66 g", piment: "33 g", menthe: "66 g", coriandre: "55 g", saucePoisson: "88 ml", sucre: "44 g" },
+      { nb: 12, cocoflocons: "300 g", crevettes: "600 g", haricotsverts: "720 g", echalote: "12", citronvert: "6", citronnelle: "72 g", piment: "36 g", menthe: "72 g", coriandre: "60 g", saucePoisson: "96 ml", sucre: "48 g" },
+      { nb: 13, cocoflocons: "325 g", crevettes: "650 g", haricotsverts: "780 g", echalote: "13", citronvert: "6½", citronnelle: "78 g", piment: "39 g", menthe: "78 g", coriandre: "65 g", saucePoisson: "104 ml", sucre: "52 g" },
+      { nb: 14, cocoflocons: "350 g", crevettes: "700 g", haricotsverts: "840 g", echalote: "14", citronvert: "7", citronnelle: "84 g", piment: "42 g", menthe: "84 g", coriandre: "70 g", saucePoisson: "112 ml", sucre: "56 g" },
+      { nb: 15, cocoflocons: "375 g", crevettes: "750 g", haricotsverts: "900 g", echalote: "15", citronvert: "7½", citronnelle: "90 g", piment: "45 g", menthe: "90 g", coriandre: "75 g", saucePoisson: "120 ml", sucre: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "Torréfier la noix de coco à SEC", detail: "À la poêle, en remuant sans arrêt, jusqu'au brun noisette : c'est le kerisik, l'âme de la salade.", badge: null },
+      { icone: "🥣", titre: "L'écraser au mortier jusqu'à l'HUILE", detail: "Elle doit rendre son gras et former une pâte sombre. Passée au mixeur, elle reste en poudre et ne lie rien.", badge: null },
+      { icone: "🍋", titre: "Citronnelle : les trois premiers centimètres", detail: "Émincée en anneaux très fins : au-delà, la tige est ligneuse et reste sous la dent.", badge: null },
+      { icone: "🦐", titre: "Les crevettes à peine pochées", detail: "Une minute dans l'eau frémissante : le kerabu est une salade, pas un plat cuit.", badge: null },
+      { icone: "🧅", titre: "Échalotes crues, tranchées très fin", detail: "Épaisses, elles écrasent tout ; en pétales, elles fondent dans l'assaisonnement.", badge: null },
+      { icone: "🌿", titre: "Herbes DÉCHIRÉES, jamais coupées", detail: "Le couteau oxyde la menthe et la fait noircir en quelques minutes.", badge: null },
+      { icone: "⏱️", titre: "Assaisonner à TABLE, pas avant", detail: "Le sel fait dégorger les herbes : montée dix minutes trop tôt, la salade est déjà flétrie.", badge: null }
+    ],
+    liees: ["rojak","gadogado","somtam"]
+  },
+  namtok: {
+    dateAjout: "2026-08-24T11:08:00",
+    nom: "Nam Tok",
+    cat: "salades", saisons: ["ete"], pays: "thailande",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥩",
+    description: "La salade de bœuf grillé de l'Isan, dont le nom veut dire « cascade » — le bruit du jus qui tombe sur les braises. Contrairement au larb, la viande reste en tranches SAIGNANTES : c'est toute la différence.",
+    tableauNamtok: [
+      { nb: 1, boeuf: "140 g", riz: "8 g", menthe: "8 g", echalote: "1", citronvert: "½", saucePoisson: "15 ml", piment: "3 g", coriandre: "5 g", sucre: "3 g" },
+      { nb: 2, boeuf: "280 g", riz: "16 g", menthe: "16 g", echalote: "2", citronvert: "1", saucePoisson: "30 ml", piment: "6 g", coriandre: "10 g", sucre: "6 g" },
+      { nb: 3, boeuf: "420 g", riz: "24 g", menthe: "24 g", echalote: "3", citronvert: "1½", saucePoisson: "45 ml", piment: "9 g", coriandre: "15 g", sucre: "9 g" },
+      { nb: 4, boeuf: "560 g", riz: "32 g", menthe: "32 g", echalote: "4", citronvert: "2", saucePoisson: "60 ml", piment: "12 g", coriandre: "20 g", sucre: "12 g" },
+      { nb: 5, boeuf: "700 g", riz: "40 g", menthe: "40 g", echalote: "5", citronvert: "2½", saucePoisson: "75 ml", piment: "15 g", coriandre: "25 g", sucre: "15 g" },
+      { nb: 6, boeuf: "840 g", riz: "48 g", menthe: "48 g", echalote: "6", citronvert: "3", saucePoisson: "90 ml", piment: "18 g", coriandre: "30 g", sucre: "18 g" },
+      { nb: 7, boeuf: "980 g", riz: "56 g", menthe: "56 g", echalote: "7", citronvert: "3½", saucePoisson: "105 ml", piment: "21 g", coriandre: "35 g", sucre: "21 g" },
+      { nb: 8, boeuf: "1120 g", riz: "64 g", menthe: "64 g", echalote: "8", citronvert: "4", saucePoisson: "120 ml", piment: "24 g", coriandre: "40 g", sucre: "24 g" },
+      { nb: 9, boeuf: "1260 g", riz: "72 g", menthe: "72 g", echalote: "9", citronvert: "4½", saucePoisson: "135 ml", piment: "27 g", coriandre: "45 g", sucre: "27 g" },
+      { nb: 10, boeuf: "1400 g", riz: "80 g", menthe: "80 g", echalote: "10", citronvert: "5", saucePoisson: "150 ml", piment: "30 g", coriandre: "50 g", sucre: "30 g" },
+      { nb: 11, boeuf: "1540 g", riz: "88 g", menthe: "88 g", echalote: "11", citronvert: "5½", saucePoisson: "165 ml", piment: "33 g", coriandre: "55 g", sucre: "33 g" },
+      { nb: 12, boeuf: "1680 g", riz: "96 g", menthe: "96 g", echalote: "12", citronvert: "6", saucePoisson: "180 ml", piment: "36 g", coriandre: "60 g", sucre: "36 g" },
+      { nb: 13, boeuf: "1820 g", riz: "104 g", menthe: "104 g", echalote: "13", citronvert: "6½", saucePoisson: "195 ml", piment: "39 g", coriandre: "65 g", sucre: "39 g" },
+      { nb: 14, boeuf: "1960 g", riz: "112 g", menthe: "112 g", echalote: "14", citronvert: "7", saucePoisson: "210 ml", piment: "42 g", coriandre: "70 g", sucre: "42 g" },
+      { nb: 15, boeuf: "2100 g", riz: "120 g", menthe: "120 g", echalote: "15", citronvert: "7½", saucePoisson: "225 ml", piment: "45 g", coriandre: "75 g", sucre: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Une pièce épaisse, grillée ENTIÈRE", detail: "Bavette ou onglet de 3 cm : tranchée avant cuisson, la viande serait grise et sèche de part en part.", badge: null },
+      { icone: "💧", titre: "« Nam tok » veut dire cascade", detail: "C'est le jus qui tombe sur les braises pendant la cuisson. Le nom décrit un bruit, pas une sauce.", badge: null },
+      { icone: "🌡️", titre: "Saignante à cœur, très colorée dehors", detail: "Feu vif et court : l'intérieur doit rester franchement rouge, c'est ce qui sépare le nam tok du larb.", badge: null },
+      { icone: "⏸️", titre: "Reposer dix minutes AVANT de trancher", detail: "Tranchée chaude, elle perd tout son jus dans le saladier et devient fade.", badge: null },
+      { icone: "🌾", titre: "Du riz gluant grillé, pilé grossièrement", detail: "Torréfié à sec jusqu'au brun puis écrasé : le khao khua donne le croquant et l'odeur de noisette du plat.", badge: null },
+      { icone: "🔪", titre: "Trancher FIN, en travers des fibres", detail: "Deux millimètres : c'est ce qui rend tendre en salade une viande simplement grillée.", badge: null },
+      { icone: "🥬", titre: "Servir tiède, avec du chou cru", detail: "Jamais sortie du frigo : le nam tok se mange à température, avec des feuilles crues pour saisir la viande.", badge: null }
+    ],
+    liees: ["larb","somtam","saladeThai"]
   },
 });

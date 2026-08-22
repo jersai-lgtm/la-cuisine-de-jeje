@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 30 recettes
+// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 31 recettes
 // 👉 Pour AJOUTER une recette En-cas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -7799,5 +7799,43 @@ Object.assign(recettes, {
       { icone: "🧻", titre: "Égoutter debout", detail: "Sur du papier, posées de chant contre le bord de l'assiette : à plat, le dessous ramollit.", badge: null }
     ],
     liees: ["rosti","placki","paillassonpdt"]
+  },
+  nikuman: {
+    dateAjout: "2026-08-24T10:08:00",
+    nom: "Nikuman",
+    cat: "encas", saisons: ["automne","hiver"], pays: "japon",
+    base: 8,
+    temps: "2 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Le pain vapeur japonais au porc, vendu brûlant dans toutes les supérettes dès les premiers froids. Sa pâte est plus SUCRÉE que celle du baozi chinois — et ce contraste avec la farce salée est tout le plat.",
+    tableauNikuman: [
+      { nb: 1, farine: "45 g", levureboulangere: "1.5 g", sucre: "6 g", lait: "25 ml", porchache: "45 g", oignon: "¼", gingembre: "3 g", saucesoja: "5 ml", huilesesame: "3 ml", sel: "0.5 g" },
+      { nb: 2, farine: "90 g", levureboulangere: "3 g", sucre: "12 g", lait: "50 ml", porchache: "90 g", oignon: "½", gingembre: "6 g", saucesoja: "10 ml", huilesesame: "6 ml", sel: "1 g" },
+      { nb: 3, farine: "135 g", levureboulangere: "4.5 g", sucre: "18 g", lait: "75 ml", porchache: "135 g", oignon: "¾", gingembre: "9 g", saucesoja: "15 ml", huilesesame: "9 ml", sel: "1.5 g" },
+      { nb: 4, farine: "180 g", levureboulangere: "6 g", sucre: "24 g", lait: "100 ml", porchache: "180 g", oignon: "1", gingembre: "12 g", saucesoja: "20 ml", huilesesame: "12 ml", sel: "2 g" },
+      { nb: 5, farine: "225 g", levureboulangere: "7.5 g", sucre: "30 g", lait: "125 ml", porchache: "225 g", oignon: "1¼", gingembre: "15 g", saucesoja: "25 ml", huilesesame: "15 ml", sel: "2.5 g" },
+      { nb: 6, farine: "270 g", levureboulangere: "9 g", sucre: "36 g", lait: "150 ml", porchache: "270 g", oignon: "1½", gingembre: "18 g", saucesoja: "30 ml", huilesesame: "18 ml", sel: "3 g" },
+      { nb: 7, farine: "315 g", levureboulangere: "10.5 g", sucre: "42 g", lait: "175 ml", porchache: "315 g", oignon: "1¾", gingembre: "21 g", saucesoja: "35 ml", huilesesame: "21 ml", sel: "3.5 g" },
+      { nb: 8, farine: "360 g", levureboulangere: "12 g", sucre: "48 g", lait: "200 ml", porchache: "360 g", oignon: "2", gingembre: "24 g", saucesoja: "40 ml", huilesesame: "24 ml", sel: "4 g" },
+      { nb: 9, farine: "405 g", levureboulangere: "13.5 g", sucre: "54 g", lait: "225 ml", porchache: "405 g", oignon: "2¼", gingembre: "27 g", saucesoja: "45 ml", huilesesame: "27 ml", sel: "4.5 g" },
+      { nb: 10, farine: "450 g", levureboulangere: "15 g", sucre: "60 g", lait: "250 ml", porchache: "450 g", oignon: "2½", gingembre: "30 g", saucesoja: "50 ml", huilesesame: "30 ml", sel: "5 g" },
+      { nb: 11, farine: "495 g", levureboulangere: "16.5 g", sucre: "66 g", lait: "275 ml", porchache: "495 g", oignon: "2¾", gingembre: "33 g", saucesoja: "55 ml", huilesesame: "33 ml", sel: "5.5 g" },
+      { nb: 12, farine: "540 g", levureboulangere: "18 g", sucre: "72 g", lait: "300 ml", porchache: "540 g", oignon: "3", gingembre: "36 g", saucesoja: "60 ml", huilesesame: "36 ml", sel: "6 g" },
+      { nb: 13, farine: "585 g", levureboulangere: "19.5 g", sucre: "78 g", lait: "325 ml", porchache: "585 g", oignon: "3¼", gingembre: "39 g", saucesoja: "65 ml", huilesesame: "39 ml", sel: "6.5 g" },
+      { nb: 14, farine: "630 g", levureboulangere: "21 g", sucre: "84 g", lait: "350 ml", porchache: "630 g", oignon: "3½", gingembre: "42 g", saucesoja: "70 ml", huilesesame: "42 ml", sel: "7 g" },
+      { nb: 15, farine: "675 g", levureboulangere: "22.5 g", sucre: "90 g", lait: "375 ml", porchache: "675 g", oignon: "3¾", gingembre: "45 g", saucesoja: "75 ml", huilesesame: "45 ml", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Une pâte plus sucrée qu'un pain", detail: "Le nikuman est plus doux que le baozi chinois : ce contraste avec la farce salée est la raison d'être du plat.", badge: null },
+      { icone: "🥛", titre: "Pétrir au LAIT, pas à l'eau", detail: "Il donne une mie blanche et un moelleux qui tient encore après réchauffage.", badge: null },
+      { icone: "❄️", titre: "Une farce FROIDE, presque figée", detail: "Le gras doit être solide au moment de garnir : tiède, il s'échappe et détrempe la pâte par en dessous.", badge: null },
+      { icone: "🌀", titre: "Dix-huit plis, en tournant", detail: "On pince et on tourne d'un quart : la fermeture doit être étanche et former une rosace régulière.", badge: null },
+      { icone: "📄", titre: "Un carré de papier sous chaque pain", detail: "Sans lui, ils collent au panier et se déchirent au moment de les décoller.", badge: null },
+      { icone: "⏳", titre: "Laisser lever 20 minutes DANS le panier", detail: "Avant d'allumer le feu : ils doublent et deviennent légers au lieu de rester compacts.", badge: null },
+      { icone: "🚫", titre: "Ne pas ouvrir pendant la cuisson", detail: "Le choc thermique fait retomber la pâte d'un coup. Quinze minutes couvercle fermé, puis cinq hors du feu.", badge: null }
+    ],
+    liees: ["baozi","gyoza","mantou"]
   },
 });
