@@ -1046,7 +1046,131 @@ const POIDS_UNITAIRE = {
   tomatecerise: 8, tomatescerises: 8, feuillebrick: 10, feuillesbrick: 10,
   bagel: 85, escargot: 10, figue: 50, figues: 50, painpanini: 90, painmie: 30, paincomplet: 35, tortilla: 50, tortillas: 50,
   huitres: 10,
+
+  // --- Complété en v5.0.5 -----------------------------------------------------
+  // Sans poids unitaire, « tomate: "2" » était compté comme DEUX GRAMMES de
+  // tomate : 585 recettes voyaient leur coût et leurs calories sous-estimés en
+  // silence. Les poids ci-dessous sont ceux d'une pièce moyenne, parée.
+  tomate: 120, tomates: 120, carotte: 70, carottes: 70,
+  poivron: 160, poivrons: 160, courgette: 200, courgettes: 200,
+  concombre: 300, aubergine: 250, aubergines: 250, navet: 100, navets: 100,
+  poireaux: 150, celeri: 45, salade: 300, laitue: 300, endive: 130,
+  asperges: 20, artichaut: 60, bok_choy: 150, brocoli: 300, choufleur: 800,
+  piment: 8, jalapeno: 15, scotchBonnet: 8, poivronrouge: 160,
+  fraises: 15, cerise: 8, cerises: 8, abricot: 50, prune: 40, clementine: 80,
+  olives: 4, cornichons: 12, crevettes: 12, crevette: 12, anchois: 5,
+  burrata: 125, mozzarella: 125, saucisse: 80, saucisses: 80,
+  painpita: 60, pita: 60, painburger: 70, biscuits: 8,
+  glace: 60, glacevanille: 60, feuilletee: 230, feuillesBric: 12,
+  algue: 3, blancoeuf: 32, jaunedoeuf: 18, jaunedoeufs: 18,
+  jambon: 35, cheddar: 20, pain: 35, painrassis: 35,
+  // Aromates : une pièce d'aromate pèse très peu, mais « 12 » basilic comptés
+  // comme 12 g faussait aussi le Nutri-Score. Poids d'une feuille / d'un brin.
+  laurier: 0.2, basilic: 0.35, menthe: 0.3, thym: 1, romarin: 2,
+  persil: 60, coriandre: 50, aneth: 30, ciboulette: 0.5, ciboule: 15,
+  citronnelle: 15, vanille: 3, cannelle: 2.5, clougirofle: 0.1, poivre: 0.05,
+  gingembre: 8, sucre: 6, cardamome: 0.15, badiane: 0.5, anisetoile: 0.5,
+  pommedeterre: 150, pommesdeterre: 150, buns: 70, muffins: 60,
+  anis: 0.5, girofle: 0.1, sauge: 0.5, galanga: 6, nori: 3, filo: 15,
+  lasagne: 12, patemandu: 8, tortillamais: 30, biscuitscuillere: 8,
+  bouquetgarni: 10, gelatine: 2, jamboncru: 20, graissecanard: 15,
+  // Amers et sauces dosés au trait : le poids est dérisoire mais non nul,
+  // et sans entrée ici la ligne serait purement ignorée.
+  bitters: 0.5, angostura: 0.5, tabasco: 0.5, worcestershire: 5,
+  // Pièces entières : le nombre écrit dans le tableau est un compte d'unités.
+  camembert: 250, chevre: 60, prosciutto: 20, jamboncru2: 20,
+  saintjacques: 20, gambas: 25, sole: 250, dorade: 500, anchoix: 5,
+  poulet: 1500, canard: 1800, cuissecanard: 250, cuisseconfit: 250,
+  confitcanard: 250, andouillette: 150, bratwurst: 100, merguez: 60,
+  saucissefumee: 80, chorizo: 60, veau: 120, souris: 300, jarret: 250,
+  cotelets: 80, os: 300, paupiette: 120,
+  betterave: 150, patatedouce: 250, pdterre: 150, fenouil: 250, radis: 15,
+  bokchoy: 150, plantainvert: 200, mais: 200, maisepi: 200, pruneaux: 8,
+  baguette: 250, painepices: 30, baos: 60, crepesP: 10, galetteriz: 12,
+  feuilleswonton: 5, cannellonipates: 8, feuillesFilo: 15,
+  meringue: 15, marronglace: 20, feves: 3, cafe: 8,
+  baies: 0.3, kaffir: 0.3, piment_guajillo: 8, piment_ancho: 12, ancho: 12,
 };
+
+// === Poids d'une unité NOMMÉE, par ingrédient ================================
+// Le tableau d'une recette écrit parfois le mot d'unité après le nombre :
+// « 4 feuilles », « 1 botte », « 4 cm », « 4 tranches ». Ce mot change tout —
+// une feuille de laurier pèse 0,2 g, une feuille de salade 20 g — donc un seul
+// poids par ingrédient ne suffit pas. Sans correspondance ici, on retombe sur
+// POIDS_UNITAIRE ci-dessus.
+const POIDS_UNITE_NOMMEE = {
+  salade:      { feuille: 20 },
+  laitue:      { feuille: 20 },
+  chou:        { feuille: 30 },
+  basilic:     { feuille: 0.35, branche: 5 },
+  menthe:      { feuille: 0.3, branche: 5, botte: 30 },
+  laurier:     { feuille: 0.2 },
+  persil:      { botte: 60, brin: 2, branche: 2, feuille: 0.2 },
+  coriandre:   { botte: 50, brin: 2, branche: 2, feuille: 0.2 },
+  aneth:       { botte: 30, brin: 1, branche: 1 },
+  thym:        { brin: 1, branche: 2, botte: 20 },
+  romarin:     { brin: 2, branche: 3, botte: 25 },
+  ciboulette:  { tige: 0.5, botte: 25, brin: 0.5 },
+  ciboule:     { tige: 15, botte: 60 },
+  citronnelle: { tige: 15, batonnet: 15 },
+  gingembre:   { cm: 6, morceau: 15, racine: 40 },
+  vanille:     { gousse: 3 },
+  cannelle:    { baton: 2.5, batonnet: 2.5 },
+  clougirofle: { piece: 0.1, clou: 0.1 },
+  poivre:      { grain: 0.05 },
+  celeri:      { branche: 45, tige: 45, cote: 45 },
+  pain:        { tranche: 35, tr: 35 },
+  painrassis:  { tranche: 35, tr: 35 },
+  jambon:      { tranche: 35, tr: 35 },
+  cheddar:     { tranche: 20, tr: 20 },
+  sucre:       { morceau: 6 },
+  glace:       { boule: 60, poignee: 40 },
+  glacevanille:{ boule: 60 },
+  feuilletee:  { vol: 60, abaisse: 230, rouleau: 230 },
+  anchois:     { filet: 5 },
+  crevettes:   { piece: 12 },
+  saucisse:    { piece: 80 },
+  blancoeuf:   { piece: 32 },
+  algue:       { feuille: 3 },
+  nori:        { feuille: 3 },
+  filo:        { feuille: 15 },
+  gelatine:    { feuille: 2 },
+  lasagne:     { feuille: 12, plaque: 12 },
+  sauge:       { feuille: 0.5 },
+  jamboncru:   { tranche: 20, tr: 20 },
+  canard:      { cuisse: 250, magret: 350, filet: 200 },
+  poulet:      { cuisse: 200, blanc: 150, filet: 150, aile: 90, pilon: 100 },
+  galanga:     { cm: 6, tranche: 3 },
+  feves:       { galette: 3 },
+  painepices:  { tranche: 30, tr: 30 },
+  jarret:      { tranche: 250, tr: 250, rouelle: 250 },
+  prosciutto:  { tranche: 20, tr: 20 },
+  mais:        { epi: 200 },
+  maisepi:     { epi: 200 },
+  kaffir:      { feuille: 0.3 },
+  baies:       { grain: 0.3, baie: 0.3 },
+};
+
+// Normalise le mot d'unité : minuscule, sans accent, sans point, au singulier.
+// « Tranches » → « tranche », « tr. » → « tr », « c.à.s » reste « cas ».
+function motUnite(mot) {
+  return String(mot || "").toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[.\s]/g, "").replace(/s$/, "");
+}
+
+// Grammes correspondant à « nombre » unités de l'ingrédient « cle », en tenant
+// compte du mot d'unité éventuel. Sans information, on renvoie null : le nombre
+// brut ne doit PAS être pris pour des grammes (c'était le bug d'avant v5.0.5).
+function grammesComptes(cle, nombre, mot) {
+  const nomme = POIDS_UNITE_NOMMEE[cle];
+  if (mot && nomme) {
+    const m = motUnite(mot);
+    if (nomme[m] !== undefined) return nombre * nomme[m];
+  }
+  const pu = POIDS_UNITAIRE[cle];
+  return pu !== undefined ? nombre * pu : null;
+}
 
 // === Résolveur de clé d'ingrédient (tolérance orthographe) ===
 // Repli utilisé UNIQUEMENT quand INGREDIENTS_PRIX[cle] est absent : tente
@@ -1240,9 +1364,17 @@ function calculerPrixCaloriesRecette(ligneTableau) {
     const estPoids = qte.unite === "poids";
     
     if (info.prixKg !== undefined) {
-      // Pondérable : en g/ml on garde la valeur ; si dosé en unités (ex. « 2 pâtons »)
-      // on convertit via un poids unitaire connu, sinon on garde la valeur brute.
-      const grammes = (!estPoids && POIDS_UNITAIRE[cleC]) ? qte.valeur * POIDS_UNITAIRE[cleC] : qte.valeur;
+      // Pondérable : en g/ml on garde la valeur telle quelle. Dosé en pièces
+      // (« 2 pâtons », « 4 feuilles », « 1 botte »), on convertit en grammes.
+      // Si aucun poids n'est connu, on IGNORE la ligne : compter le nombre pour
+      // des grammes sous-estimait 585 recettes en silence (bug d'avant v5.0.5).
+      let grammes;
+      if (estPoids) {
+        grammes = qte.valeur;
+      } else {
+        grammes = grammesComptes(cleC, qte.valeur, qte.mot);
+        if (grammes === null) { ingredientsManquants.push(cle); continue; }
+      }
       prixTotal += (grammes / 1000) * info.prixKg;
       calTotal += (grammes / 100) * info.calPer100g;
       protTotal += (grammes / 100) * (info.prot || 0);
@@ -1354,11 +1486,14 @@ function parserQuantite(texte) {
   if (unite.includes("goutte")) return null;
   // g, ml → poids/volume
   if (unite === "g" || unite === "ml") return { valeur: nombre, unite: "poids" };
-  // cl → ml ×10
+  // cl → ml ×10, dl → ml ×100
   if (unite === "cl") return { valeur: nombre * 10, unite: "poids" };
-  
-  // Pas d'unité = quantité comptée (1 œuf, 2 bananes...)
-  return { valeur: nombre, unite: "unite" };
+  if (unite === "dl") return { valeur: nombre * 100, unite: "poids" };
+
+  // Pas d'unité, ou une unité NOMMÉE (« 4 feuilles », « 1 botte », « 4 cm ») :
+  // quantité comptée. Le mot est conservé, car il change le poids réel —
+  // une feuille de laurier pèse 0,2 g, une feuille de salade 20 g.
+  return { valeur: nombre, unite: "unite", mot: unite };
 }
 
 // Exporter pour utilisation

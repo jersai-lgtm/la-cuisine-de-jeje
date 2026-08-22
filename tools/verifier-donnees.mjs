@@ -112,6 +112,42 @@ try {
   }
 } catch (e) { avert.push(`recettes_batch.js non vérifiable (${e.message})`); }
 
+// --- Quantités comptées en pièces sans poids connu -------------------------
+// Une cellule sans unité (« tomate: "2" », « canard: "1" ») est un COMPTE.
+// Sans poids unitaire déclaré, l'ancien calcul prenait le nombre pour des
+// grammes : le Canard Laqué facturait 1 g de canard, 105 kcal par personne.
+// 585 recettes étaient dans ce cas avant la v5.0.5.
+{
+  const cp = sandbox();
+  try {
+    exec(cp, "ingredients_prix.js");
+    const P = cp.INGREDIENTS_PRIX || cp.window.INGREDIENTS_PRIX || {};
+    const resoudre = typeof cp.cleCanonique === "function" ? cp.cleCanonique : (x) => (x in P ? x : null);
+    const grammes = cp.grammesComptes;
+    const META = new Set(["nb", "label", "patons", "total", "unite"]);
+    const enPoids = (v) => /\d\s*(g|ml|kg|l|cl|dl)\b/.test(v);
+    const orphelines = new Map();
+    if (typeof grammes === "function") {
+      for (const k of cles) {
+        const r = R[k];
+        const tk = Object.keys(r).find((x) => x.startsWith("tableau") && Array.isArray(r[x]));
+        if (!tk) continue;
+        for (const [col, v] of Object.entries(r[tk][0] || {})) {
+          if (META.has(col) || typeof v !== "string" || !v.trim() || enPoids(v)) continue;
+          const c = resoudre(col);
+          if (!c || !P[c] || P[c].prixUnite !== undefined) continue;
+          const m = /^[~≈]?\s*([0-9]+(?:[.,][0-9]+)?)\s*(.*)$/.exec(v.replace(/[½¼¾]/g, "0.5"));
+          if (!m) continue;
+          if (grammes(c, parseFloat(m[1]), m[2]) === null)
+            orphelines.set(c, (orphelines.get(c) || 0) + 1);
+        }
+      }
+    }
+    for (const [c, n] of orphelines)
+      erreurs.push(`Ingrédient "${c}" compté en pièces dans ${n} recette(s) sans poids unitaire — son coût et ses calories seraient ignorés (ajouter POIDS_UNITAIRE ou POIDS_UNITE_NOMMEE)`);
+  } catch (e) { avert.push(`poids unitaires non vérifiables (${e.message})`); }
+}
+
 // --- Rendus dédiés : colonnes lues vs colonnes existantes ------------------
 // Une quarantaine de recettes ont leur propre fonction d'affichage dans
 // tables.js. Si elle lit « l.tomates » alors que la table contient « tomate »,
@@ -121,8 +157,16 @@ try {
   const tables = readFileSync(join(ROOT, "js", "tables.js"), "utf8");
   const app = readFileSync(join(ROOT, "js", "app.js"), "utf8");
   const rendus = new Map();
-  for (const m of tables.matchAll(/function (htmlTableau\w+Colonnes)\s*\(\s*(\w+)\s*\)\s*\{([\s\S]*?)\n\}/g))
+  const compte = new Map();
+  for (const m of tables.matchAll(/function (htmlTableau\w+Colonnes)\s*\(\s*(\w+)\s*\)\s*\{([\s\S]*?)\n\}/g)) {
     rendus.set(m[1], [...new Set([...m[3].matchAll(new RegExp("\\b" + m[2] + "\\.(\\w+)", "g"))].map((x) => x[1]))]);
+    compte.set(m[1], (compte.get(m[1]) || 0) + 1);
+  }
+  // Un rendu déclaré deux fois : c'est la DERNIÈRE qui s'exécute, la première
+  // devient du code mort. Piège vicieux — on corrige la mauvaise copie en
+  // croyant avoir réglé le bug, et l'affichage ne bouge pas.
+  for (const [nom, n] of compte)
+    if (n > 1) erreurs.push(`${nom} est déclarée ${n} fois dans tables.js — seule la dernière s'exécute, les autres sont du code mort`);
   const vus = new Set();
   for (const m of app.matchAll(/recette\s*===\s*"([^"]+)"[\s\S]{0,400}?renduComplet\(\s*(htmlTableau\w+Colonnes)/g)) {
     const [, cle, rendu] = m;
