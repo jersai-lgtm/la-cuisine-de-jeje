@@ -8,6 +8,8 @@
 //     les recettes sont souvent publiées avant la conversion des images)
 //   • pas de clé de recette définie en double (un fichier en écraserait un autre)
 //   • les clés de recettes_batch.js référencent bien des recettes existantes
+//   • les rendus dédiés de tables.js lisent des colonnes qui existent vraiment
+//     (sinon la fiche affiche « undefined » sans lever la moindre erreur)
 // Sort en erreur (code 1) pour les vraies erreurs de données (nom/étapes manquants,
 // clé en double…) ; les images manquantes ne sont qu'un avertissement.
 // =============================================================================
@@ -109,6 +111,32 @@ try {
     if (!R[k]) avert.push(`recettes_batch : "${k}" ne correspond à aucune recette`);
   }
 } catch (e) { avert.push(`recettes_batch.js non vérifiable (${e.message})`); }
+
+// --- Rendus dédiés : colonnes lues vs colonnes existantes ------------------
+// Une quarantaine de recettes ont leur propre fonction d'affichage dans
+// tables.js. Si elle lit « l.tomates » alors que la table contient « tomate »,
+// la fiche affiche « undefined » — sans erreur JS, donc en silence.
+// (20 fiches étaient dans ce cas jusqu'à la v5.0.4, dont crêpes et cookies.)
+try {
+  const tables = readFileSync(join(ROOT, "js", "tables.js"), "utf8");
+  const app = readFileSync(join(ROOT, "js", "app.js"), "utf8");
+  const rendus = new Map();
+  for (const m of tables.matchAll(/function (htmlTableau\w+Colonnes)\s*\(\s*(\w+)\s*\)\s*\{([\s\S]*?)\n\}/g))
+    rendus.set(m[1], [...new Set([...m[3].matchAll(new RegExp("\\b" + m[2] + "\\.(\\w+)", "g"))].map((x) => x[1]))]);
+  const vus = new Set();
+  for (const m of app.matchAll(/recette\s*===\s*"([^"]+)"[\s\S]{0,400}?renduComplet\(\s*(htmlTableau\w+Colonnes)/g)) {
+    const [, cle, rendu] = m;
+    if (vus.has(cle + rendu)) continue; vus.add(cle + rendu);
+    const r = R[cle], props = rendus.get(rendu);
+    if (!r || !props) continue;
+    const tk = Object.keys(r).find((x) => x.startsWith("tableau") && Array.isArray(r[x]));
+    if (!tk) continue;
+    const cols = new Set(r[tk].flatMap((l) => Object.keys(l)));
+    const absentes = props.filter((p) => !cols.has(p));
+    if (absentes.length)
+      erreurs.push(`${cle} : ${rendu} lit ${absentes.map((x) => `"${x}"`).join(", ")} — colonne(s) absente(s) du tableau, la fiche affichera « undefined »`);
+  }
+} catch (e) { avert.push(`rendus dédiés non vérifiables (${e.message})`); }
 
 // --- Rapport --------------------------------------------------------------
 console.log(`🔎 ${cles.length} recettes vérifiées.`);
