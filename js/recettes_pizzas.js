@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_pizzas.js — Recettes de catégorie "pizzas" (Pizzas) — 22 recettes
+// recettes_pizzas.js — Recettes de catégorie "pizzas" (Pizzas) — 27 recettes
 // 👉 Pour AJOUTER une recette Pizzas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -1320,5 +1320,195 @@ Object.assign(recettes, {
       { icone: "🍞", titre: "La chapelure", detail: "Chapelure mêlée d'huile d'olive en pluie sur le dessus, puis 25 minutes à 220°C jusqu'à croûte dorée.", badge: null }
     ],
     liees: ["pissaladiere","focacciaolives","panelle"]
+  },
+  pizzafritta: {
+    dateAjout: "2026-08-26T11:00:00",
+    nom: "Pizza Fritta",
+    cat: "pizzas", pays: "italie",
+    base: 4,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍕",
+    description: "La pizza FRITE de Naples, née de l'après-guerre quand les fours à bois étaient détruits et la farine rationnée. Une poche fermée, garnie de ricotta et de porc, qui gonfle en ballon dans l'huile bouillante.",
+    tableauPizzafritta: [
+      { nb: 1, farine: "90 g", levureboulangere: "1.2 g", ricotta: "55 g", tomate: "45 g", mozzarella: "35 g", poitrine: "25 g", huile: "20 ml", basilic: "3 g", sel: "1.5 g" },
+      { nb: 2, farine: "180 g", levureboulangere: "2.4 g", ricotta: "110 g", tomate: "90 g", mozzarella: "70 g", poitrine: "50 g", huile: "40 ml", basilic: "6 g", sel: "3 g" },
+      { nb: 3, farine: "270 g", levureboulangere: "3.6 g", ricotta: "165 g", tomate: "135 g", mozzarella: "105 g", poitrine: "75 g", huile: "60 ml", basilic: "9 g", sel: "4.5 g" },
+      { nb: 4, farine: "360 g", levureboulangere: "4.8 g", ricotta: "220 g", tomate: "180 g", mozzarella: "140 g", poitrine: "100 g", huile: "80 ml", basilic: "12 g", sel: "6 g" },
+      { nb: 5, farine: "450 g", levureboulangere: "6 g", ricotta: "275 g", tomate: "225 g", mozzarella: "175 g", poitrine: "125 g", huile: "100 ml", basilic: "15 g", sel: "7.5 g" },
+      { nb: 6, farine: "540 g", levureboulangere: "7.2 g", ricotta: "330 g", tomate: "270 g", mozzarella: "210 g", poitrine: "150 g", huile: "120 ml", basilic: "18 g", sel: "9 g" },
+      { nb: 7, farine: "630 g", levureboulangere: "8.4 g", ricotta: "385 g", tomate: "315 g", mozzarella: "245 g", poitrine: "175 g", huile: "140 ml", basilic: "21 g", sel: "10.5 g" },
+      { nb: 8, farine: "720 g", levureboulangere: "9.6 g", ricotta: "440 g", tomate: "360 g", mozzarella: "280 g", poitrine: "200 g", huile: "160 ml", basilic: "24 g", sel: "12 g" },
+      { nb: 9, farine: "810 g", levureboulangere: "10.8 g", ricotta: "495 g", tomate: "405 g", mozzarella: "315 g", poitrine: "225 g", huile: "180 ml", basilic: "27 g", sel: "13.5 g" },
+      { nb: 10, farine: "900 g", levureboulangere: "12 g", ricotta: "550 g", tomate: "450 g", mozzarella: "350 g", poitrine: "250 g", huile: "200 ml", basilic: "30 g", sel: "15 g" },
+      { nb: 11, farine: "990 g", levureboulangere: "13.2 g", ricotta: "605 g", tomate: "495 g", mozzarella: "385 g", poitrine: "275 g", huile: "220 ml", basilic: "33 g", sel: "16.5 g" },
+      { nb: 12, farine: "1080 g", levureboulangere: "14.4 g", ricotta: "660 g", tomate: "540 g", mozzarella: "420 g", poitrine: "300 g", huile: "240 ml", basilic: "36 g", sel: "18 g" },
+      { nb: 13, farine: "1170 g", levureboulangere: "15.6 g", ricotta: "715 g", tomate: "585 g", mozzarella: "455 g", poitrine: "325 g", huile: "260 ml", basilic: "39 g", sel: "19.5 g" },
+      { nb: 14, farine: "1260 g", levureboulangere: "16.8 g", ricotta: "770 g", tomate: "630 g", mozzarella: "490 g", poitrine: "350 g", huile: "280 ml", basilic: "42 g", sel: "21 g" },
+      { nb: 15, farine: "1350 g", levureboulangere: "18 g", ricotta: "825 g", tomate: "675 g", mozzarella: "525 g", poitrine: "375 g", huile: "300 ml", basilic: "45 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Une pâte à pizza classique, bien hydratée", detail: "65 % d'eau et huit heures de pousse : c'est la même pâte que la napolitaine, seule la cuisson change.", badge: null },
+      { icone: "🧀", titre: "Une ricotta ÉGOUTTÉE une nuit", detail: "Dans une passoire au frais : l'eau de la ricotta ferait exploser la poche dans l'huile.", badge: null },
+      { icone: "🚫", titre: "Ne pas trop garnir", detail: "Trois cuillères maximum : une poche trop pleine s'ouvre à la friture et vide tout dans le bain d'huile.", badge: null },
+      { icone: "🌙", titre: "Souder en chausson, en chassant l'air", detail: "On presse du centre vers les bords : une bulle emprisonnée fait éclater la pizza dès l'immersion.", badge: null },
+      { icone: "🌡️", titre: "Huile à 175 °C, pas plus", detail: "Plus chaude, l'extérieur brunit avant que la pâte n'ait cuit et l'intérieur reste cru.", badge: null },
+      { icone: "🎈", titre: "Elle doit GONFLER en ballon", detail: "Trente secondes après immersion : si elle reste plate, la pâte a trop levé ou l'huile est trop froide.", badge: null },
+      { icone: "🍕", titre: "Se mange debout, brûlante, dans du papier", detail: "C'est un plat de rue napolitain. Attendre qu'elle refroidisse, c'est manquer l'essentiel.", badge: null }
+    ],
+    liees: ["pizzanapolitaine","pizzamarinara","montanara"]
+  },
+  montanara: {
+    dateAjout: "2026-08-26T11:01:00",
+    nom: "Montanara",
+    cat: "pizzas", pays: "italie",
+    base: 4,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍅",
+    description: "La pizza napolitaine frite PUIS passée au four : deux cuissons pour une pâte à la fois croustillante dehors et aérienne dedans. Contrairement à la pizza fritta, elle est ouverte et se garnit après la friture.",
+    tableauMontanara: [
+      { nb: 1, farine: "85 g", levureboulangere: "1.2 g", tomate: "70 g", mozzarella: "45 g", parmesan: "12 g", basilic: "4 g", huile: "20 ml", huileolive: "8 ml", sel: "1.5 g" },
+      { nb: 2, farine: "170 g", levureboulangere: "2.4 g", tomate: "140 g", mozzarella: "90 g", parmesan: "24 g", basilic: "8 g", huile: "40 ml", huileolive: "16 ml", sel: "3 g" },
+      { nb: 3, farine: "255 g", levureboulangere: "3.6 g", tomate: "210 g", mozzarella: "135 g", parmesan: "36 g", basilic: "12 g", huile: "60 ml", huileolive: "24 ml", sel: "4.5 g" },
+      { nb: 4, farine: "340 g", levureboulangere: "4.8 g", tomate: "280 g", mozzarella: "180 g", parmesan: "48 g", basilic: "16 g", huile: "80 ml", huileolive: "32 ml", sel: "6 g" },
+      { nb: 5, farine: "425 g", levureboulangere: "6 g", tomate: "350 g", mozzarella: "225 g", parmesan: "60 g", basilic: "20 g", huile: "100 ml", huileolive: "40 ml", sel: "7.5 g" },
+      { nb: 6, farine: "510 g", levureboulangere: "7.2 g", tomate: "420 g", mozzarella: "270 g", parmesan: "72 g", basilic: "24 g", huile: "120 ml", huileolive: "48 ml", sel: "9 g" },
+      { nb: 7, farine: "595 g", levureboulangere: "8.4 g", tomate: "490 g", mozzarella: "315 g", parmesan: "84 g", basilic: "28 g", huile: "140 ml", huileolive: "56 ml", sel: "10.5 g" },
+      { nb: 8, farine: "680 g", levureboulangere: "9.6 g", tomate: "560 g", mozzarella: "360 g", parmesan: "96 g", basilic: "32 g", huile: "160 ml", huileolive: "64 ml", sel: "12 g" },
+      { nb: 9, farine: "765 g", levureboulangere: "10.8 g", tomate: "630 g", mozzarella: "405 g", parmesan: "108 g", basilic: "36 g", huile: "180 ml", huileolive: "72 ml", sel: "13.5 g" },
+      { nb: 10, farine: "850 g", levureboulangere: "12 g", tomate: "700 g", mozzarella: "450 g", parmesan: "120 g", basilic: "40 g", huile: "200 ml", huileolive: "80 ml", sel: "15 g" },
+      { nb: 11, farine: "935 g", levureboulangere: "13.2 g", tomate: "770 g", mozzarella: "495 g", parmesan: "132 g", basilic: "44 g", huile: "220 ml", huileolive: "88 ml", sel: "16.5 g" },
+      { nb: 12, farine: "1020 g", levureboulangere: "14.4 g", tomate: "840 g", mozzarella: "540 g", parmesan: "144 g", basilic: "48 g", huile: "240 ml", huileolive: "96 ml", sel: "18 g" },
+      { nb: 13, farine: "1105 g", levureboulangere: "15.6 g", tomate: "910 g", mozzarella: "585 g", parmesan: "156 g", basilic: "52 g", huile: "260 ml", huileolive: "104 ml", sel: "19.5 g" },
+      { nb: 14, farine: "1190 g", levureboulangere: "16.8 g", tomate: "980 g", mozzarella: "630 g", parmesan: "168 g", basilic: "56 g", huile: "280 ml", huileolive: "112 ml", sel: "21 g" },
+      { nb: 15, farine: "1275 g", levureboulangere: "18 g", tomate: "1050 g", mozzarella: "675 g", parmesan: "180 g", basilic: "60 g", huile: "300 ml", huileolive: "120 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Des disques PETITS, 15 cm maximum", detail: "Ils doivent flotter et gonfler librement dans la friteuse. Plus grands, ils cuisent inégalement.", badge: null },
+      { icone: "📏", titre: "Étalés à la main, bords épais", detail: "Le bourrelet retiendra la garniture après friture. Au rouleau, il n'y aurait plus de bord du tout.", badge: null },
+      { icone: "🌡️", titre: "Frire 90 secondes, à 180 °C", detail: "Elle doit gonfler et blondir sans dorer complètement : le four finira la couleur.", badge: null },
+      { icone: "🧻", titre: "Égoutter DEBOUT, sur la tranche", detail: "À plat, la pâte se réimprègne de son huile. Sur la tranche, elle s'égoutte réellement.", badge: null },
+      { icone: "🍅", titre: "Garnir APRÈS la friture, jamais avant", detail: "C'est toute la différence avec la pizza fritta : ici la garniture ne connaît que le four.", badge: null },
+      { icone: "🔥", titre: "Four à 250 °C, quatre minutes", detail: "Juste le temps de fondre la mozzarella. Plus longtemps, la pâte frite se dessèche et durcit.", badge: null },
+      { icone: "🌿", titre: "Basilic frais à la sortie", detail: "Posé sur la pizza brûlante, hors du four : cuit, il noircit et perd tout son parfum.", badge: null }
+    ],
+    liees: ["pizzafritta","pizzanapolitaine","pizzamarinara"]
+  },
+  pizzadiscarola: {
+    dateAjout: "2026-08-26T11:02:00",
+    nom: "Pizza di Scarola",
+    cat: "pizzas", saisons: ["automne","hiver"], pays: "italie",
+    base: 6,
+    temps: "2 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "La tourte napolitaine de Noël garnie de scarole, d'olives, de câpres et de raisins secs. Ni tomate ni fromage — c'est une pizza fermée d'avant la tomate, et le sucré-salé y est assumé jusqu'au bout.",
+    tableauPizzadiscarola: [
+      { nb: 1, farine: "75 g", levureboulangere: "1.2 g", scarole: "120 g", olives: "20 g", anchois: "8 g", capres: "8 g", raisinssecs: "12 g", pignons: "10 g", ail: "1", huileolive: "18 ml" },
+      { nb: 2, farine: "150 g", levureboulangere: "2.4 g", scarole: "240 g", olives: "40 g", anchois: "16 g", capres: "16 g", raisinssecs: "24 g", pignons: "20 g", ail: "2", huileolive: "36 ml" },
+      { nb: 3, farine: "225 g", levureboulangere: "3.6 g", scarole: "360 g", olives: "60 g", anchois: "24 g", capres: "24 g", raisinssecs: "36 g", pignons: "30 g", ail: "3", huileolive: "54 ml" },
+      { nb: 4, farine: "300 g", levureboulangere: "4.8 g", scarole: "480 g", olives: "80 g", anchois: "32 g", capres: "32 g", raisinssecs: "48 g", pignons: "40 g", ail: "4", huileolive: "72 ml" },
+      { nb: 5, farine: "375 g", levureboulangere: "6 g", scarole: "600 g", olives: "100 g", anchois: "40 g", capres: "40 g", raisinssecs: "60 g", pignons: "50 g", ail: "5", huileolive: "90 ml" },
+      { nb: 6, farine: "450 g", levureboulangere: "7.2 g", scarole: "720 g", olives: "120 g", anchois: "48 g", capres: "48 g", raisinssecs: "72 g", pignons: "60 g", ail: "6", huileolive: "108 ml" },
+      { nb: 7, farine: "525 g", levureboulangere: "8.4 g", scarole: "840 g", olives: "140 g", anchois: "56 g", capres: "56 g", raisinssecs: "84 g", pignons: "70 g", ail: "7", huileolive: "126 ml" },
+      { nb: 8, farine: "600 g", levureboulangere: "9.6 g", scarole: "960 g", olives: "160 g", anchois: "64 g", capres: "64 g", raisinssecs: "96 g", pignons: "80 g", ail: "8", huileolive: "144 ml" },
+      { nb: 9, farine: "675 g", levureboulangere: "10.8 g", scarole: "1080 g", olives: "180 g", anchois: "72 g", capres: "72 g", raisinssecs: "108 g", pignons: "90 g", ail: "9", huileolive: "162 ml" },
+      { nb: 10, farine: "750 g", levureboulangere: "12 g", scarole: "1200 g", olives: "200 g", anchois: "80 g", capres: "80 g", raisinssecs: "120 g", pignons: "100 g", ail: "10", huileolive: "180 ml" },
+      { nb: 11, farine: "825 g", levureboulangere: "13.2 g", scarole: "1320 g", olives: "220 g", anchois: "88 g", capres: "88 g", raisinssecs: "132 g", pignons: "110 g", ail: "11", huileolive: "198 ml" },
+      { nb: 12, farine: "900 g", levureboulangere: "14.4 g", scarole: "1440 g", olives: "240 g", anchois: "96 g", capres: "96 g", raisinssecs: "144 g", pignons: "120 g", ail: "12", huileolive: "216 ml" },
+      { nb: 13, farine: "975 g", levureboulangere: "15.6 g", scarole: "1560 g", olives: "260 g", anchois: "104 g", capres: "104 g", raisinssecs: "156 g", pignons: "130 g", ail: "13", huileolive: "234 ml" },
+      { nb: 14, farine: "1050 g", levureboulangere: "16.8 g", scarole: "1680 g", olives: "280 g", anchois: "112 g", capres: "112 g", raisinssecs: "168 g", pignons: "140 g", ail: "14", huileolive: "252 ml" },
+      { nb: 15, farine: "1125 g", levureboulangere: "18 g", scarole: "1800 g", olives: "300 g", anchois: "120 g", capres: "120 g", raisinssecs: "180 g", pignons: "150 g", ail: "15", huileolive: "270 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "De la scarole, pas de la laitue", detail: "Son amertume est le contrepoint des raisins secs. Une salade douce donnerait une tourte fade et sucrée.", badge: null },
+      { icone: "💧", titre: "Blanchir 2 minutes, puis ESSORER À FOND", detail: "Dans un linge, en tordant : la scarole est gorgée d'eau, et cette eau détremperait la pâte par en dessous.", badge: null },
+      { icone: "🍇", titre: "Raisins secs gonflés à l'eau tiède", detail: "Vingt minutes : secs, ils pomperaient l'humidité de la garniture et resteraient durs sous la dent.", badge: null },
+      { icone: "🐟", titre: "Les anchois fondus dans l'huile", detail: "À feu doux jusqu'à disparition : ils ne doivent pas se voir, seulement saler et donner de la profondeur.", badge: null },
+      { icone: "🌰", titre: "Pignons torréfiés à sec", detail: "Trois minutes à la poêle : crus, ils n'apportent rien qu'une texture molle.", badge: null },
+      { icone: "❄️", titre: "Garnir FROID, jamais tiède", detail: "Une garniture chaude fait fondre le beurre de la pâte et la rend collante à l'étalage.", badge: null },
+      { icone: "🕳️", titre: "Piquer le dessus généreusement", detail: "La scarole rend encore de la vapeur en cuisant : sans issue, le couvercle se soulève et se sépare.", badge: null }
+    ],
+    liees: ["pizzacalzone","sfincione","scacciata"]
+  },
+  scacciata: {
+    dateAjout: "2026-08-26T11:03:00",
+    nom: "Scacciata",
+    cat: "pizzas", saisons: ["automne","hiver"], pays: "italie",
+    base: 6,
+    temps: "2 h 30",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "La tourte catanaise aux pommes de terre, saucisse et fromage frais, cuite dans un moule rond. Son nom vient de « scacciare », chasser : on chasse l'air en pressant la pâte du plat de la main avant d'enfourner.",
+    tableauScacciata: [
+      { nb: 1, farine: "75 g", levureboulangere: "1.2 g", pommedeterre: "90 g", saucisse: "½", mozzarella: "45 g", pecorino: "15 g", oignon: "¼", huileolive: "15 ml", poivre: "0.8 g" },
+      { nb: 2, farine: "150 g", levureboulangere: "2.4 g", pommedeterre: "180 g", saucisse: "1", mozzarella: "90 g", pecorino: "30 g", oignon: "½", huileolive: "30 ml", poivre: "1.6 g" },
+      { nb: 3, farine: "225 g", levureboulangere: "3.6 g", pommedeterre: "270 g", saucisse: "1½", mozzarella: "135 g", pecorino: "45 g", oignon: "¾", huileolive: "45 ml", poivre: "2.4 g" },
+      { nb: 4, farine: "300 g", levureboulangere: "4.8 g", pommedeterre: "360 g", saucisse: "2", mozzarella: "180 g", pecorino: "60 g", oignon: "1", huileolive: "60 ml", poivre: "3.2 g" },
+      { nb: 5, farine: "375 g", levureboulangere: "6 g", pommedeterre: "450 g", saucisse: "2½", mozzarella: "225 g", pecorino: "75 g", oignon: "1¼", huileolive: "75 ml", poivre: "4 g" },
+      { nb: 6, farine: "450 g", levureboulangere: "7.2 g", pommedeterre: "540 g", saucisse: "3", mozzarella: "270 g", pecorino: "90 g", oignon: "1½", huileolive: "90 ml", poivre: "4.8 g" },
+      { nb: 7, farine: "525 g", levureboulangere: "8.4 g", pommedeterre: "630 g", saucisse: "3½", mozzarella: "315 g", pecorino: "105 g", oignon: "1¾", huileolive: "105 ml", poivre: "5.6 g" },
+      { nb: 8, farine: "600 g", levureboulangere: "9.6 g", pommedeterre: "720 g", saucisse: "4", mozzarella: "360 g", pecorino: "120 g", oignon: "2", huileolive: "120 ml", poivre: "6.4 g" },
+      { nb: 9, farine: "675 g", levureboulangere: "10.8 g", pommedeterre: "810 g", saucisse: "4½", mozzarella: "405 g", pecorino: "135 g", oignon: "2¼", huileolive: "135 ml", poivre: "7.2 g" },
+      { nb: 10, farine: "750 g", levureboulangere: "12 g", pommedeterre: "900 g", saucisse: "5", mozzarella: "450 g", pecorino: "150 g", oignon: "2½", huileolive: "150 ml", poivre: "8 g" },
+      { nb: 11, farine: "825 g", levureboulangere: "13.2 g", pommedeterre: "990 g", saucisse: "5½", mozzarella: "495 g", pecorino: "165 g", oignon: "2¾", huileolive: "165 ml", poivre: "8.8 g" },
+      { nb: 12, farine: "900 g", levureboulangere: "14.4 g", pommedeterre: "1080 g", saucisse: "6", mozzarella: "540 g", pecorino: "180 g", oignon: "3", huileolive: "180 ml", poivre: "9.6 g" },
+      { nb: 13, farine: "975 g", levureboulangere: "15.6 g", pommedeterre: "1170 g", saucisse: "6½", mozzarella: "585 g", pecorino: "195 g", oignon: "3¼", huileolive: "195 ml", poivre: "10.4 g" },
+      { nb: 14, farine: "1050 g", levureboulangere: "16.8 g", pommedeterre: "1260 g", saucisse: "7", mozzarella: "630 g", pecorino: "210 g", oignon: "3½", huileolive: "210 ml", poivre: "11.2 g" },
+      { nb: 15, farine: "1125 g", levureboulangere: "18 g", pommedeterre: "1350 g", saucisse: "7½", mozzarella: "675 g", pecorino: "225 g", oignon: "3¾", huileolive: "225 ml", poivre: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Des pommes de terre CRUES, en fines lamelles", detail: "2 mm à la mandoline : elles cuisent dans la tourte et s'imprègnent du gras de la saucisse.", badge: null },
+      { icone: "🌭", titre: "Une saucisse fraîche ÉMIETTÉE crue", detail: "Sa graisse fond et cuit les pommes de terre. Précuite, elle ressort sèche et le plat perd son liant.", badge: null },
+      { icone: "🧀", titre: "Du tuma, ou de la mozzarella très égouttée", detail: "Le fromage sicilien est peu humide. Une mozzarella normale noierait la garniture.", badge: null },
+      { icone: "✋", titre: "Presser la pâte À LA MAIN, pas au rouleau", detail: "C'est le geste qui donne son nom au plat : on chasse l'air en aplatissant du plat de la paume.", badge: null },
+      { icone: "🌀", titre: "Souder en repliant les bords vers le centre", detail: "Comme un baluchon retourné : la soudure se retrouve dessous et ne s'ouvre pas à la cuisson.", badge: null },
+      { icone: "🫒", titre: "Badigeonner d'huile d'olive avant le four", detail: "Elle donne la couleur dorée et la croûte légèrement croustillante caractéristique.", badge: null },
+      { icone: "🔥", titre: "200 °C pendant 50 minutes", detail: "Long, parce que les pommes de terre sont crues. Une croûte dorée à 30 minutes cache un intérieur cru.", badge: null }
+    ],
+    liees: ["sfincione","pizzacalzone","rusticoleccese"]
+  },
+  sardenara: {
+    dateAjout: "2026-08-26T11:04:00",
+    nom: "Sardenara",
+    cat: "pizzas", saisons: ["ete"], pays: "italie",
+    base: 6,
+    temps: "3 h",
+    niveau: "⭐ Facile",
+    emoji: "🫒",
+    description: "La pizza de Sanremo, cousine ligure de la pissaladière niçoise. Pas de fromage, une sauce tomate longuement réduite, des olives taggiasche et des anchois — et une pâte épaisse et moelleuse, à l'inverse de la napolitaine.",
+    tableauSardenara: [
+      { nb: 1, farine: "80 g", levureboulangere: "1.2 g", tomate: "90 g", anchois: "10 g", olives: "25 g", capres: "6 g", ail: "1", origan: "1 g", huileolive: "20 ml", sel: "1.5 g" },
+      { nb: 2, farine: "160 g", levureboulangere: "2.4 g", tomate: "180 g", anchois: "20 g", olives: "50 g", capres: "12 g", ail: "2", origan: "2 g", huileolive: "40 ml", sel: "3 g" },
+      { nb: 3, farine: "240 g", levureboulangere: "3.6 g", tomate: "270 g", anchois: "30 g", olives: "75 g", capres: "18 g", ail: "3", origan: "3 g", huileolive: "60 ml", sel: "4.5 g" },
+      { nb: 4, farine: "320 g", levureboulangere: "4.8 g", tomate: "360 g", anchois: "40 g", olives: "100 g", capres: "24 g", ail: "4", origan: "4 g", huileolive: "80 ml", sel: "6 g" },
+      { nb: 5, farine: "400 g", levureboulangere: "6 g", tomate: "450 g", anchois: "50 g", olives: "125 g", capres: "30 g", ail: "5", origan: "5 g", huileolive: "100 ml", sel: "7.5 g" },
+      { nb: 6, farine: "480 g", levureboulangere: "7.2 g", tomate: "540 g", anchois: "60 g", olives: "150 g", capres: "36 g", ail: "6", origan: "6 g", huileolive: "120 ml", sel: "9 g" },
+      { nb: 7, farine: "560 g", levureboulangere: "8.4 g", tomate: "630 g", anchois: "70 g", olives: "175 g", capres: "42 g", ail: "7", origan: "7 g", huileolive: "140 ml", sel: "10.5 g" },
+      { nb: 8, farine: "640 g", levureboulangere: "9.6 g", tomate: "720 g", anchois: "80 g", olives: "200 g", capres: "48 g", ail: "8", origan: "8 g", huileolive: "160 ml", sel: "12 g" },
+      { nb: 9, farine: "720 g", levureboulangere: "10.8 g", tomate: "810 g", anchois: "90 g", olives: "225 g", capres: "54 g", ail: "9", origan: "9 g", huileolive: "180 ml", sel: "13.5 g" },
+      { nb: 10, farine: "800 g", levureboulangere: "12 g", tomate: "900 g", anchois: "100 g", olives: "250 g", capres: "60 g", ail: "10", origan: "10 g", huileolive: "200 ml", sel: "15 g" },
+      { nb: 11, farine: "880 g", levureboulangere: "13.2 g", tomate: "990 g", anchois: "110 g", olives: "275 g", capres: "66 g", ail: "11", origan: "11 g", huileolive: "220 ml", sel: "16.5 g" },
+      { nb: 12, farine: "960 g", levureboulangere: "14.4 g", tomate: "1080 g", anchois: "120 g", olives: "300 g", capres: "72 g", ail: "12", origan: "12 g", huileolive: "240 ml", sel: "18 g" },
+      { nb: 13, farine: "1040 g", levureboulangere: "15.6 g", tomate: "1170 g", anchois: "130 g", olives: "325 g", capres: "78 g", ail: "13", origan: "13 g", huileolive: "260 ml", sel: "19.5 g" },
+      { nb: 14, farine: "1120 g", levureboulangere: "16.8 g", tomate: "1260 g", anchois: "140 g", olives: "350 g", capres: "84 g", ail: "14", origan: "14 g", huileolive: "280 ml", sel: "21 g" },
+      { nb: 15, farine: "1200 g", levureboulangere: "18 g", tomate: "1350 g", anchois: "150 g", olives: "375 g", capres: "90 g", ail: "15", origan: "15 g", huileolive: "300 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Une sauce réduite DEUX heures", detail: "Jusqu'à devenir presque une confiture sombre : c'est ce qui distingue la sardenara d'une simple pizza tomate.", badge: null },
+      { icone: "📏", titre: "Une pâte ÉPAISSE, 1,5 cm", detail: "À l'opposé de la napolitaine : la sardenara est un pain garni, moelleux et haut.", badge: null },
+      { icone: "⏸️", titre: "Deux heures de pousse EN PLAQUE", detail: "Étalée dans le moule huilé, elle lève une seconde fois : c'est ce qui lui donne son moelleux.", badge: null },
+      { icone: "🫒", titre: "Des olives taggiasche entières, avec le noyau", detail: "Elles gardent leur parfum et leur fermeté. Dénoyautées, elles se dessèchent au four.", badge: null },
+      { icone: "🧄", titre: "L'ail en gousses ENTIÈRES, plantées", detail: "Non pelées, enfoncées dans la pâte : elles confisent et se mangent en fin de parcours.", badge: null },
+      { icone: "🐟", titre: "Anchois posés en croisillons, à la fin", detail: "Sur la sauce, jamais mélangés : ils doivent se voir et saler par endroits, pas partout.", badge: null },
+      { icone: "🌿", titre: "Origan SEC, pas frais", detail: "C'est l'une des rares herbes meilleure séchée : son parfum résiste à la cuisson là où le frais disparaît.", badge: null }
+    ],
+    liees: ["pizzamarinara","sfincione","pizzanapolitaine"]
   },
 });

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 20 recettes
+// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 25 recettes
 // 👉 Pour AJOUTER une glace : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1232,5 +1232,195 @@ Object.assign(recettes, {
       { icone: "🥃", titre: "Le calvados", detail: "Ajouté APRÈS turbinage, en fin de sanglage : l'alcool empêche la prise s'il est mis trop tôt.", badge: null }
     ],
     liees: ["sorbetcitron","poirehelene","bombeglacee"]
+  },
+  tartufo: {
+    dateAjout: "2026-08-26T12:00:00",
+    nom: "Tartufo",
+    cat: "glaces", saisons: ["ete"], pays: "italie",
+    base: 6,
+    temps: "40 min + congélation",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍫",
+    description: "La truffe glacée de Pizzo, en Calabre, née en 1952 d'un mariage où l'on manquait de coupes. Une boule de glace cachant un cœur de chocolat fondu, roulée dans le cacao — et ce cœur doit rester COULANT à la découpe.",
+    tableauTartufo: [
+      { nb: 1, glacevanille: "90 g", chocolatnoir: "25 g", cacao: "8 g", noisettes: "12 g", creme: "15 ml", sucre: "8 g" },
+      { nb: 2, glacevanille: "180 g", chocolatnoir: "50 g", cacao: "16 g", noisettes: "24 g", creme: "30 ml", sucre: "16 g" },
+      { nb: 3, glacevanille: "270 g", chocolatnoir: "75 g", cacao: "24 g", noisettes: "36 g", creme: "45 ml", sucre: "24 g" },
+      { nb: 4, glacevanille: "360 g", chocolatnoir: "100 g", cacao: "32 g", noisettes: "48 g", creme: "60 ml", sucre: "32 g" },
+      { nb: 5, glacevanille: "450 g", chocolatnoir: "125 g", cacao: "40 g", noisettes: "60 g", creme: "75 ml", sucre: "40 g" },
+      { nb: 6, glacevanille: "540 g", chocolatnoir: "150 g", cacao: "48 g", noisettes: "72 g", creme: "90 ml", sucre: "48 g" },
+      { nb: 7, glacevanille: "630 g", chocolatnoir: "175 g", cacao: "56 g", noisettes: "84 g", creme: "105 ml", sucre: "56 g" },
+      { nb: 8, glacevanille: "720 g", chocolatnoir: "200 g", cacao: "64 g", noisettes: "96 g", creme: "120 ml", sucre: "64 g" },
+      { nb: 9, glacevanille: "810 g", chocolatnoir: "225 g", cacao: "72 g", noisettes: "108 g", creme: "135 ml", sucre: "72 g" },
+      { nb: 10, glacevanille: "900 g", chocolatnoir: "250 g", cacao: "80 g", noisettes: "120 g", creme: "150 ml", sucre: "80 g" },
+      { nb: 11, glacevanille: "990 g", chocolatnoir: "275 g", cacao: "88 g", noisettes: "132 g", creme: "165 ml", sucre: "88 g" },
+      { nb: 12, glacevanille: "1080 g", chocolatnoir: "300 g", cacao: "96 g", noisettes: "144 g", creme: "180 ml", sucre: "96 g" },
+      { nb: 13, glacevanille: "1170 g", chocolatnoir: "325 g", cacao: "104 g", noisettes: "156 g", creme: "195 ml", sucre: "104 g" },
+      { nb: 14, glacevanille: "1260 g", chocolatnoir: "350 g", cacao: "112 g", noisettes: "168 g", creme: "210 ml", sucre: "112 g" },
+      { nb: 15, glacevanille: "1350 g", chocolatnoir: "375 g", cacao: "120 g", noisettes: "180 g", creme: "225 ml", sucre: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍫", titre: "Un cœur de ganache MOLLE", detail: "Beaucoup plus de crème que pour une ganache classique : elle doit rester coulante à −18 °C, donc très grasse.", badge: null },
+      { icone: "❄️", titre: "Congeler la ganache en billes", detail: "Une heure au congélateur avant le montage : molle, impossible de l'enfermer dans la glace.", badge: null },
+      { icone: "🥄", titre: "Travailler la glace juste RAMOLLIE", detail: "Dix minutes hors du congélateur : dure, elle se casse ; fondue, elle ne tient plus la forme.", badge: null },
+      { icone: "🤲", titre: "Former à la main, dans un film", detail: "On tapisse un bol de film, on met la glace, la bille au centre, et on referme en serrant.", badge: null },
+      { icone: "⏳", titre: "Trois heures de reprise au congélateur", detail: "Le tartufo doit être totalement pris avant d'être roulé, sinon le cacao se détrempe.", badge: null },
+      { icone: "🍫", titre: "Rouler dans le cacao AMER", detail: "Non sucré : c'est le contraste amer contre la glace sucrée qui fait tout l'intérêt du dessert.", badge: null },
+      { icone: "⏱️", titre: "Sortir cinq minutes avant de servir", detail: "Le temps que le cœur redevienne coulant. Servi trop froid, il reste dur et l'effet est manqué.", badge: null }
+    ],
+    liees: ["gelato","bombeglacee","affogatoglace"]
+  },
+  coupedanemark: {
+    dateAjout: "2026-08-26T12:01:00",
+    nom: "Coupe Danemark",
+    cat: "glaces", saisons: ["ete"], pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍨",
+    description: "Vanille et chocolat chaud servi à part, dans un petit pot : c'est le fait de verser soi-même qui définit la coupe Danemark. Nappée en cuisine, ce n'est plus qu'une glace au chocolat.",
+    tableauCoupedanemark: [
+      { nb: 1, glacevanille: "120 g", chocolatnoir: "35 g", creme: "45 ml", amandes: "12 g", beurre: "6 g" },
+      { nb: 2, glacevanille: "240 g", chocolatnoir: "70 g", creme: "90 ml", amandes: "24 g", beurre: "12 g" },
+      { nb: 3, glacevanille: "360 g", chocolatnoir: "105 g", creme: "135 ml", amandes: "36 g", beurre: "18 g" },
+      { nb: 4, glacevanille: "480 g", chocolatnoir: "140 g", creme: "180 ml", amandes: "48 g", beurre: "24 g" },
+      { nb: 5, glacevanille: "600 g", chocolatnoir: "175 g", creme: "225 ml", amandes: "60 g", beurre: "30 g" },
+      { nb: 6, glacevanille: "720 g", chocolatnoir: "210 g", creme: "270 ml", amandes: "72 g", beurre: "36 g" },
+      { nb: 7, glacevanille: "840 g", chocolatnoir: "245 g", creme: "315 ml", amandes: "84 g", beurre: "42 g" },
+      { nb: 8, glacevanille: "960 g", chocolatnoir: "280 g", creme: "360 ml", amandes: "96 g", beurre: "48 g" },
+      { nb: 9, glacevanille: "1080 g", chocolatnoir: "315 g", creme: "405 ml", amandes: "108 g", beurre: "54 g" },
+      { nb: 10, glacevanille: "1200 g", chocolatnoir: "350 g", creme: "450 ml", amandes: "120 g", beurre: "60 g" },
+      { nb: 11, glacevanille: "1320 g", chocolatnoir: "385 g", creme: "495 ml", amandes: "132 g", beurre: "66 g" },
+      { nb: 12, glacevanille: "1440 g", chocolatnoir: "420 g", creme: "540 ml", amandes: "144 g", beurre: "72 g" },
+      { nb: 13, glacevanille: "1560 g", chocolatnoir: "455 g", creme: "585 ml", amandes: "156 g", beurre: "78 g" },
+      { nb: 14, glacevanille: "1680 g", chocolatnoir: "490 g", creme: "630 ml", amandes: "168 g", beurre: "84 g" },
+      { nb: 15, glacevanille: "1800 g", chocolatnoir: "525 g", creme: "675 ml", amandes: "180 g", beurre: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍫", titre: "Un chocolat à 60 %, pas plus fort", detail: "À 70 %, la sauce devient amère et se fige sur la glace au lieu de napper.", badge: null },
+      { icone: "🥛", titre: "Une sauce à la CRÈME, pas au lait", detail: "Le lait donne une sauce qui durcit au contact du froid. La crème reste souple et coulante.", badge: null },
+      { icone: "🌡️", titre: "Une sauce TIÈDE, pas brûlante", detail: "Autour de 45 °C : brûlante, elle fait fondre la boule instantanément et la coupe tourne à la soupe.", badge: null },
+      { icone: "🧈", titre: "Une noisette de beurre en fin de sauce", detail: "Hors du feu : elle donne le brillant et empêche la sauce de figer en refroidissant.", badge: null },
+      { icone: "🌰", titre: "Amandes effilées torréfiées", detail: "Cinq minutes au four : crues, elles n'apportent qu'une texture molle et aucun parfum.", badge: null },
+      { icone: "❄️", titre: "Des coupes passées au congélateur", detail: "Un quart d'heure : la glace tient dix minutes de plus, et c'est toute la différence à table.", badge: null },
+      { icone: "🫗", titre: "La sauce SERVIE À PART, en pichet", detail: "C'est la définition même du dessert. Chacun verse, et la glace reste ferme jusqu'à la dernière cuillère.", badge: null }
+    ],
+    liees: ["glacevanille","bananasplit","affogatoglace"]
+  },
+  turronhelado: {
+    dateAjout: "2026-08-26T12:02:00",
+    nom: "Turrón Helado",
+    cat: "glaces", saisons: ["hiver"], pays: "espagne",
+    base: 8,
+    temps: "40 min + congélation",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌰",
+    description: "Le nougat glacé espagnol de Noël, moulé en bloc rectangulaire comme le turrón dont il porte le nom. Il ne se turbine pas : c'est la meringue italienne qui l'empêche de cristalliser, et il se prend au congélateur sans un seul tour de sorbetière.",
+    tableauTurronhelado: [
+      { nb: 1, amandes: "45 g", miel: "25 g", oeufs: "½", creme: "70 ml", sucre: "22 g", cannelle: "0.3 g", citron: "¼" },
+      { nb: 2, amandes: "90 g", miel: "50 g", oeufs: "1", creme: "140 ml", sucre: "44 g", cannelle: "0.6 g", citron: "½" },
+      { nb: 3, amandes: "135 g", miel: "75 g", oeufs: "1½", creme: "210 ml", sucre: "66 g", cannelle: "0.9 g", citron: "¾" },
+      { nb: 4, amandes: "180 g", miel: "100 g", oeufs: "2", creme: "280 ml", sucre: "88 g", cannelle: "1.2 g", citron: "1" },
+      { nb: 5, amandes: "225 g", miel: "125 g", oeufs: "2½", creme: "350 ml", sucre: "110 g", cannelle: "1.5 g", citron: "1¼" },
+      { nb: 6, amandes: "270 g", miel: "150 g", oeufs: "3", creme: "420 ml", sucre: "132 g", cannelle: "1.8 g", citron: "1½" },
+      { nb: 7, amandes: "315 g", miel: "175 g", oeufs: "3½", creme: "490 ml", sucre: "154 g", cannelle: "2.1 g", citron: "1¾" },
+      { nb: 8, amandes: "360 g", miel: "200 g", oeufs: "4", creme: "560 ml", sucre: "176 g", cannelle: "2.4 g", citron: "2" },
+      { nb: 9, amandes: "405 g", miel: "225 g", oeufs: "4½", creme: "630 ml", sucre: "198 g", cannelle: "2.7 g", citron: "2¼" },
+      { nb: 10, amandes: "450 g", miel: "250 g", oeufs: "5", creme: "700 ml", sucre: "220 g", cannelle: "3 g", citron: "2½" },
+      { nb: 11, amandes: "495 g", miel: "275 g", oeufs: "5½", creme: "770 ml", sucre: "242 g", cannelle: "3.3 g", citron: "2¾" },
+      { nb: 12, amandes: "540 g", miel: "300 g", oeufs: "6", creme: "840 ml", sucre: "264 g", cannelle: "3.6 g", citron: "3" },
+      { nb: 13, amandes: "585 g", miel: "325 g", oeufs: "6½", creme: "910 ml", sucre: "286 g", cannelle: "3.9 g", citron: "3¼" },
+      { nb: 14, amandes: "630 g", miel: "350 g", oeufs: "7", creme: "980 ml", sucre: "308 g", cannelle: "4.2 g", citron: "3½" },
+      { nb: 15, amandes: "675 g", miel: "375 g", oeufs: "7½", creme: "1050 ml", sucre: "330 g", cannelle: "4.5 g", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Des amandes marcona, torréfiées", detail: "Plates et grasses : ce sont elles qui font le turrón. Torréfiées à sec puis refroidies avant d'être broyées.", badge: null },
+      { icone: "🥣", titre: "Broyer jusqu'à la PÂTE, pas la poudre", detail: "Les amandes doivent rendre leur huile et former une pâte souple : en poudre, elles restent sableuses.", badge: null },
+      { icone: "🍯", titre: "Une meringue au MIEL, pas au sucre seul", detail: "Le miel chauffé à 118 °C : c'est lui qui donne le goût de turrón et empêche la cristallisation.", badge: null },
+      { icone: "🌡️", titre: "Verser le sirop en filet sur les blancs", detail: "Le long de la paroi, jamais sur le fouet : projeté, il fige en filaments durs et la meringue est perdue.", badge: null },
+      { icone: "❄️", titre: "Refroidir la meringue AVANT la crème", detail: "Fouetter jusqu'à ce que le bol soit froid : tiède, elle ferait retomber la crème montée.", badge: null },
+      { icone: "🥄", titre: "Incorporer la crème délicatement, à la maryse", detail: "En trois fois, en soulevant : c'est l'air emprisonné qui remplace la sorbetière.", badge: null },
+      { icone: "📦", titre: "Mouler en TERRINE rectangulaire", detail: "Filmée, six heures au congélateur : la forme du turrón fait partie du dessert, on ne le sert pas en boules.", badge: null }
+    ],
+    liees: ["nougatglace","cassata","glacenoisette"]
+  },
+  knickerbocker: {
+    dateAjout: "2026-08-26T12:03:00",
+    nom: "Knickerbocker Glory",
+    cat: "glaces", saisons: ["ete"], pays: "angleterre",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍧",
+    description: "Le sundae anglais des années 1930, monté en couches visibles dans un verre haut et étroit. Tout l'enjeu est optique : chaque strate doit se distinguer nettement, et une couche qui se mélange à sa voisine est un raté.",
+    tableauKnickerbocker: [
+      { nb: 1, glacevanille: "90 g", fraises: "70 g", creme: "40 ml", sucre: "15 g", biscuits: "15 g", cerise: "1", citron: "¼" },
+      { nb: 2, glacevanille: "180 g", fraises: "140 g", creme: "80 ml", sucre: "30 g", biscuits: "30 g", cerise: "2", citron: "½" },
+      { nb: 3, glacevanille: "270 g", fraises: "210 g", creme: "120 ml", sucre: "45 g", biscuits: "45 g", cerise: "3", citron: "¾" },
+      { nb: 4, glacevanille: "360 g", fraises: "280 g", creme: "160 ml", sucre: "60 g", biscuits: "60 g", cerise: "4", citron: "1" },
+      { nb: 5, glacevanille: "450 g", fraises: "350 g", creme: "200 ml", sucre: "75 g", biscuits: "75 g", cerise: "5", citron: "1¼" },
+      { nb: 6, glacevanille: "540 g", fraises: "420 g", creme: "240 ml", sucre: "90 g", biscuits: "90 g", cerise: "6", citron: "1½" },
+      { nb: 7, glacevanille: "630 g", fraises: "490 g", creme: "280 ml", sucre: "105 g", biscuits: "105 g", cerise: "7", citron: "1¾" },
+      { nb: 8, glacevanille: "720 g", fraises: "560 g", creme: "320 ml", sucre: "120 g", biscuits: "120 g", cerise: "8", citron: "2" },
+      { nb: 9, glacevanille: "810 g", fraises: "630 g", creme: "360 ml", sucre: "135 g", biscuits: "135 g", cerise: "9", citron: "2¼" },
+      { nb: 10, glacevanille: "900 g", fraises: "700 g", creme: "400 ml", sucre: "150 g", biscuits: "150 g", cerise: "10", citron: "2½" },
+      { nb: 11, glacevanille: "990 g", fraises: "770 g", creme: "440 ml", sucre: "165 g", biscuits: "165 g", cerise: "11", citron: "2¾" },
+      { nb: 12, glacevanille: "1080 g", fraises: "840 g", creme: "480 ml", sucre: "180 g", biscuits: "180 g", cerise: "12", citron: "3" },
+      { nb: 13, glacevanille: "1170 g", fraises: "910 g", creme: "520 ml", sucre: "195 g", biscuits: "195 g", cerise: "13", citron: "3¼" },
+      { nb: 14, glacevanille: "1260 g", fraises: "980 g", creme: "560 ml", sucre: "210 g", biscuits: "210 g", cerise: "14", citron: "3½" },
+      { nb: 15, glacevanille: "1350 g", fraises: "1050 g", creme: "600 ml", sucre: "225 g", biscuits: "225 g", cerise: "15", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Un verre HAUT et étroit, réfrigéré", detail: "Le knickerbocker se regarde autant qu'il se mange : un verre large ruine l'effet de strates.", badge: null },
+      { icone: "🍓", titre: "Un coulis de fraises FROID", detail: "Tiède, il fait fondre la glace au contact et les couches se brouillent immédiatement.", badge: null },
+      { icone: "❄️", titre: "Refroidir chaque élément séparément", detail: "Coulis, crème, verre : tout doit être à la même température froide avant le montage.", badge: null },
+      { icone: "📚", titre: "Monter en couches ÉPAISSES et nettes", detail: "Deux centimètres chacune, versées au centre : de fines couches se mélangent au premier coup de cuillère.", badge: null },
+      { icone: "🥄", titre: "Essuyer la paroi entre chaque couche", detail: "Un papier absorbant enroulé sur une baguette : ce sont les traînées qui rendent le verre brouillon.", badge: null },
+      { icone: "⏱️", titre: "Monter en moins de deux minutes", detail: "C'est un dessert d'assemblage : hésiter, c'est laisser fondre la première couche pendant qu'on pose la troisième.", badge: null },
+      { icone: "🍒", titre: "Chantilly haute et cerise au sommet", detail: "La chantilly doit dépasser du verre. Sans elle, ce n'est pas un knickerbocker glory.", badge: null }
+    ],
+    liees: ["bananasplit","frozenyogurt","sorbetfraise"]
+  },
+  granizado: {
+    dateAjout: "2026-08-26T12:04:00",
+    nom: "Granizado de Limón",
+    cat: "glaces", saisons: ["ete"], pays: "espagne",
+    base: 6,
+    temps: "15 min + 4 h",
+    niveau: "⭐ Facile",
+    emoji: "🍋",
+    description: "La glace pilée au citron des étés valenciens, grattée à la fourchette toutes les demi-heures. Sa texture n'a rien à voir avec un sorbet : ce sont des CRISTAUX distincts qui craquent sous la cuillère, et ils ne s'obtiennent qu'en grattant.",
+    tableauGranizado: [
+      { nb: 1, citron: "1", sucre: "35 g", menthe: "3 g", zestecitron: "2 g" },
+      { nb: 2, citron: "2", sucre: "70 g", menthe: "6 g", zestecitron: "4 g" },
+      { nb: 3, citron: "3", sucre: "105 g", menthe: "9 g", zestecitron: "6 g" },
+      { nb: 4, citron: "4", sucre: "140 g", menthe: "12 g", zestecitron: "8 g" },
+      { nb: 5, citron: "5", sucre: "175 g", menthe: "15 g", zestecitron: "10 g" },
+      { nb: 6, citron: "6", sucre: "210 g", menthe: "18 g", zestecitron: "12 g" },
+      { nb: 7, citron: "7", sucre: "245 g", menthe: "21 g", zestecitron: "14 g" },
+      { nb: 8, citron: "8", sucre: "280 g", menthe: "24 g", zestecitron: "16 g" },
+      { nb: 9, citron: "9", sucre: "315 g", menthe: "27 g", zestecitron: "18 g" },
+      { nb: 10, citron: "10", sucre: "350 g", menthe: "30 g", zestecitron: "20 g" },
+      { nb: 11, citron: "11", sucre: "385 g", menthe: "33 g", zestecitron: "22 g" },
+      { nb: 12, citron: "12", sucre: "420 g", menthe: "36 g", zestecitron: "24 g" },
+      { nb: 13, citron: "13", sucre: "455 g", menthe: "39 g", zestecitron: "26 g" },
+      { nb: 14, citron: "14", sucre: "490 g", menthe: "42 g", zestecitron: "28 g" },
+      { nb: 15, citron: "15", sucre: "525 g", menthe: "45 g", zestecitron: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Zester AVANT de presser", detail: "Le zeste porte l'essentiel du parfum. Une fois le citron pressé, il est impossible de le zester proprement.", badge: null },
+      { icone: "🍬", titre: "Un sirop refroidi, jamais chaud", detail: "Sucre dissous à chaud puis totalement refroidi : versé tiède sur le jus, il cuit l'acidité et fait un goût plat.", badge: null },
+      { icone: "⚖️", titre: "Un tiers de sucre pour deux tiers de liquide", detail: "Moins, ça prend en bloc de glace ; plus, ça ne gèle jamais. Le sucre pilote la texture, pas le goût.", badge: null },
+      { icone: "🥶", titre: "Un récipient LARGE et plat", detail: "Une plaque plutôt qu'un bol : plus la surface est grande, plus les cristaux se forment vite et fins.", badge: null },
+      { icone: "🍴", titre: "Gratter à la fourchette toutes les 30 minutes", detail: "Quatre fois de suite : c'est le seul geste de la recette, et il n'y a aucun raccourci.", badge: null },
+      { icone: "🚫", titre: "Ne jamais utiliser de mixeur", detail: "Il donne une neige uniforme, pas des cristaux. Ce serait un slush, pas un granizado.", badge: null },
+      { icone: "🥄", titre: "Servir immédiatement, en verre glacé", detail: "Les cristaux fondent en deux minutes. Le granizado ne se dresse pas à l'avance.", badge: null }
+    ],
+    liees: ["granite","sorbetcitron","kakigori"]
   },
 });

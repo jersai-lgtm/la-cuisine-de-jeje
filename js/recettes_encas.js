@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 33 recettes
+// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 34 recettes
 // 👉 Pour AJOUTER une recette En-cas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -7913,5 +7913,43 @@ Object.assign(recettes, {
       { icone: "🍳", titre: "Poêle à peine huilée, quatre minutes par face", detail: "Presque à sec : on cherche des taches brunes et des cloques, pas une friture.", badge: null }
     ],
     liees: ["mantuafghan","kabulipulao","aushak"]
+  },
+  rusticoleccese: {
+    dateAjout: "2026-08-26T11:05:00",
+    nom: "Rustico Leccese",
+    cat: "encas", pays: "italie",
+    base: 6,
+    temps: "1 h 15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "Le chausson feuilleté des Pouilles, garni de mozzarella, de tomate et de béchamel. C'est la béchamel qui fait tout : elle empêche la mozzarella de rendre son eau dans le feuilletage, et elle seule explique pourquoi le rustico ne détrempe pas.",
+    tableauRusticoleccese: [
+      { nb: 1, feuilletee: "60 g", mozzarella: "40 g", tomate: "30 g", lait: "40 ml", farine: "6 g", beurre: "6 g", muscade: "0.2 g", poivre: "0.5 g", oeufs: "¼" },
+      { nb: 2, feuilletee: "120 g", mozzarella: "80 g", tomate: "60 g", lait: "80 ml", farine: "12 g", beurre: "12 g", muscade: "0.4 g", poivre: "1 g", oeufs: "½" },
+      { nb: 3, feuilletee: "180 g", mozzarella: "120 g", tomate: "90 g", lait: "120 ml", farine: "18 g", beurre: "18 g", muscade: "0.6 g", poivre: "1.5 g", oeufs: "¾" },
+      { nb: 4, feuilletee: "240 g", mozzarella: "160 g", tomate: "120 g", lait: "160 ml", farine: "24 g", beurre: "24 g", muscade: "0.8 g", poivre: "2 g", oeufs: "1" },
+      { nb: 5, feuilletee: "300 g", mozzarella: "200 g", tomate: "150 g", lait: "200 ml", farine: "30 g", beurre: "30 g", muscade: "1 g", poivre: "2.5 g", oeufs: "1¼" },
+      { nb: 6, feuilletee: "360 g", mozzarella: "240 g", tomate: "180 g", lait: "240 ml", farine: "36 g", beurre: "36 g", muscade: "1.2 g", poivre: "3 g", oeufs: "1½" },
+      { nb: 7, feuilletee: "420 g", mozzarella: "280 g", tomate: "210 g", lait: "280 ml", farine: "42 g", beurre: "42 g", muscade: "1.4 g", poivre: "3.5 g", oeufs: "1¾" },
+      { nb: 8, feuilletee: "480 g", mozzarella: "320 g", tomate: "240 g", lait: "320 ml", farine: "48 g", beurre: "48 g", muscade: "1.6 g", poivre: "4 g", oeufs: "2" },
+      { nb: 9, feuilletee: "540 g", mozzarella: "360 g", tomate: "270 g", lait: "360 ml", farine: "54 g", beurre: "54 g", muscade: "1.8 g", poivre: "4.5 g", oeufs: "2¼" },
+      { nb: 10, feuilletee: "600 g", mozzarella: "400 g", tomate: "300 g", lait: "400 ml", farine: "60 g", beurre: "60 g", muscade: "2 g", poivre: "5 g", oeufs: "2½" },
+      { nb: 11, feuilletee: "660 g", mozzarella: "440 g", tomate: "330 g", lait: "440 ml", farine: "66 g", beurre: "66 g", muscade: "2.2 g", poivre: "5.5 g", oeufs: "2¾" },
+      { nb: 12, feuilletee: "720 g", mozzarella: "480 g", tomate: "360 g", lait: "480 ml", farine: "72 g", beurre: "72 g", muscade: "2.4 g", poivre: "6 g", oeufs: "3" },
+      { nb: 13, feuilletee: "780 g", mozzarella: "520 g", tomate: "390 g", lait: "520 ml", farine: "78 g", beurre: "78 g", muscade: "2.6 g", poivre: "6.5 g", oeufs: "3¼" },
+      { nb: 14, feuilletee: "840 g", mozzarella: "560 g", tomate: "420 g", lait: "560 ml", farine: "84 g", beurre: "84 g", muscade: "2.8 g", poivre: "7 g", oeufs: "3½" },
+      { nb: 15, feuilletee: "900 g", mozzarella: "600 g", tomate: "450 g", lait: "600 ml", farine: "90 g", beurre: "90 g", muscade: "3 g", poivre: "7.5 g", oeufs: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Une béchamel ÉPAISSE, presque une pâte", detail: "Elle doit tenir en boule froide : liquide, elle s'échappe par les bords à la cuisson.", badge: null },
+      { icone: "❄️", titre: "Refroidir complètement la béchamel", detail: "Étalée sur une assiette, filmée au contact : tiède, elle ferait fondre le beurre du feuilletage.", badge: null },
+      { icone: "🧀", titre: "Mozzarella ESSORÉE et coupée en dés", detail: "Râpée puis pressée dans un linge : c'est son eau qui détremperait la pâte.", badge: null },
+      { icone: "⭕", titre: "Deux disques, un plus grand pour le dessus", detail: "Le disque supérieur doit recouvrir sans tirer : tendu, il rétrécit au four et s'ouvre.", badge: null },
+      { icone: "🍴", titre: "Souder à la FOURCHETTE, tout le tour", detail: "Les dents créent un joint mécanique bien plus solide que la pression des doigts.", badge: null },
+      { icone: "🥚", titre: "Dorer à l'œuf DEUX fois", detail: "Une couche, dix minutes au frais, une seconde couche : c'est ce qui donne le brillant profond.", badge: null },
+      { icone: "🔥", titre: "200 °C, 25 minutes, sans ouvrir", detail: "Le feuilletage a besoin d'une chaleur constante pour développer. Ouvrir le four le fait retomber.", badge: null }
+    ],
+    liees: ["pizzacalzone","scacciata","sfincione"]
   },
 });

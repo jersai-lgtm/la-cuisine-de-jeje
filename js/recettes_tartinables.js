@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 11 recettes
+// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 15 recettes
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1350,5 +1350,157 @@ Object.assign(recettes, {
       { icone: "🍞", titre: "Servir TIÈDE", detail: "Sur du pain grillé, jamais brûlant ni froid : c'est à température ambiante qu'il donne le meilleur.", badge: null }
     ],
     liees: ["brandadeMorue","piquillosfarcis","baccalamantecato"]
+  },
+  melitzanosalata: {
+    dateAjout: "2026-08-26T11:06:00",
+    nom: "Melitzanosalata",
+    cat: "tartinables", saisons: ["ete","automne"], pays: "grece",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍆",
+    description: "Le caviar d'aubergine grec, brûlé à la flamme et travaillé À LA FOURCHETTE, jamais mixé. Sa texture doit rester grossière : passé au robot, il devient une purée grise sans caractère.",
+    tableauMelitzanosalata: [
+      { nb: 1, aubergine: "1", huileolive: "20 ml", citron: "½", ail: "1", persil: "6 g", vinaigreVin: "5 ml", sel: "1 g", poivre: "0.5 g" },
+      { nb: 2, aubergine: "2", huileolive: "40 ml", citron: "1", ail: "2", persil: "12 g", vinaigreVin: "10 ml", sel: "2 g", poivre: "1 g" },
+      { nb: 3, aubergine: "3", huileolive: "60 ml", citron: "1½", ail: "3", persil: "18 g", vinaigreVin: "15 ml", sel: "3 g", poivre: "1.5 g" },
+      { nb: 4, aubergine: "4", huileolive: "80 ml", citron: "2", ail: "4", persil: "24 g", vinaigreVin: "20 ml", sel: "4 g", poivre: "2 g" },
+      { nb: 5, aubergine: "5", huileolive: "100 ml", citron: "2½", ail: "5", persil: "30 g", vinaigreVin: "25 ml", sel: "5 g", poivre: "2.5 g" },
+      { nb: 6, aubergine: "6", huileolive: "120 ml", citron: "3", ail: "6", persil: "36 g", vinaigreVin: "30 ml", sel: "6 g", poivre: "3 g" },
+      { nb: 7, aubergine: "7", huileolive: "140 ml", citron: "3½", ail: "7", persil: "42 g", vinaigreVin: "35 ml", sel: "7 g", poivre: "3.5 g" },
+      { nb: 8, aubergine: "8", huileolive: "160 ml", citron: "4", ail: "8", persil: "48 g", vinaigreVin: "40 ml", sel: "8 g", poivre: "4 g" },
+      { nb: 9, aubergine: "9", huileolive: "180 ml", citron: "4½", ail: "9", persil: "54 g", vinaigreVin: "45 ml", sel: "9 g", poivre: "4.5 g" },
+      { nb: 10, aubergine: "10", huileolive: "200 ml", citron: "5", ail: "10", persil: "60 g", vinaigreVin: "50 ml", sel: "10 g", poivre: "5 g" },
+      { nb: 11, aubergine: "11", huileolive: "220 ml", citron: "5½", ail: "11", persil: "66 g", vinaigreVin: "55 ml", sel: "11 g", poivre: "5.5 g" },
+      { nb: 12, aubergine: "12", huileolive: "240 ml", citron: "6", ail: "12", persil: "72 g", vinaigreVin: "60 ml", sel: "12 g", poivre: "6 g" },
+      { nb: 13, aubergine: "13", huileolive: "260 ml", citron: "6½", ail: "13", persil: "78 g", vinaigreVin: "65 ml", sel: "13 g", poivre: "6.5 g" },
+      { nb: 14, aubergine: "14", huileolive: "280 ml", citron: "7", ail: "14", persil: "84 g", vinaigreVin: "70 ml", sel: "14 g", poivre: "7 g" },
+      { nb: 15, aubergine: "15", huileolive: "300 ml", citron: "7½", ail: "15", persil: "90 g", vinaigreVin: "75 ml", sel: "15 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Brûler l'aubergine À LA FLAMME", detail: "Sur le gaz ou au barbecue, peau entièrement noire : c'est cette fumée qui fait le plat, pas l'aubergine.", badge: null },
+      { icone: "🕳️", titre: "Piquer avant de brûler", detail: "Sans quoi elle éclate. Deux ou trois coups de couteau suffisent.", badge: null },
+      { icone: "💧", titre: "Égoutter la chair une heure", detail: "Dans une passoire : l'aubergine grillée est gorgée d'eau amère, et cette eau délaverait tout.", badge: null },
+      { icone: "🍴", titre: "Écraser À LA FOURCHETTE", detail: "Jamais au robot : la texture grossière est constitutive du plat. Mixée, c'est une purée quelconque.", badge: null },
+      { icone: "🫒", titre: "L'huile en filet, comme une mayonnaise", detail: "Versée peu à peu en travaillant : elle émulsionne et blanchit légèrement la préparation.", badge: null },
+      { icone: "🍋", titre: "Citron ET vinaigre", detail: "Le citron pour la fraîcheur, le vinaigre pour la longueur. Les deux, c'est la version grecque.", badge: null },
+      { icone: "🕐", titre: "Reposer deux heures au frais", detail: "L'ail cru s'adoucit et les saveurs se lient. Servi immédiatement, il n'y a que de l'ail.", badge: null }
+    ],
+    liees: ["caviaraubergine","ktipiti","tapenadeverte"]
+  },
+  kyopolou: {
+    dateAjout: "2026-08-26T11:07:00",
+    nom: "Kyopolou",
+    cat: "tartinables", saisons: ["ete","automne"], pays: "bulgarie",
+    base: 6,
+    temps: "1 h 30",
+    niveau: "⭐ Facile",
+    emoji: "🫙",
+    description: "Le caviar bulgare d'aubergines et de poivrons grillés, préparé en septembre par bocaux entiers pour tenir l'hiver. Aubergines ET poivrons brûlés ensemble : c'est ce mélange qui le distingue de tous ses cousins balkaniques.",
+    tableauKyopolou: [
+      { nb: 1, aubergine: "¾", poivron: "90 g", tomate: "50 g", ail: "2", huile: "20 ml", vinaigreVin: "10 ml", persil: "6 g", sel: "1.2 g" },
+      { nb: 2, aubergine: "1½", poivron: "180 g", tomate: "100 g", ail: "4", huile: "40 ml", vinaigreVin: "20 ml", persil: "12 g", sel: "2.4 g" },
+      { nb: 3, aubergine: "2¼", poivron: "270 g", tomate: "150 g", ail: "6", huile: "60 ml", vinaigreVin: "30 ml", persil: "18 g", sel: "3.6 g" },
+      { nb: 4, aubergine: "3", poivron: "360 g", tomate: "200 g", ail: "8", huile: "80 ml", vinaigreVin: "40 ml", persil: "24 g", sel: "4.8 g" },
+      { nb: 5, aubergine: "3¾", poivron: "450 g", tomate: "250 g", ail: "10", huile: "100 ml", vinaigreVin: "50 ml", persil: "30 g", sel: "6 g" },
+      { nb: 6, aubergine: "4½", poivron: "540 g", tomate: "300 g", ail: "12", huile: "120 ml", vinaigreVin: "60 ml", persil: "36 g", sel: "7.2 g" },
+      { nb: 7, aubergine: "5¼", poivron: "630 g", tomate: "350 g", ail: "14", huile: "140 ml", vinaigreVin: "70 ml", persil: "42 g", sel: "8.4 g" },
+      { nb: 8, aubergine: "6", poivron: "720 g", tomate: "400 g", ail: "16", huile: "160 ml", vinaigreVin: "80 ml", persil: "48 g", sel: "9.6 g" },
+      { nb: 9, aubergine: "6¾", poivron: "810 g", tomate: "450 g", ail: "18", huile: "180 ml", vinaigreVin: "90 ml", persil: "54 g", sel: "10.8 g" },
+      { nb: 10, aubergine: "7½", poivron: "900 g", tomate: "500 g", ail: "20", huile: "200 ml", vinaigreVin: "100 ml", persil: "60 g", sel: "12 g" },
+      { nb: 11, aubergine: "8¼", poivron: "990 g", tomate: "550 g", ail: "22", huile: "220 ml", vinaigreVin: "110 ml", persil: "66 g", sel: "13.2 g" },
+      { nb: 12, aubergine: "9", poivron: "1080 g", tomate: "600 g", ail: "24", huile: "240 ml", vinaigreVin: "120 ml", persil: "72 g", sel: "14.4 g" },
+      { nb: 13, aubergine: "9¾", poivron: "1170 g", tomate: "650 g", ail: "26", huile: "260 ml", vinaigreVin: "130 ml", persil: "78 g", sel: "15.6 g" },
+      { nb: 14, aubergine: "10½", poivron: "1260 g", tomate: "700 g", ail: "28", huile: "280 ml", vinaigreVin: "140 ml", persil: "84 g", sel: "16.8 g" },
+      { nb: 15, aubergine: "11¼", poivron: "1350 g", tomate: "750 g", ail: "30", huile: "300 ml", vinaigreVin: "150 ml", persil: "90 g", sel: "18 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Aubergines et poivrons brûlés ENSEMBLE", detail: "Sur la même flamme : c'est leur fumée commune qui fait la signature du kyopolou.", badge: null },
+      { icone: "🛍️", titre: "Enfermer les poivrons dans un sac dix minutes", detail: "La vapeur décolle la peau toute seule. Pelés à sec, on perd la moitié de la chair.", badge: null },
+      { icone: "💧", titre: "Égoutter les deux, longuement", detail: "Une heure en passoire : le kyopolou doit être épais, tartinable, pas coulant.", badge: null },
+      { icone: "🍅", titre: "La tomate réduite À PART", detail: "Vingt minutes seule, jusqu'à concentration : ajoutée crue, elle rendrait toute la préparation liquide.", badge: null },
+      { icone: "🔪", titre: "Hacher au couteau, gros", detail: "Comme la melitzanosalata grecque : le kyopolou n'est pas une purée, on doit reconnaître les morceaux.", badge: null },
+      { icone: "🧄", titre: "L'ail CRU, ajouté hors du feu", detail: "Cuit, il perd sa vivacité. C'est lui qui donne le mordant caractéristique de ce dip.", badge: null },
+      { icone: "🫙", titre: "Se met en bocaux, stérilisé", detail: "C'est une conserve d'automne : on en fait dix pots d'un coup pour tout l'hiver.", badge: null }
+    ],
+    liees: ["lutenitsa","caviaraubergine","urnebes"]
+  },
+  mutabbal: {
+    dateAjout: "2026-08-26T11:08:00",
+    nom: "Mutabbal",
+    cat: "tartinables", saisons: ["ete"], pays: "liban",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Le cousin crémeux du baba ganoush : mêmes aubergines fumées, mais liées au tahini ET au yaourt. Ce yaourt est la seule différence entre les deux plats, et il suffit à en faire un dip blanc et onctueux là où l'autre reste brun et rustique.",
+    tableauMutabbal: [
+      { nb: 1, aubergine: "1", tahini: "25 g", yaourt: "35 g", citron: "½", ail: "1", huileolive: "15 ml", sel: "1 g", cumin: "0.5 g" },
+      { nb: 2, aubergine: "2", tahini: "50 g", yaourt: "70 g", citron: "1", ail: "2", huileolive: "30 ml", sel: "2 g", cumin: "1 g" },
+      { nb: 3, aubergine: "3", tahini: "75 g", yaourt: "105 g", citron: "1½", ail: "3", huileolive: "45 ml", sel: "3 g", cumin: "1.5 g" },
+      { nb: 4, aubergine: "4", tahini: "100 g", yaourt: "140 g", citron: "2", ail: "4", huileolive: "60 ml", sel: "4 g", cumin: "2 g" },
+      { nb: 5, aubergine: "5", tahini: "125 g", yaourt: "175 g", citron: "2½", ail: "5", huileolive: "75 ml", sel: "5 g", cumin: "2.5 g" },
+      { nb: 6, aubergine: "6", tahini: "150 g", yaourt: "210 g", citron: "3", ail: "6", huileolive: "90 ml", sel: "6 g", cumin: "3 g" },
+      { nb: 7, aubergine: "7", tahini: "175 g", yaourt: "245 g", citron: "3½", ail: "7", huileolive: "105 ml", sel: "7 g", cumin: "3.5 g" },
+      { nb: 8, aubergine: "8", tahini: "200 g", yaourt: "280 g", citron: "4", ail: "8", huileolive: "120 ml", sel: "8 g", cumin: "4 g" },
+      { nb: 9, aubergine: "9", tahini: "225 g", yaourt: "315 g", citron: "4½", ail: "9", huileolive: "135 ml", sel: "9 g", cumin: "4.5 g" },
+      { nb: 10, aubergine: "10", tahini: "250 g", yaourt: "350 g", citron: "5", ail: "10", huileolive: "150 ml", sel: "10 g", cumin: "5 g" },
+      { nb: 11, aubergine: "11", tahini: "275 g", yaourt: "385 g", citron: "5½", ail: "11", huileolive: "165 ml", sel: "11 g", cumin: "5.5 g" },
+      { nb: 12, aubergine: "12", tahini: "300 g", yaourt: "420 g", citron: "6", ail: "12", huileolive: "180 ml", sel: "12 g", cumin: "6 g" },
+      { nb: 13, aubergine: "13", tahini: "325 g", yaourt: "455 g", citron: "6½", ail: "13", huileolive: "195 ml", sel: "13 g", cumin: "6.5 g" },
+      { nb: 14, aubergine: "14", tahini: "350 g", yaourt: "490 g", citron: "7", ail: "14", huileolive: "210 ml", sel: "14 g", cumin: "7 g" },
+      { nb: 15, aubergine: "15", tahini: "375 g", yaourt: "525 g", citron: "7½", ail: "15", huileolive: "225 ml", sel: "15 g", cumin: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Aubergines brûlées jusqu'au NOIR total", detail: "La peau doit être carbonisée sur toute la surface : c'est la seule source de fumé du plat.", badge: null },
+      { icone: "🥄", titre: "Racler la chair, ne jamais la rincer", detail: "Rincer emporterait toute la fumée. Les points noirs qui restent font partie du goût.", badge: null },
+      { icone: "💧", titre: "Suspendre la chair une heure", detail: "Dans une étamine au-dessus d'un bol : le mutabbal doit être crémeux, et l'eau le rendrait liquide.", badge: null },
+      { icone: "🥣", titre: "Monter le tahini AVANT l'aubergine", detail: "Tahini, citron et un peu d'eau glacée fouettés d'abord : il blanchit et devient une crème lisse.", badge: null },
+      { icone: "🥛", titre: "Le yaourt en dernier, délicatement", detail: "C'est ce qui sépare le mutabbal du baba ganoush. Trop travaillé, il tranche et le dip devient granuleux.", badge: null },
+      { icone: "🍋", titre: "Beaucoup plus de citron qu'il ne semble", detail: "Une demi-pièce pour quatre : le tahini est gras et le yaourt doux, l'acidité doit trancher les deux.", badge: null },
+      { icone: "🫒", titre: "Un puits d'huile d'olive au service", detail: "Creusé à la cuillère au centre, avec une pincée de cumin : c'est la présentation levantine standard.", badge: null }
+    ],
+    liees: ["babaganoush","houmous","labneh"]
+  },
+  tirokafteri: {
+    dateAjout: "2026-08-26T11:09:00",
+    nom: "Tirokafteri",
+    cat: "tartinables", pays: "grece",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "La feta pimentée des tavernes grecques, dont le nom signifie littéralement « fromage qui brûle ». Le piment n'est pas un assaisonnement mais l'ingrédient principal — un tirokafteri qui ne pique pas n'est qu'une purée de feta.",
+    tableauTirokafteri: [
+      { nb: 1, feta: "70 g", poivron: "40 g", piment: "3 g", huileolive: "20 ml", yaourt: "30 g", citron: "¼", vinaigreVin: "5 ml", origan: "0.5 g" },
+      { nb: 2, feta: "140 g", poivron: "80 g", piment: "6 g", huileolive: "40 ml", yaourt: "60 g", citron: "½", vinaigreVin: "10 ml", origan: "1 g" },
+      { nb: 3, feta: "210 g", poivron: "120 g", piment: "9 g", huileolive: "60 ml", yaourt: "90 g", citron: "¾", vinaigreVin: "15 ml", origan: "1.5 g" },
+      { nb: 4, feta: "280 g", poivron: "160 g", piment: "12 g", huileolive: "80 ml", yaourt: "120 g", citron: "1", vinaigreVin: "20 ml", origan: "2 g" },
+      { nb: 5, feta: "350 g", poivron: "200 g", piment: "15 g", huileolive: "100 ml", yaourt: "150 g", citron: "1¼", vinaigreVin: "25 ml", origan: "2.5 g" },
+      { nb: 6, feta: "420 g", poivron: "240 g", piment: "18 g", huileolive: "120 ml", yaourt: "180 g", citron: "1½", vinaigreVin: "30 ml", origan: "3 g" },
+      { nb: 7, feta: "490 g", poivron: "280 g", piment: "21 g", huileolive: "140 ml", yaourt: "210 g", citron: "1¾", vinaigreVin: "35 ml", origan: "3.5 g" },
+      { nb: 8, feta: "560 g", poivron: "320 g", piment: "24 g", huileolive: "160 ml", yaourt: "240 g", citron: "2", vinaigreVin: "40 ml", origan: "4 g" },
+      { nb: 9, feta: "630 g", poivron: "360 g", piment: "27 g", huileolive: "180 ml", yaourt: "270 g", citron: "2¼", vinaigreVin: "45 ml", origan: "4.5 g" },
+      { nb: 10, feta: "700 g", poivron: "400 g", piment: "30 g", huileolive: "200 ml", yaourt: "300 g", citron: "2½", vinaigreVin: "50 ml", origan: "5 g" },
+      { nb: 11, feta: "770 g", poivron: "440 g", piment: "33 g", huileolive: "220 ml", yaourt: "330 g", citron: "2¾", vinaigreVin: "55 ml", origan: "5.5 g" },
+      { nb: 12, feta: "840 g", poivron: "480 g", piment: "36 g", huileolive: "240 ml", yaourt: "360 g", citron: "3", vinaigreVin: "60 ml", origan: "6 g" },
+      { nb: 13, feta: "910 g", poivron: "520 g", piment: "39 g", huileolive: "260 ml", yaourt: "390 g", citron: "3¼", vinaigreVin: "65 ml", origan: "6.5 g" },
+      { nb: 14, feta: "980 g", poivron: "560 g", piment: "42 g", huileolive: "280 ml", yaourt: "420 g", citron: "3½", vinaigreVin: "70 ml", origan: "7 g" },
+      { nb: 15, feta: "1050 g", poivron: "600 g", piment: "45 g", huileolive: "300 ml", yaourt: "450 g", citron: "3¾", vinaigreVin: "75 ml", origan: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Une feta de BREBIS, en saumure", detail: "La feta de vache est fade et caoutchouteuse. C'est la brebis qui donne le piquant lactique de base.", badge: null },
+      { icone: "🔥", titre: "Griller les poivrons, peau noire", detail: "Puis les peler : leur sucre fumé est ce qui rend le piquant supportable et intéressant.", badge: null },
+      { icone: "🌶️", titre: "Du piment FRAIS, pas de la poudre", detail: "La poudre donne une chaleur plate et poussiéreuse. Le piment frais pique et parfume en même temps.", badge: null },
+      { icone: "🍴", titre: "Écraser à la fourchette, PAS au robot", detail: "La feta mixée devient élastique et collante. Écrasée, elle garde du grain et de la fraîcheur.", badge: null },
+      { icone: "🫒", titre: "L'huile en filet, en travaillant", detail: "Elle émulsionne avec le petit-lait de la feta et donne l'onctuosité sans ajouter de crème.", badge: null },
+      { icone: "⚖️", titre: "Goûter et RE-pimenter", detail: "La feta est très salée et masque le piquant à froid. Ce qui semble fort au bol sera juste à table.", badge: null },
+      { icone: "🕐", titre: "Une heure au frais avant de servir", detail: "Le piment diffuse et la préparation se raffermit. Servi tiède, le tirokafteri est mou et agressif.", badge: null }
+    ],
+    liees: ["ktipiti","liptauer","fromagefort"]
   },
 });

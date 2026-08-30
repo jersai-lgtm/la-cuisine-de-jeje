@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 71 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 72 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -17834,5 +17834,43 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Assembler FROID, servir frais", detail: "Mélangé chaud, le pavot fige et le miel se dissout. La kutia se monte au dernier moment.", badge: null }
     ],
     liees: ["nalysnyky","pampushky","kulich"]
+  },
+  ranginak: {
+    dateAjout: "2026-08-26T12:05:00",
+    nom: "Ranginak",
+    cat: "desserts", pays: "iran",
+    base: 8,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🌴",
+    description: "Le dessert iranien de dattes farcies aux noix, recouvertes d'une farine BRUNIE au beurre. Cette farine torréfiée n'est pas un décor : c'est elle qui donne le goût de noisette et absorbe l'humidité des dattes.",
+    tableauRanginak: [
+      { nb: 1, dattes: "60 g", noix: "15 g", farine: "30 g", beurre: "25 g", cannelle: "0.5 g", cardamome: "0.3 g", sucreglace: "8 g" },
+      { nb: 2, dattes: "120 g", noix: "30 g", farine: "60 g", beurre: "50 g", cannelle: "1 g", cardamome: "0.6 g", sucreglace: "16 g" },
+      { nb: 3, dattes: "180 g", noix: "45 g", farine: "90 g", beurre: "75 g", cannelle: "1.5 g", cardamome: "0.9 g", sucreglace: "24 g" },
+      { nb: 4, dattes: "240 g", noix: "60 g", farine: "120 g", beurre: "100 g", cannelle: "2 g", cardamome: "1.2 g", sucreglace: "32 g" },
+      { nb: 5, dattes: "300 g", noix: "75 g", farine: "150 g", beurre: "125 g", cannelle: "2.5 g", cardamome: "1.5 g", sucreglace: "40 g" },
+      { nb: 6, dattes: "360 g", noix: "90 g", farine: "180 g", beurre: "150 g", cannelle: "3 g", cardamome: "1.8 g", sucreglace: "48 g" },
+      { nb: 7, dattes: "420 g", noix: "105 g", farine: "210 g", beurre: "175 g", cannelle: "3.5 g", cardamome: "2.1 g", sucreglace: "56 g" },
+      { nb: 8, dattes: "480 g", noix: "120 g", farine: "240 g", beurre: "200 g", cannelle: "4 g", cardamome: "2.4 g", sucreglace: "64 g" },
+      { nb: 9, dattes: "540 g", noix: "135 g", farine: "270 g", beurre: "225 g", cannelle: "4.5 g", cardamome: "2.7 g", sucreglace: "72 g" },
+      { nb: 10, dattes: "600 g", noix: "150 g", farine: "300 g", beurre: "250 g", cannelle: "5 g", cardamome: "3 g", sucreglace: "80 g" },
+      { nb: 11, dattes: "660 g", noix: "165 g", farine: "330 g", beurre: "275 g", cannelle: "5.5 g", cardamome: "3.3 g", sucreglace: "88 g" },
+      { nb: 12, dattes: "720 g", noix: "180 g", farine: "360 g", beurre: "300 g", cannelle: "6 g", cardamome: "3.6 g", sucreglace: "96 g" },
+      { nb: 13, dattes: "780 g", noix: "195 g", farine: "390 g", beurre: "325 g", cannelle: "6.5 g", cardamome: "3.9 g", sucreglace: "104 g" },
+      { nb: 14, dattes: "840 g", noix: "210 g", farine: "420 g", beurre: "350 g", cannelle: "7 g", cardamome: "4.2 g", sucreglace: "112 g" },
+      { nb: 15, dattes: "900 g", noix: "225 g", farine: "450 g", beurre: "375 g", cannelle: "7.5 g", cardamome: "4.5 g", sucreglace: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌴", titre: "Des dattes MOELLEUSES, dénoyautées entières", detail: "Medjool de préférence : sèches, elles ne se farcissent pas et restent dures sous la dent.", badge: null },
+      { icone: "🌰", titre: "Une demi-cerneau de noix par datte", detail: "Glissé à la place du noyau : la datte doit se refermer, sinon la garniture ressort à la cuisson.", badge: null },
+      { icone: "🍳", titre: "Brunir la farine dans le beurre, quinze minutes", detail: "Feu doux, en remuant sans arrêt : elle doit passer du blanc au brun noisette. C'est TOUT le goût du plat.", badge: null },
+      { icone: "👃", titre: "Se fier à l'odeur, pas à la montre", detail: "Elle doit sentir la noisette grillée. Une seconde de trop et elle sent le brûlé, il faut recommencer.", badge: null },
+      { icone: "🌡️", titre: "Laisser tiédir avant de verser", detail: "Brûlante, la farine ferait fondre les dattes et couler le tout. Tiède, elle nappe et se fige.", badge: null },
+      { icone: "📏", titre: "Tasser en couche RÉGULIÈRE", detail: "Au dos d'une cuillère : le ranginak se coupe en carrés nets, il faut une surface plane.", badge: null },
+      { icone: "🌸", titre: "Cannelle et sucre glace au tamis", detail: "Sur la surface froide seulement : saupoudrés à chaud, ils fondent et disparaissent.", badge: null }
+    ],
+    liees: ["sholezard","faloodeh","halva"]
   },
 });

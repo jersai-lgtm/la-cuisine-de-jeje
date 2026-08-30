@@ -110346,6 +110346,1026 @@ window.RECETTES_EN = {
     "detail": "Shaobing splits into a pocket: braised beef, omelette, youtiao. It is a bread to stuff, not a side."
    }
   ]
+ },
+ "sazerac": {
+  "nom": "Sazerac",
+  "description": "America's oldest cocktail, born in New Orleans around 1850. The glass is RINSED with absinthe then emptied: you do not drink the absinthe, you breathe it. And it is served without a single cube of ice.",
+  "etapes": [
+   {
+    "titre": "Chill the glass in the freezer",
+    "detail": "An old fashioned glass, ten minutes in the cold: a sazerac is served without ice, so the glass holds the chill."
+   },
+   {
+    "titre": "RINSE with absinthe, then DISCARD",
+    "detail": "Five millilitres swirled around the walls and tipped out. Only a film remains — and that is all you need."
+   },
+   {
+    "titre": "Muddle the sugar into the bitters",
+    "detail": "Cane sugar and angostura first, alone, until fully dissolved: in whiskey the sugar would just sit at the bottom."
+   },
+   {
+    "titre": "Rye, or bourbon failing that",
+    "detail": "Rye brings a peppery dryness. Bourbon, softer, gives a decent sazerac but a rounder one."
+   },
+   {
+    "titre": "Stir in a mixing glass, NEVER shake",
+    "detail": "Thirty seconds over ice: a cocktail with no juice is never shaken, it would go cloudy and foamy."
+   },
+   {
+    "titre": "Pour WITHOUT the ice",
+    "detail": "Strain into the chilled glass, neat. Ice would keep diluting and the sazerac would lose its edge."
+   },
+   {
+    "titre": "Twist a zest over the glass",
+    "detail": "To spray the peel oil across the surface. Traditionally the zest is then discarded — the oil is enough."
+   }
+  ]
+ },
+ "boulevardier": {
+  "nom": "Boulevardier",
+  "description": "A negroni whose gin has been swapped for bourbon, invented in Paris in the 1920s by an American expatriate. Whiskey rounds off the Campari's bitterness where gin sharpens it — the same cocktail and an entirely different drink.",
+  "etapes": [
+   {
+    "titre": "More whiskey than bitter",
+    "detail": "Unlike the negroni's equal parts: 4-3-3, or the bourbon disappears under the Campari."
+   },
+   {
+    "titre": "A bourbon with backbone",
+    "detail": "45 % minimum: below that it gets crushed and all you have is a sweet negroni."
+   },
+   {
+    "titre": "Stir, never shake",
+    "detail": "No juice, no egg white: a shaker would only cloud it and pointlessly aerate it."
+   },
+   {
+    "titre": "Thirty seconds of stirring",
+    "detail": "Dilution is what makes the drink: too short it burns, too long it goes flat. Count it."
+   },
+   {
+    "titre": "One BIG cube in the glass",
+    "detail": "A single 4 cm block: it melts slowly. Crushed ice would drown the drink in two minutes."
+   },
+   {
+    "titre": "An orange zest, not lemon",
+    "detail": "Orange marries the Campari; lemon fights it. That detail is what separates the two cocktails."
+   },
+   {
+    "titre": "Drunk slowly, at temperature",
+    "detail": "A boulevardier opens up as it warms slightly. Downed ice-cold, all you taste is the bitterness."
+   }
+  ]
+ },
+ "americano": {
+  "nom": "Americano",
+  "description": "The ancestor of the negroni: Campari, sweet vermouth and soda water, with no spirit at all. Its name comes not from the United States but from the \"americano\" — the boxer — for the way the bitterness lands.",
+  "etapes": [
+   {
+    "titre": "Campari and vermouth in EQUAL parts",
+    "detail": "That is the only rule. Unbalance it and you are making something else — more bitter or more syrupy, but not an americano."
+   },
+   {
+    "titre": "Fill the glass with ice FIRST",
+    "detail": "A glass packed with ice melts more slowly than a half-empty one: counterintuitive, and exactly true."
+   },
+   {
+    "titre": "Soda water LAST",
+    "detail": "Poured over the spirits, never the other way round: the bubbles rise and mix the drink for you."
+   },
+   {
+    "titre": "One single turn of the spoon",
+    "detail": "Just to combine. Stirred, an americano loses its bubbles and becomes a flat drink."
+   },
+   {
+    "titre": "Half an orange slice IN the glass",
+    "detail": "Not a zest: the slice keeps perfuming as you drink, this is a long cocktail."
+   },
+   {
+    "titre": "Very COLD soda water",
+    "detail": "Lukewarm, it goes flat the instant it hits the ice and the drink collapses."
+   },
+   {
+    "titre": "Drunk before the meal, never after",
+    "detail": "Campari's bitterness opens the appetite — it is an aperitif bitter, not a digestif."
+   }
+  ]
+ },
+ "cloverclub": {
+  "nom": "Clover Club",
+  "description": "The pink cocktail of Philadelphia's gentlemen's club, from before Prohibition. Its thick, lasting foam comes from no trick but from egg white, whipped DRY in the shaker before any ice goes in.",
+  "etapes": [
+   {
+    "titre": "A syrup of FRESH raspberries",
+    "detail": "Crushed then strained: shop syrup gives a candy colour and a confectionery taste."
+   },
+   {
+    "titre": "Shake DRY first, without ice",
+    "detail": "Fifteen seconds: that dry shake is what whips the egg white into foam. With ice it never sets."
+   },
+   {
+    "titre": "Then shake WITH ice",
+    "detail": "Fifteen more seconds, hard: the first stage whips, the second chills and dilutes."
+   },
+   {
+    "titre": "Double strain, through a fine sieve",
+    "detail": "To hold back ice shards and pips. A foamed cocktail must be perfectly smooth."
+   },
+   {
+    "titre": "An egg at room temperature",
+    "detail": "Straight from the fridge the white whips half as well. The same principle as in pastry."
+   },
+   {
+    "titre": "Let it settle thirty seconds",
+    "detail": "The foam separates and stabilises into a clean layer. Served at once, the glass looks messy."
+   },
+   {
+    "titre": "Serve WITHOUT ice, in a stemmed glass",
+    "detail": "Ice would pierce the foam. A clover club is drunk cool, not frozen, and fairly quickly."
+   }
+  ]
+ },
+ "southside": {
+  "nom": "Southside",
+  "description": "The bootleggers' mojito of Chicago: gin, lemon and mint, with no rum and no bubbles. It is said to have masked the taste of bathtub gin — its minted freshness has lost none of its effectiveness.",
+  "etapes": [
+   {
+    "titre": "WHOLE mint leaves",
+    "detail": "Never muddled: unlike a mojito, you do not crush them. Bruised, they release a green bitterness."
+   },
+   {
+    "titre": "Clap the mint between your palms",
+    "detail": "One sharp smack before it goes into the shaker: this wakes the oils without tearing the leaf."
+   },
+   {
+    "titre": "YELLOW lemon, not lime",
+    "detail": "That is what separates a southside from a mojito. Lime would pull it towards the Caribbean."
+   },
+   {
+    "titre": "Shake HARD, fifteen seconds",
+    "detail": "The shaker does everything: chills, dilutes and extracts the mint's perfume all at once."
+   },
+   {
+    "titre": "Double strain, always",
+    "detail": "Fragments of mint in the glass are unpleasant and turn bitter within minutes."
+   },
+   {
+    "titre": "Serve without ice, in a cocktail glass",
+    "detail": "A southside is short and cold. Ice would dilute it past its balance."
+   },
+   {
+    "titre": "One whole leaf laid on top",
+    "detail": "Clapped as well: the scent reaches the nose before the first sip, and that is half the pleasure."
+   }
+  ]
+ },
+ "tomcollins": {
+  "nom": "Tom Collins",
+  "description": "The first long drink in history, born of an 1874 New York hoax in which people were sent looking for a man called Tom Collins who had supposedly insulted them. The tall glass bearing his name was designed for it.",
+  "etapes": [
+   {
+    "titre": "A proper Collins glass, tall and narrow",
+    "detail": "Its shape is not decorative: it holds the bubbles far longer than a wide glass."
+   },
+   {
+    "titre": "Lemon juice squeezed to order",
+    "detail": "Yesterday's juice has already lost its scent and taken on a metallic edge. It is half the drink."
+   },
+   {
+    "titre": "Shake gin, lemon and syrup ALONE",
+    "detail": "All three in the shaker, without the soda: shaken, it would erupt and not a bubble would survive."
+   },
+   {
+    "titre": "Pour over ice, THEN add the soda",
+    "detail": "In that order: soda poured last rises and mixes the glass without any stirring."
+   },
+   {
+    "titre": "Half a turn of the spoon, no more",
+    "detail": "Just to combine. Every extra turn costs bubbles."
+   },
+   {
+    "titre": "Whole cubes, never crushed",
+    "detail": "Crushed ice melts in three minutes and turns a collins into lemon water."
+   },
+   {
+    "titre": "A lemon slice and a cherry",
+    "detail": "The historic garnish. It is not there for flavour but because a collins without it is not one."
+   }
+  ]
+ },
+ "mintjulep": {
+  "nom": "Mint Julep",
+  "description": "The official cocktail of the Kentucky Derby, served in a PEWTER cup that frosts over. That frost is no affectation: it is the sign the crushed ice has reached the right temperature, and it is part of the drinking.",
+  "etapes": [
+   {
+    "titre": "A pewter or silver cup",
+    "detail": "Metal conducts the cold and frosts over. In a glass the effect — and part of the pleasure — is lost."
+   },
+   {
+    "titre": "Rub the mint, do not crush it",
+    "detail": "Press it gently against the walls with the sugar: pounded, it turns bitter and grassy."
+   },
+   {
+    "titre": "Sugar, not syrup",
+    "detail": "You need the crystals rubbing against the mint to release the oils. Syrup rubs against nothing."
+   },
+   {
+    "titre": "CRUSHED ice, very fine",
+    "detail": "That is what makes the frost. With cubes the cup stays dry and a julep is not a julep."
+   },
+   {
+    "titre": "Fill in TWO stages, packing down",
+    "detail": "Half, stir until it frosts, then top into a dome. Filled in one go, the cold never travels down."
+   },
+   {
+    "titre": "Stir until the metal turns white",
+    "detail": "That is the only indicator. Until the cup is frosted, keep going."
+   },
+   {
+    "titre": "A large mint bouquet, at the nose",
+    "detail": "Clapped and planted next to a short straw: you drink with your nose in it, that is the design."
+   }
+  ]
+ },
+ "junglebird": {
+  "nom": "Jungle Bird",
+  "description": "Born in 1978 at the Kuala Lumpur Hilton, the only tiki drink built on an Italian bitter. Campari in a rum and pineapple cocktail sounded absurd — yet it is exactly what keeps it from cloying, and what earned its revival.",
+  "etapes": [
+   {
+    "titre": "A dark molasses rum",
+    "detail": "Jamaican for preference: its weight stands up to the Campari. A light white rum would be erased."
+   },
+   {
+    "titre": "UNFILTERED pineapple juice",
+    "detail": "Its pulp is what gives the thick surface foam. Clear juice makes a flat, bodyless drink."
+   },
+   {
+    "titre": "Campari in small proportion",
+    "detail": "Twenty millilitres, not thirty: it must cut the sweetness, not dominate. That is the whole balance."
+   },
+   {
+    "titre": "Shake HARD, fifteen seconds",
+    "detail": "Pineapple needs beating to foam. A badly shaken tiki drink is recognisable at a glance."
+   },
+   {
+    "titre": "Serve over crushed ice",
+    "detail": "It is a tiki: the gradual dilution is part of the profile and softens the bitter as you drink."
+   },
+   {
+    "titre": "Everything well chilled",
+    "detail": "The pineapple above all: at room temperature it foams poorly and the drink comes out warm despite the ice."
+   },
+   {
+    "titre": "A pineapple wedge and its leaf",
+    "detail": "The garnish is part of tiki: it delivers the scent before the first sip."
+   }
+  ]
+ },
+ "painkiller": {
+  "nom": "Painkiller",
+  "description": "The cocktail of the British Virgin Islands, created at the Soggy Dollar Bar — so called because you swam there, notes soaking wet. The nutmeg grated over the top is not decorative: it is the first thing you smell.",
+  "etapes": [
+   {
+    "titre": "Coconut CREAM, not milk",
+    "detail": "Thick and sweet: coconut milk gives a thin, bland drink. It is the commonest mistake."
+   },
+   {
+    "titre": "An aged Caribbean rum",
+    "detail": "Pusser's is the original, but any molasses rum works. An agricole rum would be too grassy."
+   },
+   {
+    "titre": "Two parts pineapple to one of orange",
+    "detail": "Orange supports, pineapple leads. Reversed, the drink turns sour and loses its creaminess."
+   },
+   {
+    "titre": "Shake very hard, twenty seconds",
+    "detail": "The coconut cream must emulsify completely, or it separates in the glass within a minute."
+   },
+   {
+    "titre": "Serve over crushed ice, in a tall glass",
+    "detail": "Dilution softens it gradually: a painkiller over cubes stays too thick from first sip to last."
+   },
+   {
+    "titre": "Grate the nutmeg TO ORDER",
+    "detail": "Whole, on a microplane, over the glass. Pre-ground, it has no perfume left at all."
+   },
+   {
+    "titre": "An orange slice and a straw",
+    "detail": "A painkiller is drunk slowly, in the shade. It is not a cocktail you knock back standing up."
+   }
+  ]
+ },
+ "garibaldi": {
+  "nom": "Garibaldi",
+  "description": "Only two ingredients, and yet one of the most technical cocktails there is: everything rests on FLUFFED orange juice, whipped until foamy. Its name celebrates Italy's unification — the bitter North and the sunny South.",
+  "etapes": [
+   {
+    "titre": "Blood oranges if you can",
+    "detail": "Their acidity and faint bitterness echo the Campari. Too sweet an orange gives a flat drink."
+   },
+   {
+    "titre": "FLUFF the juice — that is the cocktail",
+    "detail": "With a stick blender or a dry shake, thirty seconds: it must turn pale, foamy, almost creamy."
+   },
+   {
+    "titre": "A dense foam, not bubbles",
+    "detail": "Fluffing changes the texture AND the taste: oxygen softens the acidity and rounds the bitterness."
+   },
+   {
+    "titre": "Pour within twenty seconds",
+    "detail": "The foam falls fast. Fluffed juice left waiting turns back into ordinary orange juice."
+   },
+   {
+    "titre": "Campari over the ice first",
+    "detail": "Then the foamed juice poured gently over: you get a gradient from red to orange."
+   },
+   {
+    "titre": "Do NOT stir",
+    "detail": "The glass mixes as you drink. Stirred, you lose the foam and the gradient at a stroke."
+   },
+   {
+    "titre": "Half a slice, nothing else",
+    "detail": "Two ingredients, one garnish. A garibaldi tolerates no additions."
+   }
+  ]
+ },
+ "pizzafritta": {
+  "nom": "Pizza Fritta",
+  "description": "Naples' FRIED pizza, born after the war when the wood ovens were destroyed and flour was rationed. A sealed pocket filled with ricotta and pork, which balloons in the hot oil.",
+  "etapes": [
+   {
+    "titre": "A classic, well-hydrated pizza dough",
+    "detail": "65 % water and eight hours of proving: the same dough as a napoletana, only the cooking changes."
+   },
+   {
+    "titre": "Ricotta DRAINED overnight",
+    "detail": "In a sieve in the fridge: the water in ricotta would burst the pocket in the oil."
+   },
+   {
+    "titre": "Do not overfill",
+    "detail": "Three spoonfuls maximum: an overfull pocket splits in the fryer and empties into the oil."
+   },
+   {
+    "titre": "Seal into a turnover, pressing out the air",
+    "detail": "Press from the centre outwards: a trapped bubble bursts the pizza the moment it goes in."
+   },
+   {
+    "titre": "Oil at 175 °C, no hotter",
+    "detail": "Hotter, the outside browns before the dough cooks and the inside stays raw."
+   },
+   {
+    "titre": "It must BALLOON",
+    "detail": "Thirty seconds after immersion: if it stays flat, the dough over-proved or the oil is too cold."
+   },
+   {
+    "titre": "Eaten standing, scalding, in paper",
+    "detail": "It is Neapolitan street food. Waiting for it to cool is missing the point."
+   }
+  ]
+ },
+ "montanara": {
+  "nom": "Montanara",
+  "description": "The Neapolitan pizza fried THEN finished in the oven: two cookings for a dough at once crisp outside and airy within. Unlike pizza fritta it is open, and topped after frying.",
+  "etapes": [
+   {
+    "titre": "SMALL discs, 15 cm maximum",
+    "detail": "They must float and puff freely in the fryer. Larger, they cook unevenly."
+   },
+   {
+    "titre": "Stretched by hand, thick rim",
+    "detail": "The rim will hold the topping after frying. With a rolling pin there would be no rim at all."
+   },
+   {
+    "titre": "Fry 90 seconds, at 180 °C",
+    "detail": "It must puff and turn pale gold without fully browning: the oven will finish the colour."
+   },
+   {
+    "titre": "Drain STANDING, on its edge",
+    "detail": "Laid flat, the dough soaks its own oil back up. On edge, it actually drains."
+   },
+   {
+    "titre": "Top AFTER frying, never before",
+    "detail": "That is the whole difference from pizza fritta: here the topping only meets the oven."
+   },
+   {
+    "titre": "Oven at 250 °C, four minutes",
+    "detail": "Just long enough to melt the mozzarella. Longer, and the fried dough dries and hardens."
+   },
+   {
+    "titre": "Fresh basil on the way out",
+    "detail": "Laid on the scalding pizza, out of the oven: cooked, it blackens and loses all its perfume."
+   }
+  ]
+ },
+ "pizzadiscarola": {
+  "nom": "Pizza di Scarola",
+  "description": "The Neapolitan Christmas pie filled with escarole, olives, capers and raisins. No tomato, no cheese — this is a closed pizza from before the tomato, and its sweet-savoury balance is fully owned.",
+  "etapes": [
+   {
+    "titre": "Escarole, not lettuce",
+    "detail": "Its bitterness is the counterpoint to the raisins. A mild salad would give a bland, sweet pie."
+   },
+   {
+    "titre": "Blanch 2 minutes, then WRING IT OUT",
+    "detail": "In a cloth, twisting: escarole is full of water, and that water would soak the base."
+   },
+   {
+    "titre": "Raisins plumped in warm water",
+    "detail": "Twenty minutes: dry, they would pull moisture from the filling and stay hard under the tooth."
+   },
+   {
+    "titre": "Anchovies melted in the oil",
+    "detail": "On low heat until they vanish: they must not be seen, only salt and deepen."
+   },
+   {
+    "titre": "Pine nuts dry-toasted",
+    "detail": "Three minutes in a pan: raw, they bring nothing but a soft texture."
+   },
+   {
+    "titre": "Fill it COLD, never warm",
+    "detail": "A warm filling melts the fat in the dough and makes it sticky to roll."
+   },
+   {
+    "titre": "Prick the top generously",
+    "detail": "The escarole still gives off steam as it bakes: with no escape, the lid lifts and separates."
+   }
+  ]
+ },
+ "scacciata": {
+  "nom": "Scacciata",
+  "description": "The Catanian pie of potato, sausage and fresh cheese, baked in a round tin. Its name comes from \"scacciare\", to drive out: you drive out the air by pressing the dough flat with your palm before it goes in.",
+  "etapes": [
+   {
+    "titre": "RAW potatoes, in fine slices",
+    "detail": "2 mm on a mandolin: they cook inside the pie and soak up the fat from the sausage."
+   },
+   {
+    "titre": "Fresh sausage, CRUMBLED raw",
+    "detail": "Its fat melts and cooks the potatoes. Pre-cooked, it comes out dry and the pie loses its binding."
+   },
+   {
+    "titre": "Tuma, or very well drained mozzarella",
+    "detail": "The Sicilian cheese holds little water. Ordinary mozzarella would flood the filling."
+   },
+   {
+    "titre": "Press the dough BY HAND, not with a pin",
+    "detail": "This is the gesture that names the dish: you drive out the air by flattening it with your palm."
+   },
+   {
+    "titre": "Seal by folding the edges to the centre",
+    "detail": "Like an inverted bundle: the seam ends up underneath and does not open as it bakes."
+   },
+   {
+    "titre": "Brush with olive oil before the oven",
+    "detail": "It gives the golden colour and the characteristic lightly crisp crust."
+   },
+   {
+    "titre": "200 °C for 50 minutes",
+    "detail": "Long, because the potatoes go in raw. A golden crust at 30 minutes hides a raw interior."
+   }
+  ]
+ },
+ "sardenara": {
+  "nom": "Sardenara",
+  "description": "The pizza of Sanremo, the Ligurian cousin of the Niçoise pissaladière. No cheese, a long-reduced tomato sauce, taggiasca olives and anchovies — and a thick, soft dough, the opposite of a napoletana.",
+  "etapes": [
+   {
+    "titre": "A sauce reduced for TWO hours",
+    "detail": "Until it is almost a dark jam: that is what separates a sardenara from a plain tomato pizza."
+   },
+   {
+    "titre": "A THICK dough, 1.5 cm",
+    "detail": "The opposite of a napoletana: sardenara is a topped bread, soft and high."
+   },
+   {
+    "titre": "Two hours proving IN THE TIN",
+    "detail": "Spread in the oiled tin, it rises a second time: that is what gives it its softness."
+   },
+   {
+    "titre": "Whole taggiasca olives, stones in",
+    "detail": "They keep their perfume and their firmness. Pitted, they dry out in the oven."
+   },
+   {
+    "titre": "Garlic in WHOLE cloves, pushed in",
+    "detail": "Unpeeled, pressed into the dough: they confit and are eaten at the end."
+   },
+   {
+    "titre": "Anchovies laid in a lattice, last",
+    "detail": "On the sauce, never stirred in: they must be visible and salt in places, not everywhere."
+   },
+   {
+    "titre": "DRIED oregano, not fresh",
+    "detail": "One of the rare herbs better dried: its perfume survives the oven where fresh disappears."
+   }
+  ]
+ },
+ "rusticoleccese": {
+  "nom": "Rustico Leccese",
+  "description": "The puff pastry turnover of Puglia, filled with mozzarella, tomato and béchamel. The béchamel does everything: it stops the mozzarella weeping into the pastry, and it alone explains why a rustico never goes soggy.",
+  "etapes": [
+   {
+    "titre": "A THICK béchamel, almost a paste",
+    "detail": "It must hold as a cold ball: runny, it escapes at the edges as it bakes."
+   },
+   {
+    "titre": "Cool the béchamel completely",
+    "detail": "Spread on a plate, clingfilm on the surface: warm, it would melt the butter in the pastry."
+   },
+   {
+    "titre": "Mozzarella SQUEEZED and diced",
+    "detail": "Grated then wrung in a cloth: its water is what would soak the pastry."
+   },
+   {
+    "titre": "Two discs, the top one larger",
+    "detail": "The upper disc must cover without stretching: pulled tight, it shrinks in the oven and opens."
+   },
+   {
+    "titre": "Seal with a FORK, all the way round",
+    "detail": "The tines make a mechanical joint far stronger than finger pressure."
+   },
+   {
+    "titre": "Egg-wash TWICE",
+    "detail": "One coat, ten minutes in the fridge, a second coat: that is what gives the deep shine."
+   },
+   {
+    "titre": "200 °C, 25 minutes, without opening",
+    "detail": "Puff pastry needs constant heat to rise. Opening the oven makes it collapse."
+   }
+  ]
+ },
+ "melitzanosalata": {
+  "nom": "Melitzanosalata",
+  "description": "The Greek aubergine caviar, charred over a flame and worked WITH A FORK, never blended. Its texture must stay coarse: in a processor it becomes a grey purée with no character.",
+  "etapes": [
+   {
+    "titre": "Char the aubergine OVER A FLAME",
+    "detail": "On the gas or the barbecue, skin entirely black: that smoke makes the dish, not the aubergine."
+   },
+   {
+    "titre": "Pierce it before charring",
+    "detail": "Otherwise it bursts. Two or three stabs are enough."
+   },
+   {
+    "titre": "Drain the flesh for an hour",
+    "detail": "In a sieve: charred aubergine is full of bitter water, and that water would wash everything out."
+   },
+   {
+    "titre": "Crush WITH A FORK",
+    "detail": "Never in a processor: the coarse texture is intrinsic to the dish. Blended, it is just a purée."
+   },
+   {
+    "titre": "Oil in a thread, like mayonnaise",
+    "detail": "Poured in gradually while working: it emulsifies and lightens the colour slightly."
+   },
+   {
+    "titre": "Lemon AND vinegar",
+    "detail": "Lemon for the freshness, vinegar for the length. Both together is the Greek version."
+   },
+   {
+    "titre": "Rest two hours, chilled",
+    "detail": "The raw garlic mellows and the flavours bind. Served at once, all you taste is garlic."
+   }
+  ]
+ },
+ "kyopolou": {
+  "nom": "Kyopolou",
+  "description": "The Bulgarian caviar of charred aubergine and pepper, made in September by the jarful to last the winter. Aubergines AND peppers charred together: that combination is what sets it apart from all its Balkan cousins.",
+  "etapes": [
+   {
+    "titre": "Char aubergines and peppers TOGETHER",
+    "detail": "Over the same flame: their shared smoke is the signature of kyopolou."
+   },
+   {
+    "titre": "Seal the peppers in a bag for ten minutes",
+    "detail": "The steam lifts the skin by itself. Peeled dry, you lose half the flesh."
+   },
+   {
+    "titre": "Drain both, at length",
+    "detail": "An hour in a sieve: kyopolou must be thick and spreadable, not runny."
+   },
+   {
+    "titre": "Reduce the tomato SEPARATELY",
+    "detail": "Twenty minutes alone, until concentrated: added raw it would thin the whole thing."
+   },
+   {
+    "titre": "Chop by knife, coarsely",
+    "detail": "Like the Greek melitzanosalata: kyopolou is not a purée, you should recognise the pieces."
+   },
+   {
+    "titre": "RAW garlic, stirred in off the heat",
+    "detail": "Cooked, it loses its bite. It is what gives this dip its characteristic edge."
+   },
+   {
+    "titre": "Jarred and sterilised",
+    "detail": "It is an autumn preserve: you make ten pots at once for the whole winter."
+   }
+  ]
+ },
+ "mutabbal": {
+  "nom": "Mutabbal",
+  "description": "The creamy cousin of baba ganoush: the same smoked aubergines, but bound with tahini AND yoghurt. That yoghurt is the only difference between the two, and it is enough to make a pale, silky dip where the other stays brown and rustic.",
+  "etapes": [
+   {
+    "titre": "Aubergines charred to total BLACK",
+    "detail": "The skin must be carbonised over the whole surface: it is the dish's only source of smoke."
+   },
+   {
+    "titre": "Scrape the flesh, never rinse it",
+    "detail": "Rinsing would wash away all the smoke. The black flecks that remain are part of the flavour."
+   },
+   {
+    "titre": "Hang the flesh for an hour",
+    "detail": "In muslin over a bowl: mutabbal must be creamy, and water would make it runny."
+   },
+   {
+    "titre": "Whip the tahini BEFORE the aubergine",
+    "detail": "Tahini, lemon and a little iced water whisked first: it pales and turns into a smooth cream."
+   },
+   {
+    "titre": "Yoghurt last, folded gently",
+    "detail": "This is what separates mutabbal from baba ganoush. Overworked, it splits and the dip turns grainy."
+   },
+   {
+    "titre": "Far more lemon than seems right",
+    "detail": "Half a fruit for four: tahini is fatty and yoghurt mild, the acidity must cut through both."
+   },
+   {
+    "titre": "A well of olive oil at the table",
+    "detail": "Hollowed with a spoon in the centre, with a pinch of cumin: the standard Levantine presentation."
+   }
+  ]
+ },
+ "tirokafteri": {
+  "nom": "Tirokafteri",
+  "description": "The spicy feta of Greek tavernas, whose name literally means \"burning cheese\". The chilli is not a seasoning but the main ingredient — a tirokafteri that does not bite is just mashed feta.",
+  "etapes": [
+   {
+    "titre": "SHEEP's feta, in brine",
+    "detail": "Cow's feta is bland and rubbery. Sheep gives the underlying lactic sharpness."
+   },
+   {
+    "titre": "Char the peppers, skin black",
+    "detail": "Then peel them: their smoky sweetness is what makes the heat bearable and interesting."
+   },
+   {
+    "titre": "FRESH chilli, not powder",
+    "detail": "Powder gives a flat, dusty heat. Fresh chilli bites and perfumes at the same time."
+   },
+   {
+    "titre": "Mash with a fork, NOT a processor",
+    "detail": "Blended feta turns elastic and gluey. Mashed, it keeps its grain and its freshness."
+   },
+   {
+    "titre": "Oil in a thread, while working",
+    "detail": "It emulsifies with the feta's whey and gives creaminess without adding cream."
+   },
+   {
+    "titre": "Taste and ADD MORE chilli",
+    "detail": "Feta is very salty and masks the heat when cold. What seems fierce in the bowl will be right at the table."
+   },
+   {
+    "titre": "An hour chilled before serving",
+    "detail": "The chilli diffuses and the mixture firms up. Served warm, tirokafteri is soft and aggressive."
+   }
+  ]
+ },
+ "tartufo": {
+  "nom": "Tartufo",
+  "description": "The frozen truffle of Pizzo, in Calabria, born in 1952 at a wedding that had run out of bowls. A scoop of ice cream hiding a molten chocolate heart, rolled in cocoa — and that heart must stay RUNNY when cut.",
+  "etapes": [
+   {
+    "titre": "A SOFT ganache heart",
+    "detail": "Far more cream than in a classic ganache: it must stay runny at −18 °C, so it must be very rich."
+   },
+   {
+    "titre": "Freeze the ganache into balls",
+    "detail": "An hour in the freezer before assembly: soft, it cannot be enclosed in the ice cream."
+   },
+   {
+    "titre": "Work the ice cream just SOFTENED",
+    "detail": "Ten minutes out of the freezer: hard, it cracks; melted, it no longer holds shape."
+   },
+   {
+    "titre": "Shape by hand, in clingfilm",
+    "detail": "Line a bowl with film, add the ice cream, the ball in the centre, and close it up tightly."
+   },
+   {
+    "titre": "Three hours to firm up again",
+    "detail": "The tartufo must be completely set before rolling, or the cocoa turns to paste."
+   },
+   {
+    "titre": "Roll in BITTER cocoa",
+    "detail": "Unsweetened: the contrast of bitter against sweet ice cream is the entire point of the dessert."
+   },
+   {
+    "titre": "Take it out five minutes before serving",
+    "detail": "Long enough for the heart to run again. Served too cold, it stays hard and the effect is lost."
+   }
+  ]
+ },
+ "coupedanemark": {
+  "nom": "Coupe Danemark",
+  "description": "Vanilla with hot chocolate served separately, in a little jug: it is the pouring yourself that defines a coupe Danemark. Sauced in the kitchen, it is just chocolate ice cream.",
+  "etapes": [
+   {
+    "titre": "A 60 % chocolate, no stronger",
+    "detail": "At 70 % the sauce turns bitter and sets on the ice cream instead of coating it."
+   },
+   {
+    "titre": "A CREAM sauce, not milk",
+    "detail": "Milk gives a sauce that hardens on contact with cold. Cream stays supple and pourable."
+   },
+   {
+    "titre": "A WARM sauce, not scalding",
+    "detail": "Around 45 °C: scalding, it melts the scoop instantly and the coupe turns to soup."
+   },
+   {
+    "titre": "A knob of butter at the end",
+    "detail": "Off the heat: it gives the shine and stops the sauce setting as it cools."
+   },
+   {
+    "titre": "Toasted flaked almonds",
+    "detail": "Five minutes in the oven: raw, they bring only a soft texture and no aroma."
+   },
+   {
+    "titre": "Bowls chilled in the freezer",
+    "detail": "A quarter of an hour: the ice cream lasts ten minutes longer, and at the table that is everything."
+   },
+   {
+    "titre": "Sauce SERVED SEPARATELY, in a jug",
+    "detail": "That is the very definition of the dessert. Everyone pours, and the ice cream stays firm to the last spoonful."
+   }
+  ]
+ },
+ "turronhelado": {
+  "nom": "Turrón Helado",
+  "description": "The Spanish frozen nougat of Christmas, moulded into a rectangular block like the turrón it is named for. It is not churned: Italian meringue is what stops it crystallising, and it sets in the freezer without a single turn of a machine.",
+  "etapes": [
+   {
+    "titre": "Marcona almonds, toasted",
+    "detail": "Flat and rich: they are what make turrón. Dry-toasted then cooled before grinding."
+   },
+   {
+    "titre": "Grind to a PASTE, not a powder",
+    "detail": "The almonds must release their oil and form a supple paste: as powder they stay gritty."
+   },
+   {
+    "titre": "A HONEY meringue, not plain sugar",
+    "detail": "Honey heated to 118 °C: it gives the turrón flavour and prevents crystallisation."
+   },
+   {
+    "titre": "Pour the syrup in a thread onto the whites",
+    "detail": "Down the side of the bowl, never onto the whisk: flicked, it sets into hard threads and the meringue is lost."
+   },
+   {
+    "titre": "Cool the meringue BEFORE the cream",
+    "detail": "Whisk until the bowl is cold: warm, it would collapse the whipped cream."
+   },
+   {
+    "titre": "Fold in the cream gently, with a spatula",
+    "detail": "In three additions, lifting: the trapped air is what replaces the ice cream machine."
+   },
+   {
+    "titre": "Mould in a rectangular TERRINE",
+    "detail": "Wrapped, six hours in the freezer: the turrón shape is part of the dessert, it is never scooped."
+   }
+  ]
+ },
+ "knickerbocker": {
+  "nom": "Knickerbocker Glory",
+  "description": "The English sundae of the 1930s, built in visible layers in a tall narrow glass. The whole point is visual: each stratum must stand out clearly, and a layer that bleeds into its neighbour is a failure.",
+  "etapes": [
+   {
+    "titre": "A TALL, narrow glass, chilled",
+    "detail": "A knickerbocker is looked at as much as eaten: a wide glass ruins the layered effect."
+   },
+   {
+    "titre": "A COLD strawberry coulis",
+    "detail": "Warm, it melts the ice cream on contact and the layers blur immediately."
+   },
+   {
+    "titre": "Chill every element separately",
+    "detail": "Coulis, cream, glass: everything must be at the same cold temperature before assembly."
+   },
+   {
+    "titre": "Build in THICK, clean layers",
+    "detail": "Two centimetres each, poured into the centre: thin layers merge at the first dip of the spoon."
+   },
+   {
+    "titre": "Wipe the inside between layers",
+    "detail": "Kitchen paper wrapped on a chopstick: the smears are what make the glass look messy."
+   },
+   {
+    "titre": "Assemble in under two minutes",
+    "detail": "It is an assembly dessert: hesitating means the first layer melts while you lay the third."
+   },
+   {
+    "titre": "Tall cream and a cherry on top",
+    "detail": "The cream must rise above the glass. Without it, it is not a knickerbocker glory."
+   }
+  ]
+ },
+ "granizado": {
+  "nom": "Granizado de Limón",
+  "description": "The lemon shaved ice of Valencian summers, raked with a fork every half hour. Its texture has nothing to do with sorbet: these are distinct CRYSTALS that crunch under the spoon, and they come only from raking.",
+  "etapes": [
+   {
+    "titre": "Zest BEFORE juicing",
+    "detail": "The zest carries most of the perfume. Once the lemon is squeezed, zesting it cleanly is impossible."
+   },
+   {
+    "titre": "A cooled syrup, never hot",
+    "detail": "Sugar dissolved hot then completely cooled: poured warm onto the juice it cooks the acidity flat."
+   },
+   {
+    "titre": "One third sugar to two thirds liquid",
+    "detail": "Less and it sets into a block; more and it never freezes. Sugar drives the texture, not the taste."
+   },
+   {
+    "titre": "A WIDE, flat container",
+    "detail": "A tray rather than a bowl: the greater the surface, the faster and finer the crystals form."
+   },
+   {
+    "titre": "Rake with a fork every 30 minutes",
+    "detail": "Four times over: it is the only action in the recipe, and there is no shortcut."
+   },
+   {
+    "titre": "Never use a blender",
+    "detail": "It gives uniform snow, not crystals. That would be a slush, not a granizado."
+   },
+   {
+    "titre": "Serve at once, in a frozen glass",
+    "detail": "The crystals melt in two minutes. A granizado is not plated in advance."
+   }
+  ]
+ },
+ "ranginak": {
+  "nom": "Ranginak",
+  "description": "The Iranian dessert of walnut-stuffed dates under a blanket of flour BROWNED in butter. That toasted flour is no decoration: it gives the nutty flavour and absorbs the moisture from the dates.",
+  "etapes": [
+   {
+    "titre": "SOFT dates, pitted whole",
+    "detail": "Medjool for preference: dry ones will not stuff and stay hard under the tooth."
+   },
+   {
+    "titre": "Half a walnut per date",
+    "detail": "Slipped in where the stone was: the date must close again, or the filling escapes as it sets."
+   },
+   {
+    "titre": "Brown the flour in butter, fifteen minutes",
+    "detail": "Low heat, stirring constantly: it must go from white to hazelnut brown. That is ALL the flavour of the dish."
+   },
+   {
+    "titre": "Trust your nose, not the clock",
+    "detail": "It must smell of toasted hazelnut. One second too long and it smells burnt — start again."
+   },
+   {
+    "titre": "Let it cool before pouring",
+    "detail": "Scalding, the flour would melt the dates and run everywhere. Warm, it coats and sets."
+   },
+   {
+    "titre": "Press into an EVEN layer",
+    "detail": "With the back of a spoon: ranginak is cut into neat squares, so the surface must be flat."
+   },
+   {
+    "titre": "Cinnamon and icing sugar, sifted",
+    "detail": "Onto the cold surface only: dusted while hot they melt and vanish."
+   }
+  ]
+ },
+ "subouregi": {
+  "nom": "Su Böreği",
+  "description": "The \"water börek\": sheets of pastry POACHED one by one before being layered with feta. That water cooking, unique in all savoury pastry, gives a soft lasagne-like texture nothing else reproduces.",
+  "etapes": [
+   {
+    "titre": "A FIRM dough, kneaded at length",
+    "detail": "Twenty minutes: it must become very elastic to be rolled into near-transparent sheets."
+   },
+   {
+    "titre": "Roll until you can see the table through it",
+    "detail": "With a long pin, dusting with cornflour: the longest step of the recipe, and there is no shortcut."
+   },
+   {
+    "titre": "POACH each sheet for 1 minute",
+    "detail": "In boiling salted water, one at a time: this is what gives su böreği its unique texture."
+   },
+   {
+    "titre": "Plunge straight into ICED water",
+    "detail": "To stop the cooking dead. Without that shock the sheet keeps cooking and tears during assembly."
+   },
+   {
+    "titre": "Blot each sheet separately",
+    "detail": "On a clean cloth: residual water would stop the butter adhering and the layers bonding."
+   },
+   {
+    "titre": "Butter GENEROUSLY between each layer",
+    "detail": "With a brush, without economising: butter is what separates the sheets and gives the softness."
+   },
+   {
+    "titre": "180 °C, 45 minutes, to deep gold",
+    "detail": "Only the surface crisps; the inside must stay soft like a pasta bake."
+   }
+  ]
+ },
+ "cagkebabi": {
+  "nom": "Cağ Kebabı",
+  "description": "The kebab of Erzurum, skewered HORIZONTALLY over the coals rather than vertically. That position changes everything: the fat runs along the spit and bastes the meat instead of dripping into the fire.",
+  "etapes": [
+   {
+    "titre": "Leg AND tail fat",
+    "detail": "Alternate lean and fat on the spit: without fat the meat dries before it even browns."
+   },
+   {
+    "titre": "A marinade of GRATED onion, squeezed",
+    "detail": "Keep only the juice: onion pieces would burn on the spit and turn bitter."
+   },
+   {
+    "titre": "A splash of milk in the marinade",
+    "detail": "It tenderises the fibre without acidifying, unlike lemon or yoghurt which would firm the surface."
+   },
+   {
+    "titre": "Twelve hours marinating, chilled",
+    "detail": "It is a dish of patience: at two hours the seasoning stays on the surface."
+   },
+   {
+    "titre": "Skewer HORIZONTALLY",
+    "detail": "This is the whole peculiarity of Erzurum: the fat bastes the spit instead of falling into the coals."
+   },
+   {
+    "titre": "Gentle coals, SLOW cooking",
+    "detail": "Two hours for a large cone: over high heat the outside chars and the inside stays raw."
+   },
+   {
+    "titre": "Slice as you go, onto a small skewer",
+    "detail": "Each serving is cut to order, speared on a skewer and served just so, with bread."
+   }
+  ]
+ },
+ "guokui": {
+  "nom": "Guokui",
+  "description": "The Shaanxi flatbread cooked first in a pan then STUCK to the wall of the oven. That double cooking gives a dry, brittle crust around a layered crumb — and it keeps for days without hardening.",
+  "etapes": [
+   {
+    "titre": "Two doughs: one leavened, one oiled",
+    "detail": "Like shaobing: the mixture of the two creates the layers, never a single dough."
+   },
+   {
+    "titre": "Roll into a LONG ribbon, then coil it",
+    "detail": "A ribbon 40 cm by 10: the longer it is, the more layers there will be in the coil."
+   },
+   {
+    "titre": "Filling SPREAD, not spooned in a heap",
+    "detail": "A thin layer along the whole length: in a heap it pierces the dough as you roll."
+   },
+   {
+    "titre": "Raw spring onion, never cooked",
+    "detail": "It cooks inside the bread and keeps its bite. Pre-cooked, it weeps and soaks the layers."
+   },
+   {
+    "titre": "Pan first, four minutes a side",
+    "detail": "To fix the shape and form a first crust. Straight into the oven, the flatbread collapses."
+   },
+   {
+    "titre": "Then a very hot oven, 230 °C",
+    "detail": "Ten minutes: dry heat is what bursts the layers apart and hollows the inside."
+   },
+   {
+    "titre": "Sesame pressed INTO the dough",
+    "detail": "Pushed in with the palm before the pan: merely sprinkled, it all falls off as it bakes."
+   }
+  ]
+ },
+ "laobing": {
+  "nom": "Laobing",
+  "description": "The large layered flatbread of northern China, pan-cooked and CRUSHED between the hands as it comes off. That brutal gesture separates the layers and turns a compact flatbread into an airy stack.",
+  "etapes": [
+   {
+    "titre": "A dough with BOILING water, half and half",
+    "detail": "Half boiling water, half cold: the first softens, the second keeps some elasticity."
+   },
+   {
+    "titre": "Rest an hour, covered",
+    "detail": "A hot-water dough needs long relaxation, or it springs back as you roll it."
+   },
+   {
+    "titre": "Roll thin, oil it, ROLL into a rope",
+    "detail": "Then coil the rope into a spiral: each turn becomes a layer as it cooks."
+   },
+   {
+    "titre": "Flatten GENTLY, by hand",
+    "detail": "With a rolling pin the layers weld together and the flakiness disappears."
+   },
+   {
+    "titre": "Covered pan, medium heat",
+    "detail": "The lid traps the steam: that steam is what puffs the layers apart."
+   },
+   {
+    "titre": "CRUSH between your hands on the way out",
+    "detail": "Scalding, compressing it between flat palms: that gesture is what bursts it into strands."
+   },
+   {
+    "titre": "Torn by hand, never cut",
+    "detail": "You share it by pulling: cut, it loses its airiness and becomes an ordinary flatbread again."
+   }
+  ]
  }
 
 };

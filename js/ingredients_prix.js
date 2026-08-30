@@ -296,6 +296,8 @@ const INGREDIENTS_PRIX = {
   bleentier:      { prixKg: 3.50, calPer100g: 340,  lipSat: 0.4,  sucre: 0.4,  sel: 0,    fibres: 12,  prot: 12,   flv: 0, glucides: 71, lipides: 2 },
   injera:         { prixKg: 9.00, calPer100g: 165,  lipSat: 0.2,  sucre: 0.5,  sel: 0.3,  fibres: 4,   prot: 5,    flv: 0, glucides: 33, lipides: 1 },
   madere:         { prixKg: 12.0, calPer100g: 140,  lipSat: 0,    sucre: 10,   sel: 0.02, fibres: 0,   prot: 0.2,  flv: 0, glucides: 10, lipides: 0 },
+  absinthe:       { prixKg: 60.0, calPer100g: 350,  lipSat: 0,    sucre: 0,    sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 0, lipides: 0 },
+  scarole:        { prixKg: 3.00, calPer100g: 17,   lipSat: 0,    sucre: 0.3,  sel: 0.02, fibres: 3.1, prot: 1.3,  flv: 100, glucides: 1.3, lipides: 0.2 },
   cotelets:       { prixKg: 16.0, calPer100g: 280,  lipSat: 9.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 24,   flv: 0, glucides: 0, lipides: 20 },
   os:             { prixKg: 2.00, calPer100g: 100,  lipSat: 2.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 10,   flv: 0, glucides: 0, lipides: 6 },
   queueboeuf:     { prixKg: 14.0, calPer100g: 270,  lipSat: 8.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 17 },
@@ -1589,6 +1591,8 @@ const INGREDIENTS_LABELS = {
   langue: "👅 Langue de bœuf", museau: "🐄 Museau de bœuf", tetedeveau: "🐄 Tête de veau", tripes: "🐄 Tripes",
   goyave: "🟥 Pâte de goyave", goya: "🥒 Melon amer (goya)", papaseca: "🥔 Papa seca (pomme de terre séchée)",
   grenouilles: "🐸 Cuisses de grenouilles", bleentier: "🌾 Blé en grains", injera: "🫓 Injera", madere: "🍷 Madère",
+  absinthe: "🌿 Absinthe", scarole: "🥬 Scarole",
+  juscitron: "🍋 Jus de citron", juscitronvert: "🍋 Jus de citron vert", jusananas: "🍍 Jus d'ananas", jusorange: "🍊 Jus d'orange", siropsucre: "🍬 Sirop de sucre", sucrecanne: "🍬 Sucre de canne", soda: "🫧 Eau gazeuse", sodaamer: "🫧 Soda amer", sodapamplemousse: "🫧 Soda pamplemousse", angostura: "🍶 Angostura", framboise: "🫐 Framboises", rhumblanc: "🥃 Rhum blanc", rhumambre: "🥃 Rhum ambré", vermouthrouge: "🍷 Vermouth rouge", porto: "🍷 Porto", liqueurcafe: "☕ Liqueur de café", siropagave: "🍯 Sirop d'agave", poitrine: "🥓 Poitrine de porc", bacon: "🥓 Bacon", lardgras: "🥓 Lard gras", worcestershire: "🍶 Sauce Worcestershire", morue: "🐟 Morue", vinaigrette: "🥗 Vinaigrette",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==
   oeufs: "🥚 Œufs",  oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",

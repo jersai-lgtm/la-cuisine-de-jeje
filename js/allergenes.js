@@ -46,8 +46,20 @@ function detecterAllergenesRecette(texte) {
   return presents;
 }
 
-function appliquerPreferencesVisuelles() {
+// Cette passe parcourt les ~3300 cartes, reconstruit le texte complet de
+// chaque recette et fait quatre requêtes DOM par carte : environ 660 ms.
+// Son résultat ne dépend QUE du profil, de la langue et des cartes présentes —
+// jamais de la recherche en cours. Elle était pourtant rejouée à chaque frappe
+// (app_courses.js:1112), ce qui bloquait la saisie : taper « salade grecque »
+// coûtait 9 secondes. On ne recalcule donc que si l'une de ces trois choses
+// a bougé. Passer `true` force le recalcul.
+function appliquerPreferencesVisuelles(force) {
   const prefs = window.userProfile?.preferences || null;
+
+  const signature = JSON.stringify(prefs) + "|" + (window.LANG || "fr")
+    + "|" + document.querySelectorAll(".carte").length;
+  if (!force && signature === window._prefsVisuellesSignature) return;
+  window._prefsVisuellesSignature = signature;
 
   // Allergènes de l'utilisateur connecté : pour la mise en avant (rouge) + le grisage
   const motsExclus = new Set();

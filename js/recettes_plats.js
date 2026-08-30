@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 236 recettes
+// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 238 recettes
 // 👉 Pour AJOUTER une recette Plats : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -54897,5 +54897,81 @@ Object.assign(recettes, {
       { icone: "🔄", titre: "Un linge sous le couvercle, 50 minutes", detail: "Il absorbe la condensation. Puis on retourne la casserole d'un coup sur un plat — c'est le moment du repas.", badge: null }
     ],
     liees: ["tahdig","adaspolo","zereshkpolo"]
+  },
+  subouregi: {
+    dateAjout: "2026-08-26T12:06:00",
+    nom: "Su Böreği",
+    cat: "plats", pays: "turquie",
+    base: 8,
+    temps: "2 h 30",
+    niveau: "⭐⭐⭐ Expert",
+    emoji: "🥧",
+    description: "Le « börek à l'eau » : des feuilles de pâte POCHÉES une à une avant d'être empilées avec de la feta. Cette cuisson à l'eau, unique dans toute la pâtisserie salée, donne une texture de lasagne moelleuse que rien d'autre ne reproduit.",
+    tableauSubouregi: [
+      { nb: 1, farine: "70 g", oeufs: "¾", feta: "45 g", persil: "6 g", beurre: "25 g", lait: "20 ml", huile: "10 ml", sel: "1 g" },
+      { nb: 2, farine: "140 g", oeufs: "1½", feta: "90 g", persil: "12 g", beurre: "50 g", lait: "40 ml", huile: "20 ml", sel: "2 g" },
+      { nb: 3, farine: "210 g", oeufs: "2¼", feta: "135 g", persil: "18 g", beurre: "75 g", lait: "60 ml", huile: "30 ml", sel: "3 g" },
+      { nb: 4, farine: "280 g", oeufs: "3", feta: "180 g", persil: "24 g", beurre: "100 g", lait: "80 ml", huile: "40 ml", sel: "4 g" },
+      { nb: 5, farine: "350 g", oeufs: "3¾", feta: "225 g", persil: "30 g", beurre: "125 g", lait: "100 ml", huile: "50 ml", sel: "5 g" },
+      { nb: 6, farine: "420 g", oeufs: "4½", feta: "270 g", persil: "36 g", beurre: "150 g", lait: "120 ml", huile: "60 ml", sel: "6 g" },
+      { nb: 7, farine: "490 g", oeufs: "5¼", feta: "315 g", persil: "42 g", beurre: "175 g", lait: "140 ml", huile: "70 ml", sel: "7 g" },
+      { nb: 8, farine: "560 g", oeufs: "6", feta: "360 g", persil: "48 g", beurre: "200 g", lait: "160 ml", huile: "80 ml", sel: "8 g" },
+      { nb: 9, farine: "630 g", oeufs: "6¾", feta: "405 g", persil: "54 g", beurre: "225 g", lait: "180 ml", huile: "90 ml", sel: "9 g" },
+      { nb: 10, farine: "700 g", oeufs: "7½", feta: "450 g", persil: "60 g", beurre: "250 g", lait: "200 ml", huile: "100 ml", sel: "10 g" },
+      { nb: 11, farine: "770 g", oeufs: "8¼", feta: "495 g", persil: "66 g", beurre: "275 g", lait: "220 ml", huile: "110 ml", sel: "11 g" },
+      { nb: 12, farine: "840 g", oeufs: "9", feta: "540 g", persil: "72 g", beurre: "300 g", lait: "240 ml", huile: "120 ml", sel: "12 g" },
+      { nb: 13, farine: "910 g", oeufs: "9¾", feta: "585 g", persil: "78 g", beurre: "325 g", lait: "260 ml", huile: "130 ml", sel: "13 g" },
+      { nb: 14, farine: "980 g", oeufs: "10½", feta: "630 g", persil: "84 g", beurre: "350 g", lait: "280 ml", huile: "140 ml", sel: "14 g" },
+      { nb: 15, farine: "1050 g", oeufs: "11¼", feta: "675 g", persil: "90 g", beurre: "375 g", lait: "300 ml", huile: "150 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Une pâte FERME, longuement pétrie", detail: "Vingt minutes : elle doit devenir très élastique pour être étalée en feuilles quasi transparentes.", badge: null },
+      { icone: "📏", titre: "Étaler jusqu'à voir la table au travers", detail: "Au rouleau long, en farinant à la maïzena : c'est le geste le plus long de la recette, il n'y a pas de raccourci.", badge: null },
+      { icone: "♨️", titre: "POCHER chaque feuille 1 minute", detail: "Dans l'eau bouillante salée, une par une : c'est ce qui donne au su böreği sa texture unique.", badge: null },
+      { icone: "🧊", titre: "Plonger aussitôt dans l'eau GLACÉE", detail: "Pour arrêter la cuisson net. Sans ce choc, la feuille continue de cuire et se déchire au montage.", badge: null },
+      { icone: "🧻", titre: "Éponger chaque feuille séparément", detail: "Sur un linge propre : l'eau résiduelle empêcherait le beurre d'adhérer et les couches de se souder.", badge: null },
+      { icone: "🧈", titre: "Beurrer GÉNÉREUSEMENT entre chaque couche", detail: "Au pinceau, sans économiser : c'est le beurre qui sépare les feuilles et donne le fondant.", badge: null },
+      { icone: "🔥", titre: "180 °C, 45 minutes, jusqu'au doré profond", detail: "Seule la surface croustille ; l'intérieur doit rester moelleux comme un gratin de pâtes.", badge: null }
+    ],
+    liees: ["borekturc","sigaraborek","gozleme"]
+  },
+  cagkebabi: {
+    dateAjout: "2026-08-26T12:07:00",
+    nom: "Cağ Kebabı",
+    cat: "plats", saisons: ["automne","hiver"], pays: "turquie",
+    base: 6,
+    temps: "40 min + marinade",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍢",
+    description: "Le kebab d'Erzurum, embroché HORIZONTALEMENT au-dessus des braises et non verticalement. Cette position change tout : la graisse coule le long de la broche et arrose la viande au lieu de tomber dans le feu.",
+    tableauCagkebabi: [
+      { nb: 1, agneau: "160 g", oignon: "½", lait: "25 ml", beurre: "12 g", poivre: "1 g", sel: "1.5 g", pita: "½" },
+      { nb: 2, agneau: "320 g", oignon: "1", lait: "50 ml", beurre: "24 g", poivre: "2 g", sel: "3 g", pita: "1" },
+      { nb: 3, agneau: "480 g", oignon: "1½", lait: "75 ml", beurre: "36 g", poivre: "3 g", sel: "4.5 g", pita: "1½" },
+      { nb: 4, agneau: "640 g", oignon: "2", lait: "100 ml", beurre: "48 g", poivre: "4 g", sel: "6 g", pita: "2" },
+      { nb: 5, agneau: "800 g", oignon: "2½", lait: "125 ml", beurre: "60 g", poivre: "5 g", sel: "7.5 g", pita: "2½" },
+      { nb: 6, agneau: "960 g", oignon: "3", lait: "150 ml", beurre: "72 g", poivre: "6 g", sel: "9 g", pita: "3" },
+      { nb: 7, agneau: "1120 g", oignon: "3½", lait: "175 ml", beurre: "84 g", poivre: "7 g", sel: "10.5 g", pita: "3½" },
+      { nb: 8, agneau: "1280 g", oignon: "4", lait: "200 ml", beurre: "96 g", poivre: "8 g", sel: "12 g", pita: "4" },
+      { nb: 9, agneau: "1440 g", oignon: "4½", lait: "225 ml", beurre: "108 g", poivre: "9 g", sel: "13.5 g", pita: "4½" },
+      { nb: 10, agneau: "1600 g", oignon: "5", lait: "250 ml", beurre: "120 g", poivre: "10 g", sel: "15 g", pita: "5" },
+      { nb: 11, agneau: "1760 g", oignon: "5½", lait: "275 ml", beurre: "132 g", poivre: "11 g", sel: "16.5 g", pita: "5½" },
+      { nb: 12, agneau: "1920 g", oignon: "6", lait: "300 ml", beurre: "144 g", poivre: "12 g", sel: "18 g", pita: "6" },
+      { nb: 13, agneau: "2080 g", oignon: "6½", lait: "325 ml", beurre: "156 g", poivre: "13 g", sel: "19.5 g", pita: "6½" },
+      { nb: 14, agneau: "2240 g", oignon: "7", lait: "350 ml", beurre: "168 g", poivre: "14 g", sel: "21 g", pita: "7" },
+      { nb: 15, agneau: "2400 g", oignon: "7½", lait: "375 ml", beurre: "180 g", poivre: "15 g", sel: "22.5 g", pita: "7½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐑", titre: "Du gigot ET du gras de queue", detail: "Alterner maigre et gras sur la broche : sans gras, la viande sèche avant même d'avoir doré.", badge: null },
+      { icone: "🧅", titre: "Une marinade à l'OIGNON RÂPÉ, pressé", detail: "On ne garde que le jus : les morceaux d'oignon brûleraient sur la broche et donneraient de l'amertume.", badge: null },
+      { icone: "🥛", titre: "Un trait de lait dans la marinade", detail: "Il attendrit la fibre sans acidifier, contrairement au citron ou au yaourt qui raffermiraient la surface.", badge: null },
+      { icone: "🕐", titre: "Douze heures de marinade, au frais", detail: "C'est un plat de patience : à deux heures, l'assaisonnement reste en surface.", badge: null },
+      { icone: "↔️", titre: "Embrocher à l'HORIZONTALE", detail: "C'est toute la particularité d'Erzurum : la graisse arrose la broche au lieu de tomber dans les braises.", badge: null },
+      { icone: "🔥", titre: "Braises douces, cuisson LENTE", detail: "Deux heures pour un gros cône : à feu vif, l'extérieur carbonise et l'intérieur reste cru.", badge: null },
+      { icone: "🔪", titre: "Trancher au fur et à mesure, sur une petite broche", detail: "Chaque service est coupé à la commande, planté sur une brochette et servi tel quel avec du pain.", badge: null }
+    ],
+    liees: ["adanakebab","iskender","doner"]
   },
 });

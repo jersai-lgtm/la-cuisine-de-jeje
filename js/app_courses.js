@@ -1053,7 +1053,21 @@ function vfOuvrirIA(url) {
 }
 
 // === Recherche principale ===
+// Point d'entrée de la barre de recherche (oninput). Un filtrage complet de la
+// grille coûte une soixantaine de millisecondes : sans anti-rebond, chaque
+// lettre en déclenchait un et « salade grecque » en lançait quatorze d'affilée.
+// On regroupe les frappes rapprochées en une seule passe.
+function rechercherRecetteDifferee(query) {
+  clearTimeout(window._rechercheTimer);
+  const clear = document.getElementById("search-clear");
+  if (clear) clear.style.display = query.trim() ? "flex" : "none";
+  // Vider la barre doit rester instantané : c'est un retour en arrière, pas une recherche.
+  if (!query.trim()) { rechercherRecette(query); return; }
+  window._rechercheTimer = setTimeout(() => rechercherRecette(query), 130);
+}
+
 function rechercherRecette(query) {
+  clearTimeout(window._rechercheTimer);
   const q = query.toLowerCase().trim();
   const clear = document.getElementById("search-clear");
   if (clear) clear.style.display = q ? "flex" : "none";

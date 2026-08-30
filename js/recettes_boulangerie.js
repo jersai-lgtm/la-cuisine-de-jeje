@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 29 recettes
+// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 31 recettes
 // 👉 Pour AJOUTER une recette Boulangerie : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4352,5 +4352,81 @@ Object.assign(recettes, {
       { icone: "✂️", titre: "Ouvrir en deux et garnir", detail: "Le shaobing se fend en poche : bœuf braisé, omelette, youtiao. C'est un pain à fourrer, pas un pain d'accompagnement.", badge: null }
     ],
     liees: ["congyoubing","mantou","youtiao"]
+  },
+  guokui: {
+    dateAjout: "2026-08-26T12:08:00",
+    nom: "Guokui",
+    cat: "boulangerie", pays: "chine",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "La galette du Shaanxi cuite d'abord à la poêle puis COLLÉE contre la paroi du four. Cette double cuisson lui donne une croûte sèche et cassante autour d'une mie feuilletée — et elle se garde des jours sans durcir.",
+    tableauGuokui: [
+      { nb: 1, farine: "75 g", boeufhache: "45 g", huile: "15 ml", cinqepices: "1 g", sesame: "6 g", ciboule: "15 g", sel: "1.2 g", poivre: "0.8 g" },
+      { nb: 2, farine: "150 g", boeufhache: "90 g", huile: "30 ml", cinqepices: "2 g", sesame: "12 g", ciboule: "30 g", sel: "2.4 g", poivre: "1.6 g" },
+      { nb: 3, farine: "225 g", boeufhache: "135 g", huile: "45 ml", cinqepices: "3 g", sesame: "18 g", ciboule: "45 g", sel: "3.6 g", poivre: "2.4 g" },
+      { nb: 4, farine: "300 g", boeufhache: "180 g", huile: "60 ml", cinqepices: "4 g", sesame: "24 g", ciboule: "60 g", sel: "4.8 g", poivre: "3.2 g" },
+      { nb: 5, farine: "375 g", boeufhache: "225 g", huile: "75 ml", cinqepices: "5 g", sesame: "30 g", ciboule: "75 g", sel: "6 g", poivre: "4 g" },
+      { nb: 6, farine: "450 g", boeufhache: "270 g", huile: "90 ml", cinqepices: "6 g", sesame: "36 g", ciboule: "90 g", sel: "7.2 g", poivre: "4.8 g" },
+      { nb: 7, farine: "525 g", boeufhache: "315 g", huile: "105 ml", cinqepices: "7 g", sesame: "42 g", ciboule: "105 g", sel: "8.4 g", poivre: "5.6 g" },
+      { nb: 8, farine: "600 g", boeufhache: "360 g", huile: "120 ml", cinqepices: "8 g", sesame: "48 g", ciboule: "120 g", sel: "9.6 g", poivre: "6.4 g" },
+      { nb: 9, farine: "675 g", boeufhache: "405 g", huile: "135 ml", cinqepices: "9 g", sesame: "54 g", ciboule: "135 g", sel: "10.8 g", poivre: "7.2 g" },
+      { nb: 10, farine: "750 g", boeufhache: "450 g", huile: "150 ml", cinqepices: "10 g", sesame: "60 g", ciboule: "150 g", sel: "12 g", poivre: "8 g" },
+      { nb: 11, farine: "825 g", boeufhache: "495 g", huile: "165 ml", cinqepices: "11 g", sesame: "66 g", ciboule: "165 g", sel: "13.2 g", poivre: "8.8 g" },
+      { nb: 12, farine: "900 g", boeufhache: "540 g", huile: "180 ml", cinqepices: "12 g", sesame: "72 g", ciboule: "180 g", sel: "14.4 g", poivre: "9.6 g" },
+      { nb: 13, farine: "975 g", boeufhache: "585 g", huile: "195 ml", cinqepices: "13 g", sesame: "78 g", ciboule: "195 g", sel: "15.6 g", poivre: "10.4 g" },
+      { nb: 14, farine: "1050 g", boeufhache: "630 g", huile: "210 ml", cinqepices: "14 g", sesame: "84 g", ciboule: "210 g", sel: "16.8 g", poivre: "11.2 g" },
+      { nb: 15, farine: "1125 g", boeufhache: "675 g", huile: "225 ml", cinqepices: "15 g", sesame: "90 g", ciboule: "225 g", sel: "18 g", poivre: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Deux pâtes : une levée, une à l'huile", detail: "Comme le shaobing : c'est le mélange des deux qui crée le feuilletage, jamais une pâte seule.", badge: null },
+      { icone: "🌀", titre: "Étaler en LONG ruban, puis enrouler", detail: "Un ruban de 40 cm sur 10 : plus il est long, plus il y aura de couches dans le rouleau.", badge: null },
+      { icone: "🥩", titre: "La farce ÉTALÉE, pas déposée en tas", detail: "Une couche fine sur toute la longueur : en tas, elle perce la pâte au moment de rouler.", badge: null },
+      { icone: "🌿", titre: "Ciboule crue, jamais cuite", detail: "Elle cuit dans la galette et garde son croquant. Précuite, elle rend son eau et détrempe le feuilletage.", badge: null },
+      { icone: "🍳", titre: "Poêle d'abord, quatre minutes par face", detail: "Pour fixer la forme et faire une première croûte. Enfournée directement, la galette s'affaisse.", badge: null },
+      { icone: "🔥", titre: "Puis four très chaud, 230 °C", detail: "Dix minutes : c'est la chaleur sèche qui fait exploser les couches et creuse l'intérieur.", badge: null },
+      { icone: "🌰", titre: "Sésame pressé DANS la pâte", detail: "Appuyé à la paume avant la poêle : simplement saupoudré, il tombe entièrement à la cuisson.", badge: null }
+    ],
+    liees: ["shaobing","congyoubing","mantou"]
+  },
+  laobing: {
+    dateAjout: "2026-08-26T12:09:00",
+    nom: "Laobing",
+    cat: "boulangerie", pays: "chine",
+    base: 6,
+    temps: "1 h 30",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    description: "La grande galette feuilletée du nord de la Chine, cuite à la poêle et ÉCRASÉE entre les mains à la sortie. Ce geste brutal sépare les couches et transforme une galette compacte en un empilement aérien.",
+    tableauLaobing: [
+      { nb: 1, farine: "80 g", huile: "18 ml", ciboule: "12 g", huilesesame: "5 ml", sel: "1.2 g", poivre: "0.5 g" },
+      { nb: 2, farine: "160 g", huile: "36 ml", ciboule: "24 g", huilesesame: "10 ml", sel: "2.4 g", poivre: "1 g" },
+      { nb: 3, farine: "240 g", huile: "54 ml", ciboule: "36 g", huilesesame: "15 ml", sel: "3.6 g", poivre: "1.5 g" },
+      { nb: 4, farine: "320 g", huile: "72 ml", ciboule: "48 g", huilesesame: "20 ml", sel: "4.8 g", poivre: "2 g" },
+      { nb: 5, farine: "400 g", huile: "90 ml", ciboule: "60 g", huilesesame: "25 ml", sel: "6 g", poivre: "2.5 g" },
+      { nb: 6, farine: "480 g", huile: "108 ml", ciboule: "72 g", huilesesame: "30 ml", sel: "7.2 g", poivre: "3 g" },
+      { nb: 7, farine: "560 g", huile: "126 ml", ciboule: "84 g", huilesesame: "35 ml", sel: "8.4 g", poivre: "3.5 g" },
+      { nb: 8, farine: "640 g", huile: "144 ml", ciboule: "96 g", huilesesame: "40 ml", sel: "9.6 g", poivre: "4 g" },
+      { nb: 9, farine: "720 g", huile: "162 ml", ciboule: "108 g", huilesesame: "45 ml", sel: "10.8 g", poivre: "4.5 g" },
+      { nb: 10, farine: "800 g", huile: "180 ml", ciboule: "120 g", huilesesame: "50 ml", sel: "12 g", poivre: "5 g" },
+      { nb: 11, farine: "880 g", huile: "198 ml", ciboule: "132 g", huilesesame: "55 ml", sel: "13.2 g", poivre: "5.5 g" },
+      { nb: 12, farine: "960 g", huile: "216 ml", ciboule: "144 g", huilesesame: "60 ml", sel: "14.4 g", poivre: "6 g" },
+      { nb: 13, farine: "1040 g", huile: "234 ml", ciboule: "156 g", huilesesame: "65 ml", sel: "15.6 g", poivre: "6.5 g" },
+      { nb: 14, farine: "1120 g", huile: "252 ml", ciboule: "168 g", huilesesame: "70 ml", sel: "16.8 g", poivre: "7 g" },
+      { nb: 15, farine: "1200 g", huile: "270 ml", ciboule: "180 g", huilesesame: "75 ml", sel: "18 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Une pâte à l'EAU BOUILLANTE, mi-chaude", detail: "Moitié eau bouillante, moitié froide : la première assouplit, la seconde garde de l'élasticité.", badge: null },
+      { icone: "⏸️", titre: "Reposer une heure, couverte", detail: "Une pâte à l'eau chaude doit se détendre longuement, sinon elle se rétracte à l'étalage.", badge: null },
+      { icone: "📜", titre: "Étaler très fin, huiler, ROULER en corde", detail: "Puis enrouler la corde en escargot : chaque tour devient une couche à la cuisson.", badge: null },
+      { icone: "✋", titre: "Aplatir DÉLICATEMENT, à la main", detail: "Au rouleau, les couches se soudent entre elles et le feuilletage disparaît.", badge: null },
+      { icone: "🍳", titre: "Poêle à couvert, feu moyen", detail: "Le couvercle emprisonne la vapeur : c'est elle qui gonfle les couches et les sépare.", badge: null },
+      { icone: "👏", titre: "ÉCRASER entre les mains à la sortie", detail: "Brûlante, en la comprimant du plat des mains : c'est ce geste qui fait tout éclater en filaments.", badge: null },
+      { icone: "🌿", titre: "Se déchire à la main, jamais au couteau", detail: "On la partage en tirant : coupée, elle perd son côté aérien et redevient une galette ordinaire.", badge: null }
+    ],
+    liees: ["congyoubing","shaobing","mantou"]
   },
 });
