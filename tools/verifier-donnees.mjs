@@ -112,6 +112,29 @@ try {
   }
 } catch (e) { avert.push(`recettes_batch.js non vérifiable (${e.message})`); }
 
+// --- Compteur de recettes annoncé à l'utilisateur --------------------------
+// Le nombre affiché (accueil, aide, métadonnées SEO, prompt de l'assistant)
+// est écrit en dur à sept endroits. Il annonçait encore « 2000 » alors que le
+// catalogue en comptait 3325 : c'est la première phrase que lit un nouvel
+// utilisateur, et elle a dérivé pendant 1300 recettes sans que rien ne le dise.
+{
+  const FICHIERS = ["index.html", "js/onboarding.js", "js/app_aide.js",
+    "js/i18n_aide.js", "js/i18n_dict.js", "js/assistant_vocal.js"];
+  const RE = /(?:Plus de|Over|~)\s?(\d[\d  ]*)\+? (?:recettes|recipes)|\b(\d[\d  ]*)\+ (?:recettes|recipes)/g;
+  const perimes = new Set();
+  for (const rel of FICHIERS) {
+    let src;
+    try { src = readFileSync(join(ROOT, rel), "utf8"); } catch { continue; }
+    for (const m of src.matchAll(RE)) {
+      const annonce = parseInt((m[1] || m[2]).replace(/\D/g, ""), 10);
+      // On tolère l'arrondi à la centaine inférieure et un lot d'avance.
+      if (annonce < cles.length - 130 || annonce > cles.length) perimes.add(`${rel} annonce ${annonce}`);
+    }
+  }
+  if (perimes.size)
+    erreurs.push(`Compteur de recettes périmé (${cles.length} au catalogue) : ${[...perimes].join(", ")} — lancer \`node tools/maj-compteur-recettes.mjs\``);
+}
+
 // --- Quantités comptées en pièces sans poids connu -------------------------
 // Une cellule sans unité (« tomate: "2" », « canard: "1" ») est un COMPTE.
 // Sans poids unitaire déclaré, l'ancien calcul prenait le nombre pour des
