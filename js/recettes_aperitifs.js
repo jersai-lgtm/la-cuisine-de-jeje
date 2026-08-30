@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_aperitifs.js — Recettes de catégorie "aperitifs" (Apéritifs) — 31 recettes
+// recettes_aperitifs.js — Recettes de catégorie "aperitifs" (Apéritifs) — 32 recettes
 // 👉 Pour AJOUTER une recette Apéritifs : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4126,5 +4126,43 @@ tapenade: {
       { icone: "🍺", titre: "Se mangent debout, brûlantes", detail: "C'est un plat de rue : on les partage à plusieurs, directement sur la pique, sans assiette.", badge: null }
     ],
     liees: ["yakitori","anticuchos","seekhkebab"]
+  },
+  grattons: {
+    dateAjout: "2026-08-25T10:06:00",
+    nom: "Grattons",
+    cat: "aperitifs", saisons: ["automne","hiver"], pays: "france",
+    base: 6,
+    temps: "3 h",
+    niveau: "⭐ Facile",
+    emoji: "🐷",
+    description: "Les résidus de la fonte du gras de porc, égouttés et salés à chaud. Le mot dit le geste : on gratte le fond du chaudron. Trois heures de patience pour un bocal qui se mange à la cuillère, avec un verre de rouge.",
+    tableauGrattons: [
+      { nb: 1, poitrine: "90 g", saindoux: "10 g", sel: "1.5 g", poivre: "0.5 g", laurier: "0.2 g" },
+      { nb: 2, poitrine: "180 g", saindoux: "20 g", sel: "3 g", poivre: "1 g", laurier: "0.4 g" },
+      { nb: 3, poitrine: "270 g", saindoux: "30 g", sel: "4.5 g", poivre: "1.5 g", laurier: "0.6 g" },
+      { nb: 4, poitrine: "360 g", saindoux: "40 g", sel: "6 g", poivre: "2 g", laurier: "0.8 g" },
+      { nb: 5, poitrine: "450 g", saindoux: "50 g", sel: "7.5 g", poivre: "2.5 g", laurier: "1 g" },
+      { nb: 6, poitrine: "540 g", saindoux: "60 g", sel: "9 g", poivre: "3 g", laurier: "1.2 g" },
+      { nb: 7, poitrine: "630 g", saindoux: "70 g", sel: "10.5 g", poivre: "3.5 g", laurier: "1.4 g" },
+      { nb: 8, poitrine: "720 g", saindoux: "80 g", sel: "12 g", poivre: "4 g", laurier: "1.6 g" },
+      { nb: 9, poitrine: "810 g", saindoux: "90 g", sel: "13.5 g", poivre: "4.5 g", laurier: "1.8 g" },
+      { nb: 10, poitrine: "900 g", saindoux: "100 g", sel: "15 g", poivre: "5 g", laurier: "2 g" },
+      { nb: 11, poitrine: "990 g", saindoux: "110 g", sel: "16.5 g", poivre: "5.5 g", laurier: "2.2 g" },
+      { nb: 12, poitrine: "1080 g", saindoux: "120 g", sel: "18 g", poivre: "6 g", laurier: "2.4 g" },
+      { nb: 13, poitrine: "1170 g", saindoux: "130 g", sel: "19.5 g", poivre: "6.5 g", laurier: "2.6 g" },
+      { nb: 14, poitrine: "1260 g", saindoux: "140 g", sel: "21 g", poivre: "7 g", laurier: "2.8 g" },
+      { nb: 15, poitrine: "1350 g", saindoux: "150 g", sel: "22.5 g", poivre: "7.5 g", laurier: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Des cubes réguliers de 2 cm", detail: "Gras et maigre mêlés : tout gras, ce serait écœurant ; tout maigre, ce serait sec et dur.", badge: null },
+      { icone: "🌡️", titre: "Démarrer à FROID, avec un fond d'eau", detail: "L'eau empêche d'attacher le temps que le gras commence à fondre. Elle s'évaporera d'elle-même.", badge: null },
+      { icone: "🕐", titre: "Trois heures à feu très doux", detail: "Le gras doit fondre, pas frire. Un frémissement à peine visible pendant trois heures, c'est tout le secret.", badge: null },
+      { icone: "🥄", titre: "Ne remuer qu'une fois par demi-heure", detail: "Trop remué, le gratton se casse et part en miettes. On le laisse tranquille.", badge: null },
+      { icone: "🔥", titre: "Monter le feu les DIX dernières minutes", detail: "C'est là seulement qu'il croustille et prend sa couleur. Avant, il ne ferait que brûler.", badge: null },
+      { icone: "🧂", titre: "Saler à chaud, dès l'égouttage", detail: "Le sel n'accroche que sur le gras encore brûlant. Froid, il tombe au fond du bocal.", badge: null },
+      { icone: "🫙", titre: "Garder le saindoux du fond", detail: "Ce gras filtré est de l'or pour les pommes de terre sautées. On ne jette jamais un chaudron de grattons.", badge: null }
+    ],
+    liees: ["rillettesporc","terrinecampagne","cervellecanut"]
   },
 });

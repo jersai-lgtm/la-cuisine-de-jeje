@@ -109326,6 +109326,1026 @@ window.RECETTES_EN = {
     "detail": "The sauce is rich and sweet: it needs that fresh acidity right before serving."
    }
   ]
+ },
+ "saucerouennaise": {
+  "nom": "Rouennaise Sauce",
+  "description": "A bordelaise finished with mashed duck liver, off the heat. The liver is what binds it — never flour — and it is also what forbids any boiling afterwards, on pain of curdling.",
+  "etapes": [
+   {
+    "titre": "Sweat the shallots without colour",
+    "detail": "Very finely diced, covered: browned, they bring a bitterness that red wine only amplifies."
+   },
+   {
+    "titre": "Reduce the wine BY THREE QUARTERS",
+    "detail": "To a syrup: that is where the flavour concentrates. A timid reduction gives a thin, sour sauce."
+   },
+   {
+    "titre": "Raw duck liver, pushed through a sieve",
+    "detail": "Mashed with a fork then sieved: any piece left whole will show as a lump in the finished sauce."
+   },
+   {
+    "titre": "Add the liver OFF the heat",
+    "detail": "Below 65 °C: any hotter and it sets, turning the sauce to grainy mush with no way back."
+   },
+   {
+    "titre": "Never let it boil again",
+    "detail": "One boil after the liver and it is lost. Hold it over a bain-marie if it has to wait."
+   },
+   {
+    "titre": "Mount with cold butter, cube by cube",
+    "detail": "One at a time, swirling the pan: that is what gives the shine and the coating texture."
+   },
+   {
+    "titre": "Serve on duck or dark meat",
+    "detail": "It is a sauce for game and dark poultry — on fish it flattens everything."
+   }
+  ]
+ },
+ "saucesmitane": {
+  "nom": "Smitane Sauce",
+  "description": "The sour cream sauce that crossed from the Russian repertoire into the French one in the 19th century. Its name comes from smetana — and its whole balance rests on the final squeeze of lemon, standing in for the acidity our cream lacks.",
+  "etapes": [
+   {
+    "titre": "Onion melted, never browned",
+    "detail": "Twenty minutes covered on the lowest heat: translucent and sweet, without a single brown patch."
+   },
+   {
+    "titre": "Reduce the white wine to DRY",
+    "detail": "Until the pan is almost dry: the alcohol must be entirely gone before the cream goes in."
+   },
+   {
+    "titre": "Thick cream, never light",
+    "detail": "Below 30 % fat it splits as soon as it reduces. This is the one non-negotiable point."
+   },
+   {
+    "titre": "A tremble, never a boil",
+    "detail": "Boiling cream separates into curds and oil. The base of the pan must never show large bubbles."
+   },
+   {
+    "titre": "Strain, pressing the solids",
+    "detail": "Crush the onion against the sieve to recover its juices: that is what gives the body."
+   },
+   {
+    "titre": "Lemon at the very END",
+    "detail": "Added before reducing it would curdle the cream. Added last, it lifts the whole thing."
+   },
+   {
+    "titre": "A knob of butter off the heat",
+    "detail": "It smooths the sauce and gives the shine. Melted in while hot, it would come back out as oil."
+   }
+  ]
+ },
+ "saucebatarde": {
+  "nom": "Bâtarde Sauce",
+  "description": "Neither velouté nor hollandaise, hence the name: a white roux let down with WATER, then bound with yolk and butter. It is the sauce of humble vegetables — asparagus, leeks, cardoons — and costs almost nothing.",
+  "etapes": [
+   {
+    "titre": "A WHITE roux, barely two minutes",
+    "detail": "It must not colour at all: the moment it turns blond, the sauce takes on a toasted-flour note that has no place here."
+   },
+   {
+    "titre": "Let down with BOILING WATER, not stock",
+    "detail": "That is the whole definition of a bâtarde: with no stock it costs nothing and lets the vegetable speak."
+   },
+   {
+    "titre": "Pour in one go, whisking",
+    "detail": "Warm roux, boiling water: it is the thermal shock that prevents lumps, not the whisk."
+   },
+   {
+    "titre": "Cook ten minutes on low heat",
+    "detail": "So the flour loses its raw taste. A rushed white sauce is recognised instantly in the mouth."
+   },
+   {
+    "titre": "Loosen the yolk BEFORE adding it",
+    "detail": "A ladle of hot sauce into the yolk, then the lot back in: added neat it strings into omelette."
+   },
+   {
+    "titre": "No boiling after the yolk",
+    "detail": "It sets at 68 °C. Past that point no amount of whisking saves the sauce."
+   },
+   {
+    "titre": "Cold butter and lemon to finish",
+    "detail": "Butter gives the velvet, lemon stops it being flat. Both off the heat."
+   }
+  ]
+ },
+ "saucefinanciere": {
+  "nom": "Financière Sauce",
+  "description": "The most opulent sauce in the repertoire: an espagnole with Madeira, mushrooms and truffle. The name says it all — this was the sauce you served to show what you could afford.",
+  "etapes": [
+   {
+    "titre": "A BROWN roux, worked at length",
+    "detail": "Ten minutes to a hazelnut colour: it is the base of the espagnole, and shortcuts show on the plate."
+   },
+   {
+    "titre": "Sweat the mushrooms DRY",
+    "detail": "No fat, until they release their water and take it back: otherwise they will thin the sauce."
+   },
+   {
+    "titre": "Madeira in TWO goes",
+    "detail": "Half for the cooking, half raw at the end: the first gives depth, the second gives perfume."
+   },
+   {
+    "titre": "Reduce slowly, skimming",
+    "detail": "Thirty minutes at a tremble, lifting off the foam: that foam is what clouds a brown sauce."
+   },
+   {
+    "titre": "Strain through muslin, without pressing",
+    "detail": "Unlike other sauces: here you let it drip, pressing would cloud it."
+   },
+   {
+    "titre": "Grated truffle off the heat",
+    "detail": "Its aroma is volatile: cooked, only the price remains. Add it at the last second, lid on."
+   },
+   {
+    "titre": "Serve on sweetbreads, poultry or vol-au-vent",
+    "detail": "A ceremonial sauce for white, delicate cuts — never a rustic dish."
+   }
+  ]
+ },
+ "saucelyonnaise": {
+  "nom": "Lyonnaise Sauce",
+  "description": "Onions melted to blond, deglazed with white wine and vinegar. It is the sauce for tablier de sapeur and for reheated leftovers — proof that in Lyon the onion is a condiment in its own right.",
+  "etapes": [
+   {
+    "titre": "Slice very fine, on a mandolin",
+    "detail": "Even slices melt evenly; cut by knife, some burn while others stay raw."
+   },
+   {
+    "titre": "Melt in butter, covered, 25 minutes",
+    "detail": "Low heat and a lid: the onion must collapse in its own water before it starts to colour."
+   },
+   {
+    "titre": "Blond, not brown",
+    "detail": "Take the lid off for the colour: golden, the onion is sweet; brown, it turns bitter and spoils everything."
+   },
+   {
+    "titre": "Vinegar AND white wine",
+    "detail": "Vinegar cuts the onion's sweetness, wine brings the fruit. One without the other unbalances the sauce."
+   },
+   {
+    "titre": "Deglaze over HIGH heat",
+    "detail": "It must sizzle to lift the caramelised juices from the base: half the flavour is there."
+   },
+   {
+    "titre": "Reduce by half, then bind",
+    "detail": "A beurre manié — raw butter and flour kneaded together — binds more finely than a roux."
+   },
+   {
+    "titre": "Chopped flat parsley at the table",
+    "detail": "It brings the freshness a fully melted sauce lacks. Chopped in advance, it blackens."
+   }
+  ]
+ },
+ "grenouilles": {
+  "nom": "Frog Legs",
+  "description": "The parsleyed legs of the Dombes and Alsace, sautéed in butter over high heat. Everything happens in four minutes: beyond that the flesh contracts, toughens and pulls off the bone in dry threads.",
+  "etapes": [
+   {
+    "titre": "Soak two hours in milk",
+    "detail": "Milk softens and whitens the flesh. In water it keeps a muddy taste nothing later can fix."
+   },
+   {
+    "titre": "Dry THOROUGHLY",
+    "detail": "A damp leg does not brown, it boils. Blot between two cloths, at length."
+   },
+   {
+    "titre": "Flour at the last moment",
+    "detail": "Just before the pan, shaking off the excess: floured in advance, the coating turns pasty."
+   },
+   {
+    "titre": "FOAMING butter, very hot pan",
+    "detail": "Neither smoking nor lukewarm. The legs must sing the instant they touch the base."
+   },
+   {
+    "titre": "Four minutes total, not one more",
+    "detail": "Two a side. Beyond that the flesh shrinks onto the bone and turns dry and stringy."
+   },
+   {
+    "titre": "Garlic and parsley in the LAST seconds",
+    "detail": "Heat off: garlic burns in twenty seconds and would give a bitterness that dominates the whole dish."
+   },
+   {
+    "titre": "A squeeze of lemon in the pan",
+    "detail": "It deglazes the browned butter and makes the sauce. Serve at once, never let it stand."
+   }
+  ]
+ },
+ "grattons": {
+  "nom": "Grattons",
+  "description": "The residue from rendering pork fat, drained and salted while hot. The word describes the gesture: you scrape the bottom of the pot. Three hours of patience for a jar eaten by the spoonful, with a glass of red.",
+  "etapes": [
+   {
+    "titre": "Even 2 cm cubes",
+    "detail": "Fat and lean together: all fat is sickly; all lean is dry and hard."
+   },
+   {
+    "titre": "Start COLD, with a little water",
+    "detail": "The water stops it catching while the fat begins to melt. It will evaporate on its own."
+   },
+   {
+    "titre": "Three hours on the lowest heat",
+    "detail": "The fat must melt, not fry. A barely visible tremble for three hours — that is the whole secret."
+   },
+   {
+    "titre": "Stir only once every half hour",
+    "detail": "Over-stirred, the gratton breaks up into crumbs. Leave it alone."
+   },
+   {
+    "titre": "Raise the heat for the LAST ten minutes",
+    "detail": "Only then does it crisp and take its colour. Any earlier and it would simply burn."
+   },
+   {
+    "titre": "Salt while hot, straight after draining",
+    "detail": "Salt only clings to fat that is still scalding. Cold, it falls to the bottom of the jar."
+   },
+   {
+    "titre": "Keep the lard from the pot",
+    "detail": "That strained fat is gold for sautéed potatoes. You never throw away a pot of grattons."
+   }
+  ]
+ },
+ "fricandeau": {
+  "nom": "Fricandeau",
+  "description": "A cushion of veal larded and braised covered, basted relentlessly until glazed. Fricandeau is eaten with a SPOON — if you need a knife, it has not cooked long enough.",
+  "etapes": [
+   {
+    "titre": "Cushion cut, taken through the thickness",
+    "detail": "A 4 cm block, not an escalope: that thickness is what allows three hours of braising without drying."
+   },
+   {
+    "titre": "Lard it, along the grain",
+    "detail": "With a larding needle or a thin knife: that fat melts during cooking and bastes the meat from within."
+   },
+   {
+    "titre": "A bed of vegetables, never meat on the base",
+    "detail": "Carrot and onion in thick rounds: they lift the joint and stop it catching."
+   },
+   {
+    "titre": "Moisten only HALFWAY up",
+    "detail": "The top must stay in the air to glaze. Submerged, a fricandeau boils and never takes its shining crust."
+   },
+   {
+    "titre": "Baste every twenty minutes",
+    "detail": "This is the gesture that makes the dish: each basting lays down a layer of juice that caramelises."
+   },
+   {
+    "titre": "Three hours at 150 °C, covered",
+    "detail": "Then uncovered for the last half hour to glaze. The meat must give under a spoon."
+   },
+   {
+    "titre": "Traditionally served with sorrel",
+    "detail": "Its acidity cuts the fat of braised veal. Failing that, spinach and a squeeze of lemon."
+   }
+  ]
+ },
+ "langueecarlate": {
+  "nom": "Langue Écarlate",
+  "description": "Beef tongue brined then poached, taking on in the cure the bright red colour it is named for. It is eaten COLD, in thin slices, with gherkins — this is charcuterie, not a hot dish.",
+  "etapes": [
+   {
+    "titre": "Soak 24 hours in cold water",
+    "detail": "Changed three times: this draws out the blood and lets the brine penetrate cleanly."
+   },
+   {
+    "titre": "Eight days in brine, chilled",
+    "detail": "Curing salt is what gives the scarlet; with ordinary salt the tongue stays grey — good, but without the name."
+   },
+   {
+    "titre": "Start in COLD water",
+    "detail": "As with any cured product: dropped into boiling water the surface contracts and the centre stays tough."
+   },
+   {
+    "titre": "Skim relentlessly for the first half hour",
+    "detail": "Otherwise the grey scum settles back on the joint and dulls it when you come to slice."
+   },
+   {
+    "titre": "Peel it HOT, straight out",
+    "detail": "The skin lifts away by itself from a scalding tongue; once cool it clings and must be cut off."
+   },
+   {
+    "titre": "Three and a half hours at a tremble",
+    "detail": "A knife must pass through the thick part without resistance. At three hours it still resists."
+   },
+   {
+    "titre": "Cool UNDER A WEIGHT, overnight",
+    "detail": "Wrapped tight in a cloth under a press: that is what gives clean, translucent slices."
+   }
+  ]
+ },
+ "poirat": {
+  "nom": "Poirat",
+  "description": "The pear pie of the Berry, PEPPERED — yes, pepper in a dessert. And on coming out of the oven, cream is poured through the chimney: it spreads between the fruit and binds the filling as the pie cools.",
+  "etapes": [
+   {
+    "titre": "FIRM pears, barely ripe",
+    "detail": "Conference or Passe-Crassane: a melting pear would weep and soak the base."
+   },
+   {
+    "titre": "Pepper, genuinely",
+    "detail": "Two good turns of the mill: the signature of the Berry poirat, and it does not bite — it wakes the pear up."
+   },
+   {
+    "titre": "Macerate an hour in eau-de-vie",
+    "detail": "Pear brandy or marc: the sugar draws water from the fruit, which you then throw away."
+   },
+   {
+    "titre": "DRAIN before filling",
+    "detail": "The maceration juice must never go into the pie, on pain of a soggy base."
+   },
+   {
+    "titre": "A wide chimney in the centre",
+    "detail": "With a roll of paper standing in it: that is where the steam escapes and where the cream will later go in."
+   },
+   {
+    "titre": "Bake 45 minutes at 190 °C",
+    "detail": "The pastry must be well coloured: pale, it will collapse when you pour the cream."
+   },
+   {
+    "titre": "Cream through the chimney, ON THE WAY OUT",
+    "detail": "Warm, into a scalding pie, in three goes: it seeps between the pears and binds everything as it cools."
+   }
+  ]
+ },
+ "kutia": {
+  "nom": "Kutia",
+  "description": "The first of the twelve dishes of the Ukrainian Christmas Eve, and the oldest: wheat berries, poppy seed and honey. Each ingredient is a wish — wheat for prosperity, poppy for the rest of the dead, honey for a sweet year.",
+  "etapes": [
+   {
+    "titre": "Soak the wheat twelve hours",
+    "detail": "Whole berries, never cracked: texture is the point, each grain must stay distinct under the tooth."
+   },
+   {
+    "titre": "Cook two hours in unsalted water",
+    "detail": "Salt would toughen the husk. The grain must split open and soften while keeping some bite."
+   },
+   {
+    "titre": "Scald the poppy seed, then drain",
+    "detail": "Three times over: this removes the bitterness and lets you grind it later without it staying gritty."
+   },
+   {
+    "titre": "Grind the poppy to a white MILK",
+    "detail": "In a mortar, at length: it must give up a milky liquid. Merely blitzed, it stays as seeds and binds nothing."
+   },
+   {
+    "titre": "Honey loosened in warm water",
+    "detail": "Never hot: above 40 °C honey loses its perfume and leaves only sugar."
+   },
+   {
+    "titre": "Walnuts cracked, not ground",
+    "detail": "In large shards, for contrast with the yielding grain and the creamy poppy."
+   },
+   {
+    "titre": "Assemble COLD, serve chilled",
+    "detail": "Mixed hot, the poppy sets and the honey dissolves. Kutia is put together at the last moment."
+   }
+  ]
+ },
+ "ciorbadeburta": {
+  "nom": "Ciorbă de Burtă",
+  "description": "Romania's white, sharp tripe soup, bound with cream and egg yolk. It is served with crushed garlic in vinegar, dosed by each person into their own bowl — that is the ritual, and nobody uses the same amount.",
+  "etapes": [
+   {
+    "titre": "Rub with coarse salt, rinse three times",
+    "detail": "The only treatment that truly removes the smell. No amount of cooking saves badly cleaned tripe."
+   },
+   {
+    "titre": "Blanch ten minutes, discard the water",
+    "detail": "Start again from cold: the scum of that first boil is what clouds the soup and spoils its aroma."
+   },
+   {
+    "titre": "Three hours at a tremble",
+    "detail": "The tripe must turn gelatinous and cut with a spoon. At two hours it still resists."
+   },
+   {
+    "titre": "Cut into strips AFTER cooking",
+    "detail": "Cooked whole they keep their juices; cut beforehand they contract and toughen."
+   },
+   {
+    "titre": "Loosen the liaison BEFORE pouring",
+    "detail": "Cream and yolks beaten, then two ladles of hot broth worked in gradually: added neat they set."
+   },
+   {
+    "titre": "NEVER boil again after the liaison",
+    "detail": "Yolk turns at 68 °C. One boil and the soup separates beyond rescue."
+   },
+   {
+    "titre": "Garlic vinegar served SEPARATELY",
+    "detail": "Crushed into vinegar, in a jug: each person doses their own bowl. It is as much ritual as seasoning."
+   }
+  ]
+ },
+ "veproknedlozelo": {
+  "nom": "Vepřo Knedlo Zelo",
+  "description": "The Czech national dish, whose name simply lists its three parts: pork, dumplings, cabbage. The dumplings are cut with a THREAD, never a knife — a blade crushes them and turns them gluey.",
+  "etapes": [
+   {
+    "titre": "Shoulder, with its rind",
+    "detail": "It protects the meat through three hours in the oven and gives the crackling at the end. Loin would be dry."
+   },
+   {
+    "titre": "Caraway, not cumin",
+    "detail": "Two seeds with nothing in common: caraway is aniseed, cumin is warm. All Czech cooking rests on the first."
+   },
+   {
+    "titre": "Baste with pale lager",
+    "detail": "It brings the bitterness that balances the pork fat and gives the juices their amber colour."
+   },
+   {
+    "titre": "Cabbage long-stewed, vinegar and sugar",
+    "detail": "Forty minutes covered: it must be soft and sweet-sour, never crunch."
+   },
+   {
+    "titre": "A SOFT dumpling dough, almost sticky",
+    "detail": "Too much flour and the dumpling turns to rubber. It should barely hold on the spoon."
+   },
+   {
+    "titre": "Poach the dumplings 25 minutes, at a tremble",
+    "detail": "At a rolling boil they tear. Turn them halfway so they swell evenly."
+   },
+   {
+    "titre": "Slice the knedlíky WITH THREAD",
+    "detail": "A cotton thread passed underneath: a knife crushes them into paste. That is the Czech gesture."
+   }
+  ]
+ },
+ "utopenci": {
+  "nom": "Utopenci",
+  "description": "The Czech \"drowned men\": sausages marinated in vinegar with onions, forgotten in the cold for a fortnight. It is beer's obligatory companion, and the only dish whose recipe takes one sentence and two weeks.",
+  "etapes": [
+   {
+    "titre": "Fresh cooking sausages, not smoked",
+    "detail": "Smoke dominates everything and leaves the marinade nothing to flavour. A špekáček, or failing that a Strasbourg sausage."
+   },
+   {
+    "titre": "Split each sausage lengthways",
+    "detail": "Without cutting it in two: the marinade must reach the centre, or only the outside takes the flavour."
+   },
+   {
+    "titre": "Far more onion than seems reasonable",
+    "detail": "One onion per two sausages: they are not a garnish, they are half the dish."
+   },
+   {
+    "titre": "A WARM brine, never boiling",
+    "detail": "Hot, it cooks the onion and turns it limp. It should be barely warmer than your hand."
+   },
+   {
+    "titre": "One third vinegar, two thirds water",
+    "detail": "Neat, vinegar burns and masks everything. That dilution is what allows a fortnight of steeping."
+   },
+   {
+    "titre": "Everything must be SUBMERGED",
+    "detail": "One end of sausage above the surface oxidises and spoils the whole jar. Pack down and top up if needed."
+   },
+   {
+    "titre": "Fifteen days minimum, chilled",
+    "detail": "At one week it is edible, at fifteen days it is the dish. Some wait a month."
+   }
+  ]
+ },
+ "kozunak": {
+  "nom": "Kozunak",
+  "description": "Bulgaria's braided Easter brioche, which you do not cut but PULL APART into long strands. That texture comes not from the recipe but from the kneading: forty minutes, until the dough slaps against the worktop.",
+  "etapes": [
+   {
+    "titre": "Forty minutes of kneading",
+    "detail": "The only real difficulty. The dough must become so elastic it slaps as it falls back on the surface."
+   },
+   {
+    "titre": "The windowpane test",
+    "detail": "Stretch a piece between your fingers: you must see light through it without tearing. Otherwise, keep going."
+   },
+   {
+    "titre": "Butter LAST, piece by piece",
+    "detail": "Added at the start it coats the flour and stops the gluten forming — and so, no strands."
+   },
+   {
+    "titre": "Two slow rises, never forced",
+    "detail": "Two hours at room temperature rather than one in the warm: slowness is what builds the flavour."
+   },
+   {
+    "titre": "A TIGHT braid, three or six strands",
+    "detail": "Loose, it opens in the oven and the kozunak loses its shape as it dries."
+   },
+   {
+    "titre": "Let it rise a third time, once braided",
+    "detail": "An hour after braiding: without it the brioche splits along the sides in the oven."
+   },
+   {
+    "titre": "Moderate oven, 170 °C, one hour",
+    "detail": "Too hot and the crust sets before the centre cooks. Cover with paper if it colours too fast."
+   }
+  ]
+ },
+ "basturma": {
+  "nom": "Basturma",
+  "description": "Armenia's air-dried beef, coated in a fenugreek spice paste called çemen. That paste does everything: it seals the meat, perfumes it and gives it its brick colour. Three weeks of waiting, ten minutes of work.",
+  "etapes": [
+   {
+    "titre": "A LONG, even piece",
+    "detail": "Fillet, rump or onglet, in a 5 cm thick strip: an irregular cut dries unevenly."
+   },
+   {
+    "titre": "Bury in coarse salt, 3 days",
+    "detail": "Entirely covered, chilled, pouring off the released water daily. This is what makes keeping it possible."
+   },
+   {
+    "titre": "Desalt 2 hours, then press 24 h",
+    "detail": "Under a weight, between two boards: the meat must become flat and firm before being coated."
+   },
+   {
+    "titre": "The çemen: fenugreek, garlic, paprika, water",
+    "detail": "A paste as thick as mustard. Fenugreek cannot be replaced — it is the smell of basturma."
+   },
+   {
+    "titre": "Coat 3 mm thick, leaving no gaps",
+    "detail": "The smallest bare patch will mould. Smooth by hand, let dry, then apply a second coat."
+   },
+   {
+    "titre": "Three weeks in a cool draught",
+    "detail": "Hung in the shade, between 10 and 15 °C. Warm it ferments, in the fridge it never dries."
+   },
+   {
+    "titre": "Slice VERY thin, almost transparent",
+    "detail": "By hand, on the bias: in thick slices basturma is leathery and inedible."
+   }
+  ]
+ },
+ "kibinai": {
+  "nom": "Kibinai",
+  "description": "The pasties of the Karaites of Trakai, brought from Crimea in the 14th century and long since Lithuanian. The meat is CHOPPED BY KNIFE, never minced: that is what gives the filling its grain and holds the juices.",
+  "etapes": [
+   {
+    "titre": "Chop the meat BY KNIFE",
+    "detail": "Into 3 mm dice: minced, the filling becomes a dense paste that weeps in the oven instead of holding its juice."
+   },
+   {
+    "titre": "Fatty lamb, or half lamb half beef",
+    "detail": "Lean meat gives a dry, gritty filling. You need fat for the juices to form as it bakes."
+   },
+   {
+    "titre": "As much onion as meat",
+    "detail": "Raw, finely diced: it melts as it cooks and it is what creates the broth inside the pasty."
+   },
+   {
+    "titre": "A COLD butter dough, quick rough puff",
+    "detail": "Three turns only: you want flakiness, not precision. The butter must never melt as you work it."
+   },
+   {
+    "titre": "Seal with a twisted rope on top",
+    "detail": "The crimped ridge is not decorative: it is the joint that stops the juice escaping."
+   },
+   {
+    "titre": "Do NOT pierce the top",
+    "detail": "Unlike a pie: here you want to trap the steam. A kibin should be full of juice when opened."
+   },
+   {
+    "titre": "Egg-wash, bake 35 minutes at 190 °C",
+    "detail": "Eaten scalding, by hand, biting off a corner first to drink the juice."
+   }
+  ]
+ },
+ "aebleflaesk": {
+  "nom": "Æbleflæsk",
+  "description": "Crisp pork belly over barely sweetened apple compote, served on rye bread. Three ingredients, no sauce, and a hot-sour contrast that explains why the Danes have been eating it for four centuries.",
+  "etapes": [
+   {
+    "titre": "THICK slices, 8 mm",
+    "detail": "Thin, they curl and burn. Thick, they stay tender inside and crisp outside."
+   },
+   {
+    "titre": "Start the pan COLD",
+    "detail": "The fat renders gradually instead of searing: the only way to get crispness without charring."
+   },
+   {
+    "titre": "SOUR apples, in large wedges",
+    "detail": "Boskoop or granny: a sweet apple would give a cloying compote against the fat of the pork."
+   },
+   {
+    "titre": "Onion in the pork fat",
+    "detail": "Never in butter: that rendered fat is what links the meat to the fruit."
+   },
+   {
+    "titre": "Apples just SOFTENED, not puréed",
+    "detail": "Ten minutes covered: they must hold their shape and collapse under a fork, not before."
+   },
+   {
+    "titre": "Very little sugar",
+    "detail": "One spoon for four: this is not a dessert, the sugar only corrects the sharpest acidity."
+   },
+   {
+    "titre": "Serve scalding on rye bread",
+    "detail": "Rugbrød soaks up the fat and the compote. Without it the dish is unbalanced."
+   }
+  ]
+ },
+ "khachapuriimeruli": {
+  "nom": "Khachapuri Imeruli",
+  "description": "The khachapuri of Imereti, the oldest kind: a CLOSED disc, filled with cheese and cooked in a pan. No boat, no egg — the Adjarian version everyone knows came along much later.",
+  "etapes": [
+   {
+    "titre": "A yoghurt dough, not water",
+    "detail": "The acidity of matsoni is what gives the crumb its suppleness and its faint characteristic sourness."
+   },
+   {
+    "titre": "Mozzarella AND feta, in equal parts",
+    "detail": "Sulguni is both stretchy and salty: neither cheese alone replaces it. The blend comes close."
+   },
+   {
+    "titre": "Drain the mozzarella, at length",
+    "detail": "Grated then squeezed in a cloth: its water would burst the dough as it cooks."
+   },
+   {
+    "titre": "As much cheese as dough",
+    "detail": "By weight, exactly: that ratio is what makes a khachapuri rather than a white pizza."
+   },
+   {
+    "titre": "Gather the dough into a purse",
+    "detail": "Fold the edges over the filling, pinch at the centre, turn it over — the cheese must be entirely sealed in."
+   },
+   {
+    "titre": "Flatten GENTLY by hand",
+    "detail": "Never with a rolling pin: it would push the cheese out through the seam. Spread from the centre with your palm."
+   },
+   {
+    "titre": "Cook in a DRY PAN, covered",
+    "detail": "Four minutes a side on medium heat: the pan gives the blistered crust an oven cannot."
+   }
+  ]
+ },
+ "kibbehnayyeh": {
+  "nom": "Kibbeh Nayyeh",
+  "description": "Lebanon's lamb tartare with fine bulgur, pounded in a mortar to a smooth paste. It is made and eaten within the HOUR — this is raw meat, and the rule of the Lebanese Sunday admits no exception.",
+  "etapes": [
+   {
+    "titre": "Leg of lamb, trimmed of ALL fat",
+    "detail": "Bought and minced the same day. Fat turns rancid fast in raw meat and is tasted immediately."
+   },
+   {
+    "titre": "FINE bulgur, soaked then squeezed",
+    "detail": "Coarse bulgur stays as grains and gives a gritty paste. Fine, it disappears and binds the whole."
+   },
+   {
+    "titre": "Keep everything cold, bowls included",
+    "detail": "Mortar and meat go into the freezer for ten minutes first: the warmth of your hands alone can turn a tartare."
+   },
+   {
+    "titre": "Pound, do not blend",
+    "detail": "A blender heats and shreds the fibres. The pestle crushes and binds — that is what gives the silky texture."
+   },
+   {
+    "titre": "Add iced water, spoon by spoon",
+    "detail": "The paste must turn smooth and glossy. It is the water, not the oil, that gives that texture."
+   },
+   {
+    "titre": "Mint and cinnamon, discreet",
+    "detail": "A pinch of cinnamon: it must not be recognisable, only stop the meat tasting flat."
+   },
+   {
+    "titre": "Serve within the hour, under olive oil",
+    "detail": "With raw onion and fresh mint. Past an hour in the fridge, you cook it — you do not take the risk."
+   }
+  ]
+ },
+ "firfir": {
+  "nom": "Firfir",
+  "description": "The Ethiopian breakfast made from yesterday's injera, torn by hand and soaked in a berbere sauce. A leftovers dish turned institution — and the injera must be STALE, fresh injera collapses into mush.",
+  "etapes": [
+   {
+    "titre": "YESTERDAY's injera, not fresh",
+    "detail": "Stale, it drinks the sauce while holding its shape. Fresh, it dissolves and the firfir becomes a purée."
+   },
+   {
+    "titre": "Tear by hand, into ragged pieces",
+    "detail": "A knife makes neat squares that slide; tearing creates edges that catch the sauce."
+   },
+   {
+    "titre": "Onions melted DRY, at length",
+    "detail": "Twenty minutes with no fat, in a dry pan: that is the Ethiopian base, and the oil only comes afterwards."
+   },
+   {
+    "titre": "Fry the berbere in oil, two minutes",
+    "detail": "Raw it stays dusty and harsh. It must fry until the oil takes on its deep red colour."
+   },
+   {
+    "titre": "A sauce looser than seems right",
+    "detail": "The injera will absorb three quarters of it. A thick sauce gives a dry, pasty firfir."
+   },
+   {
+    "titre": "Mix off the heat, gently",
+    "detail": "You coat, you do not stir: worked too hard, the bread disintegrates completely."
+   },
+   {
+    "titre": "Rest five minutes before serving",
+    "detail": "To let the absorption happen. Served at once, you still find dry pieces in the middle."
+   }
+  ]
+ },
+ "escovitchfish": {
+  "nom": "Escovitch Fish",
+  "description": "Jamaica's fried fish drowned under a vinegared vegetable marinade, poured BOILING over the fry. A direct descendant of Spanish escabeche, brought to the Caribbean by Sephardic Jews in the 15th century.",
+  "etapes": [
+   {
+    "titre": "A WHOLE fish, scored",
+    "detail": "Snapper or bream, head on: whole it stays moist, in fillets it dries in the fryer."
+   },
+   {
+    "titre": "Rub with lime, then DRY",
+    "detail": "Lime cleans and firms the flesh. But a wet fish does not brown, it spits."
+   },
+   {
+    "titre": "Fry at 180 °C, to VERY golden",
+    "detail": "Darker than you would dare: the acid marinade will soften it, so you need margin."
+   },
+   {
+    "titre": "Vegetables in thick JULIENNE",
+    "detail": "Batons of 5 cm: they must stay crisp under the vinegar, not collapse."
+   },
+   {
+    "titre": "A WHOLE scotch bonnet, not split",
+    "detail": "It perfumes without burning. Split, it would make the dish inedible for half the table."
+   },
+   {
+    "titre": "Pour the marinade BOILING over the fish",
+    "detail": "That is the gesture of the dish: the thermal shock drives the vinegar into the still-hot flesh."
+   },
+   {
+    "titre": "Wait four hours, serve at ROOM temperature",
+    "detail": "Never straight from the fridge, never hot. Escovitch is eaten warm, and it is better the next day."
+   }
+  ]
+ },
+ "legim": {
+  "nom": "Legim",
+  "description": "Haiti's vegetable stew, mashed down to a thick dark purée. Unlike every other stew in the world, here the aim is to make the pieces DISAPPEAR — a legim in which you can identify the vegetables has failed.",
+  "etapes": [
+   {
+    "titre": "Wash the meat with lime",
+    "detail": "Washing with lime is a systematic Haitian reflex: it cleans and perfumes before cooking even begins."
+   },
+   {
+    "titre": "Sear the meat first, separately",
+    "detail": "It is the only colouring in the dish. The vegetables will then cook in that base."
+   },
+   {
+    "titre": "All the vegetables TOGETHER, covered",
+    "detail": "Aubergine, cabbage, carrot, spinach: they must all break down, so they all go in at once."
+   },
+   {
+    "titre": "An hour and a half, to collapse",
+    "detail": "No piece should remain identifiable. It takes time, and that is precisely the point."
+   },
+   {
+    "titre": "MASH with a masher, do not blend",
+    "detail": "A blender gives an elastic, bland texture. The masher leaves grain and chew."
+   },
+   {
+    "titre": "Reduce uncovered, 20 minutes",
+    "detail": "Legim must thicken until it holds on an upturned spoon. Runny, it is not finished."
+   },
+   {
+    "titre": "Serve with pikliz and white rice",
+    "detail": "The sharp acidity of pikliz cuts this dense purée — in Haiti one never comes without the other."
+   }
+  ]
+ },
+ "dombres": {
+  "nom": "Dombrés with Red Beans",
+  "description": "The little Caribbean dough balls poached in a red bean broth. Three ingredients for the dough — flour, water, salt — and one knack: they are rolled between the palms, never with a pin.",
+  "etapes": [
+   {
+    "titre": "Soak the beans twelve hours",
+    "detail": "Then cook them an hour BEFORE the dombrés: they must be nearly tender, the dough only cooks twenty minutes."
+   },
+   {
+    "titre": "A FIRM dough, almost dry",
+    "detail": "Flour, water, salt, nothing else. Too soft and the dombrés dissolve into the broth."
+   },
+   {
+    "titre": "Roll between the PALMS",
+    "detail": "Irregular 2 cm balls: a rolling pin makes discs that cook badly and turn pasty."
+   },
+   {
+    "titre": "Do not flour your hands",
+    "detail": "Wet them lightly instead: extra flour would whiten and cloud the broth."
+   },
+   {
+    "titre": "Drop into a TREMBLING broth",
+    "detail": "At a rolling boil they tear; in lukewarm liquid they dissolve. A tremble, nothing else."
+   },
+   {
+    "titre": "Twenty minutes, without stirring",
+    "detail": "They rise to the surface when cooked. Leave them alone until then."
+   },
+   {
+    "titre": "A whole chilli, removed at the end",
+    "detail": "It perfumes the broth without setting it alight. Burst by accident and the whole dish is lost."
+   }
+  ]
+ },
+ "matoutou": {
+  "nom": "Matoutou de Crabe",
+  "description": "The land crab and rice eaten in Martinique on Easter Monday, on the beach, with family. A fixed-date dish: outside that Monday, nobody makes a matoutou.",
+  "etapes": [
+   {
+    "titre": "Clean and lime them at length",
+    "detail": "The crabs are scrubbed with lime and rinsed three times. It takes time, and it is essential."
+   },
+   {
+    "titre": "Crack the claws BEFORE cooking",
+    "detail": "One blow with the back of a knife: without it, there is no reaching the meat without dismantling the dish on the plate."
+   },
+   {
+    "titre": "Annatto or colombo for the colour",
+    "detail": "That is what gives matoutou its orange hue. Failing that, a pinch of paprika and turmeric."
+   },
+   {
+    "titre": "Fry the crabs in the seasoning",
+    "detail": "Ten minutes before any liquid: this is where the shell perfumes the oil, and the oil perfumes everything else."
+   },
+   {
+    "titre": "The rice cooks IN the crab juices",
+    "detail": "Never separately: the whole point is that the rice soaks up the shell broth."
+   },
+   {
+    "titre": "One and a half times the rice volume",
+    "detail": "Less than usual: the crabs release plenty of water and the rice must stay separate."
+   },
+   {
+    "titre": "Eaten with the fingers, outdoors",
+    "detail": "Matoutou is not a table dish. Provide finger bowls and a great many napkins."
+   }
+  ]
+ },
+ "bolani": {
+  "nom": "Bolani",
+  "description": "Afghan flatbreads stuffed with leek and potato, cooked in an almost dry pan. The dough has neither yeast nor fat — its extreme thinness is what makes it crisp, nothing else.",
+  "etapes": [
+   {
+    "titre": "A dough with no yeast and no oil",
+    "detail": "Flour, water, salt. The crispness comes from thinness, not fat: any fat would make it soft."
+   },
+   {
+    "titre": "Rest thirty minutes, covered",
+    "detail": "The gluten relaxes and the dough becomes stretchable. Worked at once it springs back and tears."
+   },
+   {
+    "titre": "RAW leek, finely sliced",
+    "detail": "It cooks inside the flatbread and keeps its bite. Pre-cooked, it weeps and soaks the dough."
+   },
+   {
+    "titre": "A FIRM mash, no milk or butter",
+    "detail": "It acts as a binder, not a creamy filling. Too loose and it escapes at the edges."
+   },
+   {
+    "titre": "Roll VERY thin, almost translucent",
+    "detail": "Two millimetres: the single most important point of the recipe. Thick, a bolani is stodgy."
+   },
+   {
+    "titre": "Fill one half, fold into a half-moon",
+    "detail": "Seal by pressing with your fingertips, driving out the air: a bubble would burst it as it cooks."
+   },
+   {
+    "titre": "Barely oiled pan, four minutes a side",
+    "detail": "Almost dry: you want brown patches and blisters, not a fry."
+   }
+  ]
+ },
+ "baghalipolo": {
+  "nom": "Baghali Polo",
+  "description": "Iran's rice with broad beans and dill, served with a lamb shank and its golden crust. All the dish's prestige rests on the tahdig — that crisp cake from the base of the pot, turned out in a single gesture before the guests.",
+  "etapes": [
+   {
+    "titre": "Rinse the rice until the water runs CLEAR",
+    "detail": "Seven times if need be: every remaining grain of starch glues the grains together and ruins the polo."
+   },
+   {
+    "titre": "Soak two hours in heavily salted water",
+    "detail": "Salt firms the grain from within: that is what lets the grains stay separate and long."
+   },
+   {
+    "titre": "Par-boil SIX minutes, no more",
+    "detail": "The rice must be soft outside and hard at the core. This is the delicate point: seven minutes and it is mush."
+   },
+   {
+    "titre": "Beans and dill in LAYERS, never stirred",
+    "detail": "Alternate rice, beans, dill in a mound: the steam will do the mixing, not the spoon."
+   },
+   {
+    "titre": "A tahdig with yoghurt and saffron",
+    "detail": "A first layer of rice mixed with yoghurt: that is what browns and becomes the crust."
+   },
+   {
+    "titre": "Build a DOME, pierce chimneys",
+    "detail": "Five holes with a spoon handle: the steam must circulate, or the rice cooks unevenly."
+   },
+   {
+    "titre": "A cloth under the lid, 50 minutes",
+    "detail": "It absorbs the condensation. Then invert the pot onto a platter in one motion — that is the moment of the meal."
+   }
+  ]
+ },
+ "sangak": {
+  "nom": "Sangak",
+  "description": "The Iranian bread baked on a bed of scorching PEBBLES, which leave it its characteristic craters. Its name comes from \"sang\", stone. Made from wholemeal flour and a dough so slack you can only stretch it.",
+  "etapes": [
+   {
+    "titre": "Wholemeal flour, not white",
+    "detail": "Sangak is traditionally wholewheat: that is what gives it its nutty taste and its colour."
+   },
+   {
+    "titre": "Hydration of 80 %",
+    "detail": "The dough must be almost pourable. It is unsettling, but it is what gives the irregular open crumb."
+   },
+   {
+    "titre": "Three hours of proving, with folds",
+    "detail": "Two folds an hour apart: you do not knead a dough this wet, you fold it."
+   },
+   {
+    "titre": "Clean pebbles, heated white-hot",
+    "detail": "A layer of river stones on a tray, 45 minutes at 250 °C. They make the bread, not the oven."
+   },
+   {
+    "titre": "Stretch BY HAND over the stones",
+    "detail": "Wet hands, pulling from the centre outwards: a rolling pin would crush every bubble."
+   },
+   {
+    "titre": "Six minutes, not one more",
+    "detail": "Sangak bakes very fast on scorching stones. It must stay supple, with brown patches."
+   },
+   {
+    "titre": "Shake off the pebbles ON THE WAY OUT",
+    "detail": "The bread comes out pitted with hollows, a few stones still lodged in it: you shake it before serving. That is the ritual."
+   }
+  ]
+ },
+ "bazlama": {
+  "nom": "Bazlama",
+  "description": "The Turkish pan-baked flatbread, soft and thick, which balloons before settling. The yoghurt in the dough is not a flourish: its acidity keeps it tender for days where water alone turns it hard overnight.",
+  "etapes": [
+   {
+    "titre": "Yoghurt, not just water",
+    "detail": "Its acidity tenderises the crumb and preserves it. A bazlama made with water alone is hard by the next day."
+   },
+   {
+    "titre": "Everything at room temperature",
+    "detail": "With yoghurt straight from the fridge, the rise takes twice as long and the crumb is less even."
+   },
+   {
+    "titre": "An hour and a half proving, covered",
+    "detail": "The dough must double. It is the only wait in the recipe, and it cannot be shortened."
+   },
+   {
+    "titre": "Roll to 1 cm, no thinner",
+    "detail": "Bazlama is a THICK bread. At 5 mm you get a flatbread, not a bazlama."
+   },
+   {
+    "titre": "Rest the discs 20 minutes",
+    "detail": "Relaxed, they puff as they cook. Straight into the pan, they stay flat and dense."
+   },
+   {
+    "titre": "DRY pan, medium heat",
+    "detail": "No fat at all: bazlama cooks like a bread pancake, it should blister, not fry."
+   },
+   {
+    "titre": "Turn as soon as it balloons",
+    "detail": "It puffs up all at once: that is the signal. Two minutes a side, then stack under a cloth."
+   }
+  ]
+ },
+ "shaobing": {
+  "nom": "Shaobing",
+  "description": "The layered sesame bun of northern China, hollow inside. Its flakiness comes not from butter but from a roux of oil and flour — the youmian — spread between the layers.",
+  "etapes": [
+   {
+    "titre": "The youmian: flour heated in oil",
+    "detail": "A pale roux, cooled: it is what separates the layers. Without it, shaobing is just a bun."
+   },
+   {
+    "titre": "Two distinct doughs",
+    "detail": "A leavened dough for structure, the youmian for the flakiness. They are never mixed together."
+   },
+   {
+    "titre": "Roll out, spread, COIL it up",
+    "detail": "Like a quick puff pastry: rolling creates the layers, pressing destroys them."
+   },
+   {
+    "titre": "Stand the coil on end, then flatten",
+    "detail": "Pressing down from above: the spirals then lie horizontally, and that is what hollows the bun."
+   },
+   {
+    "titre": "Dampen BEFORE the sesame",
+    "detail": "A brush of water or syrup: on a dry surface the sesame all falls off in the oven."
+   },
+   {
+    "titre": "Very hot oven, 220 °C",
+    "detail": "The steam must form all at once to separate the layers and hollow the inside."
+   },
+   {
+    "titre": "Split it open and fill",
+    "detail": "Shaobing splits into a pocket: braised beef, omelette, youtiao. It is a bread to stuff, not a side."
+   }
+  ]
  }
 
 };

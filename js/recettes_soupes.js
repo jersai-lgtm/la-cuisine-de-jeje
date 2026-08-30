@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 39 recettes
+// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 40 recettes
 // 👉 Pour AJOUTER une recette Soupes : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -6697,5 +6697,43 @@ Object.assign(recettes, {
       { icone: "🐟", titre: "Le poisson en dernier, feu coupé", detail: "La chaleur résiduelle suffit à le cuire : à gros bouillons, il se défait en filaments.", badge: null }
     ],
     liees: ["tom_yam","tomkhagai","khaosoi"]
+  },
+  ciorbadeburta: {
+    dateAjout: "2026-08-25T11:01:00",
+    nom: "Ciorbă de Burtă",
+    cat: "soupes", saisons: ["automne","hiver"], pays: "roumanie",
+    base: 6,
+    temps: "4 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥣",
+    description: "La soupe de tripes roumaine, blanche et acidulée, liée à la crème et au jaune d'œuf. On la sert avec de l'ail écrasé dans du vinaigre, à doser soi-même dans son bol — c'est le rituel, et personne n'y met la même dose.",
+    tableauCiorbadeburta: [
+      { nb: 1, tripes: "120 g", carotte: "40 g", oignon: "¼", creme: "50 ml", jaunedoeuf: "½", vinaigreBlanc: "12 ml", ail: "2", laurier: "0.2 g", poivre: "0.5 g", sel: "1 g" },
+      { nb: 2, tripes: "240 g", carotte: "80 g", oignon: "½", creme: "100 ml", jaunedoeuf: "1", vinaigreBlanc: "24 ml", ail: "4", laurier: "0.4 g", poivre: "1 g", sel: "2 g" },
+      { nb: 3, tripes: "360 g", carotte: "120 g", oignon: "¾", creme: "150 ml", jaunedoeuf: "1½", vinaigreBlanc: "36 ml", ail: "6", laurier: "0.6 g", poivre: "1.5 g", sel: "3 g" },
+      { nb: 4, tripes: "480 g", carotte: "160 g", oignon: "1", creme: "200 ml", jaunedoeuf: "2", vinaigreBlanc: "48 ml", ail: "8", laurier: "0.8 g", poivre: "2 g", sel: "4 g" },
+      { nb: 5, tripes: "600 g", carotte: "200 g", oignon: "1¼", creme: "250 ml", jaunedoeuf: "2½", vinaigreBlanc: "60 ml", ail: "10", laurier: "1 g", poivre: "2.5 g", sel: "5 g" },
+      { nb: 6, tripes: "720 g", carotte: "240 g", oignon: "1½", creme: "300 ml", jaunedoeuf: "3", vinaigreBlanc: "72 ml", ail: "12", laurier: "1.2 g", poivre: "3 g", sel: "6 g" },
+      { nb: 7, tripes: "840 g", carotte: "280 g", oignon: "1¾", creme: "350 ml", jaunedoeuf: "3½", vinaigreBlanc: "84 ml", ail: "14", laurier: "1.4 g", poivre: "3.5 g", sel: "7 g" },
+      { nb: 8, tripes: "960 g", carotte: "320 g", oignon: "2", creme: "400 ml", jaunedoeuf: "4", vinaigreBlanc: "96 ml", ail: "16", laurier: "1.6 g", poivre: "4 g", sel: "8 g" },
+      { nb: 9, tripes: "1080 g", carotte: "360 g", oignon: "2¼", creme: "450 ml", jaunedoeuf: "4½", vinaigreBlanc: "108 ml", ail: "18", laurier: "1.8 g", poivre: "4.5 g", sel: "9 g" },
+      { nb: 10, tripes: "1200 g", carotte: "400 g", oignon: "2½", creme: "500 ml", jaunedoeuf: "5", vinaigreBlanc: "120 ml", ail: "20", laurier: "2 g", poivre: "5 g", sel: "10 g" },
+      { nb: 11, tripes: "1320 g", carotte: "440 g", oignon: "2¾", creme: "550 ml", jaunedoeuf: "5½", vinaigreBlanc: "132 ml", ail: "22", laurier: "2.2 g", poivre: "5.5 g", sel: "11 g" },
+      { nb: 12, tripes: "1440 g", carotte: "480 g", oignon: "3", creme: "600 ml", jaunedoeuf: "6", vinaigreBlanc: "144 ml", ail: "24", laurier: "2.4 g", poivre: "6 g", sel: "12 g" },
+      { nb: 13, tripes: "1560 g", carotte: "520 g", oignon: "3¼", creme: "650 ml", jaunedoeuf: "6½", vinaigreBlanc: "156 ml", ail: "26", laurier: "2.6 g", poivre: "6.5 g", sel: "13 g" },
+      { nb: 14, tripes: "1680 g", carotte: "560 g", oignon: "3½", creme: "700 ml", jaunedoeuf: "7", vinaigreBlanc: "168 ml", ail: "28", laurier: "2.8 g", poivre: "7 g", sel: "14 g" },
+      { nb: 15, tripes: "1800 g", carotte: "600 g", oignon: "3¾", creme: "750 ml", jaunedoeuf: "7½", vinaigreBlanc: "180 ml", ail: "30", laurier: "3 g", poivre: "7.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧂", titre: "Frotter au gros sel, rincer trois fois", detail: "C'est le seul traitement qui retire vraiment l'odeur. Aucune cuisson ne rattrape des tripes mal nettoyées.", badge: null },
+      { icone: "💧", titre: "Blanchir dix minutes, jeter l'eau", detail: "On repart à l'eau froide : l'écume de ce premier bouillon est ce qui trouble et parfume mal la soupe.", badge: null },
+      { icone: "⏳", titre: "Trois heures à frémissement", detail: "Les tripes doivent devenir gélatineuses et se couper à la cuillère. À deux heures elles résistent encore.", badge: null },
+      { icone: "🔪", titre: "Trancher en lanières APRÈS cuisson", detail: "Cuites entières, elles gardent leur jus ; taillées avant, elles se contractent et durcissent.", badge: null },
+      { icone: "🥚", titre: "Détendre la liaison AVANT de la verser", detail: "Crème et jaunes battus, puis deux louches de bouillon chaud incorporées peu à peu : versés secs, ils coagulent.", badge: null },
+      { icone: "🚫", titre: "Plus JAMAIS d'ébullition après la liaison", detail: "Le jaune tourne à 68 °C. Un seul bouillon et la soupe se sépare irrémédiablement.", badge: null },
+      { icone: "🧄", titre: "L'ail au vinaigre servi À PART", detail: "Écrasé dans du vinaigre, en saucière : chacun dose dans son bol. C'est le rituel autant que l'assaisonnement.", badge: null }
+    ],
+    liees: ["ciorba","kapusniak","borschtukrainien"]
   },
 });

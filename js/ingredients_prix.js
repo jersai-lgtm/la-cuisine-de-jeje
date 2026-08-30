@@ -292,6 +292,10 @@ const INGREDIENTS_PRIX = {
   goyave:         { prixKg: 11.0, calPer100g: 268,  lipSat: 0,    sucre: 60,   sel: 0.02, fibres: 3.5, prot: 0.6,  flv: 100, glucides: 66, lipides: 0.2 },
   goya:           { prixKg: 8.50, calPer100g: 17,   lipSat: 0,    sucre: 1.9,  sel: 0.01, fibres: 2.8, prot: 1.0,  flv: 100, glucides: 3.7, lipides: 0.2 },
   papaseca:       { prixKg: 14.0, calPer100g: 330,  lipSat: 0.1,  sucre: 3.2,  sel: 0.02, fibres: 7.0, prot: 7.0,  flv: 100, glucides: 76, lipides: 0.5 },
+  grenouilles:    { prixKg: 28.0, calPer100g: 73,   lipSat: 0.1,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 16,   flv: 0, glucides: 0, lipides: 0.3 },
+  bleentier:      { prixKg: 3.50, calPer100g: 340,  lipSat: 0.4,  sucre: 0.4,  sel: 0,    fibres: 12,  prot: 12,   flv: 0, glucides: 71, lipides: 2 },
+  injera:         { prixKg: 9.00, calPer100g: 165,  lipSat: 0.2,  sucre: 0.5,  sel: 0.3,  fibres: 4,   prot: 5,    flv: 0, glucides: 33, lipides: 1 },
+  madere:         { prixKg: 12.0, calPer100g: 140,  lipSat: 0,    sucre: 10,   sel: 0.02, fibres: 0,   prot: 0.2,  flv: 0, glucides: 10, lipides: 0 },
   cotelets:       { prixKg: 16.0, calPer100g: 280,  lipSat: 9.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 24,   flv: 0, glucides: 0, lipides: 20 },
   os:             { prixKg: 2.00, calPer100g: 100,  lipSat: 2.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 10,   flv: 0, glucides: 0, lipides: 6 },
   queueboeuf:     { prixKg: 14.0, calPer100g: 270,  lipSat: 8.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 17 },
@@ -1077,6 +1081,7 @@ const POIDS_UNITAIRE = {
   // Amers et sauces dosés au trait : le poids est dérisoire mais non nul,
   // et sans entrée ici la ligne serait purement ignorée.
   bitters: 0.5, angostura: 0.5, tabasco: 0.5, worcestershire: 5,
+  grenouilles: 20, injera: 200,
   // Pièces entières : le nombre écrit dans le tableau est un compte d'unités.
   camembert: 250, chevre: 60, prosciutto: 20, jamboncru2: 20,
   saintjacques: 20, gambas: 25, sole: 250, dorade: 500, anchoix: 5,
@@ -1583,6 +1588,7 @@ const INGREDIENTS_LABELS = {
   calvados: "🍏 Calvados", eaudevie: "🥃 Eau-de-vie",
   langue: "👅 Langue de bœuf", museau: "🐄 Museau de bœuf", tetedeveau: "🐄 Tête de veau", tripes: "🐄 Tripes",
   goyave: "🟥 Pâte de goyave", goya: "🥒 Melon amer (goya)", papaseca: "🥔 Papa seca (pomme de terre séchée)",
+  grenouilles: "🐸 Cuisses de grenouilles", bleentier: "🌾 Blé en grains", injera: "🫓 Injera", madere: "🍷 Madère",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==
   oeufs: "🥚 Œufs",  oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 31 recettes
+// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 33 recettes
 // 👉 Pour AJOUTER une recette En-cas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -7837,5 +7837,81 @@ Object.assign(recettes, {
       { icone: "🚫", titre: "Ne pas ouvrir pendant la cuisson", detail: "Le choc thermique fait retomber la pâte d'un coup. Quinze minutes couvercle fermé, puis cinq hors du feu.", badge: null }
     ],
     liees: ["baozi","gyoza","mantou"]
+  },
+  kibinai: {
+    dateAjout: "2026-08-25T11:06:00",
+    nom: "Kibinai",
+    cat: "encas", pays: "lituanie",
+    base: 8,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Les chaussons des Karaïtes de Trakai, apportés de Crimée au XIVᵉ siècle et devenus lituaniens. La viande y est HACHÉE AU COUTEAU, jamais passée au hachoir : c'est ce qui donne du grain à la farce et retient le jus.",
+    tableauKibinai: [
+      { nb: 1, farine: "50 g", beurre: "22 g", agneau: "55 g", oignon: "½", creme: "12 ml", oeufs: "¼", poivre: "0.6 g", sel: "0.6 g" },
+      { nb: 2, farine: "100 g", beurre: "44 g", agneau: "110 g", oignon: "1", creme: "24 ml", oeufs: "½", poivre: "1.2 g", sel: "1.2 g" },
+      { nb: 3, farine: "150 g", beurre: "66 g", agneau: "165 g", oignon: "1½", creme: "36 ml", oeufs: "¾", poivre: "1.8 g", sel: "1.8 g" },
+      { nb: 4, farine: "200 g", beurre: "88 g", agneau: "220 g", oignon: "2", creme: "48 ml", oeufs: "1", poivre: "2.4 g", sel: "2.4 g" },
+      { nb: 5, farine: "250 g", beurre: "110 g", agneau: "275 g", oignon: "2½", creme: "60 ml", oeufs: "1¼", poivre: "3 g", sel: "3 g" },
+      { nb: 6, farine: "300 g", beurre: "132 g", agneau: "330 g", oignon: "3", creme: "72 ml", oeufs: "1½", poivre: "3.6 g", sel: "3.6 g" },
+      { nb: 7, farine: "350 g", beurre: "154 g", agneau: "385 g", oignon: "3½", creme: "84 ml", oeufs: "1¾", poivre: "4.2 g", sel: "4.2 g" },
+      { nb: 8, farine: "400 g", beurre: "176 g", agneau: "440 g", oignon: "4", creme: "96 ml", oeufs: "2", poivre: "4.8 g", sel: "4.8 g" },
+      { nb: 9, farine: "450 g", beurre: "198 g", agneau: "495 g", oignon: "4½", creme: "108 ml", oeufs: "2¼", poivre: "5.4 g", sel: "5.4 g" },
+      { nb: 10, farine: "500 g", beurre: "220 g", agneau: "550 g", oignon: "5", creme: "120 ml", oeufs: "2½", poivre: "6 g", sel: "6 g" },
+      { nb: 11, farine: "550 g", beurre: "242 g", agneau: "605 g", oignon: "5½", creme: "132 ml", oeufs: "2¾", poivre: "6.6 g", sel: "6.6 g" },
+      { nb: 12, farine: "600 g", beurre: "264 g", agneau: "660 g", oignon: "6", creme: "144 ml", oeufs: "3", poivre: "7.2 g", sel: "7.2 g" },
+      { nb: 13, farine: "650 g", beurre: "286 g", agneau: "715 g", oignon: "6½", creme: "156 ml", oeufs: "3¼", poivre: "7.8 g", sel: "7.8 g" },
+      { nb: 14, farine: "700 g", beurre: "308 g", agneau: "770 g", oignon: "7", creme: "168 ml", oeufs: "3½", poivre: "8.4 g", sel: "8.4 g" },
+      { nb: 15, farine: "750 g", beurre: "330 g", agneau: "825 g", oignon: "7½", creme: "180 ml", oeufs: "3¾", poivre: "9 g", sel: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Hacher la viande AU COUTEAU", detail: "En petits dés de 3 mm : au hachoir, la farce devient une pâte compacte qui rend son jus dans le four au lieu de le garder.", badge: null },
+      { icone: "🐑", titre: "De l'agneau gras, ou moitié agneau moitié bœuf", detail: "Le maigre donne une farce sèche et sableuse. Il faut du gras pour que le jus se forme à la cuisson.", badge: null },
+      { icone: "🧅", titre: "Autant d'oignon que de viande", detail: "Cru, en petits dés : il fond à la cuisson et c'est lui qui fabrique le bouillon à l'intérieur du chausson.", badge: null },
+      { icone: "🧊", titre: "Une pâte au beurre FROID, feuilletée rapide", detail: "Trois tours seulement : on cherche du feuilletage, pas de la précision. Le beurre ne doit jamais fondre en la travaillant.", badge: null },
+      { icone: "🌀", titre: "Souder en torsade, sur le dessus", detail: "Le bourrelet cranté n'est pas décoratif : c'est le joint qui empêche le jus de s'échapper.", badge: null },
+      { icone: "🕳️", titre: "Ne PAS percer le dessus", detail: "Contrairement aux tourtes : ici, on veut emprisonner la vapeur. Le kibin doit être plein de jus à l'ouverture.", badge: null },
+      { icone: "🥚", titre: "Dorer à l'œuf, cuire 35 minutes à 190 °C", detail: "Se mange brûlant, à la main, en mordant un coin d'abord pour boire le jus.", badge: null }
+    ],
+    liees: ["cepelinai","koldunai","saltibarsciai"]
+  },
+  bolani: {
+    dateAjout: "2026-08-25T12:05:00",
+    nom: "Bolani",
+    cat: "encas", pays: "afghanistan",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Les galettes afghanes fourrées au poireau et à la pomme de terre, cuites à la poêle presque à sec. La pâte n'a ni levure ni matière grasse — c'est sa finesse extrême qui la rend croustillante, rien d'autre.",
+    tableauBolani: [
+      { nb: 1, farine: "55 g", pommedeterre: "70 g", poireau: "60 g", oignon: "¼", huile: "12 ml", coriandre: "5 g", piment: "1 g", sel: "1 g" },
+      { nb: 2, farine: "110 g", pommedeterre: "140 g", poireau: "120 g", oignon: "½", huile: "24 ml", coriandre: "10 g", piment: "2 g", sel: "2 g" },
+      { nb: 3, farine: "165 g", pommedeterre: "210 g", poireau: "180 g", oignon: "¾", huile: "36 ml", coriandre: "15 g", piment: "3 g", sel: "3 g" },
+      { nb: 4, farine: "220 g", pommedeterre: "280 g", poireau: "240 g", oignon: "1", huile: "48 ml", coriandre: "20 g", piment: "4 g", sel: "4 g" },
+      { nb: 5, farine: "275 g", pommedeterre: "350 g", poireau: "300 g", oignon: "1¼", huile: "60 ml", coriandre: "25 g", piment: "5 g", sel: "5 g" },
+      { nb: 6, farine: "330 g", pommedeterre: "420 g", poireau: "360 g", oignon: "1½", huile: "72 ml", coriandre: "30 g", piment: "6 g", sel: "6 g" },
+      { nb: 7, farine: "385 g", pommedeterre: "490 g", poireau: "420 g", oignon: "1¾", huile: "84 ml", coriandre: "35 g", piment: "7 g", sel: "7 g" },
+      { nb: 8, farine: "440 g", pommedeterre: "560 g", poireau: "480 g", oignon: "2", huile: "96 ml", coriandre: "40 g", piment: "8 g", sel: "8 g" },
+      { nb: 9, farine: "495 g", pommedeterre: "630 g", poireau: "540 g", oignon: "2¼", huile: "108 ml", coriandre: "45 g", piment: "9 g", sel: "9 g" },
+      { nb: 10, farine: "550 g", pommedeterre: "700 g", poireau: "600 g", oignon: "2½", huile: "120 ml", coriandre: "50 g", piment: "10 g", sel: "10 g" },
+      { nb: 11, farine: "605 g", pommedeterre: "770 g", poireau: "660 g", oignon: "2¾", huile: "132 ml", coriandre: "55 g", piment: "11 g", sel: "11 g" },
+      { nb: 12, farine: "660 g", pommedeterre: "840 g", poireau: "720 g", oignon: "3", huile: "144 ml", coriandre: "60 g", piment: "12 g", sel: "12 g" },
+      { nb: 13, farine: "715 g", pommedeterre: "910 g", poireau: "780 g", oignon: "3¼", huile: "156 ml", coriandre: "65 g", piment: "13 g", sel: "13 g" },
+      { nb: 14, farine: "770 g", pommedeterre: "980 g", poireau: "840 g", oignon: "3½", huile: "168 ml", coriandre: "70 g", piment: "14 g", sel: "14 g" },
+      { nb: 15, farine: "825 g", pommedeterre: "1050 g", poireau: "900 g", oignon: "3¾", huile: "180 ml", coriandre: "75 g", piment: "15 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Une pâte sans levure ni huile", detail: "Farine, eau, sel. Le croustillant vient de la finesse, pas du gras : toute matière grasse la rendrait molle.", badge: null },
+      { icone: "⏸️", titre: "Reposer trente minutes, couverte", detail: "Le gluten se détend et la pâte devient étirable. Travaillée aussitôt, elle se rétracte et se déchire.", badge: null },
+      { icone: "🥬", titre: "Le poireau CRU, finement émincé", detail: "Il cuit dans la galette et garde son croquant. Précuit, il rend son eau et détrempe la pâte.", badge: null },
+      { icone: "🥔", titre: "Une purée FERME, sans lait ni beurre", detail: "Elle sert de liant, pas de garniture crémeuse. Trop souple, elle s'échappe par les bords.", badge: null },
+      { icone: "📏", titre: "Étaler TRÈS fin, presque translucide", detail: "Deux millimètres : c'est le point le plus important de la recette. Épaisse, la bolani est pâteuse.", badge: null },
+      { icone: "🌙", titre: "Garnir une moitié, replier en demi-lune", detail: "Souder en pressant du bout des doigts, en chassant l'air : une bulle ferait éclater la galette à la cuisson.", badge: null },
+      { icone: "🍳", titre: "Poêle à peine huilée, quatre minutes par face", detail: "Presque à sec : on cherche des taches brunes et des cloques, pas une friture.", badge: null }
+    ],
+    liees: ["mantuafghan","kabulipulao","aushak"]
   },
 });

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 24 recettes
+// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 29 recettes
 // 👉 Pour AJOUTER une recette Boulangerie : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4162,5 +4162,195 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Four très chaud, 240 °C, 20 minutes", detail: "Elle doit dorer vite : une cuisson lente dessèche la viande avant que la croûte ne se forme.", badge: null }
     ],
     liees: ["msemen","pastillapoulet","couscous"]
+  },
+  kozunak: {
+    dateAjout: "2026-08-25T11:04:00",
+    nom: "Kozunak",
+    cat: "boulangerie", saisons: ["printemps"], pays: "bulgarie",
+    base: 12,
+    temps: "5 h",
+    niveau: "⭐⭐⭐ Expert",
+    emoji: "🍞",
+    description: "La brioche tressée de Pâques bulgare, qu'on ne coupe pas mais qu'on EFFILOCHE en longs filaments. Cette texture ne vient pas de la recette mais du pétrissage : quarante minutes, jusqu'à ce que la pâte claque contre le plan de travail.",
+    tableauKozunak: [
+      { nb: 1, farine: "60 g", lait: "25 ml", oeufs: "½", beurre: "20 g", sucre: "18 g", levureboulangere: "1.5 g", raisinssecs: "12 g", noix: "10 g", orange: "¼", sel: "0.5 g" },
+      { nb: 2, farine: "120 g", lait: "50 ml", oeufs: "1", beurre: "40 g", sucre: "36 g", levureboulangere: "3 g", raisinssecs: "24 g", noix: "20 g", orange: "½", sel: "1 g" },
+      { nb: 3, farine: "180 g", lait: "75 ml", oeufs: "1½", beurre: "60 g", sucre: "54 g", levureboulangere: "4.5 g", raisinssecs: "36 g", noix: "30 g", orange: "¾", sel: "1.5 g" },
+      { nb: 4, farine: "240 g", lait: "100 ml", oeufs: "2", beurre: "80 g", sucre: "72 g", levureboulangere: "6 g", raisinssecs: "48 g", noix: "40 g", orange: "1", sel: "2 g" },
+      { nb: 5, farine: "300 g", lait: "125 ml", oeufs: "2½", beurre: "100 g", sucre: "90 g", levureboulangere: "7.5 g", raisinssecs: "60 g", noix: "50 g", orange: "1¼", sel: "2.5 g" },
+      { nb: 6, farine: "360 g", lait: "150 ml", oeufs: "3", beurre: "120 g", sucre: "108 g", levureboulangere: "9 g", raisinssecs: "72 g", noix: "60 g", orange: "1½", sel: "3 g" },
+      { nb: 7, farine: "420 g", lait: "175 ml", oeufs: "3½", beurre: "140 g", sucre: "126 g", levureboulangere: "10.5 g", raisinssecs: "84 g", noix: "70 g", orange: "1¾", sel: "3.5 g" },
+      { nb: 8, farine: "480 g", lait: "200 ml", oeufs: "4", beurre: "160 g", sucre: "144 g", levureboulangere: "12 g", raisinssecs: "96 g", noix: "80 g", orange: "2", sel: "4 g" },
+      { nb: 9, farine: "540 g", lait: "225 ml", oeufs: "4½", beurre: "180 g", sucre: "162 g", levureboulangere: "13.5 g", raisinssecs: "108 g", noix: "90 g", orange: "2¼", sel: "4.5 g" },
+      { nb: 10, farine: "600 g", lait: "250 ml", oeufs: "5", beurre: "200 g", sucre: "180 g", levureboulangere: "15 g", raisinssecs: "120 g", noix: "100 g", orange: "2½", sel: "5 g" },
+      { nb: 11, farine: "660 g", lait: "275 ml", oeufs: "5½", beurre: "220 g", sucre: "198 g", levureboulangere: "16.5 g", raisinssecs: "132 g", noix: "110 g", orange: "2¾", sel: "5.5 g" },
+      { nb: 12, farine: "720 g", lait: "300 ml", oeufs: "6", beurre: "240 g", sucre: "216 g", levureboulangere: "18 g", raisinssecs: "144 g", noix: "120 g", orange: "3", sel: "6 g" },
+      { nb: 13, farine: "780 g", lait: "325 ml", oeufs: "6½", beurre: "260 g", sucre: "234 g", levureboulangere: "19.5 g", raisinssecs: "156 g", noix: "130 g", orange: "3¼", sel: "6.5 g" },
+      { nb: 14, farine: "840 g", lait: "350 ml", oeufs: "7", beurre: "280 g", sucre: "252 g", levureboulangere: "21 g", raisinssecs: "168 g", noix: "140 g", orange: "3½", sel: "7 g" },
+      { nb: 15, farine: "900 g", lait: "375 ml", oeufs: "7½", beurre: "300 g", sucre: "270 g", levureboulangere: "22.5 g", raisinssecs: "180 g", noix: "150 g", orange: "3¾", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🕐", titre: "Quarante minutes de pétrissage", detail: "C'est la seule vraie difficulté. La pâte doit devenir si élastique qu'elle claque en retombant sur le plan.", badge: null },
+      { icone: "🪟", titre: "Le test de la vitre", detail: "Étirer un morceau entre les doigts : on doit voir le jour au travers sans qu'il se déchire. Sinon, on continue.", badge: null },
+      { icone: "🧈", titre: "Le beurre en DERNIER, morceau par morceau", detail: "Incorporé au début, il enrobe la farine et empêche le gluten de se former — donc pas de filaments.", badge: null },
+      { icone: "🌡️", titre: "Deux levées lentes, jamais forcées", detail: "Deux heures à température ambiante plutôt qu'une heure au chaud : c'est la lenteur qui donne le goût.", badge: null },
+      { icone: "💪", titre: "Une tresse SERRÉE, à trois ou six brins", detail: "Lâche, elle s'ouvre à la cuisson et le kozunak perd sa forme en séchant.", badge: null },
+      { icone: "⏳", titre: "Laisser lever une troisième fois, tressé", detail: "Une heure après le tressage : sans cela, la brioche se déchire au four sur les côtés.", badge: null },
+      { icone: "🔥", titre: "Four modéré, 170 °C, une heure", detail: "Trop chaud, la croûte se forme avant que le cœur ne cuise. On couvre de papier si ça dore trop vite.", badge: null }
+    ],
+    liees: ["cozonac","vanocka","kulich"]
+  },
+  khachapuriimeruli: {
+    dateAjout: "2026-08-25T11:08:00",
+    nom: "Khachapuri Imeruli",
+    cat: "boulangerie", pays: "georgie",
+    base: 4,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧀",
+    description: "Le khachapuri d'Iméréthie, le plus ancien : un disque FERMÉ, garni de fromage et cuit à la poêle. Pas de barque, pas d'œuf — la version adjarienne que tout le monde connaît n'est venue que bien plus tard.",
+    tableauKhachapuriimeruli: [
+      { nb: 1, farine: "70 g", yaourt: "45 g", mozzarella: "55 g", feta: "25 g", beurre: "15 g", oeufs: "¼", levureboulangere: "1.2 g", sel: "0.6 g" },
+      { nb: 2, farine: "140 g", yaourt: "90 g", mozzarella: "110 g", feta: "50 g", beurre: "30 g", oeufs: "½", levureboulangere: "2.4 g", sel: "1.2 g" },
+      { nb: 3, farine: "210 g", yaourt: "135 g", mozzarella: "165 g", feta: "75 g", beurre: "45 g", oeufs: "¾", levureboulangere: "3.6 g", sel: "1.8 g" },
+      { nb: 4, farine: "280 g", yaourt: "180 g", mozzarella: "220 g", feta: "100 g", beurre: "60 g", oeufs: "1", levureboulangere: "4.8 g", sel: "2.4 g" },
+      { nb: 5, farine: "350 g", yaourt: "225 g", mozzarella: "275 g", feta: "125 g", beurre: "75 g", oeufs: "1¼", levureboulangere: "6 g", sel: "3 g" },
+      { nb: 6, farine: "420 g", yaourt: "270 g", mozzarella: "330 g", feta: "150 g", beurre: "90 g", oeufs: "1½", levureboulangere: "7.2 g", sel: "3.6 g" },
+      { nb: 7, farine: "490 g", yaourt: "315 g", mozzarella: "385 g", feta: "175 g", beurre: "105 g", oeufs: "1¾", levureboulangere: "8.4 g", sel: "4.2 g" },
+      { nb: 8, farine: "560 g", yaourt: "360 g", mozzarella: "440 g", feta: "200 g", beurre: "120 g", oeufs: "2", levureboulangere: "9.6 g", sel: "4.8 g" },
+      { nb: 9, farine: "630 g", yaourt: "405 g", mozzarella: "495 g", feta: "225 g", beurre: "135 g", oeufs: "2¼", levureboulangere: "10.8 g", sel: "5.4 g" },
+      { nb: 10, farine: "700 g", yaourt: "450 g", mozzarella: "550 g", feta: "250 g", beurre: "150 g", oeufs: "2½", levureboulangere: "12 g", sel: "6 g" },
+      { nb: 11, farine: "770 g", yaourt: "495 g", mozzarella: "605 g", feta: "275 g", beurre: "165 g", oeufs: "2¾", levureboulangere: "13.2 g", sel: "6.6 g" },
+      { nb: 12, farine: "840 g", yaourt: "540 g", mozzarella: "660 g", feta: "300 g", beurre: "180 g", oeufs: "3", levureboulangere: "14.4 g", sel: "7.2 g" },
+      { nb: 13, farine: "910 g", yaourt: "585 g", mozzarella: "715 g", feta: "325 g", beurre: "195 g", oeufs: "3¼", levureboulangere: "15.6 g", sel: "7.8 g" },
+      { nb: 14, farine: "980 g", yaourt: "630 g", mozzarella: "770 g", feta: "350 g", beurre: "210 g", oeufs: "3½", levureboulangere: "16.8 g", sel: "8.4 g" },
+      { nb: 15, farine: "1050 g", yaourt: "675 g", mozzarella: "825 g", feta: "375 g", beurre: "225 g", oeufs: "3¾", levureboulangere: "18 g", sel: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Une pâte au yaourt, pas à l'eau", detail: "C'est l'acidité du matsoni qui donne à la mie sa souplesse et sa légère aigreur caractéristique.", badge: null },
+      { icone: "🧀", titre: "Mozzarella ET feta, à parts égales", detail: "Le sulguni est à la fois filant et salé : une seule des deux ne le remplace pas. C'est le mélange qui approche.", badge: null },
+      { icone: "💧", titre: "Essorer la mozzarella, longuement", detail: "Râpée puis pressée dans un linge : son eau ferait crever la pâte à la cuisson.", badge: null },
+      { icone: "⚖️", titre: "Autant de fromage que de pâte", detail: "Au poids, exactement : c'est ce ratio qui fait un khachapuri et non une pizza blanche.", badge: null },
+      { icone: "🌸", titre: "Rassembler la pâte en aumônière", detail: "On rabat les bords sur la garniture, on pince au centre, on retourne — le fromage doit être totalement enfermé.", badge: null },
+      { icone: "🫓", titre: "Aplatir DÉLICATEMENT à la main", detail: "Jamais au rouleau : il ferait sortir le fromage par le joint. On étale du centre vers les bords, à la paume.", badge: null },
+      { icone: "🍳", titre: "Cuire à la POÊLE, à sec, à couvert", detail: "Quatre minutes par face sur feu moyen : la poêle donne la croûte tachetée que le four ne fait pas.", badge: null }
+    ],
+    liees: ["khachapuriadjarien","lobiani","matnakash"]
+  },
+  sangak: {
+    dateAjout: "2026-08-25T12:07:00",
+    nom: "Sangak",
+    cat: "boulangerie", pays: "iran",
+    base: 4,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Le pain iranien cuit sur un lit de CAILLOUX brûlants, qui lui laissent ses cratères caractéristiques. Son nom vient de « sang », la pierre. Fait de farine complète et d'une pâte si molle qu'on ne peut que l'étirer.",
+    tableauSangak: [
+      { nb: 1, farine: "90 g", levureboulangere: "1.2 g", sel: "1.8 g", sesame: "4 g", huile: "4 ml" },
+      { nb: 2, farine: "180 g", levureboulangere: "2.4 g", sel: "3.6 g", sesame: "8 g", huile: "8 ml" },
+      { nb: 3, farine: "270 g", levureboulangere: "3.6 g", sel: "5.4 g", sesame: "12 g", huile: "12 ml" },
+      { nb: 4, farine: "360 g", levureboulangere: "4.8 g", sel: "7.2 g", sesame: "16 g", huile: "16 ml" },
+      { nb: 5, farine: "450 g", levureboulangere: "6 g", sel: "9 g", sesame: "20 g", huile: "20 ml" },
+      { nb: 6, farine: "540 g", levureboulangere: "7.2 g", sel: "10.8 g", sesame: "24 g", huile: "24 ml" },
+      { nb: 7, farine: "630 g", levureboulangere: "8.4 g", sel: "12.6 g", sesame: "28 g", huile: "28 ml" },
+      { nb: 8, farine: "720 g", levureboulangere: "9.6 g", sel: "14.4 g", sesame: "32 g", huile: "32 ml" },
+      { nb: 9, farine: "810 g", levureboulangere: "10.8 g", sel: "16.2 g", sesame: "36 g", huile: "36 ml" },
+      { nb: 10, farine: "900 g", levureboulangere: "12 g", sel: "18 g", sesame: "40 g", huile: "40 ml" },
+      { nb: 11, farine: "990 g", levureboulangere: "13.2 g", sel: "19.8 g", sesame: "44 g", huile: "44 ml" },
+      { nb: 12, farine: "1080 g", levureboulangere: "14.4 g", sel: "21.6 g", sesame: "48 g", huile: "48 ml" },
+      { nb: 13, farine: "1170 g", levureboulangere: "15.6 g", sel: "23.4 g", sesame: "52 g", huile: "52 ml" },
+      { nb: 14, farine: "1260 g", levureboulangere: "16.8 g", sel: "25.2 g", sesame: "56 g", huile: "56 ml" },
+      { nb: 15, farine: "1350 g", levureboulangere: "18 g", sel: "27 g", sesame: "60 g", huile: "60 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "De la farine complète, pas blanche", detail: "Le sangak est traditionnellement au blé complet : c'est ce qui lui donne son goût de noisette et sa couleur.", badge: null },
+      { icone: "💧", titre: "Une hydratation de 80 %", detail: "La pâte doit être presque coulante. C'est déroutant, mais c'est elle qui donne l'alvéolage irrégulier.", badge: null },
+      { icone: "🕐", titre: "Trois heures de pousse, en rabattant", detail: "Deux rabats espacés d'une heure : on ne pétrit pas une pâte aussi hydratée, on la plie.", badge: null },
+      { icone: "🪨", titre: "Des galets propres, chauffés à blanc", detail: "Une couche de cailloux de rivière sur une plaque, 45 minutes à 250 °C. C'est eux qui font le pain, pas le four.", badge: null },
+      { icone: "🤲", titre: "Étirer À LA MAIN sur les pierres", detail: "Les mains mouillées, en tirant du centre vers les bords : le rouleau écraserait toutes les bulles.", badge: null },
+      { icone: "⏱️", titre: "Six minutes, pas une de plus", detail: "Le sangak cuit très vite sur les pierres brûlantes. Il doit rester souple, avec des taches brunes.", badge: null },
+      { icone: "🪨", titre: "Secouer les cailloux À LA SORTIE", detail: "Le pain sort criblé de creux, quelques pierres restent dedans : on le secoue avant de servir. C'est le rituel.", badge: null }
+    ],
+    liees: ["barbari","lavash","matnakash"]
+  },
+  bazlama: {
+    dateAjout: "2026-08-25T12:08:00",
+    nom: "Bazlama",
+    cat: "boulangerie", pays: "turquie",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐ Facile",
+    emoji: "🥯",
+    description: "Le pain plat turc cuit à la poêle, moelleux et épais, qui gonfle en cloque avant de retomber. Le yaourt dans la pâte n'est pas une fantaisie : son acidité la garde tendre plusieurs jours là où l'eau seule la durcit en une nuit.",
+    tableauBazlama: [
+      { nb: 1, farine: "70 g", yaourt: "30 g", levureboulangere: "1.5 g", huile: "6 ml", sucre: "2 g", sel: "1.2 g" },
+      { nb: 2, farine: "140 g", yaourt: "60 g", levureboulangere: "3 g", huile: "12 ml", sucre: "4 g", sel: "2.4 g" },
+      { nb: 3, farine: "210 g", yaourt: "90 g", levureboulangere: "4.5 g", huile: "18 ml", sucre: "6 g", sel: "3.6 g" },
+      { nb: 4, farine: "280 g", yaourt: "120 g", levureboulangere: "6 g", huile: "24 ml", sucre: "8 g", sel: "4.8 g" },
+      { nb: 5, farine: "350 g", yaourt: "150 g", levureboulangere: "7.5 g", huile: "30 ml", sucre: "10 g", sel: "6 g" },
+      { nb: 6, farine: "420 g", yaourt: "180 g", levureboulangere: "9 g", huile: "36 ml", sucre: "12 g", sel: "7.2 g" },
+      { nb: 7, farine: "490 g", yaourt: "210 g", levureboulangere: "10.5 g", huile: "42 ml", sucre: "14 g", sel: "8.4 g" },
+      { nb: 8, farine: "560 g", yaourt: "240 g", levureboulangere: "12 g", huile: "48 ml", sucre: "16 g", sel: "9.6 g" },
+      { nb: 9, farine: "630 g", yaourt: "270 g", levureboulangere: "13.5 g", huile: "54 ml", sucre: "18 g", sel: "10.8 g" },
+      { nb: 10, farine: "700 g", yaourt: "300 g", levureboulangere: "15 g", huile: "60 ml", sucre: "20 g", sel: "12 g" },
+      { nb: 11, farine: "770 g", yaourt: "330 g", levureboulangere: "16.5 g", huile: "66 ml", sucre: "22 g", sel: "13.2 g" },
+      { nb: 12, farine: "840 g", yaourt: "360 g", levureboulangere: "18 g", huile: "72 ml", sucre: "24 g", sel: "14.4 g" },
+      { nb: 13, farine: "910 g", yaourt: "390 g", levureboulangere: "19.5 g", huile: "78 ml", sucre: "26 g", sel: "15.6 g" },
+      { nb: 14, farine: "980 g", yaourt: "420 g", levureboulangere: "21 g", huile: "84 ml", sucre: "28 g", sel: "16.8 g" },
+      { nb: 15, farine: "1050 g", yaourt: "450 g", levureboulangere: "22.5 g", huile: "90 ml", sucre: "30 g", sel: "18 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Du yaourt, pas seulement de l'eau", detail: "Son acidité attendrit la mie et la conserve. Une bazlama à l'eau seule est dure dès le lendemain.", badge: null },
+      { icone: "🌡️", titre: "Tout à température ambiante", detail: "Yaourt sorti du frigo, la levée est deux fois plus lente et la mie moins régulière.", badge: null },
+      { icone: "⏳", titre: "Une heure et demie de pousse, à couvert", detail: "La pâte doit doubler. C'est la seule attente de la recette, et elle ne se raccourcit pas.", badge: null },
+      { icone: "📏", titre: "Étaler à 1 cm, pas plus fin", detail: "La bazlama est un pain ÉPAIS. À 5 mm on obtient une galette, pas une bazlama.", badge: null },
+      { icone: "⏸️", titre: "Laisser reposer les disques 20 minutes", detail: "Détendus, ils gonflent à la cuisson. Passés directement à la poêle, ils restent plats et denses.", badge: null },
+      { icone: "🍳", titre: "Poêle SÈCHE, feu moyen", detail: "Aucune matière grasse : la bazlama se cuit comme une crêpe de pain, elle doit se tacher, pas frire.", badge: null },
+      { icone: "🎈", titre: "Retourner dès que ça gonfle", detail: "Elle se boursoufle d'un coup : c'est le signal. Deux minutes par face, et on l'empile sous un linge.", badge: null }
+    ],
+    liees: ["pitamaison","lavash","matnakash"]
+  },
+  shaobing: {
+    dateAjout: "2026-08-25T12:09:00",
+    nom: "Shaobing",
+    cat: "boulangerie", pays: "chine",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥖",
+    description: "Le petit pain feuilleté du nord de la Chine, couvert de sésame et creux à l'intérieur. Son feuilletage ne vient pas du beurre mais d'un roux d'huile et de farine — le youmian — étalé entre les couches.",
+    tableauShaobing: [
+      { nb: 1, farine: "60 g", huile: "15 ml", sesame: "8 g", huilesesame: "4 ml", cinqepices: "0.8 g", levureboulangere: "1 g", sel: "1 g", sucre: "3 g" },
+      { nb: 2, farine: "120 g", huile: "30 ml", sesame: "16 g", huilesesame: "8 ml", cinqepices: "1.6 g", levureboulangere: "2 g", sel: "2 g", sucre: "6 g" },
+      { nb: 3, farine: "180 g", huile: "45 ml", sesame: "24 g", huilesesame: "12 ml", cinqepices: "2.4 g", levureboulangere: "3 g", sel: "3 g", sucre: "9 g" },
+      { nb: 4, farine: "240 g", huile: "60 ml", sesame: "32 g", huilesesame: "16 ml", cinqepices: "3.2 g", levureboulangere: "4 g", sel: "4 g", sucre: "12 g" },
+      { nb: 5, farine: "300 g", huile: "75 ml", sesame: "40 g", huilesesame: "20 ml", cinqepices: "4 g", levureboulangere: "5 g", sel: "5 g", sucre: "15 g" },
+      { nb: 6, farine: "360 g", huile: "90 ml", sesame: "48 g", huilesesame: "24 ml", cinqepices: "4.8 g", levureboulangere: "6 g", sel: "6 g", sucre: "18 g" },
+      { nb: 7, farine: "420 g", huile: "105 ml", sesame: "56 g", huilesesame: "28 ml", cinqepices: "5.6 g", levureboulangere: "7 g", sel: "7 g", sucre: "21 g" },
+      { nb: 8, farine: "480 g", huile: "120 ml", sesame: "64 g", huilesesame: "32 ml", cinqepices: "6.4 g", levureboulangere: "8 g", sel: "8 g", sucre: "24 g" },
+      { nb: 9, farine: "540 g", huile: "135 ml", sesame: "72 g", huilesesame: "36 ml", cinqepices: "7.2 g", levureboulangere: "9 g", sel: "9 g", sucre: "27 g" },
+      { nb: 10, farine: "600 g", huile: "150 ml", sesame: "80 g", huilesesame: "40 ml", cinqepices: "8 g", levureboulangere: "10 g", sel: "10 g", sucre: "30 g" },
+      { nb: 11, farine: "660 g", huile: "165 ml", sesame: "88 g", huilesesame: "44 ml", cinqepices: "8.8 g", levureboulangere: "11 g", sel: "11 g", sucre: "33 g" },
+      { nb: 12, farine: "720 g", huile: "180 ml", sesame: "96 g", huilesesame: "48 ml", cinqepices: "9.6 g", levureboulangere: "12 g", sel: "12 g", sucre: "36 g" },
+      { nb: 13, farine: "780 g", huile: "195 ml", sesame: "104 g", huilesesame: "52 ml", cinqepices: "10.4 g", levureboulangere: "13 g", sel: "13 g", sucre: "39 g" },
+      { nb: 14, farine: "840 g", huile: "210 ml", sesame: "112 g", huilesesame: "56 ml", cinqepices: "11.2 g", levureboulangere: "14 g", sel: "14 g", sucre: "42 g" },
+      { nb: 15, farine: "900 g", huile: "225 ml", sesame: "120 g", huilesesame: "60 ml", cinqepices: "12 g", levureboulangere: "15 g", sel: "15 g", sucre: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Le youmian : farine chauffée dans l'huile", detail: "Un roux clair, refroidi : c'est lui qui sépare les couches. Sans lui, le shaobing est un simple petit pain.", badge: null },
+      { icone: "🥟", titre: "Deux pâtes distinctes", detail: "Une pâte levée pour la structure, le youmian pour le feuilletage. On ne les mélange jamais.", badge: null },
+      { icone: "📜", titre: "Étaler, tartiner, ROULER en escargot", detail: "Comme une pâte feuilletée rapide : le roulage crée les couches, l'écrasement les détruit.", badge: null },
+      { icone: "🌀", titre: "Dresser le rouleau debout, puis aplatir", detail: "En le pressant par le haut : les spirales se retrouvent alors à l'horizontale, et c'est ce qui creuse le pain.", badge: null },
+      { icone: "💧", titre: "Humidifier AVANT le sésame", detail: "Un pinceau d'eau ou de sirop : à sec, le sésame tombe entièrement dans le four.", badge: null },
+      { icone: "🔥", titre: "Four très chaud, 220 °C", detail: "La vapeur doit se former d'un coup pour séparer les couches et creuser l'intérieur.", badge: null },
+      { icone: "✂️", titre: "Ouvrir en deux et garnir", detail: "Le shaobing se fend en poche : bœuf braisé, omelette, youtiao. C'est un pain à fourrer, pas un pain d'accompagnement.", badge: null }
+    ],
+    liees: ["congyoubing","mantou","youtiao"]
   },
 });

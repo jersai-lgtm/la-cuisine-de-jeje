@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 69 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 71 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -17758,5 +17758,81 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Quatre heures au frais, minimum", detail: "Elle se coupe mal et n'a aucun goût tiède. Une nuit entière est encore mieux.", badge: null }
     ],
     liees: ["quindim","beijinho","brigadeiro"]
+  },
+  poirat: {
+    dateAjout: "2026-08-25T10:09:00",
+    nom: "Poirat",
+    cat: "desserts", saisons: ["automne"], pays: "france",
+    base: 8,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍐",
+    description: "La tourte aux poires du Berry, POIVRÉE — oui, du poivre dans un dessert. Et à la sortie du four, on verse de la crème par la cheminée : elle se répand entre les fruits et lie la garniture pendant que la tourte refroidit.",
+    tableauPoirat: [
+      { nb: 1, poire: "¾", farine: "45 g", beurre: "25 g", creme: "20 ml", sucre: "20 g", oeufs: "¼", eaudevie: "5 ml", poivre: "0.2 g" },
+      { nb: 2, poire: "1½", farine: "90 g", beurre: "50 g", creme: "40 ml", sucre: "40 g", oeufs: "½", eaudevie: "10 ml", poivre: "0.4 g" },
+      { nb: 3, poire: "2¼", farine: "135 g", beurre: "75 g", creme: "60 ml", sucre: "60 g", oeufs: "¾", eaudevie: "15 ml", poivre: "0.6 g" },
+      { nb: 4, poire: "3", farine: "180 g", beurre: "100 g", creme: "80 ml", sucre: "80 g", oeufs: "1", eaudevie: "20 ml", poivre: "0.8 g" },
+      { nb: 5, poire: "3¾", farine: "225 g", beurre: "125 g", creme: "100 ml", sucre: "100 g", oeufs: "1¼", eaudevie: "25 ml", poivre: "1 g" },
+      { nb: 6, poire: "4½", farine: "270 g", beurre: "150 g", creme: "120 ml", sucre: "120 g", oeufs: "1½", eaudevie: "30 ml", poivre: "1.2 g" },
+      { nb: 7, poire: "5¼", farine: "315 g", beurre: "175 g", creme: "140 ml", sucre: "140 g", oeufs: "1¾", eaudevie: "35 ml", poivre: "1.4 g" },
+      { nb: 8, poire: "6", farine: "360 g", beurre: "200 g", creme: "160 ml", sucre: "160 g", oeufs: "2", eaudevie: "40 ml", poivre: "1.6 g" },
+      { nb: 9, poire: "6¾", farine: "405 g", beurre: "225 g", creme: "180 ml", sucre: "180 g", oeufs: "2¼", eaudevie: "45 ml", poivre: "1.8 g" },
+      { nb: 10, poire: "7½", farine: "450 g", beurre: "250 g", creme: "200 ml", sucre: "200 g", oeufs: "2½", eaudevie: "50 ml", poivre: "2 g" },
+      { nb: 11, poire: "8¼", farine: "495 g", beurre: "275 g", creme: "220 ml", sucre: "220 g", oeufs: "2¾", eaudevie: "55 ml", poivre: "2.2 g" },
+      { nb: 12, poire: "9", farine: "540 g", beurre: "300 g", creme: "240 ml", sucre: "240 g", oeufs: "3", eaudevie: "60 ml", poivre: "2.4 g" },
+      { nb: 13, poire: "9¾", farine: "585 g", beurre: "325 g", creme: "260 ml", sucre: "260 g", oeufs: "3¼", eaudevie: "65 ml", poivre: "2.6 g" },
+      { nb: 14, poire: "10½", farine: "630 g", beurre: "350 g", creme: "280 ml", sucre: "280 g", oeufs: "3½", eaudevie: "70 ml", poivre: "2.8 g" },
+      { nb: 15, poire: "11¼", farine: "675 g", beurre: "375 g", creme: "300 ml", sucre: "300 g", oeufs: "3¾", eaudevie: "75 ml", poivre: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍐", titre: "Des poires FERMES, à peine mûres", detail: "Conférence ou Passe-Crassane : une poire fondante rendrait son eau et détremperait la pâte du fond.", badge: null },
+      { icone: "🌶️", titre: "Du poivre, vraiment", detail: "Deux bons tours de moulin : c'est la signature du poirat berrichon, et ça ne pique pas — ça réveille la poire.", badge: null },
+      { icone: "🥃", titre: "Macérer une heure à l'eau-de-vie", detail: "Poire ou marc : le sucre tire l'eau des fruits, qu'on jettera avant de garnir.", badge: null },
+      { icone: "💧", titre: "ÉGOUTTER avant de garnir", detail: "Le jus de macération ne doit jamais entrer dans la tourte, sous peine de fond détrempé.", badge: null },
+      { icone: "🕳️", titre: "Une cheminée large au centre", detail: "Un rouleau de papier planté dedans : c'est par là que la vapeur s'échappe et que la crème entrera ensuite.", badge: null },
+      { icone: "🔥", titre: "Cuire 45 minutes à 190 °C", detail: "La pâte doit être bien colorée : pâle, elle s'affaissera au moment de verser la crème.", badge: null },
+      { icone: "🥛", titre: "La crème par la cheminée, À LA SORTIE", detail: "Tiède, sur une tourte brûlante, en trois fois : elle s'infiltre entre les poires et lie tout en refroidissant.", badge: null }
+    ],
+    liees: ["tartetatinpommes","farbreton","clafoutis"]
+  },
+  kutia: {
+    dateAjout: "2026-08-25T11:00:00",
+    nom: "Kutia",
+    cat: "desserts", saisons: ["hiver"], pays: "ukraine",
+    base: 8,
+    temps: "2 h + trempage",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    description: "Le premier des douze plats du réveillon ukrainien, et le plus ancien : du blé en grains, du pavot et du miel. Chaque ingrédient est un vœu — le blé pour la prospérité, le pavot pour le repos des morts, le miel pour la douceur de l'année.",
+    tableauKutia: [
+      { nb: 1, bleentier: "45 g", pavot: "20 g", miel: "25 g", noix: "20 g", raisinssecs: "15 g" },
+      { nb: 2, bleentier: "90 g", pavot: "40 g", miel: "50 g", noix: "40 g", raisinssecs: "30 g" },
+      { nb: 3, bleentier: "135 g", pavot: "60 g", miel: "75 g", noix: "60 g", raisinssecs: "45 g" },
+      { nb: 4, bleentier: "180 g", pavot: "80 g", miel: "100 g", noix: "80 g", raisinssecs: "60 g" },
+      { nb: 5, bleentier: "225 g", pavot: "100 g", miel: "125 g", noix: "100 g", raisinssecs: "75 g" },
+      { nb: 6, bleentier: "270 g", pavot: "120 g", miel: "150 g", noix: "120 g", raisinssecs: "90 g" },
+      { nb: 7, bleentier: "315 g", pavot: "140 g", miel: "175 g", noix: "140 g", raisinssecs: "105 g" },
+      { nb: 8, bleentier: "360 g", pavot: "160 g", miel: "200 g", noix: "160 g", raisinssecs: "120 g" },
+      { nb: 9, bleentier: "405 g", pavot: "180 g", miel: "225 g", noix: "180 g", raisinssecs: "135 g" },
+      { nb: 10, bleentier: "450 g", pavot: "200 g", miel: "250 g", noix: "200 g", raisinssecs: "150 g" },
+      { nb: 11, bleentier: "495 g", pavot: "220 g", miel: "275 g", noix: "220 g", raisinssecs: "165 g" },
+      { nb: 12, bleentier: "540 g", pavot: "240 g", miel: "300 g", noix: "240 g", raisinssecs: "180 g" },
+      { nb: 13, bleentier: "585 g", pavot: "260 g", miel: "325 g", noix: "260 g", raisinssecs: "195 g" },
+      { nb: 14, bleentier: "630 g", pavot: "280 g", miel: "350 g", noix: "280 g", raisinssecs: "210 g" },
+      { nb: 15, bleentier: "675 g", pavot: "300 g", miel: "375 g", noix: "300 g", raisinssecs: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Tremper le blé douze heures", detail: "En grains entiers, jamais concassé : c'est la texture qui compte, chaque grain doit rester distinct sous la dent.", badge: null },
+      { icone: "♨️", titre: "Cuire deux heures à l'eau non salée", detail: "Le sel durcirait l'enveloppe. Le grain doit s'ouvrir et devenir tendre tout en gardant du mordant.", badge: null },
+      { icone: "⚫", titre: "Ébouillanter le pavot, puis l'égoutter", detail: "Trois fois de suite : c'est ce qui retire l'amertume et permet ensuite de le broyer sans qu'il reste sableux.", badge: null },
+      { icone: "🥣", titre: "Broyer le pavot jusqu'au LAIT blanc", detail: "Au mortier, longuement : il doit rendre un liquide laiteux. Simplement mixé, il reste en graines et ne lie rien.", badge: null },
+      { icone: "🍯", titre: "Miel délayé à l'eau tiède", detail: "Jamais chaud : au-dessus de 40 °C, le miel perd son parfum et ne laisse que le sucre.", badge: null },
+      { icone: "🌰", titre: "Noix concassées, pas moulues", detail: "En gros éclats, pour le contraste avec le grain fondant et le pavot crémeux.", badge: null },
+      { icone: "❄️", titre: "Assembler FROID, servir frais", detail: "Mélangé chaud, le pavot fige et le miel se dissout. La kutia se monte au dernier moment.", badge: null }
+    ],
+    liees: ["nalysnyky","pampushky","kulich"]
   },
 });

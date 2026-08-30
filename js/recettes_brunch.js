@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 34 recettes
+// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 35 recettes
 // 👉 Pour AJOUTER une recette Brunch : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3117,5 +3117,43 @@ Object.assign(recettes, {
       { icone: "🍳", titre: "Au petit-déjeuner, avec des œufs", detail: "Une cuillère de khlii et sa graisse dans un plat en terre, deux œufs cassés dessus : c'est le vrai usage.", badge: null }
     ],
     liees: ["msemen","rfissa","tajinemouton"]
+  },
+  firfir: {
+    dateAjout: "2026-08-25T12:00:00",
+    nom: "Firfir",
+    cat: "brunch", pays: "ethiopie",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Le petit-déjeuner éthiopien fait de l'injera de la veille, déchirée à la main et imbibée d'une sauce au berbéré. C'est un plat de récupération devenu institution — et l'injera doit être RASSISE, la fraîche se délite en bouillie.",
+    tableauFirfir: [
+      { nb: 1, injera: "1", berbere: "8 g", oignon: "¾", tomate: "60 g", huile: "20 ml", ail: "2", piment: "1.5 g", sel: "1 g" },
+      { nb: 2, injera: "2", berbere: "16 g", oignon: "1½", tomate: "120 g", huile: "40 ml", ail: "4", piment: "3 g", sel: "2 g" },
+      { nb: 3, injera: "3", berbere: "24 g", oignon: "2¼", tomate: "180 g", huile: "60 ml", ail: "6", piment: "4.5 g", sel: "3 g" },
+      { nb: 4, injera: "4", berbere: "32 g", oignon: "3", tomate: "240 g", huile: "80 ml", ail: "8", piment: "6 g", sel: "4 g" },
+      { nb: 5, injera: "5", berbere: "40 g", oignon: "3¾", tomate: "300 g", huile: "100 ml", ail: "10", piment: "7.5 g", sel: "5 g" },
+      { nb: 6, injera: "6", berbere: "48 g", oignon: "4½", tomate: "360 g", huile: "120 ml", ail: "12", piment: "9 g", sel: "6 g" },
+      { nb: 7, injera: "7", berbere: "56 g", oignon: "5¼", tomate: "420 g", huile: "140 ml", ail: "14", piment: "10.5 g", sel: "7 g" },
+      { nb: 8, injera: "8", berbere: "64 g", oignon: "6", tomate: "480 g", huile: "160 ml", ail: "16", piment: "12 g", sel: "8 g" },
+      { nb: 9, injera: "9", berbere: "72 g", oignon: "6¾", tomate: "540 g", huile: "180 ml", ail: "18", piment: "13.5 g", sel: "9 g" },
+      { nb: 10, injera: "10", berbere: "80 g", oignon: "7½", tomate: "600 g", huile: "200 ml", ail: "20", piment: "15 g", sel: "10 g" },
+      { nb: 11, injera: "11", berbere: "88 g", oignon: "8¼", tomate: "660 g", huile: "220 ml", ail: "22", piment: "16.5 g", sel: "11 g" },
+      { nb: 12, injera: "12", berbere: "96 g", oignon: "9", tomate: "720 g", huile: "240 ml", ail: "24", piment: "18 g", sel: "12 g" },
+      { nb: 13, injera: "13", berbere: "104 g", oignon: "9¾", tomate: "780 g", huile: "260 ml", ail: "26", piment: "19.5 g", sel: "13 g" },
+      { nb: 14, injera: "14", berbere: "112 g", oignon: "10½", tomate: "840 g", huile: "280 ml", ail: "28", piment: "21 g", sel: "14 g" },
+      { nb: 15, injera: "15", berbere: "120 g", oignon: "11¼", tomate: "900 g", huile: "300 ml", ail: "30", piment: "22.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "De l'injera de la VEILLE, pas fraîche", detail: "Rassise, elle boit la sauce en gardant sa tenue. Fraîche, elle se dissout et le firfir devient une purée.", badge: null },
+      { icone: "✋", titre: "Déchirer à la main, en morceaux irréguliers", detail: "Le couteau fait des carrés nets qui glissent ; la déchirure crée des bords qui accrochent la sauce.", badge: null },
+      { icone: "🧅", titre: "Les oignons fondus À SEC, longuement", detail: "Vingt minutes sans matière grasse, dans une casserole sèche : c'est la base éthiopienne, et l'huile n'arrive qu'après.", badge: null },
+      { icone: "🌶️", titre: "Le berbéré cuit dans l'huile, deux minutes", detail: "Cru, il reste poussiéreux et âpre. Il doit frire jusqu'à ce que l'huile prenne sa couleur rouge sombre.", badge: null },
+      { icone: "💧", titre: "Une sauce plus liquide qu'il ne semble", detail: "L'injera va en absorber les trois quarts. Une sauce épaisse donnerait un firfir sec et pâteux.", badge: null },
+      { icone: "🥄", titre: "Mélanger hors du feu, délicatement", detail: "On enrobe, on ne remue pas : trop travaillé, le pain se défait complètement.", badge: null },
+      { icone: "⏱️", titre: "Laisser reposer cinq minutes avant de servir", detail: "Le temps que l'absorption se fasse. Servi immédiatement, on trouve encore des morceaux secs au centre.", badge: null }
+    ],
+    liees: ["injera","dorowat","misirwat"]
   },
 });

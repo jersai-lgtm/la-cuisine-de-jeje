@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_entrees.js — Recettes de catégorie "entrees" (Entrées) — 28 recettes
+// recettes_entrees.js — Recettes de catégorie "entrees" (Entrées) — 32 recettes
 // 👉 Pour AJOUTER une recette Entrées : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -5278,5 +5278,157 @@ oeufmayo: {
       { icone: "⏱️", titre: "Sous le gril 3 minutes", detail: "Pas au four : il faut une chaleur venue du HAUT, sinon les noix surcuisent et deviennent caoutchouteuses.", badge: null }
     ],
     liees: ["saintjacquespoelees","capponmagro","timbalefruitsmer"]
+  },
+  langueecarlate: {
+    dateAjout: "2026-08-25T10:08:00",
+    nom: "Langue Écarlate",
+    cat: "entrees", pays: "france",
+    base: 6,
+    temps: "4 h + saumure",
+    niveau: "⭐⭐ Moyen",
+    emoji: "👅",
+    description: "La langue de bœuf saumurée puis pochée, qui prend en salaison cette couleur rouge vif dont elle tire son nom. Elle se mange FROIDE, en fines tranches, avec des cornichons — c'est une charcuterie, pas un plat chaud.",
+    tableauLangueecarlate: [
+      { nb: 1, langue: "120 g", sel: "12 g", carotte: "30 g", oignon: "¼", laurier: "0.2 g", thym: "0.3 g", clougirofle: "0.1 g", cornichons: "15 g", moutarde: "8 g" },
+      { nb: 2, langue: "240 g", sel: "24 g", carotte: "60 g", oignon: "½", laurier: "0.4 g", thym: "0.6 g", clougirofle: "0.2 g", cornichons: "30 g", moutarde: "16 g" },
+      { nb: 3, langue: "360 g", sel: "36 g", carotte: "90 g", oignon: "¾", laurier: "0.6 g", thym: "0.9 g", clougirofle: "0.3 g", cornichons: "45 g", moutarde: "24 g" },
+      { nb: 4, langue: "480 g", sel: "48 g", carotte: "120 g", oignon: "1", laurier: "0.8 g", thym: "1.2 g", clougirofle: "0.4 g", cornichons: "60 g", moutarde: "32 g" },
+      { nb: 5, langue: "600 g", sel: "60 g", carotte: "150 g", oignon: "1¼", laurier: "1 g", thym: "1.5 g", clougirofle: "0.5 g", cornichons: "75 g", moutarde: "40 g" },
+      { nb: 6, langue: "720 g", sel: "72 g", carotte: "180 g", oignon: "1½", laurier: "1.2 g", thym: "1.8 g", clougirofle: "0.6 g", cornichons: "90 g", moutarde: "48 g" },
+      { nb: 7, langue: "840 g", sel: "84 g", carotte: "210 g", oignon: "1¾", laurier: "1.4 g", thym: "2.1 g", clougirofle: "0.7 g", cornichons: "105 g", moutarde: "56 g" },
+      { nb: 8, langue: "960 g", sel: "96 g", carotte: "240 g", oignon: "2", laurier: "1.6 g", thym: "2.4 g", clougirofle: "0.8 g", cornichons: "120 g", moutarde: "64 g" },
+      { nb: 9, langue: "1080 g", sel: "108 g", carotte: "270 g", oignon: "2¼", laurier: "1.8 g", thym: "2.7 g", clougirofle: "0.9 g", cornichons: "135 g", moutarde: "72 g" },
+      { nb: 10, langue: "1200 g", sel: "120 g", carotte: "300 g", oignon: "2½", laurier: "2 g", thym: "3 g", clougirofle: "1 g", cornichons: "150 g", moutarde: "80 g" },
+      { nb: 11, langue: "1320 g", sel: "132 g", carotte: "330 g", oignon: "2¾", laurier: "2.2 g", thym: "3.3 g", clougirofle: "1.1 g", cornichons: "165 g", moutarde: "88 g" },
+      { nb: 12, langue: "1440 g", sel: "144 g", carotte: "360 g", oignon: "3", laurier: "2.4 g", thym: "3.6 g", clougirofle: "1.2 g", cornichons: "180 g", moutarde: "96 g" },
+      { nb: 13, langue: "1560 g", sel: "156 g", carotte: "390 g", oignon: "3¼", laurier: "2.6 g", thym: "3.9 g", clougirofle: "1.3 g", cornichons: "195 g", moutarde: "104 g" },
+      { nb: 14, langue: "1680 g", sel: "168 g", carotte: "420 g", oignon: "3½", laurier: "2.8 g", thym: "4.2 g", clougirofle: "1.4 g", cornichons: "210 g", moutarde: "112 g" },
+      { nb: 15, langue: "1800 g", sel: "180 g", carotte: "450 g", oignon: "3¾", laurier: "3 g", thym: "4.5 g", clougirofle: "1.5 g", cornichons: "225 g", moutarde: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Dégorger 24 heures à l'eau froide", detail: "Eau changée trois fois : c'est ce qui retire le sang et permet à la saumure de pénétrer proprement.", badge: null },
+      { icone: "🧂", titre: "Huit jours de saumure, au frais", detail: "C'est le sel nitrité qui donne l'écarlate ; au sel ordinaire la langue reste grise, bonne mais sans le nom.", badge: null },
+      { icone: "♨️", titre: "Départ à l'EAU FROIDE", detail: "Comme tout produit salé : à l'eau bouillante, la surface se contracte et la langue reste dure au cœur.", badge: null },
+      { icone: "🫧", titre: "Écumer sans relâche la première demi-heure", detail: "L'écume grise retombe sinon sur la pièce et donne un aspect terne au moment de trancher.", badge: null },
+      { icone: "🧤", titre: "Peler À CHAUD, dès la sortie", detail: "La peau se retire toute seule sur une langue brûlante ; refroidie, elle adhère et il faut la découper au couteau.", badge: null },
+      { icone: "⏳", titre: "Trois heures et demie à frémissement", detail: "Un couteau doit traverser la partie épaisse sans résistance. Elle résiste encore à trois heures.", badge: null },
+      { icone: "❄️", titre: "Refroidir SOUS PRESSE, une nuit", detail: "Serrée dans un linge sous un poids : c'est ce qui permet des tranches nettes et translucides.", badge: null }
+    ],
+    liees: ["languepiquante","museauvinaigrette","teteveauravigote"]
+  },
+  utopenci: {
+    dateAjout: "2026-08-25T11:03:00",
+    nom: "Utopenci",
+    cat: "entrees", pays: "tchequie",
+    base: 6,
+    temps: "30 min + 15 jours",
+    niveau: "⭐ Facile",
+    emoji: "🫙",
+    description: "Les « noyés » tchèques : des saucisses marinées dans du vinaigre aux oignons, oubliées quinze jours au frais. C'est le compagnon obligatoire de la bière, et le seul plat dont la recette tient en une phrase et deux semaines.",
+    tableauUtopenci: [
+      { nb: 1, saucisse: "1", oignon: "½", vinaigreBlanc: "45 ml", sucre: "6 g", laurier: "0.3 g", piment: "1 g", poivre: "0.6 g", sel: "1 g" },
+      { nb: 2, saucisse: "2", oignon: "1", vinaigreBlanc: "90 ml", sucre: "12 g", laurier: "0.6 g", piment: "2 g", poivre: "1.2 g", sel: "2 g" },
+      { nb: 3, saucisse: "3", oignon: "1½", vinaigreBlanc: "135 ml", sucre: "18 g", laurier: "0.9 g", piment: "3 g", poivre: "1.8 g", sel: "3 g" },
+      { nb: 4, saucisse: "4", oignon: "2", vinaigreBlanc: "180 ml", sucre: "24 g", laurier: "1.2 g", piment: "4 g", poivre: "2.4 g", sel: "4 g" },
+      { nb: 5, saucisse: "5", oignon: "2½", vinaigreBlanc: "225 ml", sucre: "30 g", laurier: "1.5 g", piment: "5 g", poivre: "3 g", sel: "5 g" },
+      { nb: 6, saucisse: "6", oignon: "3", vinaigreBlanc: "270 ml", sucre: "36 g", laurier: "1.8 g", piment: "6 g", poivre: "3.6 g", sel: "6 g" },
+      { nb: 7, saucisse: "7", oignon: "3½", vinaigreBlanc: "315 ml", sucre: "42 g", laurier: "2.1 g", piment: "7 g", poivre: "4.2 g", sel: "7 g" },
+      { nb: 8, saucisse: "8", oignon: "4", vinaigreBlanc: "360 ml", sucre: "48 g", laurier: "2.4 g", piment: "8 g", poivre: "4.8 g", sel: "8 g" },
+      { nb: 9, saucisse: "9", oignon: "4½", vinaigreBlanc: "405 ml", sucre: "54 g", laurier: "2.7 g", piment: "9 g", poivre: "5.4 g", sel: "9 g" },
+      { nb: 10, saucisse: "10", oignon: "5", vinaigreBlanc: "450 ml", sucre: "60 g", laurier: "3 g", piment: "10 g", poivre: "6 g", sel: "10 g" },
+      { nb: 11, saucisse: "11", oignon: "5½", vinaigreBlanc: "495 ml", sucre: "66 g", laurier: "3.3 g", piment: "11 g", poivre: "6.6 g", sel: "11 g" },
+      { nb: 12, saucisse: "12", oignon: "6", vinaigreBlanc: "540 ml", sucre: "72 g", laurier: "3.6 g", piment: "12 g", poivre: "7.2 g", sel: "12 g" },
+      { nb: 13, saucisse: "13", oignon: "6½", vinaigreBlanc: "585 ml", sucre: "78 g", laurier: "3.9 g", piment: "13 g", poivre: "7.8 g", sel: "13 g" },
+      { nb: 14, saucisse: "14", oignon: "7", vinaigreBlanc: "630 ml", sucre: "84 g", laurier: "4.2 g", piment: "14 g", poivre: "8.4 g", sel: "14 g" },
+      { nb: 15, saucisse: "15", oignon: "7½", vinaigreBlanc: "675 ml", sucre: "90 g", laurier: "4.5 g", piment: "15 g", poivre: "9 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌭", titre: "Des saucisses fraîches à cuire, pas fumées", detail: "Le fumage domine tout et la marinade n'a plus rien à parfumer. Une špekáček, ou à défaut une saucisse de Strasbourg.", badge: null },
+      { icone: "🔪", titre: "Fendre chaque saucisse dans la longueur", detail: "Sans la couper en deux : la marinade doit pénétrer au cœur, sinon seul l'extérieur prend le goût.", badge: null },
+      { icone: "🧅", titre: "Beaucoup plus d'oignons qu'il ne semble raisonnable", detail: "Un oignon pour deux saucisses : ils ne sont pas une garniture, ils sont la moitié du plat.", badge: null },
+      { icone: "🍶", titre: "Une saumure TIÈDE, jamais bouillante", detail: "Chaude, elle cuit l'oignon et le rend mou. Elle doit être à peine plus chaude que la main.", badge: null },
+      { icone: "⚖️", titre: "Un tiers de vinaigre, deux tiers d'eau", detail: "Pur, le vinaigre brûle et masque tout. C'est cette dilution qui permet quinze jours de macération.", badge: null },
+      { icone: "🫙", titre: "Tout doit être IMMERGÉ", detail: "Un bout de saucisse qui dépasse s'oxyde et gâte le bocal entier. On tasse et on complète si besoin.", badge: null },
+      { icone: "📅", titre: "Quinze jours minimum, au frais", detail: "À une semaine c'est mangeable, à quinze jours c'est le plat. Certains attendent un mois.", badge: null }
+    ],
+    liees: ["svickova","knedliky","cornichonsmaison"]
+  },
+  basturma: {
+    dateAjout: "2026-08-25T11:05:00",
+    nom: "Basturma",
+    cat: "entrees", pays: "armenie",
+    base: 8,
+    temps: "30 min + 3 semaines",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌶️",
+    description: "Le bœuf séché arménien, enrobé d'une pâte d'épices au fenugrec appelée çemen. C'est elle qui fait tout : elle scelle la viande, la parfume et lui donne cette couleur brique. Trois semaines d'attente, dix minutes de travail.",
+    tableauBasturma: [
+      { nb: 1, boeuf: "60 g", sel: "15 g", fenugrec: "6 g", paprika: "5 g", ail: "2", cumin: "2 g", piment: "1.5 g", poivre: "1 g" },
+      { nb: 2, boeuf: "120 g", sel: "30 g", fenugrec: "12 g", paprika: "10 g", ail: "4", cumin: "4 g", piment: "3 g", poivre: "2 g" },
+      { nb: 3, boeuf: "180 g", sel: "45 g", fenugrec: "18 g", paprika: "15 g", ail: "6", cumin: "6 g", piment: "4.5 g", poivre: "3 g" },
+      { nb: 4, boeuf: "240 g", sel: "60 g", fenugrec: "24 g", paprika: "20 g", ail: "8", cumin: "8 g", piment: "6 g", poivre: "4 g" },
+      { nb: 5, boeuf: "300 g", sel: "75 g", fenugrec: "30 g", paprika: "25 g", ail: "10", cumin: "10 g", piment: "7.5 g", poivre: "5 g" },
+      { nb: 6, boeuf: "360 g", sel: "90 g", fenugrec: "36 g", paprika: "30 g", ail: "12", cumin: "12 g", piment: "9 g", poivre: "6 g" },
+      { nb: 7, boeuf: "420 g", sel: "105 g", fenugrec: "42 g", paprika: "35 g", ail: "14", cumin: "14 g", piment: "10.5 g", poivre: "7 g" },
+      { nb: 8, boeuf: "480 g", sel: "120 g", fenugrec: "48 g", paprika: "40 g", ail: "16", cumin: "16 g", piment: "12 g", poivre: "8 g" },
+      { nb: 9, boeuf: "540 g", sel: "135 g", fenugrec: "54 g", paprika: "45 g", ail: "18", cumin: "18 g", piment: "13.5 g", poivre: "9 g" },
+      { nb: 10, boeuf: "600 g", sel: "150 g", fenugrec: "60 g", paprika: "50 g", ail: "20", cumin: "20 g", piment: "15 g", poivre: "10 g" },
+      { nb: 11, boeuf: "660 g", sel: "165 g", fenugrec: "66 g", paprika: "55 g", ail: "22", cumin: "22 g", piment: "16.5 g", poivre: "11 g" },
+      { nb: 12, boeuf: "720 g", sel: "180 g", fenugrec: "72 g", paprika: "60 g", ail: "24", cumin: "24 g", piment: "18 g", poivre: "12 g" },
+      { nb: 13, boeuf: "780 g", sel: "195 g", fenugrec: "78 g", paprika: "65 g", ail: "26", cumin: "26 g", piment: "19.5 g", poivre: "13 g" },
+      { nb: 14, boeuf: "840 g", sel: "210 g", fenugrec: "84 g", paprika: "70 g", ail: "28", cumin: "28 g", piment: "21 g", poivre: "14 g" },
+      { nb: 15, boeuf: "900 g", sel: "225 g", fenugrec: "90 g", paprika: "75 g", ail: "30", cumin: "30 g", piment: "22.5 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Un morceau LONG et régulier", detail: "Filet, rumsteck ou araignée, en bande de 5 cm d'épaisseur : une pièce irrégulière sèche de travers.", badge: null },
+      { icone: "🧂", titre: "Enfouir dans le gros sel, 3 jours", detail: "Entièrement recouvert, au frais, en vidant l'eau rendue chaque jour. C'est ce qui rend la conservation possible.", badge: null },
+      { icone: "💧", titre: "Dessaler 2 heures, puis presser 24 h", detail: "Sous un poids, entre deux planches : la viande doit devenir plate et ferme avant d'être enrobée.", badge: null },
+      { icone: "🌿", titre: "Le çemen : fenugrec, ail, paprika, eau", detail: "Une pâte épaisse comme de la moutarde. Le fenugrec est irremplaçable — c'est lui, l'odeur du basturma.", badge: null },
+      { icone: "🖌️", titre: "Enrober sur 3 mm, sans manque", detail: "Le moindre endroit nu moisira. On lisse à la main, on laisse sécher, on repasse une seconde couche.", badge: null },
+      { icone: "🌬️", titre: "Trois semaines dans un courant d'air frais", detail: "Suspendu, à l'ombre, entre 10 et 15 °C. Au chaud il fermente, au réfrigérateur il ne sèche pas.", badge: null },
+      { icone: "🔪", titre: "Trancher TRÈS fin, presque transparent", detail: "À la main, en biais : en tranches épaisses, le basturma est coriace et immangeable.", badge: null }
+    ],
+    liees: ["lahmajoun","matnakash","lavash"]
+  },
+  kibbehnayyeh: {
+    dateAjout: "2026-08-25T11:09:00",
+    nom: "Kibbeh Nayyeh",
+    cat: "entrees", pays: "liban",
+    base: 6,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥩",
+    description: "Le tartare libanais d'agneau au boulgour fin, pilé au mortier jusqu'à devenir une pâte lisse. Il se prépare et se mange dans l'HEURE — c'est de la viande crue, et la règle du dimanche libanais ne souffre aucune exception.",
+    tableauKibbehnayyeh: [
+      { nb: 1, agneau: "90 g", boulgour: "30 g", oignon: "¼", menthe: "4 g", huileolive: "15 ml", cannelle: "0.4 g", piment: "0.8 g", sel: "1 g", poivre: "0.5 g" },
+      { nb: 2, agneau: "180 g", boulgour: "60 g", oignon: "½", menthe: "8 g", huileolive: "30 ml", cannelle: "0.8 g", piment: "1.6 g", sel: "2 g", poivre: "1 g" },
+      { nb: 3, agneau: "270 g", boulgour: "90 g", oignon: "¾", menthe: "12 g", huileolive: "45 ml", cannelle: "1.2 g", piment: "2.4 g", sel: "3 g", poivre: "1.5 g" },
+      { nb: 4, agneau: "360 g", boulgour: "120 g", oignon: "1", menthe: "16 g", huileolive: "60 ml", cannelle: "1.6 g", piment: "3.2 g", sel: "4 g", poivre: "2 g" },
+      { nb: 5, agneau: "450 g", boulgour: "150 g", oignon: "1¼", menthe: "20 g", huileolive: "75 ml", cannelle: "2 g", piment: "4 g", sel: "5 g", poivre: "2.5 g" },
+      { nb: 6, agneau: "540 g", boulgour: "180 g", oignon: "1½", menthe: "24 g", huileolive: "90 ml", cannelle: "2.4 g", piment: "4.8 g", sel: "6 g", poivre: "3 g" },
+      { nb: 7, agneau: "630 g", boulgour: "210 g", oignon: "1¾", menthe: "28 g", huileolive: "105 ml", cannelle: "2.8 g", piment: "5.6 g", sel: "7 g", poivre: "3.5 g" },
+      { nb: 8, agneau: "720 g", boulgour: "240 g", oignon: "2", menthe: "32 g", huileolive: "120 ml", cannelle: "3.2 g", piment: "6.4 g", sel: "8 g", poivre: "4 g" },
+      { nb: 9, agneau: "810 g", boulgour: "270 g", oignon: "2¼", menthe: "36 g", huileolive: "135 ml", cannelle: "3.6 g", piment: "7.2 g", sel: "9 g", poivre: "4.5 g" },
+      { nb: 10, agneau: "900 g", boulgour: "300 g", oignon: "2½", menthe: "40 g", huileolive: "150 ml", cannelle: "4 g", piment: "8 g", sel: "10 g", poivre: "5 g" },
+      { nb: 11, agneau: "990 g", boulgour: "330 g", oignon: "2¾", menthe: "44 g", huileolive: "165 ml", cannelle: "4.4 g", piment: "8.8 g", sel: "11 g", poivre: "5.5 g" },
+      { nb: 12, agneau: "1080 g", boulgour: "360 g", oignon: "3", menthe: "48 g", huileolive: "180 ml", cannelle: "4.8 g", piment: "9.6 g", sel: "12 g", poivre: "6 g" },
+      { nb: 13, agneau: "1170 g", boulgour: "390 g", oignon: "3¼", menthe: "52 g", huileolive: "195 ml", cannelle: "5.2 g", piment: "10.4 g", sel: "13 g", poivre: "6.5 g" },
+      { nb: 14, agneau: "1260 g", boulgour: "420 g", oignon: "3½", menthe: "56 g", huileolive: "210 ml", cannelle: "5.6 g", piment: "11.2 g", sel: "14 g", poivre: "7 g" },
+      { nb: 15, agneau: "1350 g", boulgour: "450 g", oignon: "3¾", menthe: "60 g", huileolive: "225 ml", cannelle: "6 g", piment: "12 g", sel: "15 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Du gigot, paré de TOUT son gras", detail: "Acheté et haché le jour même. Le gras rancit vite dans une viande crue et se sent immédiatement.", badge: null },
+      { icone: "🌾", titre: "Un boulgour FIN, trempé puis pressé", detail: "Le gros boulgour reste en grains et donne une pâte granuleuse. Fin, il disparaît et lie l'ensemble.", badge: null },
+      { icone: "🧊", titre: "Tout garder froid, bols compris", detail: "Le mortier et la viande passent au congélateur dix minutes avant : la chaleur des mains suffit à faire tourner un tartare.", badge: null },
+      { icone: "🥣", titre: "Piler, ne pas mixer", detail: "Le mixeur chauffe et hache les fibres. Le pilon écrase et lie — c'est ce qui donne la texture soyeuse.", badge: null },
+      { icone: "💧", titre: "Ajouter de l'eau glacée, cuillère par cuillère", detail: "La pâte doit devenir lisse et brillante. C'est l'eau, pas l'huile, qui donne cette texture.", badge: null },
+      { icone: "🌿", titre: "Menthe et cannelle, discrètes", detail: "Une pointe de cannelle : elle ne doit pas se reconnaître, seulement empêcher la viande d'être plate.", badge: null },
+      { icone: "⏱️", titre: "Servir dans l'heure, nappé d'huile d'olive", detail: "Avec des oignons crus et de la menthe fraîche. Passé une heure au frais, on le cuit — on ne prend pas le risque.", badge: null }
+    ],
+    liees: ["labneh","houmous","warakenab"]
   },
 });

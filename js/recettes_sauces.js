@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_sauces.js — Recettes de catégorie "sauces" (Sauces) — 24 recettes
+// recettes_sauces.js — Recettes de catégorie "sauces" (Sauces) — 29 recettes
 // 👉 Pour AJOUTER une recette Sauces : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3422,5 +3422,195 @@ mayonnaise: {
       { icone: "🫙", titre: "Mettre en pot chaud", detail: "Bocaux stérilisés remplis brûlants et retournés. Attendez 4 SEMAINES avant d'ouvrir : le goût se construit.", badge: null }
     ],
     liees: ["chutneyoignons","chutneymangue","giardiniera"]
+  },
+  saucerouennaise: {
+    dateAjout: "2026-08-25T10:00:00",
+    nom: "Sauce Rouennaise",
+    cat: "sauces", pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦆",
+    description: "Une bordelaise que l'on termine au foie de canard écrasé, hors du feu. C'est ce foie qui la lie — jamais de farine — et c'est aussi lui qui interdit la moindre ébullition ensuite, sous peine de grains.",
+    tableauSaucerouennaise: [
+      { nb: 1, vinrouge: "40 ml", echalote: "1", foie: "20 g", beurre: "12 g", bouillon: "50 ml", thym: "0.3 g", laurier: "0.2 g", poivre: "0.5 g" },
+      { nb: 2, vinrouge: "80 ml", echalote: "2", foie: "40 g", beurre: "24 g", bouillon: "100 ml", thym: "0.6 g", laurier: "0.4 g", poivre: "1 g" },
+      { nb: 3, vinrouge: "120 ml", echalote: "3", foie: "60 g", beurre: "36 g", bouillon: "150 ml", thym: "0.9 g", laurier: "0.6 g", poivre: "1.5 g" },
+      { nb: 4, vinrouge: "160 ml", echalote: "4", foie: "80 g", beurre: "48 g", bouillon: "200 ml", thym: "1.2 g", laurier: "0.8 g", poivre: "2 g" },
+      { nb: 5, vinrouge: "200 ml", echalote: "5", foie: "100 g", beurre: "60 g", bouillon: "250 ml", thym: "1.5 g", laurier: "1 g", poivre: "2.5 g" },
+      { nb: 6, vinrouge: "240 ml", echalote: "6", foie: "120 g", beurre: "72 g", bouillon: "300 ml", thym: "1.8 g", laurier: "1.2 g", poivre: "3 g" },
+      { nb: 7, vinrouge: "280 ml", echalote: "7", foie: "140 g", beurre: "84 g", bouillon: "350 ml", thym: "2.1 g", laurier: "1.4 g", poivre: "3.5 g" },
+      { nb: 8, vinrouge: "320 ml", echalote: "8", foie: "160 g", beurre: "96 g", bouillon: "400 ml", thym: "2.4 g", laurier: "1.6 g", poivre: "4 g" },
+      { nb: 9, vinrouge: "360 ml", echalote: "9", foie: "180 g", beurre: "108 g", bouillon: "450 ml", thym: "2.7 g", laurier: "1.8 g", poivre: "4.5 g" },
+      { nb: 10, vinrouge: "400 ml", echalote: "10", foie: "200 g", beurre: "120 g", bouillon: "500 ml", thym: "3 g", laurier: "2 g", poivre: "5 g" },
+      { nb: 11, vinrouge: "440 ml", echalote: "11", foie: "220 g", beurre: "132 g", bouillon: "550 ml", thym: "3.3 g", laurier: "2.2 g", poivre: "5.5 g" },
+      { nb: 12, vinrouge: "480 ml", echalote: "12", foie: "240 g", beurre: "144 g", bouillon: "600 ml", thym: "3.6 g", laurier: "2.4 g", poivre: "6 g" },
+      { nb: 13, vinrouge: "520 ml", echalote: "13", foie: "260 g", beurre: "156 g", bouillon: "650 ml", thym: "3.9 g", laurier: "2.6 g", poivre: "6.5 g" },
+      { nb: 14, vinrouge: "560 ml", echalote: "14", foie: "280 g", beurre: "168 g", bouillon: "700 ml", thym: "4.2 g", laurier: "2.8 g", poivre: "7 g" },
+      { nb: 15, vinrouge: "600 ml", echalote: "15", foie: "300 g", beurre: "180 g", bouillon: "750 ml", thym: "4.5 g", laurier: "3 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Suer les échalotes sans coloration", detail: "Ciselées très fin, à couvert : brunies, elles apporteraient une amertume que le vin rouge amplifie.", badge: null },
+      { icone: "🍷", titre: "Réduire le vin AUX TROIS QUARTS", detail: "Jusqu'au sirop : c'est là que se concentre tout le goût. Une réduction timide donne une sauce acide et aqueuse.", badge: null },
+      { icone: "🫀", titre: "Un foie de canard cru, passé au tamis", detail: "Écrasé à la fourchette puis tamisé : le moindre morceau resté entier fera un grain dans la sauce finale.", badge: null },
+      { icone: "🌡️", titre: "Incorporer le foie HORS DU FEU", detail: "Sous 65 °C : au-delà, il coagule et la sauce tourne en bouillie granuleuse, sans retour possible.", badge: null },
+      { icone: "🚫", titre: "Ne plus jamais faire bouillir", detail: "Une seule ébullition après le foie, et tout est perdu. On maintient au bain-marie si on doit attendre.", badge: null },
+      { icone: "🧈", titre: "Monter au beurre froid, en parcelles", detail: "Un cube à la fois, en tournant la casserole : c'est ce qui donne le brillant et la texture nappante.", badge: null },
+      { icone: "🦆", titre: "Servir sur un canard ou une pièce rouge", detail: "C'est une sauce de gibier et de volaille foncée — sur un poisson, elle écrase tout.", badge: null }
+    ],
+    liees: ["saucebordelaise","sauceperigueux","sauceespagnole"]
+  },
+  saucesmitane: {
+    dateAjout: "2026-08-25T10:01:00",
+    nom: "Sauce Smitane",
+    cat: "sauces", pays: "france",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    description: "La sauce à la crème aigre passée du répertoire russe au répertoire français au XIXᵉ siècle. Son nom vient de la smetana — et tout son équilibre tient au trait de citron final, qui rappelle l'acidité que notre crème n'a pas.",
+    tableauSaucesmitane: [
+      { nb: 1, creme: "60 ml", oignon: "¼", vinblanc: "30 ml", beurre: "10 g", citron: "¼", sel: "0.5 g", poivre: "0.5 g" },
+      { nb: 2, creme: "120 ml", oignon: "½", vinblanc: "60 ml", beurre: "20 g", citron: "½", sel: "1 g", poivre: "1 g" },
+      { nb: 3, creme: "180 ml", oignon: "¾", vinblanc: "90 ml", beurre: "30 g", citron: "¾", sel: "1.5 g", poivre: "1.5 g" },
+      { nb: 4, creme: "240 ml", oignon: "1", vinblanc: "120 ml", beurre: "40 g", citron: "1", sel: "2 g", poivre: "2 g" },
+      { nb: 5, creme: "300 ml", oignon: "1¼", vinblanc: "150 ml", beurre: "50 g", citron: "1¼", sel: "2.5 g", poivre: "2.5 g" },
+      { nb: 6, creme: "360 ml", oignon: "1½", vinblanc: "180 ml", beurre: "60 g", citron: "1½", sel: "3 g", poivre: "3 g" },
+      { nb: 7, creme: "420 ml", oignon: "1¾", vinblanc: "210 ml", beurre: "70 g", citron: "1¾", sel: "3.5 g", poivre: "3.5 g" },
+      { nb: 8, creme: "480 ml", oignon: "2", vinblanc: "240 ml", beurre: "80 g", citron: "2", sel: "4 g", poivre: "4 g" },
+      { nb: 9, creme: "540 ml", oignon: "2¼", vinblanc: "270 ml", beurre: "90 g", citron: "2¼", sel: "4.5 g", poivre: "4.5 g" },
+      { nb: 10, creme: "600 ml", oignon: "2½", vinblanc: "300 ml", beurre: "100 g", citron: "2½", sel: "5 g", poivre: "5 g" },
+      { nb: 11, creme: "660 ml", oignon: "2¾", vinblanc: "330 ml", beurre: "110 g", citron: "2¾", sel: "5.5 g", poivre: "5.5 g" },
+      { nb: 12, creme: "720 ml", oignon: "3", vinblanc: "360 ml", beurre: "120 g", citron: "3", sel: "6 g", poivre: "6 g" },
+      { nb: 13, creme: "780 ml", oignon: "3¼", vinblanc: "390 ml", beurre: "130 g", citron: "3¼", sel: "6.5 g", poivre: "6.5 g" },
+      { nb: 14, creme: "840 ml", oignon: "3½", vinblanc: "420 ml", beurre: "140 g", citron: "3½", sel: "7 g", poivre: "7 g" },
+      { nb: 15, creme: "900 ml", oignon: "3¾", vinblanc: "450 ml", beurre: "150 g", citron: "3¾", sel: "7.5 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Un oignon fondu, pas doré", detail: "Vingt minutes à couvert sur feu très doux : il doit devenir translucide et sucré, sans une seule tache brune.", badge: null },
+      { icone: "🍷", titre: "Réduire le vin blanc à SEC", detail: "Jusqu'à ce que la casserole soit presque sèche : l'alcool doit avoir totalement disparu avant la crème.", badge: null },
+      { icone: "🥛", titre: "Une crème épaisse, jamais allégée", detail: "Sous 30 % de matière grasse, elle tranche dès qu'elle réduit. C'est le seul point non négociable.", badge: null },
+      { icone: "♨️", titre: "Frémissement, jamais ébullition", detail: "La crème qui bout se sépare en grains et en huile. Le fond de la casserole ne doit jamais faire de grosses bulles.", badge: null },
+      { icone: "🫗", titre: "Passer au chinois, en foulant", detail: "On écrase l'oignon contre la passoire pour en récupérer le suc : c'est ce qui donne le corps.", badge: null },
+      { icone: "🍋", titre: "Le citron en TOUT dernier", detail: "Ajouté avant la réduction, il ferait cailler la crème. Ajouté à la fin, il réveille l'ensemble.", badge: null },
+      { icone: "🧈", titre: "Une noix de beurre hors du feu", detail: "Elle lisse la sauce et lui donne le brillant. Fondue à chaud, elle ressortirait en huile.", badge: null }
+    ],
+    liees: ["saucechampignon","veloute","saucenormande"]
+  },
+  saucebatarde: {
+    dateAjout: "2026-08-25T10:02:00",
+    nom: "Sauce Bâtarde",
+    cat: "sauces", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥄",
+    description: "Ni velouté ni hollandaise, d'où son nom : un roux blanc monté à l'EAU, puis lié au jaune et au beurre. C'est la sauce des légumes pauvres — asperges, poireaux, cardons — et elle ne coûte presque rien.",
+    tableauSaucebatarde: [
+      { nb: 1, beurre: "30 g", farine: "10 g", jaunedoeuf: "½", citron: "¼", sel: "0.4 g", poivre: "0.3 g" },
+      { nb: 2, beurre: "60 g", farine: "20 g", jaunedoeuf: "1", citron: "½", sel: "0.8 g", poivre: "0.6 g" },
+      { nb: 3, beurre: "90 g", farine: "30 g", jaunedoeuf: "1½", citron: "¾", sel: "1.2 g", poivre: "0.9 g" },
+      { nb: 4, beurre: "120 g", farine: "40 g", jaunedoeuf: "2", citron: "1", sel: "1.6 g", poivre: "1.2 g" },
+      { nb: 5, beurre: "150 g", farine: "50 g", jaunedoeuf: "2½", citron: "1¼", sel: "2 g", poivre: "1.5 g" },
+      { nb: 6, beurre: "180 g", farine: "60 g", jaunedoeuf: "3", citron: "1½", sel: "2.4 g", poivre: "1.8 g" },
+      { nb: 7, beurre: "210 g", farine: "70 g", jaunedoeuf: "3½", citron: "1¾", sel: "2.8 g", poivre: "2.1 g" },
+      { nb: 8, beurre: "240 g", farine: "80 g", jaunedoeuf: "4", citron: "2", sel: "3.2 g", poivre: "2.4 g" },
+      { nb: 9, beurre: "270 g", farine: "90 g", jaunedoeuf: "4½", citron: "2¼", sel: "3.6 g", poivre: "2.7 g" },
+      { nb: 10, beurre: "300 g", farine: "100 g", jaunedoeuf: "5", citron: "2½", sel: "4 g", poivre: "3 g" },
+      { nb: 11, beurre: "330 g", farine: "110 g", jaunedoeuf: "5½", citron: "2¾", sel: "4.4 g", poivre: "3.3 g" },
+      { nb: 12, beurre: "360 g", farine: "120 g", jaunedoeuf: "6", citron: "3", sel: "4.8 g", poivre: "3.6 g" },
+      { nb: 13, beurre: "390 g", farine: "130 g", jaunedoeuf: "6½", citron: "3¼", sel: "5.2 g", poivre: "3.9 g" },
+      { nb: 14, beurre: "420 g", farine: "140 g", jaunedoeuf: "7", citron: "3½", sel: "5.6 g", poivre: "4.2 g" },
+      { nb: 15, beurre: "450 g", farine: "150 g", jaunedoeuf: "7½", citron: "3¾", sel: "6 g", poivre: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Un roux BLANC, deux minutes à peine", detail: "Il ne doit pas colorer du tout : dès qu'il blondit, la sauce prend un goût de farine grillée qui n'a rien à faire ici.", badge: null },
+      { icone: "💧", titre: "Mouiller à l'EAU BOUILLANTE, pas au bouillon", detail: "C'est toute la définition de la bâtarde : sans fond, elle ne coûte rien et laisse le légume s'exprimer.", badge: null },
+      { icone: "🥄", titre: "Verser en une fois, en fouettant", detail: "Sur un roux tiède et une eau bouillante : c'est le choc thermique qui empêche les grumeaux, pas le fouet.", badge: null },
+      { icone: "⏱️", titre: "Cuire dix minutes à petit feu", detail: "Pour que la farine perde son goût cru. Une sauce blanche bâclée se reconnaît immédiatement en bouche.", badge: null },
+      { icone: "🥚", titre: "Le jaune détendu AVANT d'être versé", detail: "Une louche de sauce chaude dans le jaune, puis le tout dans la casserole : versé sec, il fait des filaments d'omelette.", badge: null },
+      { icone: "🚫", titre: "Plus d'ébullition après le jaune", detail: "Il coagule à 68 °C. Passé ce point, aucun fouet ne rattrape la sauce.", badge: null },
+      { icone: "🧈", titre: "Beurre froid et citron pour finir", detail: "Le beurre donne le velouté, le citron empêche que ce soit plat. Les deux hors du feu.", badge: null }
+    ],
+    liees: ["veloute","saucehollandaise","saucepoulette"]
+  },
+  saucefinanciere: {
+    dateAjout: "2026-08-25T10:03:00",
+    nom: "Sauce Financière",
+    cat: "sauces", pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐⭐ Expert",
+    emoji: "💰",
+    description: "La sauce la plus fastueuse du répertoire : une espagnole au madère, aux champignons et à la truffe. Son nom dit tout — c'est la sauce que l'on servait quand on voulait montrer ce qu'on pouvait se permettre.",
+    tableauSaucefinanciere: [
+      { nb: 1, bouillon: "70 ml", madere: "25 ml", champignons: "30 g", truffenoire: "1 g", beurre: "10 g", farine: "6 g", poivre: "0.4 g" },
+      { nb: 2, bouillon: "140 ml", madere: "50 ml", champignons: "60 g", truffenoire: "2 g", beurre: "20 g", farine: "12 g", poivre: "0.8 g" },
+      { nb: 3, bouillon: "210 ml", madere: "75 ml", champignons: "90 g", truffenoire: "3 g", beurre: "30 g", farine: "18 g", poivre: "1.2 g" },
+      { nb: 4, bouillon: "280 ml", madere: "100 ml", champignons: "120 g", truffenoire: "4 g", beurre: "40 g", farine: "24 g", poivre: "1.6 g" },
+      { nb: 5, bouillon: "350 ml", madere: "125 ml", champignons: "150 g", truffenoire: "5 g", beurre: "50 g", farine: "30 g", poivre: "2 g" },
+      { nb: 6, bouillon: "420 ml", madere: "150 ml", champignons: "180 g", truffenoire: "6 g", beurre: "60 g", farine: "36 g", poivre: "2.4 g" },
+      { nb: 7, bouillon: "490 ml", madere: "175 ml", champignons: "210 g", truffenoire: "7 g", beurre: "70 g", farine: "42 g", poivre: "2.8 g" },
+      { nb: 8, bouillon: "560 ml", madere: "200 ml", champignons: "240 g", truffenoire: "8 g", beurre: "80 g", farine: "48 g", poivre: "3.2 g" },
+      { nb: 9, bouillon: "630 ml", madere: "225 ml", champignons: "270 g", truffenoire: "9 g", beurre: "90 g", farine: "54 g", poivre: "3.6 g" },
+      { nb: 10, bouillon: "700 ml", madere: "250 ml", champignons: "300 g", truffenoire: "10 g", beurre: "100 g", farine: "60 g", poivre: "4 g" },
+      { nb: 11, bouillon: "770 ml", madere: "275 ml", champignons: "330 g", truffenoire: "11 g", beurre: "110 g", farine: "66 g", poivre: "4.4 g" },
+      { nb: 12, bouillon: "840 ml", madere: "300 ml", champignons: "360 g", truffenoire: "12 g", beurre: "120 g", farine: "72 g", poivre: "4.8 g" },
+      { nb: 13, bouillon: "910 ml", madere: "325 ml", champignons: "390 g", truffenoire: "13 g", beurre: "130 g", farine: "78 g", poivre: "5.2 g" },
+      { nb: 14, bouillon: "980 ml", madere: "350 ml", champignons: "420 g", truffenoire: "14 g", beurre: "140 g", farine: "84 g", poivre: "5.6 g" },
+      { nb: 15, bouillon: "1050 ml", madere: "375 ml", champignons: "450 g", truffenoire: "15 g", beurre: "150 g", farine: "90 g", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Un roux BRUN, longuement travaillé", detail: "Dix minutes jusqu'à la couleur noisette : c'est la base de l'espagnole, et le raccourci se voit dans l'assiette.", badge: null },
+      { icone: "🍄", titre: "Faire suer les champignons À SEC", detail: "Sans matière grasse, jusqu'à ce qu'ils rendent puis reprennent leur eau : sinon ils délayeront la sauce.", badge: null },
+      { icone: "🍷", titre: "Le madère en DEUX fois", detail: "Une moitié pour la cuisson, l'autre crue à la fin : la première donne la profondeur, la seconde le parfum.", badge: null },
+      { icone: "⏳", titre: "Réduire lentement, en écumant", detail: "Trente minutes à frémissement, en retirant la mousse : c'est elle qui trouble une sauce brune.", badge: null },
+      { icone: "🫗", titre: "Passer à l'étamine, sans fouler", detail: "Contrairement aux autres sauces : ici on laisse s'égoutter, écraser rendrait la sauce trouble.", badge: null },
+      { icone: "⚫", titre: "La truffe râpée hors du feu", detail: "Son parfum est volatil : cuite, il ne reste que le prix. On l'ajoute au dernier moment, couvercle fermé.", badge: null },
+      { icone: "🍽️", titre: "Servir sur ris de veau, volaille ou vol-au-vent", detail: "C'est une sauce d'apparat qui accompagne les pièces blanches et délicates, jamais un plat rustique.", badge: null }
+    ],
+    liees: ["sauceperigueux","sauceespagnole","saucemorilles"]
+  },
+  saucelyonnaise: {
+    dateAjout: "2026-08-25T10:04:00",
+    nom: "Sauce Lyonnaise",
+    cat: "sauces", pays: "france",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🧅",
+    description: "Des oignons fondus jusqu'au blond, déglacés au vin blanc et au vinaigre. C'est la sauce du tablier de sapeur et des restes réchauffés — la preuve qu'à Lyon, l'oignon est un condiment à part entière.",
+    tableauSaucelyonnaise: [
+      { nb: 1, oignon: "½", vinblanc: "40 ml", vinaigreVin: "10 ml", bouillon: "60 ml", beurre: "12 g", farine: "5 g", persil: "3 g", poivre: "0.4 g" },
+      { nb: 2, oignon: "1", vinblanc: "80 ml", vinaigreVin: "20 ml", bouillon: "120 ml", beurre: "24 g", farine: "10 g", persil: "6 g", poivre: "0.8 g" },
+      { nb: 3, oignon: "1½", vinblanc: "120 ml", vinaigreVin: "30 ml", bouillon: "180 ml", beurre: "36 g", farine: "15 g", persil: "9 g", poivre: "1.2 g" },
+      { nb: 4, oignon: "2", vinblanc: "160 ml", vinaigreVin: "40 ml", bouillon: "240 ml", beurre: "48 g", farine: "20 g", persil: "12 g", poivre: "1.6 g" },
+      { nb: 5, oignon: "2½", vinblanc: "200 ml", vinaigreVin: "50 ml", bouillon: "300 ml", beurre: "60 g", farine: "25 g", persil: "15 g", poivre: "2 g" },
+      { nb: 6, oignon: "3", vinblanc: "240 ml", vinaigreVin: "60 ml", bouillon: "360 ml", beurre: "72 g", farine: "30 g", persil: "18 g", poivre: "2.4 g" },
+      { nb: 7, oignon: "3½", vinblanc: "280 ml", vinaigreVin: "70 ml", bouillon: "420 ml", beurre: "84 g", farine: "35 g", persil: "21 g", poivre: "2.8 g" },
+      { nb: 8, oignon: "4", vinblanc: "320 ml", vinaigreVin: "80 ml", bouillon: "480 ml", beurre: "96 g", farine: "40 g", persil: "24 g", poivre: "3.2 g" },
+      { nb: 9, oignon: "4½", vinblanc: "360 ml", vinaigreVin: "90 ml", bouillon: "540 ml", beurre: "108 g", farine: "45 g", persil: "27 g", poivre: "3.6 g" },
+      { nb: 10, oignon: "5", vinblanc: "400 ml", vinaigreVin: "100 ml", bouillon: "600 ml", beurre: "120 g", farine: "50 g", persil: "30 g", poivre: "4 g" },
+      { nb: 11, oignon: "5½", vinblanc: "440 ml", vinaigreVin: "110 ml", bouillon: "660 ml", beurre: "132 g", farine: "55 g", persil: "33 g", poivre: "4.4 g" },
+      { nb: 12, oignon: "6", vinblanc: "480 ml", vinaigreVin: "120 ml", bouillon: "720 ml", beurre: "144 g", farine: "60 g", persil: "36 g", poivre: "4.8 g" },
+      { nb: 13, oignon: "6½", vinblanc: "520 ml", vinaigreVin: "130 ml", bouillon: "780 ml", beurre: "156 g", farine: "65 g", persil: "39 g", poivre: "5.2 g" },
+      { nb: 14, oignon: "7", vinblanc: "560 ml", vinaigreVin: "140 ml", bouillon: "840 ml", beurre: "168 g", farine: "70 g", persil: "42 g", poivre: "5.6 g" },
+      { nb: 15, oignon: "7½", vinblanc: "600 ml", vinaigreVin: "150 ml", bouillon: "900 ml", beurre: "180 g", farine: "75 g", persil: "45 g", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Émincer très fin, à la mandoline", detail: "Des lamelles régulières fondent uniformément ; taillées au couteau, certaines brûlent quand d'autres restent crues.", badge: null },
+      { icone: "🧈", titre: "Fondre au beurre, à couvert, 25 minutes", detail: "Feu doux et couvercle : l'oignon doit se défaire dans sa propre eau avant de commencer à colorer.", badge: null },
+      { icone: "🟡", titre: "Blond, pas brun", detail: "On retire le couvercle pour la couleur : blond doré, l'oignon est sucré ; brun, il vire amer et gâche tout.", badge: null },
+      { icone: "🍶", titre: "Vinaigre ET vin blanc", detail: "Le vinaigre tranche le sucre de l'oignon, le vin apporte le fruit. L'un sans l'autre déséquilibre la sauce.", badge: null },
+      { icone: "🔥", titre: "Déglacer à FEU VIF", detail: "Il faut que ça grésille pour décoller les sucs du fond : c'est là qu'est la moitié du goût.", badge: null },
+      { icone: "⏱️", titre: "Réduire de moitié, puis lier", detail: "Un beurre manié — beurre et farine malaxés crus — donne une liaison plus fine qu'un roux.", badge: null },
+      { icone: "🌿", titre: "Persil plat haché au service", detail: "Il apporte la fraîcheur qui manque à une sauce entièrement fondue. Haché à l'avance, il noircit.", badge: null }
+    ],
+    liees: ["saucesoubise","saucebercy","saucerobert"]
   },
 });
