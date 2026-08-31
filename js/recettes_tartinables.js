@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 15 recettes
+// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 18 recettes
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1502,5 +1502,119 @@ Object.assign(recettes, {
       { icone: "🕐", titre: "Une heure au frais avant de servir", detail: "Le piment diffuse et la préparation se raffermit. Servi tiède, le tirokafteri est mou et agressif.", badge: null }
     ],
     liees: ["ktipiti","liptauer","fromagefort"]
+  },
+  pindjur: {
+    dateAjout: "2026-08-31T11:01:00",
+    nom: "Pindjur",
+    cat: "tartinables", saisons: ["ete","automne"], pays: "macedoinedunord",
+    base: 6,
+    temps: "1 h 30",
+    niveau: "⭐ Facile",
+    emoji: "🫑",
+    description: "Le cousin plus rustique de l'ajvar : on y ajoute l'aubergine et la tomate, et on hache au lieu de mixer. Il se prépare en septembre, quand les poivrons rouges sont à leur plus sucré, et se met en bocaux pour tout l'hiver.",
+    tableauPindjur: [
+      { nb: 1, poivron: "120 g", aubergine: "60 g", tomate: "50 g", ail: "1", huileolive: "15 ml", vinaigreVin: "5 ml", sel: "2 g", piment: "0.5 g" },
+      { nb: 2, poivron: "240 g", aubergine: "120 g", tomate: "100 g", ail: "2", huileolive: "30 ml", vinaigreVin: "10 ml", sel: "4 g", piment: "1 g" },
+      { nb: 3, poivron: "360 g", aubergine: "180 g", tomate: "150 g", ail: "3", huileolive: "45 ml", vinaigreVin: "15 ml", sel: "6 g", piment: "1.5 g" },
+      { nb: 4, poivron: "480 g", aubergine: "240 g", tomate: "200 g", ail: "4", huileolive: "60 ml", vinaigreVin: "20 ml", sel: "8 g", piment: "2 g" },
+      { nb: 5, poivron: "600 g", aubergine: "300 g", tomate: "250 g", ail: "5", huileolive: "75 ml", vinaigreVin: "25 ml", sel: "10 g", piment: "2.5 g" },
+      { nb: 6, poivron: "720 g", aubergine: "360 g", tomate: "300 g", ail: "6", huileolive: "90 ml", vinaigreVin: "30 ml", sel: "12 g", piment: "3 g" },
+      { nb: 7, poivron: "840 g", aubergine: "420 g", tomate: "350 g", ail: "7", huileolive: "105 ml", vinaigreVin: "35 ml", sel: "14 g", piment: "3.5 g" },
+      { nb: 8, poivron: "960 g", aubergine: "480 g", tomate: "400 g", ail: "8", huileolive: "120 ml", vinaigreVin: "40 ml", sel: "16 g", piment: "4 g" },
+      { nb: 9, poivron: "1080 g", aubergine: "540 g", tomate: "450 g", ail: "9", huileolive: "135 ml", vinaigreVin: "45 ml", sel: "18 g", piment: "4.5 g" },
+      { nb: 10, poivron: "1200 g", aubergine: "600 g", tomate: "500 g", ail: "10", huileolive: "150 ml", vinaigreVin: "50 ml", sel: "20 g", piment: "5 g" },
+      { nb: 11, poivron: "1320 g", aubergine: "660 g", tomate: "550 g", ail: "11", huileolive: "165 ml", vinaigreVin: "55 ml", sel: "22 g", piment: "5.5 g" },
+      { nb: 12, poivron: "1440 g", aubergine: "720 g", tomate: "600 g", ail: "12", huileolive: "180 ml", vinaigreVin: "60 ml", sel: "24 g", piment: "6 g" },
+      { nb: 13, poivron: "1560 g", aubergine: "780 g", tomate: "650 g", ail: "13", huileolive: "195 ml", vinaigreVin: "65 ml", sel: "26 g", piment: "6.5 g" },
+      { nb: 14, poivron: "1680 g", aubergine: "840 g", tomate: "700 g", ail: "14", huileolive: "210 ml", vinaigreVin: "70 ml", sel: "28 g", piment: "7 g" },
+      { nb: 15, poivron: "1800 g", aubergine: "900 g", tomate: "750 g", ail: "15", huileolive: "225 ml", vinaigreVin: "75 ml", sel: "30 g", piment: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Griller les poivrons jusqu'au NOIR", detail: "Peau entièrement carbonisée sur toutes les faces. Une peau seulement colorée ne se retirera pas et laissera des lambeaux coriaces.", badge: null },
+      { icone: "♨️", titre: "Enfermer dix minutes dans un sac", detail: "La vapeur décolle la peau toute seule. Sans ce passage, on gratte au couteau et on emporte la chair avec.", badge: null },
+      { icone: "🚫", titre: "Ne JAMAIS passer sous l'eau pour peler", detail: "C'est le réflexe qui ruine le pindjur : l'eau emporte les sucs fumés qui font tout le goût.", badge: null },
+      { icone: "🍆", titre: "L'aubergine grillée entière, puis égouttée", detail: "Une heure dans une passoire après avoir retiré la chair : c'est l'eau qu'elle rend qui rendrait le pindjur liquide.", badge: null },
+      { icone: "🔪", titre: "HACHER au couteau, pas au mixeur", detail: "C'est ce qui sépare le pindjur de l'ajvar : on veut des morceaux qu'on reconnaît, pas une purée lisse.", badge: null },
+      { icone: "⏳", titre: "Réduire une heure à feu très doux", detail: "En remuant régulièrement : le mélange doit foncer et se détacher du fond de la casserole. C'est là que le goût se concentre.", badge: null },
+      { icone: "🫒", titre: "L'huile en filet, en fin de réduction", detail: "Versée trop tôt, elle frit les légumes ; versée à la fin, elle lie et forme la couche protectrice sur le bocal.", badge: null }
+    ],
+    liees: ["ajvar","malidzano","lutenitsa"]
+  },
+  malidzano: {
+    dateAjout: "2026-08-31T11:02:00",
+    nom: "Malidzano",
+    cat: "tartinables", saisons: ["ete","automne"], pays: "macedoinedunord",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍆",
+    description: "La tartinade d'aubergine macédonienne, reconnaissable à ses noix pilées et à sa feta émiettée. Son nom vient de l'italien melanzana — souvenir des marchands vénitiens sur la côte adriatique.",
+    tableauMalidzano: [
+      { nb: 1, aubergine: "130 g", noix: "25 g", feta: "25 g", ail: "1", huileolive: "12 ml", persil: "3 g", citron: "¼", sel: "1 g" },
+      { nb: 2, aubergine: "260 g", noix: "50 g", feta: "50 g", ail: "2", huileolive: "24 ml", persil: "6 g", citron: "½", sel: "2 g" },
+      { nb: 3, aubergine: "390 g", noix: "75 g", feta: "75 g", ail: "3", huileolive: "36 ml", persil: "9 g", citron: "¾", sel: "3 g" },
+      { nb: 4, aubergine: "520 g", noix: "100 g", feta: "100 g", ail: "4", huileolive: "48 ml", persil: "12 g", citron: "1", sel: "4 g" },
+      { nb: 5, aubergine: "650 g", noix: "125 g", feta: "125 g", ail: "5", huileolive: "60 ml", persil: "15 g", citron: "1¼", sel: "5 g" },
+      { nb: 6, aubergine: "780 g", noix: "150 g", feta: "150 g", ail: "6", huileolive: "72 ml", persil: "18 g", citron: "1½", sel: "6 g" },
+      { nb: 7, aubergine: "910 g", noix: "175 g", feta: "175 g", ail: "7", huileolive: "84 ml", persil: "21 g", citron: "1¾", sel: "7 g" },
+      { nb: 8, aubergine: "1040 g", noix: "200 g", feta: "200 g", ail: "8", huileolive: "96 ml", persil: "24 g", citron: "2", sel: "8 g" },
+      { nb: 9, aubergine: "1170 g", noix: "225 g", feta: "225 g", ail: "9", huileolive: "108 ml", persil: "27 g", citron: "2¼", sel: "9 g" },
+      { nb: 10, aubergine: "1300 g", noix: "250 g", feta: "250 g", ail: "10", huileolive: "120 ml", persil: "30 g", citron: "2½", sel: "10 g" },
+      { nb: 11, aubergine: "1430 g", noix: "275 g", feta: "275 g", ail: "11", huileolive: "132 ml", persil: "33 g", citron: "2¾", sel: "11 g" },
+      { nb: 12, aubergine: "1560 g", noix: "300 g", feta: "300 g", ail: "12", huileolive: "144 ml", persil: "36 g", citron: "3", sel: "12 g" },
+      { nb: 13, aubergine: "1690 g", noix: "325 g", feta: "325 g", ail: "13", huileolive: "156 ml", persil: "39 g", citron: "3¼", sel: "13 g" },
+      { nb: 14, aubergine: "1820 g", noix: "350 g", feta: "350 g", ail: "14", huileolive: "168 ml", persil: "42 g", citron: "3½", sel: "14 g" },
+      { nb: 15, aubergine: "1950 g", noix: "375 g", feta: "375 g", ail: "15", huileolive: "180 ml", persil: "45 g", citron: "3¾", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "L'aubergine grillée à même la flamme", detail: "Peau noircie de partout : c'est cette fumée qui fait la différence avec une aubergine cuite au four, plus douce et plus plate.", badge: null },
+      { icone: "💧", titre: "Égoutter la chair une heure entière", detail: "Dans une passoire, sans presser. Une aubergine mal égouttée donne une tartinade qui rend de l'eau dans l'assiette.", badge: null },
+      { icone: "🌰", titre: "Piler les noix au mortier", detail: "Au mixeur elles rendent leur huile et tournent en pâte grasse. Au mortier elles restent en éclats et donnent du croquant.", badge: null },
+      { icone: "🧀", titre: "La feta ÉMIETTÉE, pas mixée", detail: "Elle doit rester en petits grains blancs visibles : c'est la signature du malidzano, sinon on obtient un baba ganoush.", badge: null },
+      { icone: "🧄", titre: "L'ail cru, râpé très fin", detail: "Une seule gousse : cuit, il perd son mordant, et c'est lui qui réveille le gras des noix.", badge: null },
+      { icone: "🥄", titre: "Monter à la fourchette, jamais au robot", detail: "On veut une texture rustique et irrégulière. Mixé, le malidzano devient une crème sans caractère.", badge: null },
+      { icone: "❄️", titre: "Deux heures au frais avant de servir", detail: "Les noix ont besoin de ce temps pour parfumer l'ensemble. Servi tout de suite, il a le goût de ses ingrédients séparés.", badge: null }
+    ],
+    liees: ["pindjur","ajvar","babaganoush"]
+  },
+  shakarob: {
+    dateAjout: "2026-08-31T11:03:00",
+    nom: "Shakarob",
+    cat: "tartinables", saisons: ["ete"], pays: "ouzbekistan",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "L'accompagnement obligatoire du plov ouzbek : tomates et oignons taillés fin, sans une goutte d'huile. Son nom veut dire « eau sucrée » — c'est le jus rendu par les tomates qui fait toute la sauce, et on le boit au fond du bol.",
+    tableauShakarob: [
+      { nb: 1, tomate: "110 g", oignon: "½", coriandre: "4 g", piment: "0.5 g", sel: "2 g", basilic: "2 g" },
+      { nb: 2, tomate: "220 g", oignon: "1", coriandre: "8 g", piment: "1 g", sel: "4 g", basilic: "4 g" },
+      { nb: 3, tomate: "330 g", oignon: "1½", coriandre: "12 g", piment: "1.5 g", sel: "6 g", basilic: "6 g" },
+      { nb: 4, tomate: "440 g", oignon: "2", coriandre: "16 g", piment: "2 g", sel: "8 g", basilic: "8 g" },
+      { nb: 5, tomate: "550 g", oignon: "2½", coriandre: "20 g", piment: "2.5 g", sel: "10 g", basilic: "10 g" },
+      { nb: 6, tomate: "660 g", oignon: "3", coriandre: "24 g", piment: "3 g", sel: "12 g", basilic: "12 g" },
+      { nb: 7, tomate: "770 g", oignon: "3½", coriandre: "28 g", piment: "3.5 g", sel: "14 g", basilic: "14 g" },
+      { nb: 8, tomate: "880 g", oignon: "4", coriandre: "32 g", piment: "4 g", sel: "16 g", basilic: "16 g" },
+      { nb: 9, tomate: "990 g", oignon: "4½", coriandre: "36 g", piment: "4.5 g", sel: "18 g", basilic: "18 g" },
+      { nb: 10, tomate: "1100 g", oignon: "5", coriandre: "40 g", piment: "5 g", sel: "20 g", basilic: "20 g" },
+      { nb: 11, tomate: "1210 g", oignon: "5½", coriandre: "44 g", piment: "5.5 g", sel: "22 g", basilic: "22 g" },
+      { nb: 12, tomate: "1320 g", oignon: "6", coriandre: "48 g", piment: "6 g", sel: "24 g", basilic: "24 g" },
+      { nb: 13, tomate: "1430 g", oignon: "6½", coriandre: "52 g", piment: "6.5 g", sel: "26 g", basilic: "26 g" },
+      { nb: 14, tomate: "1540 g", oignon: "7", coriandre: "56 g", piment: "7 g", sel: "28 g", basilic: "28 g" },
+      { nb: 15, tomate: "1650 g", oignon: "7½", coriandre: "60 g", piment: "7.5 g", sel: "30 g", basilic: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Des tomates MÛRES à cœur, jamais fermes", detail: "Toute la recette repose sur le jus qu'elles rendent. Une tomate ferme donne une salade sèche et le shakarob n'existe plus.", badge: null },
+      { icone: "🔪", titre: "Tailler au couteau, en tranches fines", detail: "Jamais en dés : les tranches libèrent plus de jus et se mangent à la cuillère avec le bouillon.", badge: null },
+      { icone: "🧅", titre: "L'oignon en demi-lunes très fines", detail: "Puis rincé à l'eau froide et essoré : cru et épais, il domine tout ; rincé, il ne laisse que son croquant.", badge: null },
+      { icone: "🚫", titre: "PAS une goutte d'huile", detail: "C'est la règle : le shakarob accompagne un plov déjà très gras, il est là pour trancher, pas pour ajouter.", badge: null },
+      { icone: "🧂", titre: "Saler AVANT de laisser reposer", detail: "C'est le sel qui fait sortir l'eau des tomates. Salé au moment de servir, il n'y a pas de jus au fond du bol.", badge: null },
+      { icone: "⏳", titre: "Un quart d'heure de repos, pas plus", detail: "Le temps que le jus se forme. Au-delà, les tomates s'affaissent et l'oignon devient piquant.", badge: null },
+      { icone: "🌿", titre: "Coriandre et basilic déchirés à la main", detail: "Coupés au couteau, ils noircissent sur les bords et rendent leur parfum dans la planche plutôt que dans le bol.", badge: null }
+    ],
+    liees: ["plov","achichuk","lagman"]
   },
 });

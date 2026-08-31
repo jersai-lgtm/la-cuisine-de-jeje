@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 72 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 73 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -17872,5 +17872,44 @@ Object.assign(recettes, {
       { icone: "🌸", titre: "Cannelle et sucre glace au tamis", detail: "Sur la surface froide seulement : saupoudrés à chaud, ils fondent et disparaissent.", badge: null }
     ],
     liees: ["sholezard","faloodeh","halva"]
+  },
+  nanberenji: {
+    dateAjout: "2026-08-31T11:09:00",
+    nom: "Nan-e Berenji",
+    cat: "desserts", pays: "iran",
+    base: 8,
+    temps: "1 h + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌸",
+    description: "Les biscuits de Kermanshah, offerts à Norouz : de la farine de riz seule, sans une trace de blé. Ils fondent littéralement sur la langue et ne supportent aucune manipulation — c'est leur fragilité qui fait leur réputation.",
+    tableauNanberenji: [
+      { nb: 1, farineRiz: "40 g", sucreglace: "20 g", huile: "18 ml", jaunedoeuf: "¼", eaurose: "6 ml", cardamome: "0.4 g", pavot: "1 g" },
+      { nb: 2, farineRiz: "80 g", sucreglace: "40 g", huile: "36 ml", jaunedoeuf: "½", eaurose: "12 ml", cardamome: "0.8 g", pavot: "2 g" },
+      { nb: 3, farineRiz: "120 g", sucreglace: "60 g", huile: "54 ml", jaunedoeuf: "¾", eaurose: "18 ml", cardamome: "1.2 g", pavot: "3 g" },
+      { nb: 4, farineRiz: "160 g", sucreglace: "80 g", huile: "72 ml", jaunedoeuf: "1", eaurose: "24 ml", cardamome: "1.6 g", pavot: "4 g" },
+      { nb: 5, farineRiz: "200 g", sucreglace: "100 g", huile: "90 ml", jaunedoeuf: "1¼", eaurose: "30 ml", cardamome: "2 g", pavot: "5 g" },
+      { nb: 6, farineRiz: "240 g", sucreglace: "120 g", huile: "108 ml", jaunedoeuf: "1½", eaurose: "36 ml", cardamome: "2.4 g", pavot: "6 g" },
+      { nb: 7, farineRiz: "280 g", sucreglace: "140 g", huile: "126 ml", jaunedoeuf: "1¾", eaurose: "42 ml", cardamome: "2.8 g", pavot: "7 g" },
+      { nb: 8, farineRiz: "320 g", sucreglace: "160 g", huile: "144 ml", jaunedoeuf: "2", eaurose: "48 ml", cardamome: "3.2 g", pavot: "8 g" },
+      { nb: 9, farineRiz: "360 g", sucreglace: "180 g", huile: "162 ml", jaunedoeuf: "2¼", eaurose: "54 ml", cardamome: "3.6 g", pavot: "9 g" },
+      { nb: 10, farineRiz: "400 g", sucreglace: "200 g", huile: "180 ml", jaunedoeuf: "2½", eaurose: "60 ml", cardamome: "4 g", pavot: "10 g" },
+      { nb: 11, farineRiz: "440 g", sucreglace: "220 g", huile: "198 ml", jaunedoeuf: "2¾", eaurose: "66 ml", cardamome: "4.4 g", pavot: "11 g" },
+      { nb: 12, farineRiz: "480 g", sucreglace: "240 g", huile: "216 ml", jaunedoeuf: "3", eaurose: "72 ml", cardamome: "4.8 g", pavot: "12 g" },
+      { nb: 13, farineRiz: "520 g", sucreglace: "260 g", huile: "234 ml", jaunedoeuf: "3¼", eaurose: "78 ml", cardamome: "5.2 g", pavot: "13 g" },
+      { nb: 14, farineRiz: "560 g", sucreglace: "280 g", huile: "252 ml", jaunedoeuf: "3½", eaurose: "84 ml", cardamome: "5.6 g", pavot: "14 g" },
+      { nb: 15, farineRiz: "600 g", sucreglace: "300 g", huile: "270 ml", jaunedoeuf: "3¾", eaurose: "90 ml", cardamome: "6 g", pavot: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🚫", titre: "De la farine de riz SEULE, jamais de blé", detail: "Le gluten du blé donnerait un sablé ordinaire. C'est l'absence totale de gluten qui produit ce fondant particulier.", badge: null },
+      { icone: "🌹", titre: "Eau de rose et cardamome dès le début", detail: "Ajoutées à l'huile, pas à la fin : elles ont besoin de tout le repos pour imprégner la farine de riz.", badge: null },
+      { icone: "❄️", titre: "Un repos de la pâte au FRAIS, minimum 4 h", detail: "Traditionnellement toute une nuit. C'est le temps qu'il faut à la farine de riz pour absorber le gras et cesser d'être sableuse.", badge: null },
+      { icone: "✋", titre: "Façonner sans jamais pétrir", detail: "On presse doucement entre les paumes. Pétrie, la pâte chauffe, l'huile ressort et les biscuits s'étalent au four.", badge: null },
+      { icone: "🍴", titre: "Marquer le dessus à la fourchette", detail: "Le motif traditionnel n'est pas qu'un décor : les stries permettent au biscuit de sécher régulièrement sans se fendre.", badge: null },
+      { icone: "🌡️", titre: "Un four DOUX, 150 °C, sans coloration", detail: "Ils doivent rester blancs : dorés, ils deviennent secs et cassants, et perdent le fondant qui les définit.", badge: null },
+      { icone: "⏳", titre: "Refroidir SUR LA PLAQUE, sans y toucher", detail: "Chauds, ils s'effritent au moindre contact. C'est en refroidissant qu'ils prennent leur tenue.", badge: null },
+      { icone: "⚫", titre: "Graines de pavot posées avant cuisson", detail: "Une pincée au centre : posées après, elles ne collent pas et tombent au premier biscuit soulevé.", badge: null }
+    ],
+    liees: ["nankhatai","sablesdattes","baklava"]
   },
 });

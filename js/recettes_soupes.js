@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 40 recettes
+// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 41 recettes
 // 👉 Pour AJOUTER une recette Soupes : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -6735,5 +6735,44 @@ Object.assign(recettes, {
       { icone: "🧄", titre: "L'ail au vinaigre servi À PART", detail: "Écrasé dans du vinaigre, en saucière : chacun dose dans son bol. C'est le rituel autant que l'assaisonnement.", badge: null }
     ],
     liees: ["ciorba","kapusniak","borschtukrainien"]
+  },
+  ashanar: {
+    dateAjout: "2026-08-31T12:05:00",
+    nom: "Ash-e Anar",
+    cat: "soupes", saisons: ["automne","hiver"], pays: "iran",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍒",
+    description: "La soupe de grenade servie à Yalda, la nuit la plus longue de l'année. Elle joue sur l'aigre-doux : jus de grenade acide, sucre pour l'équilibrer, et une montagne d'herbes fraîches qui la fait virer au vert sombre.",
+    tableauAshanar: [
+      { nb: 1, grenade: "90 g", riz: "20 g", poischiches: "20 g", persil: "15 g", coriandre: "10 g", boeufhache: "45 g", oignon: "½", menthe: "3 g", curcuma: "0.5 g", sucre: "6 g" },
+      { nb: 2, grenade: "180 g", riz: "40 g", poischiches: "40 g", persil: "30 g", coriandre: "20 g", boeufhache: "90 g", oignon: "1", menthe: "6 g", curcuma: "1 g", sucre: "12 g" },
+      { nb: 3, grenade: "270 g", riz: "60 g", poischiches: "60 g", persil: "45 g", coriandre: "30 g", boeufhache: "135 g", oignon: "1½", menthe: "9 g", curcuma: "1.5 g", sucre: "18 g" },
+      { nb: 4, grenade: "360 g", riz: "80 g", poischiches: "80 g", persil: "60 g", coriandre: "40 g", boeufhache: "180 g", oignon: "2", menthe: "12 g", curcuma: "2 g", sucre: "24 g" },
+      { nb: 5, grenade: "450 g", riz: "100 g", poischiches: "100 g", persil: "75 g", coriandre: "50 g", boeufhache: "225 g", oignon: "2½", menthe: "15 g", curcuma: "2.5 g", sucre: "30 g" },
+      { nb: 6, grenade: "540 g", riz: "120 g", poischiches: "120 g", persil: "90 g", coriandre: "60 g", boeufhache: "270 g", oignon: "3", menthe: "18 g", curcuma: "3 g", sucre: "36 g" },
+      { nb: 7, grenade: "630 g", riz: "140 g", poischiches: "140 g", persil: "105 g", coriandre: "70 g", boeufhache: "315 g", oignon: "3½", menthe: "21 g", curcuma: "3.5 g", sucre: "42 g" },
+      { nb: 8, grenade: "720 g", riz: "160 g", poischiches: "160 g", persil: "120 g", coriandre: "80 g", boeufhache: "360 g", oignon: "4", menthe: "24 g", curcuma: "4 g", sucre: "48 g" },
+      { nb: 9, grenade: "810 g", riz: "180 g", poischiches: "180 g", persil: "135 g", coriandre: "90 g", boeufhache: "405 g", oignon: "4½", menthe: "27 g", curcuma: "4.5 g", sucre: "54 g" },
+      { nb: 10, grenade: "900 g", riz: "200 g", poischiches: "200 g", persil: "150 g", coriandre: "100 g", boeufhache: "450 g", oignon: "5", menthe: "30 g", curcuma: "5 g", sucre: "60 g" },
+      { nb: 11, grenade: "990 g", riz: "220 g", poischiches: "220 g", persil: "165 g", coriandre: "110 g", boeufhache: "495 g", oignon: "5½", menthe: "33 g", curcuma: "5.5 g", sucre: "66 g" },
+      { nb: 12, grenade: "1080 g", riz: "240 g", poischiches: "240 g", persil: "180 g", coriandre: "120 g", boeufhache: "540 g", oignon: "6", menthe: "36 g", curcuma: "6 g", sucre: "72 g" },
+      { nb: 13, grenade: "1170 g", riz: "260 g", poischiches: "260 g", persil: "195 g", coriandre: "130 g", boeufhache: "585 g", oignon: "6½", menthe: "39 g", curcuma: "6.5 g", sucre: "78 g" },
+      { nb: 14, grenade: "1260 g", riz: "280 g", poischiches: "280 g", persil: "210 g", coriandre: "140 g", boeufhache: "630 g", oignon: "7", menthe: "42 g", curcuma: "7 g", sucre: "84 g" },
+      { nb: 15, grenade: "1350 g", riz: "300 g", poischiches: "300 g", persil: "225 g", coriandre: "150 g", boeufhache: "675 g", oignon: "7½", menthe: "45 g", curcuma: "7.5 g", sucre: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍒", titre: "Du jus de grenade PUR, non sucré", detail: "Les jus du commerce sont coupés et sucrés : la soupe devient sirupeuse et perd l'acidité qui la structure.", badge: null },
+      { icone: "🫘", titre: "Pois chiches trempés la veille", detail: "Douze heures minimum. En conserve, ils s'écrasent au bout d'une heure de cuisson et troublent le bouillon.", badge: null },
+      { icone: "🥩", titre: "Des boulettes minuscules, de la taille d'une noisette", detail: "C'est la règle des ash iraniens : grosses, elles cuisent mal et déséquilibrent la cuillère.", badge: null },
+      { icone: "🌿", titre: "Les herbes en QUANTITÉ, jamais en garniture", detail: "Deux gros bouquets pour six : la soupe doit virer au vert sombre. En pincée, ce n'est plus un ash.", badge: null },
+      { icone: "⏳", titre: "Le riz cuit longuement, jusqu'à l'éclatement", detail: "Il doit se défaire et lier la soupe : c'est lui, l'épaississant, il n'y a ni farine ni crème.", badge: null },
+      { icone: "⚖️", titre: "Ajuster l'aigre-doux à la FIN, en goûtant", detail: "Selon l'acidité de la grenade : on ajoute le sucre cuillère par cuillère, jamais tout d'un coup au début.", badge: null },
+      { icone: "🌿", titre: "La menthe frite versée sur le dessus", detail: "Menthe séchée revenue dans le beurre trente secondes : c'est le na'na dagh, la finition obligatoire de tous les ash.", badge: null },
+      { icone: "🍒", titre: "Des grains de grenade frais au service", detail: "Pour le croquant et l'acidité vive. Cuits, ils fondent et il ne reste que le jus.", badge: null }
+    ],
+    liees: ["ashreshteh","fesenjan","abgoosht"]
   },
 });

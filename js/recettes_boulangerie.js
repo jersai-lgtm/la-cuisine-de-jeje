@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 31 recettes
+// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 33 recettes
 // 👉 Pour AJOUTER une recette Boulangerie : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4428,5 +4428,83 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Se déchire à la main, jamais au couteau", detail: "On la partage en tirant : coupée, elle perd son côté aérien et redevient une galette ordinaire.", badge: null }
     ],
     liees: ["congyoubing","shaobing","mantou"]
+  },
+  focacciarecco: {
+    dateAjout: "2026-08-31T11:00:00",
+    nom: "Focaccia di Recco",
+    cat: "boulangerie", pays: "italie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧀",
+    description: "La focaccia sans levure de la côte ligure, protégée par une IGP : deux feuilles de pâte étirées jusqu'à la transparence, du stracchino entre les deux, huit minutes de four brûlant. Elle n'a rien d'une focaccia génoise — pas de mie, pas de levée, juste deux voiles et du fromage.",
+    tableauFocacciarecco: [
+      { nb: 1, farine: "60 g", huileolive: "12 ml", eau: "30 ml", stracchino: "90 g", sel: "1.5 g" },
+      { nb: 2, farine: "120 g", huileolive: "24 ml", eau: "60 ml", stracchino: "180 g", sel: "3 g" },
+      { nb: 3, farine: "180 g", huileolive: "36 ml", eau: "90 ml", stracchino: "270 g", sel: "4.5 g" },
+      { nb: 4, farine: "240 g", huileolive: "48 ml", eau: "120 ml", stracchino: "360 g", sel: "6 g" },
+      { nb: 5, farine: "300 g", huileolive: "60 ml", eau: "150 ml", stracchino: "450 g", sel: "7.5 g" },
+      { nb: 6, farine: "360 g", huileolive: "72 ml", eau: "180 ml", stracchino: "540 g", sel: "9 g" },
+      { nb: 7, farine: "420 g", huileolive: "84 ml", eau: "210 ml", stracchino: "630 g", sel: "10.5 g" },
+      { nb: 8, farine: "480 g", huileolive: "96 ml", eau: "240 ml", stracchino: "720 g", sel: "12 g" },
+      { nb: 9, farine: "540 g", huileolive: "108 ml", eau: "270 ml", stracchino: "810 g", sel: "13.5 g" },
+      { nb: 10, farine: "600 g", huileolive: "120 ml", eau: "300 ml", stracchino: "900 g", sel: "15 g" },
+      { nb: 11, farine: "660 g", huileolive: "132 ml", eau: "330 ml", stracchino: "990 g", sel: "16.5 g" },
+      { nb: 12, farine: "720 g", huileolive: "144 ml", eau: "360 ml", stracchino: "1080 g", sel: "18 g" },
+      { nb: 13, farine: "780 g", huileolive: "156 ml", eau: "390 ml", stracchino: "1170 g", sel: "19.5 g" },
+      { nb: 14, farine: "840 g", huileolive: "168 ml", eau: "420 ml", stracchino: "1260 g", sel: "21 g" },
+      { nb: 15, farine: "900 g", huileolive: "180 ml", eau: "450 ml", stracchino: "1350 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🚫", titre: "Aucune levure, jamais", detail: "C'est ce qui la distingue de toutes les autres focaccias : la pâte ne lève pas, elle s'étire. Une pâte levée donnerait un chausson, pas une focaccia di Recco.", badge: null },
+      { icone: "💧", titre: "Une pâte souple, presque molle", detail: "Farine, eau, huile, sel, dix minutes de pétrissage : elle doit coller légèrement au doigt. Trop ferme, elle refusera de s'étirer sans se déchirer.", badge: null },
+      { icone: "⏳", titre: "Trente minutes de repos sous un bol", detail: "Le gluten doit se détendre. Étirée à froid tout de suite, la pâte revient sur elle-même à chaque tirage.", badge: null },
+      { icone: "🤲", titre: "Étirer sur les POINGS jusqu'à voir au travers", detail: "Le geste du pizzaiolo napolitain, en plus fin : on doit lire un journal derrière la feuille. C'est toute la difficulté du plat.", badge: null },
+      { icone: "🧀", titre: "Le stracchino en NOISETTES espacées", detail: "Jamais étalé : des petits tas de la taille d'une noix, à trois centimètres l'un de l'autre. Étalé, il s'échappe par les trous à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Four à fond, 280 °C, huit minutes", detail: "Sur une plaque brûlante. En dessous de 250 °C, la pâte sèche avant de dorer et devient cassante au lieu de rester fondante.", badge: null },
+      { icone: "✂️", titre: "Pincer et déchirer la feuille du dessus", detail: "On pince le voile supérieur pour former de petits trous : c'est par là que la vapeur s'échappe et que naissent les cloques dorées.", badge: null },
+      { icone: "🍽️", titre: "Se mange BRÛLANTE, à la main", detail: "Refroidie, le stracchino fige et la pâte durcit. À Recco, elle sort du four et part directement sur la table.", badge: null }
+    ],
+    liees: ["focacciaolives","piadinasanmarin","pizzamargherita"]
+  },
+  huajuan: {
+    dateAjout: "2026-08-31T11:08:00",
+    nom: "Hua Juan",
+    cat: "boulangerie", pays: "chine",
+    base: 8,
+    temps: "2 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌸",
+    description: "Les petits pains vapeur « en fleur » du nord de la Chine : la pâte est roulée avec de l'huile de sésame et de la ciboule, puis torsadée pour que les couches s'ouvrent à la cuisson. La forme n'est pas décorative — c'est elle qui sépare les feuillets.",
+    tableauHuajuan: [
+      { nb: 1, farine: "55 g", levureboulangere: "1 g", lait: "28 ml", sucre: "4 g", huilesesame: "4 ml", ciboule: "8 g", sel: "1 g", huile: "3 ml" },
+      { nb: 2, farine: "110 g", levureboulangere: "2 g", lait: "56 ml", sucre: "8 g", huilesesame: "8 ml", ciboule: "16 g", sel: "2 g", huile: "6 ml" },
+      { nb: 3, farine: "165 g", levureboulangere: "3 g", lait: "84 ml", sucre: "12 g", huilesesame: "12 ml", ciboule: "24 g", sel: "3 g", huile: "9 ml" },
+      { nb: 4, farine: "220 g", levureboulangere: "4 g", lait: "112 ml", sucre: "16 g", huilesesame: "16 ml", ciboule: "32 g", sel: "4 g", huile: "12 ml" },
+      { nb: 5, farine: "275 g", levureboulangere: "5 g", lait: "140 ml", sucre: "20 g", huilesesame: "20 ml", ciboule: "40 g", sel: "5 g", huile: "15 ml" },
+      { nb: 6, farine: "330 g", levureboulangere: "6 g", lait: "168 ml", sucre: "24 g", huilesesame: "24 ml", ciboule: "48 g", sel: "6 g", huile: "18 ml" },
+      { nb: 7, farine: "385 g", levureboulangere: "7 g", lait: "196 ml", sucre: "28 g", huilesesame: "28 ml", ciboule: "56 g", sel: "7 g", huile: "21 ml" },
+      { nb: 8, farine: "440 g", levureboulangere: "8 g", lait: "224 ml", sucre: "32 g", huilesesame: "32 ml", ciboule: "64 g", sel: "8 g", huile: "24 ml" },
+      { nb: 9, farine: "495 g", levureboulangere: "9 g", lait: "252 ml", sucre: "36 g", huilesesame: "36 ml", ciboule: "72 g", sel: "9 g", huile: "27 ml" },
+      { nb: 10, farine: "550 g", levureboulangere: "10 g", lait: "280 ml", sucre: "40 g", huilesesame: "40 ml", ciboule: "80 g", sel: "10 g", huile: "30 ml" },
+      { nb: 11, farine: "605 g", levureboulangere: "11 g", lait: "308 ml", sucre: "44 g", huilesesame: "44 ml", ciboule: "88 g", sel: "11 g", huile: "33 ml" },
+      { nb: 12, farine: "660 g", levureboulangere: "12 g", lait: "336 ml", sucre: "48 g", huilesesame: "48 ml", ciboule: "96 g", sel: "12 g", huile: "36 ml" },
+      { nb: 13, farine: "715 g", levureboulangere: "13 g", lait: "364 ml", sucre: "52 g", huilesesame: "52 ml", ciboule: "104 g", sel: "13 g", huile: "39 ml" },
+      { nb: 14, farine: "770 g", levureboulangere: "14 g", lait: "392 ml", sucre: "56 g", huilesesame: "56 ml", ciboule: "112 g", sel: "14 g", huile: "42 ml" },
+      { nb: 15, farine: "825 g", levureboulangere: "15 g", lait: "420 ml", sucre: "60 g", huilesesame: "60 ml", ciboule: "120 g", sel: "15 g", huile: "45 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Un lait tiède, jamais chaud", detail: "Au-dessus de 40 °C, la levure meurt et la pâte ne lèvera pas — on s'en aperçoit une heure trop tard.", badge: null },
+      { icone: "💪", titre: "Pétrir jusqu'à la surface LISSE", detail: "Dix minutes au moins. Une pâte encore grumeleuse donne des pains vapeur crevassés au lieu d'être satinés.", badge: null },
+      { icone: "⏳", titre: "Première pousse jusqu'au double", detail: "Une heure à 25 °C environ. C'est la seule pousse qui compte vraiment pour la texture.", badge: null },
+      { icone: "🌿", titre: "Huile de sésame et ciboule sur la pâte étalée", detail: "Étalée en rectangle très fin : c'est le film d'huile qui empêchera les couches de se ressouder à la vapeur.", badge: null },
+      { icone: "🌀", titre: "Rouler serré, puis TORSADER chaque tronçon", detail: "On étire le boudin, on le tord deux tours, on l'enroule sur lui-même : c'est ce geste qui ouvre la fleur.", badge: null },
+      { icone: "⏳", titre: "Deuxième pousse de vingt minutes", detail: "Dans le panier vapeur, à couvert. Enfournés sans repos, les pains sortent denses et compacts.", badge: null },
+      { icone: "♨️", titre: "Départ à l'eau FROIDE dans le cuiseur", detail: "La montée en température progressive fait gonfler les pains. Posés sur une eau déjà bouillante, ils se figent aussitôt.", badge: null },
+      { icone: "🚫", titre: "Ne pas ouvrir avant cinq minutes de repos", detail: "Le choc thermique fait retomber les pains vapeur d'un coup : ils se rident et ne remontent jamais.", badge: null }
+    ],
+    liees: ["mantou","baozi","shengjianbao"]
   },
 });

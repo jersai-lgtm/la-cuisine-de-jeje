@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 238 recettes
+// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 240 recettes
 // 👉 Pour AJOUTER une recette Plats : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -54973,5 +54973,82 @@ Object.assign(recettes, {
       { icone: "🔪", titre: "Trancher au fur et à mesure, sur une petite broche", detail: "Chaque service est coupé à la commande, planté sur une brochette et servi tel quel avec du pain.", badge: null }
     ],
     liees: ["adanakebab","iskender","doner"]
+  },
+  perdepilavi: {
+    dateAjout: "2026-08-31T12:06:00",
+    nom: "Perde Pilavı",
+    cat: "plats", pays: "turquie",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥁",
+    description: "Le « pilaf au rideau » de Siirt, servi aux mariages : un riz au poulet, amandes et raisins enfermé dans une croûte dorée qu'on démoule comme un tambour. La forme a un sens — le dôme figure le foyer, et les amandes dedans, les enfants à venir.",
+    tableauPerdepilavi: [
+      { nb: 1, poulet: "90 g", riz: "60 g", farine: "40 g", beurre: "20 g", amandes: "15 g", raisinssecs: "12 g", oignon: "½", yaourt: "20 g", oeufs: "¼", cannelle: "0.4 g", paprika: "1 g", sel: "2 g" },
+      { nb: 2, poulet: "180 g", riz: "120 g", farine: "80 g", beurre: "40 g", amandes: "30 g", raisinssecs: "24 g", oignon: "1", yaourt: "40 g", oeufs: "½", cannelle: "0.8 g", paprika: "2 g", sel: "4 g" },
+      { nb: 3, poulet: "270 g", riz: "180 g", farine: "120 g", beurre: "60 g", amandes: "45 g", raisinssecs: "36 g", oignon: "1½", yaourt: "60 g", oeufs: "¾", cannelle: "1.2 g", paprika: "3 g", sel: "6 g" },
+      { nb: 4, poulet: "360 g", riz: "240 g", farine: "160 g", beurre: "80 g", amandes: "60 g", raisinssecs: "48 g", oignon: "2", yaourt: "80 g", oeufs: "1", cannelle: "1.6 g", paprika: "4 g", sel: "8 g" },
+      { nb: 5, poulet: "450 g", riz: "300 g", farine: "200 g", beurre: "100 g", amandes: "75 g", raisinssecs: "60 g", oignon: "2½", yaourt: "100 g", oeufs: "1¼", cannelle: "2 g", paprika: "5 g", sel: "10 g" },
+      { nb: 6, poulet: "540 g", riz: "360 g", farine: "240 g", beurre: "120 g", amandes: "90 g", raisinssecs: "72 g", oignon: "3", yaourt: "120 g", oeufs: "1½", cannelle: "2.4 g", paprika: "6 g", sel: "12 g" },
+      { nb: 7, poulet: "630 g", riz: "420 g", farine: "280 g", beurre: "140 g", amandes: "105 g", raisinssecs: "84 g", oignon: "3½", yaourt: "140 g", oeufs: "1¾", cannelle: "2.8 g", paprika: "7 g", sel: "14 g" },
+      { nb: 8, poulet: "720 g", riz: "480 g", farine: "320 g", beurre: "160 g", amandes: "120 g", raisinssecs: "96 g", oignon: "4", yaourt: "160 g", oeufs: "2", cannelle: "3.2 g", paprika: "8 g", sel: "16 g" },
+      { nb: 9, poulet: "810 g", riz: "540 g", farine: "360 g", beurre: "180 g", amandes: "135 g", raisinssecs: "108 g", oignon: "4½", yaourt: "180 g", oeufs: "2¼", cannelle: "3.6 g", paprika: "9 g", sel: "18 g" },
+      { nb: 10, poulet: "900 g", riz: "600 g", farine: "400 g", beurre: "200 g", amandes: "150 g", raisinssecs: "120 g", oignon: "5", yaourt: "200 g", oeufs: "2½", cannelle: "4 g", paprika: "10 g", sel: "20 g" },
+      { nb: 11, poulet: "990 g", riz: "660 g", farine: "440 g", beurre: "220 g", amandes: "165 g", raisinssecs: "132 g", oignon: "5½", yaourt: "220 g", oeufs: "2¾", cannelle: "4.4 g", paprika: "11 g", sel: "22 g" },
+      { nb: 12, poulet: "1080 g", riz: "720 g", farine: "480 g", beurre: "240 g", amandes: "180 g", raisinssecs: "144 g", oignon: "6", yaourt: "240 g", oeufs: "3", cannelle: "4.8 g", paprika: "12 g", sel: "24 g" },
+      { nb: 13, poulet: "1170 g", riz: "780 g", farine: "520 g", beurre: "260 g", amandes: "195 g", raisinssecs: "156 g", oignon: "6½", yaourt: "260 g", oeufs: "3¼", cannelle: "5.2 g", paprika: "13 g", sel: "26 g" },
+      { nb: 14, poulet: "1260 g", riz: "840 g", farine: "560 g", beurre: "280 g", amandes: "210 g", raisinssecs: "168 g", oignon: "7", yaourt: "280 g", oeufs: "3½", cannelle: "5.6 g", paprika: "14 g", sel: "28 g" },
+      { nb: 15, poulet: "1350 g", riz: "900 g", farine: "600 g", beurre: "300 g", amandes: "225 g", raisinssecs: "180 g", oignon: "7½", yaourt: "300 g", oeufs: "3¾", cannelle: "6 g", paprika: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Rincer le riz jusqu'à l'eau CLAIRE", detail: "Cinq ou six eaux : l'amidon résiduel colle les grains et le pilaf sort en bloc au démoulage.", badge: null },
+      { icone: "🐔", titre: "Pocher le poulet, garder le bouillon", detail: "C'est ce bouillon qui cuit le riz. À l'eau, le perde pilavı n'a aucun fond de goût.", badge: null },
+      { icone: "🍚", titre: "Un riz cuit AUX TROIS QUARTS seulement", detail: "Il finit de cuire dans la croûte. Cuit à point avant, il devient pâteux au four.", badge: null },
+      { icone: "🥧", titre: "Une pâte au yaourt, souple et non feuilletée", detail: "Farine, beurre, yaourt, œuf : elle doit s'étirer sans se déchirer. Une pâte feuilletée s'affaisserait sous le poids.", badge: null },
+      { icone: "🌰", titre: "Amandes et raisins au FOND du moule", detail: "C'est le dessus une fois démoulé : ils forment le décor du dôme. Mélangés au riz, on ne les voit plus.", badge: null },
+      { icone: "🤲", titre: "Tasser le riz FERMEMENT dans le moule", detail: "Sans écraser les grains, mais sans vide : une poche d'air et le dôme s'effondre au démoulage.", badge: null },
+      { icone: "🌡️", titre: "180 °C, une heure, jusqu'au brun DORÉ", detail: "Une croûte pâle ne tiendra pas debout. Elle doit être ferme et colorée sur toute la surface.", badge: null },
+      { icone: "⏳", titre: "Reposer quinze minutes AVANT de démouler", detail: "Le temps que la croûte se raffermisse. Démoulé chaud, le dôme se fend et le riz s'échappe.", badge: null }
+    ],
+    liees: ["pilav","biryanipoulet","kabulipulao"]
+  },
+  tantuni: {
+    dateAjout: "2026-08-31T12:07:00",
+    nom: "Tantuni",
+    cat: "plats", pays: "turquie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌯",
+    description: "Le sandwich de Mersin, cuit sur une plaque bombée arrosée d'eau : la viande n'est jamais grillée à sec mais saisie dans son propre jus, qu'on rappelle à la louche. C'est une cuisson à l'eau ET au gras, sans équivalent ailleurs.",
+    tableauTantuni: [
+      { nb: 1, boeuf: "100 g", lavash: "70 g", tomate: "40 g", oignon: "½", persil: "5 g", huile: "8 ml", sumac: "1 g", paprika: "1 g", citron: "¼", sel: "2 g" },
+      { nb: 2, boeuf: "200 g", lavash: "140 g", tomate: "80 g", oignon: "1", persil: "10 g", huile: "16 ml", sumac: "2 g", paprika: "2 g", citron: "½", sel: "4 g" },
+      { nb: 3, boeuf: "300 g", lavash: "210 g", tomate: "120 g", oignon: "1½", persil: "15 g", huile: "24 ml", sumac: "3 g", paprika: "3 g", citron: "¾", sel: "6 g" },
+      { nb: 4, boeuf: "400 g", lavash: "280 g", tomate: "160 g", oignon: "2", persil: "20 g", huile: "32 ml", sumac: "4 g", paprika: "4 g", citron: "1", sel: "8 g" },
+      { nb: 5, boeuf: "500 g", lavash: "350 g", tomate: "200 g", oignon: "2½", persil: "25 g", huile: "40 ml", sumac: "5 g", paprika: "5 g", citron: "1¼", sel: "10 g" },
+      { nb: 6, boeuf: "600 g", lavash: "420 g", tomate: "240 g", oignon: "3", persil: "30 g", huile: "48 ml", sumac: "6 g", paprika: "6 g", citron: "1½", sel: "12 g" },
+      { nb: 7, boeuf: "700 g", lavash: "490 g", tomate: "280 g", oignon: "3½", persil: "35 g", huile: "56 ml", sumac: "7 g", paprika: "7 g", citron: "1¾", sel: "14 g" },
+      { nb: 8, boeuf: "800 g", lavash: "560 g", tomate: "320 g", oignon: "4", persil: "40 g", huile: "64 ml", sumac: "8 g", paprika: "8 g", citron: "2", sel: "16 g" },
+      { nb: 9, boeuf: "900 g", lavash: "630 g", tomate: "360 g", oignon: "4½", persil: "45 g", huile: "72 ml", sumac: "9 g", paprika: "9 g", citron: "2¼", sel: "18 g" },
+      { nb: 10, boeuf: "1000 g", lavash: "700 g", tomate: "400 g", oignon: "5", persil: "50 g", huile: "80 ml", sumac: "10 g", paprika: "10 g", citron: "2½", sel: "20 g" },
+      { nb: 11, boeuf: "1100 g", lavash: "770 g", tomate: "440 g", oignon: "5½", persil: "55 g", huile: "88 ml", sumac: "11 g", paprika: "11 g", citron: "2¾", sel: "22 g" },
+      { nb: 12, boeuf: "1200 g", lavash: "840 g", tomate: "480 g", oignon: "6", persil: "60 g", huile: "96 ml", sumac: "12 g", paprika: "12 g", citron: "3", sel: "24 g" },
+      { nb: 13, boeuf: "1300 g", lavash: "910 g", tomate: "520 g", oignon: "6½", persil: "65 g", huile: "104 ml", sumac: "13 g", paprika: "13 g", citron: "3¼", sel: "26 g" },
+      { nb: 14, boeuf: "1400 g", lavash: "980 g", tomate: "560 g", oignon: "7", persil: "70 g", huile: "112 ml", sumac: "14 g", paprika: "14 g", citron: "3½", sel: "28 g" },
+      { nb: 15, boeuf: "1500 g", lavash: "1050 g", tomate: "600 g", oignon: "7½", persil: "75 g", huile: "120 ml", sumac: "15 g", paprika: "15 g", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Une viande taillée en dés MINUSCULES", detail: "Cinq millimètres au couteau, jamais hachée : hachée, elle devient une bolognaise ; en gros dés, elle reste dure.", badge: null },
+      { icone: "💧", titre: "Saisir à l'eau, pas à l'huile", detail: "La technique de Mersin : quelques louches d'eau sur la plaque brûlante. La viande cuit dans sa vapeur et reste tendre.", badge: null },
+      { icone: "♨️", titre: "Laisser l'eau s'évaporer COMPLÈTEMENT", detail: "Alors seulement le gras prend le relais et saisit la viande. Trop d'eau restante et on obtient un ragoût.", badge: null },
+      { icone: "🧈", titre: "Une pointe de gras de queue si possible", detail: "C'est la graisse traditionnelle. À l'huile seule, le tantuni est correct mais il manque la rondeur.", badge: null },
+      { icone: "🫓", titre: "Chauffer le lavash SUR la viande", detail: "Posé une minute par-dessus la plaque : il s'imprègne de vapeur parfumée et devient souple sans sécher.", badge: null },
+      { icone: "🌿", titre: "Sumac et persil AVANT de rouler", detail: "Le sumac apporte l'acidité qui remplace la sauce : le tantuni n'en a aucune, tout se joue là.", badge: null },
+      { icone: "🌯", titre: "Rouler serré, puis couper en deux", detail: "Serré, sinon la garniture tombe à la première bouchée. La coupe en biais est le service traditionnel.", badge: null }
+    ],
+    liees: ["adanakebab","doner","salgam"]
   },
 });

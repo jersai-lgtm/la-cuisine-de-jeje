@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 25 recettes
+// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 29 recettes
 // 👉 Pour AJOUTER une glace : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1422,5 +1422,158 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "Servir immédiatement, en verre glacé", detail: "Les cristaux fondent en deux minutes. Le granizado ne se dresse pas à l'avance.", badge: null }
     ],
     liees: ["granite","sorbetcitron","kakigori"]
+  },
+  coppanocciola: {
+    dateAjout: "2026-08-31T11:04:00",
+    nom: "Coppa Nocciola",
+    cat: "glaces", saisons: ["ete"], pays: "italie",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🌰",
+    description: "La coupe des glaciers italiens : glace noisette, noisettes du Piémont concassées, chantilly non sucrée. Tout repose sur la torréfaction — une noisette crue dans une coupe à la noisette, c'est le contresens complet.",
+    tableauCoppanocciola: [
+      { nb: 1, glacenoisette: "120 g", noisettes: "18 g", cremechantilly: "35 ml", chocolatnoir: "12 g", sucre: "5 g" },
+      { nb: 2, glacenoisette: "240 g", noisettes: "36 g", cremechantilly: "70 ml", chocolatnoir: "24 g", sucre: "10 g" },
+      { nb: 3, glacenoisette: "360 g", noisettes: "54 g", cremechantilly: "105 ml", chocolatnoir: "36 g", sucre: "15 g" },
+      { nb: 4, glacenoisette: "480 g", noisettes: "72 g", cremechantilly: "140 ml", chocolatnoir: "48 g", sucre: "20 g" },
+      { nb: 5, glacenoisette: "600 g", noisettes: "90 g", cremechantilly: "175 ml", chocolatnoir: "60 g", sucre: "25 g" },
+      { nb: 6, glacenoisette: "720 g", noisettes: "108 g", cremechantilly: "210 ml", chocolatnoir: "72 g", sucre: "30 g" },
+      { nb: 7, glacenoisette: "840 g", noisettes: "126 g", cremechantilly: "245 ml", chocolatnoir: "84 g", sucre: "35 g" },
+      { nb: 8, glacenoisette: "960 g", noisettes: "144 g", cremechantilly: "280 ml", chocolatnoir: "96 g", sucre: "40 g" },
+      { nb: 9, glacenoisette: "1080 g", noisettes: "162 g", cremechantilly: "315 ml", chocolatnoir: "108 g", sucre: "45 g" },
+      { nb: 10, glacenoisette: "1200 g", noisettes: "180 g", cremechantilly: "350 ml", chocolatnoir: "120 g", sucre: "50 g" },
+      { nb: 11, glacenoisette: "1320 g", noisettes: "198 g", cremechantilly: "385 ml", chocolatnoir: "132 g", sucre: "55 g" },
+      { nb: 12, glacenoisette: "1440 g", noisettes: "216 g", cremechantilly: "420 ml", chocolatnoir: "144 g", sucre: "60 g" },
+      { nb: 13, glacenoisette: "1560 g", noisettes: "234 g", cremechantilly: "455 ml", chocolatnoir: "156 g", sucre: "65 g" },
+      { nb: 14, glacenoisette: "1680 g", noisettes: "252 g", cremechantilly: "490 ml", chocolatnoir: "168 g", sucre: "70 g" },
+      { nb: 15, glacenoisette: "1800 g", noisettes: "270 g", cremechantilly: "525 ml", chocolatnoir: "180 g", sucre: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier les noisettes douze minutes", detail: "À 160 °C, jusqu'à ce que la peau se craquelle. Crues, elles n'ont ni parfum ni croquant et la coupe est fade.", badge: null },
+      { icone: "🤲", titre: "Les frotter dans un torchon, à chaud", detail: "La peau part toute seule et elle est amère. Laissée en place, elle donne un arrière-goût âpre à toute la coupe.", badge: null },
+      { icone: "🔪", titre: "Concasser au couteau, gros", detail: "En trois ou quatre morceaux par noisette. Moulues, elles disparaissent ; entières, elles roulent hors de la cuillère.", badge: null },
+      { icone: "❄️", titre: "Des coupes glacées quinze minutes", detail: "Passées au congélateur avant le montage : la glace tient dix minutes de plus, et ça change tout à table.", badge: null },
+      { icone: "🥛", titre: "Une chantilly NON sucrée", detail: "La glace apporte déjà tout le sucre. Sucrée, la chantilly écrase la noisette et la coupe devient écœurante.", badge: null },
+      { icone: "🍫", titre: "Un copeau de chocolat noir, pas de sauce", detail: "Râpé au dernier moment : une sauce chaude ferait fondre la glace et noierait le croquant des noisettes.", badge: null },
+      { icone: "⏱️", titre: "Monter et servir en moins d'une minute", detail: "Glace, noisettes, chantilly, copeaux. Chaque seconde de retard se voit dans la tenue de la coupe.", badge: null }
+    ],
+    liees: ["glacenoisette","coupedanemark","affogatoglace"]
+  },
+  lechemerengada: {
+    dateAjout: "2026-08-31T11:05:00",
+    nom: "Leche Merengada",
+    cat: "glaces", saisons: ["ete"], pays: "espagne",
+    base: 6,
+    temps: "30 min + congélation",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥛",
+    description: "Le lait meringué de Valence, à mi-chemin entre la glace et la boisson : du lait infusé au zeste et à la cannelle, allégé de blancs en neige. On le sert en verre, à la cuillère, et il ne prend jamais complètement.",
+    tableauLechemerengada: [
+      { nb: 1, lait: "130 ml", sucre: "22 g", blancsoeufs: "½", cannelle: "0.5 g", citron: "¼" },
+      { nb: 2, lait: "260 ml", sucre: "44 g", blancsoeufs: "1", cannelle: "1 g", citron: "½" },
+      { nb: 3, lait: "390 ml", sucre: "66 g", blancsoeufs: "1½", cannelle: "1.5 g", citron: "¾" },
+      { nb: 4, lait: "520 ml", sucre: "88 g", blancsoeufs: "2", cannelle: "2 g", citron: "1" },
+      { nb: 5, lait: "650 ml", sucre: "110 g", blancsoeufs: "2½", cannelle: "2.5 g", citron: "1¼" },
+      { nb: 6, lait: "780 ml", sucre: "132 g", blancsoeufs: "3", cannelle: "3 g", citron: "1½" },
+      { nb: 7, lait: "910 ml", sucre: "154 g", blancsoeufs: "3½", cannelle: "3.5 g", citron: "1¾" },
+      { nb: 8, lait: "1040 ml", sucre: "176 g", blancsoeufs: "4", cannelle: "4 g", citron: "2" },
+      { nb: 9, lait: "1170 ml", sucre: "198 g", blancsoeufs: "4½", cannelle: "4.5 g", citron: "2¼" },
+      { nb: 10, lait: "1300 ml", sucre: "220 g", blancsoeufs: "5", cannelle: "5 g", citron: "2½" },
+      { nb: 11, lait: "1430 ml", sucre: "242 g", blancsoeufs: "5½", cannelle: "5.5 g", citron: "2¾" },
+      { nb: 12, lait: "1560 ml", sucre: "264 g", blancsoeufs: "6", cannelle: "6 g", citron: "3" },
+      { nb: 13, lait: "1690 ml", sucre: "286 g", blancsoeufs: "6½", cannelle: "6.5 g", citron: "3¼" },
+      { nb: 14, lait: "1820 ml", sucre: "308 g", blancsoeufs: "7", cannelle: "7 g", citron: "3½" },
+      { nb: 15, lait: "1950 ml", sucre: "330 g", blancsoeufs: "7½", cannelle: "7.5 g", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Infuser le lait au zeste et à la cannelle", detail: "Sans jamais bouillir : à ébullition, le zeste devient amer et la cannelle tourne au poussiéreux.", badge: null },
+      { icone: "⏳", titre: "Vingt minutes hors du feu, à couvert", detail: "C'est l'infusion à chaleur descendante qui extrait le parfum. Chauffée plus longtemps, elle n'extrait que l'amertume.", badge: null },
+      { icone: "🧊", titre: "Refroidir COMPLÈTEMENT avant les blancs", detail: "Un lait tiède fait retomber la meringue à l'instant : c'est l'erreur qui donne un lait plat au lieu d'une leche merengada.", badge: null },
+      { icone: "🥚", titre: "Des blancs montés FERMES avec le sucre", detail: "En meringue, pas en neige simple : c'est le sucre qui stabilise et empêche la mousse de se séparer à la congélation.", badge: null },
+      { icone: "🥄", titre: "Incorporer à la maryse, en trois fois", detail: "En soulevant, jamais en fouettant : l'air emprisonné remplace la sorbetière, il n'y a pas d'autre agent de texture.", badge: null },
+      { icone: "❄️", titre: "Fouetter toutes les demi-heures, trois fois", detail: "Sinon le lait et la mousse se séparent en deux couches, et on retrouve un bloc de glace surmonté d'écume.", badge: null },
+      { icone: "🍸", titre: "Servir en verre, jamais complètement pris", detail: "Elle doit rester crémeuse, à la limite du buvable. Prise dur, ce n'est plus une leche merengada mais un sorbet au lait.", badge: null },
+      { icone: "🌿", titre: "Cannelle râpée à la surface, au service", detail: "Mélangée à l'intérieur, elle se dépose au fond ; râpée dessus, elle se sent dès la première cuillère.", badge: null }
+    ],
+    liees: ["horchata","cremecatalane","glacevanille"]
+  },
+  sorbetcolonel: {
+    dateAjout: "2026-08-31T11:06:00",
+    nom: "Sorbet Colonel",
+    cat: "glaces", saisons: ["ete"], pays: "france",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍸",
+    description: "Sorbet citron arrosé de vodka, servi entre deux plats ou en fin de repas. On l'appelait « trou normand » quand c'était du calvados ; devenu colonel avec la vodka, il se sert en coupe et se mange à la cuillère.",
+    tableauSorbetcolonel: [
+      { nb: 1, sorbetcitron: "90 g", vodka: "25 ml", citron: "¼", menthe: "1 g" },
+      { nb: 2, sorbetcitron: "180 g", vodka: "50 ml", citron: "½", menthe: "2 g" },
+      { nb: 3, sorbetcitron: "270 g", vodka: "75 ml", citron: "¾", menthe: "3 g" },
+      { nb: 4, sorbetcitron: "360 g", vodka: "100 ml", citron: "1", menthe: "4 g" },
+      { nb: 5, sorbetcitron: "450 g", vodka: "125 ml", citron: "1¼", menthe: "5 g" },
+      { nb: 6, sorbetcitron: "540 g", vodka: "150 ml", citron: "1½", menthe: "6 g" },
+      { nb: 7, sorbetcitron: "630 g", vodka: "175 ml", citron: "1¾", menthe: "7 g" },
+      { nb: 8, sorbetcitron: "720 g", vodka: "200 ml", citron: "2", menthe: "8 g" },
+      { nb: 9, sorbetcitron: "810 g", vodka: "225 ml", citron: "2¼", menthe: "9 g" },
+      { nb: 10, sorbetcitron: "900 g", vodka: "250 ml", citron: "2½", menthe: "10 g" },
+      { nb: 11, sorbetcitron: "990 g", vodka: "275 ml", citron: "2¾", menthe: "11 g" },
+      { nb: 12, sorbetcitron: "1080 g", vodka: "300 ml", citron: "3", menthe: "12 g" },
+      { nb: 13, sorbetcitron: "1170 g", vodka: "325 ml", citron: "3¼", menthe: "13 g" },
+      { nb: 14, sorbetcitron: "1260 g", vodka: "350 ml", citron: "3½", menthe: "14 g" },
+      { nb: 15, sorbetcitron: "1350 g", vodka: "375 ml", citron: "3¾", menthe: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Une vodka sortie du congélateur", detail: "Elle doit être sirupeuse : à température ambiante, elle fait fondre le sorbet avant même d'arriver à table.", badge: null },
+      { icone: "🍋", titre: "Un sorbet bien acide, peu sucré", detail: "La vodka apporte de la rondeur alcoolisée : sur un sorbet doux, l'ensemble devient sirupeux et lourd.", badge: null },
+      { icone: "🥃", titre: "La coupe passée au congélateur", detail: "Un quart d'heure : c'est ce qui donne les trois ou quatre minutes de tenue nécessaires pour le manger.", badge: null },
+      { icone: "⚖️", titre: "Deux boules pour une petite dose", detail: "Noyé, ce n'est plus un sorbet mais un cocktail tiède. La vodka doit se sentir sans dominer.", badge: null },
+      { icone: "🫗", titre: "Verser À TABLE, devant le convive", detail: "C'est tout l'intérêt du service : la vodka creuse le sorbet en direct. Versée en cuisine, l'effet est perdu.", badge: null },
+      { icone: "🌿", titre: "Une feuille de menthe, pas plus", detail: "Posée sur le dessus. Hachée dans le sorbet, elle refroidit le nez et masque le citron.", badge: null },
+      { icone: "⏱️", titre: "Se mange dans les trois minutes", detail: "Au-delà, l'alcool a fondu le sorbet et il ne reste qu'un fond de liquide citronné dans la coupe.", badge: null }
+    ],
+    liees: ["sorbetcitron","sgroppino","trounormand"]
+  },
+  sgroppino: {
+    dateAjout: "2026-08-31T11:07:00",
+    nom: "Sgroppino",
+    cat: "glaces", saisons: ["ete"], pays: "italie",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥂",
+    description: "Le dessert liquide vénitien : sorbet citron, vodka et prosecco fouettés ensemble jusqu'à la mousse. Son nom vient du dialecte — sgropin, « qui dénoue » — parce qu'il était censé défaire les nœuds d'un repas trop copieux.",
+    tableauSgroppino: [
+      { nb: 1, sorbetcitron: "80 g", vodka: "15 ml", prosecco: "60 ml", citron: "¼" },
+      { nb: 2, sorbetcitron: "160 g", vodka: "30 ml", prosecco: "120 ml", citron: "½" },
+      { nb: 3, sorbetcitron: "240 g", vodka: "45 ml", prosecco: "180 ml", citron: "¾" },
+      { nb: 4, sorbetcitron: "320 g", vodka: "60 ml", prosecco: "240 ml", citron: "1" },
+      { nb: 5, sorbetcitron: "400 g", vodka: "75 ml", prosecco: "300 ml", citron: "1¼" },
+      { nb: 6, sorbetcitron: "480 g", vodka: "90 ml", prosecco: "360 ml", citron: "1½" },
+      { nb: 7, sorbetcitron: "560 g", vodka: "105 ml", prosecco: "420 ml", citron: "1¾" },
+      { nb: 8, sorbetcitron: "640 g", vodka: "120 ml", prosecco: "480 ml", citron: "2" },
+      { nb: 9, sorbetcitron: "720 g", vodka: "135 ml", prosecco: "540 ml", citron: "2¼" },
+      { nb: 10, sorbetcitron: "800 g", vodka: "150 ml", prosecco: "600 ml", citron: "2½" },
+      { nb: 11, sorbetcitron: "880 g", vodka: "165 ml", prosecco: "660 ml", citron: "2¾" },
+      { nb: 12, sorbetcitron: "960 g", vodka: "180 ml", prosecco: "720 ml", citron: "3" },
+      { nb: 13, sorbetcitron: "1040 g", vodka: "195 ml", prosecco: "780 ml", citron: "3¼" },
+      { nb: 14, sorbetcitron: "1120 g", vodka: "210 ml", prosecco: "840 ml", citron: "3½" },
+      { nb: 15, sorbetcitron: "1200 g", vodka: "225 ml", prosecco: "900 ml", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Tout doit être glacé : bol, fouet, verres", detail: "Le sgroppino se monte en trente secondes et retombe aussi vite. Un bol tiède et la mousse ne prend jamais.", badge: null },
+      { icone: "🥄", titre: "Travailler le sorbet en pommade d'abord", detail: "Deux minutes hors du congélateur puis écrasé à la spatule : ajouté en bloc, il reste en morceaux dans le verre.", badge: null },
+      { icone: "🥃", titre: "La vodka AVANT le prosecco", detail: "Elle se mélange sans mousser. Versée après, elle casse les bulles qu'on vient tout juste de monter.", badge: null },
+      { icone: "🍾", titre: "Le prosecco en filet, en fouettant", detail: "Versé d'un coup, il déborde en mousse et le sgroppino perd la moitié de son gaz sur le plan de travail.", badge: null },
+      { icone: "🥢", titre: "Fouetter à la MAIN, jamais au mixeur", detail: "Le mixeur casse les bulles et chauffe le mélange : on obtient une soupe citronnée au lieu d'une mousse.", badge: null },
+      { icone: "🌡️", titre: "Un prosecco à 4 °C maximum", detail: "Plus tiède, il dégaze au contact du sorbet et la texture retombe avant même d'arriver à table.", badge: null },
+      { icone: "🍸", titre: "Servir immédiatement, en flûte", detail: "Trente secondes de retard suffisent à séparer la mousse du liquide. C'est un dessert qui ne se fait pas attendre.", badge: null }
+    ],
+    liees: ["sorbetcolonel","sorbetcitron","spritz"]
   },
 });
