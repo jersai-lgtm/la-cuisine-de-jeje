@@ -106,12 +106,16 @@
       #envie-modal .envie-sheet-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 8px}
       #envie-modal .envie-sheet-head h2{margin:0;font-size:18px}
       #envie-modal .envie-x{background:rgba(var(--w),.1);color:var(--text);border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer}
-      #envie-modal .envie-grid{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:6px 14px 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+      /* grid-auto-rows:max-content — INDISPENSABLE. .mini-carte a overflow:hidden, et une
+         piste `auto` ne compte alors que le texte (~42px) : l'image (128px) ne participe pas
+         au dimensionnement de la ligne. Faute de quoi la carte est rognée en silence, car
+         overflow:hidden coupe sans rien laisser paraître. Un min-height chiffré ne suffit
+         PAS : il fige la hauteur et devient trop court dès que la carte gagne une ligne
+         (ce fut le cas quand 💰/🔥 est apparu → 17px rognés, 31px si le nom tient sur 2
+         lignes). max-content suit le contenu réel quoi qu'on y ajoute. */
+      #envie-modal .envie-grid{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:6px 14px 20px;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:max-content;gap:10px}
       /* Cartes en grille (et non en rangée scroll) → image plus haute, pas une bande fine.
-         VRAIE cause de l'effet « écrasé » : .mini-carte a overflow:hidden, ce qui fait
-         collapser la track auto de la grille à la hauteur du seul texte (~40px) → l'image
-         (128px) débordait et était COUPÉE. Le min-height sur la carte force la track à
-         s'ouvrir ; on garde overflow:hidden pour les coins arrondis. */
+         min-height : simple plancher de sécurité, plus la hauteur réelle. */
       #envie-modal .envie-grid .mini-carte{flex:initial;width:auto;min-height:176px}
       #envie-modal .envie-grid .mini-carte img{height:128px;aspect-ratio:auto;object-fit:cover}
       #envie-modal .envie-q{padding:8px 18px 4px}
