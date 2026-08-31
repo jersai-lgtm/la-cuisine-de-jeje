@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 18 recettes
+// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 19 recettes
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1616,5 +1616,43 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Coriandre et basilic déchirés à la main", detail: "Coupés au couteau, ils noircissent sur les bords et rendent leur parfum dans la planche plutôt que dans le bol.", badge: null }
     ],
     liees: ["plov","achichuk","lagman"]
+  },
+  makdous: {
+    dateAjout: "2026-08-31T14:09:00",
+    nom: "Makdous",
+    cat: "tartinables", saisons: ["automne"], pays: "syrie",
+    base: 8,
+    temps: "1 h + 5 jours",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍆",
+    description: "Les petites aubergines farcies aux noix et au poivron, conservées sous l'huile d'olive. En Syrie, on les prépare en octobre par cageots entiers, et elles constituent le petit-déjeuner de tout l'hiver.",
+    tableauMakdous: [
+      { nb: 1, aubergine: "70 g", noix: "20 g", poivron: "20 g", ail: "1½", huileolive: "30 ml", sel: "5 g", piment: "0.5 g" },
+      { nb: 2, aubergine: "140 g", noix: "40 g", poivron: "40 g", ail: "3", huileolive: "60 ml", sel: "10 g", piment: "1 g" },
+      { nb: 3, aubergine: "210 g", noix: "60 g", poivron: "60 g", ail: "4½", huileolive: "90 ml", sel: "15 g", piment: "1.5 g" },
+      { nb: 4, aubergine: "280 g", noix: "80 g", poivron: "80 g", ail: "6", huileolive: "120 ml", sel: "20 g", piment: "2 g" },
+      { nb: 5, aubergine: "350 g", noix: "100 g", poivron: "100 g", ail: "7½", huileolive: "150 ml", sel: "25 g", piment: "2.5 g" },
+      { nb: 6, aubergine: "420 g", noix: "120 g", poivron: "120 g", ail: "9", huileolive: "180 ml", sel: "30 g", piment: "3 g" },
+      { nb: 7, aubergine: "490 g", noix: "140 g", poivron: "140 g", ail: "10½", huileolive: "210 ml", sel: "35 g", piment: "3.5 g" },
+      { nb: 8, aubergine: "560 g", noix: "160 g", poivron: "160 g", ail: "12", huileolive: "240 ml", sel: "40 g", piment: "4 g" },
+      { nb: 9, aubergine: "630 g", noix: "180 g", poivron: "180 g", ail: "13½", huileolive: "270 ml", sel: "45 g", piment: "4.5 g" },
+      { nb: 10, aubergine: "700 g", noix: "200 g", poivron: "200 g", ail: "15", huileolive: "300 ml", sel: "50 g", piment: "5 g" },
+      { nb: 11, aubergine: "770 g", noix: "220 g", poivron: "220 g", ail: "16½", huileolive: "330 ml", sel: "55 g", piment: "5.5 g" },
+      { nb: 12, aubergine: "840 g", noix: "240 g", poivron: "240 g", ail: "18", huileolive: "360 ml", sel: "60 g", piment: "6 g" },
+      { nb: 13, aubergine: "910 g", noix: "260 g", poivron: "260 g", ail: "19½", huileolive: "390 ml", sel: "65 g", piment: "6.5 g" },
+      { nb: 14, aubergine: "980 g", noix: "280 g", poivron: "280 g", ail: "21", huileolive: "420 ml", sel: "70 g", piment: "7 g" },
+      { nb: 15, aubergine: "1050 g", noix: "300 g", poivron: "300 g", ail: "22½", huileolive: "450 ml", sel: "75 g", piment: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍆", titre: "De TOUTES PETITES aubergines, 6-8 cm", detail: "Les grosses ne se conservent pas : leur chair rend de l'eau et le bocal fermente au lieu de se garder.", badge: null },
+      { icone: "♨️", titre: "Cuire à l'eau 7 minutes, pas une de plus", detail: "Elles doivent plier sans se déchirer. Trop cuites, elles s'effondrent au moment d'être farcies.", badge: null },
+      { icone: "⚖️", titre: "Presser 24 h sous un POIDS, incliné", detail: "C'est l'étape que tout le monde saute et c'est la plus importante : il ne doit plus rester une goutte d'eau.", badge: null },
+      { icone: "🧂", titre: "Saler l'intérieur AVANT la farce", detail: "Une pincée dans chaque fente : c'est le sel intérieur qui conserve, pas celui de la farce.", badge: null },
+      { icone: "🌰", titre: "Noix concassées grossièrement, jamais moulues", detail: "En éclats visibles : moulues, elles forment une pâte qui fermente et tourne au rance.", badge: null },
+      { icone: "🫒", titre: "Immerger TOTALEMENT sous l'huile", detail: "Une aubergine qui affleure moisit en trois jours et contamine le bocal entier. On complète l'huile après deux jours.", badge: null },
+      { icone: "⏳", titre: "Cinq jours d'attente minimum avant d'ouvrir", detail: "L'ail et le piment doivent imprégner la chair. Goûtées le lendemain, elles n'ont que le goût de leurs ingrédients.", badge: null }
+    ],
+    liees: ["malidzano","muhammara","labneh"]
   },
 });

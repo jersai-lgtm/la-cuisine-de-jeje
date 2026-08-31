@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 240 recettes
+// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 241 recettes
 // 👉 Pour AJOUTER une recette Plats : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -55050,5 +55050,44 @@ Object.assign(recettes, {
       { icone: "🌯", titre: "Rouler serré, puis couper en deux", detail: "Serré, sinon la garniture tombe à la première bouchée. La coupe en biais est le service traditionnel.", badge: null }
     ],
     liees: ["adanakebab","doner","salgam"]
+  },
+  meatpieaustralien: {
+    dateAjout: "2026-08-31T16:08:00",
+    nom: "Meat Pie Australien",
+    cat: "plats", saisons: ["automne","hiver"], pays: "australie",
+    base: 6,
+    temps: "2 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "La tourte individuelle au bœuf, mangée à une main dans les tribunes de football australien. Sa règle non écrite : le fond est en pâte brisée et le couvercle en pâte feuilletée — deux pâtes différentes sur la même tourte.",
+    tableauMeatpieaustralien: [
+      { nb: 1, boeuf: "110 g", farine: "55 g", beurre: "30 g", oignon: "½", bouillon: "70 ml", worcestershire: "5 ml", ketchup: "10 g", maizena: "5 g", oeufs: "¼", poivre: "0.6 g" },
+      { nb: 2, boeuf: "220 g", farine: "110 g", beurre: "60 g", oignon: "1", bouillon: "140 ml", worcestershire: "10 ml", ketchup: "20 g", maizena: "10 g", oeufs: "½", poivre: "1.2 g" },
+      { nb: 3, boeuf: "330 g", farine: "165 g", beurre: "90 g", oignon: "1½", bouillon: "210 ml", worcestershire: "15 ml", ketchup: "30 g", maizena: "15 g", oeufs: "¾", poivre: "1.8 g" },
+      { nb: 4, boeuf: "440 g", farine: "220 g", beurre: "120 g", oignon: "2", bouillon: "280 ml", worcestershire: "20 ml", ketchup: "40 g", maizena: "20 g", oeufs: "1", poivre: "2.4 g" },
+      { nb: 5, boeuf: "550 g", farine: "275 g", beurre: "150 g", oignon: "2½", bouillon: "350 ml", worcestershire: "25 ml", ketchup: "50 g", maizena: "25 g", oeufs: "1¼", poivre: "3 g" },
+      { nb: 6, boeuf: "660 g", farine: "330 g", beurre: "180 g", oignon: "3", bouillon: "420 ml", worcestershire: "30 ml", ketchup: "60 g", maizena: "30 g", oeufs: "1½", poivre: "3.6 g" },
+      { nb: 7, boeuf: "770 g", farine: "385 g", beurre: "210 g", oignon: "3½", bouillon: "490 ml", worcestershire: "35 ml", ketchup: "70 g", maizena: "35 g", oeufs: "1¾", poivre: "4.2 g" },
+      { nb: 8, boeuf: "880 g", farine: "440 g", beurre: "240 g", oignon: "4", bouillon: "560 ml", worcestershire: "40 ml", ketchup: "80 g", maizena: "40 g", oeufs: "2", poivre: "4.8 g" },
+      { nb: 9, boeuf: "990 g", farine: "495 g", beurre: "270 g", oignon: "4½", bouillon: "630 ml", worcestershire: "45 ml", ketchup: "90 g", maizena: "45 g", oeufs: "2¼", poivre: "5.4 g" },
+      { nb: 10, boeuf: "1100 g", farine: "550 g", beurre: "300 g", oignon: "5", bouillon: "700 ml", worcestershire: "50 ml", ketchup: "100 g", maizena: "50 g", oeufs: "2½", poivre: "6 g" },
+      { nb: 11, boeuf: "1210 g", farine: "605 g", beurre: "330 g", oignon: "5½", bouillon: "770 ml", worcestershire: "55 ml", ketchup: "110 g", maizena: "55 g", oeufs: "2¾", poivre: "6.6 g" },
+      { nb: 12, boeuf: "1320 g", farine: "660 g", beurre: "360 g", oignon: "6", bouillon: "840 ml", worcestershire: "60 ml", ketchup: "120 g", maizena: "60 g", oeufs: "3", poivre: "7.2 g" },
+      { nb: 13, boeuf: "1430 g", farine: "715 g", beurre: "390 g", oignon: "6½", bouillon: "910 ml", worcestershire: "65 ml", ketchup: "130 g", maizena: "65 g", oeufs: "3¼", poivre: "7.8 g" },
+      { nb: 14, boeuf: "1540 g", farine: "770 g", beurre: "420 g", oignon: "7", bouillon: "980 ml", worcestershire: "70 ml", ketchup: "140 g", maizena: "70 g", oeufs: "3½", poivre: "8.4 g" },
+      { nb: 15, boeuf: "1650 g", farine: "825 g", beurre: "450 g", oignon: "7½", bouillon: "1050 ml", worcestershire: "75 ml", ketchup: "150 g", maizena: "75 g", oeufs: "3¾", poivre: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥧", titre: "DEUX pâtes : brisée dessous, feuilletée dessus", detail: "C'est la règle australienne : la brisée tient le jus sans se détremper, le feuilletage donne le couvercle spectaculaire.", badge: null },
+      { icone: "🥩", titre: "Une viande à mijoter en DÉS, pas hachée", detail: "Du paleron en cubes de 1 cm : haché, on obtient une garniture de tourte anglaise, pas un meat pie.", badge: null },
+      { icone: "♨️", titre: "Mijoter deux heures, jusqu'à s'effilocher", detail: "La viande doit se défaire à la fourchette. À une heure, elle reste ferme et la tourte se mange mal à une main.", badge: null },
+      { icone: "❄️", titre: "REFROIDIR la garniture complètement", detail: "C'est l'étape critique : chaude, elle fait fondre le beurre de la pâte et le fond devient une éponge.", badge: null },
+      { icone: "🥄", titre: "Une garniture ÉPAISSE, liée à la maïzena", detail: "Elle doit tenir sur la cuillère. Liquide, elle transperce le fond et la tourte se mange à la petite cuillère.", badge: null },
+      { icone: "🕳️", titre: "Une cheminée au centre du couvercle", detail: "La vapeur doit sortir : sans elle, le feuilletage se soulève en dôme puis retombe en s'affaissant.", badge: null },
+      { icone: "🥚", titre: "Dorure sur le feuilletage SEUL", detail: "Sur les bords de brisée, l'œuf les fait brûler avant que le dessus soit doré.", badge: null },
+      { icone: "🍅", titre: "Se mange avec du ketchup, à une main", detail: "Ce n'est pas une fantaisie : le pie australien se tient dans la paume, et la sauce se met dans la cheminée.", badge: null }
+    ],
+    liees: ["tourtemilanaise","cornishpasty","shepherdspie"]
   },
 });

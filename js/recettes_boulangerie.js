@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 33 recettes
+// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 34 recettes
 // 👉 Pour AJOUTER une recette Boulangerie : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4506,5 +4506,44 @@ Object.assign(recettes, {
       { icone: "🚫", titre: "Ne pas ouvrir avant cinq minutes de repos", detail: "Le choc thermique fait retomber les pains vapeur d'un coup : ils se rident et ne remontent jamais.", badge: null }
     ],
     liees: ["mantou","baozi","shengjianbao"]
+  },
+  kringel: {
+    dateAjout: "2026-08-31T15:08:00",
+    nom: "Kringel",
+    cat: "boulangerie", pays: "estonie",
+    base: 10,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥨",
+    description: "La couronne tressée estonienne, offerte aux anniversaires. Sa particularité : le boudin est FENDU dans la longueur avant d'être torsadé, si bien que la cannelle reste visible sur toute la tresse au lieu d'être enfermée.",
+    tableauKringel: [
+      { nb: 1, farine: "60 g", lait: "32 ml", beurre: "16 g", sucre: "18 g", levureboulangere: "1.5 g", oeufs: "¼", cannelle: "1.2 g", raisinssecs: "12 g", sucreglace: "8 g" },
+      { nb: 2, farine: "120 g", lait: "64 ml", beurre: "32 g", sucre: "36 g", levureboulangere: "3 g", oeufs: "½", cannelle: "2.4 g", raisinssecs: "24 g", sucreglace: "16 g" },
+      { nb: 3, farine: "180 g", lait: "96 ml", beurre: "48 g", sucre: "54 g", levureboulangere: "4.5 g", oeufs: "¾", cannelle: "3.6 g", raisinssecs: "36 g", sucreglace: "24 g" },
+      { nb: 4, farine: "240 g", lait: "128 ml", beurre: "64 g", sucre: "72 g", levureboulangere: "6 g", oeufs: "1", cannelle: "4.8 g", raisinssecs: "48 g", sucreglace: "32 g" },
+      { nb: 5, farine: "300 g", lait: "160 ml", beurre: "80 g", sucre: "90 g", levureboulangere: "7.5 g", oeufs: "1¼", cannelle: "6 g", raisinssecs: "60 g", sucreglace: "40 g" },
+      { nb: 6, farine: "360 g", lait: "192 ml", beurre: "96 g", sucre: "108 g", levureboulangere: "9 g", oeufs: "1½", cannelle: "7.2 g", raisinssecs: "72 g", sucreglace: "48 g" },
+      { nb: 7, farine: "420 g", lait: "224 ml", beurre: "112 g", sucre: "126 g", levureboulangere: "10.5 g", oeufs: "1¾", cannelle: "8.4 g", raisinssecs: "84 g", sucreglace: "56 g" },
+      { nb: 8, farine: "480 g", lait: "256 ml", beurre: "128 g", sucre: "144 g", levureboulangere: "12 g", oeufs: "2", cannelle: "9.6 g", raisinssecs: "96 g", sucreglace: "64 g" },
+      { nb: 9, farine: "540 g", lait: "288 ml", beurre: "144 g", sucre: "162 g", levureboulangere: "13.5 g", oeufs: "2¼", cannelle: "10.8 g", raisinssecs: "108 g", sucreglace: "72 g" },
+      { nb: 10, farine: "600 g", lait: "320 ml", beurre: "160 g", sucre: "180 g", levureboulangere: "15 g", oeufs: "2½", cannelle: "12 g", raisinssecs: "120 g", sucreglace: "80 g" },
+      { nb: 11, farine: "660 g", lait: "352 ml", beurre: "176 g", sucre: "198 g", levureboulangere: "16.5 g", oeufs: "2¾", cannelle: "13.2 g", raisinssecs: "132 g", sucreglace: "88 g" },
+      { nb: 12, farine: "720 g", lait: "384 ml", beurre: "192 g", sucre: "216 g", levureboulangere: "18 g", oeufs: "3", cannelle: "14.4 g", raisinssecs: "144 g", sucreglace: "96 g" },
+      { nb: 13, farine: "780 g", lait: "416 ml", beurre: "208 g", sucre: "234 g", levureboulangere: "19.5 g", oeufs: "3¼", cannelle: "15.6 g", raisinssecs: "156 g", sucreglace: "104 g" },
+      { nb: 14, farine: "840 g", lait: "448 ml", beurre: "224 g", sucre: "252 g", levureboulangere: "21 g", oeufs: "3½", cannelle: "16.8 g", raisinssecs: "168 g", sucreglace: "112 g" },
+      { nb: 15, farine: "900 g", lait: "480 ml", beurre: "240 g", sucre: "270 g", levureboulangere: "22.5 g", oeufs: "3¾", cannelle: "18 g", raisinssecs: "180 g", sucreglace: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Lait tiède, jamais chaud, pour la levure", detail: "Au-dessus de 40 °C elle meurt, et on ne s'en aperçoit qu'une heure plus tard devant une pâte inerte.", badge: null },
+      { icone: "🧈", titre: "Le beurre en pommade, incorporé EN DERNIER", detail: "Ajouté avec la farine, il enrobe le gluten et empêche le réseau de se former.", badge: null },
+      { icone: "🌀", titre: "Rouler serré, puis FENDRE dans la longueur", detail: "C'est le geste qui définit le kringel : on ouvre le boudin en deux, couche visible vers le haut.", badge: null },
+      { icone: "✂️", titre: "Torsader les deux brins, coupe vers le CIEL", detail: "Les spirales de cannelle doivent rester apparentes : retournées, on obtient une brioche tressée ordinaire.", badge: null },
+      { icone: "⭕", titre: "Refermer en couronne, souder par-dessous", detail: "La soudure se cache sous la couronne : visible, elle s'ouvre à la cuisson et la tresse se défait.", badge: null },
+      { icone: "⏳", titre: "Deuxième pousse de quarante minutes", detail: "Enfournée sans repos, la tresse se resserre et la couronne perd son dessin.", badge: null },
+      { icone: "🥚", titre: "Dorure aux œufs DEUX fois, avant et à mi-cuisson", detail: "La seconde couche donne le brillant profond caractéristique des pâtisseries baltes.", badge: null },
+      { icone: "🍚", titre: "Glaçage au sucre glace sur le kringel TIÈDE", detail: "Chaud, il fond et disparaît ; froid, il reste en croûte blanche. Tiède, il nappe et devient translucide.", badge: null }
+    ],
+    liees: ["potica","sakotis","cinnamonroll"]
   },
 });

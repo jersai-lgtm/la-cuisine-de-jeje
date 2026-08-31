@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 73 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 76 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -17911,5 +17911,122 @@ Object.assign(recettes, {
       { icone: "⚫", titre: "Graines de pavot posées avant cuisson", detail: "Une pincée au centre : posées après, elles ne collent pas et tombent au premier biscuit soulevé.", badge: null }
     ],
     liees: ["nankhatai","sablesdattes","baklava"]
+  },
+  potica: {
+    dateAjout: "2026-08-31T15:07:00",
+    nom: "Potica",
+    cat: "desserts", saisons: ["hiver"], pays: "slovenie",
+    base: 10,
+    temps: "3 h 30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🌀",
+    description: "Le gâteau roulé national slovène, servi à Noël et à Pâques. La pâte est étirée jusqu'à la transparence sur une nappe, garnie de noix, puis roulée — et le nombre de tours visibles à la coupe est la mesure de la réussite.",
+    tableauPotica: [
+      { nb: 1, farine: "55 g", noix: "45 g", lait: "30 ml", beurre: "18 g", sucre: "20 g", oeufs: "¼", levureboulangere: "1.5 g", miel: "8 g", cannelle: "0.5 g", rhum: "5 ml" },
+      { nb: 2, farine: "110 g", noix: "90 g", lait: "60 ml", beurre: "36 g", sucre: "40 g", oeufs: "½", levureboulangere: "3 g", miel: "16 g", cannelle: "1 g", rhum: "10 ml" },
+      { nb: 3, farine: "165 g", noix: "135 g", lait: "90 ml", beurre: "54 g", sucre: "60 g", oeufs: "¾", levureboulangere: "4.5 g", miel: "24 g", cannelle: "1.5 g", rhum: "15 ml" },
+      { nb: 4, farine: "220 g", noix: "180 g", lait: "120 ml", beurre: "72 g", sucre: "80 g", oeufs: "1", levureboulangere: "6 g", miel: "32 g", cannelle: "2 g", rhum: "20 ml" },
+      { nb: 5, farine: "275 g", noix: "225 g", lait: "150 ml", beurre: "90 g", sucre: "100 g", oeufs: "1¼", levureboulangere: "7.5 g", miel: "40 g", cannelle: "2.5 g", rhum: "25 ml" },
+      { nb: 6, farine: "330 g", noix: "270 g", lait: "180 ml", beurre: "108 g", sucre: "120 g", oeufs: "1½", levureboulangere: "9 g", miel: "48 g", cannelle: "3 g", rhum: "30 ml" },
+      { nb: 7, farine: "385 g", noix: "315 g", lait: "210 ml", beurre: "126 g", sucre: "140 g", oeufs: "1¾", levureboulangere: "10.5 g", miel: "56 g", cannelle: "3.5 g", rhum: "35 ml" },
+      { nb: 8, farine: "440 g", noix: "360 g", lait: "240 ml", beurre: "144 g", sucre: "160 g", oeufs: "2", levureboulangere: "12 g", miel: "64 g", cannelle: "4 g", rhum: "40 ml" },
+      { nb: 9, farine: "495 g", noix: "405 g", lait: "270 ml", beurre: "162 g", sucre: "180 g", oeufs: "2¼", levureboulangere: "13.5 g", miel: "72 g", cannelle: "4.5 g", rhum: "45 ml" },
+      { nb: 10, farine: "550 g", noix: "450 g", lait: "300 ml", beurre: "180 g", sucre: "200 g", oeufs: "2½", levureboulangere: "15 g", miel: "80 g", cannelle: "5 g", rhum: "50 ml" },
+      { nb: 11, farine: "605 g", noix: "495 g", lait: "330 ml", beurre: "198 g", sucre: "220 g", oeufs: "2¾", levureboulangere: "16.5 g", miel: "88 g", cannelle: "5.5 g", rhum: "55 ml" },
+      { nb: 12, farine: "660 g", noix: "540 g", lait: "360 ml", beurre: "216 g", sucre: "240 g", oeufs: "3", levureboulangere: "18 g", miel: "96 g", cannelle: "6 g", rhum: "60 ml" },
+      { nb: 13, farine: "715 g", noix: "585 g", lait: "390 ml", beurre: "234 g", sucre: "260 g", oeufs: "3¼", levureboulangere: "19.5 g", miel: "104 g", cannelle: "6.5 g", rhum: "65 ml" },
+      { nb: 14, farine: "770 g", noix: "630 g", lait: "420 ml", beurre: "252 g", sucre: "280 g", oeufs: "3½", levureboulangere: "21 g", miel: "112 g", cannelle: "7 g", rhum: "70 ml" },
+      { nb: 15, farine: "825 g", noix: "675 g", lait: "450 ml", beurre: "270 g", sucre: "300 g", oeufs: "3¾", levureboulangere: "22.5 g", miel: "120 g", cannelle: "7.5 g", rhum: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Une pâte levée RICHE, beurre et jaunes", detail: "C'est une brioche : sans le gras, elle se déchire à l'étirage. C'est la raison de tous les échecs.", badge: null },
+      { icone: "⏳", titre: "Deux heures de première pousse, au chaud", detail: "La pâte doit doubler franchement. Sous-levée, elle résiste et se rétracte quand on l'étire.", badge: null },
+      { icone: "🍽️", titre: "Étirer sur une NAPPE farinée, pas au rouleau", detail: "Le dos des mains sous la pâte, on tire du centre vers les bords : elle doit devenir translucide.", badge: null },
+      { icone: "🌰", titre: "Une farce de noix ÉBOUILLANTÉE au lait chaud", detail: "Sèche, elle absorbe l'humidité de la pâte et le gâteau devient cassant. Ébouillantée, elle reste fondante.", badge: null },
+      { icone: "🌡️", titre: "Étaler la farce TIÈDE, jamais chaude", detail: "Chaude, elle fait fondre le beurre de la pâte et le roulé se déchire à la première boucle.", badge: null },
+      { icone: "🌀", titre: "Rouler EN TIRANT sur la nappe, serré", detail: "C'est la nappe qui roule, pas les mains : c'est ainsi qu'on obtient quinze tours au lieu de cinq.", badge: null },
+      { icone: "🕳️", titre: "Piquer le rouleau avant cuisson", detail: "Une brochette tous les trois centimètres : la vapeur emprisonnée décollerait les couches par grandes poches.", badge: null },
+      { icone: "⏳", titre: "Refroidir COMPLÈTEMENT avant de trancher", detail: "Chaude, la potica s'écrase sous le couteau et les spirales se mélangent. Il faut au moins quatre heures.", badge: null }
+    ],
+    liees: ["kringel","apfelstrudel","makowiec"]
+  },
+  sakotis: {
+    dateAjout: "2026-08-31T15:09:00",
+    nom: "Šakotis",
+    cat: "desserts", saisons: ["hiver"], pays: "lituanie",
+    base: 12,
+    temps: "2 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🌲",
+    description: "L'« arbre à branches » lituanien, gâteau de mariage cuit à la broche : la pâte liquide est versée couche après couche sur un rouleau tournant, et chaque coulure fige en pointe. Un šakotis de fête peut compter cinquante couches et un mètre de haut.",
+    tableauSakotis: [
+      { nb: 1, farine: "30 g", beurre: "30 g", oeufs: "¾", sucre: "28 g", cremefraiche: "15 ml", vanille: "0.3 g", sel: "0.4 g" },
+      { nb: 2, farine: "60 g", beurre: "60 g", oeufs: "1½", sucre: "56 g", cremefraiche: "30 ml", vanille: "0.6 g", sel: "0.8 g" },
+      { nb: 3, farine: "90 g", beurre: "90 g", oeufs: "2¼", sucre: "84 g", cremefraiche: "45 ml", vanille: "0.9 g", sel: "1.2 g" },
+      { nb: 4, farine: "120 g", beurre: "120 g", oeufs: "3", sucre: "112 g", cremefraiche: "60 ml", vanille: "1.2 g", sel: "1.6 g" },
+      { nb: 5, farine: "150 g", beurre: "150 g", oeufs: "3¾", sucre: "140 g", cremefraiche: "75 ml", vanille: "1.5 g", sel: "2 g" },
+      { nb: 6, farine: "180 g", beurre: "180 g", oeufs: "4½", sucre: "168 g", cremefraiche: "90 ml", vanille: "1.8 g", sel: "2.4 g" },
+      { nb: 7, farine: "210 g", beurre: "210 g", oeufs: "5¼", sucre: "196 g", cremefraiche: "105 ml", vanille: "2.1 g", sel: "2.8 g" },
+      { nb: 8, farine: "240 g", beurre: "240 g", oeufs: "6", sucre: "224 g", cremefraiche: "120 ml", vanille: "2.4 g", sel: "3.2 g" },
+      { nb: 9, farine: "270 g", beurre: "270 g", oeufs: "6¾", sucre: "252 g", cremefraiche: "135 ml", vanille: "2.7 g", sel: "3.6 g" },
+      { nb: 10, farine: "300 g", beurre: "300 g", oeufs: "7½", sucre: "280 g", cremefraiche: "150 ml", vanille: "3 g", sel: "4 g" },
+      { nb: 11, farine: "330 g", beurre: "330 g", oeufs: "8¼", sucre: "308 g", cremefraiche: "165 ml", vanille: "3.3 g", sel: "4.4 g" },
+      { nb: 12, farine: "360 g", beurre: "360 g", oeufs: "9", sucre: "336 g", cremefraiche: "180 ml", vanille: "3.6 g", sel: "4.8 g" },
+      { nb: 13, farine: "390 g", beurre: "390 g", oeufs: "9¾", sucre: "364 g", cremefraiche: "195 ml", vanille: "3.9 g", sel: "5.2 g" },
+      { nb: 14, farine: "420 g", beurre: "420 g", oeufs: "10½", sucre: "392 g", cremefraiche: "210 ml", vanille: "4.2 g", sel: "5.6 g" },
+      { nb: 15, farine: "450 g", beurre: "450 g", oeufs: "11¼", sucre: "420 g", cremefraiche: "225 ml", vanille: "4.5 g", sel: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Séparer les œufs, monter les blancs à part", detail: "C'est la seule aération de la pâte : sans blancs montés, le šakotis devient dense et sableux.", badge: null },
+      { icone: "🧈", titre: "Beurre et sucre battus dix minutes, au blanc", detail: "Le mélange doit devenir presque blanc et mousseux : c'est ce qui donne la texture friable des branches.", badge: null },
+      { icone: "🥣", titre: "Une pâte à la consistance de crème épaisse", detail: "Trop liquide, elle coule sans former de pointes ; trop épaisse, elle ne coule pas du tout.", badge: null },
+      { icone: "🔄", titre: "Un rouleau qui tourne LENTEMENT, en continu", detail: "Une rotation toutes les cinq secondes environ : plus vite, la pâte s'étale ; plus lentement, elle tombe.", badge: null },
+      { icone: "🥄", titre: "Une louche fine par couche, pas plus", detail: "Chaque couche doit cuire avant la suivante. Versée trop épaisse, elle glisse et emporte les pointes du dessous.", badge: null },
+      { icone: "⏱️", titre: "Attendre la coloration AVANT la couche suivante", detail: "Environ deux minutes. Superposées trop vite, les couches fusionnent et on obtient un cylindre lisse.", badge: null },
+      { icone: "🌡️", titre: "Une chaleur MODÉRÉE et constante", detail: "Trop fort, la surface brûle avant que la couche prenne ; trop doux, elle ne fige pas et coule au fond.", badge: null },
+      { icone: "⏳", titre: "Refroidir SUR la broche, à l'horizontale", detail: "Retiré chaud, le gâteau se casse sous son propre poids. Il faut attendre qu'il soit complètement froid.", badge: null }
+    ],
+    liees: ["kringel","potica","zopf"]
+  },
+  buttertarts: {
+    dateAjout: "2026-08-31T16:09:00",
+    nom: "Butter Tarts",
+    cat: "desserts", pays: "canada",
+    base: 8,
+    temps: "1 h 15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍁",
+    description: "La tartelette canadienne par excellence, née en Ontario au début du XXᵉ siècle. Le pays se divise sur une seule question : coulante ou prise ? Les deux camps s'affrontent depuis un siècle, et la recette officielle n'existe pas.",
+    tableauButtertarts: [
+      { nb: 1, farine: "30 g", beurre: "25 g", sucrebrun: "30 g", siropderable: "15 g", oeufs: "¼", raisinssecs: "12 g", vanille: "0.2 g", vinaigreBlanc: "2 ml" },
+      { nb: 2, farine: "60 g", beurre: "50 g", sucrebrun: "60 g", siropderable: "30 g", oeufs: "½", raisinssecs: "24 g", vanille: "0.4 g", vinaigreBlanc: "4 ml" },
+      { nb: 3, farine: "90 g", beurre: "75 g", sucrebrun: "90 g", siropderable: "45 g", oeufs: "¾", raisinssecs: "36 g", vanille: "0.6 g", vinaigreBlanc: "6 ml" },
+      { nb: 4, farine: "120 g", beurre: "100 g", sucrebrun: "120 g", siropderable: "60 g", oeufs: "1", raisinssecs: "48 g", vanille: "0.8 g", vinaigreBlanc: "8 ml" },
+      { nb: 5, farine: "150 g", beurre: "125 g", sucrebrun: "150 g", siropderable: "75 g", oeufs: "1¼", raisinssecs: "60 g", vanille: "1 g", vinaigreBlanc: "10 ml" },
+      { nb: 6, farine: "180 g", beurre: "150 g", sucrebrun: "180 g", siropderable: "90 g", oeufs: "1½", raisinssecs: "72 g", vanille: "1.2 g", vinaigreBlanc: "12 ml" },
+      { nb: 7, farine: "210 g", beurre: "175 g", sucrebrun: "210 g", siropderable: "105 g", oeufs: "1¾", raisinssecs: "84 g", vanille: "1.4 g", vinaigreBlanc: "14 ml" },
+      { nb: 8, farine: "240 g", beurre: "200 g", sucrebrun: "240 g", siropderable: "120 g", oeufs: "2", raisinssecs: "96 g", vanille: "1.6 g", vinaigreBlanc: "16 ml" },
+      { nb: 9, farine: "270 g", beurre: "225 g", sucrebrun: "270 g", siropderable: "135 g", oeufs: "2¼", raisinssecs: "108 g", vanille: "1.8 g", vinaigreBlanc: "18 ml" },
+      { nb: 10, farine: "300 g", beurre: "250 g", sucrebrun: "300 g", siropderable: "150 g", oeufs: "2½", raisinssecs: "120 g", vanille: "2 g", vinaigreBlanc: "20 ml" },
+      { nb: 11, farine: "330 g", beurre: "275 g", sucrebrun: "330 g", siropderable: "165 g", oeufs: "2¾", raisinssecs: "132 g", vanille: "2.2 g", vinaigreBlanc: "22 ml" },
+      { nb: 12, farine: "360 g", beurre: "300 g", sucrebrun: "360 g", siropderable: "180 g", oeufs: "3", raisinssecs: "144 g", vanille: "2.4 g", vinaigreBlanc: "24 ml" },
+      { nb: 13, farine: "390 g", beurre: "325 g", sucrebrun: "390 g", siropderable: "195 g", oeufs: "3¼", raisinssecs: "156 g", vanille: "2.6 g", vinaigreBlanc: "26 ml" },
+      { nb: 14, farine: "420 g", beurre: "350 g", sucrebrun: "420 g", siropderable: "210 g", oeufs: "3½", raisinssecs: "168 g", vanille: "2.8 g", vinaigreBlanc: "28 ml" },
+      { nb: 15, farine: "450 g", beurre: "375 g", sucrebrun: "450 g", siropderable: "225 g", oeufs: "3¾", raisinssecs: "180 g", vanille: "3 g", vinaigreBlanc: "30 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Un beurre GLACÉ et un trait de vinaigre", detail: "Le vinaigre freine le gluten : c'est le secret des pâtes canadiennes, qui restent tendres même retravaillées.", badge: null },
+      { icone: "🥧", titre: "Foncer des moules PEU profonds", detail: "La butter tart est plate : dans un moule à muffin profond, on obtient une tartelette au sirop, pas une butter tart.", badge: null },
+      { icone: "🍁", titre: "Sirop d'érable ET cassonade, pas l'un ou l'autre", detail: "L'érable donne le parfum, la cassonade la couleur et le corps. Seul, chacun donne une garniture déséquilibrée.", badge: null },
+      { icone: "🥚", titre: "Ne PAS fouetter la garniture, mélanger seulement", detail: "L'air incorporé fait gonfler puis retomber la garniture, qui se fend en refroidissant.", badge: null },
+      { icone: "🍇", titre: "Raisins ébouillantés puis épongés", detail: "Secs, ils pompent le sirop et durcissent. Gonflés, ils restent moelleux et ne volent pas de liquide.", badge: null },
+      { icone: "⚖️", titre: "Remplir aux TROIS QUARTS, jamais plus", detail: "La garniture bout et déborde : une seule tartelette qui coule soude toute la plaque.", badge: null },
+      { icone: "🌡️", titre: "Coulante à 190 °C 15 min, prise à 175 °C 22 min", detail: "C'est le seul vrai choix de la recette. Le camp coulant est majoritaire en Ontario.", badge: null },
+      { icone: "⏳", titre: "Démouler TIÈDE, jamais chaud ni froid", detail: "Chaud, le fond se casse ; froid, le sirop a collé au moule. La fenêtre est de dix minutes.", badge: null }
+    ],
+    liees: ["browniepecan","tarteausucre","cinnamonroll"]
   },
 });
