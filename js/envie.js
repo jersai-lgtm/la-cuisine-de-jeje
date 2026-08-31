@@ -107,7 +107,7 @@
       #envie-modal .envie-sheet-head h2{margin:0;font-size:18px}
       #envie-modal .envie-x{background:rgba(var(--w),.1);color:var(--text);border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer}
       /* grid-auto-rows:max-content — INDISPENSABLE. .mini-carte a overflow:hidden, et une
-         piste `auto` ne compte alors que le texte (~42px) : l'image (128px) ne participe pas
+         piste « auto » ne compte alors que le texte (~42px) : l'image (128px) ne participe pas
          au dimensionnement de la ligne. Faute de quoi la carte est rognée en silence, car
          overflow:hidden coupe sans rien laisser paraître. Un min-height chiffré ne suffit
          PAS : il fige la hauteur et devient trop court dès que la carte gagne une ligne
