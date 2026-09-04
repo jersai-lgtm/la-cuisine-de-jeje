@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 244 recettes
+// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 246 recettes
 // 👉 Pour AJOUTER une recette Plats : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -55206,5 +55206,83 @@ Object.assign(recettes, {
       { icone: "🌡️", titre: "Reposer vingt minutes avant de couper", detail: "Chaud, il s'effondre à la spatule. Tiède, il se coupe en parts nettes qui tiennent debout.", badge: null }
     ],
     liees: ["gratindauphinois","rosti","bramboraky"]
+  },
+  pascualina: {
+    dateAjout: "2026-09-01T12:07:00",
+    nom: "Torta Pascualina",
+    cat: "plats", saisons: ["printemps"], pays: "uruguay",
+    base: 8,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "La tourte de Pâques des Italiens d'Uruguay et d'Argentine, aux blettes et aux œufs entiers. La tradition génoise exigeait TRENTE-TROIS feuilles de pâte, une par année de la vie du Christ — on en compte deux aujourd'hui.",
+    tableauPascualina: [
+      { nb: 1, patebrisee: "90 g", blettes: "130 g", oeufs: "1", ricotta: "50 g", oignon: "½", parmesan: "20 g", muscade: "0.3 g", huileolive: "12 ml" },
+      { nb: 2, patebrisee: "180 g", blettes: "260 g", oeufs: "2", ricotta: "100 g", oignon: "1", parmesan: "40 g", muscade: "0.6 g", huileolive: "24 ml" },
+      { nb: 3, patebrisee: "270 g", blettes: "390 g", oeufs: "3", ricotta: "150 g", oignon: "1½", parmesan: "60 g", muscade: "0.9 g", huileolive: "36 ml" },
+      { nb: 4, patebrisee: "360 g", blettes: "520 g", oeufs: "4", ricotta: "200 g", oignon: "2", parmesan: "80 g", muscade: "1.2 g", huileolive: "48 ml" },
+      { nb: 5, patebrisee: "450 g", blettes: "650 g", oeufs: "5", ricotta: "250 g", oignon: "2½", parmesan: "100 g", muscade: "1.5 g", huileolive: "60 ml" },
+      { nb: 6, patebrisee: "540 g", blettes: "780 g", oeufs: "6", ricotta: "300 g", oignon: "3", parmesan: "120 g", muscade: "1.8 g", huileolive: "72 ml" },
+      { nb: 7, patebrisee: "630 g", blettes: "910 g", oeufs: "7", ricotta: "350 g", oignon: "3½", parmesan: "140 g", muscade: "2.1 g", huileolive: "84 ml" },
+      { nb: 8, patebrisee: "720 g", blettes: "1040 g", oeufs: "8", ricotta: "400 g", oignon: "4", parmesan: "160 g", muscade: "2.4 g", huileolive: "96 ml" },
+      { nb: 9, patebrisee: "810 g", blettes: "1170 g", oeufs: "9", ricotta: "450 g", oignon: "4½", parmesan: "180 g", muscade: "2.7 g", huileolive: "108 ml" },
+      { nb: 10, patebrisee: "900 g", blettes: "1300 g", oeufs: "10", ricotta: "500 g", oignon: "5", parmesan: "200 g", muscade: "3 g", huileolive: "120 ml" },
+      { nb: 11, patebrisee: "990 g", blettes: "1430 g", oeufs: "11", ricotta: "550 g", oignon: "5½", parmesan: "220 g", muscade: "3.3 g", huileolive: "132 ml" },
+      { nb: 12, patebrisee: "1080 g", blettes: "1560 g", oeufs: "12", ricotta: "600 g", oignon: "6", parmesan: "240 g", muscade: "3.6 g", huileolive: "144 ml" },
+      { nb: 13, patebrisee: "1170 g", blettes: "1690 g", oeufs: "13", ricotta: "650 g", oignon: "6½", parmesan: "260 g", muscade: "3.9 g", huileolive: "156 ml" },
+      { nb: 14, patebrisee: "1260 g", blettes: "1820 g", oeufs: "14", ricotta: "700 g", oignon: "7", parmesan: "280 g", muscade: "4.2 g", huileolive: "168 ml" },
+      { nb: 15, patebrisee: "1350 g", blettes: "1950 g", oeufs: "15", ricotta: "750 g", oignon: "7½", parmesan: "300 g", muscade: "4.5 g", huileolive: "180 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Blanchir les blettes, puis les PRESSER fort", detail: "À la main, dans un torchon : c'est l'eau retenue qui détrempe le fond et fait rater la tourte.", badge: null },
+      { icone: "🧅", titre: "Un oignon fondu longuement, sans coloration", detail: "Vingt minutes à feu doux : c'est le fond de goût, et il ne doit pas apporter d'amertume.", badge: null },
+      { icone: "🥚", titre: "Creuser des PUITS pour les œufs entiers", detail: "Au dos d'une cuillère, dans la farce : sans puits, les œufs glissent et se retrouvent tous d'un côté.", badge: null },
+      { icone: "🥚", titre: "Les œufs cassés ENTIERS, crus, dans les puits", detail: "C'est la signature : à la coupe, chaque part montre un jaune. Battus, ce serait une quiche.", badge: null },
+      { icone: "🧀", titre: "Une ricotta bien égouttée, mélangée aux blettes", detail: "Elle lie la farce sans la mouiller : non égouttée, elle annule tout le travail de pressage.", badge: null },
+      { icone: "🎀", titre: "Marquer la pâte du dessus au dos d'une cuillère", detail: "Le motif traditionnel en spirale, mais aussi un repère pour couper entre les œufs.", badge: null },
+      { icone: "🌡️", titre: "180 °C, cinquante minutes, sans dorure forte", detail: "Les jaunes doivent rester coulants : à four vif, ils sont durs avant que la pâte soit cuite.", badge: null },
+      { icone: "⏳", titre: "Se mange TIÈDE ou froide, jamais brûlante", detail: "C'est une tourte de pique-nique pascal : chaude, elle ne se tranche pas proprement.", badge: null }
+    ],
+    liees: ["tourteblettes","pizzarustica","spanakopita"]
+  },
+  sarmale: {
+    dateAjout: "2026-09-01T12:08:00",
+    nom: "Sarmale",
+    cat: "plats", saisons: ["automne","hiver"], pays: "roumanie",
+    base: 8,
+    temps: "3 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "Les paupiettes de chou aigre roumaines, plat obligatoire de Noël et de tout mariage. Le chou n'est pas frais mais FERMENTÉ en saumure entière — c'est son acidité qui cuit la farce et qui fait toute la différence avec un chou farci.",
+    tableauSarmale: [
+      { nb: 1, choucroute: "90 g", porc: "80 g", riz: "25 g", oignon: "½", lard: "25 g", tomateconcassee: "45 g", aneth: "4 g", thym: "0.4 g", poivre: "0.8 g", bouillon: "60 ml" },
+      { nb: 2, choucroute: "180 g", porc: "160 g", riz: "50 g", oignon: "1", lard: "50 g", tomateconcassee: "90 g", aneth: "8 g", thym: "0.8 g", poivre: "1.6 g", bouillon: "120 ml" },
+      { nb: 3, choucroute: "270 g", porc: "240 g", riz: "75 g", oignon: "1½", lard: "75 g", tomateconcassee: "135 g", aneth: "12 g", thym: "1.2 g", poivre: "2.4 g", bouillon: "180 ml" },
+      { nb: 4, choucroute: "360 g", porc: "320 g", riz: "100 g", oignon: "2", lard: "100 g", tomateconcassee: "180 g", aneth: "16 g", thym: "1.6 g", poivre: "3.2 g", bouillon: "240 ml" },
+      { nb: 5, choucroute: "450 g", porc: "400 g", riz: "125 g", oignon: "2½", lard: "125 g", tomateconcassee: "225 g", aneth: "20 g", thym: "2 g", poivre: "4 g", bouillon: "300 ml" },
+      { nb: 6, choucroute: "540 g", porc: "480 g", riz: "150 g", oignon: "3", lard: "150 g", tomateconcassee: "270 g", aneth: "24 g", thym: "2.4 g", poivre: "4.8 g", bouillon: "360 ml" },
+      { nb: 7, choucroute: "630 g", porc: "560 g", riz: "175 g", oignon: "3½", lard: "175 g", tomateconcassee: "315 g", aneth: "28 g", thym: "2.8 g", poivre: "5.6 g", bouillon: "420 ml" },
+      { nb: 8, choucroute: "720 g", porc: "640 g", riz: "200 g", oignon: "4", lard: "200 g", tomateconcassee: "360 g", aneth: "32 g", thym: "3.2 g", poivre: "6.4 g", bouillon: "480 ml" },
+      { nb: 9, choucroute: "810 g", porc: "720 g", riz: "225 g", oignon: "4½", lard: "225 g", tomateconcassee: "405 g", aneth: "36 g", thym: "3.6 g", poivre: "7.2 g", bouillon: "540 ml" },
+      { nb: 10, choucroute: "900 g", porc: "800 g", riz: "250 g", oignon: "5", lard: "250 g", tomateconcassee: "450 g", aneth: "40 g", thym: "4 g", poivre: "8 g", bouillon: "600 ml" },
+      { nb: 11, choucroute: "990 g", porc: "880 g", riz: "275 g", oignon: "5½", lard: "275 g", tomateconcassee: "495 g", aneth: "44 g", thym: "4.4 g", poivre: "8.8 g", bouillon: "660 ml" },
+      { nb: 12, choucroute: "1080 g", porc: "960 g", riz: "300 g", oignon: "6", lard: "300 g", tomateconcassee: "540 g", aneth: "48 g", thym: "4.8 g", poivre: "9.6 g", bouillon: "720 ml" },
+      { nb: 13, choucroute: "1170 g", porc: "1040 g", riz: "325 g", oignon: "6½", lard: "325 g", tomateconcassee: "585 g", aneth: "52 g", thym: "5.2 g", poivre: "10.4 g", bouillon: "780 ml" },
+      { nb: 14, choucroute: "1260 g", porc: "1120 g", riz: "350 g", oignon: "7", lard: "350 g", tomateconcassee: "630 g", aneth: "56 g", thym: "5.6 g", poivre: "11.2 g", bouillon: "840 ml" },
+      { nb: 15, choucroute: "1350 g", porc: "1200 g", riz: "375 g", oignon: "7½", lard: "375 g", tomateconcassee: "675 g", aneth: "60 g", thym: "6 g", poivre: "12 g", bouillon: "900 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Des feuilles de chou FERMENTÉES, pas blanchies", detail: "C'est ce qui fait le sarmale : le chou frais donne un golabki polonais, plat cousin mais différent.", badge: null },
+      { icone: "💧", titre: "Rincer les feuilles si elles sont très salées", detail: "Une seule eau : trop rincées, elles perdent l'acidité qui est le cœur du plat.", badge: null },
+      { icone: "🍚", titre: "Du riz CRU dans la farce, jamais cuit", detail: "Il absorbe le jus pendant trois heures : cuit d'avance, il éclate et la farce devient une bouillie.", badge: null },
+      { icone: "🔪", titre: "Retirer la côte épaisse de chaque feuille", detail: "Elle ne s'attendrit jamais et empêche de rouler serré : c'est cinq minutes qui changent tout.", badge: null },
+      { icone: "🌀", titre: "Rouler SERRÉ, extrémités rentrées", detail: "Le riz gonfle du double : une paupiette lâche s'ouvre et vide sa farce dans la casserole.", badge: null },
+      { icone: "🥓", titre: "Alterner couches de sarmale et de LARD", detail: "Le gras fond et parfume tout : sans lui, le plat est acide et sec.", badge: null },
+      { icone: "⏳", titre: "Trois heures à FRÉMISSEMENT, jamais à ébullition", detail: "Un vrai bouillon fait éclater les paupiettes. Le liquide doit à peine trembler.", badge: null },
+      { icone: "📅", titre: "Meilleurs RÉCHAUFFÉS, le lendemain", detail: "C'est un fait admis en Roumanie : on les fait la veille du repas, jamais le jour même.", badge: null }
+    ],
+    liees: ["choufarci","dolma","golabki"]
   },
 });

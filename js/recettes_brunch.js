@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 35 recettes
+// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 38 recettes
 // 👉 Pour AJOUTER une recette Brunch : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3155,5 +3155,120 @@ Object.assign(recettes, {
       { icone: "⏱️", titre: "Laisser reposer cinq minutes avant de servir", detail: "Le temps que l'absorption se fasse. Servi immédiatement, on trouve encore des morceaux secs au centre.", badge: null }
     ],
     liees: ["injera","dorowat","misirwat"]
+  },
+  pancakesricotta: {
+    dateAjout: "2026-09-01T11:06:00",
+    nom: "Pancakes Ricotta",
+    cat: "brunch", pays: "usa",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥞",
+    description: "Les pancakes les plus aériens qui soient, dont la légèreté ne vient pas de la levure mais des blancs montés. La ricotta remplace une partie de la farine : moins de gluten, donc une mie qui fond au lieu de rebondir.",
+    tableauPancakesricotta: [
+      { nb: 1, ricotta: "70 g", farine: "40 g", oeufs: "¾", lait: "35 ml", sucre: "10 g", levurechimique: "2 g", citron: "¼", beurre: "10 g" },
+      { nb: 2, ricotta: "140 g", farine: "80 g", oeufs: "1½", lait: "70 ml", sucre: "20 g", levurechimique: "4 g", citron: "½", beurre: "20 g" },
+      { nb: 3, ricotta: "210 g", farine: "120 g", oeufs: "2¼", lait: "105 ml", sucre: "30 g", levurechimique: "6 g", citron: "¾", beurre: "30 g" },
+      { nb: 4, ricotta: "280 g", farine: "160 g", oeufs: "3", lait: "140 ml", sucre: "40 g", levurechimique: "8 g", citron: "1", beurre: "40 g" },
+      { nb: 5, ricotta: "350 g", farine: "200 g", oeufs: "3¾", lait: "175 ml", sucre: "50 g", levurechimique: "10 g", citron: "1¼", beurre: "50 g" },
+      { nb: 6, ricotta: "420 g", farine: "240 g", oeufs: "4½", lait: "210 ml", sucre: "60 g", levurechimique: "12 g", citron: "1½", beurre: "60 g" },
+      { nb: 7, ricotta: "490 g", farine: "280 g", oeufs: "5¼", lait: "245 ml", sucre: "70 g", levurechimique: "14 g", citron: "1¾", beurre: "70 g" },
+      { nb: 8, ricotta: "560 g", farine: "320 g", oeufs: "6", lait: "280 ml", sucre: "80 g", levurechimique: "16 g", citron: "2", beurre: "80 g" },
+      { nb: 9, ricotta: "630 g", farine: "360 g", oeufs: "6¾", lait: "315 ml", sucre: "90 g", levurechimique: "18 g", citron: "2¼", beurre: "90 g" },
+      { nb: 10, ricotta: "700 g", farine: "400 g", oeufs: "7½", lait: "350 ml", sucre: "100 g", levurechimique: "20 g", citron: "2½", beurre: "100 g" },
+      { nb: 11, ricotta: "770 g", farine: "440 g", oeufs: "8¼", lait: "385 ml", sucre: "110 g", levurechimique: "22 g", citron: "2¾", beurre: "110 g" },
+      { nb: 12, ricotta: "840 g", farine: "480 g", oeufs: "9", lait: "420 ml", sucre: "120 g", levurechimique: "24 g", citron: "3", beurre: "120 g" },
+      { nb: 13, ricotta: "910 g", farine: "520 g", oeufs: "9¾", lait: "455 ml", sucre: "130 g", levurechimique: "26 g", citron: "3¼", beurre: "130 g" },
+      { nb: 14, ricotta: "980 g", farine: "560 g", oeufs: "10½", lait: "490 ml", sucre: "140 g", levurechimique: "28 g", citron: "3½", beurre: "140 g" },
+      { nb: 15, ricotta: "1050 g", farine: "600 g", oeufs: "11¼", lait: "525 ml", sucre: "150 g", levurechimique: "30 g", citron: "3¾", beurre: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Séparer les œufs, monter les blancs EN NEIGE", detail: "C'est la seule source de légèreté : mélangés entiers, les pancakes sont denses et humides.", badge: null },
+      { icone: "🧀", titre: "Une ricotta ÉGOUTTÉE une heure au minimum", detail: "Non égouttée, elle apporte trop d'eau et la pâte s'étale en crêpe au lieu de gonfler.", badge: null },
+      { icone: "🥄", titre: "Incorporer les blancs en TROIS fois, à la maryse", detail: "Le premier tiers détend la pâte, les deux autres s'incorporent en soulevant sans casser la mousse.", badge: null },
+      { icone: "🚫", titre: "Ne PAS laisser reposer la pâte", detail: "Contrairement aux pancakes classiques : les blancs retombent en dix minutes et tout le travail est perdu.", badge: null },
+      { icone: "🌡️", titre: "Une poêle à feu MOYEN, jamais vif", detail: "La pâte est épaisse : à feu vif, elle brunit avant que le centre soit cuit et reste crue dedans.", badge: null },
+      { icone: "📏", titre: "Des pancakes PETITS, huit centimètres", detail: "Plus larges, ils sont impossibles à retourner sans les casser tant la pâte est fragile.", badge: null },
+      { icone: "🔄", titre: "Retourner UNE seule fois, quand les bords sèchent", detail: "Les bulles de surface ne suffisent pas comme signal : c'est le bord mat qui indique le bon moment.", badge: null }
+    ],
+    liees: ["pancakes","dutchbaby","gaufreliegeoise"]
+  },
+  gaufreliegeoise: {
+    dateAjout: "2026-09-01T11:07:00",
+    nom: "Gaufre de Liège",
+    cat: "brunch", pays: "belgique",
+    base: 8,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧇",
+    description: "La gaufre belge à pâte LEVÉE, épaisse et irrégulière, truffée de sucre perlé qui caramélise contre la plaque. Elle n'a rien à voir avec la gaufre de Bruxelles : celle-ci se pétrit comme une brioche et se mange à la main, sans nappage.",
+    tableauGaufreliegeoise: [
+      { nb: 1, farine: "60 g", beurre: "30 g", sucreperle: "30 g", oeufs: "½", lait: "25 ml", levureboulangere: "2 g", vanille: "0.3 g", cannelle: "0.3 g", sel: "1 g" },
+      { nb: 2, farine: "120 g", beurre: "60 g", sucreperle: "60 g", oeufs: "1", lait: "50 ml", levureboulangere: "4 g", vanille: "0.6 g", cannelle: "0.6 g", sel: "2 g" },
+      { nb: 3, farine: "180 g", beurre: "90 g", sucreperle: "90 g", oeufs: "1½", lait: "75 ml", levureboulangere: "6 g", vanille: "0.9 g", cannelle: "0.9 g", sel: "3 g" },
+      { nb: 4, farine: "240 g", beurre: "120 g", sucreperle: "120 g", oeufs: "2", lait: "100 ml", levureboulangere: "8 g", vanille: "1.2 g", cannelle: "1.2 g", sel: "4 g" },
+      { nb: 5, farine: "300 g", beurre: "150 g", sucreperle: "150 g", oeufs: "2½", lait: "125 ml", levureboulangere: "10 g", vanille: "1.5 g", cannelle: "1.5 g", sel: "5 g" },
+      { nb: 6, farine: "360 g", beurre: "180 g", sucreperle: "180 g", oeufs: "3", lait: "150 ml", levureboulangere: "12 g", vanille: "1.8 g", cannelle: "1.8 g", sel: "6 g" },
+      { nb: 7, farine: "420 g", beurre: "210 g", sucreperle: "210 g", oeufs: "3½", lait: "175 ml", levureboulangere: "14 g", vanille: "2.1 g", cannelle: "2.1 g", sel: "7 g" },
+      { nb: 8, farine: "480 g", beurre: "240 g", sucreperle: "240 g", oeufs: "4", lait: "200 ml", levureboulangere: "16 g", vanille: "2.4 g", cannelle: "2.4 g", sel: "8 g" },
+      { nb: 9, farine: "540 g", beurre: "270 g", sucreperle: "270 g", oeufs: "4½", lait: "225 ml", levureboulangere: "18 g", vanille: "2.7 g", cannelle: "2.7 g", sel: "9 g" },
+      { nb: 10, farine: "600 g", beurre: "300 g", sucreperle: "300 g", oeufs: "5", lait: "250 ml", levureboulangere: "20 g", vanille: "3 g", cannelle: "3 g", sel: "10 g" },
+      { nb: 11, farine: "660 g", beurre: "330 g", sucreperle: "330 g", oeufs: "5½", lait: "275 ml", levureboulangere: "22 g", vanille: "3.3 g", cannelle: "3.3 g", sel: "11 g" },
+      { nb: 12, farine: "720 g", beurre: "360 g", sucreperle: "360 g", oeufs: "6", lait: "300 ml", levureboulangere: "24 g", vanille: "3.6 g", cannelle: "3.6 g", sel: "12 g" },
+      { nb: 13, farine: "780 g", beurre: "390 g", sucreperle: "390 g", oeufs: "6½", lait: "325 ml", levureboulangere: "26 g", vanille: "3.9 g", cannelle: "3.9 g", sel: "13 g" },
+      { nb: 14, farine: "840 g", beurre: "420 g", sucreperle: "420 g", oeufs: "7", lait: "350 ml", levureboulangere: "28 g", vanille: "4.2 g", cannelle: "4.2 g", sel: "14 g" },
+      { nb: 15, farine: "900 g", beurre: "450 g", sucreperle: "450 g", oeufs: "7½", lait: "375 ml", levureboulangere: "30 g", vanille: "4.5 g", cannelle: "4.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Une pâte LEVÉE, pétrie comme une brioche", detail: "C'est la différence fondamentale : la gaufre de Bruxelles est une pâte liquide, celle-ci est un pâton.", badge: null },
+      { icone: "🧈", titre: "Beurre en pommade incorporé EN DERNIER", detail: "Comme toute brioche : ajouté avec la farine, il empêche le gluten de se former.", badge: null },
+      { icone: "⏳", titre: "Deux heures de pousse, jusqu'au double", detail: "Sous-levée, la gaufre est dense et compacte ; c'est la pousse qui donne le moelleux du cœur.", badge: null },
+      { icone: "🍬", titre: "Le sucre perlé ajouté APRÈS la pousse", detail: "Ajouté avant, il fond dans la pâte et se dissout : il ne resterait aucun grain à caraméliser.", badge: null },
+      { icone: "✋", titre: "L'incorporer À LA MAIN, en pliant trois fois", detail: "Au robot, les grains se brisent. Ils doivent rester entiers pour éclater sous la dent.", badge: null },
+      { icone: "⚖️", titre: "Des pâtons de 80 g, boulés sans serrer", detail: "C'est le poids liégeois. Trop gros, le centre reste cru ; trop petits, ils brûlent.", badge: null },
+      { icone: "🌡️", titre: "Un gaufrier à 180 °C, pas plus", detail: "Le sucre perlé caramélise à 190 °C et brûle juste après : c'est une fenêtre de dix degrés.", badge: null },
+      { icone: "🚫", titre: "Ni sucre glace ni chantilly", detail: "La gaufre de Liège se mange NUE, à la main, tiède. Nappée, c'est une gaufre de Bruxelles.", badge: null }
+    ],
+    liees: ["gaufresbruxelles","brioche","pancakesricotta"]
+  },
+  baconbutty: {
+    dateAjout: "2026-09-01T11:08:00",
+    nom: "Bacon Butty",
+    cat: "brunch", pays: "angleterre",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥓",
+    description: "Le sandwich au bacon britannique, objet de débats nationaux : pain blanc mou ou grillé, ketchup ou brown sauce. Un seul point fait consensus — c'est du BACK bacon, la tranche large qui contient le filet, pas la poitrine américaine.",
+    tableauBaconbutty: [
+      { nb: 1, bacon: "70 g", painDeMie: "70 g", beurre: "12 g", ketchup: "12 g", poivre: "0.4 g" },
+      { nb: 2, bacon: "140 g", painDeMie: "140 g", beurre: "24 g", ketchup: "24 g", poivre: "0.8 g" },
+      { nb: 3, bacon: "210 g", painDeMie: "210 g", beurre: "36 g", ketchup: "36 g", poivre: "1.2 g" },
+      { nb: 4, bacon: "280 g", painDeMie: "280 g", beurre: "48 g", ketchup: "48 g", poivre: "1.6 g" },
+      { nb: 5, bacon: "350 g", painDeMie: "350 g", beurre: "60 g", ketchup: "60 g", poivre: "2 g" },
+      { nb: 6, bacon: "420 g", painDeMie: "420 g", beurre: "72 g", ketchup: "72 g", poivre: "2.4 g" },
+      { nb: 7, bacon: "490 g", painDeMie: "490 g", beurre: "84 g", ketchup: "84 g", poivre: "2.8 g" },
+      { nb: 8, bacon: "560 g", painDeMie: "560 g", beurre: "96 g", ketchup: "96 g", poivre: "3.2 g" },
+      { nb: 9, bacon: "630 g", painDeMie: "630 g", beurre: "108 g", ketchup: "108 g", poivre: "3.6 g" },
+      { nb: 10, bacon: "700 g", painDeMie: "700 g", beurre: "120 g", ketchup: "120 g", poivre: "4 g" },
+      { nb: 11, bacon: "770 g", painDeMie: "770 g", beurre: "132 g", ketchup: "132 g", poivre: "4.4 g" },
+      { nb: 12, bacon: "840 g", painDeMie: "840 g", beurre: "144 g", ketchup: "144 g", poivre: "4.8 g" },
+      { nb: 13, bacon: "910 g", painDeMie: "910 g", beurre: "156 g", ketchup: "156 g", poivre: "5.2 g" },
+      { nb: 14, bacon: "980 g", painDeMie: "980 g", beurre: "168 g", ketchup: "168 g", poivre: "5.6 g" },
+      { nb: 15, bacon: "1050 g", painDeMie: "1050 g", beurre: "180 g", ketchup: "180 g", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥓", titre: "Du BACK bacon, pas de la poitrine fumée", detail: "La tranche britannique contient le filet : la poitrine américaine se recroqueville et devient un chip.", badge: null },
+      { icone: "🍳", titre: "Poêle FROIDE au départ, montée en température", detail: "Le gras fond doucement et le bacon cuit dedans : dans une poêle chaude, il se rétracte immédiatement.", badge: null },
+      { icone: "🥓", titre: "Cuire jusqu'au bord CROUSTILLANT, cœur souple", detail: "C'est le compromis britannique : ni mou ni cassant, il doit encore plier sans se briser.", badge: null },
+      { icone: "🍞", titre: "Du pain de mie BLANC et mou, jamais complet", detail: "C'est un plat de réconfort assumé : le pain doit s'écraser et absorber le gras.", badge: null },
+      { icone: "🧈", titre: "Beurrer le pain, généreusement, les DEUX tranches", detail: "Le beurre isole la mie du gras du bacon : sans lui, le sandwich se détrempe en trois minutes.", badge: null },
+      { icone: "🥓", titre: "Poser le bacon BRÛLANT sur le beurre", detail: "Il le fait fondre légèrement : c'est ce qui lie le sandwich et fait toute la texture.", badge: null },
+      { icone: "🍅", titre: "Ketchup ou brown sauce, jamais les deux", detail: "C'est LE débat national. Une ligne au milieu, pas étalée : elle doit se sentir par intermittence.", badge: null }
+    ],
+    liees: ["croquemonsieur","clubsandwich","pancakes"]
   },
 });

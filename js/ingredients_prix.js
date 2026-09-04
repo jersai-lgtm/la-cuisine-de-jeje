@@ -331,6 +331,8 @@ const INGREDIENTS_PRIX = {
   umeboshi:       { prixKg: 35.0, calPer100g: 33,   lipSat: 0,    sucre: 1,    sel: 18.0, fibres: 3,   prot: 0.7,  flv: 0, glucides: 5, lipides: 0.2 },
   vermicellessucres: { prixKg: 12.0, calPer100g: 400, lipSat: 4.0, sucre: 70,  sel: 0.05, fibres: 0.5, prot: 0.5,  flv: 0, glucides: 85, lipides: 6 },
   nigelle:        { prixKg: 18.0, calPer100g: 400,  lipSat: 5.0,  sucre: 1,    sel: 0.02, fibres: 20,  prot: 18,   flv: 0, glucides: 25, lipides: 30 },
+  sherry:         { prixKg: 14.0, calPer100g: 150,  lipSat: 0,    sucre: 5,    sel: 0.01, fibres: 0,   prot: 0.2,  flv: 0, glucides: 5, lipides: 0 },
+  ghee:           { prixKg: 14.0, calPer100g: 900,  lipSat: 62.0, sucre: 0,    sel: 0,    fibres: 0,   prot: 0.3,  flv: 0, glucides: 0, lipides: 100 },
   cotelets:       { prixKg: 16.0, calPer100g: 280,  lipSat: 9.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 24,   flv: 0, glucides: 0, lipides: 20 },
   os:             { prixKg: 2.00, calPer100g: 100,  lipSat: 2.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 10,   flv: 0, glucides: 0, lipides: 6 },
   queueboeuf:     { prixKg: 14.0, calPer100g: 270,  lipSat: 8.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 17 },
@@ -1631,7 +1633,7 @@ const INGREDIENTS_LABELS = {
   yerbamate: "🧉 Yerba maté", graineslin: "🌾 Graines de lin", kasseri: "🧀 Kasseri", glacechocolat: "🍫 Glace chocolat", glacepistache: "🥜 Glace pistache", camomille: "🌼 Camomille",
   violette: "🌸 Crème de violette", lilletblanc: "🍷 Lillet blanc", amaro: "🌿 Amaro", whiskytourbe: "🥃 Whisky tourbé", benedictine: "🌿 Bénédictine",
   cremedemure: "🫐 Crème de mûre", falernum: "🍸 Falernum", cherryheering: "🍒 Cherry Heering", mezcal: "🌵 Mezcal", poivrevert: "🫑 Poivre vert",
-  umeboshi: "🍑 Umeboshi", vermicellessucres: "🌈 Vermicelles sucrés", nigelle: "⚫ Nigelle",
+  umeboshi: "🍑 Umeboshi", vermicellessucres: "🌈 Vermicelles sucrés", nigelle: "⚫ Nigelle", sherry: "🍷 Xérès (sherry)", ghee: "🧈 Ghee",
   juscitron: "🍋 Jus de citron", juscitronvert: "🍋 Jus de citron vert", jusananas: "🍍 Jus d'ananas", jusorange: "🍊 Jus d'orange", siropsucre: "🍬 Sirop de sucre", sucrecanne: "🍬 Sucre de canne", soda: "🫧 Eau gazeuse", sodaamer: "🫧 Soda amer", sodapamplemousse: "🫧 Soda pamplemousse", angostura: "🍶 Angostura", framboise: "🫐 Framboises", rhumblanc: "🥃 Rhum blanc", rhumambre: "🥃 Rhum ambré", vermouthrouge: "🍷 Vermouth rouge", porto: "🍷 Porto", liqueurcafe: "☕ Liqueur de café", siropagave: "🍯 Sirop d'agave", poitrine: "🥓 Poitrine de porc", bacon: "🥓 Bacon", lardgras: "🥓 Lard gras", worcestershire: "🍶 Sauce Worcestershire", morue: "🐟 Morue", vinaigrette: "🥗 Vinaigrette",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 35 recettes
+// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 36 recettes
 // 👉 Pour AJOUTER une recette En-cas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -7989,5 +7989,44 @@ Object.assign(recettes, {
       { icone: "⏱️", titre: "Se prépare dans les MINUTES qui précèdent", detail: "Le beurre absorbe la couleur des vermicelles : au bout d'une heure, le pain vire au gris-violet.", badge: null }
     ],
     liees: ["painperdubrioche","cinnamonroll","sconeBritish"]
+  },
+  pastelesdeyuca: {
+    dateAjout: "2026-09-01T11:09:00",
+    nom: "Pasteles de Yuca",
+    cat: "encas", saisons: ["hiver"], pays: "portorico",
+    base: 10,
+    temps: "2 h 30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍌",
+    description: "Les papillotes de Noël portoricaines, où une masa de manioc râpé enferme un ragoût de porc, le tout cuit dans une feuille de bananier. Chaque famille en prépare cent en une journée, et l'assemblage est une chaîne où chacun a son poste.",
+    tableauPastelesdeyuca: [
+      { nb: 1, manioc: "130 g", porc: "60 g", poivron: "25 g", oignon: "¼", olivevert: "12 g", huile: "15 ml", ail: "1", coriandre: "5 g", cumin: "1 g", bouillon: "30 ml" },
+      { nb: 2, manioc: "260 g", porc: "120 g", poivron: "50 g", oignon: "½", olivevert: "24 g", huile: "30 ml", ail: "2", coriandre: "10 g", cumin: "2 g", bouillon: "60 ml" },
+      { nb: 3, manioc: "390 g", porc: "180 g", poivron: "75 g", oignon: "¾", olivevert: "36 g", huile: "45 ml", ail: "3", coriandre: "15 g", cumin: "3 g", bouillon: "90 ml" },
+      { nb: 4, manioc: "520 g", porc: "240 g", poivron: "100 g", oignon: "1", olivevert: "48 g", huile: "60 ml", ail: "4", coriandre: "20 g", cumin: "4 g", bouillon: "120 ml" },
+      { nb: 5, manioc: "650 g", porc: "300 g", poivron: "125 g", oignon: "1¼", olivevert: "60 g", huile: "75 ml", ail: "5", coriandre: "25 g", cumin: "5 g", bouillon: "150 ml" },
+      { nb: 6, manioc: "780 g", porc: "360 g", poivron: "150 g", oignon: "1½", olivevert: "72 g", huile: "90 ml", ail: "6", coriandre: "30 g", cumin: "6 g", bouillon: "180 ml" },
+      { nb: 7, manioc: "910 g", porc: "420 g", poivron: "175 g", oignon: "1¾", olivevert: "84 g", huile: "105 ml", ail: "7", coriandre: "35 g", cumin: "7 g", bouillon: "210 ml" },
+      { nb: 8, manioc: "1040 g", porc: "480 g", poivron: "200 g", oignon: "2", olivevert: "96 g", huile: "120 ml", ail: "8", coriandre: "40 g", cumin: "8 g", bouillon: "240 ml" },
+      { nb: 9, manioc: "1170 g", porc: "540 g", poivron: "225 g", oignon: "2¼", olivevert: "108 g", huile: "135 ml", ail: "9", coriandre: "45 g", cumin: "9 g", bouillon: "270 ml" },
+      { nb: 10, manioc: "1300 g", porc: "600 g", poivron: "250 g", oignon: "2½", olivevert: "120 g", huile: "150 ml", ail: "10", coriandre: "50 g", cumin: "10 g", bouillon: "300 ml" },
+      { nb: 11, manioc: "1430 g", porc: "660 g", poivron: "275 g", oignon: "2¾", olivevert: "132 g", huile: "165 ml", ail: "11", coriandre: "55 g", cumin: "11 g", bouillon: "330 ml" },
+      { nb: 12, manioc: "1560 g", porc: "720 g", poivron: "300 g", oignon: "3", olivevert: "144 g", huile: "180 ml", ail: "12", coriandre: "60 g", cumin: "12 g", bouillon: "360 ml" },
+      { nb: 13, manioc: "1690 g", porc: "780 g", poivron: "325 g", oignon: "3¼", olivevert: "156 g", huile: "195 ml", ail: "13", coriandre: "65 g", cumin: "13 g", bouillon: "390 ml" },
+      { nb: 14, manioc: "1820 g", porc: "840 g", poivron: "350 g", oignon: "3½", olivevert: "168 g", huile: "210 ml", ail: "14", coriandre: "70 g", cumin: "14 g", bouillon: "420 ml" },
+      { nb: 15, manioc: "1950 g", porc: "900 g", poivron: "375 g", oignon: "3¾", olivevert: "180 g", huile: "225 ml", ail: "15", coriandre: "75 g", cumin: "15 g", bouillon: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper le manioc TRÈS fin, à la râpe fine", detail: "Une masa granuleuse ne tient pas : elle se délite dans l'eau bouillante et le pastel se vide.", badge: null },
+      { icone: "🍋", titre: "Citronner le manioc râpé immédiatement", detail: "Il noircit en cinq minutes à l'air : c'est le même réflexe que pour la pomme.", badge: null },
+      { icone: "💧", titre: "PRESSER la masa dans un torchon", detail: "Le manioc rend énormément d'eau. Trop humide, la masa ne se tient pas dans la feuille.", badge: null },
+      { icone: "🧡", titre: "Colorer la masa à l'huile d'achiote ou au paprika", detail: "La couleur orangée est attendue : une masa blanche a l'air crue même parfaitement cuite.", badge: null },
+      { icone: "🥩", titre: "Un ragoût de porc REFROIDI, presque sec", detail: "Chaud, il ramollit la masa au montage ; trop liquide, il perce la feuille pendant la cuisson.", badge: null },
+      { icone: "🍌", titre: "Passer la feuille de bananier À LA FLAMME", detail: "Trois secondes de chaque côté : elle devient souple et se plie sans se fendre.", badge: null },
+      { icone: "🎁", titre: "Plier en paquet, ficeler DEUX par deux", detail: "Face contre face : c'est le montage portoricain, il empêche l'eau d'entrer par les plis.", badge: null },
+      { icone: "♨️", titre: "Bouillir une heure, à couvert, sans découvrir", detail: "Sortir un pastel pour vérifier fait chuter la température et les autres cuisent mal.", badge: null }
+    ],
+    liees: ["tamales","empanadasargentines","pandebono"]
   },
 });

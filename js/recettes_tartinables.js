@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 21 recettes
+// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 23 recettes
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1730,5 +1730,81 @@ Object.assign(recettes, {
       { icone: "🫙", titre: "Bocal stérilisé, couche d'huile en surface", detail: "Comme tous les condiments fermentés : la barrière d'huile empêche les moisissures de s'installer.", badge: null }
     ],
     liees: ["chutneymangue","harissa","salsamacha"]
+  },
+  patechampignons: {
+    dateAjout: "2026-09-01T10:08:00",
+    nom: "Pâté de Champignons",
+    cat: "tartinables", saisons: ["automne"], pays: "france",
+    base: 6,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍄",
+    description: "Le pâté végétal d'automne, monté au beurre comme une rillette. Sa difficulté est unique : faire évaporer TOUTE l'eau des champignons, faute de quoi le pâté ne prend jamais et reste une purée liquide.",
+    tableauPatechampignons: [
+      { nb: 1, champignons: "130 g", echalote: "½", beurre: "30 g", noix: "20 g", cognac: "10 ml", thym: "0.4 g", creme: "20 ml", poivre: "0.6 g" },
+      { nb: 2, champignons: "260 g", echalote: "1", beurre: "60 g", noix: "40 g", cognac: "20 ml", thym: "0.8 g", creme: "40 ml", poivre: "1.2 g" },
+      { nb: 3, champignons: "390 g", echalote: "1½", beurre: "90 g", noix: "60 g", cognac: "30 ml", thym: "1.2 g", creme: "60 ml", poivre: "1.8 g" },
+      { nb: 4, champignons: "520 g", echalote: "2", beurre: "120 g", noix: "80 g", cognac: "40 ml", thym: "1.6 g", creme: "80 ml", poivre: "2.4 g" },
+      { nb: 5, champignons: "650 g", echalote: "2½", beurre: "150 g", noix: "100 g", cognac: "50 ml", thym: "2 g", creme: "100 ml", poivre: "3 g" },
+      { nb: 6, champignons: "780 g", echalote: "3", beurre: "180 g", noix: "120 g", cognac: "60 ml", thym: "2.4 g", creme: "120 ml", poivre: "3.6 g" },
+      { nb: 7, champignons: "910 g", echalote: "3½", beurre: "210 g", noix: "140 g", cognac: "70 ml", thym: "2.8 g", creme: "140 ml", poivre: "4.2 g" },
+      { nb: 8, champignons: "1040 g", echalote: "4", beurre: "240 g", noix: "160 g", cognac: "80 ml", thym: "3.2 g", creme: "160 ml", poivre: "4.8 g" },
+      { nb: 9, champignons: "1170 g", echalote: "4½", beurre: "270 g", noix: "180 g", cognac: "90 ml", thym: "3.6 g", creme: "180 ml", poivre: "5.4 g" },
+      { nb: 10, champignons: "1300 g", echalote: "5", beurre: "300 g", noix: "200 g", cognac: "100 ml", thym: "4 g", creme: "200 ml", poivre: "6 g" },
+      { nb: 11, champignons: "1430 g", echalote: "5½", beurre: "330 g", noix: "220 g", cognac: "110 ml", thym: "4.4 g", creme: "220 ml", poivre: "6.6 g" },
+      { nb: 12, champignons: "1560 g", echalote: "6", beurre: "360 g", noix: "240 g", cognac: "120 ml", thym: "4.8 g", creme: "240 ml", poivre: "7.2 g" },
+      { nb: 13, champignons: "1690 g", echalote: "6½", beurre: "390 g", noix: "260 g", cognac: "130 ml", thym: "5.2 g", creme: "260 ml", poivre: "7.8 g" },
+      { nb: 14, champignons: "1820 g", echalote: "7", beurre: "420 g", noix: "280 g", cognac: "140 ml", thym: "5.6 g", creme: "280 ml", poivre: "8.4 g" },
+      { nb: 15, champignons: "1950 g", echalote: "7½", beurre: "450 g", noix: "300 g", cognac: "150 ml", thym: "6 g", creme: "300 ml", poivre: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍄", titre: "Un MÉLANGE de champignons, jamais un seul", detail: "Paris pour la masse, cèpes ou shiitakés séchés pour le goût : un seul type donne un pâté plat.", badge: null },
+      { icone: "🔥", titre: "Poêle TRÈS chaude, en plusieurs fois", detail: "Entassés, les champignons bouillent dans leur eau. Il faut les saisir en petites quantités.", badge: null },
+      { icone: "💧", titre: "Cuire jusqu'à ce que la poêle soit SÈCHE", detail: "C'est l'étape que tout le monde écourte : tant qu'il reste de l'eau, le pâté ne prendra pas au froid.", badge: null },
+      { icone: "🌰", titre: "Des noix torréfiées, ajoutées après le mixage", detail: "Mixées avec le reste, elles disparaissent ; concassées après, elles donnent le grain du pâté.", badge: null },
+      { icone: "🧈", titre: "Le beurre incorporé HORS du feu, froid", detail: "Comme une émulsion : sur le feu, il se sépare et le pâté devient gras au lieu d'être onctueux.", badge: null },
+      { icone: "🔥", titre: "Flamber le cognac, ne pas juste l'ajouter", detail: "L'alcool cru domine ; flambé, il ne reste que les arômes qui portent le champignon.", badge: null },
+      { icone: "❄️", titre: "Six heures au froid avant de servir", detail: "Le beurre doit figer pour donner la texture. Servi tiède, ce n'est qu'une duxelles crémeuse.", badge: null }
+    ],
+    liees: ["tapenade","rillettessaumonfume","houmous"]
+  },
+  beurrebordier: {
+    dateAjout: "2026-09-01T10:09:00",
+    nom: "Beurre d'Escargot",
+    cat: "tartinables", pays: "france",
+    base: 8,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🐌",
+    description: "Le beurre persillé de Bourgogne, qui sert bien au-delà des escargots : sur des noix de Saint-Jacques, des champignons, du pain grillé. Sa règle est le RATIO — un tiers du poids du beurre en persil et en ail, ce qui paraît énorme et ne l'est pas.",
+    tableauBeurrebordier: [
+      { nb: 1, beurre: "60 g", persil: "12 g", ail: "3", echalote: "½", sel: "1.5 g", poivre: "0.6 g", citron: "¼" },
+      { nb: 2, beurre: "120 g", persil: "24 g", ail: "6", echalote: "1", sel: "3 g", poivre: "1.2 g", citron: "½" },
+      { nb: 3, beurre: "180 g", persil: "36 g", ail: "9", echalote: "1½", sel: "4.5 g", poivre: "1.8 g", citron: "¾" },
+      { nb: 4, beurre: "240 g", persil: "48 g", ail: "12", echalote: "2", sel: "6 g", poivre: "2.4 g", citron: "1" },
+      { nb: 5, beurre: "300 g", persil: "60 g", ail: "15", echalote: "2½", sel: "7.5 g", poivre: "3 g", citron: "1¼" },
+      { nb: 6, beurre: "360 g", persil: "72 g", ail: "18", echalote: "3", sel: "9 g", poivre: "3.6 g", citron: "1½" },
+      { nb: 7, beurre: "420 g", persil: "84 g", ail: "21", echalote: "3½", sel: "10.5 g", poivre: "4.2 g", citron: "1¾" },
+      { nb: 8, beurre: "480 g", persil: "96 g", ail: "24", echalote: "4", sel: "12 g", poivre: "4.8 g", citron: "2" },
+      { nb: 9, beurre: "540 g", persil: "108 g", ail: "27", echalote: "4½", sel: "13.5 g", poivre: "5.4 g", citron: "2¼" },
+      { nb: 10, beurre: "600 g", persil: "120 g", ail: "30", echalote: "5", sel: "15 g", poivre: "6 g", citron: "2½" },
+      { nb: 11, beurre: "660 g", persil: "132 g", ail: "33", echalote: "5½", sel: "16.5 g", poivre: "6.6 g", citron: "2¾" },
+      { nb: 12, beurre: "720 g", persil: "144 g", ail: "36", echalote: "6", sel: "18 g", poivre: "7.2 g", citron: "3" },
+      { nb: 13, beurre: "780 g", persil: "156 g", ail: "39", echalote: "6½", sel: "19.5 g", poivre: "7.8 g", citron: "3¼" },
+      { nb: 14, beurre: "840 g", persil: "168 g", ail: "42", echalote: "7", sel: "21 g", poivre: "8.4 g", citron: "3½" },
+      { nb: 15, beurre: "900 g", persil: "180 g", ail: "45", echalote: "7½", sel: "22.5 g", poivre: "9 g", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Un beurre en POMMADE, jamais fondu", detail: "Fondu, il se sépare en refroidissant et le persil remonte en surface. En pommade, tout reste lié.", badge: null },
+      { icone: "🧄", titre: "Beaucoup d'ail, bien plus qu'on ne croit", detail: "Trois gousses pour soixante grammes de beurre : sous-dosé, c'est du beurre vert sans caractère.", badge: null },
+      { icone: "🌿", titre: "Le persil haché TRÈS fin, et bien sec", detail: "Humide, il détrempe l'émulsion ; en gros morceaux, il brûle au four et devient amer.", badge: null },
+      { icone: "🧅", titre: "Une échalote RÂPÉE, pas hachée", detail: "Râpée, elle fond dans le beurre ; hachée, elle reste en morceaux qui croquent désagréablement.", badge: null },
+      { icone: "🍋", titre: "Quelques gouttes de citron, invisibles", detail: "Elles réveillent l'ensemble sans se sentir : c'est le détail qui sépare un bon beurre d'un beurre lourd.", badge: null },
+      { icone: "🌀", titre: "Rouler en BOUDIN dans du film", detail: "C'est la forme de conservation : on tranche des rondelles à la demande, sans réchauffer le reste.", badge: null },
+      { icone: "❄️", titre: "Deux heures au froid minimum avant usage", detail: "L'ail doit imprégner le beurre. Utilisé tout de suite, on sent l'ail et le beurre séparément.", badge: null }
+    ],
+    liees: ["persillade","tapenade","patechampignons"]
   },
 });

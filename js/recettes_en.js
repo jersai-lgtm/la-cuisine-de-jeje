@@ -114522,6 +114522,1074 @@ window.RECETTES_EN = {
     "detail": "The classic is called a Killaloe Sunrise: sugar, cinnamon and lemon. The acidity cuts the fat."
    }
   ]
+ },
+ "calzonefritto": {
+  "nom": "Calzone Fritto",
+  "description": "The Neapolitan calzone FRIED rather than baked, sold at the school gates for a century. Frying changes everything: the dough puffs into a cushion and stays supple, where the oven dries and hardens it.",
+  "etapes": [
+   {
+    "titre": "Ricotta DRAINED for twelve hours",
+    "detail": "Undrained, it releases its water in the fryer and bursts the calzone in scalding oil."
+   },
+   {
+    "titre": "A DRY filling, very little tomato",
+    "detail": "Barely a spoonful: moisture is what causes the blowouts, not steam pressure."
+   },
+   {
+    "titre": "Fill HALF, leaving a 2 cm border",
+    "detail": "The bare border is the seal: filled to the edge, the calzone opens the moment it hits the oil."
+   },
+   {
+    "titre": "Seal with a fork, then roll the edge",
+    "detail": "Two safeguards: the fork seals, the rolled rim stops the seal reopening."
+   },
+   {
+    "titre": "Oil at 175 °C, checked",
+    "detail": "Hotter and the dough browns before the cheese melts; cooler and it drinks the oil and turns greasy."
+   },
+   {
+    "titre": "Ladle oil over the top while it fries",
+    "detail": "The calzone floats: without basting, the exposed face stays pale and raw."
+   },
+   {
+    "titre": "Drain STANDING, on its edge",
+    "detail": "Laid flat, oil pools underneath and the base goes soggy within two minutes."
+   },
+   {
+    "titre": "Eaten scalding, by hand, in paper",
+    "detail": "It is Neapolitan street food: cooled, the dough hardens and the ricotta sets."
+   }
+  ]
+ },
+ "stromboli": {
+  "nom": "Stromboli",
+  "description": "Invented in 1950 in suburban Philadelphia, named after the Rossellini film released the same year. It is NOT a calzone: a stromboli is rolled into a log and sliced, never folded into a turnover.",
+  "etapes": [
+   {
+    "titre": "ROLLED into a log, never folded in half",
+    "detail": "That is what separates it from a calzone: sliced, you must see a spiral of filling."
+   },
+   {
+    "titre": "Roll out a RECTANGLE, not a round",
+    "detail": "A rolled circle gives a log with ends too thin, which burn before the centre cooks."
+   },
+   {
+    "titre": "A filling WITHOUT tomato sauce",
+    "detail": "The sauce is served alongside, for dipping. Inside, it soaks the spiral and the stromboli collapses."
+   },
+   {
+    "titre": "Cheese FIRST, onto the dough",
+    "detail": "It melts and forms a fatty barrier: the charcuterie laid on top cannot wet the dough."
+   },
+   {
+    "titre": "Roll TIGHT, using the paper to help",
+    "detail": "A loose log leaves air pockets that become gaping holes when sliced."
+   },
+   {
+    "titre": "Slash the top every three centimetres",
+    "detail": "The steam must escape: without slashes the log bursts at the side and empties its filling."
+   },
+   {
+    "titre": "Rest TWENTY minutes before slicing",
+    "detail": "Hot, the cheese runs and the slices collapse. Warm, the spiral holds cleanly."
+   }
+  ]
+ },
+ "pizzarustica": {
+  "nom": "Pizza Rustica",
+  "description": "Southern Italy's Easter pie, which is a pizza in name only: a sweet shortcrust enclosing ricotta, eggs and cured meats. It marks the end of Lent — hence the accumulation of eggs and meat.",
+  "etapes": [
+   {
+    "titre": "A SLIGHTLY sweet pastry, not savoury",
+    "detail": "That is the Neapolitan particularity: the sugar contrasts with the charcuterie, and that contrast is intended."
+   },
+   {
+    "titre": "Sheep's ricotta, drained overnight",
+    "detail": "Cow's ricotta is blander and wetter: the pie turns soft in the middle."
+   },
+   {
+    "titre": "Beat the eggs WITHOUT aerating them",
+    "detail": "Whipped, they make the filling rise then fall, and it cracks as it cools."
+   },
+   {
+    "titre": "Cured meats in DICE, never slices",
+    "detail": "In slices they form layers that separate when cut. Diced, they stay distributed."
+   },
+   {
+    "titre": "Blind bake the base, fifteen minutes",
+    "detail": "The filling is wet: without blind baking, the base stays raw and pasty under the pie."
+   },
+   {
+    "titre": "A lattice of strips on top",
+    "detail": "The traditional decoration, but above all a practical role: it lets the steam escape."
+   },
+   {
+    "titre": "Cool COMPLETELY, serve at room temperature",
+    "detail": "It is an Easter picnic dish: hot, it runs; cold, it slices cleanly."
+   },
+   {
+    "titre": "Better the NEXT DAY",
+    "detail": "The flavours bind overnight. Made the same day it is correct but disjointed."
+   }
+  ]
+ },
+ "detroitpizza": {
+  "nom": "Detroit Pizza",
+  "description": "Born in 1946 in a Detroit bar, baked in automotive parts trays salvaged from the factories. Its signature is the CARAMELISED cheese crust at the edges, achieved by pushing the cheese against the walls of the pan.",
+  "etapes": [
+   {
+    "titre": "Cheese PUSHED against the pan walls",
+    "detail": "That is the whole recipe: it melts, runs under the dough and caramelises into a crisp crust."
+   },
+   {
+    "titre": "A RECTANGULAR steel pan with high sides",
+    "detail": "A cake tin will not do: you need straight five-centimetre walls for the crust."
+   },
+   {
+    "titre": "Wisconsin brick cheese, or a mild cheddar",
+    "detail": "A fatty, lightly aged cheese: mature cheddar is too dry and burns instead of caramelising."
+   },
+   {
+    "titre": "Sauce ON TOP, in two stripes",
+    "detail": "That is the reversed Detroit order: dough, cheese, toppings, then sauce. Under the cheese it would soak in."
+   },
+   {
+    "titre": "Twenty-four hours' cold rise",
+    "detail": "The crumb must be open and light despite its thickness: without a long rise you get dense flatbread."
+   },
+   {
+    "titre": "Plenty of oil in the base of the pan",
+    "detail": "The underside fries as much as it bakes: that is what gives the golden crisp base."
+   },
+   {
+    "titre": "Very hot oven, 260 °C, fifteen minutes",
+    "detail": "The cheese at the edges must be dark brown, almost black. Blond, and the crust does not exist."
+   },
+   {
+    "titre": "Turn out with a metal spatula, immediately",
+    "detail": "The cheese crust glues itself as it cools: thirty seconds too long and it stays in the pan."
+   }
+  ]
+ },
+ "viennetta": {
+  "nom": "Viennetta",
+  "description": "The rippled ice cream log created in 1982 by Wall's in the United Kingdom, with nothing Viennese about it. Its secret comes down to one point: the chocolate is poured in ULTRA-THIN layers onto already frozen ice cream, so that it shatters into shards instead of lifting off as a sheet.",
+  "etapes": [
+   {
+    "titre": "A loaf tin lined with film, overhanging generously",
+    "detail": "The film must hang ten centimetres over: that is how you will lift the log out."
+   },
+   {
+    "titre": "Chocolate LOOSENED with coconut oil",
+    "detail": "That is the whole trick: the oil lowers the melting point and the chocolate snaps cleanly instead of staying hard."
+   },
+   {
+    "titre": "Chocolate barely warm, 30 °C",
+    "detail": "Too hot and it melts the ice cream layer beneath, and the strata blur together."
+   },
+   {
+    "titre": "Spread the ice cream in 1 cm layers, packed flat",
+    "detail": "With a spatula, perfectly level: uneven layers give soft waves instead of clean lines."
+   },
+   {
+    "titre": "Chocolate poured in a THREAD, zigzagging",
+    "detail": "It sets on contact within a second: that movement is what creates the characteristic ripples."
+   },
+   {
+    "titre": "Twenty minutes in the freezer BETWEEN each layer",
+    "detail": "Six layers, six waits. It is slow and it is the only way to get separated strata."
+   },
+   {
+    "titre": "A firm whipped cream for the top layer",
+    "detail": "It gives the relief of the visible waves: without it the top stays flat and industrial."
+   },
+   {
+    "titre": "Slice with a knife RUN under hot water",
+    "detail": "Wiped between each portion: cold, the knife crushes the layers and tears off the chocolate."
+   }
+  ]
+ },
+ "grandmapizza": {
+  "nom": "Grandma Pizza",
+  "description": "The pizza of Italian-American home kitchens on Long Island, baked on a cookie sheet because no grandmother had a pizza oven. Its dough is barely leavened: it is pressed straight into the oiled pan.",
+  "etapes": [
+   {
+    "titre": "A COOKIE sheet, not a deep pan",
+    "detail": "Low, thin sides: that is what separates it from Detroit, whose cheese crust climbs the walls."
+   },
+   {
+    "titre": "A SHORT rise, an hour at most",
+    "detail": "A grandma is thin and dense: a long rise would make it a focaccia and change the dish."
+   },
+   {
+    "titre": "Press into the pan in several goes",
+    "detail": "The dough springs back: press, wait ten minutes, press again. Forced in one go, it retracts."
+   },
+   {
+    "titre": "Mozzarella FIRST, in spaced cubes",
+    "detail": "Under the sauce: it seals the dough and leaves visible patches of sauce, the expected look."
+   },
+   {
+    "titre": "A RAW sauce, tomatoes crushed by hand",
+    "detail": "That is the simplicity of the family recipe: simmered, it becomes a restaurant pizza."
+   },
+   {
+    "titre": "Raw sliced garlic, generously",
+    "detail": "That is the grandma signature: without frank garlic it is just another tray pizza."
+   },
+   {
+    "titre": "Fresh basil laid on ON EXIT from the oven",
+    "detail": "Baked, it blackens. It is the last gesture, just before cutting into squares."
+   }
+  ]
+ },
+ "stlouispizza": {
+  "nom": "St. Louis Pizza",
+  "description": "America's most divisive pizza: an UNLEAVENED dough, thin as a cracker, cut into squares rather than wedges. Its cheese, Provel, is a processed blend that does not stretch — which purists have held against it since 1950.",
+  "etapes": [
+   {
+    "titre": "NO baker's yeast, the dough does not rise",
+    "detail": "It is a cracker: flour, water, oil, a touch of baking powder. Risen, it is no longer a St. Louis."
+   },
+   {
+    "titre": "Roll out to two millimetres",
+    "detail": "As thin as a tart base: any thicker and the pizza turns soft and loses its whole point."
+   },
+   {
+    "titre": "A provolone-cheddar blend for want of Provel",
+    "detail": "Provel is a processed cheese unavailable in France: the pairing approaches it, melting without stretching."
+   },
+   {
+    "titre": "A SWEET sauce, with oregano",
+    "detail": "That is the St. Louis taste: a touch of sugar in the sauce, deliberate and characteristic."
+   },
+   {
+    "titre": "Top to the EDGE, leaving no crust",
+    "detail": "There is no cornicione: the topping runs to the very rim, that is the local rule."
+   },
+   {
+    "titre": "230 °C, twelve minutes, on a stone",
+    "detail": "Short: the thin dough burns quickly, and the processed cheese should barely colour."
+   },
+   {
+    "titre": "Cut into SQUARES, never wedges",
+    "detail": "The party cut: it is the serving format, and it changes how you eat it."
+   }
+  ]
+ },
+ "pizzalanciano": {
+  "nom": "Pizza di Lanciano",
+  "description": "The Easter pie of Abruzzo, filled with whole hard-boiled eggs set into the dough. When sliced, each portion shows an egg at its centre — a symbol of rebirth, and the dish exists only around Easter.",
+  "etapes": [
+   {
+    "titre": "WHOLE peeled hard-boiled eggs, set in a ring",
+    "detail": "They must appear at the centre of each slice: placed at random, half the slices have none."
+   },
+   {
+    "titre": "Eggs boiled 9 minutes, not 12",
+    "detail": "The yolk must stay tender: it still spends forty minutes in the oven and would harden completely."
+   },
+   {
+    "titre": "A bed of cheese UNDER the eggs",
+    "detail": "It wedges them and stops them rolling during assembly, and insulates the white from the dough."
+   },
+   {
+    "titre": "Salami in dice, scattered between the eggs",
+    "detail": "In slices it makes layers; in dice it fills the gaps and binds the whole."
+   },
+   {
+    "titre": "Two crossed strips of dough over each egg",
+    "detail": "The traditional Abruzzo decoration: they hold the eggs in place during baking."
+   },
+   {
+    "titre": "MODERATE oven, 180 °C, forty minutes",
+    "detail": "Hotter and the pastry browns before the centre cooks, and the whites turn rubbery."
+   },
+   {
+    "titre": "Cool for an hour before cutting",
+    "detail": "Hot, the eggs crush under the knife and the cut is ugly. Warm, each slice is clean."
+   }
+  ]
+ },
+ "patechampignons": {
+  "nom": "Mushroom Pâté",
+  "description": "The vegetal pâté of autumn, mounted with butter like a rillette. Its difficulty is singular: driving off ALL the water from the mushrooms, without which the pâté never sets and stays a runny purée.",
+  "etapes": [
+   {
+    "titre": "A MIX of mushrooms, never one alone",
+    "detail": "Button for the mass, dried ceps or shiitake for the flavour: a single type gives a flat pâté."
+   },
+   {
+    "titre": "A VERY hot pan, in batches",
+    "detail": "Piled in, mushrooms boil in their own water. They must be seared in small quantities."
+   },
+   {
+    "titre": "Cook until the pan is DRY",
+    "detail": "This is the step everyone cuts short: while water remains, the pâté will not set in the cold."
+   },
+   {
+    "titre": "Toasted walnuts, added after blending",
+    "detail": "Blended with the rest they vanish; crushed afterwards they give the pâté its grain."
+   },
+   {
+    "titre": "Butter worked in OFF the heat, cold",
+    "detail": "Like an emulsion: over heat it splits and the pâté turns greasy instead of silky."
+   },
+   {
+    "titre": "Flame the cognac, do not just add it",
+    "detail": "Raw alcohol dominates; flamed, only the aromatics that carry the mushroom remain."
+   },
+   {
+    "titre": "Six hours in the cold before serving",
+    "detail": "The butter must set to give the texture. Served warm, it is just a creamy duxelles."
+   }
+  ]
+ },
+ "beurrebordier": {
+  "nom": "Snail Butter",
+  "description": "Burgundy's parsley butter, which serves far beyond snails: on scallops, on mushrooms, on toast. Its rule is the RATIO — a third of the butter's weight in parsley and garlic, which sounds enormous and is not.",
+  "etapes": [
+   {
+    "titre": "Butter SOFTENED, never melted",
+    "detail": "Melted, it separates as it cools and the parsley floats to the top. Softened, everything stays bound."
+   },
+   {
+    "titre": "Plenty of garlic, far more than you think",
+    "detail": "Three cloves to sixty grams of butter: under-dosed, it is green butter without character."
+   },
+   {
+    "titre": "Parsley chopped VERY fine, and quite dry",
+    "detail": "Wet, it waters down the emulsion; in large pieces, it burns in the oven and turns bitter."
+   },
+   {
+    "titre": "A GRATED shallot, not chopped",
+    "detail": "Grated, it melts into the butter; chopped, it stays in pieces that crunch unpleasantly."
+   },
+   {
+    "titre": "A few drops of lemon, invisible",
+    "detail": "They wake the whole thing without being tasted: the detail that separates a good butter from a heavy one."
+   },
+   {
+    "titre": "Roll into a LOG in clingfilm",
+    "detail": "That is the keeping shape: you slice discs to order without warming the rest."
+   },
+   {
+    "titre": "Two hours in the cold minimum before use",
+    "detail": "The garlic must permeate the butter. Used at once, you taste garlic and butter separately."
+   }
+  ]
+ },
+ "glacethevert": {
+  "nom": "Matcha Ice Cream",
+  "description": "The matcha ice cream of Japanese tea houses, green and frankly bitter. That is where the whole difficulty lies: matcha loses its colour above 70 °C, and its bitterness is the point — sweetening it away is to miss it.",
+  "etapes": [
+   {
+    "titre": "CULINARY matcha, not ceremonial",
+    "detail": "Ceremonial grade is gentle and expensive: in a sweetened ice cream its finesse vanishes entirely."
+   },
+   {
+    "titre": "Slake the matcha to a paste, in warm water",
+    "detail": "Thrown in dry, it forms green lumps no whisk will break up."
+   },
+   {
+    "titre": "Add it OFF the heat, below 70 °C",
+    "detail": "Above that it turns olive brown: it is irreversible and the ice cream is no longer green."
+   },
+   {
+    "titre": "A custard cooked to 83 °C, by thermometer",
+    "detail": "One degree more and the yolks set: the base turns grainy and you start again."
+   },
+   {
+    "titre": "A pinch of salt in the base",
+    "detail": "Invisible on the palate, it deepens the tea's bitterness instead of masking it as more sugar would."
+   },
+   {
+    "titre": "Mature the base TWELVE hours in the fridge",
+    "detail": "The ice cream makers' secret: the texture is twice as smooth after maturing."
+   },
+   {
+    "titre": "Churn COLD, base at 4 °C maximum",
+    "detail": "A warm base freezes into coarse crystals and the ice cream turns gritty in the mouth."
+   },
+   {
+    "titre": "Serve with a little sifted matcha on top",
+    "detail": "It wakes the bitterness on first contact, before the ice cream's sugar takes over."
+   }
+  ]
+ },
+ "sorbetpommeverte": {
+  "nom": "Green Apple Sorbet",
+  "description": "The hardest sorbet to keep green: apple browns within three minutes in the open air. Everything hangs on speed and on acid — it is a race between the knife and oxidation, not a matter of recipe.",
+  "etapes": [
+   {
+    "titre": "Granny Smiths, WITH the skin",
+    "detail": "The skin is what gives the green: peeled, the apple gives a beige sorbet however carefully you work."
+   },
+   {
+    "titre": "Lemon squeezed BEFORE cutting the apple",
+    "detail": "Ready in the bowl: every wedge drops straight in. Fetched afterwards, it arrives too late."
+   },
+   {
+    "titre": "Blend within THREE minutes of cutting",
+    "detail": "The sorbet's only real constraint: beyond that it turns brown and nothing rescues it."
+   },
+   {
+    "titre": "Do NOT cook the apple",
+    "detail": "Cooked, it becomes a frozen compote: the taste of raw, sharp apple is the entire point."
+   },
+   {
+    "titre": "A cooled syrup, never hot onto the pulp",
+    "detail": "Hot syrup cooks the apple on contact and triggers browning within seconds."
+   },
+   {
+    "titre": "A quarter egg white, for the hold",
+    "detail": "It prevents large crystals without adding flavour: the only traditional sorbet stabiliser."
+   },
+   {
+    "titre": "Churn immediately after blending",
+    "detail": "Every minute of delay costs colour. The sorbet is made in one movement, from knife to machine."
+   }
+  ]
+ },
+ "saladelentillesfeta": {
+  "nom": "Lentil and Feta Salad",
+  "description": "The Greek fakes salata, eaten warm in summer as in winter. Its success rests on a counter-intuitive point: the lentils are salted AFTER cooking, and dressed WHILE HOT — cooled first, they absorb nothing.",
+  "etapes": [
+   {
+    "titre": "Green Puy lentils, never red",
+    "detail": "Red ones collapse into purée. Green ones keep their shape and their skin, essential here."
+   },
+   {
+    "titre": "Do NOT salt the cooking water",
+    "detail": "Salt toughens the skin: the lentils stay firm in the centre and floury on the outside."
+   },
+   {
+    "titre": "An onion and a bay leaf in the water",
+    "detail": "The only cooking seasoning allowed: it perfumes without affecting the texture."
+   },
+   {
+    "titre": "Twenty minutes, tasted from fifteen",
+    "detail": "They must resist slightly. Overcooked, the salad becomes warm mush."
+   },
+   {
+    "titre": "Dress them HOT, straight from the colander",
+    "detail": "Hot, they drink the dressing; cold, it slides off and pools at the bottom of the bowl."
+   },
+   {
+    "titre": "Red onion rinsed in cold water",
+    "detail": "Two minutes under the tap then wrung out: it loses its aggression and keeps all its crunch."
+   },
+   {
+    "titre": "Feta CRUMBLED at the end, never stirred in",
+    "detail": "Stirred in hot, it melts and clouds the salad. Laid on top, it stays as clean white cubes."
+   }
+  ]
+ },
+ "bolsarrasin": {
+  "nom": "Buckwheat Bowl with Roasted Vegetables",
+  "description": "The complete bowl built on toasted buckwheat, the one grain that is not a grain — it is a polygonaceae, cousin to rhubarb, and naturally gluten-free. Dry-toasted before cooking, it changes flavour completely.",
+  "etapes": [
+   {
+    "titre": "TOAST the buckwheat dry, five minutes",
+    "detail": "The gesture that makes the dish: raw it tastes of earth; toasted it turns nutty and sweet."
+   },
+   {
+    "titre": "Rinse BEFORE toasting, never after",
+    "detail": "Rinsed wet then toasted, it clumps into a block in the pan instead of browning grain by grain."
+   },
+   {
+    "titre": "Twelve minutes' cooking, not fifteen",
+    "detail": "Buckwheat goes from firm to mush in two minutes: the least forgiving grain there is."
+   },
+   {
+    "titre": "Roast the vegetables at 220 °C, not 180",
+    "detail": "At a low heat they steam and weep water. At a high heat they caramelise and hold."
+   },
+   {
+    "titre": "Vegetables cut to the SAME size",
+    "detail": "Two centimetres throughout: otherwise the broccoli burns while the squash is still raw."
+   },
+   {
+    "titre": "Walnuts dry-toasted, coarsely crushed",
+    "detail": "Five minutes in the oven with the vegetables, at the end: they bring the bowl's crunch."
+   },
+   {
+    "titre": "A squeeze of lemon over EVERYTHING, at the end",
+    "detail": "Buckwheat is earthy and roasted vegetables are sweet: without acidity the bowl stays heavy."
+   }
+  ]
+ },
+ "tartareavocat": {
+  "nom": "Avocado Tartare",
+  "description": "Avocado treated like a fish tartare: cut BY KNIFE into even dice, never mashed. That is what separates it from guacamole — you must see and feel every cube under the tooth.",
+  "etapes": [
+   {
+    "titre": "A JUST-ripe avocado, barely yielding",
+    "detail": "Overripe, it crushes under the knife and becomes guacamole. Too firm, it has no flavour."
+   },
+   {
+    "titre": "Cut into one-centimetre dice, by knife",
+    "detail": "Never with a fork or a processor: the even dice are the dish's whole identity."
+   },
+   {
+    "titre": "Add lime AS YOU GO, not at the end",
+    "detail": "Each handful of dice is limed the moment it lands in the bowl: oxidation starts within thirty seconds."
+   },
+   {
+    "titre": "A RINSED shallot, in tiny dice",
+    "detail": "Rinsed in cold water and wrung out: raw and whole, it completely dominates the avocado."
+   },
+   {
+    "titre": "Mix with a SPATULA, lifting",
+    "detail": "With a spoon the dice break. You lift, you fold, four movements at most."
+   },
+   {
+    "titre": "Tabasco MEASURED, a few drops",
+    "detail": "It wakes a naturally rich, gentle dish; too much and it masks the avocado, which is the subject."
+   },
+   {
+    "titre": "Assembled within twenty minutes of serving",
+    "detail": "Even limed, it browns at the surface. This is not a dish you prepare ahead."
+   }
+  ]
+ },
+ "bibimbapvegetarien": {
+  "nom": "Vegetarian Bibimbap",
+  "description": "The bibimbap of Korean Buddhist temples, without meat or garlic. Every vegetable is seasoned SEPARATELY — that is the rule of namul, and it explains why one bowl holds five distinct preparations rather than a vegetable stir-fry.",
+  "etapes": [
+   {
+    "titre": "Each vegetable cooked and seasoned APART",
+    "detail": "That is the namul principle: five separate bowls, five seasonings. Fried together, it is a different dish."
+   },
+   {
+    "titre": "Spinach blanched 30 seconds, then SQUEEZED",
+    "detail": "By hand, firmly: retained water is what waters down the whole bowl when you mix."
+   },
+   {
+    "titre": "Courgette salted ten minutes before frying",
+    "detail": "It gives up its water in advance: fried straight away, it boils instead of searing."
+   },
+   {
+    "titre": "Mushrooms fried WITHOUT oil first",
+    "detail": "Two minutes dry to drive off the water, then sesame oil: that is what makes them meaty."
+   },
+   {
+    "titre": "Rice slightly FIRM, not sticky",
+    "detail": "It must mix without clumping: too much water in cooking and bibimbap becomes mush."
+   },
+   {
+    "titre": "A fried egg with a RUNNY yolk, laid whole",
+    "detail": "It acts as the sauce when you mix: cooked hard, it binds nothing."
+   },
+   {
+    "titre": "Gochujang SERVED SEPARATELY, by the spoon",
+    "detail": "Everyone doses their own: it is a very salty condiment, and the amount is personal in Korea."
+   },
+   {
+    "titre": "Mix VIGOROUSLY at the table, the whole bowl",
+    "detail": "Bibimbap means \"mixed rice\". Eaten in layers, it is not the dish."
+   }
+  ]
+ },
+ "pancakesricotta": {
+  "nom": "Ricotta Pancakes",
+  "description": "The airiest pancakes there are, whose lightness comes not from raising agent but from whipped egg whites. Ricotta replaces part of the flour: less gluten, so a crumb that melts instead of bouncing.",
+  "etapes": [
+   {
+    "titre": "Separate the eggs, whip the whites to PEAKS",
+    "detail": "The only source of lightness: mixed in whole, the pancakes are dense and wet."
+   },
+   {
+    "titre": "Ricotta DRAINED for an hour minimum",
+    "detail": "Undrained, it brings too much water and the batter spreads into a crêpe instead of rising."
+   },
+   {
+    "titre": "Fold the whites in THREE goes, with a spatula",
+    "detail": "The first third loosens the batter, the other two are folded in without breaking the foam."
+   },
+   {
+    "titre": "Do NOT rest the batter",
+    "detail": "Unlike classic pancakes: the whites collapse within ten minutes and all the work is lost."
+   },
+   {
+    "titre": "A pan over MEDIUM heat, never high",
+    "detail": "The batter is thick: over high heat it browns before the centre cooks and stays raw inside."
+   },
+   {
+    "titre": "SMALL pancakes, eight centimetres",
+    "detail": "Any wider and they are impossible to turn without breaking, the batter is that fragile."
+   },
+   {
+    "titre": "Turn ONCE only, when the edges dry",
+    "detail": "Surface bubbles are not enough as a signal: it is the matt edge that marks the moment."
+   }
+  ]
+ },
+ "gaufreliegeoise": {
+  "nom": "Liège Waffle",
+  "description": "The Belgian waffle made from LEAVENED dough, thick and irregular, studded with pearl sugar that caramelises against the plate. It has nothing to do with the Brussels waffle: this one is kneaded like a brioche and eaten by hand, without topping.",
+  "etapes": [
+   {
+    "titre": "A LEAVENED dough, kneaded like brioche",
+    "detail": "That is the fundamental difference: a Brussels waffle is a batter, this is a dough."
+   },
+   {
+    "titre": "Softened butter worked in LAST",
+    "detail": "As with any brioche: added with the flour, it stops the gluten forming."
+   },
+   {
+    "titre": "Two hours' rise, until doubled",
+    "detail": "Under-risen, the waffle is dense and compact; the rise gives the softness of the centre."
+   },
+   {
+    "titre": "Pearl sugar added AFTER the rise",
+    "detail": "Added before, it melts into the dough and dissolves: no grains would be left to caramelise."
+   },
+   {
+    "titre": "Work it in BY HAND, folding three times",
+    "detail": "In a mixer the grains shatter. They must stay whole to burst under the tooth."
+   },
+   {
+    "titre": "Dough balls of 80 g, rounded loosely",
+    "detail": "That is the Liège weight. Too large and the centre stays raw; too small and they burn."
+   },
+   {
+    "titre": "A waffle iron at 180 °C, no hotter",
+    "detail": "Pearl sugar caramelises at 190 °C and burns just after: a ten-degree window."
+   },
+   {
+    "titre": "No icing sugar, no whipped cream",
+    "detail": "A Liège waffle is eaten BARE, by hand, warm. Topped, it is a Brussels waffle."
+   }
+  ]
+ },
+ "baconbutty": {
+  "nom": "Bacon Butty",
+  "description": "The British bacon sandwich, subject of national debate: soft white bread or toasted, ketchup or brown sauce. One point commands consensus — it is BACK bacon, the wide rasher containing the loin, not American streaky.",
+  "etapes": [
+   {
+    "titre": "BACK bacon, not smoked streaky",
+    "detail": "The British rasher contains the loin: American streaky curls up and turns into a crisp."
+   },
+   {
+    "titre": "Start in a COLD pan, bringing it up",
+    "detail": "The fat renders gently and the bacon cooks in it: in a hot pan it seizes immediately."
+   },
+   {
+    "titre": "Cook until the edge is CRISP, the centre supple",
+    "detail": "That is the British compromise: neither floppy nor brittle, it must still bend without snapping."
+   },
+   {
+    "titre": "WHITE, soft sliced bread, never wholemeal",
+    "detail": "This is unapologetic comfort food: the bread must squash and soak up the fat."
+   },
+   {
+    "titre": "Butter the bread, generously, BOTH slices",
+    "detail": "Butter insulates the crumb from the bacon fat: without it the sandwich goes soggy in three minutes."
+   },
+   {
+    "titre": "Lay the bacon on the butter SCALDING",
+    "detail": "It melts it slightly: that is what binds the sandwich and makes the whole texture."
+   },
+   {
+    "titre": "Ketchup or brown sauce, never both",
+    "detail": "THE national debate. A line down the middle, not spread: it should register intermittently."
+   }
+  ]
+ },
+ "pastelesdeyuca": {
+  "nom": "Pasteles de Yuca",
+  "description": "Puerto Rico's Christmas parcels, where a masa of grated cassava encloses a pork stew, the whole cooked in a banana leaf. Every family makes a hundred in a day, and the assembly is a chain where each person has a post.",
+  "etapes": [
+   {
+    "titre": "Grate the cassava VERY fine, on a fine grater",
+    "detail": "A grainy masa will not hold: it disintegrates in boiling water and the pastel empties itself."
+   },
+   {
+    "titre": "Lime the grated cassava immediately",
+    "detail": "It blackens within five minutes in the air: the same reflex as for apple."
+   },
+   {
+    "titre": "PRESS the masa in a cloth",
+    "detail": "Cassava releases an enormous amount of water. Too wet, the masa will not hold in the leaf."
+   },
+   {
+    "titre": "Colour the masa with achiote oil or paprika",
+    "detail": "The orange colour is expected: a white masa looks raw even when perfectly cooked."
+   },
+   {
+    "titre": "A COOLED pork stew, almost dry",
+    "detail": "Hot, it softens the masa during assembly; too wet, it pierces the leaf during cooking."
+   },
+   {
+    "titre": "Pass the banana leaf THROUGH A FLAME",
+    "detail": "Three seconds each side: it turns supple and folds without splitting."
+   },
+   {
+    "titre": "Fold into a parcel, tie TWO by two",
+    "detail": "Face to face: the Puerto Rican assembly, it stops water getting in through the folds."
+   },
+   {
+    "titre": "Boil for an hour, covered, without lifting the lid",
+    "detail": "Taking one out to check drops the temperature and the others cook badly."
+   }
+  ]
+ },
+ "barleywater": {
+  "nom": "Barley Water",
+  "description": "The barley drink served at Wimbledon since 1935, and drunk in England since the Middle Ages. It is not an infusion: the barley is BOILED and the cooking water becomes the drink — the grain itself goes into a soup.",
+  "etapes": [
+   {
+    "titre": "Rinse the barley until the water RUNS CLEAR",
+    "detail": "Three or four changes: surface starch clouds the drink and gives it a floury taste."
+   },
+   {
+    "titre": "A FIRST water boiled then discarded",
+    "detail": "Two minutes, then start again from cold: that is what removes the bran's bitterness."
+   },
+   {
+    "titre": "Forty minutes at a gentle tremble",
+    "detail": "The barley must split open. At a rolling boil the starch releases at once and the drink turns thick."
+   },
+   {
+    "titre": "ZESTS infused hot, the juice added cold",
+    "detail": "Zest stands up to heat and perfumes; heated juice turns bitter and loses its freshness."
+   },
+   {
+    "titre": "Sweeten WHILE it is hot",
+    "detail": "Sugar dissolves badly in a cold drink and settles at the bottom of the jug."
+   },
+   {
+    "titre": "Strain through muslin, without pressing",
+    "detail": "Pressed, the grain releases starch and the drink clouds within an hour."
+   },
+   {
+    "titre": "Drunk very cold, lengthened if needed",
+    "detail": "At Wimbledon it is served neat; it also takes being cut with soda water."
+   }
+  ]
+ },
+ "bandrek": {
+  "nom": "Bandrek",
+  "description": "The hot ginger drink of the West Java highlands, drunk in the evening against the mountain cold. The ginger is GRILLED before being crushed — a step nothing replaces, and which gives it its characteristic smokiness.",
+  "etapes": [
+   {
+    "titre": "GRILL the ginger whole, over a flame",
+    "detail": "Five minutes until the skin blackens: that is what gives the smokiness that defines bandrek."
+   },
+   {
+    "titre": "Crush it with the flat of a knife, do not grate",
+    "detail": "Crushed, it releases its juice slowly during infusion; grated, it gives a brutal heat and clouds the drink."
+   },
+   {
+    "titre": "Lemongrass BRUISED before it goes in",
+    "detail": "Struck with the back of the knife: whole, it flavours almost nothing in twenty minutes."
+   },
+   {
+    "titre": "Palm sugar, not white sugar",
+    "detail": "Its caramel and liquorice note is part of the drink: with white sugar only the ginger is left."
+   },
+   {
+    "titre": "Twenty minutes at a tremble, covered",
+    "detail": "Uncovered, the essential oils evaporate: half the aroma leaves into the kitchen."
+   },
+   {
+    "titre": "Coconut milk LAST, off the heat",
+    "detail": "Boiled, it splits and leaves greasy lumps on the surface."
+   },
+   {
+    "titre": "Drunk SCALDING, never lukewarm",
+    "detail": "It is a mountain evening drink: cooled, the ginger turns rasping and the coconut fat sets."
+   }
+  ]
+ },
+ "api": {
+  "nom": "Api Morado",
+  "description": "The thick purple drink of Bolivia's Altiplano markets, drunk at dawn with a fritter. It is purple corn cooked into a light porridge — between a drink and a soup, served scalding at 4,000 metres.",
+  "etapes": [
+   {
+    "titre": "Soak the purple corn for TWELVE hours",
+    "detail": "Unsoaked, it needs two hours of cooking and the colour turns brown before it is extracted."
+   },
+   {
+    "titre": "Orange and lemon peel in the water",
+    "detail": "That is the Bolivian perfume: citrus balances the corn, which alone would taste earthy."
+   },
+   {
+    "titre": "Cook until the drink COATS the spoon",
+    "detail": "Api is thick, almost a porridge: too thin and it is a chicha; too thick and it is a gruel."
+   },
+   {
+    "titre": "Stir regularly, the starch catches",
+    "detail": "Like a béchamel: thirty seconds of inattention and the base scorches, which taints everything."
+   },
+   {
+    "titre": "Strain through a FINE sieve, pressing the grains",
+    "detail": "Unlike chicha morada, here you press: that pulp is what gives the thickness."
+   },
+   {
+    "titre": "Sweeten with CHANCACA or dark brown sugar",
+    "detail": "The Bolivian whole sugar: with white sugar, api loses its depth and turns flat."
+   },
+   {
+    "titre": "Drunk SCALDING, in a thick glass",
+    "detail": "In La Paz you drink it standing at the market at six in the morning, with a buñuelo."
+   }
+  ]
+ },
+ "sherrycobbler": {
+  "nom": "Sherry Cobbler",
+  "description": "The cocktail that popularised the STRAW in America in the 1840s: the crushed ice was too cold to drink from the glass. Three ingredients, no spirits — the oldest long drink still served.",
+  "etapes": [
+   {
+    "titre": "An AMONTILLADO sherry, neither fino nor cream",
+    "detail": "Fino is too dry and vanishes under the ice; cream too sweet. Amontillado holds both ends."
+   },
+   {
+    "titre": "MUDDLE the orange slices with the sugar",
+    "detail": "Thirty seconds: it is the peel oil you want, not the juice. Crushed too hard, they turn bitter."
+   },
+   {
+    "titre": "Fill the glass with CRUSHED ice, to the brim",
+    "detail": "That is the definition of a cobbler: over cubes it dilutes badly and the drink stays flat."
+   },
+   {
+    "titre": "Stir WITH A SPOON in the glass",
+    "detail": "No shaker, no mixing glass: you churn the crushed ice directly, which dilutes exactly enough."
+   },
+   {
+    "titre": "Top up the ice AFTER churning",
+    "detail": "It always settles by a third: without topping up, the glass looks half empty."
+   },
+   {
+    "titre": "Seasonal fruit as garnish, generously",
+    "detail": "It is a decorative cocktail by nature: in the nineteenth century, the abundance of fruit was its whole prestige."
+   },
+   {
+    "titre": "Served with a STRAW, without exception",
+    "detail": "This is the cocktail that brought straws into bars: serving it otherwise misses the history."
+   }
+  ]
+ },
+ "robroy": {
+  "nom": "Rob Roy",
+  "description": "A Manhattan made with scotch, created in 1894 at New York's Waldorf for the premiere of an opera about the Scottish outlaw Rob Roy MacGregor. Changing the whisky changes everything: rye is spicy, scotch is malty and smoky.",
+  "etapes": [
+   {
+    "titre": "A BLENDED scotch, not a peated single malt",
+    "detail": "Peat crushes the vermouth. A light blend or a Speyside lets the accord work."
+   },
+   {
+    "titre": "Two parts whisky to one of vermouth",
+    "detail": "The proportion of the Manhattan it derives from: more vermouth and the drink turns syrupy."
+   },
+   {
+    "titre": "A vermouth OPENED less than a month ago",
+    "detail": "It is wine: oxidised, it goes flat and sour, and that is the first cause of a failed Rob Roy."
+   },
+   {
+    "titre": "Stir thirty seconds in a mixing glass",
+    "detail": "There is no juice in this drink: a shaker would cloud it without adding anything."
+   },
+   {
+    "titre": "A coupe chilled in the freezer",
+    "detail": "Served without ice, the cocktail warms quickly: a cold glass buys five minutes."
+   },
+   {
+    "titre": "A maraschino cherry, not a candied one",
+    "detail": "Candied is sweet and soft; a proper maraschino cherry is tart and firm."
+   },
+   {
+    "titre": "Two dashes of angostura, never more",
+    "detail": "They bridge the whisky and the vermouth. Beyond that they dominate and the drink turns bitter."
+   }
+  ]
+ },
+ "betweenthesheets": {
+  "nom": "Between the Sheets",
+  "description": "A sidecar in which half the cognac is replaced by white rum, attributed to Harry's New York Bar in Paris in the 1930s. Two spirits, brown and white, that on paper should never have worked together.",
+  "etapes": [
+   {
+    "titre": "Cognac and rum in STRICTLY equal parts",
+    "detail": "That is what makes the drink: unbalanced, it reverts to a sidecar or a daiquiri with Cointreau."
+   },
+   {
+    "titre": "A white AGRICOLE rum, not industrial",
+    "detail": "Its vegetal side answers the cognac; industrial rum brings only sweet alcohol."
+   },
+   {
+    "titre": "Real Cointreau, never a triple sec",
+    "detail": "In a three-spirit cocktail the difference in orange quality is heard immediately."
+   },
+   {
+    "titre": "Little lemon, fifteen millilitres",
+    "detail": "This is not a sour: the lemon is there to cut through, not to dominate three spirits."
+   },
+   {
+    "titre": "A FIRM shake, fifteen seconds",
+    "detail": "Three strong spirits and little juice: without enough dilution the drink stays scorching."
+   },
+   {
+    "titre": "Double strain into a frozen coupe",
+    "detail": "Ice shards melt fast in a drink this spirituous and dilute it within two minutes."
+   },
+   {
+    "titre": "A lemon twist, oil expressed then discarded",
+    "detail": "It opens the nose; left in the glass it eventually embitters an already well-structured drink."
+   }
+  ]
+ },
+ "sohanhalwa": {
+  "nom": "Sohan Halwa",
+  "description": "The confection of Multan, amber and brittle, given in round tins at weddings. It demands AN HOUR of unbroken stirring — the one dessert in the catalogue where the difficulty is purely physical.",
+  "etapes": [
+   {
+    "titre": "Slake the cornflour COLD, without a single lump",
+    "detail": "One lump becomes a hard bead in the finished sweet: sieving is compulsory."
+   },
+   {
+    "titre": "A soft-thread syrup, 110 °C",
+    "detail": "Overcooked, the halwa turns brittle as glass; undercooked, it never sets."
+   },
+   {
+    "titre": "Stir WITHOUT STOPPING for an hour",
+    "detail": "That is the dish's difficulty: the moment you stop, the base catches and the scorch runs through everything."
+   },
+   {
+    "titre": "Ghee added GRADUALLY, in a thread",
+    "detail": "Spoon by spoon over forty minutes: poured in at once, it refuses to incorporate and floats."
+   },
+   {
+    "titre": "Wait for the ghee to COME BACK to the surface",
+    "detail": "That is THE finishing signal, the one every Indian manual describes: the mass pulls away and weeps."
+   },
+   {
+    "titre": "Saffron infused in a little warm milk",
+    "detail": "Thrown in dry, it colours nothing: it needs twenty minutes in liquid to release its colour."
+   },
+   {
+    "titre": "Pistachios and almonds pressed INTO the hot mass",
+    "detail": "Placed after cooling, they fall off. Pushed in hot, they are set into the confection."
+   },
+   {
+    "titre": "Cool six hours before cutting",
+    "detail": "Warm, it sticks to the knife and stretches. Cold, it snaps cleanly into squares."
+   }
+  ]
+ },
+ "pascualina": {
+  "nom": "Torta Pascualina",
+  "description": "The Easter pie of Italians in Uruguay and Argentina, with chard and whole eggs. Genoese tradition demanded THIRTY-THREE sheets of pastry, one for each year of Christ's life — today there are two.",
+  "etapes": [
+   {
+    "titre": "Blanch the chard, then SQUEEZE it hard",
+    "detail": "By hand, in a cloth: retained water is what soaks the base and ruins the pie."
+   },
+   {
+    "titre": "An onion softened at length, without colour",
+    "detail": "Twenty minutes over low heat: it is the flavour base, and it must bring no bitterness."
+   },
+   {
+    "titre": "Hollow out WELLS for the whole eggs",
+    "detail": "With the back of a spoon, in the filling: without wells the eggs slide and end up all on one side."
+   },
+   {
+    "titre": "Eggs cracked in WHOLE, raw, into the wells",
+    "detail": "That is the signature: sliced, every portion shows a yolk. Beaten, it would be a quiche."
+   },
+   {
+    "titre": "Well-drained ricotta, mixed into the chard",
+    "detail": "It binds the filling without wetting it: undrained, it undoes all the squeezing."
+   },
+   {
+    "titre": "Mark the top pastry with the back of a spoon",
+    "detail": "The traditional spiral pattern, but also a guide for cutting between the eggs."
+   },
+   {
+    "titre": "180 °C, fifty minutes, without deep colour",
+    "detail": "The yolks must stay runny: in a hot oven they set before the pastry is cooked."
+   },
+   {
+    "titre": "Eaten WARM or cold, never scalding",
+    "detail": "It is an Easter picnic pie: hot, it will not slice cleanly."
+   }
+  ]
+ },
+ "sarmale": {
+  "nom": "Sarmale",
+  "description": "Romania's sour cabbage rolls, compulsory at Christmas and at every wedding. The cabbage is not fresh but FERMENTED whole in brine — its acidity is what cooks the filling and makes all the difference from a stuffed cabbage.",
+  "etapes": [
+   {
+    "titre": "FERMENTED cabbage leaves, not blanched",
+    "detail": "That is what makes a sarmale: fresh cabbage gives a Polish golabki, a cousin dish but a different one."
+   },
+   {
+    "titre": "Rinse the leaves if they are very salty",
+    "detail": "One water only: over-rinsed, they lose the acidity that is the heart of the dish."
+   },
+   {
+    "titre": "RAW rice in the filling, never cooked",
+    "detail": "It absorbs the juices over three hours: pre-cooked, it bursts and the filling turns to mush."
+   },
+   {
+    "titre": "Remove the thick rib from every leaf",
+    "detail": "It never softens and stops you rolling tightly: five minutes that change everything."
+   },
+   {
+    "titre": "Roll TIGHT, ends tucked in",
+    "detail": "The rice doubles in volume: a loose roll opens and empties its filling into the pot."
+   },
+   {
+    "titre": "Alternate layers of rolls and BACON",
+    "detail": "The fat melts and perfumes everything: without it the dish is sour and dry."
+   },
+   {
+    "titre": "Three hours at a TREMBLE, never at a boil",
+    "detail": "A real boil bursts the rolls. The liquid should barely shiver."
+   },
+   {
+    "titre": "Better REHEATED, the next day",
+    "detail": "An accepted fact in Romania: you make them the day before the meal, never on the day."
+   }
+  ]
+ },
+ "tufahije": {
+  "nom": "Tufahije",
+  "description": "Sarajevo's walnut-stuffed poached apples, served in a glass with their syrup and a crown of whipped cream. An Ottoman inheritance, the name comes from the Arabic tuffāḥ, apple — and they are eaten with a spoon, never a knife.",
+  "etapes": [
+   {
+    "titre": "FIRM apples, golden or boskoop",
+    "detail": "A cooking apple collapses during poaching: a tufahija must stand upright in the glass."
+   },
+   {
+    "titre": "Hollow from the TOP, without piercing the base",
+    "detail": "With a melon baller: a pierced base lets the filling escape into the syrup."
+   },
+   {
+    "titre": "Lime the inside immediately",
+    "detail": "It browns even faster than the outer flesh, and it shows through the glass."
+   },
+   {
+    "titre": "Poach in a BARELY trembling syrup",
+    "detail": "Twenty minutes: at a rolling boil the skin bursts and the apple loses its shape."
+   },
+   {
+    "titre": "A walnut filling BOUND with butter and sugar",
+    "detail": "Dry, it crumbles as you spoon it. Bound, it stays compact."
+   },
+   {
+    "titre": "Fill the apples COLD, never hot",
+    "detail": "Hot, they crush as you fill them and the crown of walnuts disappears into the flesh."
+   },
+   {
+    "titre": "Reduce the poaching syrup by half",
+    "detail": "It is the dessert's sauce: unreduced, it is just sweet water at the bottom of the glass."
+   },
+   {
+    "titre": "Whipped cream crowned on at the table",
+    "detail": "Added in advance, it melts into the warm syrup and leaves only a white puddle."
+   }
+  ]
  }
 
 };

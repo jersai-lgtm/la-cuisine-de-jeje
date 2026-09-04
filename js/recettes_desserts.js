@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 79 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 81 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -18145,5 +18145,83 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Un trait de citron, la finition d'Ottawa", detail: "Le classique s'appelle Killaloe Sunrise : sucre, cannelle et citron. L'acidité coupe le gras.", badge: null }
     ],
     liees: ["beignetspomme","churros","kleinur"]
+  },
+  sohanhalwa: {
+    dateAjout: "2026-09-01T12:06:00",
+    nom: "Sohan Halwa",
+    cat: "desserts", pays: "pakistan",
+    base: 12,
+    temps: "1 h 30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🟠",
+    description: "La confiserie de Multan, ambrée et cassante, offerte en boîtes rondes lors des mariages. Elle demande UNE HEURE de remuage ininterrompu — c'est le seul dessert du catalogue où la difficulté est purement physique.",
+    tableauSohanhalwa: [
+      { nb: 1, maizena: "30 g", sucre: "45 g", ghee: "25 g", lait: "40 ml", cardamome: "0.5 g", safran: "0.05 g", pistache: "15 g", amandes: "12 g", eau: "60 ml" },
+      { nb: 2, maizena: "60 g", sucre: "90 g", ghee: "50 g", lait: "80 ml", cardamome: "1 g", safran: "0.1 g", pistache: "30 g", amandes: "24 g", eau: "120 ml" },
+      { nb: 3, maizena: "90 g", sucre: "135 g", ghee: "75 g", lait: "120 ml", cardamome: "1.5 g", safran: "0.15 g", pistache: "45 g", amandes: "36 g", eau: "180 ml" },
+      { nb: 4, maizena: "120 g", sucre: "180 g", ghee: "100 g", lait: "160 ml", cardamome: "2 g", safran: "0.2 g", pistache: "60 g", amandes: "48 g", eau: "240 ml" },
+      { nb: 5, maizena: "150 g", sucre: "225 g", ghee: "125 g", lait: "200 ml", cardamome: "2.5 g", safran: "0.25 g", pistache: "75 g", amandes: "60 g", eau: "300 ml" },
+      { nb: 6, maizena: "180 g", sucre: "270 g", ghee: "150 g", lait: "240 ml", cardamome: "3 g", safran: "0.3 g", pistache: "90 g", amandes: "72 g", eau: "360 ml" },
+      { nb: 7, maizena: "210 g", sucre: "315 g", ghee: "175 g", lait: "280 ml", cardamome: "3.5 g", safran: "0.35 g", pistache: "105 g", amandes: "84 g", eau: "420 ml" },
+      { nb: 8, maizena: "240 g", sucre: "360 g", ghee: "200 g", lait: "320 ml", cardamome: "4 g", safran: "0.4 g", pistache: "120 g", amandes: "96 g", eau: "480 ml" },
+      { nb: 9, maizena: "270 g", sucre: "405 g", ghee: "225 g", lait: "360 ml", cardamome: "4.5 g", safran: "0.45 g", pistache: "135 g", amandes: "108 g", eau: "540 ml" },
+      { nb: 10, maizena: "300 g", sucre: "450 g", ghee: "250 g", lait: "400 ml", cardamome: "5 g", safran: "0.5 g", pistache: "150 g", amandes: "120 g", eau: "600 ml" },
+      { nb: 11, maizena: "330 g", sucre: "495 g", ghee: "275 g", lait: "440 ml", cardamome: "5.5 g", safran: "0.55 g", pistache: "165 g", amandes: "132 g", eau: "660 ml" },
+      { nb: 12, maizena: "360 g", sucre: "540 g", ghee: "300 g", lait: "480 ml", cardamome: "6 g", safran: "0.6 g", pistache: "180 g", amandes: "144 g", eau: "720 ml" },
+      { nb: 13, maizena: "390 g", sucre: "585 g", ghee: "325 g", lait: "520 ml", cardamome: "6.5 g", safran: "0.65 g", pistache: "195 g", amandes: "156 g", eau: "780 ml" },
+      { nb: 14, maizena: "420 g", sucre: "630 g", ghee: "350 g", lait: "560 ml", cardamome: "7 g", safran: "0.7 g", pistache: "210 g", amandes: "168 g", eau: "840 ml" },
+      { nb: 15, maizena: "450 g", sucre: "675 g", ghee: "375 g", lait: "600 ml", cardamome: "7.5 g", safran: "0.75 g", pistache: "225 g", amandes: "180 g", eau: "900 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Délayer la maïzena à FROID, sans un grumeau", detail: "Un seul grumeau devient une bille dure dans la confiserie finie : le tamis est obligatoire.", badge: null },
+      { icone: "♨️", titre: "Un sirop au petit filé, 110 °C", detail: "Trop cuit, la halwa devient cassante comme du verre ; trop peu, elle ne prend jamais.", badge: null },
+      { icone: "💪", titre: "Remuer SANS ARRÊT pendant une heure", detail: "C'est la difficulté du plat : dès qu'on s'arrête, le fond attache et le brûlé traverse tout.", badge: null },
+      { icone: "🧈", titre: "Le ghee ajouté PROGRESSIVEMENT, en filet", detail: "Cuillère par cuillère sur quarante minutes : versé d'un coup, il refuse de s'incorporer et surnage.", badge: null },
+      { icone: "👀", titre: "Attendre que le ghee RESSORTE en surface", detail: "C'est LE signal de fin, celui que tous les manuels indiens décrivent : la masse se détache et suinte.", badge: null },
+      { icone: "🌸", titre: "Safran infusé dans un peu de lait tiède", detail: "Jeté sec, il ne colore rien : il lui faut vingt minutes dans un liquide pour libérer sa couleur.", badge: null },
+      { icone: "🥜", titre: "Pistaches et amandes pressées DANS la masse chaude", detail: "Posées après refroidissement, elles tombent. Enfoncées à chaud, elles sont prises dans la confiserie.", badge: null },
+      { icone: "⏳", titre: "Refroidir six heures avant de découper", detail: "Tiède, elle colle au couteau et s'étire. Froide, elle casse net en carrés.", badge: null }
+    ],
+    liees: ["halvasemoule","baklava","kleicha"]
+  },
+  tufahije: {
+    dateAjout: "2026-09-01T12:09:00",
+    nom: "Tufahije",
+    cat: "desserts", saisons: ["automne"], pays: "bosnie",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍎",
+    description: "Les pommes pochées farcies aux noix de Sarajevo, servies dans un verre avec leur sirop et une couronne de chantilly. Héritage ottoman, le nom vient de l'arabe tuffāḥ, la pomme — et elles se mangent à la cuillère, jamais au couteau.",
+    tableauTufahije: [
+      { nb: 1, pomme: "130 g", noix: "30 g", sucre: "40 g", eau: "90 ml", citron: "¼", cremechantilly: "30 ml", cannelle: "0.4 g", beurre: "8 g" },
+      { nb: 2, pomme: "260 g", noix: "60 g", sucre: "80 g", eau: "180 ml", citron: "½", cremechantilly: "60 ml", cannelle: "0.8 g", beurre: "16 g" },
+      { nb: 3, pomme: "390 g", noix: "90 g", sucre: "120 g", eau: "270 ml", citron: "¾", cremechantilly: "90 ml", cannelle: "1.2 g", beurre: "24 g" },
+      { nb: 4, pomme: "520 g", noix: "120 g", sucre: "160 g", eau: "360 ml", citron: "1", cremechantilly: "120 ml", cannelle: "1.6 g", beurre: "32 g" },
+      { nb: 5, pomme: "650 g", noix: "150 g", sucre: "200 g", eau: "450 ml", citron: "1¼", cremechantilly: "150 ml", cannelle: "2 g", beurre: "40 g" },
+      { nb: 6, pomme: "780 g", noix: "180 g", sucre: "240 g", eau: "540 ml", citron: "1½", cremechantilly: "180 ml", cannelle: "2.4 g", beurre: "48 g" },
+      { nb: 7, pomme: "910 g", noix: "210 g", sucre: "280 g", eau: "630 ml", citron: "1¾", cremechantilly: "210 ml", cannelle: "2.8 g", beurre: "56 g" },
+      { nb: 8, pomme: "1040 g", noix: "240 g", sucre: "320 g", eau: "720 ml", citron: "2", cremechantilly: "240 ml", cannelle: "3.2 g", beurre: "64 g" },
+      { nb: 9, pomme: "1170 g", noix: "270 g", sucre: "360 g", eau: "810 ml", citron: "2¼", cremechantilly: "270 ml", cannelle: "3.6 g", beurre: "72 g" },
+      { nb: 10, pomme: "1300 g", noix: "300 g", sucre: "400 g", eau: "900 ml", citron: "2½", cremechantilly: "300 ml", cannelle: "4 g", beurre: "80 g" },
+      { nb: 11, pomme: "1430 g", noix: "330 g", sucre: "440 g", eau: "990 ml", citron: "2¾", cremechantilly: "330 ml", cannelle: "4.4 g", beurre: "88 g" },
+      { nb: 12, pomme: "1560 g", noix: "360 g", sucre: "480 g", eau: "1080 ml", citron: "3", cremechantilly: "360 ml", cannelle: "4.8 g", beurre: "96 g" },
+      { nb: 13, pomme: "1690 g", noix: "390 g", sucre: "520 g", eau: "1170 ml", citron: "3¼", cremechantilly: "390 ml", cannelle: "5.2 g", beurre: "104 g" },
+      { nb: 14, pomme: "1820 g", noix: "420 g", sucre: "560 g", eau: "1260 ml", citron: "3½", cremechantilly: "420 ml", cannelle: "5.6 g", beurre: "112 g" },
+      { nb: 15, pomme: "1950 g", noix: "450 g", sucre: "600 g", eau: "1350 ml", citron: "3¾", cremechantilly: "450 ml", cannelle: "6 g", beurre: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍎", titre: "Des pommes FERMES, golden ou boskoop", detail: "Une pomme à compote s'effondre pendant le pochage : la tufahija doit se tenir debout dans le verre.", badge: null },
+      { icone: "🥄", titre: "Évider par le HAUT, sans percer le fond", detail: "À la cuillère parisienne : un fond percé laisse échapper la farce dans le sirop.", badge: null },
+      { icone: "🍋", titre: "Citronner l'intérieur immédiatement", detail: "Il brunit encore plus vite que la chair extérieure, et cela se voit à travers le verre.", badge: null },
+      { icone: "♨️", titre: "Pocher dans un sirop À PEINE frémissant", detail: "Vingt minutes : à gros bouillons, la peau éclate et la pomme perd sa forme.", badge: null },
+      { icone: "🌰", titre: "Une farce aux noix LIÉE au beurre et au sucre", detail: "Sèche, elle s'effrite quand on la mange à la cuillère. Liée, elle reste compacte.", badge: null },
+      { icone: "❄️", titre: "Farcir les pommes FROIDES, jamais chaudes", detail: "Chaudes, elles s'écrasent au remplissage et la couronne de noix disparaît dans la chair.", badge: null },
+      { icone: "🍯", titre: "Réduire le sirop de pochage de moitié", detail: "C'est la sauce du dessert : non réduit, il reste de l'eau sucrée au fond du verre.", badge: null },
+      { icone: "🍦", titre: "Chantilly posée en couronne, au service", detail: "Posée à l'avance, elle fond dans le sirop tiède et il ne reste qu'une flaque blanche.", badge: null }
+    ],
+    liees: ["compotepommes","apfelstrudel","tartetatinpommes"]
   },
 });

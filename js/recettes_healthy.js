@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_healthy.js — Recettes de catégorie "healthy" (Healthy) — 29 recettes
+// recettes_healthy.js — Recettes de catégorie "healthy" (Healthy) — 33 recettes
 // 👉 Pour AJOUTER une recette Healthy : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -2455,5 +2455,158 @@ Object.assign(recettes, {
       { icone: "🌡️", titre: "Servi TIÈDE, jamais brûlant ni froid", detail: "Brûlant, la fève est farineuse ; froid, l'huile fige. Le foul se sert autour de 45 °C.", badge: null }
     ],
     liees: ["houmous","falafel","tapenade"]
+  },
+  saladelentillesfeta: {
+    dateAjout: "2026-09-01T11:02:00",
+    nom: "Salade de Lentilles Feta",
+    cat: "healthy", saisons: ["ete","automne"], pays: "grece",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🫒",
+    description: "La fakes salata grecque, mangée tiède en été comme en hiver. Sa réussite tient à un point contre-intuitif : les lentilles se salent APRÈS cuisson, et se vinaigrent CHAUDES — refroidies d'abord, elles n'absorbent plus rien.",
+    tableauSaladelentillesfeta: [
+      { nb: 1, lentillesvertes: "60 g", feta: "40 g", tomate: "60 g", oignonrouge: "¼", persil: "8 g", huileolive: "15 ml", vinaigreVin: "8 ml", origan: "0.5 g", olivenoire: "15 g" },
+      { nb: 2, lentillesvertes: "120 g", feta: "80 g", tomate: "120 g", oignonrouge: "½", persil: "16 g", huileolive: "30 ml", vinaigreVin: "16 ml", origan: "1 g", olivenoire: "30 g" },
+      { nb: 3, lentillesvertes: "180 g", feta: "120 g", tomate: "180 g", oignonrouge: "¾", persil: "24 g", huileolive: "45 ml", vinaigreVin: "24 ml", origan: "1.5 g", olivenoire: "45 g" },
+      { nb: 4, lentillesvertes: "240 g", feta: "160 g", tomate: "240 g", oignonrouge: "1", persil: "32 g", huileolive: "60 ml", vinaigreVin: "32 ml", origan: "2 g", olivenoire: "60 g" },
+      { nb: 5, lentillesvertes: "300 g", feta: "200 g", tomate: "300 g", oignonrouge: "1¼", persil: "40 g", huileolive: "75 ml", vinaigreVin: "40 ml", origan: "2.5 g", olivenoire: "75 g" },
+      { nb: 6, lentillesvertes: "360 g", feta: "240 g", tomate: "360 g", oignonrouge: "1½", persil: "48 g", huileolive: "90 ml", vinaigreVin: "48 ml", origan: "3 g", olivenoire: "90 g" },
+      { nb: 7, lentillesvertes: "420 g", feta: "280 g", tomate: "420 g", oignonrouge: "1¾", persil: "56 g", huileolive: "105 ml", vinaigreVin: "56 ml", origan: "3.5 g", olivenoire: "105 g" },
+      { nb: 8, lentillesvertes: "480 g", feta: "320 g", tomate: "480 g", oignonrouge: "2", persil: "64 g", huileolive: "120 ml", vinaigreVin: "64 ml", origan: "4 g", olivenoire: "120 g" },
+      { nb: 9, lentillesvertes: "540 g", feta: "360 g", tomate: "540 g", oignonrouge: "2¼", persil: "72 g", huileolive: "135 ml", vinaigreVin: "72 ml", origan: "4.5 g", olivenoire: "135 g" },
+      { nb: 10, lentillesvertes: "600 g", feta: "400 g", tomate: "600 g", oignonrouge: "2½", persil: "80 g", huileolive: "150 ml", vinaigreVin: "80 ml", origan: "5 g", olivenoire: "150 g" },
+      { nb: 11, lentillesvertes: "660 g", feta: "440 g", tomate: "660 g", oignonrouge: "2¾", persil: "88 g", huileolive: "165 ml", vinaigreVin: "88 ml", origan: "5.5 g", olivenoire: "165 g" },
+      { nb: 12, lentillesvertes: "720 g", feta: "480 g", tomate: "720 g", oignonrouge: "3", persil: "96 g", huileolive: "180 ml", vinaigreVin: "96 ml", origan: "6 g", olivenoire: "180 g" },
+      { nb: 13, lentillesvertes: "780 g", feta: "520 g", tomate: "780 g", oignonrouge: "3¼", persil: "104 g", huileolive: "195 ml", vinaigreVin: "104 ml", origan: "6.5 g", olivenoire: "195 g" },
+      { nb: 14, lentillesvertes: "840 g", feta: "560 g", tomate: "840 g", oignonrouge: "3½", persil: "112 g", huileolive: "210 ml", vinaigreVin: "112 ml", origan: "7 g", olivenoire: "210 g" },
+      { nb: 15, lentillesvertes: "900 g", feta: "600 g", tomate: "900 g", oignonrouge: "3¾", persil: "120 g", huileolive: "225 ml", vinaigreVin: "120 ml", origan: "7.5 g", olivenoire: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Des lentilles vertes du Puy, jamais corail", detail: "Les corail se délitent en purée. Les vertes gardent leur forme et leur peau, indispensable ici.", badge: null },
+      { icone: "🚫", titre: "NE PAS saler l'eau de cuisson", detail: "Le sel durcit la peau : les lentilles restent fermes au centre et farineuses en surface.", badge: null },
+      { icone: "🌿", titre: "Un oignon et une feuille de laurier dans l'eau", detail: "C'est le seul assaisonnement de cuisson admis : il parfume sans agir sur la texture.", badge: null },
+      { icone: "⏱️", titre: "Vingt minutes, goûtées à partir de quinze", detail: "Elles doivent résister légèrement. Trop cuites, la salade devient une purée tiède.", badge: null },
+      { icone: "🍋", titre: "Assaisonner CHAUDES, dès l'égouttage", detail: "Chaudes, elles boivent la vinaigrette ; froides, elle glisse et reste au fond du saladier.", badge: null },
+      { icone: "🧅", titre: "L'oignon rouge rincé à l'eau froide", detail: "Deux minutes sous l'eau puis essoré : il perd son agressivité et garde tout son croquant.", badge: null },
+      { icone: "🧀", titre: "La feta ÉMIETTÉE à la fin, jamais mélangée", detail: "Mélangée chaude, elle fond et trouble la salade. Posée dessus, elle reste en cubes blancs nets.", badge: null }
+    ],
+    liees: ["saladelentilles","saladegreque","houmous"]
+  },
+  bolsarrasin: {
+    dateAjout: "2026-09-01T11:03:00",
+    nom: "Bol de Sarrasin aux Légumes Rôtis",
+    cat: "healthy", saisons: ["automne","hiver"], pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Le bol complet au sarrasin toasté, seule céréale à ne pas être une céréale — c'est une polygonacée, cousine de la rhubarbe, et elle est naturellement sans gluten. Toastée à sec avant cuisson, elle change complètement de goût.",
+    tableauBolsarrasin: [
+      { nb: 1, sarrasin: "55 g", butternut: "90 g", brocoli: "60 g", oignonrouge: "¼", fetaOpt: "25 g", huileolive: "14 ml", noix: "15 g", citron: "¼", cumin: "1 g" },
+      { nb: 2, sarrasin: "110 g", butternut: "180 g", brocoli: "120 g", oignonrouge: "½", fetaOpt: "50 g", huileolive: "28 ml", noix: "30 g", citron: "½", cumin: "2 g" },
+      { nb: 3, sarrasin: "165 g", butternut: "270 g", brocoli: "180 g", oignonrouge: "¾", fetaOpt: "75 g", huileolive: "42 ml", noix: "45 g", citron: "¾", cumin: "3 g" },
+      { nb: 4, sarrasin: "220 g", butternut: "360 g", brocoli: "240 g", oignonrouge: "1", fetaOpt: "100 g", huileolive: "56 ml", noix: "60 g", citron: "1", cumin: "4 g" },
+      { nb: 5, sarrasin: "275 g", butternut: "450 g", brocoli: "300 g", oignonrouge: "1¼", fetaOpt: "125 g", huileolive: "70 ml", noix: "75 g", citron: "1¼", cumin: "5 g" },
+      { nb: 6, sarrasin: "330 g", butternut: "540 g", brocoli: "360 g", oignonrouge: "1½", fetaOpt: "150 g", huileolive: "84 ml", noix: "90 g", citron: "1½", cumin: "6 g" },
+      { nb: 7, sarrasin: "385 g", butternut: "630 g", brocoli: "420 g", oignonrouge: "1¾", fetaOpt: "175 g", huileolive: "98 ml", noix: "105 g", citron: "1¾", cumin: "7 g" },
+      { nb: 8, sarrasin: "440 g", butternut: "720 g", brocoli: "480 g", oignonrouge: "2", fetaOpt: "200 g", huileolive: "112 ml", noix: "120 g", citron: "2", cumin: "8 g" },
+      { nb: 9, sarrasin: "495 g", butternut: "810 g", brocoli: "540 g", oignonrouge: "2¼", fetaOpt: "225 g", huileolive: "126 ml", noix: "135 g", citron: "2¼", cumin: "9 g" },
+      { nb: 10, sarrasin: "550 g", butternut: "900 g", brocoli: "600 g", oignonrouge: "2½", fetaOpt: "250 g", huileolive: "140 ml", noix: "150 g", citron: "2½", cumin: "10 g" },
+      { nb: 11, sarrasin: "605 g", butternut: "990 g", brocoli: "660 g", oignonrouge: "2¾", fetaOpt: "275 g", huileolive: "154 ml", noix: "165 g", citron: "2¾", cumin: "11 g" },
+      { nb: 12, sarrasin: "660 g", butternut: "1080 g", brocoli: "720 g", oignonrouge: "3", fetaOpt: "300 g", huileolive: "168 ml", noix: "180 g", citron: "3", cumin: "12 g" },
+      { nb: 13, sarrasin: "715 g", butternut: "1170 g", brocoli: "780 g", oignonrouge: "3¼", fetaOpt: "325 g", huileolive: "182 ml", noix: "195 g", citron: "3¼", cumin: "13 g" },
+      { nb: 14, sarrasin: "770 g", butternut: "1260 g", brocoli: "840 g", oignonrouge: "3½", fetaOpt: "350 g", huileolive: "196 ml", noix: "210 g", citron: "3½", cumin: "14 g" },
+      { nb: 15, sarrasin: "825 g", butternut: "1350 g", brocoli: "900 g", oignonrouge: "3¾", fetaOpt: "375 g", huileolive: "210 ml", noix: "225 g", citron: "3¾", cumin: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍳", titre: "TOASTER le sarrasin à sec, cinq minutes", detail: "C'est le geste qui fait tout : cru, il a un goût de terre ; toasté, il devient noisette et sucré.", badge: null },
+      { icone: "💧", titre: "Rincer AVANT de toaster, jamais après", detail: "Rincé mouillé puis toasté, il colle en bloc dans la poêle au lieu de dorer grain par grain.", badge: null },
+      { icone: "⏱️", titre: "Douze minutes de cuisson, pas quinze", detail: "Le sarrasin passe de ferme à bouillie en deux minutes : c'est la céréale la moins tolérante qui soit.", badge: null },
+      { icone: "🔥", titre: "Rôtir les légumes à 220 °C, pas 180", detail: "À feu doux, ils cuisent à la vapeur et rendent de l'eau. À feu vif, ils caramélisent et se tiennent.", badge: null },
+      { icone: "📏", titre: "Des légumes taillés à la MÊME taille", detail: "Deux centimètres partout : sinon le brocoli brûle pendant que la courge est encore crue.", badge: null },
+      { icone: "🌰", titre: "Noix torréfiées à sec, concassées grossièrement", detail: "Cinq minutes au four avec les légumes, en fin de cuisson : elles apportent le croquant du bol.", badge: null },
+      { icone: "🍋", titre: "Un filet de citron sur le TOUT, à la fin", detail: "Le sarrasin est terreux et les légumes rôtis sont sucrés : sans acidité, le bol reste lourd.", badge: null }
+    ],
+    liees: ["buddhaBowl","saladelentillesfeta","tabulemaison"]
+  },
+  tartareavocat: {
+    dateAjout: "2026-09-01T11:04:00",
+    nom: "Tartare d'Avocat",
+    cat: "healthy", saisons: ["ete"], pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥑",
+    description: "L'avocat traité comme un tartare de poisson : taillé au COUTEAU en dés réguliers, jamais écrasé. C'est ce qui le sépare d'un guacamole — on doit voir et sentir chaque cube sous la dent.",
+    tableauTartareavocat: [
+      { nb: 1, avocat: "110 g", citronvert: "½", echalote: "¼", coriandre: "6 g", huileolive: "12 ml", tabasco: "1 ml", sel: "1 g", poivre: "0.5 g" },
+      { nb: 2, avocat: "220 g", citronvert: "1", echalote: "½", coriandre: "12 g", huileolive: "24 ml", tabasco: "2 ml", sel: "2 g", poivre: "1 g" },
+      { nb: 3, avocat: "330 g", citronvert: "1½", echalote: "¾", coriandre: "18 g", huileolive: "36 ml", tabasco: "3 ml", sel: "3 g", poivre: "1.5 g" },
+      { nb: 4, avocat: "440 g", citronvert: "2", echalote: "1", coriandre: "24 g", huileolive: "48 ml", tabasco: "4 ml", sel: "4 g", poivre: "2 g" },
+      { nb: 5, avocat: "550 g", citronvert: "2½", echalote: "1¼", coriandre: "30 g", huileolive: "60 ml", tabasco: "5 ml", sel: "5 g", poivre: "2.5 g" },
+      { nb: 6, avocat: "660 g", citronvert: "3", echalote: "1½", coriandre: "36 g", huileolive: "72 ml", tabasco: "6 ml", sel: "6 g", poivre: "3 g" },
+      { nb: 7, avocat: "770 g", citronvert: "3½", echalote: "1¾", coriandre: "42 g", huileolive: "84 ml", tabasco: "7 ml", sel: "7 g", poivre: "3.5 g" },
+      { nb: 8, avocat: "880 g", citronvert: "4", echalote: "2", coriandre: "48 g", huileolive: "96 ml", tabasco: "8 ml", sel: "8 g", poivre: "4 g" },
+      { nb: 9, avocat: "990 g", citronvert: "4½", echalote: "2¼", coriandre: "54 g", huileolive: "108 ml", tabasco: "9 ml", sel: "9 g", poivre: "4.5 g" },
+      { nb: 10, avocat: "1100 g", citronvert: "5", echalote: "2½", coriandre: "60 g", huileolive: "120 ml", tabasco: "10 ml", sel: "10 g", poivre: "5 g" },
+      { nb: 11, avocat: "1210 g", citronvert: "5½", echalote: "2¾", coriandre: "66 g", huileolive: "132 ml", tabasco: "11 ml", sel: "11 g", poivre: "5.5 g" },
+      { nb: 12, avocat: "1320 g", citronvert: "6", echalote: "3", coriandre: "72 g", huileolive: "144 ml", tabasco: "12 ml", sel: "12 g", poivre: "6 g" },
+      { nb: 13, avocat: "1430 g", citronvert: "6½", echalote: "3¼", coriandre: "78 g", huileolive: "156 ml", tabasco: "13 ml", sel: "13 g", poivre: "6.5 g" },
+      { nb: 14, avocat: "1540 g", citronvert: "7", echalote: "3½", coriandre: "84 g", huileolive: "168 ml", tabasco: "14 ml", sel: "14 g", poivre: "7 g" },
+      { nb: 15, avocat: "1650 g", citronvert: "7½", echalote: "3¾", coriandre: "90 g", huileolive: "180 ml", tabasco: "15 ml", sel: "15 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥑", titre: "Un avocat JUSTE mûr, qui cède à peine", detail: "Trop mûr, il s'écrase au couteau et devient un guacamole. Trop ferme, il n'a aucun goût.", badge: null },
+      { icone: "🔪", titre: "Tailler en dés d'un centimètre, au couteau", detail: "Jamais à la fourchette ni au robot : la découpe régulière est toute l'identité du plat.", badge: null },
+      { icone: "🍋", titre: "Citronner AU FUR ET À MESURE, pas à la fin", detail: "Chaque poignée de dés est citronnée dès qu'elle tombe dans le bol : l'oxydation commence en trente secondes.", badge: null },
+      { icone: "🧅", titre: "Une échalote RINCÉE, en tout petits dés", detail: "Rincée à l'eau froide et essorée : crue et entière, elle domine complètement l'avocat.", badge: null },
+      { icone: "🥄", titre: "Mélanger à la MARYSE, en soulevant", detail: "À la cuillère, les dés se cassent. On soulève, on retourne, quatre gestes maximum.", badge: null },
+      { icone: "🔥", titre: "Le tabasco DOSÉ, quelques gouttes", detail: "Il réveille un plat naturellement gras et doux ; trop, il masque l'avocat qui est le sujet.", badge: null },
+      { icone: "⏱️", titre: "Se monte dans les vingt minutes du service", detail: "Même citronné, il brunit en surface. C'est un plat qui ne se prépare pas d'avance.", badge: null }
+    ],
+    liees: ["guacamole","cevicheperou","avocadotoast"]
+  },
+  bibimbapvegetarien: {
+    dateAjout: "2026-09-01T11:05:00",
+    nom: "Bibimbap Végétarien",
+    cat: "healthy", pays: "coree",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥕",
+    description: "Le bibimbap des temples bouddhistes coréens, sans viande ni ail. Chaque légume est assaisonné SÉPARÉMENT — c'est la règle du namul, et c'est ce qui explique qu'un bol contienne cinq préparations distinctes et non un sauté de légumes.",
+    tableauBibimbapvegetarien: [
+      { nb: 1, riz: "70 g", epinards: "50 g", carotte: "45 g", courgette: "45 g", champignons: "45 g", oeufs: "¾", gochujang: "15 g", huilesesame: "8 ml", sesame: "4 g", sojaSauce: "8 ml" },
+      { nb: 2, riz: "140 g", epinards: "100 g", carotte: "90 g", courgette: "90 g", champignons: "90 g", oeufs: "1½", gochujang: "30 g", huilesesame: "16 ml", sesame: "8 g", sojaSauce: "16 ml" },
+      { nb: 3, riz: "210 g", epinards: "150 g", carotte: "135 g", courgette: "135 g", champignons: "135 g", oeufs: "2¼", gochujang: "45 g", huilesesame: "24 ml", sesame: "12 g", sojaSauce: "24 ml" },
+      { nb: 4, riz: "280 g", epinards: "200 g", carotte: "180 g", courgette: "180 g", champignons: "180 g", oeufs: "3", gochujang: "60 g", huilesesame: "32 ml", sesame: "16 g", sojaSauce: "32 ml" },
+      { nb: 5, riz: "350 g", epinards: "250 g", carotte: "225 g", courgette: "225 g", champignons: "225 g", oeufs: "3¾", gochujang: "75 g", huilesesame: "40 ml", sesame: "20 g", sojaSauce: "40 ml" },
+      { nb: 6, riz: "420 g", epinards: "300 g", carotte: "270 g", courgette: "270 g", champignons: "270 g", oeufs: "4½", gochujang: "90 g", huilesesame: "48 ml", sesame: "24 g", sojaSauce: "48 ml" },
+      { nb: 7, riz: "490 g", epinards: "350 g", carotte: "315 g", courgette: "315 g", champignons: "315 g", oeufs: "5¼", gochujang: "105 g", huilesesame: "56 ml", sesame: "28 g", sojaSauce: "56 ml" },
+      { nb: 8, riz: "560 g", epinards: "400 g", carotte: "360 g", courgette: "360 g", champignons: "360 g", oeufs: "6", gochujang: "120 g", huilesesame: "64 ml", sesame: "32 g", sojaSauce: "64 ml" },
+      { nb: 9, riz: "630 g", epinards: "450 g", carotte: "405 g", courgette: "405 g", champignons: "405 g", oeufs: "6¾", gochujang: "135 g", huilesesame: "72 ml", sesame: "36 g", sojaSauce: "72 ml" },
+      { nb: 10, riz: "700 g", epinards: "500 g", carotte: "450 g", courgette: "450 g", champignons: "450 g", oeufs: "7½", gochujang: "150 g", huilesesame: "80 ml", sesame: "40 g", sojaSauce: "80 ml" },
+      { nb: 11, riz: "770 g", epinards: "550 g", carotte: "495 g", courgette: "495 g", champignons: "495 g", oeufs: "8¼", gochujang: "165 g", huilesesame: "88 ml", sesame: "44 g", sojaSauce: "88 ml" },
+      { nb: 12, riz: "840 g", epinards: "600 g", carotte: "540 g", courgette: "540 g", champignons: "540 g", oeufs: "9", gochujang: "180 g", huilesesame: "96 ml", sesame: "48 g", sojaSauce: "96 ml" },
+      { nb: 13, riz: "910 g", epinards: "650 g", carotte: "585 g", courgette: "585 g", champignons: "585 g", oeufs: "9¾", gochujang: "195 g", huilesesame: "104 ml", sesame: "52 g", sojaSauce: "104 ml" },
+      { nb: 14, riz: "980 g", epinards: "700 g", carotte: "630 g", courgette: "630 g", champignons: "630 g", oeufs: "10½", gochujang: "210 g", huilesesame: "112 ml", sesame: "56 g", sojaSauce: "112 ml" },
+      { nb: 15, riz: "1050 g", epinards: "750 g", carotte: "675 g", courgette: "675 g", champignons: "675 g", oeufs: "11¼", gochujang: "225 g", huilesesame: "120 ml", sesame: "60 g", sojaSauce: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥕", titre: "Chaque légume cuit et assaisonné À PART", detail: "C'est le principe du namul : cinq bols distincts, cinq assaisonnements. Sautés ensemble, c'est un autre plat.", badge: null },
+      { icone: "🌿", titre: "Les épinards blanchis 30 secondes, puis PRESSÉS", detail: "À la main, fermement : c'est l'eau retenue qui délave le bol entier au moment du mélange.", badge: null },
+      { icone: "🥒", titre: "La courgette salée dix minutes avant de sauter", detail: "Elle rend son eau à l'avance : sautée directement, elle bout au lieu de saisir.", badge: null },
+      { icone: "🍄", titre: "Les champignons sautés SANS huile d'abord", detail: "Deux minutes à sec pour évacuer l'eau, puis l'huile de sésame : c'est ce qui les rend charnus.", badge: null },
+      { icone: "🍚", titre: "Un riz un peu FERME, pas collant", detail: "Il doit se mélanger sans s'agglutiner : trop d'eau à la cuisson et le bibimbap devient une purée.", badge: null },
+      { icone: "🥚", titre: "Un œuf au plat au jaune COULANT, posé entier", detail: "Il fait office de sauce quand on mélange : cuit dur, il ne lie plus rien.", badge: null },
+      { icone: "🌶️", titre: "Le gochujang SERVI À PART, en cuillerée", detail: "Chacun dose : c'est un condiment très salé, et son dosage est personnel en Corée.", badge: null },
+      { icone: "🥄", titre: "Mélanger VIGOUREUSEMENT à table, tout le bol", detail: "Bibimbap veut dire « riz mélangé ». Mangé en couches, ce n'est pas le plat.", badge: null }
+    ],
+    liees: ["bibimbap","japchae","kimchijjigae"]
   },
 });

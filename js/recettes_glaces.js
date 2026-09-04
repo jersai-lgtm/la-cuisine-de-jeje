@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 36 recettes
+// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 39 recettes
 // 👉 Pour AJOUTER une glace : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1844,5 +1844,121 @@ Object.assign(recettes, {
       { icone: "⏱️", titre: "Servir dans la minute, avec une paille large", detail: "Elle s'affaisse en trois minutes. À Lima, on la mange debout, devant la carriole.", badge: null }
     ],
     liees: ["granizado","heladodepaila","kakigori"]
+  },
+  viennetta: {
+    dateAjout: "2026-09-01T10:04:00",
+    nom: "Viennetta",
+    cat: "glaces", saisons: ["ete"], pays: "angleterre",
+    base: 8,
+    temps: "40 min + congélation",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍰",
+    description: "La bûche glacée à vagues créée en 1982 par Wall's au Royaume-Uni, et qui n'a rien de viennois. Son secret tient en un point : le chocolat est coulé EN COUCHES ULTRAFINES sur une glace déjà froide, si bien qu'il casse en éclats au lieu de se détacher en plaque.",
+    tableauViennetta: [
+      { nb: 1, glacevanille: "130 g", chocolatnoir: "30 g", huilecoco: "8 ml", cremechantilly: "25 ml", sucreglace: "6 g" },
+      { nb: 2, glacevanille: "260 g", chocolatnoir: "60 g", huilecoco: "16 ml", cremechantilly: "50 ml", sucreglace: "12 g" },
+      { nb: 3, glacevanille: "390 g", chocolatnoir: "90 g", huilecoco: "24 ml", cremechantilly: "75 ml", sucreglace: "18 g" },
+      { nb: 4, glacevanille: "520 g", chocolatnoir: "120 g", huilecoco: "32 ml", cremechantilly: "100 ml", sucreglace: "24 g" },
+      { nb: 5, glacevanille: "650 g", chocolatnoir: "150 g", huilecoco: "40 ml", cremechantilly: "125 ml", sucreglace: "30 g" },
+      { nb: 6, glacevanille: "780 g", chocolatnoir: "180 g", huilecoco: "48 ml", cremechantilly: "150 ml", sucreglace: "36 g" },
+      { nb: 7, glacevanille: "910 g", chocolatnoir: "210 g", huilecoco: "56 ml", cremechantilly: "175 ml", sucreglace: "42 g" },
+      { nb: 8, glacevanille: "1040 g", chocolatnoir: "240 g", huilecoco: "64 ml", cremechantilly: "200 ml", sucreglace: "48 g" },
+      { nb: 9, glacevanille: "1170 g", chocolatnoir: "270 g", huilecoco: "72 ml", cremechantilly: "225 ml", sucreglace: "54 g" },
+      { nb: 10, glacevanille: "1300 g", chocolatnoir: "300 g", huilecoco: "80 ml", cremechantilly: "250 ml", sucreglace: "60 g" },
+      { nb: 11, glacevanille: "1430 g", chocolatnoir: "330 g", huilecoco: "88 ml", cremechantilly: "275 ml", sucreglace: "66 g" },
+      { nb: 12, glacevanille: "1560 g", chocolatnoir: "360 g", huilecoco: "96 ml", cremechantilly: "300 ml", sucreglace: "72 g" },
+      { nb: 13, glacevanille: "1690 g", chocolatnoir: "390 g", huilecoco: "104 ml", cremechantilly: "325 ml", sucreglace: "78 g" },
+      { nb: 14, glacevanille: "1820 g", chocolatnoir: "420 g", huilecoco: "112 ml", cremechantilly: "350 ml", sucreglace: "84 g" },
+      { nb: 15, glacevanille: "1950 g", chocolatnoir: "450 g", huilecoco: "120 ml", cremechantilly: "375 ml", sucreglace: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Un moule à cake tapissé de film, débordant largement", detail: "Le film doit dépasser de dix centimètres : c'est par là qu'on tirera la bûche au démoulage.", badge: null },
+      { icone: "🍫", titre: "Du chocolat ADDITIONNÉ d'huile de coco", detail: "C'est tout le truc : l'huile abaisse le point de fusion et le chocolat casse net au lieu de rester dur.", badge: null },
+      { icone: "🌡️", titre: "Un chocolat à peine tiède, 30 °C", detail: "Trop chaud, il fait fondre la couche de glace en dessous et les strates se mélangent.", badge: null },
+      { icone: "🥄", titre: "Étaler la glace en couches de 1 cm, tassées", detail: "À la spatule, bien à plat : des couches irrégulières donnent des vagues molles au lieu de lignes nettes.", badge: null },
+      { icone: "🌐", titre: "Le chocolat versé EN FILET, en zigzag", detail: "Il fige au contact en une seconde : c'est ce mouvement qui crée les ondulations caractéristiques.", badge: null },
+      { icone: "❄️", titre: "Vingt minutes de congélateur ENTRE chaque couche", detail: "Six couches, six attentes. C'est long et c'est la seule façon d'obtenir des strates séparées.", badge: null },
+      { icone: "🍦", titre: "Une chantilly ferme pour la couche du dessus", detail: "Elle donne le relief des vagues visibles : sans elle, le dessus reste plat et industriel.", badge: null },
+      { icone: "🔪", titre: "Trancher avec un couteau PASSÉ sous l'eau chaude", detail: "Essuyé entre chaque part : à froid, le couteau écrase les couches et arrache le chocolat.", badge: null }
+    ],
+    liees: ["spumone","tartufo","bombeglacee"]
+  },
+  glacethevert: {
+    dateAjout: "2026-09-01T11:00:00",
+    nom: "Glace au Thé Vert",
+    cat: "glaces", saisons: ["ete"], pays: "japon",
+    base: 8,
+    temps: "40 min + turbinage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍵",
+    description: "La glace au matcha des salons de thé japonais, verte et franchement amère. Toute la difficulté est là : le matcha perd sa couleur au-dessus de 70 °C et son amertume est ce qu'on vient chercher — la sucrer, c'est la manquer.",
+    tableauGlacethevert: [
+      { nb: 1, matcha: "8 g", lait: "90 ml", creme: "55 ml", jaunesoeufs: "¾", sucre: "26 g", sel: "0.2 g" },
+      { nb: 2, matcha: "16 g", lait: "180 ml", creme: "110 ml", jaunesoeufs: "1½", sucre: "52 g", sel: "0.4 g" },
+      { nb: 3, matcha: "24 g", lait: "270 ml", creme: "165 ml", jaunesoeufs: "2¼", sucre: "78 g", sel: "0.6 g" },
+      { nb: 4, matcha: "32 g", lait: "360 ml", creme: "220 ml", jaunesoeufs: "3", sucre: "104 g", sel: "0.8 g" },
+      { nb: 5, matcha: "40 g", lait: "450 ml", creme: "275 ml", jaunesoeufs: "3¾", sucre: "130 g", sel: "1 g" },
+      { nb: 6, matcha: "48 g", lait: "540 ml", creme: "330 ml", jaunesoeufs: "4½", sucre: "156 g", sel: "1.2 g" },
+      { nb: 7, matcha: "56 g", lait: "630 ml", creme: "385 ml", jaunesoeufs: "5¼", sucre: "182 g", sel: "1.4 g" },
+      { nb: 8, matcha: "64 g", lait: "720 ml", creme: "440 ml", jaunesoeufs: "6", sucre: "208 g", sel: "1.6 g" },
+      { nb: 9, matcha: "72 g", lait: "810 ml", creme: "495 ml", jaunesoeufs: "6¾", sucre: "234 g", sel: "1.8 g" },
+      { nb: 10, matcha: "80 g", lait: "900 ml", creme: "550 ml", jaunesoeufs: "7½", sucre: "260 g", sel: "2 g" },
+      { nb: 11, matcha: "88 g", lait: "990 ml", creme: "605 ml", jaunesoeufs: "8¼", sucre: "286 g", sel: "2.2 g" },
+      { nb: 12, matcha: "96 g", lait: "1080 ml", creme: "660 ml", jaunesoeufs: "9", sucre: "312 g", sel: "2.4 g" },
+      { nb: 13, matcha: "104 g", lait: "1170 ml", creme: "715 ml", jaunesoeufs: "9¾", sucre: "338 g", sel: "2.6 g" },
+      { nb: 14, matcha: "112 g", lait: "1260 ml", creme: "770 ml", jaunesoeufs: "10½", sucre: "364 g", sel: "2.8 g" },
+      { nb: 15, matcha: "120 g", lait: "1350 ml", creme: "825 ml", jaunesoeufs: "11¼", sucre: "390 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍵", titre: "Un matcha CULINAIRE, pas cérémonial", detail: "Le cérémonial est doux et cher : dans une glace sucrée, sa finesse disparaît entièrement.", badge: null },
+      { icone: "💧", titre: "Délayer le matcha en pâte, à l'eau tiède", detail: "Jeté sec dans la crème anglaise, il fait des grumeaux verts qu'aucun fouet ne défait.", badge: null },
+      { icone: "🌡️", titre: "L'incorporer HORS du feu, sous 70 °C", detail: "Au-dessus, il vire au brun olive : c'est irréversible et la glace n'est plus verte.", badge: null },
+      { icone: "🥄", titre: "Une crème anglaise cuite à 83 °C, au thermomètre", detail: "Un degré de trop et les jaunes coagulent : la base devient granuleuse et il faut recommencer.", badge: null },
+      { icone: "🧂", titre: "Une pincée de sel dans la base", detail: "Invisible au goût, elle creuse l'amertume du thé au lieu de la masquer comme le ferait plus de sucre.", badge: null },
+      { icone: "❄️", titre: "Maturer la base DOUZE heures au frais", detail: "C'est le secret des glaciers : la texture est deux fois plus onctueuse après maturation.", badge: null },
+      { icone: "🌀", titre: "Turbiner FROID, base à 4 °C maximum", detail: "Une base tiède prend en cristaux grossiers et la glace devient sableuse en bouche.", badge: null },
+      { icone: "🍵", titre: "Servir avec un peu de matcha tamisé dessus", detail: "Il réveille l'amertume au premier contact, avant que le sucre de la glace prenne le dessus.", badge: null }
+    ],
+    liees: ["glacevanille","mochiglace","dondurma"]
+  },
+  sorbetpommeverte: {
+    dateAjout: "2026-09-01T11:01:00",
+    nom: "Sorbet Pomme Verte",
+    cat: "glaces", saisons: ["automne","hiver"], pays: "france",
+    base: 8,
+    temps: "30 min + turbinage",
+    niveau: "⭐ Facile",
+    emoji: "🍏",
+    description: "Le sorbet le plus difficile à garder vert : la pomme brunit en trois minutes à l'air libre. Tout se joue sur la vitesse et sur l'acide — c'est une course entre le couteau et l'oxydation, pas une question de recette.",
+    tableauSorbetpommeverte: [
+      { nb: 1, pomme: "150 g", sucre: "32 g", eau: "45 ml", citron: "½", blancoeuf: "¼" },
+      { nb: 2, pomme: "300 g", sucre: "64 g", eau: "90 ml", citron: "1", blancoeuf: "½" },
+      { nb: 3, pomme: "450 g", sucre: "96 g", eau: "135 ml", citron: "1½", blancoeuf: "¾" },
+      { nb: 4, pomme: "600 g", sucre: "128 g", eau: "180 ml", citron: "2", blancoeuf: "1" },
+      { nb: 5, pomme: "750 g", sucre: "160 g", eau: "225 ml", citron: "2½", blancoeuf: "1¼" },
+      { nb: 6, pomme: "900 g", sucre: "192 g", eau: "270 ml", citron: "3", blancoeuf: "1½" },
+      { nb: 7, pomme: "1050 g", sucre: "224 g", eau: "315 ml", citron: "3½", blancoeuf: "1¾" },
+      { nb: 8, pomme: "1200 g", sucre: "256 g", eau: "360 ml", citron: "4", blancoeuf: "2" },
+      { nb: 9, pomme: "1350 g", sucre: "288 g", eau: "405 ml", citron: "4½", blancoeuf: "2¼" },
+      { nb: 10, pomme: "1500 g", sucre: "320 g", eau: "450 ml", citron: "5", blancoeuf: "2½" },
+      { nb: 11, pomme: "1650 g", sucre: "352 g", eau: "495 ml", citron: "5½", blancoeuf: "2¾" },
+      { nb: 12, pomme: "1800 g", sucre: "384 g", eau: "540 ml", citron: "6", blancoeuf: "3" },
+      { nb: 13, pomme: "1950 g", sucre: "416 g", eau: "585 ml", citron: "6½", blancoeuf: "3¼" },
+      { nb: 14, pomme: "2100 g", sucre: "448 g", eau: "630 ml", citron: "7", blancoeuf: "3½" },
+      { nb: 15, pomme: "2250 g", sucre: "480 g", eau: "675 ml", citron: "7½", blancoeuf: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍏", titre: "Des granny smith, avec LA PEAU", detail: "C'est la peau qui donne le vert : pelée, la pomme donne un sorbet beige quel que soit le soin apporté.", badge: null },
+      { icone: "🍋", titre: "Le citron pressé AVANT de couper la pomme", detail: "Prêt dans le bol : chaque quartier y tombe immédiatement. Cherché après, il arrive trop tard.", badge: null },
+      { icone: "⚡", titre: "Mixer dans les TROIS minutes qui suivent la découpe", detail: "C'est la seule vraie contrainte du sorbet : au-delà, il vire au brun et rien ne le rattrape.", badge: null },
+      { icone: "🚫", titre: "Ne PAS cuire la pomme", detail: "Cuite, elle devient une compote glacée : le goût de pomme crue et vive est tout l'intérêt du sorbet.", badge: null },
+      { icone: "🍬", titre: "Un sirop refroidi, jamais chaud sur la pulpe", detail: "Le sirop chaud cuit la pomme au contact et déclenche le brunissement en quelques secondes.", badge: null },
+      { icone: "🥚", titre: "Un quart de blanc d'œuf, pour la tenue", detail: "Il empêche les gros cristaux sans apporter de goût : c'est le seul stabilisant traditionnel des sorbets.", badge: null },
+      { icone: "🌀", titre: "Turbiner immédiatement après le mixage", detail: "Chaque minute d'attente coûte de la couleur. Le sorbet se fait d'un seul geste, du couteau à la sorbetière.", badge: null }
+    ],
+    liees: ["sorbetcitron","granizado","heladodepaila"]
   },
 });
