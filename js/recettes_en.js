@@ -113470,6 +113470,1058 @@ window.RECETTES_EN = {
     "detail": "Hot, the base breaks; cold, the syrup has glued itself to the tin. The window is ten minutes."
    }
   ]
+ },
+ "aviation": {
+  "nom": "Aviation",
+  "description": "The pale blue cocktail of 1916, lost for seventy years because crème de violette stopped being imported into the United States. Without it, it is merely a gin sour; the violette gives the sky colour its name comes from.",
+  "etapes": [
+   {
+    "titre": "Violette MEASURED by the spoon, not the jigger",
+    "detail": "Eight millilitres maximum: beyond that the drink turns mauve and tastes of perfumed soap."
+   },
+   {
+    "titre": "Real maraschino, not cherry syrup",
+    "detail": "Maraschino is dry and bitter with almond; cherry syrup would give a pink, sweet cocktail."
+   },
+   {
+    "titre": "Lemon squeezed to order",
+    "detail": "Bottled juice crushes the floral aromatics, which are the most fragile thing here."
+   },
+   {
+    "titre": "Shaker filled THREE QUARTERS with ice",
+    "detail": "Too little ice melts fast and over-dilutes: on a drink this delicate, dilution shows at once."
+   },
+   {
+    "titre": "Twelve seconds of shaking, not twenty",
+    "detail": "Short: you want to chill without over-diluting, the violette would lose its perfume in the meltwater."
+   },
+   {
+    "titre": "Double strain, without exception",
+    "detail": "Ice shards cloud the colour, and the colour is exactly what you came for."
+   },
+   {
+    "titre": "A well-chilled coupe, served without ice",
+    "detail": "The pale blue tint only shows in a clear, clean glass. Over ice it disappears."
+   }
+  ]
+ },
+ "corpsereviver": {
+  "nom": "Corpse Reviver No. 2",
+  "description": "Four equal parts and an absinthe rinse, published at the Savoy in 1930 with a warning that has stayed famous: \"four of these taken in swift succession will unrevive the corpse again\".",
+  "etapes": [
+   {
+    "titre": "Four STRICTLY equal parts",
+    "detail": "This is the Savoy recipe and it is not to be adjusted: unbalance it and you lose the accord that holds it together."
+   },
+   {
+    "titre": "RINSE the glass with absinthe, then discard",
+    "detail": "Three millilitres swirled and tipped out: it is a background perfume, never an ingredient."
+   },
+   {
+    "titre": "Lillet Blanc, or a Kina failing that",
+    "detail": "The original calls for Kina Lillet, more bitter. A white vermouth gives a correct but flat drink."
+   },
+   {
+    "titre": "Glass in the freezer while you work",
+    "detail": "A warm glass pushes the alcohol up the nose and the cocktail turns aggressive."
+   },
+   {
+    "titre": "Lemon squeezed, never bottled",
+    "detail": "In an equal-parts cocktail, the flat bitterness of shop juice is heard immediately."
+   },
+   {
+    "titre": "Fifteen seconds of firm shaking",
+    "detail": "You need the dilution: without it, four equal-part spirits stay scorching."
+   },
+   {
+    "titre": "An orange twist expressed over the top",
+    "detail": "The peel oil bridges the Cointreau and the absinthe. Without it the two stay apart."
+   }
+  ]
+ },
+ "paperplane": {
+  "nom": "Paper Plane",
+  "description": "Created in 2008 in Chicago by Sam Ross, it is one of the few contemporary cocktails to have entered the classic repertoire. Four equal parts, like the Last Word it takes after — but with amaro instead of Chartreuse.",
+  "etapes": [
+   {
+    "titre": "Equal parts, Last Word style",
+    "detail": "That is the structure Sam Ross intended: each ingredient must be felt without dominating the others."
+   },
+   {
+    "titre": "A GENTLE amaro, Nonino style",
+    "detail": "Very bitter amari (Fernet, Averna) crush the Aperol and the drink turns medicinal."
+   },
+   {
+    "titre": "Aperol, not Campari",
+    "detail": "Half as bitter and more fruity: with Campari the paper plane loses its citrus balance."
+   },
+   {
+    "titre": "Bourbon rather than rye",
+    "detail": "The sweet roundness of corn carries both bitters. Rye, drier, leaves an angular drink."
+   },
+   {
+    "titre": "Fresh lemon, never lime",
+    "detail": "Lime pulls it towards tiki; it is yellow lemon that gives the intended profile."
+   },
+   {
+    "titre": "Firm shake, fifteen seconds",
+    "detail": "With juice you shake: the fine foam on the surface is part of the service."
+   },
+   {
+    "titre": "Served in a coupe, no ice, no garnish",
+    "detail": "The paper plane is served bare: it is a cocktail of balance, not of decoration."
+   }
+  ]
+ },
+ "penicillin": {
+  "nom": "Penicillin",
+  "description": "Sam Ross's other great cocktail, created in New York in 2005. Its idea: two whiskies, a soft one in the glass and a peated one FLOATED on top, smelled before it is tasted. It is a two-storey construction, not a blend.",
+  "etapes": [
+   {
+    "titre": "A honey-ginger syrup, made in advance",
+    "detail": "Honey and fresh ginger infused hot: neat honey will not dissolve in a cold drink."
+   },
+   {
+    "titre": "Ginger SLICED, infused, then removed",
+    "detail": "In pieces in the shaker it bites erratically; infused, it gives an even warmth."
+   },
+   {
+    "titre": "A soft scotch for the base",
+    "detail": "A Speyside or a blend: the body of the drink. The peat only appears at the surface."
+   },
+   {
+    "titre": "The peated whisky FLOATED, never stirred in",
+    "detail": "Poured gently over the back of a spoon: it is a nose perfume, it must not dilute into the body."
+   },
+   {
+    "titre": "One LARGE single cube in the glass",
+    "detail": "It melts slowly: the peat layer stays on the surface instead of being churned in."
+   },
+   {
+    "titre": "Lemon squeezed, in a frank quantity",
+    "detail": "The honey is very sweet: without strong acidity the drink turns syrupy."
+   },
+   {
+    "titre": "A petal of candied ginger on the glass",
+    "detail": "The traditional garnish. It announces at the nose what you will find on the palate."
+   }
+  ]
+ },
+ "vieuxcarre": {
+  "nom": "Vieux Carré",
+  "description": "Born in 1938 at the Hotel Monteleone in New Orleans, in the revolving Carousel Bar. It gathers the city's three cultures: American rye, French cognac and Italian vermouth — hence the name, the old quarter.",
+  "etapes": [
+   {
+    "titre": "Three spirits in equal parts, Bénédictine apart",
+    "detail": "It is not a fourth pillar but a binder: eight millilitres, no more."
+   },
+   {
+    "titre": "Bénédictine, irreplaceable",
+    "detail": "Its twenty-seven botanicals bridge the rye and the cognac. Without it the two just sit side by side."
+   },
+   {
+    "titre": "Stir in a mixing glass, never shake",
+    "detail": "There is no juice in this drink: a shaker would cloud and aerate it for no benefit."
+   },
+   {
+    "titre": "Thirty seconds of stirring, counted",
+    "detail": "This is a very spirituous cocktail: dilution is an ingredient in its own right, not an accident."
+   },
+   {
+    "titre": "Two dashes of bitters, Peychaud's if you can",
+    "detail": "The New Orleans bitter, more aniseed than Angostura. A local detail that is audible."
+   },
+   {
+    "titre": "One large single cube in the glass",
+    "detail": "It melts three times slower than crushed ice: the drink keeps its strength to the last sip."
+   },
+   {
+    "titre": "A lemon twist, oil expressed over it",
+    "detail": "It wakes up a dark, sweet cocktail that would otherwise seem heavy."
+   }
+  ]
+ },
+ "bramble": {
+  "nom": "Bramble",
+  "description": "Created in 1984 in London by Dick Bradsell, who wanted a cocktail that tasted of his childhood on the Isle of Wight: blackberries picked from the brambles. The crème de mûre is drizzled over crushed ice to create the bleeding gradient.",
+  "etapes": [
+   {
+    "titre": "CRUSHED ice, never cubes",
+    "detail": "The gradient only works over crushed ice: on cubes the crème de mûre runs straight to the bottom."
+   },
+   {
+    "titre": "Build the gin sour first, alone",
+    "detail": "Gin, lemon and syrup shaken and poured over the ice: the crème de mûre never goes into the shaker."
+   },
+   {
+    "titre": "Crème de mûre DRIZZLED, in a spiral",
+    "detail": "Poured slowly from the rim inwards: that gesture creates the characteristic red veins."
+   },
+   {
+    "titre": "Do NOT stir after the drizzle",
+    "detail": "One turn of the spoon and the gradient is gone: the bramble becomes a uniform purple drink."
+   },
+   {
+    "titre": "A frankly sharp lemon",
+    "detail": "Crème de mûre is very sweet: without sustained acidity the glass becomes alcoholic syrup."
+   },
+   {
+    "titre": "A fresh blackberry and a half lemon on top",
+    "detail": "Bradsell's original garnish. It announces the fruit before the first sip."
+   },
+   {
+    "titre": "Served with a short straw, in an old fashioned",
+    "detail": "You drink from the bottom: each sip crosses the gradient and the taste evolves glass by glass."
+   }
+  ]
+ },
+ "whitelady": {
+  "nom": "White Lady",
+  "description": "Perfected by Harry Craddock at the Savoy in the 1920s, after a first mint version he judged a failure. Its signature is the egg white: without it, this is just a gin sour with Cointreau, and the white foam disappears.",
+  "etapes": [
+   {
+    "titre": "A DRY SHAKE first, without ice",
+    "detail": "Twenty seconds dry: the foam only builds at room temperature, never over ice."
+   },
+   {
+    "titre": "Then a second shake, with ice",
+    "detail": "Fifteen seconds to chill and dilute. The reverse order never gives the same foam."
+   },
+   {
+    "titre": "Egg white at ROOM temperature",
+    "detail": "Straight from the fridge it whips half as well: the most frequent cause of failure."
+   },
+   {
+    "titre": "Cointreau, never a cheap triple sec",
+    "detail": "Industrial triple sec brings sugar without orange aroma, and the drink falls flat."
+   },
+   {
+    "titre": "Lemon squeezed and STRAINED",
+    "detail": "Pulp bursts the foam bubbles: on this cocktail it shows immediately."
+   },
+   {
+    "titre": "Double strain through a fine sieve",
+    "detail": "Ice shards pierce the surface and the foam tears within thirty seconds."
+   },
+   {
+    "titre": "Served in a coupe, foam to the rim",
+    "detail": "A white lady is judged by its surface: white, dense, without a visible bubble."
+   }
+  ]
+ },
+ "zombie": {
+  "nom": "Zombie",
+  "description": "The most feared tiki drink, created by Donn Beach in 1934 and kept secret for fifty years: he wrote his measures in code. Three rums, falernum and a dash of absinthe — in his bar, no customer was served more than two.",
+  "etapes": [
+   {
+    "titre": "THREE different rums, never one",
+    "detail": "White for brightness, aged for body, dark for depth: that is Donn Beach's structure."
+   },
+   {
+    "titre": "Falernum, a non-negotiable ingredient",
+    "detail": "Clove, ginger, almond and lime: it bridges the rums and the juices."
+   },
+   {
+    "titre": "Two millilitres of absinthe, no more",
+    "detail": "It gives the characteristic minty base. Beyond that it dominates and everything else fades."
+   },
+   {
+    "titre": "Flash blend, or a VERY short shake",
+    "detail": "Five seconds: this drink already holds a lot of liquid, a long dilution drowns it."
+   },
+   {
+    "titre": "Serve over FRESH crushed ice",
+    "detail": "Never the shaker's already-melted ice: a zombie must stay frozen for twenty minutes."
+   },
+   {
+    "titre": "Do not increase the rum measures",
+    "detail": "Eighty millilitres of spirit per glass: that is already the limit, and why Donn allowed two."
+   },
+   {
+    "titre": "Half a flamed lime shell as garnish",
+    "detail": "Filled with overproof spirit and lit: the original garnish, spectacular and aromatic."
+   }
+  ]
+ },
+ "bloodandsand": {
+  "nom": "Blood and Sand",
+  "description": "Published at the Savoy in 1930, named after a bullfighting film starring Rudolph Valentino. It is one of very few classic cocktails with whisky AND orange juice — a pairing the trade held to be impossible.",
+  "etapes": [
+   {
+    "titre": "A BLOOD orange if the season allows",
+    "detail": "It is the nod to the name, and its sharper acidity stands up to the vermouth."
+   },
+   {
+    "titre": "Cherry Heering, not cherry syrup",
+    "detail": "A real Danish cherry liqueur, dry and spiced: syrup would make the glass cloying."
+   },
+   {
+    "titre": "A SOFT scotch, never peated",
+    "detail": "Peat fights the orange and the cherry. A Speyside or a light blend suits."
+   },
+   {
+    "titre": "Shaker, not mixing glass",
+    "detail": "There is juice: shaking integrates it and gives the velvety texture you want here."
+   },
+   {
+    "titre": "Freshly squeezed orange, never carton",
+    "detail": "Shop juice is too sweet and tips the drink into dessert territory."
+   },
+   {
+    "titre": "Four equal parts, untouched",
+    "detail": "It is a fragile balance: move one quarter and you unbalance the other three."
+   },
+   {
+    "titre": "Chilled coupe, orange twist expressed",
+    "detail": "It restores the nose of a cocktail whose components are all sweet or round."
+   }
+  ]
+ },
+ "nakedandfamous": {
+  "nom": "Naked and Famous",
+  "description": "Created in 2011 in New York by Joaquín Simó, an avowed cross between the Last Word and the Paper Plane. Four equal parts, but with mezcal: the first equal-parts cocktail to bring smoke into the repertoire.",
+  "etapes": [
+   {
+    "titre": "A JOVEN mezcal, not a reposado",
+    "detail": "Barrel ageing rounds off the smoke: here you want it raw, it is what carries the drink."
+   },
+   {
+    "titre": "MODERATE smoke, not an extreme mezcal",
+    "detail": "Very smoky mezcals crush the Chartreuse and the Aperol: the equal-parts balance disappears."
+   },
+   {
+    "titre": "YELLOW Chartreuse is possible, gentler",
+    "detail": "The green at 55 % dominates more; the yellow gives a more approachable version, equally legitimate."
+   },
+   {
+    "titre": "LIME, never lemon",
+    "detail": "It is the link to the agave: yellow lemon would pull the drink towards Europe."
+   },
+   {
+    "titre": "Firm shake, fifteen seconds",
+    "detail": "There is juice and two syrupy liqueurs: they need air and dilution to melt together."
+   },
+   {
+    "titre": "Double strain into a chilled coupe",
+    "detail": "Like every equal-parts cocktail: clarity is part of the result."
+   },
+   {
+    "titre": "No garnish, or a simple twist",
+    "detail": "The smell of the mezcal is already the event of the glass: any perfumed garnish competes with it."
+   }
+  ]
+ },
+ "mojorojo": {
+  "nom": "Mojo Rojo",
+  "description": "The red sauce of the Canary Islands, served with papas arrugadas. It is built in a mortar with stale breadcrumb — the bread is what binds, never oil alone, and that is what separates it from a simple chilli oil.",
+  "etapes": [
+   {
+    "titre": "DRIED peppers rehydrated, not fresh",
+    "detail": "In the Canaries it is pimienta palmera: fresh peppers give a watery, bland sauce."
+   },
+   {
+    "titre": "STALE bread, soaked in vinegar",
+    "detail": "It is what gives the body. Without bread the mojo separates into oil and pulp by the next day."
+   },
+   {
+    "titre": "Build it in a MORTAR, not a blender",
+    "detail": "A blender over-emulsifies and makes the sauce foamy. The mortar keeps the characteristic grain."
+   },
+   {
+    "titre": "Garlic crushed with coarse salt, first",
+    "detail": "The salt acts as an abrasive: the only way to get a smooth garlic paste without oxidising it under a knife."
+   },
+   {
+    "titre": "Cumin dry-toasted before pounding",
+    "detail": "Two minutes in a pan: raw, it dominates everything with a dusty note."
+   },
+   {
+    "titre": "Oil in a THREAD, like a mayonnaise",
+    "detail": "Poured in at once it will not incorporate and the mojo stays in two layers in the bowl."
+   },
+   {
+    "titre": "An hour's rest before serving",
+    "detail": "The bread must finish absorbing. Served straight away, the mojo is thinner and harsher."
+   }
+  ]
+ },
+ "saucepoivrevert": {
+  "nom": "Green Peppercorn Sauce",
+  "description": "The bistro steak sauce, built in the caramelised sugars of the pan. Green peppercorns are not simply less ripe black pepper in appearance: kept in brine, they stay fresh, floral and far less pungent.",
+  "etapes": [
+   {
+    "titre": "Deglaze the COOKING PAN, never a clean saucepan",
+    "detail": "The caramelised meat juices are half the flavour: in a fresh pan the sauce is flat."
+   },
+   {
+    "titre": "Green peppercorns IN BRINE, drained",
+    "detail": "Freeze-dried green pepper is dry and sharp; in brine it stays tender and floral."
+   },
+   {
+    "titre": "Crush HALF, keep the rest whole",
+    "detail": "Crushed, they perfume the base; whole, they pop between the teeth. Both textures make the sauce."
+   },
+   {
+    "titre": "Flame the cognac, or reduce it dry",
+    "detail": "Raw alcohol dominates everything: it must disappear completely before the cream goes in."
+   },
+   {
+    "titre": "Reduce the stock BEFORE the cream",
+    "detail": "Cream added too early reduces badly and turns grainy: the classic mistake."
+   },
+   {
+    "titre": "Finish with cold butter, off the heat",
+    "detail": "Ice-cold butter whisked in at the end gives the shine and the coating texture. Over heat it splits."
+   },
+   {
+    "titre": "Never boil again after the butter",
+    "detail": "The emulsion breaks at a boil and the sauce falls back into thin, greasy cream."
+   }
+  ]
+ },
+ "agrodolce": {
+  "nom": "Agrodolce",
+  "description": "The Sicilian sweet-and-sour, an inheritance from the island's Arab kitchens: vinegar and sugar reduced with raisins and pine nuts. It goes over grilled vegetables, sardines or liver — never over an already sweet meat.",
+  "etapes": [
+   {
+    "titre": "Two parts vinegar to one of sugar",
+    "detail": "That is the Sicilian balance: in equal parts you get a chutney, softer and less cutting."
+   },
+   {
+    "titre": "Onion softened SLOWLY, without colour",
+    "detail": "Twenty minutes over low heat: browned, it brings a bitterness that fights the vinegar."
+   },
+   {
+    "titre": "Raisins plumped in warm vinegar",
+    "detail": "Dry, they draw liquid out of the sauce and stay hard. Plumped, they melt in the mouth."
+   },
+   {
+    "titre": "Pine nuts toasted SEPARATELY, added at the end",
+    "detail": "In the sauce they soften. Toasted then scattered on top, they keep their crunch."
+   },
+   {
+    "titre": "Reduce until it COATS the spoon",
+    "detail": "Too thin and the agrodolce runs to the bottom of the plate; too reduced and it sets hard as it cools."
+   },
+   {
+    "titre": "Cook with the window open",
+    "detail": "The fumes of heated vinegar are fierce. This practical detail is what puts most people off."
+   },
+   {
+    "titre": "Served WARM or cold, never scalding",
+    "detail": "Hot, the vinegar rises to the nose and masks everything else. It also gains from resting overnight."
+   }
+  ]
+ },
+ "persillade": {
+  "nom": "Persillade",
+  "description": "Two ingredients, parsley and garlic, chopped together and never separately. It is the JOINT chopping that makes a persillade: the garlic's oil impregnates the parsley under the blade, and you get a green paste, not a mixture.",
+  "etapes": [
+   {
+    "titre": "Chop parsley and garlic TOGETHER, on the board",
+    "detail": "That is the entire technique: chopped apart then mixed, you have parsley and garlic, not a persillade."
+   },
+   {
+    "titre": "FLAT parsley, never curly",
+    "detail": "Curly is decorative and tasteless; flat-leaf has the peppery aroma that makes the sauce."
+   },
+   {
+    "titre": "Parsley perfectly DRY before chopping",
+    "detail": "Wet, it turns to green mush under the blade instead of staying as fine particles."
+   },
+   {
+    "titre": "Remove the garlic germ",
+    "detail": "Raw, the germ is bitter and indigestible: in a raw garlic sauce it shows immediately."
+   },
+   {
+    "titre": "A SHARP knife, never a blender",
+    "detail": "A blender crushes the cells and releases bitterness. A knife cuts and keeps the clean green."
+   },
+   {
+    "titre": "Made in the MINUTES beforehand",
+    "detail": "Raw garlic oxidises and turns harsh within an hour: it is the least patient sauce there is."
+   },
+   {
+    "titre": "Added at the END of cooking, never the start",
+    "detail": "On mushrooms or potatoes: thirty seconds, or the garlic burns and turns acrid."
+   }
+  ]
+ },
+ "salsamacha": {
+  "nom": "Salsa Macha",
+  "description": "The Veracruz salsa that is not a fresh salsa but an oil: dried chillies, peanuts and sesame fried then ground. It keeps for months, and its red oil is used as much as its solids.",
+  "etapes": [
+   {
+    "titre": "TWO chillies minimum: one fruity, one smoky",
+    "detail": "Guajillo for acidity, ancho for sweet depth. A single type gives a flat salsa."
+   },
+   {
+    "titre": "Remove ALL the seeds",
+    "detail": "They are bitter and burn before the flesh does. The number one reason a salsa macha fails."
+   },
+   {
+    "titre": "Oil at 120 °C, no hotter",
+    "detail": "Dried chillies burn in ten seconds at high temperature: scorched is beyond rescue."
+   },
+   {
+    "titre": "Fry each element SEPARATELY",
+    "detail": "Garlic, peanuts, sesame, chillies: four different cooking times, never together in the same pan."
+   },
+   {
+    "titre": "Let it cool BEFORE blending",
+    "detail": "Blended hot, the oil emulsifies and the salsa becomes an opaque paste instead of staying an oil."
+   },
+   {
+    "titre": "Pulse in bursts, keep the GRAIN",
+    "detail": "This is not a purée: you must see the pieces of peanut and the sesame seeds."
+   },
+   {
+    "titre": "Cover with a centimetre of oil in the jar",
+    "detail": "That is what keeps it three months. Without that layer it oxidises and turns rancid in two weeks."
+   }
+  ]
+ },
+ "amba": {
+  "nom": "Amba",
+  "description": "The fermented mango condiment of the Jews of Baghdad, carried to Israel where it now accompanies every sabich and every shawarma. Its name comes from the Sanskrit amra, mango — the route took it through India before Iraq.",
+  "etapes": [
+   {
+    "titre": "GREEN, firm mangoes, never ripe",
+    "detail": "Ripe, they give a jam. It is the acidity of green mango that makes amba what it is."
+   },
+   {
+    "titre": "Salt and leave to draw for 24 h in the sun",
+    "detail": "This is the traditional ferment: salt draws out the water and starts the acidification."
+   },
+   {
+    "titre": "Fenugreek, the signature ingredient",
+    "detail": "Its maple-syrup and curry smell is amba's identity. Without it, this is a mango chutney."
+   },
+   {
+    "titre": "Crackle the spices in the oil",
+    "detail": "Thirty seconds only: fenugreek burns fast and turns very bitter."
+   },
+   {
+    "titre": "A THICK texture, not smooth",
+    "detail": "You must see pieces of mango: blended fine, it loses the chew that makes it interesting."
+   },
+   {
+    "titre": "Three days' maturing minimum",
+    "detail": "Tasted the same day, it tastes only of vinegar. The spices need that time."
+   },
+   {
+    "titre": "Sterilised jar, a layer of oil on top",
+    "detail": "Like every fermented condiment: the oil barrier stops moulds taking hold."
+   }
+  ]
+ },
+ "saladecauchoise": {
+  "nom": "Salade Cauchoise",
+  "description": "The salad of the pays de Caux in Normandy: warm potatoes, celery and ham bound with raw cream. There is neither mayonnaise nor vinaigrette — the cider vinegar in the cream is the entire dressing.",
+  "etapes": [
+   {
+    "titre": "A WAXY variety, boiled in its skin",
+    "detail": "Charlotte or ratte: a floury potato disintegrates and the salad becomes mash."
+   },
+   {
+    "titre": "Dress the potatoes WARM",
+    "detail": "That is the rule: warm they drink the dressing; cold they let it slide to the bottom of the bowl."
+   },
+   {
+    "titre": "RAW, thick cream, from Isigny",
+    "detail": "UHT cream will not hold and weeps water. It is the one ingredient not to economise on."
+   },
+   {
+    "titre": "CIDER vinegar, never wine",
+    "detail": "This is Normandy: wine vinegar tightens the cream and breaks the accord with the ham."
+   },
+   {
+    "titre": "Celery in fine raw batons",
+    "detail": "Cooked, it loses its crunch, which is the salad's only textural contrast."
+   },
+   {
+    "titre": "THICK white ham, in dice",
+    "detail": "In thin slices it disappears and the salad has no chew. A centimetre thick at least."
+   },
+   {
+    "titre": "Two hours in the fridge before serving",
+    "detail": "The cream must set and the flavours bind. Served at once, the salad stays disjointed."
+   }
+  ]
+ },
+ "ensaladarusa": {
+  "nom": "Ensalada Rusa",
+  "description": "The Spanish Russian salad, served as a tapa in every bar in the country. It has little to do with the Moscow olivier it descends from: no meat here, but tuna and olives, and a great deal more mayonnaise.",
+  "etapes": [
+   {
+    "titre": "Cook the vegetables SEPARATELY, already diced",
+    "detail": "Together, the carrot is raw when the potato collapses. Diced beforehand, they keep their edges."
+   },
+   {
+    "titre": "Drain and DRY completely",
+    "detail": "Residual water thins the mayonnaise: the salad weeps into the dish within an hour."
+   },
+   {
+    "titre": "Cool BEFORE mixing with the mayonnaise",
+    "detail": "Warm, mayonnaise splits instantly and the salad turns oily."
+   },
+   {
+    "titre": "Tuna in OIL, drained but not pressed",
+    "detail": "In brine it is dry and bland. Pressed too hard, it reduces to powder."
+   },
+   {
+    "titre": "Lightly crush a quarter of the potatoes",
+    "detail": "They bind the whole: the Spanish gesture that gives creaminess without drowning it in mayonnaise."
+   },
+   {
+    "titre": "Olives and pepper as garnish, not mixed in",
+    "detail": "On top: mixed in, they colour the mayonnaise and the salad loses its characteristic white."
+   },
+   {
+    "titre": "Three hours in the fridge, minimum",
+    "detail": "It is a cold tapa: served lukewarm, the mayonnaise dominates and nothing else registers."
+   }
+  ]
+ },
+ "okayu": {
+  "nom": "Okayu",
+  "description": "Japan's comforting rice porridge, served to the ill and the convalescent — the equivalent of our chicken broth. It is cooked from RAW rice, never leftovers: it is the slowly released starch that gives its silky texture.",
+  "etapes": [
+   {
+    "titre": "RAW rice, never already-cooked rice",
+    "detail": "Cooked rice disintegrates into mush without releasing starch: you get a grainy soup, not an okayu."
+   },
+   {
+    "titre": "Seven parts water to one of rice",
+    "detail": "That is the classic ratio. Less water gives a risotto; more, a thin soup with no body."
+   },
+   {
+    "titre": "A HEAVY pan, thick-based",
+    "detail": "Okayu catches very easily: in a thin pan the base burns before the rice opens."
+   },
+   {
+    "titre": "Do NOT stir during cooking",
+    "detail": "It is counter-intuitive: stirred, the grains break and the okayu turns gluey. Leave it alone."
+   },
+   {
+    "titre": "A barely visible tremble, lid ajar",
+    "detail": "At a rolling boil it overflows in three minutes and the rice falls apart."
+   },
+   {
+    "titre": "One umeboshi per bowl, set in the centre",
+    "detail": "Its extreme saltiness wakes up a deliberately very gentle dish: the traditional pairing."
+   },
+   {
+    "titre": "Salt very little, almost not at all",
+    "detail": "Okayu must stay neutral: the toppings bring the salt, mouthful by mouthful."
+   }
+  ]
+ },
+ "foulmedames": {
+  "nom": "Ful Medames",
+  "description": "Egypt's national breakfast, sold from street cauldrons since antiquity — it has been found in pharaonic tombs. The beans are mashed only HALFWAY: the whole half gives the chew, the mashed half gives the binding.",
+  "etapes": [
+   {
+    "titre": "BROWN Egyptian fava beans, not fresh broad beans",
+    "detail": "Ful hammam, small and brown. Fresh green broad beans give an unrelated sweet purée."
+   },
+   {
+    "titre": "Twelve hours' soaking, then long cooking",
+    "detail": "Or a good quality tin: the only acceptable shortcut for a breakfast dish."
+   },
+   {
+    "titre": "Mash HALF, leave the rest whole",
+    "detail": "That is the whole texture of ful: fully mashed it is hummus; whole, it is a bean salad."
+   },
+   {
+    "titre": "Cumin dry-toasted, then ground",
+    "detail": "The dish's dominant spice: raw it is earthy; toasted it turns warm and round."
+   },
+   {
+    "titre": "Plenty of lemon, more than you think",
+    "detail": "The bean is very earthy: without frank acidity the dish stays heavy and pasty."
+   },
+   {
+    "titre": "A well of olive oil in the centre of the bowl",
+    "detail": "That is the traditional service: everyone stirs in their own oil, the amount is personal."
+   },
+   {
+    "titre": "Served WARM, never scalding or cold",
+    "detail": "Scalding, the bean is floury; cold, the oil sets. Ful is served around 45 °C."
+   }
+  ]
+ },
+ "bragioli": {
+  "nom": "Bragioli",
+  "description": "Malta's \"olive birds\" — beef olives in English — which contain no olives at all: the name comes from the shape, an oval roll. Stuffed with hard-boiled egg and bacon, they braise in a red wine sauce.",
+  "etapes": [
+   {
+    "titre": "Slices of topside FLATTENED very thin",
+    "detail": "Three millimetres with a mallet: any thicker and they will not roll and tear at the string."
+   },
+   {
+    "titre": "A WHOLE hard-boiled egg, halved lengthwise",
+    "detail": "That is the Maltese signature: when sliced, the yolk appears at the centre of the spiral."
+   },
+   {
+    "titre": "A filling bound with breadcrumbs, not fresh crumb",
+    "detail": "Fresh crumb weeps water and the filling collapses; dried crumb absorbs the cooking juices."
+   },
+   {
+    "titre": "Tie TIGHTLY, two turns minimum",
+    "detail": "A badly tied roll opens within the first half hour and the filling goes into the sauce."
+   },
+   {
+    "titre": "Sear on EVERY face before braising",
+    "detail": "Including the ends: colouring is what gives the sauce its base, not the wine."
+   },
+   {
+    "titre": "Reduce the wine by half BEFORE the tomatoes",
+    "detail": "Added with the tomato, it keeps a raw acidity that dominates the whole dish."
+   },
+   {
+    "titre": "Two hours at a tremble, covered",
+    "detail": "The meat must cut with a spoon. At one hour it is still firm and dry."
+   },
+   {
+    "titre": "Remove the string BEFORE serving, not at table",
+    "detail": "A service detail, but also the moment to check the roll holds together on its own."
+   }
+  ]
+ },
+ "imqaret": {
+  "nom": "Imqaret",
+  "description": "The fried date diamonds sold in the streets of Valletta, notably by the city gate. Their name comes from the Arabic maqrūṭ, \"diamond-shaped\" — and the diagonal cut is not decorative, it is the cake's very name.",
+  "etapes": [
+   {
+    "titre": "A SEMOLINA pastry, not flour alone",
+    "detail": "That is what gives the characteristic sandy crunch. All flour would give a soft turnover."
+   },
+   {
+    "titre": "COLD butter rubbed in with fingertips",
+    "detail": "Like shortcrust: melted, it makes the dough elastic and the imqaret turns rubbery."
+   },
+   {
+    "titre": "A cooked date paste, then COOLED",
+    "detail": "Hot, it melts the butter in the pastry and the filling bursts through in the fryer."
+   },
+   {
+    "titre": "Orange flower water and aniseed in the FILLING",
+    "detail": "Not in the pastry: it is the date that must be perfumed, the pastry stays neutral."
+   },
+   {
+    "titre": "Cut into DIAMONDS, never squares",
+    "detail": "That is the cake's name. The diagonal cut also gives edges that brown better."
+   },
+   {
+    "titre": "Fry at 170 °C, no hotter",
+    "detail": "Hotter and the pastry browns before the filling heats; cooler and it drinks the oil."
+   },
+   {
+    "titre": "Dip WARM in a light syrup",
+    "detail": "Thirty seconds only: any longer and the imqaret goes soggy and loses all its crunch."
+   },
+   {
+    "titre": "Drain standing on edge",
+    "detail": "Laid flat, the syrup pools on one side and the underside softens within five minutes."
+   }
+  ]
+ },
+ "kleinur": {
+  "nom": "Kleinur",
+  "description": "Iceland's twisted doughnuts, served with coffee for centuries. Their knot shape is not ornamental: the twist is what makes them cook evenly in the oil without puffing into a ball.",
+  "etapes": [
+   {
+    "titre": "FRESHLY ground cardamom, not shop powder",
+    "detail": "The Nordic spice par excellence: ground six months ago, it has no aroma left at all."
+   },
+   {
+    "titre": "BAKING powder, not baker's yeast",
+    "detail": "A kleina does not rise: it puffs in the fryer. A yeasted dough would give an ordinary doughnut."
+   },
+   {
+    "titre": "Thirty minutes' rest in the COLD",
+    "detail": "The dough must firm up to be cut cleanly: soft, the diamonds deform as you twist them."
+   },
+   {
+    "titre": "Cut into diamonds, a slit in the CENTRE",
+    "detail": "A three-centimetre cut in the middle: that is where you push a corner through to twist."
+   },
+   {
+    "titre": "Push a corner through the slit, pull",
+    "detail": "The Icelandic gesture: a single movement. Twisted twice, the kleina unravels in the oil."
+   },
+   {
+    "titre": "Oil at 180 °C, never less",
+    "detail": "Below that, the dough absorbs oil and the doughnut turns heavy and greasy instead of staying dry."
+   },
+   {
+    "titre": "Turn ONCE only",
+    "detail": "They cook two minutes per side. Turned constantly, they soak up oil and lose their colour."
+   },
+   {
+    "titre": "No icing sugar, no glaze",
+    "detail": "This is a deliberately unsweet doughnut, made to go with black coffee. Sweetening it misses the point."
+   }
+  ]
+ },
+ "kleicha": {
+  "nom": "Kleicha",
+  "description": "Iraq's national biscuit, made for Eid and for Christmas depending on the family. Its dough contains NIGELLA and fennel, savoury spices unexpected in a sweet — and that is what stops it being merely sugary.",
+  "etapes": [
+   {
+    "titre": "Nigella AND fennel in the DOUGH",
+    "detail": "They are what make a kleicha: without those two spices you have an ordinary date biscuit."
+   },
+   {
+    "titre": "Plenty of butter, a very short dough",
+    "detail": "Kleicha must crumble. A supple dough gives a soft cake, which misses the point entirely."
+   },
+   {
+    "titre": "Soften the dates over a bain-marie, not in the microwave",
+    "detail": "The microwave dries them out in patches; over water they become a smooth paste."
+   },
+   {
+    "titre": "Rose water in the FILLING, a few drops",
+    "detail": "Three or four: it is a background perfume. Beyond that the kleicha tastes of soap."
+   },
+   {
+    "titre": "Roll tight, then cut on the bias",
+    "detail": "Like a log of pastry: the diagonal cut shows the date spiral, which is the expected look."
+   },
+   {
+    "titre": "Egg wash with yolk AND milk, not yolk alone",
+    "detail": "Pure yolk browns too fast; loosened with milk it gives an even blond colour."
+   },
+   {
+    "titre": "MODERATE oven, 170 °C, no deep colour",
+    "detail": "Kleicha must stay pale: browned, it turns dry and the butter tastes overcooked."
+   },
+   {
+    "titre": "Cool completely before tasting",
+    "detail": "Warm, it falls apart in crumbs. Cold, it holds and its sandy texture really appears."
+   }
+  ]
+ },
+ "quzi": {
+  "nom": "Quzi",
+  "description": "Iraq's dish for great occasions: a whole lamb or a shoulder, cooked until collapsing, set on a mountain of rice with almonds and raisins. It is served at the centre of the table and everyone helps themselves by hand.",
+  "etapes": [
+   {
+    "titre": "A shoulder ON the bone, never boned",
+    "detail": "The bone gives the gelatine that makes the broth, and that broth is what cooks the rice."
+   },
+   {
+    "titre": "A fresh baharat blend, ground to order",
+    "detail": "Cinnamon, cardamom, nutmeg, clove: ground in advance, they taste only of dust."
+   },
+   {
+    "titre": "Three hours covered, at 150 °C",
+    "detail": "The lamb must fall off the fork. At two hours it resists and the dish misses its effect."
+   },
+   {
+    "titre": "Cook the rice IN the lamb broth",
+    "detail": "Skimmed but kept: in plain water, quzi rice has no flavour and the dish falls apart."
+   },
+   {
+    "titre": "Almonds and raisins fried SEPARATELY in butter",
+    "detail": "Two minutes each: in the rice from the start, the almonds soften and the raisins burn."
+   },
+   {
+    "titre": "Blast the lamb in a HOT oven at the end",
+    "detail": "Ten minutes at 220 °C, uncovered: that is what gives the golden crust on already melting meat."
+   },
+   {
+    "titre": "Build a DOME, lamb set on top",
+    "detail": "Rice first, packed into a mountain, then the meat: it is a dish of presentation before it is a dish."
+   },
+   {
+    "titre": "Almonds and raisins SCATTERED over the top",
+    "detail": "At the last moment: stirred into the rice, they vanish and the dome loses its decoration."
+   }
+  ]
+ },
+ "kugelis": {
+  "nom": "Kugelis",
+  "description": "Lithuania's grated potato bake, dense and deeply browned, served with sour cream and bacon. Its difficulty comes down to one thing: stopping the grated potatoes turning BLACK between the grater and the oven.",
+  "etapes": [
+   {
+    "titre": "Grate FINE, by hand not by processor",
+    "detail": "A processor cuts and makes water; a grater tears the fibres and releases the starch that binds a kugelis."
+   },
+   {
+    "titre": "Grate FAST and keep going without pausing",
+    "detail": "Grated potato blackens within ten minutes: everything must be ready before you start."
+   },
+   {
+    "titre": "HOT milk poured over the grated potato",
+    "detail": "The Lithuanian gesture: it scalds the starch, fixes the colour and stops the oxidation."
+   },
+   {
+    "titre": "Bacon rendered, the FAT poured into the mix",
+    "detail": "It is what gives the flavour. Drained off, the kugelis turns dry and bland."
+   },
+   {
+    "titre": "Onion grated, not chopped",
+    "detail": "Grated, it melts completely and perfumes the mass; chopped, it stays in pieces that weep water."
+   },
+   {
+    "titre": "A preheated, greased cast iron dish",
+    "detail": "The mixture must sizzle as it goes in: that is what forms the crust underneath."
+   },
+   {
+    "titre": "An hour and a quarter at 180 °C, uncovered",
+    "detail": "The top must be dark brown, almost black at the edges. Pale, the kugelis is raw in the middle."
+   },
+   {
+    "titre": "Rest twenty minutes before cutting",
+    "detail": "Hot, it collapses under the slice. Warm, it cuts into clean portions that stand up."
+   }
+  ]
+ },
+ "damper": {
+  "nom": "Damper",
+  "description": "The bread of Australia's itinerant drovers, baked in the ashes of the campfire. No yeast, no kneading: four ingredients and one absolute rule, never work the dough, on pain of producing a brick.",
+  "etapes": [
+   {
+    "titre": "Do NOT knead, mix for ten seconds",
+    "detail": "That is damper's single rule: developed gluten makes it hard as stone."
+   },
+   {
+    "titre": "COLD butter rubbed in with fingertips",
+    "detail": "As for scones: the pieces of butter create steam pockets and lighten the crumb."
+   },
+   {
+    "titre": "Milk added all at once, not gradually",
+    "detail": "Bring it roughly together, leaving the dough uneven. A smooth dough is an overworked dough."
+   },
+   {
+    "titre": "Form a ball without rolling it",
+    "detail": "Set it down and flatten it slightly. Rolled, it tightens and will not rise in the oven."
+   },
+   {
+    "titre": "A deep cross slashed on top",
+    "detail": "A third of the way down: that is what lets the steam out without bursting the sides."
+   },
+   {
+    "titre": "Flour generously before baking",
+    "detail": "The floured, cracked crust is the expected look: smooth and golden, it is no longer a damper."
+   },
+   {
+    "titre": "Very hot oven to start, 220 °C",
+    "detail": "Then 190 °C: the initial shock lifts the baking powder in one go, the only rise it will get."
+   },
+   {
+    "titre": "Eaten WARM, with butter and golden syrup",
+    "detail": "That is the bush tradition. Cold, it hardens fast: damper does not keep until the next day."
+   }
+  ]
+ },
+ "fairybread": {
+  "nom": "Fairy Bread",
+  "description": "The Australian birthday treat since the 1920s: buttered white bread covered in hundreds and thousands, cut into triangles. Three ingredients, no cooking — and yet a dish of identity that no child's birthday omits.",
+  "etapes": [
+   {
+    "titre": "WHITE sliced bread, never wholemeal",
+    "detail": "This is a children's treat: wholemeal brings a bitterness that has no business here."
+   },
+   {
+    "titre": "Very SOFT butter, spread thickly",
+    "detail": "It is the glue: too thin and the sprinkles will not hold and fall onto the plate."
+   },
+   {
+    "titre": "Round sprinkles, not flat flakes",
+    "detail": "In Australia these are hundreds and thousands: flat flakes melt and bleed their colours."
+   },
+   {
+    "titre": "TURN the bread onto the sprinkles",
+    "detail": "You press the buttered bread into a plate of sprinkles: the only way to get complete coverage."
+   },
+   {
+    "titre": "Cut into TRIANGLES, never squares",
+    "detail": "That is the traditional format. In squares they are sandwiches; in triangles it is fairy bread."
+   },
+   {
+    "titre": "Cut off the crusts before slicing",
+    "detail": "Another unwritten rule of the Australian party, and practically: crust holds butter badly."
+   },
+   {
+    "titre": "Made in the MINUTES beforehand",
+    "detail": "The butter absorbs the colour of the sprinkles: after an hour the bread turns greyish purple."
+   }
+  ]
+ },
+ "whitebaitfritters": {
+  "nom": "Whitebait Fritters",
+  "description": "New Zealand's most expensive delicacy, fished for six weeks a year on the West Coast. The rule is absolute: as little batter as possible — just enough egg to hold the tiny fish together, and certainly no flour.",
+  "etapes": [
+   {
+    "titre": "EGG, and nothing else as a binder",
+    "detail": "No flour, no milk: that is the New Zealand rule. Flour would smother the very delicate flavour."
+   },
+   {
+    "titre": "One egg per hundred grams of fish, no more",
+    "detail": "The whitebait must dominate visually: you should see the little fish in the fritter, not an omelette."
+   },
+   {
+    "titre": "VERY cold fish, taken out at the last moment",
+    "detail": "It breaks down at room temperature and the fritter turns into grey mush."
+   },
+   {
+    "titre": "Mix with a fork, two turns",
+    "detail": "Beaten, the egg foams and the fritter puffs like an omelette instead of staying thin and flat."
+   },
+   {
+    "titre": "Cook in BUTTER, never oil",
+    "detail": "Beurre noisette is the classic pairing. In oil, the fritter tastes only of frying."
+   },
+   {
+    "titre": "A properly hot pan, one minute per side",
+    "detail": "Overcooked, the flesh turns floury. It must stay pearly in the centre."
+   },
+   {
+    "titre": "Plenty of lemon, at the table",
+    "detail": "The only seasoning permitted. Any sauce would cover a flavour you have paid dearly for."
+   }
+  ]
+ },
+ "beavertails": {
+  "nom": "BeaverTails",
+  "description": "The flat doughnuts sold on Ottawa's frozen Rideau Canal, hand-stretched into a beaver tail shape. The dough is STRETCHED, not rolled: that is what gives the irregular edges and the characteristic bubbles.",
+  "etapes": [
+   {
+    "titre": "A RICH enriched dough, egg and butter",
+    "detail": "This is not an ordinary doughnut dough: it is almost a brioche, and that is what gives the softness."
+   },
+   {
+    "titre": "A full rise, until doubled",
+    "detail": "An hour and a half in the warm. Under-risen, the dough stays dense and soaks up oil in the fryer."
+   },
+   {
+    "titre": "STRETCH by hand, never with a pin",
+    "detail": "You pull the dough into a twenty-centimetre oval: a rolling pin drives out the gas and gives a flat, hard doughnut."
+   },
+   {
+    "titre": "Leave the edges IRREGULAR",
+    "detail": "That is the intended shape: a beaver tail is nothing like regular, and the thin edges turn crisp."
+   },
+   {
+    "titre": "Oil at 180 °C, checked with a thermometer",
+    "detail": "Below that the dough soaks; above it, it browns before the centre cooks."
+   },
+   {
+    "titre": "One minute per side, no more",
+    "detail": "The dough is thin: beyond that the doughnut turns dry and brittle instead of staying supple."
+   },
+   {
+    "titre": "Cinnamon sugar on the SCALDING doughnut",
+    "detail": "Still greasy, it grips the sugar. Cooled for thirty seconds, the mixture slides off."
+   },
+   {
+    "titre": "A squeeze of lemon, the Ottawa finish",
+    "detail": "The classic is called a Killaloe Sunrise: sugar, cinnamon and lemon. The acidity cuts the fat."
+   }
+  ]
  }
 
 };

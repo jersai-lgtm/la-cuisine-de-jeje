@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_healthy.js — Recettes de catégorie "healthy" (Healthy) — 27 recettes
+// recettes_healthy.js — Recettes de catégorie "healthy" (Healthy) — 29 recettes
 // 👉 Pour AJOUTER une recette Healthy : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -2379,5 +2379,81 @@ Object.assign(recettes, {
       { icone: "🔪", titre: "Préparer les toppings", detail: "Émincer finement l'oignon rouge, couper l'avocat en lamelles et les tomates cerises en deux, laver les jeunes épinards et égoutter le maïs.", badge: null },
       { icone: "🍚", titre: "Dresser & servir", detail: "Répartir les pommes de terre rôties au fond des bols, disposer les épinards, l'avocat, le maïs, les tomates et l'oignon rouge. Ajouter l'œuf mollet coupé en deux, napper de sauce yaourt-citron et servir aussitôt.", badge: null }
     ]
+  },
+  okayu: {
+    dateAjout: "2026-08-31T19:08:00",
+    nom: "Okayu",
+    cat: "healthy", saisons: ["hiver"], pays: "japon",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🍚",
+    description: "Le riz réconfortant japonais, servi aux malades et aux convalescents — l'équivalent de notre bouillon de poule. Il se cuit à partir de riz CRU, jamais de restes : c'est l'amidon libéré lentement qui donne sa texture soyeuse.",
+    tableauOkayu: [
+      { nb: 1, riz: "40 g", eau: "280 ml", umeboshi: "8 g", ciboule: "6 g", gingembre: "3 g", sel: "1 g", sesame: "2 g" },
+      { nb: 2, riz: "80 g", eau: "560 ml", umeboshi: "16 g", ciboule: "12 g", gingembre: "6 g", sel: "2 g", sesame: "4 g" },
+      { nb: 3, riz: "120 g", eau: "840 ml", umeboshi: "24 g", ciboule: "18 g", gingembre: "9 g", sel: "3 g", sesame: "6 g" },
+      { nb: 4, riz: "160 g", eau: "1120 ml", umeboshi: "32 g", ciboule: "24 g", gingembre: "12 g", sel: "4 g", sesame: "8 g" },
+      { nb: 5, riz: "200 g", eau: "1400 ml", umeboshi: "40 g", ciboule: "30 g", gingembre: "15 g", sel: "5 g", sesame: "10 g" },
+      { nb: 6, riz: "240 g", eau: "1680 ml", umeboshi: "48 g", ciboule: "36 g", gingembre: "18 g", sel: "6 g", sesame: "12 g" },
+      { nb: 7, riz: "280 g", eau: "1960 ml", umeboshi: "56 g", ciboule: "42 g", gingembre: "21 g", sel: "7 g", sesame: "14 g" },
+      { nb: 8, riz: "320 g", eau: "2240 ml", umeboshi: "64 g", ciboule: "48 g", gingembre: "24 g", sel: "8 g", sesame: "16 g" },
+      { nb: 9, riz: "360 g", eau: "2520 ml", umeboshi: "72 g", ciboule: "54 g", gingembre: "27 g", sel: "9 g", sesame: "18 g" },
+      { nb: 10, riz: "400 g", eau: "2800 ml", umeboshi: "80 g", ciboule: "60 g", gingembre: "30 g", sel: "10 g", sesame: "20 g" },
+      { nb: 11, riz: "440 g", eau: "3080 ml", umeboshi: "88 g", ciboule: "66 g", gingembre: "33 g", sel: "11 g", sesame: "22 g" },
+      { nb: 12, riz: "480 g", eau: "3360 ml", umeboshi: "96 g", ciboule: "72 g", gingembre: "36 g", sel: "12 g", sesame: "24 g" },
+      { nb: 13, riz: "520 g", eau: "3640 ml", umeboshi: "104 g", ciboule: "78 g", gingembre: "39 g", sel: "13 g", sesame: "26 g" },
+      { nb: 14, riz: "560 g", eau: "3920 ml", umeboshi: "112 g", ciboule: "84 g", gingembre: "42 g", sel: "14 g", sesame: "28 g" },
+      { nb: 15, riz: "600 g", eau: "4200 ml", umeboshi: "120 g", ciboule: "90 g", gingembre: "45 g", sel: "15 g", sesame: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Du riz CRU, jamais du riz déjà cuit", detail: "Le riz cuit se délite en bouillie sans libérer d'amidon : on obtient une soupe granuleuse, pas un okayu.", badge: null },
+      { icone: "💧", titre: "Sept parts d'eau pour une de riz", detail: "C'est le ratio classique. Moins d'eau donne un risotto ; plus, une soupe claire sans corps.", badge: null },
+      { icone: "🍳", titre: "Une casserole LOURDE, à fond épais", detail: "L'okayu attache très facilement : dans une casserole fine, le fond brûle avant que le riz s'ouvre.", badge: null },
+      { icone: "🚫", titre: "NE PAS remuer pendant la cuisson", detail: "C'est contre-intuitif : remué, le riz casse et l'okayu devient collant. On le laisse tranquille.", badge: null },
+      { icone: "♨️", titre: "Un frémissement à peine visible, couvercle entrouvert", detail: "À gros bouillons, ça déborde en trois minutes et le riz se désagrège.", badge: null },
+      { icone: "🍑", titre: "Une umeboshi par bol, posée au centre", detail: "Sa salinité extrême réveille un plat volontairement très doux : c'est l'accord traditionnel.", badge: null },
+      { icone: "🧂", titre: "Saler très peu, presque pas", detail: "L'okayu doit rester neutre : ce sont les garnitures qui apportent le sel, bouchée par bouchée.", badge: null }
+    ],
+    liees: ["congee","soupemiso","onigiri"]
+  },
+  foulmedames: {
+    dateAjout: "2026-08-31T19:09:00",
+    nom: "Foul Medames",
+    cat: "healthy", pays: "egypte",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "Le petit-déjeuner national égyptien, vendu au chaudron dans la rue depuis l'Antiquité — on en a retrouvé dans des tombes pharaoniques. Les fèves sont écrasées À MOITIÉ seulement : la moitié entière donne la mâche, la moitié écrasée donne la liaison.",
+    tableauFoulmedames: [
+      { nb: 1, feves: "110 g", ail: "1", citron: "½", cumin: "1.5 g", huileolive: "15 ml", persil: "6 g", tomate: "40 g", oignon: "¼" },
+      { nb: 2, feves: "220 g", ail: "2", citron: "1", cumin: "3 g", huileolive: "30 ml", persil: "12 g", tomate: "80 g", oignon: "½" },
+      { nb: 3, feves: "330 g", ail: "3", citron: "1½", cumin: "4.5 g", huileolive: "45 ml", persil: "18 g", tomate: "120 g", oignon: "¾" },
+      { nb: 4, feves: "440 g", ail: "4", citron: "2", cumin: "6 g", huileolive: "60 ml", persil: "24 g", tomate: "160 g", oignon: "1" },
+      { nb: 5, feves: "550 g", ail: "5", citron: "2½", cumin: "7.5 g", huileolive: "75 ml", persil: "30 g", tomate: "200 g", oignon: "1¼" },
+      { nb: 6, feves: "660 g", ail: "6", citron: "3", cumin: "9 g", huileolive: "90 ml", persil: "36 g", tomate: "240 g", oignon: "1½" },
+      { nb: 7, feves: "770 g", ail: "7", citron: "3½", cumin: "10.5 g", huileolive: "105 ml", persil: "42 g", tomate: "280 g", oignon: "1¾" },
+      { nb: 8, feves: "880 g", ail: "8", citron: "4", cumin: "12 g", huileolive: "120 ml", persil: "48 g", tomate: "320 g", oignon: "2" },
+      { nb: 9, feves: "990 g", ail: "9", citron: "4½", cumin: "13.5 g", huileolive: "135 ml", persil: "54 g", tomate: "360 g", oignon: "2¼" },
+      { nb: 10, feves: "1100 g", ail: "10", citron: "5", cumin: "15 g", huileolive: "150 ml", persil: "60 g", tomate: "400 g", oignon: "2½" },
+      { nb: 11, feves: "1210 g", ail: "11", citron: "5½", cumin: "16.5 g", huileolive: "165 ml", persil: "66 g", tomate: "440 g", oignon: "2¾" },
+      { nb: 12, feves: "1320 g", ail: "12", citron: "6", cumin: "18 g", huileolive: "180 ml", persil: "72 g", tomate: "480 g", oignon: "3" },
+      { nb: 13, feves: "1430 g", ail: "13", citron: "6½", cumin: "19.5 g", huileolive: "195 ml", persil: "78 g", tomate: "520 g", oignon: "3¼" },
+      { nb: 14, feves: "1540 g", ail: "14", citron: "7", cumin: "21 g", huileolive: "210 ml", persil: "84 g", tomate: "560 g", oignon: "3½" },
+      { nb: 15, feves: "1650 g", ail: "15", citron: "7½", cumin: "22.5 g", huileolive: "225 ml", persil: "90 g", tomate: "600 g", oignon: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Des fèves BRUNES égyptiennes, pas des fèves fraîches", detail: "Les ful hammam, petites et brunes. Les fèves vertes fraîches donnent une purée sucrée sans rapport.", badge: null },
+      { icone: "⏳", titre: "Douze heures de trempage, puis cuisson longue", detail: "Ou une conserve de bonne qualité : c'est le seul raccourci acceptable pour un petit-déjeuner.", badge: null },
+      { icone: "🥄", titre: "Écraser LA MOITIÉ, laisser l'autre entière", detail: "C'est toute la texture du foul : entièrement écrasé, c'est un houmous ; entier, c'est une salade de fèves.", badge: null },
+      { icone: "🍳", titre: "Cumin torréfié à sec, puis moulu", detail: "L'épice dominante du plat : crue, elle est terreuse ; torréfiée, elle devient chaude et ronde.", badge: null },
+      { icone: "🍋", titre: "Beaucoup de citron, plus qu'on ne croit", detail: "La fève est très terreuse : sans acidité franche, le plat reste lourd et pâteux.", badge: null },
+      { icone: "🫒", titre: "Un puits d'huile d'olive au centre du bol", detail: "C'est le service traditionnel : chacun mélange son huile, la quantité est personnelle.", badge: null },
+      { icone: "🌡️", titre: "Servi TIÈDE, jamais brûlant ni froid", detail: "Brûlant, la fève est farineuse ; froid, l'huile fige. Le foul se sert autour de 45 °C.", badge: null }
+    ],
+    liees: ["houmous","falafel","tapenade"]
   },
 });

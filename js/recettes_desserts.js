@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 76 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 79 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -18028,5 +18028,122 @@ Object.assign(recettes, {
       { icone: "⏳", titre: "Démouler TIÈDE, jamais chaud ni froid", detail: "Chaud, le fond se casse ; froid, le sirop a collé au moule. La fenêtre est de dix minutes.", badge: null }
     ],
     liees: ["browniepecan","tarteausucre","cinnamonroll"]
+  },
+  imqaret: {
+    dateAjout: "2026-08-31T20:01:00",
+    nom: "Imqaret",
+    cat: "desserts", pays: "malte",
+    base: 10,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🔶",
+    description: "Les losanges frits aux dattes vendus dans la rue à La Valette, notamment devant la porte de la ville. Leur nom vient de l'arabe maqrūṭ, « en forme de losange » — et la découpe en biais n'est pas décorative, c'est le nom même du gâteau.",
+    tableauImqaret: [
+      { nb: 1, dattes: "45 g", semoule: "30 g", farine: "20 g", beurre: "15 g", eauFleurOranger: "4 ml", anis: "0.5 g", zestecitron: "1 g", huilefriture: "15 ml", sucre: "6 g" },
+      { nb: 2, dattes: "90 g", semoule: "60 g", farine: "40 g", beurre: "30 g", eauFleurOranger: "8 ml", anis: "1 g", zestecitron: "2 g", huilefriture: "30 ml", sucre: "12 g" },
+      { nb: 3, dattes: "135 g", semoule: "90 g", farine: "60 g", beurre: "45 g", eauFleurOranger: "12 ml", anis: "1.5 g", zestecitron: "3 g", huilefriture: "45 ml", sucre: "18 g" },
+      { nb: 4, dattes: "180 g", semoule: "120 g", farine: "80 g", beurre: "60 g", eauFleurOranger: "16 ml", anis: "2 g", zestecitron: "4 g", huilefriture: "60 ml", sucre: "24 g" },
+      { nb: 5, dattes: "225 g", semoule: "150 g", farine: "100 g", beurre: "75 g", eauFleurOranger: "20 ml", anis: "2.5 g", zestecitron: "5 g", huilefriture: "75 ml", sucre: "30 g" },
+      { nb: 6, dattes: "270 g", semoule: "180 g", farine: "120 g", beurre: "90 g", eauFleurOranger: "24 ml", anis: "3 g", zestecitron: "6 g", huilefriture: "90 ml", sucre: "36 g" },
+      { nb: 7, dattes: "315 g", semoule: "210 g", farine: "140 g", beurre: "105 g", eauFleurOranger: "28 ml", anis: "3.5 g", zestecitron: "7 g", huilefriture: "105 ml", sucre: "42 g" },
+      { nb: 8, dattes: "360 g", semoule: "240 g", farine: "160 g", beurre: "120 g", eauFleurOranger: "32 ml", anis: "4 g", zestecitron: "8 g", huilefriture: "120 ml", sucre: "48 g" },
+      { nb: 9, dattes: "405 g", semoule: "270 g", farine: "180 g", beurre: "135 g", eauFleurOranger: "36 ml", anis: "4.5 g", zestecitron: "9 g", huilefriture: "135 ml", sucre: "54 g" },
+      { nb: 10, dattes: "450 g", semoule: "300 g", farine: "200 g", beurre: "150 g", eauFleurOranger: "40 ml", anis: "5 g", zestecitron: "10 g", huilefriture: "150 ml", sucre: "60 g" },
+      { nb: 11, dattes: "495 g", semoule: "330 g", farine: "220 g", beurre: "165 g", eauFleurOranger: "44 ml", anis: "5.5 g", zestecitron: "11 g", huilefriture: "165 ml", sucre: "66 g" },
+      { nb: 12, dattes: "540 g", semoule: "360 g", farine: "240 g", beurre: "180 g", eauFleurOranger: "48 ml", anis: "6 g", zestecitron: "12 g", huilefriture: "180 ml", sucre: "72 g" },
+      { nb: 13, dattes: "585 g", semoule: "390 g", farine: "260 g", beurre: "195 g", eauFleurOranger: "52 ml", anis: "6.5 g", zestecitron: "13 g", huilefriture: "195 ml", sucre: "78 g" },
+      { nb: 14, dattes: "630 g", semoule: "420 g", farine: "280 g", beurre: "210 g", eauFleurOranger: "56 ml", anis: "7 g", zestecitron: "14 g", huilefriture: "210 ml", sucre: "84 g" },
+      { nb: 15, dattes: "675 g", semoule: "450 g", farine: "300 g", beurre: "225 g", eauFleurOranger: "60 ml", anis: "7.5 g", zestecitron: "15 g", huilefriture: "225 ml", sucre: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Une pâte à la SEMOULE, pas seulement à la farine", detail: "C'est ce qui donne le croquant sableux caractéristique. Toute farine donnerait un chausson mou.", badge: null },
+      { icone: "🌡️", titre: "Beurre FROID sablé du bout des doigts", detail: "Comme une pâte brisée : fondu, il rend la pâte élastique et l'imqaret devient caoutchouteux.", badge: null },
+      { icone: "🫘", titre: "Une pâte de dattes cuite, puis REFROIDIE", detail: "Chaude, elle fait fondre le beurre de la pâte et la farce transperce à la friture.", badge: null },
+      { icone: "🍊", titre: "Eau de fleur d'oranger et anis dans la FARCE", detail: "Pas dans la pâte : c'est la datte qui doit être parfumée, la pâte reste neutre.", badge: null },
+      { icone: "📐", titre: "Découper en LOSANGES, jamais en carrés", detail: "C'est le nom du gâteau. La coupe en biais donne aussi des bords qui dorent mieux.", badge: null },
+      { icone: "🌡️", titre: "Friture à 170 °C, pas plus", detail: "Plus chaud, la pâte dore avant que la farce chauffe ; plus froid, elle boit l'huile.", badge: null },
+      { icone: "🍯", titre: "Tremper TIÈDE dans un sirop léger", detail: "Trente secondes seulement : plus longtemps, l'imqaret se détrempe et perd tout son croquant.", badge: null },
+      { icone: "📄", titre: "Égoutter debout, sur la tranche", detail: "À plat, le sirop stagne d'un côté et le dessous ramollit en cinq minutes.", badge: null }
+    ],
+    liees: ["makrout","baklava","kleicha"]
+  },
+  kleicha: {
+    dateAjout: "2026-08-31T20:03:00",
+    nom: "Kleicha",
+    cat: "desserts", pays: "irak",
+    base: 12,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌹",
+    description: "Le biscuit national irakien, préparé pour l'Aïd et pour Noël selon les familles. Sa pâte contient de la NIGELLE et du fenouil, épices salées inattendues dans un gâteau — c'est ce qui l'empêche d'être seulement sucré.",
+    tableauKleicha: [
+      { nb: 1, farine: "45 g", dattes: "35 g", beurre: "18 g", cardamome: "0.6 g", nigelle: "0.5 g", fenouil: "0.4 g", eaurose: "4 ml", jaunedoeuf: "¼", sesame: "2 g", lait: "12 ml" },
+      { nb: 2, farine: "90 g", dattes: "70 g", beurre: "36 g", cardamome: "1.2 g", nigelle: "1 g", fenouil: "0.8 g", eaurose: "8 ml", jaunedoeuf: "½", sesame: "4 g", lait: "24 ml" },
+      { nb: 3, farine: "135 g", dattes: "105 g", beurre: "54 g", cardamome: "1.8 g", nigelle: "1.5 g", fenouil: "1.2 g", eaurose: "12 ml", jaunedoeuf: "¾", sesame: "6 g", lait: "36 ml" },
+      { nb: 4, farine: "180 g", dattes: "140 g", beurre: "72 g", cardamome: "2.4 g", nigelle: "2 g", fenouil: "1.6 g", eaurose: "16 ml", jaunedoeuf: "1", sesame: "8 g", lait: "48 ml" },
+      { nb: 5, farine: "225 g", dattes: "175 g", beurre: "90 g", cardamome: "3 g", nigelle: "2.5 g", fenouil: "2 g", eaurose: "20 ml", jaunedoeuf: "1¼", sesame: "10 g", lait: "60 ml" },
+      { nb: 6, farine: "270 g", dattes: "210 g", beurre: "108 g", cardamome: "3.6 g", nigelle: "3 g", fenouil: "2.4 g", eaurose: "24 ml", jaunedoeuf: "1½", sesame: "12 g", lait: "72 ml" },
+      { nb: 7, farine: "315 g", dattes: "245 g", beurre: "126 g", cardamome: "4.2 g", nigelle: "3.5 g", fenouil: "2.8 g", eaurose: "28 ml", jaunedoeuf: "1¾", sesame: "14 g", lait: "84 ml" },
+      { nb: 8, farine: "360 g", dattes: "280 g", beurre: "144 g", cardamome: "4.8 g", nigelle: "4 g", fenouil: "3.2 g", eaurose: "32 ml", jaunedoeuf: "2", sesame: "16 g", lait: "96 ml" },
+      { nb: 9, farine: "405 g", dattes: "315 g", beurre: "162 g", cardamome: "5.4 g", nigelle: "4.5 g", fenouil: "3.6 g", eaurose: "36 ml", jaunedoeuf: "2¼", sesame: "18 g", lait: "108 ml" },
+      { nb: 10, farine: "450 g", dattes: "350 g", beurre: "180 g", cardamome: "6 g", nigelle: "5 g", fenouil: "4 g", eaurose: "40 ml", jaunedoeuf: "2½", sesame: "20 g", lait: "120 ml" },
+      { nb: 11, farine: "495 g", dattes: "385 g", beurre: "198 g", cardamome: "6.6 g", nigelle: "5.5 g", fenouil: "4.4 g", eaurose: "44 ml", jaunedoeuf: "2¾", sesame: "22 g", lait: "132 ml" },
+      { nb: 12, farine: "540 g", dattes: "420 g", beurre: "216 g", cardamome: "7.2 g", nigelle: "6 g", fenouil: "4.8 g", eaurose: "48 ml", jaunedoeuf: "3", sesame: "24 g", lait: "144 ml" },
+      { nb: 13, farine: "585 g", dattes: "455 g", beurre: "234 g", cardamome: "7.8 g", nigelle: "6.5 g", fenouil: "5.2 g", eaurose: "52 ml", jaunedoeuf: "3¼", sesame: "26 g", lait: "156 ml" },
+      { nb: 14, farine: "630 g", dattes: "490 g", beurre: "252 g", cardamome: "8.4 g", nigelle: "7 g", fenouil: "5.6 g", eaurose: "56 ml", jaunedoeuf: "3½", sesame: "28 g", lait: "168 ml" },
+      { nb: 15, farine: "675 g", dattes: "525 g", beurre: "270 g", cardamome: "9 g", nigelle: "7.5 g", fenouil: "6 g", eaurose: "60 ml", jaunedoeuf: "3¾", sesame: "30 g", lait: "180 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Nigelle ET fenouil dans la PÂTE", detail: "Ce sont elles qui font la kleicha : sans ces deux épices, on obtient un biscuit aux dattes ordinaire.", badge: null },
+      { icone: "🧈", titre: "Beaucoup de beurre, pâte très sablée", detail: "La kleicha doit s'effriter. Une pâte souple donne un gâteau moelleux, ce qui est un contresens.", badge: null },
+      { icone: "🫘", titre: "Ramollir les dattes au bain-marie, pas au micro-ondes", detail: "Le micro-ondes les dessèche par endroits ; au bain-marie elles deviennent une pâte homogène.", badge: null },
+      { icone: "🌹", titre: "L'eau de rose dans la FARCE, quelques gouttes", detail: "Trois ou quatre : c'est un parfum de fond. Au-delà, la kleicha a un goût de savon.", badge: null },
+      { icone: "🌀", titre: "Rouler serré, puis couper en biseau", detail: "Comme un boudin de pâte : la coupe en biais montre la spirale de dattes, c'est le visuel attendu.", badge: null },
+      { icone: "🥚", titre: "Dorure au jaune ET au lait, pas au jaune seul", detail: "Le jaune pur brunit trop vite ; allongé au lait, il donne une dorure blonde et régulière.", badge: null },
+      { icone: "🌡️", titre: "Four MODÉRÉ, 170 °C, sans coloration forte", detail: "La kleicha doit rester pâle : dorée foncé, elle devient sèche et le beurre a un goût de cuit.", badge: null },
+      { icone: "⏳", titre: "Refroidir complètement avant de goûter", detail: "Chaude, elle s'effrite en miettes. Froide, elle tient et sa texture sableuse apparaît vraiment.", badge: null }
+    ],
+    liees: ["makrout","imqaret","nankhatai"]
+  },
+  beavertails: {
+    dateAjout: "2026-08-31T20:09:00",
+    nom: "Beavertails",
+    cat: "desserts", saisons: ["hiver"], pays: "canada",
+    base: 8,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦫",
+    description: "Les beignets plats vendus sur le canal Rideau gelé d'Ottawa, étirés à la main en forme de queue de castor. La pâte est ÉTIRÉE et non abaissée au rouleau : c'est ce qui donne les bords irréguliers et les bulles caractéristiques.",
+    tableauBeavertails: [
+      { nb: 1, farine: "50 g", lait: "28 ml", levureboulangere: "1.5 g", oeufs: "¼", beurre: "10 g", sucre: "8 g", cannelle: "1.5 g", huilefriture: "20 ml", citron: "¼" },
+      { nb: 2, farine: "100 g", lait: "56 ml", levureboulangere: "3 g", oeufs: "½", beurre: "20 g", sucre: "16 g", cannelle: "3 g", huilefriture: "40 ml", citron: "½" },
+      { nb: 3, farine: "150 g", lait: "84 ml", levureboulangere: "4.5 g", oeufs: "¾", beurre: "30 g", sucre: "24 g", cannelle: "4.5 g", huilefriture: "60 ml", citron: "¾" },
+      { nb: 4, farine: "200 g", lait: "112 ml", levureboulangere: "6 g", oeufs: "1", beurre: "40 g", sucre: "32 g", cannelle: "6 g", huilefriture: "80 ml", citron: "1" },
+      { nb: 5, farine: "250 g", lait: "140 ml", levureboulangere: "7.5 g", oeufs: "1¼", beurre: "50 g", sucre: "40 g", cannelle: "7.5 g", huilefriture: "100 ml", citron: "1¼" },
+      { nb: 6, farine: "300 g", lait: "168 ml", levureboulangere: "9 g", oeufs: "1½", beurre: "60 g", sucre: "48 g", cannelle: "9 g", huilefriture: "120 ml", citron: "1½" },
+      { nb: 7, farine: "350 g", lait: "196 ml", levureboulangere: "10.5 g", oeufs: "1¾", beurre: "70 g", sucre: "56 g", cannelle: "10.5 g", huilefriture: "140 ml", citron: "1¾" },
+      { nb: 8, farine: "400 g", lait: "224 ml", levureboulangere: "12 g", oeufs: "2", beurre: "80 g", sucre: "64 g", cannelle: "12 g", huilefriture: "160 ml", citron: "2" },
+      { nb: 9, farine: "450 g", lait: "252 ml", levureboulangere: "13.5 g", oeufs: "2¼", beurre: "90 g", sucre: "72 g", cannelle: "13.5 g", huilefriture: "180 ml", citron: "2¼" },
+      { nb: 10, farine: "500 g", lait: "280 ml", levureboulangere: "15 g", oeufs: "2½", beurre: "100 g", sucre: "80 g", cannelle: "15 g", huilefriture: "200 ml", citron: "2½" },
+      { nb: 11, farine: "550 g", lait: "308 ml", levureboulangere: "16.5 g", oeufs: "2¾", beurre: "110 g", sucre: "88 g", cannelle: "16.5 g", huilefriture: "220 ml", citron: "2¾" },
+      { nb: 12, farine: "600 g", lait: "336 ml", levureboulangere: "18 g", oeufs: "3", beurre: "120 g", sucre: "96 g", cannelle: "18 g", huilefriture: "240 ml", citron: "3" },
+      { nb: 13, farine: "650 g", lait: "364 ml", levureboulangere: "19.5 g", oeufs: "3¼", beurre: "130 g", sucre: "104 g", cannelle: "19.5 g", huilefriture: "260 ml", citron: "3¼" },
+      { nb: 14, farine: "700 g", lait: "392 ml", levureboulangere: "21 g", oeufs: "3½", beurre: "140 g", sucre: "112 g", cannelle: "21 g", huilefriture: "280 ml", citron: "3½" },
+      { nb: 15, farine: "750 g", lait: "420 ml", levureboulangere: "22.5 g", oeufs: "3¾", beurre: "150 g", sucre: "120 g", cannelle: "22.5 g", huilefriture: "300 ml", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Une pâte levée RICHE, œuf et beurre", detail: "Ce n'est pas une pâte à beignet ordinaire : c'est presque une brioche, et c'est ce qui donne le moelleux.", badge: null },
+      { icone: "⏳", titre: "Une pousse complète, jusqu'au double", detail: "Une heure trente au chaud. Sous-levée, la pâte reste dense et absorbe l'huile à la friture.", badge: null },
+      { icone: "🤲", titre: "ÉTIRER à la main, jamais au rouleau", detail: "On tire la pâte en ovale de vingt centimètres : le rouleau chasse le gaz et donne un beignet plat et dur.", badge: null },
+      { icone: "🕳️", titre: "Laisser les bords IRRÉGULIERS", detail: "C'est la forme voulue : une queue de castor n'a rien de régulier, et les bords fins deviennent croustillants.", badge: null },
+      { icone: "🌡️", titre: "Huile à 180 °C, contrôlée au thermomètre", detail: "En dessous, la pâte s'imbibe ; au-dessus, elle brunit avant que le centre soit cuit.", badge: null },
+      { icone: "⏱️", titre: "Une minute par face, pas plus", detail: "La pâte est fine : au-delà, le beignet devient sec et cassant au lieu de rester souple.", badge: null },
+      { icone: "🍬", titre: "Sucre-cannelle sur le beignet BRÛLANT", detail: "Encore gras, il accroche le sucre. Refroidi trente secondes, le mélange glisse et tombe.", badge: null },
+      { icone: "🍋", titre: "Un trait de citron, la finition d'Ottawa", detail: "Le classique s'appelle Killaloe Sunrise : sucre, cannelle et citron. L'acidité coupe le gras.", badge: null }
+    ],
+    liees: ["beignetspomme","churros","kleinur"]
   },
 });

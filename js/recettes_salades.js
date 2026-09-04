@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_salades.js — Recettes de catégorie "salades" (Salades) — 26 recettes
+// recettes_salades.js — Recettes de catégorie "salades" (Salades) — 28 recettes
 // 👉 Pour AJOUTER une recette Salades : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3905,5 +3905,81 @@ Object.assign(recettes, {
       { icone: "🥬", titre: "Servir tiède, avec du chou cru", detail: "Jamais sortie du frigo : le nam tok se mange à température, avec des feuilles crues pour saisir la viande.", badge: null }
     ],
     liees: ["larb","somtam","saladeThai"]
+  },
+  saladecauchoise: {
+    dateAjout: "2026-08-31T19:06:00",
+    nom: "Salade Cauchoise",
+    cat: "salades", saisons: ["ete"], pays: "france",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "La salade du pays de Caux, en Normandie : pommes de terre tièdes, céleri branche et jambon, liés à la crème crue. Il n'y a ni mayonnaise ni vinaigre — c'est le vinaigre de cidre dans la crème qui fait toute la sauce.",
+    tableauSaladecauchoise: [
+      { nb: 1, pommedeterre: "150 g", celeri: "45 g", jambon: "45 g", cremefraiche: "35 ml", vinaigreCidre: "10 ml", ciboulette: "4 g", moutarde: "4 g", poivre: "0.6 g" },
+      { nb: 2, pommedeterre: "300 g", celeri: "90 g", jambon: "90 g", cremefraiche: "70 ml", vinaigreCidre: "20 ml", ciboulette: "8 g", moutarde: "8 g", poivre: "1.2 g" },
+      { nb: 3, pommedeterre: "450 g", celeri: "135 g", jambon: "135 g", cremefraiche: "105 ml", vinaigreCidre: "30 ml", ciboulette: "12 g", moutarde: "12 g", poivre: "1.8 g" },
+      { nb: 4, pommedeterre: "600 g", celeri: "180 g", jambon: "180 g", cremefraiche: "140 ml", vinaigreCidre: "40 ml", ciboulette: "16 g", moutarde: "16 g", poivre: "2.4 g" },
+      { nb: 5, pommedeterre: "750 g", celeri: "225 g", jambon: "225 g", cremefraiche: "175 ml", vinaigreCidre: "50 ml", ciboulette: "20 g", moutarde: "20 g", poivre: "3 g" },
+      { nb: 6, pommedeterre: "900 g", celeri: "270 g", jambon: "270 g", cremefraiche: "210 ml", vinaigreCidre: "60 ml", ciboulette: "24 g", moutarde: "24 g", poivre: "3.6 g" },
+      { nb: 7, pommedeterre: "1050 g", celeri: "315 g", jambon: "315 g", cremefraiche: "245 ml", vinaigreCidre: "70 ml", ciboulette: "28 g", moutarde: "28 g", poivre: "4.2 g" },
+      { nb: 8, pommedeterre: "1200 g", celeri: "360 g", jambon: "360 g", cremefraiche: "280 ml", vinaigreCidre: "80 ml", ciboulette: "32 g", moutarde: "32 g", poivre: "4.8 g" },
+      { nb: 9, pommedeterre: "1350 g", celeri: "405 g", jambon: "405 g", cremefraiche: "315 ml", vinaigreCidre: "90 ml", ciboulette: "36 g", moutarde: "36 g", poivre: "5.4 g" },
+      { nb: 10, pommedeterre: "1500 g", celeri: "450 g", jambon: "450 g", cremefraiche: "350 ml", vinaigreCidre: "100 ml", ciboulette: "40 g", moutarde: "40 g", poivre: "6 g" },
+      { nb: 11, pommedeterre: "1650 g", celeri: "495 g", jambon: "495 g", cremefraiche: "385 ml", vinaigreCidre: "110 ml", ciboulette: "44 g", moutarde: "44 g", poivre: "6.6 g" },
+      { nb: 12, pommedeterre: "1800 g", celeri: "540 g", jambon: "540 g", cremefraiche: "420 ml", vinaigreCidre: "120 ml", ciboulette: "48 g", moutarde: "48 g", poivre: "7.2 g" },
+      { nb: 13, pommedeterre: "1950 g", celeri: "585 g", jambon: "585 g", cremefraiche: "455 ml", vinaigreCidre: "130 ml", ciboulette: "52 g", moutarde: "52 g", poivre: "7.8 g" },
+      { nb: 14, pommedeterre: "2100 g", celeri: "630 g", jambon: "630 g", cremefraiche: "490 ml", vinaigreCidre: "140 ml", ciboulette: "56 g", moutarde: "56 g", poivre: "8.4 g" },
+      { nb: 15, pommedeterre: "2250 g", celeri: "675 g", jambon: "675 g", cremefraiche: "525 ml", vinaigreCidre: "150 ml", ciboulette: "60 g", moutarde: "60 g", poivre: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Une variété à CHAIR FERME, cuite en robe", detail: "Charlotte ou ratte : une pomme de terre farineuse se délite et la salade devient une purée.", badge: null },
+      { icone: "🌡️", titre: "Assaisonner les pommes de terre TIÈDES", detail: "C'est la règle : tièdes, elles boivent la sauce ; froides, elles la laissent glisser au fond du saladier.", badge: null },
+      { icone: "🥛", titre: "Une crème CRUE, épaisse, d'Isigny", detail: "La crème UHT ne tient pas et rend de l'eau. C'est le seul ingrédient qu'il ne faut pas économiser.", badge: null },
+      { icone: "🍎", titre: "Le vinaigre de CIDRE, jamais de vin", detail: "C'est la Normandie : le vinaigre de vin durcit la crème et casse l'accord avec le jambon.", badge: null },
+      { icone: "🥬", titre: "Le céleri en fins bâtonnets, cru", detail: "Cuit, il perd son croquant, qui est le seul contraste de texture de la salade.", badge: null },
+      { icone: "🐖", titre: "Un jambon blanc ÉPAIS, en dés", detail: "En tranches fines, il disparaît et la salade n'a plus de mâche. Un centimètre d'épaisseur au moins.", badge: null },
+      { icone: "❄️", titre: "Deux heures au frais avant de servir", detail: "La crème doit prendre et les saveurs se lier. Servie tout de suite, la salade est dissociée.", badge: null }
+    ],
+    liees: ["saladepiemontaise","saladelyonnaise","saladeniçoise"]
+  },
+  ensaladarusa: {
+    dateAjout: "2026-08-31T19:07:00",
+    nom: "Ensalada Rusa",
+    cat: "salades", saisons: ["ete"], pays: "espagne",
+    base: 6,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "La salade russe espagnole, servie en tapa dans tous les bars du pays. Elle a peu à voir avec l'olivier moscovite dont elle descend : ici pas de viande, mais du thon et des olives, et beaucoup plus de mayonnaise.",
+    tableauEnsaladarusa: [
+      { nb: 1, pommedeterre: "110 g", carotte: "45 g", petitspois: "35 g", thon: "40 g", oeufs: "½", mayonnaise: "50 g", olivevert: "15 g", poivron: "20 g" },
+      { nb: 2, pommedeterre: "220 g", carotte: "90 g", petitspois: "70 g", thon: "80 g", oeufs: "1", mayonnaise: "100 g", olivevert: "30 g", poivron: "40 g" },
+      { nb: 3, pommedeterre: "330 g", carotte: "135 g", petitspois: "105 g", thon: "120 g", oeufs: "1½", mayonnaise: "150 g", olivevert: "45 g", poivron: "60 g" },
+      { nb: 4, pommedeterre: "440 g", carotte: "180 g", petitspois: "140 g", thon: "160 g", oeufs: "2", mayonnaise: "200 g", olivevert: "60 g", poivron: "80 g" },
+      { nb: 5, pommedeterre: "550 g", carotte: "225 g", petitspois: "175 g", thon: "200 g", oeufs: "2½", mayonnaise: "250 g", olivevert: "75 g", poivron: "100 g" },
+      { nb: 6, pommedeterre: "660 g", carotte: "270 g", petitspois: "210 g", thon: "240 g", oeufs: "3", mayonnaise: "300 g", olivevert: "90 g", poivron: "120 g" },
+      { nb: 7, pommedeterre: "770 g", carotte: "315 g", petitspois: "245 g", thon: "280 g", oeufs: "3½", mayonnaise: "350 g", olivevert: "105 g", poivron: "140 g" },
+      { nb: 8, pommedeterre: "880 g", carotte: "360 g", petitspois: "280 g", thon: "320 g", oeufs: "4", mayonnaise: "400 g", olivevert: "120 g", poivron: "160 g" },
+      { nb: 9, pommedeterre: "990 g", carotte: "405 g", petitspois: "315 g", thon: "360 g", oeufs: "4½", mayonnaise: "450 g", olivevert: "135 g", poivron: "180 g" },
+      { nb: 10, pommedeterre: "1100 g", carotte: "450 g", petitspois: "350 g", thon: "400 g", oeufs: "5", mayonnaise: "500 g", olivevert: "150 g", poivron: "200 g" },
+      { nb: 11, pommedeterre: "1210 g", carotte: "495 g", petitspois: "385 g", thon: "440 g", oeufs: "5½", mayonnaise: "550 g", olivevert: "165 g", poivron: "220 g" },
+      { nb: 12, pommedeterre: "1320 g", carotte: "540 g", petitspois: "420 g", thon: "480 g", oeufs: "6", mayonnaise: "600 g", olivevert: "180 g", poivron: "240 g" },
+      { nb: 13, pommedeterre: "1430 g", carotte: "585 g", petitspois: "455 g", thon: "520 g", oeufs: "6½", mayonnaise: "650 g", olivevert: "195 g", poivron: "260 g" },
+      { nb: 14, pommedeterre: "1540 g", carotte: "630 g", petitspois: "490 g", thon: "560 g", oeufs: "7", mayonnaise: "700 g", olivevert: "210 g", poivron: "280 g" },
+      { nb: 15, pommedeterre: "1650 g", carotte: "675 g", petitspois: "525 g", thon: "600 g", oeufs: "7½", mayonnaise: "750 g", olivevert: "225 g", poivron: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire les légumes SÉPARÉMENT, en dés déjà taillés", detail: "Ensemble, la carotte est crue quand la pomme de terre s'écrase. Taillés avant, ils gardent leurs arêtes.", badge: null },
+      { icone: "💧", titre: "Égoutter et SÉCHER complètement", detail: "L'eau résiduelle liquéfie la mayonnaise : la salade rend de l'eau au fond du plat en une heure.", badge: null },
+      { icone: "🌡️", titre: "Refroidir AVANT de mélanger à la mayonnaise", detail: "Tiède, la mayonnaise se sépare instantanément et la salade devient huileuse.", badge: null },
+      { icone: "🐟", titre: "Un thon à l'HUILE, égoutté mais pas pressé", detail: "Au naturel, il est sec et fade. Pressé trop fort, il se réduit en poudre.", badge: null },
+      { icone: "🥄", titre: "Écraser légèrement un quart des pommes de terre", detail: "Elles lient l'ensemble : c'est le geste espagnol qui donne la texture crémeuse sans noyer de mayonnaise.", badge: null },
+      { icone: "🫒", titre: "Olives et poivron en garniture, pas mélangés", detail: "Sur le dessus : mélangés, ils colorent la mayonnaise et la salade perd son blanc caractéristique.", badge: null },
+      { icone: "❄️", titre: "Trois heures au frais, minimum", detail: "C'est une tapa froide : servie tiède, la mayonnaise domine et rien d'autre ne se sent.", badge: null }
+    ],
+    liees: ["saladepiemontaise","saladecauchoise","tortillaespagnole"]
   },
 });

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 34 recettes
+// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 35 recettes
 // 👉 Pour AJOUTER une recette En-cas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -7951,5 +7951,43 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "200 °C, 25 minutes, sans ouvrir", detail: "Le feuilletage a besoin d'une chaleur constante pour développer. Ouvrir le four le fait retomber.", badge: null }
     ],
     liees: ["pizzacalzone","scacciata","sfincione"]
+  },
+  fairybread: {
+    dateAjout: "2026-08-31T20:07:00",
+    nom: "Fairy Bread",
+    cat: "encas", pays: "australie",
+    base: 8,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🌈",
+    description: "Le goûter d'anniversaire australien depuis les années 1920 : du pain de mie beurré couvert de vermicelles sucrés, coupé en triangles. Trois ingrédients, aucune cuisson — et pourtant un plat identitaire qu'aucun anniversaire d'enfant n'omet.",
+    tableauFairybread: [
+      { nb: 1, painDeMie: "60 g", beurre: "15 g", vermicellessucres: "12 g" },
+      { nb: 2, painDeMie: "120 g", beurre: "30 g", vermicellessucres: "24 g" },
+      { nb: 3, painDeMie: "180 g", beurre: "45 g", vermicellessucres: "36 g" },
+      { nb: 4, painDeMie: "240 g", beurre: "60 g", vermicellessucres: "48 g" },
+      { nb: 5, painDeMie: "300 g", beurre: "75 g", vermicellessucres: "60 g" },
+      { nb: 6, painDeMie: "360 g", beurre: "90 g", vermicellessucres: "72 g" },
+      { nb: 7, painDeMie: "420 g", beurre: "105 g", vermicellessucres: "84 g" },
+      { nb: 8, painDeMie: "480 g", beurre: "120 g", vermicellessucres: "96 g" },
+      { nb: 9, painDeMie: "540 g", beurre: "135 g", vermicellessucres: "108 g" },
+      { nb: 10, painDeMie: "600 g", beurre: "150 g", vermicellessucres: "120 g" },
+      { nb: 11, painDeMie: "660 g", beurre: "165 g", vermicellessucres: "132 g" },
+      { nb: 12, painDeMie: "720 g", beurre: "180 g", vermicellessucres: "144 g" },
+      { nb: 13, painDeMie: "780 g", beurre: "195 g", vermicellessucres: "156 g" },
+      { nb: 14, painDeMie: "840 g", beurre: "210 g", vermicellessucres: "168 g" },
+      { nb: 15, painDeMie: "900 g", beurre: "225 g", vermicellessucres: "180 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Du pain de mie BLANC, jamais complet", detail: "C'est un goûter d'enfant : le pain complet apporte une amertume qui n'a rien à faire là.", badge: null },
+      { icone: "🧈", titre: "Un beurre bien MOU, tartiné épais", detail: "C'est la colle : trop fin, les vermicelles ne tiennent pas et tombent dans l'assiette.", badge: null },
+      { icone: "🌈", titre: "Des vermicelles ronds, pas des paillettes plates", detail: "En Australie ce sont les hundreds and thousands : les paillettes fondent et bavent leurs couleurs.", badge: null },
+      { icone: "⬇️", titre: "RETOURNER le pain sur les vermicelles", detail: "On presse le pain beurré dans une assiette de vermicelles : c'est le seul moyen d'obtenir une couverture totale.", badge: null },
+      { icone: "📐", titre: "Couper en TRIANGLES, jamais en carrés", detail: "C'est le format traditionnel. En carrés, ce sont des tartines ; en triangles, c'est du fairy bread.", badge: null },
+      { icone: "✂️", titre: "Retirer la croûte avant de couper", detail: "Autre règle non écrite du goûter australien, et pratiquement : la croûte retient mal le beurre.", badge: null },
+      { icone: "⏱️", titre: "Se prépare dans les MINUTES qui précèdent", detail: "Le beurre absorbe la couleur des vermicelles : au bout d'une heure, le pain vire au gris-violet.", badge: null }
+    ],
+    liees: ["painperdubrioche","cinnamonroll","sconeBritish"]
   },
 });

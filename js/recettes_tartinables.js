@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 19 recettes
+// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 21 recettes
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1654,5 +1654,81 @@ Object.assign(recettes, {
       { icone: "⏳", titre: "Cinq jours d'attente minimum avant d'ouvrir", detail: "L'ail et le piment doivent imprégner la chair. Goûtées le lendemain, elles n'ont que le goût de leurs ingrédients.", badge: null }
     ],
     liees: ["malidzano","muhammara","labneh"]
+  },
+  salsamacha: {
+    dateAjout: "2026-08-31T19:04:00",
+    nom: "Salsa Macha",
+    cat: "tartinables", pays: "mexique",
+    base: 8,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥜",
+    description: "La salsa de Veracruz qui n'est pas une salsa fraîche mais une huile : piments séchés, cacahuètes et sésame frits puis broyés. Elle se garde des mois, et son huile rouge sert autant que ses morceaux.",
+    tableauSalsamacha: [
+      { nb: 1, piment_guajillo: "12 g", piment_ancho: "8 g", cacahuete: "25 g", sesame: "10 g", ail: "1½", huile: "45 ml", vinaigreVin: "6 ml", sel: "1.5 g" },
+      { nb: 2, piment_guajillo: "24 g", piment_ancho: "16 g", cacahuete: "50 g", sesame: "20 g", ail: "3", huile: "90 ml", vinaigreVin: "12 ml", sel: "3 g" },
+      { nb: 3, piment_guajillo: "36 g", piment_ancho: "24 g", cacahuete: "75 g", sesame: "30 g", ail: "4½", huile: "135 ml", vinaigreVin: "18 ml", sel: "4.5 g" },
+      { nb: 4, piment_guajillo: "48 g", piment_ancho: "32 g", cacahuete: "100 g", sesame: "40 g", ail: "6", huile: "180 ml", vinaigreVin: "24 ml", sel: "6 g" },
+      { nb: 5, piment_guajillo: "60 g", piment_ancho: "40 g", cacahuete: "125 g", sesame: "50 g", ail: "7½", huile: "225 ml", vinaigreVin: "30 ml", sel: "7.5 g" },
+      { nb: 6, piment_guajillo: "72 g", piment_ancho: "48 g", cacahuete: "150 g", sesame: "60 g", ail: "9", huile: "270 ml", vinaigreVin: "36 ml", sel: "9 g" },
+      { nb: 7, piment_guajillo: "84 g", piment_ancho: "56 g", cacahuete: "175 g", sesame: "70 g", ail: "10½", huile: "315 ml", vinaigreVin: "42 ml", sel: "10.5 g" },
+      { nb: 8, piment_guajillo: "96 g", piment_ancho: "64 g", cacahuete: "200 g", sesame: "80 g", ail: "12", huile: "360 ml", vinaigreVin: "48 ml", sel: "12 g" },
+      { nb: 9, piment_guajillo: "108 g", piment_ancho: "72 g", cacahuete: "225 g", sesame: "90 g", ail: "13½", huile: "405 ml", vinaigreVin: "54 ml", sel: "13.5 g" },
+      { nb: 10, piment_guajillo: "120 g", piment_ancho: "80 g", cacahuete: "250 g", sesame: "100 g", ail: "15", huile: "450 ml", vinaigreVin: "60 ml", sel: "15 g" },
+      { nb: 11, piment_guajillo: "132 g", piment_ancho: "88 g", cacahuete: "275 g", sesame: "110 g", ail: "16½", huile: "495 ml", vinaigreVin: "66 ml", sel: "16.5 g" },
+      { nb: 12, piment_guajillo: "144 g", piment_ancho: "96 g", cacahuete: "300 g", sesame: "120 g", ail: "18", huile: "540 ml", vinaigreVin: "72 ml", sel: "18 g" },
+      { nb: 13, piment_guajillo: "156 g", piment_ancho: "104 g", cacahuete: "325 g", sesame: "130 g", ail: "19½", huile: "585 ml", vinaigreVin: "78 ml", sel: "19.5 g" },
+      { nb: 14, piment_guajillo: "168 g", piment_ancho: "112 g", cacahuete: "350 g", sesame: "140 g", ail: "21", huile: "630 ml", vinaigreVin: "84 ml", sel: "21 g" },
+      { nb: 15, piment_guajillo: "180 g", piment_ancho: "120 g", cacahuete: "375 g", sesame: "150 g", ail: "22½", huile: "675 ml", vinaigreVin: "90 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "DEUX piments au minimum : un fruité, un fumé", detail: "Guajillo pour l'acidité, ancho pour le fond sucré. Un seul type donne une salsa plate.", badge: null },
+      { icone: "✂️", titre: "Retirer TOUTES les graines", detail: "Elles sont amères et brûlent avant la chair. C'est la raison n°1 d'une salsa macha ratée.", badge: null },
+      { icone: "🌡️", titre: "Une huile à 120 °C, pas plus", detail: "Les piments secs brûlent en dix secondes à haute température : le brûlé est irrattrapable.", badge: null },
+      { icone: "⏱️", titre: "Frire chaque élément SÉPARÉMENT", detail: "Ail, cacahuètes, sésame, piments : quatre temps de cuisson différents, jamais dans la même poêle en même temps.", badge: null },
+      { icone: "❄️", titre: "Laisser refroidir AVANT de mixer", detail: "Mixée chaude, l'huile émulsionne et la salsa devient une pâte opaque au lieu de rester une huile.", badge: null },
+      { icone: "🥣", titre: "Mixer par à-coups, garder du GRAIN", detail: "Ce n'est pas une purée : on doit voir les morceaux de cacahuète et les graines de sésame.", badge: null },
+      { icone: "🫒", titre: "Couvrir d'un centimètre d'huile en bocal", detail: "C'est ce qui la conserve trois mois. Sans cette couche, elle s'oxyde et rancit en deux semaines.", badge: null }
+    ],
+    liees: ["harissa","guacamole","amba"]
+  },
+  amba: {
+    dateAjout: "2026-08-31T19:05:00",
+    nom: "Amba",
+    cat: "tartinables", pays: "irak",
+    base: 8,
+    temps: "40 min + 3 jours",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥭",
+    description: "Le condiment de mangue fermentée des juifs de Bagdad, rapporté en Israël où il accompagne aujourd'hui tout sabich et tout shawarma. Son nom vient du sanskrit amra, la mangue — la route l'a fait passer par l'Inde avant l'Irak.",
+    tableauAmba: [
+      { nb: 1, mangue: "90 g", fenugrec: "2 g", curcuma: "2 g", ail: "1", vinaigreBlanc: "20 ml", huile: "15 ml", sel: "6 g", piment: "0.8 g" },
+      { nb: 2, mangue: "180 g", fenugrec: "4 g", curcuma: "4 g", ail: "2", vinaigreBlanc: "40 ml", huile: "30 ml", sel: "12 g", piment: "1.6 g" },
+      { nb: 3, mangue: "270 g", fenugrec: "6 g", curcuma: "6 g", ail: "3", vinaigreBlanc: "60 ml", huile: "45 ml", sel: "18 g", piment: "2.4 g" },
+      { nb: 4, mangue: "360 g", fenugrec: "8 g", curcuma: "8 g", ail: "4", vinaigreBlanc: "80 ml", huile: "60 ml", sel: "24 g", piment: "3.2 g" },
+      { nb: 5, mangue: "450 g", fenugrec: "10 g", curcuma: "10 g", ail: "5", vinaigreBlanc: "100 ml", huile: "75 ml", sel: "30 g", piment: "4 g" },
+      { nb: 6, mangue: "540 g", fenugrec: "12 g", curcuma: "12 g", ail: "6", vinaigreBlanc: "120 ml", huile: "90 ml", sel: "36 g", piment: "4.8 g" },
+      { nb: 7, mangue: "630 g", fenugrec: "14 g", curcuma: "14 g", ail: "7", vinaigreBlanc: "140 ml", huile: "105 ml", sel: "42 g", piment: "5.6 g" },
+      { nb: 8, mangue: "720 g", fenugrec: "16 g", curcuma: "16 g", ail: "8", vinaigreBlanc: "160 ml", huile: "120 ml", sel: "48 g", piment: "6.4 g" },
+      { nb: 9, mangue: "810 g", fenugrec: "18 g", curcuma: "18 g", ail: "9", vinaigreBlanc: "180 ml", huile: "135 ml", sel: "54 g", piment: "7.2 g" },
+      { nb: 10, mangue: "900 g", fenugrec: "20 g", curcuma: "20 g", ail: "10", vinaigreBlanc: "200 ml", huile: "150 ml", sel: "60 g", piment: "8 g" },
+      { nb: 11, mangue: "990 g", fenugrec: "22 g", curcuma: "22 g", ail: "11", vinaigreBlanc: "220 ml", huile: "165 ml", sel: "66 g", piment: "8.8 g" },
+      { nb: 12, mangue: "1080 g", fenugrec: "24 g", curcuma: "24 g", ail: "12", vinaigreBlanc: "240 ml", huile: "180 ml", sel: "72 g", piment: "9.6 g" },
+      { nb: 13, mangue: "1170 g", fenugrec: "26 g", curcuma: "26 g", ail: "13", vinaigreBlanc: "260 ml", huile: "195 ml", sel: "78 g", piment: "10.4 g" },
+      { nb: 14, mangue: "1260 g", fenugrec: "28 g", curcuma: "28 g", ail: "14", vinaigreBlanc: "280 ml", huile: "210 ml", sel: "84 g", piment: "11.2 g" },
+      { nb: 15, mangue: "1350 g", fenugrec: "30 g", curcuma: "30 g", ail: "15", vinaigreBlanc: "300 ml", huile: "225 ml", sel: "90 g", piment: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥭", titre: "Des mangues VERTES et fermes, jamais mûres", detail: "Mûres, elles donnent une confiture. C'est l'acidité de la mangue verte qui fait tout l'amba.", badge: null },
+      { icone: "🧂", titre: "Saler et laisser dégorger 24 h au soleil", detail: "C'est la fermentation traditionnelle : le sel fait sortir l'eau et démarre l'acidification.", badge: null },
+      { icone: "🌿", titre: "Le fenugrec, ingrédient signature", detail: "Son odeur de sirop d'érable et de curry est l'identité de l'amba. Sans lui, c'est un chutney à la mangue.", badge: null },
+      { icone: "🍳", titre: "Faire crépiter les épices dans l'huile", detail: "Trente secondes seulement : le fenugrec brûle vite et devient très amer.", badge: null },
+      { icone: "🥣", titre: "Une texture ÉPAISSE, pas lisse", detail: "On doit voir des morceaux de mangue : mixée fin, elle perd la mâche qui la rend intéressante.", badge: null },
+      { icone: "⏳", titre: "Trois jours de maturation minimum", detail: "Goûtée le jour même, elle n'a que le goût du vinaigre. Les épices ont besoin de ce temps.", badge: null },
+      { icone: "🫙", titre: "Bocal stérilisé, couche d'huile en surface", detail: "Comme tous les condiments fermentés : la barrière d'huile empêche les moisissures de s'installer.", badge: null }
+    ],
+    liees: ["chutneymangue","harissa","salsamacha"]
   },
 });

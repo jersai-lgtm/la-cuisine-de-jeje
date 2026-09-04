@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_entrees.js — Recettes de catégorie "entrees" (Entrées) — 32 recettes
+// recettes_entrees.js — Recettes de catégorie "entrees" (Entrées) — 33 recettes
 // 👉 Pour AJOUTER une recette Entrées : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -5430,5 +5430,43 @@ oeufmayo: {
       { icone: "⏱️", titre: "Servir dans l'heure, nappé d'huile d'olive", detail: "Avec des oignons crus et de la menthe fraîche. Passé une heure au frais, on le cuit — on ne prend pas le risque.", badge: null }
     ],
     liees: ["labneh","houmous","warakenab"]
+  },
+  whitebaitfritters: {
+    dateAjout: "2026-08-31T20:08:00",
+    nom: "Whitebait Fritters",
+    cat: "entrees", saisons: ["printemps"], pays: "nouvellezelande",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Le mets le plus cher de Nouvelle-Zélande, pêché six semaines par an sur la côte ouest. La règle est intangible : le moins de pâte possible — juste assez d'œuf pour tenir les alevins ensemble, et surtout pas de farine.",
+    tableauWhitebaitfritters: [
+      { nb: 1, eperlan: "90 g", oeufs: "¾", beurre: "12 g", citron: "½", sel: "1 g", poivre: "0.4 g" },
+      { nb: 2, eperlan: "180 g", oeufs: "1½", beurre: "24 g", citron: "1", sel: "2 g", poivre: "0.8 g" },
+      { nb: 3, eperlan: "270 g", oeufs: "2¼", beurre: "36 g", citron: "1½", sel: "3 g", poivre: "1.2 g" },
+      { nb: 4, eperlan: "360 g", oeufs: "3", beurre: "48 g", citron: "2", sel: "4 g", poivre: "1.6 g" },
+      { nb: 5, eperlan: "450 g", oeufs: "3¾", beurre: "60 g", citron: "2½", sel: "5 g", poivre: "2 g" },
+      { nb: 6, eperlan: "540 g", oeufs: "4½", beurre: "72 g", citron: "3", sel: "6 g", poivre: "2.4 g" },
+      { nb: 7, eperlan: "630 g", oeufs: "5¼", beurre: "84 g", citron: "3½", sel: "7 g", poivre: "2.8 g" },
+      { nb: 8, eperlan: "720 g", oeufs: "6", beurre: "96 g", citron: "4", sel: "8 g", poivre: "3.2 g" },
+      { nb: 9, eperlan: "810 g", oeufs: "6¾", beurre: "108 g", citron: "4½", sel: "9 g", poivre: "3.6 g" },
+      { nb: 10, eperlan: "900 g", oeufs: "7½", beurre: "120 g", citron: "5", sel: "10 g", poivre: "4 g" },
+      { nb: 11, eperlan: "990 g", oeufs: "8¼", beurre: "132 g", citron: "5½", sel: "11 g", poivre: "4.4 g" },
+      { nb: 12, eperlan: "1080 g", oeufs: "9", beurre: "144 g", citron: "6", sel: "12 g", poivre: "4.8 g" },
+      { nb: 13, eperlan: "1170 g", oeufs: "9¾", beurre: "156 g", citron: "6½", sel: "13 g", poivre: "5.2 g" },
+      { nb: 14, eperlan: "1260 g", oeufs: "10½", beurre: "168 g", citron: "7", sel: "14 g", poivre: "5.6 g" },
+      { nb: 15, eperlan: "1350 g", oeufs: "11¼", beurre: "180 g", citron: "7½", sel: "15 g", poivre: "6 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "De l'ŒUF, et rien d'autre comme liant", detail: "Pas de farine, pas de lait : c'est la règle néo-zélandaise. La farine étoufferait le goût très délicat.", badge: null },
+      { icone: "⚖️", titre: "Un œuf pour cent grammes de poisson, pas plus", detail: "L'alevin doit dominer visuellement : on doit voir les petits poissons dans la galette, pas une omelette.", badge: null },
+      { icone: "❄️", titre: "Un poisson TRÈS froid, sorti au dernier moment", detail: "Il se délite à température ambiante et la galette devient une purée grise.", badge: null },
+      { icone: "🥄", titre: "Mélanger à la fourchette, deux tours", detail: "Battu, l'œuf mousse et la galette gonfle comme une omelette au lieu de rester fine et plate.", badge: null },
+      { icone: "🧈", titre: "Cuire au BEURRE, jamais à l'huile", detail: "Le beurre noisette est l'accord classique. À l'huile, la galette n'a plus qu'un goût de friture.", badge: null },
+      { icone: "🍳", titre: "Une poêle bien chaude, une minute par face", detail: "Trop cuite, la chair devient farineuse. Elle doit rester nacrée au centre.", badge: null },
+      { icone: "🍋", titre: "Beaucoup de citron, à table", detail: "C'est le seul assaisonnement admis. Toute sauce couvrirait un goût qu'on paye très cher.", badge: null }
+    ],
+    liees: ["accrasmorue","beignetscrevettes","tempura"]
   },
 });

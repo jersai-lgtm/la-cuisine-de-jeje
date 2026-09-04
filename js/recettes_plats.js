@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 241 recettes
+// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 244 recettes
 // 👉 Pour AJOUTER une recette Plats : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -55089,5 +55089,122 @@ Object.assign(recettes, {
       { icone: "🍅", titre: "Se mange avec du ketchup, à une main", detail: "Ce n'est pas une fantaisie : le pie australien se tient dans la paume, et la sauce se met dans la cheminée.", badge: null }
     ],
     liees: ["tourtemilanaise","cornishpasty","shepherdspie"]
+  },
+  bragioli: {
+    dateAjout: "2026-08-31T20:00:00",
+    nom: "Bragioli",
+    cat: "plats", saisons: ["automne","hiver"], pays: "malte",
+    base: 4,
+    temps: "2 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥩",
+    description: "Les « oiseaux d'olive » maltais — beef olives en anglais — qui ne contiennent aucune olive : le nom vient de la forme, une paupiette ovale. Farcies d'œuf dur et de bacon, elles mijotent dans une sauce au vin rouge.",
+    tableauBragioli: [
+      { nb: 1, boeuf: "120 g", oeufs: "½", bacon: "25 g", chapelure: "20 g", persil: "6 g", ail: "1", vinrouge: "50 ml", tomateconcassee: "60 g", oignon: "½", laurier: "0.2 g" },
+      { nb: 2, boeuf: "240 g", oeufs: "1", bacon: "50 g", chapelure: "40 g", persil: "12 g", ail: "2", vinrouge: "100 ml", tomateconcassee: "120 g", oignon: "1", laurier: "0.4 g" },
+      { nb: 3, boeuf: "360 g", oeufs: "1½", bacon: "75 g", chapelure: "60 g", persil: "18 g", ail: "3", vinrouge: "150 ml", tomateconcassee: "180 g", oignon: "1½", laurier: "0.6 g" },
+      { nb: 4, boeuf: "480 g", oeufs: "2", bacon: "100 g", chapelure: "80 g", persil: "24 g", ail: "4", vinrouge: "200 ml", tomateconcassee: "240 g", oignon: "2", laurier: "0.8 g" },
+      { nb: 5, boeuf: "600 g", oeufs: "2½", bacon: "125 g", chapelure: "100 g", persil: "30 g", ail: "5", vinrouge: "250 ml", tomateconcassee: "300 g", oignon: "2½", laurier: "1 g" },
+      { nb: 6, boeuf: "720 g", oeufs: "3", bacon: "150 g", chapelure: "120 g", persil: "36 g", ail: "6", vinrouge: "300 ml", tomateconcassee: "360 g", oignon: "3", laurier: "1.2 g" },
+      { nb: 7, boeuf: "840 g", oeufs: "3½", bacon: "175 g", chapelure: "140 g", persil: "42 g", ail: "7", vinrouge: "350 ml", tomateconcassee: "420 g", oignon: "3½", laurier: "1.4 g" },
+      { nb: 8, boeuf: "960 g", oeufs: "4", bacon: "200 g", chapelure: "160 g", persil: "48 g", ail: "8", vinrouge: "400 ml", tomateconcassee: "480 g", oignon: "4", laurier: "1.6 g" },
+      { nb: 9, boeuf: "1080 g", oeufs: "4½", bacon: "225 g", chapelure: "180 g", persil: "54 g", ail: "9", vinrouge: "450 ml", tomateconcassee: "540 g", oignon: "4½", laurier: "1.8 g" },
+      { nb: 10, boeuf: "1200 g", oeufs: "5", bacon: "250 g", chapelure: "200 g", persil: "60 g", ail: "10", vinrouge: "500 ml", tomateconcassee: "600 g", oignon: "5", laurier: "2 g" },
+      { nb: 11, boeuf: "1320 g", oeufs: "5½", bacon: "275 g", chapelure: "220 g", persil: "66 g", ail: "11", vinrouge: "550 ml", tomateconcassee: "660 g", oignon: "5½", laurier: "2.2 g" },
+      { nb: 12, boeuf: "1440 g", oeufs: "6", bacon: "300 g", chapelure: "240 g", persil: "72 g", ail: "12", vinrouge: "600 ml", tomateconcassee: "720 g", oignon: "6", laurier: "2.4 g" },
+      { nb: 13, boeuf: "1560 g", oeufs: "6½", bacon: "325 g", chapelure: "260 g", persil: "78 g", ail: "13", vinrouge: "650 ml", tomateconcassee: "780 g", oignon: "6½", laurier: "2.6 g" },
+      { nb: 14, boeuf: "1680 g", oeufs: "7", bacon: "350 g", chapelure: "280 g", persil: "84 g", ail: "14", vinrouge: "700 ml", tomateconcassee: "840 g", oignon: "7", laurier: "2.8 g" },
+      { nb: 15, boeuf: "1800 g", oeufs: "7½", bacon: "375 g", chapelure: "300 g", persil: "90 g", ail: "15", vinrouge: "750 ml", tomateconcassee: "900 g", oignon: "7½", laurier: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Des tranches de gîte APLATIES très fin", detail: "Trois millimètres au maillet : plus épaisses, elles ne roulent pas et se déchirent à la ficelle.", badge: null },
+      { icone: "🥚", titre: "Un œuf dur ENTIER, coupé en deux dans la longueur", detail: "C'est la signature maltaise : à la coupe, le jaune apparaît au centre de la spirale.", badge: null },
+      { icone: "🥖", titre: "Une farce liée à la chapelure, pas à la mie fraîche", detail: "La mie fraîche rend de l'eau et la farce se délite ; la chapelure absorbe le jus de cuisson.", badge: null },
+      { icone: "🧵", titre: "Ficeler SERRÉ, deux tours minimum", detail: "Une paupiette mal ficelée s'ouvre à la première demi-heure et la farce part dans la sauce.", badge: null },
+      { icone: "🔥", titre: "Saisir sur TOUTES les faces avant de mijoter", detail: "Y compris les extrémités : c'est la coloration qui donne le fond de sauce, pas le vin.", badge: null },
+      { icone: "🍷", titre: "Réduire le vin de moitié AVANT les tomates", detail: "Ajouté avec la tomate, il garde une acidité crue qui domine tout le plat.", badge: null },
+      { icone: "⏳", titre: "Deux heures à frémissement, à couvert", detail: "La viande doit se couper à la cuillère. À une heure, elle est encore ferme et sèche.", badge: null },
+      { icone: "✂️", titre: "Retirer la ficelle AVANT de servir, pas à table", detail: "Détail de service, mais c'est aussi le moment de vérifier que la paupiette tient toute seule.", badge: null }
+    ],
+    liees: ["paupiettesveau","involtini","rouladen"]
+  },
+  quzi: {
+    dateAjout: "2026-08-31T20:04:00",
+    nom: "Quzi",
+    cat: "plats", saisons: ["automne","hiver"], pays: "irak",
+    base: 8,
+    temps: "4 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🐑",
+    description: "Le plat des grandes occasions en Irak : un agneau entier ou une épaule, cuit jusqu'à s'effondrer, posé sur une montagne de riz aux amandes et aux raisins. On le sert au centre de la table et chacun se sert à la main.",
+    tableauQuzi: [
+      { nb: 1, agneau: "160 g", riz: "70 g", amandes: "18 g", raisinssecs: "15 g", oignon: "½", cannelle: "0.6 g", cardamome: "0.5 g", curcuma: "0.5 g", bouillon: "90 ml", beurre: "12 g" },
+      { nb: 2, agneau: "320 g", riz: "140 g", amandes: "36 g", raisinssecs: "30 g", oignon: "1", cannelle: "1.2 g", cardamome: "1 g", curcuma: "1 g", bouillon: "180 ml", beurre: "24 g" },
+      { nb: 3, agneau: "480 g", riz: "210 g", amandes: "54 g", raisinssecs: "45 g", oignon: "1½", cannelle: "1.8 g", cardamome: "1.5 g", curcuma: "1.5 g", bouillon: "270 ml", beurre: "36 g" },
+      { nb: 4, agneau: "640 g", riz: "280 g", amandes: "72 g", raisinssecs: "60 g", oignon: "2", cannelle: "2.4 g", cardamome: "2 g", curcuma: "2 g", bouillon: "360 ml", beurre: "48 g" },
+      { nb: 5, agneau: "800 g", riz: "350 g", amandes: "90 g", raisinssecs: "75 g", oignon: "2½", cannelle: "3 g", cardamome: "2.5 g", curcuma: "2.5 g", bouillon: "450 ml", beurre: "60 g" },
+      { nb: 6, agneau: "960 g", riz: "420 g", amandes: "108 g", raisinssecs: "90 g", oignon: "3", cannelle: "3.6 g", cardamome: "3 g", curcuma: "3 g", bouillon: "540 ml", beurre: "72 g" },
+      { nb: 7, agneau: "1120 g", riz: "490 g", amandes: "126 g", raisinssecs: "105 g", oignon: "3½", cannelle: "4.2 g", cardamome: "3.5 g", curcuma: "3.5 g", bouillon: "630 ml", beurre: "84 g" },
+      { nb: 8, agneau: "1280 g", riz: "560 g", amandes: "144 g", raisinssecs: "120 g", oignon: "4", cannelle: "4.8 g", cardamome: "4 g", curcuma: "4 g", bouillon: "720 ml", beurre: "96 g" },
+      { nb: 9, agneau: "1440 g", riz: "630 g", amandes: "162 g", raisinssecs: "135 g", oignon: "4½", cannelle: "5.4 g", cardamome: "4.5 g", curcuma: "4.5 g", bouillon: "810 ml", beurre: "108 g" },
+      { nb: 10, agneau: "1600 g", riz: "700 g", amandes: "180 g", raisinssecs: "150 g", oignon: "5", cannelle: "6 g", cardamome: "5 g", curcuma: "5 g", bouillon: "900 ml", beurre: "120 g" },
+      { nb: 11, agneau: "1760 g", riz: "770 g", amandes: "198 g", raisinssecs: "165 g", oignon: "5½", cannelle: "6.6 g", cardamome: "5.5 g", curcuma: "5.5 g", bouillon: "990 ml", beurre: "132 g" },
+      { nb: 12, agneau: "1920 g", riz: "840 g", amandes: "216 g", raisinssecs: "180 g", oignon: "6", cannelle: "7.2 g", cardamome: "6 g", curcuma: "6 g", bouillon: "1080 ml", beurre: "144 g" },
+      { nb: 13, agneau: "2080 g", riz: "910 g", amandes: "234 g", raisinssecs: "195 g", oignon: "6½", cannelle: "7.8 g", cardamome: "6.5 g", curcuma: "6.5 g", bouillon: "1170 ml", beurre: "156 g" },
+      { nb: 14, agneau: "2240 g", riz: "980 g", amandes: "252 g", raisinssecs: "210 g", oignon: "7", cannelle: "8.4 g", cardamome: "7 g", curcuma: "7 g", bouillon: "1260 ml", beurre: "168 g" },
+      { nb: 15, agneau: "2400 g", riz: "1050 g", amandes: "270 g", raisinssecs: "225 g", oignon: "7½", cannelle: "9 g", cardamome: "7.5 g", curcuma: "7.5 g", bouillon: "1350 ml", beurre: "180 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐑", titre: "Une épaule AVEC son os, jamais désossée", detail: "L'os donne la gélatine qui fait le bouillon, et c'est ce bouillon qui cuit le riz.", badge: null },
+      { icone: "🌿", titre: "Un mélange baharat frais, moulu au moment", detail: "Cannelle, cardamome, muscade, clou : moulues d'avance, elles n'ont plus qu'un goût de poussière.", badge: null },
+      { icone: "⏳", titre: "Trois heures à couvert, à 150 °C", detail: "L'agneau doit se détacher à la fourchette. À deux heures, il résiste et le plat manque son effet.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz DANS le bouillon de l'agneau", detail: "Dégraissé mais gardé : à l'eau claire, le riz du quzi n'a aucun goût et le plat se dissocie.", badge: null },
+      { icone: "🌰", titre: "Amandes et raisins frits SÉPARÉMENT au beurre", detail: "Deux minutes chacun : dans le riz dès le départ, les amandes ramollissent et les raisins brûlent.", badge: null },
+      { icone: "🔥", titre: "Passer l'agneau au four VIF en fin de cuisson", detail: "Dix minutes à 220 °C, à découvert : c'est ce qui donne la croûte dorée sur une viande déjà fondante.", badge: null },
+      { icone: "⛰️", titre: "Monter en DÔME, agneau posé dessus", detail: "Le riz d'abord, tassé en montagne, puis la viande : c'est un plat de présentation avant d'être un plat.", badge: null },
+      { icone: "🥜", titre: "Amandes et raisins DISPERSÉS sur le dessus", detail: "Au dernier moment : mélangés au riz, ils disparaissent et le dôme perd son décor.", badge: null }
+    ],
+    liees: ["mandi","kabsa","perdepilavi"]
+  },
+  kugelis: {
+    dateAjout: "2026-08-31T20:05:00",
+    nom: "Kugelis",
+    cat: "plats", saisons: ["automne","hiver"], pays: "lituanie",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥔",
+    description: "Le gratin de pommes de terre râpées lituanien, dense et doré, servi avec crème et lardons. Sa difficulté tient à une seule chose : empêcher les pommes de terre râpées de NOIRCIR entre le râpage et le four.",
+    tableauKugelis: [
+      { nb: 1, pommedeterre: "200 g", lard: "45 g", oignon: "½", oeufs: "½", lait: "40 ml", cremefraiche: "30 ml", sel: "3 g", poivre: "0.8 g" },
+      { nb: 2, pommedeterre: "400 g", lard: "90 g", oignon: "1", oeufs: "1", lait: "80 ml", cremefraiche: "60 ml", sel: "6 g", poivre: "1.6 g" },
+      { nb: 3, pommedeterre: "600 g", lard: "135 g", oignon: "1½", oeufs: "1½", lait: "120 ml", cremefraiche: "90 ml", sel: "9 g", poivre: "2.4 g" },
+      { nb: 4, pommedeterre: "800 g", lard: "180 g", oignon: "2", oeufs: "2", lait: "160 ml", cremefraiche: "120 ml", sel: "12 g", poivre: "3.2 g" },
+      { nb: 5, pommedeterre: "1000 g", lard: "225 g", oignon: "2½", oeufs: "2½", lait: "200 ml", cremefraiche: "150 ml", sel: "15 g", poivre: "4 g" },
+      { nb: 6, pommedeterre: "1200 g", lard: "270 g", oignon: "3", oeufs: "3", lait: "240 ml", cremefraiche: "180 ml", sel: "18 g", poivre: "4.8 g" },
+      { nb: 7, pommedeterre: "1400 g", lard: "315 g", oignon: "3½", oeufs: "3½", lait: "280 ml", cremefraiche: "210 ml", sel: "21 g", poivre: "5.6 g" },
+      { nb: 8, pommedeterre: "1600 g", lard: "360 g", oignon: "4", oeufs: "4", lait: "320 ml", cremefraiche: "240 ml", sel: "24 g", poivre: "6.4 g" },
+      { nb: 9, pommedeterre: "1800 g", lard: "405 g", oignon: "4½", oeufs: "4½", lait: "360 ml", cremefraiche: "270 ml", sel: "27 g", poivre: "7.2 g" },
+      { nb: 10, pommedeterre: "2000 g", lard: "450 g", oignon: "5", oeufs: "5", lait: "400 ml", cremefraiche: "300 ml", sel: "30 g", poivre: "8 g" },
+      { nb: 11, pommedeterre: "2200 g", lard: "495 g", oignon: "5½", oeufs: "5½", lait: "440 ml", cremefraiche: "330 ml", sel: "33 g", poivre: "8.8 g" },
+      { nb: 12, pommedeterre: "2400 g", lard: "540 g", oignon: "6", oeufs: "6", lait: "480 ml", cremefraiche: "360 ml", sel: "36 g", poivre: "9.6 g" },
+      { nb: 13, pommedeterre: "2600 g", lard: "585 g", oignon: "6½", oeufs: "6½", lait: "520 ml", cremefraiche: "390 ml", sel: "39 g", poivre: "10.4 g" },
+      { nb: 14, pommedeterre: "2800 g", lard: "630 g", oignon: "7", oeufs: "7", lait: "560 ml", cremefraiche: "420 ml", sel: "42 g", poivre: "11.2 g" },
+      { nb: 15, pommedeterre: "3000 g", lard: "675 g", oignon: "7½", oeufs: "7½", lait: "600 ml", cremefraiche: "450 ml", sel: "45 g", poivre: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper FIN, à la râpe et pas au robot", detail: "Le robot coupe et fait de l'eau ; la râpe déchire les fibres et libère l'amidon qui lie le kugelis.", badge: null },
+      { icone: "⚡", titre: "Râper VITE et enchaîner sans pause", detail: "Les pommes de terre râpées noircissent en dix minutes : tout doit être prêt avant de commencer.", badge: null },
+      { icone: "🥛", titre: "Le lait CHAUD versé sur les pommes de terre râpées", detail: "Le geste lituanien : il ébouillante l'amidon, fixe la couleur et empêche l'oxydation.", badge: null },
+      { icone: "🐖", titre: "Lardons rissolés, le GRAS versé dans l'appareil", detail: "C'est lui qui donne le goût. Égoutté, le kugelis devient sec et fade.", badge: null },
+      { icone: "🧅", titre: "L'oignon râpé, pas haché", detail: "Râpé, il fond complètement et parfume la masse ; haché, il reste en morceaux qui rendent de l'eau.", badge: null },
+      { icone: "🍳", titre: "Un plat en fonte préchauffé et graissé", detail: "L'appareil doit grésiller en entrant : c'est ce qui forme la croûte du dessous.", badge: null },
+      { icone: "⏳", titre: "Une heure quinze à 180 °C, sans couvrir", detail: "Le dessus doit être brun foncé, presque noir sur les bords. Pâle, le kugelis est cru au centre.", badge: null },
+      { icone: "🌡️", titre: "Reposer vingt minutes avant de couper", detail: "Chaud, il s'effondre à la spatule. Tiède, il se coupe en parts nettes qui tiennent debout.", badge: null }
+    ],
+    liees: ["gratindauphinois","rosti","bramboraky"]
   },
 });

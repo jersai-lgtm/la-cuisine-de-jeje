@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 34 recettes
+// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 36 recettes
 // 👉 Pour AJOUTER une recette Boulangerie : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4545,5 +4545,83 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Glaçage au sucre glace sur le kringel TIÈDE", detail: "Chaud, il fond et disparaît ; froid, il reste en croûte blanche. Tiède, il nappe et devient translucide.", badge: null }
     ],
     liees: ["potica","sakotis","cinnamonroll"]
+  },
+  kleinur: {
+    dateAjout: "2026-08-31T20:02:00",
+    nom: "Kleinur",
+    cat: "boulangerie", pays: "islande",
+    base: 12,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥨",
+    description: "Les beignets torsadés islandais, servis avec le café depuis des siècles. Leur forme de nœud n'est pas un ornement : c'est la torsion qui les fait cuire uniformément dans l'huile sans qu'ils gonflent en boule.",
+    tableauKleinur: [
+      { nb: 1, farine: "45 g", sucre: "14 g", beurre: "8 g", lait: "22 ml", oeufs: "¼", levurechimique: "1.5 g", cardamome: "0.5 g", huilefriture: "18 ml" },
+      { nb: 2, farine: "90 g", sucre: "28 g", beurre: "16 g", lait: "44 ml", oeufs: "½", levurechimique: "3 g", cardamome: "1 g", huilefriture: "36 ml" },
+      { nb: 3, farine: "135 g", sucre: "42 g", beurre: "24 g", lait: "66 ml", oeufs: "¾", levurechimique: "4.5 g", cardamome: "1.5 g", huilefriture: "54 ml" },
+      { nb: 4, farine: "180 g", sucre: "56 g", beurre: "32 g", lait: "88 ml", oeufs: "1", levurechimique: "6 g", cardamome: "2 g", huilefriture: "72 ml" },
+      { nb: 5, farine: "225 g", sucre: "70 g", beurre: "40 g", lait: "110 ml", oeufs: "1¼", levurechimique: "7.5 g", cardamome: "2.5 g", huilefriture: "90 ml" },
+      { nb: 6, farine: "270 g", sucre: "84 g", beurre: "48 g", lait: "132 ml", oeufs: "1½", levurechimique: "9 g", cardamome: "3 g", huilefriture: "108 ml" },
+      { nb: 7, farine: "315 g", sucre: "98 g", beurre: "56 g", lait: "154 ml", oeufs: "1¾", levurechimique: "10.5 g", cardamome: "3.5 g", huilefriture: "126 ml" },
+      { nb: 8, farine: "360 g", sucre: "112 g", beurre: "64 g", lait: "176 ml", oeufs: "2", levurechimique: "12 g", cardamome: "4 g", huilefriture: "144 ml" },
+      { nb: 9, farine: "405 g", sucre: "126 g", beurre: "72 g", lait: "198 ml", oeufs: "2¼", levurechimique: "13.5 g", cardamome: "4.5 g", huilefriture: "162 ml" },
+      { nb: 10, farine: "450 g", sucre: "140 g", beurre: "80 g", lait: "220 ml", oeufs: "2½", levurechimique: "15 g", cardamome: "5 g", huilefriture: "180 ml" },
+      { nb: 11, farine: "495 g", sucre: "154 g", beurre: "88 g", lait: "242 ml", oeufs: "2¾", levurechimique: "16.5 g", cardamome: "5.5 g", huilefriture: "198 ml" },
+      { nb: 12, farine: "540 g", sucre: "168 g", beurre: "96 g", lait: "264 ml", oeufs: "3", levurechimique: "18 g", cardamome: "6 g", huilefriture: "216 ml" },
+      { nb: 13, farine: "585 g", sucre: "182 g", beurre: "104 g", lait: "286 ml", oeufs: "3¼", levurechimique: "19.5 g", cardamome: "6.5 g", huilefriture: "234 ml" },
+      { nb: 14, farine: "630 g", sucre: "196 g", beurre: "112 g", lait: "308 ml", oeufs: "3½", levurechimique: "21 g", cardamome: "7 g", huilefriture: "252 ml" },
+      { nb: 15, farine: "675 g", sucre: "210 g", beurre: "120 g", lait: "330 ml", oeufs: "3¾", levurechimique: "22.5 g", cardamome: "7.5 g", huilefriture: "270 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "La cardamome MOULUE fraîche, pas en poudre du commerce", detail: "C'est l'épice nordique par excellence : moulue depuis six mois, elle n'a plus aucun parfum.", badge: null },
+      { icone: "🥄", titre: "Levure CHIMIQUE, pas de levure de boulanger", detail: "Le kleina ne lève pas : il gonfle à la friture. Une pâte levée donnerait un beignet ordinaire.", badge: null },
+      { icone: "❄️", titre: "Trente minutes de repos au FRAIS", detail: "La pâte doit raffermir pour être découpée net : molle, les losanges se déforment à la torsion.", badge: null },
+      { icone: "📐", titre: "Découper en losanges, fente au CENTRE", detail: "Une entaille de trois centimètres au milieu : c'est par là qu'on passe une pointe pour tordre.", badge: null },
+      { icone: "🌀", titre: "Passer une pointe dans la fente, tirer", detail: "Le geste islandais : un seul mouvement. Retordu deux fois, le kleina se défait à la friture.", badge: null },
+      { icone: "🌡️", titre: "Huile à 180 °C, jamais moins", detail: "En dessous, la pâte absorbe l'huile et le beignet devient lourd et gras au lieu de rester sec.", badge: null },
+      { icone: "🔄", titre: "Retourner UNE seule fois", detail: "Ils cuisent deux minutes par face. Retournés sans cesse, ils s'imbibent et perdent leur dorure.", badge: null },
+      { icone: "🧂", titre: "Ni sucre glace ni glaçage", detail: "C'est un beignet volontairement peu sucré, fait pour accompagner un café noir. Le sucrer le dénature.", badge: null }
+    ],
+    liees: ["beignetspomme","kringel","churros"]
+  },
+  damper: {
+    dateAjout: "2026-08-31T20:06:00",
+    nom: "Damper",
+    cat: "boulangerie", pays: "australie",
+    base: 8,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🔥",
+    description: "Le pain des bergers itinérants australiens, cuit sous la cendre du feu de camp. Sans levure ni pétrissage : quatre ingrédients et une règle absolue, ne surtout pas travailler la pâte, sous peine d'obtenir une brique.",
+    tableauDamper: [
+      { nb: 1, farine: "60 g", levurechimique: "3 g", beurre: "12 g", lait: "35 ml", sel: "1.5 g" },
+      { nb: 2, farine: "120 g", levurechimique: "6 g", beurre: "24 g", lait: "70 ml", sel: "3 g" },
+      { nb: 3, farine: "180 g", levurechimique: "9 g", beurre: "36 g", lait: "105 ml", sel: "4.5 g" },
+      { nb: 4, farine: "240 g", levurechimique: "12 g", beurre: "48 g", lait: "140 ml", sel: "6 g" },
+      { nb: 5, farine: "300 g", levurechimique: "15 g", beurre: "60 g", lait: "175 ml", sel: "7.5 g" },
+      { nb: 6, farine: "360 g", levurechimique: "18 g", beurre: "72 g", lait: "210 ml", sel: "9 g" },
+      { nb: 7, farine: "420 g", levurechimique: "21 g", beurre: "84 g", lait: "245 ml", sel: "10.5 g" },
+      { nb: 8, farine: "480 g", levurechimique: "24 g", beurre: "96 g", lait: "280 ml", sel: "12 g" },
+      { nb: 9, farine: "540 g", levurechimique: "27 g", beurre: "108 g", lait: "315 ml", sel: "13.5 g" },
+      { nb: 10, farine: "600 g", levurechimique: "30 g", beurre: "120 g", lait: "350 ml", sel: "15 g" },
+      { nb: 11, farine: "660 g", levurechimique: "33 g", beurre: "132 g", lait: "385 ml", sel: "16.5 g" },
+      { nb: 12, farine: "720 g", levurechimique: "36 g", beurre: "144 g", lait: "420 ml", sel: "18 g" },
+      { nb: 13, farine: "780 g", levurechimique: "39 g", beurre: "156 g", lait: "455 ml", sel: "19.5 g" },
+      { nb: 14, farine: "840 g", levurechimique: "42 g", beurre: "168 g", lait: "490 ml", sel: "21 g" },
+      { nb: 15, farine: "900 g", levurechimique: "45 g", beurre: "180 g", lait: "525 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🚫", titre: "NE PAS pétrir, mélanger dix secondes", detail: "C'est la règle unique du damper : le gluten développé le rend dur comme de la pierre.", badge: null },
+      { icone: "🧈", titre: "Beurre FROID sablé du bout des doigts", detail: "Comme pour des scones : les morceaux de beurre créent des poches de vapeur et allègent la mie.", badge: null },
+      { icone: "🥛", titre: "Le lait ajouté d'un coup, pas progressivement", detail: "On rassemble grossièrement, en laissant la pâte irrégulière. Une pâte lisse est une pâte trop travaillée.", badge: null },
+      { icone: "✋", titre: "Former une boule sans la rouler", detail: "On la pose et on l'aplatit légèrement. Roulée, elle se resserre et ne lèvera pas au four.", badge: null },
+      { icone: "🔪", titre: "Une croix profonde entaillée sur le dessus", detail: "Jusqu'au tiers de la hauteur : c'est ce qui permet à la vapeur de sortir sans faire éclater les côtés.", badge: null },
+      { icone: "🌾", titre: "Fariner généreusement avant d'enfourner", detail: "La croûte farinée et craquelée est l'aspect attendu : lisse et dorée, ce n'est plus un damper.", badge: null },
+      { icone: "🔥", titre: "Four très chaud au départ, 220 °C", detail: "Puis 190 °C : le choc initial fait lever la levure chimique d'un coup, c'est la seule poussée qu'il aura.", badge: null },
+      { icone: "🍯", titre: "Se mange TIÈDE, au beurre et au golden syrup", detail: "C'est la tradition du bush. Froid, il durcit vite : le damper ne se garde pas jusqu'au lendemain.", badge: null }
+    ],
+    liees: ["sodabread","scones","paincampagne"]
   },
 });

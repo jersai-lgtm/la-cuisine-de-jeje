@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_sauces.js — Recettes de catégorie "sauces" (Sauces) — 29 recettes
+// recettes_sauces.js — Recettes de catégorie "sauces" (Sauces) — 33 recettes
 // 👉 Pour AJOUTER une recette Sauces : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3612,5 +3612,157 @@ mayonnaise: {
       { icone: "🌿", titre: "Persil plat haché au service", detail: "Il apporte la fraîcheur qui manque à une sauce entièrement fondue. Haché à l'avance, il noircit.", badge: null }
     ],
     liees: ["saucesoubise","saucebercy","saucerobert"]
+  },
+  mojorojo: {
+    dateAjout: "2026-08-31T19:00:00",
+    nom: "Mojo Rojo",
+    cat: "sauces", pays: "espagne",
+    base: 6,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "La sauce rouge des Canaries, servie avec les papas arrugadas. Elle se monte au mortier avec de la mie de pain rassis — c'est le pain qui lie, jamais l'huile seule, et c'est ce qui la distingue d'une simple huile pimentée.",
+    tableauMojorojo: [
+      { nb: 1, poivron: "45 g", ail: "1½", painrassis: "12 g", cumin: "1 g", paprikafume: "1.5 g", huileolive: "25 ml", vinaigreVin: "8 ml", sel: "1.5 g" },
+      { nb: 2, poivron: "90 g", ail: "3", painrassis: "24 g", cumin: "2 g", paprikafume: "3 g", huileolive: "50 ml", vinaigreVin: "16 ml", sel: "3 g" },
+      { nb: 3, poivron: "135 g", ail: "4½", painrassis: "36 g", cumin: "3 g", paprikafume: "4.5 g", huileolive: "75 ml", vinaigreVin: "24 ml", sel: "4.5 g" },
+      { nb: 4, poivron: "180 g", ail: "6", painrassis: "48 g", cumin: "4 g", paprikafume: "6 g", huileolive: "100 ml", vinaigreVin: "32 ml", sel: "6 g" },
+      { nb: 5, poivron: "225 g", ail: "7½", painrassis: "60 g", cumin: "5 g", paprikafume: "7.5 g", huileolive: "125 ml", vinaigreVin: "40 ml", sel: "7.5 g" },
+      { nb: 6, poivron: "270 g", ail: "9", painrassis: "72 g", cumin: "6 g", paprikafume: "9 g", huileolive: "150 ml", vinaigreVin: "48 ml", sel: "9 g" },
+      { nb: 7, poivron: "315 g", ail: "10½", painrassis: "84 g", cumin: "7 g", paprikafume: "10.5 g", huileolive: "175 ml", vinaigreVin: "56 ml", sel: "10.5 g" },
+      { nb: 8, poivron: "360 g", ail: "12", painrassis: "96 g", cumin: "8 g", paprikafume: "12 g", huileolive: "200 ml", vinaigreVin: "64 ml", sel: "12 g" },
+      { nb: 9, poivron: "405 g", ail: "13½", painrassis: "108 g", cumin: "9 g", paprikafume: "13.5 g", huileolive: "225 ml", vinaigreVin: "72 ml", sel: "13.5 g" },
+      { nb: 10, poivron: "450 g", ail: "15", painrassis: "120 g", cumin: "10 g", paprikafume: "15 g", huileolive: "250 ml", vinaigreVin: "80 ml", sel: "15 g" },
+      { nb: 11, poivron: "495 g", ail: "16½", painrassis: "132 g", cumin: "11 g", paprikafume: "16.5 g", huileolive: "275 ml", vinaigreVin: "88 ml", sel: "16.5 g" },
+      { nb: 12, poivron: "540 g", ail: "18", painrassis: "144 g", cumin: "12 g", paprikafume: "18 g", huileolive: "300 ml", vinaigreVin: "96 ml", sel: "18 g" },
+      { nb: 13, poivron: "585 g", ail: "19½", painrassis: "156 g", cumin: "13 g", paprikafume: "19.5 g", huileolive: "325 ml", vinaigreVin: "104 ml", sel: "19.5 g" },
+      { nb: 14, poivron: "630 g", ail: "21", painrassis: "168 g", cumin: "14 g", paprikafume: "21 g", huileolive: "350 ml", vinaigreVin: "112 ml", sel: "21 g" },
+      { nb: 15, poivron: "675 g", ail: "22½", painrassis: "180 g", cumin: "15 g", paprikafume: "22.5 g", huileolive: "375 ml", vinaigreVin: "120 ml", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Des poivrons SÉCHÉS réhydratés, pas frais", detail: "Aux Canaries c'est la pimienta palmera : les poivrons frais donnent une sauce aqueuse et fade.", badge: null },
+      { icone: "🥖", titre: "Du pain RASSIS, trempé au vinaigre", detail: "C'est lui qui donne le corps. Sans pain, le mojo se sépare en huile et en pulpe dès le lendemain.", badge: null },
+      { icone: "🥣", titre: "Monter au MORTIER, pas au mixeur", detail: "Le mixeur émulsionne trop et rend la sauce mousseuse. Le mortier garde le grain caractéristique.", badge: null },
+      { icone: "🧄", titre: "L'ail écrasé au gros sel, en premier", detail: "Le sel sert d'abrasif : c'est le seul moyen d'obtenir une pâte d'ail lisse sans l'oxyder au couteau.", badge: null },
+      { icone: "🍳", titre: "Cumin torréfié à sec avant de piler", detail: "Deux minutes à la poêle : cru, il domine tout d'une note poussiéreuse.", badge: null },
+      { icone: "🫒", titre: "L'huile EN FILET, comme une mayonnaise", detail: "Versée d'un coup, elle ne s'incorpore pas et le mojo reste en deux phases dans le bol.", badge: null },
+      { icone: "⏳", titre: "Une heure de repos avant de servir", detail: "Le pain doit finir d'absorber. Servi tout de suite, le mojo est plus liquide et plus agressif.", badge: null }
+    ],
+    liees: ["mojoverde","romesco","harissa"]
+  },
+  saucepoivrevert: {
+    dateAjout: "2026-08-31T19:01:00",
+    nom: "Sauce au Poivre Vert",
+    cat: "sauces", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫑",
+    description: "La sauce des steaks de bistrot, montée dans le sucre caramélisé de la poêle. Le poivre vert n'est pas du poivre noir moins mûr en apparence : conservé en saumure, il reste frais, floral et beaucoup moins piquant.",
+    tableauSaucepoivrevert: [
+      { nb: 1, poivrevert: "6 g", creme: "45 ml", cognac: "12 ml", bouillon: "40 ml", echalote: "½", beurre: "8 g", moutarde: "3 g" },
+      { nb: 2, poivrevert: "12 g", creme: "90 ml", cognac: "24 ml", bouillon: "80 ml", echalote: "1", beurre: "16 g", moutarde: "6 g" },
+      { nb: 3, poivrevert: "18 g", creme: "135 ml", cognac: "36 ml", bouillon: "120 ml", echalote: "1½", beurre: "24 g", moutarde: "9 g" },
+      { nb: 4, poivrevert: "24 g", creme: "180 ml", cognac: "48 ml", bouillon: "160 ml", echalote: "2", beurre: "32 g", moutarde: "12 g" },
+      { nb: 5, poivrevert: "30 g", creme: "225 ml", cognac: "60 ml", bouillon: "200 ml", echalote: "2½", beurre: "40 g", moutarde: "15 g" },
+      { nb: 6, poivrevert: "36 g", creme: "270 ml", cognac: "72 ml", bouillon: "240 ml", echalote: "3", beurre: "48 g", moutarde: "18 g" },
+      { nb: 7, poivrevert: "42 g", creme: "315 ml", cognac: "84 ml", bouillon: "280 ml", echalote: "3½", beurre: "56 g", moutarde: "21 g" },
+      { nb: 8, poivrevert: "48 g", creme: "360 ml", cognac: "96 ml", bouillon: "320 ml", echalote: "4", beurre: "64 g", moutarde: "24 g" },
+      { nb: 9, poivrevert: "54 g", creme: "405 ml", cognac: "108 ml", bouillon: "360 ml", echalote: "4½", beurre: "72 g", moutarde: "27 g" },
+      { nb: 10, poivrevert: "60 g", creme: "450 ml", cognac: "120 ml", bouillon: "400 ml", echalote: "5", beurre: "80 g", moutarde: "30 g" },
+      { nb: 11, poivrevert: "66 g", creme: "495 ml", cognac: "132 ml", bouillon: "440 ml", echalote: "5½", beurre: "88 g", moutarde: "33 g" },
+      { nb: 12, poivrevert: "72 g", creme: "540 ml", cognac: "144 ml", bouillon: "480 ml", echalote: "6", beurre: "96 g", moutarde: "36 g" },
+      { nb: 13, poivrevert: "78 g", creme: "585 ml", cognac: "156 ml", bouillon: "520 ml", echalote: "6½", beurre: "104 g", moutarde: "39 g" },
+      { nb: 14, poivrevert: "84 g", creme: "630 ml", cognac: "168 ml", bouillon: "560 ml", echalote: "7", beurre: "112 g", moutarde: "42 g" },
+      { nb: 15, poivrevert: "90 g", creme: "675 ml", cognac: "180 ml", bouillon: "600 ml", echalote: "7½", beurre: "120 g", moutarde: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍳", titre: "Déglacer la POÊLE DE CUISSON, jamais une casserole propre", detail: "Les sucs caramélisés de la viande sont la moitié du goût : dans une casserole neuve, la sauce est plate.", badge: null },
+      { icone: "🫑", titre: "Le poivre vert EN SAUMURE, égoutté", detail: "Le poivre vert lyophilisé est sec et piquant ; en saumure, il reste tendre et floral.", badge: null },
+      { icone: "🥄", titre: "En écraser la MOITIÉ, garder l'autre entière", detail: "Écrasé, il parfume le fond ; entier, il croque sous la dent. Les deux textures font la sauce.", badge: null },
+      { icone: "🔥", titre: "Flamber le cognac, ou le réduire à sec", detail: "L'alcool cru domine tout : il faut qu'il disparaisse complètement avant d'ajouter la crème.", badge: null },
+      { icone: "♨️", titre: "Réduire le bouillon AVANT la crème", detail: "La crème ajoutée trop tôt réduit mal et tourne au granuleux : c'est l'erreur classique.", badge: null },
+      { icone: "🧈", titre: "Monter au beurre froid, hors du feu", detail: "Un beurre glacé fouetté à la fin donne le brillant et la texture nappante. Sur le feu, il se sépare.", badge: null },
+      { icone: "🚫", titre: "Ne plus faire bouillir après le beurre", detail: "La liaison casse à l'ébullition et la sauce redevient une crème liquide et grasse.", badge: null }
+    ],
+    liees: ["bearnaise","gribiche","saucebordelaise"]
+  },
+  agrodolce: {
+    dateAjout: "2026-08-31T19:02:00",
+    nom: "Agrodolce",
+    cat: "sauces", saisons: ["ete","automne"], pays: "italie",
+    base: 6,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍯",
+    description: "L'aigre-doux sicilien, héritage des cuisines arabes de l'île : vinaigre et sucre réduits avec raisins secs et pignons. On le sert sur les légumes grillés, les sardines ou le foie — jamais sur une viande déjà sucrée.",
+    tableauAgrodolce: [
+      { nb: 1, vinaigreVin: "30 ml", sucre: "18 g", oignonrouge: "½", raisinssecs: "15 g", pignons: "12 g", huileolive: "12 ml", laurier: "0.2 g" },
+      { nb: 2, vinaigreVin: "60 ml", sucre: "36 g", oignonrouge: "1", raisinssecs: "30 g", pignons: "24 g", huileolive: "24 ml", laurier: "0.4 g" },
+      { nb: 3, vinaigreVin: "90 ml", sucre: "54 g", oignonrouge: "1½", raisinssecs: "45 g", pignons: "36 g", huileolive: "36 ml", laurier: "0.6 g" },
+      { nb: 4, vinaigreVin: "120 ml", sucre: "72 g", oignonrouge: "2", raisinssecs: "60 g", pignons: "48 g", huileolive: "48 ml", laurier: "0.8 g" },
+      { nb: 5, vinaigreVin: "150 ml", sucre: "90 g", oignonrouge: "2½", raisinssecs: "75 g", pignons: "60 g", huileolive: "60 ml", laurier: "1 g" },
+      { nb: 6, vinaigreVin: "180 ml", sucre: "108 g", oignonrouge: "3", raisinssecs: "90 g", pignons: "72 g", huileolive: "72 ml", laurier: "1.2 g" },
+      { nb: 7, vinaigreVin: "210 ml", sucre: "126 g", oignonrouge: "3½", raisinssecs: "105 g", pignons: "84 g", huileolive: "84 ml", laurier: "1.4 g" },
+      { nb: 8, vinaigreVin: "240 ml", sucre: "144 g", oignonrouge: "4", raisinssecs: "120 g", pignons: "96 g", huileolive: "96 ml", laurier: "1.6 g" },
+      { nb: 9, vinaigreVin: "270 ml", sucre: "162 g", oignonrouge: "4½", raisinssecs: "135 g", pignons: "108 g", huileolive: "108 ml", laurier: "1.8 g" },
+      { nb: 10, vinaigreVin: "300 ml", sucre: "180 g", oignonrouge: "5", raisinssecs: "150 g", pignons: "120 g", huileolive: "120 ml", laurier: "2 g" },
+      { nb: 11, vinaigreVin: "330 ml", sucre: "198 g", oignonrouge: "5½", raisinssecs: "165 g", pignons: "132 g", huileolive: "132 ml", laurier: "2.2 g" },
+      { nb: 12, vinaigreVin: "360 ml", sucre: "216 g", oignonrouge: "6", raisinssecs: "180 g", pignons: "144 g", huileolive: "144 ml", laurier: "2.4 g" },
+      { nb: 13, vinaigreVin: "390 ml", sucre: "234 g", oignonrouge: "6½", raisinssecs: "195 g", pignons: "156 g", huileolive: "156 ml", laurier: "2.6 g" },
+      { nb: 14, vinaigreVin: "420 ml", sucre: "252 g", oignonrouge: "7", raisinssecs: "210 g", pignons: "168 g", huileolive: "168 ml", laurier: "2.8 g" },
+      { nb: 15, vinaigreVin: "450 ml", sucre: "270 g", oignonrouge: "7½", raisinssecs: "225 g", pignons: "180 g", huileolive: "180 ml", laurier: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "⚖️", titre: "Deux parts de vinaigre pour une de sucre", detail: "C'est l'équilibre sicilien : à parts égales, on obtient un chutney, plus doux et moins tranchant.", badge: null },
+      { icone: "🧅", titre: "L'oignon fondu LENTEMENT, sans coloration", detail: "Vingt minutes à feu doux : coloré, il apporte une amertume qui se bat avec le vinaigre.", badge: null },
+      { icone: "🍇", titre: "Raisins secs gonflés au vinaigre tiède", detail: "Secs, ils pompent le liquide de la sauce et restent durs. Gonflés, ils fondent en bouche.", badge: null },
+      { icone: "🌰", titre: "Pignons torréfiés SÉPARÉMENT, ajoutés à la fin", detail: "Dans la sauce, ils ramollissent. Torréfiés puis posés dessus, ils gardent leur croquant.", badge: null },
+      { icone: "♨️", titre: "Réduire jusqu'à NAPPER la cuillère", detail: "Trop liquide, l'agrodolce coule au fond de l'assiette ; trop réduit, il devient un caramel dur en refroidissant.", badge: null },
+      { icone: "👃", titre: "Cuire la fenêtre ouverte", detail: "Les vapeurs de vinaigre chauffé sont violentes. Ce détail pratique est ce qui décourage la plupart des gens.", badge: null },
+      { icone: "⏳", titre: "Se sert TIÈDE ou froid, jamais brûlant", detail: "Chaud, le vinaigre monte au nez et masque tout le reste. Il gagne aussi à reposer une nuit.", badge: null }
+    ],
+    liees: ["caponatasicile","gribiche","chutneyoignons"]
+  },
+  persillade: {
+    dateAjout: "2026-08-31T19:03:00",
+    nom: "Persillade",
+    cat: "sauces", pays: "france",
+    base: 6,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Deux ingrédients, persil et ail, hachés ensemble et jamais séparément. C'est le hachage COMMUN qui fait la persillade : l'huile de l'ail imprègne le persil sous la lame, et l'on obtient une pâte verte, pas un mélange.",
+    tableauPersillade: [
+      { nb: 1, persil: "25 g", ail: "2", huileolive: "15 ml", sel: "1 g", citron: "¼" },
+      { nb: 2, persil: "50 g", ail: "4", huileolive: "30 ml", sel: "2 g", citron: "½" },
+      { nb: 3, persil: "75 g", ail: "6", huileolive: "45 ml", sel: "3 g", citron: "¾" },
+      { nb: 4, persil: "100 g", ail: "8", huileolive: "60 ml", sel: "4 g", citron: "1" },
+      { nb: 5, persil: "125 g", ail: "10", huileolive: "75 ml", sel: "5 g", citron: "1¼" },
+      { nb: 6, persil: "150 g", ail: "12", huileolive: "90 ml", sel: "6 g", citron: "1½" },
+      { nb: 7, persil: "175 g", ail: "14", huileolive: "105 ml", sel: "7 g", citron: "1¾" },
+      { nb: 8, persil: "200 g", ail: "16", huileolive: "120 ml", sel: "8 g", citron: "2" },
+      { nb: 9, persil: "225 g", ail: "18", huileolive: "135 ml", sel: "9 g", citron: "2¼" },
+      { nb: 10, persil: "250 g", ail: "20", huileolive: "150 ml", sel: "10 g", citron: "2½" },
+      { nb: 11, persil: "275 g", ail: "22", huileolive: "165 ml", sel: "11 g", citron: "2¾" },
+      { nb: 12, persil: "300 g", ail: "24", huileolive: "180 ml", sel: "12 g", citron: "3" },
+      { nb: 13, persil: "325 g", ail: "26", huileolive: "195 ml", sel: "13 g", citron: "3¼" },
+      { nb: 14, persil: "350 g", ail: "28", huileolive: "210 ml", sel: "14 g", citron: "3½" },
+      { nb: 15, persil: "375 g", ail: "30", huileolive: "225 ml", sel: "15 g", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Hacher persil et ail ENSEMBLE, sur la planche", detail: "C'est toute la technique : hachés à part puis mélangés, on obtient du persil et de l'ail, pas une persillade.", badge: null },
+      { icone: "🌿", titre: "Du persil PLAT, jamais frisé", detail: "Le frisé est décoratif et sans goût ; le plat a le parfum poivré qui fait la sauce.", badge: null },
+      { icone: "💧", titre: "Un persil parfaitement SEC avant hachage", detail: "Mouillé, il se transforme en bouillie verte sous la lame au lieu de rester en fines particules.", badge: null },
+      { icone: "🧄", titre: "Retirer le germe de l'ail", detail: "Cru, le germe est amer et indigeste : sur une sauce crue à l'ail, il se sent immédiatement.", badge: null },
+      { icone: "🔪", titre: "Un couteau AFFÛTÉ, jamais un mixeur", detail: "Le mixeur écrase les cellules et libère une amertume. Le couteau tranche et garde le vert franc.", badge: null },
+      { icone: "⏱️", titre: "Se fait dans les MINUTES qui précèdent", detail: "L'ail cru s'oxyde et devient piquant en une heure : c'est la sauce la moins patiente qui soit.", badge: null },
+      { icone: "🔥", titre: "Ajoutée EN FIN de cuisson, jamais au début", detail: "Sur les champignons ou les pommes de terre : trente secondes, sinon l'ail brûle et devient âcre.", badge: null }
+    ],
+    liees: ["gremolata","chimichurri","patespesto"]
   },
 });
