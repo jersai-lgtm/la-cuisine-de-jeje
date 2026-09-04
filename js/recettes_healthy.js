@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_healthy.js — Recettes de catégorie "healthy" (Healthy) — 33 recettes
+// recettes_healthy.js — Recettes de catégorie "healthy" (Healthy) — 35 recettes
 // 👉 Pour AJOUTER une recette Healthy : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -2608,5 +2608,82 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "Mélanger VIGOUREUSEMENT à table, tout le bol", detail: "Bibimbap veut dire « riz mélangé ». Mangé en couches, ce n'est pas le plat.", badge: null }
     ],
     liees: ["bibimbap","japchae","kimchijjigae"]
+  },
+  boltofu: {
+    dateAjout: "2026-09-01T14:08:00",
+    nom: "Bol de Riz Complet au Tofu",
+    cat: "healthy", pays: "japon",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🍱",
+    description: "Le bol complet à la japonaise, dont tout repose sur le tofu : PRESSÉ une demi-heure avant d'être saisi. Non pressé, il rend son eau dans la poêle, bout au lieu de dorer, et reste blanc et spongieux.",
+    tableauBoltofu: [
+      { nb: 1, rizcomplet: "60 g", tofu: "90 g", edamame: "45 g", carotte: "45 g", avocat: "45 g", sojaSauce: "12 ml", huilesesame: "8 ml", sesame: "4 g", gingembre: "5 g", vinaigreRiz: "8 ml" },
+      { nb: 2, rizcomplet: "120 g", tofu: "180 g", edamame: "90 g", carotte: "90 g", avocat: "90 g", sojaSauce: "24 ml", huilesesame: "16 ml", sesame: "8 g", gingembre: "10 g", vinaigreRiz: "16 ml" },
+      { nb: 3, rizcomplet: "180 g", tofu: "270 g", edamame: "135 g", carotte: "135 g", avocat: "135 g", sojaSauce: "36 ml", huilesesame: "24 ml", sesame: "12 g", gingembre: "15 g", vinaigreRiz: "24 ml" },
+      { nb: 4, rizcomplet: "240 g", tofu: "360 g", edamame: "180 g", carotte: "180 g", avocat: "180 g", sojaSauce: "48 ml", huilesesame: "32 ml", sesame: "16 g", gingembre: "20 g", vinaigreRiz: "32 ml" },
+      { nb: 5, rizcomplet: "300 g", tofu: "450 g", edamame: "225 g", carotte: "225 g", avocat: "225 g", sojaSauce: "60 ml", huilesesame: "40 ml", sesame: "20 g", gingembre: "25 g", vinaigreRiz: "40 ml" },
+      { nb: 6, rizcomplet: "360 g", tofu: "540 g", edamame: "270 g", carotte: "270 g", avocat: "270 g", sojaSauce: "72 ml", huilesesame: "48 ml", sesame: "24 g", gingembre: "30 g", vinaigreRiz: "48 ml" },
+      { nb: 7, rizcomplet: "420 g", tofu: "630 g", edamame: "315 g", carotte: "315 g", avocat: "315 g", sojaSauce: "84 ml", huilesesame: "56 ml", sesame: "28 g", gingembre: "35 g", vinaigreRiz: "56 ml" },
+      { nb: 8, rizcomplet: "480 g", tofu: "720 g", edamame: "360 g", carotte: "360 g", avocat: "360 g", sojaSauce: "96 ml", huilesesame: "64 ml", sesame: "32 g", gingembre: "40 g", vinaigreRiz: "64 ml" },
+      { nb: 9, rizcomplet: "540 g", tofu: "810 g", edamame: "405 g", carotte: "405 g", avocat: "405 g", sojaSauce: "108 ml", huilesesame: "72 ml", sesame: "36 g", gingembre: "45 g", vinaigreRiz: "72 ml" },
+      { nb: 10, rizcomplet: "600 g", tofu: "900 g", edamame: "450 g", carotte: "450 g", avocat: "450 g", sojaSauce: "120 ml", huilesesame: "80 ml", sesame: "40 g", gingembre: "50 g", vinaigreRiz: "80 ml" },
+      { nb: 11, rizcomplet: "660 g", tofu: "990 g", edamame: "495 g", carotte: "495 g", avocat: "495 g", sojaSauce: "132 ml", huilesesame: "88 ml", sesame: "44 g", gingembre: "55 g", vinaigreRiz: "88 ml" },
+      { nb: 12, rizcomplet: "720 g", tofu: "1080 g", edamame: "540 g", carotte: "540 g", avocat: "540 g", sojaSauce: "144 ml", huilesesame: "96 ml", sesame: "48 g", gingembre: "60 g", vinaigreRiz: "96 ml" },
+      { nb: 13, rizcomplet: "780 g", tofu: "1170 g", edamame: "585 g", carotte: "585 g", avocat: "585 g", sojaSauce: "156 ml", huilesesame: "104 ml", sesame: "52 g", gingembre: "65 g", vinaigreRiz: "104 ml" },
+      { nb: 14, rizcomplet: "840 g", tofu: "1260 g", edamame: "630 g", carotte: "630 g", avocat: "630 g", sojaSauce: "168 ml", huilesesame: "112 ml", sesame: "56 g", gingembre: "70 g", vinaigreRiz: "112 ml" },
+      { nb: 15, rizcomplet: "900 g", tofu: "1350 g", edamame: "675 g", carotte: "675 g", avocat: "675 g", sojaSauce: "180 ml", huilesesame: "120 ml", sesame: "60 g", gingembre: "75 g", vinaigreRiz: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "⚖️", titre: "PRESSER le tofu trente minutes, sous un poids", detail: "Entre deux torchons avec une casserole dessus : c'est l'étape qui décide de tout le reste.", badge: null },
+      { icone: "🔪", titre: "Le couper en cubes APRÈS pressage", detail: "Coupé avant, il s'écrase sous le poids et on obtient des morceaux déformés.", badge: null },
+      { icone: "🌽", titre: "Le rouler dans la maïzena avant de saisir", detail: "Une fine couche : elle croustille et scelle le tofu, qui reste moelleux à l'intérieur.", badge: null },
+      { icone: "🔥", titre: "Poêle TRÈS chaude, ne pas y toucher", detail: "Trois minutes sans bouger par face : remué, le tofu se défait avant d'avoir formé sa croûte.", badge: null },
+      { icone: "🍚", titre: "Le riz complet trempé une heure avant cuisson", detail: "Il cuit alors en trente minutes au lieu de quarante-cinq et reste bien plus moelleux.", badge: null },
+      { icone: "🌿", titre: "Les edamame cuits DEUX minutes, pas plus", detail: "Ils doivent rester vert vif et fermes : trop cuits, ils virent au kaki et deviennent farineux.", badge: null },
+      { icone: "🥑", titre: "L'avocat coupé au dernier moment, citronné", detail: "Sur un bol préparé à l'avance, il brunit et gâche visuellement tout le reste.", badge: null },
+      { icone: "🥄", titre: "La sauce SERVIE À PART, versée à table", detail: "Versée d'avance, elle détrempe le riz et fait fondre la croûte du tofu.", badge: null }
+    ],
+    liees: ["pokebowlsaumon","bibimbapvegetarien","bolsarrasin"]
+  },
+  chourougepomme: {
+    dateAjout: "2026-09-01T14:09:00",
+    nom: "Salade de Chou Rouge et Pomme",
+    cat: "healthy", saisons: ["automne","hiver"], pays: "allemagne",
+    base: 6,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🟣",
+    description: "La salade d'hiver allemande, dont la couleur est une réaction chimique : le chou rouge est un indicateur de pH. Sans acide il vire au bleu-gris ; avec du vinaigre, il devient d'un violet éclatant.",
+    tableauChourougepomme: [
+      { nb: 1, chourouge: "130 g", pomme: "70 g", noix: "20 g", vinaigreCidre: "15 ml", huilenoix: "12 ml", moutarde: "5 g", miel: "6 g", carvi: "1 g" },
+      { nb: 2, chourouge: "260 g", pomme: "140 g", noix: "40 g", vinaigreCidre: "30 ml", huilenoix: "24 ml", moutarde: "10 g", miel: "12 g", carvi: "2 g" },
+      { nb: 3, chourouge: "390 g", pomme: "210 g", noix: "60 g", vinaigreCidre: "45 ml", huilenoix: "36 ml", moutarde: "15 g", miel: "18 g", carvi: "3 g" },
+      { nb: 4, chourouge: "520 g", pomme: "280 g", noix: "80 g", vinaigreCidre: "60 ml", huilenoix: "48 ml", moutarde: "20 g", miel: "24 g", carvi: "4 g" },
+      { nb: 5, chourouge: "650 g", pomme: "350 g", noix: "100 g", vinaigreCidre: "75 ml", huilenoix: "60 ml", moutarde: "25 g", miel: "30 g", carvi: "5 g" },
+      { nb: 6, chourouge: "780 g", pomme: "420 g", noix: "120 g", vinaigreCidre: "90 ml", huilenoix: "72 ml", moutarde: "30 g", miel: "36 g", carvi: "6 g" },
+      { nb: 7, chourouge: "910 g", pomme: "490 g", noix: "140 g", vinaigreCidre: "105 ml", huilenoix: "84 ml", moutarde: "35 g", miel: "42 g", carvi: "7 g" },
+      { nb: 8, chourouge: "1040 g", pomme: "560 g", noix: "160 g", vinaigreCidre: "120 ml", huilenoix: "96 ml", moutarde: "40 g", miel: "48 g", carvi: "8 g" },
+      { nb: 9, chourouge: "1170 g", pomme: "630 g", noix: "180 g", vinaigreCidre: "135 ml", huilenoix: "108 ml", moutarde: "45 g", miel: "54 g", carvi: "9 g" },
+      { nb: 10, chourouge: "1300 g", pomme: "700 g", noix: "200 g", vinaigreCidre: "150 ml", huilenoix: "120 ml", moutarde: "50 g", miel: "60 g", carvi: "10 g" },
+      { nb: 11, chourouge: "1430 g", pomme: "770 g", noix: "220 g", vinaigreCidre: "165 ml", huilenoix: "132 ml", moutarde: "55 g", miel: "66 g", carvi: "11 g" },
+      { nb: 12, chourouge: "1560 g", pomme: "840 g", noix: "240 g", vinaigreCidre: "180 ml", huilenoix: "144 ml", moutarde: "60 g", miel: "72 g", carvi: "12 g" },
+      { nb: 13, chourouge: "1690 g", pomme: "910 g", noix: "260 g", vinaigreCidre: "195 ml", huilenoix: "156 ml", moutarde: "65 g", miel: "78 g", carvi: "13 g" },
+      { nb: 14, chourouge: "1820 g", pomme: "980 g", noix: "280 g", vinaigreCidre: "210 ml", huilenoix: "168 ml", moutarde: "70 g", miel: "84 g", carvi: "14 g" },
+      { nb: 15, chourouge: "1950 g", pomme: "1050 g", noix: "300 g", vinaigreCidre: "225 ml", huilenoix: "180 ml", moutarde: "75 g", miel: "90 g", carvi: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟣", titre: "Le vinaigre ajouté TÔT, dès le taillage", detail: "C'est de la chimie : sans acide, le chou rouge vire au bleu-gris en une heure et devient peu appétissant.", badge: null },
+      { icone: "🔪", titre: "Émincer TRÈS fin, à la mandoline", detail: "Un chou épais reste coriace même massé : deux millimètres maximum, c'est la seule épaisseur qui marche.", badge: null },
+      { icone: "✋", titre: "MASSER le chou salé dix minutes", detail: "À pleines mains : il perd un tiers de son volume, devient tendre et cesse d'être une salade agressive.", badge: null },
+      { icone: "💧", titre: "Rincer et essorer après le massage", detail: "Sinon la salade est immangeable de sel. C'est l'étape que tout le monde oublie.", badge: null },
+      { icone: "🍏", titre: "Une pomme ACIDE, taillée au dernier moment", detail: "Granny smith ou boskoop : une pomme douce disparaît, et coupée trop tôt elle brunit.", badge: null },
+      { icone: "🌿", titre: "Du carvi, pas du cumin", detail: "L'épice allemande du chou : anisée, elle rend le chou digeste. Le cumin donnerait un goût oriental.", badge: null },
+      { icone: "⏳", titre: "Deux heures de repos avant de servir", detail: "Le chou doit s'imprégner. Servie tout de suite, la salade est piquante et le vinaigre domine.", badge: null }
+    ],
+    liees: ["coleslaw","saladecauchoise","choucroute"]
   },
 });

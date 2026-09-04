@@ -115590,6 +115590,1082 @@ window.RECETTES_EN = {
     "detail": "Added in advance, it melts into the warm syrup and leaves only a white puddle."
    }
   ]
+ },
+ "beercheese": {
+  "nom": "Beer Cheese",
+  "description": "The bar spread of Kentucky, born in the taverns of the Ohio River to make customers thirsty. The cheese is worked RAW with the beer — never heated, or you get a fondue rather than a spread.",
+  "etapes": [
+   {
+    "titre": "A MATURE cheddar, finely grated",
+    "detail": "Young cheddar is bland and fatty: you need an aged one that stands up to the beer's bitterness."
+   },
+   {
+    "titre": "Every ingredient at ROOM temperature",
+    "detail": "Cheese straight from the fridge will not emulsify and the spread stays grainy."
+   },
+   {
+    "titre": "An AMBER beer, never a wheat beer",
+    "detail": "Wheat beer is too gentle and disappears. Amber brings the bitterness that makes a beer cheese."
+   },
+   {
+    "titre": "Let the beer GO FLAT for an hour",
+    "detail": "Fizzy, it aerates the spread into something like whipped cream rather than a dip."
+   },
+   {
+    "titre": "NEVER heat the mixture",
+    "detail": "That is what separates the spread from a fondue: heated, the cheddar strings and sets as it cools."
+   },
+   {
+    "titre": "Pulse-blend, adding the beer little by little",
+    "detail": "Poured in at once, it liquefies everything and the consistency cannot be recovered."
+   },
+   {
+    "titre": "Twenty-four hours in the fridge before serving",
+    "detail": "The raw garlic and worcestershire need that time: tasted the same day, it is garlic cheese."
+   }
+  ]
+ },
+ "chevremiel": {
+  "nom": "Honeyed Goat Cheese Cream",
+  "description": "A fresh goat cheese spread whipped with honey and thyme, served on toast. Its difficulty is the dosing: the honey must be guessed at rather than seen — beyond two spoonfuls, the cream tips into dessert.",
+  "etapes": [
+   {
+    "titre": "FRESH goat cheese, never aged",
+    "detail": "Aged is too powerful and covers the honey: it is the fresh, mild and tangy one that makes the pairing."
+   },
+   {
+    "titre": "Take the cheese out an hour beforehand",
+    "detail": "Cold, it stays lumpy however hard you work it with a fork."
+   },
+   {
+    "titre": "A RUNNY honey, acacia for preference",
+    "detail": "Crystallised honey leaves grains; a chestnut honey, too strong, crushes the goat cheese."
+   },
+   {
+    "titre": "Two spoonfuls of honey at most",
+    "detail": "That is the threshold: beyond it the spread becomes a dessert and no longer suits a savoury aperitif."
+   },
+   {
+    "titre": "Whip WITH A FORK, not a blender",
+    "detail": "A blender breaks the fresh cheese's proteins and the cream turns elastic and gluey."
+   },
+   {
+    "titre": "Fresh thyme PICKED off, not in sprigs",
+    "detail": "Sprigs prickle in the mouth. Picked and crushed between the fingers, it releases its oil."
+   },
+   {
+    "titre": "Crushed walnuts scattered at the last moment",
+    "detail": "Mixed in, they soften within an hour and lose the crunch that makes the contrast."
+   }
+  ]
+ },
+ "bagnacauda": {
+  "nom": "Bagna Cauda",
+  "description": "Piedmont's \"hot bath\", served in a pot at the centre of the table for dipping raw vegetables. Its garlic is POACHED IN MILK for an hour — without which the sauce is inedible and the meal is noticed the next day.",
+  "etapes": [
+   {
+    "titre": "Garlic POACHED in milk, one hour",
+    "detail": "The non-negotiable step: it removes the aggression and makes the garlic digestible. The milk is then discarded."
+   },
+   {
+    "titre": "Remove the germ from EVERY clove",
+    "detail": "Even poached, the germ stays bitter: ten minutes of work that change the whole dish."
+   },
+   {
+    "titre": "SALT-PACKED anchovies, rinsed and boned",
+    "detail": "Oil-packed ones are soft and bland. Salt-packed, they melt away giving their depth."
+   },
+   {
+    "titre": "A VERY gentle heat, never frying",
+    "detail": "The oil must never shimmer: at 60 °C the garlic melts; above it, it fries and turns acrid."
+   },
+   {
+    "titre": "An hour's gentle cooking, stirring",
+    "detail": "The anchovies must disappear completely: if they are still visible, it is not finished."
+   },
+   {
+    "titre": "Butter whisked in at the end, off the heat",
+    "detail": "It rounds the whole and stops the sauce splitting as it cools in the pot."
+   },
+   {
+    "titre": "Serve in a pot, over a flame",
+    "detail": "Cooled, it sets and thickens. It is a table dish that must stay hot through the meal."
+   },
+   {
+    "titre": "RAW vegetables, crisp and cold",
+    "detail": "Cardoons, peppers, cabbage, Jerusalem artichokes: the hot-cold contrast is half the pleasure."
+   }
+  ]
+ },
+ "tartinadesardines": {
+  "nom": "Sardine Spread",
+  "description": "The store-cupboard spread par excellence, made with a fork in a quarter of an hour. Its success rests on a detail everyone neglects: keep A LITTLE of the oil from the tin, which carries all the flavour of the fish.",
+  "etapes": [
+   {
+    "titre": "Sardines in OLIVE OIL, not in brine",
+    "detail": "In brine they are dry and bland: it is the oil that has taken on the fish's flavour during canning."
+   },
+   {
+    "titre": "Keep a spoonful of the oil from the tin",
+    "detail": "The step everyone skips: without it, the spread tastes of cheese, not of sardine."
+   },
+   {
+    "titre": "Remove the central bone, keep the small ones",
+    "detail": "The small bones are tender and bring calcium; the central one is unpleasantly noticeable."
+   },
+   {
+    "titre": "Mash WITH A FORK, never a blender",
+    "detail": "A blender gives a smooth grey paste; with a fork you keep visible pieces."
+   },
+   {
+    "titre": "Shallot rinsed in cold water",
+    "detail": "Raw and whole, it dominates the fish. Rinsed, it leaves only its crunch."
+   },
+   {
+    "titre": "Plenty of lemon, more than you think",
+    "detail": "Sardine is oily: without frank acidity the spread is heavy and cloying by the third toast."
+   },
+   {
+    "titre": "Two hours in the fridge before serving",
+    "detail": "The cheese must firm up. Served straight away, it runs off the bread."
+   }
+  ]
+ },
+ "cancoillotteail": {
+  "nom": "Garlic Cancoillotte",
+  "description": "The melted cheese of Franche-Comté, made from metton — a drained low-fat curd melted with butter and water. It is one of the few cheeses you almost drink, and it is NEVER served cold.",
+  "etapes": [
+   {
+    "titre": "Fresh metton if you can find it, otherwise plain cancoillotte",
+    "detail": "Metton is the original curd; failing that, start from a plain cancoillotte to reheat and flavour."
+   },
+   {
+    "titre": "VERY gentle heat, never a boil",
+    "detail": "Boiled, cancoillotte splits: the fat separates and rises as an unrecoverable yellow pool."
+   },
+   {
+    "titre": "Butter in small pieces, one at a time",
+    "detail": "Added as a block it refuses to incorporate and floats instead of binding the cheese."
+   },
+   {
+    "titre": "A DRY white wine from the Jura, or a chardonnay",
+    "detail": "The acidity stops the cheese stringing and gives it its bite: without wine it is a flat cream."
+   },
+   {
+    "titre": "Crushed garlic, worked in OFF the heat",
+    "detail": "Cooked into the cheese it turns sweet and disappears; added at the end it stays frank."
+   },
+   {
+    "titre": "Adjust with hot water, not milk",
+    "detail": "Milk makes cancoillotte pasty. Water loosens it without changing the taste."
+   },
+   {
+    "titre": "Served HOT, over potatoes",
+    "detail": "Cold, it sets into a rubbery block. It is a mountain dish, eaten steaming."
+   }
+  ]
+ },
+ "glacecoco": {
+  "nom": "Coconut Ice Cream",
+  "description": "Brazil's sorvete de coco, made without a drop of cow's milk. Its difficulty is the coconut fat: it sets into hard crystals in the freezer, and condensed milk is what prevents it.",
+  "etapes": [
+   {
+    "titre": "FULL-fat coconut milk, never light",
+    "detail": "Light is flavoured water: it freezes into an ice block and the ice cream becomes impossible to scoop."
+   },
+   {
+    "titre": "SWEETENED condensed milk, not sugar",
+    "detail": "Its proteins and invert sugar prevent crystallisation: the stabiliser of Brazilian ice creams."
+   },
+   {
+    "titre": "Do NOT heat the base",
+    "detail": "Unlike a dairy ice cream: coconut has no yolk to cook, and heat makes it split."
+   },
+   {
+    "titre": "Dry-toast the grated coconut",
+    "detail": "Five minutes in a pan: raw, it is spongy and tasteless in ice cream."
+   },
+   {
+    "titre": "A dash of lime in the base",
+    "detail": "It cuts the coconut fat: without it the ice cream cloys from the second spoonful."
+   },
+   {
+    "titre": "Churn the base at 4 °C, from the fridge",
+    "detail": "A warm base freezes into coarse crystals, and coconut crystallises faster than dairy."
+   },
+   {
+    "titre": "Take it out ten minutes before serving",
+    "detail": "Coconut fat hardens far more than cream: straight from the freezer it is inedible."
+   }
+  ]
+ },
+ "glacemiel": {
+  "nom": "Honey Ice Cream",
+  "description": "The hardest ice cream to set: honey lowers the freezing point far more than sugar does. Too much honey and it never freezes — the dosing is a matter of physics, not taste.",
+  "etapes": [
+   {
+    "titre": "Replace HALF the sugar, not all of it",
+    "detail": "Honey lowers the freezing point twice as much: all-honey, the ice cream stays liquid at −18 °C."
+   },
+   {
+    "titre": "A LAVENDER or acacia honey, never forest honey",
+    "detail": "Dark honeys dominate everything and bring a bitterness that spoils a dairy ice cream."
+   },
+   {
+    "titre": "Honey worked in OFF the heat, into warm cream",
+    "detail": "Heated above 60 °C it loses its floral aromatics and only sugar remains."
+   },
+   {
+    "titre": "Custard to 83 °C, thermometer compulsory",
+    "detail": "One degree more and the yolks set: the base curdles and you start over."
+   },
+   {
+    "titre": "A pinch of salt in the base",
+    "detail": "It deepens the honey and stops it tasting flat. The opposite of adding sugar."
+   },
+   {
+    "titre": "Mature twelve hours in the fridge",
+    "detail": "The texture is twice as smooth after maturing: true of every custard-based ice cream."
+   },
+   {
+    "titre": "Churn LONGER than usual",
+    "detail": "Five minutes more: a honey base sets slowly, and an under-churned ice cream stays gritty."
+   },
+   {
+    "titre": "Final setting in the freezer, four hours",
+    "detail": "It comes out of the machine softer than an ordinary ice cream: that is normal and expected."
+   }
+  ]
+ },
+ "sobacha": {
+  "nom": "Sobacha",
+  "description": "The Japanese roasted buckwheat infusion, caffeine-free and gluten-free. It is drunk hot in winter and iced in summer — and the infused grains are then eaten with a spoon, like a cereal.",
+  "etapes": [
+   {
+    "titre": "RINSE the buckwheat then dry it in a cloth",
+    "detail": "Wet, it clumps into a block in the pan instead of toasting grain by grain."
+   },
+   {
+    "titre": "Dry-toast to a NUTTY BROWN",
+    "detail": "Eight minutes over medium heat, stirring: blond, the infusion is bland; burnt, it is bitter."
+   },
+   {
+    "titre": "Stop when the grains CRACK",
+    "detail": "The Japanese signal: a few grains pop like corn, and the toasting is done."
+   },
+   {
+    "titre": "Water at 90 °C, not boiling",
+    "detail": "Boiling water extracts a burnt-cereal bitterness that masks the nutty flavour."
+   },
+   {
+    "titre": "Five minutes' infusion, not ten",
+    "detail": "Buckwheat keeps releasing its tannins: beyond that the drink turns astringent."
+   },
+   {
+    "titre": "Eat the infused grains, do not discard them",
+    "detail": "That is the practice in Japan: swollen and tender, they are eaten with a little honey."
+   },
+   {
+    "titre": "In summer, pour over plenty of ice",
+    "detail": "Brewed strong then chilled instantly: that is what keeps the aroma rather than diluting it."
+   }
+  ]
+ },
+ "boltofu": {
+  "nom": "Brown Rice and Tofu Bowl",
+  "description": "The complete bowl, Japanese style, where everything rests on the tofu: PRESSED for half an hour before searing. Unpressed, it weeps into the pan, boils instead of browning, and stays white and spongy.",
+  "etapes": [
+   {
+    "titre": "PRESS the tofu thirty minutes, under a weight",
+    "detail": "Between two cloths with a pan on top: the step that decides everything else."
+   },
+   {
+    "titre": "Cut it into cubes AFTER pressing",
+    "detail": "Cut beforehand, it squashes under the weight and you get misshapen pieces."
+   },
+   {
+    "titre": "Roll it in cornflour before searing",
+    "detail": "A thin coat: it crisps and seals the tofu, which stays soft inside."
+   },
+   {
+    "titre": "A VERY hot pan, and do not touch it",
+    "detail": "Three minutes untouched per face: stirred, the tofu falls apart before forming its crust."
+   },
+   {
+    "titre": "Brown rice soaked an hour before cooking",
+    "detail": "It then cooks in thirty minutes instead of forty-five and stays far softer."
+   },
+   {
+    "titre": "Edamame cooked TWO minutes, no more",
+    "detail": "They must stay bright green and firm: overcooked, they turn khaki and floury."
+   },
+   {
+    "titre": "Avocado cut at the last moment, with lemon",
+    "detail": "In a bowl made ahead, it browns and visually spoils everything else."
+   },
+   {
+    "titre": "Sauce SERVED SEPARATELY, poured at the table",
+    "detail": "Poured in advance, it soaks the rice and dissolves the tofu's crust."
+   }
+  ]
+ },
+ "chourougepomme": {
+  "nom": "Red Cabbage and Apple Salad",
+  "description": "The German winter salad, whose colour is a chemical reaction: red cabbage is a pH indicator. Without acid it turns blue-grey; with vinegar, it becomes a brilliant purple.",
+  "etapes": [
+   {
+    "titre": "Vinegar added EARLY, as soon as it is cut",
+    "detail": "This is chemistry: without acid, red cabbage turns blue-grey within an hour and looks unappetising."
+   },
+   {
+    "titre": "Slice VERY fine, on a mandoline",
+    "detail": "Thick cabbage stays leathery even massaged: two millimetres maximum, the only thickness that works."
+   },
+   {
+    "titre": "MASSAGE the salted cabbage for ten minutes",
+    "detail": "With both hands: it loses a third of its volume, turns tender and stops being an aggressive salad."
+   },
+   {
+    "titre": "Rinse and wring out after massaging",
+    "detail": "Otherwise the salad is inedibly salty. The step everyone forgets."
+   },
+   {
+    "titre": "A SHARP apple, cut at the last moment",
+    "detail": "Granny Smith or Boskoop: a sweet apple disappears, and cut too early it browns."
+   },
+   {
+    "titre": "Caraway, not cumin",
+    "detail": "The German cabbage spice: aniseed, it makes cabbage digestible. Cumin would give an oriental note."
+   },
+   {
+    "titre": "Two hours' resting before serving",
+    "detail": "The cabbage must take up the dressing. Served straight away, the salad is harsh and the vinegar dominates."
+   }
+  ]
+ },
+ "priganice": {
+  "nom": "Priganice",
+  "description": "Montenegro's breakfast fritters, shaped by hand without a cutter: you pinch the dough between thumb and forefinger and drop it into the oil. They are eaten with honey, kajmak or cheese — never pre-sweetened.",
+  "etapes": [
+   {
+    "titre": "A SOFT dough, almost pourable",
+    "detail": "Far wetter than a bread dough: firm, you get dense, dry dumplings."
+   },
+   {
+    "titre": "An hour and a half's rise, until bubbly",
+    "detail": "The surface must be riddled with bubbles: that gives the light, open interior."
+   },
+   {
+    "titre": "Do NOT knead after the rise",
+    "detail": "Take it straight from the bowl: degassed, the dough gives compact fritters."
+   },
+   {
+    "titre": "Pinch between THUMB and FOREFINGER, wet-handed",
+    "detail": "The Montenegrin gesture: irregular and quick. Water on the fingers stops the dough sticking."
+   },
+   {
+    "titre": "Oil at 175 °C, no hotter",
+    "detail": "Hotter, they brown before the centre cooks and stay raw in the middle."
+   },
+   {
+    "titre": "They turn THEMSELVES when they are ready",
+    "detail": "The traditional signal: a fritter that flips on its own has finished its first side."
+   },
+   {
+    "titre": "Served PLAIN, honey and cheese apart",
+    "detail": "It is a breakfast: everyone garnishes their own, savoury or sweet as they please."
+   }
+  ]
+ },
+ "njeguski": {
+  "nom": "Njeguški Steak",
+  "description": "The escalope of the village of Njeguši, above the Bay of Kotor: a veal pocket stuffed with pršut and cheese smoked in the wind off Mount Lovćen. The village lives on those two products, and the dish exists to show them.",
+  "etapes": [
+   {
+    "titre": "Open the escalope as a POCKET, not a book",
+    "detail": "A single slit on the thick side: opened flat, it gapes as it cooks and empties its filling."
+   },
+   {
+    "titre": "Smoked pršut, not Italian raw ham",
+    "detail": "Montenegrin pršut is beech-smoked: that smokiness is what defines the dish."
+   },
+   {
+    "titre": "A cheese that MELTS without running",
+    "detail": "A semi-aged cow's cheese: too fresh it escapes, too dry it stays in a block."
+   },
+   {
+    "titre": "Close the pocket with wooden picks",
+    "detail": "Two are enough, removed before serving: without them the filling escapes during breading."
+   },
+   {
+    "titre": "Bread it in three stages, flour-egg-crumb",
+    "detail": "In that order: skip the flour and the crumb slides off in sheets in the pan."
+   },
+   {
+    "titre": "Cook over MEDIUM heat, seven minutes per side",
+    "detail": "Over high heat the crumb burns before the cheese melts and the centre stays cold."
+   },
+   {
+    "titre": "A cream and mushroom sauce built in the pan",
+    "detail": "In the cooking juices: the traditional accompaniment, and it recovers all the flavour of the base."
+   }
+  ]
+ },
+ "gateauananastaiwan": {
+  "nom": "Taiwanese Pineapple Cake",
+  "description": "Fenglisu, a small shortbread cube filled with heavily reduced pineapple jam, given in boxes to every visitor to Taiwan. Industrial versions cheat with winter melon: the real one is made of pineapple ALONE, and it is frankly tart.",
+  "etapes": [
+   {
+    "titre": "Pineapple ALONE, no winter melon",
+    "detail": "Industry cuts the filling with melon to soften and cheapen it: the real one is tart and fibrous."
+   },
+   {
+    "titre": "Grate half, chop the other half by knife",
+    "detail": "The grated melts and binds, the chopped gives the chew: all grated, the filling is a textureless jelly."
+   },
+   {
+    "titre": "Reduce the jam for AN HOUR, over low heat",
+    "detail": "It must pull away from the pan base in a mass: too wet, it bursts through the pastry in the oven."
+   },
+   {
+    "titre": "Cool the filling and BALL it in advance",
+    "detail": "Twelve weighed, chilled balls: hot or soft, it is impossible to enclose cleanly."
+   },
+   {
+    "titre": "Butter WELL beaten, to a pale cream",
+    "detail": "Five minutes with a whisk: that gives fenglisu its melting texture, not a brittle shortbread."
+   },
+   {
+    "titre": "Wrap by flattening the pastry in the palm",
+    "detail": "You bring the edges up around the ball: with a rolling pin the pastry tears at the corners."
+   },
+   {
+    "titre": "Press into SQUARE moulds",
+    "detail": "The cube shape is the cake's identity: round, it is a different biscuit."
+   },
+   {
+    "titre": "Turn the moulds over halfway through baking",
+    "detail": "Twenty minutes then flip: that is what gives all six faces an even golden colour."
+   }
+  ]
+ },
+ "bujtarepa": {
+  "nom": "Bujta Repa",
+  "description": "The fermented turnip stew of Prekmurje, served at the winter pig slaughter. Bujta means \"killed\" in dialect: the dish is made on slaughter day, with the cuts that will not keep.",
+  "etapes": [
+   {
+    "titre": "FERMENTED turnips, like sauerkraut",
+    "detail": "That is the base of the dish: grated and brined for three weeks. Fresh, it is no longer a bujta repa."
+   },
+   {
+    "titre": "Rinse them once only, no more",
+    "detail": "Over-rinsed, they lose the acidity that balances the pork fat and the dish turns heavy."
+   },
+   {
+    "titre": "FATTY cuts: hock, ribs, rind",
+    "detail": "It is a slaughter-day dish: lean, it has neither richness nor flavour."
+   },
+   {
+    "titre": "Millet added HALFWAY through",
+    "detail": "It swells and binds the stew: added at the start it disintegrates completely into gruel."
+   },
+   {
+    "titre": "Paprika OFF the heat, into the hot fat",
+    "detail": "Over heat it burns in thirty seconds and turns bitter: the classic mistake of Central European dishes."
+   },
+   {
+    "titre": "Two hours over low heat, covered",
+    "detail": "The pork must fall apart on its own. At one hour the meat resists and the turnips are still firm."
+   },
+   {
+    "titre": "Plenty of crushed garlic, at the end",
+    "detail": "The third pillar alongside turnip and pork: timid, the dish lacks definition."
+   },
+   {
+    "titre": "Better REHEATED, the next day",
+    "detail": "Like every sauerkraut dish: the fat binds and the acidity rounds off overnight."
+   }
+  ]
+ },
+ "rosolje": {
+  "nom": "Rosolje",
+  "description": "Estonia's pink salad, where beetroot colours everything else. It brings together herring, apple and beetroot — three things with no business together, which work provided everything is cut to the SAME size.",
+  "etapes": [
+   {
+    "titre": "EVERYTHING in one-centimetre dice, without exception",
+    "detail": "The only rule: uneven sizes and the salad becomes a shapeless mixture instead of a mosaic."
+   },
+   {
+    "titre": "Beetroot stirred in LAST",
+    "detail": "It tints everything pink within minutes: added first, nothing is distinguishable any more."
+   },
+   {
+    "titre": "Herring in oil, DESALTED, not vinegar-pickled",
+    "detail": "Vinegar-pickled crushes the beetroot; in oil, it brings the fat that binds the salad."
+   },
+   {
+    "titre": "Potatoes cooked the DAY BEFORE",
+    "detail": "Cooled overnight they hold up to dicing; warm, they crush into pink mash."
+   },
+   {
+    "titre": "A sharp apple, limed as soon as it is cut",
+    "detail": "It browns, and brown shows in a pink salad: the most frequent visual fault."
+   },
+   {
+    "titre": "A cream-and-mustard dressing, not mayonnaise",
+    "detail": "That is the Estonian version: mayonnaise makes it a Russian salad, a different dish."
+   },
+   {
+    "titre": "Four hours in the fridge before serving",
+    "detail": "The colour must spread and the flavours bind. Served at once, it is streaky and disjointed."
+   }
+  ]
+ },
+ "bulviniaiblynai": {
+  "nom": "Bulviniai Blynai",
+  "description": "Lithuania's potato pancakes, served with sour cream. Their secret is not in the batter but in the WATER: you let it settle and recover the starch at the bottom, which replaces the flour.",
+  "etapes": [
+   {
+    "titre": "Grate FINE on the medium blade, not coarse",
+    "detail": "Too coarse and the strands stay raw in the middle; too fine and you get a textureless purée."
+   },
+   {
+    "titre": "Squeeze the gratings and KEEP the water",
+    "detail": "The Lithuanian gesture: squeeze hard in a cloth and set the water aside instead of discarding it."
+   },
+   {
+    "titre": "Let the water settle for ten minutes",
+    "detail": "The starch falls to the bottom as a white layer: pour off the clear water and keep that paste."
+   },
+   {
+    "titre": "Return the starch to the gratings",
+    "detail": "It binds the pancakes and replaces half the flour: what makes them crisp rather than pasty."
+   },
+   {
+    "titre": "Onion GRATED into the mass, not chopped",
+    "detail": "Grated, its juice also stops the potato browning: a double effect."
+   },
+   {
+    "titre": "A properly hot pan and GENEROUS oil",
+    "detail": "The pancakes should almost fry: dry, they stick and tear when turned."
+   },
+   {
+    "titre": "THIN pancakes, five millimetres",
+    "detail": "Thick, they are raw in the centre when the outside is already dark brown."
+   },
+   {
+    "titre": "Served with sour cream, never plain",
+    "detail": "The cream's acidity is the compulsory accompaniment: without it the dish is greasy and flat."
+   }
+  ]
+ },
+ "specambushur": {
+  "nom": "Speca të Mbushur",
+  "description": "Albania's stuffed peppers, with meat and rice, baked lying down in a dish. Unlike the simmered Balkan versions, these ROAST — the skin wrinkles and the pepper's sugar caramelises.",
+  "etapes": [
+   {
+    "titre": "SQUAT peppers, not long ones",
+    "detail": "They must lie without rolling: long ones spill their filling into the dish."
+   },
+   {
+    "titre": "RAW rice, half the quantity of meat",
+    "detail": "It doubles in volume: too much rice and the filling overflows as it swells, too little and it is dense."
+   },
+   {
+    "titre": "Onion SOFTENED before it goes into the filling",
+    "detail": "Raw, it does not cook inside the filling and stays crunchy and aggressive at the pepper's centre."
+   },
+   {
+    "titre": "Do not pack the filling, fill THREE QUARTERS",
+    "detail": "The rice swells: packed to the brim, the filling bursts the pepper during baking."
+   },
+   {
+    "titre": "A base of crushed tomato in the dish",
+    "detail": "It stops the peppers catching and becomes the sauce: without it the base of the dish burns."
+   },
+   {
+    "titre": "180 °C for an hour, COVERED then uncovered",
+    "detail": "Forty minutes covered to cook the rice, twenty uncovered to wrinkle the skin and caramelise."
+   },
+   {
+    "titre": "Dried mint in the filling, Albanian style",
+    "detail": "The local signature: without it you have generic stuffed peppers."
+   },
+   {
+    "titre": "Eaten WARM, never scalding",
+    "detail": "It is an Albanian summer dish: scalding, all you taste is tomato; warm, the pepper comes through."
+   }
+  ]
+ },
+ "lulekabab": {
+  "nom": "Lülə Kabab",
+  "description": "The Azerbaijani kebab shaped as a log on a flat skewer, without a gram of binder. No egg, no breadcrumb, no grated onion: the meat holds by KNEADING alone, and that is the whole difficulty of the dish.",
+  "etapes": [
+   {
+    "titre": "Lamb at 20 % FAT, not lean",
+    "detail": "The fat is the only binder: at 10 %, the meat falls off the skewer whatever you do."
+   },
+   {
+    "titre": "Chop BY KNIFE, or a coarse mincer plate",
+    "detail": "A fine mincer crushes the fibres: the meat can no longer grip itself."
+   },
+   {
+    "titre": "KNEAD for fifteen minutes, slapping the mass",
+    "detail": "You lift it and throw it back into the bowl: that develops the proteins that hold the log together."
+   },
+   {
+    "titre": "An hour in the cold BEFORE skewering",
+    "detail": "The fat must firm up: at room temperature it melts on the fingers and the meat slips."
+   },
+   {
+    "titre": "FLAT, wide skewers, never round",
+    "detail": "Round ones turn inside the meat and the log drops off at the first rotation."
+   },
+   {
+    "titre": "No egg, no breadcrumb, no grated onion",
+    "detail": "The Azerbaijani rule: any wet binder makes the meat fall rather than hold."
+   },
+   {
+    "titre": "FIERCE embers, constant rotation",
+    "detail": "Six to eight minutes: left still, the skewers cook on one side and the log splits."
+   },
+   {
+    "titre": "Served in lavash with sumac and onion",
+    "detail": "The sumac's acidity cuts the lamb fat: a compulsory pairing, not a garnish."
+   }
+  ]
+ },
+ "boortsog": {
+  "nom": "Boortsog",
+  "description": "The Mongolian steppe fritters, barely sweetened, eaten with salted milk tea. They keep for weeks in a ger without refrigeration — a travel bread as much as a pastry.",
+  "etapes": [
+   {
+    "titre": "VERY little sugar, ten grams for ten",
+    "detail": "This is not a sweet fritter: it accompanies salted tea, and sugar would break the pairing."
+   },
+   {
+    "titre": "A FIRM dough, almost hard to knead",
+    "detail": "Soft, it puffs into a hollow ball like a doughnut; firm, it stays dense and keeps."
+   },
+   {
+    "titre": "Thirty minutes' rest, indispensable",
+    "detail": "The gluten must relax: without resting, the dough springs back and the shapes deform in the oil."
+   },
+   {
+    "titre": "Cut into thick diamonds, one centimetre",
+    "detail": "Too thin and they become crisps; too thick and they stay raw in the centre."
+   },
+   {
+    "titre": "MODERATE frying, 160 °C only",
+    "detail": "Hotter, the outside browns in two minutes while the dense centre is not cooked."
+   },
+   {
+    "titre": "Six to eight minutes, longer than a doughnut",
+    "detail": "A firm dough takes time: a slow cooking, watched by colour rather than by clock."
+   },
+   {
+    "titre": "Cool COMPLETELY before storing",
+    "detail": "Warm, they sweat in the tin and soften: that is what ruins their keeping."
+   }
+  ]
+ },
+ "lahoh": {
+  "nom": "Lahoh",
+  "description": "The spongy pancake of Yemen and Somalia, riddled with holes and cooked on ONE side only. Its batter ferments for twelve hours: the yeast gas is what pierces the holes, not any gesture of the cook.",
+  "etapes": [
+   {
+    "titre": "A LIQUID batter, like a crêpe batter",
+    "detail": "Thick, the bubbles cannot rise and the surface stays smooth: no longer a lahoh, just a flatbread."
+   },
+   {
+    "titre": "Twelve hours' fermentation, covered",
+    "detail": "The heart of the recipe: the batter should smell slightly sour and be full of bubbles."
+   },
+   {
+    "titre": "Do NOT stir the batter after fermenting",
+    "detail": "One turn of the whisk drives out the gas and there will be no holes at all."
+   },
+   {
+    "titre": "A DRY pan, without a drop of fat",
+    "detail": "Oil stops the holes forming and the pancake fries instead of steaming."
+   },
+   {
+    "titre": "Cook on ONE side only, never turn it",
+    "detail": "The holes form on top: turned over, the pancake crushes them and becomes an ordinary flatbread."
+   },
+   {
+    "titre": "Lift it off when the surface is DRY and matt",
+    "detail": "Still shiny, it is raw; overcooked, it turns brittle and loses its suppleness."
+   },
+   {
+    "titre": "Stack under a cloth, holed side up",
+    "detail": "Stacking keeps them supple; face to face, the pancakes stick together."
+   }
+  ]
+ },
+ "varyaminanana": {
+  "nom": "Vary Amin'anana",
+  "description": "Madagascar's rice with greens, eaten morning and evening across the island. It is neither a rice nor a soup: the grains cook in PLENTY of water with the leaves, and the whole is served by the ladle, broth included.",
+  "etapes": [
+   {
+    "titre": "PLENTY of water, three times the rice volume",
+    "detail": "This is not a pilaf: the broth is part of the dish and is eaten with a spoon."
+   },
+   {
+    "titre": "Brèdes, or spinach failing that",
+    "detail": "Cassava leaves, brède mafane or watercress in Madagascar; spinach is the closest equivalent."
+   },
+   {
+    "titre": "Meat seared FIRST, in the pot",
+    "detail": "The dish's only source of flavour: without colour, the vary is bland and white."
+   },
+   {
+    "titre": "Ginger and garlic crushed in a mortar",
+    "detail": "Chopped, they stay in pieces; crushed, they dissolve into the broth and perfume it entirely."
+   },
+   {
+    "titre": "Leaves added in the LAST ten minutes",
+    "detail": "Added at the start they cook for forty minutes and turn brown-khaki with no flavour left."
+   },
+   {
+    "titre": "Do not rinse the rice, here",
+    "detail": "Unlike an Asian rice: the starch binds the broth and gives the expected texture."
+   },
+   {
+    "titre": "Served BY THE LADLE, broth included",
+    "detail": "Drained, it would be rice with vegetables. The liquid is what makes the Malagasy dish."
+   }
+  ]
+ },
+ "kiwipavlova": {
+  "nom": "Kiwifruit Pavlova",
+  "description": "New Zealand's pavlova topped with kiwifruit, the fruit the country made its emblem. Its success rests on a point often missed: kiwifruit contains an enzyme that DESTROYS whipped cream — it goes on at the last moment only.",
+  "etapes": [
+   {
+    "titre": "Kiwifruit added at the LAST moment",
+    "detail": "Its actinidin liquefies cream within twenty minutes: assembled ahead, the pavlova collapses into a puddle."
+   },
+   {
+    "titre": "Whites at room temperature, without a trace of yolk",
+    "detail": "One drop of yolk and they will not whip: the most frequent meringue failure."
+   },
+   {
+    "titre": "Sugar added in a SLOW rain",
+    "detail": "Two minutes at least: tipped in at once it does not dissolve and the meringue weeps syrup in the oven."
+   },
+   {
+    "titre": "Check between the fingers that no grain remains",
+    "detail": "The only reliable test: if it grits, keep whisking, or the meringue will weep."
+   },
+   {
+    "titre": "Cornflour and vinegar at the end, three folds",
+    "detail": "The pairing that gives the marshmallow heart: without them you get a meringue dry all the way through."
+   },
+   {
+    "titre": "VERY gentle baking, 120 °C, an hour and a half",
+    "detail": "It is not baking but drying: above 130 °C the pavlova browns and cracks."
+   },
+   {
+    "titre": "Cool IN the switched-off oven, door closed",
+    "detail": "Thermal shock cracks the shell: two hours of slow descent, without opening."
+   },
+   {
+    "titre": "Cream and fruit assembled at the table",
+    "detail": "Thirty minutes maximum before serving: beyond that, moisture goes through the meringue and softens it."
+   }
+  ]
+ },
+ "tamalescolorados": {
+  "nom": "Tamales Colorados",
+  "description": "Guatemala's red tamales, cooked in a banana leaf rather than a corn husk. Their recado — the red sauce of chillies and toasted seeds — is the real dish: the masa is only its support.",
+  "etapes": [
+   {
+    "titre": "TOAST the seeds and chillies dry",
+    "detail": "Sesame, pumpkin seed, tomato and chillies all go through the pan: that toasting is what makes the recado."
+   },
+   {
+    "titre": "Remove the seeds from the dried chillies",
+    "detail": "They are bitter and burn before the flesh: the mistake that makes a recado harsh."
+   },
+   {
+    "titre": "Blend then SIEVE the recado",
+    "detail": "Chilli skins remain as shreds: unsieved, the tamal is gritty in the mouth."
+   },
+   {
+    "titre": "A masa LOOSENED with broth, almost pourable",
+    "detail": "It firms up in the steam: too thick at assembly, the tamal is dense and dry."
+   },
+   {
+    "titre": "Pass the banana leaf through a flame",
+    "detail": "Three seconds each side: it turns supple and folds without splitting."
+   },
+   {
+    "titre": "Build in layers: masa, recado, meat, masa",
+    "detail": "The recado goes IN THE MIDDLE, never mixed into the masa: that gives the red heart when cut."
+   },
+   {
+    "titre": "Fold into a parcel and tie tightly",
+    "detail": "A loose parcel takes on water and the tamal is washed out: the masa turns to grey mush."
+   },
+   {
+    "titre": "Two hours of steaming, without lifting the lid",
+    "detail": "Opening drops the temperature and the tamales on top stay raw in the middle."
+   }
+  ]
+ },
+ "ketchupauxfruits": {
+  "nom": "Fruit Ketchup",
+  "description": "Quebec's autumn preserve, served with pâté chinois and tourtière. It is not a ketchup in the American sense: it is a fruit and vegetable chutney, closer to English piccalilli than to bottled sauce.",
+  "etapes": [
+   {
+    "titre": "Skin the tomatoes, without exception",
+    "detail": "The skins come away during cooking and float as shreds: the visual fault that betrays a careless ketchup."
+   },
+   {
+    "titre": "Cut everything into EVEN one-centimetre dice",
+    "detail": "It is a chutney, not a purée: you must recognise each fruit in the jar."
+   },
+   {
+    "titre": "Draw the vegetables with salt, overnight",
+    "detail": "They release their water in advance: without this step, cooking takes two hours longer."
+   },
+   {
+    "titre": "Three hours over VERY LOW heat, uncovered",
+    "detail": "The syrup must thicken by evaporation, not by boiling: at a rolling boil everything collapses into compote."
+   },
+   {
+    "titre": "Spices in a BAG, removed at the end",
+    "detail": "Whole cinnamon and cloves in muslin: ground, they brown the ketchup and dominate everything."
+   },
+   {
+    "titre": "Stir often towards the end",
+    "detail": "The sugar catches as soon as the mixture thickens: thirty seconds of inattention and the whole jar tastes burnt."
+   },
+   {
+    "titre": "Jarred SCALDING, lids inverted",
+    "detail": "The traditional preserve: the vacuum forms as it cools and the ketchup lasts the winter."
+   },
+   {
+    "titre": "Wait a MONTH before opening",
+    "detail": "The vinegar must round off: tasted the same day it is harsh and the spices are disjointed."
+   }
+  ]
+ },
+ "bizcochos": {
+  "nom": "Bizcochos",
+  "description": "The sweet-savoury pastries of Montevideo, bought by the dozen and eaten with maté. They descend from European croissants but differ in one thing: they are glazed with syrup BEFORE baking, not after.",
+  "etapes": [
+   {
+    "titre": "A QUICK lamination, three turns only",
+    "detail": "A bizcocho is not a croissant: three turns are enough, six would give too noble a lamination."
+   },
+   {
+    "titre": "Butter and dough at the SAME temperature, cold",
+    "detail": "The rule of all lamination: butter softer than the dough squashes and the layers merge."
+   },
+   {
+    "titre": "The syrup applied BEFORE baking",
+    "detail": "The Uruguayan particularity: it caramelises in the oven and forms a shiny crust, not a sticky glaze."
+   },
+   {
+    "titre": "VARIED shapes in the same batch",
+    "detail": "Knots, spirals, triangles, shells: in Montevideo a dozen always mixes several shapes."
+   },
+   {
+    "titre": "Jam in the CENTRE, in small quantity",
+    "detail": "Half a spoon: any more and it boils, overflows and burns onto the tray."
+   },
+   {
+    "titre": "A second rise of an hour, covered",
+    "detail": "Baked without resting, bizcochos stay dense and the lamination does not open."
+   },
+   {
+    "titre": "A hot oven, 200 °C, fifteen minutes",
+    "detail": "Short and fierce: the shock is what lifts the layers and puffs the dough."
+   },
+   {
+    "titre": "Eaten WARM, with maté",
+    "detail": "A Uruguayan ritual: the dozen is shared around the gourd with the family."
+   }
+  ]
+ },
+ "secodechivo": {
+  "nom": "Seco de Chivo",
+  "description": "Ecuador's goat stew, whose name misleads: seco means \"dry\", yet it is very much a dish in sauce. The explanation is the beer — the meat marinates and simmers in it, and the dish is named after the liquid that vanished.",
+  "etapes": [
+   {
+    "titre": "Marinate the meat twelve hours in beer",
+    "detail": "That is what tenderises it and gives the underlying bitterness: without marinating, a seco is an ordinary stew."
+   },
+   {
+    "titre": "Kid goat, or lamb failing that",
+    "detail": "Kid is leaner and more characterful; lamb gives a richer but faithful seco."
+   },
+   {
+    "titre": "A blended coriander paste, STEMS included",
+    "detail": "The stems have more flavour than the leaves: discarded, you lose half the dish's aroma."
+   },
+   {
+    "titre": "Sear the meat DRAINED, not wet",
+    "detail": "Straight from the marinade it boils in the pan and never colours."
+   },
+   {
+    "titre": "Achiote or paprika, OFF the heat",
+    "detail": "It gives the seco its orange colour: in boiling oil it burns within seconds."
+   },
+   {
+    "titre": "Two hours covered, over low heat",
+    "detail": "The meat must fall off the bone. At one hour it is still firm and the dish misses its effect."
+   },
+   {
+    "titre": "Potatoes added at the end of cooking",
+    "detail": "Thirty minutes is enough: added at the start they disintegrate and over-thicken the sauce."
+   },
+   {
+    "titre": "A squeeze of lime at the table",
+    "detail": "It wakes up a long, rich dish: the Ecuadorian gesture, never in the pot."
+   }
+  ]
+ },
+ "banhmiopla": {
+  "nom": "Bánh Mì Ốp La",
+  "description": "The morning bánh mì, with a fried egg, sold at Saigon crossroads from six o'clock. The Vietnamese baguette is lighter than the French one: rice flour in the dough, an almost hollow crumb, a crust that shatters under the tooth.",
+  "etapes": [
+   {
+    "titre": "TOAST the baguette two minutes",
+    "detail": "The bread must crack: soft, the whole sandwich squashes and the filling escapes at the sides."
+   },
+   {
+    "titre": "Pickles made at least AN hour ahead",
+    "detail": "Carrot and radish julienned in vinegar, sugar and salt: the acidity is what structures the whole bánh mì."
+   },
+   {
+    "titre": "Salt the vegetables and press before brining",
+    "detail": "Ten minutes: they release their water and then absorb the vinegar instead of diluting it."
+   },
+   {
+    "titre": "A fried egg with a RUNNY yolk",
+    "detail": "It acts as the sauce: cooked hard, the sandwich turns dry and the binding is missing."
+   },
+   {
+    "titre": "Open the bread like a BOOK, without separating it",
+    "detail": "A hinge holds the sandwich closed: cut in two, it falls apart at the first bite."
+   },
+   {
+    "titre": "Hollow out a little crumb from the top",
+    "detail": "The Vietnamese gesture: it makes room for the filling and lightens the whole."
+   },
+   {
+    "titre": "Coriander in whole SPRIGS, not chopped",
+    "detail": "Laid as a layer: chopped, it disappears under the other flavours and brings nothing."
+   }
+  ]
+ },
+ "afghanbiscuits": {
+  "nom": "Afghan Biscuits",
+  "description": "New Zealand's chocolate and cornflake biscuit, iced and topped with a walnut half. Its name has no documented connection to Afghanistan — one of the accepted mysteries of New Zealand baking.",
+  "etapes": [
+   {
+    "titre": "Cornflakes CRUSHED coarsely",
+    "detail": "Whole, they stick out and burn; powdered, you lose the texture that is the biscuit's whole point."
+   },
+   {
+    "titre": "Butter and sugar beaten until PALE",
+    "detail": "Five minutes: the only aeration in the dough, there is neither egg nor raising agent in the recipe."
+   },
+   {
+    "titre": "NO egg, no raising agent",
+    "detail": "The original New Zealand recipe: the biscuit must stay dense and crumbly, not soft."
+   },
+   {
+    "titre": "Fold the cornflakes in BY HAND, last",
+    "detail": "With a spatula or a mixer they reduce to crumbs and the texture disappears."
+   },
+   {
+    "titre": "Press the mounds down with a fork before baking",
+    "detail": "The biscuit does not spread: unpressed, it stays in a ball and cooks badly in the centre."
+   },
+   {
+    "titre": "180 °C, fifteen minutes, barely coloured",
+    "detail": "They look raw coming out and harden as they cool: that is normal, do not extend the time."
+   },
+   {
+    "titre": "Ice the biscuits COLD, never warm",
+    "detail": "Warm, the icing melts and runs onto the tray instead of setting in a clean layer."
+   },
+   {
+    "titre": "The walnut half set on still-soft icing",
+    "detail": "The compulsory finish: added too late, it will not hold and falls off."
+   }
+  ]
+ },
+ "rooibosglace": {
+  "nom": "Iced Rooibos",
+  "description": "The red infusion of South Africa's Cederberg, served iced with orange and cinnamon. Rooibos is not a tea: without tannins, it NEVER turns bitter — you can steep it for an hour without risk, which no tea allows.",
+  "etapes": [
+   {
+    "titre": "Steep it LONG, ten minutes at least",
+    "detail": "Without tannins, rooibos does not turn bitter: a short steep gives a pale drink with no body."
+   },
+   {
+    "titre": "Boiling water, unlike green tea",
+    "detail": "Rooibos needs 100 °C to release its red colour and its woody aromatics."
+   },
+   {
+    "titre": "Orange ZEST, not juice",
+    "detail": "Juice clouds and sweetens; zest perfumes without adding anything and keeps the drink clear."
+   },
+   {
+    "titre": "Sweeten with honey WHILE it is hot",
+    "detail": "In a cold infusion, honey sinks in threads and never mixes."
+   },
+   {
+    "titre": "Cool FAST, over an ice bath",
+    "detail": "Slow cooling clouds the drink: true of every iced infusion."
+   },
+   {
+    "titre": "Steep STRONGER than for drinking hot",
+    "detail": "The ice will dilute it by a third: dosed normally, iced rooibos is bland."
+   },
+   {
+    "titre": "Crushed mint added COLD",
+    "detail": "In the hot infusion it blackens and gives a cooked taste that crushes the rooibos."
+   }
+  ]
+ },
+ "jusbetterave": {
+  "nom": "Beetroot and Apple Juice",
+  "description": "The deep red raw beetroot juice, which must be dosed carefully: a whole beetroot is instantly earthy. The ratio is one third beetroot to two thirds apple — beyond that, the glass becomes undrinkable.",
+  "etapes": [
+   {
+    "titre": "One THIRD beetroot, no more",
+    "detail": "The threshold: beyond it the earthy taste dominates and no other ingredient rescues it."
+   },
+   {
+    "titre": "A RAW beetroot, never vacuum-cooked",
+    "detail": "Cooked is sweet and soft, and its juice is brown. Raw gives the deep red and the acidity."
+   },
+   {
+    "titre": "SHARP apples, Granny Smith",
+    "detail": "A sweet apple only adds sugar; a sharp one genuinely neutralises the earthiness."
+   },
+   {
+    "titre": "Lemon squeezed INTO the juicer bowl",
+    "detail": "It fixes the colour and prevents the brown oxidation that starts within the first minute."
+   },
+   {
+    "titre": "Ginger passed through the juicer FIRST",
+    "detail": "The following ingredients carry through its juice left in the screw: passed last, half stays inside."
+   },
+   {
+    "titre": "Strain through a fine sieve, without pressing",
+    "detail": "The pink foam on the surface is bitter: skim it off with a spoon before serving."
+   },
+   {
+    "titre": "Drunk within TWENTY minutes",
+    "detail": "Raw juices lose their colour and vitamins very fast: it is a drink of the moment."
+   }
+  ]
  }
 
 };

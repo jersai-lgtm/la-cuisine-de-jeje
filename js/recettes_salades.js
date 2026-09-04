@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_salades.js — Recettes de catégorie "salades" (Salades) — 28 recettes
+// recettes_salades.js — Recettes de catégorie "salades" (Salades) — 29 recettes
 // 👉 Pour AJOUTER une recette Salades : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3981,5 +3981,43 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Trois heures au frais, minimum", detail: "C'est une tapa froide : servie tiède, la mayonnaise domine et rien d'autre ne se sent.", badge: null }
     ],
     liees: ["saladepiemontaise","saladecauchoise","tortillaespagnole"]
+  },
+  rosolje: {
+    dateAjout: "2026-09-01T15:04:00",
+    nom: "Rosolje",
+    cat: "salades", saisons: ["automne","hiver"], pays: "estonie",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🩷",
+    description: "La salade rose estonienne, où la betterave colore tout le reste. Elle réunit hareng, pomme et betterave — trois éléments qui n'ont rien à faire ensemble et qui fonctionnent, à condition de tout couper à la MÊME taille.",
+    tableauRosolje: [
+      { nb: 1, betterave: "90 g", pommedeterre: "80 g", hareng: "45 g", pomme: "50 g", oeufs: "½", cornichons: "25 g", cremefraiche: "40 ml", moutarde: "5 g", oignonrouge: "¼", aneth: "5 g" },
+      { nb: 2, betterave: "180 g", pommedeterre: "160 g", hareng: "90 g", pomme: "100 g", oeufs: "1", cornichons: "50 g", cremefraiche: "80 ml", moutarde: "10 g", oignonrouge: "½", aneth: "10 g" },
+      { nb: 3, betterave: "270 g", pommedeterre: "240 g", hareng: "135 g", pomme: "150 g", oeufs: "1½", cornichons: "75 g", cremefraiche: "120 ml", moutarde: "15 g", oignonrouge: "¾", aneth: "15 g" },
+      { nb: 4, betterave: "360 g", pommedeterre: "320 g", hareng: "180 g", pomme: "200 g", oeufs: "2", cornichons: "100 g", cremefraiche: "160 ml", moutarde: "20 g", oignonrouge: "1", aneth: "20 g" },
+      { nb: 5, betterave: "450 g", pommedeterre: "400 g", hareng: "225 g", pomme: "250 g", oeufs: "2½", cornichons: "125 g", cremefraiche: "200 ml", moutarde: "25 g", oignonrouge: "1¼", aneth: "25 g" },
+      { nb: 6, betterave: "540 g", pommedeterre: "480 g", hareng: "270 g", pomme: "300 g", oeufs: "3", cornichons: "150 g", cremefraiche: "240 ml", moutarde: "30 g", oignonrouge: "1½", aneth: "30 g" },
+      { nb: 7, betterave: "630 g", pommedeterre: "560 g", hareng: "315 g", pomme: "350 g", oeufs: "3½", cornichons: "175 g", cremefraiche: "280 ml", moutarde: "35 g", oignonrouge: "1¾", aneth: "35 g" },
+      { nb: 8, betterave: "720 g", pommedeterre: "640 g", hareng: "360 g", pomme: "400 g", oeufs: "4", cornichons: "200 g", cremefraiche: "320 ml", moutarde: "40 g", oignonrouge: "2", aneth: "40 g" },
+      { nb: 9, betterave: "810 g", pommedeterre: "720 g", hareng: "405 g", pomme: "450 g", oeufs: "4½", cornichons: "225 g", cremefraiche: "360 ml", moutarde: "45 g", oignonrouge: "2¼", aneth: "45 g" },
+      { nb: 10, betterave: "900 g", pommedeterre: "800 g", hareng: "450 g", pomme: "500 g", oeufs: "5", cornichons: "250 g", cremefraiche: "400 ml", moutarde: "50 g", oignonrouge: "2½", aneth: "50 g" },
+      { nb: 11, betterave: "990 g", pommedeterre: "880 g", hareng: "495 g", pomme: "550 g", oeufs: "5½", cornichons: "275 g", cremefraiche: "440 ml", moutarde: "55 g", oignonrouge: "2¾", aneth: "55 g" },
+      { nb: 12, betterave: "1080 g", pommedeterre: "960 g", hareng: "540 g", pomme: "600 g", oeufs: "6", cornichons: "300 g", cremefraiche: "480 ml", moutarde: "60 g", oignonrouge: "3", aneth: "60 g" },
+      { nb: 13, betterave: "1170 g", pommedeterre: "1040 g", hareng: "585 g", pomme: "650 g", oeufs: "6½", cornichons: "325 g", cremefraiche: "520 ml", moutarde: "65 g", oignonrouge: "3¼", aneth: "65 g" },
+      { nb: 14, betterave: "1260 g", pommedeterre: "1120 g", hareng: "630 g", pomme: "700 g", oeufs: "7", cornichons: "350 g", cremefraiche: "560 ml", moutarde: "70 g", oignonrouge: "3½", aneth: "70 g" },
+      { nb: 15, betterave: "1350 g", pommedeterre: "1200 g", hareng: "675 g", pomme: "750 g", oeufs: "7½", cornichons: "375 g", cremefraiche: "600 ml", moutarde: "75 g", oignonrouge: "3¾", aneth: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "📏", titre: "TOUT en dés d'un centimètre, sans exception", detail: "C'est la seule règle : des tailles inégales et la salade devient un mélange informe au lieu d'une mosaïque.", badge: null },
+      { icone: "🩷", titre: "La betterave mélangée EN DERNIER", detail: "Elle teinte tout en rose en quelques minutes : incorporée d'abord, on ne distingue plus rien.", badge: null },
+      { icone: "🐟", titre: "Un hareng à l'huile DESSALÉ, pas mariné au vinaigre", detail: "Le mariné au vinaigre écrase la betterave ; à l'huile, il apporte le gras qui lie la salade.", badge: null },
+      { icone: "🥔", titre: "Des pommes de terre cuites la VEILLE", detail: "Refroidies une nuit, elles tiennent au découpage ; tièdes, elles s'écrasent en purée rose.", badge: null },
+      { icone: "🍏", titre: "Une pomme acide, citronnée aussitôt coupée", detail: "Elle brunit et le brun se voit dans une salade rose : c'est le défaut visuel le plus fréquent.", badge: null },
+      { icone: "🥄", titre: "Une sauce crème-moutarde, pas de mayonnaise", detail: "C'est la version estonienne : la mayonnaise en fait une salade russe, un autre plat.", badge: null },
+      { icone: "❄️", titre: "Quatre heures au frais avant de servir", detail: "La couleur doit se répartir et les saveurs se lier. Servie tout de suite, elle est marbrée et dissociée.", badge: null }
+    ],
+    liees: ["saladepiemontaise","ensaladarusa","saladecauchoise"]
   },
 });

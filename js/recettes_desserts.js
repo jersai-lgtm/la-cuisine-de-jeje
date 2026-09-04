@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 81 recettes
+// recettes_desserts.js — Recettes de catégorie "desserts" (Desserts) — 85 recettes
 // 👉 Pour AJOUTER une recette Desserts : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -18223,5 +18223,160 @@ Object.assign(recettes, {
       { icone: "🍦", titre: "Chantilly posée en couronne, au service", detail: "Posée à l'avance, elle fond dans le sirop tiède et il ne reste qu'une flaque blanche.", badge: null }
     ],
     liees: ["compotepommes","apfelstrudel","tartetatinpommes"]
+  },
+  gateauananastaiwan: {
+    dateAjout: "2026-09-01T15:02:00",
+    nom: "Gâteau à l'Ananas Taïwanais",
+    cat: "desserts", pays: "taiwan",
+    base: 12,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍍",
+    description: "Le fenglisu, petit cube de pâte sablée fourré d'une confiture d'ananas très réduite, offert en boîte à tout visiteur de Taïwan. Les versions industrielles trichent au melon d'hiver : la vraie est faite d'ananas SEUL, et elle est franchement acidulée.",
+    tableauGateauananastaiwan: [
+      { nb: 1, ananas: "90 g", farine: "35 g", beurre: "25 g", sucreglace: "12 g", jaunedoeuf: "¼", maizena: "8 g", sucre: "15 g", sel: "0.3 g" },
+      { nb: 2, ananas: "180 g", farine: "70 g", beurre: "50 g", sucreglace: "24 g", jaunedoeuf: "½", maizena: "16 g", sucre: "30 g", sel: "0.6 g" },
+      { nb: 3, ananas: "270 g", farine: "105 g", beurre: "75 g", sucreglace: "36 g", jaunedoeuf: "¾", maizena: "24 g", sucre: "45 g", sel: "0.9 g" },
+      { nb: 4, ananas: "360 g", farine: "140 g", beurre: "100 g", sucreglace: "48 g", jaunedoeuf: "1", maizena: "32 g", sucre: "60 g", sel: "1.2 g" },
+      { nb: 5, ananas: "450 g", farine: "175 g", beurre: "125 g", sucreglace: "60 g", jaunedoeuf: "1¼", maizena: "40 g", sucre: "75 g", sel: "1.5 g" },
+      { nb: 6, ananas: "540 g", farine: "210 g", beurre: "150 g", sucreglace: "72 g", jaunedoeuf: "1½", maizena: "48 g", sucre: "90 g", sel: "1.8 g" },
+      { nb: 7, ananas: "630 g", farine: "245 g", beurre: "175 g", sucreglace: "84 g", jaunedoeuf: "1¾", maizena: "56 g", sucre: "105 g", sel: "2.1 g" },
+      { nb: 8, ananas: "720 g", farine: "280 g", beurre: "200 g", sucreglace: "96 g", jaunedoeuf: "2", maizena: "64 g", sucre: "120 g", sel: "2.4 g" },
+      { nb: 9, ananas: "810 g", farine: "315 g", beurre: "225 g", sucreglace: "108 g", jaunedoeuf: "2¼", maizena: "72 g", sucre: "135 g", sel: "2.7 g" },
+      { nb: 10, ananas: "900 g", farine: "350 g", beurre: "250 g", sucreglace: "120 g", jaunedoeuf: "2½", maizena: "80 g", sucre: "150 g", sel: "3 g" },
+      { nb: 11, ananas: "990 g", farine: "385 g", beurre: "275 g", sucreglace: "132 g", jaunedoeuf: "2¾", maizena: "88 g", sucre: "165 g", sel: "3.3 g" },
+      { nb: 12, ananas: "1080 g", farine: "420 g", beurre: "300 g", sucreglace: "144 g", jaunedoeuf: "3", maizena: "96 g", sucre: "180 g", sel: "3.6 g" },
+      { nb: 13, ananas: "1170 g", farine: "455 g", beurre: "325 g", sucreglace: "156 g", jaunedoeuf: "3¼", maizena: "104 g", sucre: "195 g", sel: "3.9 g" },
+      { nb: 14, ananas: "1260 g", farine: "490 g", beurre: "350 g", sucreglace: "168 g", jaunedoeuf: "3½", maizena: "112 g", sucre: "210 g", sel: "4.2 g" },
+      { nb: 15, ananas: "1350 g", farine: "525 g", beurre: "375 g", sucreglace: "180 g", jaunedoeuf: "3¾", maizena: "120 g", sucre: "225 g", sel: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍍", titre: "De l'ananas SEUL, pas de melon d'hiver", detail: "L'industrie coupe la farce au melon pour l'adoucir et l'économiser : la vraie est acidulée et fibreuse.", badge: null },
+      { icone: "🔪", titre: "Râper la moitié, hacher l'autre au couteau", detail: "Le râpé fond et lie, le haché donne la mâche : tout râpé, la farce est une gelée sans texture.", badge: null },
+      { icone: "♨️", titre: "Réduire la confiture UNE HEURE, à feu doux", detail: "Elle doit se détacher du fond de la casserole en bloc : trop humide, elle transperce la pâte au four.", badge: null },
+      { icone: "❄️", titre: "Refroidir la farce et la BOULER à l'avance", detail: "Douze boules pesées et réfrigérées : chaude ou molle, elle est impossible à enfermer proprement.", badge: null },
+      { icone: "🧈", titre: "Un beurre TRÈS travaillé, monté en pommade claire", detail: "Cinq minutes au fouet : c'est ce qui donne la texture fondante du fenglisu, pas un sablé cassant.", badge: null },
+      { icone: "🤲", titre: "Envelopper en aplatissant la pâte dans la paume", detail: "On remonte les bords autour de la boule : au rouleau, la pâte se déchire aux angles.", badge: null },
+      { icone: "⬛", titre: "Presser dans des moules CARRÉS", detail: "La forme cubique est l'identité du gâteau : rond, c'est un autre biscuit.", badge: null },
+      { icone: "🔄", titre: "Retourner les moules à mi-cuisson", detail: "Vingt minutes puis on retourne : c'est ce qui donne les six faces dorées uniformément.", badge: null }
+    ],
+    liees: ["nankhatai","kleicha","sablesdiamant"]
+  },
+  boortsog: {
+    dateAjout: "2026-09-01T15:08:00",
+    nom: "Boortsog",
+    cat: "desserts", pays: "mongolie",
+    base: 10,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🐎",
+    description: "Les beignets mongols de la steppe, à peine sucrés, mangés avec du thé au lait salé. Ils se conservent des semaines dans une yourte sans réfrigération — c'est un pain de voyage autant qu'une pâtisserie.",
+    tableauBoortsog: [
+      { nb: 1, farine: "55 g", beurre: "15 g", sucre: "10 g", lait: "25 ml", oeufs: "¼", huilefriture: "20 ml", sel: "1 g" },
+      { nb: 2, farine: "110 g", beurre: "30 g", sucre: "20 g", lait: "50 ml", oeufs: "½", huilefriture: "40 ml", sel: "2 g" },
+      { nb: 3, farine: "165 g", beurre: "45 g", sucre: "30 g", lait: "75 ml", oeufs: "¾", huilefriture: "60 ml", sel: "3 g" },
+      { nb: 4, farine: "220 g", beurre: "60 g", sucre: "40 g", lait: "100 ml", oeufs: "1", huilefriture: "80 ml", sel: "4 g" },
+      { nb: 5, farine: "275 g", beurre: "75 g", sucre: "50 g", lait: "125 ml", oeufs: "1¼", huilefriture: "100 ml", sel: "5 g" },
+      { nb: 6, farine: "330 g", beurre: "90 g", sucre: "60 g", lait: "150 ml", oeufs: "1½", huilefriture: "120 ml", sel: "6 g" },
+      { nb: 7, farine: "385 g", beurre: "105 g", sucre: "70 g", lait: "175 ml", oeufs: "1¾", huilefriture: "140 ml", sel: "7 g" },
+      { nb: 8, farine: "440 g", beurre: "120 g", sucre: "80 g", lait: "200 ml", oeufs: "2", huilefriture: "160 ml", sel: "8 g" },
+      { nb: 9, farine: "495 g", beurre: "135 g", sucre: "90 g", lait: "225 ml", oeufs: "2¼", huilefriture: "180 ml", sel: "9 g" },
+      { nb: 10, farine: "550 g", beurre: "150 g", sucre: "100 g", lait: "250 ml", oeufs: "2½", huilefriture: "200 ml", sel: "10 g" },
+      { nb: 11, farine: "605 g", beurre: "165 g", sucre: "110 g", lait: "275 ml", oeufs: "2¾", huilefriture: "220 ml", sel: "11 g" },
+      { nb: 12, farine: "660 g", beurre: "180 g", sucre: "120 g", lait: "300 ml", oeufs: "3", huilefriture: "240 ml", sel: "12 g" },
+      { nb: 13, farine: "715 g", beurre: "195 g", sucre: "130 g", lait: "325 ml", oeufs: "3¼", huilefriture: "260 ml", sel: "13 g" },
+      { nb: 14, farine: "770 g", beurre: "210 g", sucre: "140 g", lait: "350 ml", oeufs: "3½", huilefriture: "280 ml", sel: "14 g" },
+      { nb: 15, farine: "825 g", beurre: "225 g", sucre: "150 g", lait: "375 ml", oeufs: "3¾", huilefriture: "300 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍬", titre: "TRÈS peu de sucre, dix grammes pour dix", detail: "Ce n'est pas un beignet sucré : il accompagne un thé salé, et le sucre casserait l'accord.", badge: null },
+      { icone: "💪", titre: "Une pâte FERME, presque dure à pétrir", detail: "Molle, elle gonfle en boule creuse comme un beignet ; ferme, elle reste dense et se conserve.", badge: null },
+      { icone: "⏳", titre: "Trente minutes de repos, indispensable", detail: "Le gluten doit se détendre : sans repos, la pâte se rétracte et les formes se déforment à la friture.", badge: null },
+      { icone: "📐", titre: "Découper en losanges épais, un centimètre", detail: "Trop fins, ils deviennent des chips ; trop épais, ils restent crus au centre.", badge: null },
+      { icone: "🌡️", titre: "Friture MODÉRÉE, 160 °C seulement", detail: "Plus chaud, l'extérieur brunit en deux minutes alors que le centre dense n'est pas cuit.", badge: null },
+      { icone: "⏱️", titre: "Six à huit minutes, plus long qu'un beignet", detail: "La pâte ferme met du temps : c'est une cuisson lente, à surveiller à la couleur pas au chrono.", badge: null },
+      { icone: "📦", titre: "Refroidir COMPLÈTEMENT avant de stocker", detail: "Tièdes, ils suent dans la boîte et ramollissent : c'est ce qui ruine leur conservation.", badge: null }
+    ],
+    liees: ["kleinur","beignetspomme","churros"]
+  },
+  kiwipavlova: {
+    dateAjout: "2026-09-01T16:01:00",
+    nom: "Pavlova aux Kiwis",
+    cat: "desserts", saisons: ["ete"], pays: "nouvellezelande",
+    base: 8,
+    temps: "3 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥝",
+    description: "La pavlova néo-zélandaise garnie de kiwis, fruit dont le pays a fait son emblème. Sa réussite tient à un point souvent ignoré : le kiwi contient une enzyme qui DÉTRUIT la chantilly — il ne se pose qu'au dernier moment.",
+    tableauKiwipavlova: [
+      { nb: 1, blancsoeufs: "1", sucre: "65 g", maizena: "6 g", vinaigreBlanc: "4 ml", cremechantilly: "60 ml", kiwi: "90 g", citronvert: "¼", sucreglace: "6 g" },
+      { nb: 2, blancsoeufs: "2", sucre: "130 g", maizena: "12 g", vinaigreBlanc: "8 ml", cremechantilly: "120 ml", kiwi: "180 g", citronvert: "½", sucreglace: "12 g" },
+      { nb: 3, blancsoeufs: "3", sucre: "195 g", maizena: "18 g", vinaigreBlanc: "12 ml", cremechantilly: "180 ml", kiwi: "270 g", citronvert: "¾", sucreglace: "18 g" },
+      { nb: 4, blancsoeufs: "4", sucre: "260 g", maizena: "24 g", vinaigreBlanc: "16 ml", cremechantilly: "240 ml", kiwi: "360 g", citronvert: "1", sucreglace: "24 g" },
+      { nb: 5, blancsoeufs: "5", sucre: "325 g", maizena: "30 g", vinaigreBlanc: "20 ml", cremechantilly: "300 ml", kiwi: "450 g", citronvert: "1¼", sucreglace: "30 g" },
+      { nb: 6, blancsoeufs: "6", sucre: "390 g", maizena: "36 g", vinaigreBlanc: "24 ml", cremechantilly: "360 ml", kiwi: "540 g", citronvert: "1½", sucreglace: "36 g" },
+      { nb: 7, blancsoeufs: "7", sucre: "455 g", maizena: "42 g", vinaigreBlanc: "28 ml", cremechantilly: "420 ml", kiwi: "630 g", citronvert: "1¾", sucreglace: "42 g" },
+      { nb: 8, blancsoeufs: "8", sucre: "520 g", maizena: "48 g", vinaigreBlanc: "32 ml", cremechantilly: "480 ml", kiwi: "720 g", citronvert: "2", sucreglace: "48 g" },
+      { nb: 9, blancsoeufs: "9", sucre: "585 g", maizena: "54 g", vinaigreBlanc: "36 ml", cremechantilly: "540 ml", kiwi: "810 g", citronvert: "2¼", sucreglace: "54 g" },
+      { nb: 10, blancsoeufs: "10", sucre: "650 g", maizena: "60 g", vinaigreBlanc: "40 ml", cremechantilly: "600 ml", kiwi: "900 g", citronvert: "2½", sucreglace: "60 g" },
+      { nb: 11, blancsoeufs: "11", sucre: "715 g", maizena: "66 g", vinaigreBlanc: "44 ml", cremechantilly: "660 ml", kiwi: "990 g", citronvert: "2¾", sucreglace: "66 g" },
+      { nb: 12, blancsoeufs: "12", sucre: "780 g", maizena: "72 g", vinaigreBlanc: "48 ml", cremechantilly: "720 ml", kiwi: "1080 g", citronvert: "3", sucreglace: "72 g" },
+      { nb: 13, blancsoeufs: "13", sucre: "845 g", maizena: "78 g", vinaigreBlanc: "52 ml", cremechantilly: "780 ml", kiwi: "1170 g", citronvert: "3¼", sucreglace: "78 g" },
+      { nb: 14, blancsoeufs: "14", sucre: "910 g", maizena: "84 g", vinaigreBlanc: "56 ml", cremechantilly: "840 ml", kiwi: "1260 g", citronvert: "3½", sucreglace: "84 g" },
+      { nb: 15, blancsoeufs: "15", sucre: "975 g", maizena: "90 g", vinaigreBlanc: "60 ml", cremechantilly: "900 ml", kiwi: "1350 g", citronvert: "3¾", sucreglace: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥝", titre: "Les kiwis posés au DERNIER moment", detail: "Leur actinidine liquéfie la crème en vingt minutes : montée à l'avance, la pavlova s'affaisse en flaque.", badge: null },
+      { icone: "🥚", titre: "Des blancs à température ambiante, sans une trace de jaune", detail: "Une goutte de jaune et ils ne montent pas : c'est l'échec le plus fréquent de la meringue.", badge: null },
+      { icone: "🍬", titre: "Le sucre versé EN PLUIE, très lentement", detail: "Deux minutes au moins : versé d'un coup, il ne se dissout pas et la meringue rend un sirop au four.", badge: null },
+      { icone: "👌", titre: "Vérifier entre les doigts qu'il n'y a plus de grain", detail: "C'est le seul test fiable : si ça crisse, il faut fouetter encore, sinon la meringue pleurera.", badge: null },
+      { icone: "🌽", titre: "Maïzena et vinaigre à la fin, en trois tours", detail: "C'est le duo qui donne le cœur guimauve : sans eux, on obtient une meringue sèche de part en part.", badge: null },
+      { icone: "🌡️", titre: "Cuisson TRÈS douce, 120 °C, une heure trente", detail: "Ce n'est pas une cuisson mais un séchage : au-delà de 130 °C, la pavlova brunit et se fend.", badge: null },
+      { icone: "🚪", titre: "Refroidir DANS le four éteint, porte fermée", detail: "Le choc thermique fait craquer la coque : deux heures de descente lente, sans ouvrir.", badge: null },
+      { icone: "🍦", titre: "Chantilly et fruits montés à table", detail: "Trente minutes maximum avant de servir : au-delà, l'humidité traverse la meringue et la ramollit.", badge: null }
+    ],
+    liees: ["pavlova","etonmess","anzacbiscuits"]
+  },
+  afghanbiscuits: {
+    dateAjout: "2026-09-01T16:07:00",
+    nom: "Afghan Biscuits",
+    cat: "desserts", pays: "nouvellezelande",
+    base: 12,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🌰",
+    description: "Le biscuit au chocolat et aux corn flakes de Nouvelle-Zélande, glacé et surmonté d'une demi-noix. Son nom n'a aucun rapport documenté avec l'Afghanistan — c'est l'un des mystères assumés de la pâtisserie néo-zélandaise.",
+    tableauAfghanbiscuits: [
+      { nb: 1, farine: "30 g", beurre: "28 g", sucre: "15 g", cacao: "8 g", cornflakes: "12 g", chocolatnoir: "15 g", sucreglace: "15 g", noix: "10 g" },
+      { nb: 2, farine: "60 g", beurre: "56 g", sucre: "30 g", cacao: "16 g", cornflakes: "24 g", chocolatnoir: "30 g", sucreglace: "30 g", noix: "20 g" },
+      { nb: 3, farine: "90 g", beurre: "84 g", sucre: "45 g", cacao: "24 g", cornflakes: "36 g", chocolatnoir: "45 g", sucreglace: "45 g", noix: "30 g" },
+      { nb: 4, farine: "120 g", beurre: "112 g", sucre: "60 g", cacao: "32 g", cornflakes: "48 g", chocolatnoir: "60 g", sucreglace: "60 g", noix: "40 g" },
+      { nb: 5, farine: "150 g", beurre: "140 g", sucre: "75 g", cacao: "40 g", cornflakes: "60 g", chocolatnoir: "75 g", sucreglace: "75 g", noix: "50 g" },
+      { nb: 6, farine: "180 g", beurre: "168 g", sucre: "90 g", cacao: "48 g", cornflakes: "72 g", chocolatnoir: "90 g", sucreglace: "90 g", noix: "60 g" },
+      { nb: 7, farine: "210 g", beurre: "196 g", sucre: "105 g", cacao: "56 g", cornflakes: "84 g", chocolatnoir: "105 g", sucreglace: "105 g", noix: "70 g" },
+      { nb: 8, farine: "240 g", beurre: "224 g", sucre: "120 g", cacao: "64 g", cornflakes: "96 g", chocolatnoir: "120 g", sucreglace: "120 g", noix: "80 g" },
+      { nb: 9, farine: "270 g", beurre: "252 g", sucre: "135 g", cacao: "72 g", cornflakes: "108 g", chocolatnoir: "135 g", sucreglace: "135 g", noix: "90 g" },
+      { nb: 10, farine: "300 g", beurre: "280 g", sucre: "150 g", cacao: "80 g", cornflakes: "120 g", chocolatnoir: "150 g", sucreglace: "150 g", noix: "100 g" },
+      { nb: 11, farine: "330 g", beurre: "308 g", sucre: "165 g", cacao: "88 g", cornflakes: "132 g", chocolatnoir: "165 g", sucreglace: "165 g", noix: "110 g" },
+      { nb: 12, farine: "360 g", beurre: "336 g", sucre: "180 g", cacao: "96 g", cornflakes: "144 g", chocolatnoir: "180 g", sucreglace: "180 g", noix: "120 g" },
+      { nb: 13, farine: "390 g", beurre: "364 g", sucre: "195 g", cacao: "104 g", cornflakes: "156 g", chocolatnoir: "195 g", sucreglace: "195 g", noix: "130 g" },
+      { nb: 14, farine: "420 g", beurre: "392 g", sucre: "210 g", cacao: "112 g", cornflakes: "168 g", chocolatnoir: "210 g", sucreglace: "210 g", noix: "140 g" },
+      { nb: 15, farine: "450 g", beurre: "420 g", sucre: "225 g", cacao: "120 g", cornflakes: "180 g", chocolatnoir: "225 g", sucreglace: "225 g", noix: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌽", titre: "Les corn flakes ÉCRASÉS grossièrement", detail: "Entiers, ils dépassent et brûlent ; en poudre, on perd la texture qui fait tout l'intérêt du biscuit.", badge: null },
+      { icone: "🧈", titre: "Beurre et sucre battus jusqu'au PÂLE", detail: "Cinq minutes : c'est la seule aération de la pâte, il n'y a ni œuf ni levure dans la recette.", badge: null },
+      { icone: "🚫", titre: "AUCUN œuf, aucune levure", detail: "C'est la recette néo-zélandaise d'origine : le biscuit doit rester dense et friable, pas moelleux.", badge: null },
+      { icone: "🥄", titre: "Incorporer les corn flakes à la MAIN, en dernier", detail: "À la spatule ou au robot, ils se réduisent en miettes et la texture disparaît.", badge: null },
+      { icone: "✋", titre: "Tasser les tas à la fourchette avant cuisson", detail: "Le biscuit ne s'étale pas : sans tassement, il reste en boule et cuit mal au centre.", badge: null },
+      { icone: "🌡️", titre: "180 °C, quinze minutes, à peine coloré", detail: "Ils paraissent crus à la sortie et durcissent en refroidissant : c'est normal, ne pas prolonger.", badge: null },
+      { icone: "🍫", titre: "Glacer les biscuits FROIDS, jamais tièdes", detail: "Tièdes, le glaçage fond et coule sur la plaque au lieu de prendre en couche nette.", badge: null },
+      { icone: "🌰", titre: "La demi-noix posée sur le glaçage encore mou", detail: "C'est la finition obligatoire : posée trop tard, elle ne tient pas et tombe.", badge: null }
+    ],
+    liees: ["anzacbiscuits","cookies","sablesdiamant"]
   },
 });

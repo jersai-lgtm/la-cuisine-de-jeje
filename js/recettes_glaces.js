@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 39 recettes
+// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 41 recettes
 // 👉 Pour AJOUTER une glace : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1960,5 +1960,82 @@ Object.assign(recettes, {
       { icone: "🌀", titre: "Turbiner immédiatement après le mixage", detail: "Chaque minute d'attente coûte de la couleur. Le sorbet se fait d'un seul geste, du couteau à la sorbetière.", badge: null }
     ],
     liees: ["sorbetcitron","granizado","heladodepaila"]
+  },
+  glacecoco: {
+    dateAjout: "2026-09-01T14:05:00",
+    nom: "Glace Coco",
+    cat: "glaces", saisons: ["ete"], pays: "bresil",
+    base: 8,
+    temps: "30 min + turbinage",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "La sorvete de coco brésilienne, faite sans une goutte de lait de vache. Sa difficulté est le gras du coco : il fige en cristaux durs au congélateur, et c'est le lait concentré qui l'en empêche.",
+    tableauGlacecoco: [
+      { nb: 1, laitcoco: "110 ml", cremeCoco: "45 ml", laitconcentre: "40 g", noixcoco: "20 g", citronvert: "¼", sel: "0.2 g" },
+      { nb: 2, laitcoco: "220 ml", cremeCoco: "90 ml", laitconcentre: "80 g", noixcoco: "40 g", citronvert: "½", sel: "0.4 g" },
+      { nb: 3, laitcoco: "330 ml", cremeCoco: "135 ml", laitconcentre: "120 g", noixcoco: "60 g", citronvert: "¾", sel: "0.6 g" },
+      { nb: 4, laitcoco: "440 ml", cremeCoco: "180 ml", laitconcentre: "160 g", noixcoco: "80 g", citronvert: "1", sel: "0.8 g" },
+      { nb: 5, laitcoco: "550 ml", cremeCoco: "225 ml", laitconcentre: "200 g", noixcoco: "100 g", citronvert: "1¼", sel: "1 g" },
+      { nb: 6, laitcoco: "660 ml", cremeCoco: "270 ml", laitconcentre: "240 g", noixcoco: "120 g", citronvert: "1½", sel: "1.2 g" },
+      { nb: 7, laitcoco: "770 ml", cremeCoco: "315 ml", laitconcentre: "280 g", noixcoco: "140 g", citronvert: "1¾", sel: "1.4 g" },
+      { nb: 8, laitcoco: "880 ml", cremeCoco: "360 ml", laitconcentre: "320 g", noixcoco: "160 g", citronvert: "2", sel: "1.6 g" },
+      { nb: 9, laitcoco: "990 ml", cremeCoco: "405 ml", laitconcentre: "360 g", noixcoco: "180 g", citronvert: "2¼", sel: "1.8 g" },
+      { nb: 10, laitcoco: "1100 ml", cremeCoco: "450 ml", laitconcentre: "400 g", noixcoco: "200 g", citronvert: "2½", sel: "2 g" },
+      { nb: 11, laitcoco: "1210 ml", cremeCoco: "495 ml", laitconcentre: "440 g", noixcoco: "220 g", citronvert: "2¾", sel: "2.2 g" },
+      { nb: 12, laitcoco: "1320 ml", cremeCoco: "540 ml", laitconcentre: "480 g", noixcoco: "240 g", citronvert: "3", sel: "2.4 g" },
+      { nb: 13, laitcoco: "1430 ml", cremeCoco: "585 ml", laitconcentre: "520 g", noixcoco: "260 g", citronvert: "3¼", sel: "2.6 g" },
+      { nb: 14, laitcoco: "1540 ml", cremeCoco: "630 ml", laitconcentre: "560 g", noixcoco: "280 g", citronvert: "3½", sel: "2.8 g" },
+      { nb: 15, laitcoco: "1650 ml", cremeCoco: "675 ml", laitconcentre: "600 g", noixcoco: "300 g", citronvert: "3¾", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "Du lait de coco ENTIER, jamais allégé", detail: "L'allégé est de l'eau parfumée : il gèle en glaçon et la glace devient impossible à servir.", badge: null },
+      { icone: "🥛", titre: "Du lait concentré SUCRÉ, pas du sucre", detail: "Ses protéines et son sucre invertí empêchent la cristallisation : c'est le stabilisant des glaces brésiliennes.", badge: null },
+      { icone: "🌡️", titre: "Ne PAS chauffer la base", detail: "Contrairement à une glace au lait : le coco n'a pas de jaune à cuire, et la chaleur le fait trancher.", badge: null },
+      { icone: "🥥", titre: "Torréfier la noix de coco râpée à sec", detail: "Cinq minutes à la poêle : crue, elle est spongieuse et sans goût dans une glace.", badge: null },
+      { icone: "🍋", titre: "Un trait de citron vert dans la base", detail: "Il coupe le gras du coco : sans lui, la glace est écœurante dès la deuxième cuillère.", badge: null },
+      { icone: "❄️", titre: "Turbiner base à 4 °C, sortie du frigo", detail: "Une base tiède prend en cristaux grossiers, et le coco cristallise plus vite que le lait.", badge: null },
+      { icone: "🥄", titre: "Sortir dix minutes avant de servir", detail: "Le gras de coco durcit beaucoup plus que la crème : à la sortie du congélateur, elle est immangeable.", badge: null }
+    ],
+    liees: ["glacevanille","batidacoco","heladolucuma"]
+  },
+  glacemiel: {
+    dateAjout: "2026-09-01T14:06:00",
+    nom: "Glace au Miel",
+    cat: "glaces", pays: "france",
+    base: 8,
+    temps: "40 min + turbinage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍯",
+    description: "La glace la plus difficile à faire prendre : le miel abaisse le point de congélation bien plus que le sucre. Trop de miel et elle ne gèle jamais — le dosage n'est pas une question de goût mais de physique.",
+    tableauGlacemiel: [
+      { nb: 1, miel: "40 g", lait: "100 ml", creme: "55 ml", jaunesoeufs: "¾", sucre: "10 g", sel: "0.2 g" },
+      { nb: 2, miel: "80 g", lait: "200 ml", creme: "110 ml", jaunesoeufs: "1½", sucre: "20 g", sel: "0.4 g" },
+      { nb: 3, miel: "120 g", lait: "300 ml", creme: "165 ml", jaunesoeufs: "2¼", sucre: "30 g", sel: "0.6 g" },
+      { nb: 4, miel: "160 g", lait: "400 ml", creme: "220 ml", jaunesoeufs: "3", sucre: "40 g", sel: "0.8 g" },
+      { nb: 5, miel: "200 g", lait: "500 ml", creme: "275 ml", jaunesoeufs: "3¾", sucre: "50 g", sel: "1 g" },
+      { nb: 6, miel: "240 g", lait: "600 ml", creme: "330 ml", jaunesoeufs: "4½", sucre: "60 g", sel: "1.2 g" },
+      { nb: 7, miel: "280 g", lait: "700 ml", creme: "385 ml", jaunesoeufs: "5¼", sucre: "70 g", sel: "1.4 g" },
+      { nb: 8, miel: "320 g", lait: "800 ml", creme: "440 ml", jaunesoeufs: "6", sucre: "80 g", sel: "1.6 g" },
+      { nb: 9, miel: "360 g", lait: "900 ml", creme: "495 ml", jaunesoeufs: "6¾", sucre: "90 g", sel: "1.8 g" },
+      { nb: 10, miel: "400 g", lait: "1000 ml", creme: "550 ml", jaunesoeufs: "7½", sucre: "100 g", sel: "2 g" },
+      { nb: 11, miel: "440 g", lait: "1100 ml", creme: "605 ml", jaunesoeufs: "8¼", sucre: "110 g", sel: "2.2 g" },
+      { nb: 12, miel: "480 g", lait: "1200 ml", creme: "660 ml", jaunesoeufs: "9", sucre: "120 g", sel: "2.4 g" },
+      { nb: 13, miel: "520 g", lait: "1300 ml", creme: "715 ml", jaunesoeufs: "9¾", sucre: "130 g", sel: "2.6 g" },
+      { nb: 14, miel: "560 g", lait: "1400 ml", creme: "770 ml", jaunesoeufs: "10½", sucre: "140 g", sel: "2.8 g" },
+      { nb: 15, miel: "600 g", lait: "1500 ml", creme: "825 ml", jaunesoeufs: "11¼", sucre: "150 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "Remplacer la MOITIÉ du sucre, pas la totalité", detail: "Le miel abaisse deux fois plus le point de congélation : tout au miel, la glace reste liquide à −18 °C.", badge: null },
+      { icone: "🌸", titre: "Un miel de LAVANDE ou d'acacia, jamais de forêt", detail: "Les miels foncés dominent tout et donnent une amertume qui gâche une glace au lait.", badge: null },
+      { icone: "🌡️", titre: "Le miel incorporé HORS du feu, dans la crème tiède", detail: "Chauffé au-delà de 60 °C, il perd ses arômes floraux et il ne reste que du sucre.", badge: null },
+      { icone: "🥄", titre: "Crème anglaise à 83 °C, thermomètre obligatoire", detail: "Un degré de plus et les jaunes coagulent : la base grumelle et il faut tout recommencer.", badge: null },
+      { icone: "🧂", titre: "Une pincée de sel dans la base", detail: "Elle creuse le miel et l'empêche d'être plat. C'est le contraire d'ajouter du sucre.", badge: null },
+      { icone: "❄️", titre: "Maturer douze heures au frais", detail: "La texture est deux fois plus onctueuse après maturation : c'est vrai pour toutes les glaces au jaune.", badge: null },
+      { icone: "🌀", titre: "Turbiner plus LONGTEMPS que d'habitude", detail: "Cinq minutes de plus : la base au miel prend lentement, et une glace sous-turbinée reste sableuse.", badge: null },
+      { icone: "❄️", titre: "Prise finale au congélateur, quatre heures", detail: "Elle sort de la sorbetière plus molle qu'une glace ordinaire : c'est normal et attendu.", badge: null }
+    ],
+    liees: ["glacevanille","nougatglace","glacenoisette"]
   },
 });

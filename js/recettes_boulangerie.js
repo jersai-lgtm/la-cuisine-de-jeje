@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 36 recettes
+// recettes_boulangerie.js — Recettes de catégorie "boulangerie" (Boulangerie) — 39 recettes
 // 👉 Pour AJOUTER une recette Boulangerie : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -4623,5 +4623,120 @@ Object.assign(recettes, {
       { icone: "🍯", titre: "Se mange TIÈDE, au beurre et au golden syrup", detail: "C'est la tradition du bush. Froid, il durcit vite : le damper ne se garde pas jusqu'au lendemain.", badge: null }
     ],
     liees: ["sodabread","scones","paincampagne"]
+  },
+  priganice: {
+    dateAjout: "2026-09-01T15:00:00",
+    nom: "Priganice",
+    cat: "boulangerie", pays: "montenegro",
+    base: 8,
+    temps: "2 h",
+    niveau: "⭐ Facile",
+    emoji: "🍩",
+    description: "Les beignets du petit-déjeuner monténégrin, façonnés à la main sans emporte-pièce : on pince la pâte entre le pouce et l'index et on la jette dans l'huile. Ils se mangent au miel, au kajmak ou au fromage — jamais sucrés d'avance.",
+    tableauPriganice: [
+      { nb: 1, farine: "55 g", eau: "40 ml", levureboulangere: "2 g", huilefriture: "25 ml", sel: "1.2 g", sucre: "4 g", miel: "10 g" },
+      { nb: 2, farine: "110 g", eau: "80 ml", levureboulangere: "4 g", huilefriture: "50 ml", sel: "2.4 g", sucre: "8 g", miel: "20 g" },
+      { nb: 3, farine: "165 g", eau: "120 ml", levureboulangere: "6 g", huilefriture: "75 ml", sel: "3.6 g", sucre: "12 g", miel: "30 g" },
+      { nb: 4, farine: "220 g", eau: "160 ml", levureboulangere: "8 g", huilefriture: "100 ml", sel: "4.8 g", sucre: "16 g", miel: "40 g" },
+      { nb: 5, farine: "275 g", eau: "200 ml", levureboulangere: "10 g", huilefriture: "125 ml", sel: "6 g", sucre: "20 g", miel: "50 g" },
+      { nb: 6, farine: "330 g", eau: "240 ml", levureboulangere: "12 g", huilefriture: "150 ml", sel: "7.2 g", sucre: "24 g", miel: "60 g" },
+      { nb: 7, farine: "385 g", eau: "280 ml", levureboulangere: "14 g", huilefriture: "175 ml", sel: "8.4 g", sucre: "28 g", miel: "70 g" },
+      { nb: 8, farine: "440 g", eau: "320 ml", levureboulangere: "16 g", huilefriture: "200 ml", sel: "9.6 g", sucre: "32 g", miel: "80 g" },
+      { nb: 9, farine: "495 g", eau: "360 ml", levureboulangere: "18 g", huilefriture: "225 ml", sel: "10.8 g", sucre: "36 g", miel: "90 g" },
+      { nb: 10, farine: "550 g", eau: "400 ml", levureboulangere: "20 g", huilefriture: "250 ml", sel: "12 g", sucre: "40 g", miel: "100 g" },
+      { nb: 11, farine: "605 g", eau: "440 ml", levureboulangere: "22 g", huilefriture: "275 ml", sel: "13.2 g", sucre: "44 g", miel: "110 g" },
+      { nb: 12, farine: "660 g", eau: "480 ml", levureboulangere: "24 g", huilefriture: "300 ml", sel: "14.4 g", sucre: "48 g", miel: "120 g" },
+      { nb: 13, farine: "715 g", eau: "520 ml", levureboulangere: "26 g", huilefriture: "325 ml", sel: "15.6 g", sucre: "52 g", miel: "130 g" },
+      { nb: 14, farine: "770 g", eau: "560 ml", levureboulangere: "28 g", huilefriture: "350 ml", sel: "16.8 g", sucre: "56 g", miel: "140 g" },
+      { nb: 15, farine: "825 g", eau: "600 ml", levureboulangere: "30 g", huilefriture: "375 ml", sel: "18 g", sucre: "60 g", miel: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Une pâte MOLLE, presque coulante", detail: "Beaucoup plus hydratée qu'une pâte à pain : ferme, on obtient des boulettes denses et sèches.", badge: null },
+      { icone: "⏳", titre: "Une heure et demie de pousse, jusqu'aux bulles", detail: "La surface doit être criblée de bulles : c'est ce qui donne l'intérieur alvéolé et léger.", badge: null },
+      { icone: "🚫", titre: "Ne PAS pétrir après la pousse", detail: "On prélève directement dans le saladier : dégazée, la pâte donne des beignets compacts.", badge: null },
+      { icone: "🤏", titre: "Pincer entre POUCE et INDEX, à la main mouillée", detail: "C'est le geste monténégrin : irrégulier et rapide. L'eau sur les doigts empêche la pâte de coller.", badge: null },
+      { icone: "🌡️", titre: "Huile à 175 °C, pas plus", detail: "Plus chaud, ils brunissent avant que le centre soit cuit et restent crus au milieu.", badge: null },
+      { icone: "🔄", titre: "Ils se retournent SEULS quand ils sont prêts", detail: "Le signal traditionnel : un beignet qui bascule tout seul a fini sa première face.", badge: null },
+      { icone: "🍯", titre: "Servis NATURE, miel et fromage à part", detail: "C'est un petit-déjeuner : chacun garnit le sien, salé ou sucré selon l'envie.", badge: null }
+    ],
+    liees: ["boortsog","beignetspomme","kleinur"]
+  },
+  lahoh: {
+    dateAjout: "2026-09-01T15:09:00",
+    nom: "Lahoh",
+    cat: "boulangerie", pays: "yemen",
+    base: 8,
+    temps: "30 min + 12 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "La crêpe spongieuse du Yémen et de Somalie, criblée de trous et cuite sur UNE SEULE face. Sa pâte fermente douze heures : c'est le gaz des levures qui perce les trous, pas un geste du cuisinier.",
+    tableauLahoh: [
+      { nb: 1, farine: "55 g", eau: "75 ml", levureboulangere: "1.5 g", sel: "1.2 g", sucre: "2 g" },
+      { nb: 2, farine: "110 g", eau: "150 ml", levureboulangere: "3 g", sel: "2.4 g", sucre: "4 g" },
+      { nb: 3, farine: "165 g", eau: "225 ml", levureboulangere: "4.5 g", sel: "3.6 g", sucre: "6 g" },
+      { nb: 4, farine: "220 g", eau: "300 ml", levureboulangere: "6 g", sel: "4.8 g", sucre: "8 g" },
+      { nb: 5, farine: "275 g", eau: "375 ml", levureboulangere: "7.5 g", sel: "6 g", sucre: "10 g" },
+      { nb: 6, farine: "330 g", eau: "450 ml", levureboulangere: "9 g", sel: "7.2 g", sucre: "12 g" },
+      { nb: 7, farine: "385 g", eau: "525 ml", levureboulangere: "10.5 g", sel: "8.4 g", sucre: "14 g" },
+      { nb: 8, farine: "440 g", eau: "600 ml", levureboulangere: "12 g", sel: "9.6 g", sucre: "16 g" },
+      { nb: 9, farine: "495 g", eau: "675 ml", levureboulangere: "13.5 g", sel: "10.8 g", sucre: "18 g" },
+      { nb: 10, farine: "550 g", eau: "750 ml", levureboulangere: "15 g", sel: "12 g", sucre: "20 g" },
+      { nb: 11, farine: "605 g", eau: "825 ml", levureboulangere: "16.5 g", sel: "13.2 g", sucre: "22 g" },
+      { nb: 12, farine: "660 g", eau: "900 ml", levureboulangere: "18 g", sel: "14.4 g", sucre: "24 g" },
+      { nb: 13, farine: "715 g", eau: "975 ml", levureboulangere: "19.5 g", sel: "15.6 g", sucre: "26 g" },
+      { nb: 14, farine: "770 g", eau: "1050 ml", levureboulangere: "21 g", sel: "16.8 g", sucre: "28 g" },
+      { nb: 15, farine: "825 g", eau: "1125 ml", levureboulangere: "22.5 g", sel: "18 g", sucre: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Une pâte LIQUIDE, comme une pâte à crêpes", detail: "Épaisse, les bulles ne remontent pas et la surface reste lisse : plus de lahoh, juste une galette.", badge: null },
+      { icone: "⏳", titre: "Douze heures de fermentation, à couvert", detail: "C'est le cœur de la recette : la pâte doit sentir légèrement l'aigre et être pleine de bulles.", badge: null },
+      { icone: "🚫", titre: "Ne PAS remuer la pâte après la fermentation", detail: "Un seul tour de fouet chasse le gaz et il n'y aura aucun trou à la cuisson.", badge: null },
+      { icone: "🍳", titre: "Une poêle SÈCHE, sans une goutte de matière grasse", detail: "L'huile empêche les trous de se former et la crêpe frit au lieu de cuire à la vapeur.", badge: null },
+      { icone: "🕳️", titre: "Cuire d'UN SEUL côté, jamais retourner", detail: "Les trous se forment sur le dessus : retournée, la crêpe les écrase et devient une galette ordinaire.", badge: null },
+      { icone: "👀", titre: "Retirer quand la surface est SÈCHE et mate", detail: "Encore brillante, elle est crue ; trop cuite, elle devient cassante et perd sa souplesse.", badge: null },
+      { icone: "🧺", titre: "Empiler sous un torchon, face à trous vers le haut", detail: "L'empilage garde la souplesse ; face contre face, les crêpes collent entre elles.", badge: null }
+    ],
+    liees: ["injera","crepes","blinis"]
+  },
+  bizcochos: {
+    dateAjout: "2026-09-01T16:04:00",
+    nom: "Bizcochos",
+    cat: "boulangerie", pays: "uruguay",
+    base: 12,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥐",
+    description: "Les viennoiseries salées-sucrées de Montevideo, achetées à la douzaine et mangées avec le maté. Ils descendent des croissants européens mais s'en distinguent par une chose : ils sont glacés au sirop AVANT d'être cuits, pas après.",
+    tableauBizcochos: [
+      { nb: 1, farine: "55 g", beurre: "25 g", levureboulangere: "2 g", sucre: "12 g", oeufs: "¼", lait: "25 ml", confiture: "12 g", sel: "1 g" },
+      { nb: 2, farine: "110 g", beurre: "50 g", levureboulangere: "4 g", sucre: "24 g", oeufs: "½", lait: "50 ml", confiture: "24 g", sel: "2 g" },
+      { nb: 3, farine: "165 g", beurre: "75 g", levureboulangere: "6 g", sucre: "36 g", oeufs: "¾", lait: "75 ml", confiture: "36 g", sel: "3 g" },
+      { nb: 4, farine: "220 g", beurre: "100 g", levureboulangere: "8 g", sucre: "48 g", oeufs: "1", lait: "100 ml", confiture: "48 g", sel: "4 g" },
+      { nb: 5, farine: "275 g", beurre: "125 g", levureboulangere: "10 g", sucre: "60 g", oeufs: "1¼", lait: "125 ml", confiture: "60 g", sel: "5 g" },
+      { nb: 6, farine: "330 g", beurre: "150 g", levureboulangere: "12 g", sucre: "72 g", oeufs: "1½", lait: "150 ml", confiture: "72 g", sel: "6 g" },
+      { nb: 7, farine: "385 g", beurre: "175 g", levureboulangere: "14 g", sucre: "84 g", oeufs: "1¾", lait: "175 ml", confiture: "84 g", sel: "7 g" },
+      { nb: 8, farine: "440 g", beurre: "200 g", levureboulangere: "16 g", sucre: "96 g", oeufs: "2", lait: "200 ml", confiture: "96 g", sel: "8 g" },
+      { nb: 9, farine: "495 g", beurre: "225 g", levureboulangere: "18 g", sucre: "108 g", oeufs: "2¼", lait: "225 ml", confiture: "108 g", sel: "9 g" },
+      { nb: 10, farine: "550 g", beurre: "250 g", levureboulangere: "20 g", sucre: "120 g", oeufs: "2½", lait: "250 ml", confiture: "120 g", sel: "10 g" },
+      { nb: 11, farine: "605 g", beurre: "275 g", levureboulangere: "22 g", sucre: "132 g", oeufs: "2¾", lait: "275 ml", confiture: "132 g", sel: "11 g" },
+      { nb: 12, farine: "660 g", beurre: "300 g", levureboulangere: "24 g", sucre: "144 g", oeufs: "3", lait: "300 ml", confiture: "144 g", sel: "12 g" },
+      { nb: 13, farine: "715 g", beurre: "325 g", levureboulangere: "26 g", sucre: "156 g", oeufs: "3¼", lait: "325 ml", confiture: "156 g", sel: "13 g" },
+      { nb: 14, farine: "770 g", beurre: "350 g", levureboulangere: "28 g", sucre: "168 g", oeufs: "3½", lait: "350 ml", confiture: "168 g", sel: "14 g" },
+      { nb: 15, farine: "825 g", beurre: "375 g", levureboulangere: "30 g", sucre: "180 g", oeufs: "3¾", lait: "375 ml", confiture: "180 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Un feuilletage RAPIDE, trois tours seulement", detail: "Le bizcocho n'est pas un croissant : trois tours suffisent, six donneraient un feuilletage trop noble.", badge: null },
+      { icone: "❄️", titre: "Beurre et pâte à la MÊME température, froids", detail: "C'est la règle de tout feuilletage : un beurre plus mou que la pâte s'écrase et les couches fusionnent.", badge: null },
+      { icone: "🍯", titre: "Le sirop appliqué AVANT la cuisson", detail: "C'est la particularité uruguayenne : il caramélise au four et forme une croûte brillante, pas un glaçage collant.", badge: null },
+      { icone: "📐", titre: "Des formes VARIÉES dans la même fournée", detail: "Nœuds, spirales, triangles, coquilles : à Montevideo, une douzaine mélange toujours plusieurs formes.", badge: null },
+      { icone: "🍓", titre: "La confiture au CENTRE, en petite quantité", detail: "Une demi-cuillère : davantage et elle bout, déborde et brûle sur la plaque.", badge: null },
+      { icone: "⏳", titre: "Deuxième pousse d'une heure, à couvert", detail: "Enfournés sans repos, les bizcochos restent denses et le feuilletage ne s'ouvre pas.", badge: null },
+      { icone: "🌡️", titre: "Four chaud, 200 °C, quinze minutes", detail: "Court et vif : c'est le choc qui fait décoller les couches et gonfler la pâte.", badge: null },
+      { icone: "🧉", titre: "Se mangent TIÈDES, avec le maté", detail: "C'est un rituel uruguayen : la douzaine se partage en famille autour de la calebasse.", badge: null }
+    ],
+    liees: ["croissant","brioche","priganice"]
   },
 });

@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_sauces.js — Recettes de catégorie "sauces" (Sauces) — 33 recettes
+// recettes_sauces.js — Recettes de catégorie "sauces" (Sauces) — 34 recettes
 // 👉 Pour AJOUTER une recette Sauces : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3764,5 +3764,44 @@ mayonnaise: {
       { icone: "🔥", titre: "Ajoutée EN FIN de cuisson, jamais au début", detail: "Sur les champignons ou les pommes de terre : trente secondes, sinon l'ail brûle et devient âcre.", badge: null }
     ],
     liees: ["gremolata","chimichurri","patespesto"]
+  },
+  ketchupauxfruits: {
+    dateAjout: "2026-09-01T16:03:00",
+    nom: "Ketchup aux Fruits",
+    cat: "sauces", saisons: ["automne"], pays: "canada",
+    base: 10,
+    temps: "3 h",
+    niveau: "⭐ Facile",
+    emoji: "🍑",
+    description: "La conserve d'automne québécoise, servie avec le pâté chinois et la tourtière. Ce n'est pas un ketchup au sens américain : c'est un chutney de fruits et de légumes, plus proche du piccalilli anglais que de la sauce en bouteille.",
+    tableauKetchupauxfruits: [
+      { nb: 1, tomate: "110 g", pomme: "60 g", peche: "50 g", oignon: "½", poivron: "35 g", vinaigreCidre: "35 ml", sucrecasso: "35 g", cannelle: "0.5 g", girofle: "0.3 g", sel: "3 g" },
+      { nb: 2, tomate: "220 g", pomme: "120 g", peche: "100 g", oignon: "1", poivron: "70 g", vinaigreCidre: "70 ml", sucrecasso: "70 g", cannelle: "1 g", girofle: "0.6 g", sel: "6 g" },
+      { nb: 3, tomate: "330 g", pomme: "180 g", peche: "150 g", oignon: "1½", poivron: "105 g", vinaigreCidre: "105 ml", sucrecasso: "105 g", cannelle: "1.5 g", girofle: "0.9 g", sel: "9 g" },
+      { nb: 4, tomate: "440 g", pomme: "240 g", peche: "200 g", oignon: "2", poivron: "140 g", vinaigreCidre: "140 ml", sucrecasso: "140 g", cannelle: "2 g", girofle: "1.2 g", sel: "12 g" },
+      { nb: 5, tomate: "550 g", pomme: "300 g", peche: "250 g", oignon: "2½", poivron: "175 g", vinaigreCidre: "175 ml", sucrecasso: "175 g", cannelle: "2.5 g", girofle: "1.5 g", sel: "15 g" },
+      { nb: 6, tomate: "660 g", pomme: "360 g", peche: "300 g", oignon: "3", poivron: "210 g", vinaigreCidre: "210 ml", sucrecasso: "210 g", cannelle: "3 g", girofle: "1.8 g", sel: "18 g" },
+      { nb: 7, tomate: "770 g", pomme: "420 g", peche: "350 g", oignon: "3½", poivron: "245 g", vinaigreCidre: "245 ml", sucrecasso: "245 g", cannelle: "3.5 g", girofle: "2.1 g", sel: "21 g" },
+      { nb: 8, tomate: "880 g", pomme: "480 g", peche: "400 g", oignon: "4", poivron: "280 g", vinaigreCidre: "280 ml", sucrecasso: "280 g", cannelle: "4 g", girofle: "2.4 g", sel: "24 g" },
+      { nb: 9, tomate: "990 g", pomme: "540 g", peche: "450 g", oignon: "4½", poivron: "315 g", vinaigreCidre: "315 ml", sucrecasso: "315 g", cannelle: "4.5 g", girofle: "2.7 g", sel: "27 g" },
+      { nb: 10, tomate: "1100 g", pomme: "600 g", peche: "500 g", oignon: "5", poivron: "350 g", vinaigreCidre: "350 ml", sucrecasso: "350 g", cannelle: "5 g", girofle: "3 g", sel: "30 g" },
+      { nb: 11, tomate: "1210 g", pomme: "660 g", peche: "550 g", oignon: "5½", poivron: "385 g", vinaigreCidre: "385 ml", sucrecasso: "385 g", cannelle: "5.5 g", girofle: "3.3 g", sel: "33 g" },
+      { nb: 12, tomate: "1320 g", pomme: "720 g", peche: "600 g", oignon: "6", poivron: "420 g", vinaigreCidre: "420 ml", sucrecasso: "420 g", cannelle: "6 g", girofle: "3.6 g", sel: "36 g" },
+      { nb: 13, tomate: "1430 g", pomme: "780 g", peche: "650 g", oignon: "6½", poivron: "455 g", vinaigreCidre: "455 ml", sucrecasso: "455 g", cannelle: "6.5 g", girofle: "3.9 g", sel: "39 g" },
+      { nb: 14, tomate: "1540 g", pomme: "840 g", peche: "700 g", oignon: "7", poivron: "490 g", vinaigreCidre: "490 ml", sucrecasso: "490 g", cannelle: "7 g", girofle: "4.2 g", sel: "42 g" },
+      { nb: 15, tomate: "1650 g", pomme: "900 g", peche: "750 g", oignon: "7½", poivron: "525 g", vinaigreCidre: "525 ml", sucrecasso: "525 g", cannelle: "7.5 g", girofle: "4.5 g", sel: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Monder les tomates, sans exception", detail: "Les peaux se détachent à la cuisson et flottent en lambeaux : c'est le défaut visuel qui trahit un ketchup bâclé.", badge: null },
+      { icone: "📏", titre: "Tout tailler en dés RÉGULIERS d'un centimètre", detail: "C'est un chutney, pas une purée : on doit reconnaître chaque fruit dans le bocal.", badge: null },
+      { icone: "🧂", titre: "Faire dégorger les légumes au sel, une nuit", detail: "Ils rendent leur eau à l'avance : sans cette étape, la cuisson dure deux heures de plus.", badge: null },
+      { icone: "⏳", titre: "Trois heures à FEU TRÈS DOUX, à découvert", detail: "Le sirop doit épaissir par évaporation, pas par ébullition : à gros bouillons, tout se défait en compote.", badge: null },
+      { icone: "🌿", titre: "Les épices en SACHET, retirées à la fin", detail: "Cannelle et girofle entiers dans une mousseline : moulues, elles brunissent le ketchup et dominent tout.", badge: null },
+      { icone: "🥄", titre: "Remuer souvent en fin de cuisson", detail: "Le sucre attache dès que le mélange épaissit : trente secondes d'inattention et tout le bocal a un goût de brûlé.", badge: null },
+      { icone: "🫙", titre: "Mise en bocaux BRÛLANTE, couvercles retournés", detail: "C'est la conserve traditionnelle : le vide se fait au refroidissement et le ketchup passe l'hiver.", badge: null },
+      { icone: "⏳", titre: "Attendre un MOIS avant d'ouvrir", detail: "Le vinaigre doit s'arrondir : goûté le jour même, il est agressif et les épices sont dissociées.", badge: null }
+    ],
+    liees: ["chutneymangue","chutneyoignons","agrodolce"]
   },
 });

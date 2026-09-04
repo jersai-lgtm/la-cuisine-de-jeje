@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 38 recettes
+// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 39 recettes
 // 👉 Pour AJOUTER une recette Brunch : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3270,5 +3270,43 @@ Object.assign(recettes, {
       { icone: "🍅", titre: "Ketchup ou brown sauce, jamais les deux", detail: "C'est LE débat national. Une ligne au milieu, pas étalée : elle doit se sentir par intermittence.", badge: null }
     ],
     liees: ["croquemonsieur","clubsandwich","pancakes"]
+  },
+  banhmiopla: {
+    dateAjout: "2026-09-01T16:06:00",
+    nom: "Bánh Mì Ốp La",
+    cat: "brunch", pays: "vietnam",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Le bánh mì du matin, à l'œuf au plat, vendu aux carrefours de Saïgon dès six heures. La baguette vietnamienne est plus légère que la française : farine de riz dans la pâte, mie presque vide, croûte qui éclate sous la dent.",
+    tableauBanhmiopla: [
+      { nb: 1, painbaguette: "90 g", oeufs: "1", carotte: "35 g", radis: "25 g", concombre: "30 g", coriandre: "6 g", sojaSauce: "8 ml", vinaigreRiz: "10 ml", sucre: "5 g", poivre: "0.5 g" },
+      { nb: 2, painbaguette: "180 g", oeufs: "2", carotte: "70 g", radis: "50 g", concombre: "60 g", coriandre: "12 g", sojaSauce: "16 ml", vinaigreRiz: "20 ml", sucre: "10 g", poivre: "1 g" },
+      { nb: 3, painbaguette: "270 g", oeufs: "3", carotte: "105 g", radis: "75 g", concombre: "90 g", coriandre: "18 g", sojaSauce: "24 ml", vinaigreRiz: "30 ml", sucre: "15 g", poivre: "1.5 g" },
+      { nb: 4, painbaguette: "360 g", oeufs: "4", carotte: "140 g", radis: "100 g", concombre: "120 g", coriandre: "24 g", sojaSauce: "32 ml", vinaigreRiz: "40 ml", sucre: "20 g", poivre: "2 g" },
+      { nb: 5, painbaguette: "450 g", oeufs: "5", carotte: "175 g", radis: "125 g", concombre: "150 g", coriandre: "30 g", sojaSauce: "40 ml", vinaigreRiz: "50 ml", sucre: "25 g", poivre: "2.5 g" },
+      { nb: 6, painbaguette: "540 g", oeufs: "6", carotte: "210 g", radis: "150 g", concombre: "180 g", coriandre: "36 g", sojaSauce: "48 ml", vinaigreRiz: "60 ml", sucre: "30 g", poivre: "3 g" },
+      { nb: 7, painbaguette: "630 g", oeufs: "7", carotte: "245 g", radis: "175 g", concombre: "210 g", coriandre: "42 g", sojaSauce: "56 ml", vinaigreRiz: "70 ml", sucre: "35 g", poivre: "3.5 g" },
+      { nb: 8, painbaguette: "720 g", oeufs: "8", carotte: "280 g", radis: "200 g", concombre: "240 g", coriandre: "48 g", sojaSauce: "64 ml", vinaigreRiz: "80 ml", sucre: "40 g", poivre: "4 g" },
+      { nb: 9, painbaguette: "810 g", oeufs: "9", carotte: "315 g", radis: "225 g", concombre: "270 g", coriandre: "54 g", sojaSauce: "72 ml", vinaigreRiz: "90 ml", sucre: "45 g", poivre: "4.5 g" },
+      { nb: 10, painbaguette: "900 g", oeufs: "10", carotte: "350 g", radis: "250 g", concombre: "300 g", coriandre: "60 g", sojaSauce: "80 ml", vinaigreRiz: "100 ml", sucre: "50 g", poivre: "5 g" },
+      { nb: 11, painbaguette: "990 g", oeufs: "11", carotte: "385 g", radis: "275 g", concombre: "330 g", coriandre: "66 g", sojaSauce: "88 ml", vinaigreRiz: "110 ml", sucre: "55 g", poivre: "5.5 g" },
+      { nb: 12, painbaguette: "1080 g", oeufs: "12", carotte: "420 g", radis: "300 g", concombre: "360 g", coriandre: "72 g", sojaSauce: "96 ml", vinaigreRiz: "120 ml", sucre: "60 g", poivre: "6 g" },
+      { nb: 13, painbaguette: "1170 g", oeufs: "13", carotte: "455 g", radis: "325 g", concombre: "390 g", coriandre: "78 g", sojaSauce: "104 ml", vinaigreRiz: "130 ml", sucre: "65 g", poivre: "6.5 g" },
+      { nb: 14, painbaguette: "1260 g", oeufs: "14", carotte: "490 g", radis: "350 g", concombre: "420 g", coriandre: "84 g", sojaSauce: "112 ml", vinaigreRiz: "140 ml", sucre: "70 g", poivre: "7 g" },
+      { nb: 15, painbaguette: "1350 g", oeufs: "15", carotte: "525 g", radis: "375 g", concombre: "450 g", coriandre: "90 g", sojaSauce: "120 ml", vinaigreRiz: "150 ml", sucre: "75 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥖", titre: "PASSER la baguette au four deux minutes", detail: "Le pain doit craquer : mou, tout le sandwich s'écrase et la garniture sort par les côtés.", badge: null },
+      { icone: "🥕", titre: "Les pickles préparés au moins UNE heure avant", detail: "Carotte et radis en julienne dans vinaigre-sucre-sel : c'est l'acidité qui structure tout le bánh mì.", badge: null },
+      { icone: "🧂", titre: "Saler les légumes et les presser avant la saumure", detail: "Dix minutes : ils rendent leur eau et absorbent ensuite le vinaigre au lieu de le diluer.", badge: null },
+      { icone: "🍳", titre: "Un œuf au plat au jaune COULANT", detail: "Il fait office de sauce : cuit dur, le sandwich devient sec et il manque le liant.", badge: null },
+      { icone: "🥖", titre: "Ouvrir le pain en LIVRE, sans le séparer", detail: "Une charnière tient le sandwich fermé : coupé en deux, il se démonte à la première bouchée.", badge: null },
+      { icone: "🫙", titre: "Évider un peu de mie du chapeau", detail: "C'est le geste vietnamien : ça fait de la place à la garniture et allège l'ensemble.", badge: null },
+      { icone: "🌿", titre: "Coriandre en BRANCHES entières, pas hachée", detail: "Posée en couche : hachée, elle disparaît sous les autres saveurs et n'apporte plus rien.", badge: null }
+    ],
+    liees: ["banhmiviet","clubsandwich","baconbutty"]
   },
 });

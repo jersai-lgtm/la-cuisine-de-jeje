@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 23 recettes
+// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 28 recettes
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1806,5 +1806,196 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Deux heures au froid minimum avant usage", detail: "L'ail doit imprégner le beurre. Utilisé tout de suite, on sent l'ail et le beurre séparément.", badge: null }
     ],
     liees: ["persillade","tapenade","patechampignons"]
+  },
+  beercheese: {
+    dateAjout: "2026-09-01T14:00:00",
+    nom: "Beer Cheese",
+    cat: "tartinables", pays: "usa",
+    base: 8,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍺",
+    description: "La tartinade des bars du Kentucky, née dans les tavernes de la Ohio River pour donner soif aux clients. Le fromage est travaillé CRU avec la bière — jamais chauffé, sans quoi on obtient une fondue et non une tartinade.",
+    tableauBeercheese: [
+      { nb: 1, cheddar: "70 g", biere: "25 ml", fromagefrais: "25 g", moutarde: "5 g", ail: "1", worcestershire: "4 ml", paprikafume: "1 g", poivre: "0.6 g" },
+      { nb: 2, cheddar: "140 g", biere: "50 ml", fromagefrais: "50 g", moutarde: "10 g", ail: "2", worcestershire: "8 ml", paprikafume: "2 g", poivre: "1.2 g" },
+      { nb: 3, cheddar: "210 g", biere: "75 ml", fromagefrais: "75 g", moutarde: "15 g", ail: "3", worcestershire: "12 ml", paprikafume: "3 g", poivre: "1.8 g" },
+      { nb: 4, cheddar: "280 g", biere: "100 ml", fromagefrais: "100 g", moutarde: "20 g", ail: "4", worcestershire: "16 ml", paprikafume: "4 g", poivre: "2.4 g" },
+      { nb: 5, cheddar: "350 g", biere: "125 ml", fromagefrais: "125 g", moutarde: "25 g", ail: "5", worcestershire: "20 ml", paprikafume: "5 g", poivre: "3 g" },
+      { nb: 6, cheddar: "420 g", biere: "150 ml", fromagefrais: "150 g", moutarde: "30 g", ail: "6", worcestershire: "24 ml", paprikafume: "6 g", poivre: "3.6 g" },
+      { nb: 7, cheddar: "490 g", biere: "175 ml", fromagefrais: "175 g", moutarde: "35 g", ail: "7", worcestershire: "28 ml", paprikafume: "7 g", poivre: "4.2 g" },
+      { nb: 8, cheddar: "560 g", biere: "200 ml", fromagefrais: "200 g", moutarde: "40 g", ail: "8", worcestershire: "32 ml", paprikafume: "8 g", poivre: "4.8 g" },
+      { nb: 9, cheddar: "630 g", biere: "225 ml", fromagefrais: "225 g", moutarde: "45 g", ail: "9", worcestershire: "36 ml", paprikafume: "9 g", poivre: "5.4 g" },
+      { nb: 10, cheddar: "700 g", biere: "250 ml", fromagefrais: "250 g", moutarde: "50 g", ail: "10", worcestershire: "40 ml", paprikafume: "10 g", poivre: "6 g" },
+      { nb: 11, cheddar: "770 g", biere: "275 ml", fromagefrais: "275 g", moutarde: "55 g", ail: "11", worcestershire: "44 ml", paprikafume: "11 g", poivre: "6.6 g" },
+      { nb: 12, cheddar: "840 g", biere: "300 ml", fromagefrais: "300 g", moutarde: "60 g", ail: "12", worcestershire: "48 ml", paprikafume: "12 g", poivre: "7.2 g" },
+      { nb: 13, cheddar: "910 g", biere: "325 ml", fromagefrais: "325 g", moutarde: "65 g", ail: "13", worcestershire: "52 ml", paprikafume: "13 g", poivre: "7.8 g" },
+      { nb: 14, cheddar: "980 g", biere: "350 ml", fromagefrais: "350 g", moutarde: "70 g", ail: "14", worcestershire: "56 ml", paprikafume: "14 g", poivre: "8.4 g" },
+      { nb: 15, cheddar: "1050 g", biere: "375 ml", fromagefrais: "375 g", moutarde: "75 g", ail: "15", worcestershire: "60 ml", paprikafume: "15 g", poivre: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Un cheddar VIEUX, râpé finement", detail: "Le jeune est fade et gras : il faut un affiné qui tienne tête à l'amertume de la bière.", badge: null },
+      { icone: "🌡️", titre: "Tous les ingrédients à TEMPÉRATURE ambiante", detail: "Le fromage sorti du frigo ne s'émulsionne pas et la tartinade reste granuleuse.", badge: null },
+      { icone: "🍺", titre: "Une bière AMBRÉE, jamais une blanche", detail: "La blanche est trop douce et disparaît. L'ambrée apporte l'amertume qui fait le beer cheese.", badge: null },
+      { icone: "💨", titre: "Laisser la bière DÉGAZER une heure", detail: "Gazeuse, elle fait mousser la tartinade et lui donne une texture de crème fouettée, pas de dip.", badge: null },
+      { icone: "🚫", titre: "Ne JAMAIS chauffer le mélange", detail: "C'est ce qui sépare la tartinade de la fondue : chauffé, le cheddar file et fige en refroidissant.", badge: null },
+      { icone: "🥣", titre: "Mixer par à-coups, en ajoutant la bière peu à peu", detail: "Versée d'un coup, elle liquéfie l'ensemble et il n'y a plus moyen de rattraper la consistance.", badge: null },
+      { icone: "❄️", titre: "Vingt-quatre heures au frais avant de servir", detail: "L'ail cru et le worcestershire ont besoin de ce temps : goûté le jour même, c'est du fromage à l'ail.", badge: null }
+    ],
+    liees: ["tirokafteri","dipfetapoivron","houmous"]
+  },
+  chevremiel: {
+    dateAjout: "2026-09-01T14:01:00",
+    nom: "Crème de Chèvre au Miel",
+    cat: "tartinables", saisons: ["printemps","ete"], pays: "france",
+    base: 6,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🐐",
+    description: "La tartinade de chèvre frais montée au miel et au thym, servie sur du pain grillé. Sa difficulté tient au dosage : le miel doit se deviner sans se voir — au-delà de deux cuillères, la crème bascule dans le dessert.",
+    tableauChevremiel: [
+      { nb: 1, chevrefrais: "70 g", miel: "10 g", cremefraiche: "20 ml", thym: "0.5 g", huileolive: "8 ml", noix: "12 g", poivre: "0.5 g", citron: "¼" },
+      { nb: 2, chevrefrais: "140 g", miel: "20 g", cremefraiche: "40 ml", thym: "1 g", huileolive: "16 ml", noix: "24 g", poivre: "1 g", citron: "½" },
+      { nb: 3, chevrefrais: "210 g", miel: "30 g", cremefraiche: "60 ml", thym: "1.5 g", huileolive: "24 ml", noix: "36 g", poivre: "1.5 g", citron: "¾" },
+      { nb: 4, chevrefrais: "280 g", miel: "40 g", cremefraiche: "80 ml", thym: "2 g", huileolive: "32 ml", noix: "48 g", poivre: "2 g", citron: "1" },
+      { nb: 5, chevrefrais: "350 g", miel: "50 g", cremefraiche: "100 ml", thym: "2.5 g", huileolive: "40 ml", noix: "60 g", poivre: "2.5 g", citron: "1¼" },
+      { nb: 6, chevrefrais: "420 g", miel: "60 g", cremefraiche: "120 ml", thym: "3 g", huileolive: "48 ml", noix: "72 g", poivre: "3 g", citron: "1½" },
+      { nb: 7, chevrefrais: "490 g", miel: "70 g", cremefraiche: "140 ml", thym: "3.5 g", huileolive: "56 ml", noix: "84 g", poivre: "3.5 g", citron: "1¾" },
+      { nb: 8, chevrefrais: "560 g", miel: "80 g", cremefraiche: "160 ml", thym: "4 g", huileolive: "64 ml", noix: "96 g", poivre: "4 g", citron: "2" },
+      { nb: 9, chevrefrais: "630 g", miel: "90 g", cremefraiche: "180 ml", thym: "4.5 g", huileolive: "72 ml", noix: "108 g", poivre: "4.5 g", citron: "2¼" },
+      { nb: 10, chevrefrais: "700 g", miel: "100 g", cremefraiche: "200 ml", thym: "5 g", huileolive: "80 ml", noix: "120 g", poivre: "5 g", citron: "2½" },
+      { nb: 11, chevrefrais: "770 g", miel: "110 g", cremefraiche: "220 ml", thym: "5.5 g", huileolive: "88 ml", noix: "132 g", poivre: "5.5 g", citron: "2¾" },
+      { nb: 12, chevrefrais: "840 g", miel: "120 g", cremefraiche: "240 ml", thym: "6 g", huileolive: "96 ml", noix: "144 g", poivre: "6 g", citron: "3" },
+      { nb: 13, chevrefrais: "910 g", miel: "130 g", cremefraiche: "260 ml", thym: "6.5 g", huileolive: "104 ml", noix: "156 g", poivre: "6.5 g", citron: "3¼" },
+      { nb: 14, chevrefrais: "980 g", miel: "140 g", cremefraiche: "280 ml", thym: "7 g", huileolive: "112 ml", noix: "168 g", poivre: "7 g", citron: "3½" },
+      { nb: 15, chevrefrais: "1050 g", miel: "150 g", cremefraiche: "300 ml", thym: "7.5 g", huileolive: "120 ml", noix: "180 g", poivre: "7.5 g", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐐", titre: "Un chèvre FRAIS, jamais affiné", detail: "L'affiné est trop puissant et couvre le miel : c'est le frais, doux et acidulé, qui fait l'accord.", badge: null },
+      { icone: "🌡️", titre: "Sortir le fromage une heure avant", detail: "Froid, il reste en grumeaux quel que soit le travail à la fourchette.", badge: null },
+      { icone: "🍯", titre: "Un miel LIQUIDE, de préférence d'acacia", detail: "Le miel cristallisé fait des grains ; un miel de châtaignier, trop puissant, écrase le chèvre.", badge: null },
+      { icone: "⚖️", titre: "Deux cuillères de miel au maximum", detail: "C'est le seuil : au-delà, la tartinade devient un dessert et ne va plus avec un apéritif salé.", badge: null },
+      { icone: "🥄", titre: "Monter À LA FOURCHETTE, pas au mixeur", detail: "Le mixeur casse les protéines du chèvre frais et la crème devient élastique et collante.", badge: null },
+      { icone: "🌿", titre: "Du thym frais EFFEUILLÉ, pas de branches", detail: "Les branches piquent en bouche. Effeuillé et froissé entre les doigts, il libère son huile.", badge: null },
+      { icone: "🌰", titre: "Noix concassées posées au dernier moment", detail: "Mélangées, elles ramollissent en une heure et perdent le croquant qui fait le contraste.", badge: null }
+    ],
+    liees: ["saladechevrechaud","tapenade","beurrebordier"]
+  },
+  bagnacauda: {
+    dateAjout: "2026-09-01T14:02:00",
+    nom: "Bagna Cauda",
+    cat: "tartinables", saisons: ["automne","hiver"], pays: "italie",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫕",
+    description: "La « sauce chaude » piémontaise, servie dans un caquelon au centre de la table pour y tremper des légumes crus. Son ail est POCHÉ AU LAIT pendant une heure — sans quoi la sauce est immangeable et le repas s'entend le lendemain.",
+    tableauBagnacauda: [
+      { nb: 1, ail: "4", anchois: "35 g", huileolive: "55 ml", lait: "60 ml", beurre: "15 g", poivre: "0.5 g" },
+      { nb: 2, ail: "8", anchois: "70 g", huileolive: "110 ml", lait: "120 ml", beurre: "30 g", poivre: "1 g" },
+      { nb: 3, ail: "12", anchois: "105 g", huileolive: "165 ml", lait: "180 ml", beurre: "45 g", poivre: "1.5 g" },
+      { nb: 4, ail: "16", anchois: "140 g", huileolive: "220 ml", lait: "240 ml", beurre: "60 g", poivre: "2 g" },
+      { nb: 5, ail: "20", anchois: "175 g", huileolive: "275 ml", lait: "300 ml", beurre: "75 g", poivre: "2.5 g" },
+      { nb: 6, ail: "24", anchois: "210 g", huileolive: "330 ml", lait: "360 ml", beurre: "90 g", poivre: "3 g" },
+      { nb: 7, ail: "28", anchois: "245 g", huileolive: "385 ml", lait: "420 ml", beurre: "105 g", poivre: "3.5 g" },
+      { nb: 8, ail: "32", anchois: "280 g", huileolive: "440 ml", lait: "480 ml", beurre: "120 g", poivre: "4 g" },
+      { nb: 9, ail: "36", anchois: "315 g", huileolive: "495 ml", lait: "540 ml", beurre: "135 g", poivre: "4.5 g" },
+      { nb: 10, ail: "40", anchois: "350 g", huileolive: "550 ml", lait: "600 ml", beurre: "150 g", poivre: "5 g" },
+      { nb: 11, ail: "44", anchois: "385 g", huileolive: "605 ml", lait: "660 ml", beurre: "165 g", poivre: "5.5 g" },
+      { nb: 12, ail: "48", anchois: "420 g", huileolive: "660 ml", lait: "720 ml", beurre: "180 g", poivre: "6 g" },
+      { nb: 13, ail: "52", anchois: "455 g", huileolive: "715 ml", lait: "780 ml", beurre: "195 g", poivre: "6.5 g" },
+      { nb: 14, ail: "56", anchois: "490 g", huileolive: "770 ml", lait: "840 ml", beurre: "210 g", poivre: "7 g" },
+      { nb: 15, ail: "60", anchois: "525 g", huileolive: "825 ml", lait: "900 ml", beurre: "225 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "L'ail POCHÉ dans du lait, une heure", detail: "C'est l'étape non négociable : elle retire l'agressivité et rend l'ail digeste. Le lait est ensuite jeté.", badge: null },
+      { icone: "🧄", titre: "Retirer le germe de CHAQUE gousse", detail: "Même poché, le germe reste amer : c'est dix minutes de travail qui changent tout le plat.", badge: null },
+      { icone: "🐟", titre: "Des anchois SOUS SEL, rincés et désarêtés", detail: "Ceux à l'huile sont mous et fades. Sous sel, ils fondent en donnant leur profondeur.", badge: null },
+      { icone: "🌡️", titre: "Une chaleur TRÈS douce, jamais de friture", detail: "L'huile ne doit jamais frémir : à 60 °C, l'ail fond ; au-delà, il rissole et devient âcre.", badge: null },
+      { icone: "⏳", titre: "Une heure de cuisson douce, en remuant", detail: "Les anchois doivent disparaître complètement : s'ils sont encore visibles, ce n'est pas fini.", badge: null },
+      { icone: "🧈", titre: "Le beurre monté à la fin, hors du feu", detail: "Il arrondit l'ensemble et évite que la sauce se sépare en refroidissant dans le caquelon.", badge: null },
+      { icone: "🔥", titre: "Servir dans un caquelon, sur bougie", detail: "Refroidie, elle fige et s'épaissit. C'est un plat de table qui doit rester chaud tout le repas.", badge: null },
+      { icone: "🥕", titre: "Des légumes CRUS, croquants et froids", detail: "Cardons, poivrons, chou, topinambours : le contraste chaud-froid est la moitié du plaisir.", badge: null }
+    ],
+    liees: ["anchoiade","aioli","tapenade"]
+  },
+  tartinadesardines: {
+    dateAjout: "2026-09-01T14:03:00",
+    nom: "Tartinade de Sardines",
+    cat: "tartinables", pays: "france",
+    base: 6,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "La tartinade de placard par excellence, montée à la fourchette en un quart d'heure. Sa réussite tient à un détail que tout le monde néglige : on garde UN PEU de l'huile de la boîte, qui porte tout le goût du poisson.",
+    tableauTartinadesardines: [
+      { nb: 1, sardine: "80 g", fromagefrais: "45 g", citron: "½", echalote: "¼", ciboulette: "5 g", moutarde: "4 g", poivre: "0.6 g" },
+      { nb: 2, sardine: "160 g", fromagefrais: "90 g", citron: "1", echalote: "½", ciboulette: "10 g", moutarde: "8 g", poivre: "1.2 g" },
+      { nb: 3, sardine: "240 g", fromagefrais: "135 g", citron: "1½", echalote: "¾", ciboulette: "15 g", moutarde: "12 g", poivre: "1.8 g" },
+      { nb: 4, sardine: "320 g", fromagefrais: "180 g", citron: "2", echalote: "1", ciboulette: "20 g", moutarde: "16 g", poivre: "2.4 g" },
+      { nb: 5, sardine: "400 g", fromagefrais: "225 g", citron: "2½", echalote: "1¼", ciboulette: "25 g", moutarde: "20 g", poivre: "3 g" },
+      { nb: 6, sardine: "480 g", fromagefrais: "270 g", citron: "3", echalote: "1½", ciboulette: "30 g", moutarde: "24 g", poivre: "3.6 g" },
+      { nb: 7, sardine: "560 g", fromagefrais: "315 g", citron: "3½", echalote: "1¾", ciboulette: "35 g", moutarde: "28 g", poivre: "4.2 g" },
+      { nb: 8, sardine: "640 g", fromagefrais: "360 g", citron: "4", echalote: "2", ciboulette: "40 g", moutarde: "32 g", poivre: "4.8 g" },
+      { nb: 9, sardine: "720 g", fromagefrais: "405 g", citron: "4½", echalote: "2¼", ciboulette: "45 g", moutarde: "36 g", poivre: "5.4 g" },
+      { nb: 10, sardine: "800 g", fromagefrais: "450 g", citron: "5", echalote: "2½", ciboulette: "50 g", moutarde: "40 g", poivre: "6 g" },
+      { nb: 11, sardine: "880 g", fromagefrais: "495 g", citron: "5½", echalote: "2¾", ciboulette: "55 g", moutarde: "44 g", poivre: "6.6 g" },
+      { nb: 12, sardine: "960 g", fromagefrais: "540 g", citron: "6", echalote: "3", ciboulette: "60 g", moutarde: "48 g", poivre: "7.2 g" },
+      { nb: 13, sardine: "1040 g", fromagefrais: "585 g", citron: "6½", echalote: "3¼", ciboulette: "65 g", moutarde: "52 g", poivre: "7.8 g" },
+      { nb: 14, sardine: "1120 g", fromagefrais: "630 g", citron: "7", echalote: "3½", ciboulette: "70 g", moutarde: "56 g", poivre: "8.4 g" },
+      { nb: 15, sardine: "1200 g", fromagefrais: "675 g", citron: "7½", echalote: "3¾", ciboulette: "75 g", moutarde: "60 g", poivre: "9 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Des sardines à l'HUILE D'OLIVE, pas au naturel", detail: "Au naturel, elles sont sèches et fades : c'est l'huile qui a pris le goût du poisson pendant la conserve.", badge: null },
+      { icone: "🫒", titre: "Garder une cuillère de l'huile de la boîte", detail: "C'est le geste que tout le monde saute : sans elle, la tartinade a le goût du fromage, pas de la sardine.", badge: null },
+      { icone: "🦴", titre: "Retirer l'arête centrale, garder les petites", detail: "Les petites arêtes sont tendres et apportent le calcium ; la centrale se sent désagréablement.", badge: null },
+      { icone: "🥄", titre: "Écraser À LA FOURCHETTE, jamais au mixeur", detail: "Le mixeur donne une pâte grise et lisse ; à la fourchette, on garde des morceaux visibles.", badge: null },
+      { icone: "🧅", titre: "L'échalote rincée à l'eau froide", detail: "Crue et entière, elle domine le poisson. Rincée, elle ne laisse que son croquant.", badge: null },
+      { icone: "🍋", titre: "Beaucoup de citron, plus qu'on ne croit", detail: "La sardine est grasse : sans acidité franche, la tartinade est lourde et écœurante au troisième toast.", badge: null },
+      { icone: "❄️", titre: "Deux heures au frais avant de servir", detail: "Le fromage doit raffermir. Servie tout de suite, elle coule du pain.", badge: null }
+    ],
+    liees: ["rillettessardines","rillettesthon","tapenade"]
+  },
+  cancoillotteail: {
+    dateAjout: "2026-09-01T14:04:00",
+    nom: "Cancoillotte à l'Ail",
+    cat: "tartinables", saisons: ["automne","hiver"], pays: "france",
+    base: 6,
+    temps: "25 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧀",
+    description: "Le fromage fondu comtois, fait à partir de metton — un caillé maigre égoutté qu'on fait fondre au beurre et à l'eau. C'est l'un des rares fromages qui se boit presque, et il ne se sert JAMAIS froid.",
+    tableauCancoillotteail: [
+      { nb: 1, cancoillotte: "110 g", ail: "2", beurre: "15 g", vinblanc: "20 ml", eau: "25 ml", poivre: "0.5 g", muscade: "0.2 g" },
+      { nb: 2, cancoillotte: "220 g", ail: "4", beurre: "30 g", vinblanc: "40 ml", eau: "50 ml", poivre: "1 g", muscade: "0.4 g" },
+      { nb: 3, cancoillotte: "330 g", ail: "6", beurre: "45 g", vinblanc: "60 ml", eau: "75 ml", poivre: "1.5 g", muscade: "0.6 g" },
+      { nb: 4, cancoillotte: "440 g", ail: "8", beurre: "60 g", vinblanc: "80 ml", eau: "100 ml", poivre: "2 g", muscade: "0.8 g" },
+      { nb: 5, cancoillotte: "550 g", ail: "10", beurre: "75 g", vinblanc: "100 ml", eau: "125 ml", poivre: "2.5 g", muscade: "1 g" },
+      { nb: 6, cancoillotte: "660 g", ail: "12", beurre: "90 g", vinblanc: "120 ml", eau: "150 ml", poivre: "3 g", muscade: "1.2 g" },
+      { nb: 7, cancoillotte: "770 g", ail: "14", beurre: "105 g", vinblanc: "140 ml", eau: "175 ml", poivre: "3.5 g", muscade: "1.4 g" },
+      { nb: 8, cancoillotte: "880 g", ail: "16", beurre: "120 g", vinblanc: "160 ml", eau: "200 ml", poivre: "4 g", muscade: "1.6 g" },
+      { nb: 9, cancoillotte: "990 g", ail: "18", beurre: "135 g", vinblanc: "180 ml", eau: "225 ml", poivre: "4.5 g", muscade: "1.8 g" },
+      { nb: 10, cancoillotte: "1100 g", ail: "20", beurre: "150 g", vinblanc: "200 ml", eau: "250 ml", poivre: "5 g", muscade: "2 g" },
+      { nb: 11, cancoillotte: "1210 g", ail: "22", beurre: "165 g", vinblanc: "220 ml", eau: "275 ml", poivre: "5.5 g", muscade: "2.2 g" },
+      { nb: 12, cancoillotte: "1320 g", ail: "24", beurre: "180 g", vinblanc: "240 ml", eau: "300 ml", poivre: "6 g", muscade: "2.4 g" },
+      { nb: 13, cancoillotte: "1430 g", ail: "26", beurre: "195 g", vinblanc: "260 ml", eau: "325 ml", poivre: "6.5 g", muscade: "2.6 g" },
+      { nb: 14, cancoillotte: "1540 g", ail: "28", beurre: "210 g", vinblanc: "280 ml", eau: "350 ml", poivre: "7 g", muscade: "2.8 g" },
+      { nb: 15, cancoillotte: "1650 g", ail: "30", beurre: "225 g", vinblanc: "300 ml", eau: "375 ml", poivre: "7.5 g", muscade: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Du metton frais si on en trouve, sinon de la cancoillotte nature", detail: "Le metton est le caillé d'origine ; à défaut, on repart d'une cancoillotte nature à réchauffer et parfumer.", badge: null },
+      { icone: "🌡️", titre: "Chaleur TRÈS douce, jamais d'ébullition", detail: "Bouillie, la cancoillotte tranche : le gras se sépare et remonte en flaque jaune irrécupérable.", badge: null },
+      { icone: "🧈", titre: "Le beurre en petits morceaux, un à un", detail: "Ajouté d'un bloc, il refuse de s'incorporer et surnage au lieu de lier le fromage.", badge: null },
+      { icone: "🍷", titre: "Un vin blanc SEC du Jura, ou un chardonnay", detail: "L'acidité empêche le fromage de filer et lui donne son mordant : sans vin, c'est une crème plate.", badge: null },
+      { icone: "🧄", titre: "L'ail écrasé, incorporé HORS du feu", detail: "Cuit dans le fromage, il devient sucré et disparaît ; ajouté à la fin, il reste franc.", badge: null },
+      { icone: "💧", titre: "Ajuster à l'eau chaude, pas au lait", detail: "Le lait rend la cancoillotte pâteuse. L'eau la détend sans en changer le goût.", badge: null },
+      { icone: "🔥", titre: "Se sert CHAUDE, sur des pommes de terre", detail: "Froide, elle fige en bloc caoutchouteux. C'est un plat de montagne, il se mange fumant.", badge: null }
+    ],
+    liees: ["fondue","raclette","beurrebordier"]
   },
 });
