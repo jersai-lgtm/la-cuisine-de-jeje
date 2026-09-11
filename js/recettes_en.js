@@ -116666,6 +116666,876 @@ window.RECETTES_EN = {
     "detail": "Raw juices lose their colour and vitamins very fast: it is a drink of the moment."
    }
   ]
+ },
+ "pizzacarbonara": {
+  "nom": "Pizza Carbonara",
+  "description": "Carbonara transposed onto pizza by Roman pizzaioli: guanciale, pecorino and egg yolk — but never cream. Everything hangs on the yolk, which must NOT cook in the oven: laid on as it comes out, it coats rather than sets.",
+  "etapes": [
+   {
+    "titre": "NO cream, that is the Roman rule",
+    "detail": "Cream is an invention from outside Italy: it weighs things down and masks the guanciale, which is the subject."
+   },
+   {
+    "titre": "Guanciale, not smoked lardons",
+    "detail": "Pork cheek has a fat that melts and perfumes; smoked lardons crush the pecorino."
+   },
+   {
+    "titre": "Render the guanciale SEPARATELY, gently",
+    "detail": "Until translucent and crisp at the edges: raw on the pizza it stays rubbery."
+   },
+   {
+    "titre": "A white base, mozzarella and pecorino",
+    "detail": "No tomato: this is a pizza bianca. Mozzarella binds, pecorino brings the salt."
+   },
+   {
+    "titre": "Oven flat out, seven minutes, WITHOUT the yolk",
+    "detail": "Yolk baked in the oven becomes a hard, floury disc: it never goes in the oven."
+   },
+   {
+    "titre": "Yolk laid on RAW as it comes out, in the centre",
+    "detail": "The pizza's heat barely warms it: you burst it at the table and it coats like a carbonara sauce."
+   },
+   {
+    "titre": "Plenty of freshly ground black pepper",
+    "detail": "The fourth ingredient of carbonara, not a seasoning: it must be frankly present."
+   }
+  ]
+ },
+ "pizzapouletbbq": {
+  "nom": "BBQ Chicken Pizza",
+  "description": "The pizza invented in 1985 by California Pizza Kitchen, which replaced tomato sauce with barbecue sauce. The trap is the sauce's sugar: it burns in the oven well before the dough does, so it is dosed in a very thin layer.",
+  "etapes": [
+   {
+    "titre": "Barbecue sauce in a VERY thin layer",
+    "detail": "It contains a lot of sugar that carbonises in the oven: thick, the pizza comes out black and bitter."
+   },
+   {
+    "titre": "Chicken COOKED and shredded beforehand, never raw",
+    "detail": "Raw, it has no time to cook in seven minutes; shredded, it soaks up the sauce."
+   },
+   {
+    "titre": "Coat the chicken in a little sauce separately",
+    "detail": "The chicken carries the smoky flavour: the base stays discreet so it does not burn."
+   },
+   {
+    "titre": "Mozzarella AND cheddar, not one or the other",
+    "detail": "Mozzarella stretches, cheddar brings the flavour: the original American pairing."
+   },
+   {
+    "titre": "Red onion in very thin slices, raw",
+    "detail": "It cooks on the pizza and turns sweet: in large pieces it stays raw and aggressive."
+   },
+   {
+    "titre": "A slightly COOLER oven, 250 °C",
+    "detail": "At 300 °C the sauce burns before the end: the one pizza that asks you to turn the oven down."
+   },
+   {
+    "titre": "Fresh coriander after baking, not before",
+    "detail": "The Californian signature: baked, it blackens and tastes of hay."
+   }
+  ]
+ },
+ "pizzakebab": {
+  "nom": "Kebab Pizza",
+  "description": "Kebabpizza is the most ordered pizza in Sweden, where it was born in pizzerias run by Turkish immigrants in the 1980s. Its white garlic sauce is poured on AFTER baking — which sets it apart from every Italian pizza.",
+  "etapes": [
+   {
+    "titre": "SPICED meat, seared separately",
+    "detail": "Cumin, paprika, garlic: it is the kebab seasoning that makes the pizza, not the topping itself."
+   },
+   {
+    "titre": "Sear over high heat until it CATCHES",
+    "detail": "The meat must brown and crisp in places, as on the kebab spit."
+   },
+   {
+    "titre": "Drain the fat from the meat",
+    "detail": "It would soak the dough: a kebab pizza must stay crisp despite a generous topping."
+   },
+   {
+    "titre": "A simple tomato sauce, without oregano",
+    "detail": "It is a Turkish-Swedish pizza: oregano would pull it towards Italy and blur the pairing."
+   },
+   {
+    "titre": "A yoghurt-garlic sauce made the day before",
+    "detail": "The garlic must infuse the yoghurt: made at the last minute, it is bland in places and harsh in others."
+   },
+   {
+    "titre": "White sauce poured on AFTER the oven",
+    "detail": "In a thread over the scalding pizza: baked, it splits and separates. That is the Swedish gesture."
+   },
+   {
+    "titre": "Pickled chillies as the final garnish",
+    "detail": "Vinegared peperoncini cut through the fat: the compulsory garnish in Sweden."
+   }
+  ]
+ },
+ "pizzabismarck": {
+  "nom": "Pizza Bismarck",
+  "description": "The ham and egg pizza, named after the German chancellor who, legend has it, had a fried egg on everything he was served. The whole art lies in timing: the egg goes in HALFWAY through baking, not at the start.",
+  "etapes": [
+   {
+    "titre": "Egg cracked on HALFWAY through, not at the start",
+    "detail": "Laid on from the beginning the yolk sets hard; added at the end, the white stays raw and slimy."
+   },
+   {
+    "titre": "Hollow a NEST in the centre of the topping",
+    "detail": "Without a hollow the egg slides to the edge and runs off the pizza onto the oven stone."
+   },
+   {
+    "titre": "Crack the egg into a bowl, then pour it on",
+    "detail": "Cracked straight on, a shell fragment or a broken yolk is beyond rescue on a scalding pizza."
+   },
+   {
+    "titre": "Good quality cooked ham, in strips",
+    "detail": "Laid in petals around the nest: it frames the egg and stops the white spreading."
+   },
+   {
+    "titre": "White set, yolk runny: three minutes",
+    "detail": "That is the entire adjustment: watch at the oven door, never by timer alone."
+   },
+   {
+    "titre": "Parmesan grated over the white, at the end",
+    "detail": "It gratinates lightly and gives salt to the naturally bland white."
+   },
+   {
+    "titre": "Fresh basil after baking, never baked",
+    "detail": "It blackens within thirty seconds in the oven: the last gesture before cutting."
+   }
+  ]
+ },
+ "glacepralinee": {
+  "nom": "Praline Ice Cream",
+  "description": "Homemade praline ice cream, whose praline is made from caramelised hazelnuts ground until they release their oil. Shop-bought, it is sweet and flat; homemade, it is roasted, bitter and deep.",
+  "etapes": [
+   {
+    "titre": "Roast the hazelnuts BEFORE caramelising",
+    "detail": "Fifteen minutes at 160 °C: caramel does not roast, it only coats. Raw, they give a bland praline."
+   },
+   {
+    "titre": "A dry caramel, DARK amber",
+    "detail": "Darker than for a dessert: the caramel's bitterness is what stops the praline being cloying."
+   },
+   {
+    "titre": "Let the brittle cool COMPLETELY",
+    "detail": "Blitzed warm, it sticks to the blades and heats the motor: it must be brittle."
+   },
+   {
+    "titre": "Blend in ten-second bursts",
+    "detail": "First a powder, then a paste, then a liquid: it takes ten minutes, letting the bowl cool."
+   },
+   {
+    "titre": "Praline into WARM custard",
+    "detail": "Hot, it splits the oil out of the praline; cold, it stays in lumps at the bottom."
+   },
+   {
+    "titre": "A pinch of salt in the praline",
+    "detail": "It reveals the hazelnut and cuts the sugar: the secret of pastry-chef pralines."
+   },
+   {
+    "titre": "Keep some praline for the end of churning",
+    "detail": "Drizzled in for the last thirty seconds: it forms veins that stay runny in the ice cream."
+   }
+  ]
+ },
+ "glaceceriseamarena": {
+  "nom": "Amarena Cherry Ice Cream",
+  "description": "The amarena gelato of Bologna's gelaterias: a plain milk ice cream shot through with sour cherries candied in syrup. The base is deliberately NEUTRAL — a fior di latte without vanilla — so the tart cherry is the only flavour.",
+  "etapes": [
+   {
+    "titre": "SOUR cherries, never sweet ones",
+    "detail": "A sweet cherry disappears into the syrup's sugar: the sour cherry's acidity is what makes amarena."
+   },
+   {
+    "titre": "Candy the cherries three days in syrup",
+    "detail": "A thick syrup, brought back to the boil each day: that is what makes them soft without freezing in the ice cream."
+   },
+   {
+    "titre": "A dash of kirsch in the syrup",
+    "detail": "The alcohol lowers the freezing point: without it the cherries become hard pellets in the ice cream."
+   },
+   {
+    "titre": "A fior di latte base, WITHOUT vanilla",
+    "detail": "Milk, cream, sugar and nothing else: vanilla would blur the cherry, which must dominate alone."
+   },
+   {
+    "titre": "Churn the plain base, without the fruit",
+    "detail": "Mixed in from the start, the cherries burst in the machine and tint the whole ice cream pink."
+   },
+   {
+    "titre": "Fold in cherries and syrup AS A RIPPLE",
+    "detail": "With a spatula, in three turns only, in the tub: you want red veins, not a pink ice cream."
+   },
+   {
+    "titre": "Four hours to set before serving",
+    "detail": "The ripples freeze and stay clean: served at once, the ice cream is soft and the veins run."
+   }
+  ]
+ },
+ "tzatzikibetterave": {
+  "nom": "Beetroot Tzatziki",
+  "description": "The pink tzatziki of Athens' modern tavernas, where beetroot replaces cucumber. The colour is no gimmick: beetroot brings an earthy sweetness that answers the yoghurt's acidity, where cucumber brought only water.",
+  "etapes": [
+   {
+    "titre": "COOKED beetroot, not raw",
+    "detail": "Raw, it is earthy and rasping; cooked, it is sweet and melts into the yoghurt."
+   },
+   {
+    "titre": "Greek yoghurt DRAINED overnight",
+    "detail": "Beetroot releases a lot of water: on undrained yoghurt the tzatziki becomes a runny sauce."
+   },
+   {
+    "titre": "Grate the beetroot, then SQUEEZE it",
+    "detail": "In a cloth, firmly: the same rule as for the cucumber in classic tzatziki."
+   },
+   {
+    "titre": "Garlic grated on a microplane, to a paste",
+    "detail": "Chopped, it stays in sharp pieces; grated, it spreads through all the yoghurt."
+   },
+   {
+    "titre": "Dill, not mint",
+    "detail": "The herb of Greek tzatziki: mint would pull the spread towards Turkish cooking."
+   },
+   {
+    "titre": "Crushed walnuts scattered on top",
+    "detail": "They echo the beetroot of Greek winter cooking and bring the only crunch."
+   },
+   {
+    "titre": "Two hours in the fridge before serving",
+    "detail": "The garlic must infuse: served straight away, you taste raw garlic and yoghurt separately."
+   }
+  ]
+ },
+ "rillettesdecanard": {
+  "nom": "Duck Rillettes",
+  "description": "The rillettes of the South-West, confited in their own fat for hours then shredded with a fork. They are NEVER blended: it is the meat's fibres, long and visible, that distinguish them from a pâté.",
+  "etapes": [
+   {
+    "titre": "Duck legs, with the skin",
+    "detail": "The skin melts and provides the binding fat: boned and skinless, the rillettes are dry."
+   },
+   {
+    "titre": "Salt the day before, with coarse salt",
+    "detail": "Twelve hours: the salt penetrates and starts curing the meat before cooking even begins."
+   },
+   {
+    "titre": "Confit at 90 °C, THREE hours minimum",
+    "detail": "Never a simmer: the fat should barely move. Hotter, the meat fries and toughens."
+   },
+   {
+    "titre": "Shred WITH A FORK, never a blender",
+    "detail": "Two forks, along the grain: blended, rillettes become a textureless pâté."
+   },
+   {
+    "titre": "Return the fat GRADUALLY, stirring",
+    "detail": "Just enough to bind: too much and they turn greasy; too little and they crumble."
+   },
+   {
+    "titre": "Mix as it cools, not hot",
+    "detail": "The fat emulsifies with the fibres as it cools: hot, it rises and separates."
+   },
+   {
+    "titre": "Pour a layer of fat over the top",
+    "detail": "It seals and preserves: that is how rillettes lasted the winter without refrigeration."
+   }
+  ]
+ },
+ "houmousavocat": {
+  "nom": "Avocado Hummus",
+  "description": "The hummus of Tel Aviv's cafés, where avocado replaces some of the chickpeas. It is not a guacamole: tahini remains the base, and the avocado brings only creaminess and colour — never the dominant flavour.",
+  "etapes": [
+   {
+    "titre": "PEEL the chickpeas, one by one",
+    "detail": "Tedious, and the secret of every smooth hummus: the skin gives a grainy texture."
+   },
+   {
+    "titre": "Tahini and lemon blended ALONE first",
+    "detail": "They form a thick white cream: the base of the emulsion, on which everything else rests."
+   },
+   {
+    "titre": "An ice cube in the blender, for texture",
+    "detail": "The cold makes the hummus airier and paler: the trick of Israeli hummus makers."
+   },
+   {
+    "titre": "Avocado added LAST, barely blended",
+    "detail": "It heats and oxidises under the blades: thirty seconds is enough to incorporate it."
+   },
+   {
+    "titre": "Less avocado than chickpeas",
+    "detail": "Beyond half and half, it is a tahini guacamole: the hummus must stay a hummus."
+   },
+   {
+    "titre": "Plenty of lemon, for the colour too",
+    "detail": "It delays the avocado browning: without it the top greys within an hour."
+   },
+   {
+    "titre": "A well of olive oil at the table",
+    "detail": "The Israeli custom: hollow it out with the back of a spoon and fill with oil and cumin."
+   }
+  ]
+ },
+ "soupefroidepois": {
+  "nom": "Chilled Pea and Mint Soup",
+  "description": "The iced spring velouté, a brilliant green. Everything happens in two minutes: the peas must be PLUNGED into ice the moment cooking ends — one minute too long in the heat and the soup turns khaki.",
+  "etapes": [
+   {
+    "titre": "FROZEN peas, not tinned",
+    "detail": "Frozen are picked and locked at the peak of freshness; tinned are grey and floury."
+   },
+   {
+    "titre": "Three minutes' cooking, not one more",
+    "detail": "Beyond that the chlorophyll degrades and the colour turns from bright green to khaki, irreversibly."
+   },
+   {
+    "titre": "PLUNGE into iced water at once",
+    "detail": "The gesture that fixes the green: left to cool gently, they keep cooking and dull."
+   },
+   {
+    "titre": "Mint blended RAW, with the cold peas",
+    "detail": "Cooked, it loses its freshness and tastes of herbal tea: it goes into the blender, never the pan."
+   },
+   {
+    "titre": "Pass through a FINE sieve, pressing",
+    "detail": "The pea skins remain: unsieved, the soup is grainy and loses its velvet."
+   },
+   {
+    "titre": "Two hours in the fridge, well covered",
+    "detail": "Served lukewarm it tastes of purée; properly cold, it becomes refreshing."
+   },
+   {
+    "titre": "A squeeze of lemon just before serving",
+    "detail": "Added too early, the acid attacks the chlorophyll and dulls the colour in the fridge."
+   }
+  ]
+ },
+ "divisionbell": {
+  "nom": "Division Bell",
+  "description": "Created in 2009 in New York by Phil Ward, apostle of mezcal in American bars. It is a smoky cousin of the aviation: the maraschino stays, but Aperol replaces the violette and mezcal replaces the gin.",
+  "etapes": [
+   {
+    "titre": "An ESPADÍN mezcal, smoky but not burnt",
+    "detail": "Very smoky mezcals crush the maraschino; espadín keeps a smoke that marries the bitter."
+   },
+   {
+    "titre": "Maraschino MEASURED precisely",
+    "detail": "Fifteen millilitres: it bridges the mezcal and the Aperol, but beyond that it dominates everything."
+   },
+   {
+    "titre": "LIME, squeezed to order",
+    "detail": "Agave calls for lime: lemon would give a European drink with no connection."
+   },
+   {
+    "titre": "Shaker full of ice, fifteen seconds",
+    "detail": "With juice you shake firmly: that is what gives the fine foam on the surface."
+   },
+   {
+    "titre": "Double strain, without exception",
+    "detail": "Ice shards cloud the translucent orange colour, which is half the cocktail."
+   },
+   {
+    "titre": "A coupe chilled in the freezer",
+    "detail": "Served without ice, it warms fast: a cold glass gives it time to be drunk."
+   },
+   {
+    "titre": "A grapefruit or orange twist",
+    "detail": "Expressed over then discarded: the peel oil opens the nose on a dark, smoky drink."
+   }
+  ]
+ },
+ "brandycrusta": {
+  "nom": "Brandy Crusta",
+  "description": "Invented around 1850 in New Orleans by Joseph Santini, it is the direct ancestor of the sidecar. Its signature is visual: a WHOLE lemon peel lines the inside of the glass and the rim is frosted with sugar — hence the \"crust\".",
+  "etapes": [
+   {
+    "titre": "Peel the lemon in ONE single spiral",
+    "detail": "With a paring knife, unbroken: the whole peel lining the glass is what makes the cocktail."
+   },
+   {
+    "titre": "Frost the rim with sugar, ONE centimetre deep",
+    "detail": "Lemon on the rim, then caster sugar: a clean band, not a coating running down into the glass."
+   },
+   {
+    "titre": "Set the spiral INSIDE the glass, against the wall",
+    "detail": "It must line the inside up to the rim: the image that distinguishes a crusta from any other drink."
+   },
+   {
+    "titre": "Very little lemon, ten millilitres",
+    "detail": "This is not a sour: the lemon balances, it does not dominate the cognac."
+   },
+   {
+    "titre": "A short shake, ten seconds",
+    "detail": "Chill without over-diluting: the cognac must stay the subject."
+   },
+   {
+    "titre": "Strain WITHOUT ice into the prepared glass",
+    "detail": "Ice would hide the spiral; this is a cocktail you look at before you drink it."
+   },
+   {
+    "titre": "Two dashes of angostura, in the shaker",
+    "detail": "They give the spiced depth of New Orleans: without them it is a sweet sidecar."
+   }
+  ]
+ },
+ "jackrose": {
+  "nom": "Jack Rose",
+  "description": "The applejack cocktail, star of American bars in the 1920s and cited in Hemingway's The Sun Also Rises. Its pink colour comes from grenadine — a REAL pomegranate grenadine, not a red flavoured syrup.",
+  "etapes": [
+   {
+    "titre": "Applejack or a young calvados",
+    "detail": "Aged calvados, too woody, crushes the grenadine: you need a bright, fruity apple spirit."
+   },
+   {
+    "titre": "A POMEGRANATE grenadine, not a coloured one",
+    "detail": "Industrial grenadine is red sugar syrup: the real thing brings fruit acidity."
+   },
+   {
+    "titre": "Lime, not lemon",
+    "detail": "The original recipe: lemon gives a flatter drink without the expected bite."
+   },
+   {
+    "titre": "Two parts apple to one of citrus",
+    "detail": "More grenadine and the Jack Rose becomes pink syrup: the most frequent excess."
+   },
+   {
+    "titre": "A firm shake, fifteen seconds",
+    "detail": "Grenadine is dense: without an energetic shake it stays as a layer at the bottom of the glass."
+   },
+   {
+    "titre": "Double strain into a frozen coupe",
+    "detail": "The translucent pink is half the cocktail: ice shards cloud it."
+   },
+   {
+    "titre": "A thin slice of apple as garnish",
+    "detail": "It announces the fruit: the American custom, more telling than a citrus twist."
+   }
+  ]
+ },
+ "bijou": {
+  "nom": "Bijou",
+  "description": "Created around 1890 by Harry Johnson, who named it for its three ingredients the colours of precious stones: diamond gin, ruby vermouth, emerald Chartreuse. Three equal parts, and none forgives approximation.",
+  "etapes": [
+   {
+    "titre": "Three RIGOROUSLY equal parts",
+    "detail": "Harry Johnson's balance: Chartreuse is so powerful that one millilitre too many dominates."
+   },
+   {
+    "titre": "GREEN Chartreuse, not yellow",
+    "detail": "Yellow, gentler, erases the cocktail's character and makes it syrupy."
+   },
+   {
+    "titre": "A freshly opened sweet vermouth",
+    "detail": "Oxidised, it turns sour and breaks the accord: the most frequent mistake with this drink."
+   },
+   {
+    "titre": "Stir, never shake",
+    "detail": "No juice: a shaker would cloud the three colours and dilute for no reason."
+   },
+   {
+    "titre": "Thirty seconds of stirring, counted",
+    "detail": "Three powerful spirits without juice: dilution is the fourth ingredient."
+   },
+   {
+    "titre": "A single dash of orange bitters",
+    "detail": "It opens the nose without adding anything: more, and it fights the Chartreuse's botanicals."
+   },
+   {
+    "titre": "A maraschino cherry at the bottom of the glass",
+    "detail": "The historic garnish: it adds the red touch that completes the three stones."
+   }
+  ]
+ },
+ "frenchconnection": {
+  "nom": "French Connection",
+  "description": "Cognac and amaretto over ice, named after the 1971 film with Gene Hackman. Only two ingredients, but a ratio that is not up for debate: too much amaretto and the glass becomes a lukewarm almond liqueur.",
+  "etapes": [
+   {
+    "titre": "A VSOP cognac, not a VS",
+    "detail": "VS is too young and fiery: you need the roundness of a VSOP to stand up to the amaretto's sugar."
+   },
+   {
+    "titre": "Two parts cognac to one of amaretto",
+    "detail": "That is the upper limit: beyond it the sweet almond completely masks the cognac."
+   },
+   {
+    "titre": "ONE big cube, never crushed ice",
+    "detail": "Crushed ice dilutes a slowly sipped drink within two minutes: you need a block that melts gently."
+   },
+   {
+    "titre": "Build IN the glass, no shaker",
+    "detail": "Pour over the ice and stir for ten seconds: a drawing-room cocktail, not a bar one."
+   },
+   {
+    "titre": "Let it rest a minute before drinking",
+    "detail": "The slight dilution opens the cognac and rounds the amaretto: drunk at once, it burns."
+   },
+   {
+    "titre": "An orange twist EXPRESSED over the top",
+    "detail": "It lightens a dark, sweet drink: the only garnish that makes sense here."
+   }
+  ]
+ },
+ "arnoldpalmer": {
+  "nom": "Arnold Palmer",
+  "description": "Half iced tea, half lemonade: the drink the golfer Arnold Palmer ordered in 1960s clubhouses. The two are made SEPARATELY and only combined in the glass — brewed together, the tea turns bitter.",
+  "etapes": [
+   {
+    "titre": "Black tea steeped FIVE minutes, no more",
+    "detail": "Beyond that the tannins come out and the bitterness runs through the whole iced glass."
+   },
+   {
+    "titre": "Brew twice as strong as for drinking hot",
+    "detail": "Lemonade and ice dilute: dosed normally, the tea disappears in the mix."
+   },
+   {
+    "titre": "Cool the tea FAST, over ice",
+    "detail": "Slow cooling clouds it: it turns milky and tastes of forgotten cold tea."
+   },
+   {
+    "titre": "Lemonade made separately, syrup and fresh lemon",
+    "detail": "Sugar dissolved hot in a little water, then the juice: squeezed straight into the tea, it clouds it."
+   },
+   {
+    "titre": "Half and half, Palmer's proportion",
+    "detail": "He specified it himself: more lemonade makes an \"Arnold Palmer lite\", a different order."
+   },
+   {
+    "titre": "Combine IN THE GLASS, over ice",
+    "detail": "Mixed in a jug ahead of time, the lemon attacks the tea and the drink darkens within hours."
+   },
+   {
+    "titre": "A mint leaf, optional",
+    "detail": "Not in the original, but the custom of clubs in the southern United States."
+   }
+  ]
+ },
+ "eggcream": {
+  "nom": "Egg Cream",
+  "description": "The drink of Brooklyn soda fountains, containing neither egg nor cream — nobody really knows why. Cold milk, chocolate syrup, seltzer: everything lies in the ORDER, which creates the white foam over the chocolate.",
+  "etapes": [
+   {
+    "titre": "A homemade chocolate syrup, COOLED",
+    "detail": "Chocolate, cocoa, sugar and water reduced: warm, it collapses the foam; cold, it stays at the bottom."
+   },
+   {
+    "titre": "The milk VERY cold, straight from the fridge",
+    "detail": "It is cold milk that rises into foam under the jet of soda: warm, it will not foam."
+   },
+   {
+    "titre": "The Brooklyn order: syrup, milk, then soda",
+    "detail": "Syrup at the bottom, milk on top, soda last: reversed, you get fizzy chocolate milk."
+   },
+   {
+    "titre": "Seltzer in a STRONG jet, against the spoon",
+    "detail": "Pressure is what creates the white foam: poured gently, it only dilutes."
+   },
+   {
+    "titre": "Stir the bottom VIGOROUSLY, only the bottom",
+    "detail": "Spoon at the base of the glass, without touching the foam: the chocolate mixes, the white head remains."
+   },
+   {
+    "titre": "Drunk IMMEDIATELY",
+    "detail": "The foam collapses within a minute: in Brooklyn you drink it standing at the counter."
+   }
+  ]
+ },
+ "fritesdekumara": {
+  "nom": "Kumara Fries",
+  "description": "New Zealand's sweet potato fries, the kumara having been brought by Māori from Polynesia in the thirteenth century. Kumara holds too much sugar to crisp like a potato: the starch on the surface is what makes all the difference.",
+  "etapes": [
+   {
+    "titre": "THIN batons, one centimetre at most",
+    "detail": "Any thicker and the centre stays pasty while the outside burns: sweet potato cooks from the outside in."
+   },
+   {
+    "titre": "Soak an hour in cold water",
+    "detail": "To remove the surface starch: that is what stops them sticking and softening."
+   },
+   {
+    "titre": "Dry them PERFECTLY in a cloth",
+    "detail": "A wet fry steams: the number one cause of soggy fries."
+   },
+   {
+    "titre": "Coat in cornflour, a thin layer",
+    "detail": "The secret: the starch forms a crust that crisps where the kumara's sugar would not allow it."
+   },
+   {
+    "titre": "Spaced on the tray, NOT touching",
+    "detail": "Crowded, they soften each other with steam: better two trays than one."
+   },
+   {
+    "titre": "220 °C, turned ONCE halfway through",
+    "detail": "Turned more often, they lose the crust that forms against the tray."
+   },
+   {
+    "titre": "Salt them AFTER the oven, not before",
+    "detail": "Salted beforehand, they release water and never crisp."
+   }
+  ]
+ },
+ "monkeybread": {
+  "nom": "Monkey Bread",
+  "description": "The American pull-apart brioche, made of dozens of dough balls rolled in cinnamon sugar and piled into a mould. It is eaten with the fingers, by pulling — hence the name, for the way it gets torn apart.",
+  "etapes": [
+   {
+    "titre": "An ENRICHED brioche dough, milk and butter",
+    "detail": "It is a brioche: without fat, the balls dry out in the oven and no longer pull apart."
+   },
+   {
+    "titre": "First rise until doubled",
+    "detail": "An hour and a half in the warm: under-risen, monkey bread is dense and compact."
+   },
+   {
+    "titre": "EVEN balls of 20 grams",
+    "detail": "All the same weight: uneven, the small ones burn while the large ones are still raw."
+   },
+   {
+    "titre": "Dip each ball in melted butter",
+    "detail": "Then roll it in cinnamon sugar: that butter is what caramelises and welds the balls together."
+   },
+   {
+    "titre": "A RING mould, not a solid one",
+    "detail": "The central hole circulates the heat: in a solid mould the centre stays raw."
+   },
+   {
+    "titre": "A second rise of forty minutes",
+    "detail": "The balls must swell to the rim of the mould: that is what makes them hold together."
+   },
+   {
+    "titre": "Turn out HOT, five minutes after baking",
+    "detail": "The caramel sets as it cools: left too long, it glues the brioche to the mould."
+   },
+   {
+    "titre": "Eaten by hand, by pulling",
+    "detail": "No knife: it is a Sunday-morning sharing dish, torn apart in the middle of the table."
+   }
+  ]
+ },
+ "strata": {
+  "nom": "Strata",
+  "description": "The stale bread bake of American brunch, assembled the night before and baked on waking. Everything happens overnight: the bread must drink the egg-and-milk custard to its core, or the top is dry and the base soggy.",
+  "etapes": [
+   {
+    "titre": "Two-day-STALE bread, not fresh",
+    "detail": "Fresh bread falls apart into mush; stale bread absorbs the custard and keeps its shape."
+   },
+   {
+    "titre": "In three-centimetre cubes, crust included",
+    "detail": "The crust gives the crisp top: without it, a strata is an egg purée."
+   },
+   {
+    "titre": "Spinach SAUTÉED and squeezed in advance",
+    "detail": "Raw, it releases its water during baking and soaks the base of the dish."
+   },
+   {
+    "titre": "An egg-and-milk custard seasoned with MUSTARD",
+    "detail": "It lifts a very gentle dish and helps the emulsion not to split in the oven."
+   },
+   {
+    "titre": "Build in LAYERS: bread, filling, bread",
+    "detail": "The very name of the dish — strata, \"layers\" — and what gives a marbled cut."
+   },
+   {
+    "titre": "A night in the fridge, covered and PRESSED",
+    "detail": "A light weight on top: the bread must stay submerged to drink the custard to its core."
+   },
+   {
+    "titre": "Take it out an hour before baking",
+    "detail": "Cold, it cooks badly in the centre: the top burns before the heart is set."
+   },
+   {
+    "titre": "Rest ten minutes before cutting",
+    "detail": "Scalding, it collapses and weeps its liquid; warm, it cuts into clean portions."
+   }
+  ]
+ },
+ "shahplov": {
+  "nom": "Shah Plov",
+  "description": "The \"shah's plov\", the dish of Azerbaijani weddings: rice with chestnuts, apricots and lamb sealed inside a crown of buttered lavash, baked then turned out like a cake. It is cut at the table — and the crust is what everyone fights over.",
+  "etapes": [
+   {
+    "titre": "LONG-GRAIN rice, three-quarters cooked",
+    "detail": "It finishes cooking inside the crust: cooked through beforehand, it turns pasty and the crown collapses."
+   },
+   {
+    "titre": "Saffron steeped in warm water, twenty minutes",
+    "detail": "Thrown in dry, it colours nothing: its infusion gives the golden grains of festive plov."
+   },
+   {
+    "titre": "BUTTERED lavash sheets, overlapping",
+    "detail": "They line the mould with a generous overhang: that is the crown that will close over the rice."
+   },
+   {
+    "titre": "Plenty of butter between each sheet",
+    "detail": "It is what browns and crisps the crust: skimped on, the lavash stays pale and soft."
+   },
+   {
+    "titre": "Filling and rice in alternating LAYERS",
+    "detail": "Rice, fruit and meat, rice: when cut, you must see the strata, not a mixture."
+   },
+   {
+    "titre": "Fold the sheets over the top, tightly",
+    "detail": "Like a parcel: any opening lets the steam escape and the top rice dries out."
+   },
+   {
+    "titre": "An hour at 180 °C, to a golden brown",
+    "detail": "The crust should sound hollow when tapped: pale, it tears when turned out."
+   },
+   {
+    "titre": "Turn out onto the platter in one movement, hot",
+    "detail": "The moment of the meal: the golden crown appears and is sliced in front of the guests."
+   }
+  ]
+ },
+ "fanesca": {
+  "nom": "Fanesca",
+  "description": "The Holy Week soup of Ecuador, made once a year. It brings together twelve grains and pulses, one for each apostle, and salt cod — the Good Friday fish. Each grain cooks SEPARATELY, which is why it takes a day.",
+  "etapes": [
+   {
+    "titre": "Desalt the cod for TWO days, water changed",
+    "detail": "Four times a day: badly desalted, it makes the whole soup inedible and nothing rescues the salt."
+   },
+   {
+    "titre": "Every grain cooked SEPARATELY",
+    "detail": "Beans, broad beans, lentils, corn, peas: their times run from ten minutes to two hours. Together, half would be purée."
+   },
+   {
+    "titre": "The squash cooked then BLENDED, for the base",
+    "detail": "It gives the creamy body and orange colour: it replaces flour."
+   },
+   {
+    "titre": "Roasted, ground peanuts",
+    "detail": "They bind the soup and bring the underlying flavour: the ingredient outsiders never suspect."
+   },
+   {
+    "titre": "Milk added AT THE END, over gentle heat",
+    "detail": "Boiled with the pulses, it splits and forms lumps across the surface."
+   },
+   {
+    "titre": "Cod poached separately, then flaked",
+    "detail": "Cooked in the soup it breaks down into threads and disappears entirely."
+   },
+   {
+    "titre": "Garnishes served APART, in a ring",
+    "detail": "Hard-boiled egg, fresh cheese, little fritters, fried plantain: everyone garnishes their own bowl, the Easter ritual."
+   },
+   {
+    "titre": "Better the NEXT DAY",
+    "detail": "The grains take up the base overnight: in Ecuador it is made on Wednesday for Holy Thursday."
+   }
+  ]
+ },
+ "canardalapresse": {
+  "nom": "Pressed Duck",
+  "description": "The dish of the Tour d'Argent, numbered since 1890: every duck served receives a number, and the count has passed one million. The carcass is PRESSED in a silver press to extract the blood, which binds the cognac sauce in front of the guest.",
+  "etapes": [
+   {
+    "titre": "A SMOTHERED duck, not bled",
+    "detail": "The particularity of the recipe: the blood stays in the carcass, and it is what will bind the sauce."
+   },
+   {
+    "titre": "Roast it RARE, twenty minutes only",
+    "detail": "The duck is barely cooked: breasts and carcass must keep all their juices for the press."
+   },
+   {
+    "titre": "Carve breasts and legs at the table",
+    "detail": "The legs go back to the kitchen to be grilled; only the breasts, thinly sliced, stay in the dining room."
+   },
+   {
+    "titre": "PRESS the carcass, slowly",
+    "detail": "Turn by turn of the handle: pressed too fast, it releases bone splinters into the juice."
+   },
+   {
+    "titre": "Blood collected HOT, into the cognac",
+    "detail": "It clots as it cools: it must reach the sauce within a minute of pressing."
+   },
+   {
+    "titre": "Build the sauce on a spirit lamp, never boiling",
+    "detail": "Port, cognac, crushed liver and blood: above 70 °C the blood splits and the sauce turns grainy."
+   },
+   {
+    "titre": "Butter mounted last, off the heat",
+    "detail": "It gives the lacquer shine the sauce is famous for; over heat it separates."
+   },
+   {
+    "titre": "Two services: breasts in sauce, then grilled legs",
+    "detail": "The Tour d'Argent's order for over a century, and the dish is ordered for two."
+   }
+  ]
+ },
+ "poulardeenvessie": {
+  "nom": "Poularde en Vessie",
+  "description": "The signature dish of the Mère Brazier in Lyon, then of Paul Bocuse: a Bresse chicken truffled under the skin, sealed in an inflated pig's bladder and poached. The bladder swells like a balloon as it cooks and is opened in front of the guests.",
+  "etapes": [
+   {
+    "titre": "A BRESSE poularde, not a chicken",
+    "detail": "Its fat-marbled flesh survives four hours of poaching without drying: an ordinary chicken would come out stringy."
+   },
+   {
+    "titre": "Truffle slipped UNDER the skin, the day before",
+    "detail": "In slices, over breasts and legs: one night in the cold and its perfume passes through all the flesh."
+   },
+   {
+    "titre": "The bladder soaked and TURNED inside out",
+    "detail": "Twenty-four hours in vinegared water, turned several times: that is what makes it supple and odourless."
+   },
+   {
+    "titre": "Madeira, cognac and foie gras INSIDE the bladder",
+    "detail": "Sealed in with the bird: the cooking juices become the sauce, nothing lost."
+   },
+   {
+    "titre": "Tie the bladder TIGHTLY, several turns",
+    "detail": "One leak and the juice escapes into the stock: all the truffle perfume goes with it."
+   },
+   {
+    "titre": "Poach at a TREMBLE, never a boil",
+    "detail": "At a boil the bladder bursts. The top must be basted constantly so it swells evenly."
+   },
+   {
+    "titre": "Open the bladder IN FRONT of the guests",
+    "detail": "The balloon bursts and releases the truffle perfume through the whole room: half the dish."
+   },
+   {
+    "titre": "A sauce suprême built from the bladder's juices",
+    "detail": "Reduced with cream: the only accompaniment allowed, alongside a rice pilaf."
+   }
+  ]
+ },
+ "lievrealaroyale": {
+  "nom": "Hare à la Royale",
+  "description": "The most demanding dish in the French repertoire, with two schools disputing its parentage: Carême's, in which the hare is boned, stuffed with foie gras and truffle then rolled; and that of Senator Couteaux (1898), cooked seven hours with forty garlic cloves and sixty shallots until it can be eaten with a spoon. Both are bound with BLOOD, and that is where everything is decided.",
+  "etapes": [
+   {
+    "titre": "A GAME hare, with its blood collected",
+    "detail": "The blood is the ingredient that makes the dish: without it you have a civet, never a hare à la royale."
+   },
+   {
+    "titre": "Marinate twenty-four hours in a TANNIC wine",
+    "detail": "A Madiran or a Cahors: a light wine is crushed by the game flavour and the sauce stays flat."
+   },
+   {
+    "titre": "Bone it WITHOUT piercing the skin, for Carême's school",
+    "detail": "The major difficulty: one tear and the stuffing escapes during the hours of cooking."
+   },
+   {
+    "titre": "A foie gras and truffle stuffing, in the CENTRE",
+    "detail": "Laid as a log in the middle of the hare, then rolled: when sliced, it must appear as a perfect circle."
+   },
+   {
+    "titre": "Cook at 120 °C, six to seven hours, covered",
+    "detail": "A barely trembling braise: that slowness is what makes the flesh melting rather than stringy."
+   },
+   {
+    "titre": "Garlic and shallots MELTED until they vanish",
+    "detail": "Forty cloves and sixty shallots in Couteaux's version: after seven hours they are nothing but a sweet binding."
+   },
+   {
+    "titre": "Bind with the blood OFF the heat, below 70 °C",
+    "detail": "The gesture that decides everything: above that, the blood cooks into grains and the sauce is lost beyond recovery."
+   },
+   {
+    "titre": "Serve in thick slices, coated",
+    "detail": "With fresh pasta or a celeriac purée: the black, glossy sauce is the subject, everything else steps back."
+   }
+  ]
  }
 
 };

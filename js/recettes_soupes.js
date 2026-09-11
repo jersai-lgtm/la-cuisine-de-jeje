@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 41 recettes
+// recettes_soupes.js — Recettes de catégorie "soupes" (Soupes) — 43 recettes
 // 👉 Pour AJOUTER une recette Soupes : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -6774,5 +6774,82 @@ Object.assign(recettes, {
       { icone: "🍒", titre: "Des grains de grenade frais au service", detail: "Pour le croquant et l'acidité vive. Cuits, ils fondent et il ne reste que le jus.", badge: null }
     ],
     liees: ["ashreshteh","fesenjan","abgoosht"]
+  },
+  soupefroidepois: {
+    dateAjout: "2026-09-11T10:09:00",
+    nom: "Soupe Froide Petits Pois Menthe",
+    cat: "soupes", saisons: ["printemps","ete"], pays: "france",
+    base: 4,
+    temps: "25 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🟢",
+    description: "Le velouté glacé de printemps, d'un vert éclatant. Tout se joue en deux minutes : les petits pois doivent être PLONGÉS dans la glace dès la fin de la cuisson — une minute de trop à chaud et la soupe vire au kaki.",
+    tableauSoupefroidepois: [
+      { nb: 1, petitspois: "130 g", menthe: "8 g", bouillon: "120 ml", cremefraiche: "25 ml", echalote: "½", beurre: "8 g", citron: "¼", sel: "1.5 g" },
+      { nb: 2, petitspois: "260 g", menthe: "16 g", bouillon: "240 ml", cremefraiche: "50 ml", echalote: "1", beurre: "16 g", citron: "½", sel: "3 g" },
+      { nb: 3, petitspois: "390 g", menthe: "24 g", bouillon: "360 ml", cremefraiche: "75 ml", echalote: "1½", beurre: "24 g", citron: "¾", sel: "4.5 g" },
+      { nb: 4, petitspois: "520 g", menthe: "32 g", bouillon: "480 ml", cremefraiche: "100 ml", echalote: "2", beurre: "32 g", citron: "1", sel: "6 g" },
+      { nb: 5, petitspois: "650 g", menthe: "40 g", bouillon: "600 ml", cremefraiche: "125 ml", echalote: "2½", beurre: "40 g", citron: "1¼", sel: "7.5 g" },
+      { nb: 6, petitspois: "780 g", menthe: "48 g", bouillon: "720 ml", cremefraiche: "150 ml", echalote: "3", beurre: "48 g", citron: "1½", sel: "9 g" },
+      { nb: 7, petitspois: "910 g", menthe: "56 g", bouillon: "840 ml", cremefraiche: "175 ml", echalote: "3½", beurre: "56 g", citron: "1¾", sel: "10.5 g" },
+      { nb: 8, petitspois: "1040 g", menthe: "64 g", bouillon: "960 ml", cremefraiche: "200 ml", echalote: "4", beurre: "64 g", citron: "2", sel: "12 g" },
+      { nb: 9, petitspois: "1170 g", menthe: "72 g", bouillon: "1080 ml", cremefraiche: "225 ml", echalote: "4½", beurre: "72 g", citron: "2¼", sel: "13.5 g" },
+      { nb: 10, petitspois: "1300 g", menthe: "80 g", bouillon: "1200 ml", cremefraiche: "250 ml", echalote: "5", beurre: "80 g", citron: "2½", sel: "15 g" },
+      { nb: 11, petitspois: "1430 g", menthe: "88 g", bouillon: "1320 ml", cremefraiche: "275 ml", echalote: "5½", beurre: "88 g", citron: "2¾", sel: "16.5 g" },
+      { nb: 12, petitspois: "1560 g", menthe: "96 g", bouillon: "1440 ml", cremefraiche: "300 ml", echalote: "6", beurre: "96 g", citron: "3", sel: "18 g" },
+      { nb: 13, petitspois: "1690 g", menthe: "104 g", bouillon: "1560 ml", cremefraiche: "325 ml", echalote: "6½", beurre: "104 g", citron: "3¼", sel: "19.5 g" },
+      { nb: 14, petitspois: "1820 g", menthe: "112 g", bouillon: "1680 ml", cremefraiche: "350 ml", echalote: "7", beurre: "112 g", citron: "3½", sel: "21 g" },
+      { nb: 15, petitspois: "1950 g", menthe: "120 g", bouillon: "1800 ml", cremefraiche: "375 ml", echalote: "7½", beurre: "120 g", citron: "3¾", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟢", titre: "Des petits pois SURGELÉS, pas en conserve", detail: "Le surgelé est cueilli et bloqué au sommet de sa fraîcheur ; la conserve est grise et farineuse.", badge: null },
+      { icone: "⏱️", titre: "Trois minutes de cuisson, pas une de plus", detail: "Au-delà, la chlorophylle se dégrade et la couleur passe du vert vif au kaki, sans retour possible.", badge: null },
+      { icone: "🧊", titre: "PLONGER dans l'eau glacée aussitôt", detail: "C'est le geste qui fixe le vert : laissés à refroidir tranquillement, ils continuent de cuire et ternissent.", badge: null },
+      { icone: "🌿", titre: "La menthe mixée CRUE, avec les pois froids", detail: "Cuite, elle perd sa fraîcheur et prend un goût de tisane : elle entre au mixeur, jamais à la casserole.", badge: null },
+      { icone: "🕸️", titre: "Passer au chinois FIN, en foulant", detail: "Les peaux des pois restent : non passée, la soupe est granuleuse et perd son velouté.", badge: null },
+      { icone: "❄️", titre: "Deux heures au frais, bien couverte", detail: "Servie tiède, elle a le goût de purée ; bien froide, elle devient désaltérante.", badge: null },
+      { icone: "🍋", titre: "Un trait de citron juste avant de servir", detail: "Ajouté trop tôt, l'acide attaque la chlorophylle et ternit la couleur au frigo.", badge: null }
+    ],
+    liees: ["veloutepetitspois","vichyssoise","soupefroideconcombre"]
+  },
+  fanesca: {
+    dateAjout: "2026-09-11T12:01:00",
+    nom: "Fanesca",
+    cat: "soupes", saisons: ["printemps"], pays: "equateur",
+    base: 8,
+    temps: "4 h + trempage",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥣",
+    description: "La soupe de la Semaine sainte en Équateur, préparée une seule fois par an. Elle réunit douze graines et légumineuses, une pour chaque apôtre, et de la morue — le poisson du vendredi saint. Chaque graine cuit SÉPARÉMENT, et c'est pour cela qu'elle prend une journée.",
+    tableauFanesca: [
+      { nb: 1, morue: "45 g", courge: "70 g", haricotsblancs: "25 g", petitspois: "25 g", feves: "25 g", mais: "25 g", lentilles: "15 g", lait: "80 ml", cacahuete: "12 g", oignon: "¼" },
+      { nb: 2, morue: "90 g", courge: "140 g", haricotsblancs: "50 g", petitspois: "50 g", feves: "50 g", mais: "50 g", lentilles: "30 g", lait: "160 ml", cacahuete: "24 g", oignon: "½" },
+      { nb: 3, morue: "135 g", courge: "210 g", haricotsblancs: "75 g", petitspois: "75 g", feves: "75 g", mais: "75 g", lentilles: "45 g", lait: "240 ml", cacahuete: "36 g", oignon: "¾" },
+      { nb: 4, morue: "180 g", courge: "280 g", haricotsblancs: "100 g", petitspois: "100 g", feves: "100 g", mais: "100 g", lentilles: "60 g", lait: "320 ml", cacahuete: "48 g", oignon: "1" },
+      { nb: 5, morue: "225 g", courge: "350 g", haricotsblancs: "125 g", petitspois: "125 g", feves: "125 g", mais: "125 g", lentilles: "75 g", lait: "400 ml", cacahuete: "60 g", oignon: "1¼" },
+      { nb: 6, morue: "270 g", courge: "420 g", haricotsblancs: "150 g", petitspois: "150 g", feves: "150 g", mais: "150 g", lentilles: "90 g", lait: "480 ml", cacahuete: "72 g", oignon: "1½" },
+      { nb: 7, morue: "315 g", courge: "490 g", haricotsblancs: "175 g", petitspois: "175 g", feves: "175 g", mais: "175 g", lentilles: "105 g", lait: "560 ml", cacahuete: "84 g", oignon: "1¾" },
+      { nb: 8, morue: "360 g", courge: "560 g", haricotsblancs: "200 g", petitspois: "200 g", feves: "200 g", mais: "200 g", lentilles: "120 g", lait: "640 ml", cacahuete: "96 g", oignon: "2" },
+      { nb: 9, morue: "405 g", courge: "630 g", haricotsblancs: "225 g", petitspois: "225 g", feves: "225 g", mais: "225 g", lentilles: "135 g", lait: "720 ml", cacahuete: "108 g", oignon: "2¼" },
+      { nb: 10, morue: "450 g", courge: "700 g", haricotsblancs: "250 g", petitspois: "250 g", feves: "250 g", mais: "250 g", lentilles: "150 g", lait: "800 ml", cacahuete: "120 g", oignon: "2½" },
+      { nb: 11, morue: "495 g", courge: "770 g", haricotsblancs: "275 g", petitspois: "275 g", feves: "275 g", mais: "275 g", lentilles: "165 g", lait: "880 ml", cacahuete: "132 g", oignon: "2¾" },
+      { nb: 12, morue: "540 g", courge: "840 g", haricotsblancs: "300 g", petitspois: "300 g", feves: "300 g", mais: "300 g", lentilles: "180 g", lait: "960 ml", cacahuete: "144 g", oignon: "3" },
+      { nb: 13, morue: "585 g", courge: "910 g", haricotsblancs: "325 g", petitspois: "325 g", feves: "325 g", mais: "325 g", lentilles: "195 g", lait: "1040 ml", cacahuete: "156 g", oignon: "3¼" },
+      { nb: 14, morue: "630 g", courge: "980 g", haricotsblancs: "350 g", petitspois: "350 g", feves: "350 g", mais: "350 g", lentilles: "210 g", lait: "1120 ml", cacahuete: "168 g", oignon: "3½" },
+      { nb: 15, morue: "675 g", courge: "1050 g", haricotsblancs: "375 g", petitspois: "375 g", feves: "375 g", mais: "375 g", lentilles: "225 g", lait: "1200 ml", cacahuete: "180 g", oignon: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Dessaler la morue DEUX jours, eau changée", detail: "Quatre fois par jour : mal dessalée, elle rend toute la soupe immangeable et rien ne rattrape le sel.", badge: null },
+      { icone: "🫘", titre: "Chaque graine cuite SÉPARÉMENT", detail: "Haricots, fèves, lentilles, maïs, pois : leurs temps vont de dix minutes à deux heures. Ensemble, la moitié est en purée.", badge: null },
+      { icone: "🎃", titre: "La courge cuite puis MIXÉE, pour la base", detail: "C'est elle qui donne le corps crémeux et la couleur orangée : elle remplace la farine.", badge: null },
+      { icone: "🥜", titre: "Des cacahuètes grillées et moulues", detail: "Elles lient la soupe et apportent le goût de fond : c'est l'ingrédient que les étrangers ne soupçonnent pas.", badge: null },
+      { icone: "🥛", titre: "Le lait ajouté À LA FIN, à feu doux", detail: "Bouilli avec les légumineuses, il tranche et fait des grumeaux sur toute la surface.", badge: null },
+      { icone: "🐟", titre: "La morue pochée à part, puis effeuillée", detail: "Cuite dans la soupe, elle se désagrège en filaments et disparaît complètement.", badge: null },
+      { icone: "🥚", titre: "Garnitures servies À PART, en couronne", detail: "Œuf dur, fromage frais, petits beignets, plantain frit : chacun garnit son bol, c'est le rituel de Pâques.", badge: null },
+      { icone: "📅", titre: "Meilleure le LENDEMAIN", detail: "Les graines s'imprègnent de la base pendant la nuit : en Équateur, on la prépare le mercredi pour le jeudi saint.", badge: null }
+    ],
+    liees: ["encebollado","llapingachos","secodechivo"]
   },
 });

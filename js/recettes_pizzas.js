@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_pizzas.js — Recettes de catégorie "pizzas" (Pizzas) — 43 recettes
+// recettes_pizzas.js — Recettes de catégorie "pizzas" (Pizzas) — 47 recettes
 // 👉 Pour AJOUTER une recette Pizzas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -2121,5 +2121,157 @@ Object.assign(recettes, {
       { icone: "⏳", titre: "Tiédir une heure avant de couper", detail: "Chaude, les œufs s'écrasent sous le couteau et la coupe est laide. Tiède, chaque part est nette.", badge: null }
     ],
     liees: ["pizzarustica","tourtemilanaise","soparnik"]
+  },
+  pizzacarbonara: {
+    dateAjout: "2026-09-11T10:00:00",
+    nom: "Pizza Carbonara",
+    cat: "pizzas", pays: "italie",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥓",
+    description: "La carbonara transposée sur pizza par les pizzaiolos romains : guanciale, pecorino et jaune d'œuf — mais sans crème, jamais. Tout se joue sur le jaune, qui ne doit PAS cuire au four : posé à la sortie, il nappe au lieu de durcir.",
+    tableauPizzacarbonara: [
+      { nb: 1, patepizza: "130 g", guanciale: "40 g", jaunedoeuf: "1", pecorino: "25 g", mozzarella: "35 g", poivre: "1 g" },
+      { nb: 2, patepizza: "260 g", guanciale: "80 g", jaunedoeuf: "2", pecorino: "50 g", mozzarella: "70 g", poivre: "2 g" },
+      { nb: 3, patepizza: "390 g", guanciale: "120 g", jaunedoeuf: "3", pecorino: "75 g", mozzarella: "105 g", poivre: "3 g" },
+      { nb: 4, patepizza: "520 g", guanciale: "160 g", jaunedoeuf: "4", pecorino: "100 g", mozzarella: "140 g", poivre: "4 g" },
+      { nb: 5, patepizza: "650 g", guanciale: "200 g", jaunedoeuf: "5", pecorino: "125 g", mozzarella: "175 g", poivre: "5 g" },
+      { nb: 6, patepizza: "780 g", guanciale: "240 g", jaunedoeuf: "6", pecorino: "150 g", mozzarella: "210 g", poivre: "6 g" },
+      { nb: 7, patepizza: "910 g", guanciale: "280 g", jaunedoeuf: "7", pecorino: "175 g", mozzarella: "245 g", poivre: "7 g" },
+      { nb: 8, patepizza: "1040 g", guanciale: "320 g", jaunedoeuf: "8", pecorino: "200 g", mozzarella: "280 g", poivre: "8 g" },
+      { nb: 9, patepizza: "1170 g", guanciale: "360 g", jaunedoeuf: "9", pecorino: "225 g", mozzarella: "315 g", poivre: "9 g" },
+      { nb: 10, patepizza: "1300 g", guanciale: "400 g", jaunedoeuf: "10", pecorino: "250 g", mozzarella: "350 g", poivre: "10 g" },
+      { nb: 11, patepizza: "1430 g", guanciale: "440 g", jaunedoeuf: "11", pecorino: "275 g", mozzarella: "385 g", poivre: "11 g" },
+      { nb: 12, patepizza: "1560 g", guanciale: "480 g", jaunedoeuf: "12", pecorino: "300 g", mozzarella: "420 g", poivre: "12 g" },
+      { nb: 13, patepizza: "1690 g", guanciale: "520 g", jaunedoeuf: "13", pecorino: "325 g", mozzarella: "455 g", poivre: "13 g" },
+      { nb: 14, patepizza: "1820 g", guanciale: "560 g", jaunedoeuf: "14", pecorino: "350 g", mozzarella: "490 g", poivre: "14 g" },
+      { nb: 15, patepizza: "1950 g", guanciale: "600 g", jaunedoeuf: "15", pecorino: "375 g", mozzarella: "525 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🚫", titre: "AUCUNE crème, c'est la règle romaine", detail: "La crème est une invention hors d'Italie : elle alourdit et masque le guanciale, qui est le sujet.", badge: null },
+      { icone: "🥓", titre: "Du guanciale, pas des lardons fumés", detail: "La joue de porc a un gras qui fond et parfume ; les lardons fumés écrasent le pecorino.", badge: null },
+      { icone: "🍳", titre: "Faire fondre le guanciale À PART, doucement", detail: "Jusqu'à ce qu'il soit translucide et croustillant sur les bords : cru sur la pizza, il reste caoutchouteux.", badge: null },
+      { icone: "🧀", titre: "Une base blanche, mozzarella et pecorino", detail: "Pas de tomate : c'est une pizza bianca. La mozzarella lie, le pecorino donne le sel.", badge: null },
+      { icone: "🔥", titre: "Four à fond, sept minutes, SANS le jaune", detail: "Le jaune cuit au four devient une pastille dure et farineuse : il ne va jamais au four.", badge: null },
+      { icone: "🥚", titre: "Le jaune posé CRU à la sortie, au centre", detail: "La chaleur de la pizza le tiédit à peine : on le crève à table et il nappe comme la sauce d'une carbonara.", badge: null },
+      { icone: "🌶️", titre: "Beaucoup de poivre noir fraîchement moulu", detail: "C'est le quatrième ingrédient de la carbonara, pas un assaisonnement : il doit se sentir franchement.", badge: null }
+    ],
+    liees: ["carbonara","pizzamargherita","pizzabiancoverdure"]
+  },
+  pizzapouletbbq: {
+    dateAjout: "2026-09-11T10:01:00",
+    nom: "Pizza Poulet Barbecue",
+    cat: "pizzas", pays: "usa",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "La pizza inventée en 1985 par la California Pizza Kitchen, qui a remplacé la sauce tomate par une sauce barbecue. Le piège est le sucre de la sauce : il brûle au four bien avant la pâte, et on la dose donc en couche très fine.",
+    tableauPizzapouletbbq: [
+      { nb: 1, patepizza: "130 g", poulet: "70 g", sauceBBQ: "30 g", mozzarella: "45 g", cheddar: "20 g", oignonrouge: "¼", coriandre: "4 g" },
+      { nb: 2, patepizza: "260 g", poulet: "140 g", sauceBBQ: "60 g", mozzarella: "90 g", cheddar: "40 g", oignonrouge: "½", coriandre: "8 g" },
+      { nb: 3, patepizza: "390 g", poulet: "210 g", sauceBBQ: "90 g", mozzarella: "135 g", cheddar: "60 g", oignonrouge: "¾", coriandre: "12 g" },
+      { nb: 4, patepizza: "520 g", poulet: "280 g", sauceBBQ: "120 g", mozzarella: "180 g", cheddar: "80 g", oignonrouge: "1", coriandre: "16 g" },
+      { nb: 5, patepizza: "650 g", poulet: "350 g", sauceBBQ: "150 g", mozzarella: "225 g", cheddar: "100 g", oignonrouge: "1¼", coriandre: "20 g" },
+      { nb: 6, patepizza: "780 g", poulet: "420 g", sauceBBQ: "180 g", mozzarella: "270 g", cheddar: "120 g", oignonrouge: "1½", coriandre: "24 g" },
+      { nb: 7, patepizza: "910 g", poulet: "490 g", sauceBBQ: "210 g", mozzarella: "315 g", cheddar: "140 g", oignonrouge: "1¾", coriandre: "28 g" },
+      { nb: 8, patepizza: "1040 g", poulet: "560 g", sauceBBQ: "240 g", mozzarella: "360 g", cheddar: "160 g", oignonrouge: "2", coriandre: "32 g" },
+      { nb: 9, patepizza: "1170 g", poulet: "630 g", sauceBBQ: "270 g", mozzarella: "405 g", cheddar: "180 g", oignonrouge: "2¼", coriandre: "36 g" },
+      { nb: 10, patepizza: "1300 g", poulet: "700 g", sauceBBQ: "300 g", mozzarella: "450 g", cheddar: "200 g", oignonrouge: "2½", coriandre: "40 g" },
+      { nb: 11, patepizza: "1430 g", poulet: "770 g", sauceBBQ: "330 g", mozzarella: "495 g", cheddar: "220 g", oignonrouge: "2¾", coriandre: "44 g" },
+      { nb: 12, patepizza: "1560 g", poulet: "840 g", sauceBBQ: "360 g", mozzarella: "540 g", cheddar: "240 g", oignonrouge: "3", coriandre: "48 g" },
+      { nb: 13, patepizza: "1690 g", poulet: "910 g", sauceBBQ: "390 g", mozzarella: "585 g", cheddar: "260 g", oignonrouge: "3¼", coriandre: "52 g" },
+      { nb: 14, patepizza: "1820 g", poulet: "980 g", sauceBBQ: "420 g", mozzarella: "630 g", cheddar: "280 g", oignonrouge: "3½", coriandre: "56 g" },
+      { nb: 15, patepizza: "1950 g", poulet: "1050 g", sauceBBQ: "450 g", mozzarella: "675 g", cheddar: "300 g", oignonrouge: "3¾", coriandre: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "Une sauce barbecue en couche TRÈS fine", detail: "Elle contient beaucoup de sucre qui carbonise au four : en couche épaisse, la pizza sort noire et amère.", badge: null },
+      { icone: "🍗", titre: "Le poulet CUIT et effiloché avant, jamais cru", detail: "Cru, il n'a pas le temps de cuire en sept minutes ; effiloché, il absorbe la sauce.", badge: null },
+      { icone: "🥣", titre: "Enrober le poulet d'un peu de sauce à part", detail: "C'est lui qui porte le goût fumé : la base, elle, reste discrète pour ne pas brûler.", badge: null },
+      { icone: "🧀", titre: "Mozzarella ET cheddar, pas l'un ou l'autre", detail: "La mozzarella file, le cheddar apporte le goût : c'est l'accord américain d'origine.", badge: null },
+      { icone: "🧅", titre: "L'oignon rouge en lamelles très fines, cru", detail: "Il cuit sur la pizza et devient doux : en gros morceaux, il reste cru et agressif.", badge: null },
+      { icone: "🔥", titre: "Four un peu MOINS chaud, 250 °C", detail: "À 300 °C, la sauce brûle avant la fin : c'est la seule pizza qui demande de baisser le four.", badge: null },
+      { icone: "🌿", titre: "La coriandre fraîche à la sortie, pas avant", detail: "C'est la signature californienne : cuite, elle noircit et prend un goût de foin.", badge: null }
+    ],
+    liees: ["pizzamargherita","detroitpizza","grandmapizza"]
+  },
+  pizzakebab: {
+    dateAjout: "2026-09-11T10:02:00",
+    nom: "Pizza Kebab",
+    cat: "pizzas", pays: "suede",
+    base: 4,
+    temps: "1 h 15",
+    niveau: "⭐ Facile",
+    emoji: "🥙",
+    description: "La kebabpizza est la pizza la plus commandée de Suède, où elle est née dans les pizzerias tenues par des immigrés turcs dans les années 1980. Sa sauce blanche à l'ail se verse APRÈS la cuisson — c'est ce qui la distingue de toutes les pizzas italiennes.",
+    tableauPizzakebab: [
+      { nb: 1, patepizza: "130 g", boeufhache: "70 g", saucetomate: "45 g", mozzarella: "40 g", yaourtgrec: "30 g", ail: "1", oignon: "¼", piment: "0.5 g", cumin: "0.8 g", paprika: "1 g" },
+      { nb: 2, patepizza: "260 g", boeufhache: "140 g", saucetomate: "90 g", mozzarella: "80 g", yaourtgrec: "60 g", ail: "2", oignon: "½", piment: "1 g", cumin: "1.6 g", paprika: "2 g" },
+      { nb: 3, patepizza: "390 g", boeufhache: "210 g", saucetomate: "135 g", mozzarella: "120 g", yaourtgrec: "90 g", ail: "3", oignon: "¾", piment: "1.5 g", cumin: "2.4 g", paprika: "3 g" },
+      { nb: 4, patepizza: "520 g", boeufhache: "280 g", saucetomate: "180 g", mozzarella: "160 g", yaourtgrec: "120 g", ail: "4", oignon: "1", piment: "2 g", cumin: "3.2 g", paprika: "4 g" },
+      { nb: 5, patepizza: "650 g", boeufhache: "350 g", saucetomate: "225 g", mozzarella: "200 g", yaourtgrec: "150 g", ail: "5", oignon: "1¼", piment: "2.5 g", cumin: "4 g", paprika: "5 g" },
+      { nb: 6, patepizza: "780 g", boeufhache: "420 g", saucetomate: "270 g", mozzarella: "240 g", yaourtgrec: "180 g", ail: "6", oignon: "1½", piment: "3 g", cumin: "4.8 g", paprika: "6 g" },
+      { nb: 7, patepizza: "910 g", boeufhache: "490 g", saucetomate: "315 g", mozzarella: "280 g", yaourtgrec: "210 g", ail: "7", oignon: "1¾", piment: "3.5 g", cumin: "5.6 g", paprika: "7 g" },
+      { nb: 8, patepizza: "1040 g", boeufhache: "560 g", saucetomate: "360 g", mozzarella: "320 g", yaourtgrec: "240 g", ail: "8", oignon: "2", piment: "4 g", cumin: "6.4 g", paprika: "8 g" },
+      { nb: 9, patepizza: "1170 g", boeufhache: "630 g", saucetomate: "405 g", mozzarella: "360 g", yaourtgrec: "270 g", ail: "9", oignon: "2¼", piment: "4.5 g", cumin: "7.2 g", paprika: "9 g" },
+      { nb: 10, patepizza: "1300 g", boeufhache: "700 g", saucetomate: "450 g", mozzarella: "400 g", yaourtgrec: "300 g", ail: "10", oignon: "2½", piment: "5 g", cumin: "8 g", paprika: "10 g" },
+      { nb: 11, patepizza: "1430 g", boeufhache: "770 g", saucetomate: "495 g", mozzarella: "440 g", yaourtgrec: "330 g", ail: "11", oignon: "2¾", piment: "5.5 g", cumin: "8.8 g", paprika: "11 g" },
+      { nb: 12, patepizza: "1560 g", boeufhache: "840 g", saucetomate: "540 g", mozzarella: "480 g", yaourtgrec: "360 g", ail: "12", oignon: "3", piment: "6 g", cumin: "9.6 g", paprika: "12 g" },
+      { nb: 13, patepizza: "1690 g", boeufhache: "910 g", saucetomate: "585 g", mozzarella: "520 g", yaourtgrec: "390 g", ail: "13", oignon: "3¼", piment: "6.5 g", cumin: "10.4 g", paprika: "13 g" },
+      { nb: 14, patepizza: "1820 g", boeufhache: "980 g", saucetomate: "630 g", mozzarella: "560 g", yaourtgrec: "420 g", ail: "14", oignon: "3½", piment: "7 g", cumin: "11.2 g", paprika: "14 g" },
+      { nb: 15, patepizza: "1950 g", boeufhache: "1050 g", saucetomate: "675 g", mozzarella: "600 g", yaourtgrec: "450 g", ail: "15", oignon: "3¾", piment: "7.5 g", cumin: "12 g", paprika: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Une viande ÉPICÉE et saisie à part", detail: "Cumin, paprika, ail : c'est l'assaisonnement du kebab qui fait la pizza, pas la garniture elle-même.", badge: null },
+      { icone: "🔥", titre: "Saisir à feu vif, jusqu'à ce qu'elle ACCROCHE", detail: "La viande doit brunir et devenir croustillante par endroits, comme sur la broche du kebab.", badge: null },
+      { icone: "💧", titre: "Égoutter le gras de la viande", detail: "Il détremperait la pâte : la kebabpizza doit rester croustillante malgré une garniture généreuse.", badge: null },
+      { icone: "🍅", titre: "Une sauce tomate simple, sans origan", detail: "C'est une pizza turque-suédoise : l'origan la tirerait vers l'Italie et brouillerait l'accord.", badge: null },
+      { icone: "🧄", titre: "Une sauce yaourt-ail préparée la veille", detail: "L'ail doit infuser le yaourt : faite au dernier moment, elle est fade d'un côté et piquante de l'autre.", badge: null },
+      { icone: "🥣", titre: "La sauce blanche versée APRÈS le four", detail: "En filet sur la pizza brûlante : cuite, elle tourne et se sépare. C'est le geste suédois.", badge: null },
+      { icone: "🌶️", titre: "Des piments marinés en garniture finale", detail: "Les peperoncini au vinaigre tranchent le gras : c'est la garniture obligatoire en Suède.", badge: null }
+    ],
+    liees: ["kebabmaison","doner","pizzamargherita"]
+  },
+  pizzabismarck: {
+    dateAjout: "2026-09-11T10:03:00",
+    nom: "Pizza Bismarck",
+    cat: "pizzas", pays: "italie",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍳",
+    description: "La pizza au jambon et à l'œuf, nommée d'après le chancelier allemand qui, dit la légende, mangeait un œuf au plat sur tout ce qu'on lui servait. Tout l'art tient dans le timing : l'œuf entre au four à MI-CUISSON, pas au départ.",
+    tableauPizzabismarck: [
+      { nb: 1, patepizza: "130 g", tomateconcassee: "55 g", mozzarella: "45 g", jambon: "35 g", oeufs: "1", parmesan: "10 g", basilic: "2 g" },
+      { nb: 2, patepizza: "260 g", tomateconcassee: "110 g", mozzarella: "90 g", jambon: "70 g", oeufs: "2", parmesan: "20 g", basilic: "4 g" },
+      { nb: 3, patepizza: "390 g", tomateconcassee: "165 g", mozzarella: "135 g", jambon: "105 g", oeufs: "3", parmesan: "30 g", basilic: "6 g" },
+      { nb: 4, patepizza: "520 g", tomateconcassee: "220 g", mozzarella: "180 g", jambon: "140 g", oeufs: "4", parmesan: "40 g", basilic: "8 g" },
+      { nb: 5, patepizza: "650 g", tomateconcassee: "275 g", mozzarella: "225 g", jambon: "175 g", oeufs: "5", parmesan: "50 g", basilic: "10 g" },
+      { nb: 6, patepizza: "780 g", tomateconcassee: "330 g", mozzarella: "270 g", jambon: "210 g", oeufs: "6", parmesan: "60 g", basilic: "12 g" },
+      { nb: 7, patepizza: "910 g", tomateconcassee: "385 g", mozzarella: "315 g", jambon: "245 g", oeufs: "7", parmesan: "70 g", basilic: "14 g" },
+      { nb: 8, patepizza: "1040 g", tomateconcassee: "440 g", mozzarella: "360 g", jambon: "280 g", oeufs: "8", parmesan: "80 g", basilic: "16 g" },
+      { nb: 9, patepizza: "1170 g", tomateconcassee: "495 g", mozzarella: "405 g", jambon: "315 g", oeufs: "9", parmesan: "90 g", basilic: "18 g" },
+      { nb: 10, patepizza: "1300 g", tomateconcassee: "550 g", mozzarella: "450 g", jambon: "350 g", oeufs: "10", parmesan: "100 g", basilic: "20 g" },
+      { nb: 11, patepizza: "1430 g", tomateconcassee: "605 g", mozzarella: "495 g", jambon: "385 g", oeufs: "11", parmesan: "110 g", basilic: "22 g" },
+      { nb: 12, patepizza: "1560 g", tomateconcassee: "660 g", mozzarella: "540 g", jambon: "420 g", oeufs: "12", parmesan: "120 g", basilic: "24 g" },
+      { nb: 13, patepizza: "1690 g", tomateconcassee: "715 g", mozzarella: "585 g", jambon: "455 g", oeufs: "13", parmesan: "130 g", basilic: "26 g" },
+      { nb: 14, patepizza: "1820 g", tomateconcassee: "770 g", mozzarella: "630 g", jambon: "490 g", oeufs: "14", parmesan: "140 g", basilic: "28 g" },
+      { nb: 15, patepizza: "1950 g", tomateconcassee: "825 g", mozzarella: "675 g", jambon: "525 g", oeufs: "15", parmesan: "150 g", basilic: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "L'œuf cassé À MI-CUISSON, pas au départ", detail: "Posé dès le début, le jaune durcit complètement ; posé à la fin, le blanc reste cru et gluant.", badge: null },
+      { icone: "🕳️", titre: "Creuser un NID au centre de la garniture", detail: "Sans creux, l'œuf glisse vers le bord et coule de la pizza sur la pierre du four.", badge: null },
+      { icone: "🥚", titre: "Casser l'œuf dans un bol, puis le verser", detail: "Cassé directement, un éclat de coquille ou un jaune crevé est irrattrapable sur une pizza brûlante.", badge: null },
+      { icone: "🍖", titre: "Un jambon cuit de qualité, en lamelles", detail: "Posé en pétales autour du nid : il encadre l'œuf et empêche le blanc de s'étaler.", badge: null },
+      { icone: "⏱️", titre: "Le blanc pris, le jaune coulant : trois minutes", detail: "C'est tout le réglage : on surveille à la porte du four, jamais au minuteur seul.", badge: null },
+      { icone: "🧀", titre: "Le parmesan râpé sur le blanc, en fin de cuisson", detail: "Il gratine légèrement et donne du sel au blanc, naturellement fade.", badge: null },
+      { icone: "🌿", titre: "Basilic frais à la sortie, jamais cuit", detail: "Il noircit en trente secondes au four : c'est le dernier geste avant de couper.", badge: null }
+    ],
+    liees: ["pizzareine","pizzamargherita","pizzacarbonara"]
   },
 });

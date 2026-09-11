@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 28 recettes
+// recettes_tartinables.js — Recettes de catégorie "tartinables" (Pâtes à tartiner) — 31 recettes
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -1997,5 +1997,119 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Se sert CHAUDE, sur des pommes de terre", detail: "Froide, elle fige en bloc caoutchouteux. C'est un plat de montagne, il se mange fumant.", badge: null }
     ],
     liees: ["fondue","raclette","beurrebordier"]
+  },
+  tzatzikibetterave: {
+    dateAjout: "2026-09-11T10:06:00",
+    nom: "Tzatziki à la Betterave",
+    cat: "tartinables", pays: "grece",
+    base: 6,
+    temps: "20 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🩷",
+    description: "Le tzatziki rose des tavernes modernes d'Athènes, où la betterave remplace le concombre. La couleur n'est pas un gadget : la betterave apporte un sucre terreux qui répond à l'acidité du yaourt, là où le concombre n'apportait que de l'eau.",
+    tableauTzatzikibetterave: [
+      { nb: 1, yaourtgrec: "90 g", betterave: "60 g", ail: "1", aneth: "4 g", huileolive: "10 ml", citron: "¼", noix: "12 g", sel: "1 g" },
+      { nb: 2, yaourtgrec: "180 g", betterave: "120 g", ail: "2", aneth: "8 g", huileolive: "20 ml", citron: "½", noix: "24 g", sel: "2 g" },
+      { nb: 3, yaourtgrec: "270 g", betterave: "180 g", ail: "3", aneth: "12 g", huileolive: "30 ml", citron: "¾", noix: "36 g", sel: "3 g" },
+      { nb: 4, yaourtgrec: "360 g", betterave: "240 g", ail: "4", aneth: "16 g", huileolive: "40 ml", citron: "1", noix: "48 g", sel: "4 g" },
+      { nb: 5, yaourtgrec: "450 g", betterave: "300 g", ail: "5", aneth: "20 g", huileolive: "50 ml", citron: "1¼", noix: "60 g", sel: "5 g" },
+      { nb: 6, yaourtgrec: "540 g", betterave: "360 g", ail: "6", aneth: "24 g", huileolive: "60 ml", citron: "1½", noix: "72 g", sel: "6 g" },
+      { nb: 7, yaourtgrec: "630 g", betterave: "420 g", ail: "7", aneth: "28 g", huileolive: "70 ml", citron: "1¾", noix: "84 g", sel: "7 g" },
+      { nb: 8, yaourtgrec: "720 g", betterave: "480 g", ail: "8", aneth: "32 g", huileolive: "80 ml", citron: "2", noix: "96 g", sel: "8 g" },
+      { nb: 9, yaourtgrec: "810 g", betterave: "540 g", ail: "9", aneth: "36 g", huileolive: "90 ml", citron: "2¼", noix: "108 g", sel: "9 g" },
+      { nb: 10, yaourtgrec: "900 g", betterave: "600 g", ail: "10", aneth: "40 g", huileolive: "100 ml", citron: "2½", noix: "120 g", sel: "10 g" },
+      { nb: 11, yaourtgrec: "990 g", betterave: "660 g", ail: "11", aneth: "44 g", huileolive: "110 ml", citron: "2¾", noix: "132 g", sel: "11 g" },
+      { nb: 12, yaourtgrec: "1080 g", betterave: "720 g", ail: "12", aneth: "48 g", huileolive: "120 ml", citron: "3", noix: "144 g", sel: "12 g" },
+      { nb: 13, yaourtgrec: "1170 g", betterave: "780 g", ail: "13", aneth: "52 g", huileolive: "130 ml", citron: "3¼", noix: "156 g", sel: "13 g" },
+      { nb: 14, yaourtgrec: "1260 g", betterave: "840 g", ail: "14", aneth: "56 g", huileolive: "140 ml", citron: "3½", noix: "168 g", sel: "14 g" },
+      { nb: 15, yaourtgrec: "1350 g", betterave: "900 g", ail: "15", aneth: "60 g", huileolive: "150 ml", citron: "3¾", noix: "180 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🩷", titre: "Une betterave CUITE, pas crue", detail: "Crue, elle est terreuse et râpeuse ; cuite, elle est sucrée et se fond dans le yaourt.", badge: null },
+      { icone: "🥣", titre: "Un yaourt grec ÉGOUTTÉ une nuit", detail: "La betterave rend beaucoup d'eau : sur un yaourt non égoutté, le tzatziki devient une sauce liquide.", badge: null },
+      { icone: "🔪", titre: "Râper la betterave, puis la PRESSER", detail: "Dans un torchon, fermement : c'est la même règle que pour le concombre du tzatziki classique.", badge: null },
+      { icone: "🧄", titre: "L'ail râpé sur une microplane, en pâte", detail: "Haché, il reste en morceaux piquants ; râpé, il se répartit dans tout le yaourt.", badge: null },
+      { icone: "🌿", titre: "L'aneth, pas la menthe", detail: "C'est l'herbe du tzatziki grec : la menthe tirerait la tartinade vers la cuisine turque.", badge: null },
+      { icone: "🌰", titre: "Des noix concassées posées sur le dessus", detail: "Elles rappellent la betterave de la cuisine grecque d'hiver et apportent le seul croquant.", badge: null },
+      { icone: "⏳", titre: "Deux heures au frais avant de servir", detail: "L'ail doit infuser : servi tout de suite, on sent l'ail cru et le yaourt séparément.", badge: null }
+    ],
+    liees: ["tzatziki","houmousbetterave","houmous"]
+  },
+  rillettesdecanard: {
+    dateAjout: "2026-09-11T10:07:00",
+    nom: "Rillettes de Canard",
+    cat: "tartinables", saisons: ["automne","hiver"], pays: "france",
+    base: 8,
+    temps: "4 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦆",
+    description: "Les rillettes du Sud-Ouest, confites dans leur propre graisse pendant des heures puis effilochées à la fourchette. Elles ne se mixent JAMAIS : ce sont les fibres de la viande, visibles et longues, qui les distinguent d'un pâté.",
+    tableauRillettesdecanard: [
+      { nb: 1, cuisseconfit: "110 g", graissecanard: "25 g", echalote: "½", thym: "0.4 g", laurier: "0.2 g", cognac: "5 ml", poivre: "1 g", sel: "1 g" },
+      { nb: 2, cuisseconfit: "220 g", graissecanard: "50 g", echalote: "1", thym: "0.8 g", laurier: "0.4 g", cognac: "10 ml", poivre: "2 g", sel: "2 g" },
+      { nb: 3, cuisseconfit: "330 g", graissecanard: "75 g", echalote: "1½", thym: "1.2 g", laurier: "0.6 g", cognac: "15 ml", poivre: "3 g", sel: "3 g" },
+      { nb: 4, cuisseconfit: "440 g", graissecanard: "100 g", echalote: "2", thym: "1.6 g", laurier: "0.8 g", cognac: "20 ml", poivre: "4 g", sel: "4 g" },
+      { nb: 5, cuisseconfit: "550 g", graissecanard: "125 g", echalote: "2½", thym: "2 g", laurier: "1 g", cognac: "25 ml", poivre: "5 g", sel: "5 g" },
+      { nb: 6, cuisseconfit: "660 g", graissecanard: "150 g", echalote: "3", thym: "2.4 g", laurier: "1.2 g", cognac: "30 ml", poivre: "6 g", sel: "6 g" },
+      { nb: 7, cuisseconfit: "770 g", graissecanard: "175 g", echalote: "3½", thym: "2.8 g", laurier: "1.4 g", cognac: "35 ml", poivre: "7 g", sel: "7 g" },
+      { nb: 8, cuisseconfit: "880 g", graissecanard: "200 g", echalote: "4", thym: "3.2 g", laurier: "1.6 g", cognac: "40 ml", poivre: "8 g", sel: "8 g" },
+      { nb: 9, cuisseconfit: "990 g", graissecanard: "225 g", echalote: "4½", thym: "3.6 g", laurier: "1.8 g", cognac: "45 ml", poivre: "9 g", sel: "9 g" },
+      { nb: 10, cuisseconfit: "1100 g", graissecanard: "250 g", echalote: "5", thym: "4 g", laurier: "2 g", cognac: "50 ml", poivre: "10 g", sel: "10 g" },
+      { nb: 11, cuisseconfit: "1210 g", graissecanard: "275 g", echalote: "5½", thym: "4.4 g", laurier: "2.2 g", cognac: "55 ml", poivre: "11 g", sel: "11 g" },
+      { nb: 12, cuisseconfit: "1320 g", graissecanard: "300 g", echalote: "6", thym: "4.8 g", laurier: "2.4 g", cognac: "60 ml", poivre: "12 g", sel: "12 g" },
+      { nb: 13, cuisseconfit: "1430 g", graissecanard: "325 g", echalote: "6½", thym: "5.2 g", laurier: "2.6 g", cognac: "65 ml", poivre: "13 g", sel: "13 g" },
+      { nb: 14, cuisseconfit: "1540 g", graissecanard: "350 g", echalote: "7", thym: "5.6 g", laurier: "2.8 g", cognac: "70 ml", poivre: "14 g", sel: "14 g" },
+      { nb: 15, cuisseconfit: "1650 g", graissecanard: "375 g", echalote: "7½", thym: "6 g", laurier: "3 g", cognac: "75 ml", poivre: "15 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦆", titre: "Des cuisses de canard, avec la peau", detail: "La peau fond et apporte la graisse de liaison : désossées et sans peau, les rillettes sont sèches.", badge: null },
+      { icone: "🧂", titre: "Saler la veille, au gros sel", detail: "Douze heures : le sel pénètre et commence à confire la viande avant même la cuisson.", badge: null },
+      { icone: "🌡️", titre: "Confire à 90 °C, TROIS heures minimum", detail: "Jamais de frémissement : la graisse doit à peine bouger. Plus chaud, la viande frit et durcit.", badge: null },
+      { icone: "🍴", titre: "Effilocher À LA FOURCHETTE, jamais au mixeur", detail: "Deux fourchettes, dans le sens des fibres : mixées, les rillettes deviennent un pâté sans texture.", badge: null },
+      { icone: "🥄", titre: "Remettre la graisse PETIT À PETIT, en mélangeant", detail: "Juste ce qu'il faut pour lier : trop, elles deviennent grasses ; pas assez, elles s'effritent.", badge: null },
+      { icone: "🌡️", titre: "Mélanger en refroidissant, pas à chaud", detail: "C'est en tiédissant que la graisse émulsionne avec les fibres : chaude, elle remonte et se sépare.", badge: null },
+      { icone: "🫙", titre: "Couler une couche de graisse sur le dessus", detail: "Elle scelle et conserve : c'est ainsi que les rillettes tenaient l'hiver sans réfrigérateur.", badge: null }
+    ],
+    liees: ["confitcanard","rillettesporc","parmentiercanard"]
+  },
+  houmousavocat: {
+    dateAjout: "2026-09-11T10:08:00",
+    nom: "Houmous d'Avocat",
+    cat: "tartinables", pays: "israel",
+    base: 6,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥑",
+    description: "Le houmous des cafés de Tel-Aviv, où l'avocat remplace une partie des pois chiches. Ce n'est pas un guacamole : le tahini reste la base, et l'avocat n'apporte que l'onctuosité et la couleur — jamais le goût dominant.",
+    tableauHoumousavocat: [
+      { nb: 1, poischiches: "60 g", avocat: "55 g", tahini: "18 g", citron: "½", ail: "1", cumin: "0.6 g", huileolive: "12 ml", coriandre: "4 g" },
+      { nb: 2, poischiches: "120 g", avocat: "110 g", tahini: "36 g", citron: "1", ail: "2", cumin: "1.2 g", huileolive: "24 ml", coriandre: "8 g" },
+      { nb: 3, poischiches: "180 g", avocat: "165 g", tahini: "54 g", citron: "1½", ail: "3", cumin: "1.8 g", huileolive: "36 ml", coriandre: "12 g" },
+      { nb: 4, poischiches: "240 g", avocat: "220 g", tahini: "72 g", citron: "2", ail: "4", cumin: "2.4 g", huileolive: "48 ml", coriandre: "16 g" },
+      { nb: 5, poischiches: "300 g", avocat: "275 g", tahini: "90 g", citron: "2½", ail: "5", cumin: "3 g", huileolive: "60 ml", coriandre: "20 g" },
+      { nb: 6, poischiches: "360 g", avocat: "330 g", tahini: "108 g", citron: "3", ail: "6", cumin: "3.6 g", huileolive: "72 ml", coriandre: "24 g" },
+      { nb: 7, poischiches: "420 g", avocat: "385 g", tahini: "126 g", citron: "3½", ail: "7", cumin: "4.2 g", huileolive: "84 ml", coriandre: "28 g" },
+      { nb: 8, poischiches: "480 g", avocat: "440 g", tahini: "144 g", citron: "4", ail: "8", cumin: "4.8 g", huileolive: "96 ml", coriandre: "32 g" },
+      { nb: 9, poischiches: "540 g", avocat: "495 g", tahini: "162 g", citron: "4½", ail: "9", cumin: "5.4 g", huileolive: "108 ml", coriandre: "36 g" },
+      { nb: 10, poischiches: "600 g", avocat: "550 g", tahini: "180 g", citron: "5", ail: "10", cumin: "6 g", huileolive: "120 ml", coriandre: "40 g" },
+      { nb: 11, poischiches: "660 g", avocat: "605 g", tahini: "198 g", citron: "5½", ail: "11", cumin: "6.6 g", huileolive: "132 ml", coriandre: "44 g" },
+      { nb: 12, poischiches: "720 g", avocat: "660 g", tahini: "216 g", citron: "6", ail: "12", cumin: "7.2 g", huileolive: "144 ml", coriandre: "48 g" },
+      { nb: 13, poischiches: "780 g", avocat: "715 g", tahini: "234 g", citron: "6½", ail: "13", cumin: "7.8 g", huileolive: "156 ml", coriandre: "52 g" },
+      { nb: 14, poischiches: "840 g", avocat: "770 g", tahini: "252 g", citron: "7", ail: "14", cumin: "8.4 g", huileolive: "168 ml", coriandre: "56 g" },
+      { nb: 15, poischiches: "900 g", avocat: "825 g", tahini: "270 g", citron: "7½", ail: "15", cumin: "9 g", huileolive: "180 ml", coriandre: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "PELER les pois chiches, un par un", detail: "C'est fastidieux et c'est le secret de tout houmous lisse : la peau donne une texture granuleuse.", badge: null },
+      { icone: "🥣", titre: "Tahini et citron mixés SEULS d'abord", detail: "Ils forment une crème blanche épaisse : c'est la base de l'émulsion, sur laquelle tout le reste s'appuie.", badge: null },
+      { icone: "🧊", titre: "Un glaçon dans le mixeur, pour la texture", detail: "Le froid rend le houmous plus aérien et plus pâle : c'est l'astuce des houmousiers israéliens.", badge: null },
+      { icone: "🥑", titre: "L'avocat ajouté EN DERNIER, peu mixé", detail: "Il chauffe et s'oxyde sous les lames : trente secondes suffisent pour l'incorporer.", badge: null },
+      { icone: "⚖️", titre: "Moins d'avocat que de pois chiches", detail: "Au-delà de moitié-moitié, c'est un guacamole au tahini : le houmous doit rester un houmous.", badge: null },
+      { icone: "🍋", titre: "Beaucoup de citron, pour la couleur aussi", detail: "Il retarde le brunissement de l'avocat : sans lui, le dessus grisaille en une heure.", badge: null },
+      { icone: "🫒", titre: "Un puits d'huile d'olive au service", detail: "La coutume israélienne : on creuse au dos de la cuillère et on remplit d'huile et de cumin.", badge: null }
+    ],
+    liees: ["houmous","guacamole","houmousbetterave"]
   },
 });

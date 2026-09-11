@@ -339,6 +339,7 @@ const INGREDIENTS_PRIX = {
   millet:         { prixKg: 4.00, calPer100g: 378,  lipSat: 0.7,  sucre: 0.5,  sel: 0.01, fibres: 8.5, prot: 11,   flv: 0, glucides: 73, lipides: 4.2 },
   rooibos:        { prixKg: 30.0, calPer100g: 2,    lipSat: 0,    sucre: 0,    sel: 0.01, fibres: 0,   prot: 0.1,  flv: 0, glucides: 0, lipides: 0 },
   cornflakes:     { prixKg: 5.00, calPer100g: 380,  lipSat: 0.2,  sucre: 8,    sel: 1.1,  fibres: 3,   prot: 7,    flv: 0, glucides: 84, lipides: 0.9 },
+  lievre:         { prixKg: 24.0, calPer100g: 173,  lipSat: 2.4,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 23,   flv: 0, glucides: 0, lipides: 8 },
   cotelets:       { prixKg: 16.0, calPer100g: 280,  lipSat: 9.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 24,   flv: 0, glucides: 0, lipides: 20 },
   os:             { prixKg: 2.00, calPer100g: 100,  lipSat: 2.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 10,   flv: 0, glucides: 0, lipides: 6 },
   queueboeuf:     { prixKg: 14.0, calPer100g: 270,  lipSat: 8.0,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0, glucides: 0, lipides: 17 },
@@ -1639,7 +1640,7 @@ const INGREDIENTS_LABELS = {
   yerbamate: "🧉 Yerba maté", graineslin: "🌾 Graines de lin", kasseri: "🧀 Kasseri", glacechocolat: "🍫 Glace chocolat", glacepistache: "🥜 Glace pistache", camomille: "🌼 Camomille",
   violette: "🌸 Crème de violette", lilletblanc: "🍷 Lillet blanc", amaro: "🌿 Amaro", whiskytourbe: "🥃 Whisky tourbé", benedictine: "🌿 Bénédictine",
   cremedemure: "🫐 Crème de mûre", falernum: "🍸 Falernum", cherryheering: "🍒 Cherry Heering", mezcal: "🌵 Mezcal", poivrevert: "🫑 Poivre vert",
-  umeboshi: "🍑 Umeboshi", vermicellessucres: "🌈 Vermicelles sucrés", nigelle: "⚫ Nigelle", sherry: "🍷 Xérès (sherry)", ghee: "🧈 Ghee", cancoillotte: "🧀 Cancoillotte", rizcomplet: "🍚 Riz complet", liveche: "🌿 Livèche", millet: "🌾 Millet", rooibos: "🍵 Rooibos", cornflakes: "🌽 Corn flakes",
+  umeboshi: "🍑 Umeboshi", vermicellessucres: "🌈 Vermicelles sucrés", nigelle: "⚫ Nigelle", sherry: "🍷 Xérès (sherry)", ghee: "🧈 Ghee", cancoillotte: "🧀 Cancoillotte", rizcomplet: "🍚 Riz complet", liveche: "🌿 Livèche", millet: "🌾 Millet", rooibos: "🍵 Rooibos", cornflakes: "🌽 Corn flakes", lievre: "🐇 Lièvre",
   juscitron: "🍋 Jus de citron", juscitronvert: "🍋 Jus de citron vert", jusananas: "🍍 Jus d'ananas", jusorange: "🍊 Jus d'orange", siropsucre: "🍬 Sirop de sucre", sucrecanne: "🍬 Sucre de canne", soda: "🫧 Eau gazeuse", sodaamer: "🫧 Soda amer", sodapamplemousse: "🫧 Soda pamplemousse", angostura: "🍶 Angostura", framboise: "🫐 Framboises", rhumblanc: "🥃 Rhum blanc", rhumambre: "🥃 Rhum ambré", vermouthrouge: "🍷 Vermouth rouge", porto: "🍷 Porto", liqueurcafe: "☕ Liqueur de café", siropagave: "🍯 Sirop d'agave", poitrine: "🥓 Poitrine de porc", bacon: "🥓 Bacon", lardgras: "🥓 Lard gras", worcestershire: "🍶 Sauce Worcestershire", morue: "🐟 Morue", vinaigrette: "🥗 Vinaigrette",
   marmelade: "🍊 Marmelade d'orange",
   // == Œufs ==

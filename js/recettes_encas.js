@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 36 recettes
+// recettes_encas.js — Recettes de catégorie "encas" (En-cas) — 37 recettes
 // 👉 Pour AJOUTER une recette En-cas : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -8028,5 +8028,43 @@ Object.assign(recettes, {
       { icone: "♨️", titre: "Bouillir une heure, à couvert, sans découvrir", detail: "Sortir un pastel pour vérifier fait chuter la température et les autres cuisent mal.", badge: null }
     ],
     liees: ["tamales","empanadasargentines","pandebono"]
+  },
+  fritesdekumara: {
+    dateAjout: "2026-09-11T11:07:00",
+    nom: "Frites de Kumara",
+    cat: "encas", pays: "nouvellezelande",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🍠",
+    description: "Les frites de patate douce néo-zélandaises, apportées par les Maoris depuis la Polynésie au XIIIᵉ siècle. Le kumara contient trop de sucre pour croustiller comme une pomme de terre : c'est la fécule en surface qui fait tout.",
+    tableauFritesdekumara: [
+      { nb: 1, patatedouce: "180 g", maizena: "8 g", huile: "20 ml", paprikafume: "1 g", sel: "1.5 g", romarin: "0.5 g" },
+      { nb: 2, patatedouce: "360 g", maizena: "16 g", huile: "40 ml", paprikafume: "2 g", sel: "3 g", romarin: "1 g" },
+      { nb: 3, patatedouce: "540 g", maizena: "24 g", huile: "60 ml", paprikafume: "3 g", sel: "4.5 g", romarin: "1.5 g" },
+      { nb: 4, patatedouce: "720 g", maizena: "32 g", huile: "80 ml", paprikafume: "4 g", sel: "6 g", romarin: "2 g" },
+      { nb: 5, patatedouce: "900 g", maizena: "40 g", huile: "100 ml", paprikafume: "5 g", sel: "7.5 g", romarin: "2.5 g" },
+      { nb: 6, patatedouce: "1080 g", maizena: "48 g", huile: "120 ml", paprikafume: "6 g", sel: "9 g", romarin: "3 g" },
+      { nb: 7, patatedouce: "1260 g", maizena: "56 g", huile: "140 ml", paprikafume: "7 g", sel: "10.5 g", romarin: "3.5 g" },
+      { nb: 8, patatedouce: "1440 g", maizena: "64 g", huile: "160 ml", paprikafume: "8 g", sel: "12 g", romarin: "4 g" },
+      { nb: 9, patatedouce: "1620 g", maizena: "72 g", huile: "180 ml", paprikafume: "9 g", sel: "13.5 g", romarin: "4.5 g" },
+      { nb: 10, patatedouce: "1800 g", maizena: "80 g", huile: "200 ml", paprikafume: "10 g", sel: "15 g", romarin: "5 g" },
+      { nb: 11, patatedouce: "1980 g", maizena: "88 g", huile: "220 ml", paprikafume: "11 g", sel: "16.5 g", romarin: "5.5 g" },
+      { nb: 12, patatedouce: "2160 g", maizena: "96 g", huile: "240 ml", paprikafume: "12 g", sel: "18 g", romarin: "6 g" },
+      { nb: 13, patatedouce: "2340 g", maizena: "104 g", huile: "260 ml", paprikafume: "13 g", sel: "19.5 g", romarin: "6.5 g" },
+      { nb: 14, patatedouce: "2520 g", maizena: "112 g", huile: "280 ml", paprikafume: "14 g", sel: "21 g", romarin: "7 g" },
+      { nb: 15, patatedouce: "2700 g", maizena: "120 g", huile: "300 ml", paprikafume: "15 g", sel: "22.5 g", romarin: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Des bâtonnets FINS, un centimètre au plus", detail: "Plus épais, le centre reste pâteux quand l'extérieur brûle : la patate douce cuit de l'extérieur vers l'intérieur.", badge: null },
+      { icone: "💧", titre: "Tremper une heure dans l'eau froide", detail: "Pour retirer l'amidon de surface : c'est ce qui les empêche de coller et de ramollir.", badge: null },
+      { icone: "🌬️", titre: "Sécher PARFAITEMENT au torchon", detail: "Une frite humide cuit à la vapeur : c'est la cause numéro un des frites molles.", badge: null },
+      { icone: "🌽", titre: "Enrober de maïzena, en couche fine", detail: "C'est le secret : la fécule forme une croûte qui croustille là où le sucre du kumara ne le permet pas.", badge: null },
+      { icone: "📏", titre: "Espacées sur la plaque, SANS se toucher", detail: "Collées, elles se ramollissent mutuellement par la vapeur : il faut deux plaques plutôt qu'une.", badge: null },
+      { icone: "🔄", titre: "220 °C, retournées UNE fois à mi-cuisson", detail: "Plus souvent, elles perdent la croûte qui se forme contre la plaque.", badge: null },
+      { icone: "🧂", titre: "Saler à la SORTIE du four, pas avant", detail: "Salées avant, elles rendent leur eau et ne croustillent jamais.", badge: null }
+    ],
+    liees: ["saladepatatedouce","meatpieaustralien","whitebaitfritters"]
   },
 });

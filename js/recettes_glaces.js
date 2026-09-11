@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 41 recettes
+// recettes_glaces.js — Recettes de catégorie "glaces" (Glaces & Sorbets) — 43 recettes
 // 👉 Pour AJOUTER une glace : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
@@ -2037,5 +2037,81 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Prise finale au congélateur, quatre heures", detail: "Elle sort de la sorbetière plus molle qu'une glace ordinaire : c'est normal et attendu.", badge: null }
     ],
     liees: ["glacevanille","nougatglace","glacenoisette"]
+  },
+  glacepralinee: {
+    dateAjout: "2026-09-11T10:04:00",
+    nom: "Glace Pralinée",
+    cat: "glaces", pays: "france",
+    base: 8,
+    temps: "1 h + turbinage",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🌰",
+    description: "La glace au praliné maison, dont le praliné se fait à partir de noisettes caramélisées puis broyées jusqu'à rendre leur huile. Acheté tout fait, il est sucré et plat ; fait maison, il est torréfié, amer et profond.",
+    tableauGlacepralinee: [
+      { nb: 1, noisettes: "30 g", amandes: "10 g", sucre: "38 g", lait: "90 ml", creme: "55 ml", jaunesoeufs: "¾", sel: "0.3 g" },
+      { nb: 2, noisettes: "60 g", amandes: "20 g", sucre: "76 g", lait: "180 ml", creme: "110 ml", jaunesoeufs: "1½", sel: "0.6 g" },
+      { nb: 3, noisettes: "90 g", amandes: "30 g", sucre: "114 g", lait: "270 ml", creme: "165 ml", jaunesoeufs: "2¼", sel: "0.9 g" },
+      { nb: 4, noisettes: "120 g", amandes: "40 g", sucre: "152 g", lait: "360 ml", creme: "220 ml", jaunesoeufs: "3", sel: "1.2 g" },
+      { nb: 5, noisettes: "150 g", amandes: "50 g", sucre: "190 g", lait: "450 ml", creme: "275 ml", jaunesoeufs: "3¾", sel: "1.5 g" },
+      { nb: 6, noisettes: "180 g", amandes: "60 g", sucre: "228 g", lait: "540 ml", creme: "330 ml", jaunesoeufs: "4½", sel: "1.8 g" },
+      { nb: 7, noisettes: "210 g", amandes: "70 g", sucre: "266 g", lait: "630 ml", creme: "385 ml", jaunesoeufs: "5¼", sel: "2.1 g" },
+      { nb: 8, noisettes: "240 g", amandes: "80 g", sucre: "304 g", lait: "720 ml", creme: "440 ml", jaunesoeufs: "6", sel: "2.4 g" },
+      { nb: 9, noisettes: "270 g", amandes: "90 g", sucre: "342 g", lait: "810 ml", creme: "495 ml", jaunesoeufs: "6¾", sel: "2.7 g" },
+      { nb: 10, noisettes: "300 g", amandes: "100 g", sucre: "380 g", lait: "900 ml", creme: "550 ml", jaunesoeufs: "7½", sel: "3 g" },
+      { nb: 11, noisettes: "330 g", amandes: "110 g", sucre: "418 g", lait: "990 ml", creme: "605 ml", jaunesoeufs: "8¼", sel: "3.3 g" },
+      { nb: 12, noisettes: "360 g", amandes: "120 g", sucre: "456 g", lait: "1080 ml", creme: "660 ml", jaunesoeufs: "9", sel: "3.6 g" },
+      { nb: 13, noisettes: "390 g", amandes: "130 g", sucre: "494 g", lait: "1170 ml", creme: "715 ml", jaunesoeufs: "9¾", sel: "3.9 g" },
+      { nb: 14, noisettes: "420 g", amandes: "140 g", sucre: "532 g", lait: "1260 ml", creme: "770 ml", jaunesoeufs: "10½", sel: "4.2 g" },
+      { nb: 15, noisettes: "450 g", amandes: "150 g", sucre: "570 g", lait: "1350 ml", creme: "825 ml", jaunesoeufs: "11¼", sel: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier les noisettes AVANT de caraméliser", detail: "Quinze minutes à 160 °C : le caramel ne torréfie pas, il ne fait qu'enrober. Crues, elles donnent un praliné fade.", badge: null },
+      { icone: "🍯", titre: "Un caramel à sec, ambre FONCÉ", detail: "Plus foncé que pour un dessert : c'est l'amertume du caramel qui empêche le praliné d'être écœurant.", badge: null },
+      { icone: "❄️", titre: "Laisser refroidir la nougatine COMPLÈTEMENT", detail: "Mixée tiède, elle colle aux lames et chauffe le moteur : il faut qu'elle soit cassante.", badge: null },
+      { icone: "🥣", titre: "Mixer par séquences de dix secondes", detail: "D'abord une poudre, puis une pâte, puis un liquide : il faut dix minutes, en laissant le bol refroidir.", badge: null },
+      { icone: "🥄", titre: "Le praliné dans la crème anglaise TIÈDE", detail: "Chaude, elle fait séparer l'huile du praliné ; froide, il reste en grumeaux au fond.", badge: null },
+      { icone: "🧂", titre: "Une pincée de sel dans le praliné", detail: "Elle révèle la noisette et coupe le sucre : c'est le secret des pralinés de pâtissier.", badge: null },
+      { icone: "🌀", titre: "Garder un peu de praliné pour la fin du turbinage", detail: "Versé en filet les trente dernières secondes : il forme des veines qui restent coulantes dans la glace.", badge: null }
+    ],
+    liees: ["glacenoisette","tartepraline","rocherspraline"]
+  },
+  glaceceriseamarena: {
+    dateAjout: "2026-09-11T10:05:00",
+    nom: "Glace Cerise Amarena",
+    cat: "glaces", saisons: ["ete"], pays: "italie",
+    base: 8,
+    temps: "1 h + turbinage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍒",
+    description: "Le gelato amarena des glaciers de Bologne : une glace au lait nature traversée de cerises griottes confites au sirop. La base est volontairement NEUTRE — un fior di latte sans vanille — pour que la cerise acide soit la seule saveur.",
+    tableauGlaceceriseamarena: [
+      { nb: 1, lait: "110 ml", creme: "50 ml", sucre: "30 g", cerise: "45 g", kirsch: "5 ml", citron: "¼" },
+      { nb: 2, lait: "220 ml", creme: "100 ml", sucre: "60 g", cerise: "90 g", kirsch: "10 ml", citron: "½" },
+      { nb: 3, lait: "330 ml", creme: "150 ml", sucre: "90 g", cerise: "135 g", kirsch: "15 ml", citron: "¾" },
+      { nb: 4, lait: "440 ml", creme: "200 ml", sucre: "120 g", cerise: "180 g", kirsch: "20 ml", citron: "1" },
+      { nb: 5, lait: "550 ml", creme: "250 ml", sucre: "150 g", cerise: "225 g", kirsch: "25 ml", citron: "1¼" },
+      { nb: 6, lait: "660 ml", creme: "300 ml", sucre: "180 g", cerise: "270 g", kirsch: "30 ml", citron: "1½" },
+      { nb: 7, lait: "770 ml", creme: "350 ml", sucre: "210 g", cerise: "315 g", kirsch: "35 ml", citron: "1¾" },
+      { nb: 8, lait: "880 ml", creme: "400 ml", sucre: "240 g", cerise: "360 g", kirsch: "40 ml", citron: "2" },
+      { nb: 9, lait: "990 ml", creme: "450 ml", sucre: "270 g", cerise: "405 g", kirsch: "45 ml", citron: "2¼" },
+      { nb: 10, lait: "1100 ml", creme: "500 ml", sucre: "300 g", cerise: "450 g", kirsch: "50 ml", citron: "2½" },
+      { nb: 11, lait: "1210 ml", creme: "550 ml", sucre: "330 g", cerise: "495 g", kirsch: "55 ml", citron: "2¾" },
+      { nb: 12, lait: "1320 ml", creme: "600 ml", sucre: "360 g", cerise: "540 g", kirsch: "60 ml", citron: "3" },
+      { nb: 13, lait: "1430 ml", creme: "650 ml", sucre: "390 g", cerise: "585 g", kirsch: "65 ml", citron: "3¼" },
+      { nb: 14, lait: "1540 ml", creme: "700 ml", sucre: "420 g", cerise: "630 g", kirsch: "70 ml", citron: "3½" },
+      { nb: 15, lait: "1650 ml", creme: "750 ml", sucre: "450 g", cerise: "675 g", kirsch: "75 ml", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍒", titre: "Des GRIOTTES, jamais des cerises douces", detail: "La cerise douce disparaît dans le sucre du sirop : c'est l'acidité de la griotte qui fait l'amarena.", badge: null },
+      { icone: "🍯", titre: "Confire les cerises trois jours au sirop", detail: "Un sirop épais, repris chaque jour : c'est ce qui les rend moelleuses sans qu'elles gèlent dans la glace.", badge: null },
+      { icone: "🥃", titre: "Un trait de kirsch dans le sirop", detail: "L'alcool abaisse le point de congélation : sans lui, les cerises deviennent des billes dures dans la glace.", badge: null },
+      { icone: "🥛", titre: "Une base fior di latte, SANS vanille", detail: "Lait, crème, sucre et rien d'autre : la vanille brouillerait la cerise, qui doit dominer seule.", badge: null },
+      { icone: "❄️", titre: "Turbiner la base nature, sans les fruits", detail: "Mélangées au départ, les cerises éclatent dans la sorbetière et teintent toute la glace en rose.", badge: null },
+      { icone: "🌀", titre: "Incorporer cerises et sirop EN MARBRURE", detail: "À la spatule, en trois tours seulement, dans le bac : on veut des veines rouges, pas une glace rose.", badge: null },
+      { icone: "⏳", titre: "Quatre heures de prise avant de servir", detail: "Les marbrures se figent et restent nettes : servie tout de suite, la glace est molle et les veines coulent.", badge: null }
+    ],
+    liees: ["glacevanille","spumone","tartufo"]
   },
 });

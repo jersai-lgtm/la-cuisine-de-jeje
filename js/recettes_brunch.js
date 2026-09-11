@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 39 recettes
+// recettes_brunch.js — Recettes de catégorie "brunch" (Brunch) — 41 recettes
 // 👉 Pour AJOUTER une recette Brunch : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -3308,5 +3308,83 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Coriandre en BRANCHES entières, pas hachée", detail: "Posée en couche : hachée, elle disparaît sous les autres saveurs et n'apporte plus rien.", badge: null }
     ],
     liees: ["banhmiviet","clubsandwich","baconbutty"]
+  },
+  monkeybread: {
+    dateAjout: "2026-09-11T11:08:00",
+    nom: "Monkey Bread",
+    cat: "brunch", pays: "usa",
+    base: 8,
+    temps: "3 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐒",
+    description: "La brioche américaine à arracher, faite de dizaines de boulettes roulées dans le sucre et la cannelle puis entassées dans un moule. Elle se mange avec les doigts, en tirant — d'où son nom, pour la façon dont on la déchiquette.",
+    tableauMonkeybread: [
+      { nb: 1, farine: "55 g", levureboulangere: "1.5 g", lait: "30 ml", beurre: "25 g", sucrebrun: "22 g", cannelle: "1.5 g", oeufs: "¼", sucre: "5 g", sel: "0.8 g" },
+      { nb: 2, farine: "110 g", levureboulangere: "3 g", lait: "60 ml", beurre: "50 g", sucrebrun: "44 g", cannelle: "3 g", oeufs: "½", sucre: "10 g", sel: "1.6 g" },
+      { nb: 3, farine: "165 g", levureboulangere: "4.5 g", lait: "90 ml", beurre: "75 g", sucrebrun: "66 g", cannelle: "4.5 g", oeufs: "¾", sucre: "15 g", sel: "2.4 g" },
+      { nb: 4, farine: "220 g", levureboulangere: "6 g", lait: "120 ml", beurre: "100 g", sucrebrun: "88 g", cannelle: "6 g", oeufs: "1", sucre: "20 g", sel: "3.2 g" },
+      { nb: 5, farine: "275 g", levureboulangere: "7.5 g", lait: "150 ml", beurre: "125 g", sucrebrun: "110 g", cannelle: "7.5 g", oeufs: "1¼", sucre: "25 g", sel: "4 g" },
+      { nb: 6, farine: "330 g", levureboulangere: "9 g", lait: "180 ml", beurre: "150 g", sucrebrun: "132 g", cannelle: "9 g", oeufs: "1½", sucre: "30 g", sel: "4.8 g" },
+      { nb: 7, farine: "385 g", levureboulangere: "10.5 g", lait: "210 ml", beurre: "175 g", sucrebrun: "154 g", cannelle: "10.5 g", oeufs: "1¾", sucre: "35 g", sel: "5.6 g" },
+      { nb: 8, farine: "440 g", levureboulangere: "12 g", lait: "240 ml", beurre: "200 g", sucrebrun: "176 g", cannelle: "12 g", oeufs: "2", sucre: "40 g", sel: "6.4 g" },
+      { nb: 9, farine: "495 g", levureboulangere: "13.5 g", lait: "270 ml", beurre: "225 g", sucrebrun: "198 g", cannelle: "13.5 g", oeufs: "2¼", sucre: "45 g", sel: "7.2 g" },
+      { nb: 10, farine: "550 g", levureboulangere: "15 g", lait: "300 ml", beurre: "250 g", sucrebrun: "220 g", cannelle: "15 g", oeufs: "2½", sucre: "50 g", sel: "8 g" },
+      { nb: 11, farine: "605 g", levureboulangere: "16.5 g", lait: "330 ml", beurre: "275 g", sucrebrun: "242 g", cannelle: "16.5 g", oeufs: "2¾", sucre: "55 g", sel: "8.8 g" },
+      { nb: 12, farine: "660 g", levureboulangere: "18 g", lait: "360 ml", beurre: "300 g", sucrebrun: "264 g", cannelle: "18 g", oeufs: "3", sucre: "60 g", sel: "9.6 g" },
+      { nb: 13, farine: "715 g", levureboulangere: "19.5 g", lait: "390 ml", beurre: "325 g", sucrebrun: "286 g", cannelle: "19.5 g", oeufs: "3¼", sucre: "65 g", sel: "10.4 g" },
+      { nb: 14, farine: "770 g", levureboulangere: "21 g", lait: "420 ml", beurre: "350 g", sucrebrun: "308 g", cannelle: "21 g", oeufs: "3½", sucre: "70 g", sel: "11.2 g" },
+      { nb: 15, farine: "825 g", levureboulangere: "22.5 g", lait: "450 ml", beurre: "375 g", sucrebrun: "330 g", cannelle: "22.5 g", oeufs: "3¾", sucre: "75 g", sel: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Une pâte briochée ENRICHIE, lait et beurre", detail: "C'est une brioche : sans matière grasse, les boulettes sèchent au four et ne s'arrachent plus.", badge: null },
+      { icone: "⏳", titre: "Première pousse jusqu'au double", detail: "Une heure et demie au chaud : sous-levée, la monkey bread est dense et compacte.", badge: null },
+      { icone: "⚖️", titre: "Des boulettes RÉGULIÈRES de 20 grammes", detail: "Toutes au même poids : irrégulières, les petites brûlent quand les grosses sont encore crues.", badge: null },
+      { icone: "🧈", titre: "Tremper chaque boulette dans le beurre fondu", detail: "Puis la rouler dans le sucre-cannelle : c'est ce beurre qui caramélise et soude les boulettes entre elles.", badge: null },
+      { icone: "🍩", titre: "Un moule à SAVARIN, pas un moule plein", detail: "Le trou central fait circuler la chaleur : dans un moule plein, le centre reste cru.", badge: null },
+      { icone: "⏳", titre: "Deuxième pousse de quarante minutes", detail: "Les boulettes doivent gonfler jusqu'au bord du moule : c'est ce qui les fait tenir ensemble.", badge: null },
+      { icone: "🔄", titre: "Démouler CHAUD, cinq minutes après la sortie", detail: "Le caramel fige en refroidissant : attendu trop longtemps, il colle la brioche au moule.", badge: null },
+      { icone: "🤲", titre: "Se mange à la main, en tirant", detail: "Pas de couteau : c'est un plat de partage du dimanche matin, qu'on déchiquette au milieu de la table.", badge: null }
+    ],
+    liees: ["cinnamonroll","brioche","kringel"]
+  },
+  strata: {
+    dateAjout: "2026-09-11T11:09:00",
+    nom: "Strata",
+    cat: "brunch", pays: "usa",
+    base: 6,
+    temps: "1 h + 12 h",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Le gratin de pain rassis du brunch américain, monté la veille et cuit au réveil. Tout se joue pendant la nuit : le pain doit boire l'appareil œufs-lait jusqu'au cœur, faute de quoi le dessus est sec et le fond détrempé.",
+    tableauStrata: [
+      { nb: 1, painrassis: "70 g", oeufs: "1", lait: "90 ml", gruyere: "30 g", jambon: "30 g", epinards: "30 g", oignon: "¼", moutarde: "4 g", poivre: "0.5 g" },
+      { nb: 2, painrassis: "140 g", oeufs: "2", lait: "180 ml", gruyere: "60 g", jambon: "60 g", epinards: "60 g", oignon: "½", moutarde: "8 g", poivre: "1 g" },
+      { nb: 3, painrassis: "210 g", oeufs: "3", lait: "270 ml", gruyere: "90 g", jambon: "90 g", epinards: "90 g", oignon: "¾", moutarde: "12 g", poivre: "1.5 g" },
+      { nb: 4, painrassis: "280 g", oeufs: "4", lait: "360 ml", gruyere: "120 g", jambon: "120 g", epinards: "120 g", oignon: "1", moutarde: "16 g", poivre: "2 g" },
+      { nb: 5, painrassis: "350 g", oeufs: "5", lait: "450 ml", gruyere: "150 g", jambon: "150 g", epinards: "150 g", oignon: "1¼", moutarde: "20 g", poivre: "2.5 g" },
+      { nb: 6, painrassis: "420 g", oeufs: "6", lait: "540 ml", gruyere: "180 g", jambon: "180 g", epinards: "180 g", oignon: "1½", moutarde: "24 g", poivre: "3 g" },
+      { nb: 7, painrassis: "490 g", oeufs: "7", lait: "630 ml", gruyere: "210 g", jambon: "210 g", epinards: "210 g", oignon: "1¾", moutarde: "28 g", poivre: "3.5 g" },
+      { nb: 8, painrassis: "560 g", oeufs: "8", lait: "720 ml", gruyere: "240 g", jambon: "240 g", epinards: "240 g", oignon: "2", moutarde: "32 g", poivre: "4 g" },
+      { nb: 9, painrassis: "630 g", oeufs: "9", lait: "810 ml", gruyere: "270 g", jambon: "270 g", epinards: "270 g", oignon: "2¼", moutarde: "36 g", poivre: "4.5 g" },
+      { nb: 10, painrassis: "700 g", oeufs: "10", lait: "900 ml", gruyere: "300 g", jambon: "300 g", epinards: "300 g", oignon: "2½", moutarde: "40 g", poivre: "5 g" },
+      { nb: 11, painrassis: "770 g", oeufs: "11", lait: "990 ml", gruyere: "330 g", jambon: "330 g", epinards: "330 g", oignon: "2¾", moutarde: "44 g", poivre: "5.5 g" },
+      { nb: 12, painrassis: "840 g", oeufs: "12", lait: "1080 ml", gruyere: "360 g", jambon: "360 g", epinards: "360 g", oignon: "3", moutarde: "48 g", poivre: "6 g" },
+      { nb: 13, painrassis: "910 g", oeufs: "13", lait: "1170 ml", gruyere: "390 g", jambon: "390 g", epinards: "390 g", oignon: "3¼", moutarde: "52 g", poivre: "6.5 g" },
+      { nb: 14, painrassis: "980 g", oeufs: "14", lait: "1260 ml", gruyere: "420 g", jambon: "420 g", epinards: "420 g", oignon: "3½", moutarde: "56 g", poivre: "7 g" },
+      { nb: 15, painrassis: "1050 g", oeufs: "15", lait: "1350 ml", gruyere: "450 g", jambon: "450 g", epinards: "450 g", oignon: "3¾", moutarde: "60 g", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Du pain RASSIS de deux jours, pas frais", detail: "Le pain frais se désagrège en bouillie ; le rassis absorbe l'appareil et garde sa forme.", badge: null },
+      { icone: "📏", titre: "En cubes de trois centimètres, croûte comprise", detail: "La croûte donne le croustillant du dessus : sans elle, la strata est une purée d'œufs.", badge: null },
+      { icone: "🥬", titre: "Les épinards SAUTÉS et pressés à l'avance", detail: "Crus, ils rendent leur eau pendant la cuisson et détrempent le fond du plat.", badge: null },
+      { icone: "🥚", titre: "Un appareil œufs-lait assaisonné à la MOUTARDE", detail: "Elle relève un plat très doux et aide l'émulsion à ne pas trancher au four.", badge: null },
+      { icone: "📚", titre: "Monter en COUCHES : pain, garniture, pain", detail: "C'est le nom même du plat — strata, « couches » — et c'est ce qui donne une coupe marbrée.", badge: null },
+      { icone: "❄️", titre: "Une nuit au frigo, couvert et PRESSÉ", detail: "Un poids léger dessus : le pain doit rester immergé pour boire l'appareil jusqu'au cœur.", badge: null },
+      { icone: "🌡️", titre: "Sortir une heure avant d'enfourner", detail: "Froide, elle cuit mal au centre : le dessus brûle avant que le cœur soit pris.", badge: null },
+      { icone: "⏳", titre: "Reposer dix minutes avant de couper", detail: "Brûlante, elle s'effondre et rend son liquide ; tiède, elle se tranche en parts nettes.", badge: null }
+    ],
+    liees: ["quichelorraine","croquemonsieur","painperdubrioche"]
   },
 });

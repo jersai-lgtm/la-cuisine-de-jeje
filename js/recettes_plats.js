@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 254 recettes
+// recettes_plats.js — Recettes de catégorie "plats" (Plats) — 258 recettes
 // 👉 Pour AJOUTER une recette Plats : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -55594,5 +55594,161 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Un trait de citron vert au service", detail: "Il réveille un plat long et gras : c'est le geste équatorien, jamais dans la casserole.", badge: null }
     ],
     liees: ["goulashhongrois","tajinemouton","quzi"]
+  },
+  shahplov: {
+    dateAjout: "2026-09-11T12:00:00",
+    nom: "Shah Plov",
+    cat: "plats", pays: "azerbaidjan",
+    base: 8,
+    temps: "3 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "👑",
+    description: "Le « plov du shah », plat des mariages azéris : un riz aux châtaignes, abricots et agneau enfermé dans une couronne de lavash beurré, cuit au four puis retourné comme un gâteau. On le découpe à table — et la croûte est ce que chacun se dispute.",
+    tableauShahplov: [
+      { nb: 1, riz: "70 g", agneau: "70 g", lavash: "45 g", beurre: "28 g", chataignescuites: "25 g", abricotsec: "15 g", raisinssecs: "12 g", safran: "0.05 g", cannelle: "0.4 g", oignon: "½" },
+      { nb: 2, riz: "140 g", agneau: "140 g", lavash: "90 g", beurre: "56 g", chataignescuites: "50 g", abricotsec: "30 g", raisinssecs: "24 g", safran: "0.1 g", cannelle: "0.8 g", oignon: "1" },
+      { nb: 3, riz: "210 g", agneau: "210 g", lavash: "135 g", beurre: "84 g", chataignescuites: "75 g", abricotsec: "45 g", raisinssecs: "36 g", safran: "0.15 g", cannelle: "1.2 g", oignon: "1½" },
+      { nb: 4, riz: "280 g", agneau: "280 g", lavash: "180 g", beurre: "112 g", chataignescuites: "100 g", abricotsec: "60 g", raisinssecs: "48 g", safran: "0.2 g", cannelle: "1.6 g", oignon: "2" },
+      { nb: 5, riz: "350 g", agneau: "350 g", lavash: "225 g", beurre: "140 g", chataignescuites: "125 g", abricotsec: "75 g", raisinssecs: "60 g", safran: "0.25 g", cannelle: "2 g", oignon: "2½" },
+      { nb: 6, riz: "420 g", agneau: "420 g", lavash: "270 g", beurre: "168 g", chataignescuites: "150 g", abricotsec: "90 g", raisinssecs: "72 g", safran: "0.3 g", cannelle: "2.4 g", oignon: "3" },
+      { nb: 7, riz: "490 g", agneau: "490 g", lavash: "315 g", beurre: "196 g", chataignescuites: "175 g", abricotsec: "105 g", raisinssecs: "84 g", safran: "0.35 g", cannelle: "2.8 g", oignon: "3½" },
+      { nb: 8, riz: "560 g", agneau: "560 g", lavash: "360 g", beurre: "224 g", chataignescuites: "200 g", abricotsec: "120 g", raisinssecs: "96 g", safran: "0.4 g", cannelle: "3.2 g", oignon: "4" },
+      { nb: 9, riz: "630 g", agneau: "630 g", lavash: "405 g", beurre: "252 g", chataignescuites: "225 g", abricotsec: "135 g", raisinssecs: "108 g", safran: "0.45 g", cannelle: "3.6 g", oignon: "4½" },
+      { nb: 10, riz: "700 g", agneau: "700 g", lavash: "450 g", beurre: "280 g", chataignescuites: "250 g", abricotsec: "150 g", raisinssecs: "120 g", safran: "0.5 g", cannelle: "4 g", oignon: "5" },
+      { nb: 11, riz: "770 g", agneau: "770 g", lavash: "495 g", beurre: "308 g", chataignescuites: "275 g", abricotsec: "165 g", raisinssecs: "132 g", safran: "0.55 g", cannelle: "4.4 g", oignon: "5½" },
+      { nb: 12, riz: "840 g", agneau: "840 g", lavash: "540 g", beurre: "336 g", chataignescuites: "300 g", abricotsec: "180 g", raisinssecs: "144 g", safran: "0.6 g", cannelle: "4.8 g", oignon: "6" },
+      { nb: 13, riz: "910 g", agneau: "910 g", lavash: "585 g", beurre: "364 g", chataignescuites: "325 g", abricotsec: "195 g", raisinssecs: "156 g", safran: "0.65 g", cannelle: "5.2 g", oignon: "6½" },
+      { nb: 14, riz: "980 g", agneau: "980 g", lavash: "630 g", beurre: "392 g", chataignescuites: "350 g", abricotsec: "210 g", raisinssecs: "168 g", safran: "0.7 g", cannelle: "5.6 g", oignon: "7" },
+      { nb: 15, riz: "1050 g", agneau: "1050 g", lavash: "675 g", beurre: "420 g", chataignescuites: "375 g", abricotsec: "225 g", raisinssecs: "180 g", safran: "0.75 g", cannelle: "6 g", oignon: "7½" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Un riz à GRAIN LONG, précuit aux trois quarts", detail: "Il finit de cuire dans la croûte : cuit à point avant, il devient pâteux et la couronne s'effondre.", badge: null },
+      { icone: "🌸", titre: "Le safran infusé dans l'eau tiède, vingt minutes", detail: "Jeté sec, il ne colore rien : c'est son infusion qui donne les grains dorés du plov de fête.", badge: null },
+      { icone: "🫓", titre: "Des feuilles de lavash BEURRÉES, qui se chevauchent", detail: "Elles tapissent le moule en débordant largement : c'est la couronne qui se refermera sur le riz.", badge: null },
+      { icone: "🧈", titre: "Beaucoup de beurre entre chaque feuille", detail: "C'est lui qui fait dorer et croustiller la croûte : économisé, le lavash reste blanc et mou.", badge: null },
+      { icone: "🌰", titre: "Garniture et riz en COUCHES alternées", detail: "Riz, fruits et viande, riz : à la coupe, on doit voir les strates, pas un mélange.", badge: null },
+      { icone: "🎁", titre: "Refermer les feuilles par-dessus, serrées", detail: "Comme un paquet : une ouverture laisse s'échapper la vapeur et le riz du dessus sèche.", badge: null },
+      { icone: "🔥", titre: "Une heure à 180 °C, jusqu'au brun doré", detail: "La croûte doit sonner creux quand on la tapote : pâle, elle se déchire au démoulage.", badge: null },
+      { icone: "🔄", titre: "Retourner sur le plat d'un geste, à chaud", detail: "C'est le moment du repas : la couronne dorée apparaît, et on la tranche devant les invités.", badge: null }
+    ],
+    liees: ["plov","quzi","perdepilavi"]
+  },
+  canardalapresse: {
+    dateAjout: "2026-09-11T12:02:00",
+    nom: "Canard à la Presse",
+    cat: "plats", saisons: ["automne","hiver"], pays: "france",
+    base: 2,
+    temps: "1 h 30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🦆",
+    description: "Le plat de la Tour d'Argent, numéroté depuis 1890 : chaque canard servi reçoit un numéro, et l'on a dépassé le million. La carcasse est PRESSÉE dans une presse en argent pour en extraire le sang, qui lie la sauce au cognac devant le client.",
+    tableauCanardalapresse: [
+      { nb: 1, canard: "220 g", foie: "20 g", cognac: "15 ml", porto: "20 ml", vinrouge: "40 ml", beurre: "15 g", echalote: "½", bouillon: "40 ml", poivre: "0.8 g", sel: "1.5 g" },
+      { nb: 2, canard: "440 g", foie: "40 g", cognac: "30 ml", porto: "40 ml", vinrouge: "80 ml", beurre: "30 g", echalote: "1", bouillon: "80 ml", poivre: "1.6 g", sel: "3 g" },
+      { nb: 3, canard: "660 g", foie: "60 g", cognac: "45 ml", porto: "60 ml", vinrouge: "120 ml", beurre: "45 g", echalote: "1½", bouillon: "120 ml", poivre: "2.4 g", sel: "4.5 g" },
+      { nb: 4, canard: "880 g", foie: "80 g", cognac: "60 ml", porto: "80 ml", vinrouge: "160 ml", beurre: "60 g", echalote: "2", bouillon: "160 ml", poivre: "3.2 g", sel: "6 g" },
+      { nb: 5, canard: "1100 g", foie: "100 g", cognac: "75 ml", porto: "100 ml", vinrouge: "200 ml", beurre: "75 g", echalote: "2½", bouillon: "200 ml", poivre: "4 g", sel: "7.5 g" },
+      { nb: 6, canard: "1320 g", foie: "120 g", cognac: "90 ml", porto: "120 ml", vinrouge: "240 ml", beurre: "90 g", echalote: "3", bouillon: "240 ml", poivre: "4.8 g", sel: "9 g" },
+      { nb: 7, canard: "1540 g", foie: "140 g", cognac: "105 ml", porto: "140 ml", vinrouge: "280 ml", beurre: "105 g", echalote: "3½", bouillon: "280 ml", poivre: "5.6 g", sel: "10.5 g" },
+      { nb: 8, canard: "1760 g", foie: "160 g", cognac: "120 ml", porto: "160 ml", vinrouge: "320 ml", beurre: "120 g", echalote: "4", bouillon: "320 ml", poivre: "6.4 g", sel: "12 g" },
+      { nb: 9, canard: "1980 g", foie: "180 g", cognac: "135 ml", porto: "180 ml", vinrouge: "360 ml", beurre: "135 g", echalote: "4½", bouillon: "360 ml", poivre: "7.2 g", sel: "13.5 g" },
+      { nb: 10, canard: "2200 g", foie: "200 g", cognac: "150 ml", porto: "200 ml", vinrouge: "400 ml", beurre: "150 g", echalote: "5", bouillon: "400 ml", poivre: "8 g", sel: "15 g" },
+      { nb: 11, canard: "2420 g", foie: "220 g", cognac: "165 ml", porto: "220 ml", vinrouge: "440 ml", beurre: "165 g", echalote: "5½", bouillon: "440 ml", poivre: "8.8 g", sel: "16.5 g" },
+      { nb: 12, canard: "2640 g", foie: "240 g", cognac: "180 ml", porto: "240 ml", vinrouge: "480 ml", beurre: "180 g", echalote: "6", bouillon: "480 ml", poivre: "9.6 g", sel: "18 g" },
+      { nb: 13, canard: "2860 g", foie: "260 g", cognac: "195 ml", porto: "260 ml", vinrouge: "520 ml", beurre: "195 g", echalote: "6½", bouillon: "520 ml", poivre: "10.4 g", sel: "19.5 g" },
+      { nb: 14, canard: "3080 g", foie: "280 g", cognac: "210 ml", porto: "280 ml", vinrouge: "560 ml", beurre: "210 g", echalote: "7", bouillon: "560 ml", poivre: "11.2 g", sel: "21 g" },
+      { nb: 15, canard: "3300 g", foie: "300 g", cognac: "225 ml", porto: "300 ml", vinrouge: "600 ml", beurre: "225 g", echalote: "7½", bouillon: "600 ml", poivre: "12 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦆", titre: "Un canard ÉTOUFFÉ, pas saigné", detail: "C'est la particularité de la recette : le sang reste dans la carcasse, et c'est lui qui liera la sauce.", badge: null },
+      { icone: "🔥", titre: "Rôtir SAIGNANT, vingt minutes seulement", detail: "Le canard est à peine cuit : les filets et la carcasse doivent garder tout leur jus pour la presse.", badge: null },
+      { icone: "🔪", titre: "Lever les filets et les cuisses à table", detail: "Les cuisses repartent en cuisine pour être grillées ; seuls les filets, tranchés fin, restent en salle.", badge: null },
+      { icone: "⚙️", titre: "PRESSER la carcasse, lentement", detail: "Tour de manivelle par tour de manivelle : pressée trop vite, elle rend des éclats d'os dans le jus.", badge: null },
+      { icone: "🩸", titre: "Le sang recueilli CHAUD, dans le cognac", detail: "Il coagule en refroidissant : il doit rejoindre la sauce dans la minute qui suit le pressage.", badge: null },
+      { icone: "🥣", titre: "Monter la sauce au réchaud, sans ébullition", detail: "Porto, cognac, foie écrasé et sang : au-dessus de 70 °C, le sang tranche et la sauce devient granuleuse.", badge: null },
+      { icone: "🧈", titre: "Le beurre monté en dernier, hors du feu", detail: "Il donne le brillant de laque qui fait la réputation de la sauce ; sur le feu, il se sépare.", badge: null },
+      { icone: "🍽️", titre: "Deux services : filets en sauce, puis cuisses grillées", detail: "C'est l'ordre de la Tour d'Argent depuis plus d'un siècle, et le plat se commande pour deux.", badge: null }
+    ],
+    liees: ["canardorange","magretcanard","confitcanard"]
+  },
+  poulardeenvessie: {
+    dateAjout: "2026-09-11T12:03:00",
+    nom: "Poularde en Vessie",
+    cat: "plats", saisons: ["hiver"], pays: "france",
+    base: 6,
+    temps: "4 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🎈",
+    description: "Le plat signature de la Mère Brazier à Lyon, puis de Paul Bocuse : une volaille de Bresse truffée sous la peau, enfermée dans une vessie de porc gonflée et pochée. La vessie gonfle comme un ballon en cuisant et s'ouvre devant les convives.",
+    tableauPoulardeenvessie: [
+      { nb: 1, poulet: "250 g", truffenoire: "5 g", foiegras: "25 g", madere: "30 ml", cognac: "10 ml", carotte: "40 g", poireau: "40 g", creme: "45 ml", beurre: "10 g", sel: "2 g" },
+      { nb: 2, poulet: "500 g", truffenoire: "10 g", foiegras: "50 g", madere: "60 ml", cognac: "20 ml", carotte: "80 g", poireau: "80 g", creme: "90 ml", beurre: "20 g", sel: "4 g" },
+      { nb: 3, poulet: "750 g", truffenoire: "15 g", foiegras: "75 g", madere: "90 ml", cognac: "30 ml", carotte: "120 g", poireau: "120 g", creme: "135 ml", beurre: "30 g", sel: "6 g" },
+      { nb: 4, poulet: "1000 g", truffenoire: "20 g", foiegras: "100 g", madere: "120 ml", cognac: "40 ml", carotte: "160 g", poireau: "160 g", creme: "180 ml", beurre: "40 g", sel: "8 g" },
+      { nb: 5, poulet: "1250 g", truffenoire: "25 g", foiegras: "125 g", madere: "150 ml", cognac: "50 ml", carotte: "200 g", poireau: "200 g", creme: "225 ml", beurre: "50 g", sel: "10 g" },
+      { nb: 6, poulet: "1500 g", truffenoire: "30 g", foiegras: "150 g", madere: "180 ml", cognac: "60 ml", carotte: "240 g", poireau: "240 g", creme: "270 ml", beurre: "60 g", sel: "12 g" },
+      { nb: 7, poulet: "1750 g", truffenoire: "35 g", foiegras: "175 g", madere: "210 ml", cognac: "70 ml", carotte: "280 g", poireau: "280 g", creme: "315 ml", beurre: "70 g", sel: "14 g" },
+      { nb: 8, poulet: "2000 g", truffenoire: "40 g", foiegras: "200 g", madere: "240 ml", cognac: "80 ml", carotte: "320 g", poireau: "320 g", creme: "360 ml", beurre: "80 g", sel: "16 g" },
+      { nb: 9, poulet: "2250 g", truffenoire: "45 g", foiegras: "225 g", madere: "270 ml", cognac: "90 ml", carotte: "360 g", poireau: "360 g", creme: "405 ml", beurre: "90 g", sel: "18 g" },
+      { nb: 10, poulet: "2500 g", truffenoire: "50 g", foiegras: "250 g", madere: "300 ml", cognac: "100 ml", carotte: "400 g", poireau: "400 g", creme: "450 ml", beurre: "100 g", sel: "20 g" },
+      { nb: 11, poulet: "2750 g", truffenoire: "55 g", foiegras: "275 g", madere: "330 ml", cognac: "110 ml", carotte: "440 g", poireau: "440 g", creme: "495 ml", beurre: "110 g", sel: "22 g" },
+      { nb: 12, poulet: "3000 g", truffenoire: "60 g", foiegras: "300 g", madere: "360 ml", cognac: "120 ml", carotte: "480 g", poireau: "480 g", creme: "540 ml", beurre: "120 g", sel: "24 g" },
+      { nb: 13, poulet: "3250 g", truffenoire: "65 g", foiegras: "325 g", madere: "390 ml", cognac: "130 ml", carotte: "520 g", poireau: "520 g", creme: "585 ml", beurre: "130 g", sel: "26 g" },
+      { nb: 14, poulet: "3500 g", truffenoire: "70 g", foiegras: "350 g", madere: "420 ml", cognac: "140 ml", carotte: "560 g", poireau: "560 g", creme: "630 ml", beurre: "140 g", sel: "28 g" },
+      { nb: 15, poulet: "3750 g", truffenoire: "75 g", foiegras: "375 g", madere: "450 ml", cognac: "150 ml", carotte: "600 g", poireau: "600 g", creme: "675 ml", beurre: "150 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Une poularde de BRESSE, pas un poulet", detail: "Sa chair persillée de gras supporte quatre heures de pochage sans sécher : un poulet ordinaire en sortirait filandreux.", badge: null },
+      { icone: "🍄", titre: "La truffe glissée SOUS la peau, la veille", detail: "En lamelles, sur les filets et les cuisses : une nuit au frais, et son parfum traverse toute la chair.", badge: null },
+      { icone: "🎈", titre: "La vessie trempée et RETOURNÉE", detail: "Vingt-quatre heures dans l'eau vinaigrée, retournée plusieurs fois : c'est ce qui la rend souple et sans odeur.", badge: null },
+      { icone: "🥃", titre: "Madère, cognac et foie gras DANS la vessie", detail: "Enfermés avec la volaille : c'est le jus de cuisson qui devient la sauce, sans rien perdre.", badge: null },
+      { icone: "🧵", titre: "Ficeler la vessie SERRÉE, en plusieurs tours", detail: "Une fuite et le jus s'échappe dans le bouillon : tout le parfum de la truffe part avec lui.", badge: null },
+      { icone: "♨️", titre: "Pocher à FRÉMISSEMENT, jamais à ébullition", detail: "Au bouillon, la vessie éclate. Il faut arroser constamment le dessus pour qu'elle gonfle régulièrement.", badge: null },
+      { icone: "🎭", titre: "Ouvrir la vessie DEVANT les convives", detail: "Le ballon crève et libère le parfum de truffe dans toute la salle : c'est la moitié du plat.", badge: null },
+      { icone: "🥣", titre: "Une sauce suprême montée au jus de la vessie", detail: "Réduit avec la crème : c'est le seul accompagnement admis, avec un riz pilaf.", badge: null }
+    ],
+    liees: ["poulardedemideuil","coqauvin","foiegraspoele"]
+  },
+  lievrealaroyale: {
+    dateAjout: "2026-09-11T12:04:00",
+    nom: "Lièvre à la Royale",
+    cat: "plats", saisons: ["automne"], pays: "france",
+    base: 6,
+    temps: "2 jours",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🐇",
+    description: "Le plat le plus exigeant du répertoire français, dont deux écoles se disputent la paternité : celle de Carême, où le lièvre est désossé, farci de foie gras et de truffe puis roulé ; et celle du sénateur Couteaux (1898), cuit sept heures avec quarante gousses d'ail et soixante échalotes, jusqu'à se manger à la cuillère. Les deux se lient au SANG, et c'est là que tout se joue.",
+    tableauLievrealaroyale: [
+      { nb: 1, lievre: "220 g", foiegras: "35 g", truffenoire: "6 g", vinrouge: "110 ml", cognac: "15 ml", echalote: "1½", ail: "4", lard: "30 g", bouillon: "50 ml", poivre: "1 g" },
+      { nb: 2, lievre: "440 g", foiegras: "70 g", truffenoire: "12 g", vinrouge: "220 ml", cognac: "30 ml", echalote: "3", ail: "8", lard: "60 g", bouillon: "100 ml", poivre: "2 g" },
+      { nb: 3, lievre: "660 g", foiegras: "105 g", truffenoire: "18 g", vinrouge: "330 ml", cognac: "45 ml", echalote: "4½", ail: "12", lard: "90 g", bouillon: "150 ml", poivre: "3 g" },
+      { nb: 4, lievre: "880 g", foiegras: "140 g", truffenoire: "24 g", vinrouge: "440 ml", cognac: "60 ml", echalote: "6", ail: "16", lard: "120 g", bouillon: "200 ml", poivre: "4 g" },
+      { nb: 5, lievre: "1100 g", foiegras: "175 g", truffenoire: "30 g", vinrouge: "550 ml", cognac: "75 ml", echalote: "7½", ail: "20", lard: "150 g", bouillon: "250 ml", poivre: "5 g" },
+      { nb: 6, lievre: "1320 g", foiegras: "210 g", truffenoire: "36 g", vinrouge: "660 ml", cognac: "90 ml", echalote: "9", ail: "24", lard: "180 g", bouillon: "300 ml", poivre: "6 g" },
+      { nb: 7, lievre: "1540 g", foiegras: "245 g", truffenoire: "42 g", vinrouge: "770 ml", cognac: "105 ml", echalote: "10½", ail: "28", lard: "210 g", bouillon: "350 ml", poivre: "7 g" },
+      { nb: 8, lievre: "1760 g", foiegras: "280 g", truffenoire: "48 g", vinrouge: "880 ml", cognac: "120 ml", echalote: "12", ail: "32", lard: "240 g", bouillon: "400 ml", poivre: "8 g" },
+      { nb: 9, lievre: "1980 g", foiegras: "315 g", truffenoire: "54 g", vinrouge: "990 ml", cognac: "135 ml", echalote: "13½", ail: "36", lard: "270 g", bouillon: "450 ml", poivre: "9 g" },
+      { nb: 10, lievre: "2200 g", foiegras: "350 g", truffenoire: "60 g", vinrouge: "1100 ml", cognac: "150 ml", echalote: "15", ail: "40", lard: "300 g", bouillon: "500 ml", poivre: "10 g" },
+      { nb: 11, lievre: "2420 g", foiegras: "385 g", truffenoire: "66 g", vinrouge: "1210 ml", cognac: "165 ml", echalote: "16½", ail: "44", lard: "330 g", bouillon: "550 ml", poivre: "11 g" },
+      { nb: 12, lievre: "2640 g", foiegras: "420 g", truffenoire: "72 g", vinrouge: "1320 ml", cognac: "180 ml", echalote: "18", ail: "48", lard: "360 g", bouillon: "600 ml", poivre: "12 g" },
+      { nb: 13, lievre: "2860 g", foiegras: "455 g", truffenoire: "78 g", vinrouge: "1430 ml", cognac: "195 ml", echalote: "19½", ail: "52", lard: "390 g", bouillon: "650 ml", poivre: "13 g" },
+      { nb: 14, lievre: "3080 g", foiegras: "490 g", truffenoire: "84 g", vinrouge: "1540 ml", cognac: "210 ml", echalote: "21", ail: "56", lard: "420 g", bouillon: "700 ml", poivre: "14 g" },
+      { nb: 15, lievre: "3300 g", foiegras: "525 g", truffenoire: "90 g", vinrouge: "1650 ml", cognac: "225 ml", echalote: "22½", ail: "60", lard: "450 g", bouillon: "750 ml", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐇", titre: "Un lièvre de CHASSE, avec son sang recueilli", detail: "Le sang est l'ingrédient qui fait le plat : sans lui, on obtient un civet, jamais un lièvre à la royale.", badge: null },
+      { icone: "🍷", titre: "Mariner vingt-quatre heures dans un vin TANNIQUE", detail: "Un madiran ou un cahors : un vin léger se fait écraser par le goût du gibier et la sauce reste plate.", badge: null },
+      { icone: "🔪", titre: "Désosser SANS percer la peau, pour l'école Carême", detail: "C'est la difficulté majeure : une déchirure et la farce s'échappe pendant les heures de cuisson.", badge: null },
+      { icone: "🍄", titre: "Farce de foie gras et de truffe, au CENTRE", detail: "Posée en boudin au milieu du lièvre, puis roulée : à la coupe, elle doit apparaître en rond parfait.", badge: null },
+      { icone: "⏳", titre: "Cuire à 120 °C, six à sept heures, à couvert", detail: "Une braise à peine frémissante : c'est cette lenteur qui rend la chair fondante au lieu de filandreuse.", badge: null },
+      { icone: "🧄", titre: "Ail et échalotes FONDUS jusqu'à disparaître", detail: "Quarante gousses et soixante échalotes chez Couteaux : après sept heures, ils ne sont plus qu'une liaison sucrée.", badge: null },
+      { icone: "🩸", titre: "Lier au sang HORS du feu, sous 70 °C", detail: "C'est le geste qui décide de tout : au-dessus, le sang cuit en grains et la sauce est perdue sans retour.", badge: null },
+      { icone: "🍽️", titre: "Servir en tranches épaisses, nappées", detail: "Accompagné de pâtes fraîches ou d'une purée de céleri : la sauce noire et luisante est le sujet, tout le reste s'efface.", badge: null }
+    ],
+    liees: ["civetlapin","chevreuilveneur","sanglierairelles"]
   },
 });
