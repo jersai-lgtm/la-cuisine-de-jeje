@@ -989,7 +989,9 @@ function remplirBadges(s) {
 
 function afficherSection(section, btn) {
   document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
+  // v5.1.7 : appelé aussi sans bouton (Mes stats et l'espace admin sont dans le menu compte,
+  // plus dans la barre du bas) — aucun onglet n'est alors allumé.
+  if (btn) btn.classList.add("active");
   // Fermer les sous-menus catégories/monde
   fermerSousMenus();
   const cuisine    = document.getElementById("section-cuisine"); // v242 : remplace calculateur

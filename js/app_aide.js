@@ -196,28 +196,25 @@ function ouvrirAide() {
 function fermerAide() { const m = document.getElementById("modal-aide"); if (m) m.style.display = "none"; }
 
 /* ---------------- Intégration ---------------- */
-// back-button Android : fermer les modales sur retour si le mécanisme existe
+// back-button Android : fermer les modales sur retour. Le tableau attend des objets
+// {id, close} et vit dans la portée globale des scripts, pas sur window — la version
+// précédente poussait des chaînes dans window._MODALS_SURVEILLEES (undefined), donc
+// ni l'aide ni le tour ne se fermaient au retour.
 try {
-  if (Array.isArray(window._MODALS_SURVEILLEES)) {
-    ["modal-aide", "modal-tour"].forEach(id => { if (!window._MODALS_SURVEILLEES.includes(id)) window._MODALS_SURVEILLEES.push(id); });
+  if (typeof _MODALS_SURVEILLEES !== "undefined" && Array.isArray(_MODALS_SURVEILLEES)) {
+    if (!_MODALS_SURVEILLEES.some(m => m && m.id === "modal-aide")) {
+      _MODALS_SURVEILLEES.push({ id: "modal-aide", close: function () { fermerAide(); } });
+    }
+    if (!_MODALS_SURVEILLEES.some(m => m && m.id === "modal-tour")) {
+      _MODALS_SURVEILLEES.push({ id: "modal-tour", close: function () { _tourFermer(); } });
+    }
   }
 } catch (e) {}
 
-// 1ère connexion : lancer le tour une seule fois, sans gêner un éventuel splash d'event
-function _aidePeutAfficher() {
-  try {
-    return ![...document.querySelectorAll("div")].some(d => {
-      const s = getComputedStyle(d);
-      return s.position === "fixed" && (parseInt(s.zIndex) || 0) >= 9000 && s.display !== "none" && d.offsetParent !== null && d.id !== "modal-tour";
-    });
-  } catch (e) { return true; }
-}
-function _aideAutoTour(essais) {
-  if (_tourVu()) return;
-  if (_aidePeutAfficher()) { lancerTour(); return; }
-  if ((essais || 0) < 5) setTimeout(() => _aideAutoTour((essais || 0) + 1), 2500);
-  else lancerTour();
-}
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => _aideAutoTour(0), 900);
-});
+// v5.1.7 : plus de lancement automatique du tour guidé au premier démarrage.
+// Le diaporama de bienvenue (js/onboarding.js) s'ouvrait déjà à 800 ms et le tour à
+// 900 ms : deux fenêtres « Bienvenue » d'affilée qui disaient la même chose. Le
+// garde-fou censé attendre la première ne la voyait jamais — il testait
+// `offsetParent !== null`, or offsetParent vaut TOUJOURS null sur un élément
+// position:fixed. Le tour reste accessible à la demande : menu compte →
+// « Aide et tour guidé » → « Revoir le tour guidé ».

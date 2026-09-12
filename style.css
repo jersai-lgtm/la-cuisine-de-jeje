@@ -58,16 +58,96 @@ body {
 /* ==========================
    HEADER
 ========================== */
+/* v5.1.7 — l'en-tête tient sur une ligne : titre + compteur à gauche, avatar à droite.
+   Avant : 191 px de haut sur un téléphone (titre 42 px centré, bouton Connexion, puis
+   six petits boutons) — soit le quart de l'écran avant la moindre recette. */
 header {
-  text-align: center;
-  padding: 30px 20px 20px;
+  padding: 10px 16px;
   background: rgba(var(--panel),.25);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(var(--w),.08);
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
 }
-header h1 { margin: 0; font-size: 42px; font-weight: bold; }
-header p  { color: var(--text-2); font-size: 15px; margin: 8px 0 0; }
+header h1 { margin: 0; font-size: 21px; font-weight: bold; line-height: 1.2; }
+header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
+.header-titre { min-width: 0; }
+.header-titre h1, .header-titre p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ==========================
+   AVATAR + MENU COMPTE (v5.1.7)
+   L'avatar remplace, dans l'en-tête, le bouton Connexion et les six petits boutons
+   (thème, couleur, langue, amélioration, aide, quoi de neuf) : ils sont dans la feuille.
+========================== */
+.btn-compte {
+  position: relative; flex: none;
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1.5px solid rgba(var(--accent-rgb),.45);
+  background: rgba(var(--accent-rgb),.14);
+  color: var(--accent-soft,#ff8fb3);
+  font-size: 20px; line-height: 1; padding: 0; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: .2s;
+}
+.btn-compte:hover { background: rgba(var(--accent-rgb),.24); }
+.btn-compte:focus-visible { outline: 3px solid var(--accent-soft,#ff8fb3); outline-offset: 2px; }
+.btn-compte-ico {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+}
+.btn-compte-ico.avec-initiale { font-size: 17px; font-weight: 800; color: var(--text); }
+.btn-compte-ico img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.btn-compte-point {
+  position: absolute; top: -1px; right: -1px; width: 11px; height: 11px; border-radius: 50%;
+  background: #e2574c; border: 2px solid rgba(var(--panel),1);
+}
+
+.voile-compte { position: fixed; inset: 0; z-index: 10040; background: rgba(10,8,14,.62); }
+.feuille-compte {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10041;
+  max-height: 86vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+  background: var(--surface-1,#211e26);
+  border-top: 1px solid rgba(var(--w),.12);
+  border-radius: 22px 22px 0 0;
+  padding: 6px 14px calc(18px + env(safe-area-inset-bottom));
+  box-shadow: 0 -18px 50px rgba(0,0,0,.45);
+  transform: translateY(14px); opacity: 0;
+  transition: transform .18s ease, opacity .18s ease;
+}
+.feuille-compte.ouverte { transform: none; opacity: 1; }
+/* Sur grand écran, une feuille pleine largeur n'a pas de sens : carte centrée au-dessus
+   de la barre du bas. */
+@media (min-width: 700px) {
+  .feuille-compte {
+    max-width: 460px; margin: 0 auto; bottom: 92px;
+    border: 1px solid rgba(var(--w),.12); border-radius: 20px;
+    padding-bottom: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) { .feuille-compte { transition: none; } }
+.feuille-poignee {
+  display: block; width: 44px; height: 4px; margin: 6px auto 12px; padding: 0;
+  border: none; border-radius: 2px; background: rgba(var(--w),.25); cursor: pointer;
+}
+.feuille-compte-user .btn-connexion,
+.feuille-compte-user .avatar-btn { width: 100%; justify-content: center; box-sizing: border-box; }
+.groupe-compte {
+  background: rgba(var(--w),.04); border: 1px solid rgba(var(--w),.07);
+  border-radius: 14px; margin-top: 10px; overflow: hidden;
+}
+.ligne-compte {
+  display: flex; align-items: center; gap: 12px; width: 100%;
+  min-height: 52px; padding: 10px 14px;
+  background: none; border: none; border-top: 1px solid rgba(var(--w),.07);
+  color: var(--text); font-family: inherit; font-size: 15px; text-align: left; cursor: pointer;
+}
+.groupe-compte .ligne-compte:first-child { border-top: none; }
+.ligne-compte:hover  { background: rgba(var(--w),.05); }
+.ligne-compte:active { background: rgba(var(--w),.09); }
+.ligne-compte:focus-visible { outline: 2px solid var(--accent-soft,#ff8fb3); outline-offset: -2px; }
+.ligne-ico { flex: none; width: 26px; text-align: center; font-size: 19px; line-height: 1; }
+.ligne-lib { flex: 1 1 auto; min-width: 0; }
+.ligne-val { flex: none; color: var(--text-3); font-size: 13px; }
+.ligne-point { flex: none; width: 9px; height: 9px; border-radius: 50%; background: #e2574c; }
 
 /* ==========================
    MENU CATÉGORIES
@@ -885,11 +965,11 @@ select, input[type="number"] {
   border: none;
   color: var(--text-3);
   cursor: pointer;
-  padding: 4px 24px;
+  padding: 4px 6px;    /* v5.1.7 : 5 onglets au lieu de 4, les libellés ont besoin de la place */
   border-radius: 12px;
   transition: .2s;
   font-size: 24px;
-  flex: 1;             /* v252 : chaque bouton prend la même largeur (1/4) */
+  flex: 1;             /* chaque bouton prend la même largeur (1/5) */
   min-width: 0;        /* permet à flex de réduire si nécessaire */
 }
 .nav-btn small { 
@@ -920,10 +1000,11 @@ select, input[type="number"] {
   filter: drop-shadow(0 0 4px rgba(var(--accent-rgb),.4));
 }
 
-/* Mobile : labels nav un poil plus petits pour que "Garde-manger" rentre */
+/* Mobile : labels nav un poil plus petits pour que "Garde-manger" rentre
+   (v5.1.7 : 5 onglets → 75 px chacun sur un écran de 375, d'où le padding minimal) */
 @media (max-width: 480px) {
-  .nav-btn { padding: 4px 8px; }
-  .nav-btn small { font-size: 10px; }
+  .nav-btn { padding: 4px 2px; }
+  .nav-btn small { font-size: 10px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
   .nav-icone-svg { width: 26px; height: 26px; }
   .nav-icone-wrap { height: 30px; }
 }
@@ -932,9 +1013,7 @@ select, input[type="number"] {
    RESPONSIVE MOBILE
 ========================== */
 @media (max-width: 600px) {
-  header h1       { font-size: 28px; }
-  
-  
+  header h1       { font-size: 19px; }
   .carte          { width: 160px; }
   .carte img      { height: 130px; }
   .calculateur    { width: 90%; padding: 20px; }
@@ -2897,7 +2976,7 @@ select, input[type="number"] {
 /* === BARRE DE CHIPS DE FILTRES (sous la nav principale) === */
 .filtres-chips {
   position: sticky;
-  top: 56px; /* sous la nav-cats-main */
+  top: 58px; /* sous la barre de recherche (v5.1.7 : le menu du haut n'existe plus) */
   z-index: 99;
   background: rgba(var(--panel),.85);
   backdrop-filter: blur(10px);
@@ -2979,7 +3058,7 @@ select, input[type="number"] {
     }
   }
   .filtres-chips {
-    top: 50px;
+    top: 58px; /* hauteur de la barre de recherche */
     padding: 6px 10px;
   }
   .chip {
@@ -5205,18 +5284,25 @@ html[data-theme="light"] .agenda-input { color-scheme: light; }
 
 /* === Note globale de l'appli : barre compacte « avis général » sous le header (v261) === */
 #accueil-note-app { padding: 10px 16px 0; }
+/* v5.1.7 — une seule ligne : étoiles, note, nombre d'avis, dernier commentaire tronqué.
+   Avant : cette barre (52 px) PLUS un bloc témoignage en dessous, et le tout s'affichait
+   sous le header, donc sur tous les onglets. Elle vit maintenant en tête de l'accueil. */
 .note-app-bar {
-  width: 100%; display: flex; align-items: center; gap: 12px;
-  padding: 10px 16px; border-radius: 14px; cursor: pointer; text-align: left;
+  width: 100%; display: flex; align-items: center; gap: 8px;
+  padding: 9px 12px; border-radius: 12px; cursor: pointer; text-align: left;
   background: linear-gradient(120deg, rgba(255,193,7,0.17), rgba(255,138,101,0.13));
   border: 1px solid rgba(255,193,7,0.42);
-  color: var(--text); font-family: inherit;
+  color: var(--text); font-family: inherit; font-size: 13px;
 }
 .note-app-bar:hover { filter: brightness(1.06); }
 .note-app-bar:active { transform: translateY(1px); }
-.note-app-bar-note { flex: none; font-size: 24px; font-weight: 800; color: #ffb300; line-height: 1; }
-.note-app-bar-note span { font-size: 12px; font-weight: 600; opacity: 0.65; color: var(--text); }
-.note-app-bar-stars { flex: none; color: #ffb300; font-size: 15px; letter-spacing: 1.5px; line-height: 1; }
+.note-app-bar-note { flex: none; font-size: 15px; font-weight: 800; color: #ffb300; line-height: 1; }
+.note-app-bar-note span { font-size: 11px; font-weight: 600; opacity: 0.65; color: var(--text); }
+.note-app-bar-stars { flex: none; color: #ffb300; font-size: 13px; letter-spacing: 1px; line-height: 1; }
+.note-app-bar-nb { flex: none; color: var(--text-3); }
+/* Le témoignage prend la place qui reste et se coupe proprement */
+.note-app-bar-avis { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-2); font-style: italic; }
+.note-app-bar-fleche { flex: none; color: var(--text-3); font-size: 17px; line-height: 1; }
 .note-app-bar-sub { flex: 1 1 auto; min-width: 0; font-size: 12.5px; color: var(--text-3); }
 .note-app-bar-ico { flex: none; font-size: 20px; }
 /* Dernier avis (témoignage) sous la barre */
@@ -5254,9 +5340,8 @@ html[data-theme="light"] .agenda-input { color-scheme: light; }
 .avis-public-sans { color: var(--text-4); font-style: italic; }
 @media (max-width: 480px) {
   #accueil-note-app { padding: 8px 12px 0; }
-  .note-app-bar { gap: 10px; padding: 9px 13px; }
-  .note-app-bar-note { font-size: 21px; }
-  .note-app-bar-stars { font-size: 14px; }
+  .note-app-bar { gap: 7px; padding: 8px 11px; }
+  .note-app-bar-stars { font-size: 12.5px; letter-spacing: .5px; }
 }
 
 /* === Allergie personnelle : ligne rouge sous la carte (uniquement si concerné) === */

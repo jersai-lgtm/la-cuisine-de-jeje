@@ -144,6 +144,10 @@ function rendreNoteAppAccueil(tous) {
   window._avisTousPublics = tous; // réutilisé par la modal « Tous les avis »
   const nb = tous.length;
   zone.style.display = "block";
+  // « Le savais-tu ? » et « la recette du jour » s'insèrent en tête de l'accueil au montage
+  // de la page ; l'avis, lui, arrive de Firestore une seconde plus tard. On le remet devant.
+  const parent = zone.parentElement;
+  if (parent && parent.firstElementChild !== zone) parent.prepend(zone);
   if (nb === 0) {
     zone.innerHTML = `
       <button class="note-app-bar note-app-bar-vide" onclick="ouvrirModalAvis()" aria-label="Avis général de l'application">
@@ -155,27 +159,23 @@ function rendreNoteAppAccueil(tous) {
   const moy = tous.reduce((s, a) => s + (a.etoiles || 0), 0) / nb;
   const arr = Math.round(moy);
   const etoiles = "★".repeat(arr) + "☆".repeat(5 - arr);
-  // Dernier avis avec commentaire (témoignage façon Jow), sous la barre.
+  // Dernier avis avec commentaire (témoignage façon Jow) : sur la même ligne, tronqué.
   const avecComm = tous.filter(a => a.commentaire && a.commentaire.trim());
   avecComm.sort((a, b) => new Date(b.dateMaj || 0) - new Date(a.dateMaj || 0));
   const last = avecComm[0];
-  let avisHTML = "";
-  if (last) {
-    const n = Math.max(0, Math.min(5, last.etoiles || 0));
-    const st = "★".repeat(n) + "☆".repeat(5 - n);
-    avisHTML = `
-      <div class="note-app-avis" onclick="ouvrirTousLesAvis()" role="button" tabindex="0" aria-label="Voir tous les avis">
-        <span class="note-app-avis-stars">${st}</span>
-        <span class="note-app-avis-txt">« ${escapeHTML(last.commentaire.trim())} »</span>
-      </div>`;
-  }
-  // v262 : toucher la barre ouvre la liste PUBLIQUE de tous les avis (anonymes)
+  const temoignage = last
+    ? `« ${escapeHTML(last.commentaire.trim())} »`
+    : "appuie pour tout lire";
+  // v5.1.7 : une seule ligne, en tête de l'accueil. Avant : deux blocs de 117 px sous le header,
+  // affichés sur tous les onglets. Toucher la barre ouvre la liste publique des avis (anonymes).
   zone.innerHTML = `
     <button class="note-app-bar" onclick="ouvrirTousLesAvis()" aria-label="Voir tous les avis de l'application">
-      <span class="note-app-bar-note">${moy.toFixed(1).replace(".", ",")}<span>/5</span></span>
       <span class="note-app-bar-stars">${etoiles}</span>
-      <span class="note-app-bar-sub">Avis général de l'appli · ${nb} avis · appuie pour tout lire</span>
-    </button>${avisHTML}`;
+      <span class="note-app-bar-note">${moy.toFixed(1).replace(".", ",")}<span>/5</span></span>
+      <span class="note-app-bar-nb">· ${nb} avis</span>
+      <span class="note-app-bar-avis">${temoignage}</span>
+      <span class="note-app-bar-fleche" aria-hidden="true">›</span>
+    </button>`;
 }
 
 // Chargé à l'affichage de l'accueil : lit les avis et remplit la carte en évidence.

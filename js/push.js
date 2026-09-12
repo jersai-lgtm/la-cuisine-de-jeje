@@ -217,7 +217,9 @@
         border-radius:14px;padding:10px 12px 10px 16px;box-shadow:0 8px 28px rgba(0,0,0,.45);
         font-family:system-ui,-apple-system,sans-serif;animation:pushUp .25s ease}
       @keyframes pushUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
-      #push-banner .push-txt{font-size:14px;line-height:1.35;max-width:60vw}
+      /* Le texte prend la place qui reste (voir pwa_install.js) : à 60vw il était comprimé
+         à 46 px de large sur un téléphone, un mot par ligne. */
+      #push-banner .push-txt{font-size:14px;line-height:1.35;flex:1 1 auto;min-width:0}
       #push-banner .push-ok{background:linear-gradient(90deg,#ffb259,#ff9330);color:#1b1206;border:none;border-radius:10px;
         padding:9px 14px;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap}
       #push-banner .push-no{background:rgba(var(--w),.12);color:var(--text);border:none;border-radius:50%;width:30px;height:30px;

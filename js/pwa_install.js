@@ -29,7 +29,9 @@
         box-shadow:0 8px 28px rgba(0,0,0,.45);font-family:system-ui,-apple-system,sans-serif;
         animation:pwaUp .25s ease}
       @keyframes pwaUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
-      #pwa-install-banner .pwa-txt{font-size:14px;line-height:1.3;max-width:60vw}
+      /* Le texte prend la place qui reste : avec max-width:60vw, sur un écran de 375 px il
+         tombait à 54 px de large (un mot par ligne) puisque le bouton et la croix passent avant. */
+      #pwa-install-banner .pwa-txt{font-size:14px;line-height:1.3;flex:1 1 auto;min-width:0}
       #pwa-install-banner .pwa-ok{background:linear-gradient(90deg,#ff6ba1,#ff4d88);color:var(--text);border:none;
         border-radius:10px;padding:9px 14px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
       #pwa-install-banner .pwa-no{background:rgba(var(--w),.12);color:var(--text);border:none;border-radius:50%;
