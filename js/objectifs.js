@@ -608,6 +608,17 @@
       .obj-moment{display:flex;align-items:center;justify-content:space-between;gap:6px;background:rgba(var(--w),.06);border:1px solid rgba(var(--w),.14);border-radius:11px;padding:9px 11px;font-size:12.5px;color:var(--text);cursor:pointer;text-align:left}
       .obj-moment b{color:var(--accent);font-weight:800;white-space:nowrap}
       .obj-moment:hover{border-color:rgba(var(--accent-rgb),.5);background:rgba(var(--accent-rgb),.1)}
+      /* v5.1.10 — état compact (aucun objectif fixé) : une ligne au lieu d'un bloc. */
+      .obj-bloc--compact{background:none;border:none;padding:0;margin:0 0 14px}
+      .obj-compact{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:8px 14px;
+        background:linear-gradient(95deg,#3b8f5f,#7cc576);border:none;border-radius:16px;color:#0f2e18;
+        font-family:inherit;text-align:left;cursor:pointer}
+      .obj-compact:hover{filter:brightness(1.04)}
+      .obj-compact-ico{font-size:22px;flex:none;line-height:1}
+      .obj-compact-lib{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:1px;font-size:15px;font-weight:800}
+      .obj-compact-lib small{font-weight:600;font-size:12.5px;opacity:.85}
+      .obj-compact-fleche{flex:none;font-size:22px;font-weight:800;opacity:.65;line-height:1}
+      .obj-bloc--compact .obj-cta-repas{margin-top:8px}
       .obj-bloc--banniere{background:linear-gradient(95deg,#3b8f5f,#7cc576);border:none}
       .obj-bloc--banniere .obj-bloc-head b,.obj-bloc--banniere .obj-intro,.obj-bloc--banniere .obj-kval{color:#0f2e18}
       .obj-bloc--banniere .obj-edit{color:#153d1f}
@@ -656,9 +667,14 @@
     let head = '<div class="obj-bloc-head"><b>' + T("🎯 Objectif kcal", "🎯 Calorie goal") + "</b>" +
       (aGoal ? '<button type="button" class="obj-edit" onclick="ouvrirObjectifs()">' + T("modifier", "edit") + "</button>" : "") + "</div>";
     if (!aGoal) {
-      return head +
-        '<div class="obj-intro">' + T("Fixe tes calories du jour : l'appli te propose direct des repas qui rentrent dans ton objectif (et chaque recette te dit la part qu'elle représente).", "Set your daily calories: the app suggests meals that fit your goal (and each recipe shows the share it represents).") + "</div>" +
-        '<button type="button" class="obj-cta" onclick="ouvrirObjectifs()">' + T("🎯 Définir mon objectif", "🎯 Set my goal") + "</button>" +
+      // v5.1.10 : tant qu'aucun objectif n'est fixé, une seule ligne au lieu d'un bloc de
+      // 211 px (titre + paragraphe + deux boutons) sur l'accueil de tout le monde. Le
+      // journal « J'ai mangé… » reste dessous, rien n'est perdu.
+      return '<button type="button" class="obj-compact" onclick="ouvrirObjectifs()">' +
+        '<span class="obj-compact-ico">🎯</span>' +
+        '<span class="obj-compact-lib">' + T("Objectif kcal", "Calorie goal") +
+        "<small>" + T("des repas qui rentrent dans ta journée", "meals that fit your day") + "</small></span>" +
+        '<span class="obj-compact-fleche">›</span></button>' +
         mealBlockHTML();
     }
     const focus = o.focus && FOCUS[o.focus];
@@ -706,10 +722,15 @@
       bloc = document.createElement("div");
       bloc.id = "objectif-bloc";
       bloc.className = "obj-bloc obj-bloc--banniere";
-      const cta = document.querySelector(".swipe-cta");
-      if (cta && cta.parentNode) cta.parentNode.insertBefore(bloc, cta.nextSibling);
+      // v5.1.10 : juste après la carte « Qu'est-ce qu'on mange ? » (qui a remplacé la
+      // bannière swipe sur laquelle on s'accrochait avant).
+      const ancre = document.getElementById("envie-bloc") || document.getElementById("accueil-dujour-bloc");
+      if (ancre && ancre.parentNode) ancre.parentNode.insertBefore(bloc, ancre.nextSibling);
       else sec.insertBefore(bloc, sec.firstChild);
     }
+    // Sans objectif fixé, le bloc se réduit à sa ligne compacte (v5.1.10).
+    const etat = lire();
+    bloc.classList.toggle("obj-bloc--compact", !(etat.kcal || etat.focus));
     bloc.innerHTML = blocHTML();
   }
   // Exposé pour rafraîchir le bloc après enregistrement / changement de langue.

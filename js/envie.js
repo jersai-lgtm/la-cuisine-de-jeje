@@ -91,7 +91,16 @@
       .envie-act{background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);
         border-radius:999px;padding:0 14px;min-height:44px;display:inline-flex;align-items:center;
         font-size:13px;font-weight:700;cursor:pointer}
-      .envie-chips{display:flex;flex-wrap:wrap;gap:7px}
+      .envie-swipe{display:block;width:100%;min-height:48px;margin:2px 0 10px;border:none;border-radius:14px;
+        background:#fff;color:#5b2a86;font-family:inherit;font-size:15.5px;font-weight:800;cursor:pointer}
+      .envie-swipe:hover{filter:brightness(.95)}
+      .envie-sous{color:var(--text-2);font-size:13px;margin:0 0 7px}
+      .envie-bloc--banniere .envie-sous{color:rgba(255,255,255,.92)}
+      /* Une seule rangée qui défile : à 44 px de haut (cibles tactiles), six puces sur
+         plusieurs lignes prenaient la moitié de l'écran. */
+      .envie-chips{display:flex;flex-wrap:nowrap;gap:7px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+      .envie-chips::-webkit-scrollbar{display:none}
+      .envie-chip{flex:none}
       .envie-chip{background:rgba(var(--w),.08);color:var(--text);border:1px solid rgba(var(--w),.14);
         border-radius:999px;padding:0 15px;min-height:44px;display:inline-flex;align-items:center;
         font-size:13.5px;cursor:pointer;font-weight:600}
@@ -198,21 +207,22 @@
   ];
 
   function injecterBloc() {
-    const cta = document.querySelector(".swipe-cta");
     const sec = document.getElementById("section-accueil");
     if (!sec || document.getElementById("envie-bloc")) return;
     injecterStyle();
     const bloc = document.createElement("div");
     bloc.className = "envie-bloc envie-bloc--banniere"; bloc.id = "envie-bloc";
+    // v5.1.10 : une seule carte « Qu'est-ce qu'on mange ? » regroupe les trois façons de
+    // trouver une idée — le swipe (qui avait sa propre bannière juste au-dessus), les
+    // envies et le quiz. L'accueil en proposait cinq, dispersées.
     bloc.innerHTML =
-      '<div class="envie-head"><b>' + T("🎭 De quoi t'as envie ?", "🎭 What are you craving?") + "</b>" +
+      '<div class="envie-head"><b>' + T("🍽️ Qu'est-ce qu'on mange ?", "🍽️ What's for dinner?") + "</b>" +
       '<span class="envie-actions"><button class="envie-quiz envie-act">🧩 ' + T("Quiz", "Quiz") + "</button></span></div>" +
+      '<button type="button" class="envie-swipe" onclick="ouvrirSwipe()">' + T("👉 Faire défiler les plats", "👉 Swipe through dishes") + "</button>" +
+      '<div class="envie-sous">' + T("ou dis-moi ton envie :", "or tell me your mood:") + "</div>" +
       '<div class="envie-chips">' + MOODS.map((m, i) => '<button class="envie-chip" data-i="' + i + '">' + m.e + " " + T(m.fr, m.en) + "</button>").join("") + "</div>";
-    // Ordre voulu : swipe → 🎯 Objectif → 🎭 De quoi t'as envie. On se place après
-    // le bloc Objectif s'il est déjà là, sinon juste après le bouton swipe (le bloc
-    // Objectif viendra alors s'insérer entre les deux).
-    const objBloc = document.getElementById("objectif-bloc");
-    const ancre = objBloc || cta;
+    // Ordre voulu : recette du jour → « Qu'est-ce qu'on mange ? » → 🎯 Objectif.
+    const ancre = document.getElementById("accueil-dujour-bloc") || document.getElementById("tip-bloc");
     if (ancre && ancre.parentNode) ancre.parentNode.insertBefore(bloc, ancre.nextSibling);
     else sec.insertBefore(bloc, sec.firstChild);
     bloc.querySelectorAll(".envie-chip").forEach((b) => b.addEventListener("click", () => {
