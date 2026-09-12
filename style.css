@@ -653,6 +653,95 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
 .fiche-nutri-top.nutri-E .fiche-nutri-badge { background: #e63e11; }
 .fiche-nutri-label { font-size: 11px; font-weight: 700; letter-spacing: .6px; color: var(--accent, #f48fb1); margin-top: 4px; }
 .fiche-photo-bloc { margin: 4px 0 14px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(var(--w),.08); background: var(--surface-1); }
+
+/* ===== v5.1.9 — la fiche dans l'ordre de la cuisine =====
+   La photo ouvre la fiche, à fond perdu (avant : elle arrivait après le titre, la
+   description et Partager/Image/Imprimer, et se retrouvait coupée en bas du 1er écran).
+   Le contenu défile dans #modal-resultat, et la barre d'actions reste posée en bas. */
+.modal-contenu.fiche-complete {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+.modal-contenu.fiche-complete > #modal-resultat {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 18px 14px;
+}
+.fiche-complete .fiche-photo-bloc {
+  margin: 0 -18px 14px;          /* annule le padding du conteneur : photo pleine largeur */
+  border: none;
+  border-bottom: 1px solid rgba(var(--w),.08);
+  border-radius: 20px 20px 0 0;  /* suit les coins de la modale */
+}
+/* Les quatre icônes du haut se posent maintenant sur la photo : fond dense pour rester lisibles. */
+.fiche-complete .modal-fermer,
+.fiche-complete .btn-favori-recette,
+.fiche-complete .btn-cuisine-recette,
+.fiche-complete .btn-agenda-recette {
+  background: rgba(20,16,24,.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 50%;
+  color: #fff;
+  z-index: 4;
+}
+/* Nutri-Score posé sur la photo plutôt qu'en gros rond centré sous le titre. */
+.fiche-complete .fiche-photo-bloc { position: relative; }
+.fiche-photo-incruste { position: absolute; left: 14px; bottom: 12px; }
+.fiche-photo-incruste .fiche-nutri-top {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0;
+  background: rgba(20,16,24,.55); backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.18); border-radius: 999px;
+  padding: 4px 14px 4px 4px;
+}
+.fiche-photo-incruste .fiche-nutri-badge { width: 34px; height: 34px; font-size: 19px; box-shadow: none; }
+.fiche-photo-incruste .fiche-nutri-label { margin: 0; color: #fff; font-size: 10px; }
+.fiche-barre {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+  border-top: 1px solid rgba(var(--w),.10);
+  background: rgba(var(--panel),.98);
+  border-radius: 0 0 20px 20px;
+}
+.fiche-barre button {
+  min-height: 48px;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.fiche-barre-principal {
+  flex: 1 1 auto;
+  border: none;
+  background: linear-gradient(135deg, var(--accent,#ff4d88), var(--accent-light,#ff6ba1));
+  color: #fff;
+}
+.fiche-barre-second {
+  flex: 1 1 auto;
+  border: 1px solid rgba(var(--w),.16);
+  background: rgba(var(--w),.10);
+  color: var(--text);
+}
+.fiche-barre-icone {
+  flex: none;
+  width: 52px;
+  border: 1px solid rgba(var(--w),.16);
+  background: rgba(var(--w),.10);
+  color: var(--text);
+  font-size: 19px;
+}
 .fiche-photo { width: 100%; height: auto; display: block; }
 .fiche-photo-fallback { display: none; font-size: 60px; text-align: center; padding: 38px 0; }
 .fiche-photo-bloc.noimg .fiche-photo { display: none; }

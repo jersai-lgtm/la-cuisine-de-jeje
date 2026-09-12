@@ -891,9 +891,33 @@ function afficherCoursesRecette(nom, personnes) {
   bloc.style.display = "block";
 }
 
-function htmlPrixCalories(nom, quantite) {
+// Photo d'une recette (v5.1.9 : la fiche l'affiche en haut, avant le titre).
+// `incruste` : petit bloc posé sur la photo (la fiche y met le Nutri-Score, qui prenait
+// 100 px de haut en pleine largeur sous le titre).
+function htmlPhotoRecette(nom, incruste) {
+  const data = recettes[nom] || {};
+  return `
+    <div class="fiche-photo-bloc">
+      <img class="fiche-photo" src="${typeof getImagePath === "function" ? getImagePath(nom) : ""}" alt="${nom}" loading="lazy" onerror="this.closest('.fiche-photo-bloc').classList.add('noimg')">
+      <span class="fiche-photo-fallback">${data.emoji || "🍽️"}</span>
+      ${incruste ? `<div class="fiche-photo-incruste">${incruste}</div>` : ""}
+    </div>`;
+}
+
+// opts (v5.1.9) : la fiche recette passe {sansPhoto:true, sansCourses:true} — chez elle la
+// photo est remontée tout en haut et « Ajouter aux courses » vit dans la barre fixe du bas.
+// Les autres vues (calculateur pizza, gaufres, brioche…) appellent sans options et gardent
+// le rendu complet.
+function htmlPrixCalories(nom, quantite, opts) {
+  opts = opts || {};
   const data = recettes[nom];
-  
+  const photoHTML = opts.sansPhoto ? "" : htmlPhotoRecette(nom);
+  const coursesHTML = opts.sansCourses ? "" : `
+            <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
+              🛒 Ajouter aux courses
+            </button>
+            <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>`;
+
   // === CALCUL AUTOMATIQUE depuis ingredients_prix.js ===
   // Si la fonction est dispo ET qu'on a un tableau, on calcule en live à partir des ingrédients
   if (typeof calculerPrixCaloriesRecette === "function" && data) {
@@ -948,14 +972,8 @@ function htmlPrixCalories(nom, quantite) {
                 <div class="pc-label">Par ${unite}</div>
               </div>
             </div>
-            <div class="fiche-photo-bloc">
-              <img class="fiche-photo" src="${typeof getImagePath === "function" ? getImagePath(nom) : ""}" alt="${nom}" loading="lazy" onerror="this.closest('.fiche-photo-bloc').classList.add('noimg')">
-              <span class="fiche-photo-fallback">${data.emoji || "🍽️"}</span>
-            </div>
-            <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
-              🛒 Ajouter aux courses
-            </button>
-            <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
+            ${photoHTML}
+            ${coursesHTML}
           `;
         }
       }
@@ -966,12 +984,7 @@ function htmlPrixCalories(nom, quantite) {
   const pc = prixCalories[nom];
   // Si pas d'entrée prixCalories : on affiche QUAND MÊME le bouton "Liste de courses"
   if (!pc) {
-    return `
-      <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
-        🛒 Ajouter aux courses
-      </button>
-      <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
-    `;
+    return coursesHTML;
   }
   let ratio = 1;
   if (data && data.fixe) {
@@ -1003,10 +1016,7 @@ function htmlPrixCalories(nom, quantite) {
         <div class="pc-label">Par ${pc.unite}</div>
       </div>
     </div>
-    <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
-      🛒 Ajouter aux courses
-    </button>
-    <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
+    ${coursesHTML}
   `;
 }
 
@@ -1923,24 +1933,21 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
 
   // En-tête : Nutri-Score en vedette si disponible, sinon emoji (repli)
   const _nutriLettre = (typeof nutriLettreRecette === "function") ? nutriLettreRecette(nom) : null;
-  const enteteVisuelHTML = _nutriLettre
+  // v5.1.9 : le Nutri-Score se pose sur la photo ; l'emoji (recettes sans Nutri-Score,
+  // cocktails par exemple) reste au-dessus du titre.
+  const nutriIncrusteHTML = _nutriLettre
     ? `<div class="fiche-nutri-top nutri-${_nutriLettre}" title="Nutri-Score ${_nutriLettre} — qualité nutritionnelle"><div class="fiche-nutri-badge">${_nutriLettre}</div><div class="fiche-nutri-label">NUTRI-SCORE</div></div>`
-    : `<div class="fiche-emoji">${data.emoji}</div>`;
+    : "";
+  const enteteVisuelHTML = _nutriLettre ? "" : `<div class="fiche-emoji">${data.emoji}</div>`;
 
   document.getElementById("modal-resultat").innerHTML = `
     ${(window._ficheNavStack && window._ficheNavStack.length) ? `<button class="fiche-retour" onclick="history.back()">‹ Retour</button>` : ""}
+    ${htmlPhotoRecette(nom, nutriIncrusteHTML)}
     <div class="fiche-modal-header">
       ${enteteVisuelHTML}
       <h2 class="fiche-titre">${typeof drapeau === "function" ? drapeau(data.pays, 22) + " " : ""}${nomPropre}</h2>
       <p class="fiche-desc">${data.description}</p>
-      <div class="fiche-partage-actions" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:4px">
-        <button type="button" onclick="partagerRecette('${nom}')" aria-label="Partager cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">📤 Partager</button>
-        <button type="button" onclick="partagerImageRecette('${nom}')" aria-label="Partager une image de la recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">📸 Image</button>
-        <button type="button" onclick="imprimerRecette('${nom}', ${personnes})" aria-label="Imprimer cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">🖨️ Imprimer</button>
-      </div>
     </div>
-    ${htmlPrixCalories(nom, personnes)}
-    ${typeof recettesLieesHTML === "function" ? recettesLieesHTML(nom, personnes) : ""}
     <div class="fiche-meta">
       <span>⏱ ${data.temps}</span>
       <span>${data.niveau}</span>
@@ -1948,14 +1955,15 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
       ${infoSaison}
       ${infoHistorique}
     </div>
+    ${htmlPrixCalories(nom, personnes, { sansPhoto: true, sansCourses: true })}
     <div class="fiche-section">
       <h2 class="fiche-section-titre">🛒 Ingrédients</h2>
       <div class="fiche-ingredients-liste">${listeIngredients}</div>
     </div>
+    ${typeof recettesLieesHTML === "function" ? recettesLieesHTML(nom, personnes) : ""}
     ${typeof accordBoissonHTML === "function" ? accordBoissonHTML(nom) : ""}
     <div class="fiche-section">
       <h2 class="fiche-section-titre">📋 Étapes</h2>
-      <button type="button" onclick="ouvrirModeCuisson('${nom}')" aria-label="Lancer le mode cuisson pas à pas" style="display:block;width:100%;box-sizing:border-box;margin:0 0 14px;background:rgba(255,107,161,.14);color:#ff8fb3;border:1.5px solid rgba(255,107,161,.5);border-radius:14px;padding:13px;font-size:16px;font-weight:600;cursor:pointer">👨‍🍳 Lancer le mode cuisson</button>
       <div class="fiche-etapes-liste">${listeEtapes}</div>
     </div>
     <div class="fiche-claude-section" id="fiche-claude-${nom}">
@@ -1971,13 +1979,32 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
           <button onclick="envoyerQuestionClaude('${nom}')">➤</button>
         </div>
       </div>
+    </div>
+    <div class="fiche-partage-actions" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:18px 0 2px">
+      <button type="button" onclick="partagerRecette('${nom}')" aria-label="Partager cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">📤 Partager</button>
+      <button type="button" onclick="partagerImageRecette('${nom}')" aria-label="Partager une image de la recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">📸 Image</button>
+      <button type="button" onclick="imprimerRecette('${nom}', ${personnes})" aria-label="Imprimer cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">🖨️ Imprimer</button>
     </div>`;
 
   document.getElementById("modal-calc").classList.add("visible");
+  // Barre d'actions fixe (v5.1.9) : les deux gestes qu'on fait vraiment sur une fiche —
+  // lancer la cuisson, envoyer les ingrédients dans la liste — et le partage à portée.
+  // Le gros bouton « Lancer le mode cuisson » était à 2,6 écrans du haut de la fiche.
+  const barreFiche = document.getElementById("fiche-barre");
+  if (barreFiche) {
+    barreFiche.hidden = false;
+    const b1 = document.getElementById("fb-cuisiner");
+    const b2 = document.getElementById("fb-courses");
+    const b3 = document.getElementById("fb-partage");
+    if (b1) b1.onclick = function () { ouvrirModeCuisson(nom); };
+    if (b2) b2.onclick = function () { ajouterRecetteAuxCourses(nom); };
+    if (b3) b3.onclick = function () { partagerRecette(nom); };
+  }
   // v258.3 : on ne remonte en haut qu'à l'ouverture initiale de la fiche.
   // Sur un +/- (recalcul), personnesOverride est un nombre → on garde la position.
   if (typeof personnesOverride !== "number") {
-    document.getElementById("modal-resultat").parentElement.scrollTop = 0;
+    // v5.1.9 : c'est #modal-resultat qui défile (la barre d'actions reste posée en bas).
+    document.getElementById("modal-resultat").scrollTop = 0;
   }
 
   // Bouton favori

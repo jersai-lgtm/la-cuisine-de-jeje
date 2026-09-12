@@ -3542,6 +3542,10 @@ function fermerModal() {
   const inputP = document.getElementById("personnes");
   if (inputP) delete inputP.dataset.modified;
   document.getElementById("modal-calc").classList.remove("visible");
+  // La barre d'actions de la fiche (v5.1.9) porte les gestes de LA recette ouverte :
+  // on la remasque en sortant pour qu'elle ne réapparaisse pas avec de vieux handlers.
+  const barreFiche = document.getElementById("fiche-barre");
+  if (barreFiche) barreFiche.hidden = true;
   // Réinitialiser le sélecteur de personnes
   _recetteActuelleModal = null;
   const selecteur = document.getElementById("modal-selecteur-personnes");
