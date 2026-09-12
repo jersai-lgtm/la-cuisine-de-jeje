@@ -125,8 +125,8 @@ function htmlSectionAstuces(recetteKey) {
         '<span id="astuces-compte" style="font-size:12px;color:var(--accent-soft,#ff8fb3);background:rgba(var(--accent-rgb),.18);padding:2px 8px;border-radius:20px">0</span>' +
       '</div>' +
       '<div style="display:flex;gap:8px;margin-bottom:12px">' +
-        '<button onclick="ouvrirModalAstuce(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,var(--accent,#ff4d88),var(--accent-soft,#ff8fb3));color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">✍️ Commentaire</button>' +
-        '<button onclick="ouvrirSelecteurPhoto(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,#5a6ee0,#8a9bf0);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">📷 Photo</button>' +
+        '<button onclick="ouvrirModalAstuce(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,var(--accent,#ff4d88),var(--accent-soft,#ff8fb3));color:#fff;border:none;border-radius:12px;padding:11px;min-height:44px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">✍️ Commentaire</button>' +
+        '<button onclick="ouvrirSelecteurPhoto(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,#5a6ee0,#8a9bf0);color:#fff;border:none;border-radius:12px;padding:11px;min-height:44px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">📷 Photo</button>' +
       '</div>' +
       '<div id="photos-galerie" style="margin-bottom:12px"></div>' +
       '<div id="astuces-liste"><p style="color:#88858f;font-size:13px;text-align:center">Chargement…</p></div>' +

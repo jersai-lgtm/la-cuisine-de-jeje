@@ -1934,9 +1934,9 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
       <h2 class="fiche-titre">${typeof drapeau === "function" ? drapeau(data.pays, 22) + " " : ""}${nomPropre}</h2>
       <p class="fiche-desc">${data.description}</p>
       <div class="fiche-partage-actions" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:4px">
-        <button type="button" onclick="partagerRecette('${nom}')" aria-label="Partager cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer">📤 Partager</button>
-        <button type="button" onclick="partagerImageRecette('${nom}')" aria-label="Partager une image de la recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer">📸 Image</button>
-        <button type="button" onclick="imprimerRecette('${nom}', ${personnes})" aria-label="Imprimer cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer">🖨️ Imprimer</button>
+        <button type="button" onclick="partagerRecette('${nom}')" aria-label="Partager cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">📤 Partager</button>
+        <button type="button" onclick="partagerImageRecette('${nom}')" aria-label="Partager une image de la recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">📸 Image</button>
+        <button type="button" onclick="imprimerRecette('${nom}', ${personnes})" aria-label="Imprimer cette recette" style="background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer">🖨️ Imprimer</button>
       </div>
     </div>
     ${htmlPrixCalories(nom, personnes)}
@@ -2030,7 +2030,7 @@ function htmlTableauCrepesColonnes(l) {
     <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
     <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
     <tr><th>💧 Eau</th><td>${l.eau}</td></tr>
-    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
     <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
 }
 

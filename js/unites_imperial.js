@@ -79,7 +79,7 @@
     s.textContent = `
       .unit-toggle-btn{display:inline-flex;align-items:center;gap:6px;margin:0 auto 10px;
         background:rgba(124,200,255,.12);color:var(--text,#eaeaea);border:1px solid rgba(124,200,255,.35);
-        border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;
+        border-radius:999px;padding:0 16px;min-height:44px;font-size:13.5px;font-weight:600;cursor:pointer;
         font-family:system-ui,-apple-system,sans-serif;transition:background .15s}
       .unit-toggle-btn:hover{background:rgba(124,200,255,.22)}
       .unit-toggle-wrap{display:flex;justify-content:center}

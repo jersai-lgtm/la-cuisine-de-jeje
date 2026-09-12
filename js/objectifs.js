@@ -596,7 +596,7 @@
       .obj-stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:11px}
       .obj-stat{background:rgba(var(--w),.07);border:1px solid rgba(var(--w),.12);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--text)}
       .obj-stat b{color:var(--accent);font-weight:800}
-      .obj-cta{width:100%;background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);border-radius:12px;padding:10px;font-size:13.5px;font-weight:700;cursor:pointer}
+      .obj-cta{width:100%;min-height:44px;background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);border-radius:12px;padding:10px 12px;font-size:14px;font-weight:700;cursor:pointer}
       .obj-cta:hover{background:rgba(var(--accent-rgb),.22)}
       .obj-kval{font-size:36px;font-weight:800;color:var(--accent);line-height:1}
       .obj-step{width:40px;height:40px;border-radius:11px;border:1.5px solid rgba(var(--w),.2);background:rgba(var(--w),.06);color:var(--text);font-size:22px;font-weight:700;cursor:pointer;flex:none;line-height:1}

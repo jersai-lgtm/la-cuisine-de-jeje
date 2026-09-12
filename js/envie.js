@@ -89,10 +89,12 @@
       .envie-head b{color:var(--text);font-size:15px}
       .envie-actions{display:flex;gap:6px;flex-wrap:wrap}
       .envie-act{background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);
-        border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer}
+        border-radius:999px;padding:0 14px;min-height:44px;display:inline-flex;align-items:center;
+        font-size:13px;font-weight:700;cursor:pointer}
       .envie-chips{display:flex;flex-wrap:wrap;gap:7px}
       .envie-chip{background:rgba(var(--w),.08);color:var(--text);border:1px solid rgba(var(--w),.14);
-        border-radius:999px;padding:7px 12px;font-size:13px;cursor:pointer;font-weight:600}
+        border-radius:999px;padding:0 15px;min-height:44px;display:inline-flex;align-items:center;
+        font-size:13.5px;cursor:pointer;font-weight:600}
       .envie-chip:hover{background:rgba(var(--accent-rgb),.15)}
       .envie-bloc--banniere{background:linear-gradient(95deg,#c94fd4,#7a6ff0);border:none}
       .envie-bloc--banniere .envie-head b{color:#fff}

@@ -108,7 +108,7 @@
       "#fiche-similaires .sim-img{width:100%;height:78px;object-fit:cover;display:block;background:var(--surface-1)}" +
       "#fiche-similaires .sim-nutri{position:absolute;top:6px;left:6px;right:auto;z-index:2;transform:scale(.8);transform-origin:top left}" +
       "#fiche-similaires .sim-nom{display:block;padding:7px 8px 2px;font-size:12px;color:#e7e4ec;line-height:1.3}" +
-      "#fiche-similaires .sim-meta{display:block;padding:0 8px 7px;font-size:10px;font-weight:600;color:#bdb9c6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}";
+      "#fiche-similaires .sim-meta{display:block;padding:0 8px 7px;font-size:12px;font-weight:600;color:#bdb9c6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}";
     document.head.appendChild(st);
   }
 

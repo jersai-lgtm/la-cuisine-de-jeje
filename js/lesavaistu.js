@@ -37,8 +37,8 @@
         background:rgba(var(--accent-rgb),.10);border:1px solid rgba(var(--accent-rgb),.30);
         border-radius:14px;padding:10px 12px;font-family:system-ui,-apple-system,sans-serif}
       #tip-bloc .tip-txt{flex:1;min-width:0;color:var(--text);font-size:13.5px;line-height:1.35}
-      #tip-bloc .tip-next,#tip-bloc .tip-close{flex:none;border:none;cursor:pointer;border-radius:8px;
-        width:30px;height:30px;font-size:14px;background:rgba(var(--w),.10);color:var(--text)}
+      #tip-bloc .tip-next,#tip-bloc .tip-close{flex:none;border:none;cursor:pointer;border-radius:10px;
+        width:44px;height:44px;font-size:15px;background:rgba(var(--w),.10);color:var(--text)}
       #tip-bloc .tip-close{font-size:12px;color:var(--text-3)}
     `;
     document.head.appendChild(s);
