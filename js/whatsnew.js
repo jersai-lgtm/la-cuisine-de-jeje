@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "5.2.1",
+    titre: "🧭 Une appli plus simple à prendre en main",
+    texte: "Grand ménage côté confort ! 🧭 Fini les deux menus qui se marchaient dessus : une seule barre en bas, la même partout — 🏠 Accueil, 🍳 Recettes, ⭐ Favoris, 📅 Menus et 🥫 Garde-manger. Les recettes sont à un appui depuis n'importe où. 👤 En haut, un avatar regroupe la connexion, le thème, la couleur, la langue, l'aide, tes stats et « Ajouter une recette » : l'en-tête est passé de 191 à 65 px, soit une recette de plus visible dès l'ouverture. 🔍 Tout est aussi plus lisible et plus facile à viser : textes agrandis (les petites cartes de l'accueil surtout) et boutons à 44 px — à commencer par les − / + des portions, qu'on touche les doigts pleins de farine. 📖 La fiche recette s'ouvre maintenant sur sa photo, puis le titre, les portions et les ingrédients, avec une barre toujours visible en bas : 👨‍🍳 Cuisiner, 🛒 Courses et le partage. 🏡 Et l'accueil s'allège : une seule carte « Qu'est-ce qu'on mange ? » réunit le swipe, les envies et le quiz. Bonne cuisine ! 👨‍🍳"
+  },
+  {
     v: "4.10.9",
     titre: "🖨️ Imprime tes recettes + recherche plus futée",
     texte: "Trois nouveautés d'un coup ! 🖨️ Un bouton « Imprimer » débarque dans chaque fiche : tu obtiens une belle page A4 avec les ingrédients pour le nombre de convives que tu as choisi et les étapes numérotées — parfait à poser sur le plan de travail (ou à enregistrer en PDF). 🔍 La recherche fouille maintenant DANS les étapes : tape « sans four », « pain rassis » ou « anti-gaspi » et tu trouveras les recettes qui vont avec, même si ces mots ne sont pas dans le titre. ⚡ Et l'appli s'ouvre nettement plus vite : elle a maigri d'un tiers, surtout appréciable sur téléphone. Bonne cuisine ! 👨‍🍳"
