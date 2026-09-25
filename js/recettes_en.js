@@ -120690,6 +120690,1270 @@ window.RECETTES_EN = {
     "detail": "Bake for twenty-five minutes at 200°C, turning them halfway."
    }
   ]
+ },
+ "cremepatissieremaison": {
+  "nom": "Pastry Cream",
+  "description": "The cream that fills everything: éclairs, tarts, mille-feuilles. Milk, yolks, sugar and starch cooked until thick, then cooled flat to avoid lumps.",
+  "etapes": [
+   {
+    "titre": "Infuse",
+    "detail": "Bring the milk to a simmer with the split, scraped vanilla pod, then steep for ten minutes off the heat."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the yolks with the sugar until pale."
+   },
+   {
+    "titre": "Starch",
+    "detail": "Add the cornflour and whisk until no lumps remain."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Pour a third of the hot milk over the yolks while whisking, so they do not scramble."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Return everything to the pan and cook over medium heat, whisking constantly, to a full boil."
+   },
+   {
+    "titre": "Count",
+    "detail": "Boil for a full minute: this cooks the starch out and removes the floury taste."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Off the heat, beat in the cold butter: it smooths and protects the cream."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Spread on a cold tray, cover on the surface and refrigerate at once."
+   }
+  ]
+ },
+ "cremeanglaisemaison": {
+  "nom": "Crème Anglaise",
+  "description": "A pouring cream of milk and yolks, cooked just below the setting point. It coats the spoon and serves as a sauce, an ice cream base and a floating island.",
+  "etapes": [
+   {
+    "titre": "Infuse",
+    "detail": "Heat milk, cream and split vanilla to a simmer, then cover and steep."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the yolks and sugar to the ribbon, but no further: over-whipped, the mix foams and hides the cooking point."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Pour the strained hot milk over the yolks, stirring."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Return to low heat and stir with a spatula in figures of eight, never whisking."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Stop at 83°C, or as soon as it coats the spatula and a finger drawn through leaves a clean line."
+   },
+   {
+    "titre": "Stop",
+    "detail": "Pour straight into a cold container to stop the cooking."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a sieve, which rescues any specks of cooked yolk."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cool quickly and keep refrigerated, covered on the surface."
+   }
+  ]
+ },
+ "crememousseline": {
+  "nom": "Mousseline Cream",
+  "description": "Pastry cream whipped with butter, at once firm and airy. This is what holds a fraisier upright without slumping.",
+  "etapes": [
+   {
+    "titre": "Pastry cream",
+    "detail": "Make a classic pastry cream and beat half the butter into it while hot."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cover on the surface and cool to room temperature, no colder."
+   },
+   {
+    "titre": "Soft butter",
+    "detail": "Beat the remaining butter to a soft paste: it must be at exactly the same temperature as the cream."
+   },
+   {
+    "titre": "Same temperature",
+    "detail": "That is the whole secret: cold butter on warm cream makes the whole thing split."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the soft butter, then add the cream a spoonful at a time, beating at medium speed."
+   },
+   {
+    "titre": "Check",
+    "detail": "The cream should pale, double in volume and turn smooth and glossy."
+   },
+   {
+    "titre": "Use",
+    "detail": "Use immediately with a piping bag: it firms up as it cools."
+   }
+  ]
+ },
+ "cremediplomate": {
+  "nom": "Diplomat Cream",
+  "description": "Pastry cream set with gelatine then lightened with whipped cream. Lighter than mousseline, it fills fruit tarts and choux without weighing them down.",
+  "etapes": [
+   {
+    "titre": "Gelatine",
+    "detail": "Soak the gelatine in very cold water for about ten minutes."
+   },
+   {
+    "titre": "Pastry cream",
+    "detail": "Make the pastry cream and take it off the heat."
+   },
+   {
+    "titre": "Dissolve",
+    "detail": "Squeeze out the gelatine and dissolve it into the still-hot cream."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cover on the surface and let it cool until supple but not yet set."
+   },
+   {
+    "titre": "Whipped cream",
+    "detail": "Whip the cold cream to soft peaks, definitely not firm."
+   },
+   {
+    "titre": "Lighten",
+    "detail": "Loosen the pastry cream with a whisk, then fold in the whipped cream in three additions."
+   },
+   {
+    "titre": "Set",
+    "detail": "Fill immediately and chill for at least two hours."
+   }
+  ]
+ },
+ "cremedamande": {
+  "nom": "Almond Cream",
+  "description": "Butter, sugar, ground almonds and egg in almost equal parts. It puffs as it bakes and fills galette des rois, Bourdaloue tart and fruit tarts.",
+  "etapes": [
+   {
+    "titre": "Soften",
+    "detail": "Beat the butter to a soft paste with a spatula, without melting it."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Add the sugar and mix without trying to aerate: an over-whipped almond cream collapses in the oven."
+   },
+   {
+    "titre": "Almonds",
+    "detail": "Work in the ground almonds."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Add the egg at room temperature: cold, it would split the butter."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the rum, or vanilla, or a zest depending on the use."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and chill for an hour: it pipes more cleanly."
+   }
+  ]
+ },
+ "cremechiboust": {
+  "nom": "Chiboust Cream",
+  "description": "Gelatine-set pastry cream lightened with Italian meringue, created for the Saint-Honoré. Extremely airy, it must be used warm, before it sets.",
+  "etapes": [
+   {
+    "titre": "Gelatine",
+    "detail": "Set the gelatine to soak in cold water."
+   },
+   {
+    "titre": "Pastry cream",
+    "detail": "Make a pastry cream with the milk, yolks, a third of the sugar and the cornflour."
+   },
+   {
+    "titre": "Set",
+    "detail": "Dissolve the squeezed gelatine into the hot cream and keep it warm."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Cook the remaining sugar with a little water to 118°C."
+   },
+   {
+    "titre": "Meringue",
+    "detail": "Whip the whites and pour in the syrup in a stream, then beat until the meringue cools to lukewarm."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Whisk a third of the meringue into the pastry cream to loosen it, then fold in the rest."
+   },
+   {
+    "titre": "Quickly",
+    "detail": "Use immediately: the gelatine sets within minutes and the cream becomes unworkable."
+   }
+  ]
+ },
+ "meringueitalienne": {
+  "nom": "Italian Meringue",
+  "description": "Whipped whites cooked by a syrup at 118°C. Firm, glossy and stable for hours: this is what tops a lemon tart and takes a blowtorch.",
+  "etapes": [
+   {
+    "titre": "Syrup",
+    "detail": "Put the sugar and water in a small pan and heat over medium, without stirring."
+   },
+   {
+    "titre": "Thermometer",
+    "detail": "Clip in a thermometer: at 110°C, start whipping the whites to soft peaks."
+   },
+   {
+    "titre": "Whites",
+    "detail": "The whites should be foamy but not firm when the syrup reaches temperature."
+   },
+   {
+    "titre": "118 degrees",
+    "detail": "Take the syrup off at exactly 118°C: lower and the meringue runs, higher and it turns brittle."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the boiling syrup in a thin stream down the side of the bowl, avoiding the whisk."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Keep whipping at medium speed until completely cold, seven to eight minutes."
+   },
+   {
+    "titre": "Bird's beak",
+    "detail": "It is ready when it forms a firm bird's beak on the whisk and the bowl is cold."
+   }
+  ]
+ },
+ "meringuesuisse": {
+  "nom": "Swiss Meringue",
+  "description": "Whites and sugar warmed together over a bain-marie then whipped. Denser than French, simpler than Italian: ideal for decorations and shells.",
+  "etapes": [
+   {
+    "titre": "Combine",
+    "detail": "Put the whites and sugar together in a spotlessly clean, dry bowl."
+   },
+   {
+    "titre": "Degrease",
+    "detail": "Rub the bowl with lemon first: the slightest trace of fat stops the whites rising."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "Set over a simmering bain-marie and whisk gently and continuously."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat to 55-60°C, or until the sugar is completely dissolved between your fingers."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Take off the heat and whip at full speed until completely cold."
+   },
+   {
+    "titre": "Check",
+    "detail": "It should be very firm, smooth and glossy, and hold on an upturned whisk."
+   },
+   {
+    "titre": "Use",
+    "detail": "Pipe and dry in a 90°C oven for two hours, or use raw as decoration."
+   }
+  ]
+ },
+ "ganachemontee": {
+  "nom": "Whipped Ganache",
+  "description": "Chocolate and cream emulsified, rested overnight then whipped. The result is a light, stable cream that pipes like chantilly but never collapses.",
+  "etapes": [
+   {
+    "titre": "Melt",
+    "detail": "Melt the chocolate over a bain-marie or in the microwave in twenty-second bursts."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Bring a third of the cream to a simmer with the honey, which keeps the ganache supple."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour the hot cream onto the chocolate in three additions, stirring in small circles from the centre: the emulsion should turn glossy and elastic."
+   },
+   {
+    "titre": "Cold cream",
+    "detail": "Add the rest of the cream, cold this time, and stir without incorporating air."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover on the surface and rest for twelve hours in the fridge — this overnight rest is not negotiable."
+   },
+   {
+    "titre": "Whip",
+    "detail": "The next day, whip with a mixer at medium speed until it thickens."
+   },
+   {
+    "titre": "Don't overbeat",
+    "detail": "Stop as soon as it holds: over-whipped, it grains and turns granular, with no way back."
+   }
+  ]
+ },
+ "glacagemiroir": {
+  "nom": "Mirror Glaze",
+  "description": "The glossy glaze of mousse cakes, poured at 35°C over a cake straight from the freezer. It all comes down to two temperatures and to having no bubbles.",
+  "etapes": [
+   {
+    "titre": "Gelatine",
+    "detail": "Soak the gelatine in plenty of very cold water."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Bring the sugar and water to 103°C on a thermometer."
+   },
+   {
+    "titre": "Condensed milk",
+    "detail": "Off the heat, add the condensed milk and the squeezed gelatine."
+   },
+   {
+    "titre": "Chocolate",
+    "detail": "Pour over the chopped white chocolate and wait a minute before stirring."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend with a stick blender, keeping the head submerged and tilted: this avoids bubbles, the mirror's chief enemy."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a sieve, cover on the surface and rest for a few hours in the fridge."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Warm gently to exactly 35°C before glazing."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour in one movement over the still-frozen cake on a rack, without going over it twice."
+   }
+  ]
+ },
+ "patesucree": {
+  "nom": "Sweet Shortcrust Pastry",
+  "description": "The pastry chef's tart base: sweeter and finer than sablée, made by creaming the butter and enriched with ground almonds. It snaps cleanly.",
+  "etapes": [
+   {
+    "titre": "Cream",
+    "detail": "Beat the soft butter with the icing sugar to a smooth cream, without aerating it."
+   },
+   {
+    "titre": "Almonds",
+    "detail": "Add the ground almonds and the salt."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Work in the room-temperature egg until fully absorbed."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Add the flour all at once and mix as little as possible: stop as soon as it comes together."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Flatten into a disc, wrap and rest for two hours in the fridge — unrested pastry shrinks."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll between two sheets of baking paper, three millimetres thick."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line the tin without stretching the pastry, prick the base, and chill again for thirty minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Blind bake for twenty minutes at 170°C with beans, then ten minutes without."
+   }
+  ]
+ },
+ "pateachoux": {
+  "nom": "Choux Pastry",
+  "description": "The only pastry cooked twice: first in the pan to dry it out, then in the oven where it puffs. It makes choux buns, éclairs, chouquettes and gougères.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Bring water, butter, salt and sugar to a rolling boil, with the butter fully melted."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Off the heat, tip in the flour all at once and beat hard with a spatula."
+   },
+   {
+    "titre": "Dry out",
+    "detail": "Return to medium heat and stir for a minute or two: the paste should come away and leave a film on the base."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Transfer to a bowl and stir for a minute to release the steam."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Add the eggs one at a time, beating fully between each: the paste splits, then comes back."
+   },
+   {
+    "titre": "The ribbon",
+    "detail": "Stop when the paste forms a soft V falling slowly from the spatula — that is the only real test."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Pipe onto a tray, well spaced, and smooth the peaks with a wet finger."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 20 min at 180°C without EVER opening the oven, then 10 more with the door ajar to dry."
+   }
+  ]
+ },
+ "paincocottesanspetrissage": {
+  "nom": "No-Knead Dutch Oven Bread",
+  "description": "A very wet dough that is never kneaded: time does the work. Baked in a closed casserole, it gives a thick crust and an open crumb.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Stir flour, salt, yeast and water together for thirty seconds: the dough should be sticky and shapeless, which is normal."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Cover and leave for eighteen hours at room temperature, untouched."
+   },
+   {
+    "titre": "Check",
+    "detail": "The dough should be bubbled on the surface and more than doubled."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Tip it onto a floured surface and fold it over itself two or three times, without kneading."
+   },
+   {
+    "titre": "Relax",
+    "detail": "Rest for two hours on a well-floured cloth, seam down."
+   },
+   {
+    "titre": "Heat the pot",
+    "detail": "Put the empty casserole and its lid in the oven at 240°C for thirty minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Tip the dough into the scorching pot, cover and bake for thirty minutes."
+   },
+   {
+    "titre": "Crust",
+    "detail": "Remove the lid and give it fifteen more minutes, until the crust is deeply golden."
+   }
+  ]
+ },
+ "tortillasblemaison": {
+  "nom": "Homemade Flour Tortillas",
+  "description": "Flour, hot water and a fat, with no yeast: supple flatbreads that fold without cracking. Nothing like the shop-bought kind.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Mix flour, salt and baking powder, then rub in the oil with your fingertips."
+   },
+   {
+    "titre": "Hot water",
+    "detail": "Pour in hot — not boiling — water and mix: the heat relaxes the gluten and makes the dough biddable."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead for five minutes to a smooth elastic ball."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and rest for thirty minutes: without it, the dough springs back as you roll."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide into equal balls and roll them between your palms."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll each ball very thin, turning it a quarter turn between passes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook thirty seconds a side in a very hot dry pan: brown blisters should appear."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Stack the cooked tortillas under a cloth: the steam keeps them supple."
+   }
+  ]
+ },
+ "patesfraichesmaison": {
+  "nom": "Fresh Egg Pasta",
+  "description": "One hundred grams of flour per egg, and nothing else. The whole difficulty lies in long kneading and a proper rest, which make the dough smooth and elastic.",
+  "etapes": [
+   {
+    "titre": "Well",
+    "detail": "Heap the flour into a well on the worktop and break the eggs into the centre."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Beat the eggs with a fork, gradually drawing in flour from the edges."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead for a good ten minutes, pushing with the heel of your hand: the dough should turn smooth, firm and almost elastic."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and rest for an hour at room temperature: the gluten relaxes and rolling becomes possible."
+   },
+   {
+    "titre": "Laminate",
+    "detail": "Roll through a pasta machine, going down the settings one by one, flouring lightly."
+   },
+   {
+    "titre": "Transparency",
+    "detail": "The sheet is thin enough when you can make out your hand through it."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut into tagliatelle or sheets, flour them and let them dry for ten minutes on a cloth."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for two to three minutes in plenty of boiling salted water — fresh pasta cooks very fast."
+   }
+  ]
+ },
+ "patewonton": {
+  "nom": "Wonton Wrappers",
+  "description": "Translucent squares of dough, thinner than paper, used for Chinese dumplings, fried wontons and soups. Flour, egg, water.",
+  "etapes": [
+   {
+    "titre": "Knead",
+    "detail": "Mix flour, salt, egg and water, then knead for ten minutes to a very firm dough — firmer than bread dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and rest for an hour: without it, the dough cannot be rolled that thin."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll with a pin or a pasta machine until almost transparent."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Dust generously with cornflour — not plain flour — so the squares don't stick together."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut eight-centimetre squares with a knife or a wheel."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Stack with cornflour between them, and cover with a damp cloth so they don't dry out."
+   },
+   {
+    "titre": "Use",
+    "detail": "Fill and fold at once, moistening the edges with a fingertip."
+   }
+  ]
+ },
+ "fondbrun": {
+  "nom": "Brown Stock",
+  "description": "Veal bones roasted in the oven then simmered for six hours with aromatics. This is the base of every brown sauce in the repertoire.",
+  "etapes": [
+   {
+    "titre": "Roast",
+    "detail": "Roast the bones at 220°C for forty minutes, turning them: they must be properly brown, that is where the colour comes from."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add roughly cut carrot, onion and celery and roast for twenty minutes more."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Brush with tomato paste and return for ten minutes: it caramelises and adds depth."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Deglaze the tray with a little hot water, scraping up everything, and tip it into the pot."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover generously with COLD water: hot water would set the impurities."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a bare simmer and skim carefully for the first quarter of an hour."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer uncovered for six hours, never boiling, topping up the water if needed."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain without pressing, degrease when cold, and reduce further for a stronger stock."
+   }
+  ]
+ },
+ "fumetdepoisson": {
+  "nom": "Fish Fumet",
+  "description": "White fish bones and trimmings sweated in butter then moistened with white wine. Twenty minutes is enough — beyond that it turns bitter and cloying.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the bones at length in cold water and remove every trace of blood: it clouds and embitters."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the sliced onion and leek white in butter, without colouring."
+   },
+   {
+    "titre": "Bones",
+    "detail": "Add the chopped bones and sweat them, covered, for five minutes."
+   },
+   {
+    "titre": "White wine",
+    "detail": "Pour in the white wine and let the alcohol cook off for two minutes."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover with cold water and add the thyme."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a bare simmer and skim: it must never boil."
+   },
+   {
+    "titre": "Twenty minutes",
+    "detail": "Give it twenty minutes, no more: that is exactly when the fumet has taken everything without losing anything."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain gently through muslin, without pressing."
+   }
+  ]
+ },
+ "courtbouillon": {
+  "nom": "Court-Bouillon",
+  "description": "An acidulated broth of vegetables and aromatics for poaching fish and shellfish. It must cool before the fish goes in, or the flesh seizes.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Slice the carrot, onion and leek thinly."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Put them in a large pan with the water, white wine and vinegar."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the bay, thyme and a celery stick if you have one."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bring to a simmer and cook uncovered for twenty minutes."
+   },
+   {
+    "titre": "Pepper",
+    "detail": "Add the peppercorns only in the last five minutes, or they turn acrid."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely before adding the fish: hot liquid seizes the flesh and splits it."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Submerge the fish in the cold court-bouillon, then bring very gently to a simmer and turn off the heat."
+   }
+  ]
+ },
+ "glacedeviande": {
+  "nom": "Meat Glaze",
+  "description": "Brown stock reduced to a syrupy, coating glaze. A spoonful lifts any sauce: concentrated flavour, kept as ice cubes in the freezer.",
+  "etapes": [
+   {
+    "titre": "Stock",
+    "detail": "Start with a strong brown stock, strained and degreased when cold."
+   },
+   {
+    "titre": "Degrease",
+    "detail": "Carefully lift off the set layer of fat: it would stop the reduction coating."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce over medium heat in a wide pan, uncovered."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Move to a smaller pan as the volume drops: the reduction stays even."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Stop when the liquid coats the spoon and holds a clean line drawn with a finger."
+   },
+   {
+    "titre": "Never salt",
+    "detail": "Never salt a meat glaze: the salt concentrates too and would make it inedible."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Pour into an ice cube tray and freeze: one cube per sauce."
+   }
+  ]
+ },
+ "bouillondepoule": {
+  "nom": "Chicken Broth",
+  "description": "A carcass, cold water, vegetables and three hours of simmering. The broth that mends everything, and the base of veloutés and white sauces.",
+  "etapes": [
+   {
+    "titre": "Carcass",
+    "detail": "Use a raw carcass or the remains of a roast chicken, bones included."
+   },
+   {
+    "titre": "Cold water",
+    "detail": "Cover with cold water and heat very gently: the slow rise is what gives a clear broth."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Patiently skim off all the grey foam that rises in the first quarter of an hour."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Then add the vegetables, the onion studded with cloves and the thyme."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Keep a barely perceptible simmer for three hours, not fully covered."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain without pressing the vegetables."
+   },
+   {
+    "titre": "Degrease",
+    "detail": "Cool quickly and lift off the set fat the next day, or keep it for cooking."
+   },
+   {
+    "titre": "Salt later",
+    "detail": "Salt only when you use it: it may go into dishes that are already seasoned."
+   }
+  ]
+ },
+ "gheemaison": {
+  "nom": "Homemade Ghee",
+  "description": "Clarified butter taken further, until the milk solids brown at the bottom and lend the fat a nutty scent. It stands up to high heat.",
+  "etapes": [
+   {
+    "titre": "Melt",
+    "detail": "Melt the butter over very low heat in a heavy pan, without stirring."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Lift off the white foam that rises, which is the casein."
+   },
+   {
+    "titre": "Listen",
+    "detail": "The butter sings while water remains: when the noise stops, evaporation is done."
+   },
+   {
+    "titre": "Watch",
+    "detail": "The milk solids fall to the bottom and begin to turn golden: that is what separates ghee from plain clarified butter."
+   },
+   {
+    "titre": "Smell",
+    "detail": "Stop when the smell turns clearly nutty and the deposits are golden, not brown."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain through fine muslin into a perfectly dry jar."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Seal once cool: ghee keeps for months at room temperature, with no refrigeration."
+   }
+  ]
+ },
+ "huilepimenteemaison": {
+  "nom": "Homemade Chilli Oil",
+  "description": "Hot oil poured over chilli flakes, garlic and spices. The sizzle pulls out colour and aroma in seconds.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Put the chilli flakes, sesame and salt in a heatproof jar."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Slice the garlic finely and add it, with the roughly cracked Sichuan pepper."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 130-140°C: it should fizz around a chopstick without smoking."
+   },
+   {
+    "titre": "Temperature",
+    "detail": "Too hot and the oil scorches the chilli and turns bitter; too cool and it extracts nothing."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the hot oil over the mix in three goes, stirring: it sizzles loudly, which is normal."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Let it cool completely, then rest for twenty-four hours before using."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Store cool, and always take it out with a dry spoon."
+   }
+  ]
+ },
+ "huileauxherbes": {
+  "nom": "Herb Oil",
+  "description": "A vivid green oil made by blending blanched herbs with warm oil and straining. It draws a clean line across a plate.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Drop the herbs into boiling salted water for thirty seconds."
+   },
+   {
+    "titre": "Refresh",
+    "detail": "Chill them immediately in iced water: this step is what fixes the green."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Wring them out very hard in a cloth, until not a drop comes out."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the herbs with slightly warmed oil for three minutes, until the mix warms a little."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain through fine muslin, without pressing, letting it drip for an hour."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Bottle and keep cool, away from light."
+   }
+  ]
+ },
+ "selauxherbes": {
+  "nom": "Herb Salt",
+  "description": "Coarse salt blitzed with fresh herbs and zest, then dried in a very low oven. It seasons fish or poultry far better than plain salt.",
+  "etapes": [
+   {
+    "titre": "Strip",
+    "detail": "Strip the rosemary and thyme leaves: the stalks would stay hard and prickly."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Pare the lemon zest with none of the white pith."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Pulse the salt with the herbs, garlic and zest to a coarse green powder."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread in a thin layer on a lined tray."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Dry at 70°C with the door ajar for an hour, stirring halfway."
+   },
+   {
+    "titre": "Check",
+    "detail": "The salt should crumble between your fingers without sticking: if damp, it would go mouldy in the jar."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Cool completely before sealing in an airtight jar."
+   }
+  ]
+ },
+ "gomasio": {
+  "nom": "Gomasio",
+  "description": "The Japanese condiment of toasted sesame and salt, crushed in a mortar. It salts less than pure salt and brings fat and toastiness to vegetables and rice.",
+  "etapes": [
+   {
+    "titre": "Toast the salt",
+    "detail": "Heat the salt dry for two minutes in a pan: it loses its moisture and blends better."
+   },
+   {
+    "titre": "Sesame",
+    "detail": "Toast the sesame seeds dry over medium heat, stirring constantly."
+   },
+   {
+    "titre": "Listen",
+    "detail": "The seeds start to pop and smell nutty: that is the signal, ten seconds more and they burn."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Tip straight into a cold bowl to stop the cooking."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Crush in a mortar with the salt, without powdering it: half the seeds should stay whole."
+   },
+   {
+    "titre": "Taste",
+    "detail": "It should smell strongly of sesame and be barely salty."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Store in an airtight jar and use within the month: toasted sesame goes rancid."
+   }
+  ]
+ },
+ "saumurepourvolaille": {
+  "nom": "Poultry Brine",
+  "description": "Salted, sweetened water in which poultry soaks overnight. It holds water during cooking: a brined chicken stays juicy even slightly overcooked.",
+  "etapes": [
+   {
+    "titre": "Dissolve",
+    "detail": "Heat a quarter of the water with the salt and sugar until fully dissolved."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add bay, cracked pepper, crushed garlic and lemon slices."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Add the rest of the water ice-cold, or ice cubes: the brine must be COLD before the meat goes in."
+   },
+   {
+    "titre": "Submerge",
+    "detail": "Submerge the bird completely, weighing it down with a plate if needed."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Allow one hour per half kilo, never more than twelve hours: beyond that the flesh turns spongy and too salty."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Lift out, rinse under clear water and dry the skin very thoroughly."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Leave uncovered overnight in the fridge: this is what gives crisp skin in the oven."
+   }
+  ]
+ },
+ "croutonsmaison": {
+  "nom": "Homemade Croutons",
+  "description": "Stale bread cut into cubes and fried golden in olive oil and garlic. Better than shop-bought, and they cost the price of bread you were about to throw out.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the stale bread into even one-centimetre cubes, crusts included."
+   },
+   {
+    "titre": "Flavour the oil",
+    "detail": "Heat the oil with a crushed unpeeled garlic clove for two minutes, then remove the garlic before it burns."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Tip the bread cubes into the scented oil and stir to coat them well."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Fry over medium heat, stirring often: croutons colour all at once at the end."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the thyme and salt in the last minute."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Turn out onto kitchen paper and cool flat, without piling them up."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Once completely cold, store in an airtight tin — warm, they go soft."
+   }
+  ]
+ },
+ "confituredefigues": {
+  "nom": "Fig Jam",
+  "description": "Fresh figs macerated in sugar overnight then briefly cooked, with lemon for the set. Lightly sweetened, it keeps pieces and works with cheese too.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Wash the figs, remove the stalks and quarter them without peeling."
+   },
+   {
+    "titre": "Macerate",
+    "detail": "Mix with the sugar, lemon juice and vanilla, and macerate overnight in the fridge."
+   },
+   {
+    "titre": "Observe",
+    "detail": "The next day the figs have released their juice and the sugar has dissolved: that syrup is what cooks."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bring to a boil and cook for twenty-five minutes over high heat, stirring regularly."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Skim off the pink foam that forms; it would spoil the keeping."
+   },
+   {
+    "titre": "Test",
+    "detail": "Test the set on a cold plate: a drop should hold and not run when tilted."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour boiling into scalded jars, seal and turn them upside down for five minutes."
+   }
+  ]
+ },
+ "kefirdelait": {
+  "nom": "Milk Kefir",
+  "description": "Milk fermented by kefir grains for twenty-four hours. Tart, faintly fizzy and alive: it renews itself endlessly with the same grains.",
+  "etapes": [
+   {
+    "titre": "Jar",
+    "detail": "Put the kefir grains in a clean glass jar — never metal, it damages them."
+   },
+   {
+    "titre": "Milk",
+    "detail": "Pour in whole milk at room temperature, leaving two centimetres of headspace."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover with a cloth held by an elastic band: the ferment needs to breathe."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Leave for twenty-four hours at room temperature, out of the sun."
+   },
+   {
+    "titre": "Check",
+    "detail": "The milk has thickened and smells tart; past thirty-six hours it separates and turns very sour."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain through a plastic sieve, stirring gently with a spatula."
+   },
+   {
+    "titre": "Restart",
+    "detail": "Return the grains to fresh milk: the culture starts again straight away."
+   }
+  ]
+ },
+ "concombreslactofermentes": {
+  "nom": "Lacto-Fermented Cucumbers",
+  "description": "Cucumbers in brine, with no vinegar: lactic bacteria do the souring. Crunchy, sour, alive — and far easier to digest than vinegar pickles.",
+  "etapes": [
+   {
+    "titre": "Brine",
+    "detail": "Dissolve the salt in unchlorinated water: thirty grams per litre is the proportion that always works."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Wash the cucumbers and remove the blossom end, which holds a softening enzyme."
+   },
+   {
+    "titre": "Pack",
+    "detail": "Pack the cucumbers tightly in the jar with the garlic, dill and mustard seeds."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Pour in the brine to cover completely: anything above the surface goes mouldy."
+   },
+   {
+    "titre": "Weigh down",
+    "detail": "Set a glass weight on top to keep everything submerged."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Leave five to seven days at room temperature: bubbles appear and the brine clouds, which is a good sign."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste from the fifth day and refrigerate when the sourness suits you."
+   },
+   {
+    "titre": "Slow down",
+    "detail": "In the cold the fermentation all but stops and they keep for months."
+   }
+  ]
+ },
+ "ailconfit": {
+  "nom": "Garlic Confit",
+  "description": "Garlic cloves cooked for an hour in oil over the lowest heat: they turn meltingly soft, mild and almost sweet. The scented oil keeps and serves everywhere.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Separate and peel the cloves without damaging them, removing the germ if it is green."
+   },
+   {
+    "titre": "Submerge",
+    "detail": "Arrange them in a small pan and cover completely with olive oil."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add thyme, bay and peppercorns."
+   },
+   {
+    "titre": "Lowest heat",
+    "detail": "Heat as low as possible: the oil should barely tremble, with tiny bubbles around the cloves."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Cook for forty-five minutes to an hour, never frying."
+   },
+   {
+    "titre": "Check",
+    "detail": "The cloves are ready when they crush without resistance under a spoon."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Cool in the oil then jar, with the cloves always covered."
+   }
+  ]
+ },
+ "fetamarinee": {
+  "nom": "Marinated Feta",
+  "description": "Feta cubes bathed in olive oil with zest, herbs and chilli. Two days of waiting, and the oil becomes as good as the cheese.",
+  "etapes": [
+   {
+    "titre": "Drain",
+    "detail": "Take the feta out of its brine and pat it thoroughly dry: water would turn the oil rancid."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut it into even two-centimetre cubes, without crumbling it."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Pare wide strips of lemon zest with a peeler."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer the feta cubes, zest, sliced garlic, oregano and chilli in the jar."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover completely with olive oil, tapping to release air bubbles."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Marinate for forty-eight hours in the fridge before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take it out an hour ahead: olive oil sets in the cold and turns fluid again at room temperature."
+   }
+  ]
+ },
+ "vinaigredecidremaison": {
+  "nom": "Homemade Cider Vinegar",
+  "description": "Apple peelings and cores covered in sweetened water and forgotten for two months. The sugar becomes alcohol, then the alcohol becomes vinegar. Nothing is wasted.",
+  "etapes": [
+   {
+    "titre": "Save",
+    "detail": "Keep the peelings and cores of untreated apples: wild yeast lives on the skin."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Put them in a large glass jar, filling it no more than two thirds."
+   },
+   {
+    "titre": "Sweet water",
+    "detail": "Dissolve the sugar in the water and pour to cover the apples completely."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover with a cloth: the second fermentation needs air, but not flies."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Leave two weeks at room temperature, stirring daily, until it smells of cider."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain and return the liquid alone to the jar, still covered with a cloth."
+   },
+   {
+    "titre": "Acetify",
+    "detail": "Wait another four to six weeks: a white veil forms on the surface, the vinegar mother."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste from the sixth week and bottle when the sharpness suits you."
+   }
+  ]
+ },
+ "siropdesureau": {
+  "nom": "Elderflower Cordial",
+  "description": "Elderflower heads steeped cold in a lemony syrup. An unmistakable floral scent, to lengthen with sparkling water or pour over a dessert.",
+  "etapes": [
+   {
+    "titre": "Pick",
+    "detail": "Pick the heads in dry weather, in full sun: that is when they are most fragrant."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake them to dislodge insects, never rinsing them — water washes off the pollen, and with it the scent."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Boil the water and sugar for two minutes, then let it cool to lukewarm."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Add the sliced lemons and their juice."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Submerge the flower heads in the warm syrup, cover and steep for twenty-four hours."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain through muslin, pressing very lightly."
+   },
+   {
+    "titre": "Bottle",
+    "detail": "Bring to a simmer for a minute and bottle hot in scalded bottles."
+   }
+  ]
+ },
+ "siropdesucre": {
+  "nom": "Simple Syrup",
+  "description": "Equal parts sugar and water, heated until dissolved. The base of every cocktail: granulated sugar will not dissolve in a cold drink, syrup will.",
+  "etapes": [
+   {
+    "titre": "Weigh",
+    "detail": "Weigh equal amounts of sugar and water: the classic 1:1 proportion."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat over medium, stirring, until every crystal has dissolved."
+   },
+   {
+    "titre": "Don't boil",
+    "detail": "Do not let it boil: water would evaporate and the syrup would end up stronger than intended."
+   },
+   {
+    "titre": "Check",
+    "detail": "The syrup should be perfectly clear, with no grains at the bottom."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cool completely before using it in a cocktail."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Bottle in a clean bottle in the fridge; a spoonful of vodka extends its life."
+   }
+  ]
  }
 
 };

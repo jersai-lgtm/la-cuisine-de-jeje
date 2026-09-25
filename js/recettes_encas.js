@@ -8067,4 +8067,41 @@ Object.assign(recettes, {
     ],
     liees: ["saladepatatedouce","meatpieaustralien","whitebaitfritters"]
   },
+  croutonsmaison: {
+    nom: "Croûtons Maison",
+    cat: "encas", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    dateAjout: "2026-09-25T16:30:00",
+    description: "Du pain rassis coupé en dés, doré à la poêle dans l'huile d'olive et l'ail. Meilleurs que ceux du commerce, et ils coûtent le prix du pain qu'on allait jeter.",
+    tableauCroutonsmaison: [
+      { nb: 1, painrassis: "60 g", huileolive: "15 ml", ail: "4 g", thym: "0.5 g", sel: "0.5 g" },
+      { nb: 2, painrassis: "120 g", huileolive: "30 ml", ail: "8 g", thym: "1 g", sel: "1 g" },
+      { nb: 3, painrassis: "180 g", huileolive: "45 ml", ail: "12 g", thym: "1.5 g", sel: "1.5 g" },
+      { nb: 4, painrassis: "240 g", huileolive: "60 ml", ail: "16 g", thym: "2 g", sel: "2 g" },
+      { nb: 5, painrassis: "300 g", huileolive: "75 ml", ail: "20 g", thym: "2.5 g", sel: "2.5 g" },
+      { nb: 6, painrassis: "360 g", huileolive: "90 ml", ail: "24 g", thym: "3 g", sel: "3 g" },
+      { nb: 7, painrassis: "420 g", huileolive: "105 ml", ail: "28 g", thym: "3.5 g", sel: "3.5 g" },
+      { nb: 8, painrassis: "480 g", huileolive: "120 ml", ail: "32 g", thym: "4 g", sel: "4 g" },
+      { nb: 9, painrassis: "540 g", huileolive: "135 ml", ail: "36 g", thym: "4.5 g", sel: "4.5 g" },
+      { nb: 10, painrassis: "600 g", huileolive: "150 ml", ail: "40 g", thym: "5 g", sel: "5 g" },
+      { nb: 11, painrassis: "660 g", huileolive: "165 ml", ail: "44 g", thym: "5.5 g", sel: "5.5 g" },
+      { nb: 12, painrassis: "720 g", huileolive: "180 ml", ail: "48 g", thym: "6 g", sel: "6 g" },
+      { nb: 13, painrassis: "780 g", huileolive: "195 ml", ail: "52 g", thym: "6.5 g", sel: "6.5 g" },
+      { nb: 14, painrassis: "840 g", huileolive: "210 ml", ail: "56 g", thym: "7 g", sel: "7 g" },
+      { nb: 15, painrassis: "900 g", huileolive: "225 ml", ail: "60 g", thym: "7.5 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Découper", detail: "Couper le pain rassis en dés réguliers d'un centimètre, croûte comprise.", badge: null },
+      { icone: "🧄", titre: "Parfumer l'huile", detail: "Chauffer l'huile avec l'ail écrasé en chemise, deux minutes, puis retirer l'ail avant qu'il ne brûle.", badge: null },
+      { icone: "🍳", titre: "Saisir", detail: "Verser les dés de pain dans l'huile parfumée et remuer pour bien les enrober.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faire dorer à feu moyen en remuant souvent : les croûtons colorent d'un coup en fin de cuisson.", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Ajouter le thym et le sel dans la dernière minute.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Débarrasser sur du papier absorbant et laisser refroidir à plat, sans les empiler.", badge: null },
+      { icone: "🫙", titre: "Conserver", detail: "Une fois parfaitement froids, garder en boîte hermétique — tiède, ils ramollissent.", badge: null }
+    ]
+  }
 });

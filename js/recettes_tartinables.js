@@ -2261,5 +2261,43 @@ Object.assign(recettes, {
       { icone: "🧂", titre: "Ajuster", detail: "Rectifier en sel avec prudence : anchois et câpres salent déjà beaucoup.", badge: null },
       { icone: "❄️", titre: "Rouler", detail: "Rouler en boudin dans du film et raffermir deux heures au frais avant de trancher.", badge: null }
     ]
+  },
+  confituredefigues: {
+    nom: "Confiture de Figues",
+    cat: "tartinables", pays: "france",
+    base: 6,
+    temps: "45 min + macération",
+    niveau: "⭐ Facile",
+    emoji: "🟣",
+    dateAjout: "2026-09-25T16:30:00",
+    description: "Des figues fraîches macérées au sucre une nuit puis cuites courtes, avec du citron pour la prise. Peu sucrée, elle garde des morceaux et se sert aussi sur un fromage.",
+    tableauConfituredefigues: [
+      { nb: 1, figue: "167 g", sucre: "100 g", citron: "15 ml", vanille: "0.3 g" },
+      { nb: 2, figue: "334 g", sucre: "200 g", citron: "30 ml", vanille: "0.6 g" },
+      { nb: 3, figue: "501 g", sucre: "300 g", citron: "45 ml", vanille: "0.9 g" },
+      { nb: 4, figue: "668 g", sucre: "400 g", citron: "60 ml", vanille: "1.2 g" },
+      { nb: 5, figue: "835 g", sucre: "500 g", citron: "75 ml", vanille: "1.5 g" },
+      { nb: 6, figue: "1002 g", sucre: "600 g", citron: "90 ml", vanille: "1.8 g" },
+      { nb: 7, figue: "1169 g", sucre: "700 g", citron: "105 ml", vanille: "2.1 g" },
+      { nb: 8, figue: "1336 g", sucre: "800 g", citron: "120 ml", vanille: "2.4 g" },
+      { nb: 9, figue: "1503 g", sucre: "900 g", citron: "135 ml", vanille: "2.7 g" },
+      { nb: 10, figue: "1670 g", sucre: "1000 g", citron: "150 ml", vanille: "3 g" },
+      { nb: 11, figue: "1837 g", sucre: "1100 g", citron: "165 ml", vanille: "3.3 g" },
+      { nb: 12, figue: "2004 g", sucre: "1200 g", citron: "180 ml", vanille: "3.6 g" },
+      { nb: 13, figue: "2171 g", sucre: "1300 g", citron: "195 ml", vanille: "3.9 g" },
+      { nb: 14, figue: "2338 g", sucre: "1400 g", citron: "210 ml", vanille: "4.2 g" },
+      { nb: 15, figue: "2505 g", sucre: "1500 g", citron: "225 ml", vanille: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟣", titre: "Préparer", detail: "Laver les figues, retirer le pédoncule et les couper en quatre sans les éplucher.", badge: null },
+      { icone: "🍬", titre: "Macérer", detail: "Les mélanger au sucre, au jus de citron et à la vanille, et laisser macérer une nuit au frais.", badge: null },
+      { icone: "👀", titre: "Observer", detail: "Le lendemain, les figues ont rendu leur jus et le sucre est fondu : c'est ce sirop qui va cuire.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Porter à ébullition et cuire vingt-cinq minutes à feu vif, en remuant régulièrement.", badge: null },
+      { icone: "🫧", titre: "Écumer", detail: "Écumer la mousse rose qui se forme, elle nuirait à la conservation.", badge: null },
+      { icone: "❄️", titre: "Tester", detail: "Vérifier la prise sur une assiette froide : une goutte doit se figer et ne pas couler quand on incline.", badge: null },
+      { icone: "🫙", titre: "Empoter", detail: "Verser bouillant dans des bocaux ébouillantés, fermer et retourner cinq minutes.", badge: null }
+    ],
+    liees: ["confiturefraise"]
   }
 });

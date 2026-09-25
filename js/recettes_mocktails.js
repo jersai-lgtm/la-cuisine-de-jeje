@@ -3250,5 +3250,117 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Citron", detail: "Ajouter le jus de citron : il fixe la couleur et empêche le jus de brunir.", badge: null },
       { icone: "🧊", titre: "Servir", detail: "Verser sur glace et boire dans les vingt minutes, avant que les vitamines ne s'oxydent.", badge: null }
     ]
+  },
+  kefirdelait: {
+    nom: "Kéfir de Lait",
+    cat: "mocktails", pays: "russie",
+    base: 1,
+    temps: "10 min + 24h",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    dateAjout: "2026-09-25T16:30:00",
+    description: "Du lait fermenté par des grains de kéfir pendant vingt-quatre heures. Acidulé, légèrement pétillant, vivant : il se refait à l'infini avec les mêmes grains.",
+    tableauKefirdelait: [
+      { nb: 1, lait: "50 cl", ferment: "30 g" },
+      { nb: 2, lait: "100 cl", ferment: "60 g" },
+      { nb: 3, lait: "150 cl", ferment: "90 g" },
+      { nb: 4, lait: "200 cl", ferment: "120 g" },
+      { nb: 5, lait: "250 cl", ferment: "150 g" },
+      { nb: 6, lait: "300 cl", ferment: "180 g" },
+      { nb: 7, lait: "350 cl", ferment: "210 g" },
+      { nb: 8, lait: "400 cl", ferment: "240 g" },
+      { nb: 9, lait: "450 cl", ferment: "270 g" },
+      { nb: 10, lait: "500 cl", ferment: "300 g" },
+      { nb: 11, lait: "550 cl", ferment: "330 g" },
+      { nb: 12, lait: "600 cl", ferment: "360 g" },
+      { nb: 13, lait: "650 cl", ferment: "390 g" },
+      { nb: 14, lait: "700 cl", ferment: "420 g" },
+      { nb: 15, lait: "750 cl", ferment: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫙", titre: "Bocal", detail: "Mettre les grains de kéfir dans un bocal en verre propre — jamais de métal, il abîme les grains.", badge: null },
+      { icone: "🥛", titre: "Lait", detail: "Verser le lait entier à température ambiante, en laissant deux centimètres de vide.", badge: null },
+      { icone: "🧻", titre: "Couvrir", detail: "Couvrir d'un linge maintenu par un élastique : la fermentation a besoin de respirer.", badge: null },
+      { icone: "⏲️", titre: "Fermenter", detail: "Laisser vingt-quatre heures à température ambiante, à l'abri du soleil.", badge: null },
+      { icone: "👀", titre: "Vérifier", detail: "Le lait a épaissi et sent l'acidulé ; au-delà de trente-six heures il tranche et devient très acide.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Filtrer dans une passoire en plastique, en remuant doucement à la spatule.", badge: null },
+      { icone: "🔄", titre: "Relancer", detail: "Remettre les grains récupérés dans du lait frais : la culture repart aussitôt.", badge: null }
+    ],
+    liees: ["kefirfruits"]
+  },
+  siropdesureau: {
+    nom: "Sirop de Sureau",
+    cat: "mocktails", pays: "autriche",
+    base: 1,
+    temps: "30 min + 24h",
+    niveau: "⭐ Facile",
+    emoji: "🌼",
+    dateAjout: "2026-09-25T16:30:00",
+    description: "Des ombelles de fleurs de sureau infusées à froid dans un sirop citronné. Un parfum floral très reconnaissable, à allonger d'eau pétillante ou à verser sur un dessert.",
+    tableauSiropdesureau: [
+      { nb: 1, sureau: "40 g", sucre: "250 g", eau: "50 cl", citron: "80 g" },
+      { nb: 2, sureau: "80 g", sucre: "500 g", eau: "100 cl", citron: "160 g" },
+      { nb: 3, sureau: "120 g", sucre: "750 g", eau: "150 cl", citron: "240 g" },
+      { nb: 4, sureau: "160 g", sucre: "1000 g", eau: "200 cl", citron: "320 g" },
+      { nb: 5, sureau: "200 g", sucre: "1250 g", eau: "250 cl", citron: "400 g" },
+      { nb: 6, sureau: "240 g", sucre: "1500 g", eau: "300 cl", citron: "480 g" },
+      { nb: 7, sureau: "280 g", sucre: "1750 g", eau: "350 cl", citron: "560 g" },
+      { nb: 8, sureau: "320 g", sucre: "2000 g", eau: "400 cl", citron: "640 g" },
+      { nb: 9, sureau: "360 g", sucre: "2250 g", eau: "450 cl", citron: "720 g" },
+      { nb: 10, sureau: "400 g", sucre: "2500 g", eau: "500 cl", citron: "800 g" },
+      { nb: 11, sureau: "440 g", sucre: "2750 g", eau: "550 cl", citron: "880 g" },
+      { nb: 12, sureau: "480 g", sucre: "3000 g", eau: "600 cl", citron: "960 g" },
+      { nb: 13, sureau: "520 g", sucre: "3250 g", eau: "650 cl", citron: "1040 g" },
+      { nb: 14, sureau: "560 g", sucre: "3500 g", eau: "700 cl", citron: "1120 g" },
+      { nb: 15, sureau: "600 g", sucre: "3750 g", eau: "750 cl", citron: "1200 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌼", titre: "Cueillir", detail: "Cueillir les ombelles par temps sec, en plein soleil : c'est là qu'elles sont les plus parfumées.", badge: null },
+      { icone: "🐛", titre: "Secouer", detail: "Les secouer pour déloger les insectes, sans jamais les rincer — l'eau emporterait le pollen, donc le parfum.", badge: null },
+      { icone: "🍬", titre: "Sirop", detail: "Faire bouillir l'eau et le sucre deux minutes, puis laisser tiédir.", badge: null },
+      { icone: "🍋", titre: "Citron", detail: "Ajouter les citrons en rondelles et leur jus.", badge: null },
+      { icone: "🌼", titre: "Infuser", detail: "Plonger les ombelles dans le sirop tiède, couvrir, et laisser infuser vingt-quatre heures.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Filtrer à l'étamine en pressant très légèrement.", badge: null },
+      { icone: "🍾", titre: "Embouteiller", detail: "Porter à frémissement une minute et embouteiller chaud dans des bouteilles ébouillantées.", badge: null }
+    ],
+    liees: ["siropmenthe"]
+  },
+  siropdesucre: {
+    nom: "Sirop de Sucre",
+    cat: "mocktails", pays: "france",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍬",
+    dateAjout: "2026-09-25T16:30:00",
+    description: "Autant de sucre que d'eau, chauffés jusqu'à dissolution. La base de tous les cocktails : le sucre en poudre ne se dissout pas dans une boisson froide, le sirop si.",
+    tableauSiropdesucre: [
+      { nb: 1, sucre: "200 g", eau: "200 ml" },
+      { nb: 2, sucre: "400 g", eau: "400 ml" },
+      { nb: 3, sucre: "600 g", eau: "600 ml" },
+      { nb: 4, sucre: "800 g", eau: "800 ml" },
+      { nb: 5, sucre: "1000 g", eau: "1000 ml" },
+      { nb: 6, sucre: "1200 g", eau: "1200 ml" },
+      { nb: 7, sucre: "1400 g", eau: "1400 ml" },
+      { nb: 8, sucre: "1600 g", eau: "1600 ml" },
+      { nb: 9, sucre: "1800 g", eau: "1800 ml" },
+      { nb: 10, sucre: "2000 g", eau: "2000 ml" },
+      { nb: 11, sucre: "2200 g", eau: "2200 ml" },
+      { nb: 12, sucre: "2400 g", eau: "2400 ml" },
+      { nb: 13, sucre: "2600 g", eau: "2600 ml" },
+      { nb: 14, sucre: "2800 g", eau: "2800 ml" },
+      { nb: 15, sucre: "3000 g", eau: "3000 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "⚖️", titre: "Peser", detail: "Peser autant de sucre que d'eau : c'est la proportion classique, dite 1:1.", badge: null },
+      { icone: "♨️", titre: "Chauffer", detail: "Chauffer à feu moyen en remuant jusqu'à dissolution complète des cristaux.", badge: null },
+      { icone: "⚠️", titre: "Ne pas bouillir", detail: "Ne pas laisser bouillir : l'eau s'évaporerait et le sirop deviendrait plus concentré que prévu.", badge: null },
+      { icone: "🫧", titre: "Vérifier", detail: "Le sirop doit être parfaitement limpide, sans le moindre grain au fond.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir complètement avant de l'utiliser dans un cocktail.", badge: null },
+      { icone: "🫙", titre: "Conserver", detail: "Mettre en bouteille propre au réfrigérateur ; une cuillère de vodka prolonge la conservation.", badge: null }
+    ]
   }
 });
