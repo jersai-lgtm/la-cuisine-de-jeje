@@ -686,6 +686,19 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
   border-bottom: 1px solid rgba(var(--w),.08);
   border-radius: 20px 20px 0 0;  /* suit les coins de la modale */
 }
+/* v5.2.4 : les icônes restent en haut pendant qu'on fait défiler la fiche (c'est
+   #modal-resultat qui défile). Sans ce voile, elles se posaient sur le texte des
+   sections du bas — « Ma note : ☆☆☆ » passait dessous. */
+.modal-contenu.fiche-complete::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 70px;
+  z-index: 3;
+  background: linear-gradient(rgba(20,16,24,.82), rgba(20,16,24,0));
+  border-radius: 20px 20px 0 0;
+  pointer-events: none;
+}
 /* Les quatre icônes du haut se posent maintenant sur la photo : fond dense pour rester lisibles. */
 .fiche-complete .modal-fermer,
 .fiche-complete .btn-favori-recette,

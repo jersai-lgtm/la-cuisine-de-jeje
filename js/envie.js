@@ -169,6 +169,11 @@
 
   function fermerModal() { const m = document.getElementById("envie-modal"); if (m) m.remove(); }
   window.fermerEnvieModal = fermerModal; // pour le bouton retour du téléphone
+  // v5.2.4 : changer d'onglet ferme la feuille (quiz, envies, journée). Elle restait
+  // ouverte par-dessus la nouvelle vue, et il fallait la fermer à la main.
+  document.addEventListener("click", (e) => {
+    if (e.target.closest && e.target.closest(".nav-bottom .nav-btn")) fermerModal();
+  }, true);
   function ouvrirSheet(titreHTML, contenuHTML) {
     injecterStyle();
     const dejaOuvert = !!document.getElementById("envie-modal");

@@ -16,16 +16,46 @@ function chargerMesStats() {
   const user = window.userProfile;
   const subtitle = document.getElementById("stats-subtitle");
   
-  // Si pas connecté
+  // v5.2.4 — sans compte : plutôt que cinq accordéons vides et un lien « Connectez-vous »,
+  // la page se présente et montre déjà ce qu'on sait de cet appareil. Les autres blocs
+  // sont masqués : des accordéons qui s'ouvrent sur du vide donnent une page morte.
+  const BLOCS_CONNECTE = ["stats-records", "stats-evolution", "stats-badges"];
   if (!user || !user.uid) {
-    if (subtitle) subtitle.innerHTML = `👤 <a onclick="ouvrirModalAuth()" style="color:var(--accent-soft,#ff8fb3);cursor:pointer;text-decoration:underline">Connectez-vous</a> pour voir vos statistiques personnelles`;
-    document.getElementById("stats-overview").innerHTML = "";
-    document.getElementById("stats-records").innerHTML = "";
-    document.getElementById("stats-evolution").innerHTML = "";
-    document.getElementById("stats-badges").innerHTML = "";
+    const vus = (window._recentsVus || []).length;
+    let favLoc = 0;
+    try { favLoc = (JSON.parse(localStorage.getItem("favoris_locaux") || "[]") || []).length; } catch (e) {}
+    const bouts = [];
+    if (vus) bouts.push(vus + " recette" + (vus > 1 ? "s" : "") + " consultée" + (vus > 1 ? "s" : ""));
+    if (favLoc) bouts.push(favLoc + " favori" + (favLoc > 1 ? "s" : ""));
+    if (subtitle) subtitle.textContent = "Ce que tu cuisines, gardé pour toi.";
+    const zone = document.getElementById("stats-overview");
+    if (zone) {
+      zone.innerHTML =
+        '<div class="grille-vide">' +
+          '<div class="grille-vide-emoji">📊</div>' +
+          '<p class="grille-vide-titre">Tes stats arrivent avec ton compte</p>' +
+          '<p class="grille-vide-sous">Recettes cuisinées, records, évolution mois par mois et badges : tout se calcule à partir de ce que tu marques comme cuisiné.</p>' +
+          (bouts.length ? '<p class="grille-vide-sous">Sur cet appareil : ' + bouts.join(" · ") + "</p>" : "") +
+          '<div class="grille-vide-actions">' +
+            '<button type="button" class="grille-vide-btn" onclick="ouvrirModalAuth()">👤 Me connecter</button>' +
+          "</div>" +
+        "</div>";
+      const premier = zone.closest("details");
+      if (premier) { premier.style.display = ""; premier.open = true; }
+    }
+    BLOCS_CONNECTE.forEach(id => {
+      const bloc = document.getElementById(id);
+      if (bloc) { bloc.innerHTML = ""; const d = bloc.closest("details"); if (d) d.style.display = "none"; }
+    });
+    const top10 = document.getElementById("bloc-top10");
+    if (top10) top10.style.display = "none";
     return;
   }
-  
+  // Connecté : on rétablit les blocs qu'on avait pu masquer pour un visiteur.
+  BLOCS_CONNECTE.forEach(id => { const d = document.getElementById(id)?.closest("details"); if (d) d.style.display = ""; });
+  const top10 = document.getElementById("bloc-top10");
+  if (top10) top10.style.display = "";
+
   const prenom = user.prenom || user.email?.split("@")[0] || "vous";
   if (subtitle) subtitle.textContent = `Suivez votre aventure culinaire, ${prenom} !`;
   
@@ -180,7 +210,7 @@ function top10Afficher(critere) {
         .slice(0, 10);
       
       if (cuisinees.length === 0) {
-        liste.innerHTML = `<div class="top10-empty">Tu n'as encore cuisiné aucune recette.<br><span style="font-size:13px;color:#888">Click sur 👨‍🍳 J'ai cuisiné pour commencer !</span></div>`;
+        liste.innerHTML = `<div class="top10-empty">Tu n'as encore cuisiné aucune recette.<br><span style="font-size:13px;color:#888">Appuie sur👨‍🍳 J'ai cuisiné pour commencer !</span></div>`;
         if (titreEl) titreEl.textContent = "👨‍🍳 Tes recettes les plus cuisinées";
         return;
       }
@@ -197,7 +227,7 @@ function top10Afficher(critere) {
       // Utiliser _recentsVus (les 100 derniers) — on compte la position
       const vus = window._recentsVus || [];
       if (vus.length === 0) {
-        liste.innerHTML = `<div class="top10-empty">Aucune recette consultée encore.<br><span style="font-size:13px;color:#888">Click sur une carte pour la voir !</span></div>`;
+        liste.innerHTML = `<div class="top10-empty">Aucune recette consultée encore.<br><span style="font-size:13px;color:#888">Appuie surune carte pour la voir !</span></div>`;
         if (titreEl) titreEl.textContent = "👁️ Tes recettes les plus consultées";
         return;
       }

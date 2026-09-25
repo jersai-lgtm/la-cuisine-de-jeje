@@ -260,8 +260,14 @@ function lcAfficherPanier() {
   if (!panier) return;
   
   const liste = window.userProfile?.listeCourses || [];
+  // v5.2.4 : rien à partager tant qu'il n'y a ni recette ni article perso dans la liste.
+  const btnPartage = document.getElementById("lc-btn-partager");
+  if (btnPartage) {
+    const perso = window.userProfile?.listeCoursesPerso || [];
+    btnPartage.style.display = (liste.length || perso.length) ? "" : "none";
+  }
   if (liste.length === 0) {
-    panier.innerHTML = `<div class="lc-panier-vide">Aucune recette sélectionnée<br><span style="font-size:13px;color:#888">Click sur "Ajouter des recettes" ci-dessus</span></div>`;
+    panier.innerHTML = `<div class="lc-panier-vide">Aucune recette sélectionnée<br><span style="font-size:13px;color:#888">Appuie sur « ➕ Ajouter des recettes » ci-dessus</span></div>`;
     if (btnReset) btnReset.style.display = "none";
     return;
   }

@@ -247,7 +247,7 @@
       .swipe-card.swipe-dessous{transform:scale(.94) translateY(10px);filter:brightness(.7)}
       /* Fond flou de la même photo : on voit TOUT le plat (contain) sans bandes noires. */
       .swipe-card .swipe-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;
-        filter:blur(20px) brightness(.5);transform:scale(1.15)}
+        filter:blur(16px) brightness(.72);transform:scale(1.15)}
       .swipe-card img{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;position:relative;z-index:1}
       .swipe-grad{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(8,6,12,.92) 4%,rgba(8,6,12,.25) 42%,rgba(8,6,12,0) 70%)}
       .swipe-cap{position:absolute;left:18px;right:18px;bottom:18px;color:#fff;z-index:3}
