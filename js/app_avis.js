@@ -261,6 +261,11 @@ async function ouvrirTousLesAvis() {
   }
   const corps = document.getElementById("tous-avis-corps");
   if (corps) corps.innerHTML = rendreListeTousAvis(tous);
+  // v5.2.2 : ces avis-là sont ceux de l'appli. Qui est passé par le Play Store peut
+  // aussi y laisser une note — le lien n'apparaît que pour ces personnes.
+  if (corps && typeof window.lienNotePlayHTML === "function") {
+    corps.insertAdjacentHTML("beforeend", window.lienNotePlayHTML());
+  }
 }
 window.ouvrirTousLesAvis = ouvrirTousLesAvis;
 

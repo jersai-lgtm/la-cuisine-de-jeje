@@ -114,6 +114,11 @@
 
     // 3. Aide et nouvelles
     liste.appendChild(groupe([
+      // Uniquement pour qui a installé depuis le Play Store : les autres n'y ont pas
+      // accès au bouton de notation (js/noter_play.js).
+      (typeof window.estInstalleDepuisPlay === "function" && window.estInstalleDepuisPlay())
+        ? ligne("⭐", T("Noter l'appli", "Rate the app"), "", () => { fermer(); window.ouvrirFichePlay(); })
+        : null,
       ligne("💡", T("Suggérer une amélioration", "Suggest an improvement"), "", () => { fermer(); cliquer("btn-amelioration"); }),
       ligne("❓", T("Aide et tour guidé", "Help and guided tour"), "", () => { fermer(); cliquer("btn-aide"); }),
       ligne("ℹ️", T("Quoi de neuf", "What's new"), "", () => { fermer(); cliquer("btn-quoi-de-neuf"); },
