@@ -24,3 +24,7 @@ tools/completer-prix.mjs
 tools/completer-macros.mjs
 tools/generer-recettes.mjs
 tools/generer-images-openai.mjs
+
+# Réglages locaux de Claude Code (autorisations de cette machine)
+.claude/settings.local.json
+.claude/worktrees/

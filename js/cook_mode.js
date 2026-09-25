@@ -199,6 +199,87 @@
     if (_lectureVocale) lireEtape(); else arreterLecture();
   };
 
+  // --- Ingrédients de l'étape (v5.2.5) --------------------------------------
+  // Les mains dans la farine, on ne veut pas ressortir de la cuisson pour vérifier
+  // une quantité. Sous chaque étape, on rappelle les ingrédients qu'elle cite, avec
+  // la quantité déjà ajustée au nombre de convives affiché sur la fiche.
+  // Le rapprochement se fait sur le TEXTE de l'étape : rien à saisir recette par
+  // recette (il y en a 3500), et une étape qui ne cite personne n'affiche rien.
+  let _ingrParEtape = [];
+
+  // Mots trop génériques pour identifier un ingrédient à eux seuls : « blanc » ne doit
+  // pas accrocher « monter les blancs en neige » quand l'ingrédient est « blanc de poulet ».
+  const MOTS_FAIBLES = new Set(["poudre", "fraiche", "fraiches", "epaisse", "liquide", "entier",
+    "entiere", "moulu", "moulue", "rape", "rapee", "frais", "seche", "doux", "douce", "vert",
+    "verte", "rouge", "blanc", "blanche", "jaune", "noir", "noire", "petit", "petite", "grand",
+    "grande", "morceau", "morceaux", "tranche", "tranches", "feuille", "feuilles", "branche",
+    "branches", "gousse", "gousses", "sachet", "boite", "conserve", "surgele", "surgelee"]);
+
+  function normaliser(s) {
+    // Les ligatures ne sont pas des accents : sans ce remplacement, « œufs » perd son
+    // « œ » au nettoyage et devient « ufs », que plus rien n'accroche.
+    return String(s == null ? "" : s).toLowerCase()
+      .replace(/œ/g, "oe").replace(/æ/g, "ae")
+      .normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+  function echapper(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+
+  function citeDans(texte, item) {
+    const candidats = new Set();
+    if (item.mots.length >= 4) candidats.add(item.mots);
+    item.mots.split(/\s+/).forEach((m) => { if (m.length >= 5 && !MOTS_FAIBLES.has(m)) candidats.add(m); });
+    for (const c of candidats) {
+      // On tolère UNE lettre de flexion à la fin : l'étape écrit « la poule » quand
+      // l'ingrédient s'appelle « poulet », et « carottes » quand il dit « carotte ».
+      // Pas deux, sinon « poivron » accroche « poivre ». Un nom en plusieurs mots
+      // (« clou de girofle ») se cherche tel quel.
+      const racine = (c.indexOf(" ") === -1 && c.length >= 6)
+        ? c.slice(0, Math.max(5, c.length - 1))
+        : c.replace(/s$/, "");
+      if (racine.length < 4) continue;
+      if (new RegExp("(^|[^a-z])" + echapper(racine) + "[a-z]{0,2}([^a-z]|$)").test(texte)) return true;
+    }
+    return false;
+  }
+
+  function preparerIngredients(key, personnes) {
+    _ingrParEtape = _etapes.map(() => []);
+    const r = (typeof recettes !== "undefined") ? recettes[key] : null;
+    if (!r) return;
+    const tk = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tk) return;
+    const lignes = r[tk];
+    const base = r.base || 4;
+    const ligne = lignes.find((l) => l.nb === personnes || l.patons === personnes) ||
+                  lignes.find((l) => l.nb === base || l.patons === base) || lignes[0];
+    if (!ligne) return;
+    const ignores = new Set(["nb", "patons", "label", "total", "unite"]);
+    const items = Object.entries(ligne)
+      .filter(([k, v]) => !ignores.has(k) && v && v !== "0" && v !== 0)
+      .map(([k, v]) => {
+        const label = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[k])
+          ? INGREDIENTS_LABELS[k]
+          : k.charAt(0).toUpperCase() + k.slice(1).replace(/([A-Z])/g, " $1");
+        // le label porte l'emoji devant : on ne garde que les lettres pour la recherche
+        const mots = normaliser(label).replace(/[^a-z\s'-]/g, " ").replace(/\s+/g, " ").trim();
+        return { label: label, qte: String(v), mots: mots };
+      });
+    _etapes.forEach((e, i) => {
+      const texte = normaliser((e.titre || "") + " " + (e.detail || "") + " " + (e.badge || ""));
+      _ingrParEtape[i] = items.filter((it) => citeDans(texte, it));
+    });
+  }
+
+  function ingredientsEtapeHTML() {
+    const liste = _ingrParEtape[_idx] || [];
+    if (!liste.length) return "";
+    const esc = (typeof escapeHTML === "function") ? escapeHTML : (s) => String(s == null ? "" : s);
+    return '<div class="cm-ingr">' +
+      '<span class="cm-ingr-titre">' + ((window.LANG === "en") ? "For this step" : "Pour cette étape") + "</span>" +
+      liste.map((it) => '<span class="cm-ingr-item">' + esc(it.label) + " <b>" + esc(it.qte) + "</b></span>").join("") +
+      "</div>";
+  }
+
   // --- Rendu d'une étape ----------------------------------------------------
   function rendreEtape() {
     const e = _etapes[_idx];
@@ -210,6 +291,7 @@
       <div class="cm-etape-icone" aria-hidden="true">${esc(e.icone || (_idx + 1))}</div>
       <h2 class="cm-etape-titre">${esc(e.titre || "")}</h2>
       <p class="cm-etape-detail">${esc(e.detail || "")}</p>
+      ${ingredientsEtapeHTML()}
       <div id="cookmode-timer" class="cm-timer">${boutonTimerHTML()}</div>`;
     const live = document.getElementById("cookmode-live");
     if (live) live.textContent = `Étape ${_idx + 1} sur ${n}. ${e.titre || ""}. ${e.detail || ""}`;
@@ -259,6 +341,14 @@
       .cm-etape-icone{font-size:64px;line-height:1}
       .cm-etape-titre{font-size:26px;font-weight:700;margin:0;color:#fff;max-width:680px}
       .cm-etape-detail{font-size:20px;line-height:1.6;color:#e7e4ee;margin:0;max-width:680px}
+      /* Ingrédients de l'étape (v5.2.5) : des pastilles lisibles de loin, l'écran est
+         posé sur le plan de travail et on le regarde les mains occupées. */
+      .cm-ingr{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:680px}
+      .cm-ingr-titre{flex-basis:100%;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+        color:#9b97a3;margin-bottom:2px}
+      .cm-ingr-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+        border-radius:999px;padding:8px 14px;font-size:16px;color:#fff;line-height:1.2}
+      .cm-ingr-item b{color:var(--accent-soft,#ff8fb3);margin-left:5px;font-weight:800}
       .cm-timer{margin-top:6px;min-height:54px;display:flex;justify-content:center;align-items:center}
       .cm-timer-lancer{background:rgba(255,107,161,.16);color:var(--accent-soft);border:1.5px solid rgba(255,107,161,.55);border-radius:14px;padding:13px 20px;font-size:17px;font-weight:600;cursor:pointer}
       .cm-timer-plus{background:rgba(255,255,255,.08);color:var(--text-2);border:1.5px solid rgba(255,255,255,.18);border-radius:14px;padding:13px 18px;font-size:15px;font-weight:600;cursor:pointer;margin-left:8px}
@@ -296,6 +386,12 @@
     }
     if (document.getElementById("cookmode-overlay")) return;
     _etapes = r.etapes; _idx = 0; _timers = [];
+    // Quantités du nombre de convives affiché sur la fiche (sinon le foyer, sinon la base).
+    const champPers = document.getElementById("fiche-personnes-input");
+    const personnes = (champPers && parseInt(champPers.value, 10)) ||
+      (typeof calculerPersonnesPourRecette === "function" ? calculerPersonnesPourRecette(key) : 0) ||
+      r.base || 4;
+    try { preparerIngredients(key, personnes); } catch (e) { _ingrParEtape = _etapes.map(() => []); }
     _nomRecette = (typeof getNomRecette === "function" ? getNomRecette(key) : "") || r.nom || "";
     try { _lectureVocale = _ttsOK && localStorage.getItem("cm_voix") === "1"; } catch (e) { _lectureVocale = false; }
     injecterStyle();
