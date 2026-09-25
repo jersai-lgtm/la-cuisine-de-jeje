@@ -22,6 +22,7 @@
 const ALLOWED_ORIGINS = [
   "https://jersai-lgtm.github.io", // GitHub Pages (origine de prod)
   "http://localhost:5599",         // preview locale
+  "http://localhost:5600",         // preview du build (dist/)
   "http://localhost",              // XAMPP local
 ];
 

@@ -53,9 +53,10 @@ Prérequis : compte Cloudflare + `npx wrangler login`.
 ```bash
 cd worker
 
-# 1) (recommandé) Créer le namespace KV pour le quota, puis copier l'id
-#    affiché dans wrangler.toml (décommenter le bloc [[kv_namespaces]]).
-npx wrangler kv namespace create RATE_LIMIT
+# 1) FAIT le 25/09/2026 : le namespace KV du quota existe et son id est déjà
+#    dans wrangler.toml. À ne refaire que sur un nouveau compte Cloudflare.
+#    Tant qu'il manquait, le code des quotas ne s'exécutait pas du tout.
+# npx wrangler kv namespace create RATE_LIMIT
 
 # 2) Définir la clé API Anthropic comme SECRET (jamais dans le repo)
 npx wrangler secret put ANTHROPIC_API_KEY

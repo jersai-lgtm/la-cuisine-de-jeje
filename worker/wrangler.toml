@@ -6,12 +6,13 @@ compatibility_date = "2024-11-01"
 [vars]
 FIREBASE_PROJECT_ID = "cuisine-jeje"
 
-# Quota par utilisateur (KV). Crée l'espace puis colle son id ci-dessous :
+# Quota par utilisateur (KV), branché le 25/09/2026. Sans ce binding, le code
+# des quotas ne s'exécutait pas du tout : 40 requêtes IA/h et 15 imports/h par
+# utilisateur n'étaient comptés nulle part.
 #   npx wrangler kv namespace create RATE_LIMIT
-# Décommente et renseigne l'id retourné :
-# [[kv_namespaces]]
-# binding = "RATE_LIMIT"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "aa5062b09e134a00a53760bd175773f8"
 
 # ⚠️ Le secret ANTHROPIC_API_KEY ne se met PAS ici (ce fichier est versionné).
 #    Il se définit hors du repo :  npx wrangler secret put ANTHROPIC_API_KEY
