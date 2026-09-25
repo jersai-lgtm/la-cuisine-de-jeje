@@ -300,6 +300,10 @@ const INGREDIENTS_PRIX = {
   scarole:        { prixKg: 3.00, calPer100g: 17,   lipSat: 0,    sucre: 0.3,  sel: 0.02, fibres: 3.1, prot: 1.3,  flv: 100, glucides: 1.3, lipides: 0.2 },
   maraschino:     { prixKg: 30.0, calPer100g: 280,  lipSat: 0,    sucre: 30,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 30, lipides: 0 },
   chartreuse:     { prixKg: 55.0, calPer100g: 330,  lipSat: 0,    sucre: 25,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 25, lipides: 0 },
+  fernet:         { prixKg: 40.0, calPer100g: 220,  lipSat: 0,    sucre: 25,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 25, lipides: 0 },
+  drambuie:       { prixKg: 45.0, calPer100g: 330,  lipSat: 0,    sucre: 35,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 35, lipides: 0 },
+  whiskyecossais: { prixKg: 45.0, calPer100g: 250,  lipSat: 0,    sucre: 0,    sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 0, lipides: 0 },
+  cornedbeef:     { prixKg: 12.0, calPer100g: 250,  lipSat: 7.0,  sucre: 0,    sel: 2.5,  fibres: 0,   prot: 18,   flv: 0, glucides: 0, lipides: 19 },
   sorbetcitron:   { prixKg: 6.50, calPer100g: 130,  lipSat: 0,    sucre: 30,   sel: 0.01, fibres: 0.2, prot: 0.3,  flv: 20, glucides: 32, lipides: 0.1 },
   eaurose:        { prixKg: 14.0, calPer100g: 0,    lipSat: 0,    sucre: 0,    sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 0, lipides: 0 },
   stracchino:     { prixKg: 16.0, calPer100g: 300,  lipSat: 16.0, sucre: 1.0,  sel: 1.0,  fibres: 0,   prot: 18,   flv: 0, glucides: 1, lipides: 25 },
@@ -1299,7 +1303,8 @@ function parserQuantiteNutri(texte) {
 const INGREDIENTS_ALCOOL = new Set([
   "rhum", "vodka", "tequila", "cognac", "bourbon", "brandy", "kirsch", "gin",
   "cointreau", "tripleSec", "curacao", "aperol", "campari", "vermouth", "passoa", "amaretto",
-  "champagne", "prosecco", "bierebrune", "kahluaC", "bitters"
+  "champagne", "prosecco", "bierebrune", "kahluaC", "bitters",
+  "fernet", "drambuie", "whiskyecossais"
 ]);
 
 function calculerNutriScoreRecette(ligne) {
@@ -1635,6 +1640,7 @@ const INGREDIENTS_LABELS = {
   grenouilles: "🐸 Cuisses de grenouilles", bleentier: "🌾 Blé en grains", injera: "🫓 Injera", madere: "🍷 Madère",
   absinthe: "🌿 Absinthe", scarole: "🥬 Scarole",
   maraschino: "🍒 Marasquin", chartreuse: "🌿 Chartreuse verte", sorbetcitron: "🍋 Sorbet citron", eaurose: "🌹 Eau de rose",
+  fernet: "🌿 Fernet-Branca", drambuie: "🥃 Drambuie", whiskyecossais: "🥃 Whisky écossais", cornedbeef: "🥫 Corned-beef",
   stracchino: "🧀 Stracchino", glacenoisette: "🌰 Glace noisette", carottenoire: "🥕 Carotte noire", melasseraisin: "🍇 Mélasse de raisin", lavash: "🫓 Pain lavash",
   mastic: "🌳 Mastic de Chios", salep: "🌸 Salep", lucuma: "🥭 Lúcuma", maisviolet: "🌽 Maïs violet", masaharina: "🌽 Masa harina",
   yerbamate: "🧉 Yerba maté", graineslin: "🌾 Graines de lin", kasseri: "🧀 Kasseri", glacechocolat: "🍫 Glace chocolat", glacepistache: "🥜 Glace pistache", camomille: "🌼 Camomille",

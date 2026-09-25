@@ -117536,6 +117536,1738 @@ window.RECETTES_EN = {
     "detail": "With fresh pasta or a celeriac purée: the black, glossy sauce is the subject, everything else steps back."
    }
   ]
+ },
+ "hankypanky": {
+  "nom": "Hanky Panky",
+  "description": "Ada Coleman's sweet martini, created at the Savoy around 1903: gin, sweet vermouth and two dashes of Fernet-Branca that leave a minty bitterness on the finish.",
+  "etapes": [
+   {
+    "titre": "Chill the glass",
+    "detail": "Put a cocktail glass in the freezer, or fill it with ice and water while you work."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the gin and sweet vermouth into a mixing glass."
+   },
+   {
+    "titre": "Fernet",
+    "detail": "Add the Fernet-Branca. Two dashes are enough: any more and the bitterness takes over."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill the mixing glass with dry ice cubes."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir for 20 to 30 seconds, never shake: this drink should stay clear and silky."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into the chilled glass, ice discarded."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Squeeze an orange twist over the glass to release its oils, then drop it in."
+   }
+  ]
+ },
+ "vesper": {
+  "nom": "Vesper",
+  "description": "The martini James Bond dictates to the barman in Casino Royale: gin, vodka and Lillet Blanc, shaken not stirred, with a long lemon twist.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer for at least ten minutes."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour gin, vodka and Lillet Blanc into a shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill the shaker with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake hard for about fifteen seconds. The drink turns slightly cloudy, which is intended here."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Double-strain into the frozen coupe."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Cut a wide lemon twist, squeeze it over the surface and rest it on the rim."
+   }
+  ]
+ },
+ "rustynail": {
+  "nom": "Rusty Nail",
+  "description": "Two ingredients and nothing else: Scotch whisky and Drambuie, the honeyed herbal whisky liqueur. A 1960s after-dinner drink that hasn't aged a day.",
+  "etapes": [
+   {
+    "titre": "Chill the glass",
+    "detail": "Fill an old fashioned glass with large ice cubes."
+   },
+   {
+    "titre": "Whisky",
+    "detail": "Pour the Scotch over the ice."
+   },
+   {
+    "titre": "Drambuie",
+    "detail": "Add the Drambuie. Two parts whisky to one part liqueur is the classic balance."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir for ten seconds to chill and bind."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Squeeze a lemon twist over the glass."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, while the glass is still frosted."
+   }
+  ]
+ },
+ "tipunch": {
+  "nom": "Ti' Punch",
+  "description": "The little punch of the French Antilles: white agricole rum, cane syrup and a squeezed lime wheel. Everyone mixes their own — as the island saying goes.",
+  "etapes": [
+   {
+    "titre": "Lime",
+    "detail": "Cut a thick lime wheel with some of the peel."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Put the cane syrup in the bottom of a small tumbler."
+   },
+   {
+    "titre": "Press",
+    "detail": "Press the lime wheel into the glass, then drop it in."
+   },
+   {
+    "titre": "Rum",
+    "detail": "Pour the white agricole rum over it, ideally 50% ABV."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir until the syrup has completely dissolved."
+   },
+   {
+    "titre": "No ice",
+    "detail": "Traditionally drunk without ice, at room temperature, in small sips."
+   }
+  ]
+ },
+ "chartreuseswizzle": {
+  "nom": "Chartreuse Swizzle",
+  "description": "A vivid green tiki drink born in San Francisco in 2003: green Chartreuse, pineapple, lime and falernum, swizzled over crushed ice until the glass frosts.",
+  "etapes": [
+   {
+    "titre": "Crush the ice",
+    "detail": "Crush ice cubes in a clean tea towel until you get a coarse snow."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour Chartreuse, pineapple juice, lime juice and falernum into a tall glass."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the glass three-quarters with crushed ice."
+   },
+   {
+    "titre": "Swizzle",
+    "detail": "Sink a long-handled spoon and spin it between your palms until the glass frosts over."
+   },
+   {
+    "titre": "Top up",
+    "detail": "Top with more crushed ice, mounded above the rim."
+   },
+   {
+    "titre": "Mint",
+    "detail": "Plant a mint bouquet and clap it between your hands to release the aroma."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a straw, to be drunk while the ice is still firm."
+   }
+  ]
+ },
+ "airmail": {
+  "nom": "Airmail",
+  "description": "A honey daiquiri lengthened with champagne, created in the 1930s to celebrate airmail. Fresh, sparkling and dangerously easy.",
+  "etapes": [
+   {
+    "titre": "Honey syrup",
+    "detail": "Loosen the honey with a spoonful of hot water so it pours freely."
+   },
+   {
+    "titre": "Shaker",
+    "detail": "Pour rum, lime juice and honey syrup into a shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Add the ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake for about ten seconds, until the shaker frosts."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into a flute or a coupe."
+   },
+   {
+    "titre": "Champagne",
+    "detail": "Top gently with well-chilled champagne, pouring down the side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, without stirring."
+   }
+  ]
+ },
+ "caipiroska": {
+  "nom": "Caipiroska",
+  "description": "The Brazilian caipirinha built with vodka instead of cachaça: muddled lime, cane sugar and crushed ice, softer and cleaner on the palate.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the lime into eight wedges, removing the bitter white core."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Put the wedges and cane sugar in the bottom of a tumbler."
+   },
+   {
+    "titre": "Muddle",
+    "detail": "Muddle firmly to draw out the juice and the peel oils, without mashing the lime to a pulp."
+   },
+   {
+    "titre": "Vodka",
+    "detail": "Pour in the vodka."
+   },
+   {
+    "titre": "Crushed ice",
+    "detail": "Fill the glass with crushed ice."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir briskly from the bottom up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with a little more ice and serve with a short straw."
+   }
+  ]
+ },
+ "carajillo": {
+  "nom": "Carajillo",
+  "description": "A tight espresso and a coffee liqueur, shaken over ice. Spanish in origin, adopted by Mexico where it is drunk at any hour after a meal.",
+  "etapes": [
+   {
+    "titre": "Espresso",
+    "detail": "Pull a tight espresso and let it cool for two minutes."
+   },
+   {
+    "titre": "Liqueur",
+    "detail": "Pour the coffee liqueur into a shaker."
+   },
+   {
+    "titre": "Coffee",
+    "detail": "Add the still-warm espresso."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill the shaker with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake hard: this is what builds the dense foam on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Strain into a short glass over one large cube and serve at once."
+   }
+  ]
+ },
+ "barraquito": {
+  "nom": "Barraquito",
+  "description": "The layered coffee of the Canary Islands: sweetened condensed milk, liqueur, espresso and foamed milk, with lemon zest and cinnamon. Drunk without stirring.",
+  "etapes": [
+   {
+    "titre": "Condensed milk",
+    "detail": "Pour the sweetened condensed milk into the bottom of a straight clear glass."
+   },
+   {
+    "titre": "Liqueur",
+    "detail": "Add the liqueur, pouring gently over the back of a spoon."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Slide a long lemon twist down the side of the glass."
+   },
+   {
+    "titre": "Coffee",
+    "detail": "Pull an espresso and pour it carefully, again over the spoon, so it sits above."
+   },
+   {
+    "titre": "Foam",
+    "detail": "Foam the hot milk and lay it on top in a thick layer."
+   },
+   {
+    "titre": "Cinnamon",
+    "detail": "Dust with a cloud of cinnamon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve without stirring: the layers are the whole point, you drink straight through them."
+   }
+  ]
+ },
+ "alaskacocktail": {
+  "nom": "Alaska",
+  "description": "Gin and yellow Chartreuse stirred very cold with a dash of bitters: a 1930 Savoy cocktail, herbal and golden, as dry as a martini but far more aromatic.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the gin and Chartreuse into a mixing glass."
+   },
+   {
+    "titre": "Bitters",
+    "detail": "Add a dash of orange bitters."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice and stir for 25 seconds."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into the frozen coupe."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Squeeze a lemon twist over the glass and serve."
+   }
+  ]
+ },
+ "oldcuban": {
+  "nom": "Old Cuban",
+  "description": "Audrey Saunders' dressed-up mojito: aged rum, mint and lime shaken, then crowned with champagne. Elegant and lively at once.",
+  "etapes": [
+   {
+    "titre": "Mint",
+    "detail": "Put the mint leaves in the shaker and press them gently against the side."
+   },
+   {
+    "titre": "Build",
+    "detail": "Add the aged rum, lime juice and simple syrup."
+   },
+   {
+    "titre": "Angostura",
+    "detail": "Add two dashes of Angostura."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Fill with ice and shake hard for about fifteen seconds."
+   },
+   {
+    "titre": "Double-strain",
+    "detail": "Double-strain through a fine sieve into a chilled coupe: no mint debris left."
+   },
+   {
+    "titre": "Champagne",
+    "detail": "Top gently with champagne."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Float a mint leaf on the foam and serve."
+   }
+  ]
+ },
+ "royrogers": {
+  "nom": "Roy Rogers",
+  "description": "The American children's mocktail: cola, a dash of grenadine and a cherry. The male counterpart of the Shirley Temple, named after the western cowboy.",
+  "etapes": [
+   {
+    "titre": "Ice",
+    "detail": "Fill a tall glass to the top with ice cubes."
+   },
+   {
+    "titre": "Grenadine",
+    "detail": "Pour the grenadine straight over the ice."
+   },
+   {
+    "titre": "Cola",
+    "detail": "Top with well-chilled cola, gently, to keep the bubbles."
+   },
+   {
+    "titre": "Don't stir",
+    "detail": "Do not stir: the grenadine should stay at the bottom and rise in a gradient."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Add a lemon wheel on the rim."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a straw, to be swirled by whoever drinks it."
+   }
+  ]
+ },
+ "cinderella": {
+  "nom": "Cinderella",
+  "description": "Three juices — pineapple, orange, lemon — shaken with a dash of grenadine and lengthened with soda. The great alcohol-free classic of hotel bars.",
+  "etapes": [
+   {
+    "titre": "Juices",
+    "detail": "Pour the pineapple, orange and lemon juices into a shaker."
+   },
+   {
+    "titre": "Grenadine",
+    "detail": "Add the grenadine."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake for about ten seconds until the mix foams."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into a tall glass filled with fresh ice."
+   },
+   {
+    "titre": "Lengthen",
+    "detail": "Top with soda water and stir once, gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with an orange slice and serve."
+   }
+  ]
+ },
+ "pussyfoot": {
+  "nom": "Pussyfoot",
+  "description": "The 1920s temperance drink named after a prohibition campaigner: three citrus juices, grenadine and an egg yolk shaken in for its velvet texture.",
+  "etapes": [
+   {
+    "titre": "Yolk",
+    "detail": "Separate the egg yolk and drop it into the shaker."
+   },
+   {
+    "titre": "Citrus",
+    "detail": "Add the orange, lemon and lime juices."
+   },
+   {
+    "titre": "Grenadine",
+    "detail": "Add the grenadine."
+   },
+   {
+    "titre": "Dry shake",
+    "detail": "Shake first without ice for about fifteen seconds: this is what emulsifies the yolk."
+   },
+   {
+    "titre": "Wet shake",
+    "detail": "Add the ice and shake again until the shaker frosts."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into an ice-filled glass."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with a cherry and serve straight away, the foam drops fast."
+   }
+  ]
+ },
+ "virgincolada": {
+  "nom": "Virgin Colada",
+  "description": "The piña colada without the rum: pineapple and coconut milk blended with ice to a snowy texture. Creamy and very refreshing.",
+  "etapes": [
+   {
+    "titre": "Blender",
+    "detail": "Pour the pineapple juice and coconut milk into the blender."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Add the cane syrup and the splash of lime, which keeps it from cloying."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Add the ice cubes."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend for about thirty seconds to a snowy texture, with no lumps."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour into a well-chilled tall glass."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Garnish with a pineapple wedge and serve with a wide straw."
+   }
+  ]
+ },
+ "aguadejamaica": {
+  "nom": "Agua de Jamaica",
+  "description": "The Mexican hibiscus agua fresca: dried flowers steeped then sweetened give a garnet-coloured, tart drink served ice-cold at every market.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Bring the water to a boil, then take it off the heat."
+   },
+   {
+    "titre": "Steep",
+    "detail": "Drop the dried hibiscus flowers into the hot water and steep for ten minutes."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Sweeten while it is still hot so the sugar dissolves completely."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain, pressing the flowers well, then let it cool."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate for at least two hours, or overnight."
+   },
+   {
+    "titre": "Lime",
+    "detail": "Add a squeeze of lime just before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over plenty of ice in a tall glass."
+   }
+  ]
+ },
+ "bandung": {
+  "nom": "Bandung",
+  "description": "The pink drink of Malaysian stalls: rose syrup and sweetened condensed milk lengthened with iced water. Sweet, floral and improbably pink.",
+  "etapes": [
+   {
+    "titre": "Syrup",
+    "detail": "Stir the rose water and sugar until fully dissolved."
+   },
+   {
+    "titre": "Condensed milk",
+    "detail": "Add the sweetened condensed milk and whisk to a smooth mix."
+   },
+   {
+    "titre": "Lengthen",
+    "detail": "Pour in the ice-cold water in a thin stream, whisking, so the milk doesn't clump."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Check the colour: it should be frankly pink, adjust the syrup if needed."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill a tall glass with ice cubes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour over the ice and serve with a straw."
+   }
+  ]
+ },
+ "glacegianduja": {
+  "nom": "Gianduja Ice Cream",
+  "description": "The Piedmontese chocolate-hazelnut ice cream, descended from gianduja, born under Napoleon when cocoa ran short and was stretched with hazelnuts.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the ground hazelnuts in a pan until fragrant."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Bring the milk and cream to a simmer, add the hazelnut and steep off the heat for twenty minutes."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the yolks with the sugar until pale."
+   },
+   {
+    "titre": "Custard",
+    "detail": "Pour the strained infused milk over the yolks, return to low heat and stir until it coats the spoon, never boiling."
+   },
+   {
+    "titre": "Chocolate",
+    "detail": "Off the heat, add the chopped dark chocolate and stir until melted and smooth."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cool quickly then mature in the fridge for at least four hours."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn in an ice cream maker until creamy, then firm up for an hour in the freezer."
+   }
+  ]
+ },
+ "zabaioneglace": {
+  "nom": "Frozen Zabaione",
+  "description": "Marsala sabayon whipped over a bain-marie then set in the freezer: a semifreddo at once airy and rich, scooped rather than sliced.",
+  "etapes": [
+   {
+    "titre": "Yolks",
+    "detail": "Put the yolks and sugar in a heatproof bowl."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "Whisk over a simmering bain-marie, adding the Marsala little by little."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whisk without stopping for about ten minutes: the sabayon should triple and hold on the whisk."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Take off the heat and keep whisking until completely cool."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip the cold cream to soft peaks."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the cream into the sabayon with a spatula, gently, so the foam survives."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Pour into pots and freeze for at least six hours."
+   }
+  ]
+ },
+ "cassataglacee": {
+  "nom": "Frozen Cassata",
+  "description": "The Sicilian layered dome: vanilla and pistachio ice cream, soaked sponge and candied fruit, moulded then sliced. A celebration dessert made days ahead.",
+  "etapes": [
+   {
+    "titre": "Line",
+    "detail": "Line a dome mould with cling film, letting it overhang generously."
+   },
+   {
+    "titre": "First layer",
+    "detail": "Spread the slightly softened vanilla ice cream evenly against the sides, hollowing the centre."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Return to the freezer for twenty minutes so the shell holds."
+   },
+   {
+    "titre": "Candied fruit",
+    "detail": "Fold the finely chopped candied fruit into the softened pistachio ice cream."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the hollow with this mixture, pressing it down well."
+   },
+   {
+    "titre": "Sponge",
+    "detail": "Soak the sponge fingers in Marsala and lay them as a disc to close the dome."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Cover and freeze for at least six hours, ideally overnight."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Turn out onto a cold plate, scatter toasted flaked almonds and slice with a hot knife."
+   }
+  ]
+ },
+ "coupecolonel": {
+  "nom": "Colonel",
+  "description": "Two scoops of lemon sorbet drowned in frozen vodka. The dessert-digestif of French brasseries, served in a frosted coupe between courses.",
+  "etapes": [
+   {
+    "titre": "Frost",
+    "detail": "Put the coupes in the freezer an hour ahead: the frost is part of the pleasure."
+   },
+   {
+    "titre": "Frozen vodka",
+    "detail": "Take the vodka from the freezer, it should be syrupy."
+   },
+   {
+    "titre": "Sorbet",
+    "detail": "Place two good scoops of lemon sorbet in each coupe."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the ice-cold vodka around the scoops, without drowning them."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Grate a little lemon zest over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, with a teaspoon and a short straw."
+   }
+  ]
+ },
+ "sorbetpamplemousse": {
+  "nom": "Grapefruit Sorbet",
+  "description": "A clean, gently bitter sorbet that refreshes the palate better than any other. Three ingredients, and the whole question is the syrup balance.",
+  "etapes": [
+   {
+    "titre": "Syrup",
+    "detail": "Bring the water and sugar to a boil, stir until dissolved, then let it cool."
+   },
+   {
+    "titre": "Juice",
+    "detail": "Squeeze the grapefruits and strain the juice to remove the coarser pulp."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir the juice into the cold syrup."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste: too little sugar and the sorbet sets like a brick, too much and it never sets. It should taste slightly too sweet when cold."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate the mix for at least two hours, thoroughly cold before churning."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn to a soft texture, then firm up in a tub for an hour."
+   }
+  ]
+ },
+ "tavernpizza": {
+  "nom": "Tavern-Style Pizza",
+  "description": "The real Chicago pizza, the one actually eaten there: a very thin, crackery crust cut into squares, topped with sausage and mozzarella.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Heat the oven as high as it goes with a steel or stone inside."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough very thin with a pin, until you can almost see the worktop through it."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Spread a thin layer of tomato seasoned with oregano, without overloading: the crust must stay crisp."
+   },
+   {
+    "titre": "Sausage",
+    "detail": "Crumble the raw sausage meat into small even nuggets across the surface."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Cover with grated mozzarella right to the edge, crust included."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake on the hot surface until the base is firm and golden, about ten minutes."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut into squares with a wheel, tavern-cut style."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, the crust should snap."
+   }
+  ]
+ },
+ "newhavenclampizza": {
+  "nom": "New Haven Clam Pizza",
+  "description": "Connecticut apizza: no tomato sauce at all, just clams, garlic, oregano and olive oil on a crust charred in a coal oven.",
+  "etapes": [
+   {
+    "titre": "Very hot oven",
+    "detail": "Preheat the oven as high as possible with a stone inside, for at least forty-five minutes."
+   },
+   {
+    "titre": "Clams",
+    "detail": "Steam the clams open, shuck them and keep their strained liquor."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough by hand into an irregular disc, thicker at the rim."
+   },
+   {
+    "titre": "Garlic",
+    "detail": "Brush with olive oil and scatter very finely chopped garlic, taking care not to burn it later."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the clams and a spoonful of their liquor, then the oregano."
+   },
+   {
+    "titre": "Parmesan",
+    "detail": "Grate parmesan over the whole surface: it stands in for the mozzarella, absent here."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the crust blisters and chars in places, six to eight minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Finish with a drizzle of oil and serve piping hot."
+   }
+  ]
+ },
+ "pizzatonnocipolla": {
+  "nom": "Tuna and Onion Pizza",
+  "description": "Tuna and red onion, the pairing of neighbourhood Italian pizzerias. Simple and direct, and far better if the onion is soaked to lose its bite.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Slice the red onion very thin and soak it in cold water for ten minutes to tame its bite."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Heat the oven as high as it goes with the tray inside."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough by hand, leaving a thicker rim."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Spread the tomato, leaving a centimetre of bare edge."
+   },
+   {
+    "titre": "Mozzarella",
+    "detail": "Dot with drained mozzarella."
+   },
+   {
+    "titre": "Tuna",
+    "detail": "Flake the drained tuna over it and scatter the well-dried onion."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the rim is golden and blistered, eight to ten minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with olive oil and serve."
+   }
+  ]
+ },
+ "pizzaraclette": {
+  "nom": "Raclette Pizza",
+  "description": "The Savoyard winter pizza: cream, potatoes, bacon and raclette melted into a blanket. Not remotely Italian, and entirely unapologetic.",
+  "etapes": [
+   {
+    "titre": "Par-cook",
+    "detail": "Boil the thinly sliced potatoes in salted water for ten minutes: they would never cook through in the oven."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Fry the bacon and sliced onion until coloured, then drain off the fat."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough and lay it on a tray."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Spread the peppered thick cream — no tomato sauce here."
+   },
+   {
+    "titre": "Top",
+    "detail": "Lay the potato slices in a rosette, then the bacon."
+   },
+   {
+    "titre": "Raclette",
+    "detail": "Cover with thin slices of raclette, right to the edges."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a very hot oven until the cheese is molten and browned in patches."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Give it a turn of pepper and serve at once."
+   }
+  ]
+ },
+ "pizzaparmigiana": {
+  "nom": "Parmigiana Pizza",
+  "description": "Aubergine parmigiana laid on a pizza: fried slices, tomato, mozzarella, parmesan and basil. Southern Italy in a single slice.",
+  "etapes": [
+   {
+    "titre": "Salt",
+    "detail": "Cut the aubergine into thin slices, salt them and leave to drain for twenty minutes."
+   },
+   {
+    "titre": "Pat dry",
+    "detail": "Pat the slices thoroughly dry: wet, they would drink all the oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry them in hot oil until golden and tender, then drain."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough and set it on the hot tray."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Spread the tomato and dot with torn mozzarella."
+   },
+   {
+    "titre": "Aubergine",
+    "detail": "Lay the aubergine slices overlapping, then grate over the parmesan."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a very hot oven until the rim is puffed and golden."
+   },
+   {
+    "titre": "Basil",
+    "detail": "Add fresh basil as it comes out, never before: it would blacken."
+   }
+  ]
+ },
+ "cocamallorquina": {
+  "nom": "Coca Mallorquina",
+  "description": "The Balearic pizza, cheeseless: a thin base covered with slowly melted peppers, tomatoes and onions, drizzled with olive oil. Eaten warm or cold.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Cut peppers, tomatoes and onions into very thin strips, all roughly the same size."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Toss them with salt, chopped parsley and the olive oil, then leave for twenty minutes."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain off the juices: poured onto the dough they would make it soggy."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough thinly into a rectangle on an oiled tray."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the vegetables in an even layer right to the edges."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a hot oven until the vegetables are meltingly soft and the base golden, about twenty-five minutes."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Give it a last drizzle of olive oil as it leaves the oven."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool a little before cutting into squares: coca is rarely eaten piping hot."
+   }
+  ]
+ },
+ "caviarcourgette": {
+  "nom": "Courgette Caviar",
+  "description": "A spread of courgettes slowly melted in olive oil and crushed with a fork, lifted with garlic and lemon. Green, mild and very cheap.",
+  "etapes": [
+   {
+    "titre": "Dice",
+    "detail": "Dice the courgettes without peeling them: the skin gives the colour."
+   },
+   {
+    "titre": "Garlic",
+    "detail": "Warm the olive oil with the crushed garlic, without colouring it."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Add the courgettes and thyme, salt, and let them release their water over medium heat."
+   },
+   {
+    "titre": "Melt down",
+    "detail": "Carry on uncovered for twenty-five minutes: all the water must evaporate or the spread will be runny."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Crush with a fork rather than a blender, to keep some texture."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Add the lemon juice off the heat, taste and re-salt."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it cool completely: the flavour tightens and deepens when cold."
+   }
+  ]
+ },
+ "cremethoncapres": {
+  "nom": "Tuna and Caper Spread",
+  "description": "Tuna, cream cheese, capers and lemon whipped together: the aperitif spread you can make in ten minutes from a tin and a tub.",
+  "etapes": [
+   {
+    "titre": "Drain",
+    "detail": "Drain the tuna very thoroughly and flake it with a fork."
+   },
+   {
+    "titre": "Shallot",
+    "detail": "Chop the shallot as finely as you can."
+   },
+   {
+    "titre": "Capers",
+    "detail": "Rinse the capers to remove excess salt and chop them roughly."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Work the cream cheese with a fork to loosen it, then fold in the tuna."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add capers, shallot, lemon juice and snipped chives."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste before salting: between capers and tuna it is often salty enough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill for at least an hour so the flavours settle together."
+   }
+  ]
+ },
+ "patevegetalnoix": {
+  "nom": "Walnut Vegetable Pâté",
+  "description": "A meat-free pâté of walnuts, lentils and mushrooms, bound with bread and scented with thyme. Dense and rustic, it spreads like a country pâté.",
+  "etapes": [
+   {
+    "titre": "Lentils",
+    "detail": "Cook the green lentils in unsalted water until they crush easily, then drain."
+   },
+   {
+    "titre": "Walnuts",
+    "detail": "Dry-toast the walnuts for a few minutes: this is what gives the pâté flavour."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Fry the chopped mushrooms with the onion until all the water has gone."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Soak the stale bread in a little hot water, then squeeze it out."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend walnuts, lentils, mushrooms, bread and thyme to a coarse paste, not a smooth purée."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Work in the olive oil in a stream until it spreads like pâté."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper generously: an under-seasoned vegetable pâté tastes of nothing."
+   },
+   {
+    "titre": "Set",
+    "detail": "Press into a terrine and chill for four hours to firm up before serving."
+   }
+  ]
+ },
+ "beurremontpellier": {
+  "nom": "Montpellier Butter",
+  "description": "A vivid green compound butter from the classic repertoire: blanched herbs, spinach, anchovy, capers and gherkins, beaten into butter for cold fish.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Blanch spinach, parsley and tarragon for thirty seconds in boiling salted water."
+   },
+   {
+    "titre": "Refresh",
+    "detail": "Plunge them straight into iced water: this is what fixes the brilliant green."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Squeeze them very hard in a tea towel to remove every drop of water."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the herbs with anchovy, capers and gherkins to a fine paste."
+   },
+   {
+    "titre": "Yolk",
+    "detail": "Add the crushed hard-boiled yolk, which binds it all."
+   },
+   {
+    "titre": "Beat in butter",
+    "detail": "Work in the softened butter little by little with a spatula until smooth."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the salt carefully: anchovy and capers already bring plenty."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll into a log in cling film and firm up for two hours before slicing."
+   }
+  ]
+ },
+ "eggsroyale": {
+  "nom": "Eggs Royale",
+  "description": "The smoked salmon version of eggs Benedict: toasted muffin, salmon, poached egg and hollandaise. The hotel brunch dish par excellence.",
+  "etapes": [
+   {
+    "titre": "Hollandaise",
+    "detail": "Make the hollandaise over a bain-marie: yolks, a splash of water, then melted butter in a stream and lemon juice."
+   },
+   {
+    "titre": "Hold",
+    "detail": "Keep the sauce warm, never hot: above 65°C it splits."
+   },
+   {
+    "titre": "Vinegar water",
+    "detail": "Bring a pan of water to a bare simmer with the vinegar, no salt."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Slip the eggs in one at a time into the swirling water and poach for three minutes, white set, yolk runny."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Split and toast the English muffins, then butter them lightly."
+   },
+   {
+    "titre": "Salmon",
+    "detail": "Drape the smoked salmon slices over each muffin half."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Drain the eggs on a cloth and set them on the salmon."
+   },
+   {
+    "titre": "Nappe",
+    "detail": "Coat with hollandaise, scatter chives and serve immediately."
+   }
+  ]
+ },
+ "cornedbeefhash": {
+  "nom": "Corned Beef Hash",
+  "description": "The American diner brunch: potatoes and corned beef fried hard until a golden crust forms, crowned with a fried egg.",
+  "etapes": [
+   {
+    "titre": "Par-cook",
+    "detail": "Boil the diced potatoes for ten minutes in salted water, just tender, then drain well."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Soften the sliced onion in butter over medium heat."
+   },
+   {
+    "titre": "Corned beef",
+    "detail": "Add the flaked corned beef and let it catch slightly on the bottom."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Add the diced potatoes and press everything into a cake."
+   },
+   {
+    "titre": "Don't stir",
+    "detail": "Cook untouched for a good five minutes: stillness is what builds the crust."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Turn it over in quarters and let it crust on the other side."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Fry the eggs in another pan, whites set and yolks runny."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Set the egg on the hash, pepper it, scatter parsley and serve in the pan."
+   }
+  ]
+ },
+ "bakedbeansmaison": {
+  "nom": "Homemade Baked Beans",
+  "description": "White beans simmered in tomato, molasses and mustard, baked slowly until the sauce turns syrupy. Nothing like the tinned version.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the white beans overnight in plenty of cold water."
+   },
+   {
+    "titre": "Par-cook",
+    "detail": "Simmer them in unsalted water until tender but still whole."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Fry the bacon and onion in a casserole."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add tomato paste, brown sugar, mustard and cider vinegar, then loosen with the bean cooking water."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Tip in the beans and stir: they should be barely covered."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake covered at 150°C for two hours."
+   },
+   {
+    "titre": "Uncover",
+    "detail": "Uncover for the last half hour so the sauce thickens and caramelises on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Salt only at the end, and serve on buttered toast."
+   }
+  ]
+ },
+ "tostadaavocat": {
+  "nom": "Avocado Tostada",
+  "description": "A crisp corn tortilla piled with crushed avocado, lime, coriander and chilli. Crunchier and more direct than avocado toast.",
+  "etapes": [
+   {
+    "titre": "Crisp",
+    "detail": "Brush the corn tortillas with oil and bake in a hot oven until golden and brittle."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Slice the red onion very thin and pickle it in the lime juice for ten minutes."
+   },
+   {
+    "titre": "Avocado",
+    "detail": "Crush the avocado with a fork, roughly: you should still find pieces."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt the avocado and add half the lime juice."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the avocado over the still-warm tostadas."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter pickled onion, crumbled feta and chopped coriander."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a turn of pepper, a drizzle of oil, and eat straight away: tostadas soften fast."
+   }
+  ]
+ },
+ "saucefoyot": {
+  "nom": "Foyot Sauce",
+  "description": "A béarnaise enriched with reduced meat juices: it turns amber and gains a depth that calls for grilled red meat.",
+  "etapes": [
+   {
+    "titre": "Reduction",
+    "detail": "Reduce vinegar, chopped shallot, tarragon and cracked pepper until almost no liquid remains."
+   },
+   {
+    "titre": "Meat glaze",
+    "detail": "Separately, reduce the meat stock to a syrupy glaze: this is what sets Foyot apart from béarnaise."
+   },
+   {
+    "titre": "Clarified butter",
+    "detail": "Melt the butter gently and discard the white whey that settles."
+   },
+   {
+    "titre": "Sabayon",
+    "detail": "Add the yolks to the cooled reduction and whisk over a bain-marie until doubled and coating."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour in the clarified butter in a very thin stream, whisking constantly — too fast and the sauce splits."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in the meat glaze, taste and adjust."
+   },
+   {
+    "titre": "Hold",
+    "detail": "Keep at 55-60°C over warm water until serving: never over direct heat."
+   }
+  ]
+ },
+ "saucebigarade": {
+  "nom": "Bigarade Sauce",
+  "description": "The sauce for duck à l'orange: a vinegar caramel deglazed with bitter orange juice and brown stock, finished with blanched zest. Sharp, sweet and clean.",
+  "etapes": [
+   {
+    "titre": "Zest",
+    "detail": "Pare the orange zest into fine julienne, with no white pith."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch it three times from cold water: this is what removes the aggressive bitterness."
+   },
+   {
+    "titre": "Caramel",
+    "detail": "Make a light brown dry caramel with the sugar, without letting it burn."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Deglaze with the vinegar at arm's length: it smokes violently."
+   },
+   {
+    "titre": "Juices",
+    "detail": "Add the orange and lemon juice, then the brown stock."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce by half until the sauce coats the spoon."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, whisk in the cold butter and add the blanched zest."
+   }
+  ]
+ },
+ "saucezingara": {
+  "nom": "Zingara Sauce",
+  "description": "A tomato and Madeira sauce garnished with julienned ham, mushrooms and tongue. The classic zingara treatment for breaded escalopes.",
+  "etapes": [
+   {
+    "titre": "Julienne",
+    "detail": "Cut the ham and mushrooms into fine julienne, all strips the same size."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Fry the mushroom julienne in butter until dry."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the tomato paste and let it cook out for a minute: it loses its raw acidity."
+   },
+   {
+    "titre": "Madeira",
+    "detail": "Deglaze with Madeira and reduce almost to dryness."
+   },
+   {
+    "titre": "Stock",
+    "detail": "Moisten with brown stock and reduce by a third."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add the ham julienne at the end so it stays tender."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add chopped tarragon, adjust the seasoning and serve poured over."
+   }
+  ]
+ },
+ "saucevilleroy": {
+  "nom": "Villeroy Sauce",
+  "description": "A velouté reduced so thick that it sets when cold: cold morsels are dipped in it before breading and frying. The sauce that works as a coating.",
+  "etapes": [
+   {
+    "titre": "Roux",
+    "detail": "Make a blond roux with the butter and flour, stirring for two minutes without colouring."
+   },
+   {
+    "titre": "Velouté",
+    "detail": "Add the hot white stock little by little, whisking to avoid lumps."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Add the very finely chopped mushrooms and cook gently for fifteen minutes."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Reduce until the sauce is genuinely thick: it must hold on the spoon without running."
+   },
+   {
+    "titre": "Liaison",
+    "detail": "Off the heat, bind with the yolk mixed into the cream, never letting it boil again."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a fine sieve for a perfectly smooth texture."
+   },
+   {
+    "titre": "Set",
+    "detail": "Use it lukewarm to coat the pieces, then chill until set before breading."
+   }
+  ]
+ },
+ "saucealbufera": {
+  "nom": "Albufera Sauce",
+  "description": "Suprême sauce enriched with meat glaze and sweet pepper butter, created for Marshal Suchet, Duke of Albufera. Silky, blush-coloured, made for poached poultry.",
+  "etapes": [
+   {
+    "titre": "Roux",
+    "detail": "Make a white roux with part of the butter and the flour, without colouring."
+   },
+   {
+    "titre": "Velouté",
+    "detail": "Moisten with hot chicken stock and simmer for twenty minutes, skimming."
+   },
+   {
+    "titre": "Suprême",
+    "detail": "Add the cream and reduce until the sauce coats: that is a suprême."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Stir in the stock, previously reduced to a syrupy glaze."
+   },
+   {
+    "titre": "Pepper butter",
+    "detail": "Work the remaining butter with the sweet paprika into a coloured paste."
+   },
+   {
+    "titre": "Mount",
+    "detail": "Whisk this butter into the sauce off the heat: it takes on a blush tint."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add a few drops of lemon, strain and serve at once."
+   }
+  ]
+ },
+ "saucecardinal": {
+  "nom": "Cardinal Sauce",
+  "description": "A béchamel with fish fumet finished with lobster butter, cardinal red. The sauce for shellfish gratins and sole fillets.",
+  "etapes": [
+   {
+    "titre": "Lobster butter",
+    "detail": "Pound the lobster shells with half the butter, warm gently then pass through a fine sieve."
+   },
+   {
+    "titre": "Roux",
+    "detail": "Make a white roux with the rest of the butter and the flour."
+   },
+   {
+    "titre": "Béchamel",
+    "detail": "Whisk in the hot milk and cook for ten minutes over low heat."
+   },
+   {
+    "titre": "Cognac",
+    "detail": "Flame the cognac and add it to the sauce."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream and reduce to a coating consistency."
+   },
+   {
+    "titre": "Mount",
+    "detail": "Off the heat, stir in the strained lobster butter: the sauce reddens at once."
+   },
+   {
+    "titre": "Season",
+    "detail": "Sharpen with a pinch of chilli, strain and serve very hot."
+   }
+  ]
+ },
+ "saucereforme": {
+  "nom": "Reform Sauce",
+  "description": "Created by Alexis Soyer at London's Reform Club for his lamb cutlets: a peppery port sauce garnished with julienned gherkin, egg white and mushroom.",
+  "etapes": [
+   {
+    "titre": "Reduction",
+    "detail": "Reduce the vinegar with cracked pepper until nearly dry."
+   },
+   {
+    "titre": "Port",
+    "detail": "Add the port and reduce by half."
+   },
+   {
+    "titre": "Stock",
+    "detail": "Moisten with brown stock and reduce gently for twenty minutes."
+   },
+   {
+    "titre": "Egg white",
+    "detail": "Meanwhile, hard-boil an egg and cut the white into fine julienne."
+   },
+   {
+    "titre": "Julienne",
+    "detail": "Cut gherkins and mushrooms the same way, into even sticks."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain the sauce to remove the pepper."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add the julienne to the strained sauce, whisk in cold butter and serve without boiling."
+   }
+  ]
+ },
+ "saucesupreme": {
+  "nom": "Suprême Sauce",
+  "description": "Chicken velouté reduced with cream and sharpened with lemon: one of the great white sauces, the base of both Villeroy and Albufera.",
+  "etapes": [
+   {
+    "titre": "Roux",
+    "detail": "Make a white roux and let it cool slightly: hot stock on a hot roux makes lumps."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in the hot chicken stock, whisking hard."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the mushroom trimmings and simmer for twenty minutes, skimming regularly."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a fine chinois, pressing well."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Return to the heat, add the cream and reduce until the sauce coats the spoon."
+   },
+   {
+    "titre": "Sharpen",
+    "detail": "Add a few drops of lemon and a grating of nutmeg."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Off the heat, whisk in a knob of cold butter for shine."
+   }
+  ]
+ },
+ "saladesarrasinherbes": {
+  "nom": "Buckwheat and Herb Salad",
+  "description": "Buckwheat cooked like pasta then cooled, tossed with three herbs in quantity, lemon and red onion. Rustic, gluten-free and better cold.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the buckwheat in cold water until it runs clear: it is very starchy."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil it in plenty of salted water for ten minutes, like pasta. It should stay firm."
+   },
+   {
+    "titre": "Refresh",
+    "detail": "Drain and rinse under cold water to stop the cooking and wash off the sticky starch."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Slice the red onion and let it soften in the lemon juice."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Chop parsley, mint and chives generously — the herbs are the main ingredient, not the garnish."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Toss buckwheat, herbs, lemony onion and olive oil together."
+   },
+   {
+    "titre": "Feta",
+    "detail": "Crumble the feta over at the last moment, without stirring it in."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it sit for thirty minutes in the fridge before serving: the salad comes together."
+   }
+  ]
+ },
+ "bowlquinoagrenade": {
+  "nom": "Quinoa and Pomegranate Bowl",
+  "description": "Quinoa, pomegranate seeds, cucumber and mint, sharpened with lemon and scattered with almonds. A Levantine-leaning tabbouleh, crunchy and tart.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the quinoa thoroughly: its natural saponin tastes bitter if you skip this."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for twelve minutes in one and a half times its volume of salted water, then let it steam covered."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Spread it on a tray so it cools fast without overcooking."
+   },
+   {
+    "titre": "Pomegranate",
+    "detail": "Seed the pomegranate by tapping the back of the halved fruit with a spoon over a bowl."
+   },
+   {
+    "titre": "Cucumber",
+    "detail": "Dice the cucumber small, removing the wateriest seeds."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Chop the mint and parsley."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss everything with lemon juice, olive oil, salt and pepper."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter toasted crushed almonds at the last moment, for crunch."
+   }
+  ]
+ },
+ "boulettelentilles": {
+  "nom": "Lentil Balls",
+  "description": "Vegetarian balls of green lentils and oats, scented with cumin and baked rather than fried. Firm, cheap, good hot or cold.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Simmer the green lentils for twenty minutes in unsalted water, until they crush between two fingers."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain them very thoroughly and let them dry for five minutes: moisture is the enemy here."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Fry the chopped onion and garlic with the cumin until fragrant."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Crush the lentils with a fork, leaving a third whole for texture."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix with the oats, egg and parsley, then salt and pepper."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest for fifteen minutes: the oats absorb the moisture and the mix becomes shapeable."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll walnut-sized balls and set them on an oiled tray."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for twenty-five minutes at 190°C, turning them halfway."
+   }
+  ]
+ },
+ "currypatatedouceepinards": {
+  "nom": "Sweet Potato and Spinach Curry",
+  "description": "A vegetarian curry of melting sweet potato and spinach in coconut milk and ginger. Mild, filling and made in a single pan.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Soften the sliced onion until translucent."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add grated garlic and ginger, then the curry powder, and let it toast for a minute: the spices need heat to open up."
+   },
+   {
+    "titre": "Sweet potato",
+    "detail": "Add the sweet potato in large cubes and coat it well in the spices."
+   },
+   {
+    "titre": "Coconut milk",
+    "detail": "Pour in the coconut milk and top up with water to halfway up the cubes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered for twenty minutes, until a knife tip goes through without resistance."
+   },
+   {
+    "titre": "Spinach",
+    "detail": "Add the spinach in batches: it wilts in seconds."
+   },
+   {
+    "titre": "Sharpen",
+    "detail": "Finish with lime juice, which wakes the whole dish up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with basmati rice or a flatbread."
+   }
+  ]
+ },
+ "energyballsdattescacao": {
+  "nom": "Date and Cocoa Energy Balls",
+  "description": "Dates, almonds and cocoa blitzed and rolled into balls, with no baking and no added sugar. A pocket snack that genuinely holds hunger off.",
+  "etapes": [
+   {
+    "titre": "Almonds",
+    "detail": "Blitz the almonds alone first, to a coarse powder."
+   },
+   {
+    "titre": "Dates",
+    "detail": "Pit the dates and add them: if they are dry, soak them in hot water for ten minutes."
+   },
+   {
+    "titre": "Cocoa",
+    "detail": "Add the oats, unsweetened cocoa and almond butter."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend to a paste that holds together when pressed between your fingers."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: too dry, add a date; too sticky, add a spoonful of oats."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll walnut-sized balls between your palms."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll them in desiccated coconut."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Chill for an hour: they hold much better cold."
+   }
+  ]
+ },
+ "wraplaituepoulet": {
+  "nom": "Chicken Lettuce Wraps",
+  "description": "Minced chicken stir-fried with ginger and soy, spooned into crisp lettuce leaves. Eaten with your fingers, no bread involved.",
+  "etapes": [
+   {
+    "titre": "Leaves",
+    "detail": "Separate the lettuce leaves whole, wash and dry them: they must stay very crisp."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Chop the chicken with a knife rather than a processor, to keep some bite."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the chicken over high heat in a very hot pan, without stirring constantly."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add grated garlic and ginger and stir-fry for thirty seconds."
+   },
+   {
+    "titre": "Carrot",
+    "detail": "Add the carrot in fine sticks; it should stay crunchy."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Deglaze with soy sauce and reduce until everything is glazed."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, add the lime juice and crushed peanuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pan in the middle of the table with the lettuce leaves, everyone fills their own."
+   }
+  ]
  }
 
 };

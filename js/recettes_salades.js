@@ -4020,4 +4020,80 @@ Object.assign(recettes, {
     ],
     liees: ["saladepiemontaise","ensaladarusa","saladecauchoise"]
   },
+  saladesarrasinherbes: {
+    nom: "Salade de Sarrasin aux Herbes",
+    cat: "salades", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    dateAjout: "2026-09-25T11:00:00",
+    description: "Le sarrasin cuit comme des pâtes puis rafraîchi, mélangé à trois herbes en abondance, citron et oignon rouge. Rustique, sans gluten, et meilleur froid.",
+    tableauSaladesarrasinherbes: [
+      { nb: 1, sarrasin: "70 g", persil: "15 g", menthe: "8 g", ciboulette: "8 g", oignonrouge: "30 g", citron: "20 g", huileolive: "15 ml", feta: "30 g" },
+      { nb: 2, sarrasin: "140 g", persil: "30 g", menthe: "16 g", ciboulette: "16 g", oignonrouge: "60 g", citron: "40 g", huileolive: "30 ml", feta: "60 g" },
+      { nb: 3, sarrasin: "210 g", persil: "45 g", menthe: "24 g", ciboulette: "24 g", oignonrouge: "90 g", citron: "60 g", huileolive: "45 ml", feta: "90 g" },
+      { nb: 4, sarrasin: "280 g", persil: "60 g", menthe: "32 g", ciboulette: "32 g", oignonrouge: "120 g", citron: "80 g", huileolive: "60 ml", feta: "120 g" },
+      { nb: 5, sarrasin: "350 g", persil: "75 g", menthe: "40 g", ciboulette: "40 g", oignonrouge: "150 g", citron: "100 g", huileolive: "75 ml", feta: "150 g" },
+      { nb: 6, sarrasin: "420 g", persil: "90 g", menthe: "48 g", ciboulette: "48 g", oignonrouge: "180 g", citron: "120 g", huileolive: "90 ml", feta: "180 g" },
+      { nb: 7, sarrasin: "490 g", persil: "105 g", menthe: "56 g", ciboulette: "56 g", oignonrouge: "210 g", citron: "140 g", huileolive: "105 ml", feta: "210 g" },
+      { nb: 8, sarrasin: "560 g", persil: "120 g", menthe: "64 g", ciboulette: "64 g", oignonrouge: "240 g", citron: "160 g", huileolive: "120 ml", feta: "240 g" },
+      { nb: 9, sarrasin: "630 g", persil: "135 g", menthe: "72 g", ciboulette: "72 g", oignonrouge: "270 g", citron: "180 g", huileolive: "135 ml", feta: "270 g" },
+      { nb: 10, sarrasin: "700 g", persil: "150 g", menthe: "80 g", ciboulette: "80 g", oignonrouge: "300 g", citron: "200 g", huileolive: "150 ml", feta: "300 g" },
+      { nb: 11, sarrasin: "770 g", persil: "165 g", menthe: "88 g", ciboulette: "88 g", oignonrouge: "330 g", citron: "220 g", huileolive: "165 ml", feta: "330 g" },
+      { nb: 12, sarrasin: "840 g", persil: "180 g", menthe: "96 g", ciboulette: "96 g", oignonrouge: "360 g", citron: "240 g", huileolive: "180 ml", feta: "360 g" },
+      { nb: 13, sarrasin: "910 g", persil: "195 g", menthe: "104 g", ciboulette: "104 g", oignonrouge: "390 g", citron: "260 g", huileolive: "195 ml", feta: "390 g" },
+      { nb: 14, sarrasin: "980 g", persil: "210 g", menthe: "112 g", ciboulette: "112 g", oignonrouge: "420 g", citron: "280 g", huileolive: "210 ml", feta: "420 g" },
+      { nb: 15, sarrasin: "1050 g", persil: "225 g", menthe: "120 g", ciboulette: "120 g", oignonrouge: "450 g", citron: "300 g", huileolive: "225 ml", feta: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Rincer", detail: "Rincer le sarrasin à l'eau froide jusqu'à ce que l'eau soit claire : il est très farineux.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Le cuire à grande eau salée dix minutes, comme des pâtes. Il doit rester ferme sous la dent.", badge: null },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Égoutter et rincer à l'eau froide pour stopper la cuisson et retirer l'amidon collant.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Émincer l'oignon rouge et le laisser dégorger dans le jus de citron.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Hacher persil, menthe et ciboulette en quantité — les herbes sont l'ingrédient principal, pas la décoration.", badge: null },
+      { icone: "🥄", titre: "Assaisonner", detail: "Mélanger sarrasin, herbes, oignon citronné et huile d'olive.", badge: null },
+      { icone: "🧀", titre: "Feta", detail: "Émietter la feta par-dessus au moment de servir, sans mélanger davantage.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser reposer trente minutes au frais avant de servir : la salade se lie.", badge: null }
+    ]
+  },
+  bowlquinoagrenade: {
+    nom: "Bowl Quinoa-Grenade",
+    cat: "salades", pays: "liban",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🌰",
+    dateAjout: "2026-09-25T11:00:00",
+    description: "Quinoa, graines de grenade, concombre et menthe, relevés de citron et parsemés d'amandes. Un taboulé d'inspiration levantine, croquant et acidulé.",
+    tableauBowlquinoagrenade: [
+      { nb: 1, quinoa: "70 g", grenade: "60 g", concombre: "80 g", menthe: "8 g", persil: "12 g", citron: "20 g", huileolive: "15 ml", amandes: "15 g" },
+      { nb: 2, quinoa: "140 g", grenade: "120 g", concombre: "160 g", menthe: "16 g", persil: "24 g", citron: "40 g", huileolive: "30 ml", amandes: "30 g" },
+      { nb: 3, quinoa: "210 g", grenade: "180 g", concombre: "240 g", menthe: "24 g", persil: "36 g", citron: "60 g", huileolive: "45 ml", amandes: "45 g" },
+      { nb: 4, quinoa: "280 g", grenade: "240 g", concombre: "320 g", menthe: "32 g", persil: "48 g", citron: "80 g", huileolive: "60 ml", amandes: "60 g" },
+      { nb: 5, quinoa: "350 g", grenade: "300 g", concombre: "400 g", menthe: "40 g", persil: "60 g", citron: "100 g", huileolive: "75 ml", amandes: "75 g" },
+      { nb: 6, quinoa: "420 g", grenade: "360 g", concombre: "480 g", menthe: "48 g", persil: "72 g", citron: "120 g", huileolive: "90 ml", amandes: "90 g" },
+      { nb: 7, quinoa: "490 g", grenade: "420 g", concombre: "560 g", menthe: "56 g", persil: "84 g", citron: "140 g", huileolive: "105 ml", amandes: "105 g" },
+      { nb: 8, quinoa: "560 g", grenade: "480 g", concombre: "640 g", menthe: "64 g", persil: "96 g", citron: "160 g", huileolive: "120 ml", amandes: "120 g" },
+      { nb: 9, quinoa: "630 g", grenade: "540 g", concombre: "720 g", menthe: "72 g", persil: "108 g", citron: "180 g", huileolive: "135 ml", amandes: "135 g" },
+      { nb: 10, quinoa: "700 g", grenade: "600 g", concombre: "800 g", menthe: "80 g", persil: "120 g", citron: "200 g", huileolive: "150 ml", amandes: "150 g" },
+      { nb: 11, quinoa: "770 g", grenade: "660 g", concombre: "880 g", menthe: "88 g", persil: "132 g", citron: "220 g", huileolive: "165 ml", amandes: "165 g" },
+      { nb: 12, quinoa: "840 g", grenade: "720 g", concombre: "960 g", menthe: "96 g", persil: "144 g", citron: "240 g", huileolive: "180 ml", amandes: "180 g" },
+      { nb: 13, quinoa: "910 g", grenade: "780 g", concombre: "1040 g", menthe: "104 g", persil: "156 g", citron: "260 g", huileolive: "195 ml", amandes: "195 g" },
+      { nb: 14, quinoa: "980 g", grenade: "840 g", concombre: "1120 g", menthe: "112 g", persil: "168 g", citron: "280 g", huileolive: "210 ml", amandes: "210 g" },
+      { nb: 15, quinoa: "1050 g", grenade: "900 g", concombre: "1200 g", menthe: "120 g", persil: "180 g", citron: "300 g", huileolive: "225 ml", amandes: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Rincer", detail: "Rincer le quinoa longuement : sa saponine naturelle donne un goût amer si on l'oublie.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Le cuire douze minutes dans une fois et demie son volume d'eau salée, puis laisser gonfler à couvert.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "L'étaler sur un plat pour qu'il refroidisse vite sans continuer à cuire.", badge: null },
+      { icone: "🍎", titre: "Grenade", detail: "Égrener la grenade en tapant le dos du fruit coupé en deux avec une cuillère, au-dessus d'un saladier.", badge: null },
+      { icone: "🥒", titre: "Concombre", detail: "Tailler le concombre en petits dés, en retirant les graines les plus aqueuses.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Hacher menthe et persil.", badge: null },
+      { icone: "🥄", titre: "Assembler", detail: "Mélanger le tout avec le jus de citron, l'huile d'olive, du sel et du poivre.", badge: null },
+      { icone: "🌰", titre: "Finir", detail: "Parsemer d'amandes grillées concassées au moment de servir, pour le croquant.", badge: null }
+    ]
+  }
 });
