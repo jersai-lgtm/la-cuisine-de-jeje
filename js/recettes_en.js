@@ -119268,6 +119268,1428 @@ window.RECETTES_EN = {
     "detail": "Serve the pan in the middle of the table with the lettuce leaves, everyone fills their own."
    }
   ]
+ },
+ "bronx": {
+  "nom": "Bronx",
+  "description": "A martini softened with fresh orange juice, created at the Waldorf-Astoria around 1906. The two vermouths balance each other and the orange rounds it off: an aperitif, not a digestif.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer while you work."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Squeeze the orange at the last moment: yesterday's juice would flatten the drink."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour gin, sweet vermouth, dry vermouth and orange juice into a shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake for about ten seconds, until the shaker is misted over."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Double-strain into the chilled coupe."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Squeeze an orange twist over the glass and serve at once."
+   }
+  ]
+ },
+ "hottoddy": {
+  "nom": "Hot Toddy",
+  "description": "Whisky, honey, lemon and hot water, with a clove stuck into a lemon wheel. The Scottish winter remedy, drunk piping hot.",
+  "etapes": [
+   {
+    "titre": "Warm the glass",
+    "detail": "Fill the glass with boiling water, wait a minute, then empty it: a cold glass kills the drink."
+   },
+   {
+    "titre": "Honey",
+    "detail": "Put the honey in the bottom of the warm glass."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Add the lemon juice and stir until the honey dissolves."
+   },
+   {
+    "titre": "Whisky",
+    "detail": "Pour in the Scotch."
+   },
+   {
+    "titre": "Hot water",
+    "detail": "Top with very hot but not boiling water: boiling carries off the whisky's aromas."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Stud a lemon wheel with the cloves and float it, then add a hint of cinnamon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Stir once and serve scalding, with a spoon in the glass."
+   }
+  ]
+ },
+ "blackrussian": {
+  "nom": "Black Russian",
+  "description": "Just two ingredients: vodka and coffee liqueur over ice. Invented in Brussels in 1949 for the American ambassador, hence the name.",
+  "etapes": [
+   {
+    "titre": "Ice",
+    "detail": "Fill an old fashioned glass with large, dry ice cubes."
+   },
+   {
+    "titre": "Vodka",
+    "detail": "Pour the vodka over the ice."
+   },
+   {
+    "titre": "Liqueur",
+    "detail": "Add the coffee liqueur: two parts vodka to one of liqueur."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir for ten seconds, long enough to chill it."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste: depending on the liqueur, half a dash more is sometimes needed to balance the bitterness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as is, with no garnish — this is a naked drink."
+   }
+  ]
+ },
+ "saltydog": {
+  "nom": "Salty Dog",
+  "description": "Vodka and grapefruit juice in a salt-rimmed glass. The salt is not decoration: it cuts the grapefruit's bitterness with every sip.",
+  "etapes": [
+   {
+    "titre": "Wet the rim",
+    "detail": "Run a lime wedge around the rim of the glass, about a centimetre down."
+   },
+   {
+    "titre": "Salt rim",
+    "detail": "Roll the wet rim in a plate of fine salt, on the outside of the glass only."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill the glass carefully with ice, without touching the salted rim."
+   },
+   {
+    "titre": "Vodka",
+    "detail": "Pour in the vodka."
+   },
+   {
+    "titre": "Grapefruit",
+    "detail": "Top with freshly squeezed grapefruit juice."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir gently from the bottom up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a short straw and no further garnish."
+   }
+  ]
+ },
+ "kamikaze": {
+  "nom": "Kamikaze",
+  "description": "Three equal parts: vodka, triple sec and lime. Dry, direct and ice-cold — a 1970s drink better served in a coupe than as a shot.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Squeeze the limes and strain the juice."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour the three ingredients in equal parts into the shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill to the top with ice."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake hard for fifteen seconds: a lukewarm kamikaze is worthless."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into the frozen coupe."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with a lime wheel and serve immediately."
+   }
+  ]
+ },
+ "marypickford": {
+  "nom": "Mary Pickford",
+  "description": "Created in Havana during Prohibition for the silent film star: white rum, pineapple, grenadine and maraschino. Pale pink, fruity and dangerously easy.",
+  "etapes": [
+   {
+    "titre": "Juice",
+    "detail": "Use unsweetened pineapple juice, ideally fresh: it is what creates the foam."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour rum, pineapple juice, grenadine and maraschino into a shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake hard: the pineapple whips into a fine foam."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into a well-chilled coupe."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Drop a maraschino cherry into the bottom of the glass."
+   }
+  ]
+ },
+ "brooklyncocktail": {
+  "nom": "Brooklyn",
+  "description": "Manhattan's quieter cousin, with dry vermouth instead of sweet, maraschino and a bitter. Drier, sharper, and less known than it deserves.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour bourbon, dry vermouth, maraschino and bitter into a mixing glass."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with dry ice cubes."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir for twenty-five seconds: never shaken, the drink must stay clear."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste from the spoon: the maraschino should be sensed, not dominant."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into the chilled coupe."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with a cherry and serve."
+   }
+  ]
+ },
+ "scofflaw": {
+  "nom": "Scofflaw",
+  "description": "Born in Paris in 1924, named after the word coined for those who drank in spite of Prohibition. Whiskey, dry vermouth, lemon and grenadine.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Squeeze the lemon fresh: the acidity holds the whole thing together."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour whiskey, dry vermouth, lemon juice, grenadine and a dash of bitters into the shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake for about twelve seconds."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Double-strain into the chilled coupe."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Squeeze a lemon twist over the glass and serve."
+   }
+  ]
+ },
+ "tuxedococktail": {
+  "nom": "Tuxedo",
+  "description": "A nineteenth-century martini dressed with maraschino and a veil of absinthe. The glass is merely rinsed with absinthe: it perfumes without ever taking over.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Pour the absinthe into the chilled coupe, swirl to coat the sides, then discard the excess."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour gin, dry vermouth, maraschino and a dash of bitters into a mixing glass."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir for twenty-five seconds, until the mixing glass frosts."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into the absinthe-rinsed coupe."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Garnish with a maraschino cherry and a lemon twist."
+   }
+  ]
+ },
+ "deathintheafternoon": {
+  "nom": "Death in the Afternoon",
+  "description": "Hemingway's own recipe, published as-is in 1935: absinthe, champagne poured until milky opalescence, and his advice to drink three to five of them slowly.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Chill the flute and the champagne: everything must be ice-cold."
+   },
+   {
+    "titre": "Absinthe",
+    "detail": "Pour the absinthe into the bottom of the flute."
+   },
+   {
+    "titre": "Champagne",
+    "detail": "Pour the champagne very slowly, in a thin stream down the side."
+   },
+   {
+    "titre": "Opalescence",
+    "detail": "Stop when the mix turns milky and opalescent: that is Hemingway's cue."
+   },
+   {
+    "titre": "Don't stir",
+    "detail": "Do not stir: the louche happens by itself as it settles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, and drink slowly — it is stronger than it looks."
+   }
+  ]
+ },
+ "rememberthemaine": {
+  "nom": "Remember the Maine",
+  "description": "A Cuban Manhattan lifted with cherry liqueur and an absinthe rinse, written down by Charles Baker in Havana in 1933, in the middle of a revolution.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse a chilled coupe with absinthe and discard the excess."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour whiskey, sweet vermouth and cherry liqueur into a mixing glass."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir, as Baker put it, \"clockwise, with a long spoon\"."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into the prepared coupe."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Garnish with a dark cherry and serve."
+   }
+  ]
+ },
+ "monkeygland": {
+  "nom": "Monkey Gland",
+  "description": "Created at Harry's Bar in Paris in the 1920s, named after a rejuvenation graft of the day. Gin, orange, grenadine and a hint of absinthe.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Squeeze the orange and strain the juice."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour gin, orange juice, grenadine and absinthe into the shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake for about twelve seconds."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Double-strain into the chilled coupe."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with an orange twist and nothing else."
+   }
+  ]
+ },
+ "seelbach": {
+  "nom": "Seelbach",
+  "description": "Bourbon, triple sec, champagne — and an amount of bitters that looks absurd: seven dashes of each. That is exactly what gives it its spiced backbone.",
+  "etapes": [
+   {
+    "titre": "Build",
+    "detail": "Pour bourbon and triple sec into a mixing glass."
+   },
+   {
+    "titre": "Bitters",
+    "detail": "Add seven dashes of Angostura and seven of orange bitters — this is not a mistake."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir over ice for about twenty seconds."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into a chilled flute."
+   },
+   {
+    "titre": "Champagne",
+    "detail": "Top gently with champagne, pouring down the side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with a long orange twist and serve."
+   }
+  ]
+ },
+ "wardeight": {
+  "nom": "Ward Eight",
+  "description": "Boston's own cocktail, created in 1898 to celebrate an election win in the eighth ward. Whiskey, lemon, orange and grenadine, served in a coupe.",
+  "etapes": [
+   {
+    "titre": "Chill",
+    "detail": "Put a coupe in the freezer."
+   },
+   {
+    "titre": "Citrus",
+    "detail": "Squeeze the lemon and orange, straining both juices."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour whiskey, lemon juice, orange juice and grenadine into the shaker."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill with ice cubes."
+   },
+   {
+    "titre": "Shake",
+    "detail": "Shake for about fifteen seconds."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into the chilled coupe."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Garnish with a cherry and an orange slice."
+   }
+  ]
+ },
+ "godfathercocktail": {
+  "nom": "Godfather",
+  "description": "Scotch whisky and amaretto over one big ice cube. Two ingredients, an almond sweetness that tames the peat: the simplest digestif in the book.",
+  "etapes": [
+   {
+    "titre": "Big cube",
+    "detail": "Put a single large ice cube in an old fashioned glass: it melts slowly and dilutes little."
+   },
+   {
+    "titre": "Whisky",
+    "detail": "Pour in the Scotch."
+   },
+   {
+    "titre": "Amaretto",
+    "detail": "Add the amaretto."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir for ten seconds."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: with a heavily peated whisky, cut the amaretto back by half a centilitre."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with no garnish, at cellar temperature."
+   }
+  ]
+ },
+ "silverfizz": {
+  "nom": "Silver Fizz",
+  "description": "The gin fizz built with egg white: the foam turns dense and silky and stands proud above the glass. A New Orleans classic.",
+  "etapes": [
+   {
+    "titre": "Egg white",
+    "detail": "Separate the white and pour it into the shaker with gin, lemon and syrup."
+   },
+   {
+    "titre": "Dry shake",
+    "detail": "Shake without ice for thirty seconds: this is where the foam is built."
+   },
+   {
+    "titre": "Wet shake",
+    "detail": "Add ice and shake again for fifteen seconds."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain into a narrow tall glass, without ice."
+   },
+   {
+    "titre": "Let it rise",
+    "detail": "Rest for a minute: the foam separates and rises."
+   },
+   {
+    "titre": "Soda",
+    "detail": "Pour the soda water into the centre, slowly, to lift the foam above the rim."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve without a straw, the foam is drunk first."
+   }
+  ]
+ },
+ "coldbrewtonic": {
+  "nom": "Cold Brew Tonic",
+  "description": "Coffee brewed cold for twelve hours, poured over iced tonic: the quinine's bitterness meets the coffee's and the two answer each other, with a squeeze of lemon.",
+  "etapes": [
+   {
+    "titre": "Grind",
+    "detail": "Grind the coffee coarse, as for a French press: a fine grind would give a cloudy, harsh brew."
+   },
+   {
+    "titre": "Cold brew",
+    "detail": "Cover with cold water and steep for twelve hours in the fridge, never heated."
+   },
+   {
+    "titre": "Filter",
+    "detail": "Strain twice, the second time through a paper filter for a clear extract."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Fill a tall glass to the top with ice."
+   },
+   {
+    "titre": "Tonic",
+    "detail": "Pour the well-chilled tonic over the ice."
+   },
+   {
+    "titre": "Coffee",
+    "detail": "Pour the cold brew gently on top: it falls in dark ribbons, don't stir straight away."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a lemon wheel and serve."
+   }
+  ]
+ },
+ "laitdepoule": {
+  "nom": "Eggnog (alcohol-free)",
+  "description": "The childhood remedy: an egg yolk beaten with sugar, lengthened with hot milk and scented with vanilla and nutmeg. Alcohol-free, comforting, served warm.",
+  "etapes": [
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the egg yolk and sugar until pale and ribboning."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the milk with the split vanilla pod to a simmer, without boiling."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Pour a little hot milk onto the yolk while whisking, to accustom it to the heat."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return everything to the pan and stir over very low heat."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Stop as soon as it coats the spoon — if it boils, the yolk curdles and it is ruined."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a sieve to remove the pod and any lumps."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into a cup, grate nutmeg over it and drink warm."
+   }
+  ]
+ },
+ "juscarotteorangegingembre": {
+  "nom": "Carrot, Orange and Ginger Juice",
+  "description": "The morning trio: carrot for body, orange for acidity, ginger for the kick. Juiced or blended, strained or not.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Scrub the carrots without peeling if they are organic: the skin carries a lot of flavour."
+   },
+   {
+    "titre": "Oranges",
+    "detail": "Peel the oranges to the flesh, removing all the bitter white pith."
+   },
+   {
+    "titre": "Ginger",
+    "detail": "Peel the ginger with a spoon, it is more precise than a knife."
+   },
+   {
+    "titre": "Juice",
+    "detail": "Run carrots, oranges and ginger through a juicer, or blend then strain through a fine sieve."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Add the lemon juice: it fixes the colour and stops the juice browning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour over ice and drink within twenty minutes, before the vitamins oxidise."
+   }
+  ]
+ },
+ "saucemadere": {
+  "nom": "Madeira Sauce",
+  "description": "Brown stock reduced with Madeira and finished with butter. The sauce for kidneys, hot ham and eggs in wine: simple, deep and never sweet.",
+  "etapes": [
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the chopped shallot in a little butter, without colouring."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Add the chopped mushrooms and cook until they have released all their water."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Deglaze with Madeira and reduce by three-quarters."
+   },
+   {
+    "titre": "Stock",
+    "detail": "Add the brown stock and reduce gently by half."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a fine sieve, pressing, for a smooth glossy sauce."
+   },
+   {
+    "titre": "Mount",
+    "detail": "Off the heat, whisk in the cold butter in small pieces, stirring constantly."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Pepper, taste, and add a spoonful of raw Madeira if the aroma has faded too far."
+   }
+  ]
+ },
+ "sauceporto": {
+  "nom": "Port Sauce",
+  "description": "Port reduced to a syrup, lengthened with brown stock and bound with butter. A dark velvety sauce for duck breast, fillet or seared foie gras.",
+  "etapes": [
+   {
+    "titre": "Shallot",
+    "detail": "Sweat the chopped shallot in a knob of butter."
+   },
+   {
+    "titre": "Port",
+    "detail": "Pour in the port and add the thyme."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce to a syrup: barely two spoonfuls should remain."
+   },
+   {
+    "titre": "Stock",
+    "detail": "Add the brown stock and reduce by half again."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a fine sieve."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Whisk in cold butter off the heat until glossy and coating."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Grind over pepper and serve at once, never letting it boil again."
+   }
+  ]
+ },
+ "sauceduxelles": {
+  "nom": "Duxelles Sauce",
+  "description": "Finely chopped mushrooms dried out in the pan, bound with white wine and stock. A woodland sauce that doubles as a stuffing, as in beef Wellington.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop the mushrooms very finely by hand: a processor makes them weep and turn to purée."
+   },
+   {
+    "titre": "Shallot",
+    "detail": "Sweat the shallot in butter until translucent."
+   },
+   {
+    "titre": "Dry out",
+    "detail": "Add the mushrooms and cook over high heat, stirring, until all the water has gone."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Keep going until the mixture sizzles and starts to colour: that is where the flavour concentrates."
+   },
+   {
+    "titre": "White wine",
+    "detail": "Deglaze with white wine and reduce to dryness."
+   },
+   {
+    "titre": "Stock",
+    "detail": "Add the stock and simmer for ten minutes."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream, let it thicken, then the chopped parsley off the heat."
+   }
+  ]
+ },
+ "saucecrecy": {
+  "nom": "Crécy Sauce",
+  "description": "A sauce of melted, blended carrots bound with butter and lifted by a pinch of sugar. In classical cookery \"Crécy\" means anything made with carrot.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Slice the carrots thinly; they cook faster and more evenly."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat them in butter with the onion, covered, over low heat, without colouring."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Add the pinch of sugar: it does not sweeten, it wakes the carrot up."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add stock to just cover and cook for twenty minutes until the carrots crush easily."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend fine, then pass through a sieve for a perfectly smooth texture."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Return to the heat, add the cream and adjust the thickness with stock."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Grate in a hint of nutmeg, salt, and serve with poultry or poached fish."
+   }
+  ]
+ },
+ "saucebretonne": {
+  "nom": "Bretonne Sauce",
+  "description": "A julienne of onion, leek, celery and mushroom melted in butter, bound with velouté and a little cream. The classic partner for white beans and leg of lamb.",
+  "etapes": [
+   {
+    "titre": "Julienne",
+    "detail": "Cut onion, leek white, celery and mushrooms into a fine even julienne."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Melt them in butter, covered, very gently, without letting them colour."
+   },
+   {
+    "titre": "Patience",
+    "detail": "Allow twenty minutes: the julienne should turn translucent and almost confit."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add the stock and reduce by a third."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream and let it thicken for a few minutes."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper, and do not blend: this is a chunky sauce, the julienne should show."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve generously over leg of lamb or white beans."
+   }
+  ]
+ },
+ "saucechaudfroid": {
+  "nom": "Chaud-Froid Sauce",
+  "description": "A gelled velouté ladled warm over a cold dish, setting into a glossy coat. The sauce of old-fashioned buffets, of poultry in aspic.",
+  "etapes": [
+   {
+    "titre": "Velouté",
+    "detail": "Make a white roux, whisk in hot white stock and cook for fifteen minutes."
+   },
+   {
+    "titre": "Gelatine",
+    "detail": "Soak the gelatine in cold water until soft."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream to the velouté and reduce until it coats firmly."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Squeeze out the gelatine and dissolve it in the hot sauce, off the heat."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a fine sieve: the smallest lump would show through the coat."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Cool, stirring, until the sauce is just beginning to thicken."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat the cold dish in a single pass, set in the fridge, and repeat if the layer is too thin."
+   }
+  ]
+ },
+ "painauxcereales": {
+  "nom": "Multigrain Bread",
+  "description": "A semi-wholemeal loaf loaded with linseed, sunflower, sesame and poppy seeds, with a thick crust and a dense, fragrant crumb.",
+  "etapes": [
+   {
+    "titre": "Soak the seeds",
+    "detail": "Soak the linseed in a little warm water for twenty minutes: dry, they would steal water from the dough."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix flour, water, yeast, honey and salt, then knead for ten minutes until the dough comes clean away."
+   },
+   {
+    "titre": "Seeds",
+    "detail": "Fold in the drained seeds at the end of kneading, without overworking the dough."
+   },
+   {
+    "titre": "First rise",
+    "detail": "Prove covered for two hours, until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Knock back gently and shape into a round or a bâtard, then set in a tin or on a tray."
+   },
+   {
+    "titre": "Second rise",
+    "detail": "Let it rise for another hour, until it regains volume."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Brush with water, scatter sesame and poppy seeds, then slash with a blade."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 220°C with a bowl of water, then forty minutes at 200°C. It should sound hollow underneath."
+   }
+  ]
+ },
+ "painviennois": {
+  "nom": "Viennese Bread",
+  "description": "A dough enriched with milk, butter and sugar, slashed into fine regular stripes. Stringy crumb, thin golden crust: halfway between bread and brioche.",
+  "etapes": [
+   {
+    "titre": "Warm milk",
+    "detail": "Warm the milk and dissolve the yeast in it with a spoonful of sugar."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix flour, sugar, salt and milk, then knead for eight minutes to a smooth dough."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Work in the soft butter in three additions, kneading well between each."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it double, covered, for an hour and a half in a warm room."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Knock back and shape into an even log with slightly tapered ends."
+   },
+   {
+    "titre": "Second rise",
+    "detail": "Leave to rise for another forty-five minutes on the tray."
+   },
+   {
+    "titre": "Slash",
+    "detail": "Brush with beaten egg and cut fine, close transverse slashes, decisively."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for twenty minutes at 190°C: the crust should stay soft and glossy."
+   }
+  ]
+ },
+ "chinoisalacreme": {
+  "nom": "Cream-Filled Chinois",
+  "description": "A brioche rolled around pastry cream and chocolate chips, cut into snails packed into a round tin. The Alsatian Schneckenkuchen.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead flour, warm milk, yeast, sugar and eggs for ten minutes, then work in the soft butter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it double for an hour and a half, covered."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Make the pastry cream and let it cool completely, covered on the surface."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough into a large even rectangle, half a centimetre thick."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the cold cream over it, leaving two centimetres bare on one edge, and scatter the chips."
+   },
+   {
+    "titre": "Roll up",
+    "detail": "Roll tightly lengthways and cut into four-centimetre lengths."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Pack the snails flat in a buttered round tin, leaving a little space, and prove for forty-five minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Glaze and bake for thirty-five minutes at 180°C, then cool slightly before turning out."
+   }
+  ]
+ },
+ "couronnedesrois": {
+  "nom": "Provençal Kings' Crown",
+  "description": "The Provençal Epiphany brioche: scented with orange blossom, shaped into a crown, covered with pearl sugar and candied fruit.",
+  "etapes": [
+   {
+    "titre": "Knead",
+    "detail": "Knead flour, eggs, sugar, yeast and orange blossom water for ten minutes into a soft elastic dough."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Work in the soft butter little by little: the dough must come smooth again before each addition."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it double for two hours, covered, in a warm room."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Knock back, form a ball, punch a hole in the centre and widen it by turning: it must be wide, it closes as it bakes."
+   },
+   {
+    "titre": "Second rise",
+    "detail": "Prove for an hour on the tray, out of draughts."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush gently with beaten egg, without knocking the crown back."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for twenty-five minutes at 170°C, covering with paper if it colours too fast."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Out of the oven, brush with syrup and arrange candied fruit and pearl sugar."
+   }
+  ]
+ },
+ "terrinepoireaux": {
+  "nom": "Leek Terrine",
+  "description": "Whole cooked leek whites, packed head to tail and pressed overnight. Each slice shows a green and white mosaic, served with a shallot vinaigrette.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Keep only the whites and tender green, split them lengthways and wash thoroughly."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Poach in plenty of salted water until a blade passes through without resistance."
+   },
+   {
+    "titre": "Refresh",
+    "detail": "Plunge into iced water to fix the green, then drain at length."
+   },
+   {
+    "titre": "Pack",
+    "detail": "Line a terrine with film and pack the leeks tightly, alternating tops and bottoms for an even slice."
+   },
+   {
+    "titre": "Press",
+    "detail": "Fold over the film, set a board and a weight on top, and press overnight in the fridge."
+   },
+   {
+    "titre": "Vinaigrette",
+    "detail": "Whisk mustard, vinegar, chopped shallot and oil into an emulsion."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Turn out and slice with a very sharp knife, pressing rather than sawing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon over the vinaigrette, scatter parsley and serve cold."
+   }
+  ]
+ },
+ "feuilleteasperges": {
+  "nom": "Asparagus Puff Pastry",
+  "description": "Green asparagus laid on a rectangle of puff pastry over a bed of parmesan cream, baked until the pastry puffs up around them.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Snap the asparagus ends by hand: they break naturally where the fibre begins."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch for three minutes in boiling salted water, then refresh in iced water."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Dry them thoroughly: the slightest moisture would make the pastry soggy."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the pastry into rectangles and score a frame a centimetre from the edge, without cutting through."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Mix the cream with grated parmesan, pepper it, and spread inside the frame."
+   },
+   {
+    "titre": "Top",
+    "detail": "Lay the asparagus on the cream, tips all facing the same way."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush the frame with beaten egg, without letting it run down the cut edge, or the pastry will not rise."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for twenty minutes at 200°C, until the frame is puffed and golden. Zest the lemon over it to serve."
+   }
+  ]
+ },
+ "rillettespoulet": {
+  "nom": "Chicken Rillettes",
+  "description": "Chicken legs slowly confited then shredded with a fork, bound with their own fat and lifted with tarragon. Lighter than pork rillettes.",
+  "etapes": [
+   {
+    "titre": "Season",
+    "detail": "Salt the chicken legs and rest them for an hour in the fridge, for deeper flavour."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Colour them in butter in a casserole, skin down, until golden."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion, thyme and bay, then deglaze with white wine."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Cover and cook over the lowest heat for an hour: the meat should fall away by itself."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Bone while hot and shred with a fork, never a processor, to keep the long fibres."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix with the reduced cooking juices and a little of the fat, to a supple texture."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add chopped tarragon, adjust the salt, pack into jars."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill for twenty-four hours before serving: the flavour knits together."
+   }
+  ]
+ },
+ "terrinefoiesvolaille": {
+  "nom": "Chicken Liver Terrine",
+  "description": "Chicken livers blended with port and cream, baked in a bain-marie to a velvet texture. Spread cold, with gherkins and toast.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Carefully remove the sinews and any greenish parts of the livers: they would bring bitterness."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate them for two hours in port with the chopped shallot."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear very briefly in butter, barely thirty seconds a side: they must stay pink inside."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the warm livers with the marinade, cream, eggs and butter until perfectly smooth."
+   },
+   {
+    "titre": "Sieve",
+    "detail": "Pass the mixture through a fine sieve: this step is what separates a terrine from a paste."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "Pour into a terrine and bake in a bain-marie at 150°C for forty minutes, until the centre barely wobbles."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cool completely, then pour a little clarified butter over the surface."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Wait twenty-four hours before cutting: a same-day terrine tastes of nothing."
+   }
+  ]
+ },
+ "bouillonlegumesmaison": {
+  "nom": "Homemade Vegetable Stock",
+  "description": "The base of everything: carrot, leek, onion, celery and aromatics simmered for an hour. Freezes in portions and replaces any shop-bought cube.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut all the vegetables into large pieces: chopped too fine, they would cloud the stock."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Brown the halved onion, cut side down in a dry pan, until it darkens: this gives the golden colour."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Put all the vegetables in a large pan and cover with cold water, never hot."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a bare simmer and keep it there: boiling would turn the stock cloudy and bitter."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add thyme, bay and peppercorns only after twenty minutes, so they don't exhaust themselves."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer uncovered for an hour, skimming now and then."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain without pressing the vegetables: pressing clouds the stock."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Salt only when you use it, and freeze in portions or ice cubes."
+   }
+  ]
+ },
+ "glacematcha": {
+  "nom": "Matcha Ice Cream",
+  "description": "An ice cream of vivid green, bitter as tea and soft as cream. The matcha is slaked separately, or it forms lumps you can never rescue.",
+  "etapes": [
+   {
+    "titre": "Slake",
+    "detail": "Whisk the matcha with two spoonfuls of warm milk into a smooth, lump-free paste."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Bring the rest of the milk and the cream to a simmer."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the yolks and sugar until pale."
+   },
+   {
+    "titre": "Custard",
+    "detail": "Pour the hot milk over the yolks, return to low heat and cook until it coats the spoon."
+   },
+   {
+    "titre": "Matcha",
+    "detail": "Stir in the matcha paste off the heat and whisk hard."
+   },
+   {
+    "titre": "Mature",
+    "detail": "Cool quickly and mature for four hours in the fridge."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn, then firm up for an hour in the freezer before serving."
+   }
+  ]
+ },
+ "parfaitglacefruitsrouges": {
+  "nom": "Red Berry Frozen Parfait",
+  "description": "An Italian meringue lightened with whipped cream and red berry purée, set in the freezer without a churn. Slices cleanly and melts slowly.",
+  "etapes": [
+   {
+    "titre": "Purée",
+    "detail": "Blend the berries with the lemon juice and sieve to remove the seeds."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Cook the sugar with a little water to 118°C, using a thermometer."
+   },
+   {
+    "titre": "Meringue",
+    "detail": "Whip the whites and pour the boiling syrup in a thin stream down the side, without stopping the whisk."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Keep whisking until the meringue is lukewarm and forms a bird's beak."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip the cold cream to soft, not firm, peaks."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the fruit purée into the meringue, then the cream, with a spatula."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Pour into a lined mould and freeze for six hours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Turn out and slice with a knife dipped in hot water, serving with a few fresh berries."
+   }
+  ]
+ },
+ "tarteglaceecitron": {
+  "nom": "Frozen Lemon Tart",
+  "description": "A buttery biscuit base under a frozen lemon cream, set in the freezer. All the sharpness of a lemon tart, in frozen form.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Crush the biscuits to a coarse powder and mix with the melted butter."
+   },
+   {
+    "titre": "Press",
+    "detail": "Press firmly into the base of a tart tin with the back of a spoon, and freeze."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Zest then juice the lemons: the zest carries the aroma, the juice the acidity."
+   },
+   {
+    "titre": "Mixture",
+    "detail": "Whisk the condensed milk with the juice and zest: it thickens by itself within minutes."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip the cream to soft peaks and fold it in gently."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour onto the chilled biscuit base and smooth the top."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Freeze for five hours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take out a quarter of an hour before serving and cut with a hot knife."
+   }
+  ]
+ },
+ "tarteauxnoix": {
+  "nom": "Walnut Tart",
+  "description": "Walnut halves set in a cream caramel on a sweet pastry base. The tart of Périgord and Dauphiné, dense and served in small slices.",
+  "etapes": [
+   {
+    "titre": "Pastry",
+    "detail": "Rub flour and cold butter to crumbs, add a little sugar and the egg, then form a ball without kneading."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and rest for an hour in the fridge: unrested pastry shrinks in the oven."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll out and line the tin, prick the base and blind bake for fifteen minutes."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the walnut halves, then chop them roughly."
+   },
+   {
+    "titre": "Caramel",
+    "detail": "Make a dry caramel with the sugar, to a good amber colour."
+   },
+   {
+    "titre": "Stop it",
+    "detail": "Stop the cooking with hot cream, at arm's length: caramel spits violently."
+   },
+   {
+    "titre": "Walnuts",
+    "detail": "Add the honey and walnuts, stir and let it thicken for two minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour onto the pre-baked base and return to the oven for twenty minutes, then cool completely before slicing."
+   }
+  ]
+ },
+ "gratinlegumesracines": {
+  "nom": "Root Vegetable Gratin",
+  "description": "Parsnip, carrot, turnip and Jerusalem artichoke in thin slices, layered and baked gently in stock. A cream-free gratin, sweetened by the roots themselves.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Slice all the vegetables two millimetres thick, ideally on a mandoline: the thickness must match."
+   },
+   {
+    "titre": "Rub",
+    "detail": "Rub the dish with cut garlic, then oil it lightly."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Stand the slices upright, alternating vegetables, packed tightly together."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and scatter thyme between the layers."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour hot stock to halfway up: the vegetables cook in it rather than drying out."
+   },
+   {
+    "titre": "Bake covered",
+    "detail": "Cover with paper and bake for forty minutes at 180°C."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover, scatter the parmesan and give it twenty more minutes until the top browns."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest for ten minutes before serving; the gratin holds together better."
+   }
+  ]
+ },
+ "saladechoukale": {
+  "nom": "Massaged Kale Salad",
+  "description": "Raw kale is tough; massaged for five minutes with oil and lemon it relaxes and turns tender. With apple, cranberries and toasted seeds.",
+  "etapes": [
+   {
+    "titre": "Strip",
+    "detail": "Strip out the central rib of each kale leaf: it stays tough whatever you do."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred the leaves into fine ribbons."
+   },
+   {
+    "titre": "Massage",
+    "detail": "Add the oil, lemon juice and a pinch of salt, then massage the leaves by hand for five minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "The kale should darken, halve in volume and turn supple: that is the sign it is ready."
+   },
+   {
+    "titre": "Apple",
+    "detail": "Cut the apple into fine sticks, skin on for colour."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the almonds and chop them."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss kale, apple, cranberries and almonds together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Grate the parmesan over and serve: this salad holds for hours without wilting."
+   }
+  ]
+ },
+ "galettescourgettefour": {
+  "nom": "Baked Courgette Fritters",
+  "description": "Fritters of grated courgette and feta, bound with egg and baked rather than fried. Everything rests on draining: a wet courgette will never hold.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the courgettes with their skin, on the coarse side."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Salt them and let them weep for twenty minutes in a colander."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Squeeze hard in a tea towel: a lot of water should come out, which is normal and essential."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix with the crumbled feta, egg, flour, chopped mint and spring onion."
+   },
+   {
+    "titre": "Season",
+    "detail": "Pepper, and taste before salting: the feta already brings plenty."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape flat patties by hand and set them on an oiled tray."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Brush the tops with olive oil; that is what browns them."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for twenty-five minutes at 200°C, turning them halfway."
+   }
+  ]
  }
 
 };

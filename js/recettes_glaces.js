@@ -2301,5 +2301,43 @@ Object.assign(recettes, {
       { icone: "🍨", titre: "Turbiner", detail: "Turbiner jusqu'à texture souple, puis mettre en bac une heure au congélateur.", badge: null }
     ],
     liees: ["sorbetcitron"]
+  },
+  glacematcha: {
+    nom: "Glace au Matcha",
+    cat: "glaces", pays: "japon",
+    base: 1,
+    temps: "30 min + turbinage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍵",
+    dateAjout: "2026-09-25T14:30:00",
+    description: "Une crème glacée d'un vert franc, amère comme le thé et douce comme la crème. Le matcha se délaie à part, sinon il forme des grumeaux qu'on ne rattrape plus.",
+    tableauGlacematcha: [
+      { nb: 1, lait: "30 ml", creme: "20 ml", jauneoeuf: "½", sucre: "12 g", matcha: "2 g" },
+      { nb: 2, lait: "60 ml", creme: "40 ml", jauneoeuf: "1", sucre: "24 g", matcha: "4 g" },
+      { nb: 3, lait: "90 ml", creme: "60 ml", jauneoeuf: "1½", sucre: "36 g", matcha: "6 g" },
+      { nb: 4, lait: "120 ml", creme: "80 ml", jauneoeuf: "2", sucre: "48 g", matcha: "8 g" },
+      { nb: 5, lait: "150 ml", creme: "100 ml", jauneoeuf: "2½", sucre: "60 g", matcha: "10 g" },
+      { nb: 6, lait: "180 ml", creme: "120 ml", jauneoeuf: "3", sucre: "72 g", matcha: "12 g" },
+      { nb: 7, lait: "210 ml", creme: "140 ml", jauneoeuf: "3½", sucre: "84 g", matcha: "14 g" },
+      { nb: 8, lait: "240 ml", creme: "160 ml", jauneoeuf: "4", sucre: "96 g", matcha: "16 g" },
+      { nb: 9, lait: "270 ml", creme: "180 ml", jauneoeuf: "4½", sucre: "108 g", matcha: "18 g" },
+      { nb: 10, lait: "300 ml", creme: "200 ml", jauneoeuf: "5", sucre: "120 g", matcha: "20 g" },
+      { nb: 11, lait: "330 ml", creme: "220 ml", jauneoeuf: "5½", sucre: "132 g", matcha: "22 g" },
+      { nb: 12, lait: "360 ml", creme: "240 ml", jauneoeuf: "6", sucre: "144 g", matcha: "24 g" },
+      { nb: 13, lait: "390 ml", creme: "260 ml", jauneoeuf: "6½", sucre: "156 g", matcha: "26 g" },
+      { nb: 14, lait: "420 ml", creme: "280 ml", jauneoeuf: "7", sucre: "168 g", matcha: "28 g" },
+      { nb: 15, lait: "450 ml", creme: "300 ml", jauneoeuf: "7½", sucre: "180 g", matcha: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍵", titre: "Délayer", detail: "Délayer le matcha avec deux cuillères de lait tiède, au fouet, jusqu'à obtenir une pâte lisse sans grumeau.", badge: null },
+      { icone: "🥛", titre: "Chauffer", detail: "Porter le reste du lait et la crème à frémissement.", badge: null },
+      { icone: "🥚", titre: "Blanchir", detail: "Fouetter les jaunes et le sucre jusqu'à ce qu'ils pâlissent.", badge: null },
+      { icone: "♨️", titre: "Crème anglaise", detail: "Verser le lait chaud sur les jaunes, remettre sur feu doux et cuire jusqu'à napper la cuillère.", badge: null },
+      { icone: "🍵", titre: "Matcha", detail: "Incorporer la pâte de matcha hors du feu et fouetter vigoureusement.", badge: null },
+      { icone: "❄️", titre: "Maturer", detail: "Refroidir vite et laisser maturer quatre heures au frais.", badge: null },
+      { icone: "🍨", titre: "Turbiner", detail: "Turbiner puis raffermir une heure au congélateur avant de servir.", badge: null }
+    ],
+    liees: ["glacevanille"]
   }
 });

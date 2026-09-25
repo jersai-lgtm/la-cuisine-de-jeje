@@ -3140,5 +3140,115 @@ Object.assign(recettes, {
       { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre de glaçons.", badge: null },
       { icone: "🥤", titre: "Servir", detail: "Verser la boisson sur la glace et servir avec une paille.", badge: null }
     ]
+  },
+  coldbrewtonic: {
+    nom: "Cold Brew Tonic",
+    cat: "mocktails", pays: "usa",
+    base: 1,
+    temps: "10 min + 12h infusion",
+    niveau: "⭐ Facile",
+    emoji: "☕",
+    dateAjout: "2026-09-25T14:00:00",
+    description: "Café infusé à froid douze heures, versé sur du tonic glacé : l'amertume du quinquina rencontre celle du café et les deux se répondent, avec un trait de citron.",
+    tableauColdbrewtonic: [
+      { nb: 1, cafe: "15 g", eau: "15 cl", sodaamer: "10 cl", citron: "10 g", glacons: "180 g" },
+      { nb: 2, cafe: "30 g", eau: "30 cl", sodaamer: "20 cl", citron: "20 g", glacons: "360 g" },
+      { nb: 3, cafe: "45 g", eau: "45 cl", sodaamer: "30 cl", citron: "30 g", glacons: "540 g" },
+      { nb: 4, cafe: "60 g", eau: "60 cl", sodaamer: "40 cl", citron: "40 g", glacons: "720 g" },
+      { nb: 5, cafe: "75 g", eau: "75 cl", sodaamer: "50 cl", citron: "50 g", glacons: "900 g" },
+      { nb: 6, cafe: "90 g", eau: "90 cl", sodaamer: "60 cl", citron: "60 g", glacons: "1080 g" },
+      { nb: 7, cafe: "105 g", eau: "105 cl", sodaamer: "70 cl", citron: "70 g", glacons: "1260 g" },
+      { nb: 8, cafe: "120 g", eau: "120 cl", sodaamer: "80 cl", citron: "80 g", glacons: "1440 g" },
+      { nb: 9, cafe: "135 g", eau: "135 cl", sodaamer: "90 cl", citron: "90 g", glacons: "1620 g" },
+      { nb: 10, cafe: "150 g", eau: "150 cl", sodaamer: "100 cl", citron: "100 g", glacons: "1800 g" },
+      { nb: 11, cafe: "165 g", eau: "165 cl", sodaamer: "110 cl", citron: "110 g", glacons: "1980 g" },
+      { nb: 12, cafe: "180 g", eau: "180 cl", sodaamer: "120 cl", citron: "120 g", glacons: "2160 g" },
+      { nb: 13, cafe: "195 g", eau: "195 cl", sodaamer: "130 cl", citron: "130 g", glacons: "2340 g" },
+      { nb: 14, cafe: "210 g", eau: "210 cl", sodaamer: "140 cl", citron: "140 g", glacons: "2520 g" },
+      { nb: 15, cafe: "225 g", eau: "225 cl", sodaamer: "150 cl", citron: "150 g", glacons: "2700 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "☕", titre: "Moudre", detail: "Moudre le café gros, comme pour une cafetière à piston : une mouture fine donnerait un jus trouble et âpre.", badge: null },
+      { icone: "💧", titre: "Infuser à froid", detail: "Couvrir d'eau froide et laisser infuser douze heures au réfrigérateur, sans jamais chauffer.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Filtrer deux fois, la seconde à travers un filtre papier pour un extrait limpide.", badge: null },
+      { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre de glaçons jusqu'en haut.", badge: null },
+      { icone: "🫧", titre: "Tonic", detail: "Verser le tonic bien froid sur la glace.", badge: null },
+      { icone: "☕", titre: "Café", detail: "Verser le cold brew doucement par-dessus : il descend en volutes sombres, ne pas mélanger tout de suite.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Ajouter une rondelle de citron et servir.", badge: null }
+    ]
+  },
+  laitdepoule: {
+    nom: "Lait de Poule",
+    cat: "mocktails", pays: "france",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    dateAjout: "2026-09-25T14:00:00",
+    description: "Le remède d'enfance : un jaune d'œuf battu avec du sucre, allongé de lait chaud et parfumé à la vanille et à la muscade. Sans alcool, réconfortant, servi tiède.",
+    tableauLaitdepoule: [
+      { nb: 1, jauneoeuf: "1", sucre: "15 g", lait: "20 cl", vanille: "1 g", muscade: "0.3 g" },
+      { nb: 2, jauneoeuf: "2", sucre: "30 g", lait: "40 cl", vanille: "2 g", muscade: "0.6 g" },
+      { nb: 3, jauneoeuf: "3", sucre: "45 g", lait: "60 cl", vanille: "3 g", muscade: "0.9 g" },
+      { nb: 4, jauneoeuf: "4", sucre: "60 g", lait: "80 cl", vanille: "4 g", muscade: "1.2 g" },
+      { nb: 5, jauneoeuf: "5", sucre: "75 g", lait: "100 cl", vanille: "5 g", muscade: "1.5 g" },
+      { nb: 6, jauneoeuf: "6", sucre: "90 g", lait: "120 cl", vanille: "6 g", muscade: "1.8 g" },
+      { nb: 7, jauneoeuf: "7", sucre: "105 g", lait: "140 cl", vanille: "7 g", muscade: "2.1 g" },
+      { nb: 8, jauneoeuf: "8", sucre: "120 g", lait: "160 cl", vanille: "8 g", muscade: "2.4 g" },
+      { nb: 9, jauneoeuf: "9", sucre: "135 g", lait: "180 cl", vanille: "9 g", muscade: "2.7 g" },
+      { nb: 10, jauneoeuf: "10", sucre: "150 g", lait: "200 cl", vanille: "10 g", muscade: "3 g" },
+      { nb: 11, jauneoeuf: "11", sucre: "165 g", lait: "220 cl", vanille: "11 g", muscade: "3.3 g" },
+      { nb: 12, jauneoeuf: "12", sucre: "180 g", lait: "240 cl", vanille: "12 g", muscade: "3.6 g" },
+      { nb: 13, jauneoeuf: "13", sucre: "195 g", lait: "260 cl", vanille: "13 g", muscade: "3.9 g" },
+      { nb: 14, jauneoeuf: "14", sucre: "210 g", lait: "280 cl", vanille: "14 g", muscade: "4.2 g" },
+      { nb: 15, jauneoeuf: "15", sucre: "225 g", lait: "300 cl", vanille: "15 g", muscade: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Blanchir", detail: "Fouetter le jaune d'œuf et le sucre jusqu'à ce que le mélange blanchisse et fasse le ruban.", badge: null },
+      { icone: "🥛", titre: "Chauffer", detail: "Chauffer le lait avec la vanille fendue jusqu'au frémissement, sans le faire bouillir.", badge: null },
+      { icone: "🌀", titre: "Tempérer", detail: "Verser un peu de lait chaud sur le jaune en fouettant, pour l'habituer à la chaleur.", badge: null },
+      { icone: "♨️", titre: "Réunir", detail: "Reverser le tout dans la casserole et remuer à feu très doux.", badge: null },
+      { icone: "👀", titre: "Napper", detail: "Arrêter dès que le mélange nappe la cuillère — s'il bout, le jaune coagule et c'est raté.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Passer au chinois pour retirer la gousse et les éventuels grumeaux.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Verser en tasse, râper la muscade par-dessus et boire tiède.", badge: null }
+    ]
+  },
+  juscarotteorangegingembre: {
+    nom: "Jus Carotte-Orange-Gingembre",
+    cat: "mocktails", pays: "france",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥕",
+    dateAjout: "2026-09-25T14:00:00",
+    description: "Le trio du matin : carotte pour le corps, orange pour l'acidité, gingembre pour le coup de fouet. À l'extracteur ou au blender, filtré ou non.",
+    tableauJuscarotteorangegingembre: [
+      { nb: 1, carotte: "200 g", orange: "150 g", gingembre: "8 g", citron: "10 g", glacons: "100 g" },
+      { nb: 2, carotte: "400 g", orange: "300 g", gingembre: "16 g", citron: "20 g", glacons: "200 g" },
+      { nb: 3, carotte: "600 g", orange: "450 g", gingembre: "24 g", citron: "30 g", glacons: "300 g" },
+      { nb: 4, carotte: "800 g", orange: "600 g", gingembre: "32 g", citron: "40 g", glacons: "400 g" },
+      { nb: 5, carotte: "1000 g", orange: "750 g", gingembre: "40 g", citron: "50 g", glacons: "500 g" },
+      { nb: 6, carotte: "1200 g", orange: "900 g", gingembre: "48 g", citron: "60 g", glacons: "600 g" },
+      { nb: 7, carotte: "1400 g", orange: "1050 g", gingembre: "56 g", citron: "70 g", glacons: "700 g" },
+      { nb: 8, carotte: "1600 g", orange: "1200 g", gingembre: "64 g", citron: "80 g", glacons: "800 g" },
+      { nb: 9, carotte: "1800 g", orange: "1350 g", gingembre: "72 g", citron: "90 g", glacons: "900 g" },
+      { nb: 10, carotte: "2000 g", orange: "1500 g", gingembre: "80 g", citron: "100 g", glacons: "1000 g" },
+      { nb: 11, carotte: "2200 g", orange: "1650 g", gingembre: "88 g", citron: "110 g", glacons: "1100 g" },
+      { nb: 12, carotte: "2400 g", orange: "1800 g", gingembre: "96 g", citron: "120 g", glacons: "1200 g" },
+      { nb: 13, carotte: "2600 g", orange: "1950 g", gingembre: "104 g", citron: "130 g", glacons: "1300 g" },
+      { nb: 14, carotte: "2800 g", orange: "2100 g", gingembre: "112 g", citron: "140 g", glacons: "1400 g" },
+      { nb: 15, carotte: "3000 g", orange: "2250 g", gingembre: "120 g", citron: "150 g", glacons: "1500 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥕", titre: "Préparer", detail: "Brosser les carottes sans les éplucher si elles sont bio : la peau porte beaucoup de goût.", badge: null },
+      { icone: "🍊", titre: "Oranges", detail: "Peler les oranges à vif, en retirant bien la peau blanche qui amertume.", badge: null },
+      { icone: "🫚", titre: "Gingembre", detail: "Éplucher le gingembre à la cuillère, c'est plus précis qu'au couteau.", badge: null },
+      { icone: "🌀", titre: "Extraire", detail: "Passer carottes, oranges et gingembre à l'extracteur, ou mixer puis filtrer au tamis fin.", badge: null },
+      { icone: "🍋", titre: "Citron", detail: "Ajouter le jus de citron : il fixe la couleur et empêche le jus de brunir.", badge: null },
+      { icone: "🧊", titre: "Servir", detail: "Verser sur glace et boire dans les vingt minutes, avant que les vitamines ne s'oxydent.", badge: null }
+    ]
   }
 });

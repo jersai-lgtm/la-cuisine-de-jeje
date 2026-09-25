@@ -6852,4 +6852,42 @@ Object.assign(recettes, {
     ],
     liees: ["encebollado","llapingachos","secodechivo"]
   },
+  bouillonlegumesmaison: {
+    nom: "Bouillon de Légumes Maison",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    dateAjout: "2026-09-25T14:30:00",
+    description: "La base de tout : carotte, poireau, oignon, céleri et aromates frémis une heure. Se congèle en portions et remplace n'importe quel cube du commerce.",
+    tableauBouillonlegumesmaison: [
+      { nb: 1, carotte: "80 g", poireaux: "80 g", oignon: "60 g", celeri: "50 g", thym: "1 g", laurier: "0.5 g", poivre: "1 g", eau: "50 cl" },
+      { nb: 2, carotte: "160 g", poireaux: "160 g", oignon: "120 g", celeri: "100 g", thym: "2 g", laurier: "1 g", poivre: "2 g", eau: "100 cl" },
+      { nb: 3, carotte: "240 g", poireaux: "240 g", oignon: "180 g", celeri: "150 g", thym: "3 g", laurier: "1.5 g", poivre: "3 g", eau: "150 cl" },
+      { nb: 4, carotte: "320 g", poireaux: "320 g", oignon: "240 g", celeri: "200 g", thym: "4 g", laurier: "2 g", poivre: "4 g", eau: "200 cl" },
+      { nb: 5, carotte: "400 g", poireaux: "400 g", oignon: "300 g", celeri: "250 g", thym: "5 g", laurier: "2.5 g", poivre: "5 g", eau: "250 cl" },
+      { nb: 6, carotte: "480 g", poireaux: "480 g", oignon: "360 g", celeri: "300 g", thym: "6 g", laurier: "3 g", poivre: "6 g", eau: "300 cl" },
+      { nb: 7, carotte: "560 g", poireaux: "560 g", oignon: "420 g", celeri: "350 g", thym: "7 g", laurier: "3.5 g", poivre: "7 g", eau: "350 cl" },
+      { nb: 8, carotte: "640 g", poireaux: "640 g", oignon: "480 g", celeri: "400 g", thym: "8 g", laurier: "4 g", poivre: "8 g", eau: "400 cl" },
+      { nb: 9, carotte: "720 g", poireaux: "720 g", oignon: "540 g", celeri: "450 g", thym: "9 g", laurier: "4.5 g", poivre: "9 g", eau: "450 cl" },
+      { nb: 10, carotte: "800 g", poireaux: "800 g", oignon: "600 g", celeri: "500 g", thym: "10 g", laurier: "5 g", poivre: "10 g", eau: "500 cl" },
+      { nb: 11, carotte: "880 g", poireaux: "880 g", oignon: "660 g", celeri: "550 g", thym: "11 g", laurier: "5.5 g", poivre: "11 g", eau: "550 cl" },
+      { nb: 12, carotte: "960 g", poireaux: "960 g", oignon: "720 g", celeri: "600 g", thym: "12 g", laurier: "6 g", poivre: "12 g", eau: "600 cl" },
+      { nb: 13, carotte: "1040 g", poireaux: "1040 g", oignon: "780 g", celeri: "650 g", thym: "13 g", laurier: "6.5 g", poivre: "13 g", eau: "650 cl" },
+      { nb: 14, carotte: "1120 g", poireaux: "1120 g", oignon: "840 g", celeri: "700 g", thym: "14 g", laurier: "7 g", poivre: "14 g", eau: "700 cl" },
+      { nb: 15, carotte: "1200 g", poireaux: "1200 g", oignon: "900 g", celeri: "750 g", thym: "15 g", laurier: "7.5 g", poivre: "15 g", eau: "750 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Tailler", detail: "Couper tous les légumes en gros morceaux : taillés trop fin, ils troubleraient le bouillon.", badge: null },
+      { icone: "🧅", titre: "Colorer", detail: "Faire colorer l'oignon coupé en deux, face à plat dans une poêle sèche, jusqu'à ce qu'il brunisse : c'est lui qui donne la couleur dorée.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Mettre tous les légumes dans une grande casserole et couvrir d'eau froide, jamais chaude.", badge: null },
+      { icone: "♨️", titre: "Frémir", detail: "Porter à frémissement et maintenir là : une ébullition rendrait le bouillon trouble et amer.", badge: null },
+      { icone: "🌿", titre: "Aromates", detail: "Ajouter thym, laurier et poivre en grains après vingt minutes seulement, pour ne pas les user.", badge: null },
+      { icone: "⏲️", titre: "Cuire", detail: "Laisser frémir une heure à découvert, en écumant de temps en temps.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Filtrer sans presser les légumes : presser rend le bouillon trouble.", badge: null },
+      { icone: "❄️", titre: "Conserver", detail: "Saler seulement à l'usage, et congeler en portions ou en glaçons.", badge: null }
+    ]
+  }
 });
