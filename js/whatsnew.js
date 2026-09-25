@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "5.2.9",
+    titre: "📥 Une recette trouvée sur le web ? Colle le lien",
+    texte: "Fini de tout recopier à la main ! 📥 Dans « Ajouter une recette », un champ attend l'adresse de la page : colle le lien d'une recette trouvée sur le web, appuie sur Importer, et le formulaire se remplit tout seul — nom, temps, catégorie, ingrédients et étapes. Tu relis, tu corriges ce qui te chante, tu enregistres : rien n'est ajouté sans toi. ✍️ Les quantités sont même remises en forme au passage (« 250 g Farine » devient « Farine : 250 g ») et la description garde le nombre de parts d'origine et le site d'où vient la recette. 👨‍🍳 Deux autres nouveautés en cuisine : en mode Cuisiner, chaque étape rappelle maintenant sous la consigne les ingrédients dont elle parle, avec la quantité pour le nombre de convives choisi — plus besoin de remonter à la liste les mains pleines. 🔍 Et quand tu cherches plusieurs ingrédients à la fois sans rien trouver (« courgette chèvre miel »), l'appli te propose d'en lâcher un : « sans miel (3) », « sans courgette (10) ». Bonne cuisine ! 🍳"
+  },
+  {
     v: "5.2.1",
     titre: "🧭 Une appli plus simple à prendre en main",
     texte: "Grand ménage côté confort ! 🧭 Fini les deux menus qui se marchaient dessus : une seule barre en bas, la même partout — 🏠 Accueil, 🍳 Recettes, ⭐ Favoris, 📅 Menus et 🥫 Garde-manger. Les recettes sont à un appui depuis n'importe où. 👤 En haut, un avatar regroupe la connexion, le thème, la couleur, la langue, l'aide, tes stats et « Ajouter une recette » : l'en-tête est passé de 191 à 65 px, soit une recette de plus visible dès l'ouverture. 🔍 Tout est aussi plus lisible et plus facile à viser : textes agrandis (les petites cartes de l'accueil surtout) et boutons à 44 px — à commencer par les − / + des portions, qu'on touche les doigts pleins de farine. 📖 La fiche recette s'ouvre maintenant sur sa photo, puis le titre, les portions et les ingrédients, avec une barre toujours visible en bas : 👨‍🍳 Cuisiner, 🛒 Courses et le partage. 🏡 Et l'accueil s'allège : une seule carte « Qu'est-ce qu'on mange ? » réunit le swipe, les envies et le quiz. Bonne cuisine ! 👨‍🍳"
