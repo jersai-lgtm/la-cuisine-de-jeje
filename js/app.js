@@ -1353,12 +1353,14 @@ function filtrerFavoris() {
   const btn = document.getElementById('btn-favoris');
   if (btn) btn.classList.add('active');
 
-  // Hors connexion : si des favoris LOCAUX existent, on les affiche (avec une
-  // invite douce à se connecter pour les garder) ; sinon, on propose de se connecter.
+  // Hors connexion : on affiche les favoris LOCAUX, avec une invite douce à se
+  // connecter pour les garder. v5.2.3 : sans compte ET sans favori, on n'ouvre plus la
+  // fenêtre de connexion en pleine figure — Favoris est devenu un onglet principal, on
+  // y arrive souvent par curiosité. On montre la vue vide et à quoi elle sert ; la
+  // connexion est proposée dedans (message plus bas).
   let _favLoc = []; try { _favLoc = JSON.parse(localStorage.getItem("favoris_locaux") || "[]"); } catch (e) {}
-  if (!window.currentUser) {
-    if (!_favLoc.length) { ouvrirModalAuth(); return; }
-    if (typeof afficherToast === "function") afficherToast(window.LANG === "en"
+  if (!window.currentUser && _favLoc.length && typeof afficherToast === "function") {
+    afficherToast(window.LANG === "en"
       ? `❤️ ${_favLoc.length} favorite${_favLoc.length > 1 ? "s" : ""} — sign in (free) to keep them on all your devices`
       : `❤️ ${_favLoc.length} favori${_favLoc.length > 1 ? "s" : ""} — connecte-toi (gratuit) pour les garder sur tous tes appareils`);
   }
@@ -1382,19 +1384,10 @@ function filtrerFavoris() {
     }
   });
 
-  // Message si aucun favori
-  let msg = document.getElementById('msg-no-favoris');
-  if (count === 0) {
-    if (!msg) {
-      msg = document.createElement('p');
-      msg.id = 'msg-no-favoris';
-      msg.style.cssText = 'text-align:center;color:#888;padding:40px;grid-column:1/-1;font-size:15px';
-      msg.innerHTML = `❤️ Aucun favori pour l'instant.<br><small>Appuie sur 🤍 dans une recette pour l'ajouter !</small>`;
-      document.getElementById('recettes-grid')?.appendChild(msg);
-    }
-  } else {
-    if (msg) msg.remove();
-  }
+  // Aucun favori : c'est l'état vide de la grille (js/grille_navigation.js) qui affiche
+  // le bon message selon le contexte — visiteur ou compte connecté. Un second message
+  // ici resterait invisible : l'ancien visait #recettes-grid, qui n'existe plus.
+  document.getElementById('msg-no-favoris')?.remove();
   if (typeof appliquerTriNoteSiActif === "function") appliquerTriNoteSiActif();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }

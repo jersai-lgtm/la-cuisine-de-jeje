@@ -257,7 +257,9 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
   color: var(--accent, #ff4d88);
   font-weight: 700;
 }
-#grille-vide {
+/* .grille-vide : même présentation pour tous les états vides (filtres sans résultat,
+   favoris vides…). L'id reste pour la grille des recettes, historique. */
+#grille-vide, .grille-vide {
   flex-basis: 100%;
   width: 100%;
   grid-column: 1 / -1;
@@ -267,6 +269,8 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
   /* l'état vide ne doit jamais être « sauté » par content-visibility */
   content-visibility: visible;
 }
+.grille-vide-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.grille-vide-note { font-size: 12.5px; color: var(--text-3); margin: 14px 0 0; }
 .grille-vide-emoji { font-size: 46px; margin-bottom: 8px; }
 .grille-vide-titre { font-size: 17px; font-weight: 700; color: var(--text); margin: 0 0 4px; }
 .grille-vide-sous  { font-size: 13px; margin: 0 0 16px; }
@@ -276,9 +280,14 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
   color: var(--accent, #ff4d88);
   font-weight: 600;
   border-radius: 999px;
-  padding: 9px 18px;
+  padding: 0 18px;
+  min-height: 44px;        /* même plancher tactile que le reste (v5.1.8) */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   font-size: 13.5px;
+  font-family: inherit;
 }
 .grille-vide-btn:hover { background: rgba(var(--accent-rgb), .2); }
 
