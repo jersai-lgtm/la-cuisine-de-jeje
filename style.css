@@ -290,6 +290,26 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
   font-family: inherit;
 }
 .grille-vide-btn:hover { background: rgba(var(--accent-rgb), .2); }
+/* Pistes de repli quand une recherche à plusieurs ingrédients ne donne rien :
+   une rangée de « sans X (12) » qui relance la recherche allégée. */
+.grille-vide-pistes {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  align-items: center; justify-content: center;
+  margin: 0 0 18px;
+}
+.grille-vide-pistes .grille-vide-note { flex-basis: 100%; margin: 0 0 2px; }
+.grille-vide-piste {
+  border: 1px solid rgba(var(--w), .22);
+  background: rgba(var(--panel), .7);
+  color: var(--text-2);
+  border-radius: 999px;
+  padding: 0 14px;
+  min-height: 40px;
+  display: inline-flex; align-items: center; gap: 6px;
+  cursor: pointer; font-size: 13px; font-family: inherit;
+}
+.grille-vide-piste b { color: var(--accent, #ff4d88); font-weight: 800; }
+.grille-vide-piste:hover { border-color: var(--accent, #ff4d88); color: var(--text); }
 
 .carte {
   width: 200px;

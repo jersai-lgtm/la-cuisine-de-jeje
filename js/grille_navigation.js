@@ -65,6 +65,101 @@
       (en ? "Reset the filters" : "Réinitialiser les filtres") + "</button></div>";
   }
 
+  // ---- v5.2.6 : rattrapage de la recherche par ingrédients ----
+  // « courgette chèvre miel » : les trois ensemble n'existent pas, et l'écran
+  // restait vide sans rien dire. On propose maintenant de lâcher un ingrédient,
+  // avec le nombre de recettes derrière chaque piste.
+  function requeteBarre() {
+    const i = document.getElementById("search-input");
+    return i ? i.value.trim() : "";
+  }
+  function normer(s) {
+    return (typeof normalizeText === "function") ? normalizeText(s) : String(s || "").toLowerCase().trim();
+  }
+  // Les mots tapés, tels qu'ils ont été écrits (pour l'affichage) et normalisés
+  // (pour la comparaison). Les mots de moins de trois lettres ne comptent pas :
+  // la recherche elle-même les ignore, ils ne peuvent donc pas être en cause.
+  function motsRequete(q) {
+    const vus = new Set();
+    return q.split(/[\s,;+]+/).filter(Boolean).map(brut => ({ brut, mot: normer(brut) }))
+      .filter(m => {
+        if (m.mot.length < 3 || vus.has(m.mot)) return false;
+        vus.add(m.mot);
+        return true;
+      });
+  }
+  // Combien de cartes pour cette sous-requête, en tenant compte des filtres déjà
+  // posés (catégorie, pays…) : le compte affiché doit être celui qu'on obtiendra.
+  function compterPour(sousRequete) {
+    try {
+      if (typeof ensembleCartesPourRequete !== "function") return 0;
+      const etat = window._etatAvantRecherche;
+      let n = 0;
+      ensembleCartesPourRequete(normer(sousRequete)).forEach(el => {
+        if (!etat || etat.get(el) !== false) n++;
+      });
+      return n;
+    } catch (e) { return 0; }
+  }
+  function contenuRechercheVide(q, mots, pistes) {
+    const en = (window.LANG === "en");
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    const plusieurs = mots.length >= 2;
+    let html = '<div class="grille-vide-emoji">🥣</div>' +
+      '<p class="grille-vide-titre">' +
+        (plusieurs ? (en ? "Nothing with all of that" : "Rien avec tout ça")
+                   : (en ? "Nothing found" : "Rien trouvé")) + "</p>" +
+      '<p class="grille-vide-sous">' +
+        (plusieurs ? esc(mots.map(m => m.brut).join(" + ")) : "« " + esc(mots[0].brut) + " »") + "</p>";
+    if (mots.length >= 2) {
+      html += '<div id="grille-vide-pistes" class="grille-vide-pistes">' +
+        (pistes === null
+          ? '<span class="grille-vide-note">' + (en ? "Looking for a way around…" : "Je cherche une porte de sortie…") + "</span>"
+          : pistesHTML(pistes, en)) + "</div>";
+    }
+    html += '<div class="grille-vide-actions"><button class="grille-vide-btn" type="button" ' +
+      "onclick=\"if(typeof viderRecherche==='function')viderRecherche()\">↺ " +
+      (en ? "Clear the search" : "Vider la recherche") + "</button></div>";
+    return html;
+  }
+  function pistesHTML(pistes, en) {
+    if (!pistes.length) {
+      return '<span class="grille-vide-note">' +
+        (en ? "Not even two of them go together — try another pairing."
+            : "Même deux d'entre eux ne se croisent nulle part : essaie une autre association.") + "</span>";
+    }
+    const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    return '<span class="grille-vide-note">' + (en ? "Drop one ingredient:" : "En laisser un de côté :") + "</span>" +
+      pistes.map(p => '<button class="grille-vide-piste" type="button" onclick="rechercheSansMot(' +
+        "'" + esc(p.mot) + "')\">" + (en ? "without " : "sans ") + esc(p.brut) +
+        ' <b>' + p.n + "</b></button>").join("");
+  }
+  // Retire un ingrédient de la barre et relance : c'est la recherche normale qui
+  // reprend la main, rien n'est court-circuité.
+  window.rechercheSansMot = function (mot) {
+    const i = document.getElementById("search-input");
+    if (!i) return;
+    const reste = i.value.split(/[\s,;+]+/).filter(Boolean).filter(t => normer(t) !== mot);
+    i.value = reste.join(" ");
+    if (typeof rechercherRecette === "function") rechercherRecette(i.value);
+  };
+  // Le calcul coûte une passe de recherche par ingrédient : on attend que la
+  // frappe se pose, et on abandonne si la requête a changé entre-temps.
+  let _timerPistes = null;
+  function planifierPistes(mots, cle) {
+    clearTimeout(_timerPistes);
+    _timerPistes = setTimeout(() => {
+      const ev = document.getElementById("grille-vide");
+      if (!ev || ev.dataset.contexte !== cle) return;
+      const pistes = mots.map(m => ({
+        mot: m.mot, brut: m.brut,
+        n: compterPour(mots.filter(x => x.mot !== m.mot).map(x => x.brut).join(" ")),
+      })).filter(p => p.n > 0).sort((a, b) => b.n - a.n);
+      const boite = document.getElementById("grille-vide-pistes");
+      if (boite && ev.dataset.contexte === cle) boite.innerHTML = pistesHTML(pistes, window.LANG === "en");
+    }, 320);
+  }
+
   function assurerEtatVide(g) {
     let ev = document.getElementById("grille-vide");
     if (!ev) {
@@ -103,10 +198,24 @@
     // ---- État vide ----
     const ev = assurerEtatVide(g);
     if (enGrille) {
-      const cle = enVueFavoris() ? (window.currentUser ? "favoris" : "favoris-visiteur") : "filtres";
-      // On ne réécrit que si le contexte change : l'observateur qui appelle maj()
-      // surveille cette grille, une réécriture systématique tournerait en boucle.
-      if (ev.dataset.contexte !== cle) { ev.dataset.contexte = cle; ev.innerHTML = contenuEtatVide(cle); }
+      // Une grille vide avec une recherche en cours, ce n'est pas un problème de
+      // filtres : c'est la requête qui ne donne rien. Le message le dit, et
+      // propose de relâcher un ingrédient quand il y en a plusieurs.
+      const q = (n === 0 && !enVueFavoris()) ? requeteBarre() : "";
+      const mots = q ? motsRequete(q) : [];
+      if (mots.length) {
+        const cle = "recherche:" + mots.map(m => m.mot).join("+");
+        if (ev.dataset.contexte !== cle) {
+          ev.dataset.contexte = cle;
+          ev.innerHTML = contenuRechercheVide(q, mots, null);
+          if (mots.length >= 2) planifierPistes(mots, cle);
+        }
+      } else {
+        const cle = enVueFavoris() ? (window.currentUser ? "favoris" : "favoris-visiteur") : "filtres";
+        // On ne réécrit que si le contexte change : l'observateur qui appelle maj()
+        // surveille cette grille, une réécriture systématique tournerait en boucle.
+        if (ev.dataset.contexte !== cle) { ev.dataset.contexte = cle; ev.innerHTML = contenuEtatVide(cle); }
+      }
     }
     const want = (enGrille && n === 0) ? "" : "none";
     if (ev.style.display !== want) ev.style.display = want; // garde anti-boucle

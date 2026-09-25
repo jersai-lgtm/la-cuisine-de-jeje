@@ -539,7 +539,11 @@ function afficherSuggestions(query) {
 
   // Rendu
   if (groupes.length === 0) {
-    dropdown.innerHTML = `<div class="suggestion-empty">Aucun résultat — essaye autre chose</div>`;
+    // v5.2.6 : plus de « Aucun résultat » en doublon. La grille en dessous porte
+    // désormais le message, et elle propose des pistes (« sans miel (3) ») —
+    // deux annonces du même vide, dont une bavarde, c'était une de trop.
+    cacherSuggestions();
+    return;
   } else {
     dropdown.innerHTML = groupes.map(g => `
       <div class="suggestion-group">
