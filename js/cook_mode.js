@@ -226,7 +226,7 @@
 
   function citeDans(texte, item) {
     const candidats = new Set();
-    if (item.mots.length >= 4) candidats.add(item.mots);
+    if (item.mots.length >= 3) candidats.add(item.mots);
     item.mots.split(/\s+/).forEach((m) => { if (m.length >= 5 && !MOTS_FAIBLES.has(m)) candidats.add(m); });
     for (const c of candidats) {
       // On tolère UNE lettre de flexion à la fin : l'étape écrit « la poule » quand
@@ -236,8 +236,11 @@
       const racine = (c.indexOf(" ") === -1 && c.length >= 6)
         ? c.slice(0, Math.max(5, c.length - 1))
         : c.replace(/s$/, "");
-      if (racine.length < 4) continue;
-      if (new RegExp("(^|[^a-z])" + echapper(racine) + "[a-z]{0,2}([^a-z]|$)").test(texte)) return true;
+      if (racine.length < 3) continue;
+      // Une racine de trois lettres (« ail », « egg ») ne tolère que le pluriel :
+      // avec une lettre libre, « ail » accrocherait « aile ».
+      const suite = (racine.length === 3) ? "s?" : "[a-z]{0,2}";
+      if (new RegExp("(^|[^a-z])" + echapper(racine) + suite + "([^a-z]|$)").test(texte)) return true;
     }
     return false;
   }
@@ -257,9 +260,13 @@
     const items = Object.entries(ligne)
       .filter(([k, v]) => !ignores.has(k) && v && v !== "0" && v !== 0)
       .map(([k, v]) => {
-        const label = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[k])
+        let label = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[k])
           ? INGREDIENTS_LABELS[k]
           : k.charAt(0).toUpperCase() + k.slice(1).replace(/([A-Z])/g, " $1");
+        // En anglais, les étapes sont traduites (i18n.js les remplace) : chercher
+        // « oignon » dedans ne donnerait rien. On prend le libellé anglais, qui
+        // sert aussi bien à l'affichage qu'au rapprochement.
+        if (window.LANG === "en" && window.I18N_ING && window.I18N_ING[label]) label = window.I18N_ING[label];
         // le label porte l'emoji devant : on ne garde que les lettres pour la recherche
         const mots = normaliser(label).replace(/[^a-z\s'-]/g, " ").replace(/\s+/g, " ").trim();
         return { label: label, qte: String(v), mots: mots };
