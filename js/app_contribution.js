@@ -89,10 +89,13 @@ window.fermerContribution = function () {
 };
 
 function contribReset() {
-  ["c-nom", "c-emoji", "c-temps", "c-pays", "c-desc", "c-ingredients", "c-etapes"].forEach(id => {
+  ["c-nom", "c-emoji", "c-temps", "c-pays", "c-desc", "c-ingredients", "c-etapes", "c-lien"].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.value = "";
   });
+  // v5.2.7 : le compte rendu de l'import ne doit pas survivre au formulaire.
+  const etatImport = document.getElementById("c-lien-etat");
+  if (etatImport) { etatImport.textContent = ""; etatImport.className = "contrib-import-etat"; }
   const cat = document.getElementById("c-cat"); if (cat) cat.value = "plats";
   const pays = document.getElementById("c-pays"); if (pays) pays.value = "france";
   const niv = document.getElementById("c-niveau"); if (niv) niv.value = "⭐ Facile";

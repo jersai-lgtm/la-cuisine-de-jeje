@@ -5602,6 +5602,24 @@ html[data-theme="light"] .agenda-input { color-scheme: light; }
   font-size: 15px; font-weight: 800;
 }
 .contrib-submit:active { transform: scale(.98); }
+/* Import depuis un lien (v5.2.7) : posé au-dessus du formulaire, le champ et
+   son bouton sur une ligne, l'état juste dessous. */
+.contrib-import {
+  margin-top: 16px; padding: 12px; border-radius: 14px;
+  background: rgba(var(--w),.05); border: 1px solid rgba(var(--w),.12);
+}
+.contrib-import .contrib-label { margin-top: 0; }
+.contrib-import-ligne { display: flex; gap: 8px; align-items: stretch; margin-top: 6px; }
+.contrib-import-ligne .contrib-input { flex: 1 1 auto; min-width: 0; }
+.contrib-import-btn {
+  flex: 0 0 auto; padding: 0 16px; min-height: 44px; border: none; border-radius: 12px;
+  background: linear-gradient(135deg, #7c5cd6, #b06cf5); color: #fff;
+  font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer;
+}
+.contrib-import-btn:disabled { opacity: .6; cursor: default; }
+.contrib-import-etat { font-size: 12.5px; color: var(--text-3); margin: 8px 2px 0; min-height: 1em; }
+.contrib-import-etat.est-ok { color: var(--vert); }
+.contrib-import-etat.est-ko { color: var(--rouge); }
 .contrib-mes-recettes { margin-top: 22px; border-top: 1px solid rgba(var(--w),.1); padding-top: 14px; }
 .contrib-sous-titre { font-size: 15px; margin: 0 0 10px; color: var(--text); }
 .contrib-vide { color: var(--text-3); font-size: 13px; }

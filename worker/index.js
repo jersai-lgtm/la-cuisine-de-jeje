@@ -35,6 +35,24 @@ const MAX_MESSAGE_CHARS = 2000;
 // Quota par utilisateur.
 const RATE_LIMIT_PER_HOUR = 40;
 
+// Import d'une recette depuis un lien (route /import).
+const IMPORT_PAR_HEURE = 15;
+const IMPORT_MAX_PAGE = 600_000;   // caractères de HTML lus au plus
+const IMPORT_MAX_TEXTE = 14_000;   // texte envoyé à l'IA quand la page n'est pas balisée
+const IMPORT_MAX_TOKENS = 2500;    // une recette complète, pas une phrase
+const SYSTEME_IMPORT = [
+  "Tu lis le texte d'une page web et tu en extrais LA recette de cuisine.",
+  "Réponds UNIQUEMENT par un objet JSON, sans phrase autour et sans bloc de code.",
+  'Schéma : {"nom":"","emoji":"🍽️","temps":"","portions":4,"cat":"","pays":"","niveau":"",',
+  '"description":"","ingredients":[],"etapes":[]}',
+  'cat vaut l\'une de : plats, entrees, soupes, salades, desserts, encas, aperitifs, brunch, healthy, pizzas, sauces, boulangerie.',
+  'niveau vaut "⭐ Facile", "⭐⭐ Moyen" ou "⭐⭐⭐ Difficile".',
+  'Chaque ingrédient s\'écrit "Nom : quantité" (ex. "Farine : 250 g").',
+  "Chaque étape est une consigne, dans l'ordre, sans numéro ni puce.",
+  "Garde la langue de la page. N'invente rien : ce qui manque reste vide.",
+  'Si la page ne contient pas de recette, réponds {"erreur":"pas de recette"}.',
+].join("\n");
+
 const JWK_URL =
   "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com";
 
@@ -146,6 +164,100 @@ export default {
       const msg = { type: b.type || "new", title: b.title, body: b.body };
       const n = await diffuserPush(env, msg, () => true);
       return json({ ok: true, envoyes: n }, 200, cors);
+    }
+
+    // --- Route /import : lire une recette depuis un lien ---------------------
+    // Le navigateur ne peut pas aller chercher une page d'un autre site (CORS) :
+    // c'est le worker qui la récupère. Deux voies, dans cet ordre :
+    //   1. le balisage schema.org/Recipe que publient la plupart des sites de
+    //      cuisine — exact, gratuit, instantané ;
+    //   2. sinon seulement, l'IA sur le texte de la page.
+    if (chemin === "/import") {
+      // Quota dédié : une importation coûte une page + éventuellement l'IA.
+      if (env.RATE_LIMIT) {
+        const fen = Math.floor(Date.now() / 3_600_000);
+        const k = `imp:${uid}:${fen}`;
+        const n = parseInt((await env.RATE_LIMIT.get(k)) || "0", 10);
+        if (n >= IMPORT_PAR_HEURE) {
+          return json({ route: "import", error: { message: "Quota d'imports atteint pour cette heure" } }, 429, cors);
+        }
+        await env.RATE_LIMIT.put(k, String(n + 1), { expirationTtl: 7200 });
+      }
+
+      let b; try { b = await request.json(); } catch (e) { b = {}; }
+      let u;
+      try { u = new URL(String((b && b.url) || "").trim()); } catch (e) {
+        return json({ route: "import", error: { message: "Lien invalide" } }, 400, cors);
+      }
+      if (u.protocol !== "https:" && u.protocol !== "http:") {
+        return json({ route: "import", error: { message: "Seuls les liens http(s) sont acceptés" } }, 400, cors);
+      }
+      // Le worker a le droit d'appeler n'importe quelle adresse : on refuse
+      // explicitement tout ce qui n'est pas un site public.
+      if (hoteNonPublic(u.hostname)) {
+        return json({ route: "import", error: { message: "Ce lien ne pointe pas vers un site public" } }, 400, cors);
+      }
+
+      let html = "";
+      try {
+        const rep = await fetch(u.toString(), {
+          redirect: "follow",
+          headers: {
+            "User-Agent": "Mozilla/5.0 (compatible; CuisineDeJeje/1.0; +https://jersai-lgtm.github.io/la-cuisine-de-jeje/)",
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "fr,en;q=0.8",
+          },
+        });
+        if (!rep.ok) {
+          return json({ route: "import", error: { message: "Page injoignable (" + rep.status + ")" } }, 502, cors);
+        }
+        const type = (rep.headers.get("Content-Type") || "").toLowerCase();
+        if (type && !/text\/html|xhtml|text\/plain/.test(type)) {
+          return json({ route: "import", error: { message: "Ce lien n'est pas une page web" } }, 415, cors);
+        }
+        html = (await rep.text()).slice(0, IMPORT_MAX_PAGE);
+      } catch (e) {
+        return json({ route: "import", error: { message: "Impossible d'ouvrir ce lien" } }, 502, cors);
+      }
+
+      const balisee = recetteDepuisJsonLd(html);
+      if (balisee) {
+        return json({ route: "import", ok: true, source: "balisage", lien: u.toString(), recette: balisee }, 200, cors);
+      }
+
+      if (!env.ANTHROPIC_API_KEY) {
+        return json({ route: "import", error: { message: "Cette page n'est pas balisée et l'IA n'est pas configurée" } }, 501, cors);
+      }
+      const texte = texteLisible(html).slice(0, IMPORT_MAX_TEXTE);
+      if (texte.length < 200) {
+        return json({ route: "import", error: { message: "Page trop pauvre pour y lire une recette" } }, 422, cors);
+      }
+      let brut = "";
+      try {
+        const up = await fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-key": env.ANTHROPIC_API_KEY,
+            "anthropic-version": "2023-06-01",
+          },
+          body: JSON.stringify({
+            model: FORCED_MODEL,
+            max_tokens: IMPORT_MAX_TOKENS,
+            system: SYSTEME_IMPORT,
+            messages: [{ role: "user", content: texte }],
+          }),
+        });
+        const d = await up.json();
+        brut = (d && d.content && d.content[0] && d.content[0].text) || "";
+      } catch (e) {
+        return json({ route: "import", error: { message: "Service IA indisponible" } }, 502, cors);
+      }
+      const lue = recetteDepuisTexteIA(brut);
+      if (!lue) {
+        return json({ route: "import", error: { message: "Aucune recette trouvée sur cette page" } }, 422, cors);
+      }
+      return json({ route: "import", ok: true, source: "ia", lien: u.toString(), recette: lue }, 200, cors);
     }
 
     // --- 2. Quota par utilisateur (KV) --------------------------------------
@@ -406,4 +518,224 @@ function partsParis(d) {
   let h = parseInt(p.hour, 10);
   if (h === 24) h = 0;
   return { h, m: parseInt(p.minute, 10), dow: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday) };
+}
+
+// =============================================================================
+// Import d'une recette depuis un lien (route /import)
+// =============================================================================
+
+// Refuse tout ce qui n'est pas un site public : le worker, lui, a le droit
+// d'appeler n'importe quelle adresse, y compris des machines internes.
+function hoteNonPublic(h) {
+  const n = String(h || "").toLowerCase().replace(/^\[|\]$/g, "");
+  if (!n || n.indexOf(".") === -1) return true;            // "localhost", "intranet"
+  if (/\.(local|internal|localdomain|home|lan)$/.test(n)) return true;
+  if (n === "localhost" || n.endsWith(".localhost")) return true;
+  if (/^(0|10|127)\./.test(n)) return true;
+  if (/^169\.254\./.test(n)) return true;
+  if (/^192\.168\./.test(n)) return true;
+  if (/^172\.(1[6-9]|2[0-9]|3[01])\./.test(n)) return true;
+  if (n === "::1") return true;
+  if (n.indexOf(":") !== -1 && /^f[cd]/.test(n)) return true;
+  return false;
+}
+
+// Texte lisible d'une page : on jette ce qui n'est pas du contenu.
+function texteLisible(html) {
+  return String(html || "")
+    .replace(/<(script|style|noscript|svg|template)[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<!--[\s\S]*?-->/g, " ")
+    .replace(/<\/(p|div|li|h[1-6]|tr|br)>/gi, "\n")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ").replace(/&amp;/gi, "&").replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">")
+    .replace(/[ \t ]+/g, " ")
+    .replace(/\n\s*\n\s*\n+/g, "\n\n")
+    .trim();
+}
+
+// PT1H30M devient « 1 h 30 » ; PT45M devient « 45 min ».
+function dureeISO(d) {
+  const m = /^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?/.exec(String(d || "").trim().toUpperCase());
+  if (!m) return "";
+  const j = parseInt(m[1] || 0, 10), h = parseInt(m[2] || 0, 10), mn = parseInt(m[3] || 0, 10);
+  const heures = j * 24 + h;
+  if (!heures && !mn) return "";
+  if (!heures) return mn + " min";
+  return heures + " h" + (mn ? " " + String(mn).padStart(2, "0") : "");
+}
+
+function texteDe(v) {
+  if (typeof v === "string") return v;
+  if (Array.isArray(v)) return v.map(texteDe).filter(Boolean).join(", ");
+  if (v && typeof v === "object") return texteDe(v.name || v.text || v.url || "");
+  return "";
+}
+
+// Les étapes arrivent sous toutes les formes : chaîne unique, tableau de
+// chaînes, HowToStep, ou HowToSection contenant des HowToStep.
+function etapesDe(v) {
+  const out = [];
+  const pousser = (t) => {
+    String(t || "").split(/\r?\n+/).forEach((ligne) => {
+      // « Étape 2 : », « 3. », « 4) » sautent ; un numéro nu (« 2 minutes plus
+      // tard… ») reste, sinon on mangerait le début de la consigne.
+      const s = ligne.trim()
+        .replace(/^(?:[eé]tape|step)\s*n?[°o]?\s*\d{1,2}\s*[:.)\-]?\s*/i, "")
+        .replace(/^\d{1,2}\s*[.):\-]\s+/, "")
+        .trim();
+      if (s.length > 2) out.push(s);
+    });
+  };
+  const visiter = (x) => {
+    if (!x) return;
+    if (typeof x === "string") return pousser(x);
+    if (Array.isArray(x)) return x.forEach(visiter);
+    if (typeof x === "object") {
+      if (x.itemListElement) return visiter(x.itemListElement);
+      return pousser(x.text || x.name || "");
+    }
+  };
+  visiter(v);
+  return out;
+}
+
+// Lit les noeuds schema.org/Recipe des blocs <script type="application/ld+json">.
+// Une page en annonce souvent PLUSIEURS (la recette lue, plus le carrousel
+// « à voir aussi ») : prendre la première tombe à côté. On les ramasse toutes
+// et on garde celle qui porte le titre de la page.
+function recetteDepuisJsonLd(html) {
+  const blocs = String(html || "").match(/<script[^>]+application\/ld\+json[^>]*>[\s\S]*?<\/script>/gi) || [];
+  const candidats = [];
+  for (const bloc of blocs) {
+    const contenu = bloc.replace(/^[\s\S]*?>/, "").replace(/<\/script>\s*$/i, "").trim();
+    let data;
+    try { data = JSON.parse(contenu); } catch (e) { continue; }
+    collecterRecettes(data, candidats, 0);
+  }
+  if (!candidats.length) return null;
+  const titre = normaliserTitre(titrePage(html));
+  candidats.sort((a, b) => noteCandidat(b, titre) - noteCandidat(a, titre));
+  for (const c of candidats) {
+    const r = formerRecette({
+      nom: texteDe(c.name),
+      temps: dureeISO(c.totalTime) || dureeISO(c.cookTime) || dureeISO(c.prepTime),
+      portions: parseInt(texteDe(c.recipeYield), 10) || 4,
+      cat: categorieDepuis(texteDe(c.recipeCategory)),
+      pays: texteDe(c.recipeCuisine),
+      description: texteDe(c.description),
+      image: premiereImage(c.image),
+      ingredients: (Array.isArray(c.recipeIngredient) ? c.recipeIngredient : [])
+        .map(texteDe).filter(Boolean),
+      etapes: etapesDe(c.recipeInstructions),
+    });
+    if (r) return r;
+  }
+  return null;
+}
+
+function collecterRecettes(n, out, profondeur) {
+  const p = profondeur || 0;
+  if (!n || p > 6 || out.length > 30) return;
+  if (Array.isArray(n)) { n.forEach((x) => collecterRecettes(x, out, p + 1)); return; }
+  if (typeof n !== "object") return;
+  const type = n["@type"];
+  const estRecette = Array.isArray(type) ? type.some((t) => String(t) === "Recipe") : String(type) === "Recipe";
+  if (estRecette && (n.recipeIngredient || n.recipeInstructions)) out.push(n);
+  if (n["@graph"]) collecterRecettes(n["@graph"], out, p + 1);
+  if (Array.isArray(n.itemListElement)) collecterRecettes(n.itemListElement, out, p + 1);
+  if (n.item) collecterRecettes(n.item, out, p + 1);
+  if (n.mainEntity) collecterRecettes(n.mainEntity, out, p + 1);
+}
+
+function titrePage(html) {
+  const og = /<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)/i.exec(html || "");
+  if (og) return og[1];
+  const t = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(html || "");
+  return t ? t[1] : "";
+}
+
+function normaliserTitre(s) {
+  return String(s || "").toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+// Le titre de la page tranche ; à défaut, la recette la mieux fournie gagne.
+function noteCandidat(c, titre) {
+  const nom = normaliserTitre(texteDe(c.name));
+  let note = Math.min(20, Array.isArray(c.recipeIngredient) ? c.recipeIngredient.length : 0);
+  if (nom && titre && (titre.indexOf(nom) !== -1 || nom.indexOf(titre) !== -1)) note += 100;
+  if (c.mainEntityOfPage) note += 30;
+  return note;
+}
+
+function premiereImage(v) {
+  if (!v) return "";
+  if (typeof v === "string") return v;
+  if (Array.isArray(v)) return premiereImage(v[0]);
+  if (typeof v === "object") return premiereImage(v.url || v.contentUrl || "");
+  return "";
+}
+
+const CATEGORIES_IMPORT = ["plats", "entrees", "soupes", "salades", "desserts", "encas",
+  "aperitifs", "brunch", "healthy", "pizzas", "sauces", "boulangerie"];
+
+// Le site dit « Dessert », « Plat principal », « Apéritif »... : on retombe sur
+// nos catégories, et sur « plats » quand rien ne correspond.
+function categorieDepuis(txt) {
+  const t = String(txt || "").toLowerCase();
+  if (/dessert|gateau|gâteau|patiss|sucre|glace/.test(t)) return "desserts";
+  if (/entr[eé]e|hors.d.oeuvre/.test(t)) return "entrees";
+  if (/soupe|potage|velout/.test(t)) return "soupes";
+  if (/salade/.test(t)) return "salades";
+  if (/ap[eé]ritif|amuse|tapas/.test(t)) return "aperitifs";
+  if (/pizza/.test(t)) return "pizzas";
+  if (/sauce|condiment/.test(t)) return "sauces";
+  if (/pain|brioche|viennois|boulang/.test(t)) return "boulangerie";
+  if (/brunch|petit.d[eé]j|breakfast/.test(t)) return "brunch";
+  if (/snack|en.cas|goûter|gouter/.test(t)) return "encas";
+  return "plats";
+}
+
+// Borne et nettoie ce qui sortira du worker, quelle que soit la voie d'entrée.
+function formerRecette(o) {
+  const chaine = (v, max) => String(v == null ? "" : v).replace(/\s+/g, " ").trim().slice(0, max);
+  const nom = chaine(o.nom, 80);
+  const ingredients = (o.ingredients || []).map((s) => chaine(s, 160)).filter(Boolean).slice(0, 60);
+  const etapes = (o.etapes || []).map((s) => chaine(s, 600)).filter(Boolean).slice(0, 40);
+  if (!nom || !ingredients.length || !etapes.length) return null;
+  const cat = CATEGORIES_IMPORT.includes(o.cat) ? o.cat : categorieDepuis(o.cat);
+  const niveaux = ["⭐ Facile", "⭐⭐ Moyen", "⭐⭐⭐ Difficile"];
+  return {
+    nom,
+    emoji: chaine(o.emoji, 4) || "🍽️",
+    temps: chaine(o.temps, 20),
+    portions: Math.min(24, Math.max(1, parseInt(o.portions, 10) || 4)),
+    cat,
+    pays: chaine(o.pays, 30).toLowerCase(),
+    niveau: niveaux.includes(o.niveau) ? o.niveau : "",
+    description: chaine(o.description, 300),
+    image: /^https?:\/\//.test(String(o.image || "")) ? chaine(o.image, 400) : "",
+    ingredients,
+    etapes,
+  };
+}
+
+// La réponse de l'IA doit être un objet JSON ; on tolère qu'elle soit entourée
+// de texte, mais pas qu'elle raconte autre chose qu'une recette.
+function recetteDepuisTexteIA(txt) {
+  const s = String(txt || "");
+  const d = s.indexOf("{"), f = s.lastIndexOf("}");
+  if (d === -1 || f <= d) return null;
+  let o;
+  try { o = JSON.parse(s.slice(d, f + 1)); } catch (e) { return null; }
+  if (!o || o.erreur) return null;
+  return formerRecette({
+    nom: o.nom, emoji: o.emoji, temps: o.temps, portions: o.portions,
+    cat: o.cat, pays: o.pays, niveau: o.niveau, description: o.description,
+    ingredients: Array.isArray(o.ingredients) ? o.ingredients : [],
+    etapes: Array.isArray(o.etapes) ? o.etapes : [],
+  });
 }

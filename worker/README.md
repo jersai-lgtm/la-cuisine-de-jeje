@@ -12,6 +12,30 @@ et en empêchant l'abus du quota. Il remplace l'ancien proxy ouvert.
 - **Paramètres imposés** : `model` et `max_tokens` fixés côté serveur ; `system`
   et `messages` bornés en taille → le proxy ne peut servir qu'à l'assistant recettes.
 
+## 📥 Import d'une recette depuis un lien (route `/import`)
+
+Ajoutée en v5.2.7. Le navigateur ne peut pas lire la page d'un autre site (CORS) :
+c'est le Worker qui va la chercher, puis renvoie une recette prête à relire dans
+le formulaire « Ajouter une recette ».
+
+- Jeton Firebase exigé, comme le reste ; quota séparé (`IMPORT_PAR_HEURE`, 15/h).
+- Refuse tout ce qui n'est pas un site public (localhost, IP privées…).
+- **Voie 1, gratuite** : le balisage `schema.org/Recipe` que publient la plupart
+  des sites de cuisine. Exact, instantané, aucun appel à l'IA. Quand la page
+  annonce plusieurs recettes (« à voir aussi »), celle qui porte le titre de la
+  page gagne.
+- **Voie 2** : à défaut seulement, l'IA lit le texte de la page (14 000
+  caractères, réponse JSON bornée).
+
+Tant que ce Worker n'est pas redéployé, l'app affiche « L'import n'est pas encore
+activé sur le serveur » — elle reconnaît la route au champ `route: "import"` de
+la réponse. Pour l'activer :
+
+```bash
+cd worker
+npx wrangler deploy
+```
+
 ## ⚠️ Ordre de déploiement (important)
 
 **Déployer ce Worker AVANT (ou en même temps que) le merge du front en prod.**
