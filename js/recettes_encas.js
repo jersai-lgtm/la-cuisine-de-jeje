@@ -8103,5 +8103,80 @@ Object.assign(recettes, {
       { icone: "🧻", titre: "Égoutter", detail: "Débarrasser sur du papier absorbant et laisser refroidir à plat, sans les empiler.", badge: null },
       { icone: "🫙", titre: "Conserver", detail: "Une fois parfaitement froids, garder en boîte hermétique — tiède, ils ramollissent.", badge: null }
     ]
+  },
+  amandescaramelisees: {
+    nom: "Amandes Caramélisées",
+    cat: "encas", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🌰",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Les chouchous des fêtes foraines : des amandes enrobées de sucre qui sablé puis recaramélise. Le secret tient dans ce passage par l'état de sable.",
+    tableauAmandescaramelisees: [
+      { nb: 1, amandes: "30 g", sucre: "18 g", eau: "1.2 cl", vanille: "0.1 g", sel: "0.2 g" },
+      { nb: 2, amandes: "60 g", sucre: "36 g", eau: "2.4 cl", vanille: "0.2 g", sel: "0.4 g" },
+      { nb: 3, amandes: "90 g", sucre: "54 g", eau: "3.6 cl", vanille: "0.3 g", sel: "0.6 g" },
+      { nb: 4, amandes: "120 g", sucre: "72 g", eau: "4.8 cl", vanille: "0.4 g", sel: "0.8 g" },
+      { nb: 5, amandes: "150 g", sucre: "90 g", eau: "6 cl", vanille: "0.5 g", sel: "1 g" },
+      { nb: 6, amandes: "180 g", sucre: "108 g", eau: "7.2 cl", vanille: "0.6 g", sel: "1.2 g" },
+      { nb: 7, amandes: "210 g", sucre: "126 g", eau: "8.4 cl", vanille: "0.7 g", sel: "1.4 g" },
+      { nb: 8, amandes: "240 g", sucre: "144 g", eau: "9.6 cl", vanille: "0.8 g", sel: "1.6 g" },
+      { nb: 9, amandes: "270 g", sucre: "162 g", eau: "10.8 cl", vanille: "0.9 g", sel: "1.8 g" },
+      { nb: 10, amandes: "300 g", sucre: "180 g", eau: "12 cl", vanille: "1 g", sel: "2 g" },
+      { nb: 11, amandes: "330 g", sucre: "198 g", eau: "13.2 cl", vanille: "1.1 g", sel: "2.2 g" },
+      { nb: 12, amandes: "360 g", sucre: "216 g", eau: "14.4 cl", vanille: "1.2 g", sel: "2.4 g" },
+      { nb: 13, amandes: "390 g", sucre: "234 g", eau: "15.6 cl", vanille: "1.3 g", sel: "2.6 g" },
+      { nb: 14, amandes: "420 g", sucre: "252 g", eau: "16.8 cl", vanille: "1.4 g", sel: "2.8 g" },
+      { nb: 15, amandes: "450 g", sucre: "270 g", eau: "18 cl", vanille: "1.5 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍳", titre: "Réunir", detail: "Mettre amandes, sucre et eau ensemble dans une poêle, à froid.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer à feu moyen en remuant sans arrêt avec une spatule en bois.", badge: null },
+      { icone: "💧", titre: "Évaporer", detail: "L'eau s'évapore, le sirop épaissit et fait de grosses bulles.", badge: null },
+      { icone: "🏖️", titre: "Le sablage", detail: "D'un coup, le sucre blanchit et devient sableux autour des amandes : c'est l'étape clé, surtout ne pas s'arrêter là.", badge: null },
+      { icone: "🔥", titre: "Caraméliser", detail: "Continuer à remuer : le sucre refond lentement et enrobe les amandes d'un caramel brillant.", badge: null },
+      { icone: "👀", titre: "Surveiller", detail: "Dès que l'enrobage est ambré, retirer du feu — dix secondes de plus et ça brûle.", badge: null },
+      { icone: "❄️", titre: "Séparer", detail: "Verser sur du papier cuisson et séparer les amandes à la fourchette avant qu'elles ne figent en bloc.", badge: null }
+    ]
+  },
+  chikki: {
+    nom: "Chikki",
+    cat: "encas", pays: "inde",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥜",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Le croquant indien de cacahuètes et de sucre de canne non raffiné. Deux ingrédients, une plaque de marbre et un geste rapide : le caramel fige en une minute.",
+    tableauChikki: [
+      { nb: 1, cacahuete: "25 g", sucrebrun: "22 g", beurre: "2.5 g", cardamome: "0.1 g" },
+      { nb: 2, cacahuete: "50 g", sucrebrun: "44 g", beurre: "5 g", cardamome: "0.2 g" },
+      { nb: 3, cacahuete: "75 g", sucrebrun: "66 g", beurre: "7.5 g", cardamome: "0.3 g" },
+      { nb: 4, cacahuete: "100 g", sucrebrun: "88 g", beurre: "10 g", cardamome: "0.4 g" },
+      { nb: 5, cacahuete: "125 g", sucrebrun: "110 g", beurre: "12.5 g", cardamome: "0.5 g" },
+      { nb: 6, cacahuete: "150 g", sucrebrun: "132 g", beurre: "15 g", cardamome: "0.6 g" },
+      { nb: 7, cacahuete: "175 g", sucrebrun: "154 g", beurre: "17.5 g", cardamome: "0.7 g" },
+      { nb: 8, cacahuete: "200 g", sucrebrun: "176 g", beurre: "20 g", cardamome: "0.8 g" },
+      { nb: 9, cacahuete: "225 g", sucrebrun: "198 g", beurre: "22.5 g", cardamome: "0.9 g" },
+      { nb: 10, cacahuete: "250 g", sucrebrun: "220 g", beurre: "25 g", cardamome: "1 g" },
+      { nb: 11, cacahuete: "275 g", sucrebrun: "242 g", beurre: "27.5 g", cardamome: "1.1 g" },
+      { nb: 12, cacahuete: "300 g", sucrebrun: "264 g", beurre: "30 g", cardamome: "1.2 g" },
+      { nb: 13, cacahuete: "325 g", sucrebrun: "286 g", beurre: "32.5 g", cardamome: "1.3 g" },
+      { nb: 14, cacahuete: "350 g", sucrebrun: "308 g", beurre: "35 g", cardamome: "1.4 g" },
+      { nb: 15, cacahuete: "375 g", sucrebrun: "330 g", beurre: "37.5 g", cardamome: "1.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥜", titre: "Griller", detail: "Griller les cacahuètes à sec jusqu'à ce que les peaux se détachent, puis les frotter dans un torchon.", badge: null },
+      { icone: "🧈", titre: "Préparer", detail: "Beurrer une plaque ou une feuille de papier cuisson, et poser un rouleau beurré à côté : tout ira très vite.", badge: null },
+      { icone: "🍬", titre: "Fondre", detail: "Faire fondre le sucre brun avec le beurre à feu moyen, sans eau et sans remuer au début.", badge: null },
+      { icone: "🌡️", titre: "Le test", detail: "Le caramel est prêt quand une goutte jetée dans l'eau froide durcit immédiatement et craque sous la dent.", badge: null },
+      { icone: "🥜", titre: "Mélanger", detail: "Jeter les cacahuètes et la cardamome, mélanger trois secondes et verser aussitôt.", badge: null },
+      { icone: "📏", titre: "Étaler", detail: "Étaler au rouleau en couche fine et régulière, en travaillant vite — le caramel fige en une minute.", badge: null },
+      { icone: "🔪", titre: "Marquer", detail: "Marquer les carrés au couteau pendant que c'est encore tiède et souple.", badge: null },
+      { icone: "💥", titre: "Casser", detail: "Laisser refroidir complètement puis casser le long des marques.", badge: null }
+    ]
   }
 });

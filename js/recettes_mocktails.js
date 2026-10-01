@@ -3362,5 +3362,117 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir complètement avant de l'utiliser dans un cocktail.", badge: null },
       { icone: "🫙", titre: "Conserver", detail: "Mettre en bouteille propre au réfrigérateur ; une cuillère de vodka prolonge la conservation.", badge: null }
     ]
+  },
+  laitamandemaison: {
+    nom: "Lait d'Amande Maison",
+    cat: "mocktails", pays: "france",
+    base: 6,
+    temps: "15 min + trempage",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Des amandes trempées une nuit, mixées à l'eau puis filtrées. Deux ingrédients, aucun additif, et un goût qui n'a rien à voir avec les briques du commerce.",
+    tableauLaitamandemaison: [
+      { nb: 1, amandes: "25 g", eau: "17 cl", dattes: "3 g", sel: "0.1 g" },
+      { nb: 2, amandes: "50 g", eau: "34 cl", dattes: "6 g", sel: "0.2 g" },
+      { nb: 3, amandes: "75 g", eau: "51 cl", dattes: "9 g", sel: "0.3 g" },
+      { nb: 4, amandes: "100 g", eau: "68 cl", dattes: "12 g", sel: "0.4 g" },
+      { nb: 5, amandes: "125 g", eau: "85 cl", dattes: "15 g", sel: "0.5 g" },
+      { nb: 6, amandes: "150 g", eau: "102 cl", dattes: "18 g", sel: "0.6 g" },
+      { nb: 7, amandes: "175 g", eau: "119 cl", dattes: "21 g", sel: "0.7 g" },
+      { nb: 8, amandes: "200 g", eau: "136 cl", dattes: "24 g", sel: "0.8 g" },
+      { nb: 9, amandes: "225 g", eau: "153 cl", dattes: "27 g", sel: "0.9 g" },
+      { nb: 10, amandes: "250 g", eau: "170 cl", dattes: "30 g", sel: "1 g" },
+      { nb: 11, amandes: "275 g", eau: "187 cl", dattes: "33 g", sel: "1.1 g" },
+      { nb: 12, amandes: "300 g", eau: "204 cl", dattes: "36 g", sel: "1.2 g" },
+      { nb: 13, amandes: "325 g", eau: "221 cl", dattes: "39 g", sel: "1.3 g" },
+      { nb: 14, amandes: "350 g", eau: "238 cl", dattes: "42 g", sel: "1.4 g" },
+      { nb: 15, amandes: "375 g", eau: "255 cl", dattes: "45 g", sel: "1.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper", detail: "Faire tremper les amandes une nuit dans de l'eau froide : elles gonflent et se mixent bien plus finement.", badge: null },
+      { icone: "🚿", titre: "Rincer", detail: "Jeter l'eau de trempage, qui contient les tanins amers, et rincer les amandes.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer avec l'eau fraîche à pleine puissance pendant deux minutes, avec les dattes dénoyautées et le sel.", badge: null },
+      { icone: "🧻", titre: "Filtrer", detail: "Verser dans un sac à lait végétal ou un torchon fin tendu sur un saladier.", badge: null },
+      { icone: "💪", titre: "Presser", detail: "Presser énergiquement : il doit sortir un liquide d'un blanc opaque, et rester une pâte sèche.", badge: null },
+      { icone: "🫙", titre: "Embouteiller", detail: "Verser en bouteille et conserver au frais, en secouant avant chaque usage.", badge: null },
+      { icone: "♻️", titre: "Okara", detail: "Garder la pulpe restante : séchée au four, elle remplace une partie de la farine dans un gâteau.", badge: null }
+    ]
+  },
+  laitavoinemaison: {
+    nom: "Lait d'Avoine Maison",
+    cat: "mocktails", pays: "france",
+    base: 6,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Le moins cher des laits végétaux, prêt en dix minutes sans trempage. Tout le secret est de mixer à l'eau FROIDE et très brièvement, sinon il devient gluant.",
+    tableauLaitavoinemaison: [
+      { nb: 1, avoine: "13 g", eau: "17 cl", sel: "0.1 g", vanille: "0.05 g" },
+      { nb: 2, avoine: "26 g", eau: "34 cl", sel: "0.2 g", vanille: "0.1 g" },
+      { nb: 3, avoine: "39 g", eau: "51 cl", sel: "0.3 g", vanille: "0.15 g" },
+      { nb: 4, avoine: "52 g", eau: "68 cl", sel: "0.4 g", vanille: "0.2 g" },
+      { nb: 5, avoine: "65 g", eau: "85 cl", sel: "0.5 g", vanille: "0.25 g" },
+      { nb: 6, avoine: "78 g", eau: "102 cl", sel: "0.6 g", vanille: "0.3 g" },
+      { nb: 7, avoine: "91 g", eau: "119 cl", sel: "0.7 g", vanille: "0.35 g" },
+      { nb: 8, avoine: "104 g", eau: "136 cl", sel: "0.8 g", vanille: "0.4 g" },
+      { nb: 9, avoine: "117 g", eau: "153 cl", sel: "0.9 g", vanille: "0.45 g" },
+      { nb: 10, avoine: "130 g", eau: "170 cl", sel: "1 g", vanille: "0.5 g" },
+      { nb: 11, avoine: "143 g", eau: "187 cl", sel: "1.1 g", vanille: "0.55 g" },
+      { nb: 12, avoine: "156 g", eau: "204 cl", sel: "1.2 g", vanille: "0.6 g" },
+      { nb: 13, avoine: "169 g", eau: "221 cl", sel: "1.3 g", vanille: "0.65 g" },
+      { nb: 14, avoine: "182 g", eau: "238 cl", sel: "1.4 g", vanille: "0.7 g" },
+      { nb: 15, avoine: "195 g", eau: "255 cl", sel: "1.5 g", vanille: "0.75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Eau froide", detail: "Utiliser de l'eau très froide, voire glacée : la chaleur libère l'amidon et rend le lait visqueux.", badge: null },
+      { icone: "⏲️", titre: "Mixer court", detail: "Mixer trente secondes seulement, pas plus — c'est la règle qui fait tout.", badge: null },
+      { icone: "🧻", titre: "Filtrer", detail: "Filtrer à travers un torchon fin ou une étamine, SANS presser.", badge: null },
+      { icone: "⚠️", titre: "Ne pas presser", detail: "Presser ferait passer l'amidon et donnerait une texture de colle : laisser s'égoutter tout seul.", badge: null },
+      { icone: "🫙", titre: "Assaisonner", detail: "Ajouter le sel et la vanille dans la bouteille, puis secouer.", badge: null },
+      { icone: "❄️", titre: "Conserver", detail: "Garder au frais et secouer avant chaque usage, il se sépare vite.", badge: null }
+    ],
+    liees: ["laitamandemaison"]
+  },
+  laitsojamaison: {
+    nom: "Lait de Soja Maison",
+    cat: "mocktails", pays: "chine",
+    base: 6,
+    temps: "40 min + trempage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫘",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Le seul lait végétal qu'il faut CUIRE : le soja cru est indigeste et a un goût d'herbe. Vingt minutes de cuisson, et c'est la base du tofu.",
+    tableauLaitsojamaison: [
+      { nb: 1, soja: "25 g", eau: "20 cl", sucre: "3 g", sel: "0.1 g" },
+      { nb: 2, soja: "50 g", eau: "40 cl", sucre: "6 g", sel: "0.2 g" },
+      { nb: 3, soja: "75 g", eau: "60 cl", sucre: "9 g", sel: "0.3 g" },
+      { nb: 4, soja: "100 g", eau: "80 cl", sucre: "12 g", sel: "0.4 g" },
+      { nb: 5, soja: "125 g", eau: "100 cl", sucre: "15 g", sel: "0.5 g" },
+      { nb: 6, soja: "150 g", eau: "120 cl", sucre: "18 g", sel: "0.6 g" },
+      { nb: 7, soja: "175 g", eau: "140 cl", sucre: "21 g", sel: "0.7 g" },
+      { nb: 8, soja: "200 g", eau: "160 cl", sucre: "24 g", sel: "0.8 g" },
+      { nb: 9, soja: "225 g", eau: "180 cl", sucre: "27 g", sel: "0.9 g" },
+      { nb: 10, soja: "250 g", eau: "200 cl", sucre: "30 g", sel: "1 g" },
+      { nb: 11, soja: "275 g", eau: "220 cl", sucre: "33 g", sel: "1.1 g" },
+      { nb: 12, soja: "300 g", eau: "240 cl", sucre: "36 g", sel: "1.2 g" },
+      { nb: 13, soja: "325 g", eau: "260 cl", sucre: "39 g", sel: "1.3 g" },
+      { nb: 14, soja: "350 g", eau: "280 cl", sucre: "42 g", sel: "1.4 g" },
+      { nb: 15, soja: "375 g", eau: "300 cl", sucre: "45 g", sel: "1.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper", detail: "Faire tremper les graines de soja douze heures : elles doublent de volume.", badge: null },
+      { icone: "✋", titre: "Dépelliculer", detail: "Les frotter entre les mains dans l'eau pour détacher les peaux, qui remontent et se jettent.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer avec l'eau fraîche jusqu'à obtenir un liquide blanc homogène.", badge: null },
+      { icone: "🧻", titre: "Filtrer", detail: "Filtrer au torchon en pressant : le résidu est l'okara, qui se cuisine en galettes.", badge: null },
+      { icone: "♨️", titre: "CUIRE", detail: "Porter le lait à ébullition et le maintenir vingt minutes à feu doux, en remuant : cru, il est indigeste.", badge: null },
+      { icone: "🫧", titre: "Écumer", detail: "Écumer la mousse qui se forme pendant les premières minutes.", badge: null },
+      { icone: "🍬", titre: "Sucrer", detail: "Ajouter sucre et sel hors du feu, goûter et ajuster.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Refroidir rapidement et conserver au frais.", badge: null }
+    ]
   }
 });

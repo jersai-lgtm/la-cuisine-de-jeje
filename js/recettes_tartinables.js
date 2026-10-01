@@ -2299,5 +2299,117 @@ Object.assign(recettes, {
       { icone: "🫙", titre: "Empoter", detail: "Verser bouillant dans des bocaux ébouillantés, fermer et retourner cinq minutes.", badge: null }
     ],
     liees: ["confiturefraise"]
+  },
+  fromagedecajou: {
+    nom: "Fromage de Cajou",
+    cat: "tartinables", pays: "usa",
+    base: 6,
+    temps: "20 min + trempage",
+    niveau: "⭐ Facile",
+    emoji: "🥜",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Des noix de cajou trempées puis mixées avec du citron, de l'ail et de la levure maltée. Une tartinade crémeuse et acidulée qui tient lieu de fromage frais.",
+    tableauFromagedecajou: [
+      { nb: 1, cajou: "33 g", citron: "7 g", levurenutritionnelle: "3 g", ail: "1.3 g", sel: "0.7 g", eau: "1.3 cl" },
+      { nb: 2, cajou: "66 g", citron: "14 g", levurenutritionnelle: "6 g", ail: "2.6 g", sel: "1.4 g", eau: "2.6 cl" },
+      { nb: 3, cajou: "99 g", citron: "21 g", levurenutritionnelle: "9 g", ail: "3.9 g", sel: "2.1 g", eau: "3.9 cl" },
+      { nb: 4, cajou: "132 g", citron: "28 g", levurenutritionnelle: "12 g", ail: "5.2 g", sel: "2.8 g", eau: "5.2 cl" },
+      { nb: 5, cajou: "165 g", citron: "35 g", levurenutritionnelle: "15 g", ail: "6.5 g", sel: "3.5 g", eau: "6.5 cl" },
+      { nb: 6, cajou: "198 g", citron: "42 g", levurenutritionnelle: "18 g", ail: "7.8 g", sel: "4.2 g", eau: "7.8 cl" },
+      { nb: 7, cajou: "231 g", citron: "49 g", levurenutritionnelle: "21 g", ail: "9.1 g", sel: "4.9 g", eau: "9.1 cl" },
+      { nb: 8, cajou: "264 g", citron: "56 g", levurenutritionnelle: "24 g", ail: "10.4 g", sel: "5.6 g", eau: "10.4 cl" },
+      { nb: 9, cajou: "297 g", citron: "63 g", levurenutritionnelle: "27 g", ail: "11.7 g", sel: "6.3 g", eau: "11.7 cl" },
+      { nb: 10, cajou: "330 g", citron: "70 g", levurenutritionnelle: "30 g", ail: "13 g", sel: "7 g", eau: "13 cl" },
+      { nb: 11, cajou: "363 g", citron: "77 g", levurenutritionnelle: "33 g", ail: "14.3 g", sel: "7.7 g", eau: "14.3 cl" },
+      { nb: 12, cajou: "396 g", citron: "84 g", levurenutritionnelle: "36 g", ail: "15.6 g", sel: "8.4 g", eau: "15.6 cl" },
+      { nb: 13, cajou: "429 g", citron: "91 g", levurenutritionnelle: "39 g", ail: "16.9 g", sel: "9.1 g", eau: "16.9 cl" },
+      { nb: 14, cajou: "462 g", citron: "98 g", levurenutritionnelle: "42 g", ail: "18.2 g", sel: "9.8 g", eau: "18.2 cl" },
+      { nb: 15, cajou: "495 g", citron: "105 g", levurenutritionnelle: "45 g", ail: "19.5 g", sel: "10.5 g", eau: "19.5 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper", detail: "Faire tremper les noix de cajou quatre heures dans l'eau froide, ou trente minutes dans l'eau bouillante si on est pressé.", badge: null },
+      { icone: "🚿", titre: "Rincer", detail: "Les égoutter et les rincer : l'eau de trempage est trouble et un peu amère.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer avec le citron, l'ail, la levure maltée et le sel, en ajoutant l'eau petit à petit.", badge: null },
+      { icone: "⏲️", titre: "Insister", detail: "Mixer au moins trois minutes : la cajou ne devient crémeuse qu'après un long passage.", badge: null },
+      { icone: "👅", titre: "Goûter", detail: "Rectifier en citron et en sel — c'est l'acidité qui donne l'illusion du fromage.", badge: null },
+      { icone: "🫙", titre: "Reposer", detail: "Mettre en bocal et laisser une nuit au frais : la texture se raffermit et le goût s'arrondit.", badge: null }
+    ]
+  },
+  cremedemarronsmaison: {
+    nom: "Crème de Marrons Maison",
+    cat: "tartinables", pays: "france",
+    base: 6,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌰",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Des châtaignes cuites puis mixées avec du sucre et de la vanille, longuement réduites. Moins sucrée que celle du commerce, et bien plus parfumée.",
+    tableauCremedemarronsmaison: [
+      { nb: 1, chataignescuites: "120 g", sucre: "70 g", eau: "10 cl", vanille: "0.5 g", rhum: "5 ml" },
+      { nb: 2, chataignescuites: "240 g", sucre: "140 g", eau: "20 cl", vanille: "1 g", rhum: "10 ml" },
+      { nb: 3, chataignescuites: "360 g", sucre: "210 g", eau: "30 cl", vanille: "1.5 g", rhum: "15 ml" },
+      { nb: 4, chataignescuites: "480 g", sucre: "280 g", eau: "40 cl", vanille: "2 g", rhum: "20 ml" },
+      { nb: 5, chataignescuites: "600 g", sucre: "350 g", eau: "50 cl", vanille: "2.5 g", rhum: "25 ml" },
+      { nb: 6, chataignescuites: "720 g", sucre: "420 g", eau: "60 cl", vanille: "3 g", rhum: "30 ml" },
+      { nb: 7, chataignescuites: "840 g", sucre: "490 g", eau: "70 cl", vanille: "3.5 g", rhum: "35 ml" },
+      { nb: 8, chataignescuites: "960 g", sucre: "560 g", eau: "80 cl", vanille: "4 g", rhum: "40 ml" },
+      { nb: 9, chataignescuites: "1080 g", sucre: "630 g", eau: "90 cl", vanille: "4.5 g", rhum: "45 ml" },
+      { nb: 10, chataignescuites: "1200 g", sucre: "700 g", eau: "100 cl", vanille: "5 g", rhum: "50 ml" },
+      { nb: 11, chataignescuites: "1320 g", sucre: "770 g", eau: "110 cl", vanille: "5.5 g", rhum: "55 ml" },
+      { nb: 12, chataignescuites: "1440 g", sucre: "840 g", eau: "120 cl", vanille: "6 g", rhum: "60 ml" },
+      { nb: 13, chataignescuites: "1560 g", sucre: "910 g", eau: "130 cl", vanille: "6.5 g", rhum: "65 ml" },
+      { nb: 14, chataignescuites: "1680 g", sucre: "980 g", eau: "140 cl", vanille: "7 g", rhum: "70 ml" },
+      { nb: 15, chataignescuites: "1800 g", sucre: "1050 g", eau: "150 cl", vanille: "7.5 g", rhum: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Châtaignes", detail: "Partir de châtaignes cuites et épluchées, sous vide ou en bocal : les éplucher soi-même prend une heure pour rien.", badge: null },
+      { icone: "🍬", titre: "Sirop", detail: "Porter l'eau, le sucre et la vanille fendue à ébullition et laisser bouillir trois minutes.", badge: null },
+      { icone: "🌰", titre: "Cuire", detail: "Ajouter les châtaignes et laisser mijoter vingt minutes à couvert, jusqu'à ce qu'elles s'écrasent.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer très finement avec le sirop, en ajoutant un peu d'eau si c'est trop épais.", badge: null },
+      { icone: "♨️", titre: "Réduire", detail: "Remettre sur feu doux et laisser épaissir quinze minutes, en remuant sans arrêt : ça accroche très vite.", badge: null },
+      { icone: "🥃", titre: "Parfumer", detail: "Ajouter le rhum hors du feu.", badge: null },
+      { icone: "🫙", titre: "Empoter", detail: "Mettre en bocaux ébouillantés et retourner cinq minutes.", badge: null }
+    ],
+    liees: ["moussedemarrons"]
+  },
+  confituredelait: {
+    nom: "Confiture de Lait",
+    cat: "tartinables", pays: "argentine",
+    base: 6,
+    temps: "2h30",
+    niveau: "⭐ Facile",
+    emoji: "🍯",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Du lait et du sucre réduits lentement jusqu'à devenir une pâte brune et fondante. Le dulce de leche argentin, qui ne demande que de la patience.",
+    tableauConfituredelait: [
+      { nb: 1, lait: "170 ml", sucre: "50 g", vanille: "0.3 g", bicarbonate: "0.3 g" },
+      { nb: 2, lait: "340 ml", sucre: "100 g", vanille: "0.6 g", bicarbonate: "0.6 g" },
+      { nb: 3, lait: "510 ml", sucre: "150 g", vanille: "0.9 g", bicarbonate: "0.9 g" },
+      { nb: 4, lait: "680 ml", sucre: "200 g", vanille: "1.2 g", bicarbonate: "1.2 g" },
+      { nb: 5, lait: "850 ml", sucre: "250 g", vanille: "1.5 g", bicarbonate: "1.5 g" },
+      { nb: 6, lait: "1020 ml", sucre: "300 g", vanille: "1.8 g", bicarbonate: "1.8 g" },
+      { nb: 7, lait: "1190 ml", sucre: "350 g", vanille: "2.1 g", bicarbonate: "2.1 g" },
+      { nb: 8, lait: "1360 ml", sucre: "400 g", vanille: "2.4 g", bicarbonate: "2.4 g" },
+      { nb: 9, lait: "1530 ml", sucre: "450 g", vanille: "2.7 g", bicarbonate: "2.7 g" },
+      { nb: 10, lait: "1700 ml", sucre: "500 g", vanille: "3 g", bicarbonate: "3 g" },
+      { nb: 11, lait: "1870 ml", sucre: "550 g", vanille: "3.3 g", bicarbonate: "3.3 g" },
+      { nb: 12, lait: "2040 ml", sucre: "600 g", vanille: "3.6 g", bicarbonate: "3.6 g" },
+      { nb: 13, lait: "2210 ml", sucre: "650 g", vanille: "3.9 g", bicarbonate: "3.9 g" },
+      { nb: 14, lait: "2380 ml", sucre: "700 g", vanille: "4.2 g", bicarbonate: "4.2 g" },
+      { nb: 15, lait: "2550 ml", sucre: "750 g", vanille: "4.5 g", bicarbonate: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Réunir", detail: "Mettre lait, sucre et vanille dans une casserole large et à fond épais.", badge: null },
+      { icone: "🧂", titre: "Bicarbonate", detail: "Ajouter une pointe de bicarbonate : il favorise la réaction de Maillard et donne la couleur brune.", badge: null },
+      { icone: "♨️", titre: "Frémir", detail: "Porter à frémissement doux, sans couvercle, et ne jamais laisser bouillir à gros bouillons.", badge: null },
+      { icone: "🥄", titre: "Remuer", detail: "Remuer régulièrement les premières heures, puis sans arrêt sur la fin.", badge: null },
+      { icone: "👀", titre: "Observer", detail: "Le mélange blanchit, puis blondit, puis brunit en épaississant : compter deux bonnes heures.", badge: null },
+      { icone: "🥄", titre: "Tester", detail: "Il est prêt quand une trace de spatule laisse voir le fond de la casserole une seconde.", badge: null },
+      { icone: "⚠️", titre: "Ne pas trop cuire", detail: "S'arrêter avant : il épaissit encore beaucoup en refroidissant, et deviendrait dur comme un caramel.", badge: null },
+      { icone: "🫙", titre: "Empoter", detail: "Verser chaud en bocal ébouillanté et laisser refroidir sans couvrir.", badge: null }
+    ]
   }
 });

@@ -123902,6 +123902,774 @@ window.RECETTES_EN = {
     "detail": "Fill and roll tightly, folding the bottom so the sauce does not run."
    }
   ]
+ },
+ "laitamandemaison": {
+  "nom": "Homemade Almond Milk",
+  "description": "Almonds soaked overnight, blended with water then strained. Two ingredients, no additives, and a taste nothing like the cartons.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the almonds overnight in cold water: they swell and blend far finer."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Discard the soaking water, which holds the bitter tannins, and rinse the almonds."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend with fresh water at full power for two minutes, with the pitted dates and salt."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pour into a nut-milk bag or a fine cloth stretched over a bowl."
+   },
+   {
+    "titre": "Press",
+    "detail": "Squeeze hard: an opaque white liquid should come out, leaving a dry pulp."
+   },
+   {
+    "titre": "Bottle",
+    "detail": "Pour into a bottle and keep refrigerated, shaking before each use."
+   },
+   {
+    "titre": "Okara",
+    "detail": "Keep the leftover pulp: dried in the oven, it replaces part of the flour in a cake."
+   }
+  ]
+ },
+ "laitavoinemaison": {
+  "nom": "Homemade Oat Milk",
+  "description": "The cheapest plant milk, ready in ten minutes with no soaking. The whole secret is to blend with COLD water and very briefly, or it turns slimy.",
+  "etapes": [
+   {
+    "titre": "Cold water",
+    "detail": "Use very cold, even iced water: heat releases the starch and makes the milk slimy."
+   },
+   {
+    "titre": "Blend briefly",
+    "detail": "Blend for thirty seconds only, no longer — the rule that decides everything."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain through a fine cloth or muslin, WITHOUT pressing."
+   },
+   {
+    "titre": "Do not press",
+    "detail": "Pressing pushes the starch through and gives a gluey texture: let it drip on its own."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the salt and vanilla to the bottle, then shake."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Refrigerate and shake before each use; it separates quickly."
+   }
+  ]
+ },
+ "laitsojamaison": {
+  "nom": "Homemade Soy Milk",
+  "description": "The one plant milk that must be COOKED: raw soy is indigestible and tastes of grass. Twenty minutes of simmering, and it becomes the base for tofu.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the soybeans for twelve hours: they double in size."
+   },
+   {
+    "titre": "Skin",
+    "detail": "Rub them between your hands in the water to loosen the skins, which float up and are discarded."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend with fresh water to a smooth white liquid."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain through a cloth, pressing: the residue is okara, which can be made into patties."
+   },
+   {
+    "titre": "COOK",
+    "detail": "Bring the milk to a boil and simmer for twenty minutes, stirring: raw, it is indigestible."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Skim the foam that forms in the first few minutes."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add sugar and salt off the heat, taste and adjust."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cool quickly and keep refrigerated."
+   }
+  ]
+ },
+ "cremeavoine": {
+  "nom": "Oat Cooking Cream",
+  "description": "A dairy-free cooking cream of blended oats and oil. It coats, it binds, and it does not split when heated.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the oats for ten minutes in the water, until completely broken down."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend at length, at least two minutes, for a perfectly smooth texture."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour in the oil in a stream with the motor running: the emulsion is what gives the creamy texture."
+   },
+   {
+    "titre": "Sharpen",
+    "detail": "Add the lemon juice and salt, which lift and stabilise it."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a fine sieve for a pastry-grade cream."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "It thickens as it cools: loosen with water when you use it."
+   }
+  ]
+ },
+ "fromagedecajou": {
+  "nom": "Cashew Cheese",
+  "description": "Cashews soaked then blended with lemon, garlic and nutritional yeast. A creamy, tangy spread that stands in for soft cheese.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the cashews for four hours in cold water, or thirty minutes in boiling water if you are in a hurry."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Drain and rinse them: the soaking water is cloudy and slightly bitter."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend with the lemon, garlic, nutritional yeast and salt, adding the water little by little."
+   },
+   {
+    "titre": "Keep going",
+    "detail": "Blend for at least three minutes: cashews only turn creamy after a long run."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Adjust the lemon and salt — the acidity is what creates the illusion of cheese."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Jar it and leave overnight in the fridge: the texture firms and the flavour rounds out."
+   }
+  ]
+ },
+ "parmesanvegetal": {
+  "nom": "Vegan Parmesan",
+  "description": "Cashews, nutritional yeast, salt and garlic blitzed to a coarse powder. It does not replace aged parmesan, but it salts and perfumes pasta the same way.",
+  "etapes": [
+   {
+    "titre": "Raw cashews",
+    "detail": "Use RAW, unsalted cashews: roasted ones give an oily powder."
+   },
+   {
+    "titre": "Garlic",
+    "detail": "Use garlic powder, never fresh, which would make the mix damp and perishable."
+   },
+   {
+    "titre": "Pulse",
+    "detail": "Pulse in short bursts, checking often: a few seconds too many and you get a paste."
+   },
+   {
+    "titre": "Texture",
+    "detail": "Aim for a coarse powder resembling thickly grated parmesan."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Adjust the salt: it should taste frankly salty, since you only scatter a little."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Store in a jar in the fridge; cashews go rancid at room temperature."
+   }
+  ]
+ },
+ "meringueaquafaba": {
+  "nom": "Aquafaba Meringue",
+  "description": "The liquid from a tin of chickpeas whips exactly like egg white. A 2015 discovery that changed vegan baking.",
+  "etapes": [
+   {
+    "titre": "Collect",
+    "detail": "Collect the liquid from a tin of chickpeas — about 100 ml per tin — and keep the chickpeas for hummus."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce it by a third in a pan and let it cool: the more concentrated, the better it whips."
+   },
+   {
+    "titre": "Acidify",
+    "detail": "Add a few drops of lemon, which stabilise the foam just as for egg white."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip with a mixer: allow eight to ten minutes, far longer than egg white."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Add the sugar in three additions once the foam is firm, still beating."
+   },
+   {
+    "titre": "Check",
+    "detail": "The meringue should be glossy and stand straight on an upturned whisk."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Pipe onto a tray and dry for two hours at 100°C, then cool in the switched-off oven."
+   }
+  ]
+ },
+ "chantillycoco": {
+  "nom": "Coconut Whipped Cream",
+  "description": "The solid part of a chilled tin of coconut milk, whipped like cream. Everything depends on one thing: the tin must spend a whole night in the fridge.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "Use full-fat coconut milk, at least 70% coconut: light versions never whip."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Put the UNOPENED tin in the fridge for twelve hours, without laying it down or shaking it."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Open without stirring and spoon out the solid part, leaving the water at the bottom."
+   },
+   {
+    "titre": "Keep the water",
+    "detail": "Save that coconut water for a smoothie: it is what would ruin the whipped cream."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the solid part for three minutes with the icing sugar and vanilla."
+   },
+   {
+    "titre": "Check",
+    "detail": "It should form soft peaks; if it stays liquid, the tin was not cold enough."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Keep chilled until serving: it softens fast at room temperature."
+   }
+  ]
+ },
+ "semouleaulait": {
+  "nom": "Semolina Pudding",
+  "description": "Faster than rice pudding and creamier: fine semolina cooks in ten minutes. The childhood dessert, served warm or cold with caramel.",
+  "etapes": [
+   {
+    "titre": "Infuse",
+    "detail": "Bring the milk to a simmer with the split vanilla pod and steep for ten minutes."
+   },
+   {
+    "titre": "Rain it in",
+    "detail": "Pour the semolina IN A STREAM into the simmering milk, stirring constantly: tipped in at once, it lumps."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for ten minutes over low heat, stirring regularly, until thickened."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar and butter off the heat."
+   },
+   {
+    "titre": "Enrich",
+    "detail": "Stir in the egg yolk off the heat: it brings the silkiness, but would scramble if boiled."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into ramekins or a bowl and cover on the surface to avoid a skin."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Serve warm, or cold after two hours in the fridge — it thickens further as it cools."
+   }
+  ]
+ },
+ "blancmanger": {
+  "nom": "Blancmange",
+  "description": "One of Europe's oldest desserts: set almond milk, turned out, perfectly white. No egg, no cream, and yet a melting texture.",
+  "etapes": [
+   {
+    "titre": "Gelatine",
+    "detail": "Soak the gelatine in very cold water for ten minutes."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the almond milk with the sugar and vanilla, without boiling."
+   },
+   {
+    "titre": "Dissolve",
+    "detail": "Off the heat, add the squeezed gelatine and stir until completely dissolved."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cold cream and stir."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into lightly oiled moulds, which makes turning out easier."
+   },
+   {
+    "titre": "Set",
+    "detail": "Chill for at least four hours."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Dip the mould three seconds in hot water and invert sharply onto the plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter toasted flaked almonds and serve with a red berry coulis."
+   }
+  ]
+ },
+ "cremeuxchocolat": {
+  "nom": "Chocolate Crémeux",
+  "description": "Between a ganache and a custard: a dense, melting chocolate cream that holds on the spoon without being set. The pastry chef's texture.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop the chocolate finely and put it in a bowl."
+   },
+   {
+    "titre": "Custard",
+    "detail": "Make a custard with milk, cream, yolks and sugar, cooked to 83°C."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the hot custard over the chocolate in three additions, stirring from the centre each time."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Blend with a stick blender for thirty seconds: the emulsion is what makes it smooth and glossy."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Add the pinch of salt, which wakes the chocolate up."
+   },
+   {
+    "titre": "Pour out",
+    "detail": "Pour into glasses or a frame and cover on the surface."
+   },
+   {
+    "titre": "Set",
+    "detail": "Chill for four hours: a crémeux sets through cocoa butter, not gelatine."
+   }
+  ]
+ },
+ "potsdecremechocolat": {
+  "nom": "Chocolate Pots de Crème",
+  "description": "A baked custard with no flour and no gelatine: just yolks, milk and chocolate. The pots should barely wobble when they leave the oven.",
+  "etapes": [
+   {
+    "titre": "Heat",
+    "detail": "Bring the milk, cream and vanilla to a simmer."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Pour over the chopped chocolate and stir until completely melted."
+   },
+   {
+    "titre": "Yolks",
+    "detail": "Whisk the yolks with the sugar without frothing: foam would make bubbles as it bakes."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the hot chocolate onto the yolks, stirring gently with a spatula."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Spoon off the surface foam: that is what makes a grainy top."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "Pour into ramekins, set them in a dish and pour hot water halfway up."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for forty-five minutes at 150°C: the centre should still wobble slightly."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cool, then refrigerate for four hours before serving."
+   }
+  ]
+ },
+ "zuppainglese": {
+  "nom": "Zuppa Inglese",
+  "description": "The Italian trifle from Emilia-Romagna: biscuits soaked in bright red alchermes, layered with vanilla and chocolate pastry cream. Older than tiramisu.",
+  "etapes": [
+   {
+    "titre": "Pastry cream",
+    "detail": "Make a classic pastry cream and divide it into two equal parts."
+   },
+   {
+    "titre": "Chocolate",
+    "detail": "Melt the chocolate into one half while still hot, and stir."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Cover both creams on the surface and cool completely."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Mix the rum (or traditional alchermes) with a little sweetened water."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Dip the biscuits quickly in the syrup: one second a side, no more."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Alternate in a bowl: biscuits, vanilla cream, biscuits, chocolate cream."
+   },
+   {
+    "titre": "Repeat",
+    "detail": "Repeat to the top, finishing with a layer of cream."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Refrigerate at least four hours, ideally overnight, so the layers bind."
+   }
+  ]
+ },
+ "syllabub": {
+  "nom": "Syllabub",
+  "description": "A seventeenth-century English dessert: cream whipped with white wine, lemon and sugar. Light, tangy, and ready in a quarter of an hour.",
+  "etapes": [
+   {
+    "titre": "Macerate",
+    "detail": "Mix the white wine, lemon juice and zest with the sugar, and chill for an hour."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain out the zest, pressing lightly."
+   },
+   {
+    "titre": "Cold cream",
+    "detail": "Pour VERY cold cream into a cold bowl: the condition for it to whip."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip while pouring in the wine mixture little by little, in a thin stream."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Stop as soon as it forms soft peaks: over-whipped with acid, it splits at once."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Divide between glasses and chill for two hours."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Grate a little nutmeg over and serve with shortbread."
+   }
+  ]
+ },
+ "moussedemarrons": {
+  "nom": "Chestnut Mousse",
+  "description": "Chestnut cream loosened with rum and lightened with whipped cream. Three ingredients, no cooking, and the taste of autumn in a glass.",
+  "etapes": [
+   {
+    "titre": "Loosen",
+    "detail": "Beat the chestnut cream with the rum to soften it: straight from the jar it is too dense."
+   },
+   {
+    "titre": "Whipped cream",
+    "detail": "Whip the very cold cream to soft peaks, definitely not firm."
+   },
+   {
+    "titre": "Lighten",
+    "detail": "Whisk in a third of the cream to loosen, then fold in the rest with a spatula."
+   },
+   {
+    "titre": "Gently",
+    "detail": "Lift the mixture rather than stirring, so the bubbles survive: that is all the lightness there is."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Divide into glasses with a piping bag or a spoon."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill for three hours so the mousse firms up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Decorate with pieces of marron glacé just before serving."
+   }
+  ]
+ },
+ "cremedemarronsmaison": {
+  "nom": "Homemade Chestnut Spread",
+  "description": "Chestnuts cooked then blended with sugar and vanilla, slowly reduced. Less sweet than the shop version, and far more fragrant.",
+  "etapes": [
+   {
+    "titre": "Chestnuts",
+    "detail": "Start with cooked, peeled chestnuts, vacuum-packed or in jars: peeling them yourself takes an hour for nothing."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Bring the water, sugar and split vanilla to a boil and let it bubble three minutes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the chestnuts and simmer covered for twenty minutes, until they crush easily."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend very fine with the syrup, adding a little water if too thick."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Return to low heat and thicken for fifteen minutes, stirring constantly: it catches very fast."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the rum off the heat."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pot into scalded jars and turn them upside down for five minutes."
+   }
+  ]
+ },
+ "amandescaramelisees": {
+  "nom": "Caramelised Almonds",
+  "description": "The almonds of the funfair: nuts coated in sugar that first sands then re-caramelises. The secret lies in passing through that sandy stage.",
+  "etapes": [
+   {
+    "titre": "Combine",
+    "detail": "Put the almonds, sugar and water together in a pan, from cold."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat over medium, stirring constantly with a wooden spatula."
+   },
+   {
+    "titre": "Evaporate",
+    "detail": "The water evaporates, the syrup thickens and bubbles coarsely."
+   },
+   {
+    "titre": "The sanding",
+    "detail": "Suddenly the sugar whitens and goes sandy around the almonds: this is the key stage, do not stop here."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Keep stirring: the sugar slowly remelts and coats the almonds in glossy caramel."
+   },
+   {
+    "titre": "Watch",
+    "detail": "As soon as the coating is amber, take it off the heat — ten seconds more and it burns."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Tip onto baking paper and separate the almonds with a fork before they set in a block."
+   }
+  ]
+ },
+ "chikki": {
+  "nom": "Chikki",
+  "description": "The Indian brittle of peanuts and unrefined cane sugar. Two ingredients, a marble slab and a quick hand: the caramel sets within a minute.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the peanuts until the skins loosen, then rub them off in a cloth."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Butter a slab or a sheet of baking paper, and set a buttered rolling pin beside it: everything will go fast."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Melt the brown sugar with the butter over medium heat, with no water and no stirring at first."
+   },
+   {
+    "titre": "The test",
+    "detail": "The caramel is ready when a drop in cold water hardens instantly and snaps."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Tip in the peanuts and cardamom, stir for three seconds and pour at once."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll out thin and even, working fast — the caramel sets within a minute."
+   },
+   {
+    "titre": "Score",
+    "detail": "Mark squares with a knife while still warm and pliable."
+   },
+   {
+    "titre": "Break",
+    "detail": "Cool completely, then break along the marks."
+   }
+  ]
+ },
+ "confituredelait": {
+  "nom": "Dulce de Leche",
+  "description": "Milk and sugar slowly reduced to a brown, melting paste. Argentinian dulce de leche, which asks for nothing but patience.",
+  "etapes": [
+   {
+    "titre": "Combine",
+    "detail": "Put the milk, sugar and vanilla in a wide, heavy-based pan."
+   },
+   {
+    "titre": "Bicarbonate",
+    "detail": "Add a pinch of bicarbonate: it encourages the Maillard reaction and gives the brown colour."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a gentle simmer, uncovered, and never let it boil hard."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir regularly for the first hours, then constantly towards the end."
+   },
+   {
+    "titre": "Watch",
+    "detail": "The mix pales, then turns blond, then brown as it thickens: allow a good two hours."
+   },
+   {
+    "titre": "Test",
+    "detail": "It is ready when a spatula drawn across reveals the base of the pan for a second."
+   },
+   {
+    "titre": "Don't overcook",
+    "detail": "Stop before that point: it thickens a great deal more as it cools, and would set hard as toffee."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour hot into a scalded jar and let it cool uncovered."
+   }
+  ]
+ },
+ "boucheespraline": {
+  "nom": "Praline Bites",
+  "description": "Homemade praline coated in dark chocolate, in small crunchy bites. The praline is made by caramelising hazelnuts and almonds, then blending at length.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Toast the hazelnuts and almonds for fifteen minutes at 160°C, then rub the hazelnuts to remove the skins."
+   },
+   {
+    "titre": "Caramel",
+    "detail": "Make a dry caramel, amber but not dark."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Tip the warm nuts into the caramel, stir and pour onto baking paper."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it harden completely, then break into pieces."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend at length in bursts: the powder becomes a paste, then the praline turns liquid and glossy. Allow five minutes."
+   },
+   {
+    "titre": "Chocolate",
+    "detail": "Melt the chocolate over a bain-marie and temper it by stirring off the heat."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Spoon praline into silicone moulds and cover with chocolate."
+   },
+   {
+    "titre": "Set",
+    "detail": "Let it crystallise for two hours at room temperature, then unmould."
+   }
+  ]
+ },
+ "ecorcesorangeconfites": {
+  "nom": "Candied Orange Peel",
+  "description": "Peel blanched three times then slowly candied in an increasingly concentrated syrup. Three days of patience for a sweet that keeps six months.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Wash untreated oranges and cut the peel into strips, with a little of the white pith."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch three times from cold water, changing the water each time: this is what removes the bitterness."
+   },
+   {
+    "titre": "First syrup",
+    "detail": "Make a light syrup and poach the peel in it for thirty minutes at a simmer."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Leave to rest for twenty-four hours in the syrup, off the heat."
+   },
+   {
+    "titre": "Concentrate",
+    "detail": "The next day, add sugar, return to a simmer for twenty minutes, and rest again."
+   },
+   {
+    "titre": "Third day",
+    "detail": "Repeat a third time: the peel turns translucent, the sign it is candied through."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Drain on a rack and air-dry for twelve hours."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dip half of each strip in melted chocolate and let it crystallise."
+   }
+  ]
+ },
+ "tablettechocolatmaison": {
+  "nom": "Homemade Chocolate Bar",
+  "description": "Couverture chocolate melted, tempered then studded with dried fruit. Tempering — melt to 50, drop to 28, raise to 31 — decides everything: shine and snap.",
+  "etapes": [
+   {
+    "titre": "Melt",
+    "detail": "Melt two thirds of the chocolate over a bain-marie to 50-55°C, using a thermometer."
+   },
+   {
+    "titre": "Seed",
+    "detail": "Off the heat, add the remaining third in pieces and stir: it brings the temperature down."
+   },
+   {
+    "titre": "28 degrees",
+    "detail": "Keep stirring to 28°C — that is where the right crystals form."
+   },
+   {
+    "titre": "31 degrees",
+    "detail": "Return to the bain-marie for ten seconds to climb to 31°C, no higher."
+   },
+   {
+    "titre": "Test",
+    "detail": "Dip a knife tip: the chocolate should set within three minutes, matt then glossy."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour into a bar mould and tap to release the bubbles."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter almonds, pistachios, cranberries and sea salt before it sets."
+   },
+   {
+    "titre": "Crystallise",
+    "detail": "Let it set at 18-20°C for two hours — never in the fridge, which would bloom the chocolate."
+   }
+  ]
  }
 
 };

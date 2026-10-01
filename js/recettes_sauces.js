@@ -4694,5 +4694,78 @@ mayonnaise: {
       { icone: "⚠️", titre: "Ne pas trop cuire", detail: "S'arrêter avant que ça n'épaississe trop : en refroidissant, la réduction devient bien plus sirupeuse qu'à chaud.", badge: null },
       { icone: "🫙", titre: "Conserver", detail: "Verser en flacon et garder à température ambiante, elle ne cristallise pas.", badge: null }
     ]
+  },
+  cremeavoine: {
+    nom: "Crème d'Avoine",
+    cat: "sauces", pays: "france",
+    base: 6,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Une crème à cuisiner sans produit laitier, faite de flocons d'avoine et d'huile mixés. Elle nappe, elle lie, et elle ne tranche pas à la cuisson.",
+    tableauCremeavoine: [
+      { nb: 1, avoine: "10 g", eau: "7 cl", huileTournesol: "5 ml", sel: "0.2 g", citron: "1 g" },
+      { nb: 2, avoine: "20 g", eau: "14 cl", huileTournesol: "10 ml", sel: "0.4 g", citron: "2 g" },
+      { nb: 3, avoine: "30 g", eau: "21 cl", huileTournesol: "15 ml", sel: "0.6 g", citron: "3 g" },
+      { nb: 4, avoine: "40 g", eau: "28 cl", huileTournesol: "20 ml", sel: "0.8 g", citron: "4 g" },
+      { nb: 5, avoine: "50 g", eau: "35 cl", huileTournesol: "25 ml", sel: "1 g", citron: "5 g" },
+      { nb: 6, avoine: "60 g", eau: "42 cl", huileTournesol: "30 ml", sel: "1.2 g", citron: "6 g" },
+      { nb: 7, avoine: "70 g", eau: "49 cl", huileTournesol: "35 ml", sel: "1.4 g", citron: "7 g" },
+      { nb: 8, avoine: "80 g", eau: "56 cl", huileTournesol: "40 ml", sel: "1.6 g", citron: "8 g" },
+      { nb: 9, avoine: "90 g", eau: "63 cl", huileTournesol: "45 ml", sel: "1.8 g", citron: "9 g" },
+      { nb: 10, avoine: "100 g", eau: "70 cl", huileTournesol: "50 ml", sel: "2 g", citron: "10 g" },
+      { nb: 11, avoine: "110 g", eau: "77 cl", huileTournesol: "55 ml", sel: "2.2 g", citron: "11 g" },
+      { nb: 12, avoine: "120 g", eau: "84 cl", huileTournesol: "60 ml", sel: "2.4 g", citron: "12 g" },
+      { nb: 13, avoine: "130 g", eau: "91 cl", huileTournesol: "65 ml", sel: "2.6 g", citron: "13 g" },
+      { nb: 14, avoine: "140 g", eau: "98 cl", huileTournesol: "70 ml", sel: "2.8 g", citron: "14 g" },
+      { nb: 15, avoine: "150 g", eau: "105 cl", huileTournesol: "75 ml", sel: "3 g", citron: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Cuire", detail: "Cuire les flocons d'avoine dix minutes dans l'eau, jusqu'à ce qu'ils soient complètement défaits.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer longuement, au moins deux minutes, pour une texture parfaitement lisse.", badge: null },
+      { icone: "🫒", titre: "Émulsionner", detail: "Verser l'huile en filet, moteur en marche : c'est l'émulsion qui donne la texture de crème.", badge: null },
+      { icone: "🍋", titre: "Acidifier", detail: "Ajouter le jus de citron et le sel, qui relèvent et stabilisent.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Passer au tamis fin si on veut une crème de qualité pâtissière.", badge: null },
+      { icone: "❄️", titre: "Épaissir", detail: "Elle épaissit en refroidissant : la détendre à l'eau si besoin au moment de l'utiliser.", badge: null }
+    ]
+  },
+  parmesanvegetal: {
+    nom: "Parmesan Végétal",
+    cat: "sauces", pays: "usa",
+    base: 6,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    dateAjout: "2026-10-01T16:00:00",
+    description: "Noix de cajou, levure maltée, sel et ail mixés en poudre grossière. Ça ne remplace pas un parmesan affiné, mais ça sale et ça parfume les pâtes de la même façon.",
+    tableauParmesanvegetal: [
+      { nb: 1, cajou: "17 g", levurenutritionnelle: "5 g", sel: "0.8 g", ail: "0.8 g" },
+      { nb: 2, cajou: "34 g", levurenutritionnelle: "10 g", sel: "1.6 g", ail: "1.6 g" },
+      { nb: 3, cajou: "51 g", levurenutritionnelle: "15 g", sel: "2.4 g", ail: "2.4 g" },
+      { nb: 4, cajou: "68 g", levurenutritionnelle: "20 g", sel: "3.2 g", ail: "3.2 g" },
+      { nb: 5, cajou: "85 g", levurenutritionnelle: "25 g", sel: "4 g", ail: "4 g" },
+      { nb: 6, cajou: "102 g", levurenutritionnelle: "30 g", sel: "4.8 g", ail: "4.8 g" },
+      { nb: 7, cajou: "119 g", levurenutritionnelle: "35 g", sel: "5.6 g", ail: "5.6 g" },
+      { nb: 8, cajou: "136 g", levurenutritionnelle: "40 g", sel: "6.4 g", ail: "6.4 g" },
+      { nb: 9, cajou: "153 g", levurenutritionnelle: "45 g", sel: "7.2 g", ail: "7.2 g" },
+      { nb: 10, cajou: "170 g", levurenutritionnelle: "50 g", sel: "8 g", ail: "8 g" },
+      { nb: 11, cajou: "187 g", levurenutritionnelle: "55 g", sel: "8.8 g", ail: "8.8 g" },
+      { nb: 12, cajou: "204 g", levurenutritionnelle: "60 g", sel: "9.6 g", ail: "9.6 g" },
+      { nb: 13, cajou: "221 g", levurenutritionnelle: "65 g", sel: "10.4 g", ail: "10.4 g" },
+      { nb: 14, cajou: "238 g", levurenutritionnelle: "70 g", sel: "11.2 g", ail: "11.2 g" },
+      { nb: 15, cajou: "255 g", levurenutritionnelle: "75 g", sel: "12 g", ail: "12 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥜", titre: "Cajou crues", detail: "Utiliser des noix de cajou NON grillées et non salées : grillées, elles donnent une poudre grasse.", badge: null },
+      { icone: "🧄", titre: "Ail", detail: "Prendre de l'ail en poudre, jamais frais, qui rendrait le mélange humide et périssable.", badge: null },
+      { icone: "🌀", titre: "Mixer court", detail: "Mixer par à-coups courts, en vérifiant souvent : quelques secondes de trop et on obtient une purée.", badge: null },
+      { icone: "👀", titre: "Texture", detail: "Viser une poudre grossière, qui ressemble à du parmesan râpé un peu épais.", badge: null },
+      { icone: "👅", titre: "Goûter", detail: "Rectifier le sel : il doit saler franchement, puisqu'on en saupoudre peu.", badge: null },
+      { icone: "🫙", titre: "Conserver", detail: "Garder en bocal au réfrigérateur, la cajou rancit à température ambiante.", badge: null }
+    ],
+    liees: ["fromagedecajou"]
   }
 });
