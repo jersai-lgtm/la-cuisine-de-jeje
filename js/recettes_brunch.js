@@ -3538,5 +3538,43 @@ Object.assign(recettes, {
       { icone: "🧀", titre: "Finir", detail: "Parsemer d'oignon mariné, de feta émiettée et de coriandre ciselée.", badge: null },
       { icone: "🌶️", titre: "Servir", detail: "Ajouter un tour de moulin, un filet d'huile, et manger tout de suite : la tostada ramollit vite.", badge: null }
     ]
+  },
+  omelettesoufflee: {
+    nom: "Omelette Soufflée",
+    cat: "brunch", pays: "france",
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍳",
+    dateAjout: "2026-10-01T10:30:00",
+    description: "Blancs montés en neige incorporés aux jaunes : l'omelette double de volume et sort du four comme un soufflé. Il faut la servir dans la minute, elle retombe.",
+    tableauOmelettesoufflee: [
+      { nb: 1, oeufs: "3", beurre: "15 g", gruyere: "30 g", creme: "15 ml", ciboulette: "3 g", sel: "1 g" },
+      { nb: 2, oeufs: "6", beurre: "30 g", gruyere: "60 g", creme: "30 ml", ciboulette: "6 g", sel: "2 g" },
+      { nb: 3, oeufs: "9", beurre: "45 g", gruyere: "90 g", creme: "45 ml", ciboulette: "9 g", sel: "3 g" },
+      { nb: 4, oeufs: "12", beurre: "60 g", gruyere: "120 g", creme: "60 ml", ciboulette: "12 g", sel: "4 g" },
+      { nb: 5, oeufs: "15", beurre: "75 g", gruyere: "150 g", creme: "75 ml", ciboulette: "15 g", sel: "5 g" },
+      { nb: 6, oeufs: "18", beurre: "90 g", gruyere: "180 g", creme: "90 ml", ciboulette: "18 g", sel: "6 g" },
+      { nb: 7, oeufs: "21", beurre: "105 g", gruyere: "210 g", creme: "105 ml", ciboulette: "21 g", sel: "7 g" },
+      { nb: 8, oeufs: "24", beurre: "120 g", gruyere: "240 g", creme: "120 ml", ciboulette: "24 g", sel: "8 g" },
+      { nb: 9, oeufs: "27", beurre: "135 g", gruyere: "270 g", creme: "135 ml", ciboulette: "27 g", sel: "9 g" },
+      { nb: 10, oeufs: "30", beurre: "150 g", gruyere: "300 g", creme: "150 ml", ciboulette: "30 g", sel: "10 g" },
+      { nb: 11, oeufs: "33", beurre: "165 g", gruyere: "330 g", creme: "165 ml", ciboulette: "33 g", sel: "11 g" },
+      { nb: 12, oeufs: "36", beurre: "180 g", gruyere: "360 g", creme: "180 ml", ciboulette: "36 g", sel: "12 g" },
+      { nb: 13, oeufs: "39", beurre: "195 g", gruyere: "390 g", creme: "195 ml", ciboulette: "39 g", sel: "13 g" },
+      { nb: 14, oeufs: "42", beurre: "210 g", gruyere: "420 g", creme: "210 ml", ciboulette: "42 g", sel: "14 g" },
+      { nb: 15, oeufs: "45", beurre: "225 g", gruyere: "450 g", creme: "225 ml", ciboulette: "45 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Séparer", detail: "Séparer les blancs des jaunes dans deux saladiers parfaitement propres.", badge: null },
+      { icone: "🥄", titre: "Jaunes", detail: "Battre les jaunes avec la crème, le sel et la ciboulette.", badge: null },
+      { icone: "💪", titre: "Monter", detail: "Monter les blancs en neige ferme mais pas sèche : ils doivent encore former un bec souple.", badge: null },
+      { icone: "🥄", titre: "Incorporer", detail: "Incorporer un tiers des blancs aux jaunes pour détendre, puis le reste à la maryse, en soulevant la masse.", badge: null },
+      { icone: "🧈", titre: "Poêle", detail: "Faire mousser le beurre dans une poêle qui va au four, à feu moyen.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Verser l'appareil, parsemer de fromage, et laisser prendre deux minutes sans remuer.", badge: null },
+      { icone: "🔥", titre: "Four", detail: "Terminer cinq minutes au four à 200 °C : l'omelette gonfle et dore.", badge: null },
+      { icone: "⚡", titre: "Servir", detail: "Plier en deux et servir immédiatement — elle commence à retomber en trente secondes.", badge: null }
+    ]
   }
 });

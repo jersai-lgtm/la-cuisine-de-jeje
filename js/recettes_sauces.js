@@ -4582,5 +4582,117 @@ mayonnaise: {
       { icone: "⏲️", titre: "Acétifier", detail: "Attendre encore quatre à six semaines : un voile blanc se forme en surface, c'est la mère de vinaigre.", badge: null },
       { icone: "👅", titre: "Goûter", detail: "Goûter à partir de la sixième semaine et embouteiller quand l'acidité plaît.", badge: null }
     ]
+  },
+  panurepanko: {
+    nom: "Panure Panko",
+    cat: "sauces", pays: "japon",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    dateAjout: "2026-10-01T10:30:00",
+    description: "La panure japonaise en trois bains : farine, œuf, panko. Les flocons de panko, plus gros et plus secs que la chapelure, donnent une croûte aérée qui reste croustillante.",
+    tableauPanurepanko: [
+      { nb: 1, farine: "25 g", oeufs: "½", panko: "40 g", sel: "1 g", poivre: "0.3 g", huilefriture: "30 ml" },
+      { nb: 2, farine: "50 g", oeufs: "1", panko: "80 g", sel: "2 g", poivre: "0.6 g", huilefriture: "60 ml" },
+      { nb: 3, farine: "75 g", oeufs: "1½", panko: "120 g", sel: "3 g", poivre: "0.9 g", huilefriture: "90 ml" },
+      { nb: 4, farine: "100 g", oeufs: "2", panko: "160 g", sel: "4 g", poivre: "1.2 g", huilefriture: "120 ml" },
+      { nb: 5, farine: "125 g", oeufs: "2½", panko: "200 g", sel: "5 g", poivre: "1.5 g", huilefriture: "150 ml" },
+      { nb: 6, farine: "150 g", oeufs: "3", panko: "240 g", sel: "6 g", poivre: "1.8 g", huilefriture: "180 ml" },
+      { nb: 7, farine: "175 g", oeufs: "3½", panko: "280 g", sel: "7 g", poivre: "2.1 g", huilefriture: "210 ml" },
+      { nb: 8, farine: "200 g", oeufs: "4", panko: "320 g", sel: "8 g", poivre: "2.4 g", huilefriture: "240 ml" },
+      { nb: 9, farine: "225 g", oeufs: "4½", panko: "360 g", sel: "9 g", poivre: "2.7 g", huilefriture: "270 ml" },
+      { nb: 10, farine: "250 g", oeufs: "5", panko: "400 g", sel: "10 g", poivre: "3 g", huilefriture: "300 ml" },
+      { nb: 11, farine: "275 g", oeufs: "5½", panko: "440 g", sel: "11 g", poivre: "3.3 g", huilefriture: "330 ml" },
+      { nb: 12, farine: "300 g", oeufs: "6", panko: "480 g", sel: "12 g", poivre: "3.6 g", huilefriture: "360 ml" },
+      { nb: 13, farine: "325 g", oeufs: "6½", panko: "520 g", sel: "13 g", poivre: "3.9 g", huilefriture: "390 ml" },
+      { nb: 14, farine: "350 g", oeufs: "7", panko: "560 g", sel: "14 g", poivre: "4.2 g", huilefriture: "420 ml" },
+      { nb: 15, farine: "375 g", oeufs: "7½", panko: "600 g", sel: "15 g", poivre: "4.5 g", huilefriture: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍽️", titre: "Trois assiettes", detail: "Préparer trois assiettes creuses : farine assaisonnée, œuf battu, panko.", badge: null },
+      { icone: "🧻", titre: "Sécher", detail: "Sécher parfaitement la pièce à paner : sur une surface humide, la farine fait de la colle.", badge: null },
+      { icone: "🌾", titre: "Fariner", detail: "Passer dans la farine et TAPOTER pour retirer l'excédent — une couche trop épaisse se décolle à la cuisson.", badge: null },
+      { icone: "🥚", titre: "Œuf", detail: "Tremper dans l'œuf battu en laissant bien s'égoutter.", badge: null },
+      { icone: "🍞", titre: "Panko", detail: "Presser dans le panko de chaque côté, sans écraser les flocons.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer quinze minutes au frais : la panure adhère et ne se détache plus à la friture.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire à 170 °C jusqu'à ce que la croûte soit blonde et non brune : le panko colore vite.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur grille et saler aussitôt, tant que la surface est grasse.", badge: null }
+    ]
+  },
+  rubbarbecuemaison: {
+    nom: "Rub Barbecue Maison",
+    cat: "sauces", pays: "usa",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    dateAjout: "2026-10-01T10:30:00",
+    description: "Un mélange sec de sucre, de sel et d'épices qu'on masse sur la viande des heures avant. Le sucre caramélise, le sel pénètre : c'est l'écorce noire des barbecues américains.",
+    tableauRubbarbecuemaison: [
+      { nb: 1, sucrebrun: "60 g", paprikafume: "40 g", sel: "30 g", poivre: "10 g", ail: "10 g", cumin: "8 g", moutarde: "8 g" },
+      { nb: 2, sucrebrun: "120 g", paprikafume: "80 g", sel: "60 g", poivre: "20 g", ail: "20 g", cumin: "16 g", moutarde: "16 g" },
+      { nb: 3, sucrebrun: "180 g", paprikafume: "120 g", sel: "90 g", poivre: "30 g", ail: "30 g", cumin: "24 g", moutarde: "24 g" },
+      { nb: 4, sucrebrun: "240 g", paprikafume: "160 g", sel: "120 g", poivre: "40 g", ail: "40 g", cumin: "32 g", moutarde: "32 g" },
+      { nb: 5, sucrebrun: "300 g", paprikafume: "200 g", sel: "150 g", poivre: "50 g", ail: "50 g", cumin: "40 g", moutarde: "40 g" },
+      { nb: 6, sucrebrun: "360 g", paprikafume: "240 g", sel: "180 g", poivre: "60 g", ail: "60 g", cumin: "48 g", moutarde: "48 g" },
+      { nb: 7, sucrebrun: "420 g", paprikafume: "280 g", sel: "210 g", poivre: "70 g", ail: "70 g", cumin: "56 g", moutarde: "56 g" },
+      { nb: 8, sucrebrun: "480 g", paprikafume: "320 g", sel: "240 g", poivre: "80 g", ail: "80 g", cumin: "64 g", moutarde: "64 g" },
+      { nb: 9, sucrebrun: "540 g", paprikafume: "360 g", sel: "270 g", poivre: "90 g", ail: "90 g", cumin: "72 g", moutarde: "72 g" },
+      { nb: 10, sucrebrun: "600 g", paprikafume: "400 g", sel: "300 g", poivre: "100 g", ail: "100 g", cumin: "80 g", moutarde: "80 g" },
+      { nb: 11, sucrebrun: "660 g", paprikafume: "440 g", sel: "330 g", poivre: "110 g", ail: "110 g", cumin: "88 g", moutarde: "88 g" },
+      { nb: 12, sucrebrun: "720 g", paprikafume: "480 g", sel: "360 g", poivre: "120 g", ail: "120 g", cumin: "96 g", moutarde: "96 g" },
+      { nb: 13, sucrebrun: "780 g", paprikafume: "520 g", sel: "390 g", poivre: "130 g", ail: "130 g", cumin: "104 g", moutarde: "104 g" },
+      { nb: 14, sucrebrun: "840 g", paprikafume: "560 g", sel: "420 g", poivre: "140 g", ail: "140 g", cumin: "112 g", moutarde: "112 g" },
+      { nb: 15, sucrebrun: "900 g", paprikafume: "600 g", sel: "450 g", poivre: "150 g", ail: "150 g", cumin: "120 g", moutarde: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "⚖️", titre: "Doser", detail: "Respecter l'équilibre : deux parts de sucre, un peu plus d'une de paprika, une de sel.", badge: null },
+      { icone: "🧄", titre: "Sécher l'ail", detail: "Utiliser de l'ail en poudre, jamais frais : l'humidité ferait prendre le mélange en bloc.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Mélanger toutes les épices au fouet jusqu'à obtenir une couleur parfaitement homogène.", badge: null },
+      { icone: "👃", titre: "Goûter", detail: "Goûter du bout du doigt : il doit être franchement salé et sucré à la fois, car il s'étale sur beaucoup de viande.", badge: null },
+      { icone: "💪", titre: "Masser", detail: "Masser généreusement la viande sèche, en insistant partout — compter une cuillère à soupe par demi-kilo.", badge: null },
+      { icone: "⏲️", titre: "Attendre", detail: "Laisser agir au moins quatre heures au frais, idéalement une nuit : le sel tire l'humidité puis la fait revenir chargée d'épices.", badge: null },
+      { icone: "🫙", titre: "Conserver", detail: "Garder le reste en bocal hermétique, à l'abri de la lumière.", badge: null }
+    ]
+  },
+  reductionbalsamique: {
+    nom: "Réduction de Vinaigre Balsamique",
+    cat: "sauces", pays: "italie",
+    base: 1,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍯",
+    dateAjout: "2026-10-01T10:30:00",
+    description: "Du vinaigre balsamique réduit de moitié jusqu'à devenir sirupeux et presque sucré. Un trait suffit sur une burrata, des fraises ou un magret.",
+    tableauReductionbalsamique: [
+      { nb: 1, vinaigreBalsamique: "200 ml", sucrebrun: "15 g", thym: "0.5 g" },
+      { nb: 2, vinaigreBalsamique: "400 ml", sucrebrun: "30 g", thym: "1 g" },
+      { nb: 3, vinaigreBalsamique: "600 ml", sucrebrun: "45 g", thym: "1.5 g" },
+      { nb: 4, vinaigreBalsamique: "800 ml", sucrebrun: "60 g", thym: "2 g" },
+      { nb: 5, vinaigreBalsamique: "1000 ml", sucrebrun: "75 g", thym: "2.5 g" },
+      { nb: 6, vinaigreBalsamique: "1200 ml", sucrebrun: "90 g", thym: "3 g" },
+      { nb: 7, vinaigreBalsamique: "1400 ml", sucrebrun: "105 g", thym: "3.5 g" },
+      { nb: 8, vinaigreBalsamique: "1600 ml", sucrebrun: "120 g", thym: "4 g" },
+      { nb: 9, vinaigreBalsamique: "1800 ml", sucrebrun: "135 g", thym: "4.5 g" },
+      { nb: 10, vinaigreBalsamique: "2000 ml", sucrebrun: "150 g", thym: "5 g" },
+      { nb: 11, vinaigreBalsamique: "2200 ml", sucrebrun: "165 g", thym: "5.5 g" },
+      { nb: 12, vinaigreBalsamique: "2400 ml", sucrebrun: "180 g", thym: "6 g" },
+      { nb: 13, vinaigreBalsamique: "2600 ml", sucrebrun: "195 g", thym: "6.5 g" },
+      { nb: 14, vinaigreBalsamique: "2800 ml", sucrebrun: "210 g", thym: "7 g" },
+      { nb: 15, vinaigreBalsamique: "3000 ml", sucrebrun: "225 g", thym: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫗", titre: "Verser", detail: "Verser le vinaigre dans une petite casserole à fond épais, avec le sucre.", badge: null },
+      { icone: "💨", titre: "Aérer", detail: "Ouvrir la fenêtre ou allumer la hotte : les vapeurs de vinaigre qui réduit piquent fortement les yeux.", badge: null },
+      { icone: "🔥", titre: "Réduire", detail: "Porter à frémissement et laisser réduire à feu doux, sans couvrir.", badge: null },
+      { icone: "👀", titre: "Surveiller", detail: "Compter quinze à vingt minutes, jusqu'à ce que le volume ait diminué de moitié.", badge: null },
+      { icone: "🥄", titre: "Tester", detail: "Tremper une cuillère froide : la réduction doit napper et laisser une trace nette au doigt.", badge: null },
+      { icone: "⚠️", titre: "Ne pas trop cuire", detail: "S'arrêter avant que ça n'épaississe trop : en refroidissant, la réduction devient bien plus sirupeuse qu'à chaud.", badge: null },
+      { icone: "🫙", titre: "Conserver", detail: "Verser en flacon et garder à température ambiante, elle ne cristallise pas.", badge: null }
+    ]
   }
 });

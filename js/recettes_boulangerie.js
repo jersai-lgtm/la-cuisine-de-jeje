@@ -5122,5 +5122,43 @@ Object.assign(recettes, {
       { icone: "🥟", titre: "Utiliser", detail: "Garnir et plier aussitôt, en humectant les bords du bout du doigt.", badge: null }
     ],
     liees: ["soupewonton"]
+  },
+  pateabeignets: {
+    nom: "Pâte à Beignets",
+    cat: "boulangerie", pays: "france",
+    base: 4,
+    temps: "15 min + 1h repos",
+    niveau: "⭐ Facile",
+    emoji: "🍥",
+    dateAjout: "2026-10-01T10:30:00",
+    description: "Une pâte légère à la bière, qui gonfle et croustille à la friture. Le repos détend le gluten, la bière apporte les bulles : deux détails qui changent tout.",
+    tableauPateabeignets: [
+      { nb: 1, farine: "50 g", bierebrune: "40 ml", oeufs: "¼", huilefriture: "10 ml", sel: "1 g", levurechimique: "1 g" },
+      { nb: 2, farine: "100 g", bierebrune: "80 ml", oeufs: "½", huilefriture: "20 ml", sel: "2 g", levurechimique: "2 g" },
+      { nb: 3, farine: "150 g", bierebrune: "120 ml", oeufs: "¾", huilefriture: "30 ml", sel: "3 g", levurechimique: "3 g" },
+      { nb: 4, farine: "200 g", bierebrune: "160 ml", oeufs: "1", huilefriture: "40 ml", sel: "4 g", levurechimique: "4 g" },
+      { nb: 5, farine: "250 g", bierebrune: "200 ml", oeufs: "1¼", huilefriture: "50 ml", sel: "5 g", levurechimique: "5 g" },
+      { nb: 6, farine: "300 g", bierebrune: "240 ml", oeufs: "1½", huilefriture: "60 ml", sel: "6 g", levurechimique: "6 g" },
+      { nb: 7, farine: "350 g", bierebrune: "280 ml", oeufs: "1¾", huilefriture: "70 ml", sel: "7 g", levurechimique: "7 g" },
+      { nb: 8, farine: "400 g", bierebrune: "320 ml", oeufs: "2", huilefriture: "80 ml", sel: "8 g", levurechimique: "8 g" },
+      { nb: 9, farine: "450 g", bierebrune: "360 ml", oeufs: "2¼", huilefriture: "90 ml", sel: "9 g", levurechimique: "9 g" },
+      { nb: 10, farine: "500 g", bierebrune: "400 ml", oeufs: "2½", huilefriture: "100 ml", sel: "10 g", levurechimique: "10 g" },
+      { nb: 11, farine: "550 g", bierebrune: "440 ml", oeufs: "2¾", huilefriture: "110 ml", sel: "11 g", levurechimique: "11 g" },
+      { nb: 12, farine: "600 g", bierebrune: "480 ml", oeufs: "3", huilefriture: "120 ml", sel: "12 g", levurechimique: "12 g" },
+      { nb: 13, farine: "650 g", bierebrune: "520 ml", oeufs: "3¼", huilefriture: "130 ml", sel: "13 g", levurechimique: "13 g" },
+      { nb: 14, farine: "700 g", bierebrune: "560 ml", oeufs: "3½", huilefriture: "140 ml", sel: "14 g", levurechimique: "14 g" },
+      { nb: 15, farine: "750 g", bierebrune: "600 ml", oeufs: "3¾", huilefriture: "150 ml", sel: "15 g", levurechimique: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Mélanger", detail: "Mettre la farine, le sel et la levure dans un saladier et creuser un puits.", badge: null },
+      { icone: "🍺", titre: "Bière", detail: "Verser la bière froide petit à petit en fouettant du centre vers l'extérieur, pour éviter les grumeaux.", badge: null },
+      { icone: "🥚", titre: "Jaune", detail: "Ajouter le jaune d'œuf et l'huile, et mélanger jusqu'à obtenir une pâte lisse qui nappe la cuillère.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer une heure à température ambiante : le gluten se détend et la pâte devient plus légère.", badge: null },
+      { icone: "🥚", titre: "Blanc en neige", detail: "Juste avant d'utiliser, monter le blanc en neige ferme.", badge: null },
+      { icone: "🥄", titre: "Incorporer", detail: "L'incorporer délicatement à la maryse : c'est lui qui donne le gonflant.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Tremper les morceaux et les plonger dans l'huile à 180 °C, sans surcharger le bain.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur une grille plutôt que sur du papier, pour que le dessous reste croustillant.", badge: null }
+    ]
   }
 });

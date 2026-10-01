@@ -121954,6 +121954,1164 @@ window.RECETTES_EN = {
     "detail": "Bottle in a clean bottle in the fridge; a spoonful of vodka extends its life."
    }
   ]
+ },
+ "oeufparfait63": {
+  "nom": "63-Degree Egg",
+  "description": "An egg cooked for an hour at an exact temperature: the white barely sets, the yolk turns to thick cream. The whole recipe rests on holding the water steady.",
+  "etapes": [
+   {
+    "titre": "The bath",
+    "detail": "Fill a large pan with water and hold it at 63°C on a thermometer, over very low heat."
+   },
+   {
+    "titre": "Stabilise",
+    "detail": "Add a trickle of cold or hot water to correct: the larger the volume, the steadier the temperature."
+   },
+   {
+    "titre": "Immerse",
+    "detail": "Lower in the whole eggs, shells on, with a slotted spoon."
+   },
+   {
+    "titre": "One hour",
+    "detail": "Leave for exactly an hour, checking the temperature every ten minutes."
+   },
+   {
+    "titre": "Why 63",
+    "detail": "At that temperature the white sets just enough to hold while the yolk stays creamy: one degree more and it firms."
+   },
+   {
+    "titre": "Shell",
+    "detail": "Crack the shell gently and let the egg slide into a spoon: the looser white runs away."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Set it on a purée or a velouté, season, and finish with chives and beurre noisette."
+   }
+  ]
+ },
+ "magretbassetemperature": {
+  "nom": "Slow-Cooked Duck Breast",
+  "description": "The skin rendered from cold in the pan, then gentle oven cooking to 55°C at the core. The meat stays pink edge to edge, with no grey gradient.",
+  "etapes": [
+   {
+    "titre": "Score",
+    "detail": "Score the skin in tight diamonds without reaching the flesh: the fat must be able to escape."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt the skin generously an hour ahead, then pat it dry."
+   },
+   {
+    "titre": "Cold pan",
+    "detail": "Lay the breast skin down in a COLD pan, then turn the heat to low."
+   },
+   {
+    "titre": "Render",
+    "detail": "Allow fifteen minutes: the fat melts slowly and the skin turns thin and crisp."
+   },
+   {
+    "titre": "Pour off",
+    "detail": "Pour off the fat as it comes and keep it for potatoes."
+   },
+   {
+    "titre": "Into the oven",
+    "detail": "Turn for thirty seconds on the flesh side, then bake at 80°C until 55°C at the core, twenty to thirty minutes."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest for ten minutes under foil: the juices redistribute, otherwise they run onto the plate."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice on the bias, skin up, and serve with honey and vinegar deglazed in the pan."
+   }
+  ]
+ },
+ "saumonmicuit": {
+  "nom": "Slow-Cooked Salmon",
+  "description": "Salmon cooked at 45°C in the oven: translucent at the heart, flaking into large pearly petals. Nothing like a fillet cooked through, dry and pale.",
+  "etapes": [
+   {
+    "titre": "Brine",
+    "detail": "Cover the fillet in coarse salt for twenty minutes: it firms the flesh and seasons it through."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse under cold water and dry very thoroughly."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Brush with olive oil on all sides, which carries the heat evenly."
+   },
+   {
+    "titre": "Low oven",
+    "detail": "Bake at 80°C on a tray, with a thermometer in the thickest part."
+   },
+   {
+    "titre": "Aim for 45",
+    "detail": "Take it out at 45°C at the core: twenty to twenty-five minutes depending on thickness."
+   },
+   {
+    "titre": "Check",
+    "detail": "The flesh should open into large petals under a fork, staying glossy and translucent in the centre."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Season with lemon, dill and pepper at the last moment, and serve straight away."
+   }
+  ]
+ },
+ "poitrineporcbassetemperature": {
+  "nom": "Slow-Roast Pork Belly",
+  "description": "Six hours at 120°C then a blast under the grill: the meat turns meltingly soft and the rind blisters into a puffed crust. Patience does all the work.",
+  "etapes": [
+   {
+    "titre": "Score",
+    "detail": "Score the rind in tight lines, without cutting into the flesh."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Rub coarse salt into the cuts and leave uncovered overnight in the fridge: the rind must dry."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Next day, wipe off the excess salt and dry thoroughly — damp rind never puffs."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Set it on a bed of crushed garlic and thyme, and pour the white wine into the dish."
+   },
+   {
+    "titre": "Six hours",
+    "detail": "Cook at 120°C for six hours, never basting the rind."
+   },
+   {
+    "titre": "Check",
+    "detail": "The meat should give under light finger pressure."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Turn the oven to maximum or use the grill for five to ten minutes: the rind swells and cracks."
+   },
+   {
+    "titre": "Carve",
+    "detail": "Rest for fifteen minutes and carve with a bread knife, pressing firmly through the crust."
+   }
+  ]
+ },
+ "boeufalaficelle": {
+  "nom": "Beef on a String",
+  "description": "A fillet suspended on a string in simmering broth, never touching the bottom. Twenty minutes and it comes out pink and fragrant, served with its broth.",
+  "etapes": [
+   {
+    "titre": "Tie",
+    "detail": "Tie the fillet into an even roast, leaving a long string hanging."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Bring the vegetable broth to a simmer with cut carrot, leek and turnip."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Keep it at a barely visible tremble: a boil would toughen the meat instantly."
+   },
+   {
+    "titre": "Suspend",
+    "detail": "Tie the string to a spoon handle laid across the pot so the meat hangs submerged without touching the bottom."
+   },
+   {
+    "titre": "Time it",
+    "detail": "Allow twenty minutes for a piece six centimetres across, for rare."
+   },
+   {
+    "titre": "Check",
+    "detail": "With a thermometer, aim for 52°C at the core for rare, 57°C for medium."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Lift out, set on a rack and rest for ten minutes before slicing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the slices with the vegetables and a bowl of broth, coarse salt and mustard."
+   }
+  ]
+ },
+ "confitdeporc": {
+  "nom": "Pork Confit",
+  "description": "Pork shoulder salted overnight then cooked for three hours in fat. It keeps for weeks under its own fat and is fried off at the last minute.",
+  "etapes": [
+   {
+    "titre": "Salt",
+    "detail": "Rub the pork pieces with coarse salt, thyme and crushed garlic."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Leave covered for twelve hours in the fridge: the salt penetrates and begins to preserve."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse thoroughly and dry: without this, the confit would be inedibly salty."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Melt the fat in a casserole and lower in the pieces, fully submerged."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Hold at 85°C — the fat should barely tremble, and must never fry."
+   },
+   {
+    "titre": "Three hours",
+    "detail": "Allow three hours, until a skewer slides in with no resistance."
+   },
+   {
+    "titre": "Store",
+    "detail": "Pack into a jar and cover completely with strained fat, with nothing sticking out."
+   },
+   {
+    "titre": "Serve",
+    "detail": "To serve, fry hard on the skin side to bring back the crispness."
+   }
+  ]
+ },
+ "rillons": {
+  "nom": "Rillons",
+  "description": "Cubes of pork belly caramelised in their own fat, a speciality of Touraine. Crisp outside, melting inside, served warm with a Loire wine.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the belly into large five-centimetre cubes, rind included."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt them with coarse salt and leave for six hours in the fridge."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse and dry thoroughly."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Brown them in a casserole on all sides, in their own fat as it starts to melt."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Lower the heat, cover and cook very gently for two hours, stirring now and then."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Add the sugar and white wine, then raise the heat to glaze the cubes."
+   },
+   {
+    "titre": "Watch",
+    "detail": "The caramel catches fast at the end: do not take your eyes off the pot."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, with country bread and gherkins."
+   }
+  ]
+ },
+ "gesiersconfits": {
+  "nom": "Confit Gizzards",
+  "description": "Duck gizzards cooked for two hours in fat until tender. Fried and laid warm over salad, they are the classic starter of south-west France.",
+  "etapes": [
+   {
+    "titre": "Salt",
+    "detail": "Salt the gizzards with coarse salt and thyme and leave six hours in the fridge."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse under cold water and dry."
+   },
+   {
+    "titre": "Submerge",
+    "detail": "Lower them into the melted duck fat, completely covered."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Hold at 85°C for two hours: the fat barely trembles, with occasional bubbles."
+   },
+   {
+    "titre": "Check",
+    "detail": "A confit gizzard cuts with a fork, with no springiness."
+   },
+   {
+    "titre": "Store",
+    "detail": "Cool in the fat and keep refrigerated, covered."
+   },
+   {
+    "titre": "Fry",
+    "detail": "To serve, slice and fry hard for two minutes until coloured."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Lay them warm over a salad dressed with sherry vinegar."
+   }
+  ]
+ },
+ "poivronsconfits": {
+  "nom": "Peppers Confit in Oil",
+  "description": "Peppers peeled then cooked for an hour in olive oil at low temperature. They turn silky and sweet, and the oil becomes as good as they are.",
+  "etapes": [
+   {
+    "titre": "Roast",
+    "detail": "Roast the whole peppers in a very hot oven until the skin blackens and blisters."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Shut them in a covered bowl for ten minutes: the steam lifts the skin by itself."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel by hand without rinsing, which would wash away the flavour."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Open them, remove the seeds and white membranes, then cut into wide strips."
+   },
+   {
+    "titre": "Submerge",
+    "detail": "Pack into a small casserole and cover with olive oil, garlic and thyme."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Cook for an hour at 90°C, never frying: the oil should barely shiver."
+   },
+   {
+    "titre": "Store",
+    "detail": "Jar with the cooking oil, peppers always submerged."
+   }
+  ]
+ },
+ "magretsechemaison": {
+  "nom": "Home-Cured Duck Breast",
+  "description": "A duck breast buried in coarse salt for twelve hours, then dried for three weeks in a cloth in the fridge. Sliced thin, like duck ham.",
+  "etapes": [
+   {
+    "titre": "Bury",
+    "detail": "Line a dish with coarse salt, lay the breast in and cover it completely: none of it should show."
+   },
+   {
+    "titre": "Twelve hours",
+    "detail": "Leave twelve hours in the fridge, no longer: beyond that it turns too salty."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Take it out, rinse off the salt under cold water and dry very thoroughly."
+   },
+   {
+    "titre": "Pepper",
+    "detail": "Roll the flesh in cracked pepper, thyme and crushed juniper berries."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Wrap tightly in a clean cloth, covering the whole surface."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Leave for three weeks in the salad drawer of the fridge, the dampest and steadiest zone."
+   },
+   {
+    "titre": "Check",
+    "detail": "It is ready when it has lost about a third of its weight and feels firm."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice very thin on the bias and serve with toast."
+   }
+  ]
+ },
+ "truitefumeemaison": {
+  "nom": "Hot-Smoked Trout",
+  "description": "Trout brined then hot-smoked for thirty minutes in a covered barbecue: the flesh cooks and takes the smoke at once. Far simpler than cold smoking.",
+  "etapes": [
+   {
+    "titre": "Dry brine",
+    "detail": "Mix coarse salt and sugar and cover the flesh side of the trout fillets with it."
+   },
+   {
+    "titre": "Two hours",
+    "detail": "Leave two hours in the fridge: the brine firms the flesh and prepares it to take smoke."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse under cold water and dry."
+   },
+   {
+    "titre": "Pellicle",
+    "detail": "Air-dry for an hour in a cool place, until the surface turns slightly tacky — that pellicle is what holds the smoke."
+   },
+   {
+    "titre": "Indirect fire",
+    "detail": "Set up a barbecue with coals on one side only and a handful of soaked wood chips."
+   },
+   {
+    "titre": "Smoke",
+    "detail": "Set the trout on the side without coals, cover, and hold between 70 and 90°C for thirty minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "The flesh should flake and have taken on a golden tint."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cool, then serve with lemon and dill cream."
+   }
+  ]
+ },
+ "terrinedelapin": {
+  "nom": "Rabbit Terrine",
+  "description": "A rustic terrine of boned rabbit and pork, scented with white wine and juniper. It needs two days of resting before being cut.",
+  "etapes": [
+   {
+    "titre": "Bone",
+    "detail": "Bone the rabbit, keeping the loins whole, and mince the rest with the pork."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Mix the minced meat with white wine, crushed juniper, thyme and salt, then leave overnight in the fridge."
+   },
+   {
+    "titre": "Bind",
+    "detail": "The next day, work in the egg: it holds the slice together."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Fry a small patty to check the seasoning — never taste raw forcemeat."
+   },
+   {
+    "titre": "Build",
+    "detail": "Line the terrine with bards, add a layer of forcemeat, lay the whole loins down the centre, then cover with forcemeat."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "Bake in a bain-marie at 160°C for two hours, to 72°C at the core."
+   },
+   {
+    "titre": "Press",
+    "detail": "Cool with a weight on top: the terrine settles and will slice without crumbling."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Wait forty-eight hours in the fridge before serving, with gherkins and toast."
+   }
+  ]
+ },
+ "pouletcrapaudine": {
+  "nom": "Spatchcock Chicken",
+  "description": "A chicken split along the backbone and flattened: it cooks twice as fast and evenly, legs and breasts finishing together, with crisp skin all over.",
+  "etapes": [
+   {
+    "titre": "Open",
+    "detail": "With poultry shears, cut along the backbone and remove it."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Turn the bird over and press hard on the breastbone with your palm: you hear a crack, and it stays flat."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt it and leave uncovered in the fridge for an hour to dry the skin."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Slide garlic and thyme butter between skin and flesh over the breasts."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast at 200°C on a rack, skin up, for thirty-five to forty minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "Aim for 72°C in the thigh: flattened, breasts and legs reach temperature together."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Raise the oven to 230°C for five minutes to finish the skin."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest for ten minutes, then cut into eight and spoon over the lemony pan juices."
+   }
+  ]
+ },
+ "tatakidethon": {
+  "nom": "Tuna Tataki",
+  "description": "A tuna loin seared fifteen seconds a side and chilled at once: a thin cooked rim around a raw centre. Sliced thick and dipped in a sharp soy sauce.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "Take a thick, very fresh sashimi-grade tuna loin: the centre will be eaten raw."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll it in sesame seeds, pressing to make them stick."
+   },
+   {
+    "titre": "Scorching pan",
+    "detail": "Heat a dry pan until it just smokes."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear fifteen seconds a side, no more: the cooked band must not exceed three millimetres."
+   },
+   {
+    "titre": "Stop it",
+    "detail": "Plunge into iced water for ten seconds to halt the cooking, then dry."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Mix soy sauce, grated ginger, lime juice and sesame oil."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice with a very sharp knife, one centimetre thick, across the grain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once with the sauce separate, so the slices do not soak."
+   }
+  ]
+ },
+ "tatakideboeuf": {
+  "nom": "Beef Tataki",
+  "description": "A fillet seared on every side then chilled in a soy and rice-vinegar marinade. Sliced very thin and eaten almost raw, scented with ponzu.",
+  "etapes": [
+   {
+    "titre": "Temper",
+    "detail": "Take the meat out an hour ahead: seared from cold, it would cook too far inside."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper generously on every side."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear thirty seconds a side in a scorching pan, ends included."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Plunge into iced water for a minute: the cooking stops dead and the meat stays red inside."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix soy sauce, rice vinegar, grated garlic and ginger."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Submerge the meat and chill for two hours, turning it halfway."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Drain, dry, and slice as thinly as you can with a very sharp knife."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange in a rosette, spoon over a little strained marinade and scatter sliced spring onion."
+   }
+  ]
+ },
+ "rosbifparfait": {
+  "nom": "Perfect Roast Beef",
+  "description": "Seared hard first, then roasted at 120°C to 52°C at the core. A two-stage method giving a brown crust and a slice that is pink from edge to edge.",
+  "etapes": [
+   {
+    "titre": "Temper",
+    "detail": "Take the meat out two hours ahead: a cold joint cooks very unevenly."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Pat dry and salt generously: a dry surface is the condition for a good crust."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear in a very hot casserole on every side, two minutes a side."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Add butter, garlic and thyme and baste with a spoon for a minute."
+   },
+   {
+    "titre": "Low oven",
+    "detail": "Roast at 120°C with a thermometer in the centre."
+   },
+   {
+    "titre": "Aim for 52",
+    "detail": "Take it out at 52°C for rare, 56°C for medium: about an hour per kilo."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest twenty minutes under loose foil — the temperature still climbs two degrees."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice thinly across the grain and serve with the deglazed juices."
+   }
+  ]
+ },
+ "maquereaugrille": {
+  "nom": "Grilled Mackerel",
+  "description": "An oily, cheap fish rich in omega-3 that takes the grill better than any other. The skin crisps, the flesh stays moist, and lemon does the rest.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Gut and scale the mackerel, or ask the fishmonger to do it the same day."
+   },
+   {
+    "titre": "Score",
+    "detail": "Cut three slashes in the skin on each side: the heat gets in and the skin does not curl."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt inside and out, and slip a lemon slice and parsley into the belly."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Brush with olive oil, especially the skin, so it does not stick."
+   },
+   {
+    "titre": "Hot grill",
+    "detail": "Heat the grill or ridged pan fully: fish laid on a warm surface always sticks."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill four to five minutes a side, without touching it for the first three minutes."
+   },
+   {
+    "titre": "Turn",
+    "detail": "The fish releases by itself once the skin is grilled: if it resists, it is not ready."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with lemon, chopped garlic and parsley."
+   }
+  ]
+ },
+ "choubraiselardons": {
+  "nom": "Braised Cabbage with Bacon",
+  "description": "Green cabbage braised for an hour with bacon and a glass of white wine. It loses its bitterness, melts down and turns sweet with nothing added.",
+  "etapes": [
+   {
+    "titre": "Shred",
+    "detail": "Remove the thick ribs and shred the cabbage finely with a knife."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch for five minutes in boiling salted water and drain: this removes the bitterness and makes it easier to digest."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Fry the bacon dry in the casserole until it renders its fat."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Add the sliced onion and soften it in that fat."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the drained cabbage, the butter and the juniper berries, and mix well."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in the white wine, pepper, and cover."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Braise for an hour over very low heat, stirring every twenty minutes."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste before salting: the bacon already brings plenty."
+   }
+  ]
+ },
+ "celeribraise": {
+  "nom": "Braised Celery",
+  "description": "Celery stalks braised in stock until translucent and almost sweet. A forgotten vegetable that becomes something else entirely once braised.",
+  "etapes": [
+   {
+    "titre": "String",
+    "detail": "Peel the strings off the stalks with a peeler: they are what makes celery unpleasant to chew."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut into eight-centimetre lengths, all the same size for even cooking."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Melt the butter and sweat the shallot without colouring."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Lay the celery pieces flat, packed tightly together in a single layer."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in stock to halfway only: braising means cooking half submerged."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Lay a paper cartouche on the surface, then the lid, and simmer for thirty-five minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "The celery is ready when a knife tip passes through without resistance."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Remove the paper, raise the heat to reduce the juices to a syrup, and add a squeeze of lemon."
+   }
+  ]
+ },
+ "poireauxbraisesauvin": {
+  "nom": "Leeks Braised in White Wine",
+  "description": "Leek whites laid in a pan and braised in white wine until meltingly soft. Served warm with their reduced juices, they make a starter on their own.",
+  "etapes": [
+   {
+    "titre": "Split",
+    "detail": "Split the leek whites lengthways without separating them at the root."
+   },
+   {
+    "titre": "Wash",
+    "detail": "Wash under running water, spreading the leaves: grit always lodges between the layers."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Lay them cut side down in hot butter and let them colour for five minutes without moving them."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Deglaze with white wine and let the alcohol cook off for two minutes."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add stock to halfway and the thyme, then cover."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Braise for thirty minutes over low heat, until a blade slides in easily."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Lift out the leeks, reduce the juices and whisk in the mustard off the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat the leeks in that sauce and serve warm, which is when they are at their best."
+   }
+  ]
+ },
+ "legumesenpapillote": {
+  "nom": "Vegetables en Papillote",
+  "description": "Vegetables sealed in a tight paper parcel and steamed in their own moisture. Nothing escapes: every aroma stays inside.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut all the vegetables to the same thickness: in a parcel they all cook at once."
+   },
+   {
+    "titre": "Season",
+    "detail": "Toss them with olive oil, thyme, salt and pepper in a bowl."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Set the mixture in the centre of a large sheet of baking paper."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add a spoonful of water or white wine: that is what creates the steam."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Fold the paper over and roll the edges several times: the parcel must be completely airtight."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for twenty-five minutes: the parcel should inflate like a balloon, the sign the steam is working."
+   },
+   {
+    "titre": "Open",
+    "detail": "Open at the table, wary of the scalding steam that escapes all at once."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a squeeze of lemon as it opens and serve in the paper."
+   }
+  ]
+ },
+ "saumonpoche": {
+  "nom": "Poached Salmon",
+  "description": "Salmon lowered into cold court-bouillon, brought up gently then left off the heat. It never boils: the flesh stays pearly and does not fall apart.",
+  "etapes": [
+   {
+    "titre": "Court-bouillon",
+    "detail": "Make a court-bouillon with carrot, onion, white wine, bay and pepper, and cook it for twenty minutes."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely: this is the rule — fish dropped into hot liquid seizes and splits."
+   },
+   {
+    "titre": "Immerse",
+    "detail": "Lower the fillets into the cold court-bouillon, fully covered."
+   },
+   {
+    "titre": "Heat gently",
+    "detail": "Heat very gently until the surface barely trembles, never boiling."
+   },
+   {
+    "titre": "Off the heat",
+    "detail": "At the first tremble, turn off the heat and cover."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Poach for eight to ten minutes in the hot liquid off the heat: the cooking happens by residual heat."
+   },
+   {
+    "titre": "Check",
+    "detail": "The flesh should part into petals under light pressure and stay pink in the centre."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve warm with dill mayonnaise, or cold the next day."
+   }
+  ]
+ },
+ "pateabeignets": {
+  "nom": "Fritter Batter",
+  "description": "A light beer batter that puffs and crisps in the fryer. Resting relaxes the gluten, the beer brings the bubbles: two details that change everything.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Put the flour, salt and baking powder in a bowl and make a well."
+   },
+   {
+    "titre": "Beer",
+    "detail": "Pour in the cold beer little by little, whisking from the centre outwards to avoid lumps."
+   },
+   {
+    "titre": "Yolk",
+    "detail": "Add the egg yolk and the oil, and mix to a smooth batter that coats the spoon."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest for an hour at room temperature: the gluten relaxes and the batter lightens."
+   },
+   {
+    "titre": "Whipped white",
+    "detail": "Just before using, whip the egg white to firm peaks."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold it in gently with a spatula: this is what gives the puff."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Dip the pieces and lower them into oil at 180°C, without crowding the pan."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on a rack rather than paper, so the underside stays crisp."
+   }
+  ]
+ },
+ "panurepanko": {
+  "nom": "Panko Breading",
+  "description": "The Japanese three-stage breading: flour, egg, panko. Panko flakes, coarser and drier than breadcrumbs, give an airy crust that stays crisp.",
+  "etapes": [
+   {
+    "titre": "Three plates",
+    "detail": "Set out three shallow plates: seasoned flour, beaten egg, panko."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Dry the item to be breaded thoroughly: on a wet surface, flour turns to glue."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Coat in flour and TAP off the excess — too thick a layer peels away during cooking."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Dip in beaten egg and let it drain well."
+   },
+   {
+    "titre": "Panko",
+    "detail": "Press into the panko on both sides, without crushing the flakes."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest for fifteen minutes in the fridge: the coating sets and will not fall off in the fryer."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry at 170°C until the crust is blond rather than brown: panko colours fast."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on a rack and salt at once, while the surface is still oily."
+   }
+  ]
+ },
+ "rubbarbecuemaison": {
+  "nom": "Homemade Barbecue Rub",
+  "description": "A dry mix of sugar, salt and spices massaged into meat hours ahead. The sugar caramelises and the salt penetrates: this is the bark of American barbecue.",
+  "etapes": [
+   {
+    "titre": "Proportions",
+    "detail": "Keep the balance: two parts sugar, a little more than one of paprika, one of salt."
+   },
+   {
+    "titre": "Dry garlic",
+    "detail": "Use garlic powder, never fresh: moisture would set the mix into a block."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Whisk all the spices together until the colour is perfectly even."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Taste on a fingertip: it should be frankly salty and sweet at once, since it spreads over a lot of meat."
+   },
+   {
+    "titre": "Massage",
+    "detail": "Massage generously into dry meat, covering every surface — about a tablespoon per half kilo."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Leave at least four hours in the fridge, ideally overnight: the salt draws out moisture then pulls it back in, loaded with spice."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Store the rest in an airtight jar, away from light."
+   }
+  ]
+ },
+ "reductionbalsamique": {
+  "nom": "Balsamic Reduction",
+  "description": "Balsamic vinegar reduced by half to a syrupy, almost sweet glaze. A single drizzle is enough on burrata, strawberries or duck breast.",
+  "etapes": [
+   {
+    "titre": "Pour",
+    "detail": "Pour the vinegar into a small heavy pan with the sugar."
+   },
+   {
+    "titre": "Ventilate",
+    "detail": "Open a window or turn on the extractor: reducing vinegar gives off fumes that sting the eyes."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Bring to a simmer and reduce over low heat, uncovered."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Allow fifteen to twenty minutes, until the volume has halved."
+   },
+   {
+    "titre": "Test",
+    "detail": "Dip a cold spoon: the reduction should coat and hold a clean line drawn with a finger."
+   },
+   {
+    "titre": "Don't overcook",
+    "detail": "Stop before it thickens too far: as it cools it becomes far more syrupy than it was hot."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Bottle and store at room temperature; it does not crystallise."
+   }
+  ]
+ },
+ "rotiveauorloff": {
+  "nom": "Veal Orloff",
+  "description": "A roast sliced then rebuilt, each slice separated by a layer of duxelles and a sheet of ham and cheese. A grand nineteenth-century dish.",
+  "etapes": [
+   {
+    "titre": "Duxelles",
+    "detail": "Chop mushrooms and shallot very fine and dry them out in butter until all the water has gone."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream and reduce: the duxelles must hold its shape, not run."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the tied veal roast on all sides, then let it cool a little."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice it without cutting all the way through: the slices must stay joined at the base, like a fan."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Slide a spoonful of duxelles, a piece of ham and a sheet of cheese into each cut."
+   },
+   {
+    "titre": "Rebuild",
+    "detail": "Tie the roast back into shape, without squeezing the filling out."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Bake at 180°C for forty-five minutes, basting two or three times."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest for ten minutes before removing the string and serving, slice by slice."
+   }
+  ]
+ },
+ "omelettesoufflee": {
+  "nom": "Soufflé Omelette",
+  "description": "Whipped whites folded into the yolks: the omelette doubles in volume and comes out of the oven like a soufflé. Serve within the minute, it collapses.",
+  "etapes": [
+   {
+    "titre": "Separate",
+    "detail": "Separate the whites from the yolks into two spotlessly clean bowls."
+   },
+   {
+    "titre": "Yolks",
+    "detail": "Beat the yolks with the cream, salt and chives."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the whites to firm but not dry peaks: they should still form a soft beak."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold a third of the whites into the yolks to loosen, then the rest with a spatula, lifting the mixture."
+   },
+   {
+    "titre": "Pan",
+    "detail": "Foam the butter in an ovenproof pan over medium heat."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour in the mixture, scatter the cheese, and let it set for two minutes without stirring."
+   },
+   {
+    "titre": "Oven",
+    "detail": "Finish for five minutes at 200°C: the omelette rises and colours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold in half and serve immediately — it starts sinking within thirty seconds."
+   }
+  ]
+ },
+ "oeufmolletpane": {
+  "nom": "Breaded Soft-Boiled Egg",
+  "description": "An egg boiled six minutes, peeled, breaded then fried for a minute: the crust crunches and the yolk still runs. The difficulty is peeling a fragile egg.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Lower the eggs into boiling water and time exactly six minutes."
+   },
+   {
+    "titre": "Ice",
+    "detail": "Plunge them straight into iced water and leave five minutes: the white shrinks and peels more easily."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel under running cold water, gently — this is where it is won or lost, so boil one spare."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Roll in flour, then beaten egg, then panko."
+   },
+   {
+    "titre": "Double",
+    "detail": "Repeat the egg and panko once more: a double coating protects the white in the fryer."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill for fifteen minutes so the coating sets."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry for one minute at 180°C, no more: the point is to colour the crust, not cook the egg further."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain, salt and serve at once — opened with a fork, the yolk should run."
+   }
+  ]
+ },
+ "pintadeauxfigues": {
+  "nom": "Guinea Fowl with Figs",
+  "description": "Guinea fowl roasted with fresh figs that burst into the juices and sweeten them naturally. The flesh is finer and drier than chicken, so baste it.",
+  "etapes": [
+   {
+    "titre": "Butter",
+    "detail": "Slide thyme butter between skin and flesh over the breasts: guinea fowl is lean and dries fast."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Colour the bird on all sides in a casserole, then turn it onto its back."
+   },
+   {
+    "titre": "Shallots",
+    "detail": "Add whole shallots around it; they will confit in the juices."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast at 180°C for forty minutes, basting every ten — this is not optional."
+   },
+   {
+    "titre": "Figs",
+    "detail": "Add the halved figs and the honey for the last twenty minutes only, or they collapse."
+   },
+   {
+    "titre": "Check",
+    "detail": "Aim for 72°C in the thigh: beyond that the flesh turns cottony."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Lift out the bird and deglaze the pot with sherry vinegar, scraping up the residues."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest the guinea fowl ten minutes, carve it and spoon over the fig juices."
+   }
+  ]
+ },
+ "caillefarcie": {
+  "nom": "Stuffed Quail",
+  "description": "Small quails stuffed with a fine mushroom and raisin forcemeat, barded then roasted for twenty minutes. A festive dish eaten with your fingers.",
+  "etapes": [
+   {
+    "titre": "Raisins",
+    "detail": "Plump the raisins in warm cognac for half an hour."
+   },
+   {
+    "titre": "Stuffing",
+    "detail": "Chop mushrooms and bacon, fry until the moisture has evaporated, then add the drained raisins."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the stuffing cool completely: warm, it would cook the inside of the quail before the oven does."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Fill each quail without packing it, then close the opening with a wooden pick."
+   },
+   {
+    "titre": "Truss",
+    "detail": "Cross the legs and tie them: the quail holds its shape and cooks evenly."
+   },
+   {
+    "titre": "Bard",
+    "detail": "Wrap in a thin sheet of fat: without it, a roast quail dries out in ten minutes."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast at 200°C for twenty minutes, basting twice."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Remove the barding five minutes before the end to let the skin colour, then rest for five minutes."
+   }
+  ]
  }
 
 };

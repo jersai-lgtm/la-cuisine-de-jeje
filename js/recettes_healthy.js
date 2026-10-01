@@ -2951,5 +2951,43 @@ Object.assign(recettes, {
       { icone: "🫒", titre: "Huiler", detail: "Badigeonner le dessus d'huile d'olive au pinceau, c'est ce qui les dore.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Cuire vingt-cinq minutes à 200 °C en les retournant à mi-cuisson.", badge: null }
     ]
+  },
+  legumesenpapillote: {
+    nom: "Légumes en Papillote",
+    cat: "healthy", pays: "france",
+    base: 2,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "📦",
+    dateAjout: "2026-10-01T10:30:00",
+    description: "Des légumes enfermés dans un papier hermétique et cuits à la vapeur de leur propre eau. Rien ne s'évapore : les parfums restent tous à l'intérieur.",
+    tableauLegumesenpapillote: [
+      { nb: 1, courgette: "100 g", poivron: "80 g", tomatecerise: "80 g", oignonrouge: "40 g", huileolive: "12 ml", thym: "1 g", citron: "10 g" },
+      { nb: 2, courgette: "200 g", poivron: "160 g", tomatecerise: "160 g", oignonrouge: "80 g", huileolive: "24 ml", thym: "2 g", citron: "20 g" },
+      { nb: 3, courgette: "300 g", poivron: "240 g", tomatecerise: "240 g", oignonrouge: "120 g", huileolive: "36 ml", thym: "3 g", citron: "30 g" },
+      { nb: 4, courgette: "400 g", poivron: "320 g", tomatecerise: "320 g", oignonrouge: "160 g", huileolive: "48 ml", thym: "4 g", citron: "40 g" },
+      { nb: 5, courgette: "500 g", poivron: "400 g", tomatecerise: "400 g", oignonrouge: "200 g", huileolive: "60 ml", thym: "5 g", citron: "50 g" },
+      { nb: 6, courgette: "600 g", poivron: "480 g", tomatecerise: "480 g", oignonrouge: "240 g", huileolive: "72 ml", thym: "6 g", citron: "60 g" },
+      { nb: 7, courgette: "700 g", poivron: "560 g", tomatecerise: "560 g", oignonrouge: "280 g", huileolive: "84 ml", thym: "7 g", citron: "70 g" },
+      { nb: 8, courgette: "800 g", poivron: "640 g", tomatecerise: "640 g", oignonrouge: "320 g", huileolive: "96 ml", thym: "8 g", citron: "80 g" },
+      { nb: 9, courgette: "900 g", poivron: "720 g", tomatecerise: "720 g", oignonrouge: "360 g", huileolive: "108 ml", thym: "9 g", citron: "90 g" },
+      { nb: 10, courgette: "1000 g", poivron: "800 g", tomatecerise: "800 g", oignonrouge: "400 g", huileolive: "120 ml", thym: "10 g", citron: "100 g" },
+      { nb: 11, courgette: "1100 g", poivron: "880 g", tomatecerise: "880 g", oignonrouge: "440 g", huileolive: "132 ml", thym: "11 g", citron: "110 g" },
+      { nb: 12, courgette: "1200 g", poivron: "960 g", tomatecerise: "960 g", oignonrouge: "480 g", huileolive: "144 ml", thym: "12 g", citron: "120 g" },
+      { nb: 13, courgette: "1300 g", poivron: "1040 g", tomatecerise: "1040 g", oignonrouge: "520 g", huileolive: "156 ml", thym: "13 g", citron: "130 g" },
+      { nb: 14, courgette: "1400 g", poivron: "1120 g", tomatecerise: "1120 g", oignonrouge: "560 g", huileolive: "168 ml", thym: "14 g", citron: "140 g" },
+      { nb: 15, courgette: "1500 g", poivron: "1200 g", tomatecerise: "1200 g", oignonrouge: "600 g", huileolive: "180 ml", thym: "15 g", citron: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Tailler", detail: "Couper tous les légumes de la même épaisseur : dans une papillote, ils cuisent tous en même temps.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Les mélanger à l'huile d'olive, au thym, au sel et au poivre dans un saladier.", badge: null },
+      { icone: "📄", titre: "Plier", detail: "Poser le mélange au centre d'une grande feuille de papier cuisson.", badge: null },
+      { icone: "💧", titre: "Humidifier", detail: "Ajouter une cuillère d'eau ou de vin blanc : c'est elle qui crée la vapeur.", badge: null },
+      { icone: "🔒", titre: "Sceller", detail: "Replier le papier et rouler les bords plusieurs fois : la papillote doit être parfaitement hermétique.", badge: null },
+      { icone: "🎈", titre: "Cuire", detail: "Enfourner à 200 °C vingt-cinq minutes : la papillote doit gonfler comme un ballon, c'est le signe que la vapeur travaille.", badge: null },
+      { icone: "⚠️", titre: "Ouvrir", detail: "Ouvrir à table, en se méfiant de la vapeur brûlante qui s'échappe d'un coup.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Arroser d'un trait de citron à l'ouverture et servir dans la papillote.", badge: null }
+    ]
   }
 });
