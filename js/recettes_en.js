@@ -124670,6 +124670,932 @@ window.RECETTES_EN = {
     "detail": "Let it set at 18-20°C for two hours — never in the fridge, which would bloom the chocolate."
    }
   ]
+ },
+ "bebele": {
+  "nom": "Bébélé",
+  "description": "The dish of Marie-Galante: tripe simmered with breadfruit, plantain and dombrés, little flour dumplings cooked in the broth.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Rub the tripe with lime and coarse salt, then rinse thoroughly: that is what removes the smell."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch for ten minutes in boiling water, discard the water, and repeat once."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return to fresh water with onion, garlic, thyme and the whole chilli, and simmer for two hours."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the breadfruit and plantain in large chunks halfway through: they should stay whole."
+   },
+   {
+    "titre": "Dombrés",
+    "detail": "Knead the flour with a little water and a pinch of salt to a soft dough, and roll olive-sized balls."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop them into the broth twenty minutes before the end: they swell and thicken the dish."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Fish out the chilli before it bursts, or the dish becomes inedible."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very hot in deep plates, with plenty of broth."
+   }
+  ]
+ },
+ "matetecrabes": {
+  "nom": "Crab Matété",
+  "description": "The Easter rice of Guadeloupe: land crabs cooked in a saffron-spiced rice that soaks up all their juices. Eaten with your fingers.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Scrub the crabs under water and rub them with lime, discarding the spongy gills."
+   },
+   {
+    "titre": "Crack",
+    "detail": "Crack the claws with the back of a knife: the juices must be able to run into the rice."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Leave them for an hour with crushed garlic, spring onion, thyme and lime."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Fry the crabs in hot oil with the onion until the shells turn red."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the crushed tomato and the whole chilli, and let it stew for ten minutes."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Tip in the rice and let it turn pearly for two minutes in the juices, unwashed: its starch binds the dish."
+   },
+   {
+    "titre": "Liquid",
+    "detail": "Cover with hot water to a finger above the rice, salt, and cook covered for twenty minutes without stirring."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it swell for ten minutes off the heat before serving, chilli removed."
+   }
+  ]
+ },
+ "chiquetaillemorue": {
+  "nom": "Shredded Salt Cod Salad",
+  "description": "Salt cod desalted, grilled then shredded by hand and marinated raw in oil, lime and chilli. Eaten on bread or stuffed in a bokit.",
+  "etapes": [
+   {
+    "titre": "Desalt",
+    "detail": "Soak the cod for twelve hours in the fridge, changing the water three times."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Drain and dry-grill it in a pan or under the grill until it cracks."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred it completely by hand, removing bones and skin: that finger work is what gives the texture."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice the onion very finely and the spring onion on the bias."
+   },
+   {
+    "titre": "Chilli",
+    "detail": "Chop the chilli without the seeds, measuring carefully: a quarter of one is enough for six."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Mix the cod, onion, crushed garlic, herbs, lime juice and olive oil."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill for at least two hours: the lime 'cooks' the onion and everything settles."
+   }
+  ]
+ },
+ "pateenpot": {
+  "nom": "Martinican Mutton Soup",
+  "description": "The soup for grand occasions in Martinique: mutton offal slowly simmered with minutely diced vegetables, lifted with capers and a dash of rum.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Rub the meat and offal with lime, rinse, then blanch for ten minutes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Return to fresh water with onion, garlic, thyme and chilli, and cook for two hours over low heat."
+   },
+   {
+    "titre": "Dice",
+    "detail": "Meanwhile, cut all the vegetables into tiny dice the size of a rice grain: the dish's signature."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Lift out the meat, chop it finely with a knife and return it to the broth."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the vegetables and cook thirty minutes more, until everything melts."
+   },
+   {
+    "titre": "Capers",
+    "detail": "Stir in the chopped capers at the end: they bring the acidity that balances the fat."
+   },
+   {
+    "titre": "Rum",
+    "detail": "Pour in the rum off the heat, taste and adjust salt and lime."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot; the soup should be thick but still spoonable."
+   }
+  ]
+ },
+ "pimentadeguyanaise": {
+  "nom": "Guianese Pimentade",
+  "description": "The Guianese court-bouillon: fish poached in a strongly limed, frankly spicy tomato broth, mopped up with cassava couac or white rice.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Rub the fish with lime and leave it thirty minutes with garlic, spring onion and salt: the Creole marinade."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Heat the oil and brown the sliced onion to a deep gold."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the crushed tomato and the purée, and reduce for ten minutes."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add the chilli: whole for a fragrant dish, split for a burning one. The cook's choice."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Add hot water and simmer ten minutes so the broth gains body."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Slide in the fish pieces and poach for eight minutes over low heat, never boiling."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the remaining lime off the heat and scatter with parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice or cassava couac, and the broth on the side in a bowl."
+   }
+  ]
+ },
+ "troviyanadzi": {
+  "nom": "Mahoran Banana in Coconut Milk",
+  "description": "The everyday dish of Mayotte: green bananas simmered in coconut milk with dried fish. Sweet, savoury and comforting.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Peel the green bananas under running water: their sap stains fingers and worktop."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Keep them in lemony water so they do not darken while you work."
+   },
+   {
+    "titre": "Base",
+    "detail": "Soften the onion, garlic and ginger in the oil without colouring."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add the turmeric and let it bloom for thirty seconds in the fat."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Add the fish in pieces and let it firm up for two minutes."
+   },
+   {
+    "titre": "Coconut",
+    "detail": "Pour in the coconut milk, add the banana chunks, and salt."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook uncovered for twenty-five minutes at a simmer: the bananas should be melting and the sauce coating."
+   },
+   {
+    "titre": "Serve",
+    "detail": "A squeeze of lime at the table lifts the whole thing."
+   }
+  ]
+ },
+ "pilaomahorais": {
+  "nom": "Mahoran Pilao",
+  "description": "The festive rice of Mayotte: a pilaf scented with cinnamon, clove and cardamom, where the rice cooks in the meat broth.",
+  "etapes": [
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the rice until the water runs clear, then soak it for twenty minutes: a pilao must have separate grains."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Fry the sliced onion to golden brown, and set half aside for the top."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Drop the whole cinnamon, clove and cardamom into the hot oil for a few seconds only."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Add the chicken, garlic and ginger, and brown on all sides."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the tomato and reduce until the oil separates out: the sign the base is ready."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Add hot water, salt, and cook covered for twenty minutes."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the drained rice, check it is just covered, and cook fifteen minutes on very low heat without stirring."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Leave ten minutes off the heat under a cloth, then fluff with a fork and scatter with fried onion and coriander."
+   }
+  ]
+ },
+ "civetcerfcaledonien": {
+  "nom": "New Caledonian Venison Stew",
+  "description": "Rusa deer, introduced in the nineteenth century, became New Caledonia's bush meat. Marinated in red wine then slowly stewed, it loses all its dryness.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the meat for twenty-four hours in red wine with carrot, onion, thyme, bay and crushed juniper."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Lift out the meat and DRY it carefully: wet, it would boil instead of browning."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Strain the marinade and keep it: it will make the sauce."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the meat in small batches in very hot oil, so it truly colours."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Fry the bacon and the marinade vegetables, then dust with flour and cook for a minute."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the marinade, scrape the base to lift the juices, and bring to a simmer."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Cook for two and a half hours covered, on the lowest heat: venison is lean and cannot take a boil."
+   },
+   {
+    "titre": "Enrich",
+    "detail": "Add the dark chocolate at the end: it rounds the wine's acidity without tasting of chocolate."
+   }
+  ]
+ },
+ "fafatahitien": {
+  "nom": "Tahitian Fafa Chicken",
+  "description": "Chicken fāfā: taro leaves melted into coconut milk with chicken. In France it is made with spinach, which gives exactly the same green sweetness.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "In Tahiti taro leaves are used and need long cooking; spinach gives the same result in twenty minutes."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the spinach for two minutes, drain and squeeze hard to drive out the water."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Chop roughly with a knife, not a blender: you want texture, not purée."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Brown the chicken pieces in the oil with the onion and garlic."
+   },
+   {
+    "titre": "Coconut",
+    "detail": "Pour in the coconut milk and simmer uncovered for ten minutes."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the spinach and cook fifteen minutes more over low heat, uncovered."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper generously and finish with lime."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice or uru, the breadfruit."
+   }
+  ]
+ },
+ "crevettestahitiennes": {
+  "nom": "Tahitian Prawns in Coconut Milk",
+  "description": "Tahitian chevrettes, freshwater prawns, flash-seared then coated in lime-scented coconut milk. Twenty minutes, and it all rests on the short cooking.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Shell the prawns leaving the tails on, and remove the dark vein along the back."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Pat them dry: a wet prawn releases water and boils in the pan."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear two minutes a side over high heat, then remove them at once."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "In the same pan, soften the garlic, ginger and chilli for thirty seconds."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Pour in the coconut milk and reduce for three minutes, until it coats the spoon."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the prawns for just a minute to warm through, not to cook again."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, lime and chopped spring onion."
+   }
+  ]
+ },
+ "fiskasupan": {
+  "nom": "Faroese Fish Soup",
+  "description": "The fish soup of the Faroes: a clear broth of fish and root vegetables, barely bound with cream. Austere and deeply comforting.",
+  "etapes": [
+   {
+    "titre": "Stock",
+    "detail": "Make a stock with the fish bones and trimmings, twenty minutes only: longer and it turns bitter."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain the stock through a fine sieve without pressing the bones."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the leek, carrot and turnip in butter without colouring."
+   },
+   {
+    "titre": "Liquid",
+    "detail": "Add the stock, the diced potatoes and the bay leaf."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer twenty minutes, until the potatoes just begin to crush."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Cut the fish into large cubes and poach four minutes off the heat, in the scalding broth."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream off the heat: here it must never boil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pepper, scatter with dill, and serve with buttered rye bread."
+   }
+  ]
+ },
+ "mutabbaqsaoudien": {
+  "nom": "Saudi Mutabbaq",
+  "description": "A dough sheet stretched until transparent, filled with meat and egg, folded into a square and seared on a griddle. The name means 'folded'.",
+  "etapes": [
+   {
+    "titre": "Knead",
+    "detail": "Knead flour, water, salt and a drizzle of oil for ten minutes, to a very soft, elastic dough."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Divide into balls, coat them in oil and rest for an hour: the oil and the rest are what allow the stretching."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Fry the meat with the onion, cumin and pepper, then let it cool."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix the beaten egg, spring onion and coriander into the COLD filling, or the egg sets at once."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch each ball by hand on an oiled surface until you can see through it: it should be almost transparent."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Place the filling in the centre and fold the four sides in to make a sealed square."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Cook on a very hot, lightly oiled pan, three minutes a side, until crisp and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into squares and serve at once, with a lemony yoghurt."
+   }
+  ]
+ },
+ "chebabemirati": {
+  "nom": "Emirati Chebab Pancakes",
+  "description": "The breakfast pancakes of the Emirates: a yeasted batter with saffron, cardamom and fennel, cooked on one side and served with soft cheese and date syrup.",
+  "etapes": [
+   {
+    "titre": "Saffron",
+    "detail": "Steep the saffron in a spoonful of warm milk for twenty minutes: it must colour strongly."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Mix the flour, sugar, yeast, cardamom and ground fennel seeds."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add the milk, egg and saffron milk, and whisk to a smooth, fairly runny batter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and leave to rise for forty-five minutes: the surface should be full of bubbles."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour a ladleful onto a hot buttered pan, spiralling from the centre outwards."
+   },
+   {
+    "titre": "One side only",
+    "detail": "Cook on ONE side only: the top must stay pale and pitted with holes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, folded, with soft cheese and a drizzle of honey or date syrup."
+   }
+  ]
+ },
+ "halwaomanaise": {
+  "nom": "Omani Halwa",
+  "description": "Oman's national sweet: a gel of starch, sugar and ghee scented with saffron and rosewater, stirred relentlessly until translucent and elastic.",
+  "etapes": [
+   {
+    "titre": "Infuse",
+    "detail": "Steep the saffron and crushed cardamom in a little hot water."
+   },
+   {
+    "titre": "Slake",
+    "detail": "Slake the starch in COLD water, with not a single lump: the only stage where you can still fix it."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Dissolve the sugar in the remaining water and bring to a boil."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the slaked starch into the boiling syrup in a thin stream, whisking hard."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir WITHOUT STOPPING with a wooden spoon for forty minutes: that is the whole job, and there is no shortcut."
+   },
+   {
+    "titre": "Ghee",
+    "detail": "Work in the ghee in three additions, waiting each time until it is fully absorbed."
+   },
+   {
+    "titre": "Check",
+    "detail": "It is ready when the mass turns translucent and glossy and pulls away from the base in one piece."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Flavour with rosewater, pour into an oiled dish, scatter with almonds and set for four hours."
+   }
+  ]
+ },
+ "khanfaroosh": {
+  "nom": "Khanfaroosh",
+  "description": "The fried little cakes of the Gulf: a saffron and cardamom batter of rice and flour, cooked in a dimpled pan until lacy at the edges.",
+  "etapes": [
+   {
+    "titre": "Saffron",
+    "detail": "Crush the saffron with a pinch of sugar then steep it in two spoonfuls of hot water."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the two flours, the sugar, the yeast and the ground cardamom."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Add egg, saffron and rosewater, and work to a thick, barely pourable batter."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Leave to rise for an hour, covered, somewhere warm."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil in a dimpled pan, or failing that a small frying pan, to 170°C."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Fill the hollows three-quarters full and cook three minutes, until the edges go lacy."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Turn with a skewer and cook two minutes on the other side."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on a rack, never on paper where they would soften, and dust with icing sugar."
+   }
+  ]
+ },
+ "fulsoudanais": {
+  "nom": "Sudanese Ful",
+  "description": "Sudan's national breakfast: broad beans crushed with a fork, dressed with sesame oil, white cheese and boiled egg, scooped up with bread.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Start from dried broad beans soaked overnight, or rinsed tinned beans to be quick."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Heat them in their liquid with the crushed garlic until they crush without resistance."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Mash them with a fork, coarsely: you should still recognise pieces of bean."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, add the cumin and lemon juice, and taste — ful is bland without acidity."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Hollow a well in the centre and pour in the sesame oil generously."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange the crumbled cheese, quartered boiled egg, diced tomato and spring onion over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding in the cooking dish, with flatbread to scoop."
+   }
+  ]
+ },
+ "mullahsoudanais": {
+  "nom": "Sudanese Mullah Stew",
+  "description": "Sudan's everyday stew: meat and vegetables bound with peanut paste, served with kisra or gurasa to scoop it all up.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the cubed meat in hot oil, in small batches, so it colours."
+   },
+   {
+    "titre": "Base",
+    "detail": "Add the onion and garlic and let them turn golden for five minutes."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the crushed tomato and purée, and reduce until the oil rises."
+   },
+   {
+    "titre": "Liquid",
+    "detail": "Cover with hot water and simmer forty minutes, covered."
+   },
+   {
+    "titre": "Peanut",
+    "detail": "Slake the peanut paste in a ladle of broth BEFORE adding it, or it will lump."
+   },
+   {
+    "titre": "Okra",
+    "detail": "Add the sliced okra and cook fifteen minutes: it thickens the sauce as it goes."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Adjust salt and chilli; the sauce should coat, not run."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with kisra, gurasa or rice."
+   }
+  ]
+ },
+ "shorbalibya": {
+  "nom": "Libyan Shorba",
+  "description": "The Ramadan soup of Libya: a lamb and tomato broth with dried mint, thickened with orzo pasta. The mint at the end is the dish's whole character.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the finely diced lamb in olive oil with the finely chopped onion."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add the turmeric and cinnamon and let them bloom for a minute in the fat."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the tomato and purée, and cook five minutes over high heat."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Add hot water and the chickpeas, and simmer thirty-five minutes."
+   },
+   {
+    "titre": "Orzo",
+    "detail": "Add the small pasta and cook ten minutes more, stirring so it does not catch."
+   },
+   {
+    "titre": "Mint",
+    "detail": "Crush the dried mint between your palms and add it OFF THE HEAT: cooked, it turns bitter."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "The soup should be thick; loosen with hot water if it has reduced too far."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with lemon and fresh parsley."
+   }
+  ]
+ },
+ "mbakbaka": {
+  "nom": "Mbakbaka",
+  "description": "Libyan pasta: macaroni cooked directly in a heavily spiced lamb and tomato sauce. No separate cooking water — that is the whole principle.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the lamb in olive oil until well coloured."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Add the grated onion and let it melt for ten minutes over low heat."
+   },
+   {
+    "titre": "Purée",
+    "detail": "Add the tomato purée and COOK it for three minutes in the fat: that is what removes its metallic taste."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add the turmeric, cumin, cinnamon and chilli, and stir for thirty seconds."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add plenty of hot water and the chickpeas, and simmer forty minutes."
+   },
+   {
+    "titre": "Pasta",
+    "detail": "Tip the raw pasta straight into the sauce, which should cover it by a good centimetre."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Cook twelve minutes, stirring often: with no separate water, it catches quickly."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Rest five minutes off the heat: the sauce finishes clinging to the pasta."
+   }
+  ]
+ },
+ "marouwelahame": {
+  "nom": "Mauritanian Rice and Meat",
+  "description": "Mauritania's rice and meat: rice cooked in a fragrant mutton broth, served on one large shared platter and eaten by hand.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the meat in large pieces in the oil, to a good brown crust."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the sliced onion and garlic, and let them soften ten minutes without burning."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the purée and cook it two minutes in the fat."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Cover with water, add bay and pepper, and cook fifty minutes covered."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the carrot and cabbage in large pieces and cook twenty minutes more."
+   },
+   {
+    "titre": "Lift out",
+    "detail": "Remove the meat and vegetables, and keep the broth hot: it is what will cook the rice."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Measure the broth, allow one and a half times the rice's volume, and cook the rice in it, covered, for twenty minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread the rice on a large platter, lay the meat and vegetables on top, and serve with lemon."
+   }
+  ]
+ },
+ "zrigmauritanien": {
+  "nom": "Mauritanian Zrig",
+  "description": "The drink of the desert: soured milk let down with water and sweetened, served very cold. In Mauritania it is camel milk; yoghurt comes very close.",
+  "etapes": [
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the yoghurt on its own until perfectly smooth, before adding anything."
+   },
+   {
+    "titre": "Let down",
+    "detail": "Add the milk then the very cold water in a stream, whisking: tipped in at once they make grains."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Sweeten and add the pinch of salt, which sharpens the sugar and quenches better."
+   },
+   {
+    "titre": "Taste",
+    "detail": "Adjust the water: zrig is drunk, so it should flow like milk, not coat like a lassi."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Chill for at least an hour — this drink has to be ice cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Whisk again just before serving and pour into tall glasses."
+   }
+  ]
+ },
+ "oshifimaombidi": {
+  "nom": "Oshifima and Ombidi",
+  "description": "The Ovambo meal of Namibia: a firm millet-flour dough shaped by hand, served with greens stewed with peanut.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Bring salted water to a rolling boil: the dough only works with boiling water."
+   },
+   {
+    "titre": "Rain in",
+    "detail": "Shower in the millet flour while stirring vigorously with a wooden spoon."
+   },
+   {
+    "titre": "Work",
+    "detail": "Work the dough five to eight minutes against the side: it should turn firm and pull away from the base."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Wet your hands and shape balls or domes; it is eaten with the fingers, by pinching."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the greens three minutes, drain and squeeze them."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Fry the onion, garlic and tomato, add the chopped greens and cook fifteen minutes."
+   },
+   {
+    "titre": "Peanut",
+    "detail": "Slake the peanut paste in a little water and add it at the end, with the chilli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve side by side: the dough is deliberately bland, the greens carry the flavour."
+   }
+  ]
+ },
+ "benachin": {
+  "nom": "Benachin",
+  "description": "Gambia's 'one pot rice', ancestor of jollof: everything cooks in one pot, and the rice takes on the colour and taste of tomato and fish.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Rub the fish with crushed garlic, salt and chilli, and leave it twenty minutes."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry it in the oil two minutes a side, then set aside: it will finish cooking in the rice."
+   },
+   {
+    "titre": "Base",
+    "detail": "In the same oil, soften the onion to a deep gold."
+   },
+   {
+    "titre": "Purée",
+    "detail": "Add the purée and the tomato, and COOK for ten minutes over medium heat until the oil separates."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the vegetables in large pieces, cover with water and cook fifteen minutes."
+   },
+   {
+    "titre": "Lift out",
+    "detail": "Lift them out with a slotted spoon so they do not break up in the rice."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Tip the rice into the red broth, check it is covered by a centimetre, and cook twenty minutes covered."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the fish and vegetables on top of the rice for the last five minutes, and serve in the pot."
+   }
+  ]
+ },
+ "akassabeninois": {
+  "nom": "Beninese Akassa",
+  "description": "Benin's fermented corn dough, wrapped in leaves by the portion. Slightly sour, it goes with every sauce and keeps for days.",
+  "etapes": [
+   {
+    "titre": "Slake",
+    "detail": "Slake the corn flour in warm water to a loose porridge, with no lumps."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Cover with a cloth and leave two days at room temperature: it should smell distinctly sour."
+   },
+   {
+    "titre": "Check",
+    "detail": "A sour smell and bubbles on the surface mean fermentation has taken. A musty smell does not: throw it out."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Take out a third of the batter and set it aside: it will bind the cooking."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bring the remaining two thirds to medium heat, stirring constantly."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Add the reserved batter in a stream and work hard for ten minutes: the mass should turn glossy and elastic."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Portion with a spoon into squares of film or banana leaf and twist into parcels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool slightly and serve with a spicy tomato sauce or a peanut sauce."
+   }
+  ]
+ },
+ "qebapa": {
+  "nom": "Qebapa",
+  "description": "Kosovo's little skinless minced-meat sausages, grilled over coals. It all rests on the sparkling water in the mix and a night in the fridge.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Mix both minced meats with the crushed garlic, salt, pepper and paprika."
+   },
+   {
+    "titre": "Sparkling water",
+    "detail": "Add the sparkling water and bicarbonate: they are what give the airy, tender texture."
+   },
+   {
+    "titre": "Work",
+    "detail": "Work the mixture by hand for five minutes, until it becomes sticky and uniform."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and refrigerate overnight: without that rest, the qebapa fall apart on the grill."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape finger-thick cylinders with wet hands."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over high heat, on coals or a cast-iron plate, four minutes a side."
+   },
+   {
+    "titre": "Do not press",
+    "detail": "Never press down with the spatula: you would lose all the juice that makes them tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding in an opened flatbread, with raw chopped onion."
+   }
+  ]
  }
 
 };

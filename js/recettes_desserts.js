@@ -19402,5 +19402,82 @@ Object.assign(recettes, {
       { icone: "🌰", titre: "Garnir", detail: "Parsemer amandes, pistaches, cranberries et fleur de sel avant que ça ne prenne.", badge: null },
       { icone: "❄️", titre: "Cristalliser", detail: "Laisser prendre à 18-20 °C pendant deux heures — surtout pas au réfrigérateur, qui ferait blanchir le chocolat.", badge: null }
     ]
+  },
+  halwaomanaise: {
+    nom: "Halwa Omanaise",
+    cat: "desserts", pays: "oman",
+    base: 6,
+    temps: "1h30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍯",
+    dateAjout: "2026-10-01T18:00:00",
+    description: "La confiserie nationale d'Oman : un gel d'amidon, de sucre et de ghee parfumé au safran et à l'eau de rose, remué sans relâche jusqu'à devenir translucide et élastique.",
+    tableauHalwaomanaise: [
+      { nb: 1, maizena: "12 g", sucre: "25 g", ghee: "10 g", eau: "6 cl", safran: "0.03 g", eaurose: "3 ml", cardamome: "0.2 g", amandes: "5 g" },
+      { nb: 2, maizena: "24 g", sucre: "50 g", ghee: "20 g", eau: "12 cl", safran: "0.06 g", eaurose: "6 ml", cardamome: "0.4 g", amandes: "10 g" },
+      { nb: 3, maizena: "36 g", sucre: "75 g", ghee: "30 g", eau: "18 cl", safran: "0.09 g", eaurose: "9 ml", cardamome: "0.6 g", amandes: "15 g" },
+      { nb: 4, maizena: "48 g", sucre: "100 g", ghee: "40 g", eau: "24 cl", safran: "0.12 g", eaurose: "12 ml", cardamome: "0.8 g", amandes: "20 g" },
+      { nb: 5, maizena: "60 g", sucre: "125 g", ghee: "50 g", eau: "30 cl", safran: "0.15 g", eaurose: "15 ml", cardamome: "1 g", amandes: "25 g" },
+      { nb: 6, maizena: "72 g", sucre: "150 g", ghee: "60 g", eau: "36 cl", safran: "0.18 g", eaurose: "18 ml", cardamome: "1.2 g", amandes: "30 g" },
+      { nb: 7, maizena: "84 g", sucre: "175 g", ghee: "70 g", eau: "42 cl", safran: "0.21 g", eaurose: "21 ml", cardamome: "1.4 g", amandes: "35 g" },
+      { nb: 8, maizena: "96 g", sucre: "200 g", ghee: "80 g", eau: "48 cl", safran: "0.24 g", eaurose: "24 ml", cardamome: "1.6 g", amandes: "40 g" },
+      { nb: 9, maizena: "108 g", sucre: "225 g", ghee: "90 g", eau: "54 cl", safran: "0.27 g", eaurose: "27 ml", cardamome: "1.8 g", amandes: "45 g" },
+      { nb: 10, maizena: "120 g", sucre: "250 g", ghee: "100 g", eau: "60 cl", safran: "0.3 g", eaurose: "30 ml", cardamome: "2 g", amandes: "50 g" },
+      { nb: 11, maizena: "132 g", sucre: "275 g", ghee: "110 g", eau: "66 cl", safran: "0.33 g", eaurose: "33 ml", cardamome: "2.2 g", amandes: "55 g" },
+      { nb: 12, maizena: "144 g", sucre: "300 g", ghee: "120 g", eau: "72 cl", safran: "0.36 g", eaurose: "36 ml", cardamome: "2.4 g", amandes: "60 g" },
+      { nb: 13, maizena: "156 g", sucre: "325 g", ghee: "130 g", eau: "78 cl", safran: "0.39 g", eaurose: "39 ml", cardamome: "2.6 g", amandes: "65 g" },
+      { nb: 14, maizena: "168 g", sucre: "350 g", ghee: "140 g", eau: "84 cl", safran: "0.42 g", eaurose: "42 ml", cardamome: "2.8 g", amandes: "70 g" },
+      { nb: 15, maizena: "180 g", sucre: "375 g", ghee: "150 g", eau: "90 cl", safran: "0.45 g", eaurose: "45 ml", cardamome: "3 g", amandes: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌼", titre: "Infuser", detail: "Faire infuser safran et cardamome écrasée dans un peu d'eau chaude.", badge: null },
+      { icone: "🥣", titre: "Délayer", detail: "Délayer l'amidon dans l'eau FROIDE, sans un seul grumeau : c'est la seule étape où l'on peut encore corriger.", badge: null },
+      { icone: "🍬", titre: "Sirop", detail: "Faire fondre le sucre dans le reste d'eau et porter à ébullition.", badge: null },
+      { icone: "🌀", titre: "Réunir", detail: "Verser l'amidon délayé en filet dans le sirop bouillant, en fouettant énergiquement.", badge: null },
+      { icone: "💪", titre: "Remuer", detail: "Remuer SANS ARRÊT à la cuillère en bois pendant quarante minutes : c'est tout le travail, et il n'y a pas de raccourci.", badge: null },
+      { icone: "🧈", titre: "Ghee", detail: "Incorporer le ghee en trois fois, en attendant à chaque fois qu'il soit totalement absorbé.", badge: null },
+      { icone: "👀", titre: "Vérifier", detail: "C'est prêt quand la masse devient translucide, brillante, et se détache du fond en un seul bloc.", badge: null },
+      { icone: "🫙", titre: "Mouler", detail: "Parfumer à l'eau de rose, verser dans un plat huilé, parsemer d'amandes et laisser prendre quatre heures.", badge: null }
+    ]
+  },
+  khanfaroosh: {
+    nom: "Khanfaroosh",
+    cat: "desserts", pays: "bahrein",
+    base: 6,
+    temps: "40 min + levée",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧁",
+    dateAjout: "2026-10-01T18:00:00",
+    description: "Les petits gâteaux frits du Golfe : une pâte de riz et de farine levée au safran et à la cardamome, cuite dans un moule à alvéoles jusqu'à devenir dentelée.",
+    tableauKhanfaroosh: [
+      { nb: 1, farineriz: "20 g", farine: "13 g", sucre: "16 g", oeufs: "0.3", levureboulangere: "1 g", safran: "0.03 g", cardamome: "0.2 g", eaurose: "2 ml", huile: "12 ml", sucreglace: "4 g" },
+      { nb: 2, farineriz: "40 g", farine: "26 g", sucre: "32 g", oeufs: "0.6", levureboulangere: "2 g", safran: "0.06 g", cardamome: "0.4 g", eaurose: "4 ml", huile: "24 ml", sucreglace: "8 g" },
+      { nb: 3, farineriz: "60 g", farine: "39 g", sucre: "48 g", oeufs: "0.9", levureboulangere: "3 g", safran: "0.09 g", cardamome: "0.6 g", eaurose: "6 ml", huile: "36 ml", sucreglace: "12 g" },
+      { nb: 4, farineriz: "80 g", farine: "52 g", sucre: "64 g", oeufs: "1.2", levureboulangere: "4 g", safran: "0.12 g", cardamome: "0.8 g", eaurose: "8 ml", huile: "48 ml", sucreglace: "16 g" },
+      { nb: 5, farineriz: "100 g", farine: "65 g", sucre: "80 g", oeufs: "1½", levureboulangere: "5 g", safran: "0.15 g", cardamome: "1 g", eaurose: "10 ml", huile: "60 ml", sucreglace: "20 g" },
+      { nb: 6, farineriz: "120 g", farine: "78 g", sucre: "96 g", oeufs: "1.8", levureboulangere: "6 g", safran: "0.18 g", cardamome: "1.2 g", eaurose: "12 ml", huile: "72 ml", sucreglace: "24 g" },
+      { nb: 7, farineriz: "140 g", farine: "91 g", sucre: "112 g", oeufs: "2.1", levureboulangere: "7 g", safran: "0.21 g", cardamome: "1.4 g", eaurose: "14 ml", huile: "84 ml", sucreglace: "28 g" },
+      { nb: 8, farineriz: "160 g", farine: "104 g", sucre: "128 g", oeufs: "2.4", levureboulangere: "8 g", safran: "0.24 g", cardamome: "1.6 g", eaurose: "16 ml", huile: "96 ml", sucreglace: "32 g" },
+      { nb: 9, farineriz: "180 g", farine: "117 g", sucre: "144 g", oeufs: "2.7", levureboulangere: "9 g", safran: "0.27 g", cardamome: "1.8 g", eaurose: "18 ml", huile: "108 ml", sucreglace: "36 g" },
+      { nb: 10, farineriz: "200 g", farine: "130 g", sucre: "160 g", oeufs: "3", levureboulangere: "10 g", safran: "0.3 g", cardamome: "2 g", eaurose: "20 ml", huile: "120 ml", sucreglace: "40 g" },
+      { nb: 11, farineriz: "220 g", farine: "143 g", sucre: "176 g", oeufs: "3.3", levureboulangere: "11 g", safran: "0.33 g", cardamome: "2.2 g", eaurose: "22 ml", huile: "132 ml", sucreglace: "44 g" },
+      { nb: 12, farineriz: "240 g", farine: "156 g", sucre: "192 g", oeufs: "3.6", levureboulangere: "12 g", safran: "0.36 g", cardamome: "2.4 g", eaurose: "24 ml", huile: "144 ml", sucreglace: "48 g" },
+      { nb: 13, farineriz: "260 g", farine: "169 g", sucre: "208 g", oeufs: "3.9", levureboulangere: "13 g", safran: "0.39 g", cardamome: "2.6 g", eaurose: "26 ml", huile: "156 ml", sucreglace: "52 g" },
+      { nb: 14, farineriz: "280 g", farine: "182 g", sucre: "224 g", oeufs: "4.2", levureboulangere: "14 g", safran: "0.42 g", cardamome: "2.8 g", eaurose: "28 ml", huile: "168 ml", sucreglace: "56 g" },
+      { nb: 15, farineriz: "300 g", farine: "195 g", sucre: "240 g", oeufs: "4½", levureboulangere: "15 g", safran: "0.45 g", cardamome: "3 g", eaurose: "30 ml", huile: "180 ml", sucreglace: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌼", titre: "Safran", detail: "Écraser le safran avec une pincée de sucre puis l'infuser dans deux cuillères d'eau chaude.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Mélanger les deux farines, le sucre, la levure et la cardamome moulue.", badge: null },
+      { icone: "🥚", titre: "Pâte", detail: "Ajouter œuf, safran et eau de rose, et travailler jusqu'à une pâte épaisse, à peine coulante.", badge: null },
+      { icone: "⏲️", titre: "Lever", detail: "Laisser lever une heure à couvert, dans un endroit tiède.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer l'huile dans un moule à alvéoles, ou à défaut en petite poêle, à 170 °C.", badge: null },
+      { icone: "🥄", titre: "Cuire", detail: "Remplir les alvéoles aux trois quarts et cuire trois minutes, jusqu'à ce que les bords dentellent.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retourner à la pique à brochette et cuire deux minutes de l'autre côté.", badge: null },
+      { icone: "🍚", titre: "Égoutter", detail: "Égoutter sur une grille, jamais sur du papier où ils ramolliraient, et saupoudrer de sucre glace.", badge: null }
+    ],
+    liees: ["luqaimat","muhammar"]
   }
 });

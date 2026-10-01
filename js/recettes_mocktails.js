@@ -3474,5 +3474,41 @@ Object.assign(recettes, {
       { icone: "🍬", titre: "Sucrer", detail: "Ajouter sucre et sel hors du feu, goûter et ajuster.", badge: null },
       { icone: "❄️", titre: "Refroidir", detail: "Refroidir rapidement et conserver au frais.", badge: null }
     ]
+  },
+  zrigmauritanien: {
+    nom: "Zrig Mauritanien",
+    cat: "mocktails", pays: "mauritanie",
+    base: 6,
+    temps: "10 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    dateAjout: "2026-10-01T18:00:00",
+    description: "La boisson du désert : du lait caillé allongé d'eau et sucré, servi très frais. En Mauritanie c'est du lait de chamelle ; au yaourt, on s'en approche de très près.",
+    tableauZrigmauritanien: [
+      { nb: 1, yaourt: "80 g", lait: "60 ml", eau: "6 cl", sucre: "12 g", sel: "0.2 g" },
+      { nb: 2, yaourt: "160 g", lait: "120 ml", eau: "12 cl", sucre: "24 g", sel: "0.4 g" },
+      { nb: 3, yaourt: "240 g", lait: "180 ml", eau: "18 cl", sucre: "36 g", sel: "0.6 g" },
+      { nb: 4, yaourt: "320 g", lait: "240 ml", eau: "24 cl", sucre: "48 g", sel: "0.8 g" },
+      { nb: 5, yaourt: "400 g", lait: "300 ml", eau: "30 cl", sucre: "60 g", sel: "1 g" },
+      { nb: 6, yaourt: "480 g", lait: "360 ml", eau: "36 cl", sucre: "72 g", sel: "1.2 g" },
+      { nb: 7, yaourt: "560 g", lait: "420 ml", eau: "42 cl", sucre: "84 g", sel: "1.4 g" },
+      { nb: 8, yaourt: "640 g", lait: "480 ml", eau: "48 cl", sucre: "96 g", sel: "1.6 g" },
+      { nb: 9, yaourt: "720 g", lait: "540 ml", eau: "54 cl", sucre: "108 g", sel: "1.8 g" },
+      { nb: 10, yaourt: "800 g", lait: "600 ml", eau: "60 cl", sucre: "120 g", sel: "2 g" },
+      { nb: 11, yaourt: "880 g", lait: "660 ml", eau: "66 cl", sucre: "132 g", sel: "2.2 g" },
+      { nb: 12, yaourt: "960 g", lait: "720 ml", eau: "72 cl", sucre: "144 g", sel: "2.4 g" },
+      { nb: 13, yaourt: "1040 g", lait: "780 ml", eau: "78 cl", sucre: "156 g", sel: "2.6 g" },
+      { nb: 14, yaourt: "1120 g", lait: "840 ml", eau: "84 cl", sucre: "168 g", sel: "2.8 g" },
+      { nb: 15, yaourt: "1200 g", lait: "900 ml", eau: "90 cl", sucre: "180 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Fouetter", detail: "Fouetter le yaourt seul jusqu'à ce qu'il soit parfaitement lisse, avant d'ajouter quoi que ce soit.", badge: null },
+      { icone: "💧", titre: "Allonger", detail: "Ajouter le lait puis l'eau très froide en filet, en fouettant : versés d'un coup, ils font des grains.", badge: null },
+      { icone: "🍬", titre: "Sucrer", detail: "Sucrer et ajouter la pointe de sel, qui rend le sucre plus net et désaltère davantage.", badge: null },
+      { icone: "👅", titre: "Goûter", detail: "Ajuster l'eau : le zrig se boit, il doit couler comme du lait, pas napper comme un lassi.", badge: null },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Mettre au frais au moins une heure — c'est une boisson qui doit être glacée.", badge: null },
+      { icone: "🫗", titre: "Servir", detail: "Fouetter à nouveau juste avant de servir et verser en grands verres.", badge: null }
+    ]
   }
 });

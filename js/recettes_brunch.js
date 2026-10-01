@@ -3767,5 +3767,81 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Presser", detail: "Filmer le sandwich entier et le presser quinze minutes au frais : il se coupera net.", badge: null },
       { icone: "🔪", titre: "Couper", detail: "Retirer les croûtes et couper en deux ou en trois, au couteau bien aiguisé.", badge: null }
     ]
+  },
+  chebabemirati: {
+    nom: "Chebab Emirati",
+    cat: "brunch", pays: "emiratsarabesunis",
+    base: 6,
+    temps: "30 min + levée",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    dateAjout: "2026-10-01T18:00:00",
+    description: "Les crêpes du petit-déjeuner aux Émirats : une pâte levée au safran, à la cardamome et au fenouil, cuite d'un seul côté et servie au fromage frais et au miel de dattes.",
+    tableauChebabemirati: [
+      { nb: 1, farine: "50 g", lait: "70 ml", oeufs: "0.3", sucre: "10 g", levureboulangere: "1.5 g", safran: "0.03 g", cardamome: "0.3 g", fenouil: "0.3 g", beurre: "5 g", miel: "10 g" },
+      { nb: 2, farine: "100 g", lait: "140 ml", oeufs: "0.6", sucre: "20 g", levureboulangere: "3 g", safran: "0.06 g", cardamome: "0.6 g", fenouil: "0.6 g", beurre: "10 g", miel: "20 g" },
+      { nb: 3, farine: "150 g", lait: "210 ml", oeufs: "0.9", sucre: "30 g", levureboulangere: "4.5 g", safran: "0.09 g", cardamome: "0.9 g", fenouil: "0.9 g", beurre: "15 g", miel: "30 g" },
+      { nb: 4, farine: "200 g", lait: "280 ml", oeufs: "1.2", sucre: "40 g", levureboulangere: "6 g", safran: "0.12 g", cardamome: "1.2 g", fenouil: "1.2 g", beurre: "20 g", miel: "40 g" },
+      { nb: 5, farine: "250 g", lait: "350 ml", oeufs: "1½", sucre: "50 g", levureboulangere: "7.5 g", safran: "0.15 g", cardamome: "1.5 g", fenouil: "1.5 g", beurre: "25 g", miel: "50 g" },
+      { nb: 6, farine: "300 g", lait: "420 ml", oeufs: "1.8", sucre: "60 g", levureboulangere: "9 g", safran: "0.18 g", cardamome: "1.8 g", fenouil: "1.8 g", beurre: "30 g", miel: "60 g" },
+      { nb: 7, farine: "350 g", lait: "490 ml", oeufs: "2.1", sucre: "70 g", levureboulangere: "10.5 g", safran: "0.21 g", cardamome: "2.1 g", fenouil: "2.1 g", beurre: "35 g", miel: "70 g" },
+      { nb: 8, farine: "400 g", lait: "560 ml", oeufs: "2.4", sucre: "80 g", levureboulangere: "12 g", safran: "0.24 g", cardamome: "2.4 g", fenouil: "2.4 g", beurre: "40 g", miel: "80 g" },
+      { nb: 9, farine: "450 g", lait: "630 ml", oeufs: "2.7", sucre: "90 g", levureboulangere: "13.5 g", safran: "0.27 g", cardamome: "2.7 g", fenouil: "2.7 g", beurre: "45 g", miel: "90 g" },
+      { nb: 10, farine: "500 g", lait: "700 ml", oeufs: "3", sucre: "100 g", levureboulangere: "15 g", safran: "0.3 g", cardamome: "3 g", fenouil: "3 g", beurre: "50 g", miel: "100 g" },
+      { nb: 11, farine: "550 g", lait: "770 ml", oeufs: "3.3", sucre: "110 g", levureboulangere: "16.5 g", safran: "0.33 g", cardamome: "3.3 g", fenouil: "3.3 g", beurre: "55 g", miel: "110 g" },
+      { nb: 12, farine: "600 g", lait: "840 ml", oeufs: "3.6", sucre: "120 g", levureboulangere: "18 g", safran: "0.36 g", cardamome: "3.6 g", fenouil: "3.6 g", beurre: "60 g", miel: "120 g" },
+      { nb: 13, farine: "650 g", lait: "910 ml", oeufs: "3.9", sucre: "130 g", levureboulangere: "19.5 g", safran: "0.39 g", cardamome: "3.9 g", fenouil: "3.9 g", beurre: "65 g", miel: "130 g" },
+      { nb: 14, farine: "700 g", lait: "980 ml", oeufs: "4.2", sucre: "140 g", levureboulangere: "21 g", safran: "0.42 g", cardamome: "4.2 g", fenouil: "4.2 g", beurre: "70 g", miel: "140 g" },
+      { nb: 15, farine: "750 g", lait: "1050 ml", oeufs: "4½", sucre: "150 g", levureboulangere: "22.5 g", safran: "0.45 g", cardamome: "4.5 g", fenouil: "4.5 g", beurre: "75 g", miel: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌼", titre: "Safran", detail: "Faire infuser le safran dans une cuillère de lait tiède vingt minutes : il doit colorer franchement.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, sucre, levure, cardamome et graines de fenouil moulues.", badge: null },
+      { icone: "🥛", titre: "Détendre", detail: "Ajouter lait, œuf et safran infusé, et fouetter jusqu'à une pâte lisse et assez fluide.", badge: null },
+      { icone: "⏲️", titre: "Lever", detail: "Couvrir et laisser lever quarante-cinq minutes : la surface doit être pleine de bulles.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Verser une louche sur une poêle beurrée et chaude, en spirale du centre vers l'extérieur.", badge: null },
+      { icone: "🫧", titre: "Un seul côté", detail: "Ne cuire QUE d'un côté : la face supérieure doit rester pâle et criblée de trous.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Servir chaud, plié, avec du fromage frais et un filet de miel ou de sirop de dattes.", badge: null }
+    ],
+    liees: ["luqaimat","balaleet"]
+  },
+  fulsoudanais: {
+    nom: "Ful Soudanais",
+    cat: "brunch", pays: "soudan",
+    base: 6,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    dateAjout: "2026-10-01T18:00:00",
+    description: "Le petit-déjeuner national du Soudan : des fèves écrasées à la fourchette, arrosées d'huile de sésame, de fromage blanc et d'œuf dur, qu'on ramasse avec du pain.",
+    tableauFulsoudanais: [
+      { nb: 1, feves: "90 g", huilesesame: "10 ml", feta: "25 g", oeufs: "½", cumin: "0.5 g", ail: "5 g", citron: "10 g", tomate: "40 g", ciboule: "10 g" },
+      { nb: 2, feves: "180 g", huilesesame: "20 ml", feta: "50 g", oeufs: "1", cumin: "1 g", ail: "10 g", citron: "20 g", tomate: "80 g", ciboule: "20 g" },
+      { nb: 3, feves: "270 g", huilesesame: "30 ml", feta: "75 g", oeufs: "1½", cumin: "1.5 g", ail: "15 g", citron: "30 g", tomate: "120 g", ciboule: "30 g" },
+      { nb: 4, feves: "360 g", huilesesame: "40 ml", feta: "100 g", oeufs: "2", cumin: "2 g", ail: "20 g", citron: "40 g", tomate: "160 g", ciboule: "40 g" },
+      { nb: 5, feves: "450 g", huilesesame: "50 ml", feta: "125 g", oeufs: "2½", cumin: "2.5 g", ail: "25 g", citron: "50 g", tomate: "200 g", ciboule: "50 g" },
+      { nb: 6, feves: "540 g", huilesesame: "60 ml", feta: "150 g", oeufs: "3", cumin: "3 g", ail: "30 g", citron: "60 g", tomate: "240 g", ciboule: "60 g" },
+      { nb: 7, feves: "630 g", huilesesame: "70 ml", feta: "175 g", oeufs: "3½", cumin: "3.5 g", ail: "35 g", citron: "70 g", tomate: "280 g", ciboule: "70 g" },
+      { nb: 8, feves: "720 g", huilesesame: "80 ml", feta: "200 g", oeufs: "4", cumin: "4 g", ail: "40 g", citron: "80 g", tomate: "320 g", ciboule: "80 g" },
+      { nb: 9, feves: "810 g", huilesesame: "90 ml", feta: "225 g", oeufs: "4½", cumin: "4.5 g", ail: "45 g", citron: "90 g", tomate: "360 g", ciboule: "90 g" },
+      { nb: 10, feves: "900 g", huilesesame: "100 ml", feta: "250 g", oeufs: "5", cumin: "5 g", ail: "50 g", citron: "100 g", tomate: "400 g", ciboule: "100 g" },
+      { nb: 11, feves: "990 g", huilesesame: "110 ml", feta: "275 g", oeufs: "5½", cumin: "5.5 g", ail: "55 g", citron: "110 g", tomate: "440 g", ciboule: "110 g" },
+      { nb: 12, feves: "1080 g", huilesesame: "120 ml", feta: "300 g", oeufs: "6", cumin: "6 g", ail: "60 g", citron: "120 g", tomate: "480 g", ciboule: "120 g" },
+      { nb: 13, feves: "1170 g", huilesesame: "130 ml", feta: "325 g", oeufs: "6½", cumin: "6.5 g", ail: "65 g", citron: "130 g", tomate: "520 g", ciboule: "130 g" },
+      { nb: 14, feves: "1260 g", huilesesame: "140 ml", feta: "350 g", oeufs: "7", cumin: "7 g", ail: "70 g", citron: "140 g", tomate: "560 g", ciboule: "140 g" },
+      { nb: 15, feves: "1350 g", huilesesame: "150 ml", feta: "375 g", oeufs: "7½", cumin: "7.5 g", ail: "75 g", citron: "150 g", tomate: "600 g", ciboule: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Cuire", detail: "Partir de fèves sèches trempées une nuit, ou de fèves en conserve rincées pour aller vite.", badge: null },
+      { icone: "♨️", titre: "Attendrir", detail: "Les faire chauffer dans leur jus avec l'ail écrasé jusqu'à ce qu'elles s'écrasent sans résistance.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Les écraser à la fourchette, grossièrement : on doit encore reconnaître des morceaux de fève.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, ajouter le cumin et le jus de citron, et goûter — le ful est fade sans acidité.", badge: null },
+      { icone: "🫗", titre: "Huiler", detail: "Creuser un puits au centre et y verser généreusement l'huile de sésame.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Disposer par-dessus le fromage émietté, l'œuf dur en quartiers, la tomate en dés et la ciboule.", badge: null },
+      { icone: "🫓", titre: "Servir", detail: "Servir brûlant dans le plat de cuisson, avec du pain plat pour ramasser.", badge: null }
+    ],
+    liees: ["gurasa"]
   }
 });

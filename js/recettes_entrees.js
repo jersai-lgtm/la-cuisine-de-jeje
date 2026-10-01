@@ -5968,5 +5968,82 @@ oeufmayo: {
       { icone: "🔥", titre: "Frire", detail: "Frire à 180 °C deux minutes, jusqu'à ce qu'elles soient dorées, et égoutter sur grille.", badge: null }
     ],
     liees: ["pouletrotiperfect"]
+  },
+  chiquetaillemorue: {
+    nom: "Chiquetaille de Morue",
+    cat: "entrees", pays: "guadeloupe",
+    base: 6,
+    temps: "30 min + dessalage",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    dateAjout: "2026-10-01T18:00:00",
+    description: "De la morue dessalée, grillée puis effilochée à la main et marinée crue dans l'huile, le citron et le piment. Ça se mange sur du pain ou dans un bokit.",
+    tableauChiquetaillemorue: [
+      { nb: 1, morue: "70 g", oignon: "40 g", citronvert: "20 g", huileolive: "15 ml", piment: "1 g", ail: "5 g", ciboule: "10 g", persil: "5 g" },
+      { nb: 2, morue: "140 g", oignon: "80 g", citronvert: "40 g", huileolive: "30 ml", piment: "2 g", ail: "10 g", ciboule: "20 g", persil: "10 g" },
+      { nb: 3, morue: "210 g", oignon: "120 g", citronvert: "60 g", huileolive: "45 ml", piment: "3 g", ail: "15 g", ciboule: "30 g", persil: "15 g" },
+      { nb: 4, morue: "280 g", oignon: "160 g", citronvert: "80 g", huileolive: "60 ml", piment: "4 g", ail: "20 g", ciboule: "40 g", persil: "20 g" },
+      { nb: 5, morue: "350 g", oignon: "200 g", citronvert: "100 g", huileolive: "75 ml", piment: "5 g", ail: "25 g", ciboule: "50 g", persil: "25 g" },
+      { nb: 6, morue: "420 g", oignon: "240 g", citronvert: "120 g", huileolive: "90 ml", piment: "6 g", ail: "30 g", ciboule: "60 g", persil: "30 g" },
+      { nb: 7, morue: "490 g", oignon: "280 g", citronvert: "140 g", huileolive: "105 ml", piment: "7 g", ail: "35 g", ciboule: "70 g", persil: "35 g" },
+      { nb: 8, morue: "560 g", oignon: "320 g", citronvert: "160 g", huileolive: "120 ml", piment: "8 g", ail: "40 g", ciboule: "80 g", persil: "40 g" },
+      { nb: 9, morue: "630 g", oignon: "360 g", citronvert: "180 g", huileolive: "135 ml", piment: "9 g", ail: "45 g", ciboule: "90 g", persil: "45 g" },
+      { nb: 10, morue: "700 g", oignon: "400 g", citronvert: "200 g", huileolive: "150 ml", piment: "10 g", ail: "50 g", ciboule: "100 g", persil: "50 g" },
+      { nb: 11, morue: "770 g", oignon: "440 g", citronvert: "220 g", huileolive: "165 ml", piment: "11 g", ail: "55 g", ciboule: "110 g", persil: "55 g" },
+      { nb: 12, morue: "840 g", oignon: "480 g", citronvert: "240 g", huileolive: "180 ml", piment: "12 g", ail: "60 g", ciboule: "120 g", persil: "60 g" },
+      { nb: 13, morue: "910 g", oignon: "520 g", citronvert: "260 g", huileolive: "195 ml", piment: "13 g", ail: "65 g", ciboule: "130 g", persil: "65 g" },
+      { nb: 14, morue: "980 g", oignon: "560 g", citronvert: "280 g", huileolive: "210 ml", piment: "14 g", ail: "70 g", ciboule: "140 g", persil: "70 g" },
+      { nb: 15, morue: "1050 g", oignon: "600 g", citronvert: "300 g", huileolive: "225 ml", piment: "15 g", ail: "75 g", ciboule: "150 g", persil: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Dessaler", detail: "Faire tremper la morue douze heures au réfrigérateur en changeant l'eau trois fois.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "L'égoutter et la griller à sec à la poêle ou sous le gril, jusqu'à ce qu'elle se craquelle.", badge: null },
+      { icone: "✋", titre: "Effilocher", detail: "L'effilocher entièrement à la main en retirant arêtes et peau : c'est ce travail aux doigts qui donne la texture.", badge: null },
+      { icone: "🧅", titre: "Trancher", detail: "Émincer l'oignon très finement et la ciboule en biais.", badge: null },
+      { icone: "🌶️", titre: "Piment", detail: "Hacher le piment sans les graines, en dosant : un quart de piment suffit pour six.", badge: null },
+      { icone: "🍋", titre: "Mariner", detail: "Mélanger morue, oignon, ail écrasé, herbes, jus de citron vert et huile d'olive.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser au frais au moins deux heures : le citron « cuit » l'oignon et tout s'harmonise.", badge: null }
+    ],
+    liees: ["bokit","feroce"]
+  },
+  mutabbaqsaoudien: {
+    nom: "Mutabbaq Saoudien",
+    cat: "entrees", pays: "arabiesaoudite",
+    base: 6,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    dateAjout: "2026-10-01T18:00:00",
+    description: "Une galette de pâte étirée jusqu'à la transparence, farcie de viande et d'œuf, puis pliée en carré et saisie à la plancha. Le mot veut dire « plié ».",
+    tableauMutabbaqsaoudien: [
+      { nb: 1, farine: "45 g", eau: "2.6 cl", boeufhache: "60 g", oeufs: "0.4", oignon: "35 g", ciboule: "12 g", cumin: "0.5 g", coriandre: "5 g", huile: "10 ml", poivre: "0.5 g" },
+      { nb: 2, farine: "90 g", eau: "5.2 cl", boeufhache: "120 g", oeufs: "0.8", oignon: "70 g", ciboule: "24 g", cumin: "1 g", coriandre: "10 g", huile: "20 ml", poivre: "1 g" },
+      { nb: 3, farine: "135 g", eau: "7.8 cl", boeufhache: "180 g", oeufs: "1.2", oignon: "105 g", ciboule: "36 g", cumin: "1.5 g", coriandre: "15 g", huile: "30 ml", poivre: "1.5 g" },
+      { nb: 4, farine: "180 g", eau: "10.4 cl", boeufhache: "240 g", oeufs: "1.6", oignon: "140 g", ciboule: "48 g", cumin: "2 g", coriandre: "20 g", huile: "40 ml", poivre: "2 g" },
+      { nb: 5, farine: "225 g", eau: "13 cl", boeufhache: "300 g", oeufs: "2", oignon: "175 g", ciboule: "60 g", cumin: "2.5 g", coriandre: "25 g", huile: "50 ml", poivre: "2.5 g" },
+      { nb: 6, farine: "270 g", eau: "15.6 cl", boeufhache: "360 g", oeufs: "2.4", oignon: "210 g", ciboule: "72 g", cumin: "3 g", coriandre: "30 g", huile: "60 ml", poivre: "3 g" },
+      { nb: 7, farine: "315 g", eau: "18.2 cl", boeufhache: "420 g", oeufs: "2.8", oignon: "245 g", ciboule: "84 g", cumin: "3.5 g", coriandre: "35 g", huile: "70 ml", poivre: "3.5 g" },
+      { nb: 8, farine: "360 g", eau: "20.8 cl", boeufhache: "480 g", oeufs: "3.2", oignon: "280 g", ciboule: "96 g", cumin: "4 g", coriandre: "40 g", huile: "80 ml", poivre: "4 g" },
+      { nb: 9, farine: "405 g", eau: "23.4 cl", boeufhache: "540 g", oeufs: "3.6", oignon: "315 g", ciboule: "108 g", cumin: "4.5 g", coriandre: "45 g", huile: "90 ml", poivre: "4.5 g" },
+      { nb: 10, farine: "450 g", eau: "26 cl", boeufhache: "600 g", oeufs: "4", oignon: "350 g", ciboule: "120 g", cumin: "5 g", coriandre: "50 g", huile: "100 ml", poivre: "5 g" },
+      { nb: 11, farine: "495 g", eau: "28.6 cl", boeufhache: "660 g", oeufs: "4.4", oignon: "385 g", ciboule: "132 g", cumin: "5.5 g", coriandre: "55 g", huile: "110 ml", poivre: "5.5 g" },
+      { nb: 12, farine: "540 g", eau: "31.2 cl", boeufhache: "720 g", oeufs: "4.8", oignon: "420 g", ciboule: "144 g", cumin: "6 g", coriandre: "60 g", huile: "120 ml", poivre: "6 g" },
+      { nb: 13, farine: "585 g", eau: "33.8 cl", boeufhache: "780 g", oeufs: "5.2", oignon: "455 g", ciboule: "156 g", cumin: "6.5 g", coriandre: "65 g", huile: "130 ml", poivre: "6.5 g" },
+      { nb: 14, farine: "630 g", eau: "36.4 cl", boeufhache: "840 g", oeufs: "5.6", oignon: "490 g", ciboule: "168 g", cumin: "7 g", coriandre: "70 g", huile: "140 ml", poivre: "7 g" },
+      { nb: 15, farine: "675 g", eau: "39 cl", boeufhache: "900 g", oeufs: "6", oignon: "525 g", ciboule: "180 g", cumin: "7.5 g", coriandre: "75 g", huile: "150 ml", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pétrir", detail: "Pétrir farine, eau, sel et un filet d'huile dix minutes, jusqu'à une pâte très souple et élastique.", badge: null },
+      { icone: "🫒", titre: "Huiler", detail: "Diviser en boules, les enduire d'huile et les laisser reposer une heure : c'est l'huile et le repos qui permettront l'étirage.", badge: null },
+      { icone: "🥩", titre: "Farce", detail: "Faire revenir la viande avec l'oignon, le cumin et le poivre, puis laisser refroidir.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Mélanger l'œuf battu, la ciboule et la coriandre à la farce FROIDE, sinon l'œuf cuit tout de suite.", badge: null },
+      { icone: "👐", titre: "Étirer", detail: "Étirer chaque boule à la main sur un plan huilé jusqu'à voir le plan à travers : elle doit devenir presque transparente.", badge: null },
+      { icone: "📦", titre: "Plier", detail: "Déposer la farce au centre et rabattre les quatre côtés pour former un carré bien fermé.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Cuire à la poêle très chaude et légèrement huilée, trois minutes par face, jusqu'à ce que ce soit croustillant et doré.", badge: null },
+      { icone: "🔪", titre: "Servir", detail: "Couper en carrés et servir aussitôt, avec un yaourt citronné.", badge: null }
+    ],
+    liees: ["samboosa"]
   }
 });
