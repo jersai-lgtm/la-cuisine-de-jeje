@@ -29191,44 +29191,6 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir immédiatement, bouillonnant, avec pain plat.", badge: null }
     ]
   },
-  alharees: {
-    nom: "Al Harees",
-    cat: "plats", pays: "emiratsarabesunis",
-    base: 4,
-    temps: "2h30",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🌾",
-    dateAjout: "2026-07-03T12:00:00",
-    description: "Bouillie émiratie de blé et poulet longuement mijotée jusqu'à consistance crémeuse et lisse, parfumée au beurre. Plat de fête et du Ramadan.",
-    tableauAlharees: [
-      { nb: 1, orge: "150 g", poulet: "180 g", beurre: "30 g", cannelle: "1 g", sel: "3 g" },
-      { nb: 2, orge: "300 g", poulet: "360 g", beurre: "60 g", cannelle: "2 g", sel: "6 g" },
-      { nb: 3, orge: "450 g", poulet: "540 g", beurre: "90 g", cannelle: "3 g", sel: "9 g" },
-      { nb: 4, orge: "600 g", poulet: "720 g", beurre: "120 g", cannelle: "4 g", sel: "12 g" },
-      { nb: 5, orge: "750 g", poulet: "900 g", beurre: "150 g", cannelle: "5 g", sel: "15 g" },
-      { nb: 6, orge: "900 g", poulet: "1080 g", beurre: "180 g", cannelle: "6 g", sel: "18 g" },
-      { nb: 7, orge: "1050 g", poulet: "1260 g", beurre: "210 g", cannelle: "7 g", sel: "21 g" },
-      { nb: 8, orge: "1200 g", poulet: "1440 g", beurre: "240 g", cannelle: "8 g", sel: "24 g" },
-      { nb: 9, orge: "1350 g", poulet: "1620 g", beurre: "270 g", cannelle: "9 g", sel: "27 g" },
-      { nb: 10, orge: "1500 g", poulet: "1800 g", beurre: "300 g", cannelle: "10 g", sel: "30 g" },
-      { nb: 11, orge: "1650 g", poulet: "1980 g", beurre: "330 g", cannelle: "11 g", sel: "33 g" },
-      { nb: 12, orge: "1800 g", poulet: "2160 g", beurre: "360 g", cannelle: "12 g", sel: "36 g" },
-      { nb: 13, orge: "1950 g", poulet: "2340 g", beurre: "390 g", cannelle: "13 g", sel: "39 g" },
-      { nb: 14, orge: "2100 g", poulet: "2520 g", beurre: "420 g", cannelle: "14 g", sel: "42 g" },
-      { nb: 15, orge: "2250 g", poulet: "2700 g", beurre: "450 g", cannelle: "15 g", sel: "45 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🌾", titre: "Tremper", detail: "Faire tremper le blé (ou orge concassée) plusieurs heures.", badge: null },
-      { icone: "🍗", titre: "Cuire", detail: "Cuire le poulet à l'eau jusqu'à très tendre, réserver le bouillon.", badge: null },
-      { icone: "🌾", titre: "Mijoter", detail: "Cuire le blé trempé dans ce bouillon longuement.", badge: null },
-      { icone: "🥄", titre: "Effilocher", detail: "Effilocher le poulet cuit et l'incorporer.", badge: null },
-      { icone: "♨️", titre: "Battre", detail: "Battre énergiquement au fouet en cuisant jusqu'à texture lisse et crémeuse.", badge: null },
-      { icone: "🧈", titre: "Beurrer", detail: "Incorporer une généreuse noisette de beurre.", badge: null },
-      { icone: "🧂", titre: "Assaisonner", detail: "Saler et ajouter une pointe de cannelle.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir chaud, arrosé d'un filet de beurre fondu.", badge: null }
-    ]
-  },
   kabulipulao: {
     nom: "Kabuli Pulao",
     cat: "plats", pays: "afghanistan",

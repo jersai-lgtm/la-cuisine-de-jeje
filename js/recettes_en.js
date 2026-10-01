@@ -55347,44 +55347,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "alharees": {
-  "nom": "Al Harees",
-  "description": "An Emirati wheat and chicken porridge, slow-cooked until silky and smooth and finished with butter. A festive dish served during Ramadan.",
-  "etapes": [
-   {
-    "titre": "Soak the wheat",
-    "detail": "Soak the wheat (or cracked barley) for several hours."
-   },
-   {
-    "titre": "Cook the chicken",
-    "detail": "Cook the chicken in water until very tender, then set the broth aside."
-   },
-   {
-    "titre": "Simmer the wheat",
-    "detail": "Cook the soaked wheat in that broth for a long while."
-   },
-   {
-    "titre": "Shred the chicken",
-    "detail": "Shred the cooked chicken and stir it in."
-   },
-   {
-    "titre": "Whisk until smooth",
-    "detail": "Whisk vigorously while cooking until the mixture turns smooth and creamy."
-   },
-   {
-    "titre": "Add butter",
-    "detail": "Stir in a generous knob of butter."
-   },
-   {
-    "titre": "Season",
-    "detail": "Add salt and a pinch of cinnamon."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve hot, drizzled with melted butter."
-   }
-  ]
- },
  "kabulipulao": {
   "nom": "Kabuli Pulao",
   "description": "Fragrant Afghan lamb rice topped with candied carrots and caramelized raisins. The national dish, served on special occasions.",
