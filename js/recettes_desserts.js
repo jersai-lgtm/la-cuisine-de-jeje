@@ -18871,5 +18871,82 @@ Object.assign(recettes, {
       { icone: "🌡️", titre: "Tempérer", detail: "Réchauffer doucement jusqu'à 35 °C exactement avant de glacer.", badge: null },
       { icone: "❄️", titre: "Couler", detail: "Couler d'un seul geste sur l'entremets encore congelé, posé sur une grille, sans repasser dessus.", badge: null }
     ]
+  },
+  fruitspochessirop: {
+    nom: "Fruits Pochés au Sirop",
+    cat: "desserts", pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍐",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "Des fruits un peu fatigués pochés dans un sirop vanillé : ils retrouvent de la tenue et du goût. Poires, pêches ou abricots, selon ce qui traîne.",
+    tableauFruitspochessirop: [
+      { nb: 1, poire: "150 g", sucre: "50 g", eau: "25 cl", citron: "15 g", vanille: "0.5 g", cannelle: "0.5 g" },
+      { nb: 2, poire: "300 g", sucre: "100 g", eau: "50 cl", citron: "30 g", vanille: "1 g", cannelle: "1 g" },
+      { nb: 3, poire: "450 g", sucre: "150 g", eau: "75 cl", citron: "45 g", vanille: "1.5 g", cannelle: "1.5 g" },
+      { nb: 4, poire: "600 g", sucre: "200 g", eau: "100 cl", citron: "60 g", vanille: "2 g", cannelle: "2 g" },
+      { nb: 5, poire: "750 g", sucre: "250 g", eau: "125 cl", citron: "75 g", vanille: "2.5 g", cannelle: "2.5 g" },
+      { nb: 6, poire: "900 g", sucre: "300 g", eau: "150 cl", citron: "90 g", vanille: "3 g", cannelle: "3 g" },
+      { nb: 7, poire: "1050 g", sucre: "350 g", eau: "175 cl", citron: "105 g", vanille: "3.5 g", cannelle: "3.5 g" },
+      { nb: 8, poire: "1200 g", sucre: "400 g", eau: "200 cl", citron: "120 g", vanille: "4 g", cannelle: "4 g" },
+      { nb: 9, poire: "1350 g", sucre: "450 g", eau: "225 cl", citron: "135 g", vanille: "4.5 g", cannelle: "4.5 g" },
+      { nb: 10, poire: "1500 g", sucre: "500 g", eau: "250 cl", citron: "150 g", vanille: "5 g", cannelle: "5 g" },
+      { nb: 11, poire: "1650 g", sucre: "550 g", eau: "275 cl", citron: "165 g", vanille: "5.5 g", cannelle: "5.5 g" },
+      { nb: 12, poire: "1800 g", sucre: "600 g", eau: "300 cl", citron: "180 g", vanille: "6 g", cannelle: "6 g" },
+      { nb: 13, poire: "1950 g", sucre: "650 g", eau: "325 cl", citron: "195 g", vanille: "6.5 g", cannelle: "6.5 g" },
+      { nb: 14, poire: "2100 g", sucre: "700 g", eau: "350 cl", citron: "210 g", vanille: "7 g", cannelle: "7 g" },
+      { nb: 15, poire: "2250 g", sucre: "750 g", eau: "375 cl", citron: "225 g", vanille: "7.5 g", cannelle: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍐", titre: "Trier", detail: "Garder les fruits fermes et seulement un peu flétris : un fruit pourri ne se rattrape pas, il se jette.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Les éplucher et les citronner aussitôt pour qu'ils ne noircissent pas.", badge: null },
+      { icone: "🍬", titre: "Sirop", detail: "Porter l'eau, le sucre, la vanille fendue et la cannelle à frémissement.", badge: null },
+      { icone: "🍐", titre: "Pocher", detail: "Y plonger les fruits, en les maintenant immergés avec une assiette.", badge: null },
+      { icone: "⏲️", titre: "Cuire", detail: "Pocher quinze à vingt-cinq minutes selon la fermeté, à tout petit feu.", badge: null },
+      { icone: "🔪", titre: "Vérifier", detail: "La pointe d'un couteau doit entrer sans résistance mais le fruit garder sa forme.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir DANS le sirop : c'est en refroidissant qu'ils s'en imprègnent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir frais avec le sirop réduit, une boule de glace ou du fromage blanc.", badge: null }
+    ],
+    liees: ["siropdesucre"]
+  },
+  beignetneworleans: {
+    nom: "Beignet de La Nouvelle-Orléans",
+    cat: "desserts", pays: "usa",
+    base: 4,
+    temps: "30 min + 2h pousse",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "Des carrés de pâte levée frits qui gonflent en coussins creux, ensevelis sous le sucre glace. Le petit-déjeuner du Vieux Carré, avec un café au lait.",
+    tableauBeignetneworleans: [
+      { nb: 1, farine: "60 g", lait: "30 ml", levure: "2 g", sucre: "10 g", beurre: "8 g", oeufs: "¼", huilefriture: "50 ml", sucreglace: "20 g" },
+      { nb: 2, farine: "120 g", lait: "60 ml", levure: "4 g", sucre: "20 g", beurre: "16 g", oeufs: "½", huilefriture: "100 ml", sucreglace: "40 g" },
+      { nb: 3, farine: "180 g", lait: "90 ml", levure: "6 g", sucre: "30 g", beurre: "24 g", oeufs: "¾", huilefriture: "150 ml", sucreglace: "60 g" },
+      { nb: 4, farine: "240 g", lait: "120 ml", levure: "8 g", sucre: "40 g", beurre: "32 g", oeufs: "1", huilefriture: "200 ml", sucreglace: "80 g" },
+      { nb: 5, farine: "300 g", lait: "150 ml", levure: "10 g", sucre: "50 g", beurre: "40 g", oeufs: "1¼", huilefriture: "250 ml", sucreglace: "100 g" },
+      { nb: 6, farine: "360 g", lait: "180 ml", levure: "12 g", sucre: "60 g", beurre: "48 g", oeufs: "1½", huilefriture: "300 ml", sucreglace: "120 g" },
+      { nb: 7, farine: "420 g", lait: "210 ml", levure: "14 g", sucre: "70 g", beurre: "56 g", oeufs: "1¾", huilefriture: "350 ml", sucreglace: "140 g" },
+      { nb: 8, farine: "480 g", lait: "240 ml", levure: "16 g", sucre: "80 g", beurre: "64 g", oeufs: "2", huilefriture: "400 ml", sucreglace: "160 g" },
+      { nb: 9, farine: "540 g", lait: "270 ml", levure: "18 g", sucre: "90 g", beurre: "72 g", oeufs: "2¼", huilefriture: "450 ml", sucreglace: "180 g" },
+      { nb: 10, farine: "600 g", lait: "300 ml", levure: "20 g", sucre: "100 g", beurre: "80 g", oeufs: "2½", huilefriture: "500 ml", sucreglace: "200 g" },
+      { nb: 11, farine: "660 g", lait: "330 ml", levure: "22 g", sucre: "110 g", beurre: "88 g", oeufs: "2¾", huilefriture: "550 ml", sucreglace: "220 g" },
+      { nb: 12, farine: "720 g", lait: "360 ml", levure: "24 g", sucre: "120 g", beurre: "96 g", oeufs: "3", huilefriture: "600 ml", sucreglace: "240 g" },
+      { nb: 13, farine: "780 g", lait: "390 ml", levure: "26 g", sucre: "130 g", beurre: "104 g", oeufs: "3¼", huilefriture: "650 ml", sucreglace: "260 g" },
+      { nb: 14, farine: "840 g", lait: "420 ml", levure: "28 g", sucre: "140 g", beurre: "112 g", oeufs: "3½", huilefriture: "700 ml", sucreglace: "280 g" },
+      { nb: 15, farine: "900 g", lait: "450 ml", levure: "30 g", sucre: "150 g", beurre: "120 g", oeufs: "3¾", huilefriture: "750 ml", sucreglace: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Levain", detail: "Délayer la levure dans le lait tiède et laisser mousser dix minutes.", badge: null },
+      { icone: "🥣", titre: "Pétrir", detail: "Mélanger avec farine, sucre, œuf et beurre fondu, et pétrir cinq minutes : la pâte doit rester souple et un peu collante.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laisser doubler deux heures à couvert, ou une nuit au frigo.", badge: null },
+      { icone: "📏", titre: "Abaisser", detail: "Abaisser à un demi-centimètre et découper des carrés de cinq centimètres.", badge: null },
+      { icone: "🔥", titre: "Huile", detail: "Chauffer l'huile à 180 °C : plus froide, les beignets boivent l'huile et ne gonflent pas.", badge: null },
+      { icone: "🎈", titre: "Frire", detail: "Plonger les carrés : ils doivent remonter et gonfler en quelques secondes.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Les retourner à mi-cuisson, une minute par face, jusqu'à ce qu'ils soient dorés et creux.", badge: null },
+      { icone: "❄️", titre: "Sucrer", detail: "Égoutter et ensevelir sous une épaisse couche de sucre glace — à La Nouvelle-Orléans, on n'en met jamais trop peu.", badge: null }
+    ]
   }
 });

@@ -300,6 +300,9 @@ const INGREDIENTS_PRIX = {
   scarole:        { prixKg: 3.00, calPer100g: 17,   lipSat: 0,    sucre: 0.3,  sel: 0.02, fibres: 3.1, prot: 1.3,  flv: 100, glucides: 1.3, lipides: 0.2 },
   maraschino:     { prixKg: 30.0, calPer100g: 280,  lipSat: 0,    sucre: 30,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 30, lipides: 0 },
   chartreuse:     { prixKg: 55.0, calPer100g: 330,  lipSat: 0,    sucre: 25,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 25, lipides: 0 },
+  levurenutritionnelle: { prixKg: 32.0, calPer100g: 345, lipSat: 0.3, sucre: 2.0, sel: 0.1, fibres: 21, prot: 48, flv: 0, glucides: 36, lipides: 2 },
+  aquafaba:       { prixKg: 1.50, calPer100g: 10,   lipSat: 0,    sucre: 0.5,  sel: 0.3,  fibres: 0,   prot: 1.0,  flv: 0, glucides: 1.5, lipides: 0 },
+  croissant:      { prixKg: 12.0, calPer100g: 406,  lipSat: 12.0, sucre: 8.0,  sel: 0.9,  fibres: 2.4, prot: 8.0,  flv: 0, glucides: 46, lipides: 21 },
   kale:           { prixKg: 6.00, calPer100g: 49,   lipSat: 0.1,  sucre: 2.3,  sel: 0.05, fibres: 3.6, prot: 4.3,  flv: 100, glucides: 4.4, lipides: 0.9 },
   fernet:         { prixKg: 40.0, calPer100g: 220,  lipSat: 0,    sucre: 25,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 25, lipides: 0 },
   drambuie:       { prixKg: 45.0, calPer100g: 330,  lipSat: 0,    sucre: 35,   sel: 0,    fibres: 0,   prot: 0,    flv: 0, glucides: 35, lipides: 0 },
@@ -1084,6 +1087,7 @@ function calculerNutriScore(parPortion) {
 // Note : pour le citron, on prend 30g (jus + zeste consommables) au lieu du fruit entier (~100g)
 // car en pratique on consomme rarement le citron entier dans une recette.
 const POIDS_UNITAIRE = {
+  croissant: 60,   // un croissant de boulangerie
   pate: 250, paton: 250, patons: 250, patepizza: 250, patapizza: 250,   // 1 pâton de pizza ≈ 250 g
   patefeuilletee: 230, pateFeuilletee: 230, patebrisee: 230, patesablee: 230, patebrisée: 230,   // 1 abaisse ≈ 230 g
   oeuf: 50, oeufs: 50, oeufPate: 50, oeufCreme: 50, oeufChoux: 50,
@@ -1641,7 +1645,7 @@ const INGREDIENTS_LABELS = {
   grenouilles: "🐸 Cuisses de grenouilles", bleentier: "🌾 Blé en grains", injera: "🫓 Injera", madere: "🍷 Madère",
   absinthe: "🌿 Absinthe", scarole: "🥬 Scarole",
   maraschino: "🍒 Marasquin", chartreuse: "🌿 Chartreuse verte", sorbetcitron: "🍋 Sorbet citron", eaurose: "🌹 Eau de rose",
-  kale: "🥬 Chou kale", fernet: "🌿 Fernet-Branca", drambuie: "🥃 Drambuie", whiskyecossais: "🥃 Whisky écossais", cornedbeef: "🥫 Corned-beef",
+  levurenutritionnelle: "🧀 Levure maltée", aquafaba: "🫘 Aquafaba", croissant: "🥐 Croissant", kale: "🥬 Chou kale", fernet: "🌿 Fernet-Branca", drambuie: "🥃 Drambuie", whiskyecossais: "🥃 Whisky écossais", cornedbeef: "🥫 Corned-beef",
   stracchino: "🧀 Stracchino", glacenoisette: "🌰 Glace noisette", carottenoire: "🥕 Carotte noire", melasseraisin: "🍇 Mélasse de raisin", lavash: "🫓 Pain lavash",
   mastic: "🌳 Mastic de Chios", salep: "🌸 Salep", lucuma: "🥭 Lúcuma", maisviolet: "🌽 Maïs violet", masaharina: "🌽 Masa harina",
   yerbamate: "🧉 Yerba maté", graineslin: "🌾 Graines de lin", kasseri: "🧀 Kasseri", glacechocolat: "🍫 Glace chocolat", glacepistache: "🥜 Glace pistache", camomille: "🌼 Camomille",

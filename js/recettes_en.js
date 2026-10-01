@@ -123112,6 +123112,796 @@ window.RECETTES_EN = {
     "detail": "Remove the barding five minutes before the end to let the skin colour, then rest for five minutes."
    }
   ]
+ },
+ "soupedefanes": {
+  "nom": "Radish Leaf Soup",
+  "description": "The leaves we usually throw away make a green, peppery soup bound with potato. A bunch of radishes yields two extra bowls, for nothing.",
+  "etapes": [
+   {
+    "titre": "Sort",
+    "detail": "Separate the leaves from the radishes and discard any yellowed or damaged ones, keeping the firm green."
+   },
+   {
+    "titre": "Wash",
+    "detail": "Wash in several changes of water: the leaves hold a lot of grit at the base of the stems."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the sliced onion in butter without colouring."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Add the diced potatoes and coat them, then add the stock."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for fifteen minutes, until the potato crushes easily."
+   },
+   {
+    "titre": "Leaves",
+    "detail": "Add the leaves and cook for three minutes only: any longer and the green turns khaki."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend smooth, add the cream and adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, with a few raw radish slices for crunch."
+   }
+  ]
+ },
+ "omelettefanes": {
+  "nom": "Green Tops Omelette",
+  "description": "Radish, carrot or turnip tops fried in butter then bound with eggs. A green, faintly bitter flavour close to wild spinach.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Wash the tops and remove the thickest stems, which stay stringy."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Chop them roughly with a knife."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Melt the butter, add the chopped garlic then the leaves, and let them wilt for three minutes."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain them if they have released water: a wet filling stops the omelette setting."
+   },
+   {
+    "titre": "Beat",
+    "detail": "Beat the eggs with the cream, salt and pepper, without over-frothing."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour into the hot pan and draw the edges to the centre with a spatula."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the greens over half the omelette while the top is still loose."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold in half, leave a minute and serve on a warm plate."
+   }
+  ]
+ },
+ "galettesdepuree": {
+  "nom": "Mashed Potato Cakes",
+  "description": "Yesterday's leftover mash, bound with egg and cheese, shaped into cakes and fried until crusty. Better than the mash itself.",
+  "etapes": [
+   {
+    "titre": "Cold mash",
+    "detail": "Start from COLD mash: warm, it sticks and cannot be shaped."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix the mash with the egg, grated cheese, chives and nutmeg."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Add the flour a spoonful at a time until the mixture holds without sticking to your fingers."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form even cakes two centimetres thick."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill for fifteen minutes: they hold together better when cooked."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Cook in butter over medium heat, three to four minutes a side, without moving them."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Turn once only, when the crust has formed: otherwise they break."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a salad or a fried egg."
+   }
+  ]
+ },
+ "croquettesdepoulet": {
+  "nom": "Chicken Croquettes",
+  "description": "A very thick béchamel loaded with shredded chicken, chilled overnight then breaded and fried. The Spanish way of finishing a roast chicken.",
+  "etapes": [
+   {
+    "titre": "Shred",
+    "detail": "Shred the leftover chicken very finely by hand, discarding skin and gristle."
+   },
+   {
+    "titre": "Roux",
+    "detail": "Make a roux with the butter and flour and cook it for two minutes."
+   },
+   {
+    "titre": "Béchamel",
+    "detail": "Whisk in the hot milk and cook to a VERY thick paste that comes away from the pan."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Stir in the chicken and nutmeg, salt it, and cook two minutes more, stirring."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Spread in a dish, cover on the surface and chill overnight — the mix must be cold and firm."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form logs or balls with two spoons and floured hands."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat in beaten egg then breadcrumbs, twice for the fragile ones."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry at 180°C for two minutes, until golden, and drain on a rack."
+   }
+  ]
+ },
+ "croutesparmesanbouillon": {
+  "nom": "Parmesan Rind Broth",
+  "description": "The parmesan rinds we throw away give a deep, savoury broth, the base of minestrone or risotto. Italians keep them in the freezer for exactly this.",
+  "etapes": [
+   {
+    "titre": "Save",
+    "detail": "Keep every parmesan rind in the freezer, scraped clean of its printed surface."
+   },
+   {
+    "titre": "Scrape",
+    "detail": "Scrape them with a knife to remove wax and label marks."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sweat onion and celery in the olive oil."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover with cold water, add the rinds and the bay leaf."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a simmer and hold it for forty minutes, never boiling."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir now and then: the rinds soften and readily stick to the base."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain, barely pressing, and taste before salting — parmesan is salty enough."
+   }
+  ]
+ },
+ "fruitspochessirop": {
+  "nom": "Fruit Poached in Syrup",
+  "description": "Slightly tired fruit poached in vanilla syrup: it regains both texture and flavour. Pears, peaches or apricots, depending on what is lying about.",
+  "etapes": [
+   {
+    "titre": "Sort",
+    "detail": "Keep fruit that is firm and only slightly wrinkled: rotten fruit cannot be rescued, it goes in the bin."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Peel it and rub with lemon at once so it does not darken."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Bring the water, sugar, split vanilla and cinnamon to a simmer."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Lower in the fruit, keeping it submerged with a plate."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Poach fifteen to twenty-five minutes depending on firmness, over the lowest heat."
+   },
+   {
+    "titre": "Check",
+    "detail": "A knife tip should slide in without resistance while the fruit holds its shape."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool IN the syrup: that is when it soaks it up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold with the reduced syrup, a scoop of ice cream or fromage blanc."
+   }
+  ]
+ },
+ "sopadeajo": {
+  "nom": "Castilian Garlic Soup",
+  "description": "The Castilian winter morning soup: stale bread, garlic, smoked paprika and an egg poached in it. Next to nothing, and a whole meal.",
+  "etapes": [
+   {
+    "titre": "Brown the garlic",
+    "detail": "Soften the sliced garlic in the olive oil without burning it: bitter garlic would ruin the soup."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Add the torn stale bread and colour it in the scented oil."
+   },
+   {
+    "titre": "Paprika",
+    "detail": "Take off the heat before adding the smoked paprika: over high heat it turns bitter in seconds."
+   },
+   {
+    "titre": "Stock",
+    "detail": "Return to the heat and pour in the hot stock."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer for fifteen minutes: the bread breaks down and thickens the soup."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Crack the eggs straight into the simmering soup and poach for three minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding in earthenware bowls, with parsley."
+   }
+  ]
+ },
+ "fullirishbreakfast": {
+  "nom": "Full Irish Breakfast",
+  "description": "The full Irish plate: bacon, sausages, black pudding, eggs, beans, tomato and mushrooms. The whole art is getting it all to the table hot at once.",
+  "etapes": [
+   {
+    "titre": "Sausages first",
+    "detail": "Start with the sausages, which take longest: fifteen minutes over medium heat, turning them."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Add the bacon to the same pan; it cooks in five minutes and flavours everything else."
+   },
+   {
+    "titre": "Black pudding",
+    "detail": "Fry the black pudding slices two minutes a side, turning once only: it crumbles."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Grill the halved tomatoes cut side down and the mushrooms in the rendered fat."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Warm the baked beans in a pan meanwhile."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Fry the bread in the pan: that is the real Irish breakfast bread, not a toast."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Fry the eggs last, so they are still runny on the plate."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Bring it all together on a large warm plate, and serve with black tea."
+   }
+  ]
+ },
+ "petitdejeunerturc": {
+  "nom": "Turkish Breakfast",
+  "description": "Kahvaltı: a table covered in small plates — salty white cheese, olives, tomatoes, cucumber, honey, jam and eggs. You graze for an hour.",
+  "etapes": [
+   {
+    "titre": "Cheese",
+    "detail": "Cube the salty white cheese and take it out twenty minutes ahead: cold, it tastes of nothing."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Cut tomatoes and cucumber into thick half-moons and fan them out."
+   },
+   {
+    "titre": "Olives",
+    "detail": "Serve the black olives whole, stones in, in a small separate bowl."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Cook the eggs as you like: soft-boiled, fried, or as menemen with tomato."
+   },
+   {
+    "titre": "Honey and butter",
+    "detail": "Set a dish of honey beside a knob of butter — they are eaten together, on bread."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Warm the bread in the oven for a few minutes: it should be warm and soft."
+   },
+   {
+    "titre": "Tea",
+    "detail": "Brew Turkish black tea, served in small tulip-shaped glasses."
+   },
+   {
+    "titre": "Lay the table",
+    "detail": "Put everything out at once in small plates: that is the whole principle of kahvaltı."
+   }
+  ]
+ },
+ "pandesal": {
+  "nom": "Pandesal",
+  "description": "The Filipino morning rolls, lightly sweet and rolled in breadcrumbs before baking. Eaten hot, dunked in coffee.",
+  "etapes": [
+   {
+    "titre": "Starter",
+    "detail": "Dissolve the yeast in the warm milk with a spoonful of sugar and wait ten minutes for it to foam."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix flour, sugar, salt, egg and milk, then knead for ten minutes."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Work in the soft butter and knead five minutes more to a supple, satiny dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it double, covered, for an hour."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Knock back, roll into a long log and cut it into equal pieces with a knife."
+   },
+   {
+    "titre": "Breadcrumbs",
+    "detail": "Roll each piece in breadcrumbs on all sides: that is the pandesal signature."
+   },
+   {
+    "titre": "Prove",
+    "detail": "Let them rise for forty-five minutes on the tray, cut side up."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for fifteen minutes at 190°C: they should stay pale on top and golden underneath."
+   }
+  ]
+ },
+ "croissantauxamandes": {
+  "nom": "Almond Croissant",
+  "description": "The recipe invented for yesterday's croissants: soaked in syrup, filled with almond cream and baked again. They come out better than fresh.",
+  "etapes": [
+   {
+    "titre": "Stale croissants",
+    "detail": "Use yesterday's croissants, or the day before: fresh ones go soggy."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Make a light syrup with water, sugar and rum, and let it cool to lukewarm."
+   },
+   {
+    "titre": "Almond cream",
+    "detail": "Beat soft butter, sugar, ground almonds and egg to a smooth cream."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split the croissants through the middle without separating them completely."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Brush the insides with syrup, generously but without drowning them."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread a layer of almond cream inside, and pipe a line on top."
+   },
+   {
+    "titre": "Almonds",
+    "detail": "Scatter flaked almonds, which toast in the oven."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake twenty minutes at 180°C, until the cream is set and golden, then dust with icing sugar."
+   }
+  ]
+ },
+ "beignetneworleans": {
+  "nom": "New Orleans Beignet",
+  "description": "Squares of yeasted dough fried into hollow pillows, buried under icing sugar. The breakfast of the French Quarter, with café au lait.",
+  "etapes": [
+   {
+    "titre": "Starter",
+    "detail": "Dissolve the yeast in warm milk and let it foam for ten minutes."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix with flour, sugar, egg and melted butter, and knead five minutes: the dough should stay soft and slightly sticky."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let it double for two hours, covered, or overnight in the fridge."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll to half a centimetre and cut five-centimetre squares."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Heat the oil to 180°C: any cooler and the beignets drink oil instead of puffing."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop in the squares: they should rise and inflate within seconds."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Turn them halfway, a minute a side, until golden and hollow."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Drain and bury under a thick layer of icing sugar — in New Orleans, there is no such thing as too much."
+   }
+  ]
+ },
+ "sandwichreuben": {
+  "nom": "Reuben Sandwich",
+  "description": "Grilled rye bread, corned beef, sauerkraut, melted Swiss cheese and Russian dressing. The New York deli sandwich, heavy and perfectly balanced.",
+  "etapes": [
+   {
+    "titre": "Russian dressing",
+    "detail": "Mix mayonnaise, ketchup and chopped pickles: the sauce that ties the whole sandwich together."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Squeeze the sauerkraut in a cloth to remove as much liquid as possible — a soggy Reuben is the classic mistake."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the dressing on the inner faces of the rye slices."
+   },
+   {
+    "titre": "Build",
+    "detail": "Stack corned beef, sauerkraut then cheese, in that order: the cheese must touch the top slice to glue it down."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Butter the OUTSIDE of both slices, generously."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Cook in a pan over medium heat, five minutes a side, pressing with a spatula."
+   },
+   {
+    "titre": "Check",
+    "detail": "The cheese should be fully melted by the time the bread is golden: lower the heat if it colours too fast."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut in half diagonally and serve at once, with a pickle on the side."
+   }
+  ]
+ },
+ "grilledcheese": {
+  "nom": "Grilled Cheese",
+  "description": "Two slices of white bread, cheddar and plenty of butter, grilled over low heat until the cheese pulls. Simplicity demands the right temperature.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the cheddar rather than slicing it: grated, it melts twice as fast and more evenly."
+   },
+   {
+    "titre": "Soft butter",
+    "detail": "Beat the butter soft: cold, it tears the crumb as you spread it."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Butter the outside of both slices to the edges, and spread a film of mustard inside."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the cheese without overhanging the edges, or it burns in the pan."
+   },
+   {
+    "titre": "Low heat",
+    "detail": "Cook over LOW heat: that is the secret — high heat browns the bread before the cheese melts."
+   },
+   {
+    "titre": "Be patient",
+    "detail": "Allow four to five minutes a side, pressing gently with a spatula."
+   },
+   {
+    "titre": "Check",
+    "detail": "Lift a corner: the bread should be evenly golden brown, not blotchy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Rest for a minute before cutting, or all the cheese escapes."
+   }
+  ]
+ },
+ "tunamelt": {
+  "nom": "Tuna Melt",
+  "description": "Tuna salad with mayonnaise and celery, blanketed in cheese and run under the grill. The hot sandwich of American diners.",
+  "etapes": [
+   {
+    "titre": "Drain",
+    "detail": "Drain the tuna thoroughly and flake it with a fork: wet tuna makes soggy bread."
+   },
+   {
+    "titre": "Crunch",
+    "detail": "Dice the celery and red onion very small — they give the crunch tuna lacks."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix with the mayonnaise and lemon juice, pepper it, and taste before salting."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Lightly toast the bread on one side only, so it holds up under the filling."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the tuna salad thickly on the toasted side."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Cover completely with grated cheddar, right to the edges."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill for three to four minutes, until the cheese bubbles and colours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, open-faced, with pickles."
+   }
+  ]
+ },
+ "montecristo": {
+  "nom": "Monte Cristo",
+  "description": "A ham and cheese sandwich dipped in beaten egg like French toast, fried then dusted with icing sugar and served with jam. Savoury and sweet at once.",
+  "etapes": [
+   {
+    "titre": "Build",
+    "detail": "Build the sandwich: bread, cheese, ham, cheese, bread — cheese on both sides glues it together."
+   },
+   {
+    "titre": "Press",
+    "detail": "Press firmly with your palm to seal the slices."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Beat the egg with the milk and a pinch of salt in a shallow dish."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Dip the whole sandwich, ten seconds a side: it should soak without falling apart."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Cook in butter over medium-low heat, three minutes a side."
+   },
+   {
+    "titre": "The edges",
+    "detail": "Sear the four edges too, holding it upright with a spatula: nothing should stay raw."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Drain and dust with icing sugar."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding with a spoonful of strawberry jam alongside, for dipping."
+   }
+  ]
+ },
+ "fishfingersandwich": {
+  "nom": "Fish Finger Sandwich",
+  "description": "Home-breaded cod fingers, buttered white bread and tartare sauce. The sandwich the English defend most seriously.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the cod into even fingers two centimetres wide."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Dry them thoroughly on kitchen paper: breading will not stick to wet fish."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat in seasoned flour, beaten egg then breadcrumbs, pressing well."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill for fifteen minutes so the coating holds."
+   },
+   {
+    "titre": "Tartare",
+    "detail": "Mix mayonnaise, chopped gherkins, capers and a squeeze of lemon."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry for four minutes at 180°C, until the crumb is properly golden."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Butter the white bread generously — non-negotiable in the English version."
+   },
+   {
+    "titre": "Build",
+    "detail": "Fill with the fingers, spoon over the tartare, close and press lightly."
+   }
+  ]
+ },
+ "eggsaladsandwich": {
+  "nom": "Egg Salad Sandwich",
+  "description": "The Japanese tamago sando: hard-boiled eggs crushed with mayonnaise between two crustless slices of soft white bread, perfectly tender.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Boil the eggs for nine minutes, for a yolk just set but still tender."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Plunge into iced water for five minutes, then peel."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Crush with a fork, keeping some pieces: a smooth purée loses the whole point."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix with mayonnaise, mustard, a pinch of sugar and white pepper."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Butter the slices to the edges: the butter is a barrier and keeps the bread from going soggy."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the filling thickly and flat, right to the edges."
+   },
+   {
+    "titre": "Press",
+    "detail": "Wrap the whole sandwich and press it in the fridge for fifteen minutes: it will cut cleanly."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Trim the crusts and cut into halves or thirds with a very sharp knife."
+   }
+  ]
+ },
+ "medianoche": {
+  "nom": "Medianoche",
+  "description": "The cubano's cousin, on sweet egg bread: roast pork, ham, cheese, pickles and mustard, pressed until the bread crisps.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Use slightly sweet egg bread — that is what separates a medianoche from a cubano, served on Cuban bread."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split the loaf lengthways without separating it completely."
+   },
+   {
+    "titre": "Mustard",
+    "detail": "Spread both inner faces generously with mustard."
+   },
+   {
+    "titre": "Build",
+    "detail": "Layer thinly sliced roast pork, ham, sliced pickles then cheese."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Butter the outside of the bread, top and bottom."
+   },
+   {
+    "titre": "Press",
+    "detail": "Cook in a pan, pressing hard with a heavy pot set on top."
+   },
+   {
+    "titre": "Be patient",
+    "detail": "Four minutes a side: the sandwich should be squashed to half its height and the cheese fully melted."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut on the diagonal and serve scalding."
+   }
+  ]
+ },
+ "sandwichrosbif": {
+  "nom": "Cold Roast Beef Sandwich",
+  "description": "The best use for yesterday's roast beef: sliced very thin, with horseradish, rocket and country bread. Cold, the meat is better than it was hot.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Slice the cold beef as thinly as you can, across the grain."
+   },
+   {
+    "titre": "Why cold",
+    "detail": "Cold meat slices far thinner than warm meat, and the sandwich is more tender for it."
+   },
+   {
+    "titre": "Horseradish",
+    "detail": "Mix horseradish and mustard with a knob of butter for a sharp spread."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread one face of bread with that, the other with plain butter."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Slice the red onion very thin and soak it five minutes in cold water to tame it."
+   },
+   {
+    "titre": "Build",
+    "detail": "Add rocket, then the beef in loose folds rather than flat: the sandwich eats softer."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper the meat directly — cold roast beef needs more salt than you think."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close, press lightly and cut in half."
+   }
+  ]
+ },
+ "rotiwrap": {
+  "nom": "Roti Wrap",
+  "description": "The flaky flatbread of Trinidad and Tobago, rolled around a chickpea and potato curry. An Indian legacy turned Caribbean street food.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead flour, water, salt and a little oil into a soft dough, and rest it for thirty minutes."
+   },
+   {
+    "titre": "Laminate",
+    "detail": "Roll out, oil the surface, coil into a spiral then roll again: that simple turn creates the layers."
+   },
+   {
+    "titre": "Curry",
+    "detail": "Fry onion and garlic, add the curry powder and let it toast for a minute."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Add diced potatoes and chickpeas, then the coconut milk, and simmer for twenty minutes."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Roughly crush some of the chickpeas: the filling must hold inside the wrap."
+   },
+   {
+    "titre": "Cook the rotis",
+    "detail": "Cook each flatbread two minutes a side in a very hot pan, lightly oiled."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Clap the hot flatbread between your hands or scrunch it in a cloth: the layers separate."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Fill and roll tightly, folding the bottom so the sauce does not run."
+   }
+  ]
  }
 
 };

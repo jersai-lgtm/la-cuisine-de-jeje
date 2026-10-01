@@ -7081,5 +7081,118 @@ Object.assign(recettes, {
       { icone: "🧂", titre: "Saler après", detail: "Saler seulement au moment de l'utiliser : il peut servir de base à des plats déjà salés.", badge: null }
     ],
     liees: ["bouillonlegumesmaison"]
+  },
+  soupedefanes: {
+    nom: "Soupe de Fanes de Radis",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "Les fanes qu'on jette d'habitude font une soupe verte et poivrée, liée à la pomme de terre. Une botte de radis donne deux assiettes de plus, pour rien.",
+    tableauSoupedefanes: [
+      { nb: 1, radis: "80 g", pommedeterre: "120 g", oignon: "50 g", bouillon: "30 cl", creme: "20 ml", beurre: "10 g", sel: "1.5 g" },
+      { nb: 2, radis: "160 g", pommedeterre: "240 g", oignon: "100 g", bouillon: "60 cl", creme: "40 ml", beurre: "20 g", sel: "3 g" },
+      { nb: 3, radis: "240 g", pommedeterre: "360 g", oignon: "150 g", bouillon: "90 cl", creme: "60 ml", beurre: "30 g", sel: "4.5 g" },
+      { nb: 4, radis: "320 g", pommedeterre: "480 g", oignon: "200 g", bouillon: "120 cl", creme: "80 ml", beurre: "40 g", sel: "6 g" },
+      { nb: 5, radis: "400 g", pommedeterre: "600 g", oignon: "250 g", bouillon: "150 cl", creme: "100 ml", beurre: "50 g", sel: "7.5 g" },
+      { nb: 6, radis: "480 g", pommedeterre: "720 g", oignon: "300 g", bouillon: "180 cl", creme: "120 ml", beurre: "60 g", sel: "9 g" },
+      { nb: 7, radis: "560 g", pommedeterre: "840 g", oignon: "350 g", bouillon: "210 cl", creme: "140 ml", beurre: "70 g", sel: "10.5 g" },
+      { nb: 8, radis: "640 g", pommedeterre: "960 g", oignon: "400 g", bouillon: "240 cl", creme: "160 ml", beurre: "80 g", sel: "12 g" },
+      { nb: 9, radis: "720 g", pommedeterre: "1080 g", oignon: "450 g", bouillon: "270 cl", creme: "180 ml", beurre: "90 g", sel: "13.5 g" },
+      { nb: 10, radis: "800 g", pommedeterre: "1200 g", oignon: "500 g", bouillon: "300 cl", creme: "200 ml", beurre: "100 g", sel: "15 g" },
+      { nb: 11, radis: "880 g", pommedeterre: "1320 g", oignon: "550 g", bouillon: "330 cl", creme: "220 ml", beurre: "110 g", sel: "16.5 g" },
+      { nb: 12, radis: "960 g", pommedeterre: "1440 g", oignon: "600 g", bouillon: "360 cl", creme: "240 ml", beurre: "120 g", sel: "18 g" },
+      { nb: 13, radis: "1040 g", pommedeterre: "1560 g", oignon: "650 g", bouillon: "390 cl", creme: "260 ml", beurre: "130 g", sel: "19.5 g" },
+      { nb: 14, radis: "1120 g", pommedeterre: "1680 g", oignon: "700 g", bouillon: "420 cl", creme: "280 ml", beurre: "140 g", sel: "21 g" },
+      { nb: 15, radis: "1200 g", pommedeterre: "1800 g", oignon: "750 g", bouillon: "450 cl", creme: "300 ml", beurre: "150 g", sel: "22.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Trier", detail: "Séparer les fanes des radis et jeter les feuilles jaunies ou abîmées, en gardant les vertes et fermes.", badge: null },
+      { icone: "🚿", titre: "Laver", detail: "Les laver en plusieurs eaux : les fanes retiennent beaucoup de terre à la base des tiges.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon émincé au beurre sans coloration.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre en dés et les enrober, puis mouiller au bouillon.", badge: null },
+      { icone: "⏲️", titre: "Cuire", detail: "Laisser cuire quinze minutes, jusqu'à ce que la pomme de terre s'écrase.", badge: null },
+      { icone: "🌿", titre: "Fanes", detail: "Ajouter les fanes et cuire trois minutes seulement : au-delà, le vert vire au kaki.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement, ajouter la crème et rectifier le sel.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Servir aussitôt, avec quelques rondelles de radis crues pour le croquant.", badge: null }
+    ]
+  },
+  croutesparmesanbouillon: {
+    nom: "Bouillon aux Croûtes de Parmesan",
+    cat: "soupes", pays: "italie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "Les croûtes de parmesan qu'on jette donnent un bouillon profond et salé, base de minestrone ou de risotto. Les Italiens les gardent au congélateur pour ça.",
+    tableauCroutesparmesanbouillon: [
+      { nb: 1, parmesan: "60 g", eau: "75 cl", oignon: "50 g", celeri: "40 g", laurier: "0.5 g", huileolive: "10 ml", poivre: "0.5 g" },
+      { nb: 2, parmesan: "120 g", eau: "150 cl", oignon: "100 g", celeri: "80 g", laurier: "1 g", huileolive: "20 ml", poivre: "1 g" },
+      { nb: 3, parmesan: "180 g", eau: "225 cl", oignon: "150 g", celeri: "120 g", laurier: "1.5 g", huileolive: "30 ml", poivre: "1.5 g" },
+      { nb: 4, parmesan: "240 g", eau: "300 cl", oignon: "200 g", celeri: "160 g", laurier: "2 g", huileolive: "40 ml", poivre: "2 g" },
+      { nb: 5, parmesan: "300 g", eau: "375 cl", oignon: "250 g", celeri: "200 g", laurier: "2.5 g", huileolive: "50 ml", poivre: "2.5 g" },
+      { nb: 6, parmesan: "360 g", eau: "450 cl", oignon: "300 g", celeri: "240 g", laurier: "3 g", huileolive: "60 ml", poivre: "3 g" },
+      { nb: 7, parmesan: "420 g", eau: "525 cl", oignon: "350 g", celeri: "280 g", laurier: "3.5 g", huileolive: "70 ml", poivre: "3.5 g" },
+      { nb: 8, parmesan: "480 g", eau: "600 cl", oignon: "400 g", celeri: "320 g", laurier: "4 g", huileolive: "80 ml", poivre: "4 g" },
+      { nb: 9, parmesan: "540 g", eau: "675 cl", oignon: "450 g", celeri: "360 g", laurier: "4.5 g", huileolive: "90 ml", poivre: "4.5 g" },
+      { nb: 10, parmesan: "600 g", eau: "750 cl", oignon: "500 g", celeri: "400 g", laurier: "5 g", huileolive: "100 ml", poivre: "5 g" },
+      { nb: 11, parmesan: "660 g", eau: "825 cl", oignon: "550 g", celeri: "440 g", laurier: "5.5 g", huileolive: "110 ml", poivre: "5.5 g" },
+      { nb: 12, parmesan: "720 g", eau: "900 cl", oignon: "600 g", celeri: "480 g", laurier: "6 g", huileolive: "120 ml", poivre: "6 g" },
+      { nb: 13, parmesan: "780 g", eau: "975 cl", oignon: "650 g", celeri: "520 g", laurier: "6.5 g", huileolive: "130 ml", poivre: "6.5 g" },
+      { nb: 14, parmesan: "840 g", eau: "1050 cl", oignon: "700 g", celeri: "560 g", laurier: "7 g", huileolive: "140 ml", poivre: "7 g" },
+      { nb: 15, parmesan: "900 g", eau: "1125 cl", oignon: "750 g", celeri: "600 g", laurier: "7.5 g", huileolive: "150 ml", poivre: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Garder", detail: "Conserver au congélateur toutes les croûtes de parmesan, grattées de leur surface imprimée.", badge: null },
+      { icone: "🚿", titre: "Gratter", detail: "Les gratter au couteau pour retirer la cire et les traces d'étiquette.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faire suer oignon et céleri dans l'huile d'olive.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Couvrir d'eau froide, ajouter les croûtes et le laurier.", badge: null },
+      { icone: "♨️", titre: "Frémir", detail: "Porter à frémissement et laisser quarante minutes, sans jamais bouillir.", badge: null },
+      { icone: "🥄", titre: "Remuer", detail: "Remuer de temps en temps : les croûtes ramollissent et collent volontiers au fond.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Filtrer en pressant à peine, et goûter avant de saler — le parmesan sale déjà beaucoup.", badge: null }
+    ],
+    liees: ["bouillonlegumesmaison"]
+  },
+  sopadeajo: {
+    nom: "Sopa de Ajo",
+    cat: "soupes", pays: "espagne",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🧄",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "La soupe castillane des matins d'hiver : du pain rassis, de l'ail, du paprika fumé et un œuf poché dedans. Trois fois rien, et un plat entier.",
+    tableauSopadeajo: [
+      { nb: 1, painrassis: "60 g", ail: "15 g", paprikafume: "3 g", huileolive: "25 ml", bouillon: "40 cl", oeufs: "1", persil: "3 g" },
+      { nb: 2, painrassis: "120 g", ail: "30 g", paprikafume: "6 g", huileolive: "50 ml", bouillon: "80 cl", oeufs: "2", persil: "6 g" },
+      { nb: 3, painrassis: "180 g", ail: "45 g", paprikafume: "9 g", huileolive: "75 ml", bouillon: "120 cl", oeufs: "3", persil: "9 g" },
+      { nb: 4, painrassis: "240 g", ail: "60 g", paprikafume: "12 g", huileolive: "100 ml", bouillon: "160 cl", oeufs: "4", persil: "12 g" },
+      { nb: 5, painrassis: "300 g", ail: "75 g", paprikafume: "15 g", huileolive: "125 ml", bouillon: "200 cl", oeufs: "5", persil: "15 g" },
+      { nb: 6, painrassis: "360 g", ail: "90 g", paprikafume: "18 g", huileolive: "150 ml", bouillon: "240 cl", oeufs: "6", persil: "18 g" },
+      { nb: 7, painrassis: "420 g", ail: "105 g", paprikafume: "21 g", huileolive: "175 ml", bouillon: "280 cl", oeufs: "7", persil: "21 g" },
+      { nb: 8, painrassis: "480 g", ail: "120 g", paprikafume: "24 g", huileolive: "200 ml", bouillon: "320 cl", oeufs: "8", persil: "24 g" },
+      { nb: 9, painrassis: "540 g", ail: "135 g", paprikafume: "27 g", huileolive: "225 ml", bouillon: "360 cl", oeufs: "9", persil: "27 g" },
+      { nb: 10, painrassis: "600 g", ail: "150 g", paprikafume: "30 g", huileolive: "250 ml", bouillon: "400 cl", oeufs: "10", persil: "30 g" },
+      { nb: 11, painrassis: "660 g", ail: "165 g", paprikafume: "33 g", huileolive: "275 ml", bouillon: "440 cl", oeufs: "11", persil: "33 g" },
+      { nb: 12, painrassis: "720 g", ail: "180 g", paprikafume: "36 g", huileolive: "300 ml", bouillon: "480 cl", oeufs: "12", persil: "36 g" },
+      { nb: 13, painrassis: "780 g", ail: "195 g", paprikafume: "39 g", huileolive: "325 ml", bouillon: "520 cl", oeufs: "13", persil: "39 g" },
+      { nb: 14, painrassis: "840 g", ail: "210 g", paprikafume: "42 g", huileolive: "350 ml", bouillon: "560 cl", oeufs: "14", persil: "42 g" },
+      { nb: 15, painrassis: "900 g", ail: "225 g", paprikafume: "45 g", huileolive: "375 ml", bouillon: "600 cl", oeufs: "15", persil: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "Dorer l'ail", detail: "Faire blondir les gousses d'ail émincées dans l'huile d'olive, sans les brûler : amères, elles gâcheraient la soupe.", badge: null },
+      { icone: "🍞", titre: "Pain", detail: "Ajouter le pain rassis en morceaux et le faire dorer dans l'huile parfumée.", badge: null },
+      { icone: "🌶️", titre: "Paprika", detail: "Retirer du feu avant d'ajouter le paprika fumé : à la chaleur vive, il devient amer en quelques secondes.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Remettre sur le feu et verser le bouillon chaud.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Laisser mijoter quinze minutes : le pain se défait et épaissit la soupe.", badge: null },
+      { icone: "🥚", titre: "Œufs", detail: "Casser les œufs directement dans la soupe frémissante et les laisser pocher trois minutes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir brûlant dans des bols en terre, avec du persil.", badge: null }
+    ]
   }
 });

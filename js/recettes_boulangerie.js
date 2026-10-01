@@ -5160,5 +5160,82 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Frire", detail: "Tremper les morceaux et les plonger dans l'huile à 180 °C, sans surcharger le bain.", badge: null },
       { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur une grille plutôt que sur du papier, pour que le dessous reste croustillant.", badge: null }
     ]
+  },
+  pandesal: {
+    nom: "Pandesal",
+    cat: "boulangerie", pays: "philippines",
+    base: 1,
+    temps: "30 min + 2h pousse",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥖",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "Les petits pains philippins du matin, légèrement sucrés et roulés dans la chapelure avant cuisson. Ils se mangent chauds, trempés dans le café.",
+    tableauPandesal: [
+      { nb: 1, label: "1 fournée", farine: "400 g", lait: "200 ml", sucre: "60 g", beurre: "50 g", levure: "8 g", sel: "7 g", oeufs: "1", chapelure: "60 g" },
+      { nb: 2, label: "2 fournées", farine: "800 g", lait: "400 ml", sucre: "120 g", beurre: "100 g", levure: "16 g", sel: "14 g", oeufs: "2", chapelure: "120 g" },
+      { nb: 3, label: "3 fournées", farine: "1200 g", lait: "600 ml", sucre: "180 g", beurre: "150 g", levure: "24 g", sel: "21 g", oeufs: "3", chapelure: "180 g" },
+      { nb: 4, label: "4 fournées", farine: "1600 g", lait: "800 ml", sucre: "240 g", beurre: "200 g", levure: "32 g", sel: "28 g", oeufs: "4", chapelure: "240 g" },
+      { nb: 5, label: "5 fournées", farine: "2000 g", lait: "1000 ml", sucre: "300 g", beurre: "250 g", levure: "40 g", sel: "35 g", oeufs: "5", chapelure: "300 g" },
+      { nb: 6, label: "6 fournées", farine: "2400 g", lait: "1200 ml", sucre: "360 g", beurre: "300 g", levure: "48 g", sel: "42 g", oeufs: "6", chapelure: "360 g" },
+      { nb: 7, label: "7 fournées", farine: "2800 g", lait: "1400 ml", sucre: "420 g", beurre: "350 g", levure: "56 g", sel: "49 g", oeufs: "7", chapelure: "420 g" },
+      { nb: 8, label: "8 fournées", farine: "3200 g", lait: "1600 ml", sucre: "480 g", beurre: "400 g", levure: "64 g", sel: "56 g", oeufs: "8", chapelure: "480 g" },
+      { nb: 9, label: "9 fournées", farine: "3600 g", lait: "1800 ml", sucre: "540 g", beurre: "450 g", levure: "72 g", sel: "63 g", oeufs: "9", chapelure: "540 g" },
+      { nb: 10, label: "10 fournées", farine: "4000 g", lait: "2000 ml", sucre: "600 g", beurre: "500 g", levure: "80 g", sel: "70 g", oeufs: "10", chapelure: "600 g" },
+      { nb: 11, label: "11 fournées", farine: "4400 g", lait: "2200 ml", sucre: "660 g", beurre: "550 g", levure: "88 g", sel: "77 g", oeufs: "11", chapelure: "660 g" },
+      { nb: 12, label: "12 fournées", farine: "4800 g", lait: "2400 ml", sucre: "720 g", beurre: "600 g", levure: "96 g", sel: "84 g", oeufs: "12", chapelure: "720 g" },
+      { nb: 13, label: "13 fournées", farine: "5200 g", lait: "2600 ml", sucre: "780 g", beurre: "650 g", levure: "104 g", sel: "91 g", oeufs: "13", chapelure: "780 g" },
+      { nb: 14, label: "14 fournées", farine: "5600 g", lait: "2800 ml", sucre: "840 g", beurre: "700 g", levure: "112 g", sel: "98 g", oeufs: "14", chapelure: "840 g" },
+      { nb: 15, label: "15 fournées", farine: "6000 g", lait: "3000 ml", sucre: "900 g", beurre: "750 g", levure: "120 g", sel: "105 g", oeufs: "15", chapelure: "900 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Levain", detail: "Délayer la levure dans le lait tiède avec une cuillère de sucre, et attendre dix minutes qu'elle mousse.", badge: null },
+      { icone: "🥣", titre: "Pétrir", detail: "Mélanger farine, sucre, sel, œuf et lait, puis pétrir dix minutes.", badge: null },
+      { icone: "🧈", titre: "Beurre", detail: "Incorporer le beurre mou et pétrir encore cinq minutes jusqu'à une pâte souple et satinée.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laisser doubler une heure à couvert.", badge: null },
+      { icone: "🪵", titre: "Façonner", detail: "Dégazer, rouler la pâte en un long boudin et le couper en tronçons égaux au couteau.", badge: null },
+      { icone: "🍞", titre: "Chapelure", detail: "Rouler chaque tronçon dans la chapelure, sur toutes ses faces : c'est la signature du pandesal.", badge: null },
+      { icone: "⏲️", titre: "Apprêt", detail: "Laisser lever quarante-cinq minutes sur la plaque, côté coupé vers le haut.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire quinze minutes à 190 °C : ils doivent rester pâles dessus et dorés dessous.", badge: null }
+    ]
+  },
+  croissantauxamandes: {
+    nom: "Croissant aux Amandes",
+    cat: "boulangerie", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥐",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "La recette inventée pour les croissants de la veille : imbibés de sirop, fourrés de crème d'amande et recuits. Ils ressortent meilleurs que frais.",
+    tableauCroissantauxamandes: [
+      { nb: 1, croissant: "1", poudreamande: "30 g", beurre: "30 g", sucre: "30 g", oeufs: "½", rhum: "5 ml", amandeeffilee: "10 g", sucreglace: "5 g" },
+      { nb: 2, croissant: "2", poudreamande: "60 g", beurre: "60 g", sucre: "60 g", oeufs: "1", rhum: "10 ml", amandeeffilee: "20 g", sucreglace: "10 g" },
+      { nb: 3, croissant: "3", poudreamande: "90 g", beurre: "90 g", sucre: "90 g", oeufs: "1½", rhum: "15 ml", amandeeffilee: "30 g", sucreglace: "15 g" },
+      { nb: 4, croissant: "4", poudreamande: "120 g", beurre: "120 g", sucre: "120 g", oeufs: "2", rhum: "20 ml", amandeeffilee: "40 g", sucreglace: "20 g" },
+      { nb: 5, croissant: "5", poudreamande: "150 g", beurre: "150 g", sucre: "150 g", oeufs: "2½", rhum: "25 ml", amandeeffilee: "50 g", sucreglace: "25 g" },
+      { nb: 6, croissant: "6", poudreamande: "180 g", beurre: "180 g", sucre: "180 g", oeufs: "3", rhum: "30 ml", amandeeffilee: "60 g", sucreglace: "30 g" },
+      { nb: 7, croissant: "7", poudreamande: "210 g", beurre: "210 g", sucre: "210 g", oeufs: "3½", rhum: "35 ml", amandeeffilee: "70 g", sucreglace: "35 g" },
+      { nb: 8, croissant: "8", poudreamande: "240 g", beurre: "240 g", sucre: "240 g", oeufs: "4", rhum: "40 ml", amandeeffilee: "80 g", sucreglace: "40 g" },
+      { nb: 9, croissant: "9", poudreamande: "270 g", beurre: "270 g", sucre: "270 g", oeufs: "4½", rhum: "45 ml", amandeeffilee: "90 g", sucreglace: "45 g" },
+      { nb: 10, croissant: "10", poudreamande: "300 g", beurre: "300 g", sucre: "300 g", oeufs: "5", rhum: "50 ml", amandeeffilee: "100 g", sucreglace: "50 g" },
+      { nb: 11, croissant: "11", poudreamande: "330 g", beurre: "330 g", sucre: "330 g", oeufs: "5½", rhum: "55 ml", amandeeffilee: "110 g", sucreglace: "55 g" },
+      { nb: 12, croissant: "12", poudreamande: "360 g", beurre: "360 g", sucre: "360 g", oeufs: "6", rhum: "60 ml", amandeeffilee: "120 g", sucreglace: "60 g" },
+      { nb: 13, croissant: "13", poudreamande: "390 g", beurre: "390 g", sucre: "390 g", oeufs: "6½", rhum: "65 ml", amandeeffilee: "130 g", sucreglace: "65 g" },
+      { nb: 14, croissant: "14", poudreamande: "420 g", beurre: "420 g", sucre: "420 g", oeufs: "7", rhum: "70 ml", amandeeffilee: "140 g", sucreglace: "70 g" },
+      { nb: 15, croissant: "15", poudreamande: "450 g", beurre: "450 g", sucre: "450 g", oeufs: "7½", rhum: "75 ml", amandeeffilee: "150 g", sucreglace: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥐", titre: "Croissants rassis", detail: "Utiliser des croissants de la veille, voire de l'avant-veille : frais, ils se détrempent.", badge: null },
+      { icone: "🍬", titre: "Sirop", detail: "Faire un sirop léger avec eau, sucre et rhum, et le laisser tiédir.", badge: null },
+      { icone: "🧈", titre: "Crème d'amande", detail: "Travailler beurre pommade, sucre, poudre d'amande et œuf en crème lisse.", badge: null },
+      { icone: "🔪", titre: "Ouvrir", detail: "Fendre les croissants en deux dans l'épaisseur, sans les séparer complètement.", badge: null },
+      { icone: "💧", titre: "Imbiber", detail: "Badigeonner l'intérieur de sirop au pinceau, généreusement mais sans noyer.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Étaler une couche de crème d'amande à l'intérieur, et en déposer un trait sur le dessus.", badge: null },
+      { icone: "🌰", titre: "Amandes", detail: "Parsemer d'amandes effilées, qui vont griller au four.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire vingt minutes à 180 °C, jusqu'à ce que la crème soit prise et dorée, puis sucre glace.", badge: null }
+    ],
+    liees: ["cremedamande"]
   }
 });

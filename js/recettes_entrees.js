@@ -5929,5 +5929,44 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Égoutter, saler et servir aussitôt — ouvert à la fourchette, le jaune doit couler.", badge: null }
     ],
     liees: ["panurepanko"]
+  },
+  croquettesdepoulet: {
+    nom: "Croquettes de Poulet",
+    cat: "entrees", pays: "espagne",
+    base: 4,
+    temps: "40 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍗",
+    dateAjout: "2026-10-01T14:00:00",
+    description: "Une béchamel très épaisse chargée de poulet effiloché, refroidie une nuit puis panée et frite. La façon espagnole de finir un poulet rôti.",
+    tableauCroquettesdepoulet: [
+      { nb: 1, poulet: "100 g", beurre: "25 g", farine: "30 g", lait: "150 ml", oeufs: "½", chapelure: "40 g", muscade: "0.3 g" },
+      { nb: 2, poulet: "200 g", beurre: "50 g", farine: "60 g", lait: "300 ml", oeufs: "1", chapelure: "80 g", muscade: "0.6 g" },
+      { nb: 3, poulet: "300 g", beurre: "75 g", farine: "90 g", lait: "450 ml", oeufs: "1½", chapelure: "120 g", muscade: "0.9 g" },
+      { nb: 4, poulet: "400 g", beurre: "100 g", farine: "120 g", lait: "600 ml", oeufs: "2", chapelure: "160 g", muscade: "1.2 g" },
+      { nb: 5, poulet: "500 g", beurre: "125 g", farine: "150 g", lait: "750 ml", oeufs: "2½", chapelure: "200 g", muscade: "1.5 g" },
+      { nb: 6, poulet: "600 g", beurre: "150 g", farine: "180 g", lait: "900 ml", oeufs: "3", chapelure: "240 g", muscade: "1.8 g" },
+      { nb: 7, poulet: "700 g", beurre: "175 g", farine: "210 g", lait: "1050 ml", oeufs: "3½", chapelure: "280 g", muscade: "2.1 g" },
+      { nb: 8, poulet: "800 g", beurre: "200 g", farine: "240 g", lait: "1200 ml", oeufs: "4", chapelure: "320 g", muscade: "2.4 g" },
+      { nb: 9, poulet: "900 g", beurre: "225 g", farine: "270 g", lait: "1350 ml", oeufs: "4½", chapelure: "360 g", muscade: "2.7 g" },
+      { nb: 10, poulet: "1000 g", beurre: "250 g", farine: "300 g", lait: "1500 ml", oeufs: "5", chapelure: "400 g", muscade: "3 g" },
+      { nb: 11, poulet: "1100 g", beurre: "275 g", farine: "330 g", lait: "1650 ml", oeufs: "5½", chapelure: "440 g", muscade: "3.3 g" },
+      { nb: 12, poulet: "1200 g", beurre: "300 g", farine: "360 g", lait: "1800 ml", oeufs: "6", chapelure: "480 g", muscade: "3.6 g" },
+      { nb: 13, poulet: "1300 g", beurre: "325 g", farine: "390 g", lait: "1950 ml", oeufs: "6½", chapelure: "520 g", muscade: "3.9 g" },
+      { nb: 14, poulet: "1400 g", beurre: "350 g", farine: "420 g", lait: "2100 ml", oeufs: "7", chapelure: "560 g", muscade: "4.2 g" },
+      { nb: 15, poulet: "1500 g", beurre: "375 g", farine: "450 g", lait: "2250 ml", oeufs: "7½", chapelure: "600 g", muscade: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Effilocher", detail: "Effilocher les restes de poulet très finement à la main, en retirant la peau et les cartilages.", badge: null },
+      { icone: "🧈", titre: "Roux", detail: "Faire un roux avec le beurre et la farine et le cuire deux minutes.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Verser le lait chaud en fouettant et cuire jusqu'à obtenir une pâte TRÈS épaisse, qui se décolle du fond.", badge: null },
+      { icone: "🍗", titre: "Garnir", detail: "Incorporer le poulet et la muscade, saler, et cuire encore deux minutes en remuant.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Étaler dans un plat, filmer au contact et laisser une nuit au frigo — l'appareil doit être froid et ferme.", badge: null },
+      { icone: "✋", titre: "Façonner", detail: "Former des boudins ou des boules avec deux cuillères, les mains farinées.", badge: null },
+      { icone: "🍞", titre: "Paner", detail: "Passer dans l'œuf battu puis la chapelure, deux fois pour les plus fragiles.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire à 180 °C deux minutes, jusqu'à ce qu'elles soient dorées, et égoutter sur grille.", badge: null }
+    ],
+    liees: ["pouletrotiperfect"]
   }
 });
