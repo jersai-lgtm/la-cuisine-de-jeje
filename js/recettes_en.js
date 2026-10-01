@@ -1679,40 +1679,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "saladefenouil": {
-  "nom": "Fennel & Orange Salad",
-  "description": "A crisp, tangy winter salad: thinly shaved fennel, orange segments and olives with drizzles of olive oil. Fresh, anise-scented and refreshing.",
-  "etapes": [
-   {
-    "titre": "Shave",
-    "detail": "Trim the fennel and shave it very thinly on a mandoline into translucent slices."
-   },
-   {
-    "titre": "Crisp",
-    "detail": "Drop the fennel slices into a bowl of ice water for 5 min to make them extra crisp and soften their bitterness, then drain well."
-   },
-   {
-    "titre": "Segments",
-    "detail": "Segment the orange with a knife, working over a bowl to catch the juice."
-   },
-   {
-    "titre": "Prep",
-    "detail": "Pit the olives if needed and chop the fresh parsley."
-   },
-   {
-    "titre": "Dressing",
-    "detail": "Whisk together the olive oil, lemon juice and reserved orange juice, then season with salt and pepper."
-   },
-   {
-    "titre": "Assemble",
-    "detail": "Gently toss the fennel, orange segments and olives, then drizzle with the vinaigrette."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Scatter with parsley, add a drizzle of oil and serve well chilled as a light, fragrant starter."
-   }
-  ]
- },
  "saladechoucajou": {
   "nom": "Cabbage, Cilantro & Cashew Slaw",
   "description": "A crunchy, fresh Asian-style salad: shredded cabbage, carrot, cilantro and toasted cashews in a lime dressing. Vitamin-packed and addictive.",
@@ -10936,36 +10902,6 @@ window.RECETTES_EN = {
    {
     "titre": "Let cool slightly",
     "detail": "Let cool slightly before serving. The clafoutis can be enjoyed warm or chilled."
-   }
-  ]
- },
- "fondantchocolat": {
-  "nom": "Chocolate Fondant",
-  "description": "Chocolate fondant with its flowing center — tender on the outside, liquid inside. Ready in 25 minutes!",
-  "etapes": [
-   {
-    "titre": "Melt chocolate and butter",
-    "detail": "Melt together until you have a smooth ganache, then let it cool slightly."
-   },
-   {
-    "titre": "Eggs and sugar",
-    "detail": "Whisk whole eggs with sugar until pale and doubled in volume."
-   },
-   {
-    "titre": "Flour",
-    "detail": "Fold in the sifted flour."
-   },
-   {
-    "titre": "Chocolate",
-    "detail": "Add the cooled melted chocolate and fold gently."
-   },
-   {
-    "titre": "Mold and refrigerate",
-    "detail": "Butter and flour ramekins, fill three-quarters full, and refrigerate. CHEF'S TIP: a long chill, even overnight, guarantees a flowing center."
-   },
-   {
-    "titre": "Bake",
-    "detail": "Place cold ramekins in a very hot oven and remove as soon as the edges are set and the center is still slightly jiggly. Serve immediately."
    }
   ]
  },
@@ -34376,36 +34312,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "On toasted bread, stirred into hot pasta or with burrata. Keeps 5 days chilled under a film of oil."
-   }
-  ]
- },
- "rillettessardines": {
-  "nom": "Sardine Rillettes",
-  "description": "Express sardine rillettes — oil-packed sardines mashed with cream cheese, shallot and lemon. A seaside spread ready in 10 minutes for apéro.",
-  "etapes": [
-   {
-    "titre": "Drain the sardines",
-    "detail": "Drain the oil-packed sardines and remove the central bone if you prefer (it mashes perfectly well too — full of calcium!)."
-   },
-   {
-    "titre": "Mash",
-    "detail": "Mash the sardines with a fork in a bowl — rustic texture, no blender needed."
-   },
-   {
-    "titre": "Bind",
-    "detail": "Stir in the cream cheese and mustard, mix well."
-   },
-   {
-    "titre": "Flavour",
-    "detail": "Add the finely chopped shallot, lemon juice and chives."
-   },
-   {
-    "titre": "Season",
-    "detail": "Pepper generously, salt lightly. CHEF'S TIP: a pinch of Espelette pepper wakes the whole thing up."
-   },
-   {
-    "titre": "Firm up",
-    "detail": "Chill 30 min before serving on toasted bread or blinis — the flavours blend and the texture sets."
    }
   ]
  },
@@ -105988,40 +105894,6 @@ window.RECETTES_EN = {
    {
     "titre": "Generous nutmeg",
     "detail": "It underlines the parsnip's hazelnut note — the only seasoning it needs."
-   }
-  ]
- },
- "carottesglacees": {
-  "nom": "Glazed Carrots",
-  "description": "The classic garnish of the French repertoire: carrots cooked in just enough water for it to evaporate into a syrup. The move is called \"glazing white\" and it is one of the very first taught in a kitchen.",
-  "etapes": [
-   {
-    "titre": "Cut evenly",
-    "detail": "In thick rounds or turned into olive shapes: uneven cuts give raw carrots next to mush."
-   },
-   {
-    "titre": "A single layer",
-    "detail": "A wide pan: stacked, they steam and will never glaze."
-   },
-   {
-    "titre": "Water HALFWAY up",
-    "detail": "No more, no less: too much water means evaporating too long and the carrots collapse."
-   },
-   {
-    "titre": "Butter, sugar and salt from the start",
-    "detail": "All together from cold: the sugar is not there to sweeten but to form the glossy syrup."
-   },
-   {
-    "titre": "A paper lid",
-    "detail": "A disc of baking paper laid directly on the carrots: it lets just enough steam escape."
-   },
-   {
-    "titre": "Watch the end",
-    "detail": "Once the water is nearly gone it happens fast: 30 seconds of inattention and the syrup caramelises."
-   },
-   {
-    "titre": "Roll in the syrup",
-    "detail": "A flick of the wrist, no spoon: every carrot should be lacquered and shining."
    }
   ]
  },

@@ -52542,44 +52542,6 @@ Object.assign(recettes, {
     ],
     liees: ["carottesvichy","veloutepanais","pureecelerirave"]
   },
-  carottesglacees: {
-    dateAjout: "2026-08-07T15:23:00",
-    nom: "Carottes Glacées",
-    cat: "plats", pays: "france",
-    base: 6,
-    temps: "30 min",
-    niveau: "⭐ Facile",
-    emoji: "🥕",
-    description: "La garniture classique du répertoire : des carottes cuites dans juste assez d'eau pour qu'elle s'évapore en sirop. Le geste s'appelle « glacer à blanc » et c'est l'un des tout premiers qu'on apprend en cuisine.",
-    tableauCarottesglacees: [
-      { nb: 1, carotte: "1", beurre: "15 g", sucre: "5 g", persil: "4 g", poivre: "0.5 g", sel: "1.2 g" },
-      { nb: 2, carotte: "2", beurre: "30 g", sucre: "10 g", persil: "8 g", poivre: "1 g", sel: "2.4 g" },
-      { nb: 3, carotte: "4", beurre: "45 g", sucre: "15 g", persil: "12 g", poivre: "1.5 g", sel: "3.6 g" },
-      { nb: 4, carotte: "5", beurre: "60 g", sucre: "20 g", persil: "16 g", poivre: "2 g", sel: "4.8 g" },
-      { nb: 5, carotte: "7", beurre: "75 g", sucre: "25 g", persil: "20 g", poivre: "2.5 g", sel: "6 g" },
-      { nb: 6, carotte: "8", beurre: "90 g", sucre: "30 g", persil: "24 g", poivre: "3 g", sel: "7.2 g" },
-      { nb: 7, carotte: "9", beurre: "105 g", sucre: "35 g", persil: "28 g", poivre: "3.5 g", sel: "8.4 g" },
-      { nb: 8, carotte: "11", beurre: "120 g", sucre: "40 g", persil: "32 g", poivre: "4 g", sel: "9.6 g" },
-      { nb: 9, carotte: "12", beurre: "135 g", sucre: "45 g", persil: "36 g", poivre: "4.5 g", sel: "10.8 g" },
-      { nb: 10, carotte: "14", beurre: "150 g", sucre: "50 g", persil: "40 g", poivre: "5 g", sel: "12 g" },
-      { nb: 11, carotte: "15", beurre: "165 g", sucre: "55 g", persil: "44 g", poivre: "5.5 g", sel: "13.2 g" },
-      { nb: 12, carotte: "16", beurre: "180 g", sucre: "60 g", persil: "48 g", poivre: "6 g", sel: "14.4 g" },
-      { nb: 13, carotte: "18", beurre: "195 g", sucre: "65 g", persil: "52 g", poivre: "6.5 g", sel: "15.6 g" },
-      { nb: 14, carotte: "19", beurre: "210 g", sucre: "70 g", persil: "56 g", poivre: "7 g", sel: "16.8 g" },
-      { nb: 15, carotte: "21", beurre: "225 g", sucre: "75 g", persil: "60 g", poivre: "7.5 g", sel: "18 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥕", titre: "Tailler régulier", detail: "En rondelles épaisses ou tournées en olives : une taille inégale donne des carottes crues à côté de purée.", badge: null },
-      { icone: "🍲", titre: "Une seule couche", detail: "Casserole large : empilées, elles cuisent à la vapeur et ne glaceront jamais.", badge: null },
-      { icone: "💧", titre: "Eau à MI-HAUTEUR", detail: "Ni plus ni moins : trop d'eau, il faut la faire évaporer trop longtemps et les carottes s'écrasent.", badge: null },
-      { icone: "🧈", titre: "Beurre, sucre et sel dès le départ", detail: "Tout ensemble à froid : le sucre n'est pas là pour sucrer mais pour former le sirop brillant.", badge: null },
-      { icone: "📄", titre: "Un couvercle de papier", detail: "Un disque de papier cuisson posé à même les carottes : il laisse s'évaporer juste ce qu'il faut.", badge: null },
-      { icone: "👀", titre: "Surveiller la fin", detail: "Quand l'eau est presque partie, tout va très vite : 30 secondes d'inattention et le sirop caramélise.", badge: null },
-      { icone: "🔄", titre: "Rouler dans le sirop", detail: "Un mouvement de poignet, sans cuillère : chaque carotte doit être laquée et brillante.", badge: null }
-    ],
-    liees: ["petitspoisfrancaise","pommesfondantes","carottesvichy"]
-  },
   rizpilaf: {
     dateAjout: "2026-08-07T15:24:00",
     nom: "Riz Pilaf",

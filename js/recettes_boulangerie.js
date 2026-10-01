@@ -516,7 +516,8 @@ Object.assign(recettes, {
       { icone: "⏳", titre: "Repos", detail: "Envelopper la pâte dans du film alimentaire et laisser reposer à température ambiante. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min minimum" },
       { icone: "📏", titre: "Abaisser", detail: "Diviser la pâte en portions. L'étaler au rouleau ou au laminoir le plus fin possible.", badge: null },
       { icone: "✂️", titre: "Découper", detail: "Découper les feuilles à la taille de votre plat. Fariner légèrement pour éviter qu'elles ne collent. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
-    ]
+    ],
+    liees: ["patesfraichesmaison"]
   },
   painauchocolat: {
     nom: "Pain au Chocolat",
@@ -5083,7 +5084,8 @@ Object.assign(recettes, {
       { icone: "👀", titre: "Transparence", detail: "La bande est à la bonne épaisseur quand on devine sa main au travers.", badge: null },
       { icone: "🔪", titre: "Découper", detail: "Découper en tagliatelles ou en feuilles, fariner et laisser sécher dix minutes sur un torchon.", badge: null },
       { icone: "♨️", titre: "Cuire", detail: "Cuire deux à trois minutes dans une grande eau bouillante salée — une pâte fraîche cuit très vite.", badge: null }
-    ]
+    ],
+    liees: ["lasagne"]
   },
   patewonton: {
     nom: "Pâte à Wonton",

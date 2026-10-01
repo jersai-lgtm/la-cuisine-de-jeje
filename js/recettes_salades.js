@@ -1805,45 +1805,6 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir frais et ouvrir la burrata à table pour que son cœur crémeux se répande sur la salade.", badge: null }
     ]
   },
-  saladefenouil: {
-    nom: "Salade de Fenouil à l'Orange",
-    cat: "salades",
-    pays: "italie",
-    dateAjout: "2026-06-23T14:00:00",
-    saisons: ["hiver"],
-    base: 4,
-    temps: "15 min",
-    niveau: "⭐ Facile",
-    emoji: "🥗",
-    description: "Une salade hivernale croquante et acidulée : fenouil émincé fin, suprêmes d'orange et olives, filés d'huile d'olive. Fraîche, anisée et désaltérante.",
-    tableauSaladefenouil: [
-      { nb: 1, fenouil: "100 g", orange: "60 g", olives: "20 g", huileolive: "10 ml", citron: "5 ml", persil: "3 g" },
-      { nb: 2, fenouil: "200 g", orange: "120 g", olives: "40 g", huileolive: "20 ml", citron: "10 ml", persil: "6 g" },
-      { nb: 3, fenouil: "300 g", orange: "180 g", olives: "60 g", huileolive: "30 ml", citron: "15 ml", persil: "9 g" },
-      { nb: 4, fenouil: "400 g", orange: "240 g", olives: "80 g", huileolive: "40 ml", citron: "20 ml", persil: "12 g" },
-      { nb: 5, fenouil: "500 g", orange: "300 g", olives: "100 g", huileolive: "50 ml", citron: "25 ml", persil: "15 g" },
-      { nb: 6, fenouil: "600 g", orange: "360 g", olives: "120 g", huileolive: "60 ml", citron: "30 ml", persil: "18 g" },
-      { nb: 7, fenouil: "700 g", orange: "420 g", olives: "140 g", huileolive: "70 ml", citron: "35 ml", persil: "21 g" },
-      { nb: 8, fenouil: "800 g", orange: "480 g", olives: "160 g", huileolive: "80 ml", citron: "40 ml", persil: "24 g" },
-      { nb: 9, fenouil: "900 g", orange: "540 g", olives: "180 g", huileolive: "90 ml", citron: "45 ml", persil: "27 g" },
-      { nb: 10, fenouil: "1000 g", orange: "600 g", olives: "200 g", huileolive: "100 ml", citron: "50 ml", persil: "30 g" },
-      { nb: 11, fenouil: "1100 g", orange: "660 g", olives: "220 g", huileolive: "110 ml", citron: "55 ml", persil: "33 g" },
-      { nb: 12, fenouil: "1200 g", orange: "720 g", olives: "240 g", huileolive: "120 ml", citron: "60 ml", persil: "36 g" },
-      { nb: 13, fenouil: "1300 g", orange: "780 g", olives: "260 g", huileolive: "130 ml", citron: "65 ml", persil: "39 g" },
-      { nb: 14, fenouil: "1400 g", orange: "840 g", olives: "280 g", huileolive: "140 ml", citron: "70 ml", persil: "42 g" },
-      { nb: 15, fenouil: "1500 g", orange: "900 g", olives: "300 g", huileolive: "150 ml", citron: "75 ml", persil: "45 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🔪", titre: "Émincer", detail: "Parer le fenouil et l'émincer très finement à la mandoline pour des lamelles translucides.", badge: null },
-      { icone: "🧊", titre: "Croquant", detail: "Plonger les lamelles de fenouil 5 min dans un bol d'eau glacée pour les rendre ultra croquantes et atténuer leur amertume, puis bien les égoutter.", badge: null },
-      { icone: "🍊", titre: "Suprêmes", detail: "Lever les suprêmes d'orange à vif au couteau, au-dessus d'un bol pour récupérer le jus.", badge: null },
-      { icone: "🫒", titre: "Préparer", detail: "Dénoyauter les olives si besoin et ciseler le persil frais.", badge: null },
-      { icone: "🥄", titre: "Vinaigrette", detail: "Fouetter l'huile d'olive, le jus de citron et le jus d'orange récupéré, saler et poivrer.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler délicatement le fenouil, les suprêmes d'orange et les olives, puis arroser de vinaigrette.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Parsemer de persil, donner un filet d'huile et servir bien frais en entrée légère et parfumée.", badge: null }
-    ]
-  },
   saladechoucajou: {
     nom: "Salade de Chou, Coriandre & Cajou",
     cat: "salades",

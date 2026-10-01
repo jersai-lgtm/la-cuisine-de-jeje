@@ -96,37 +96,6 @@ Object.assign(recettes, {
       { icone: "🥖", titre: "Servir", detail: "Sur des toasts grillés, dans des pâtes chaudes ou avec une burrata. Se garde 5 jours au frais sous un filet d'huile.", badge: null }
     ]
   },
-  rillettessardines: {
-    nom: "Rillettes de sardines",
-    cat: "tartinables", pays: "france",
-    dateAjout: "2026-07-07T19:00:00",
-    base: 1,
-    temps: "10 min",
-    niveau: "⭐ Facile",
-    emoji: "🐟",
-    description: "Rillettes de sardines express — sardines à l'huile écrasées avec fromage frais, échalote et citron. La tartinade marine prête en 10 minutes pour l'apéro.",
-    tableauRillettesSardines: [
-      { nb: 1, sardine: "200 g", fromagefrais: "120 g", echalote: "30 g", citron: "20 g", ciboulette: "5 g", moutarde: "10 g" },
-      { nb: 2, sardine: "400 g", fromagefrais: "240 g", echalote: "60 g", citron: "40 g", ciboulette: "10 g", moutarde: "20 g" },
-      { nb: 3, sardine: "600 g", fromagefrais: "360 g", echalote: "90 g", citron: "60 g", ciboulette: "15 g", moutarde: "30 g" },
-      { nb: 4, sardine: "800 g", fromagefrais: "480 g", echalote: "120 g", citron: "80 g", ciboulette: "20 g", moutarde: "40 g" },
-      { nb: 5, sardine: "1000 g", fromagefrais: "600 g", echalote: "150 g", citron: "100 g", ciboulette: "25 g", moutarde: "50 g" },
-      { nb: 6, sardine: "1200 g", fromagefrais: "720 g", echalote: "180 g", citron: "120 g", ciboulette: "30 g", moutarde: "60 g" },
-      { nb: 7, sardine: "1400 g", fromagefrais: "840 g", echalote: "210 g", citron: "140 g", ciboulette: "35 g", moutarde: "70 g" },
-      { nb: 8, sardine: "1600 g", fromagefrais: "960 g", echalote: "240 g", citron: "160 g", ciboulette: "40 g", moutarde: "80 g" },
-      { nb: 9, sardine: "1800 g", fromagefrais: "1080 g", echalote: "270 g", citron: "180 g", ciboulette: "45 g", moutarde: "90 g" },
-      { nb: 10, sardine: "2000 g", fromagefrais: "1200 g", echalote: "300 g", citron: "200 g", ciboulette: "50 g", moutarde: "100 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🐟", titre: "Égoutter les sardines", detail: "Égoutter les sardines à l'huile et retirer l'arête centrale si vous préférez (elle s'écrase très bien aussi, c'est plein de calcium !).", badge: null },
-      { icone: "🍴", titre: "Écraser", detail: "Écraser les sardines à la fourchette dans un saladier — texture rustique, pas besoin de mixeur.", badge: null },
-      { icone: "🧀", titre: "Lier", detail: "Incorporer le fromage frais et la moutarde, bien mélanger.", badge: null },
-      { icone: "🧅", titre: "Parfumer", detail: "Ajouter l'échalote finement ciselée, le jus de citron et la ciboulette.", badge: null },
-      { icone: "🧂", titre: "Assaisonner", detail: "Poivrer généreusement, saler légèrement. ASTUCE CHEF : un trait de piment d'Espelette réveille le tout.", badge: null },
-      { icone: "❄️", titre: "Raffermir", detail: "Réserver 30 min au frais avant de servir sur pain grillé ou blinis — les saveurs se marient et la texture se raffermit.", badge: "⏱ 30 min" }
-    ]
-  },
   tarama: {
     nom: "Tarama maison",
     cat: "tartinables", pays: "grece",
@@ -1958,7 +1927,7 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Beaucoup de citron, plus qu'on ne croit", detail: "La sardine est grasse : sans acidité franche, la tartinade est lourde et écœurante au troisième toast.", badge: null },
       { icone: "❄️", titre: "Deux heures au frais avant de servir", detail: "Le fromage doit raffermir. Servie tout de suite, elle coule du pain.", badge: null }
     ],
-    liees: ["rillettessardines","rillettesthon","tapenade"]
+    liees: ["rillettesthon","tapenade"]
   },
   cancoillotteail: {
     dateAjout: "2026-09-01T14:04:00",
