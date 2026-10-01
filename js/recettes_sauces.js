@@ -1945,7 +1945,7 @@ mayonnaise: {
   ssamjang: {
     dateAjout: "2026-07-28T13:09:00",
     nom: "Ssamjang",
-    cat: "sauces", pays: "coreedusud",
+    cat: "sauces", pays: "coree",
     base: 4,
     temps: "10 min",
     niveau: "⭐ Facile",

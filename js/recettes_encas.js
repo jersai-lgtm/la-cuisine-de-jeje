@@ -4405,7 +4405,7 @@ Object.assign(recettes, {
   samboosa: {
     dateAjout: "2026-07-10T10:08:00",
     nom: "Samboosa",
-    cat: "encas", pays: "arabie",
+    cat: "encas", pays: "arabiesaoudite",
     base: 4,
     temps: "50 min",
     niveau: "⭐⭐ Moyen",
@@ -5897,7 +5897,7 @@ Object.assign(recettes, {
   firifiri: {
     dateAjout: "2026-07-22T12:02:00",
     nom: "Firi Firi",
-    cat: "encas", pays: "polynesiefrancaise",
+    cat: "encas", pays: "polynesie",
     base: 4,
     temps: "1h30",
     niveau: "⭐⭐ Moyen",
@@ -7083,7 +7083,7 @@ Object.assign(recettes, {
   buchujeon: {
     dateAjout: "2026-07-29T14:09:00",
     nom: "Buchujeon",
-    cat: "encas", pays: "coreedusud",
+    cat: "encas", pays: "coree",
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",

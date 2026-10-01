@@ -33314,7 +33314,7 @@ Object.assign(recettes, {
   shannoodles: {
     dateAjout: "2026-07-10T10:20:00",
     nom: "Nouilles Shan",
-    cat: "plats", pays: "birmanie",
+    cat: "plats", pays: "myanmar",
     base: 4,
     temps: "30 min",
     niveau: "⭐⭐ Moyen",
@@ -39711,7 +39711,7 @@ Object.assign(recettes, {
   stewsaltfishnevis: {
     dateAjout: "2026-07-16T12:08:00",
     nom: "Saltfish et Dumplings",
-    cat: "plats", pays: "nevis",
+    cat: "plats", pays: "saintkitts",
     base: 4,
     temps: "50 min",
     niveau: "⭐⭐ Moyen",
@@ -42153,7 +42153,7 @@ Object.assign(recettes, {
   galbi: {
     dateAjout: "2026-07-27T09:06:00",
     nom: "Galbi",
-    cat: "plats", pays: "coreedusud",
+    cat: "plats", pays: "coree",
     base: 4,
     temps: "30 min + marinade",
     niveau: "⭐⭐ Moyen",
@@ -42895,7 +42895,7 @@ Object.assign(recettes, {
   kimchibokkeumbap: {
     dateAjout: "2026-07-27T19:04:00",
     nom: "Kimchi Bokkeumbap",
-    cat: "plats", pays: "coreedusud",
+    cat: "plats", pays: "coree",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",

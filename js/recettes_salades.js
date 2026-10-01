@@ -2860,7 +2860,7 @@ Object.assign(recettes, {
   lahpetthoke: {
     dateAjout: "2026-07-22T14:08:00",
     nom: "Lahpet Thoke",
-    cat: "salades", pays: "birmanie",
+    cat: "salades", pays: "myanmar",
     base: 4,
     temps: "30 min + infusion",
     niveau: "⭐⭐ Moyen",
@@ -3157,7 +3157,7 @@ Object.assign(recettes, {
   oimuchim: {
     dateAjout: "2026-07-26T10:06:00",
     nom: "Oi Muchim",
-    cat: "salades", pays: "coreedusud",
+    cat: "salades", pays: "coree",
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -3417,7 +3417,7 @@ Object.assign(recettes, {
   musaengchae: {
     dateAjout: "2026-07-29T14:05:00",
     nom: "Musaengchae",
-    cat: "salades", pays: "coreedusud",
+    cat: "salades", pays: "coree",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",

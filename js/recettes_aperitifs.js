@@ -2905,7 +2905,7 @@ tapenade: {
   ulkoy: {
     dateAjout: "2026-07-15T12:06:00",
     nom: "Ulkoy",
-    cat: "aperitifs", pays: "palau",
+    cat: "aperitifs", pays: "palaos",
     base: 4,
     temps: "35 min",
     niveau: "⭐ Facile",
@@ -3534,7 +3534,7 @@ tapenade: {
   yachaejeon: {
     dateAjout: "2026-07-26T12:06:00",
     nom: "Yachaejeon",
-    cat: "aperitifs", pays: "coreedusud",
+    cat: "aperitifs", pays: "coree",
     base: 4,
     temps: "30 min",
     niveau: "⭐⭐ Moyen",

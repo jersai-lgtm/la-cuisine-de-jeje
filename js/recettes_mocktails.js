@@ -1154,7 +1154,7 @@ Object.assign(recettes, {
   sujeonggwa: {
     dateAjout: "2026-07-26T15:05:00",
     nom: "Sujeonggwa",
-    cat: "mocktails", pays: "coreedusud",
+    cat: "mocktails", pays: "coree",
     base: 4,
     temps: "40 min + frais",
     niveau: "⭐ Facile",
@@ -1191,7 +1191,7 @@ Object.assign(recettes, {
   sikhye: {
     dateAjout: "2026-07-26T15:06:00",
     nom: "Sikhye",
-    cat: "mocktails", pays: "coreedusud",
+    cat: "mocktails", pays: "coree",
     base: 4,
     temps: "1 h + infusion",
     niveau: "⭐⭐ Moyen",
@@ -1524,7 +1524,7 @@ Object.assign(recettes, {
   yuja: {
     dateAjout: "2026-07-28T15:05:00",
     nom: "Thé au Citron Confit",
-    cat: "mocktails", pays: "coreedusud",
+    cat: "mocktails", pays: "coree",
     base: 4,
     temps: "30 min + 3 j",
     niveau: "⭐ Facile",

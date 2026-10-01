@@ -3295,7 +3295,7 @@ oeufmayo: {
   shantofu: {
     dateAjout: "2026-07-24T11:00:00",
     nom: "Tofu Shan",
-    cat: "entrees", pays: "birmanie",
+    cat: "entrees", pays: "myanmar",
     base: 4,
     temps: "30 min + prise",
     niveau: "⭐⭐ Moyen",
@@ -3962,7 +3962,7 @@ oeufmayo: {
   sigeumchinamul: {
     dateAjout: "2026-07-29T14:00:00",
     nom: "Sigeumchi Namul",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -3999,7 +3999,7 @@ oeufmayo: {
   kongnamul: {
     dateAjout: "2026-07-29T14:01:00",
     nom: "Kongnamul Muchim",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -4036,7 +4036,7 @@ oeufmayo: {
   gamjajorim: {
     dateAjout: "2026-07-29T14:02:00",
     nom: "Gamja Jorim",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -4073,7 +4073,7 @@ oeufmayo: {
   dubujorim: {
     dateAjout: "2026-07-29T14:03:00",
     nom: "Dubu Jorim",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -4110,7 +4110,7 @@ oeufmayo: {
   kkakdugi: {
     dateAjout: "2026-07-29T14:04:00",
     nom: "Kkakdugi",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "40 min + 3 j",
     niveau: "⭐⭐ Moyen",
@@ -4147,7 +4147,7 @@ oeufmayo: {
   jangjorim: {
     dateAjout: "2026-07-29T14:06:00",
     nom: "Jangjorim",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "1h15",
     niveau: "⭐⭐ Moyen",
@@ -4184,7 +4184,7 @@ oeufmayo: {
   gajinamul: {
     dateAjout: "2026-07-29T14:07:00",
     nom: "Gaji Namul",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -4221,7 +4221,7 @@ oeufmayo: {
   kongjaban: {
     dateAjout: "2026-07-29T14:08:00",
     nom: "Kongjaban",
-    cat: "entrees", pays: "coreedusud",
+    cat: "entrees", pays: "coree",
     base: 4,
     temps: "1h + trempage",
     niveau: "⭐ Facile",
