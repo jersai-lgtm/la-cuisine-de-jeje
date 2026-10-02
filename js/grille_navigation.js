@@ -27,11 +27,19 @@
   }
   // La grille vide sert à deux endroits : les filtres sans résultat et l'onglet Favoris.
   // On reconnaît Favoris à sa barre de chips (pas de variable globale à tenir à jour).
-  function enVueFavoris() {
+  // v5.3.11 : il ne suffit pas de savoir qu'on est dans Favoris, il faut savoir
+  // SUR QUELLE CHIP — sinon « Menus favoris » et « Mes recettes » héritaient du
+  // message des recettes favorites (« touche le 🤍 d'une recette »), hors sujet.
+  function vueFavoris() {
     const chips = document.getElementById("filtres-favoris-chips");
-    const chipRec = document.getElementById("chip-fav-recettes");
-    return !!(chips && chips.style.display !== "none" && chipRec && chipRec.classList.contains("active"));
+    if (!chips || chips.style.display === "none") return "";
+    const actif = (id) => !!document.getElementById(id)?.classList.contains("active");
+    if (actif("chip-fav-recettes")) return "recettes";
+    if (actif("chip-fav-menus")) return "menus";
+    if (actif("chip-fav-mesrecettes")) return "perso";
+    return "";
   }
+  function enVueFavoris() { return !!vueFavoris(); }
 
   // v5.2.3 : le message dépend de l'endroit. Sans compte, Favoris ouvrait la fenêtre de
   // connexion en pleine figure sans rien expliquer — maintenant l'onglet se présente.
@@ -49,6 +57,39 @@
         '<p class="grille-vide-note">' +
           (en ? "With a free account, you find them on all your devices."
               : "Avec un compte (gratuit), tu les retrouves sur tous tes appareils.") + "</p>";
+    }
+    if (cle === "menus-visiteur") {
+      return '<div class="grille-vide-emoji">📅</div>' +
+        '<p class="grille-vide-titre">' + (en ? "Your weekly menus, kept here" : "Tes menus de la semaine, gardés ici") + "</p>" +
+        '<p class="grille-vide-sous">' + (en ? "Generate a menu, then tap ❤️ to find it again."
+                                             : "Génère un menu, puis touche ❤️ pour le retrouver.") + "</p>" +
+        '<div class="grille-vide-actions">' +
+          '<button class="grille-vide-btn" type="button" ' +
+          "onclick=\"document.querySelectorAll('.nav-bottom .nav-btn')[3].click()\">📅 " +
+          (en ? "Build a menu" : "Composer un menu") + "</button>" +
+          '<button class="grille-vide-btn" type="button" onclick="ouvrirModalAuth()">👤 ' + (en ? "Sign in" : "Me connecter") + "</button></div>" +
+        '<p class="grille-vide-note">' +
+          (en ? "Saved menus need a free account — then they follow you everywhere."
+              : "Garder un menu demande un compte (gratuit) : il te suit ensuite partout.") + "</p>";
+    }
+    if (cle === "perso-visiteur") {
+      return '<div class="grille-vide-emoji">📝</div>' +
+        '<p class="grille-vide-titre">' + (en ? "Your own recipes" : "Tes recettes à toi") + "</p>" +
+        '<p class="grille-vide-sous">' + (en ? "Family recipes, with photo, ingredients and steps — kept apart from the catalogue."
+                                             : "Les recettes de famille, avec photo, ingrédients et étapes — rangées à part du catalogue.") + "</p>" +
+        '<div class="grille-vide-actions">' + versRecettes +
+          '<button class="grille-vide-btn" type="button" onclick="ouvrirModalAuth()">👤 ' + (en ? "Sign in" : "Me connecter") + "</button></div>" +
+        '<p class="grille-vide-note">' +
+          (en ? "Writing your own needs a free account, so nothing gets lost."
+              : "Écrire les tiennes demande un compte (gratuit), pour ne rien perdre.") + "</p>";
+    }
+    if (cle === "perso") {
+      return '<div class="grille-vide-emoji">📝</div>' +
+        '<p class="grille-vide-titre">' + (en ? "No recipe of your own yet" : "Aucune recette perso pour l'instant") + "</p>" +
+        '<p class="grille-vide-sous">' + (en ? "These are yours, kept apart from the catalogue."
+                                             : "Ce sont tes recettes à toi, rangées à part du catalogue.") + "</p>" +
+        '<div class="grille-vide-actions"><button class="grille-vide-btn" type="button" onclick="ouvrirContribution()">➕ ' +
+          (en ? "Write a recipe" : "Écrire une recette") + "</button></div>";
     }
     if (cle === "favoris") {
       return '<div class="grille-vide-emoji">❤️</div>' +
@@ -166,7 +207,7 @@
       ev = document.createElement("div");
       ev.id = "grille-vide";
       ev.style.display = "none";
-      ev.dataset.contexte = "filtres";
+      ev.dataset.contexte = "filtres@" + (window.LANG === "en" ? "en" : "fr");
       ev.innerHTML = contenuEtatVide("filtres");
       g.appendChild(ev);
     }
@@ -205,16 +246,23 @@
       const mots = q ? motsRequete(q) : [];
       if (mots.length) {
         const cle = "recherche:" + mots.map(m => m.mot).join("+");
-        if (ev.dataset.contexte !== cle) {
-          ev.dataset.contexte = cle;
+        const cleL = cle + "@" + (window.LANG === "en" ? "en" : "fr");
+        if (ev.dataset.contexte !== cleL) {
+          ev.dataset.contexte = cleL;
           ev.innerHTML = contenuRechercheVide(q, mots, null);
-          if (mots.length >= 2) planifierPistes(mots, cle);
+          if (mots.length >= 2) planifierPistes(mots, cleL);
         }
       } else {
-        const cle = enVueFavoris() ? (window.currentUser ? "favoris" : "favoris-visiteur") : "filtres";
+        const v = vueFavoris();
+        const cle = !v ? "filtres"
+          // « menus » connecte n'existe pas : filtrerMenusFavoris masque alors la
+          // grille pour rendre sa propre section, qui porte son message.
+          : (v === "recettes" ? (window.currentUser ? "favoris" : "favoris-visiteur")
+                              : v + (window.currentUser ? "" : "-visiteur"));
         // On ne réécrit que si le contexte change : l'observateur qui appelle maj()
         // surveille cette grille, une réécriture systématique tournerait en boucle.
-        if (ev.dataset.contexte !== cle) { ev.dataset.contexte = cle; ev.innerHTML = contenuEtatVide(cle); }
+        const cleL = cle + "@" + (window.LANG === "en" ? "en" : "fr");
+        if (ev.dataset.contexte !== cleL) { ev.dataset.contexte = cleL; ev.innerHTML = contenuEtatVide(cle); }
       }
     }
     const want = (enGrille && n === 0) ? "" : "none";

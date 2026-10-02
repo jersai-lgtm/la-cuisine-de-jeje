@@ -1401,7 +1401,18 @@ function filtrerMesRecettes() {
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('btn-favoris')?.classList.add('active');
 
-  if (!window.currentUser) { ouvrirModalAuth(); return; }
+  if (!window.currentUser) {
+    // v5.3.11 : même principe que les recettes favorites en v5.2.3 — on ne jette
+    // plus la fenêtre de connexion à la figure. La vue se présente, et la connexion
+    // est proposée DANS l'état vide (js/grille_navigation.js).
+    if (typeof basculeVersGrille === "function") basculeVersGrille();
+    document.getElementById("section-menus-favoris")?.style.setProperty("display", "none");
+    document.getElementById("msg-no-mesrecettes")?.remove();
+    document.querySelectorAll(".carte").forEach(c => { c.style.display = "none"; });
+    if (typeof majCompteurGrille === "function") majCompteurGrille();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
 
   // Basculer vers la grille
   if (typeof basculeVersGrille === "function") basculeVersGrille();
@@ -1419,20 +1430,10 @@ function filtrerMesRecettes() {
     else c.style.display = 'none';
   });
 
-  // Message + bouton de création si aucune recette perso
-  let msg = document.getElementById('msg-no-mesrecettes');
-  if (count === 0) {
-    if (!msg) {
-      msg = document.createElement('p');
-      msg.id = 'msg-no-mesrecettes';
-      msg.style.cssText = 'text-align:center;color:#888;padding:40px;grid-column:1/-1;font-size:15px';
-      msg.innerHTML = `📝 Tu n'as pas encore de recette perso.<br><small>Ce sont tes recettes à toi, séparées du catalogue.</small><br>`
-        + `<button onclick="ouvrirContribution()" style="margin-top:16px;padding:10px 18px;border:none;border-radius:10px;background:#ff8c42;color:#fff;font-weight:600;cursor:pointer">➕ Créer une recette</button>`;
-      document.getElementById('section-cartes')?.appendChild(msg);
-    }
-  } else if (msg) {
-    msg.remove();
-  }
+  // L'état vide est rendu par le composant commun (js/grille_navigation.js,
+  // clé « perso ») : le message maison qui vivait ici s'empilait avec lui.
+  document.getElementById('msg-no-mesrecettes')?.remove();
+
   if (typeof appliquerTriNoteSiActif === "function") appliquerTriNoteSiActif();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -1446,7 +1447,18 @@ function filtrerMenusFavoris() {
   const chipsRec = document.getElementById("filtres-chips");
   if (chipsRec) chipsRec.style.display = "none";
 
-  if (!window.currentUser) { ouvrirModalAuth(); return; }
+  if (!window.currentUser) {
+    // v5.3.11 : même principe que les recettes favorites en v5.2.3 — on ne jette
+    // plus la fenêtre de connexion à la figure. La vue se présente, et la connexion
+    // est proposée DANS l'état vide (js/grille_navigation.js).
+    if (typeof basculeVersGrille === "function") basculeVersGrille();
+    document.getElementById("section-menus-favoris")?.style.setProperty("display", "none");
+    document.getElementById("msg-no-mesrecettes")?.remove();
+    document.querySelectorAll(".carte").forEach(c => { c.style.display = "none"; });
+    if (typeof majCompteurGrille === "function") majCompteurGrille();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
 
   // Masquer TOUTES les autres sections (accueil, grille, calculateur, planificateur)
   fermerSousMenus();
@@ -1483,12 +1495,15 @@ function filtrerMenusFavoris() {
 
   // Remplir avec la liste des menus favoris
   const menusFavs = window.userProfile?.menusFavoris || [];
-  let html = `<h2 style="color:var(--accent-soft,#ff8fb3);margin:16px 0 12px 0;font-size:22px">❤️ Mes Menus Favoris</h2>`;
+  let html = `<h2 style="color:var(--accent-soft,#ff8fb3);margin:16px 0 12px 0;font-size:22px">❤️ ${window.LANG === "en" ? "My saved menus" : "Mes Menus Favoris"}</h2>`;
 
   if (menusFavs.length === 0) {
+    const _en = (window.LANG === "en");
     html += `<p style="text-align:center;color:#888;padding:40px;font-size:15px;background:rgba(255,255,255,.03);border-radius:12px">
-      Aucun menu favori pour l'instant.<br>
-      <small style="opacity:.7">Sauvegardez vos menus préférés depuis l'écran Menus avec 🤍 !</small>
+      ${_en ? "No saved menu yet." : "Aucun menu gardé pour l'instant."}<br>
+      <small style="opacity:.7">${_en ? "From the Menus tab, tap ❤️ on a menu you like."
+                                      : "Depuis l'onglet Menus, touche ❤️ sur un menu qui te plaît."}</small><br>
+      <button onclick="document.querySelectorAll('.nav-bottom .nav-btn')[3].click()" style="margin-top:16px;padding:10px 18px;border:none;border-radius:10px;background:#ff8c42;color:#fff;font-weight:600;cursor:pointer">📅 ${_en ? "Build a menu" : "Composer un menu"}</button>
     </p>`;
   } else {
     html += `<div style="display:grid;gap:10px">`;
