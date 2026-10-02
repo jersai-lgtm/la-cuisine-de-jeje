@@ -60,7 +60,7 @@
       await navigator.clipboard.writeText(payload.text);
       if (typeof afficherToast === "function") afficherToast("📋 Liste copiée — colle-la dans WhatsApp/SMS");
     } catch (e) {
-      try { prompt("Copie ta liste de courses :", payload.text); } catch (e2) {}
+      try { prompt(window.LANG === "en" ? "Copy your shopping list:" : "Copie ta liste de courses :", payload.text); } catch (e2) {}
     }
   };
 

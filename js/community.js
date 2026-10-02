@@ -251,8 +251,8 @@ window.refuserAstuce = async function (id) {
   const db = _dbCom();
   if (!db || !_estAdminCom()) return;
   const ok = (typeof confirmerAction === "function")
-    ? await confirmerAction("Refuser et supprimer ce commentaire ?")
-    : confirm("Refuser et supprimer ce commentaire ?");
+    ? await confirmerAction(window.LANG === "en" ? "Reject and delete this comment?" : "Refuser et supprimer ce commentaire ?")
+    : confirm(window.LANG === "en" ? "Reject and delete this comment?" : "Refuser et supprimer ce commentaire ?");
   if (!ok) return;
   try {
     await db.collection("astuces").doc(id).delete();
@@ -266,8 +266,8 @@ window.supprimerAstuce = async function (id) {
   const db = _dbCom();
   if (!db || !_estAdminCom()) return;
   const ok = (typeof confirmerAction === "function")
-    ? await confirmerAction("Supprimer définitivement ce commentaire publié ?")
-    : confirm("Supprimer définitivement ce commentaire publié ?");
+    ? await confirmerAction(window.LANG === "en" ? "Permanently delete this published comment?" : "Supprimer définitivement ce commentaire publié ?")
+    : confirm(window.LANG === "en" ? "Permanently delete this published comment?" : "Supprimer définitivement ce commentaire publié ?");
   if (!ok) return;
   try {
     await db.collection("astuces").doc(id).delete();
@@ -550,7 +550,7 @@ window.approuverPhoto = async function (id) {
 window.refuserPhoto = async function (id) {
   var db = _dbCom();
   if (!db || !_estAdminCom()) return;
-  var ok = (typeof confirmerAction === "function") ? await confirmerAction("Refuser et supprimer cette photo ?") : confirm("Refuser et supprimer cette photo ?");
+  var ok = (typeof confirmerAction === "function") ? await confirmerAction(window.LANG === "en" ? "Reject and delete this photo?" : "Refuser et supprimer cette photo ?") : confirm("Refuser et supprimer cette photo ?");
   if (!ok) return;
   try {
     var doc = await db.collection("photos").doc(id).get();
@@ -564,7 +564,7 @@ window.refuserPhoto = async function (id) {
 window.supprimerPhoto = async function (id) {
   var db = _dbCom();
   if (!db || !_estAdminCom()) return;
-  var ok = (typeof confirmerAction === "function") ? await confirmerAction("Supprimer définitivement cette photo ?") : confirm("Supprimer définitivement cette photo ?");
+  var ok = (typeof confirmerAction === "function") ? await confirmerAction(window.LANG === "en" ? "Permanently delete this photo?" : "Supprimer définitivement cette photo ?") : confirm("Supprimer définitivement cette photo ?");
   if (!ok) return;
   try {
     var doc = await db.collection("photos").doc(id).get();

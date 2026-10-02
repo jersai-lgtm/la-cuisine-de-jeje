@@ -42,7 +42,9 @@ function maRoleParCat(key) {
 function maConfirmRemp(jour, lbl, actuelKey, newKey) {
   const a = (typeof getNomRecette === "function") ? getNomRecette(actuelKey) : actuelKey;
   const n = (typeof getNomRecette === "function") ? getNomRecette(newKey) : newKey;
-  return confirm(jour + " " + lbl + " contient déjà « " + a + " ».\n\nLe remplacer par « " + n + " » ?");
+  return confirm(window.LANG === "en"
+    ? jour + " " + lbl + " already holds \u00ab " + a + " \u00bb.\n\nReplace it with \u00ab " + n + " \u00bb?"
+    : jour + " " + lbl + " contient déjà \u00ab " + a + " \u00bb.\n\nLe remplacer par \u00ab " + n + " \u00bb ?");
 }
 
 // Bouton injecté en haut de la fiche recette
@@ -167,7 +169,12 @@ function maValider() {
     const rempli = (cur.semaine || []).some(function (j) {
       return (j.midi && (j.midi.recette || j.midi.plat || j.midi.entree || j.midi.dessert)) || (j.soir && (j.soir.recette || j.soir.plat));
     });
-    if (rempli && !confirm("Ton menu actuel (" + (curType === "lunchbox" ? "lunch box" : "semaine") + ") sera remplacé par un menu " + (newType === "lunchbox" ? "lunch box" : "semaine") + ".\n\nContinuer ?")) return;
+    const _nomType = (t) => (window.LANG === "en")
+      ? (t === "lunchbox" ? "lunch box" : "weekly")
+      : (t === "lunchbox" ? "lunch box" : "semaine");
+    if (rempli && !confirm(window.LANG === "en"
+      ? "Your current " + _nomType(curType) + " menu will be replaced by a " + _nomType(newType) + " menu.\n\nCarry on?"
+      : "Ton menu actuel (" + _nomType(curType) + ") sera remplacé par un menu " + _nomType(newType) + ".\n\nContinuer ?")) return;
   }
 
   const m = maGetMenu(s.dest);
@@ -179,7 +186,9 @@ function maValider() {
     window._lunchboxActif = true; window._planMode = "lunchbox";
   } else if (s.dest === "simple") {
     if (window._formatRepas === "complet" && curType === "semaine") {
-      alert("Ton menu de la semaine est au format Entrée / Plat / Dessert.\nUtilise « Repas complet », ou régénère un menu simple depuis le planificateur.");
+      alert(window.LANG === "en"
+        ? "Your weekly menu uses the Starter / Main / Dessert format.\nUse \u00ab Full meal \u00bb, or generate a simple menu again from the planner."
+        : "Ton menu de la semaine est au format Entrée / Plat / Dessert.\nUtilise \u00ab Repas complet \u00bb, ou régénère un menu simple depuis le planificateur.");
       return;
     }
     const actuel = jour[s.creneau] && jour[s.creneau].recette;

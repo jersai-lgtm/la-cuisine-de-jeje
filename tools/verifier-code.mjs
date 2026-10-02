@@ -200,22 +200,85 @@ function regleCleLangue() {
 }
 
 // =============================================================================
-// 5. INTERFACE QUI N'EXISTE QU'EN FRANÇAIS  (avertissement)
+// 5. CHAÎNE AFFICHÉE SANS TRADUCTION  (bloquant)
 // -----------------------------------------------------------------------------
-// Incident 02/10/2026 : la vue « Menus favoris » connectée (titre + message
-// d'état vide) était en français seulement, dans une appli bilingue.
+// Incident 02/10/2026 : plusieurs vues (avis, communauté, collections, ajout au
+// menu, partage) affichaient du français en mode anglais. La première version
+// de cette règle cherchait `window.LANG` dans le fichier — à côté de la plaque :
+// l'appli traduit par un DICTIONNAIRE central + un observateur de mutations
+// (js/i18n.js), donc un fichier sans window.LANG peut être parfaitement traduit.
+// Ce qui compte vraiment : toute chaîne affichée doit avoir son entrée exacte
+// dans le dictionnaire. C'est ça qu'on mesure ici.
+//
+// ⚠️ Les boîtes natives (alert / confirm / prompt) ne passent PAS par
+// l'observateur : celles-là demandent une branche de langue dans le code.
 // =============================================================================
-function regleBilingue() {
-  for (const f of FICHIERS_JS) {
+function dictionnaire() {
+  const g = {};
+  const sauve = globalThis.window;
+  globalThis.window = globalThis;
+  for (const f of ["i18n_dict.js", "i18n_ingredients.js", "i18n_noms.js", "i18n_aide.js"]) {
     const src = lire("js/" + f);
     if (src === null) continue;
-    const faitDeLUI = /\.id\s*=\s*["'`][a-z0-9-]*(banner|overlay|modal)/i.test(src) ||
-                      /grille-vide|etat-vide|empty-state/i.test(src);
-    if (!faitDeLUI) continue;
-    if (/window\.LANG|LANG\s*===\s*["']en["']/.test(src)) { ok.push(`js/${f} gère les deux langues`); continue; }
-    signaler(avertissements, "vue-monolingue", "js/" + f, 1,
-      "construit de l'interface sans jamais tester la langue",
-      "l'appli est bilingue (window.LANG) : un texte codé en dur ne sera jamais traduit.", src);
+    try { (0, eval)(src); } catch (e) {}
+  }
+  Object.assign(g, globalThis.I18N_DICT || {}, globalThis.I18N_ING || {},
+                   globalThis.I18N_NOMS || {}, globalThis.I18N_AIDE || {});
+  // le petit lot de secours vit en dur dans i18n.js
+  const moteur = lire("js/i18n.js") || "";
+  const seed = moteur.slice(moteur.indexOf("const SEED = {"), moteur.indexOf("};", moteur.indexOf("const SEED = {")));
+  for (const m of seed.matchAll(/"((?:[^"\\]|\\.)+)"\s*:\s*"/g)) g[m[1].replace(/\\"/g, '"')] = 1;
+  globalThis.window = sauve;
+  return g;
+}
+
+// Le CLIQUET : ces fichiers ont été passés en revue et sont à zéro. Toute
+// nouvelle chaîne française non traduite y est BLOQUANTE — c'est ce qui empêche
+// la régression. Pour le reste de l'appli, on se contente de compter : 364
+// chaînes attendent encore leur traduction, les bloquer arrêterait tout.
+// Quand un fichier est mis à jour, l'ajouter ici.
+const FICHIERS_A_JOUR = [
+  "agenda.js", "amelioration.js", "app_avis.js", "community.js",
+  "favoris_collections.js", "menu_ajout.js", "onboarding.js",
+  "partage_courses.js", "partage_menu.js", "whatsnew.js",
+];
+const resteATraduire = [];
+
+const ACCENT_FR = /[àâäçéèêëîïôöùûüœæ]/i;
+const MOTS_FR = /\b(le|la|les|un|une|des|du|de|et|ou|tu|ton|ta|tes|ne|pas|pour|avec|sans|dans|sur|est|sont|plus|tout|tous|que|qui|aux|cette|mes|mon|ma|par|en|son|sa|aucun|aucune|quel|quelle)\b/i;
+
+function regleTraductions() {
+  const DICT = dictionnaire();
+  if (!Object.keys(DICT).length) return;             // dictionnaire illisible : on se tait
+  const CH = "(?:[^'\\\\]|\\\\.)";
+  const CH2 = '(?:[^"\\\\]|\\\\.)';
+  for (const f of FICHIERS_JS) {
+    if (/^recettes|^i18n/.test(f)) continue;
+    const src = lire("js/" + f);
+    if (src === null) continue;
+    const vus = new Set();
+    const surveille = FICHIERS_A_JOUR.includes(f);
+    const pousser = (brut, index) => {
+      const t = String(brut).replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\s+/g, " ").trim();
+      if (t.length < 3 || t.length > 120) return;
+      if (/[<>{}]|\$\{|=>|escHTML|_echap|\|\|/.test(t)) return;
+      if (/\\$/.test(t)) return;
+      if (!(ACCENT_FR.test(t) || MOTS_FR.test(t)) || !/[a-zà-ÿ]{3}/i.test(t)) return;
+      if (DICT[t] || vus.has(t)) return;
+      vus.add(t);
+      if (!surveille) { resteATraduire.push("js/" + f + ":" + ligneDe(src, index) + "  « " + t + " »"); return; }
+      signaler(bloquants, "chaine-sans-traduction", "js/" + f, ligneDe(src, index),
+        "« " + t + " » n'est pas dans le dictionnaire",
+        "l'appli est bilingue et traduit par correspondance EXACTE : cette chaîne restera en " +
+        "français. Ajouter l'entrée dans js/i18n_dict.js.", src);
+    };
+    for (const m of src.matchAll(/>([^<>{}`$]{3,120})</g)) pousser(m[1], m.index);
+    // attribut en guillemets doubles : l'apostrophe fait partie du texte
+    for (const m of src.matchAll(/(?:placeholder|title|aria-label)\s*=\s*"([^"<>{}]{3,120})"/g)) pousser(m[1], m.index);
+    // attribut en guillemets simples
+    for (const m of src.matchAll(/(?:placeholder|title|aria-label)\s*=\s*'([^'<>{}]{3,120})'/g)) pousser(m[1], m.index);
+    for (const m of src.matchAll(new RegExp("\\.(?:textContent|innerText)\\s*=\\s*'(" + CH + "{3,120})'", "g"))) pousser(m[1], m.index);
+    for (const m of src.matchAll(new RegExp('\\.(?:textContent|innerText)\\s*=\\s*"(' + CH2 + '{3,120})"', "g"))) pousser(m[1], m.index);
   }
 }
 
@@ -248,7 +311,7 @@ regleCSSMorte();
 regleBoitesFlottantes();
 regleSollicitations();
 regleCleLangue();
-regleBilingue();
+regleTraductions();
 regleBackticks();
 
 const afficher = (titre, liste, marque) => {
@@ -264,6 +327,11 @@ const afficher = (titre, liste, marque) => {
 console.log("🔎 Pièges de code — " + FICHIERS_JS.length + " fichiers js + style.css");
 afficher("BLOQUANT", bloquants, "❌");
 afficher("À REGARDER", avertissements, "⚠️");
+if (resteATraduire.length) {
+  console.log("\nℹ️  " + resteATraduire.length + " chaîne(s) sans traduction hors périmètre surveillé " +
+    "(chantier de fond, non bloquant). « --tout » pour la liste.");
+  if (TOUT) for (const r of resteATraduire) console.log("   " + r);
+}
 if (TOUT && ok.length) { console.log("\n✅ Conformes (" + ok.length + ")"); for (const o of ok) console.log("   " + o); }
 if (!bloquants.length && !avertissements.length) console.log("\n✅ Aucun piège connu détecté.");
 else console.log("\n" + bloquants.length + " bloquant(s), " + avertissements.length + " avertissement(s).");

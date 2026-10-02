@@ -94,7 +94,9 @@
 
   window.collCreer = async function () {
     if (!window.currentUser) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
-    const nom = (prompt("Nom de la nouvelle collection (ex. Noël, Healthy, Rapide) :") || "").trim();
+    const nom = (prompt(window.LANG === "en"
+      ? "Name of the new collection (e.g. Christmas, Healthy, Quick):"
+      : "Nom de la nouvelle collection (ex. Noël, Healthy, Rapide) :") || "").trim();
     if (!nom) return;
     if (trouver(nom)) { afficherToastColl("Cette collection existe déjà"); return; }
     if (!window.userProfile.collections) window.userProfile.collections = [];
@@ -107,7 +109,7 @@
 
   window.collRenommer = async function (nom) {
     const col = trouver(nom); if (!col) return;
-    const nv = (prompt("Renommer la collection :", nom) || "").trim();
+    const nv = (prompt(window.LANG === "en" ? "Rename the collection:" : "Renommer la collection :", nom) || "").trim();
     if (!nv || nv === nom) return;
     if (trouver(nv)) { afficherToastColl("Ce nom est déjà pris"); return; }
     col.nom = nv;
@@ -117,7 +119,11 @@
   };
 
   window.collSupprimer = async function (nom) {
-    const ok = (typeof confirmer === "function") ? await confirmer("Supprimer la collection « " + nom + " » ? (les recettes restent dans tes favoris)", { titre: "📚 Collection", boutonOui: "Supprimer" }) : confirm("Supprimer « " + nom + " » ?");
+    const ok = (typeof confirmer === "function") ? await confirmer(window.LANG === "en"
+        ? "Delete the collection \u00ab " + nom + " \u00bb? (the recipes stay in your favourites)"
+        : "Supprimer la collection \u00ab " + nom + " \u00bb ? (les recettes restent dans tes favoris)",
+      { titre: "📚 Collection", boutonOui: window.LANG === "en" ? "Delete" : "Supprimer" })
+      : confirm((window.LANG === "en" ? "Delete " : "Supprimer ") + "\u00ab " + nom + " \u00bb ?");
     if (!ok) return;
     window.userProfile.collections = cols().filter(c => c.nom !== nom);
     if (selection === nom) selection = null;

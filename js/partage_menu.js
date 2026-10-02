@@ -86,7 +86,7 @@
       await navigator.clipboard.writeText(payload.text);
       if (typeof afficherToast === "function") afficherToast("📋 Menu copié — colle-le dans WhatsApp/SMS");
     } catch (e) {
-      try { prompt("Copie ton menu :", payload.text); } catch (e2) {}
+      try { prompt(window.LANG === "en" ? "Copy your menu:" : "Copie ton menu :", payload.text); } catch (e2) {}
     }
   };
 
