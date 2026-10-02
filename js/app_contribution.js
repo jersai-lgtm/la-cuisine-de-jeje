@@ -1,7 +1,7 @@
 /* ============================================================
    CONTRIBUTION — Phase 1 : recettes PERSONNELLES (privées)
    - Stockées dans userProfile.recettesPerso = { key: {...recette...} }
-   - Fusionnées dans le catalogue `recettes` au chargement (cet utilisateur uniquement)
+   - Fusionnées dans le catalogue « recettes » au chargement (cet utilisateur uniquement)
    - Cartes injectées dynamiquement dans #section-cartes
    La structure utilise fixe:true + ingredientsFixes (format simple, pas d'échelle/coût).
    ============================================================ */

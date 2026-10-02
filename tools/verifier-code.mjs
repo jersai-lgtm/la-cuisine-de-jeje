@@ -232,16 +232,10 @@ function dictionnaire() {
   return g;
 }
 
-// Le CLIQUET : ces fichiers ont été passés en revue et sont à zéro. Toute
-// nouvelle chaîne française non traduite y est BLOQUANTE — c'est ce qui empêche
-// la régression. Pour le reste de l'appli, on se contente de compter : 364
-// chaînes attendent encore leur traduction, les bloquer arrêterait tout.
-// Quand un fichier est mis à jour, l'ajouter ici.
-const FICHIERS_A_JOUR = [
-  "agenda.js", "amelioration.js", "app_avis.js", "community.js",
-  "favoris_collections.js", "menu_ajout.js", "onboarding.js",
-  "partage_courses.js", "partage_menu.js", "whatsnew.js",
-];
+// Le 02/10/2026 l'appli est passée à ZÉRO chaîne d'interface sans traduction
+// (265 ajoutées ce jour-là : 145 libellés de tableaux + 120 textes d'écran).
+// La règle est donc bloquante PARTOUT : plus aucune chaîne française ne peut
+// entrer sans son entrée au dictionnaire. Il n'y a plus de cliquet à tenir.
 const resteATraduire = [];
 
 const ACCENT_FR = /[àâäçéèêëîïôöùûüœæ]/i;
@@ -257,16 +251,26 @@ function regleTraductions() {
     const src = lire("js/" + f);
     if (src === null) continue;
     const vus = new Set();
-    const surveille = FICHIERS_A_JOUR.includes(f);
+
+    // Une chaîne entourée d'un marqueur de langue appartient déjà à une
+    // expression bilingue (EN() ? … : …, T(fr, en), window.LANG) : on la laisse.
+    const bilingueAutour = (index) => {
+      const c = src.slice(Math.max(0, index - 250), index + 250);
+      return /window\.LANG|\bEN\(\)|\(en\s*\?|\bT\(/.test(c);
+    };
     const pousser = (brut, index) => {
       const t = String(brut).replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\s+/g, " ").trim();
       if (t.length < 3 || t.length > 120) return;
       if (/[<>{}]|\$\{|=>|escHTML|_echap|\|\|/.test(t)) return;
+      // fragment d'expression : concaténation, appel de traduction, ternaire de langue.
+      // Sans ça on signale du code déjà bilingue comme s'il ne l'était pas.
+      if (/\+\s*["']|["']\s*\+|\bT\(|\(en\s*\?|\?\s*["']|:\s*["']/.test(t)) return;
+      if (/\/\/|;/.test(t)) return;          // fragment de code, pas un texte affiché
+      if (bilingueAutour(index)) return;     // déjà pris en charge par une branche de langue
       if (/\\$/.test(t)) return;
       if (!(ACCENT_FR.test(t) || MOTS_FR.test(t)) || !/[a-zà-ÿ]{3}/i.test(t)) return;
       if (DICT[t] || vus.has(t)) return;
       vus.add(t);
-      if (!surveille) { resteATraduire.push("js/" + f + ":" + ligneDe(src, index) + "  « " + t + " »"); return; }
       signaler(bloquants, "chaine-sans-traduction", "js/" + f, ligneDe(src, index),
         "« " + t + " » n'est pas dans le dictionnaire",
         "l'appli est bilingue et traduit par correspondance EXACTE : cette chaîne restera en " +
