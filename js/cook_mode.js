@@ -34,8 +34,12 @@
   }
   // Le Wake Lock se libère quand l'onglet passe en arrière-plan : on le ré-acquiert.
   function onVisibilite() {
-    if (document.visibilityState === "visible" && document.getElementById("cookmode-overlay")) {
-      acquerirWakeLock();
+    if (document.visibilityState === "visible") {
+      if (document.getElementById("cookmode-overlay")) acquerirWakeLock();
+      reglerReveilsDeFond(false);   // on revient : le tic d'une seconde reprend
+      resynchroniserTimers();
+    } else {
+      reglerReveilsDeFond(true);    // on part : rendez-vous posés à l'heure de fin
     }
   }
 
@@ -82,27 +86,97 @@
   }
   const _escT = (s) => (typeof escapeHTML === "function") ? escapeHTML(s) : String(s == null ? "" : s);
 
-  // Plusieurs minuteurs en parallèle — ils persistent quand on change d'étape.
+  // Un minuteur retient l'INSTANT DE FIN, pas un nombre de secondes à décompter.
+  // Avant, on faisait « restant-- » à chaque tic de setInterval : dès que l'écran
+  // se verrouille le navigateur bride ce tic (souvent à un par minute), et le
+  // minuteur prenait du retard sans que rien ne le dise. Avec un instant de fin,
+  // l'affichage est juste quel que soit le temps passé en arrière-plan.
   function ajouterMinuteur(minutes, label) {
     const key = "t" + (++_timerSeq);
-    const t = { key, restant: minutes * 60, total: minutes * 60, paused: false, label: label || "", id: null, fini: false };
-    t.id = setInterval(() => {
-      if (t.paused) return;
-      t.restant--;
-      if (t.restant <= 0) {
-        clearInterval(t.id); t.id = null; t.fini = true; t.restant = 0;
-        const live = document.getElementById("cookmode-live");
-        if (live) live.textContent = (t.label ? t.label + " : " : "") + "minuteur terminé !";
-        bip();
-      }
-      majBarreTimers();
-    }, 1000);
+    const t = {
+      key, total: minutes * 60, restant: minutes * 60,
+      fin: Date.now() + minutes * 60000,   // l'horloge fait foi
+      paused: false, label: label || "", id: null, idFond: null, fini: false,
+    };
+    t.id = setInterval(() => tictac(t), 1000);
     _timers.push(t);
     majBarreTimers();
   }
-  function arreterTousTimers() { _timers.forEach(t => { if (t.id) clearInterval(t.id); }); _timers = []; }
-  window._cmTimerPause = (key) => { const t = _timers.find(x => x.key === key); if (t && !t.fini) { t.paused = !t.paused; majBarreTimers(); } };
-  window._cmTimerStop = (key) => { const t = _timers.find(x => x.key === key); if (t) { if (t.id) clearInterval(t.id); _timers = _timers.filter(x => x.key !== key); majBarreTimers(); } };
+
+  function tictac(t) {
+    if (t.fini || t.paused) return;
+    t.restant = Math.max(0, Math.round((t.fin - Date.now()) / 1000));
+    if (t.restant <= 0) finirMinuteur(t);
+    else majBarreTimers();
+  }
+
+  function finirMinuteur(t) {
+    if (t.fini) return;
+    t.fini = true; t.restant = 0;
+    if (t.id) { clearInterval(t.id); t.id = null; }
+    if (t.idFond) { clearTimeout(t.idFond); t.idFond = null; }
+    const live = document.getElementById("cookmode-live");
+    if (live) live.textContent = (t.label ? t.label + " : " : "") + "minuteur terminé !";
+    bip();
+    notifierFinMinuteur(t);
+    majBarreTimers();
+  }
+
+  // Le bip ne joue pas écran éteint : on double par une notification, qui elle
+  // traverse. Silencieuse si l'utilisateur n'a pas accordé la permission.
+  async function notifierFinMinuteur(t) {
+    try {
+      if (!("Notification" in window) || Notification.permission !== "granted") return;
+      const en = (window.LANG === "en");
+      const titre = en ? "⏰ Timer finished" : "⏰ Minuteur terminé";
+      const corps = t.label ? t.label
+        : (en ? "Your dish is waiting for the next step." : "Ton plat attend la suite.");
+      const opts = {
+        body: corps, tag: "cm-timer-" + t.key, renotify: true,
+        icon: "images/icon-192.png", badge: "images/icon-192.png",
+        vibrate: [200, 100, 200, 100, 200],
+      };
+      const r = ("serviceWorker" in navigator) ? await navigator.serviceWorker.ready : null;
+      if (r && r.showNotification) await r.showNotification(titre, opts);
+      else new Notification(titre, opts);
+    } catch (e) {}
+  }
+
+  // En arrière-plan, le tic d'une seconde peut ne plus passer du tout. On pose
+  // en plus un rendez-vous unique à l'heure de fin : même bridé, il arrive, au
+  // pire avec un peu de retard — toujours mieux que pas de sonnerie.
+  function reglerReveilsDeFond(poser) {
+    for (const t of _timers) {
+      if (t.idFond) { clearTimeout(t.idFond); t.idFond = null; }
+      if (!poser || t.fini || t.paused) continue;
+      const ms = Math.max(0, t.fin - Date.now());
+      t.idFond = setTimeout(() => finirMinuteur(t), ms);
+    }
+  }
+
+  // Au retour dans l'appli : on recale tout de suite sur l'horloge, et les
+  // minuteurs échus pendant l'absence se terminent immédiatement.
+  function resynchroniserTimers() {
+    for (const t of _timers.slice()) tictac(t);
+    majBarreTimers();
+  }
+
+  function arreterTousTimers() {
+    _timers.forEach(t => { if (t.id) clearInterval(t.id); if (t.idFond) clearTimeout(t.idFond); });
+    _timers = [];
+  }
+  window._cmTimerPause = (key) => {
+    const t = _timers.find(x => x.key === key);
+    if (!t || t.fini) return;
+    if (t.paused) { t.fin = Date.now() + t.restant * 1000; t.paused = false; }   // on repart de ce qui restait
+    else { t.restant = Math.max(0, Math.round((t.fin - Date.now()) / 1000)); t.paused = true; }
+    if (t.idFond) { clearTimeout(t.idFond); t.idFond = null; }
+    majBarreTimers();
+  };
+  window._cmTimerStop = (key) => {
+    const t = _timers.find(x => x.key === key);
+    if (t) { if (t.id) clearInterval(t.id); if (t.idFond) clearTimeout(t.idFond); _timers = _timers.filter(x => x.key !== key); majBarreTimers(); }
+  };
 
   function majBarreTimers() {
     const bar = document.getElementById("cookmode-timers-bar");
