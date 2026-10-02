@@ -73,6 +73,8 @@
       ".lcios-btn.copie{background:#2ecc71}",
       ".lcios-hint{font-size:12.5px;color:#8a868f;text-align:center;margin:10px 2px 0;line-height:1.4}",
       // flèche animée vers le bouton Partager (bas iPhone / haut iPad)
+      // verifier-code: ignore boite-demi-ecran - un seul glyphe de 34 px, sans texte :
+      // sa largeur ne sert a rien et le centrage par transform suffit.
       ".lcios-arrow{position:fixed;left:50%;transform:translateX(-50%);z-index:9001;color:var(--accent,#ff4d88);",
       "  font-size:34px;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.4))}",
       ".lcios-arrow.bas{bottom:calc(4px + env(safe-area-inset-bottom));animation:lciosBounceD 1.1s infinite}",

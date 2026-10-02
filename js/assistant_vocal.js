@@ -752,7 +752,9 @@
       #assistant-mic:focus-visible{outline:2px solid var(--accent-soft,#ff8fb3);outline-offset:2px}
       [data-av-mic].av-ecoute{background:var(--accent,#ff4d88) !important;color:#fff !important;animation:avPulse 1s ease-in-out infinite}
       @keyframes avPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,77,136,.5)}50%{box-shadow:0 0 0 8px rgba(255,77,136,0)}}
-      #assistant-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:90px;z-index:100061;max-width:90vw;
+      /* left:50% sans right ne donne aucune largeur : voir regle boite-demi-ecran. */
+      #assistant-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:90px;z-index:100061;
+        width:max-content;max-width:calc(100vw - 24px);box-sizing:border-box;
         background:#14121a;color:#fff;border:1px solid rgba(255,107,161,.5);border-radius:16px;padding:14px 20px;
         font-family:system-ui,-apple-system,sans-serif;font-size:16px;text-align:center;box-shadow:0 8px 28px rgba(0,0,0,.4);
         display:none;min-width:200px}
@@ -992,6 +994,8 @@
       const clr = document.getElementById("search-clear");
       bar.insertBefore(btn, clr || document.getElementById("search-suggestions") || null);
     }
+    // verifier-code: ignore banniere-sans-politesse - bandeau de STATUT vocal, affiche
+    // seulement quand on clique sur le micro : il ne sollicite jamais de lui-meme.
     if (!document.getElementById("assistant-banner")) {
       const banner = document.createElement("div");
       banner.id = "assistant-banner";

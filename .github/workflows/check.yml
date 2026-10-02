@@ -42,6 +42,14 @@ jobs:
       - name: Vérifier l'intégrité des données
         run: node tools/verifier-donnees.mjs
 
+      # --- 1ter. Pièges de code déjà rencontrés ----------------------------
+      # Chaque règle encode un bug réel (règle CSS morte, boîte flottante large
+      # d'une demi-page, bannière qui se pose sur l'accueil guidé, garde
+      # anti-réécriture sans la langue). Une règle se lève au cas par cas avec
+      #   // verifier-code: ignore <regle> — <raison>
+      - name: Vérifier les pièges de code
+        run: node tools/verifier-code.mjs
+
       # --- 2. Les fichiers référencés dans index.html existent ---------------
       - name: Vérifier que les fichiers de index.html existent
         run: |
