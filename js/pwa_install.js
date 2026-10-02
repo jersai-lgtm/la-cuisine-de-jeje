@@ -23,8 +23,14 @@
     const s = document.createElement("style");
     s.id = "pwa-install-style";
     s.textContent = `
+      /* ⚠️ max-width:92vw seul ne suffit PAS ici. Avec position:fixed, left:50%
+         et pas de right, la largeur « shrink-to-fit » se calcule sur l'espace
+         restant à DROITE du point d'ancrage, soit la moitié de l'écran : la
+         bannière tombait à 185 px et le texte à 54 px, sur 8 lignes. Le
+         translateX(-50%) ne recentre qu'après, il ne corrige pas la largeur.
+         Même motif que #note-play-banner, qui lui était déjà correct. */
       #pwa-install-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:88px;z-index:9000;
-        max-width:92vw;display:flex;align-items:center;gap:10px;background:var(--panel-solid);color:var(--text);
+        box-sizing:border-box;width:calc(100vw - 24px);max-width:520px;display:flex;align-items:center;gap:10px;background:var(--panel-solid);color:var(--text);
         border:1px solid rgba(255,107,161,.5);border-radius:14px;padding:10px 12px 10px 16px;
         box-shadow:0 8px 28px rgba(0,0,0,.45);font-family:system-ui,-apple-system,sans-serif;
         animation:pwaUp .25s ease}
