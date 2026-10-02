@@ -90,6 +90,21 @@
     marquerVu();
     const ov = document.getElementById("onb-overlay");
     if (ov) ov.remove();
+    _fermeA = Date.now();
+  };
+
+  // --- Qui a le droit de solliciter l'utilisateur, et quand ---------------
+  // Les bannières (installation, notifications, compte, note Play) se posaient
+  // par-dessus cet accueil guidé ou juste derrière lui : on refermait le tour
+  // et on se prenait la bannière dans la foulée. Elles demandent maintenant ici
+  // combien de temps attendre. 0 = la voie est libre.
+  let _fermeA = 0;
+  const RESPIRATION = 4000;  // de calme après la fermeture du tour
+  window.delaiAvantSollicitation = function () {
+    if (document.getElementById("onb-overlay")) return 1500;   // tour encore ouvert
+    if (!_fermeA) return 0;                                    // tour jamais affiché
+    const reste = RESPIRATION - (Date.now() - _fermeA);
+    return reste > 0 ? reste : 0;
   };
 
   function ouvrir() {

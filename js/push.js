@@ -230,6 +230,9 @@
   }
   function banniere() {
     if (document.getElementById("push-banner")) return;
+    // Jamais par-dessus l'accueil guidé : on attend qu'il se referme.
+    const _att = window.delaiAvantSollicitation ? window.delaiAvantSollicitation() : 0;
+    if (_att) { setTimeout(banniere, _att); return; }
     style();
     const b = document.createElement("div");
     b.id = "push-banner";
@@ -252,6 +255,9 @@
   // réabo auto de rafraichirFlag les a déjà réparés → un abonnement existe → pas de rappel).
   function banniereReactivation() {
     if (document.getElementById("push-banner")) return;
+    // Jamais par-dessus l'accueil guidé : on attend qu'il se referme.
+    const _att = window.delaiAvantSollicitation ? window.delaiAvantSollicitation() : 0;
+    if (_att) { setTimeout(banniereReactivation, _att); return; }
     style();
     const b = document.createElement("div");
     b.id = "push-banner";

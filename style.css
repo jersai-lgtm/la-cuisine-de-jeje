@@ -246,8 +246,6 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
     gap: 10px;
     padding: 12px 10px 90px;
   }
-  /* En grille mobile, la largeur est gérée par la colonne : on ne fige que la hauteur. */
-  .carte { contain-intrinsic-size: auto 220px; }
 }
 
 /* ==============================
@@ -325,6 +323,15 @@ header p  { color: var(--text-2); font-size: 12px; margin: 2px 0 0; }
   /* Perf : sur 1500 cartes, on évite de peindre/calculer celles hors écran. */
   content-visibility: auto;
   contain-intrinsic-size: 200px 232px;
+}
+/* En grille mobile la largeur vient de la colonne : on ne fige que la hauteur.
+   ⚠️ Cette règle doit rester APRÈS `.carte` ci-dessus : même sélecteur, même
+   spécificité, c'est l'ordre qui tranche. Placée plus haut dans le fichier,
+   elle était écrasée et ne servait à rien. Hauteurs mesurées à 390 px de large :
+   231 à 264 px selon la carte, d'où 248. `auto` fait mémoriser la vraie taille
+   dès qu'une carte a été rendue une fois. */
+@media (max-width: 480px) {
+  .carte { contain-intrinsic-size: auto 248px; }
 }
 .carte:hover {
   transform: translateY(-6px) scale(1.03);

@@ -45,6 +45,9 @@
 
   function afficher() {
     if (document.getElementById("incit-banner") || connecte() || off()) return;
+    // Jamais par-dessus l'accueil guidé : on attend qu'il se referme.
+    const _att = window.delaiAvantSollicitation ? window.delaiAvantSollicitation() : 0;
+    if (_att) { setTimeout(afficher, _att); return; }
     injecterStyle();
     const b = document.createElement("div");
     b.id = "incit-banner";

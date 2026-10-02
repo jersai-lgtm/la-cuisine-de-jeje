@@ -46,6 +46,9 @@
 
   function afficher() {
     if (document.getElementById("pwa-install-banner") || estInstalle() || dejaRefuse() || !deferred) return;
+    // Jamais par-dessus l'accueil guidé : on attend qu'il se referme.
+    const _att = window.delaiAvantSollicitation ? window.delaiAvantSollicitation() : 0;
+    if (_att) { setTimeout(afficher, _att); return; }
     injecterStyle();
     const b = document.createElement("div");
     b.id = "pwa-install-banner";
