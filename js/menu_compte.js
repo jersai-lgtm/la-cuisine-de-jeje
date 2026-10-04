@@ -108,6 +108,8 @@
     liste.appendChild(groupe([
       ligne("🌙", T("Thème", "Theme"), libelleTheme(), () => { cliquer("btn-theme"); rendreListe(); }),
       ligne("🎨", T("Couleur de l'appli", "App colour"), "", () => { fermer(); cliquer("btn-couleurs"); }),
+      ligne("⚖️", T("Convertir ml ↔ g", "Convert ml ↔ g"), "",
+        () => { fermer(); if (typeof ouvrirConvertisseur === "function") ouvrirConvertisseur(); }),
       ligne("🌐", T("Langue", "Language"), window.LANG === "en" ? "English" : "Français",
         () => { fermer(); cliquer("btn-lang"); }),
     ]));
