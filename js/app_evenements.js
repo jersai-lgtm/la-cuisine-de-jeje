@@ -409,13 +409,18 @@
       // reserve : 36 de padding + 64 pour le bouton « Entrer » + 10 de marge.
       "#event-splash .ev-board{position:relative;width:min(460px,92vw,calc((100vh - 110px) * 1086 / 1448));flex:0 0 auto;aspect-ratio:1086/1448;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.6);container-type:inline-size}",
       "#event-splash .ev-board img{display:block;width:100%;height:100%;object-fit:cover}",
-      "#event-splash .ev-menu{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1cqw;overflow-y:auto;text-align:center;scrollbar-width:none}",
+            // justify-content:center rognait les DEUX bouts quand le texte depassait,
+      // et le haut devenait inatteignable meme en faisant defiler. flex-start +
+      // marges auto centre tant qu'il y a la place, et sinon deborde vers le bas.
+      "#event-splash .ev-menu{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:calc(var(--ev-taille,3.3cqw)/3);overflow-y:auto;text-align:center;scrollbar-width:none}",
+      "#event-splash .ev-menu > :first-child{margin-top:auto}",
+      "#event-splash .ev-menu > :last-child{margin-bottom:auto}",
       "#event-splash .ev-menu::-webkit-scrollbar{display:none}",
-      "#event-splash .ev-menu-item{font-family:Georgia,'Times New Roman',serif;color:var(--ev-menu-color,var(--ev-accent,#ff7518));font-weight:600;font-size:3.3cqw;line-height:1.25;cursor:pointer;text-shadow:var(--ev-menu-shadow,0 1px 3px rgba(0,0,0,.75))}",
+      "#event-splash .ev-menu-item{font-family:Georgia,'Times New Roman',serif;color:var(--ev-menu-color,var(--ev-accent,#ff7518));font-weight:600;font-size:var(--ev-taille,3.3cqw);line-height:1.25;cursor:pointer;text-shadow:var(--ev-menu-shadow,0 1px 3px rgba(0,0,0,.75))}",
       "#event-splash .ev-menu-item:active{opacity:.55}",
       ".lc-event-fab{position:fixed;right:16px;bottom:90px;width:54px;height:54px;border-radius:50%;border:none;background:var(--ev-accent,#ff7518);color:#fff;font-size:26px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:9000;box-shadow:0 6px 20px rgba(0,0,0,.45)}",
       ".lc-event-fab:active{transform:scale(.92)}",
-      "#event-splash .ev-fallback{display:flex;align-items:center;justify-content:center;min-height:60vh;background:#15121a;color:var(--ev-accent,#ff7518);font-weight:800;font-size:34px;text-align:center;letter-spacing:1px;padding:30px;border:2px solid var(--ev-accent,#ff7518)}",
+      "#event-splash .ev-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;min-height:0;background:#15121a;color:var(--ev-accent,#ff7518);font-weight:800;font-size:34px;text-align:center;letter-spacing:1px;padding:30px;border:2px solid var(--ev-accent,#ff7518)}",
       "#event-splash .ev-close{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:rgba(0,0,0,.45);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}",
       "#event-splash .ev-cta{margin-top:18px;background:var(--ev-accent,#ff7518);color:#fff;border:none;border-radius:50px;padding:14px 26px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.4)}",
       ".lc-event-decor{position:fixed;inset:0;pointer-events:none;z-index:40;overflow:hidden}",
@@ -671,8 +676,13 @@
     injecterStyle();
     var ov = document.createElement("div");
     ov.id = "event-splash";
+    // Si l'image manque, on remplace L'IMAGE — pas le cadre entier. L'ancien
+    // onerror ecrasait innerHTML de .ev-board : il emportait le menu ET la
+    // croix de fermeture, et il ne restait qu'un bloc de couleur dont on ne
+    // pouvait plus sortir que par « Entrer ». Constate sur la Chandeleur,
+    // dont le visuel n'a jamais ete livre (18 images sur 19 presentes).
     var imgBlock = ev.image
-      ? '<img src="' + ev.image + '" alt="' + ev.nom + '" onerror="this.closest(\'.ev-board\').innerHTML=\'<div class=&quot;ev-fallback&quot;>' + ev.titre.replace(/'/g, "") + '</div>\'">'
+      ? '<img src="' + ev.image + '" alt="' + ev.nom + '" onerror="this.outerHTML=\'<div class=&quot;ev-fallback&quot;>' + ev.titre.replace(/'/g, "") + '</div>\'">'
       : '<div class="ev-fallback">' + ev.titre + "</div>";
     // Menu "écrit" sur l'ardoise (chaque ligne ouvre la recette)
     var R = lcRecettes();
@@ -696,10 +706,30 @@
       "</div>" +
       '<button class="ev-cta" onclick="lcEventCTA()">' + (ev.cta || "Découvrir") + "</button>";
     document.body.appendChild(ov);
+    ajusterMenu(ov.querySelector(".ev-menu"));
     requestAnimationFrame(function () { ov.classList.add("visible"); });
     lsSet(clefVue(ev), "1");
     // Intercepter le bouton retour Android (ferme le splash au lieu de quitter)
     if (typeof window._backGuardPush === "function") window._backGuardPush();
+  }
+
+  // Fait tenir le menu dans la bande que son visuel lui laisse. On ne bouge
+  // jamais la bande : elle est calee a la main sur chaque illustration.
+  // Tout est en cqw (relatif au cadre), donc une seule mesure vaut pour
+  // toutes les tailles d'ecran — le rapport contenu/bande ne depend pas de
+  // l'echelle. Boucle plutot que formule : l'arrondi des interlignes n'est
+  // pas lineaire, et on veut le resultat, pas une estimation.
+  var TAILLE_BASE = 3.3;   // cqw, la taille de reference du design
+  var TAILLE_MIN = 1.8;    // en dessous ce ne serait plus lisible
+  function ajusterMenu(m) {
+    if (!m) return;
+    var t = TAILLE_BASE;
+    m.style.setProperty("--ev-taille", t + "cqw");
+    for (var i = 0; i < 8 && m.scrollHeight > m.clientHeight; i++) {
+      t *= Math.max(0.85, (m.clientHeight * 0.97) / m.scrollHeight);
+      if (t <= TAILLE_MIN) { t = TAILLE_MIN; m.style.setProperty("--ev-taille", t + "cqw"); break; }
+      m.style.setProperty("--ev-taille", t.toFixed(2) + "cqw");
+    }
   }
 
   window.lcFermerEventSplash = function () {
