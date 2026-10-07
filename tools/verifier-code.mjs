@@ -295,6 +295,85 @@ function regleTraductions() {
 // fichiers d'un coup. Le cas fatal est déjà attrapé par `node --check` en CI ;
 // ceci n'est qu'un rappel, limité aux fichiers qui embarquent du CSS.
 // =============================================================================
+// =============================================================================
+// 7. UN RATIO QU'ON RABOTE  (bloquant)
+// -----------------------------------------------------------------------------
+// Incident 07/10/2026, js/app_evenements.js : le cadre du splash d'evenement
+// declarait `width:min(460px,92vw); max-height:88vh; aspect-ratio:1086/1448`,
+// avec le menu des recettes pose PAR-DESSUS en pourcentages (top 49 %...).
+//
+// `aspect-ratio` n'est qu'un souhait : des que la hauteur est rabotee, la
+// largeur, elle, ne suit pas. En paysage le cadre tombait de 575 a 288 px,
+// l'image passait en `object-fit: cover` et se recadrait, et le menu —
+// toujours cale sur le CADRE — atterrissait 10 points plus bas sur le visuel :
+// 4 recettes sur 6 hors champ, sans barre de defilement pour le signaler.
+//
+// Deux mecanismes rabotent, et il faut regarder les DEUX : le plafond declare
+// (max-height / max-width), et le retrecissement flex quand la boite est un
+// enfant de conteneur flex. Mesure faite sur place : neutraliser max-height ne
+// changeait rien (288 px), neutraliser flex-shrink rendait 343 px.
+//
+// Le motif qui tient : calculer la dimension LIBRE depuis la place reellement
+// disponible, pour que le ratio ne soit jamais contredit — par exemple
+//   width: min(460px, 92vw, calc((100vh - 110px) * 1086 / 1448));
+// et plus aucun plafond sur l'autre axe.
+// =============================================================================
+function regleRatioRabote() {
+  const sources = [["style.css", lire("style.css")]];
+  for (const f of FICHIERS_JS) sources.push(["js/" + f, lire("js/" + f)]);
+
+  for (const [nom, src] of sources) {
+    if (src === null) continue;
+    for (const m of src.matchAll(/\{([^{}]*aspect-ratio\s*:[^{}]*)\}/g)) {
+      const corps = m[1];
+      const plafond = corps.match(/max-(height|width)\s*:\s*[^;}]+/);
+      if (!plafond) continue;
+      // Un plafond sur l'axe qu'on a DEJA fixe explicitement ne rabote rien :
+      // c'est l'autre axe, celui que le ratio deduit, qui se fait rogner.
+      const axe = plafond[1];                       // "height" ou "width"
+      const dejaFixe = new RegExp("(^|[;{\\s])" + axe + "\\s*:").test(corps);
+      if (dejaFixe) continue;
+      const entete = (src.slice(Math.max(0, m.index - 200), m.index).split(/[;}]/).pop() || "")
+        .replace(/\/\*[\s\S]*?\*\//g, "").replace(/\s+/g, " ").trim().slice(-60);
+      signaler(bloquants, "ratio-rabote", nom, ligneDe(src, m.index),
+        `${entete || "(regle)"} : aspect-ratio + ${plafond[0].trim()}`,
+        "le plafond rabote un cote sans toucher a l'autre : le ratio est rompu en " +
+        "silence, et tout calque en % se decale. Verifier aussi le retrecissement " +
+        "flex. Motif qui marche : calculer la dimension libre depuis la place " +
+        "disponible, calc((100vh - RESERVE) * L / H), sans plafond sur l'autre axe.", src);
+    }
+  }
+}
+
+// =============================================================================
+// 8. UN PADDING EN POURCENTS  (bloquant)
+// -----------------------------------------------------------------------------
+// Incident 07/10/2026 : `padding: 0 3%` sur une pancarte large de 59 px en
+// rognait 23 — parce qu'un padding (ou une marge) en % se calcule sur la
+// largeur du BLOC CONTENEUR, jamais sur celle de l'element. Et sur les quatre
+// cotes : `padding-top: 5%` se mesure aussi sur la LARGEUR du parent.
+//
+// Invisible a la lecture, evident a la mesure. Le vieux tour « padding-top
+// 56.25 % » pour tenir un ratio n'a plus de raison d'etre depuis aspect-ratio.
+// =============================================================================
+function reglePaddingPourcent() {
+  const sources = [["style.css", lire("style.css")]];
+  for (const f of FICHIERS_JS) sources.push(["js/" + f, lire("js/" + f)]);
+
+  for (const [nom, src] of sources) {
+    if (src === null) continue;
+    for (const m of src.matchAll(/(^|[;{"'\s])(padding|margin)(-(top|right|bottom|left))?\s*:\s*([^;}"'\n]*?[0-9](\.[0-9]+)?%)/g)) {
+      const valeur = m[5].trim();
+      if (/^(0%|100%|auto)$/.test(valeur)) continue;
+      signaler(bloquants, "padding-pourcent", nom, ligneDe(src, m.index),
+        `${m[2]}${m[3] || ""}: ${valeur}`,
+        "un padding ou une marge en % se mesure sur la LARGEUR du bloc conteneur, " +
+        "pas sur l'element — et meme en haut et en bas. Mettre des pixels, ou " +
+        "aspect-ratio si c'est un ratio qu'on cherche.", src);
+    }
+  }
+}
+
 function regleBackticks() {
   for (const f of FICHIERS_JS) {
     const src = lire("js/" + f);
@@ -316,6 +395,8 @@ regleBoitesFlottantes();
 regleSollicitations();
 regleCleLangue();
 regleTraductions();
+regleRatioRabote();
+reglePaddingPourcent();
 regleBackticks();
 
 const afficher = (titre, liste, marque) => {

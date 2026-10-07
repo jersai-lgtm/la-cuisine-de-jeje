@@ -398,7 +398,16 @@
     st.textContent = [
       "#event-splash{position:fixed;inset:0;z-index:100050;background:radial-gradient(circle at 50% 30%,#241a12 0%,#0d0a0f 75%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;opacity:0;transition:opacity .35s ease}",
       "#event-splash.visible{opacity:1}",
-      "#event-splash .ev-board{position:relative;width:min(460px,92vw);max-height:88vh;aspect-ratio:1086/1448;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.6);container-type:inline-size}",
+      // Le menu des recettes est pose EN POURCENTAGES par-dessus ce cadre : il
+      // faut donc que le cadre garde exactement le ratio du visuel, sinon
+      // `object-fit: cover` recadre l'image et le menu tombe ailleurs.
+      // `aspect-ratio` ne suffit pas — ce n'est qu'un souhait, et deux choses
+      // le contredisaient : `max-height: 88vh`, et surtout le retrecissement
+      // flex dans la colonne de #event-splash (mesure : le cadre tombait a
+      // 288 px au lieu de 575 en paysage, 4 recettes sur 6 hors champ).
+      // On calcule donc la largeur depuis la hauteur disponible — 110 px de
+      // reserve : 36 de padding + 64 pour le bouton « Entrer » + 10 de marge.
+      "#event-splash .ev-board{position:relative;width:min(460px,92vw,calc((100vh - 110px) * 1086 / 1448));flex:0 0 auto;aspect-ratio:1086/1448;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.6);container-type:inline-size}",
       "#event-splash .ev-board img{display:block;width:100%;height:100%;object-fit:cover}",
       "#event-splash .ev-menu{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1cqw;overflow-y:auto;text-align:center;scrollbar-width:none}",
       "#event-splash .ev-menu::-webkit-scrollbar{display:none}",
