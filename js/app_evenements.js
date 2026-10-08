@@ -316,8 +316,14 @@
       image: "images/event-chandeleur.webp",
       emojis: ["🥞", "🍯", "🍋"],
       cta: "Entrer 🥞",
-      menuZone: { top: "61%", bottom: "22%", left: "20%", right: "20%" },
-      menuColor: "#b5172a",
+      // Releve sur le visuel livre le 08/10/2026 : la surface vide de
+      // l'ardoise va de 36,0 % a 54,6 % en hauteur et de 21 % a 78,5 % en
+      // largeur (detection de la zone sombre et uniforme, pas a l'oeil).
+      // L'ancien reglage, pose sans image, serait tombe sur le monogramme.
+      menuZone: { top: "37%", bottom: "47%", left: "23%", right: "23%" },
+      // L'or du titre peint : le rouge d'avant donnait 2,52:1 sur cette
+      // ardoise sombre, soit sous le minimum lisible de 4,5:1. Ici 8,14:1.
+      menuColor: "#e0a96d",
       menuShadow: "none",
       menuNoms: { "crepesSucrées": "Crêpes Sucrées", pancakes: "Pancakes", gaufres: "Gaufres" },
       recettes: ["crepesSucrées", "pancakes", "gaufres"],
