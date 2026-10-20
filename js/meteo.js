@@ -15,6 +15,9 @@
 
   function poser(temp) {
     window._meteo = { temp: temp, chaud: temp >= SEUIL_CHAUD, froid: temp <= SEUIL_FROID };
+    // La météo arrive de façon asynchrone (géoloc + fetch) : prévenir les vues qui
+    // s'en servent (ex. « Recettes de la semaine ») pour qu'elles se re-rendent.
+    try { window.dispatchEvent(new Event("meteoprete")); } catch (e) {}
   }
   function lireCache() {
     try { const c = JSON.parse(localStorage.getItem(LS) || "null"); if (c && (Date.now() - c.t) < 3 * 3600e3) return c; } catch (e) {}
