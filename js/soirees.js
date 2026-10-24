@@ -81,6 +81,9 @@
   // ---- ✋ ce qui se mange avec les doigts ----------------------------------
   var NOM_DOIGTS = /pizza|burger|wrap|brochette|samoussa|samosa|nem|beignet|croquette|quiche|bruschetta|tapas|nugget|falafel|gyoza|empanada|arancini|sandwich|panini|bao|taco|burrito|churros|cookie|muffin|madeleine|financier|macaron|brownie|gaufre|donut|pop.?corn|chips|crackers|grissini|feuillet|friand|acras|accras|boulette|tempura|onigiri|maki|california|tartelette|biscuit|sabl[ée]|palmier|roul[ée]|club|hot.?dog|k[eé]fta|pakora|bhaji|canap[ée]|verrine|mini/i;
   function auxDoigts(r) {
+    // Une boisson se tient en main (dans son verre) : elle passe toujours « sans
+    // couverts ». Sinon les filtres par NOM de plat l'écartaient presque toujours.
+    if (r.cat === "cocktails" || r.cat === "mocktails") return true;
     if (r.cat === "aperitifs" || r.cat === "tartinables") return true;
     return NOM_DOIGTS.test(texteDe(r));
   }
@@ -95,6 +98,8 @@
     "beurrecacahuete", "saucePoisson", "nuocmam", "vinaigreBalsamique"];
   var NOM_SALISSANT = /sauce|fondue|raclette|trempette|dip|ailes|ribs|soupe|velout|curry|chili|mijot|ragout|ragoût|tajine|glac[ée]|cr[èe]me|coulis|nappage|fondant|coulant|juteu|sirop|caramel|chocolat/i;
   function propreAuxCartes(r) {
+    // Une boisson reste dans son verre : elle ne tache pas les cartes.
+    if (r.cat === "cocktails" || r.cat === "mocktails") return true;
     if (!auxDoigts(r)) return false;
     if (NOM_SALISSANT.test(texteDe(r))) return false;
     var ing = ingredientsDe(r);
@@ -494,7 +499,10 @@
       "  background: var(--accent); color: var(--accent-contraste, #fff); }",
       ".soir-bouton:active { transform: translateY(1px); }",
       // --- la feuille
-      "#soir-modal { position: fixed; inset: 0; z-index: 9150; background: rgba(0,0,0,.55);",
+      // z-index sous la fiche recette (.modal-calc = 9150) : la feuille soirée est
+      // ajoutée au DOM après la fiche, donc à z-index égal elle passait AU-DESSUS et
+      // la recette s'ouvrait derrière. On rejoint le palier des overlays-listes.
+      "#soir-modal { position: fixed; inset: 0; z-index: 9100; background: rgba(0,0,0,.55);",
       "  display: flex; align-items: flex-end; justify-content: center; }",
       "#soir-modal .soir-sheet { background: var(--panel-solid, var(--panel));",
       "  color: var(--text); width: 100%; max-width: 560px; max-height: 92vh;",
